@@ -3,7 +3,7 @@ title: Financial Regulation — Jersey
 jurisdiction: jersey
 category: financial-regulation
 status: stub
-last_verified: 2026-05-14
+last_verified: 2026-05-15
 tags:
   - regulation
   - jfsc
@@ -33,42 +33,144 @@ see_also:
 
 # Financial Regulation — Jersey
 
-Jersey's financial-services regulator is the **Jersey Financial Services
-Commission (JFSC)**, an independent statutory body. The JFSC supervises
-banking, investment business, trust-company business, fund services
-business, general-insurance mediation, money-services business, public
-funds, and insurance underwriting, under the principal regulatory Laws
-of Jersey. ([JFSC — all legislation][jfsc-legis])
+## What this section is about
 
-## Files in this section *(mostly stubs at this revision)*
+This section covers **how Jersey regulates financial services** —
+who the regulator is, what it does, which activities require its
+permission, and how the regulator's expectations are expressed
+through codes of practice and enforcement.
 
-### The regulator
-- [**jfsc.md**](jfsc.md) — what the JFSC is, what it does, who runs it.
-- [**jfsc-law-1998.md**](jfsc-law-1998.md) — the **Financial Services
-  Commission (Jersey) Law 1998** under which the JFSC is constituted.
+The regulator is the **[Jersey Financial Services Commission
+(JFSC)](jfsc.md)** — an independent statutory body established by
+the **[Financial Services Commission (Jersey) Law 1998][fsclaw]**.
+The JFSC supervises every regulated business in Jersey and runs
+the corporate registries. It is funded by industry fees.
 
-### The principal regulatory Laws
-- [**financial-services-jersey-law-1998.md**](financial-services-jersey-law-1998.md)
-  — the **Financial Services (Jersey) Law 1998**, the gateway statute
-  for investment business, trust-company business, fund-services
-  business, general-insurance-mediation business and money-services
-  business.
-- [**banking-business-law-1991.md**](banking-business-law-1991.md) —
-  the **Banking Business (Jersey) Law 1991** (deposit-taking).
-- [**collective-investment-funds-law-1988.md**](collective-investment-funds-law-1988.md)
-  — the **Collective Investment Funds (Jersey) Law 1988** (public funds).
-- [**insurance-business-law-1996.md**](insurance-business-law-1996.md)
-  — the **Insurance Business (Jersey) Law 1996**.
+A finance-industry business operating "in or from within Jersey"
+needs to know:
 
-### Operating under regulation
-- [**codes-of-practice.md**](codes-of-practice.md) — the JFSC's codes
-  of practice for each class of regulated business.
-- [**licensing.md**](licensing.md) — the fit-and-proper test;
-  principal persons; key persons; outsourcing.
-- [**enforcement.md**](enforcement.md) — civil financial penalties;
-  public statements; directions and restrictions on business.
+1. Which **regulated activity class** captures what it does —
+   banking business, investment business, fund services business
+   (FSB), trust company business (TCB), general insurance
+   mediation business (GIMB), money services business (MSB),
+   insurance underwriting (Category A / Category B permits).
+2. Which **principal regulatory Law** establishes that class —
+   typically the Financial Services (Jersey) Law 1998 (omnibus),
+   the Banking Business (Jersey) Law 1991, the Collective
+   Investment Funds (Jersey) Law 1988, or the Insurance Business
+   (Jersey) Law 1996.
+3. Which **JFSC Code of Practice** sets the conduct expectations
+   for that class.
+4. The **fit-and-proper** test for principal and key persons.
+5. The **AML/CFT** obligations, which sit across all classes — see
+   [`../aml-cft/index.md`](../aml-cft/index.md).
 
-For AML/CFT, which sits across all regulated businesses, see the
-[AML/CFT section](../aml-cft/index.md).
+## When you should be reading this section
 
+Land here if your question involves any of:
+
+| The question is about... | Read |
+|---|---|
+| What the JFSC actually does | [`jfsc.md`](jfsc.md) |
+| Which Law applies to a given financial-services activity | This section plus the relevant Law-specific file |
+| Becoming licensed (TCB / FSB / Investment Business / etc.) | [`licensing.md`](licensing.md) *(stub)* plus the Law-specific file |
+| Fit-and-proper requirements for a person | [`licensing.md`](licensing.md) *(stub)* |
+| Outsourcing of administration | [`licensing.md`](licensing.md) *(stub)* |
+| JFSC enforcement powers (penalties, public statements, directions) | [`enforcement.md`](enforcement.md) *(stub)* |
+| Codes of practice (TCB, FSB, Investment Business, Banking, Insurance) | [`codes-of-practice.md`](codes-of-practice.md) *(stub)* |
+| AML/CFT specifically | [`../aml-cft/index.md`](../aml-cft/index.md) |
+
+If your question is about a **specific fund or insurance vehicle**,
+the regulator's framework lives here but the **vehicle's
+substantive law** lives in [`../funds/index.md`](../funds/index.md),
+[`../insurance/index.md`](../insurance/index.md), or
+[`../banking/index.md`](../banking/index.md).
+
+If your question is about a **trust** administered by a
+JFSC-regulated TCB, the **substantive trust law** lives at
+[`../trusts/index.md`](../trusts/index.md); the **TCB regulatory
+framework** lives here.
+
+## Where to start as a cold reader
+
+1. **[`jfsc.md`](jfsc.md)** — the regulator. What it is, what it
+   does, who runs it, which Laws it administers, which registers
+   it maintains.
+2. **[`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md)**
+   *(stub)* — the omnibus regulatory statute. Defines investment
+   business, trust company business, fund services business,
+   general insurance mediation, money services business.
+3. The "Map of regulated activities" section below.
+
+## Map of regulated activities
+
+| Activity class | Principal Law | Examples |
+|---|---|---|
+| **Banking business** | [Banking Business (Jersey) Law 1991][bbl] | Deposit-taking by banks |
+| **Investment business** | [Financial Services (Jersey) Law 1998][fsjl] | Wealth management, dealing in investments, advising |
+| **Trust company business (TCB)** | [Financial Services (Jersey) Law 1998][fsjl] | Professional trustee, foundation administrator, company services provider |
+| **Fund services business (FSB)** | [Financial Services (Jersey) Law 1998][fsjl] | Fund administrator, manager, custodian, registrar |
+| **General insurance mediation business (GIMB)** | [Financial Services (Jersey) Law 1998][fsjl] | Insurance broking, intermediation |
+| **Money services business (MSB)** | [Financial Services (Jersey) Law 1998][fsjl] | Money transmission, currency exchange |
+| **Insurance underwriting** | [Insurance Business (Jersey) Law 1996][insl] | Category A and Category B permits; captives |
+| **Collective Investment Funds (public funds)** | [Collective Investment Funds (Jersey) Law 1988][cif] | Public funds and their service providers |
+| **Alternative Investment Funds (AIFs)** | [Alternative Investment Funds (Jersey) Regulations 2012][aif] | AIFs and AIFMs |
+| **Virtual Asset Service Providers (VASPs)** | Various, with JFSC registration | Crypto / virtual-asset businesses |
+
+## Conceptual map — themes
+
+### Theme 1 — The regulator
+
+- **[`jfsc.md`](jfsc.md)** — JFSC structure, functions, registers.
+- [`jfsc-law-1998.md`](jfsc-law-1998.md) *(stub)* — the
+  constituting statute (Financial Services Commission (Jersey) Law
+  1998).
+
+### Theme 2 — Principal regulatory Laws
+
+- [`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md)
+  *(stub)* — Investment / TCB / FSB / GIMB / MSB gateway statute.
+- [`banking-business-law-1991.md`](banking-business-law-1991.md)
+  *(stub)* — deposit-taking.
+- [`collective-investment-funds-law-1988.md`](collective-investment-funds-law-1988.md)
+  *(stub)* — public funds.
+- [`insurance-business-law-1996.md`](insurance-business-law-1996.md)
+  *(stub)* — insurance underwriting.
+
+### Theme 3 — Operating under regulation
+
+- [`codes-of-practice.md`](codes-of-practice.md) *(stub)* —
+  conduct standards for each regulated class.
+- [`licensing.md`](licensing.md) *(stub)* — fit-and-proper,
+  principal persons, key persons, outsourcing.
+- [`enforcement.md`](enforcement.md) *(stub)* — civil financial
+  penalties, public statements, directions.
+
+## Cross-section navigation by tag
+
+- **`jfsc`** — regulator-driven topics, this section plus
+  [`../registries/index.md`](../registries/index.md).
+- **`tcb`** — trust company business, this section plus
+  [`../trusts/index.md`](../trusts/index.md) and the
+  [`../use-cases/trust-officer/index.md`](../use-cases/trust-officer/index.md)
+  persona.
+- **`fund-services-business`** — FSB class, this section plus
+  [`../funds/index.md`](../funds/index.md).
+- **`investment-business`** — investment business class, this
+  section.
+- **`banking-business`** — banking class, this section plus
+  [`../banking/index.md`](../banking/index.md).
+- **`insurance-business`** — insurance class, this section plus
+  [`../insurance/index.md`](../insurance/index.md).
+- **`aml-handbook`**, **`fit-and-proper`**, **`outsourcing`** —
+  conduct themes.
+- **`sanctions`**, **`sar`** — AML/CFT themes, in
+  [`../aml-cft/index.md`](../aml-cft/index.md).
+
+[fsclaw]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/13.250.aspx
+[fsjl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/13.225.aspx
+[bbl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/13.075.aspx
+[cif]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/13.100.aspx
+[aif]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/17.245.51.aspx
+[insl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/13.425.aspx
 [jfsc-legis]: https://www.jerseyfsc.org/industry/legislation/all-legislation/

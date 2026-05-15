@@ -3,7 +3,7 @@ title: Legal System — Jersey
 jurisdiction: jersey
 category: legal-system
 status: draft
-last_verified: 2026-05-14
+last_verified: 2026-05-15
 tags:
   - legal-system
   - jersey
@@ -21,71 +21,147 @@ see_also:
   - ./legal-profession.md
   - ./customary-law.md
   - ../government/index.md
+  - ../trusts/article-51-directions.md
 ---
 
 # Legal System — Jersey
 
-Jersey has a **mixed legal system**: Norman customary law in origin,
-heavily supplemented by statute (Laws of the States) and by case law
-from the Royal Court and the Court of Appeal, with persuasive but not
-binding influence from English common law. The system is administered
-domestically by the **[Royal Court](royal-court.md)** and the
-**[Jersey Court of Appeal](court-of-appeal.md)**; final appeal lies to
-the **Judicial Committee of the Privy Council** in London.
-([gov.je — Bailiff's Chambers][bc])
+## What this section is about
 
-## Files in this section
+This section covers **Jersey's legal system** — what counts as law
+in Jersey, who decides disputes, how courts are organised, who
+practices law, and how appeals work.
 
-- [**sources-of-law.md**](sources-of-law.md) — what the Royal Court
-  treats as law, in what order: statute (Laws of the States and
-  Orders/Regulations made under them), the customary law of Jersey
-  preserved in **La Coutume Reformée**, case law, and the persuasive
-  use of English common-law authorities. *(Stub.)*
-- [**customary-law.md**](customary-law.md) — Norman customary law as
-  the historical foundation; *droit commun*; modern survivals in
-  property, succession and inheritance law. *(Stub.)*
-- [**royal-court.md**](royal-court.md) — the Royal Court: its
-  divisions (Samedi, Inferior Number, Superior Number) and its civil,
-  criminal and probate jurisdictions.
-- [**court-of-appeal.md**](court-of-appeal.md) — the Jersey Court of
-  Appeal. *(Stub.)*
-- [**privy-council.md**](privy-council.md) — appeals to the Judicial
-  Committee of the Privy Council. *(Stub.)*
-- [**bailiff.md**](bailiff.md) — the Bailiff and Deputy Bailiff,
-  presiding over both the Royal Court and the States Assembly.
-  *(Stub.)*
-- [**jurats.md**](jurats.md) — the Jurats: lay judges of fact in the
-  Royal Court. *(Stub.)*
-- [**judicial-greffe.md**](judicial-greffe.md) — the court office /
-  registry, custodian of public legal records. *(Stub.)*
-- [**legal-profession.md**](legal-profession.md) — Advocates and
-  Solicitors of the Royal Court; admission requirements; relationship
-  with English and Scottish qualifications. *(Stub.)*
+Jersey has a **mixed legal system**: **Norman customary law** in
+origin, **heavily supplemented by statute** (Laws of the States),
+**case law** from the Royal Court and the Court of Appeal, and the
+**persuasive but not binding** influence of English common law.
+This means an agent answering a Jersey legal question must:
+
+1. Look first at any directly applicable **Jersey statute**.
+2. Then at Jersey **case law** of the Royal Court and Court of
+   Appeal, plus binding Privy Council decisions in Jersey appeals.
+3. Then at **Jersey customary law** where the statute is silent
+   (most common in property, succession, and certain procedural
+   matters).
+4. Only then at **English authorities** as persuasive material —
+   and consciously check for Jersey divergences (notably the
+   statutory mistake regime at Articles 47B–H of the Trusts Law,
+   which is wider than English *Pitt v Holt*).
+
+Cases come up in either the **Magistrate's Court** (minor matters)
+or the **Royal Court** (everything else). Appeals from the Royal
+Court go to the **Jersey Court of Appeal**, and from there (with
+leave) to the **Judicial Committee of the Privy Council** in
+London. ([gov.je — Bailiff's Chambers][bc])
+
+## When you should be reading this section
+
+Land here if your question involves any of:
+
+| The question is about... | Read |
+|---|---|
+| What "law" actually means in Jersey (statute vs customary vs case law vs English) | [`sources-of-law.md`](sources-of-law.md) *(stub)* |
+| Royal Court procedure — Samedi, Inferior Number, Superior Number | [`royal-court.md`](royal-court.md) |
+| Appeals to the Court of Appeal or Privy Council | [`court-of-appeal.md`](court-of-appeal.md) *(stub)*, [`privy-council.md`](privy-council.md) *(stub)* |
+| Norman customary law — what survives, where it bites | [`customary-law.md`](customary-law.md) *(stub)* |
+| Who the Bailiff, Deputy Bailiff, Jurats are | [`bailiff.md`](bailiff.md) *(stub)*, [`jurats.md`](jurats.md) *(stub)* |
+| Engaging a Jersey lawyer — Advocate vs Solicitor | [`legal-profession.md`](legal-profession.md) *(stub)* |
+| Bringing an Article 51 directions application (the most common civil application) | [`royal-court.md`](royal-court.md) plus [`../trusts/article-51-directions.md`](../trusts/article-51-directions.md) |
+
+If your question is about a **specific trust application** (Article
+51 directions, Article 47 set-aside, blessing of momentous
+decisions, beneficiary disclosure), the substantive law lives in
+[`../trusts/`](../trusts/index.md); the **forum and procedure**
+live here.
+
+## Where to start as a cold reader
+
+1. **[`royal-court.md`](royal-court.md)** — the principal civil
+   and criminal court. Understand its three "Numbers" (Samedi for
+   single-judge civil; Inferior Number for trials and sentences up
+   to 4 years; Superior Number for the most serious cases) and the
+   division between judges of law (Bailiff / Deputy Bailiff) and
+   judges of fact (Jurats).
+2. **[`sources-of-law.md`](sources-of-law.md)** *(stub)* — the
+   hierarchy of authority a Jersey court applies.
+3. The "how the system fits together" section below — the **appeal
+   pipeline** from Magistrate's Court to Privy Council in five
+   sentences.
 
 ## How the system fits together
 
 In stylised form:
 
 1. **Statute.** The States Assembly enacts a Law (Projet de Loi),
-   sanctioned by Order in Council, registered by the Royal Court. See
-   [government/states-assembly.md](../government/states-assembly.md).
-2. **Application.** Disputes are heard in the Magistrate's Court (for
-   minor matters) or the **Royal Court**. The Royal Court applies
-   Jersey statute, customary law, and binding case law.
-3. **Appeal within Jersey.** Appeals from the Royal Court go to the
-   **Jersey Court of Appeal**, a separate court whose judges are
-   senior English, Welsh, Scottish and Northern Irish jurists.
+   sanctioned by Order in Council, registered by the Royal Court.
+   See [`../government/states-assembly.md`](../government/states-assembly.md).
+2. **Application.** Disputes are heard in the Magistrate's Court
+   (for minor matters) or the **[Royal Court](royal-court.md)**.
+   The Royal Court applies Jersey statute, customary law, and
+   binding case law.
+3. **Appeal within Jersey.** Appeals from the Royal Court go to
+   the **[Jersey Court of Appeal](court-of-appeal.md)** *(stub)*,
+   a separate court whose judges are senior English, Welsh,
+   Scottish and Northern Irish jurists.
 4. **Final appeal.** From the Court of Appeal, appeal lies (with
-   leave) to the **Judicial Committee of the Privy Council** —
-   formally the King in Council, sitting at Downing Street.
+   leave) to the **[Judicial Committee of the Privy Council](privy-council.md)**
+   *(stub)* — formally the King in Council, sitting at Downing
+   Street.
 
-In practical terms, the Privy Council's jurisprudence in Jersey
-appeals (along with the Jersey Court of Appeal's own decisions) is
-treated by the Royal Court as binding. English Supreme Court and
-Court of Appeal decisions are highly persuasive but not binding,
-particularly in areas where Jersey law has consciously diverged
-(notably the Article 47 jurisdiction in trust law — see
-[trusts/article-47-set-aside.md](../trusts/article-47-set-aside.md)
-once written).
+In practical terms, **Privy Council jurisprudence in Jersey
+appeals** (along with **Jersey Court of Appeal** decisions) is
+treated by the Royal Court as **binding**. **English** Supreme
+Court and Court of Appeal decisions are **highly persuasive but
+not binding** — particularly where Jersey has consciously diverged.
+
+## Conceptual map — themes
+
+### Theme 1 — What counts as law
+
+- [`sources-of-law.md`](sources-of-law.md) *(stub)* — statute,
+  customary law, case law, English authority as persuasive.
+- [`customary-law.md`](customary-law.md) *(stub)* — Norman
+  customary law origins; *droit commun*; modern survivals in
+  property and succession.
+
+### Theme 2 — The Royal Court
+
+- **[`royal-court.md`](royal-court.md)** — divisions (Samedi,
+  Inferior Number, Superior Number); civil, criminal, probate
+  jurisdictions.
+- [`bailiff.md`](bailiff.md) *(stub)* — the presiding officer,
+  judge of law.
+- [`jurats.md`](jurats.md) *(stub)* — lay judges of fact, life
+  tenure until age 72.
+- [`judicial-greffe.md`](judicial-greffe.md) *(stub)* — the court
+  registry / office.
+
+### Theme 3 — Appeals
+
+- [`court-of-appeal.md`](court-of-appeal.md) *(stub)* — the
+  Jersey Court of Appeal.
+- [`privy-council.md`](privy-council.md) *(stub)* — final appeal
+  to the JCPC.
+
+### Theme 4 — The legal profession
+
+- [`legal-profession.md`](legal-profession.md) *(stub)* —
+  Advocates and Solicitors of the Royal Court; admission rules;
+  relationship with English / Scottish bars.
+
+## Cross-section navigation by tag
+
+Tags an agent can follow:
+
+- **`royal-court`** — the principal forum, this section.
+- **`court-application`**, **`blessing`**, **`beddoe`** — Royal
+  Court procedural applications, in this section plus
+  [`../trusts/article-51-directions.md`](../trusts/article-51-directions.md).
+- **`conflict-of-laws`**, **`foreign-judgment`** — cross-border
+  questions, in this section plus
+  [`../trusts/firewall.md`](../trusts/firewall.md).
+- **`customary-law`** — Norman roots, in this section plus
+  property-law contexts.
 
 [bc]: https://www.gov.je/Government/NonexecLegal/BailiffsChambers/pages/index.aspx

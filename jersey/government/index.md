@@ -3,7 +3,7 @@ title: Government — Jersey
 jurisdiction: jersey
 category: government
 status: draft
-last_verified: 2026-05-14
+last_verified: 2026-05-15
 tags:
   - government
   - jersey
@@ -24,56 +24,126 @@ see_also:
 
 # Government — Jersey
 
-Jersey is a **British Crown Dependency**: a self-governing territory whose
-constitutional link to the British Crown predates, and is separate from,
-its modern relationship with the United Kingdom Parliament. Internally,
-Jersey legislates for itself, taxes itself, and runs its own courts; the
-UK Government retains formal responsibility for defence and (to a more
-limited extent) foreign affairs. ([gov.je][gov-rel])
+## What this section is about
 
-Files in this section:
+This section covers **Jersey's constitutional and governmental
+arrangements** — what kind of state it is, how it makes law, who
+its institutions are, and how it relates to the United Kingdom and
+the European Union.
 
-- [**crown-dependency.md**](crown-dependency.md) — the constitutional
-  position. What "Crown Dependency" means, the relationship with the UK
-  Parliament and Government, the international-identity framework, the
-  relationship with the EU before and after Brexit, defence and foreign
-  affairs.
-- [**states-assembly.md**](states-assembly.md) — the legislature.
-  Composition (Deputies and Connétables, with Senators returning at the
-  2026 election), non-elected members, the Bailiff as President, how
-  Bills become Laws (with Royal Sanction by Order in Council).
-- [**council-of-ministers.md**](council-of-ministers.md) — the executive.
-  The Chief Minister and ministerial portfolios; the move from a
-  committee system to a ministerial system in 2005.
-- [**bailiff.md**](bailiff.md) — the Bailiff and Deputy Bailiff. The
-  unusual dual role as President of the Royal Court and President of
-  the States Assembly. *(Stub — to be written.)*
-- [**lieutenant-governor.md**](lieutenant-governor.md) — the King's
-  personal representative in Jersey. Ceremonial role; the channel
-  through which the Crown's powers in defence and foreign affairs are
-  exercised. *(Stub — to be written.)*
-- [**parishes.md**](parishes.md) — the twelve civil parishes, the
-  Connétables, the parish assemblies, and the honorary police.
-  *(Stub — to be written.)*
+Jersey is a **British Crown Dependency**, not part of the United
+Kingdom and never part of the European Union. The King is head of
+state; the UK Government carries formal responsibility for defence
+and (to a more limited extent) foreign affairs. Internally Jersey
+**legislates for itself**, **taxes itself**, **runs its own
+courts**, and **regulates its own financial services**. Everything
+else in this corpus — the trust law, the company law, the tax
+regime, the JFSC's regulatory framework — exists because Jersey
+has the constitutional capacity to make its own law. This section
+explains that constitutional foundation.
+
+([gov.je — relationship with the UK and EU][gov-rel])
+
+## When you should be reading this section
+
+Land here if your question involves any of:
+
+| The question is about... | Read |
+|---|---|
+| Whether Jersey is "part of the UK" or "part of the EU" | [`crown-dependency.md`](crown-dependency.md) (short answer to both: no) |
+| Who actually makes Jersey law, and how | [`states-assembly.md`](states-assembly.md) plus this index's "how Jersey legislates" section |
+| Who runs Jersey's executive branch | [`council-of-ministers.md`](council-of-ministers.md) *(stub)* |
+| The Bailiff's unusual dual judicial / parliamentary role | [`bailiff.md`](bailiff.md) *(stub)* and [`../legal-system/royal-court.md`](../legal-system/royal-court.md) |
+| The Lieutenant-Governor's role | [`lieutenant-governor.md`](lieutenant-governor.md) *(stub)* |
+| The 12 parishes and the Connétables | [`parishes.md`](parishes.md) *(stub)* |
+| What happened to Jersey's EU relationship post-Brexit | [`crown-dependency.md`](crown-dependency.md) and [`../international/eu-relationship.md`](../international/eu-relationship.md) *(stub)* |
+| Why Jersey law looks different from English law in places | This section plus [`../legal-system/sources-of-law.md`](../legal-system/sources-of-law.md) *(stub)* |
+
+## Where to start as a cold reader
+
+If you have no prior context, read in this order:
+
+1. **[`crown-dependency.md`](crown-dependency.md)** — the
+   constitutional position, the UK relationship, the post-Brexit
+   EU position, and what the UK does and does not do for Jersey.
+   This is the foundation for understanding everything else in the
+   corpus.
+2. **[`states-assembly.md`](states-assembly.md)** — the
+   legislature. 49 members for the current term (37 Deputies + 12
+   Connétables); Senators returning at the 2026 election. Bills
+   become Laws via Royal Sanction by Order in Council, not direct
+   Royal Assent.
+3. The "how Jersey legislates" section below — the **legislative
+   process** in five sentences, which an agent answering most
+   legal-research questions needs to know.
+
+## Conceptual map — themes
+
+### Theme 1 — Constitutional position
+
+- **[`crown-dependency.md`](crown-dependency.md)** — Crown
+  Dependency status; UK relationship; EU relationship; defence /
+  foreign affairs; international identity. The cornerstone file.
+
+### Theme 2 — Institutions
+
+- [`states-assembly.md`](states-assembly.md) — legislature.
+- [`council-of-ministers.md`](council-of-ministers.md) *(stub)* —
+  executive (ministerial system since 2005).
+- [`bailiff.md`](bailiff.md) *(stub)* — Bailiff and Deputy
+  Bailiff (dual judicial / parliamentary role).
+- [`lieutenant-governor.md`](lieutenant-governor.md) *(stub)* —
+  the King's representative in Jersey.
+
+### Theme 3 — Local government
+
+- [`parishes.md`](parishes.md) *(stub)* — the 12 civil parishes
+  (Grouville, St Brelade, St Clement, St Helier, St John, St
+  Lawrence, St Martin, St Mary, St Ouen, St Peter, St Saviour,
+  Trinity); Connétables; parish assemblies; honorary police.
 
 ## How Jersey legislates
 
-A short version, with the long version in the individual files:
+The mechanics:
 
-1. The **States Assembly** debates and adopts a **Projet de Loi** (Bill).
-2. The adopted Law is forwarded for **Royal Assent** by the King in
-   Council. Assent is given by **Order in Council** of the Privy Council.
-3. Once registered by the Royal Court (the customary act of *enregistrement*),
-   the Law enters into force on its commencement date.
-4. Statutory instruments (Orders and Regulations) made under primary Laws
-   are made by the Council of Ministers or by individual Ministers and
-   do not need Royal Assent.
+1. The **[States Assembly](states-assembly.md)** debates and adopts a
+   **Projet de Loi** (Bill).
+2. The adopted Law is forwarded for **Royal Sanction** by the King
+   in Council. Sanction is given by **Order in Council** of the
+   Privy Council.
+3. Once registered by the Royal Court (the customary act of
+   *enregistrement*), the Law enters into force on its
+   commencement date.
+4. Statutory instruments (Orders and Regulations) made under
+   primary Laws are made by the Council of Ministers or by
+   individual Ministers and do **not** need Royal Assent.
 
-This is qualitatively different from the UK, where Royal Assent is given
-by the monarch directly under Acts of Parliament. The Privy Council route
-preserves the formal constitutional fiction that Jersey is the King's, not
-Parliament's, and underpins the convention that the UK Parliament does
-not legislate for Jersey without Jersey's consent. See
-[crown-dependency.md](crown-dependency.md) for the constitutional sources.
+**Why this matters:** The Privy Council route preserves the
+formal constitutional fiction that Jersey legislates under the
+**Crown**, not under the UK Parliament. It underpins the
+convention that the UK Parliament does not legislate for Jersey
+without Jersey's consent. See
+[`crown-dependency.md`](crown-dependency.md) for the
+constitutional sources.
+
+The route differs qualitatively from the UK, where Royal Assent is
+given by the monarch directly under Acts of Parliament. The
+**identity of the assenting authority** is different in Jersey
+even where the form looks similar.
+
+## Cross-section navigation by tag
+
+Tags an agent can follow into related parts of the corpus (see
+[`../../TAGS.md`](../../TAGS.md)):
+
+- **`crown-dependency`** — constitutional status, primarily in
+  this section.
+- **`uk-relationship`**, **`eu-relationship`** — bilateral
+  relationships, in this section plus
+  [`../international/index.md`](../international/index.md).
+- **`royal-court`** — the Bailiff bridges to the
+  [legal-system section](../legal-system/index.md).
+- **`legal-system`** — the institutional context for the legal
+  system at [`../legal-system/index.md`](../legal-system/index.md).
 
 [gov-rel]: https://www.gov.je/Government/Departments/JerseyWorld/pages/relationshipeuanduk.aspx
