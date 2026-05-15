@@ -645,3 +645,16 @@ content:
 Tax section now has substantive coverage of the headline regimes
 and key supporting concepts. Remaining tax stubs primarily relate
 to Income Tax Law 1961 article-by-article statute wiki (next batch).
+
+## 2026-05-15 — International section deep files (4 files)
+
+Added deep concept files to the international section:
+
+- `crs.md` — Common Reporting Standard (multilateral automatic
+  exchange)
+- `fatca.md` — FATCA (US-specific automatic exchange via Model 1 IGA)
+- `dtas.md` — Jersey's bilateral DTA network (UK most important)
+- `tieas.md` — TIEA network for info-exchange-on-request
+
+These were referenced as stubs from tax/index.md and tax/
+international-tax.md; now substantively populated.
