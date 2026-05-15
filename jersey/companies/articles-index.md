@@ -353,9 +353,28 @@ See [`mergers.md`](mergers.md) for the Part 18B overview.
 
 ## Part 18C — Continuance
 
+See [`continuance.md`](continuance.md) for the Part 18C overview.
+
 | Article | Heading | Deep file |
 |---|---|---|
-| 127H — 127Y | Continuance / redomiciliation in and out of Jersey | *(planned: continuance.md cluster)* |
+| 127H | Bodies corporate eligible for continuance | [continuance-eligible-bodies.md](continuance-eligible-bodies.md) |
+| 127I | Restrictions on continuance | [continuance-restrictions.md](continuance-restrictions.md) |
+| 127J | Security for Commission's expenses under this Part | [continuance-security.md](continuance-security.md) |
+| 127K | Application to Commission for continuance within Jersey | [continuance-inbound-application.md](continuance-inbound-application.md) |
+| 127L | Articles of continuance | [continuance-articles.md](continuance-articles.md) |
+| 127M | Proposed name | [continuance-name.md](continuance-name.md) |
+| 127N | Determination of application to Commission for continuance within Jersey | [continuance-inbound-determination.md](continuance-inbound-determination.md) |
+| 127O | Issue of certificate of continuance within Jersey | [continuance-inbound-certificate.md](continuance-inbound-certificate.md) |
+| 127P | Effect of issue of certificate of continuance within Jersey | [continuance-inbound-effect.md](continuance-inbound-effect.md) |
+| 127Q | Approval by company and members of proposal for continuance overseas | [continuance-outbound-approval.md](continuance-outbound-approval.md) |
+| 127R | Notice to creditors of application for continuance overseas | [continuance-outbound-creditor-notice.md](continuance-outbound-creditor-notice.md) |
+| 127S | Objections by members to continuance overseas | [continuance-outbound-objection.md](continuance-outbound-objection.md) |
+| 127T | Application to Commission for authorization to seek continuance overseas | [continuance-outbound-application.md](continuance-outbound-application.md) |
+| 127U | Determination of application to Commission for authorization to seek continuance overseas | [continuance-outbound-determination.md](continuance-outbound-determination.md) |
+| 127V | Effect of continuance overseas | [continuance-outbound-effect.md](continuance-outbound-effect.md) |
+| 127W | Statements of solvency in respect of continuance | [continuance-solvency.md](continuance-solvency.md) |
+| 127X | Provisions relating to continuance | [continuance-supplementary.md](continuance-supplementary.md) |
+| 127Y | Offences relating to continuance | [continuance-offences.md](continuance-offences.md) |
 
 ## Part 18D — Cell Companies
 

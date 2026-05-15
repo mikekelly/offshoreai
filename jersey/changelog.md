@@ -418,3 +418,30 @@ Part 18B statutory merger regime (Articles 127A–127GA):
   demerger).
 
 Articles index updated.
+
+## 2026-05-15 — Companies Law Part 18C (Continuance / Redomiciliation)
+
+Added 18 deep concept files plus a Part overview, covering the
+Part 18C continuance regime (Articles 127H–127Y):
+
+- Eligibility & gating: `continuance-eligible-bodies.md`,
+  `continuance-restrictions.md`, `continuance-security.md`
+- Inbound (foreign body → Jersey company):
+  `continuance-inbound-application.md`, `continuance-articles.md`,
+  `continuance-name.md`,
+  `continuance-inbound-determination.md`,
+  `continuance-inbound-certificate.md`,
+  `continuance-inbound-effect.md`
+- Outbound (Jersey company → foreign body):
+  `continuance-outbound-approval.md`,
+  `continuance-outbound-creditor-notice.md`,
+  `continuance-outbound-objection.md`,
+  `continuance-outbound-application.md`,
+  `continuance-outbound-determination.md`,
+  `continuance-outbound-effect.md`
+- Cross-cutting: `continuance-solvency.md`,
+  `continuance-supplementary.md`, `continuance-offences.md`
+- Overview: `continuance.md` (inbound/outbound flow comparison,
+  decision table for redomiciliation tools).
+
+Articles index updated.
