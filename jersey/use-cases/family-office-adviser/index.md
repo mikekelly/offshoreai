@@ -1,0 +1,118 @@
+---
+title: Family Office / Private Client Adviser — Use Cases
+jurisdiction: jersey
+category: use-cases
+persona: family-office-adviser
+status: draft
+last_verified: 2026-05-15
+tags:
+  - jersey
+  - family-office
+  - private-client
+  - hnw
+  - persona-family-office
+  - use-case
+  - index
+  - meta
+see_also:
+  - ../index.md
+  - ../trust-officer/index.md
+  - ../../trusts/index.md
+  - ../../foundations/index.md
+  - ../../tax/index.md
+  - ../../immigration-residency/index.md
+---
+
+# Family Office / Private Client Adviser — Use Cases
+
+## Who this section is for
+
+You are an **adviser to a high-net-worth or ultra-high-net-worth
+family** — placing or relocating wealth through Jersey
+structures. You may be:
+
+- A **family-office principal** (typically with mixed in-house
+  and outsourced functions);
+- A **private-client lawyer or tax adviser** (often UK / US /
+  EU-qualified, advising on a Jersey-structure dimension of a
+  broader client plan);
+- A **wealth manager / banker** putting Jersey structures into
+  client plans.
+
+Your day involves some combination of: planning Jersey-vehicle
+structures (trusts, foundations, holding companies, PTC
+arrangements); navigating residency / migration questions (HVR);
+coordinating with Jersey trust companies; handling tax
+classifications across the family's relevant jurisdictions;
+managing succession and intergenerational transfer.
+
+## Canonical questions
+
+### Vehicle selection
+
+- **Trust or foundation — how to choose?** *(planned)*
+- **When is a Private Trust Company (PTC) right?** *(planned)*
+- **Family-office governance overlay — foundation, purpose
+  trust, or holding company?** *(planned)*
+- **Underlying portfolio company — Jersey LLC equivalent vs
+  partnership vs company?** *(planned)*
+
+### Tax characterisation
+
+- **How will my structure be characterised in [home country] for
+  tax purposes?** *(planned)*
+- **UK IHT exposure of a Jersey trust settled by a UK-domiciled
+  settlor.** *(planned)*
+- **US grantor-trust treatment of Jersey vehicles.** *(planned)*
+- **CRS / FATCA reporting on family members.** *(planned)*
+
+### Migration / HVR
+
+- **Should the family member move to Jersey under HVR?**
+  *(planned)*
+- **Tax planning around HVR threshold.** *(planned)*
+- **Jersey property acquisition by HVR family.** *(planned)*
+
+### Succession
+
+- **Jersey succession planning — wills and forced heirship.**
+  *(planned)*
+- **Intergenerational transfer through Jersey vehicles.**
+  *(planned)*
+- **Spouse and minor-children planning.** *(planned)*
+
+### Asset protection
+
+- **Article 9 firewall and its operation.** *(planned)*
+- **Reserved powers under Article 9A.** *(planned)*
+- **Pre-divorce / pre-litigation Jersey-trust planning.**
+  *(planned)*
+
+### Charitable / philanthropic
+
+- **Family philanthropic vehicle — Jersey foundation or
+  charitable trust?** *(planned)*
+- **Granting structures vs operating-charity structures.**
+  *(planned)*
+
+### Operational
+
+- **Choosing a Jersey trustee.** *(planned)*
+- **Working with a Jersey trust officer.** *(planned)*
+- **What a private-client lawyer in [home jurisdiction] needs to
+  know about Jersey trustees and foundations.** *(planned)*
+
+## Cross-references
+
+- [`../trust-officer/index.md`](../trust-officer/index.md) — the
+  counterpart persona on the Jersey-trustee side.
+- [`../../trusts/index.md`](../../trusts/index.md)
+- [`../../foundations/index.md`](../../foundations/index.md)
+- [`../../tax/index.md`](../../tax/index.md)
+- [`../../immigration-residency/high-value-residency.md`](../../immigration-residency/high-value-residency.md)
+
+## Status
+
+This is the **persona index** establishing the canonical
+questions. Deep files for individual questions will be added in
+successive batches.

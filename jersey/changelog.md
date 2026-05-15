@@ -737,3 +737,21 @@ residential-status-categories.md, employment-status-categories.md,
 high-value-residency.md, route-to-entitled.md.
 
 All three sections substantively populated.
+
+## 2026-05-15 — Use-case persona index files (7 new personas)
+
+Created persona index files for all 7 planned use-case personas:
+
+- `fund-counsel/index.md` — Fund counsel / GP persona
+- `compliance-mlro/index.md` — Compliance officer / MLRO persona
+- `family-office-adviser/index.md` — Family office / private client adviser
+- `founder-entrepreneur/index.md` — Founder / entrepreneur
+- `international-lawyer/index.md` — Lawyer qualified outside Jersey
+- `royal-court-litigator/index.md` — Royal Court Advocate / Solicitor
+- `journalist-ngo-academic/index.md` — Public-interest researcher
+
+Each persona index sets out the canonical questions for that role
+with links into the topic graph; deep Q&A files to follow as the
+use-case section is built out.
+
+Use-cases index updated to reflect new persona directories.

@@ -72,13 +72,13 @@ authority needed to cite.
 | Persona | Directory | What this persona is | Status |
 |---|---|---|---|
 | **Trust / fiduciary officer** | [`trust-officer/`](trust-officer/index.md) | Officer at a JFSC-regulated **trust-company business (TCB)**, administering Jersey trusts as professional trustee. The daily-driver user. | **In progress** — ~30 canonical questions listed; 3 written to depth. |
-| Fund counsel / GP | *(planned)* | Counsel or principal of a Jersey **fund vehicle** (JPF, Expert Fund, Listed Fund, public fund) or its general partner. | Not started |
-| Family office / private-client adviser | *(planned)* | Adviser placing or relocating wealth through Jersey structures (often for an HNW / UHNW client). | Not started |
-| English / international lawyer | *(planned)* | Lawyer with primary qualification outside Jersey, running a matter that has a Jersey-law element (typical for cross-border family litigation, contentious-trust disputes, M&A involving Jersey TopCos). | Not started |
-| Founder / entrepreneur | *(planned)* | Owner-operator placing a Jersey **TopCo** above an operating business, or using a Jersey vehicle for IP holding, pre-IPO, or capital raising. | Not started |
-| Compliance / MLRO | *(planned)* | Money-laundering reporting officer or compliance officer at a Jersey regulated business, dealing with **AML/CFT**, sanctions, AEoI. | Not started |
-| Journalist / NGO / academic | *(planned)* | Public-interest researcher — registers, statistics, regulatory history, transparency. | Not started |
-| Royal Court litigator | *(planned)* | Advocate or solicitor running civil litigation in the Royal Court — procedural questions, leading authorities, costs. | Not started |
+| Fund counsel / GP | [`fund-counsel/`](fund-counsel/index.md) | Counsel or principal of a Jersey **fund vehicle** (JPF, Expert Fund, Listed Fund, public fund) or its general partner. | Persona index written; deep files planned. |
+| Family office / private-client adviser | [`family-office-adviser/`](family-office-adviser/index.md) | Adviser placing or relocating wealth through Jersey structures (often for an HNW / UHNW client). | Persona index written. |
+| English / international lawyer | [`international-lawyer/`](international-lawyer/index.md) | Lawyer with primary qualification outside Jersey, running a matter that has a Jersey-law element (typical for cross-border family litigation, contentious-trust disputes, M&A involving Jersey TopCos). | Persona index written. |
+| Founder / entrepreneur | [`founder-entrepreneur/`](founder-entrepreneur/index.md) | Owner-operator placing a Jersey **TopCo** above an operating business, or using a Jersey vehicle for IP holding, pre-IPO, or capital raising. | Persona index written. |
+| Compliance / MLRO | [`compliance-mlro/`](compliance-mlro/index.md) | Money-laundering reporting officer or compliance officer at a Jersey regulated business, dealing with **AML/CFT**, sanctions, AEoI. | Persona index written. |
+| Journalist / NGO / academic | [`journalist-ngo-academic/`](journalist-ngo-academic/index.md) | Public-interest researcher — registers, statistics, regulatory history, transparency. | Persona index written. |
+| Royal Court litigator | [`royal-court-litigator/`](royal-court-litigator/index.md) | Advocate or solicitor running civil litigation in the Royal Court — procedural questions, leading authorities, costs. | Persona index written. |
 
 ## How a use-case file is structured
 
