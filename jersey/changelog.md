@@ -205,6 +205,19 @@ For full diff history, see the git log.
   markers for Articles 4–17D). Articles 18–224 remain (~250 active
   provisions, est. 10–12 further turns).
 
+- **Companies Law Articles 18–33 added** (Parts 5, 6, 7) — 16 new
+  deep files: corporate capacity with ultra vires abolished
+  (Art 18), no implied notice (Art 19), form of contracts (Art 20),
+  pre-incorporation contracts (Art 21), seals (Arts 22–24);
+  member definition with the trust/nominee carve-out (Art 25),
+  cross-holdings prohibited with pre-1992 grandfather and
+  fiduciary exception (Art 26), minimum two members for public
+  companies with personal-liability rule (Art 27), no minors
+  (Art 28); prospectuses with the qualified-investor and
+  small-scale carve-outs (Art 29), civil compensation (Art 30),
+  exemption defences (Art 31), recovery as ordinary debt
+  (Art 32), and criminal liability (Art 33).
+
 ## Conventions for entries
 
 Each entry should record:

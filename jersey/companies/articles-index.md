@@ -89,32 +89,32 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 18 | Capacity of company | *(planned: corporate-capacity.md)* |
-| 19 | No implied notice of public records | *(planned: no-implied-notice.md)* |
-| 20 | Form of contracts | *(planned: form-of-contracts.md)* |
-| 21 | Transactions entered into prior to corporate existence | *(planned: pre-incorporation-contracts.md)* |
-| 22 | Company seals | *(planned: company-seals.md)* |
-| 23 | Official seal for use abroad | *(planned: official-seal-abroad.md)* |
-| 24 | Official seal for securities | *(planned: official-seal-securities.md)* |
+| 18 | Capacity of company | [corporate-capacity.md](corporate-capacity.md) |
+| 19 | No implied notice of public records | [no-implied-notice.md](no-implied-notice.md) |
+| 20 | Form of contracts | [form-of-contracts.md](form-of-contracts.md) |
+| 21 | Transactions entered into prior to corporate existence | [pre-incorporation-contracts.md](pre-incorporation-contracts.md) |
+| 22 | Company seals | [company-seals.md](company-seals.md) |
+| 23 | Official seal for use abroad | [official-seal-abroad.md](official-seal-abroad.md) |
+| 24 | Official seal for securities | [official-seal-securities.md](official-seal-securities.md) |
 
 ## Part 6 — Membership and Shares
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 25 | Definition of "member" | *(planned: definition-of-member.md)* |
-| 26 | Membership of holding company | *(planned: holding-company-membership.md)* |
-| 27 | Minimum membership for carrying on business | *(planned: minimum-membership.md)* |
-| 28 | Prohibition of minors etc. | *(planned: prohibition-minors.md)* |
+| 25 | Definition of "member" | [definition-of-member.md](definition-of-member.md) |
+| 26 | Membership of holding company | [holding-company-membership.md](holding-company-membership.md) |
+| 27 | Minimum membership for carrying on business | [minimum-membership.md](minimum-membership.md) |
+| 28 | Prohibition of minors etc. | [prohibition-minors.md](prohibition-minors.md) |
 
 ## Part 7 — Prospectuses
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 29 | Prospectuses | *(planned: prospectuses.md)* |
-| 30 | Compensation for misleading statements in prospectus | *(planned: prospectus-compensation.md)* |
-| 31 | Exemption from liability to pay compensation | *(planned: prospectus-exemption.md)* |
-| 32 | Recovery of compensation | *(planned: prospectus-recovery.md)* |
-| 33 | Criminal liability in relation to prospectuses | *(planned: prospectus-criminal-liability.md)* |
+| 29 | Prospectuses | [prospectuses.md](prospectuses.md) |
+| 30 | Compensation for misleading statements in prospectus | [prospectus-compensation.md](prospectus-compensation.md) |
+| 31 | Exemption from liability to pay compensation | [prospectus-exemption.md](prospectus-exemption.md) |
+| 32 | Recovery of compensation | [prospectus-recovery.md](prospectus-recovery.md) |
+| 33 | Criminal liability in relation to prospectuses | [prospectus-criminal-liability.md](prospectus-criminal-liability.md) |
 
 ## Part 8 — Share Capital
 
