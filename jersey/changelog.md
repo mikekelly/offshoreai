@@ -300,3 +300,39 @@ Example:
 
   Articles index updated to live links for Parts 8–13. Articles
   73–224 remain (~150 active provisions across Parts 14–24).
+
+- **Companies Law Articles 73-85A (Part 14) and 114-115B (Part 17)
+  added** — 22 new deep files covering directors and the
+  distribution-restriction regime. Highlights:
+  - **Article 74 directors' duties** — the most-cited Article of
+    the Companies Law: honesty and good faith, proper purpose,
+    avoid conflicts, no profit without authorisation, care/
+    diligence/skill (with professional uplift), no self-dealing
+    without disclosure, no competition. Common-law and
+    equitable duties preserved alongside.
+  - Connected persons (Art 74ZA) for conflict purposes; sole-
+    member-director exception (74A); interest disclosure (75)
+    and consequences (76).
+  - Indemnity of officers (77) - subject to irreducible-core
+    limits (no fraud, no wilful misconduct, no breach of duty
+    to the company); disqualification orders (78); personal
+    liability for acting while disqualified (79); third-party
+    protection for director acts (80).
+  - Secretary (81), qualifications (82), register (83);
+    director particulars natural / corporate (84, 84A);
+    secretary particulars (85); Part 14 amendment power (85A).
+  - **Article 115 distribution restrictions** — Jersey's
+    cash-flow solvency test (not English profits-available
+    test), the SECOND pillar (with Art 61A) of capital
+    management. Same all-directors-must-sign mechanism.
+    Distinction is one of the most-cited reasons for Jersey
+    TopCo structures.
+  - Distribution definition (114) - substance over form;
+    Article 115ZA court-rectification for procedural deficiencies;
+    Article 115A unlawful-distribution consequences (members
+    repay, directors personally liable, Liquidator pursuit on
+    insolvency); Part 17 amendment power (115B).
+
+  Articles index updated for Parts 14 and 17. Articles 86-101
+  (Part 15 Meetings), 102-113Q (Part 16 Accounts and Audits),
+  and Parts 18-24 remain.

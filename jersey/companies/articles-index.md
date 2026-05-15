@@ -206,23 +206,23 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 73 | Directors | *(planned: directors.md)* |
-| 74 | Duties of directors | *(planned: directors-duties.md)* |
-| 74ZA | Persons connected with director for purposes of Article 74 | *(planned: connected-persons.md)* |
-| 74A | Contracts with sole members who are also directors | *(planned: sole-member-contracts.md)* |
-| 75 | Duty of directors to disclose interests | *(planned: director-disclosure.md)* |
-| 76 | Consequences of failure to comply with Article 75 | *(planned: failure-to-disclose-consequences.md)* |
-| 77 | Indemnity of officers and former officers | *(planned: officer-indemnity.md)* |
-| 78 | Disqualification orders | *(planned: disqualification-orders.md)* |
-| 79 | Personal responsibility for liabilities where person acts while disqualified | *(planned: disqualified-personal-liability.md)* |
-| 80 | Validity of acts of director | *(planned: validity-of-director-acts.md)* |
-| 81 | Secretary | *(planned: secretary.md)* |
-| 82 | Qualifications of secretary | *(planned: secretary-qualifications.md)* |
-| 83 | Register of directors and secretaries | *(planned: register-of-directors-secretaries.md)* |
-| 84 | Particulars of directors: natural persons | *(planned: director-particulars-natural.md)* |
-| 84A | Particulars of directors: corporate directors | *(planned: director-particulars-corporate.md)* |
-| 85 | Particulars of secretaries | *(planned: secretary-particulars.md)* |
-| 85A | Power of States to amend Part 14 | *(planned: part-14-amendment-power.md)* |
+| 73 | Directors | [directors.md](directors.md) |
+| 74 | Duties of directors | [directors-duties.md](directors-duties.md) |
+| 74ZA | Persons connected with director for purposes of Article 74 | [connected-persons.md](connected-persons.md) |
+| 74A | Contracts with sole members who are also directors | [sole-member-contracts.md](sole-member-contracts.md) |
+| 75 | Duty of directors to disclose interests | [director-disclosure.md](director-disclosure.md) |
+| 76 | Consequences of failure to comply with Article 75 | [failure-to-disclose-consequences.md](failure-to-disclose-consequences.md) |
+| 77 | Indemnity of officers and former officers | [officer-indemnity.md](officer-indemnity.md) |
+| 78 | Disqualification orders | [disqualification-orders.md](disqualification-orders.md) |
+| 79 | Personal responsibility for liabilities where person acts while disqualified | [disqualified-personal-liability.md](disqualified-personal-liability.md) |
+| 80 | Validity of acts of director | [validity-of-director-acts.md](validity-of-director-acts.md) |
+| 81 | Secretary | [secretary.md](secretary.md) |
+| 82 | Qualifications of secretary | [secretary-qualifications.md](secretary-qualifications.md) |
+| 83 | Register of directors and secretaries | [register-of-directors-secretaries.md](register-of-directors-secretaries.md) |
+| 84 | Particulars of directors: natural persons | [director-particulars-natural.md](director-particulars-natural.md) |
+| 84A | Particulars of directors: corporate directors | [director-particulars-corporate.md](director-particulars-corporate.md) |
+| 85 | Particulars of secretaries | [secretary-particulars.md](secretary-particulars.md) |
+| 85A | Power of States to amend Part 14 | [part-14-amendment-power.md](part-14-amendment-power.md) |
 
 ## Part 15 — Meetings
 
@@ -287,11 +287,11 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 114 | Meaning of "distribution" in this Part | *(planned: distribution-definition.md)* |
-| 115 | Restrictions on distributions | *(planned: distribution-restrictions.md)* |
-| 115ZA | Order treating distribution as made in accordance with Article 115 | *(planned: distribution-retrospective-order.md)* |
-| 115A | Consequences of unlawful distribution | *(planned: unlawful-distribution-consequences.md)* |
-| 115B | Power of States to amend Part 17 | *(planned: part-17-amendment-power.md)* |
+| 114 | Meaning of "distribution" in this Part | [distribution-definition.md](distribution-definition.md) |
+| 115 | Restrictions on distributions | [distribution-restrictions.md](distribution-restrictions.md) |
+| 115ZA | Order treating distribution as made in accordance with Article 115 | [distribution-retrospective-order.md](distribution-retrospective-order.md) |
+| 115A | Consequences of unlawful distribution | [unlawful-distribution-consequences.md](unlawful-distribution-consequences.md) |
+| 115B | Power of States to amend Part 17 | [part-17-amendment-power.md](part-17-amendment-power.md) |
 
 ## Part 18 — Takeovers
 
