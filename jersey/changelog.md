@@ -96,6 +96,26 @@ For full diff history, see the git log.
   security on exit / distribution (Art 43A). 15 new files.
   Articles 44–47A and 48–61 remain (~17 active provisions; one
   more turn to finish Trusts Law 1984).
+- **Trusts Law 1984 statute-wiki COMPLETE.** Final batch:
+  Articles 44–47A (court powers — resident-trustee appointment,
+  relief from liability, beneficiary indemnity, court variation,
+  cy-près redirection), Articles 48–55 (Part 3 foreign-trust
+  recognition; Part 4 general provisions on execution, costs,
+  trustee insolvency-remoteness, and BFPV protection), and
+  Articles 57–61 (limitation with the distinctive Jersey 3-year /
+  21-year structure and fraud exception; temporal application;
+  savings preserving customary-law jurisdictions; rules of court;
+  citation). 17 new files.
+
+  Every active Article of the Trusts (Jersey) Law 1984 (1–61,
+  excluding repealed 20 and 56) now has a dedicated concept file
+  (Articles 47B–47J consolidated in one mistake-regime file).
+  ~60 per-Article files plus the Articles index, plus 3 earlier
+  concept files (firewall, reserved powers, beneficiary rights)
+  that anchor major cross-cutting themes.
+
+  Next statute: Companies (Jersey) Law 1991 (24 Parts, several
+  hundred Articles, est. 10–15 turns).
 
 ## Conventions for entries
 

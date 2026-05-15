@@ -127,11 +127,11 @@ historical text remains in older consolidations on
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 44 | Appointment of resident trustee | *(planned: court-appointed-resident-trustee.md)* |
-| 45 | Power to relieve trustee from personal liability | *(planned: relief-from-personal-liability.md)* |
-| 46 | Power to make beneficiary indemnify for breach of trust | *(planned: beneficiary-indemnity.md)* |
-| 47 | Variation of terms of a Jersey trust by the court and approval of particular transactions | *(planned: court-variation.md)* (the historical variation jurisdiction; distinct from the 47B–H mistake regime) |
-| 47A | Trusts for charitable or non-charitable purposes | *(planned: court-purpose-trust-redirection.md)* |
+| 44 | Appointment of resident trustee | [court-appointed-resident-trustee.md](court-appointed-resident-trustee.md) |
+| 45 | Power to relieve trustee from personal liability | [relief-from-personal-liability.md](relief-from-personal-liability.md) |
+| 46 | Power to make beneficiary indemnify for breach of trust | [beneficiary-indemnity.md](beneficiary-indemnity.md) |
+| 47 | Variation of terms of a Jersey trust by the court and approval of particular transactions | [court-variation.md](court-variation.md) (the historical variation jurisdiction; distinct from the 47B–H mistake regime) |
+| 47A | Trusts for charitable or non-charitable purposes | [court-purpose-trust-redirection.md](court-purpose-trust-redirection.md) |
 | 47B | Articles 47D to 47J: Interpretation | [article-47-set-aside.md](article-47-set-aside.md) |
 | 47C | Determination of "mistake" | [article-47-set-aside.md](article-47-set-aside.md) |
 | 47D | Application of powers under Articles 47E to 47I | [article-47-set-aside.md](article-47-set-aside.md) |
@@ -146,29 +146,38 @@ historical text remains in older consolidations on
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 48 | Application of Part 3 | *(planned: application-of-part-3.md)* |
-| 49 | Enforceability of a foreign trust | *(planned: foreign-trust-enforceability.md)* |
+| 48 | Application of Part 3 | [application-of-part-3.md](application-of-part-3.md) |
+| 49 | Enforceability of a foreign trust | [foreign-trust-enforceability.md](foreign-trust-enforceability.md) |
 
 ## Part 4 — Provisions of general application
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 50 | Application of Part 4 | *(planned: application-of-part-4.md)* |
+| 50 | Application of Part 4 | [application-of-part-4.md](application-of-part-4.md) |
 | 51 | Applications to and certain powers of the court | [article-51-directions.md](article-51-directions.md) |
-| 52 | Execution of instruments by order of the court | *(planned: court-ordered-execution.md)* |
-| 53 | Payment of costs | *(planned: payment-of-costs.md)* |
-| 54 | Nature of trustee's estate, following trust property and insolvency of trustee | *(planned: trustee-estate-and-insolvency.md)* |
-| 55 | Protection to persons dealing with trustee | *(planned: protection-of-dealings-with-trustee.md)* |
+| 52 | Execution of instruments by order of the court | [court-ordered-execution.md](court-ordered-execution.md) |
+| 53 | Payment of costs | [payment-of-costs.md](payment-of-costs.md) |
+| 54 | Nature of trustee's estate, following trust property and insolvency of trustee | [trustee-estate-and-insolvency.md](trustee-estate-and-insolvency.md) |
+| 55 | Protection to persons dealing with trustee | [protection-of-dealings-with-trustee.md](protection-of-dealings-with-trustee.md) |
 | 56 | **[repealed]** | — |
-| 57 | Limitation of actions or prescription | *(planned: limitation-and-prescription.md)* |
+| 57 | Limitation of actions or prescription | [limitation-and-prescription.md](limitation-and-prescription.md) |
 
 ## Part 5 — Supplemental
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 58 | Application of this Law | *(planned: temporal-application-of-law.md)* |
-| 59 | Saving provisions | *(planned: savings.md)* |
-| 60 | Rules of Court | *(planned: rules-of-court.md)* |
-| 61 | Citation | *(planned: citation.md)* |
+| 58 | Application of this Law | [temporal-application-of-law.md](temporal-application-of-law.md) |
+| 59 | Saving provisions | [savings.md](savings.md) |
+| 60 | Rules of Court | [rules-of-court.md](rules-of-court.md) |
+| 61 | Citation | [citation.md](citation.md) |
+
+---
+
+## Status
+
+**Trusts (Jersey) Law 1984 is now fully covered to depth.** Every
+active Article (1 through 61, excluding repealed 20 and 56) has a
+dedicated concept file. Articles 47B–47J are consolidated into a
+single mistake-regime file at [article-47-set-aside.md](article-47-set-aside.md).
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

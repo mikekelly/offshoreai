@@ -111,6 +111,42 @@ statutory order and links to the deep file where one exists.
 - [**termination-of-trust.md**](termination-of-trust.md) — Article 43:
   the Jersey *Saunders v Vautier* analogue.
 - [**trustee-security.md**](trustee-security.md) — Article 43A.
+- [**court-appointed-resident-trustee.md**](court-appointed-resident-trustee.md)
+  — Article 44.
+- [**relief-from-personal-liability.md**](relief-from-personal-liability.md)
+  — Article 45: discretionary Court relief for honest and
+  reasonable trustees.
+- [**beneficiary-indemnity.md**](beneficiary-indemnity.md) — Article 46:
+  impounding the complicit beneficiary's interest.
+- [**court-variation.md**](court-variation.md) — Article 47 (the
+  historical variation jurisdiction).
+- [**court-purpose-trust-redirection.md**](court-purpose-trust-redirection.md)
+  — Article 47A: cy-près-style redirection for failed purpose trusts.
+- [**application-of-part-3.md**](application-of-part-3.md) — Article 48.
+- [**foreign-trust-enforceability.md**](foreign-trust-enforceability.md)
+  — **Article 49**: recognition of foreign trusts.
+- [**application-of-part-4.md**](application-of-part-4.md) — Article 50.
+- [**court-ordered-execution.md**](court-ordered-execution.md) — Art 52.
+- [**payment-of-costs.md**](payment-of-costs.md) — Article 53.
+- [**trustee-estate-and-insolvency.md**](trustee-estate-and-insolvency.md)
+  — **Article 54**: trust-property ring-fencing.
+- [**protection-of-dealings-with-trustee.md**](protection-of-dealings-with-trustee.md)
+  — Article 55: BFPV protection.
+- [**limitation-and-prescription.md**](limitation-and-prescription.md)
+  — **Article 57**: 3-year / 21-year limitation regime; fraud
+  exception.
+- [**temporal-application-of-law.md**](temporal-application-of-law.md)
+  — Article 58.
+- [**savings.md**](savings.md) — Article 59.
+- [**rules-of-court.md**](rules-of-court.md) — Article 60.
+- [**citation.md**](citation.md) — Article 61.
+
+> **Statute fully covered.** Every active Article of the Trusts
+> (Jersey) Law 1984 (1–61, excluding repealed 20 and 56) now has a
+> dedicated concept file. Articles 47B–47J are consolidated into a
+> single mistake-regime file at
+> [article-47-set-aside.md](article-47-set-aside.md). Total: 60+
+> per-Article files plus the Articles index.
 - [**article-47-set-aside.md**](article-47-set-aside.md) — the
   modern statutory mistake jurisdiction (Articles 47B–47H of the
   Trusts Law), the three-limb test from *S & T Trusts*, and the
