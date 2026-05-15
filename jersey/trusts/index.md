@@ -63,6 +63,28 @@ statutory order and links to the deep file where one exists.
 - [**enforcer-resignation-removal.md**](enforcer-resignation-removal.md)
   — Article 14.
 - [**duration.md**](duration.md) — Article 15: perpetual trusts.
+- [**number-of-trustees.md**](number-of-trustees.md) — Article 16.
+- [**trustee-appointment-out-of-court.md**](trustee-appointment-out-of-court.md)
+  — Article 17.
+- [**prohibition-of-renunciation.md**](prohibition-of-renunciation.md)
+  — Article 18.
+- [**trustee-resignation-and-removal.md**](trustee-resignation-and-removal.md)
+  — Article 19.
+- [**trustee-duties.md**](trustee-duties.md) — **Article 21** core
+  trustee duties (prudent-person, utmost good faith, no-profit).
+- [**co-trustees-acting-together.md**](co-trustees-acting-together.md)
+  — Article 22 unanimity default.
+- [**trustee-impartiality.md**](trustee-impartiality.md) — Article 23.
+- [**trustee-powers.md**](trustee-powers.md) — Article 24
+  natural-person default powers.
+- [**trustee-delegation.md**](trustee-delegation.md) — Article 25.
+- [**trustee-remuneration.md**](trustee-remuneration.md) — Article 26.
+- [**power-to-appropriate.md**](power-to-appropriate.md) — Article 27.
+- [**corporate-trustee-resolution.md**](corporate-trustee-resolution.md)
+  — Article 28.
+- [**article-29-disclosure.md**](article-29-disclosure.md) — Article 29
+  statutory disclosure (sits alongside the *Schmidt v Rosewood*
+  jurisdiction at [`beneficiary-rights.md`](beneficiary-rights.md)).
 - [**article-47-set-aside.md**](article-47-set-aside.md) — the
   modern statutory mistake jurisdiction (Articles 47B–47H of the
   Trusts Law), the three-limb test from *S & T Trusts*, and the

@@ -58,6 +58,29 @@ For full diff history, see the git log.
   Articles 16–47A and 48–61 remain to be filled (~46 articles, est. 3
   more turns).
 
+## 2026-05-15
+
+- Repository initialised as a git repo. Initial commit covers the
+  full corpus to date.
+- Statute-wiki layer continued: Articles 16–29 of the Trusts (Jersey)
+  Law 1984 now have dedicated deep files. New files cover:
+  - **Trustee appointment / retirement** — Article 16 (number of
+    trustees), Article 17 (appointment out of court), Article 18
+    (no renunciation after acceptance), Article 19 (resignation
+    and removal).
+  - **Trustee duties** — Article 21 (core duties: prudent-person,
+    utmost good faith, no-profit, accounts, segregation), Article 22
+    (co-trustees acting together — unanimity default), Article 23
+    (impartiality).
+  - **Trustee powers** — Article 24 (natural-person default
+    powers), Article 25 (delegation), Article 26 (remuneration and
+    expenses), Article 27 (appropriation), Article 28 (corporate
+    trustee resolution), Article 29 (statutory disclosure
+    interface with the *Schmidt v Rosewood* jurisdiction).
+- Articles index and topic index updated to reflect the new files.
+  Articles 30–47A and 48–61 remain (~35 active provisions, est. 2
+  more turns to complete the Trusts Law).
+
 ## Conventions for entries
 
 Each entry should record:

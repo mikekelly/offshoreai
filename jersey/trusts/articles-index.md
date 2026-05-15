@@ -68,30 +68,30 @@ historical text remains in older consolidations on
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 16 | Number of trustees | *(planned: number-of-trustees.md)* |
-| 17 | Appointment out of court of new or additional trustee | *(planned: trustee-appointment-out-of-court.md)* |
-| 18 | Prohibition of renunciation after acceptance | *(planned: prohibition-of-renunciation.md)* |
-| 19 | Resignation or removal of trustee | *(planned: trustee-resignation-and-removal.md)* |
+| 16 | Number of trustees | [number-of-trustees.md](number-of-trustees.md) |
+| 17 | Appointment out of court of new or additional trustee | [trustee-appointment-out-of-court.md](trustee-appointment-out-of-court.md) |
+| 18 | Prohibition of renunciation after acceptance | [prohibition-of-renunciation.md](prohibition-of-renunciation.md) |
+| 19 | Resignation or removal of trustee | [trustee-resignation-and-removal.md](trustee-resignation-and-removal.md) |
 | 20 | **[repealed]** | — |
 
 ### Duties of trustees
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 21 | Duties of trustee | *(planned: trustee-duties.md)* |
-| 22 | Duty of co-trustees to act together | *(planned: co-trustees-acting-together.md)* |
-| 23 | Impartiality of trustee | *(planned: trustee-impartiality.md)* |
+| 21 | Duties of trustee | [trustee-duties.md](trustee-duties.md) |
+| 22 | Duty of co-trustees to act together | [co-trustees-acting-together.md](co-trustees-acting-together.md) |
+| 23 | Impartiality of trustee | [trustee-impartiality.md](trustee-impartiality.md) |
 
 ### General powers of trustees
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 24 | Powers of trustee | *(planned: trustee-powers.md)* |
-| 25 | Delegation by trustee | *(planned: trustee-delegation.md)* |
-| 26 | Remuneration and expenses of trustee | *(planned: trustee-remuneration.md)* |
-| 27 | Power to appropriate | *(planned: power-to-appropriate.md)* |
-| 28 | Corporate trustee acting by resolution | *(planned: corporate-trustee-resolution.md)* |
-| 29 | Disclosure | *(planned: article-29-disclosure.md)* (note: information-rights material currently lives in [beneficiary-rights.md](beneficiary-rights.md)) |
+| 24 | Powers of trustee | [trustee-powers.md](trustee-powers.md) |
+| 25 | Delegation by trustee | [trustee-delegation.md](trustee-delegation.md) |
+| 26 | Remuneration and expenses of trustee | [trustee-remuneration.md](trustee-remuneration.md) |
+| 27 | Power to appropriate | [power-to-appropriate.md](power-to-appropriate.md) |
+| 28 | Corporate trustee acting by resolution | [corporate-trustee-resolution.md](corporate-trustee-resolution.md) |
+| 29 | Disclosure | [article-29-disclosure.md](article-29-disclosure.md) (sits alongside [beneficiary-rights.md](beneficiary-rights.md) for the *Schmidt v Rosewood* supervisory jurisdiction) |
 
 ### Liability for breach of trust
 
