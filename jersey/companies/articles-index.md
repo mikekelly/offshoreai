@@ -318,9 +318,32 @@ filled in over the coming batches.
 
 ## Part 18B — Mergers
 
+See [`mergers.md`](mergers.md) for the Part 18B overview.
+
 | Article | Heading | Deep file |
 |---|---|---|
-| 127A — 127GA | Mergers regime (statutory merger between bodies) | *(planned: cluster file at mergers.md)* |
+| 127A | Interpretation | [merger-interpretation.md](merger-interpretation.md) |
+| 127B | Bodies eligible to merge | [merger-eligible-bodies.md](merger-eligible-bodies.md) |
+| 127C | Bodies eligible to be merged bodies | [merger-eligible-merged-bodies.md](merger-eligible-merged-bodies.md) |
+| 127D | Merger agreement | [merger-agreement.md](merger-agreement.md) |
+| 127E | Resolutions and certificates | [merger-resolutions-certificates.md](merger-resolutions-certificates.md) |
+| 127F | Approval of merger agreement | [merger-approval.md](merger-approval.md) |
+| 127FA | Simplified approval of mergers involving subsidiaries | [merger-simplified-approval.md](merger-simplified-approval.md) |
+| 127FB | Objection by member | [merger-member-objection.md](merger-member-objection.md) |
+| 127FC | Notice to creditors | [merger-notice-creditors.md](merger-notice-creditors.md) |
+| 127FD | Company to apply to court if solvency statement not made | [merger-court-application.md](merger-court-application.md) |
+| 127FE | Objection by creditor if all solvency statements made | [merger-creditor-objection.md](merger-creditor-objection.md) |
+| 127FF | Consent of Commission required for mergers involving bodies other than companies | [merger-commission-consent.md](merger-commission-consent.md) |
+| 127FG | Fees, expenses and security | [merger-commission-fees.md](merger-commission-fees.md) |
+| 127FH | Commission may require further information | [merger-commission-info.md](merger-commission-info.md) |
+| 127FI | Decisions and appeals | [merger-commission-decisions.md](merger-commission-decisions.md) |
+| 127FJ | Pre-registration steps: where all merging bodies are companies | [merger-preregistration-jersey.md](merger-preregistration-jersey.md) |
+| 127FK | Pre-registration steps: where merged body is not a company | [merger-preregistration-foreign-merged.md](merger-preregistration-foreign-merged.md) |
+| 127FL | Pre-registration steps: other cases | [merger-preregistration-other.md](merger-preregistration-other.md) |
+| 127FM | Registration of notices as to merger | [merger-registration.md](merger-registration.md) |
+| 127FN | Effect of completion of merger | [merger-completion-effect.md](merger-completion-effect.md) |
+| 127G | Offences relating to merger | [merger-offences.md](merger-offences.md) |
+| 127GA | Power of States to amend Part 18B | [part-18b-amendment-power.md](part-18b-amendment-power.md) |
 
 ## Part 18BA — Demergers
 

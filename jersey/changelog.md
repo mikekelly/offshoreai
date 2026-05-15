@@ -392,3 +392,29 @@ Part 18A scheme of arrangement, and Part 18BA statutory demerger:
 - Part 18BA (Demergers, Art 127GB) — 1 file: `demergers.md`
 
 Articles index updated; planned markers replaced with live links.
+
+## 2026-05-15 — Companies Law Part 18B (Mergers)
+
+Added 22 deep concept files plus a Part overview, covering the
+Part 18B statutory merger regime (Articles 127A–127GA):
+
+- General: `merger-interpretation.md`, `merger-eligible-bodies.md`,
+  `merger-eligible-merged-bodies.md`
+- Members: `merger-agreement.md`,
+  `merger-resolutions-certificates.md`, `merger-approval.md`,
+  `merger-simplified-approval.md`, `merger-member-objection.md`
+- Creditors: `merger-notice-creditors.md`,
+  `merger-court-application.md`, `merger-creditor-objection.md`
+- Commission (cross-border consent regime):
+  `merger-commission-consent.md`, `merger-commission-fees.md`,
+  `merger-commission-info.md`, `merger-commission-decisions.md`
+- Registration: `merger-preregistration-jersey.md`,
+  `merger-preregistration-foreign-merged.md`,
+  `merger-preregistration-other.md`, `merger-registration.md`
+- Final: `merger-completion-effect.md` (universal succession),
+  `merger-offences.md`, `part-18b-amendment-power.md`
+- Overview: `mergers.md` (six-chapter breakdown, decision table
+  for choosing between merger / scheme / takeover / continuance /
+  demerger).
+
+Articles index updated.
