@@ -336,3 +336,24 @@ Example:
   Articles index updated for Parts 14 and 17. Articles 86-101
   (Part 15 Meetings), 102-113Q (Part 16 Accounts and Audits),
   and Parts 18-24 remain.
+
+- **Companies Law Articles 86-101 added (Part 15 Meetings)** — 20
+  new deep files: participation in meetings including electronic
+  (86); annual general meeting requirements public vs private
+  (87); JFSC power to call meeting in default (88); 10%-member
+  requisition right (89); **Article 90 definition of special
+  resolution** (75% threshold, notice requirement); notice of
+  meetings (91) with 21-day default; meetings and votes including
+  show-of-hands default with chair's casting vote (92); corporate
+  member representation (93); Royal Court power to order meetings
+  (94); **Article 95 written resolutions** (the modern operational
+  default for private companies); director-proposed written
+  resolutions (95ZA); member-proposed written resolutions (95ZB);
+  accompanying statements (95ZC); sole-member decisions (95A);
+  proxies (96); poll demand (97) converting show-of-hands to
+  share-weighted voting; minutes (98); minute-book inspection
+  (99); filing of resolutions with the Registrar (100);
+  adjourned-meeting resolutions (101).
+
+  Articles index updated. Articles 102-113Q (Part 16 Accounts
+  and Audits) and Parts 18-24 remain.

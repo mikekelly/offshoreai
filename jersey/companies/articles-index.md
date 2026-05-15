@@ -228,26 +228,26 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 86 | Participation in meetings | *(planned: participation-in-meetings.md)* |
-| 87 | Annual general meeting | *(planned: agm.md)* |
-| 88 | Commission's power to call meeting in default | *(planned: jfsc-meeting-power.md)* |
-| 89 | Requisition of meetings | *(planned: requisition-of-meetings.md)* |
-| 90 | Definition of special resolution | *(planned: special-resolution.md)* |
-| 91 | Notice of meetings | *(planned: notice-of-meetings.md)* |
-| 92 | General provisions as to meetings and votes | *(planned: meetings-and-votes.md)* |
-| 93 | Representation of body corporate at meetings | *(planned: corporate-representation.md)* |
-| 94 | Power of court to order meetings | *(planned: court-ordered-meetings.md)* |
-| 95 | Resolutions in writing | *(planned: written-resolutions.md)* |
-| 95ZA | Circulation of written resolutions proposed by directors | *(planned: directors-written-resolutions.md)* |
-| 95ZB | Members' power to require circulation of written resolution | *(planned: members-written-resolution.md)* |
-| 95ZC | Circulation of written resolution and statement | *(planned: written-resolution-statement.md)* |
-| 95A | Recording of decisions by sole member | *(planned: sole-member-decisions.md)* |
-| 96 | Proxies | *(planned: proxies.md)* |
-| 97 | Demand for poll | *(planned: poll-demand.md)* |
-| 98 | Minutes | *(planned: minutes.md)* |
-| 99 | Inspection of minute books | *(planned: minute-book-inspection.md)* |
-| 100 | Filing of resolutions | *(planned: filing-of-resolutions.md)* |
-| 101 | Resolution passed at adjourned meeting | *(planned: adjourned-meeting-resolution.md)* |
+| 86 | Participation in meetings | [participation-in-meetings.md](participation-in-meetings.md) |
+| 87 | Annual general meeting | [agm.md](agm.md) |
+| 88 | Commission's power to call meeting in default | [jfsc-meeting-power.md](jfsc-meeting-power.md) |
+| 89 | Requisition of meetings | [requisition-of-meetings.md](requisition-of-meetings.md) |
+| 90 | Definition of special resolution | [special-resolution.md](special-resolution.md) |
+| 91 | Notice of meetings | [notice-of-meetings.md](notice-of-meetings.md) |
+| 92 | General provisions as to meetings and votes | [meetings-and-votes.md](meetings-and-votes.md) |
+| 93 | Representation of body corporate at meetings | [corporate-representation.md](corporate-representation.md) |
+| 94 | Power of court to order meetings | [court-ordered-meetings.md](court-ordered-meetings.md) |
+| 95 | Resolutions in writing | [written-resolutions.md](written-resolutions.md) |
+| 95ZA | Circulation of written resolutions proposed by directors | [directors-written-resolutions.md](directors-written-resolutions.md) |
+| 95ZB | Members' power to require circulation of written resolution | [members-written-resolution.md](members-written-resolution.md) |
+| 95ZC | Circulation of written resolution and statement | [written-resolution-statement.md](written-resolution-statement.md) |
+| 95A | Recording of decisions by sole member | [sole-member-decisions.md](sole-member-decisions.md) |
+| 96 | Proxies | [proxies.md](proxies.md) |
+| 97 | Demand for poll | [poll-demand.md](poll-demand.md) |
+| 98 | Minutes | [minutes.md](minutes.md) |
+| 99 | Inspection of minute books | [minute-book-inspection.md](minute-book-inspection.md) |
+| 100 | Filing of resolutions | [filing-of-resolutions.md](filing-of-resolutions.md) |
+| 101 | Resolution passed at adjourned meeting | [adjourned-meeting-resolution.md](adjourned-meeting-resolution.md) |
 
 ## Part 16 — Accounts and Audits
 
