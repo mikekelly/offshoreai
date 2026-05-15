@@ -755,3 +755,23 @@ with links into the topic graph; deep Q&A files to follow as the
 use-case section is built out.
 
 Use-cases index updated to reflect new persona directories.
+
+## 2026-05-15 — Deep use-case Q&A files (5 files)
+
+Wrote deep operator-shaped Q&A files for fund-counsel and
+compliance-MLRO personas:
+
+Fund counsel (3 files):
+- `choosing-fund-regime.md` — JPF vs Expert vs Listed vs Public
+  decision tree
+- `vehicle-structuring.md` — Jersey company vs LP vs unit trust
+  vs cell company
+- `jpf-registration.md` — JPF documents, DSP, 48-hour process
+
+Compliance / MLRO (2 files):
+- `customer-due-diligence.md` — SDD / standard / EDD with detail
+  on individual / entity / trust / foundation customers
+- `filing-a-sar.md` — when, how, tipping-off, consent regime
+
+These illustrate the operator-shaped voice with cross-links into
+the topic graph.
