@@ -445,3 +445,47 @@ Part 18C continuance regime (Articles 127H–127Y):
   decision table for redomiciliation tools).
 
 Articles index updated.
+
+## 2026-05-15 — Companies Law Part 18D (Cell Companies — ICC and PCC)
+
+Added 24 deep concept files covering the Part 18D cell-company regime
+(Articles 127YA–127YW), and expanded the Article 3I overview file with
+a full Part 18D index.
+
+ICC (incorporated cell company) provisions (127YA–127YN, 15 files):
+
+- `icc-cell-application.md` (127YA) — cell-creation application
+- `icc-cell-articles.md` (127YB) — cell constitutional documents
+- `icc-cell-creation.md` (127YC) — registration mechanic
+- `icc-cell-status.md` (127YD) — cells as separate legal persons
+- `icc-cell-shared-administration.md` (127YDA) — shared registers / office
+- `icc-cell-annual-confirmation.md` (127YE)
+- `article-127yf.md` (127YF) — stub
+- `icc-accounts.md` (127YG)
+- `icc-cell-incorporation-independence.md` (127YH) — cell→standalone
+- `icc-cell-transfer.md` (127YI) — moving cells between ICCs
+- `icc-company-becoming-cell.md` (127YIA) — standalone→cell
+- `cell-companies-winding-up.md` (127YJ) — Part 21 application
+- `icc-cell-names.md` (127YL)
+- `icc-alteration-restriction.md` (127YM)
+- `part-18d-amendment-power.md` (127YN)
+
+PCC (protected cell company) provisions (127YO–127YW, 9 files):
+
+- `pcc-interpretation.md` (127YO)
+- `pcc-cell-status.md` (127YP) — cells as statutory compartments
+- `pcc-membership.md` (127YQ) — core vs cellular members
+- `pcc-director-duties.md` (127YR) — segregation duties
+- `pcc-names.md` (127YS)
+- `pcc-segregation.md` (127YT) — central segregation rule
+- `pcc-cellular-assets.md` (127YU)
+- `pcc-summary-winding-up.md` (127YV) — segregation in insolvency
+- `pcc-court-liability.md` (127YW) — Royal Court determinations
+
+Articles index updated with full ICC and PCC tables.
+
+This completes the Companies Law 1991 statute wiki through Part 18D
+(commercial reorganisation regime: takeovers, schemes, demergers,
+mergers, continuance, cell companies). Remaining Parts: 19 (Investigations),
+20 (Unfair Prejudice), 20A (Economic Substance), 21 (Winding Up), 22
+(External Companies), 23 (Registrar), 24 (Miscellaneous).

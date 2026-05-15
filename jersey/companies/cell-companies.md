@@ -119,15 +119,14 @@ Typical ICC use cases:
 
 ## Setting up a cell company
 
-The detailed mechanics are in Part 18D (Articles 127YA–127YW),
-which will be covered in a dedicated cluster file at
-[`cell-company-formation.md`](cell-company-formation.md) *(planned)*.
+The detailed mechanics are in **Part 18D** (Articles 127YA–127YW).
 The high-level steps:
 
 1. **Form the parent** (PCC or ICC) as a Jersey company with the
    cell-company designation in its memorandum.
-2. **Apply for creation of cells** under Article 127YA. Each cell
-   creation requires JFSC consent.
+2. **Apply for creation of cells** under Article 127YA (ICC) or
+   the equivalent PCC mechanism. Each cell creation requires
+   appropriate registrar / JFSC action.
 3. **Cell-specific memorandum and articles** (where required —
    ICCs need their own; PCCs may have governing terms in the
    parent's articles or in cell-specific creation documents).
@@ -147,6 +146,39 @@ The high-level steps:
   challenged in litigation.
 - **Directors' duties to each cell.** Directors of a cell company
   owe duties to each cell — see
-  [Article 127YR](cell-companies-additional-duties.md) *(planned)*.
+  [`pcc-director-duties.md`](pcc-director-duties.md) (Article
+  127YR).
+
+## Index of Part 18D deep files
+
+### ICC provisions (127YA–127YN)
+
+- `icc-cell-application.md` (Art 127YA)
+- `icc-cell-articles.md` (Art 127YB)
+- `icc-cell-creation.md` (Art 127YC)
+- `icc-cell-status.md` (Art 127YD)
+- `icc-cell-shared-administration.md` (Art 127YDA)
+- `icc-cell-annual-confirmation.md` (Art 127YE)
+- `article-127yf.md` (Art 127YF — stub)
+- `icc-accounts.md` (Art 127YG)
+- `icc-cell-incorporation-independence.md` (Art 127YH)
+- `icc-cell-transfer.md` (Art 127YI)
+- `icc-company-becoming-cell.md` (Art 127YIA)
+- `cell-companies-winding-up.md` (Art 127YJ)
+- `icc-cell-names.md` (Art 127YL)
+- `icc-alteration-restriction.md` (Art 127YM)
+- `part-18d-amendment-power.md` (Art 127YN)
+
+### PCC provisions (127YO–127YW)
+
+- `pcc-interpretation.md` (Art 127YO)
+- `pcc-cell-status.md` (Art 127YP)
+- `pcc-membership.md` (Art 127YQ)
+- `pcc-director-duties.md` (Art 127YR)
+- `pcc-names.md` (Art 127YS)
+- `pcc-segregation.md` (Art 127YT)
+- `pcc-cellular-assets.md` (Art 127YU)
+- `pcc-summary-winding-up.md` (Art 127YV)
+- `pcc-court-liability.md` (Art 127YW)
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

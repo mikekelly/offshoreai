@@ -378,9 +378,42 @@ See [`continuance.md`](continuance.md) for the Part 18C overview.
 
 ## Part 18D — Cell Companies
 
+See [`cell-companies.md`](cell-companies.md) for the Part 18D
+overview and the choice between ICC and PCC structures.
+
+### ICC provisions (Articles 127YA–127YN)
+
 | Article | Heading | Deep file |
 |---|---|---|
-| 127YA — 127YW | Cell company regime — PCC and ICC | *(planned: cell-companies.md cluster)* |
+| 127YA | Application by cell company for creation of cells | [icc-cell-application.md](icc-cell-application.md) |
+| 127YB | Memorandum and articles of cells | [icc-cell-articles.md](icc-cell-articles.md) |
+| 127YC | Creation of cells | [icc-cell-creation.md](icc-cell-creation.md) |
+| 127YD | Status of cells | [icc-cell-status.md](icc-cell-status.md) |
+| 127YDA | Requirements in relation to secretaries, directors, registered offices and registers | [icc-cell-shared-administration.md](icc-cell-shared-administration.md) |
+| 127YE | Annual confirmation statement in respect of cells | [icc-cell-annual-confirmation.md](icc-cell-annual-confirmation.md) |
+| 127YF | [heading not visible in consolidated text] | [article-127yf.md](article-127yf.md) |
+| 127YG | Accounts of cell companies | [icc-accounts.md](icc-accounts.md) |
+| 127YH | Incorporation of a cell independent of a cell company | [icc-cell-incorporation-independence.md](icc-cell-incorporation-independence.md) |
+| 127YI | Transfer of cell | [icc-cell-transfer.md](icc-cell-transfer.md) |
+| 127YIA | Company may become cell of cell company | [icc-company-becoming-cell.md](icc-company-becoming-cell.md) |
+| 127YJ | Application of Part 21 to cell companies | [cell-companies-winding-up.md](cell-companies-winding-up.md) |
+| 127YL | Names of incorporated cell companies | [icc-cell-names.md](icc-cell-names.md) |
+| 127YM | Restriction on alteration of memorandum or articles | [icc-alteration-restriction.md](icc-alteration-restriction.md) |
+| 127YN | Power of States to amend Part 18D | [part-18d-amendment-power.md](part-18d-amendment-power.md) |
+
+### PCC provisions (Articles 127YO–127YW)
+
+| Article | Heading | Deep file |
+|---|---|---|
+| 127YO | Interpretation | [pcc-interpretation.md](pcc-interpretation.md) |
+| 127YP | Status of cells of protected cell companies | [pcc-cell-status.md](pcc-cell-status.md) |
+| 127YQ | Membership of protected cell company | [pcc-membership.md](pcc-membership.md) |
+| 127YR | Additional duties of directors of protected cell companies | [pcc-director-duties.md](pcc-director-duties.md) |
+| 127YS | Names of protected cell companies | [pcc-names.md](pcc-names.md) |
+| 127YT | Liability of protected cell company and its cells | [pcc-segregation.md](pcc-segregation.md) |
+| 127YU | Protection of cellular and non-cellular assets of protected cell companies | [pcc-cellular-assets.md](pcc-cellular-assets.md) |
+| 127YV | Effect of commencement of summary winding up of protected cell company | [pcc-summary-winding-up.md](pcc-summary-winding-up.md) |
+| 127YW | Court may determine liability of protected cell companies | [pcc-court-liability.md](pcc-court-liability.md) |
 
 ## Part 19 — Investigations
 
