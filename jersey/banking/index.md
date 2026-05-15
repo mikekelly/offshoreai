@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: banking
 status: stub
 last_verified: 2026-05-14
+tags:
+  - banking
+  - jersey
+  - banking-business
+  - banking-business-law-1991
+  - jfsc
+  - index
+  - meta
 see_also:
   - ./banking-business-law-1991.md
   - ./depositor-compensation.md

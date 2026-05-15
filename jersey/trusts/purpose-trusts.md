@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - purpose-trust
+  - enforcer
+  - private-trust-company
+  - concept-file
 articles_covered:
   - "12"
 sources:

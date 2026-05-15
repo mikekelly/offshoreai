@@ -4,6 +4,13 @@ jurisdiction: jersey
 category: companies
 status: draft
 last_verified: 2026-05-15
+tags:
+  - companies
+  - jersey
+  - companies-law-1991
+  - charitable-trust
+  - charities-law-2014
+  - concept-file
 articles_covered:
   - "3G"
 sources:

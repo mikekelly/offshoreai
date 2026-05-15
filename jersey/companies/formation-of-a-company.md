@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: companies
 status: draft
 last_verified: 2026-05-15
+tags:
+  - companies
+  - jersey
+  - companies-law-1991
+  - incorporation
+  - registration
+  - jfsc
+  - concept-file
 articles_covered:
   - "3"
 sources:

@@ -5,6 +5,18 @@ category: use-cases
 persona: trust-officer
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - trust-officer
+  - mistake
+  - setting-aside
+  - hastings-bass
+  - cross-border-tax
+  - royal-court
+  - case-law
+  - use-case
 sources:
   - title: Trusts (Jersey) Law 1984 (consolidated) — Articles 47B–47H
     url: https://www.jerseylaw.je/laws/current/l_11_1984

@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: government
 status: draft
 last_verified: 2026-05-14
+tags:
+  - government
+  - jersey
+  - crown-dependency
+  - legal-system
+  - concept-file
 sources:
   - title: About the States Assembly
     url: https://statesassembly.je/about-the-states-assembly

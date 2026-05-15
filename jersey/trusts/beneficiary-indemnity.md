@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-15
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - royal-court
+  - breach-of-trust
+  - beneficiary
+  - concept-file
 articles_covered:
   - "46"
 sources:

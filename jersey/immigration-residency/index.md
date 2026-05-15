@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: immigration-residency
 status: stub
 last_verified: 2026-05-14
+tags:
+  - immigration-residency
+  - jersey
+  - control-of-housing-and-work-law-2012
+  - index
+  - meta
 see_also:
   - ./control-of-housing-and-work-law.md
   - ./residential-status-categories.md

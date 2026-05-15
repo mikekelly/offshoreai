@@ -5,6 +5,18 @@ category: use-cases
 persona: trust-officer
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - trust-officer
+  - royal-court
+  - court-application
+  - blessing
+  - momentous-decision
+  - beddoe
+  - fiduciary-duty
+  - use-case
 sources:
   - title: Trusts (Jersey) Law 1984 (consolidated) — Article 51
     url: https://www.jerseylaw.je/laws/current/l_11_1984

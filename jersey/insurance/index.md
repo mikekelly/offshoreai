@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: insurance
 status: stub
 last_verified: 2026-05-14
+tags:
+  - insurance
+  - jersey
+  - insurance-business
+  - insurance-business-law-1996
+  - cell-company
+  - jfsc
+  - index
+  - meta
 see_also:
   - ./insurance-business-law-1996.md
   - ./category-a-permit.md

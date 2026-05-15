@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - perpetuity
+  - concept-file
 articles_covered:
   - "15"
 sources:

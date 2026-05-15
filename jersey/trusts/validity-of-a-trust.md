@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - mistake
+  - fraud
+  - undue-influence
+  - concept-file
 articles_covered:
   - "11"
 sources:

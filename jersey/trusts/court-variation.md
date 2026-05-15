@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-15
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - royal-court
+  - variation
+  - court-application
+  - cross-border-tax
+  - concept-file
 articles_covered:
   - "47"
 sources:

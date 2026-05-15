@@ -4,6 +4,10 @@ jurisdiction: jersey
 category: meta
 status: draft
 last_verified: 2026-05-14
+tags:
+  - jersey
+  - sources
+  - meta
 ---
 
 # Canonical Sources for Jersey

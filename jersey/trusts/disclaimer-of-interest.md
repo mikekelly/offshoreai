@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - beneficiary
+  - us-tax
+  - uk-tax
+  - concept-file
 articles_covered:
   - "10A"
 sources:

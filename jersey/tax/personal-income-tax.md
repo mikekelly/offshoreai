@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: tax
 status: draft
 last_verified: 2026-05-14
+tags:
+  - tax
+  - jersey
+  - income-tax-law-1961
+  - personal-tax
+  - marginal-relief
+  - long-term-care
+  - social-security
+  - concept-file
 sources:
   - title: Income Tax (Jersey) Law 1961 (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_29_1961

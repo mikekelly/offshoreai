@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: foundations
 status: draft
 last_verified: 2026-05-14
+tags:
+  - foundations
+  - jersey
+  - foundations-law-2009
+  - charitable-trust
+  - purpose-trust
+  - private-trust-company
+  - concept-file
 sources:
   - title: Foundations (Jersey) Law 2009 (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_23_2009

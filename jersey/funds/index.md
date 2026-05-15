@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: funds
 status: stub
 last_verified: 2026-05-14
+tags:
+  - funds
+  - jersey
+  - jfsc
+  - cif-law-1988
+  - aif-regs-2012
+  - index
+  - meta
 see_also:
   - ./jersey-private-fund.md
   - ./expert-fund.md

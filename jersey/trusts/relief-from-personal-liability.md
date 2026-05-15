@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-15
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - royal-court
+  - breach-of-trust
+  - trustee
+  - irreducible-core
+  - concept-file
 articles_covered:
   - "45"
 sources:

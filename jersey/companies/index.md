@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: companies
 status: draft
 last_verified: 2026-05-14
+tags:
+  - companies
+  - jersey
+  - companies-law-1991
+  - index
+  - meta
+  - cell-company
+  - directors-duty
+  - winding-up
 see_also:
   - ./companies-law-1991.md
   - ./types-of-company.md

@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: companies
 status: draft
 last_verified: 2026-05-15
+tags:
+  - companies
+  - jersey
+  - companies-law-1991
+  - interpretation
+  - concept-file
 articles_covered:
   - "2B"
 sources:

@@ -4,6 +4,13 @@ jurisdiction: jersey
 category: registries
 status: stub
 last_verified: 2026-05-14
+tags:
+  - registries
+  - jersey
+  - jfsc
+  - beneficial-ownership
+  - index
+  - meta
 see_also:
   - ./companies-registry.md
   - ./foundations-registry.md

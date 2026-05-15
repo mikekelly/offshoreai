@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: foundations
 status: stub
 last_verified: 2026-05-14
+tags:
+  - foundations
+  - jersey
+  - foundations-law-2009
+  - index
+  - meta
 see_also:
   - ./foundations-law-2009.md
   - ./council-and-guardian.md

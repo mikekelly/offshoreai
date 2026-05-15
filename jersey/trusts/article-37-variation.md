@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-15
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - variation
+  - settlor
+  - fiduciary-duty
+  - concept-file
 articles_covered:
   - "37"
 sources:

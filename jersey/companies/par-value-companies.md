@@ -4,6 +4,13 @@ jurisdiction: jersey
 category: companies
 status: draft
 last_verified: 2026-05-15
+tags:
+  - companies
+  - jersey
+  - companies-law-1991
+  - share-capital
+  - distribution
+  - concept-file
 articles_covered:
   - "3E"
 sources:

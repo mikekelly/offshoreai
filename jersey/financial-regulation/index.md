@@ -4,6 +4,17 @@ jurisdiction: jersey
 category: financial-regulation
 status: stub
 last_verified: 2026-05-14
+tags:
+  - regulation
+  - jfsc
+  - jersey
+  - tcb
+  - fund-services-business
+  - investment-business
+  - banking-business
+  - insurance-business
+  - index
+  - meta
 see_also:
   - ./jfsc.md
   - ./jfsc-law-1998.md

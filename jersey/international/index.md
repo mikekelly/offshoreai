@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: international
 status: stub
 last_verified: 2026-05-14
+tags:
+  - international
+  - jersey
+  - cross-border-tax
+  - crs
+  - fatca
+  - pillar-two
+  - index
+  - meta
 see_also:
   - ./uk-relationship.md
   - ./eu-relationship.md

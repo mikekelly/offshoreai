@@ -4,6 +4,13 @@ jurisdiction: jersey
 category: tax
 status: draft
 last_verified: 2026-05-14
+tags:
+  - tax
+  - jersey
+  - gst
+  - gst-law-2007
+  - cross-border-tax
+  - concept-file
 sources:
   - title: Government of Jersey — GST home
     url: https://www.gov.je/TaxesMoney/GST/Pages/default.aspx

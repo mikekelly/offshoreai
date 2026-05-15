@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: government
 status: draft
 last_verified: 2026-05-14
+tags:
+  - government
+  - jersey
+  - crown-dependency
+  - index
+  - meta
 see_also:
   - ./crown-dependency.md
   - ./states-assembly.md

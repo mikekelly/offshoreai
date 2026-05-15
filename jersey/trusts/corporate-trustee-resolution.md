@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-15
+tags:
+  - trusts
+  - companies
+  - jersey
+  - trusts-law-1984
+  - trustee
+  - private-trust-company
+  - tcb
+  - concept-file
 articles_covered:
   - "28"
 sources:

@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: legal-system
 status: draft
 last_verified: 2026-05-14
+tags:
+  - legal-system
+  - jersey
+  - royal-court
+  - index
+  - meta
 see_also:
   - ./sources-of-law.md
   - ./royal-court.md

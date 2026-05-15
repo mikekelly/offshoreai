@@ -4,6 +4,17 @@ jurisdiction: jersey
 category: aml-cft
 status: stub
 last_verified: 2026-05-14
+tags:
+  - aml-cft
+  - jersey
+  - poc-law-1999
+  - mlo-2008
+  - aml-handbook
+  - sanctions
+  - moneyval
+  - jfsc
+  - index
+  - meta
 see_also:
   - ./proceeds-of-crime-law-1999.md
   - ./money-laundering-order-2008.md

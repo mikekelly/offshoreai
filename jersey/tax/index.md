@@ -4,6 +4,16 @@ jurisdiction: jersey
 category: tax
 status: draft
 last_verified: 2026-05-14
+tags:
+  - tax
+  - jersey
+  - index
+  - meta
+  - zero-ten
+  - gst
+  - personal-tax
+  - economic-substance
+  - pillar-two
 see_also:
   - ./revenue-jersey.md
   - ./zero-ten.md

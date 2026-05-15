@@ -4,6 +4,15 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-15
+tags:
+  - trusts
+  - jersey
+  - trusts-law-1984
+  - settlor
+  - purpose-trust
+  - succession
+  - forced-heirship
+  - concept-file
 articles_covered:
   - "42"
 sources:

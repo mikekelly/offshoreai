@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: companies
 status: draft
 last_verified: 2026-05-15
+tags:
+  - companies
+  - jersey
+  - companies-law-1991
+  - private-trust-company
+  - concept-file
 articles_covered:
   - "3B"
 sources:
