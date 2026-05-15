@@ -489,3 +489,38 @@ This completes the Companies Law 1991 statute wiki through Part 18D
 mergers, continuance, cell companies). Remaining Parts: 19 (Investigations),
 20 (Unfair Prejudice), 20A (Economic Substance), 21 (Winding Up), 22
 (External Companies), 23 (Registrar), 24 (Miscellaneous).
+
+## 2026-05-15 — Companies Law Parts 19, 20, 20A
+
+Added 18 deep concept files plus a Part 19 overview, covering the
+investigation, unfair-prejudice, and economic-substance regimes:
+
+Part 19 — Investigations (13 files + overview):
+
+- `inspector-appointment.md` (Art 128)
+- `inspector-powers.md` (Art 129)
+- `inspector-production.md` (Art 130)
+- `inspector-bank-accounts.md` (Art 131)
+- `inspector-search.md` (Art 132)
+- `inspector-obstruction.md` (Art 133)
+- `inspector-non-cooperation.md` (Art 134)
+- `inspector-reports.md` (Art 135)
+- `inspector-civil-proceedings.md` (Art 136)
+- `inspector-expenses.md` (Art 137)
+- `inspector-report-evidence.md` (Art 138)
+- `privileged-information.md` (Art 139)
+- `external-company-investigations.md` (Art 140)
+- `investigations.md` — Part 19 overview
+
+Part 20 — Unfair Prejudice (3 files):
+
+- `unfair-prejudice-member-application.md` (Art 141)
+- `unfair-prejudice-minister-jfsc.md` (Art 142)
+- `unfair-prejudice-court-powers.md` (Art 143)
+
+Part 20A — Economic Substance Test (2 files):
+
+- `substance-court-application.md` (Art 143A)
+- `substance-court-powers.md` (Art 143B)
+
+Articles index updated.

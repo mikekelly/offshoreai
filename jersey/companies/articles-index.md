@@ -417,24 +417,39 @@ overview and the choice between ICC and PCC structures.
 
 ## Part 19 — Investigations
 
+See [`investigations.md`](investigations.md) for the Part 19
+overview.
+
 | Article | Heading | Deep file |
 |---|---|---|
-| 128 — 140 | JFSC investigations regime | *(planned: investigations cluster)* |
+| 128 | Appointment of inspectors | [inspector-appointment.md](inspector-appointment.md) |
+| 129 | Powers of inspectors | [inspector-powers.md](inspector-powers.md) |
+| 130 | Production of records and evidence to inspectors | [inspector-production.md](inspector-production.md) |
+| 131 | Power of inspectors to call for directors' bank accounts | [inspector-bank-accounts.md](inspector-bank-accounts.md) |
+| 132 | Authority for search | [inspector-search.md](inspector-search.md) |
+| 133 | Obstruction | [inspector-obstruction.md](inspector-obstruction.md) |
+| 134 | Failure to co-operate with inspectors | [inspector-non-cooperation.md](inspector-non-cooperation.md) |
+| 135 | Inspectors' reports | [inspector-reports.md](inspector-reports.md) |
+| 136 | Power to bring civil proceedings on behalf of body corporate | [inspector-civil-proceedings.md](inspector-civil-proceedings.md) |
+| 137 | Expenses of investigating a company's affairs | [inspector-expenses.md](inspector-expenses.md) |
+| 138 | Inspectors' report to be evidence | [inspector-report-evidence.md](inspector-report-evidence.md) |
+| 139 | Privileged information | [privileged-information.md](privileged-information.md) |
+| 140 | Investigation of external companies | [external-company-investigations.md](external-company-investigations.md) |
 
 ## Part 20 — Unfair Prejudice
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 141 | Power for member to apply to court | *(planned: unfair-prejudice-member-application.md)* |
-| 142 | Power for Minister or the Commission to apply to court | *(planned: unfair-prejudice-minister-jfsc.md)* |
-| 143 | Powers of court | *(planned: unfair-prejudice-court-powers.md)* |
+| 141 | Power for member to apply to court | [unfair-prejudice-member-application.md](unfair-prejudice-member-application.md) |
+| 142 | Power for Minister or the Commission to apply to court | [unfair-prejudice-minister-jfsc.md](unfair-prejudice-minister-jfsc.md) |
+| 143 | Powers of court | [unfair-prejudice-court-powers.md](unfair-prejudice-court-powers.md) |
 
 ## Part 20A — Economic Substance Test
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 143A | Power for Minister for Treasury and Resources to apply to Court | *(planned: substance-court-application.md)* |
-| 143B | Powers of court | *(planned: substance-court-powers.md)* |
+| 143A | Power for Minister for Treasury and Resources to apply to Court | [substance-court-application.md](substance-court-application.md) |
+| 143B | Powers of court | [substance-court-powers.md](substance-court-powers.md) |
 
 ## Part 21 — Winding Up of Companies
 
