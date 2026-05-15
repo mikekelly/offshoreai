@@ -2,7 +2,7 @@
 title: Insurance — Jersey
 jurisdiction: jersey
 category: insurance
-status: stub
+status: draft
 last_verified: 2026-05-14
 tags:
   - insurance

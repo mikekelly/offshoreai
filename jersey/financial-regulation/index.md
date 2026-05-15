@@ -2,7 +2,7 @@
 title: Financial Regulation — Jersey
 jurisdiction: jersey
 category: financial-regulation
-status: stub
+status: draft
 last_verified: 2026-05-15
 tags:
   - regulation

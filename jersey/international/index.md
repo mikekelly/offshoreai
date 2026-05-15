@@ -2,7 +2,7 @@
 title: International — Jersey
 jurisdiction: jersey
 category: international
-status: stub
+status: draft
 last_verified: 2026-05-14
 tags:
   - international

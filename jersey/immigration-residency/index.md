@@ -2,7 +2,7 @@
 title: Immigration & Residency — Jersey
 jurisdiction: jersey
 category: immigration-residency
-status: stub
+status: draft
 last_verified: 2026-05-14
 tags:
   - immigration-residency

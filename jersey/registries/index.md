@@ -2,7 +2,7 @@
 title: Registries — Jersey
 jurisdiction: jersey
 category: registries
-status: stub
+status: draft
 last_verified: 2026-05-14
 tags:
   - registries

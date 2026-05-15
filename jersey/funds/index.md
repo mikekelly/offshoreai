@@ -2,7 +2,7 @@
 title: Funds — Jersey
 jurisdiction: jersey
 category: funds
-status: stub
+status: draft
 last_verified: 2026-05-14
 tags:
   - funds

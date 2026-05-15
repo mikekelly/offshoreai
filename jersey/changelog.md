@@ -818,3 +818,16 @@ Law 1961, complementing the existing concept-based tax files:
 The article-by-article wiki is at an **early stage**; future
 batches will fill out the index. The concept files in tax/ remain
 the practical reference for most substance.
+
+## 2026-05-15 — Section status updates and index cleanup
+
+Updated 8 section index files from "stub" to "draft" status since
+their referenced files have been substantively populated:
+
+- aml-cft/index.md, financial-regulation/index.md,
+  banking/index.md, immigration-residency/index.md,
+  insurance/index.md, funds/index.md, international/index.md,
+  registries/index.md.
+
+Also updated aml-cft/index.md "Files in this section" listing to
+remove "stub" annotations and add proper file descriptions.

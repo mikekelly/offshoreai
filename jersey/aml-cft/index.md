@@ -2,7 +2,7 @@
 title: AML/CFT — Jersey
 jurisdiction: jersey
 category: aml-cft
-status: stub
+status: draft
 last_verified: 2026-05-14
 tags:
   - aml-cft
@@ -48,20 +48,21 @@ co-ordination with UK sanctions regimes.
 Jersey is evaluated periodically by **Moneyval**, the Council of
 Europe's AML/CFT mutual-evaluation body.
 
-## Files in this section *(all stubs at this revision)*
+## Files in this section
 
 - [**proceeds-of-crime-law-1999.md**](proceeds-of-crime-law-1999.md)
-  — the underlying Law. *(Stub.)*
+  — the underlying Law (POCL): money-laundering offences, SAR
+  defence, confiscation, Schedule 2 supervised business gateway.
 - [**money-laundering-order-2008.md**](money-laundering-order-2008.md)
-  — the Money Laundering (Jersey) Order 2008. *(Stub.)*
-- [**aml-cft-handbook.md**](aml-cft-handbook.md) — the JFSC AML/CFT
-  Handbook. *(Stub.)*
-- [**sanctions.md**](sanctions.md) — Jersey sanctions law and
-  practice. *(Stub.)*
-- [**moneyval.md**](moneyval.md) — Moneyval evaluations of Jersey.
-  *(Stub.)*
-- [**schedule-2-businesses.md**](schedule-2-businesses.md) — which
-  non-financial activities fall within scope as "Schedule 2 supervised
-  business". *(Stub.)*
+  — the operative compliance regulation (CDD, record-keeping,
+  reporting, training, internal controls).
+- [**aml-cft-handbook.md**](aml-cft-handbook.md) — the JFSC's
+  AML/CFT Handbook (risk-based approach, PEPs, EDD).
+- [**sanctions.md**](sanctions.md) — Sanctions and Asset-Freezing
+  (Jersey) Law 2014 with UK / UN sanctions alignment.
+- [**moneyval.md**](moneyval.md) — Council of Europe mutual
+  evaluations of Jersey.
+- [**schedule-2-businesses.md**](schedule-2-businesses.md) —
+  supervised-business categories (DNFBPs and financial-services).
 
 [pocl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/08.780.aspx

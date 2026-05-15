@@ -2,7 +2,7 @@
 title: Banking — Jersey
 jurisdiction: jersey
 category: banking
-status: stub
+status: draft
 last_verified: 2026-05-14
 tags:
   - banking
