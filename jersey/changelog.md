@@ -621,3 +621,27 @@ The Companies (Jersey) Law 1991 statute wiki is now complete:
 24 Parts, ~300 Articles, plus 2 Schedules, all with at least one
 deep concept file. Future work moves to other Jersey statutes
 (Income Tax 1961, Foundations 2009, Financial Services 1998).
+
+## 2026-05-15 — Tax section deep files (10 files)
+
+Filled out 10 of the tax section's stub files with deep concept
+content:
+
+- `revenue-jersey.md` — Jersey tax authority
+- `company-residence.md` — corporate tax residence test
+- `economic-substance.md` — 2019 substance regime
+- `residence-individuals.md` — three categories of individual residence
+- `distributions-and-deemed-distributions.md` — shareholder tax
+- `no-capital-gains-tax.md` — what Jersey doesn't tax (CGT)
+- `no-inheritance-tax.md` — what Jersey doesn't tax (IHT)
+- `pillar-two.md` — MCIT / DMT 2025
+- `stamp-duty.md` — narrow transaction-tax base
+- `social-security.md` — Class 1/2/3 contributions
+- `long-term-care.md` — LTC contribution
+- `gst-international-services-entity.md` — ISE flat-fee regime
+- `high-value-residency-tax.md` — 2(1)(e) bespoke regime
+- `international-tax.md` — DTAs, TIEAs, CRS, FATCA, BEPS overview
+
+Tax section now has substantive coverage of the headline regimes
+and key supporting concepts. Remaining tax stubs primarily relate
+to Income Tax Law 1961 article-by-article statute wiki (next batch).
