@@ -4,6 +4,16 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-15
+tags:
+  - trusts
+  - fiduciary-duty
+  - trustee
+  - breach-of-trust
+  - irreducible-core
+  - tcb
+  - jersey
+  - trusts-law-1984
+  - concept-file
 articles_covered:
   - "21"
 sources:

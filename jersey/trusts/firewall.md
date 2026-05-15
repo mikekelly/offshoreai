@@ -4,6 +4,18 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - firewall
+  - forced-heirship
+  - conflict-of-laws
+  - foreign-judgment
+  - matrimonial
+  - cross-border-tax
+  - jersey
+  - trusts-law-1984
+  - case-law
+  - concept-file
 articles_covered:
   - "9"
 sources:

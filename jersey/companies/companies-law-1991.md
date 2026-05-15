@@ -4,6 +4,20 @@ jurisdiction: jersey
 category: companies
 status: draft
 last_verified: 2026-05-14
+tags:
+  - companies
+  - companies-law-1991
+  - cell-company
+  - directors-duty
+  - share-capital
+  - distribution
+  - audit
+  - takeover
+  - merger
+  - continuance
+  - winding-up
+  - jersey
+  - concept-file
 sources:
   - title: Companies (Jersey) Law 1991 (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_30_1991

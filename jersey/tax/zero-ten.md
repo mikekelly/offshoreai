@@ -4,6 +4,17 @@ jurisdiction: jersey
 category: tax
 status: draft
 last_verified: 2026-05-14
+tags:
+  - tax
+  - zero-ten
+  - financial-services-company
+  - large-corporate-retailer
+  - economic-substance
+  - pillar-two
+  - companies
+  - jersey
+  - income-tax-law-1961
+  - concept-file
 sources:
   - title: Income Tax (Jersey) Law 1961 (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_29_1961

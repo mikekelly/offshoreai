@@ -4,6 +4,12 @@ jurisdiction: jersey
 category: legal-system
 status: draft
 last_verified: 2026-05-14
+tags:
+  - legal-system
+  - royal-court
+  - court-application
+  - jersey
+  - concept-file
 sources:
   - title: Members of the Royal Court
     url: https://www.gov.je/Government/NonexecLegal/BailiffsChambers/pages/membersroyalcourt.aspx

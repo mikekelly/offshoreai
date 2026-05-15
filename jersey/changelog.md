@@ -117,6 +117,46 @@ For full diff history, see the git log.
   Next statute: Companies (Jersey) Law 1991 (24 Parts, several
   hundred Articles, est. 10–15 turns).
 
+- **Companies (Jersey) Law 1991 statute-wiki started.** New
+  [`companies/articles-index.md`](companies/articles-index.md) lists
+  every active Article across the 24 Parts of the Law (and
+  Schedules 1, 2). Deep files written for Part 1 (Articles 1, 2,
+  2A, 2B — interpretation and group-relationship definitions) and
+  for the Article 3 family (Articles 3, 3A–3I — formation methods
+  and company-type definitions, including PCC/ICC cell companies).
+  14 new files.
+
+- **Tags introduced as primary cross-cutting navigation layer.**
+  New [`../CONVENTIONS.md`](../CONVENTIONS.md) update defines the
+  `tags` frontmatter field and articulates the **orientation
+  principle**: every file (especially every `index.md`) must make
+  sense to a cold-reader agent arriving via search rather than
+  from the parent. New [`../TAGS.md`](../TAGS.md) is the canonical
+  taxonomy — categories cover subject, legal concept, trust-
+  specific, company-specific, tax-specific, process, cross-border,
+  foreign-tax, regulatory, document-type, statute, persona, and
+  source. Files cite only tags listed there; new tags require a
+  TAGS.md addition first.
+
+- **Index files rewritten for cold-reader orientation.** Rewrote
+  [`index.md`](index.md), [`trusts/index.md`](trusts/index.md),
+  [`trusts/articles-index.md`](trusts/articles-index.md),
+  [`use-cases/index.md`](use-cases/index.md), and
+  [`use-cases/trust-officer/index.md`](use-cases/trust-officer/index.md)
+  to open with a **what / why / when / where-to-start** section,
+  group links by **conceptual theme** rather than flat alphabetical
+  or numerical lists, and give every link a **substantive
+  description** that tells a cold reader why they would click. An
+  agent landing in these files via search now has the orientation
+  it needs to follow its nose forward.
+
+- **Tags applied to first batch of high-traffic concept files**:
+  firewall, reserved-powers, beneficiary-rights, article-47-set-aside,
+  article-51-directions, trustee-duties, zero-ten, crown-dependency,
+  jfsc, companies-law-1991, trusts-law-1984, royal-court. Tag
+  application will continue across the rest of the corpus in
+  subsequent batches.
+
 ## Conventions for entries
 
 Each entry should record:

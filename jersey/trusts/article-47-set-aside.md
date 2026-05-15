@@ -4,6 +4,18 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - mistake
+  - setting-aside
+  - hastings-bass
+  - cross-border-tax
+  - fiduciary-duty
+  - royal-court
+  - case-law
+  - jersey
+  - trusts-law-1984
+  - concept-file
 sources:
   - title: Trusts (Jersey) Law 1984 (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_11_1984

@@ -4,6 +4,18 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - royal-court
+  - court-application
+  - blessing
+  - momentous-decision
+  - beddoe
+  - fiduciary-duty
+  - case-law
+  - jersey
+  - trusts-law-1984
+  - concept-file
 sources:
   - title: Trusts (Jersey) Law 1984 (consolidated) — Article 51
     url: https://www.jerseylaw.je/laws/current/l_11_1984

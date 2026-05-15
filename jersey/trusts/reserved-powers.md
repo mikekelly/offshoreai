@@ -4,6 +4,17 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - reserved-powers
+  - settlor
+  - revocation-power
+  - us-grantor-trust
+  - sham
+  - fiduciary-duty
+  - jersey
+  - trusts-law-1984
+  - concept-file
 articles_covered:
   - "9A"
 sources:

@@ -4,6 +4,17 @@ jurisdiction: jersey
 category: financial-regulation
 status: draft
 last_verified: 2026-05-14
+tags:
+  - regulation
+  - jfsc
+  - tcb
+  - fund-services-business
+  - investment-business
+  - banking-business
+  - insurance-business
+  - jersey
+  - fsc-law-1998
+  - concept-file
 sources:
   - title: Jersey Financial Services Commission — Home
     url: https://www.jerseyfsc.org

@@ -4,6 +4,14 @@ jurisdiction: jersey
 category: government
 status: draft
 last_verified: 2026-05-14
+tags:
+  - government
+  - jersey
+  - crown-dependency
+  - uk-relationship
+  - eu-relationship
+  - international
+  - concept-file
 sources:
   - title: Jersey's relationship with the UK and EU
     url: https://www.gov.je/Government/Departments/JerseyWorld/pages/relationshipeuanduk.aspx

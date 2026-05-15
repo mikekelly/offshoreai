@@ -4,6 +4,16 @@ jurisdiction: jersey
 category: trusts
 status: draft
 last_verified: 2026-05-14
+tags:
+  - trusts
+  - trusts-law-1984
+  - firewall
+  - reserved-powers
+  - purpose-trust
+  - mistake
+  - royal-court
+  - jersey
+  - concept-file
 sources:
   - title: Trusts (Jersey) Law 1984 (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_11_1984
