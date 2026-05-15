@@ -237,3 +237,38 @@ Example:
 > - **Nature**: revised to reflect YA 2026 allowances published by
 >   Revenue Jersey.
 > - **Source**: gov.je 2026 tax allowances page.
+
+- **Companies Law Articles 34–54 added** (Parts 8, 9, 10) — 29
+  new deep files:
+  - **Part 8 — Share Capital (Articles 34–40C)**: nature and
+    numbering of shares with bearer-share prohibition (Art 34);
+    abolition of the rule on share discounts (Art 35); Article 36
+    (heading not visible, stub); different amounts on shares /
+    partly-paid shares (Art 37); alteration of par-value vs
+    no-par-value capital (Arts 38, 38A); currency-conversion rate
+    (Art 38B); share-premium account for par-value (Art 39) and
+    stated-capital account for no-par-value (Art 39A); relief
+    from transfer requirements for group reorganisations (Art
+    39B); fractional shares (Art 40); conversion between par and
+    no-par (Arts 40A, 40B); Part 8 amendment power (Art 40C).
+  - **Part 9 — Register of Members and Certificates (Articles
+    41–51A)**: the register of members (Art 41); share transfer
+    and registration mechanics with deed-imposed restrictions
+    (Art 42); certification of transfers (Art 43); register
+    location with Registrar notification (Art 44); inspection of
+    register on reasonable notice (Art 45); declaration for lost
+    certificates with indemnity practice (Art 46); Royal Court
+    rectification (Art 47); the "trusts not on the register"
+    clean-handed rule (Art 48); overseas branch registers
+    supplementing the principal register (Art 49); share-
+    certificate content and timing (Art 50); prima facie evidence
+    of title (Art 51); uncertificated-securities regime including
+    CREST-eligibility (Art 51A).
+  - **Part 10 — Class Rights (Articles 52–54)**: variation of
+    class rights with the 75% written-consent / class-meeting
+    route (Art 52); the 15% minority-objection right with Royal
+    Court application (Art 53); registration of special-rights
+    particulars (Art 54).
+
+  Articles index updated. Articles 55–224 remain (~170 active
+  provisions across Parts 11–24).
