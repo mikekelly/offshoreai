@@ -565,3 +565,59 @@ chapter-by-chapter tables.
 
 Companies Law remaining: Parts 22 (External Companies), 23 (Registrar),
 24 (Miscellaneous and Final Provisions), and Schedules.
+
+## 2026-05-15 — Companies Law Parts 22, 23, 24 + Schedules (Companies Law COMPLETE)
+
+Added 31 deep concept files covering the final Parts of the
+Companies (Jersey) Law 1991:
+
+Part 22 — External Companies (1 file):
+- `external-companies.md` (Art 195)
+
+Part 23 — Registrar (12 files):
+- `registrar-officers.md` (Art 196)
+- `registrar-seal.md` (Art 197)
+- `registered-numbers.md` (Art 198)
+- `document-size-durability.md` (Art 199)
+- `document-form.md` (Art 200)
+- `registrar-fees.md` (Art 201)
+- `registrar-records-keeping.md` (Art 201A)
+- `registrar-inspection.md` (Art 202)
+- `company-returns-enforcement.md` (Art 203)
+- `registrar-records-destruction.md` (Art 204)
+- `strike-off.md` (Art 205)
+- `strike-off-duration.md` (Art 205A)
+
+Part 24 — Miscellaneous and Final Provisions (19 files):
+- `form-of-records.md` (Art 206)
+- `records-as-evidence.md` (Art 207)
+- `records-offence-suspected.md` (Art 208)
+- `legal-professional-privilege.md` (Art 209)
+- `right-to-refuse-questions.md` (Art 210)
+- `private-company-relief.md` (Art 211)
+- `court-relief.md` (Art 212) — "honest and reasonable" relief
+- `dissolution-void.md` (Art 213) — restoration
+- `foreign-corporation-recognition.md` (Art 213A) — PIL recognition
+- `public-registry-registration.md` (Art 214) — Jersey land registry
+- `punishment-of-offences.md` (Art 215)
+- `accessories-and-abettors.md` (Art 216)
+- `court-general-powers.md` (Art 217)
+- `limitation-of-liability.md` (Art 217A) — Registrar/JFSC good-faith
+- `power-to-make-rules.md` (Art 218)
+- `orders.md` (Art 219)
+- `regulations-and-orders.md` (Art 220)
+- `transitional-provisions.md` (Art 221)
+- `repeal.md` (Art 223)
+- `citation.md` (Art 224)
+
+Schedules (2 files):
+- `schedule-1-offences.md` (Sch 1) — penalty schedule
+- `schedule-2-transitional.md` (Sch 2) — bridge from 1861 Loi
+
+Articles index updated. All "planned cluster" markers replaced
+with deep links. Status section updated to "complete".
+
+The Companies (Jersey) Law 1991 statute wiki is now complete:
+24 Parts, ~300 Articles, plus 2 Schedules, all with at least one
+deep concept file. Future work moves to other Jersey statutes
+(Income Tax 1961, Foundations 2009, Financial Services 1998).

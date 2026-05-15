@@ -551,36 +551,69 @@ just and equitable, creditors', and general provisions).
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 195 | Power to make Regulations as to registration and regulation of external companies | *(planned: external-companies.md)* |
+| 195 | Power to make Regulations as to registration and regulation of external companies | [external-companies.md](external-companies.md) |
 
 ## Part 23 — Registrar
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 196 — 205A | Registrar functions, fees, records, strike-off | *(planned: registrar cluster)* |
+| 196 | Registrar and other officers | [registrar-officers.md](registrar-officers.md) |
+| 197 | Registrar's seal | [registrar-seal.md](registrar-seal.md) |
+| 198 | Registered numbers | [registered-numbers.md](registered-numbers.md) |
+| 199 | Size, durability, etc. of documents delivered to registrar | [document-size-durability.md](document-size-durability.md) |
+| 200 | Form of documents to be delivered to the registrar | [document-form.md](document-form.md) |
+| 201 | Fees and charges | [registrar-fees.md](registrar-fees.md) |
+| 201A | Keeping of records by registrar | [registrar-records-keeping.md](registrar-records-keeping.md) |
+| 202 | Inspection and production of records kept by registrar | [registrar-inspection.md](registrar-inspection.md) |
+| 203 | Enforcement of company's duty to make returns | [company-returns-enforcement.md](company-returns-enforcement.md) |
+| 204 | Destruction of records | [registrar-records-destruction.md](registrar-records-destruction.md) |
+| 205 | Registrar's powers to strike companies off register | [strike-off.md](strike-off.md) |
+| 205A | Registrar may strike company off register at end of duration | [strike-off-duration.md](strike-off-duration.md) |
 
 ## Part 24 — Miscellaneous and Final Provisions
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 206 — 224 | Records, evidence, privilege, court powers, citation | *(planned: miscellaneous cluster)* |
+| 206 | Form of company's records | [form-of-records.md](form-of-records.md) |
+| 207 | Examination of records and admissibility of evidence | [records-as-evidence.md](records-as-evidence.md) |
+| 208 | Production and inspection of records where offence suspected | [records-offence-suspected.md](records-offence-suspected.md) |
+| 209 | Legal professional privilege | [legal-professional-privilege.md](legal-professional-privilege.md) |
+| 210 | Right to refuse to answer questions | [right-to-refuse-questions.md](right-to-refuse-questions.md) |
+| 211 | Relief for private companies | [private-company-relief.md](private-company-relief.md) |
+| 212 | Power of court to grant relief in certain cases | [court-relief.md](court-relief.md) |
+| 213 | Power of court to declare dissolution of company void | [dissolution-void.md](dissolution-void.md) |
+| 213A | Recognition of status of foreign corporations | [foreign-corporation-recognition.md](foreign-corporation-recognition.md) |
+| 214 | Registration in the Public Registry | [public-registry-registration.md](public-registry-registration.md) |
+| 215 | Punishment of offences | [punishment-of-offences.md](punishment-of-offences.md) |
+| 216 | Accessories and abettors | [accessories-and-abettors.md](accessories-and-abettors.md) |
+| 217 | General powers of the court | [court-general-powers.md](court-general-powers.md) |
+| 217A | Limitation of liability | [limitation-of-liability.md](limitation-of-liability.md) |
+| 218 | Power to make Rules | [power-to-make-rules.md](power-to-make-rules.md) |
+| 219 | Orders | [orders.md](orders.md) |
+| 220 | General provisions as to Regulations and Orders | [regulations-and-orders.md](regulations-and-orders.md) |
+| 221 | Transitional provisions | [transitional-provisions.md](transitional-provisions.md) |
+| 223 | Repeal | [repeal.md](repeal.md) |
+| 224 | Citation | [citation.md](citation.md) |
 
 ## Schedules
 
 | Schedule | Topic | Deep file |
 |---|---|---|
-| 1 | Punishment of Offences | *(planned: schedule-1-offences.md)* |
-| 2 | Transitional Provisions | *(planned: schedule-2-transitional.md)* |
+| 1 | Punishment of Offences | [schedule-1-offences.md](schedule-1-offences.md) |
+| 2 | Transitional Provisions | [schedule-2-transitional.md](schedule-2-transitional.md) |
 
 ---
 
-## Status (first batch)
+## Status
 
-This index is the systematic-completeness scaffold. As at this
-revision, deep files exist for **Part 1 (Articles 1, 2, 2A, 2B)**
-and **the Article 3 family (Articles 3, 3A–3I) — company-type
-definitions**. The remaining ~280 Articles are planned in successive
-batches.
+**Companies Law statute wiki is now complete** as of 2026-05-15.
+Every Part of the Companies (Jersey) Law 1991 has at least one
+deep concept file per Article (or, where headings were not
+visible in the consolidated text, a stub flagged for verification).
+
+For the **structural overview** of the Law (the 24 Parts and the
+relationships between them), see
+[`companies-law-1991.md`](companies-law-1991.md).
 
 For the **structural overview** of the Law (the 24 Parts and the
 relationships between them), see
