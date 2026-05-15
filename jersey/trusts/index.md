@@ -85,6 +85,32 @@ statutory order and links to the deep file where one exists.
 - [**article-29-disclosure.md**](article-29-disclosure.md) — Article 29
   statutory disclosure (sits alongside the *Schmidt v Rosewood*
   jurisdiction at [`beneficiary-rights.md`](beneficiary-rights.md)).
+- [**breach-of-trust-liability.md**](breach-of-trust-liability.md) —
+  **Article 30**: compensation, no-offset, predecessor/discovered
+  breaches, co-trustee liability, beneficiary release, and the
+  irreducible core (fraud / wilful misconduct / gross negligence).
+- [**trustee-multiple-trusts.md**](trustee-multiple-trusts.md) —
+  Article 31: no cross-trust notice, cross-trust transactions.
+- [**trustee-third-party-liability.md**](trustee-third-party-liability.md)
+  — Article 32: "as trustee, not personally" protection.
+- [**constructive-trustee.md**](constructive-trustee.md) — Article 33:
+  knowing receipt and dishonest assistance, *Royal Brunei v Tan*.
+- [**outgoing-trustee.md**](outgoing-trustee.md) — Article 34.
+- [**protective-trust.md**](protective-trust.md) — Article 35:
+  spendthrift/protective trusts.
+- [**class-interests.md**](class-interests.md) — Article 36.
+- [**article-37-variation.md**](article-37-variation.md) — Article 37:
+  variation under the trust terms.
+- [**accumulation-and-advancement.md**](accumulation-and-advancement.md)
+  — Article 38: maintenance, accumulation, advancement.
+- [**power-of-appointment.md**](power-of-appointment.md) — Article 39.
+- [**power-of-revocation.md**](power-of-revocation.md) — Article 40.
+- [**change-of-proper-law.md**](change-of-proper-law.md) — Article 41.
+- [**failure-or-lapse.md**](failure-or-lapse.md) — Article 42: resulting
+  trust default.
+- [**termination-of-trust.md**](termination-of-trust.md) — Article 43:
+  the Jersey *Saunders v Vautier* analogue.
+- [**trustee-security.md**](trustee-security.md) — Article 43A.
 - [**article-47-set-aside.md**](article-47-set-aside.md) — the
   modern statutory mistake jurisdiction (Articles 47B–47H of the
   Trusts Law), the three-limb test from *S & T Trusts*, and the

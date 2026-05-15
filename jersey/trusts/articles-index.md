@@ -97,31 +97,31 @@ historical text remains in older consolidations on
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 30 | Liability for breach of trust | *(planned: breach-of-trust-liability.md)* |
-| 31 | Trustee acting in respect of more than one trust | *(planned: trustee-multiple-trusts.md)* |
-| 32 | Trustee's liability to third parties | *(planned: trustee-third-party-liability.md)* |
-| 33 | Constructive trustee | *(planned: constructive-trustee.md)* |
-| 34 | Position of outgoing trustee | *(planned: outgoing-trustee.md)* |
+| 30 | Liability for breach of trust | [breach-of-trust-liability.md](breach-of-trust-liability.md) |
+| 31 | Trustee acting in respect of more than one trust | [trustee-multiple-trusts.md](trustee-multiple-trusts.md) |
+| 32 | Trustee's liability to third parties | [trustee-third-party-liability.md](trustee-third-party-liability.md) |
+| 33 | Constructive trustee | [constructive-trustee.md](constructive-trustee.md) |
+| 34 | Position of outgoing trustee | [outgoing-trustee.md](outgoing-trustee.md) |
 
 ### Protective trusts; class interests; and certain powers
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 35 | Spendthrift or protective trust | *(planned: protective-trust.md)* |
-| 36 | Class interests | *(planned: class-interests.md)* |
-| 37 | Variation of terms of a trust | *(planned: article-37-variation.md)* |
-| 38 | Power of accumulation and advancement | *(planned: accumulation-and-advancement.md)* |
-| 39 | Power of appointment | *(planned: power-of-appointment.md)* |
-| 40 | Power of revocation | *(planned: power-of-revocation.md)* |
-| 41 | Power to provide for change of proper law | *(planned: change-of-proper-law.md)* |
+| 35 | Spendthrift or protective trust | [protective-trust.md](protective-trust.md) |
+| 36 | Class interests | [class-interests.md](class-interests.md) |
+| 37 | Variation of terms of a trust | [article-37-variation.md](article-37-variation.md) |
+| 38 | Power of accumulation and advancement | [accumulation-and-advancement.md](accumulation-and-advancement.md) |
+| 39 | Power of appointment | [power-of-appointment.md](power-of-appointment.md) |
+| 40 | Power of revocation | [power-of-revocation.md](power-of-revocation.md) |
+| 41 | Power to provide for change of proper law | [change-of-proper-law.md](change-of-proper-law.md) |
 
 ### Failure, lapse and termination of trusts
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 42 | Failure or lapse of interest | *(planned: failure-or-lapse.md)* |
-| 43 | Termination of a Jersey trust | *(planned: termination-of-trust.md)* |
-| 43A | Security | *(planned: trustee-security.md)* |
+| 42 | Failure or lapse of interest | [failure-or-lapse.md](failure-or-lapse.md) |
+| 43 | Termination of a Jersey trust | [termination-of-trust.md](termination-of-trust.md) |
+| 43A | Security | [trustee-security.md](trustee-security.md) |
 
 ### Powers of the court
 

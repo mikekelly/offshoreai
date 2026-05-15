@@ -80,6 +80,22 @@ For full diff history, see the git log.
 - Articles index and topic index updated to reflect the new files.
   Articles 30–47A and 48–61 remain (~35 active provisions, est. 2
   more turns to complete the Trusts Law).
+- Articles 30–43A added: breach-of-trust liability (with the
+  irreducible-core exoneration limits — fraud, wilful misconduct,
+  gross negligence — cannot be excluded), cross-trust notice and
+  transaction rules (Art 31), third-party liability with the "as
+  trustee, not personally" formula (Art 32), constructive
+  trusteeship including knowing-receipt and dishonest-assistance
+  liability (Art 33), outgoing-trustee position (Art 34),
+  spendthrift / protective trusts (Art 35), class-interest
+  mechanics (Art 36), deed-based variation (Art 37),
+  accumulation/maintenance/advancement (Art 38), power of
+  appointment (Art 39), power of revocation (Art 40), change of
+  proper law (Art 41), failure / resulting-trust default (Art 42),
+  termination (Art 43, Saunders-v-Vautier analogue), and trustee
+  security on exit / distribution (Art 43A). 15 new files.
+  Articles 44–47A and 48–61 remain (~17 active provisions; one
+  more turn to finish Trusts Law 1984).
 
 ## Conventions for entries
 
