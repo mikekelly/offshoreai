@@ -141,16 +141,16 @@ disclosures; the Jersey Land Registry; charities register.
 
 The canonical sources for Jersey:
 
-| Source | Used for |
-|---|---|
-| [jerseylaw.je][jl] | Consolidated statutes, Royal Court & Court of Appeal judgments, Jersey & Guernsey Law Review |
-| [gov.je][gov] | Revenue Jersey, Customs, States policy, official statistics, residency rules |
-| [jerseyfsc.org][jfsc] | JFSC handbooks, codes of practice, public statements, registry |
-| [statesassembly.gov.je][states] | Bills, propositions, Hansard, Standing Orders |
-| [royalcourt.gov.je][rc] | Court procedure rules and listings |
-| [comptroller-general.gov.je][cg] | Public-finance oversight |
-| OECD inclusive framework country pages | Pillar Two implementation, peer reviews |
-| Moneyval | AML/CFT mutual-evaluation reports for Jersey |
+| Source                                 | Used for                                                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [jerseylaw.je][jl]                     | Consolidated statutes, Royal Court & Court of Appeal judgments, Jersey & Guernsey Law Review |
+| [gov.je][gov]                          | Revenue Jersey, Customs, States policy, official statistics, residency rules                 |
+| [jerseyfsc.org][jfsc]                  | JFSC handbooks, codes of practice, public statements, registry                               |
+| [statesassembly.gov.je][states]        | Bills, propositions, Hansard, Standing Orders                                                |
+| [royalcourt.gov.je][rc]                | Court procedure rules and listings                                                           |
+| [comptroller-general.gov.je][cg]       | Public-finance oversight                                                                     |
+| OECD inclusive framework country pages | Pillar Two implementation, peer reviews                                                      |
+| Moneyval                               | AML/CFT mutual-evaluation reports for Jersey                                                 |
 
 A complete and dated canonical-sources list lives in
 [`sources.md`](sources.md).

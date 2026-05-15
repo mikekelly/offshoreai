@@ -524,3 +524,44 @@ Part 20A — Economic Substance Test (2 files):
 - `substance-court-powers.md` (Art 143B)
 
 Articles index updated.
+
+## 2026-05-15 — Companies Law Part 21 (Winding Up of Companies)
+
+Added 62 deep concept files plus a Part 21 overview, covering the
+entire winding-up regime — the largest single Part of the Companies Law:
+
+Overview: `winding-up.md` covers the five-chapter structure and choice
+between summary, just-and-equitable, creditors', limited-duration and
+désastre routes.
+
+Chapter 1 — Limited duration (2 files):
+- `winding-up-limited-life.md` (Art 144)
+- `winding-up-limited-duration.md` (Art 144A)
+
+Chapter 2 — Summary winding up (11 files): solvent voluntary
+liquidation including procedure, commencement, liquidator appointment,
+distribution, insolvency conversion, désastre bridge, and termination.
+
+Chapter 3 — Just and equitable (1 file):
+- `just-and-equitable-winding-up.md` (Art 155)
+
+Chapter 4 — Creditors' winding up (39 files) — the dominant insolvency
+route, covering company application, creditor application, provisional
+liquidator, court order, notice, commencement, creditors' meetings,
+liquidator appointment, liquidation committee, costs, désastre bridge,
+arrangements, liquidator powers/duties, disclaimer of onerous property
+and leases, claw-back regime (transactions at undervalue, preferences,
+extortionate credit), wrongful trading (Art 177), fraudulent trading
+(Art 178), delivery and seizure, share-buyback claw-back, cooperation
+duty, misconduct reporting, termination, and distribution waterfall.
+
+Chapter 5 — General provisions (10 files): references to court,
+enforcement of liquidator filings, qualifications, corrupt inducement
+offence, notifications, contributory liability, bar against parallel
+insolvency proceedings, record retention, amendment power.
+
+Articles index updated. Part 21 placeholder replaced with detailed
+chapter-by-chapter tables.
+
+Companies Law remaining: Parts 22 (External Companies), 23 (Registrar),
+24 (Miscellaneous and Final Provisions), and Schedules.

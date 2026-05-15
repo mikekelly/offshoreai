@@ -453,9 +453,99 @@ overview.
 
 ## Part 21 — Winding Up of Companies
 
+See [`winding-up.md`](winding-up.md) for the Part 21 overview
+covering the five winding-up routes (limited duration, summary,
+just and equitable, creditors', and general provisions).
+
+### Chapter 1 — Limited duration
+
 | Article | Heading | Deep file |
 |---|---|---|
-| 144 — 194A | Winding up — limited duration, summary, just-and-equitable, creditors' | *(planned: winding-up cluster)* |
+| 144 | Procedure – winding up of limited life companies | [winding-up-limited-life.md](winding-up-limited-life.md) |
+| 144A | Procedure – winding up of other companies of limited duration | [winding-up-limited-duration.md](winding-up-limited-duration.md) |
+
+### Chapter 2 — Summary winding up
+
+| Article | Heading | Deep file |
+|---|---|---|
+| 145 | Application of this Chapter | [summary-winding-up-application.md](summary-winding-up-application.md) |
+| 146 | Procedure | [summary-winding-up-procedure.md](summary-winding-up-procedure.md) |
+| 147 | Commencement of summary winding up | [summary-winding-up-commencement.md](summary-winding-up-commencement.md) |
+| 148 | Effect on status of company | [summary-winding-up-status-effect.md](summary-winding-up-status-effect.md) |
+| 149 | Appointment of liquidator | [summary-winding-up-liquidator.md](summary-winding-up-liquidator.md) |
+| 150 | Application of assets and dissolution | [summary-winding-up-dissolution.md](summary-winding-up-dissolution.md) |
+| 151 | Effect of insolvency | [summary-winding-up-insolvency.md](summary-winding-up-insolvency.md) |
+| 152 | Remuneration of liquidator | [liquidator-remuneration-summary.md](liquidator-remuneration-summary.md) |
+| 153 | Cesser of office by liquidator | [liquidator-cessation-summary.md](liquidator-cessation-summary.md) |
+| 154 | Termination of summary winding up | [summary-winding-up-termination.md](summary-winding-up-termination.md) |
+| 154A | Declaration under Désastre Law | [summary-winding-up-desastre.md](summary-winding-up-desastre.md) |
+
+### Chapter 3 — Just and equitable
+
+| Article | Heading | Deep file |
+|---|---|---|
+| 155 | Power for court to wind up | [just-and-equitable-winding-up.md](just-and-equitable-winding-up.md) |
+
+### Chapter 4 — Creditors' winding up
+
+| Article | Heading | Deep file |
+|---|---|---|
+| 156 | Application of this Chapter | [creditors-winding-up-application.md](creditors-winding-up-application.md) |
+| 157 | Procedure | [creditors-winding-up-procedure.md](creditors-winding-up-procedure.md) |
+| 157A | Application for creditors' winding up by creditor | [creditors-winding-up-creditor-application.md](creditors-winding-up-creditor-application.md) |
+| 157B | Appointment of provisional liquidator | [creditors-winding-up-provisional-liquidator.md](creditors-winding-up-provisional-liquidator.md) |
+| 157C | Order of court commencing creditors' winding up | [creditors-winding-up-court-order.md](creditors-winding-up-court-order.md) |
+| 157D | Company's application to terminate creditors' winding up | [creditors-winding-up-company-termination.md](creditors-winding-up-company-termination.md) |
+| 158 | Notice of winding up | [creditors-winding-up-notice.md](creditors-winding-up-notice.md) |
+| 159 | Commencement and effects of creditors' winding up | [creditors-winding-up-commencement.md](creditors-winding-up-commencement.md) |
+| 160 | Meeting of creditors (non-court-ordered) | [creditors-meeting.md](creditors-meeting.md) |
+| 160A | Meeting of creditors following court ordered creditors' winding up | [creditors-meeting-court-ordered.md](creditors-meeting-court-ordered.md) |
+| 161 | Appointment of liquidator | [creditors-winding-up-liquidator.md](creditors-winding-up-liquidator.md) |
+| 162 | Appointment of liquidation committee | [liquidation-committee.md](liquidation-committee.md) |
+| 163 | Remuneration of liquidator, cesser of directors' powers, and vacancy | [liquidator-remuneration-creditors.md](liquidator-remuneration-creditors.md) |
+| 164 | No liquidator appointed | [no-liquidator-appointed.md](no-liquidator-appointed.md) |
+| 165 | Costs of creditors' winding up | [creditors-winding-up-costs.md](creditors-winding-up-costs.md) |
+| 166 | Application of the law relating to désastre | [creditors-winding-up-desastre-application.md](creditors-winding-up-desastre-application.md) |
+| 167 | Arrangement when binding on creditors | [creditors-arrangement-binding.md](creditors-arrangement-binding.md) |
+| 168 | Meetings of company and creditors | [creditors-winding-up-meetings.md](creditors-winding-up-meetings.md) |
+| 169 | Final meeting and dissolution | [creditors-winding-up-final-meeting.md](creditors-winding-up-final-meeting.md) |
+| 169A | Procedure at creditors' meeting | [creditors-meeting-procedure.md](creditors-meeting-procedure.md) |
+| 170 | Powers and duties of liquidator | [liquidator-powers-duties.md](liquidator-powers-duties.md) |
+| 171 | Power to disclaim onerous property | [disclaimer-onerous-property.md](disclaimer-onerous-property.md) |
+| 172 | Disclaimer of contract leases | [disclaimer-contract-leases.md](disclaimer-contract-leases.md) |
+| 173 | Powers of court in respect of disclaimed property | [disclaimer-court-powers.md](disclaimer-court-powers.md) |
+| 174 | Unenforceability of liens on records | [liens-on-records.md](liens-on-records.md) |
+| 175 | Appointment or removal of liquidator by the court | [liquidator-appointment-removal-court.md](liquidator-appointment-removal-court.md) |
+| 176 | Transactions at an undervalue | [transactions-at-undervalue.md](transactions-at-undervalue.md) |
+| 176A | Giving of preferences | [preferences.md](preferences.md) |
+| 176B | Definitions relating to transactions at an undervalue and preferences | [transactions-preferences-definitions.md](transactions-preferences-definitions.md) |
+| 177 | Responsibility of persons for wrongful trading | [wrongful-trading.md](wrongful-trading.md) |
+| 178 | Responsibility for fraudulent trading | [fraudulent-trading.md](fraudulent-trading.md) |
+| 179 | Extortionate credit transactions | [extortionate-credit-transactions.md](extortionate-credit-transactions.md) |
+| 180 | Delivery and seizure of property | [delivery-and-seizure.md](delivery-and-seizure.md) |
+| 181 | Liability in respect of purchase or redemption of shares | [liability-share-purchase-redemption.md](liability-share-purchase-redemption.md) |
+| 182 | Resolutions passed at adjourned meetings | [adjourned-meeting-resolutions-winding-up.md](adjourned-meeting-resolutions-winding-up.md) |
+| 183 | Duty to co-operate with liquidator | [duty-to-cooperate-with-liquidator.md](duty-to-cooperate-with-liquidator.md) |
+| 184 | Liquidator to report possible misconduct | [liquidator-misconduct-report.md](liquidator-misconduct-report.md) |
+| 185 | Obligations arising under Article 184 | [misconduct-report-obligations.md](misconduct-report-obligations.md) |
+| 185A | Termination of creditors' winding up | [creditors-winding-up-termination.md](creditors-winding-up-termination.md) |
+| 185B | Declaration under Désastre Law | [creditors-winding-up-desastre-declaration.md](creditors-winding-up-desastre-declaration.md) |
+| 186 | Distribution of company's property | [distribution-of-property.md](distribution-of-property.md) |
+
+### Chapter 5 — General provisions
+
+| Article | Heading | Deep file |
+|---|---|---|
+| 186A | References to the Court | [references-to-court.md](references-to-court.md) |
+| 187 | Enforcement of liquidator's duty to make returns, etc. | [liquidator-returns-enforcement.md](liquidator-returns-enforcement.md) |
+| 188 | Qualifications of liquidator | [liquidator-qualifications.md](liquidator-qualifications.md) |
+| 189 | Corrupt inducement affecting appointment as liquidator | [corrupt-inducement-liquidator.md](corrupt-inducement-liquidator.md) |
+| 190 | Notification by liquidator of resignation, etc. | [liquidator-resignation-notification.md](liquidator-resignation-notification.md) |
+| 191 | Notification that company is in liquidation | [notification-in-liquidation.md](notification-in-liquidation.md) |
+| 192 | Liability as contributories of present and past members | [contributories-liability.md](contributories-liability.md) |
+| 193 | Bar against other proceedings in bankruptcy | [bar-other-proceedings.md](bar-other-proceedings.md) |
+| 194 | Disposal of records | [disposal-of-records-winding-up.md](disposal-of-records-winding-up.md) |
+| 194A | Power of States to amend Part 21 | [part-21-amendment-power.md](part-21-amendment-power.md) |
 
 ## Part 22 — External Companies
 
