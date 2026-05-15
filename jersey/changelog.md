@@ -721,3 +721,19 @@ Insurance (4 files):
 
 All three sectors now substantively populated with their key vehicle
 types and structural variations.
+
+## 2026-05-15 — Registries, Legal System, Immigration sections (15 files)
+
+Registries (7 files): companies-registry.md, foundations-registry.md,
+business-names.md, beneficial-ownership.md, vasp-register.md,
+land-registry.md, charities-register.md.
+
+Legal System (7 files): sources-of-law.md, customary-law.md,
+court-of-appeal.md, privy-council.md, bailiff.md, jurats.md,
+judicial-greffe.md, legal-profession.md.
+
+Immigration & Residency (5 files): control-of-housing-and-work-law.md,
+residential-status-categories.md, employment-status-categories.md,
+high-value-residency.md, route-to-entitled.md.
+
+All three sections substantively populated.
