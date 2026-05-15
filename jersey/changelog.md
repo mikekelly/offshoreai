@@ -157,6 +157,54 @@ For full diff history, see the git log.
   application will continue across the rest of the corpus in
   subsequent batches.
 
+- **Tag propagation across the corpus** — ~75 files. Every Article
+  file in trusts/ (1–61 except repealed), all Companies-Law files
+  written, all tax/government/legal-system/financial-regulation/
+  foundations content files, all stub section indexes, the three
+  written use-case files, and the meta files (glossary, sources).
+
+- **`.obsidian/` untracked** and added to `.gitignore`. A stray
+  empty `jersey/stamp-duty.md` (created by Obsidian on a broken-
+  link click) removed.
+
+- **Section index rewrites** to cold-reader orientation: tax/index,
+  companies/index, government/index, legal-system/index,
+  financial-regulation/index, foundations/index. Each now opens
+  with "what / why / when / where-to-start", groups files by
+  conceptual theme, gives every link a substantive description,
+  and surfaces tag-driven navigation.
+
+- **Companies Law 1991 statute-wiki continued** — Articles 4–17D
+  added as 21 new deep files:
+  - **Memorandum cluster (Articles 4, 4A, 4B, 4C)** — general
+    memorandum, share companies, guarantee companies, limited-
+    duration companies.
+  - **Articles, Standard Table, incorporation documents (Articles
+    5, 6, 7)** — articles of association, the Minister's Standard
+    Table for vanilla par-value companies, the documents required
+    on incorporation including director particulars.
+  - **Registration, effect, alteration, copies (Articles 8–12)** —
+    Registrar's authority and public-interest referral; certificate
+    of incorporation as conclusive evidence; the statutory contract
+    between company and members under Article 10; alteration by
+    special resolution with member-protection limits; the member's
+    right to a copy of the deed.
+  - **Names cluster (Articles 13–15)** — name requirements with
+    mandatory "Limited" / "Ltd" suffix; change of name by special
+    resolution with 14-day Greffier notice for property-holding
+    companies; the Registrar's post-incorporation power to direct
+    a change.
+  - **Status changes (Articles 16, 17, 17A, 17B, 17C, 17D)** —
+    public → private and private → public conversions, the
+    30-member threshold and its member-counting rules
+    (employee-shareholders excluded), effective date on certificate
+    issue, and the abolition-of-limit power exercised by the
+    States.
+
+  Articles index updated to reflect live files (no more "planned"
+  markers for Articles 4–17D). Articles 18–224 remain (~250 active
+  provisions, est. 10–12 further turns).
+
 ## Conventions for entries
 
 Each entry should record:

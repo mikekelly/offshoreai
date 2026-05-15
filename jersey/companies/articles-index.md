@@ -53,37 +53,37 @@ filled in over the coming batches.
 | 3G | Guarantee companies | [guarantee-companies.md](guarantee-companies.md) |
 | 3H | Limited life companies | [limited-life-companies.md](limited-life-companies.md) |
 | 3I | Cell companies | [cell-companies.md](cell-companies.md) |
-| 4 | Memorandum of association | *(planned: memorandum-of-association.md)* |
-| 4A | Memorandum of company with shares | *(planned: memorandum-shares.md)* |
-| 4B | Memorandum of company with guarantor members | *(planned: memorandum-guarantee.md)* |
-| 4C | Memorandum or articles of company of limited duration | *(planned: memorandum-limited-duration.md)* |
-| 5 | Articles of association | *(planned: articles-of-association.md)* |
-| 6 | Standard Table | *(planned: standard-table.md)* |
-| 7 | Documents to be delivered to registrar | *(planned: incorporation-documents.md)* |
-| 8 | Registration | *(planned: registration.md)* |
-| 9 | Effect of registration | *(planned: effect-of-registration.md)* |
-| 10 | Effect of memorandum and articles | *(planned: effect-of-memorandum-articles.md)* |
-| 11 | Alteration of memorandum and articles | *(planned: alteration-of-memorandum-articles.md)* |
-| 12 | Copies of memorandum and articles for members | *(planned: copies-for-members.md)* |
+| 4 | Memorandum of association | [memorandum-of-association.md](memorandum-of-association.md) |
+| 4A | Memorandum of company with shares | [memorandum-shares.md](memorandum-shares.md) |
+| 4B | Memorandum of company with guarantor members | [memorandum-guarantee.md](memorandum-guarantee.md) |
+| 4C | Memorandum or articles of company of limited duration | [memorandum-limited-duration.md](memorandum-limited-duration.md) |
+| 5 | Articles of association | [articles-of-association.md](articles-of-association.md) |
+| 6 | Standard Table | [standard-table.md](standard-table.md) |
+| 7 | Documents to be delivered to registrar | [incorporation-documents.md](incorporation-documents.md) |
+| 8 | Registration | [registration.md](registration.md) |
+| 9 | Effect of registration | [effect-of-registration.md](effect-of-registration.md) |
+| 10 | Effect of memorandum and articles | [effect-of-memorandum-articles.md](effect-of-memorandum-articles.md) |
+| 11 | Alteration of memorandum and articles | [alteration-of-memorandum-articles.md](alteration-of-memorandum-articles.md) |
+| 12 | Copies of memorandum and articles for members | [copies-for-members.md](copies-for-members.md) |
 
 ## Part 3 — Names
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 13 | Requirements as to names | *(planned: name-requirements.md)* |
-| 14 | Change of name | *(planned: change-of-name.md)* |
-| 15 | Power to require change of name | *(planned: registrar-name-change-power.md)* |
+| 13 | Requirements as to names | [name-requirements.md](name-requirements.md) |
+| 14 | Change of name | [change-of-name.md](change-of-name.md) |
+| 15 | Power to require change of name | [registrar-name-change-power.md](registrar-name-change-power.md) |
 
 ## Part 4 — Public Companies and Private Companies
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 16 | Change of status of public company | *(planned: public-to-private.md)* |
-| 17 | Change of status of private company | *(planned: private-to-public.md)* |
-| 17A | Calculation of number of members | *(planned: member-counting.md)* |
-| 17B | Effective date of change of status | *(planned: status-change-effective-date.md)* |
-| 17C | Alteration of numbers | *(planned: alteration-of-numbers.md)* |
-| 17D | Power to abolish 30-member limit | *(planned: 30-member-limit-abolition.md)* |
+| 16 | Change of status of public company | [public-to-private.md](public-to-private.md) |
+| 17 | Change of status of private company | [private-to-public.md](private-to-public.md) |
+| 17A | Calculation of number of members | [member-counting.md](member-counting.md) |
+| 17B | Effective date of change of status | [status-change-effective-date.md](status-change-effective-date.md) |
+| 17C | Alteration of numbers | [alteration-of-numbers.md](alteration-of-numbers.md) |
+| 17D | Power to abolish 30-member limit | [30-member-limit-abolition.md](30-member-limit-abolition.md) |
 
 ## Part 5 — Corporate Capacity and Transactions
 
