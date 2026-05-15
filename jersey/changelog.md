@@ -775,3 +775,18 @@ Compliance / MLRO (2 files):
 
 These illustrate the operator-shaped voice with cross-links into
 the topic graph.
+
+## 2026-05-15 — More deep use-case Q&A files (3 files)
+
+Additional deep operator-shaped use-case files:
+
+- `family-office-adviser/trust-or-foundation.md` — the central
+  vehicle-choice question with cultural / tax-characterisation
+  drivers
+- `founder-entrepreneur/why-jersey-topco.md` — Jersey TopCo
+  selection criteria including Pillar Two threshold considerations
+- `international-lawyer/article-9-firewall.md` — Article 9 trust
+  firewall strength and limits for foreign-lawyer use
+
+Each covers a foundational persona question with cross-links into
+the topic graph.
