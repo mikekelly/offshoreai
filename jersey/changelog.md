@@ -689,3 +689,16 @@ Added 8 deep concept files to the financial-regulation section:
 
 Financial-regulation section now substantively populated with all
 principal statutes and cross-cutting operational concepts.
+
+## 2026-05-15 — AML/CFT section deep files (6 files)
+
+Filled the AML/CFT section's stub files:
+
+- `proceeds-of-crime-law-1999.md` — POCL foundation statute
+- `money-laundering-order-2008.md` — operative compliance obligations
+- `aml-cft-handbook.md` — JFSC AML/CFT Handbook
+- `sanctions.md` — Sanctions and Asset-Freezing (Jersey) Law 2014
+- `moneyval.md` — Council of Europe mutual evaluations
+- `schedule-2-businesses.md` — supervised-business categories (DNFBPs)
+
+AML/CFT section now substantively populated.
