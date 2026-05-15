@@ -658,3 +658,14 @@ Added deep concept files to the international section:
 
 These were referenced as stubs from tax/index.md and tax/
 international-tax.md; now substantively populated.
+
+## 2026-05-15 — Foundations section deep files (3 files)
+
+Filled out the foundation-section stub files:
+
+- `council-and-guardian.md` — the dual governance structure
+  (council = management; guardian = oversight)
+- `qualified-member.md` — the mandatory JFSC-regulated trust-company
+  representative on every foundation council
+- `uses.md` — typical use cases (philanthropy, orphan SPVs, family
+  governance, PTC ownership, succession, heritage)
