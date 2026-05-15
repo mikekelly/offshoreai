@@ -799,3 +799,22 @@ Additional deep persona Q&A files:
   procedure for the Royal Court's principal trust application
 - `journalist-ngo-academic/searching-companies-registry.md` —
   what's publicly accessible, what isn't, investigation tips
+
+## 2026-05-15 — Income Tax Law 1961 — overview + articles index + key articles (5 files)
+
+Started the article-by-article wiki for the Income Tax (Jersey)
+Law 1961, complementing the existing concept-based tax files:
+
+- `income-tax-law-1961.md` — statute overview covering the 24
+  Parts and key concepts
+- `itl-articles-index.md` — systematic articles-index scaffold
+  for future expansion
+- `itl-article-1.md` — Article 1 charge of income tax
+- `itl-article-123.md` — Article 123 charge of tax on body
+  corporate and residence test (zero-ten foundation)
+- `itl-article-134a.md` — Article 134A general anti-avoidance
+  rule
+
+The article-by-article wiki is at an **early stage**; future
+batches will fill out the index. The concept files in tax/ remain
+the practical reference for most substance.
