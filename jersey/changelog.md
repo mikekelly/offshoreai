@@ -669,3 +669,23 @@ Filled out the foundation-section stub files:
   representative on every foundation council
 - `uses.md` — typical use cases (philanthropy, orphan SPVs, family
   governance, PTC ownership, succession, heritage)
+
+## 2026-05-15 — Financial Regulation section deep files (8 files)
+
+Added 8 deep concept files to the financial-regulation section:
+
+- `jfsc-law-1998.md` — Financial Services Commission (Jersey) Law 1998
+  (constituting statute of the JFSC)
+- `financial-services-jersey-law-1998.md` — FS(J)L 1998 omnibus regulatory
+  statute (Investment Business, TCB, FSB, GIMB, MSB)
+- `banking-business-law-1991.md` — Banking Business (Jersey) Law 1991
+- `collective-investment-funds-law-1988.md` — CIF Law 1988 (public funds)
+- `insurance-business-law-1996.md` — Insurance Business (Jersey) Law 1996
+  (Category A / B permits, captive insurance)
+- `codes-of-practice.md` — JFSC Codes of Practice across regulated classes
+- `licensing.md` — registration / fit-and-proper / principal-key persons
+- `enforcement.md` — JFSC graduated enforcement powers (directions,
+  public statements, civil financial penalties, suspension, revocation)
+
+Financial-regulation section now substantively populated with all
+principal statutes and cross-cutting operational concepts.
