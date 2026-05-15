@@ -272,3 +272,31 @@ Example:
 
   Articles index updated. Articles 55–224 remain (~170 active
   provisions across Parts 11–24).
+
+- **Companies Law Articles 55–72 added** (Parts 11, 12, 13) — 26
+  new deep files (and catch-up of the index for Parts 8–10 if not
+  already reflected):
+  - **Part 11 — Redemption and Purchase of Shares (Articles 55,
+    57–59)**: redeemable shares (55); share buyback (57);
+    abolition of financial-assistance rule (58); treasury shares
+    (58A); treasury limits (58B); Part 11 ops not a capital
+    reduction (58C); amendment power (59). [Article 56 repealed.]
+  - **Part 12 — Reduction of Capital (Articles 60–66A)**: share
+    forfeiture (60); reduction of capital accounts (61); **the
+    Article 61A solvency-statement mechanism** as the centrepiece
+    of Jersey capital management (cash-flow rather than
+    profits-available test; all directors must sign; personal
+    liability for false statements); solvency-statement
+    registration (61B); court route under Articles 62–64;
+    member liability post-reduction (65); concealing-creditor
+    offence (66); amendment power (66A).
+  - **Part 13 — Administration (Articles 67–72)**: registered
+    office in Jersey (67); court relief from breach in
+    unavoidable circumstances (67A); review of Registrar's
+    decision (67B); evidence of authorization (67C); Articles 68
+    and 71 (stubs — headings not visible); name on correspondence
+    (69); particulars in correspondence (70); service of documents
+    at registered office (72).
+
+  Articles index updated to live links for Parts 8–13. Articles
+  73–224 remain (~150 active provisions across Parts 14–24).

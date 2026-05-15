@@ -120,87 +120,87 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 34 | Nature and numbering of shares | *(planned: nature-of-shares.md)* |
-| 35 | Rule of law relating to issue of shares at discount etc. abolished | *(planned: shares-at-discount-abolished.md)* |
-| 36 | [No heading provided] | *(planned: article-36.md)* |
-| 37 | Provision for different amounts to be paid on shares | *(planned: different-amounts-on-shares.md)* |
-| 38 | Alteration of capital of par value companies | *(planned: alteration-par-value.md)* |
-| 38A | Alteration of capital of no par value companies | *(planned: alteration-no-par-value.md)* |
-| 38B | Rate of exchange for currency conversions | *(planned: currency-conversion-rate.md)* |
-| 39 | Share premium accounts for par value companies | *(planned: share-premium.md)* |
-| 39A | Stated capital accounts for no par value companies | *(planned: stated-capital.md)* |
-| 39B | Relief from requirements to make transfers to share premium accounts and stated capital accounts | *(planned: relief-from-transfers.md)* |
-| 40 | Power to issue fractions of shares | *(planned: fractional-shares.md)* |
-| 40A | Conversion of shares in par value companies | *(planned: conversion-par-value.md)* |
-| 40B | Conversion of shares in no par value companies | *(planned: conversion-no-par-value.md)* |
-| 40C | Power of States to amend Part 8 | *(planned: part-8-amendment-power.md)* |
+| 34 | Nature and numbering of shares | [nature-of-shares.md](nature-of-shares.md) |
+| 35 | Rule of law relating to issue of shares at discount etc. abolished | [shares-at-discount-abolished.md](shares-at-discount-abolished.md) |
+| 36 | [No heading provided] | [article-36.md](article-36.md) |
+| 37 | Provision for different amounts to be paid on shares | [different-amounts-on-shares.md](different-amounts-on-shares.md) |
+| 38 | Alteration of capital of par value companies | [alteration-par-value.md](alteration-par-value.md) |
+| 38A | Alteration of capital of no par value companies | [alteration-no-par-value.md](alteration-no-par-value.md) |
+| 38B | Rate of exchange for currency conversions | [currency-conversion-rate.md](currency-conversion-rate.md) |
+| 39 | Share premium accounts for par value companies | [share-premium.md](share-premium.md) |
+| 39A | Stated capital accounts for no par value companies | [stated-capital.md](stated-capital.md) |
+| 39B | Relief from requirements to make transfers to share premium accounts and stated capital accounts | [relief-from-transfers.md](relief-from-transfers.md) |
+| 40 | Power to issue fractions of shares | [fractional-shares.md](fractional-shares.md) |
+| 40A | Conversion of shares in par value companies | [conversion-par-value.md](conversion-par-value.md) |
+| 40B | Conversion of shares in no par value companies | [conversion-no-par-value.md](conversion-no-par-value.md) |
+| 40C | Power of States to amend Part 8 | [part-8-amendment-power.md](part-8-amendment-power.md) |
 
 ## Part 9 — Register of Members and Certificates
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 41 | Register of members | *(planned: register-of-members.md)* |
-| 42 | Transfer and registration | *(planned: share-transfer.md)* |
-| 43 | Certification of transfers | *(planned: certification-of-transfers.md)* |
-| 44 | Location of register of members | *(planned: register-location.md)* |
-| 45 | Inspection of register | *(planned: register-inspection.md)* |
-| 46 | Declaration | *(planned: register-declaration.md)* |
-| 47 | Rectification of share register | *(planned: register-rectification.md)* |
-| 48 | Trusts not to be entered on register | *(planned: no-trusts-on-register.md)* |
-| 49 | Overseas branch registers | *(planned: overseas-branch-register.md)* |
-| 50 | Share certificates | *(planned: share-certificates.md)* |
-| 51 | Certificate to be evidence of title | *(planned: certificate-evidence-of-title.md)* |
-| 51A | Uncertificated securities | *(planned: uncertificated-securities.md)* |
+| 41 | Register of members | [register-of-members.md](register-of-members.md) |
+| 42 | Transfer and registration | [share-transfer.md](share-transfer.md) |
+| 43 | Certification of transfers | [certification-of-transfers.md](certification-of-transfers.md) |
+| 44 | Location of register of members | [register-location.md](register-location.md) |
+| 45 | Inspection of register | [register-inspection.md](register-inspection.md) |
+| 46 | Declaration | [register-declaration.md](register-declaration.md) |
+| 47 | Rectification of share register | [register-rectification.md](register-rectification.md) |
+| 48 | Trusts not to be entered on register | [no-trusts-on-register.md](no-trusts-on-register.md) |
+| 49 | Overseas branch registers | [overseas-branch-register.md](overseas-branch-register.md) |
+| 50 | Share certificates | [share-certificates.md](share-certificates.md) |
+| 51 | Certificate to be evidence of title | [certificate-evidence-of-title.md](certificate-evidence-of-title.md) |
+| 51A | Uncertificated securities | [uncertificated-securities.md](uncertificated-securities.md) |
 
 ## Part 10 — Class Rights
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 52 | Variation of class rights | *(planned: variation-of-class-rights.md)* |
-| 53 | Members' right to object to variation | *(planned: object-to-variation.md)* |
-| 54 | Registration of particulars of special rights | *(planned: special-rights-registration.md)* |
+| 52 | Variation of class rights | [variation-of-class-rights.md](variation-of-class-rights.md) |
+| 53 | Members' right to object to variation | [object-to-variation.md](object-to-variation.md) |
+| 54 | Registration of particulars of special rights | [special-rights-registration.md](special-rights-registration.md) |
 
 ## Part 11 — Redemption and Purchase of Shares
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 55 | Power to issue redeemable shares | *(planned: redeemable-shares.md)* |
+| 55 | Power to issue redeemable shares | [redeemable-shares.md](redeemable-shares.md) |
 | 56 | **[repealed]** | — |
-| 57 | Power of company to purchase its own limited shares | *(planned: share-buyback.md)* |
-| 58 | Rule of law relating to financial assistance abolished | *(planned: financial-assistance-abolished.md)* |
-| 58A | Treasury shares | *(planned: treasury-shares.md)* |
-| 58B | Limits on number and nominal value of shares to be held as treasury shares | *(planned: treasury-shares-limits.md)* |
-| 58C | Redemption, purchase or cancellation under Part 11 not a reduction of capital | *(planned: not-a-reduction.md)* |
-| 59 | Power of States to amend Part 11 | *(planned: part-11-amendment-power.md)* |
+| 57 | Power of company to purchase its own limited shares | [share-buyback.md](share-buyback.md) |
+| 58 | Rule of law relating to financial assistance abolished | [financial-assistance-abolished.md](financial-assistance-abolished.md) |
+| 58A | Treasury shares | [treasury-shares.md](treasury-shares.md) |
+| 58B | Limits on number and nominal value of shares to be held as treasury shares | [treasury-shares-limits.md](treasury-shares-limits.md) |
+| 58C | Redemption, purchase or cancellation under Part 11 not a reduction of capital | [not-a-reduction.md](not-a-reduction.md) |
+| 59 | Power of States to amend Part 11 | [part-11-amendment-power.md](part-11-amendment-power.md) |
 
 ## Part 12 — Reduction of Capital
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 60 | Forfeiture of shares | *(planned: forfeiture-of-shares.md)* |
-| 61 | Reduction of capital accounts | *(planned: reduction-of-capital-accounts.md)* |
-| 61A | Solvency statement | *(planned: solvency-statement.md)* |
-| 61B | Registration of solvency statement and minute of reduction | *(planned: solvency-registration.md)* |
-| 62 | Application to Court for order of confirmation | *(planned: court-confirmation.md)* |
-| 63 | Court order confirming reduction | *(planned: court-confirmation-order.md)* |
-| 64 | Registration of Act and minute of reduction | *(planned: act-and-minute-registration.md)* |
-| 65 | Liability of members on reduced shares | *(planned: liability-on-reduced-shares.md)* |
-| 66 | Penalty for concealing name of creditor, etc. | *(planned: concealing-creditor-penalty.md)* |
-| 66A | Power of States to amend Part 12 | *(planned: part-12-amendment-power.md)* |
+| 60 | Forfeiture of shares | [forfeiture-of-shares.md](forfeiture-of-shares.md) |
+| 61 | Reduction of capital accounts | [reduction-of-capital-accounts.md](reduction-of-capital-accounts.md) |
+| 61A | Solvency statement | [solvency-statement.md](solvency-statement.md) |
+| 61B | Registration of solvency statement and minute of reduction | [solvency-registration.md](solvency-registration.md) |
+| 62 | Application to Court for order of confirmation | [court-confirmation.md](court-confirmation.md) |
+| 63 | Court order confirming reduction | [court-confirmation-order.md](court-confirmation-order.md) |
+| 64 | Registration of Act and minute of reduction | [act-and-minute-registration.md](act-and-minute-registration.md) |
+| 65 | Liability of members on reduced shares | [liability-on-reduced-shares.md](liability-on-reduced-shares.md) |
+| 66 | Penalty for concealing name of creditor, etc. | [concealing-creditor-penalty.md](concealing-creditor-penalty.md) |
+| 66A | Power of States to amend Part 12 | [part-12-amendment-power.md](part-12-amendment-power.md) |
 
 ## Part 13 — Administration
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 67 | Registered office | *(planned: registered-office.md)* |
-| 67A | Relief from breach of duty in unavoidable circumstances | *(planned: relief-from-breach.md)* |
-| 67B | Review of registrar's decision | *(planned: review-of-registrar-decision.md)* |
-| 67C | Evidence of authorization | *(planned: evidence-of-authorization.md)* |
-| 68 | [No heading provided] | *(planned: article-68.md)* |
-| 69 | Company's name to appear in its correspondence, etc. | *(planned: name-on-correspondence.md)* |
-| 70 | Particulars in correspondence, etc. | *(planned: particulars-in-correspondence.md)* |
-| 71 | [No heading provided] | *(planned: article-71.md)* |
-| 72 | Service of documents | *(planned: service-of-documents.md)* |
+| 67 | Registered office | [registered-office.md](registered-office.md) |
+| 67A | Relief from breach of duty in unavoidable circumstances | [relief-from-breach.md](relief-from-breach.md) |
+| 67B | Review of registrar's decision | [review-of-registrar-decision.md](review-of-registrar-decision.md) |
+| 67C | Evidence of authorization | [evidence-of-authorization.md](evidence-of-authorization.md) |
+| 68 | [No heading provided] | [article-68.md](article-68.md) |
+| 69 | Company's name to appear in its correspondence, etc. | [name-on-correspondence.md](name-on-correspondence.md) |
+| 70 | Particulars in correspondence, etc. | [particulars-in-correspondence.md](particulars-in-correspondence.md) |
+| 71 | [No heading provided] | [article-71.md](article-71.md) |
+| 72 | Service of documents | [service-of-documents.md](service-of-documents.md) |
 
 ## Part 14 — Directors and Secretary
 
