@@ -702,3 +702,22 @@ Filled the AML/CFT section's stub files:
 - `schedule-2-businesses.md` — supervised-business categories (DNFBPs)
 
 AML/CFT section now substantively populated.
+
+## 2026-05-15 — Funds, Banking, Insurance sector deep files (14 files)
+
+Filled out three sector sections:
+
+Funds (7 files):
+- jersey-private-fund.md, expert-fund.md, eligible-investor-fund.md,
+  listed-fund.md, public-funds.md, unregulated-funds.md, aifmd-nppr.md
+
+Banking (3 files):
+- banking-business-law-1991.md (sector view), depositor-compensation.md,
+  top-50-policy.md
+
+Insurance (4 files):
+- insurance-business-law-1996.md (sector view), category-a-permit.md,
+  category-b-permit.md, captive-insurance.md
+
+All three sectors now substantively populated with their key vehicle
+types and structural variations.
