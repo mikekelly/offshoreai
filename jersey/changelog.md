@@ -790,3 +790,12 @@ Additional deep operator-shaped use-case files:
 
 Each covers a foundational persona question with cross-links into
 the topic graph.
+
+## 2026-05-15 — More deep persona Q&A files (2 files)
+
+Additional deep persona Q&A files:
+
+- `royal-court-litigator/article-51-application.md` — drafting and
+  procedure for the Royal Court's principal trust application
+- `journalist-ngo-academic/searching-companies-registry.md` —
+  what's publicly accessible, what isn't, investigation tips
