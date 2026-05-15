@@ -357,3 +357,14 @@ Example:
 
   Articles index updated. Articles 102-113Q (Part 16 Accounts
   and Audits) and Parts 18-24 remain.
+
+- **Companies Law Articles 102-113Q (Part 16 Accounts and Audits)
+  added** — 29 new deep files covering accounting records,
+  retention, accounts, audit, and the recognized-auditor regime.
+  Highlights: Article 105 accounts; Article 113 appointment and
+  removal of auditors; Article 113A auditor's report (true and
+  fair view); Article 113E independence; the JFSC oversight
+  framework (Articles 113H-113Q) for recognized auditors.
+
+  Articles index updated. Parts 18-24 remain (~140 active
+  articles).

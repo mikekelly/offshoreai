@@ -253,35 +253,35 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 102 | Interpretation – Part 16 | *(planned: part-16-interpretation.md)* |
-| 103 | Accounting records | *(planned: accounting-records.md)* |
-| 104 | Retention of records | *(planned: retention-of-records.md)* |
-| 105 | Accounts | *(planned: accounts.md)* |
-| 106 | Publication of interim accounts | *(planned: interim-accounts.md)* |
-| 107 | Copies of accounts | *(planned: copies-of-accounts.md)* |
-| 108 | Delivery of accounts to registrar | *(planned: delivery-of-accounts.md)* |
-| 109 | Failure to comply | *(planned: accounts-compliance-failure.md)* |
-| 110 | Commission to maintain Register of Recognized Auditors | *(planned: register-of-auditors.md)* |
-| 111 | Registration as a recognized auditor | *(planned: auditor-registration.md)* |
-| 112 | Qualification under rules of recognized professional bodies | *(planned: auditor-qualification.md)* |
-| 113 | Appointment and removal of auditors | *(planned: auditor-appointment.md)* |
-| 113A | Auditor's report | *(planned: auditor-report.md)* |
-| 113B | Auditor's duties and powers | *(planned: auditor-duties-and-powers.md)* |
-| 113C | False statements to auditors | *(planned: false-statements-to-auditors.md)* |
-| 113D | Ineligibility to act as auditor | *(planned: auditor-ineligibility.md)* |
-| 113E | Independence requirement | *(planned: auditor-independence.md)* |
-| 113F | Effect of lack of independence | *(planned: auditor-independence-failure.md)* |
-| 113G | Effect of appointment of a partnership | *(planned: partnership-as-auditor.md)* |
-| 113H | Power to amend Part 16 | *(planned: part-16-amendment-power.md)* |
-| 113I | Power to make Regulations in respect of recognized auditors | *(planned: auditor-regulations.md)* |
-| 113J | Exemption from liability for damages | *(planned: auditor-exemption.md)* |
-| 113K | Matters to be notified to the Commission | *(planned: auditor-notifications.md)* |
-| 113L | The Commission may require recognized auditors to give information | *(planned: jfsc-info-requests.md)* |
-| 113M | Commission to ensure compliance | *(planned: jfsc-compliance.md)* |
-| 113N | Delegation of the Commission's powers and duties | *(planned: jfsc-delegation.md)* |
-| 113O | Enforcement of rules | *(planned: rules-enforcement.md)* |
-| 113P | Confidentiality | *(planned: auditor-confidentiality.md)* |
-| 113Q | Application of Part 19 to market traded companies | *(planned: market-traded-companies.md)* |
+| 102 | Interpretation – Part 16 | [part-16-interpretation.md](part-16-interpretation.md) |
+| 103 | Accounting records | [accounting-records.md](accounting-records.md) |
+| 104 | Retention of records | [retention-of-records.md](retention-of-records.md) |
+| 105 | Accounts | [accounts.md](accounts.md) |
+| 106 | Publication of interim accounts | [interim-accounts.md](interim-accounts.md) |
+| 107 | Copies of accounts | [copies-of-accounts.md](copies-of-accounts.md) |
+| 108 | Delivery of accounts to registrar | [delivery-of-accounts.md](delivery-of-accounts.md) |
+| 109 | Failure to comply | [accounts-compliance-failure.md](accounts-compliance-failure.md) |
+| 110 | Commission to maintain Register of Recognized Auditors | [register-of-auditors.md](register-of-auditors.md) |
+| 111 | Registration as a recognized auditor | [auditor-registration.md](auditor-registration.md) |
+| 112 | Qualification under rules of recognized professional bodies | [auditor-qualification.md](auditor-qualification.md) |
+| 113 | Appointment and removal of auditors | [auditor-appointment.md](auditor-appointment.md) |
+| 113A | Auditor's report | [auditor-report.md](auditor-report.md) |
+| 113B | Auditor's duties and powers | [auditor-duties-and-powers.md](auditor-duties-and-powers.md) |
+| 113C | False statements to auditors | [false-statements-to-auditors.md](false-statements-to-auditors.md) |
+| 113D | Ineligibility to act as auditor | [auditor-ineligibility.md](auditor-ineligibility.md) |
+| 113E | Independence requirement | [auditor-independence.md](auditor-independence.md) |
+| 113F | Effect of lack of independence | [auditor-independence-failure.md](auditor-independence-failure.md) |
+| 113G | Effect of appointment of a partnership | [partnership-as-auditor.md](partnership-as-auditor.md) |
+| 113H | Power to amend Part 16 | [part-16-amendment-power.md](part-16-amendment-power.md) |
+| 113I | Power to make Regulations in respect of recognized auditors | [auditor-regulations.md](auditor-regulations.md) |
+| 113J | Exemption from liability for damages | [auditor-exemption.md](auditor-exemption.md) |
+| 113K | Matters to be notified to the Commission | [auditor-notifications.md](auditor-notifications.md) |
+| 113L | The Commission may require recognized auditors to give information | [jfsc-info-requests.md](jfsc-info-requests.md) |
+| 113M | Commission to ensure compliance | [jfsc-compliance.md](jfsc-compliance.md) |
+| 113N | Delegation of the Commission's powers and duties | [jfsc-delegation.md](jfsc-delegation.md) |
+| 113O | Enforcement of rules | [rules-enforcement.md](rules-enforcement.md) |
+| 113P | Confidentiality | [auditor-confidentiality.md](auditor-confidentiality.md) |
+| 113Q | Application of Part 19 to market traded companies | [market-traded-companies.md](market-traded-companies.md) |
 
 ## Part 17 — Distributions
 
