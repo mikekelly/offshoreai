@@ -297,24 +297,24 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 116 | Takeover offers | *(planned: takeover-offers.md)* |
-| 117 | Right of offeror to buy out minority shareholders | *(planned: squeeze-out.md)* |
-| 118 | Effect of notice under Article 117 | *(planned: squeeze-out-effect.md)* |
-| 119 | Right of minority shareholder to be bought out by offeror | *(planned: sell-out.md)* |
-| 120 | Effect of requirement under Article 119 | *(planned: sell-out-effect.md)* |
-| 121 | Applications to the court | *(planned: takeover-court-applications.md)* |
-| 122 | Joint offers | *(planned: joint-offers.md)* |
-| 123 | Associates | *(planned: takeover-associates.md)* |
-| 124 | Convertible securities | *(planned: convertible-securities.md)* |
-| 124A | Power of States to amend Part 18 | *(planned: part-18-amendment-power.md)* |
+| 116 | Takeover offers | [takeover-offers.md](takeover-offers.md) |
+| 117 | Right of offeror to buy out minority shareholders | [squeeze-out.md](squeeze-out.md) |
+| 118 | Effect of notice under Article 117 | [squeeze-out-effect.md](squeeze-out-effect.md) |
+| 119 | Right of minority shareholder to be bought out by offeror | [sell-out.md](sell-out.md) |
+| 120 | Effect of requirement under Article 119 | [sell-out-effect.md](sell-out-effect.md) |
+| 121 | Applications to the court | [takeover-court-applications.md](takeover-court-applications.md) |
+| 122 | Joint offers | [joint-offers.md](joint-offers.md) |
+| 123 | Associates | [takeover-associates.md](takeover-associates.md) |
+| 124 | Convertible securities | [convertible-securities.md](convertible-securities.md) |
+| 124A | Power of States to amend Part 18 | [part-18-amendment-power.md](part-18-amendment-power.md) |
 
 ## Part 18A — Compromises and Arrangements
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 125 | Power of company to compromise with creditors and members | *(planned: scheme-of-arrangement.md)* |
-| 126 | Information as to compromise to be circulated | *(planned: scheme-information.md)* |
-| 127 | Provisions for facilitating company reconstruction or amalgamation | *(planned: reconstruction-and-amalgamation.md)* |
+| 125 | Power of company to compromise with creditors and members | [scheme-of-arrangement.md](scheme-of-arrangement.md) |
+| 126 | Information as to compromise to be circulated | [scheme-information.md](scheme-information.md) |
+| 127 | Provisions for facilitating company reconstruction or amalgamation | [reconstruction-and-amalgamation.md](reconstruction-and-amalgamation.md) |
 
 ## Part 18B — Mergers
 
@@ -326,7 +326,7 @@ filled in over the coming batches.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 127GB | Demergers | *(planned: demergers.md)* |
+| 127GB | Demergers | [demergers.md](demergers.md) |
 
 ## Part 18C — Continuance
 

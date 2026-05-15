@@ -368,3 +368,27 @@ Example:
 
   Articles index updated. Parts 18-24 remain (~140 active
   articles).
+
+## 2026-05-15 — Companies Law Part 18, 18A, 18BA (Takeovers, Schemes, Demergers)
+
+Added 14 deep concept files covering the Part 18 takeover regime,
+Part 18A scheme of arrangement, and Part 18BA statutory demerger:
+
+- Part 18 (Takeovers, Arts 116–124A) — 10 files:
+  - `takeover-offers.md` (Art 116 — definition gateway)
+  - `squeeze-out.md` (Art 117 — 90% threshold and notice)
+  - `squeeze-out-effect.md` (Art 118 — mechanics of compulsory acquisition)
+  - `sell-out.md` (Art 119 — minority's reciprocal right)
+  - `sell-out-effect.md` (Art 120 — mechanics of sell-out)
+  - `takeover-court-applications.md` (Art 121 — Royal Court oversight)
+  - `joint-offers.md` (Art 122)
+  - `takeover-associates.md` (Art 123 — concert-party rule)
+  - `convertible-securities.md` (Art 124)
+  - `part-18-amendment-power.md` (Art 124A)
+- Part 18A (Compromises and Arrangements, Arts 125–127) — 3 files:
+  - `scheme-of-arrangement.md` (Art 125 — Jersey scheme foundation)
+  - `scheme-information.md` (Art 126 — explanatory statement)
+  - `reconstruction-and-amalgamation.md` (Art 127 — court-ordered transfers)
+- Part 18BA (Demergers, Art 127GB) — 1 file: `demergers.md`
+
+Articles index updated; planned markers replaced with live links.
