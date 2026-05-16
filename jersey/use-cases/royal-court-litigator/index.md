@@ -38,50 +38,41 @@ topic graph; this persona handles **how to do it in court**.
 
 ### Starting a case
 
-- **Issuing an Order of Justice (the principal originating
-  process) — what's required.** *(planned)*
-- **Choosing the right Royal Court division (Samedi / Inferior
-  Number / Superior Number).** *(planned)*
-- **Interlocutory injunctions — Mareva, Norwich Pharmacal,
-  Anton Piller equivalents.** *(planned)*
+- [Issuing an Order of Justice — what's required](order-of-justice.md)
+- [Choosing the right Royal Court division (Samedi / Inferior Number / Superior Number)](choosing-division.md)
+- [Interlocutory injunctions — Mareva, Norwich Pharmacal, Anton Piller equivalents](interlocutory-injunctions.md)
 
 ### Trust applications
 
-- **Article 51 directions application — drafting and procedure.**
-  *(planned)*
-- **Blessing of a momentous decision under Public Trustee v
-  Cooper category 2.** *(planned)*
-- **Beddoe application for trustee litigation funding.**
-  *(planned)*
-- **Article 47 mistake / hastiness application — practice
-  points.** *(planned)*
-- **Removal of a trustee.** *(planned)*
+- [Article 51 directions application — drafting and procedure](article-51-application.md)
+- [Blessing of a momentous decision under Public Trustee v Cooper category 2](blessing-application.md)
+- [Beddoe application for trustee litigation funding](beddoe-application.md)
+- [Article 47 mistake / hastiness application — practice points](article-47-application.md)
+- [Removal of a trustee](trustee-removal-app.md)
 
 ### Company applications
 
-- **Schemes of arrangement — convening, sanction hearings.**
-  *(planned)*
-- **Unfair-prejudice petitions.** *(planned)*
-- **Winding-up applications.** *(planned)*
-- **Restoration of dissolved companies.** *(planned)*
+- [Schemes of arrangement — convening, sanction hearings](scheme-procedure.md)
+- [Unfair-prejudice petitions](unfair-prejudice-petition.md)
+- [Winding-up applications](winding-up-application.md)
+- [Restoration of dissolved companies](restoration-application.md)
 
 ### Costs
 
-- **Cost rules in Royal Court litigation.** *(planned)*
-- **Indemnity costs from the trust fund — when available.**
-  *(planned)*
-- **Costs against parties personally vs from estate.** *(planned)*
+- [Cost rules in Royal Court litigation](cost-rules.md)
+- [Indemnity costs from the trust fund — when available](indemnity-costs-trust.md)
+- [Costs against parties personally vs from estate](personal-vs-estate-costs.md)
 
 ### Appeals
 
-- **Appeal from the Royal Court to Court of Appeal.** *(planned)*
-- **Leave to appeal to the Privy Council.** *(planned)*
+- [Appeal from the Royal Court to Court of Appeal](court-of-appeal-appeal.md)
+- [Leave to appeal to the Privy Council](privy-council-leave.md)
 
 ### Cross-border issues
 
-- **Letters of request for evidence in Jersey.** *(planned)*
-- **Service abroad of Jersey proceedings.** *(planned)*
-- **Enforcement of Jersey judgments abroad.** *(planned)*
+- [Letters of request for evidence in Jersey](letters-of-request.md)
+- [Service abroad of Jersey proceedings](service-abroad.md)
+- [Enforcement of Jersey judgments abroad](enforcement-jersey-judgments.md)
 
 ## Cross-references
 
@@ -91,4 +82,6 @@ topic graph; this persona handles **how to do it in court**.
 
 ## Status
 
-Persona index. Deep files to follow.
+**Royal Court litigator persona is substantially complete** with
+deep concept files for starting cases, trust applications,
+company applications, costs, appeals, and cross-border issues.
