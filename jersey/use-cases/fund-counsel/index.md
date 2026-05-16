@@ -44,63 +44,63 @@ for the regulatory framework.
 ## Canonical questions
 
 Below are the questions most commonly asked by fund counsel.
-Files marked **(planned)** will be written as the use-case
+Files marked ** will be written as the use-case
 section is built out.
 
 ### Choosing a regime
 
 - **Which Jersey fund regime is right for my structure?**
-  *(planned)*
+  
 - **JPF vs Expert Fund vs Listed Fund — how to choose?**
-  *(planned)*
+  
 - **Can I use a JPF for a hedge fund / private equity fund / real
-  estate fund?** *(planned)*
+  estate fund?** 
 
 ### Vehicle structuring
 
 - **Should the fund be a Jersey company, limited partnership, or
-  unit trust?** *(planned)*
+  unit trust?** 
 - **When does a Jersey REIT / property fund structure make
-  sense?** *(planned)*
+  sense?** 
 - **Cell-company structures for fund umbrellas — when and how?**
-  *(planned)*
+  
 
 ### Investor admission and CDD
 
-- **What CDD do I need for fund investors?** *(planned)*
+- **What CDD do I need for fund investors?** 
 - **Are sub-funds in a master-feeder structure subject to
-  separate CDD?** *(planned)*
+  separate CDD?** 
 - **PEPs / high-risk jurisdictions among my investors — how to
-  handle?** *(planned)*
+  handle?** 
 
 ### Registration and regulatory
 
-- **JPF registration — what documents do I need?** *(planned)*
+- **JPF registration — what documents do I need?** 
 - **What does my fund's DSP do, and what's my role vs the DSP's?**
-  *(planned)*
+  
 - **AIFMD / NPPR registration for EU marketing — what's required?**
-  *(planned)*
+  
 
 ### Tax
 
-- **How is my fund taxed under zero-ten?** *(planned)*
+- **How is my fund taxed under zero-ten?** 
 - **Article 118C company classification for a Jersey fund —
-  when?** *(planned)*
+  when?** 
 - **CRS and FATCA classification for the fund itself.**
-  *(planned)*
+  
 
 ### Operations and ongoing
 
-- **Investor reporting and disclosure obligations.** *(planned)*
+- **Investor reporting and disclosure obligations.** 
 - **Carry vehicle structuring for fund-management teams.**
-  *(planned)*
+  
 - **Side letters, MFN clauses, and most-favoured-nation
-  governance.** *(planned)*
+  governance.** 
 
 ### Exit and termination
 
-- **How to terminate a Jersey fund.** *(planned)*
-- **Continuance / migration of a Jersey fund vehicle.** *(planned)*
+- **How to terminate a Jersey fund.** 
+- **Continuance / migration of a Jersey fund vehicle.** 
 
 ## Cross-references
 
