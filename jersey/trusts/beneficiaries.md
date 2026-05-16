@@ -107,7 +107,7 @@ contexts:
   to disclaim.
 - [Article 12](purpose-trusts.md) — non-charitable purpose trusts
   exist *without* beneficiaries, supervised by an enforcer instead.
-- [Article 36](class-interests.md) *(planned)* — class-interest
+- [Article 36](class-interests.md) — class-interest
   rules for closed and open classes.
 
 ## Pitfalls

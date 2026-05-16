@@ -344,7 +344,7 @@ Tags an agent can follow into related parts of the corpus (see
   [`../financial-regulation/index.md`](../financial-regulation/index.md).
 - **`economic-substance`** — substance for trusts and underlying
   entities, in [`../tax/economic-substance.md`](../tax/economic-substance.md)
-  *(planned)*.
+ .
 
 ## Use cases — the agent's "how do I" entry points
 
@@ -357,6 +357,11 @@ section:
   - [Article 47 set-aside for mistake](../use-cases/trust-officer/article-47-set-aside-for-mistake.md)
   - [Beneficiary information rights](../use-cases/trust-officer/beneficiary-information-rights.md)
 
-Other personas (fund counsel, family office, litigator) are planned.
+Other personas with trust-relevant Q&A:
+- [Fund counsel](../use-cases/fund-counsel/index.md)
+- [Family office adviser](../use-cases/family-office-adviser/index.md)
+- [International lawyer](../use-cases/international-lawyer/index.md)
+- [Royal Court litigator](../use-cases/royal-court-litigator/index.md)
+- [Compliance / MLRO](../use-cases/compliance-mlro/index.md)
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

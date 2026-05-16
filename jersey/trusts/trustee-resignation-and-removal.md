@@ -130,7 +130,7 @@ of a successor.
 
 ## The outgoing trustee's continuing position
 
-[Article 34](outgoing-trustee.md) *(planned)* deals specifically
+[Article 34](outgoing-trustee.md) deals specifically
 with the **position of an outgoing trustee** — including continuing
 liability for acts during trusteeship, the indemnity from the trust
 fund, and the trustee's right to documents and records for the

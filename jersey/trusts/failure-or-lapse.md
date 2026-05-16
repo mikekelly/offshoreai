@@ -66,7 +66,7 @@ of beneficiaries or interests. It sits alongside:
 - [Article 43 termination](termination-of-trust.md) — termination
   procedurally; Article 42 sets where the property goes when no
   destination is specified;
-- [Article 47A](court-purpose-trust-redirection.md) *(planned)* —
+- [Article 47A](court-purpose-trust-redirection.md) —
   cy-près-style redirection by the Royal Court for charitable and
   non-charitable purpose trusts when the original purpose fails.
 
@@ -86,7 +86,7 @@ The default is **rebuttable** by:
   modern deeds include a "**default beneficiary**" or "**default
   charity**" clause that displaces Article 42;
 - **the operation of [Article 47A](court-purpose-trust-redirection.md)
-  *(planned)*** for purpose trusts where the Court can redirect the
+ ** for purpose trusts where the Court can redirect the
   property to alternative purposes consistent with the settlor's
   intent.
 
@@ -119,7 +119,7 @@ potential applicant. The AG's role is particularly relevant for:
 
 - **charitable trusts** that have failed — the AG may apply for
   redirection (under [Article 47A](court-purpose-trust-redirection.md)
-  *(planned)*) or for Article 42 default treatment;
+ ) or for Article 42 default treatment;
 - **non-charitable purpose trusts** where the purpose has failed
   and there is a public-interest dimension;
 - **publicly-significant trusts** where the AG considers the

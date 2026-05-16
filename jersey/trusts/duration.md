@@ -93,7 +93,7 @@ A Jersey trust may terminate:
   beneficiaries being of full age and consenting).
 
 For the detail of termination see [`termination-of-trust.md`](termination-of-trust.md)
-*(planned)*.
+
 
 ## Tax planning consequences
 

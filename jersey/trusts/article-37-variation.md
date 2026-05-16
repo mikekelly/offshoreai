@@ -33,7 +33,7 @@ Article 37 of the **[Trusts (Jersey) Law 1984][tjl]** is the
 **self-variation** provision: a trust may be varied **in any manner
 provided by its terms**, without prejudice to the Royal Court's
 separate power to vary trusts under
-[Article 47](court-variation.md) *(planned)*.
+[Article 47](court-variation.md).
 
 ## What Article 37 says
 

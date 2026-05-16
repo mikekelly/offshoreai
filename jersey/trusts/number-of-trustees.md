@@ -92,7 +92,7 @@ If no appointment can be made out of court, an application may be
 made to the Royal Court under
 [Article 51](article-51-directions.md) (or, where there is no resident
 trustee at all, under [Article 44](court-appointed-resident-trustee.md)
-*(planned)*).
+).
 
 ## Why the deed's "required minimum" often exceeds one
 

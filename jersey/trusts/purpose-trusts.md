@@ -145,7 +145,7 @@ perpetuities for trusts created after the 2006 amendments.
 
 If the purpose of an NCPT becomes impossible or impracticable, the
 Royal Court has power under [Article 47A](court-purpose-trust-redirection.md)
-*(planned)* to redirect the property to alternative purposes
+ to redirect the property to alternative purposes
 consistent with the settlor's intent.
 
 ## Pitfalls

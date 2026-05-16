@@ -58,7 +58,7 @@ directly.
 
 A planned topic file at
 [`../legal-system/royal-court-rules.md`](../legal-system/royal-court-rules.md)
-*(planned)* will cover the Rules in detail; this file confirms the
+ will cover the Rules in detail; this file confirms the
 authority basis.
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

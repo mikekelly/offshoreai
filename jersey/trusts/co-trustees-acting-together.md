@@ -81,7 +81,7 @@ This is important practically:
 
 - it documents the dissenter's position for the future;
 - it engages the **outgoing-trustee protections** in
-  [Article 34](outgoing-trustee.md) *(planned)* should the dissenter
+  [Article 34](outgoing-trustee.md) should the dissenter
   resign over the decision;
 - it limits the dissenter's personal liability for any consequent
   breach by the trust.

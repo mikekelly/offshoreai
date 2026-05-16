@@ -78,7 +78,7 @@ Article 3 is about recognition of a **Jersey** trust by the law of
 Jersey. For the recognition of a **foreign** trust by Jersey, see
 Part 3 of the Law — in particular [Article 49 —
 Enforceability of a foreign trust](foreign-trust-enforceability.md)
-*(planned)*. The high-level rule is that Jersey will give effect to
+ The high-level rule is that Jersey will give effect to
 a foreign trust according to its own proper law, subject to public
 policy.
 

@@ -108,7 +108,7 @@ required.
 The fallback is then a **Royal Court application** under
 [Article 51](article-51-directions.md) (for directions including
 appointment) or [Article 44](court-appointed-resident-trustee.md)
-*(planned)* (for the appointment of a resident trustee where the
+ (for the appointment of a resident trustee where the
 Court considers the trust requires a Jersey-resident trustee).
 
 ## Pitfalls

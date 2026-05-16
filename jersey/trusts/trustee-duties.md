@@ -39,7 +39,7 @@ duties** provision. It sets out the **statutory baseline** of trustee
 obligations on top of which the deed and the equitable jurisdiction
 of the Royal Court layer further duties. It is the foundation for the
 breach-of-trust liability in [Article 30](breach-of-trust-liability.md)
-*(planned)*.
+
 
 ## What Article 21 says
 

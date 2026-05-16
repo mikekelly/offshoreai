@@ -97,7 +97,7 @@ the implied-choice limb. It tends to be relevant in:
 ## Change of proper law
 
 A trust deed may include a power to change the proper law (express
-recognition is in [Article 41](change-of-proper-law.md) *(planned)*).
+recognition is in [Article 41](change-of-proper-law.md)).
 The mechanics — what consents are required, the timing of the
 change, the effect on choice-of-law for prior acts — are typically
 spelt out in the deed and are subject to general principles of

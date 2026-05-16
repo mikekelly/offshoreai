@@ -97,7 +97,7 @@ the enforceability threshold.
   but in substance retains beneficial ownership, the Royal Court may
   find the trust does not exist under Article 2 — element 2 fails. The
   leading Jersey "sham" authority is *In Re Esteem Settlement* [2003]
-  JLR 188; see [`sham-trusts.md`](sham-trusts.md) *(planned)*.
+  JLR 188; see [`sham-trusts.md`](sham-trusts.md).
 - **Reserved-powers trusts.** A settlor who reserves powers under
   [Article 9A](reserved-powers.md) does not, by reservation alone,
   cease to satisfy element 2: Article 9A(3A) provides that a

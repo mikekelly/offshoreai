@@ -154,7 +154,7 @@ not waived by the Article 34 release.
 A claim against an outgoing trustee for a breach is subject to the
 Article 57 limitation regime — see
 [`limitation-and-prescription.md`](limitation-and-prescription.md)
-*(planned)*. The limitation period typically starts from the date of
+ The limitation period typically starts from the date of
 the breach (or from discovery for concealed breaches), not from the
 date of trustee exit.
 

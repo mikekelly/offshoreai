@@ -43,7 +43,7 @@ A foreign-law trust before the Royal Court under
 [Article 5](court-jurisdiction-over-trusts.md) jurisdiction is
 governed in matters of validity, interpretation and trustee duties
 by its **proper law**, and looks to Part 3 (Articles 48–49 — see
-[`application-of-part-3.md`](application-of-part-3.md) *(planned)*)
+[`application-of-part-3.md`](application-of-part-3.md))
 for the small number of Jersey provisions that explicitly extend to
 foreign trusts.
 

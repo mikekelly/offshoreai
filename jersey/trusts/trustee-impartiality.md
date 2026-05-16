@@ -104,7 +104,7 @@ utmost-good-faith standard.
 The remedy for breach is conventional: compensation to disadvantaged
 beneficiaries, or unwinding of the impugned transaction, on
 application under [Article 30](breach-of-trust-liability.md)
-*(planned)* or [Article 51](article-51-directions.md).
+ or [Article 51](article-51-directions.md).
 
 ## Letter-of-wishes guidance
 

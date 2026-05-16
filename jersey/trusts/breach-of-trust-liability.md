@@ -185,7 +185,7 @@ negligence even with the clearest deed wording.
 ## Court relief — Article 45
 
 Even where a breach is found, the Royal Court has a discretion under
-[Article 45](relief-from-personal-liability.md) *(planned)* to relieve
+[Article 45](relief-from-personal-liability.md) to relieve
 the trustee from personal liability where the trustee acted **honestly
 and reasonably and ought fairly to be excused**. This is a
 case-by-case discretionary safety valve, not a routine outcome.
@@ -193,7 +193,7 @@ case-by-case discretionary safety valve, not a routine outcome.
 ## Limitation
 
 Breach-of-trust claims are subject to a limitation period under
-[Article 57](limitation-and-prescription.md) *(planned)*. The starting
+[Article 57](limitation-and-prescription.md). The starting
 point is typically the date of the breach (or, for concealed
 breaches, the date of discovery).
 

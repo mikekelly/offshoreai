@@ -161,7 +161,7 @@ Article 9A's permissive list is not unlimited:
 - **Trustee duties not displaced.** A trustee acting under a
   reserved-power direction is protected by Article 9A(3); a trustee
   acting outside such direction remains subject to ordinary fiduciary
-  duties — see [trustee-duties.md](trustee-duties.md) *(planned)*.
+  duties — see [trustee-duties.md](trustee-duties.md).
 
 ## Drafting practice
 

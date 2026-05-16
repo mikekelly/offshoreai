@@ -75,7 +75,7 @@ under Article 43 alone. The options:
 - wait for the **class to close** (typically on the death of the
   named ancestor);
 - apply to the **Royal Court** under [Article 47](court-variation.md)
-  *(planned)* for variation in favour of an early termination, with
+  for variation in favour of an early termination, with
   representation of unborn / unascertained interests by a **guardian
   ad litem** appointed by the Court;
 - exercise a **deed-based termination power** if the deed includes
