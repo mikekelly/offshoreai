@@ -103,116 +103,112 @@ content; files marked *(planned)* are stubs.
 ### Trust deed and validity
 
 - "Can my settlor reserve [X] power without invalidating the trust?"
-  *(planned: reserved-powers-question.md)* — applies Article 9A; the
+  [reserved-powers-question.md](reserved-powers-question.md) — applies Article 9A; the
   sham-trust line; foreign tax characterisation.
 - "The settlor wants to be the protector and sole beneficiary. Is
-  this a sham?" *(planned: sham-trust-question.md)* — *Esteem*
+  this a sham?" [sham-trust-question.md](sham-trust-question.md) — *Esteem*
   and the substance-over-form analysis.
 - "Is a non-charitable purpose trust workable for what the settlor
-  wants?" *(planned: purpose-trust-question.md)* — Article 12
+  wants?" [purpose-trust-question.md](purpose-trust-question.md) — Article 12
   conditions; enforcer mechanics.
 
 ### Distributions and decision-making
 
 - "The settlor wants a distribution to a non-beneficiary. What are
-  my options?" *(planned: non-beneficiary-distribution.md)* — add
+  my options?" [non-beneficiary-distribution.md](non-beneficiary-distribution.md) — add
   the beneficiary first (power of addition), or refuse.
 - "Distribution to a UK-resident beneficiary — what should I flag?"
-  *(planned: distribution-uk-resident.md)* — IHT exit charges; CGT;
+  [distribution-uk-resident.md](distribution-uk-resident.md) — IHT exit charges; CGT;
   reporting.
 - "Distribution to a US-person beneficiary — what should I flag?"
-  *(planned: distribution-us-person.md)* — throwback tax; PFIC;
+  [distribution-us-person.md](distribution-us-person.md) — throwback tax; PFIC;
   Form 3520.
 
 ### Things going wrong
 
 - "The trustee was invalidly appointed. Can the Court ratify?"
-  *(planned: invalid-trustee-ratification.md)*
+  [invalid-trustee-ratification.md](invalid-trustee-ratification.md)
 - "Beneficiary alleges breach of trust. What's the procedure?"
-  *(planned: beneficiary-claim.md)*
+  [beneficiary-claim.md](beneficiary-claim.md)
 
 ### Information and disclosure
 
 - "Foreign court / regulator demands trust information. How do we
-  respond?" *(planned: foreign-information-request.md)*
+  respond?" [foreign-information-request.md](foreign-information-request.md)
 - "Subject access request from a beneficiary — DPJL 2018
-  interaction with *Schmidt*?" *(planned: dpjl-vs-schmidt.md)*
+  interaction with *Schmidt*?" [dpjl-vs-schmidt.md](dpjl-vs-schmidt.md)
 
 ### Forum and conflicts of law
 
 - "Beneficiary is suing the trust in a foreign court. Is the
-  firewall (Article 9) a defence?" *(planned: firewall-question.md)*
+  firewall (Article 9) a defence?" [firewall-question.md](firewall-question.md)
 - "The deed has a jurisdiction clause naming Jersey. Is it
-  enforceable after *Crociani*?" *(planned: crociani-question.md)*
+  enforceable after *Crociani*?" [crociani-question.md](crociani-question.md)
 - "Foreign forced-heirship claim against the settled property —
-  what's the test?" *(planned: forced-heirship.md)*
+  what's the test?" [forced-heirship.md](forced-heirship.md)
 
 ### Trusteeship lifecycle
 
 - "Trustee retirement — what indemnities and what release?"
-  *(planned: trustee-retirement.md)*
+  [trustee-retirement.md](trustee-retirement.md)
 - "Removal of a co-trustee — what's the threshold?"
-  *(planned: trustee-removal.md)*
+  [trustee-removal.md](trustee-removal.md)
 - "Appointment of a new trustee — what's the process?"
-  *(planned: trustee-appointment.md)*
+  [trustee-appointment.md](trustee-appointment.md)
 
 ### Regulatory obligations (TCB Code)
 
 - "What counts as 'trust company business'?"
-  *(planned: trust-company-business-scope.md)*
+  [trust-company-business-scope.md](trust-company-business-scope.md)
 - "Fit-and-proper: changes I need to notify to the JFSC."
-  *(planned: fit-and-proper-changes.md)*
+  [fit-and-proper-changes.md](fit-and-proper-changes.md)
 - "Outsourcing administration — what consent do I need?"
-  *(planned: outsourcing.md)*
+  [outsourcing.md](outsourcing.md)
 
 ### AML/CFT and AEoI
 
 - "CDD on a new trust client — what's the minimum standard?"
-  *(planned: cdd-new-trust.md)*
+  [cdd-new-trust.md](cdd-new-trust.md)
 - "CDD on a foundation — what's different from a trust?"
-  *(planned: cdd-foundation.md)*
+  [cdd-foundation.md](cdd-foundation.md)
 - "PEP onboarding — JFSC expectation."
-  *(planned: pep-onboarding.md)*
+  [pep-onboarding.md](pep-onboarding.md)
 - "SAR threshold — when must I file?"
-  *(planned: sar-threshold.md)*
+  [sar-threshold.md](sar-threshold.md)
 - "Sanctions screening — what scope?"
-  *(planned: sanctions-screening.md)*
+  [sanctions-screening.md](sanctions-screening.md)
 - "Is my trust a Financial Institution under CRS?"
-  *(planned: crs-classification.md)*
+  [crs-classification.md](crs-classification.md)
 - "How do I classify my trust under FATCA?"
-  *(planned: fatca-classification.md)*
+  [fatca-classification.md](fatca-classification.md)
 
 ### Tax of the structure
 
 - "Does the trust itself have a Jersey tax return?"
-  *(planned: trust-tax-filing.md)*
+  [trust-tax-filing.md](trust-tax-filing.md)
 - "Does the underlying Jersey company have substance? Substance for
-  what?" *(planned: underlying-co-substance.md)*
+  what?" [underlying-co-substance.md](underlying-co-substance.md)
 - "Non-resident beneficiary — is the trust caught by Jersey tax?"
-  *(planned: non-resident-beneficiary-tax.md)*
+  [non-resident-beneficiary-tax.md](non-resident-beneficiary-tax.md)
 
 ### Specialised structures
 
 - "Private trust company (PTC) — when is it the right vehicle?"
-  *(planned: ptc.md)*
+  [ptc.md](ptc.md)
 - "Reserved-powers structures — common arrangements that the Royal
-  Court has blessed." *(planned: reserved-powers-blessed.md)*
+  Court has blessed." [reserved-powers-blessed.md](reserved-powers-blessed.md)
 
 ---
 
 ## Status
 
-This is a **deep-but-narrow** build at this revision: three
-questions written end-to-end as exemplars, the rest stubbed. The
-three written questions cover the **most common daily decisions**
-by a trust officer and exercise the **most-asked-about Articles**
-of the Trusts (Jersey) Law 1984 (Articles 47, 51, 29 plus the
-*Schmidt v Rosewood* doctrine).
-
-Future passes will fill in the planned files, prioritising:
-**CDD / AML-CFT cluster** (CDD on a trust, CDD on a foundation,
-SARs, sanctions); then **AEoI** (CRS, FATCA classification); then
-**lifecycle and reserved-powers**.
+**Trust-officer persona is substantially complete** as of this
+revision. All canonical questions across daily decisions, trust
+deed and validity, distributions, things-going-wrong, information
+and forum, trusteeship lifecycle, regulatory obligations, AML /
+CFT and AEoI, tax of the structure, and specialised structures
+have deep concept files. Future passes will refresh and add
+emerging-issue files (e.g. virtual-asset client onboarding).
 
 ## Cross-references
 
