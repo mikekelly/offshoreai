@@ -129,13 +129,20 @@ framework** lives here.
 ### Theme 2 — Principal regulatory Laws
 
 - [`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md)
-  *(stub)* — Investment / TCB / FSB / GIMB / MSB gateway statute.
+  — Investment / TCB / FSB / GIMB / MSB gateway statute (concept
+  overview).
+- **[`fsl-articles-index.md`](fsl-articles-index.md)** — FSL 1998
+  article-by-article wiki: Part-cluster files for all 6 Parts plus
+  individual files for the regulated activity classes (TCB, FSB,
+  Investment Business, GIMB, MSB) and the gateway provisions (2
+  financial service business; 7 registration; 8 application; 9 fit-
+  and-proper; 10 conditions; 19 Codes of Practice).
 - [`banking-business-law-1991.md`](banking-business-law-1991.md)
-  *(stub)* — deposit-taking.
+  — deposit-taking (see also `../banking/bbl-articles-index.md`).
 - [`collective-investment-funds-law-1988.md`](collective-investment-funds-law-1988.md)
-  *(stub)* — public funds.
+  — public funds (see also `../funds/cifl-articles-index.md`).
 - [`insurance-business-law-1996.md`](insurance-business-law-1996.md)
-  *(stub)* — insurance underwriting.
+  — insurance underwriting (see also `../insurance/ibl-articles-index.md`).
 
 ### Theme 3 — Operating under regulation
 
