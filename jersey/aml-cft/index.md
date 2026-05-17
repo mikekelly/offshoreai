@@ -83,5 +83,10 @@ Europe's AML/CFT mutual-evaluation body.
   cluster files for all 5 Parts, individual articles for Minister
   designation (3), UN listings (4), UK listings (5), asset-freezing
   (10), making available (11), licences (15), offences (20).
+- [**cicl-articles-index.md**](cicl-articles-index.md) — Crime
+  (International Co-operation) (Jersey) Law 2001 article-by-article:
+  Part-cluster files for all 6 Parts, individual articles for letters
+  of request (3), evidence (5), foreign restraint orders (13),
+  foreign confiscation orders (14).
 
 [pocl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/08.780.aspx
