@@ -32,17 +32,26 @@ practice Entitled-style) status to incoming high-net-worth
 individuals, with a bespoke tax regime — see
 [tax/high-value-residency-tax.md](../tax/high-value-residency-tax.md).
 
-## Files in this section *(all stubs at this revision)*
+## Files in this section
+
+### Concept overviews
 
 - [**control-of-housing-and-work-law.md**](control-of-housing-and-work-law.md)
-  — the Control of Housing and Work (Jersey) Law 2012. *(Stub.)*
+  — the Control of Housing and Work (Jersey) Law 2012.
 - [**residential-status-categories.md**](residential-status-categories.md)
   — Entitled / Licensed / Entitled for Work / Registered as housing
-  categories. *(Stub.)*
+  categories.
 - [**employment-status-categories.md**](employment-status-categories.md)
-  — the same categories as they apply to employment. *(Stub.)*
+  — the same categories as they apply to employment.
 - [**high-value-residency.md**](high-value-residency.md) — the
-  2(1)(e) HVR route, eligibility, and process. *(Stub.)*
+  2(1)(e) HVR route, eligibility, and process.
 - [**route-to-entitled.md**](route-to-entitled.md) — qualifying
   periods, the path from Registered through Entitled for Work to
-  Entitled. *(Stub.)*
+  Entitled.
+
+### Article-by-article statute wiki
+
+- [**chwl-articles-index.md**](chwl-articles-index.md) — CHWL 2012
+  article-by-article: Part-cluster files for all 6 Parts plus
+  individual articles for the gateway provisions (Article 3
+  categories; 10 housing restrictions; 19 employment restrictions).
