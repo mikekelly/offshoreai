@@ -78,5 +78,10 @@ Europe's AML/CFT mutual-evaluation body.
   Laundering (Jersey) Order 2008 article-by-article: CDD core
   (Articles 5-8, 11, 12, 13), risk assessment (3), internal
   procedures (4), MLRO (16), record keeping (17), training (19).
+- [**safl-articles-index.md**](safl-articles-index.md) — Sanctions
+  and Asset-Freezing (Jersey) Law 2014 article-by-article: Part-
+  cluster files for all 5 Parts, individual articles for Minister
+  designation (3), UN listings (4), UK listings (5), asset-freezing
+  (10), making available (11), licences (15), offences (20).
 
 [pocl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/08.780.aspx
