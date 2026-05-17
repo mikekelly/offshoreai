@@ -33,24 +33,32 @@ under the [Collective Investment Funds (Jersey) Law 1988][cif]. The
 overall framework is graduated by the **sophistication of the
 investor** and the **number of investors** in the fund.
 
-## Files in this section *(all stubs at this revision)*
+## Files in this section
+
+### Fund regimes (concept files)
 
 - [**jersey-private-fund.md**](jersey-private-fund.md) — the JPF: up
   to 50 professional / eligible investors, fast-track JFSC
-  registration. *(Stub.)*
+  registration.
 - [**expert-fund.md**](expert-fund.md) — the Expert Fund regime for
   expert investors meeting net-worth / investment thresholds.
-  *(Stub.)*
 - [**eligible-investor-fund.md**](eligible-investor-fund.md) — the
-  Eligible Investor Fund. *(Stub.)*
+  Eligible Investor Fund.
 - [**listed-fund.md**](listed-fund.md) — the Listed Fund regime.
-  *(Stub.)*
 - [**public-funds.md**](public-funds.md) — public funds under the
-  Collective Investment Funds (Jersey) Law 1988. *(Stub.)*
+  Collective Investment Funds (Jersey) Law 1988.
 - [**unregulated-funds.md**](unregulated-funds.md) — the Unregulated
-  Fund category. *(Stub.)*
+  Fund category.
 - [**aifmd-nppr.md**](aifmd-nppr.md) — marketing Jersey AIFs into
-  the EU/UK under the National Private Placement Regime. *(Stub.)*
+  the EU/UK under the National Private Placement Regime.
+
+### Article-by-article statute wiki
+
+- [**cifl-articles-index.md**](cifl-articles-index.md) — CIFL 1988
+  article-by-article: Part-cluster files for all 6 Parts, individual
+  articles for the gateway provisions (Article 2 collective investment
+  fund; 3 functionaries; 4 certificate requirement; 6 grant; 7
+  functionary permit).
 
 For the regulatory regime that authorises the fund's service providers
 (administrators, custodians, etc.) see
