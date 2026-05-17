@@ -15,6 +15,10 @@ tags:
 Jersey-specific terms, names, and abbreviations. Where a term has a full
 treatment file, the entry links to it.
 
+**Additional terms** from later corpus expansions (new statute wikis,
+adjacent jurisdictions, customary law, contract / property law) are in
+[`glossary-extension.md`](glossary-extension.md).
+
 ## A
 
 **Advocate.** A member of the senior branch of the Jersey legal profession,
