@@ -29,14 +29,24 @@ international banking groups, reflecting Jersey's long-standing
 fifty largest (the policy has been moderated over time but the
 emphasis on systemically significant parent groups persists).
 
-## Files in this section *(all stubs at this revision)*
+## Files in this section
+
+### Concept overviews
 
 - [**banking-business-law-1991.md**](banking-business-law-1991.md) —
-  structure of the Law; registration of deposit-takers. *(Stub.)*
+  structure of the Law; registration of deposit-takers.
 - [**depositor-compensation.md**](depositor-compensation.md) — the
   Banking Business (Depositors Compensation) (Jersey) Regulations
-  2009 scheme. *(Stub.)*
+  2009 scheme.
 - [**top-50-policy.md**](top-50-policy.md) — historical "top-50"
-  bank policy and its modern operation. *(Stub.)*
+  bank policy and its modern operation.
+
+### Article-by-article statute wiki
+
+- [**bbl-articles-index.md**](bbl-articles-index.md) — BBL 1991
+  article-by-article: Part-cluster files for all 7 Parts, individual
+  articles for deposit-taking business (Article 2), the registration
+  requirement (4), grant (6), continuing obligations (10), and
+  capital (14).
 
 [bbl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/13.075.aspx
