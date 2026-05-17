@@ -164,6 +164,25 @@ not binding** — particularly where Jersey has consciously diverged.
 - [`judicial-appointments.md`](judicial-appointments.md) —
   Judicial Appointments Commission and senior office process.
 
+### Theme 7 — Sources and intellectual foundations
+
+- [`normandy-and-jersey-law.md`](normandy-and-jersey-law.md) —
+  Norman customary law origins of Jersey law.
+- [`pothier-and-the-coutume.md`](pothier-and-the-coutume.md) —
+  Pothier's influence on Jersey contract / obligations law.
+- [`code-le-geyt.md`](code-le-geyt.md) — Philippe Le Geyt's
+  codification of Jersey customary law.
+- [`english-law-as-persuasive.md`](english-law-as-persuasive.md)
+  — when and how English law is cited in Jersey.
+- [`statutory-interpretation.md`](statutory-interpretation.md)
+  — Jersey approach to interpreting statutes.
+
+### Theme 8 — Procedure
+
+- [`royal-court-rules.md`](royal-court-rules.md) — Royal Court
+  Rules 2004 and Jersey civil procedure (Order of Justice,
+  Representation, Doleance).
+
 ## Cross-section navigation by tag
 
 Tags an agent can follow:
