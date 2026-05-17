@@ -28,6 +28,14 @@ see_also:
   - ./aml-cft/index.md
   - ./international/index.md
   - ./registries/index.md
+  - ./insolvency/index.md
+  - ./succession/index.md
+  - ./charities/index.md
+  - ./data-protection/index.md
+  - ./employment/index.md
+  - ./discrimination/index.md
+  - ./property/index.md
+  - ./contract/index.md
   - ./use-cases/index.md
   - ./glossary.md
   - ./sources.md
@@ -233,6 +241,62 @@ JFSC Registry (companies, foundations, partnerships, business
 names, VASPs), the **non-public beneficial-ownership register**
 under the FSDI Law 2020, the Land Registry, and the charities
 register.
+
+### [Insolvency](insolvency/index.md)
+The **Bankruptcy (Désastre) (Jersey) Law 1990** — Jersey's
+principal insolvency statute. Désastre procedure, avoidance
+powers (preferences, undervalue transactions, fraudulent
+transfers), distribution priority, discharge, and cross-border
+insolvency cooperation. Operates alongside creditors' winding-
+up under Companies Law Part 21.
+
+### [Succession](succession/index.md)
+The **Wills and Successions (Jersey) Law 1993**: will
+formalities (including holograph wills), légitime (forced
+heirship for spouse and children of the movable estate),
+intestacy rules, and the movable / immovable property
+distinction. Real-property succession remains substantially
+under customary law.
+
+### [Charities](charities/index.md)
+The **Charities (Jersey) Law 2014**: charitable purposes,
+public-benefit test, Charity Commissioner, registered-charity
+status, three sections of the charity register, trustee
+duties, cy-près.
+
+### [Data Protection](data-protection/index.md)
+The **Data Protection (Jersey) Law 2018** — Jersey's GDPR-
+equivalent: lawful bases, data subject rights, controller /
+processor obligations, breach notification, international
+transfers, Information Commissioner (JOIC) supervision. Tier
+1 / Tier 2 fines mirror GDPR.
+
+### [Employment](employment/index.md)
+The **Employment (Jersey) Law 2003**: written particulars,
+minimum wage, working time, family-friendly leave, unfair
+dismissal, redundancy, and the Jersey Employment and
+Discrimination Tribunal.
+
+### [Discrimination](discrimination/index.md)
+The **Discrimination (Jersey) Law 2013**: protected
+characteristics added in phases since 2014 (race, sex,
+sexual orientation, gender reassignment, pregnancy and
+maternity, age, disability), direct and indirect
+discrimination, reasonable adjustments, equal pay.
+
+### [Property](property/index.md)
+Jersey real-property law: the **Loi (1880) sur la propriété
+foncière**, hypothec (Jersey real-property security), contract
+passing before the Royal Court, servitudes (Jersey easements),
+leases, **Security Interests (Jersey) Law 2012** for personal
+property, and customary real-property succession.
+
+### [Contract and obligations](contract/index.md)
+Jersey contract / obligations law: formation (four classical
+requirements per Pothier including cause), performance and
+breach, damages, specific performance (broader in Jersey than
+English law), misrepresentation, unjust enrichment / quasi-
+contract, and délit / tort (including voisinage).
 
 ---
 
