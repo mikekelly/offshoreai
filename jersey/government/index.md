@@ -88,12 +88,19 @@ If you have no prior context, read in this order:
 ### Theme 2 — Institutions
 
 - [`states-assembly.md`](states-assembly.md) — legislature.
-- [`council-of-ministers.md`](council-of-ministers.md) *(stub)* —
+- [`council-of-ministers.md`](council-of-ministers.md) —
   executive (ministerial system since 2005).
-- [`bailiff.md`](bailiff.md) *(stub)* — Bailiff and Deputy
-  Bailiff (dual judicial / parliamentary role).
-- [`lieutenant-governor.md`](lieutenant-governor.md) *(stub)* —
-  the King's representative in Jersey.
+- [`bailiff.md`](bailiff.md) — Bailiff and Deputy Bailiff (dual
+  judicial / parliamentary role; see also
+  [`../legal-system/bailiff.md`](../legal-system/bailiff.md)).
+- [`lieutenant-governor.md`](lieutenant-governor.md) — the
+  Sovereign's personal representative in Jersey.
+
+### Theme 4 — UK-Jersey relationship
+
+- [`uk-jersey-relationship.md`](uk-jersey-relationship.md) —
+  constitutional position, Privy Council process, external
+  relations, fiscal autonomy, post-Brexit EU relationship.
 
 ### Theme 3 — Local government
 

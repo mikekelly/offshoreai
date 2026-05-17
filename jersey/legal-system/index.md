@@ -139,16 +139,30 @@ not binding** — particularly where Jersey has consciously diverged.
 
 ### Theme 3 — Appeals
 
-- [`court-of-appeal.md`](court-of-appeal.md) *(stub)* — the
-  Jersey Court of Appeal.
-- [`privy-council.md`](privy-council.md) *(stub)* — final appeal
-  to the JCPC.
+- [`court-of-appeal.md`](court-of-appeal.md) — the Jersey Court
+  of Appeal.
+- [`privy-council.md`](privy-council.md) — final appeal to the
+  JCPC.
 
 ### Theme 4 — The legal profession
 
-- [`legal-profession.md`](legal-profession.md) *(stub)* —
-  Advocates and Solicitors of the Royal Court; admission rules;
-  relationship with English / Scottish bars.
+- [`legal-profession.md`](legal-profession.md) — Advocates and
+  Solicitors of the Royal Court; admission rules; relationship
+  with English / Scottish bars.
+
+### Theme 5 — Lower court
+
+- [`magistrates-court.md`](magistrates-court.md) — Magistrate's
+  Court (summary criminal, petty debts, family).
+
+### Theme 6 — Constitutional / administrative
+
+- [`echr-human-rights.md`](echr-human-rights.md) — Human Rights
+  (Jersey) Law 2000 implementing the ECHR.
+- [`judicial-review.md`](judicial-review.md) — Royal Court
+  supervisory jurisdiction over public bodies.
+- [`judicial-appointments.md`](judicial-appointments.md) —
+  Judicial Appointments Commission and senior office process.
 
 ## Cross-section navigation by tag
 
