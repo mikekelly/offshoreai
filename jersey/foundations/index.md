@@ -83,6 +83,11 @@ use cases but very different legal mechanics.
 - **[`foundations-law-2009.md`](foundations-law-2009.md)** —
   Foundations (Jersey) Law 2009: definition; council; guardian;
   qualified member; founder; charter; regulations.
+- **[`fjl-articles-index.md`](fjl-articles-index.md)** —
+  article-by-article wiki of the Foundations (Jersey) Law 2009
+  with Part-cluster files and individual article files for the
+  most-cited provisions (Articles 4-7, 15-17, 22-23, 26, 28-30,
+  35-37, 45-47).
 
 ### Theme 2 — Governance organs
 
