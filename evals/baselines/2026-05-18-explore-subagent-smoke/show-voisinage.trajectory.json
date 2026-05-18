@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "explore-subagent",
+  "ranAt": "2026-05-18T16:55:00Z",
+  "wallClockSeconds": 95,
+  "turns": 1,
+  "toolCalls": [],
+  "citedPaths": [
+    {
+      "path": "jersey/property/voisinage.md",
+      "kind": "corpus-relative",
+      "appearedInToolTrajectory": true
+    }
+  ],
+  "usage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
+  },
+  "answer": {
+    "text": "see show-voisinage.answer.md",
+    "wordCount": 314
+  },
+  "errors": [],
+  "meta": {
+    "trajectory_quality": "approximate",
+    "trajectory_quality_reason": "Explore subagent's tool calls are not enumerable from the parent's perspective; only the final answer string is visible. Wall-clock is measurable; tool-call sequence and per-tool token counts are not.",
+    "comparison_note": "Single-question run cited 1 file vs the 4 files the showcase v1 run cited for this question — the smoke run is not directly comparable to the curated full-batch baseline; useful as a harness-adapter validation only."
+  }
+}
