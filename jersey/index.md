@@ -40,6 +40,7 @@ see_also:
   - ./road-traffic/index.md
   - ./planning/index.md
   - ./welfare/index.md
+  - ./crime-fraud/index.md
   - ./contract/index.md
   - ./use-cases/index.md
   - ./COVERAGE-AUDIT.md
@@ -347,6 +348,18 @@ and a work expectation). Administered by **Customer and
 Local Services**. Appeals to the **Social Security
 Tribunal** and Royal Court. The fifth gap-fill from the
 coverage audit.
+
+### [Crime and criminal procedure](crime-fraud/index.md)
+Police powers, suspect rights, custody, and the court
+process under the **Police Procedures and Criminal
+Evidence (Jersey) Law 2003** (PPCE 2003) and its Codes
+of Practice. Covers stop and search, arrest, detention
+(24 hours initial, extendable to 96 with Royal Court
+warrant), rights at the police station (free legal
+advice, silence, custody record), bail, and the procedure
+through Magistrate's Court and Royal Court. Distinct from
+the **AML/CFT** financial-crime coverage. The sixth
+gap-fill from the coverage audit.
 
 ### [Contract and obligations](contract/index.md)
 Jersey contract / obligations law: formation (four classical
