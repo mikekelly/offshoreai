@@ -46,7 +46,10 @@ structure.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 16 — 27 | Access, rectification, erasure, portability, objection, automated decisions | [dpl-part-3-rights.md](dpl-part-3-rights.md) |
+| 16 — 27 | Rectification, automated decisions etc. | [dpl-part-3-rights.md](dpl-part-3-rights.md) |
+| 17 | Right of access (SAR) | [dpl-article-17.md](dpl-article-17.md) |
+| 19 | Right of erasure | [dpl-article-19.md](dpl-article-19.md) |
+| 22 | Right to object | [dpl-article-22.md](dpl-article-22.md) |
 
 ## Part 4 — Controller and Processor
 
@@ -59,7 +62,8 @@ structure.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 44 — 56 | International transfers, SCCs, BCRs, derogations | [dpl-part-5-transfers.md](dpl-part-5-transfers.md) |
+| 44 | International transfers | [dpl-article-44.md](dpl-article-44.md) |
+| 45 — 56 | SCCs, BCRs, derogations | [dpl-part-5-transfers.md](dpl-part-5-transfers.md) |
 
 ## Part 6 — Information Commissioner (Authority)
 
@@ -71,7 +75,8 @@ structure.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 76 — 87 | Administrative fines, criminal offences, appeals | [dpl-part-7-enforcement.md](dpl-part-7-enforcement.md) |
+| 76 | Administrative fines | [dpl-article-76.md](dpl-article-76.md) |
+| 77 — 87 | Criminal offences, appeals | [dpl-part-7-enforcement.md](dpl-part-7-enforcement.md) |
 
 ## Part 8 — Miscellaneous
 
@@ -83,7 +88,9 @@ structure.
 
 Part-cluster files cover each Part of DPL 2018, with
 individual articles for the gateway provisions (Article 2
-application; 8 lawful bases; 9 special category data; 43
-breach notification).
+application; 8 lawful bases; 9 special category data; 17
+right of access; 19 erasure; 22 objection; 43 breach
+notification; 44 international transfers; 76 administrative
+fines).
 
 [dpl]: https://www.jerseylaw.je/laws/current
