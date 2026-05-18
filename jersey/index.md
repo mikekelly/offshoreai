@@ -39,6 +39,7 @@ see_also:
   - ./family/index.md
   - ./road-traffic/index.md
   - ./planning/index.md
+  - ./welfare/index.md
   - ./contract/index.md
   - ./use-cases/index.md
   - ./COVERAGE-AUDIT.md
@@ -334,6 +335,18 @@ conversions, change of use, listed buildings, conservation
 areas, application process, appeals, and enforcement
 (unauthorised development is criminal). The fourth gap-fill
 from the coverage audit.
+
+### [Welfare and social security](welfare/index.md)
+Two parallel schemes: the **Social Security (Jersey) Law
+1974** contributory regime (pensions, incapacity,
+maternity, death — based on contribution record) and the
+**Income Support (Jersey) Law 2007** means-tested benefit
+(housing, living, health, childcare components for
+households below thresholds, with a 5-year residence test
+and a work expectation). Administered by **Customer and
+Local Services**. Appeals to the **Social Security
+Tribunal** and Royal Court. The fifth gap-fill from the
+coverage audit.
 
 ### [Contract and obligations](contract/index.md)
 Jersey contract / obligations law: formation (four classical

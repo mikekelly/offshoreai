@@ -283,10 +283,14 @@ questions:
       - "Residency requirements"
       - "Application process"
     expected_files:
-      - "jersey/welfare/*"  # not yet built
+      - "jersey/welfare/income-support-law-2007.md"
+      - "jersey/welfare/income-support-eligibility.md"
+      - "jersey/welfare/social-security-law-1974.md"
+      - "jersey/use-cases/jersey-resident/just-lost-job-income-support.md"
     score:
       2026-05-18: fail
-      2026-05-18-measured: fail  # v3 Agent-tool runner: honest refusal + useful trajectory — found incidental Income Support mentions in tenancy/discrimination files; pointed to gov.je / Citizens Advice / jerseylaw.je as external resources
+      2026-05-18-measured: fail  # v3 baseline
+      2026-05-18-measured-postfill: pass  # v3-postfill: all 3 eligibility tests + SS 1974 parallel + application process + CLS + alternative routes surfaced; 4 expected files cited
 
   # =====================================================
   # CRIMINAL PROCEDURE — Top-20 gap #10 (expected fail)
