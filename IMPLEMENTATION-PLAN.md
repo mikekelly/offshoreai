@@ -13,6 +13,14 @@ adjusts inside individual weeks, and as new tasks emerge from logs in the
 post-week-7 shadow-pilot phase. Sweeping changes (re-ordering weeks,
 adding new milestones) require a PRD §14 update first.
 
+**Eval-driven acceptance.** Every week from week 3 onwards has a
+**score-delta acceptance criterion** drawn from
+[`EVAL-DRIVEN-PLAN.md`](EVAL-DRIVEN-PLAN.md). A milestone ships only
+when the showcase / coverage eval moves by the target margin against
+the prior baseline. "Feature exists" is not enough. Weeks 1–2 have no
+score impact (infrastructure-only) but their convention-validator
+output feeds the editorial backlog used from week 3 onwards.
+
 ---
 
 ## Week 0 — readiness gaps (this document and its peers)
@@ -25,10 +33,15 @@ as gaps; week 0 closes them so week 1 can start cold.
 |---|---|---|
 | First-run dev env doc | [`SETUP.md`](SETUP.md) | ✅ |
 | Week-by-week task backlog | [`IMPLEMENTATION-PLAN.md`](IMPLEMENTATION-PLAN.md) | ✅ (this file) |
+| Eval-driven plan that overrides this file's acceptance criteria | [`EVAL-DRIVEN-PLAN.md`](EVAL-DRIVEN-PLAN.md) | ✅ |
 | Zod schemas + 5-part descriptions for every tool | `schemas/` | ✅ (spec; promoted to `packages/schemas/` in week 3) |
 | Reference bundle YAML for `trust-officer/article-47-set-aside-for-mistake` | `bundles/trust-officer/article-47-set-aside-for-mistake.yaml` | ✅ |
 | Sub-agent prompts (citation-verifier, bundle-assembler, freshness-checker) | `prompts/sub-agents/*.md` | ✅ |
 | Reference SKILL.md per category (baseline, task) | `skills/templates/*.SKILL.md` | ✅ |
+| Eval grader sub-agent prompt | `prompts/eval/grader.md` | week 0 in progress |
+| Trajectory schema + harness-adapter spec | `schemas/eval-trajectory.ts`, `evals/harnesses/README.md` | week 0 in progress |
+| Convention-validator conformance baseline | `evals/conformance-baseline.yaml` | week 1 — populated by first validator run |
+| `claude-p` + `explore-subagent` eval baselines | `evals/baselines/<date>-{claude-p,explore-subagent}/` | Phase 1 — once Phase 0 ships |
 | Tenant onboarding runbook | `TENANT-ONBOARDING.md` | deferred — not week-1-to-7 blocking |
 
 Acceptance: a new implementation engineer can run `git pull`, read
@@ -49,8 +62,13 @@ have everything they need to start week 1 without further design questions.
 | Vitest harness | `vitest.config.ts` at root + per-package `vitest.config.ts` |
 
 Acceptance: `pnpm build:corpus validate` runs in CI, fails on any frontmatter
-violation, link rot, or invented tag. Existing corpus passes (or the
-violations are surfaced as a backlog of corpus fixes).
+violation, link rot, or invented tag. **Existing corpus violations are
+captured as a snapshot in `evals/conformance-baseline.yaml`** so the
+editorial team has a backlog target, but they do not block CI on this
+week's branch.
+
+Score impact: none (infrastructure). The conformance snapshot is the
+week-1 deliverable that *feeds* later weeks' editorial prioritisation.
 
 **Owner-decidable sub-tasks (no PRD change needed):**
 - ESM vs CJS — **ESM (NodeNext)**, no compat shims.
@@ -73,6 +91,8 @@ Acceptance: `pnpm build:corpus all` produces `hier-tree.json` and
 `tag-index.json` under `dist/build/`; incremental re-build of a single
 file completes in < 5s without recomputing summaries for unchanged files.
 
+Score impact: none yet (the artefacts feed week 3's typed tools).
+
 ---
 
 ## Week 3 — corpus toolset (`@offshoreai/tools-corpus`)
@@ -87,7 +107,12 @@ file completes in < 5s without recomputing summaries for unchanged files.
 
 Acceptance: every tool listed in `schemas/corpus.ts` has a passing
 handler, a passing description-discipline check, and emits TOON identical
-to the example in PRD §7.0.2.
+to the example in PRD §7.0.2. **Score gate**: re-running the showcase
+eval against the new `offshoreai-agent` harness must show **citation
+precision ≥ +20 percentage points** over `claude-p` and the
+`explore-subagent` baseline, and **median tool-call count per question
+≥ 30% lower**. If neither moves, the typed surface didn't earn its
+keep against bare Read+Grep — pause and ask why.
 
 ---
 
@@ -103,6 +128,9 @@ to the example in PRD §7.0.2.
 Acceptance: a tenant can `memory.add` 100 atomic notes, `memory.search`
 returns relevance-ranked hits, `memory.evolve` updates without losing
 history, cross-tenant queries return zero rows (integration test).
+Score impact on showcase: none expected (showcase is canonical-only).
+Track 3 (memory-in-action) eval begins at week 10 and is where memory
+scores get measured.
 
 ---
 
@@ -120,6 +148,10 @@ history, cross-tenant queries return zero rows (integration test).
 Acceptance: a corpus file with `last_verified` > 365 days emits a `stale`
 verdict on `getFile`; a Bash `rm -rf /` is denied with a structured
 refusal; the `tenant-systems-mcp` stub starts under `pnpm dev`.
+**Score gate**: on a synthetic stale-corpus eval (a question whose
+canonical file is artificially aged past the threshold), the agent
+**flags the staleness ≥ 90%** of runs; **zero stale-corpus citations
+pass through to the user** on the standard showcase.
 
 ---
 
@@ -136,6 +168,11 @@ refusal; the `tenant-systems-mcp` stub starts under `pnpm dev`.
 Acceptance: a hand-crafted "agent makes a claim with no corpus tool call
 in the session log" prompt is rejected by the citation-verifier; the
 retry succeeds; the refusal template fires on a second rejection.
+**Score gate**: on the adversarial hallucinated-citation set (synthetic
+questions whose plausible-but-wrong answers cite real files that don't
+support the claim), the verifier achieves **zero false-pass rate**;
+first-pass reject rate on the standard showcase is **≤ 15%**;
+post-retry reject rate is **≤ 2%**.
 
 ---
 
@@ -151,7 +188,10 @@ retry succeeds; the refusal template fires on a second rejection.
 
 Acceptance: starting a session with `persona: trust-officer` and a prompt
 containing "Article 47" loads the matching bundle; the dashboard appears
-in the first system context.
+in the first system context. **Score gate**: on bundle-covered showcase
+questions (those that map to one of the 5 seed bundles), median
+**tool-call count ≤ 3** (vs ≥ 6 on the bare-Read baselines); bundle-
+routing accuracy on the 100-question Track 1 set is **≥ 95%**.
 
 ---
 
@@ -164,7 +204,10 @@ in the first system context.
 | Eval Track 1 (bundle routing) | `evals/track-1-bundle-routing/{queries.yaml,run.ts}` — 100 hand-curated queries per persona; target ≥95% correct bundle on trust-officer |
 
 Acceptance: pilot tenants produce a week of tool-call log data; Track 1
-runs on every PR and on a nightly schedule.
+runs on every PR and on a nightly schedule. **Score gate**: Track 1
+bundle-routing accuracy on the 100-question set is **≥ 95%** for the 5
+seed bundles; all-five-bundle median latency is within 2× of the
+single-bundle case.
 
 ---
 
@@ -177,9 +220,12 @@ runs on every PR and on a nightly schedule.
 | Log-driven bundle batch | Weekly job in `packages/build/src/jobs/bundle-prioritise.ts` — ranks (persona × task-shape) pairs by frequency × current-fallback-rate; produces 5-8 new bundle YAMLs |
 | Replay command | `pnpm replay <session_id>` — engineer-facing tool that replays a session against current corpus state and highlights claims that would now be wrong (PRD §11.3) |
 
-Acceptance: Track 2 gold-set passes ≥ 90% legal correctness; the
+Acceptance: Track 2 gold-set passes **≥ 90% legal correctness**; the
 log-driven batch produces bundles whose existence demonstrably reduces
-tool-call count on subsequent matching queries.
+median tool-call count on subsequent matching queries by **≥ 25%** vs
+the no-bundle baseline. **Score gate**: per PRD §11.1 Track 2 — citation
+precision = 100%, citation recall ≥ 90%, freshness flag = 100% on stale
+items.
 
 ---
 
@@ -192,7 +238,10 @@ tool-call count on subsequent matching queries.
 | Second log-driven bundle batch | another 5-8 bundles from week-10's accumulated logs |
 
 Acceptance: Track 3 surfaces note/corpus conflicts (memory does not
-silently override); SessionStore S3 round-trips correctly.
+silently override); SessionStore S3 round-trips correctly. **Score
+gate**: on adversarial scenarios where a stored note contradicts the
+corpus, **conflict-surfacing rate ≥ 95%** — the agent flags the
+conflict to the user rather than silently obeying either side.
 
 ---
 
@@ -206,7 +255,10 @@ silently override); SessionStore S3 round-trips correctly.
 
 Acceptance: §11.2 KPIs (citation-verifier reject rate, tool-call count
 median, always-resident schema tokens, agent-driven retrieval rate)
-report cleanly in a dashboard.
+report cleanly in a dashboard. **Score gate (regression watch)**: every
+metric established in weeks 3, 5, 6, 7, 9, 10 must hold without
+regression vs the week-10 snapshot — hardening must not move the
+numbers backwards.
 
 ---
 
@@ -220,7 +272,12 @@ report cleanly in a dashboard.
 
 Acceptance: a Jersey TCB can issue a real query, the agent answers with
 a real bundle, the answer is citation-verified, and the tenant can
-inspect the tool-event log.
+inspect the tool-event log. **Score gate (sticky baseline)**: at launch,
+the `offshoreai-agent` harness beats `claude-p` by **≥ 25 percentage
+points overall pass-rate** on the showcase eval, with both controls
+re-baselined within the prior week. The eval re-runs weekly; any
+sub-25 pp delta on a new feature is a restraint signal to review the
+feature.
 
 ---
 
