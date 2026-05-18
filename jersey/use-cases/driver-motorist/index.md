@@ -35,9 +35,10 @@ Law 1948**, the **Motor Vehicle Registration (Jersey) Law
 offences are tried in the **Magistrate's Court** with
 appeals to the Royal Court.
 
-This persona is currently **a scaffold** — see
-[`../../COVERAGE-AUDIT.md`](../../COVERAGE-AUDIT.md), where
-Road Traffic (Jersey) Law 1956 is ranked the #2 gap.
+The road-traffic section was built out as the third gap-fill
+from the coverage audit (#2 priority). See
+[`../../road-traffic/index.md`](../../road-traffic/index.md)
+for the section index.
 
 ## Canonical questions
 
@@ -92,14 +93,15 @@ Road Traffic (Jersey) Law 1956 is ranked the #2 gap.
 
 ## Where to start
 
-This section is not yet written. When built, the canonical
-entry points will be:
+1. [**`../../road-traffic/index.md`**](../../road-traffic/index.md) — section index
+2. [**`../../road-traffic/road-traffic-law-1956.md`**](../../road-traffic/road-traffic-law-1956.md) — RTJL 1956 overview
+3. [**`../../road-traffic/parish-hall-enquiries.md`**](../../road-traffic/parish-hall-enquiries.md) — the distinctive Jersey forum
+4. [**`../../road-traffic/honorary-police.md`**](../../road-traffic/honorary-police.md) — Connétables / Centeniers / Vingteniers
 
-1. **`../../road-traffic/index.md`** — section index (TBD);
-2. **`../../road-traffic/road-traffic-law-1956.md`** — RTL
-   1956 overview (TBD);
-3. **`../../road-traffic/offences/`** — offences sub-section
-   (TBD).
+### Worked persona questions
+
+- [**Caught speeding 50 in a 30 — what happens?**](caught-speeding.md)
+- [**What's the drink-drive limit in Jersey?**](drink-drive-limit.md)
 
 ## Cross-references
 

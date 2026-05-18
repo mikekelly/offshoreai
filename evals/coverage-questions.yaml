@@ -12,7 +12,7 @@
 #
 # Last full run: 2026-05-18 (initial baseline)
 
-version: 3-complete
+version: 3-postfill
 last_run: 2026-05-18
 notes: |
   v1 (2026-05-18): self-graded baseline after residential-tenancy build.
@@ -21,8 +21,10 @@ notes: |
   All 17 questions executed by fresh Explore subagents constrained to
   read-only filesystem access on the jersey/ corpus only.
   All 17 measured outcomes match v2 predictions: 12 pass, 5 fail.
-  Every failure was an honest "corpus does not answer" with audit
-  references — no confabulation observed.
+  v3-postfill (2026-05-18, same day): road-traffic section built;
+  rt-rd-001 and rt-rd-002 re-measured and converted FAIL → PASS.
+  Running score: 14 pass / 3 fail. Remaining 3 gaps: planning,
+  welfare, PPCE — the next gap-fill targets.
 
 questions:
 
@@ -126,28 +128,43 @@ questions:
     question: "I was caught speeding doing 50 in a 30 zone. What happens?"
     expected_facts:
       - "Road Traffic (Jersey) Law 1956 governs"
-      - "Penalty notice vs court summons"
-      - "Magistrate's Court for traffic offences"
-      - "Penalty points / disqualification considerations"
+      - "15 mph excess threshold excludes Parish Hall Enquiry; case goes to Magistrate's Court by summons"
+      - "Sentencing Guidelines fine band £300-£400 for 20 mph excess"
+      - "Endorsement essentially automatic at this excess"
+      - "Disqualification a real prospect (Guidelines say 'endorse / disqualify' at this level)"
+      - "Statutory evidential protection: cannot convict on single witness opinion alone (corroboration needed)"
+      - "Procedure: summons → first appearance → plea → trial-if-not-guilty → sentence"
     expected_files:
-      - "jersey/road-traffic/*"  # not yet built
+      - "jersey/road-traffic/speeding.md"
+      - "jersey/road-traffic/road-traffic-law-1956.md"
+      - "jersey/road-traffic/parish-hall-enquiries.md"
+      - "jersey/road-traffic/court-procedure.md"
+      - "jersey/use-cases/driver-motorist/caught-speeding.md"
     score:
       2026-05-18: fail
-      2026-05-18-measured: fail  # v3 Agent-tool runner: correctly refused to confabulate; cited COVERAGE-AUDIT.md and pointed to the gap
+      2026-05-18-measured: fail  # v3 baseline: corpus did not answer
+      2026-05-18-measured-postfill: pass  # v3-postfill (road-traffic section built): all 7 facts surfaced; 5/5 expected files cited
 
   - id: rt-rd-002
     persona: driver-motorist
     asked_by: driver
     question: "What's the drink-drive limit in Jersey?"
     expected_facts:
-      - "Specific Jersey BAC limit"
-      - "Breath / blood test procedure"
-      - "Penalties for refusal"
+      - "80 mg / 100 ml blood (BAC 0.08%); 35 μg / 100 ml breath; 107 mg / 100 ml urine"
+      - "Higher than Scotland's 50 mg/100ml; matches historic UK / England-Wales-NI limit"
+      - "Screening breath test at roadside; evidential test at station"
+      - "Refusal without reasonable excuse is its own offence with comparable penalties"
+      - "Mandatory disqualification (min 12 months first offence) + fine up to £2,000 + up to 6 months prison"
+      - "Magistrate's Court forum (cannot be Parish Hall)"
+      - "Contrast with drug-driving — currently impairment-based; statutory limits proposed Feb 2026 but not yet in force"
     expected_files:
-      - "jersey/road-traffic/*"  # not yet built
+      - "jersey/road-traffic/drink-driving.md"
+      - "jersey/road-traffic/drug-driving.md"
+      - "jersey/use-cases/driver-motorist/drink-drive-limit.md"
     score:
       2026-05-18: fail
-      2026-05-18-measured: fail  # v3 Agent-tool runner: honest refusal, cited driver-motorist persona index acknowledging the gap
+      2026-05-18-measured: fail  # v3 baseline: corpus did not answer
+      2026-05-18-measured-postfill: pass  # v3-postfill: all 7 facts surfaced; 3/3 expected files cited
 
   # =====================================================
   # PLANNING — Top-20 gap #3 (expected fail)
@@ -360,6 +377,29 @@ summary:
                    # sn-001, sn-002, sn-003
     partial: 0
     fail: 5        # rt-rd-001, rt-rd-002, pl-001, we-001, cr-001
+                   # — superseded for rt-rd-001 and rt-rd-002 after
+                   # road-traffic section build; see -postfill below
+
+  2026-05-18-measured-postfill:
+    total: 17
+    pass: 14       # adds rt-rd-001, rt-rd-002 (re-measured after road-traffic build)
+    partial: 0
+    fail: 3        # pl-001 (planning), we-001 (welfare), cr-001 (PPCE)
+    notes: |
+      Third gap-fill complete: road-traffic section added (Road
+      Traffic 1956 + Parish Hall Enquiries + speeding + drink-
+      driving + drug-driving + careless/dangerous + insurance +
+      disqualification + court procedure + Honorary Police).
+      Re-ran rt-rd-001 and rt-rd-002 via the Agent-tool runner;
+      both converted from FAIL to PASS with rich substantive
+      answers citing the new files (5/5 expected files for
+      rt-rd-001; 3/3 for rt-rd-002). Expected_facts also ratcheted
+      up to reflect the depth of content now available — the new
+      bar is harder to clear and the runner cleared it.
+
+      Remaining 3 fails — pl-001 (Planning 2002), we-001 (Income
+      Support / welfare), cr-001 (PPCE arrest rights) — are the
+      next gap-fill targets in audit priority order.
     notes: |
       v3 FULL EXTERNALLY MEASURED RUN — all 17 questions
       executed via fresh Explore subagents constrained to

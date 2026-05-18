@@ -37,6 +37,7 @@ see_also:
   - ./property/index.md
   - ./residential-tenancy/index.md
   - ./family/index.md
+  - ./road-traffic/index.md
   - ./contract/index.md
   - ./use-cases/index.md
   - ./COVERAGE-AUDIT.md
@@ -311,6 +312,16 @@ Law 1949**, **Children (Jersey) Law 2002**, **Civil
 Partnership (Jersey) Law 2012**, **Adoption (Jersey) Law
 1961**. Forum: the **Royal Court Family Division**. The
 second gap-fill from the coverage audit.
+
+### [Road traffic](road-traffic/index.md)
+Motor vehicle offences and enforcement under the **Road
+Traffic (Jersey) Law 1956**, plus the distinctive
+**Parish Hall Enquiry** layer where Centeniers (Honorary
+Police) resolve most routine motoring offences before they
+reach the Magistrate's Court. Includes drink-driving
+(80 mg / 100 ml), speeding, careless / dangerous driving,
+driving without insurance, disqualification. The third
+gap-fill from the coverage audit.
 
 ### [Contract and obligations](contract/index.md)
 Jersey contract / obligations law: formation (four classical
