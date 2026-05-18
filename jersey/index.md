@@ -36,6 +36,7 @@ see_also:
   - ./discrimination/index.md
   - ./property/index.md
   - ./residential-tenancy/index.md
+  - ./family/index.md
   - ./contract/index.md
   - ./use-cases/index.md
   - ./COVERAGE-AUDIT.md
@@ -301,6 +302,15 @@ notice periods (1 month tenant / 3 or 12 months landlord),
 RPI-capped rent reviews, the Rent Tribunal, eviction by
 Petty Debts Court and Viscount enforcement. The first gap-fill
 from the [coverage audit](COVERAGE-AUDIT.md).
+
+### [Family law](family/index.md)
+Divorce, ancillary relief, child arrangements, care and
+protection of children, civil partnerships, cohabitation, and
+adoption. Principal statutes: **Matrimonial Causes (Jersey)
+Law 1949**, **Children (Jersey) Law 2002**, **Civil
+Partnership (Jersey) Law 2012**, **Adoption (Jersey) Law
+1961**. Forum: the **Royal Court Family Division**. The
+second gap-fill from the coverage audit.
 
 ### [Contract and obligations](contract/index.md)
 Jersey contract / obligations law: formation (four classical

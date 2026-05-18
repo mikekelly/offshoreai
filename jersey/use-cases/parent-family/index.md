@@ -98,13 +98,18 @@ above statutes are top-15 audit gaps.
 
 ## Where to start
 
-This section is not yet written. When built, the canonical
-entry points will be:
+The family section was built out as the second gap-fill from
+the coverage audit. Canonical entry points:
 
-1. **`../../family/index.md`** — section index (TBD);
-2. **`../../family/matrimonial-causes.md`** — divorce overview (TBD);
-3. **`../../family/children-jersey-law-2002.md`** — children law overview (TBD);
-4. **[`../../succession/index.md`](../../succession/index.md)** — wills, succession (already built).
+1. [**`../../family/index.md`**](../../family/index.md) — section index;
+2. [**`../../family/matrimonial-causes-law-1949.md`**](../../family/matrimonial-causes-law-1949.md) — divorce statute overview;
+3. [**`../../family/children-jersey-law-2002.md`**](../../family/children-jersey-law-2002.md) — children law overview;
+4. [**`../../succession/index.md`**](../../succession/index.md) — wills, succession (already built).
+
+### Worked persona questions
+
+- [**Getting divorced — how do I start?**](getting-divorced.md)
+- [**Social Services investigation — what are my rights?**](social-services-investigation.md)
 
 ## Cross-references
 
