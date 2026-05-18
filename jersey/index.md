@@ -41,6 +41,7 @@ see_also:
   - ./planning/index.md
   - ./welfare/index.md
   - ./crime-fraud/index.md
+  - ./health-and-capacity/index.md
   - ./contract/index.md
   - ./use-cases/index.md
   - ./COVERAGE-AUDIT.md
@@ -359,6 +360,16 @@ warrant), rights at the police station (free legal
 advice, silence, custody record), bail, and the procedure
 through Magistrate's Court and Royal Court. Distinct from
 the **AML/CFT** financial-crime coverage. The sixth
+gap-fill from the coverage audit.
+
+### [Mental health and capacity](health-and-capacity/index.md)
+Two paired 2016 statutes: the **Mental Health (Jersey)
+Law 2016** (compulsory admission and treatment —
+emergency 72h, assessment 28d, treatment 6m; Mental
+Health Review Tribunal) and the **Capacity and
+Self-Determination (Jersey) Law 2016** (Lasting Powers
+of Attorney, advance decisions, court-appointed
+delegates, Royal Court Protection Division). The seventh
 gap-fill from the coverage audit.
 
 ### [Contract and obligations](contract/index.md)

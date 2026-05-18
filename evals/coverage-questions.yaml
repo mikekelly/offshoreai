@@ -271,6 +271,71 @@ questions:
       2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts; clean single-file answer from parental-responsibility.md
 
   # =====================================================
+  # CAPACITY / LPA — Top-20 gap #12 (new test)
+  # =====================================================
+  - id: cap-001
+    persona: jersey-resident
+    asked_by: resident
+    question: "How do I set up a Lasting Power of Attorney in Jersey?"
+    expected_facts:
+      - "Capacity and Self-Determination (Jersey) Law 2016 governs"
+      - "Two types: health-and-welfare LPA and property-and-finance LPA"
+      - "Donor must be 18+ with current capacity"
+      - "Form must be signed by donor and attorneys with witnesses + certificate of capacity"
+      - "Must be registered at the Royal Court Protection Division before use"
+      - "Distinguishable from ordinary Powers of Attorney 1995 (which fall away on capacity loss)"
+      - "If no LPA when capacity lost, alternative is a court-appointed delegate (slower, costlier)"
+    expected_files:
+      - "jersey/health-and-capacity/lasting-powers-of-attorney.md"
+      - "jersey/health-and-capacity/capacity-and-self-determination-law-2016.md"
+      - "jersey/use-cases/jersey-resident/lasting-power-of-attorney.md"
+    score:
+      2026-05-18-measured: pass  # cap-001: all expected facts surfaced; 2/3 expected files cited (persona Q&A not separately cited but unnecessary given main files)
+
+  # =====================================================
+  # MENTAL HEALTH — Top-20 gap #11 (new test)
+  # =====================================================
+  - id: mh-001
+    persona: parent-family
+    asked_by: family-member
+    question: "My mother has been detained under the Mental Health Law. How long can they keep her and how do we appeal?"
+    expected_facts:
+      - "Mental Health (Jersey) Law 2016 governs"
+      - "Three admission routes: Article 17 emergency 72h, Article 21 assessment 28d, Article 22 treatment 6m"
+      - "Article 22 renewable for further 6m then 12m"
+      - "Mental Health Review Tribunal is the independent appeal forum"
+      - "Article 21 appeal available within first 14 days"
+      - "Article 22 appeal at any time, limited to one application per 6 months"
+      - "Nearest Relative role and statutory powers"
+      - "Right to Independent Mental Health Advocate (IMHA) and legal representation"
+    expected_files:
+      - "jersey/health-and-capacity/mental-health-law-2016.md"
+      - "jersey/health-and-capacity/compulsory-admission.md"
+    score:
+      2026-05-18-measured: pass  # mh-001: all 8 expected facts surfaced; 3 files cited (mental-health-law-2016.md, compulsory-admission.md, index.md)
+
+  # =====================================================
+  # CIVIL PROCEDURE — Top-20 gap #17 (new test)
+  # =====================================================
+  - id: civ-001
+    persona: jersey-resident
+    asked_by: claimant
+    question: "Someone owes me £8,000 for unpaid work. How do I sue them in Jersey?"
+    expected_facts:
+      - "Petty Debts Court is the small-claims forum (≤ £30,000)"
+      - "Petty Debts Court (Miscellaneous Provisions) (Jersey) Law 2000"
+      - "Letter of demand first — 7 days notice typical"
+      - "Summons procedure with brief reasons + sum + interest"
+      - "Defendant's response: admit / defend / counterclaim / apply for transfer to Royal Court"
+      - "Judge sits alone, less formal than Royal Court"
+      - "Enforcement by Viscount: wage arrest, bank-account arrest, goods arrest"
+      - "Appeal to Royal Court with leave"
+    expected_files:
+      - "jersey/legal-system/petty-debts-court.md"
+    score:
+      2026-05-18: pending  # not yet measured
+
+  # =====================================================
   # WELFARE — Top-20 gaps #7, #8 (expected fail)
   # =====================================================
   - id: we-001
