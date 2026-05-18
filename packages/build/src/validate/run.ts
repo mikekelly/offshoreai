@@ -182,7 +182,7 @@ function isMetaFile(rel: string): boolean {
   return false;
 }
 
-function zodIssueToViolation(path: string, issue: z.core.$ZodIssue): ValidationViolation {
+function zodIssueToViolation(path: string, issue: z.ZodIssue): ValidationViolation {
   const field = issue.path.join(".");
   const detail = field ? `${field}: ${issue.message}` : issue.message;
   // Map common Zod issues to our coarser ViolationKind enum so the

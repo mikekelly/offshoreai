@@ -17,10 +17,14 @@ import { writeFile, mkdir } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { stringify as yamlStringify } from "yaml";
+import { compileHierTree } from "./compile/hier-tree.js";
+import { compileTagIndex } from "./compile/tag-index.js";
 import { validateCorpus } from "./validate/run.js";
 import type { ValidationResult } from "./validate/types.js";
 
 const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
+const HIER_TREE_OUT = "packages/build/dist/hier-tree.json";
+const TAG_INDEX_OUT = "packages/build/dist/tag-index.json";
 
 const args = process.argv.slice(2);
 const verb = args[0];
@@ -34,10 +38,13 @@ switch (verb) {
     await runValidate(args.slice(1));
     break;
   case "tree":
+    await runTree();
+    break;
   case "tags":
+    await runTags();
+    break;
   case "all":
-    console.error(`${verb}: not yet implemented (week 2 of IMPLEMENTATION-PLAN.md)`);
-    process.exit(2);
+    await runAll();
     break;
   default:
     console.error(`Unknown verb: ${verb}`);
@@ -124,6 +131,49 @@ function renderBaselineYaml(result: ValidationResult): string {
   return header + yamlStringify(doc, { lineWidth: 100 });
 }
 
+async function runTree(): Promise<void> {
+  console.log(`Compiling hier-tree...`);
+  const start = Date.now();
+  const tree = await compileHierTree({ repoRoot: REPO_ROOT, outPath: HIER_TREE_OUT });
+  const elapsed = ((Date.now() - start) / 1000).toFixed(2);
+  console.log(`  nodes:         ${tree.stats.nodes}`);
+  console.log(`  sections:      ${tree.stats.sections}`);
+  console.log(`  concept files: ${tree.stats.conceptFiles}`);
+  console.log(`  index files:   ${tree.stats.indexFiles}`);
+  console.log(`  roots:         ${tree.roots.length}`);
+  console.log(`  → ${HIER_TREE_OUT} (${elapsed}s)`);
+}
+
+async function runTags(): Promise<void> {
+  console.log(`Compiling tag-index...`);
+  const start = Date.now();
+  const index = await compileTagIndex({ repoRoot: REPO_ROOT, outPath: TAG_INDEX_OUT });
+  const elapsed = ((Date.now() - start) / 1000).toFixed(2);
+  console.log(`  unique tags:       ${index.stats.uniqueTags}`);
+  console.log(`  total applications: ${index.stats.totalTagApplications}`);
+  console.log(`  files indexed:     ${index.stats.filesIndexed}`);
+  // Top 10 tags by frequency
+  const byFreq = Object.entries(index.tagToFiles)
+    .map(([tag, files]) => [tag, files.length] as const)
+    .sort(([, a], [, b]) => b - a)
+    .slice(0, 10);
+  console.log(`  top 10 tags by file count:`);
+  for (const [tag, count] of byFreq) {
+    console.log(`    ${String(count).padStart(5)}  ${tag}`);
+  }
+  console.log(`  → ${TAG_INDEX_OUT} (${elapsed}s)`);
+}
+
+async function runAll(): Promise<void> {
+  await runValidate(["--no-fail"]);
+  console.log();
+  await runTree();
+  console.log();
+  await runTags();
+  console.log();
+  console.log("All build pipeline verbs completed.");
+}
+
 function printHelpAndExit(code: number): never {
   console.log(`offshoreai-build — corpus build pipeline
 
@@ -133,9 +183,9 @@ Verbs:
   validate              Run convention validator (default fails CI on violation)
   validate --baseline   Run validator AND write evals/conformance-baseline.yaml
   validate --no-fail    Run validator but exit 0 even on violations (CI-friendly snapshot mode)
-  tree                  (week 2) Compile hier-tree.json
-  tags                  (week 2) Compile tag-index.json
-  all                   (week 2) Full pipeline
+  tree                  Compile packages/build/dist/hier-tree.json
+  tags                  Compile packages/build/dist/tag-index.json (+ co-occurrence matrix)
+  all                   Run validate (no-fail) + tree + tags in sequence
 `);
   process.exit(code);
 }
