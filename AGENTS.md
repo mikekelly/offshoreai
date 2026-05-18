@@ -27,13 +27,14 @@ Read in this order. The order is deliberate — each document assumes the ones a
 ### Part 2 — what the agent is (read these in full)
 
 6. **[`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md)** — region-non-specific commitments for any agent built on this corpus (memory architecture, retrieval, tool surface, output discipline, build order, architectural restraint). ~20 min.
-7. **[`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md)** — the Jersey v1 instantiation. Required sections, in this order:
+7. **[`AGENT-BEHAVIOURS.md`](AGENT-BEHAVIOURS.md)** — the region-non-specific design doc for each customised agent behaviour the runtime adds on top of the Claude Agent SDK's default loop (bundle pre-loading, ambient session-state dashboard, ambient retrieval via UserPromptSubmit, freshness checking, citation verification, tool deny-list/sandbox, audit logging, progressive skill disclosure). States the *why* (failure mode addressed) and the *broadly how* (SDK mechanism level) for each. Sits between the principles in (6) and the PRD-level specifics in (8). ~20 min.
+8. **[`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md)** — the Jersey v1 instantiation. Required sections, in this order:
    - **§0 TL;DR** — the bet in one page
    - **§1** the 2026 memory landscape — why the design takes this shape
    - **§4** architecture (especially **§4.2** runtime choice and **§4.3** what we deliberately don't build)
    - **§5** memory architecture (five tiers + the canonical-vs-inferential separation)
-   - **§6** retrieval primitives and bundles
-   - **§7** tool surface (full read — this is the load-bearing implementation contract; pay particular attention to **§7.0** principles, **§7.0.2** output discipline, **§7.1** corpus tools)
+   - **§6** retrieval primitives, bundles, and ambient retrieval (§6.4)
+   - **§7** tool surface (full read — this is the load-bearing implementation contract; pay particular attention to **§7.0** principles including Principle 5 on push/pull retrieval coexistence, **§7.0.2** output discipline, **§7.1** corpus tools)
    - **§14** milestones (build order)
    - **Appendix C** the architectural restraint principle (why no MCP wrapping of our own logic, why no custom CLIs over our own functions — the unified rule)
 
