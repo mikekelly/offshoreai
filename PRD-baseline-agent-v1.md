@@ -335,30 +335,11 @@ For every claim of Jersey law/regulation/tax in the response:
 
 Enforcement: **citation-verifier sub-agent** runs as a `Stop` hook before the response is returned to the user. It re-reads each cited file, checks the claim is supported, and either passes or rejects-with-reason. On reject the main agent gets one retry to fix; on second reject the response is downgraded to "I don't have a confident answer; here is what the corpus does say" with raw citations.
 
-### 6.4 Ambient retrieval via UserPromptSubmit
+### 6.4 Query-time retrieval is the agent's job
 
-Bundles (§6.2) cover known persona/task combinations; the citation contract (§6.3) gates output. There's a gap between them: conversations evolve, users pivot, queries drift into corpus territory the bundle didn't anticipate. The agent can close the gap by explicitly calling `corpus.semanticSearch` mid-turn, but that relies on the agent recognising it doesn't know what it's missing. **Ambient retrieval** is the pull-based complement — automatic top-up of high-relevance corpus context on each user turn, before the model reads the new prompt.
+The corpus toolset (§7.1: `semanticSearch`, `findByTag`, `expandTags`, `neighbours`, `inventory`, `tree`, plus the read primitives) is the agent's query-time retrieval surface. **The system does not pre-emptively inject corpus context mid-conversation.** When the bundle (§6.2) doesn't cover what the user has just asked, the agent is the one in the best position to know — it has the conversation context, it has the awareness of corpus state from the SessionStart dashboard (§7.0.2), and it has a curated set of search tools whose descriptions tell it when each is appropriate.
 
-For the broader rationale, design properties, and how this sits alongside the other customised agent behaviours, see [`AGENT-BEHAVIOURS.md`](AGENT-BEHAVIOURS.md) §3.
-
-**Mechanism.** A `UserPromptSubmit` hook fires once per user turn before the model reads the prompt. The hook:
-
-1. Scans the recent session transcript for **sentinel markers** of past ambient injections — each injection wraps content in `<!-- ambient-corpus-injection: <path>@hash=<sha> --> ... <!-- /ambient-corpus-injection -->`. Produces the set of (path, hash) pairs already injected ambiently this session.
-2. Also reads a session-scoped "seen via Bash" log (populated by a PostToolUse hook on Bash that scans the command text for corpus paths in `cat`/`head`/`tail`/`less` invocations — see §7.0.2 Safety on the Bash lane).
-3. Runs retrieval (`corpus.semanticSearch` + `corpus.findByTag` + `corpus.expandTags`) over the new prompt + a short summary of recent turns.
-4. Filters out (path, hash) pairs from steps 1 and 2.
-5. Takes top-K remaining candidates above a configurable relevance threshold; hard cap K = 2-3 per turn.
-6. Injects them, sentinel-wrapped, as a synthetic ambient-retrieval block prepended to the user's prompt that the model is about to read. The block is formatted to look like a `corpus.*` tool result so the citation-verifier (§6.3) treats injected files as valid citation sources.
-
-**Sentinel-based self-dedup is deliberate.** The main duplicate risk is ambient-vs-ambient (the same high-relevance file getting re-injected across many turns), not ambient-vs-explicit-call. Sentinels close ambient-vs-ambient exactly without requiring a separate state ledger — the SDK's session JSONL is the source of truth, scanned per turn.
-
-**Tension with the bundle-first principle, addressed.** Bundles are the *primary* retrieval contract for known persona/task combinations; ambient is the *secondary* mechanism for conversation drift the bundle didn't anticipate. Without ambient, the agent's alternative is either (a) refuse / ask the user to refine, or (b) explicitly call `corpus.semanticSearch` itself. Ambient is the pull-based auto-version of (b) — same retrieval cost, just pre-emptive. The principle still holds: we don't search at query time *as the primary mode*; ambient is the safety net.
-
-**Per-persona toggle.** Each persona's SKILL.md carries an `ambient_retrieval` config block: `{enabled: true|false, relevance_threshold: 0.0-1.0, k_max: 1-3, summary_turns: 0-5}`. Heavily-bundle-covered personas (trust-officer with comprehensive bundles) set the threshold high or disable. Thinly-bundled personas (journalist, exploratory cross-jurisdiction comparisons) benefit from aggressive ambient retrieval.
-
-**Known limitation.** Sentinel dedup catches ambient-vs-ambient cleanly. PostToolUse-on-Bash logging catches `cat`/`head` discoveries explicitly. But `rg`/`grep` results that include corpus content as match snippets are *not* added to the "seen via Bash" set — those are treated as snippet-level discovery rather than full reads, and the matched files may still be ambient-injected on a later turn. Acceptable token-cost vs the alternative of an opaque "agent already saw enough of this" inference. Engineering can revisit if the audit log shows real duplication.
-
-**Budget impact.** Ambient injections count against the steady-state context budget (§5.7). With K = 3 and median injected file ~3k tokens, ambient adds up to ~9k tokens per turn worst-case. The §5.7 budget table reserves headroom; the §11.2 KPIs include ambient-specific metrics.
+This is the Monigatti "agentic search" position: the agent IS the search engine. Our job is to expose excellent search tools and write descriptions sharp enough that the agent reaches for the right one. Where the agent fails to reach (the "no tool call" failure mode in §7.0.1), the fix is on the baseline-skill side (make the agent retrieval-eager) and on the tool-description side (§7.0.3) — not on the runtime side via auto-injection of guessed-relevant content.
 
 ---
 
@@ -385,7 +366,7 @@ The Monigatti/Elastic finding that context engineering is ~80% agentic search me
 
 **Principle 4 — Parameter complexity is a failure axis; pay it down with skills.** A tool with a single typed parameter (`get_article(statute, article)`) is robust across all models. A tool that takes a free-form query (`execute_corpus_search(esql_query)`) is brittle even on strong models. When we need a high-ceiling tool, we pair it with a **Skill** whose body documents the query language, loaded only when the tool is invoked (progressive disclosure — see §6.6).
 
-**Principle 5 — Push-based explicit tool calls and pull-based ambient retrieval coexist.** The typed `corpus.*` lane is the agent's *explicit* retrieval surface: it knows what it needs and calls for it. Ambient retrieval (§6.4) is the *implicit* surface: the runtime pre-emptively injects high-relevance corpus context the agent didn't think to ask for, via a `UserPromptSubmit` hook with sentinel-based self-deduplication. The two are designed to coexist — explicit calls dominate for known persona/task work, ambient covers conversation drift. Both are budget-aware, both are observable via the audit log (§11.3), both produce material the citation-verifier (§6.3) treats as a valid source. For the full design of ambient retrieval and the other customised behaviours, see [`AGENT-BEHAVIOURS.md`](AGENT-BEHAVIOURS.md).
+**Principle 5 — Query-time retrieval is agent-driven, not system-driven.** The corpus toolset is what the agent reaches for when bundles don't cover the query (§6.4). The system does not pre-emptively inject corpus content mid-conversation — that would second-guess the agent at the moment when it has the most context about what it actually needs. The system's job is to expose excellent search tools and write descriptions sharp enough (§7.0.3) that the agent reaches for the right one. The Monigatti "agentic search" thesis: the agent IS the search engine.
 
 ### 7.0.1 The three failure modes we are designing against
 
@@ -492,6 +473,44 @@ We register a `SessionStart` hook that injects a per-tenant corpus/memory dashbo
 #### Safety on the Bash lane
 
 The Bash tool is enabled for the standard-shell-tools high-ceiling lane (`rg`, `jq`, `sed`, `awk`, `head`, `wc`, `gh`, `git`), but restricted: per-tenant sandbox directory (`/sandbox/<tenant-id>/`), deny-list enforced via the SDK's `canUseTool` callback (`rm -rf`, network egress to non-allowlisted hosts, `sudo`, package installs), and a PATH limited to the whitelisted standard tools. The agent has no custom CLIs of ours to call; it has standard shell tools and the typed SDK lane.
+
+### 7.0.3 Description discipline — what every tool's description must convey
+
+Sister section to §7.0.2 (output discipline). Output discipline is what the tool returns. Description discipline is what the tool's description tells the agent it's for. Both are how the tool communicates with the agent.
+
+**The description is the contract, not the docstring.** It is the only channel through which the agent learns what a tool is for, when to use it, and when not to. The agent reads it once when the tool's schema is loaded (always-resident or via tool search) and from that point onwards decides whether to reach for the tool based on what it remembers. A vague description = wrong routing. A contradictory description against a sibling tool = wrong choice between them. This is the root mitigation for the "no tool call" and "wrong tool" failure modes in §7.0.1.
+
+**Every tool's description has five parts. They are mandatory; none is optional.**
+
+1. **Core purpose** — one sentence in domain terms. Not "Search the corpus." That's a footgun the moment a second search tool exists. The right shape: *"Run a vector semantic search over corpus summary embeddings to surface fuzzy-match candidates when canonical Jersey-law terminology isn't known."*
+
+2. **When to use** — concrete situations, not abstract claims. Not *"Use when you need to find files."* The right shape: *"When the user's query uses non-canonical phrasing (e.g. 'tax avoidance' instead of 'economic substance'); when `findByTag` returned fewer than 3 hits; when the user asks about a topic that doesn't map cleanly to a single tag."*
+
+3. **When NOT to use** — concrete situations, especially against overlapping tools. This is the part that disambiguates between two tools that the agent might otherwise treat as interchangeable. Not *"Don't use unnecessarily."* The right shape: *"Do NOT use this for known-tag queries — `findByTag` is cheaper and more precise. Do NOT use this when a bundle is already loaded covering the topic area — the bundle has the relevant files."*
+
+4. **Relationships and ordering** — call X first if Y; use Z instead when W. The right shape: *"If the user mentions 'current' or 'latest', call `freshnessCheck` on the candidate paths before reading them. If you got too few candidates, call `expandTags` to broaden the tag set and retry `findByTag`."*
+
+5. **What the agent gets back, and what to do with it** — so the agent can decide if this tool result moves the conversation forward. Not *"Returns search results."* The right shape: *"Returns ranked (path, score, summary) rows. Read the top 3 with `getFile` if scores > 0.7. Below 0.5, the query likely needs reformulation — broaden the tag set or rephrase."*
+
+**Concrete example of the contract for our `semanticSearch` tool:**
+
+> Run a vector semantic search over per-file corpus summary embeddings. Use when the user's query phrasing doesn't match canonical Jersey-law terminology, or when `findByTag` returned fewer than 3 hits, or when the user asks about a concept that doesn't map cleanly to one of the closed tags in `TAGS.md`. Do NOT use this for known-tag queries (`findByTag` is cheaper and more precise) or when a bundle is loaded covering the topic area (the bundle already has the relevant files). If the user implies they want current state ("latest", "as of today"), call `freshnessCheck` on candidate paths before reading them. Returns ranked `(path, score, summary)` rows; read the top 3 with `getFile` if scores > 0.7. Below 0.5, rephrase the query or broaden the tag set instead.
+
+That description is 110 words. It's longer than a docstring usually is. It's load-bearing for every turn that loads this tool's schema. Every word earns its keep.
+
+**Anti-patterns explicitly to avoid:**
+
+- *One-line descriptions.* Fine when a tool is the only one of its kind. Lethal once a second overlapping tool exists. Most of our tools have overlapping kin (`getFile` vs `getArticle`, `findByTag` vs `semanticSearch`, etc.).
+- *Implementation details.* "Uses pgvector with HNSW indexing and cosine similarity over Voyage-3 embeddings." The agent doesn't care; it cares about purpose, fit, and result shape.
+- *Restating the parameter list in prose.* The Zod schema already exposes parameters with their own per-field `.describe()` strings — that's where parameter-level docs go.
+- *Marketing voice.* "Fast, accurate, comprehensive corpus search." Adjectives don't help the agent route. Verbs and concrete conditions do.
+- *Generic when-to-use.* "Use when you need information from the corpus." Every tool is used when the agent needs information from the corpus. The description has to *differentiate*.
+
+**Description sharpness is a maintenance problem.**
+
+Descriptions degrade as the tool surface grows. A description written when a tool was the only one of its kind needs updating when a sibling tool lands. Per Principle 19 of `AGENT-PRINCIPLES.md` (logging as prioritisation engine), the §11.3 wrong-tool-call telemetry surfaces description regressions: rising wrong-tool-call rate against a held-out routing eval triggers a description rewrite, **not** a hot patch in the system prompt. System-prompt patches mask the symptom; description rewrites fix the cause.
+
+The §11.2 conformance gate includes a description-discipline check: every tool's description has all five parts present, exceeds 60 words (an empirical floor below which descriptions tend to be too vague to disambiguate against siblings), and references at least one other tool by name (the "relationships" part). PRs that add a tool without satisfying these don't merge.
 
 ### 7.1 `corpus.*` (in-process, shared, read-only)
 
@@ -661,9 +680,7 @@ Three eval tracks, run on every build and weekly against production logs.
 - **Always-resident schema tokens** — sum of tool-schema bytes the SDK injects into every turn. Hard cap at 2k (≤ ~15 always-visible tools). Tools loaded on demand via tool search add to the per-turn cost only when they're actually loaded, so this metric only tracks the always-resident set. AXI's benchmarks suggest schema overhead becomes the dominant input-token cost past ~30 tools — we stay well clear of that knee.
 - **Tool-result tokens per session, with notional-JSON delta** — track tool-result token totals as the primary number (TOON is now the only agent-facing output format, so there's no live JSON baseline to shadow-run against). Alongside each TOON tool-result we log the byte length of `JSON.stringify` of the same typed value at emit time; aggregate the delta to confirm we're realising the AXI-claimed ~40% saving. If the gap collapses (e.g. because our payloads are mostly long prose where TOON's structural savings don't apply), that's an architectural signal — investigate per tool, not a system-wide regression.
 - **Output-discipline conformance score** for our typed SDK tools — automated check on every PR that each tool handler: (a) emits TOON in the `content[0].text` block, (b) never sets `structuredContent` (lint rule), (c) emits `help[]` blocks with `<placeholder>` syntax suggesting follow-up tool calls, (d) returns a definitive empty-state message on zero-result queries, (e) uses the stable error envelope with `isError: true` on failures. 100% conformance gate before release.
-- **Ambient injection rate** (§6.4) — % of user turns where the `UserPromptSubmit` hook injects at least one corpus file. Tracked per persona. Healthy range depends on the persona's bundle coverage: ≤ 5% on heavily-bundle-covered personas (trust-officer) suggests the bundle is doing its job; 20-40% on thinly-bundled personas (journalist, cross-jurisdiction comparisons) is expected.
-- **Ambient hit rate** — % of ambient-injected files the agent subsequently cites in its response. Measures whether ambient injections are actually useful. Target ≥ 50%; below 30% means the relevance threshold is too loose and the agent is paying token cost for context it doesn't use. Below 10% means ambient is essentially noise — investigate per persona.
-- **Ambient duplicate-injection rate** — % of injected files where the sentinel-dedup or Bash-log dedup should have caught a prior delivery but didn't (detected via post-hoc replay analysis). Target 0%; any non-zero is a bug, not a tuning signal.
+- **Agent-driven retrieval rate** — % of user turns on which the agent makes at least one `corpus.*` discovery call (`semanticSearch`, `findByTag`, `expandTags`, `neighbours`, `inventory`). Tracked per persona. Healthy range depends on bundle coverage: on heavily-bundle-covered personas this is low (the bundle had what was needed); on thinly-bundled personas it should be high (the agent is actively exploring). A low rate on a thinly-bundled persona is a "no tool call" failure signal — investigate baseline-skill and tool-description sharpness per §7.0.3.
 - **Customer task NPS** per persona.
 - **$ cost per resolved query** — to be tracked from day one. The Anthropic OAuth credit allocation gives us a real spread between marginal cost and list price; we need the operational data to know how big.
 
@@ -764,8 +781,7 @@ This ordering also means **we never ship a "complete" bundle set**: the bundle c
 | **Tool sprawl** — over time we accumulate dozens of specialised typed tools and the agent starts mis-routing between them; AXI's data suggests always-resident schema cost grows faster than usefulness past ~30 tools | Med | Hard cap of ~15 always-resident SDK tools; specialised long-tail tools register but load on demand via the SDK's tool-search mechanism (zero always-resident schema cost when not loaded); quarterly tool-pruning review using the wrong-tool-call telemetry from §11.3 |
 | **Missing-tool gap** — a query needs something no typed tool covers and no standard shell tool (`rg`/`jq`/etc) can do, so the agent either refuses or produces a non-tool-grounded answer | Med | §11.3 log analysis surfaces these explicitly (the "missing-tool" event); priority signal feeds the typed-tool development backlog; until covered, the baseline skill enforces refusal-with-citation-of-gap rather than free-form prose |
 | **Progressive-disclosure thrash** — skill bodies repeatedly loaded and offloaded in the same session, costing tokens and latency | Low/Med | Bundle-assembler caches the last 3 skill bodies in a short-lived "warm" tier before fully offloading; skill-residency dashboard surfaces thrashing pairs for re-bundling |
-| **Ambient retrieval blows the context budget** (§6.4) — relevance threshold set too loose, or `k_max` set too high, and the `UserPromptSubmit` hook injects 3 × ~3k-token files every turn on top of the bundle and conversation history | Med | Hard cap `k_max = 3` files per turn; per-persona relevance threshold (default 0.75) tuned against the §11.2 ambient hit-rate KPI — falling hit rate triggers a threshold bump, not a quiet token-cost drift; per-persona ambient toggle in SKILL.md so heavily-bundle-covered personas opt out entirely; weekly replay against the audit log confirms ambient additions stay within the §5.7 steady-state budget |
-| **Ambient injection contaminates the citation surface** — the agent cites a file that arrived via ambient injection but was never explicitly retrieved, and the user-facing answer attributes more deliberateness than there was | Low | Ambient-injected blocks carry the `<!-- ambient-corpus-injection -->` sentinel; citation-verifier (§6.3) accepts them as valid citation sources (same authority as explicit `corpus.*` calls) but the audit log records the provenance distinction so per-tenant reporting can distinguish "agent cited X" from "ambient surfaced X and agent cited it" if needed |
+| **"No tool call" failure mode** (§7.0.1 row 1) — the agent answers from parametric knowledge rather than retrieving from the corpus; this is *the* highest-stakes failure mode for a citation-mandatory agent | High | Baseline skill mandate that every Jersey legal/regulatory claim must come from a `corpus.*` tool result; citation-verifier rejects unbacked responses; tool descriptions written per §7.0.3 to make "when to use" unmistakable; §11.2 agent-driven-retrieval-rate KPI tracked per persona to surface regressions |
 | **Bash + CLI escape hatch becomes the default lane** — agent prefers the high-ceiling surface even when a typed tool exists | Med | Tool descriptions on the typed surface include explicit "prefer this over the CLI for X"; baseline skill includes the heuristic; metric in §11.2 (Bash fallback rate) is a leading indicator |
 
 ---

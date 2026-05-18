@@ -42,32 +42,7 @@ Each behaviour follows a consistent template: **what it does**, **what fails wit
 
 **Jersey v1.** PRD §7.0.2 (session-start ambient context), §5.7 (steady-state context budget).
 
-### 3. Ambient retrieval via UserPromptSubmit
-
-**What it does.** On each user turn, before the model sees the new prompt, the runtime runs corpus retrieval over the prompt plus recent conversation summary, takes top-K candidates above a relevance threshold, and injects those that haven't already been injected this session.
-
-**What fails without it.** Bundles cover known persona/task combinations. Conversations evolve — the user pivots, asks something tangential, drifts into territory the original bundle doesn't fully cover. Without ambient retrieval the alternatives are: (a) the agent explicitly calls `corpus.semanticSearch` mid-turn (push-based; relies on the agent recognising the gap), or (b) the agent answers from less context than is available. Ambient retrieval is the pull-based version of (a), useful when the agent doesn't yet know what it's missing.
-
-**How it broadly works.** A `UserPromptSubmit` hook fires once per user turn before the model reads the prompt. The hook:
-
-1. Scans the recent session transcript for **sentinel markers** of past ambient injections (each injection wraps content in `<!-- ambient-corpus-injection: <path>@hash=<hash> --> ... <!-- /ambient-corpus-injection -->`). This produces the set of (path, hash) pairs already injected ambiently this session.
-2. Runs retrieval (`semanticSearch + findByTag + expandTags`) over the new prompt + recent N turns summarised.
-3. Filters out (path, hash) pairs already injected and any files in a session-scoped "seen via Bash" log (see #6 below).
-4. Picks top-K remaining candidates above the relevance threshold.
-5. Injects them, sentinel-wrapped, as a synthetic ambient-retrieval block prepended to the prompt the model is about to read.
-6. Hard cap at 2–3 files per turn; ambient injections count against the steady-state context budget.
-
-**Self-deduplication via sentinels rather than a separate ledger** keeps the hook stateless beyond what the SDK already persists in the session JSONL. The main duplicate risk is ambient-vs-ambient (same file re-fetched by ambient retrieval on multiple turns), and sentinels close that exactly.
-
-**Per-tenant toggle.** Yes — per-persona toggle in the persona SKILL.md. Heavily-bundle-covered personas (trust-officer with comprehensive bundles) may set the relevance threshold high or disable; thinly-bundled personas (journalist, exploratory) benefit from aggressive ambient retrieval.
-
-**Tension with the bundle-first principle.** Ambient retrieval is query-time search, which `AGENT-PRINCIPLES.md` principle 7 flags as the wrong default. It coexists as a **complement**, not a replacement: bundles are primary for known persona/task; ambient covers conversation drift the bundle didn't anticipate. The relationship to push-based explicit `corpus.semanticSearch` calls is that ambient is the auto-version for the high-confidence cases — same retrieval cost, just pre-emptive.
-
-**Known limitation.** The sentinel-based dedup catches ambient-vs-ambient but not ambient-vs-Bash-discovery. If the agent runs `rg "firewall" jersey/` and gets matching lines, then on the next turn ambient retrieval re-injects `firewall.md` because no sentinel for it exists. The PostToolUse-on-Bash log in #6 below partially closes this for trivial cases (`cat`-style commands name the path); `rg`/`grep` results are treated as snippet-level discovery rather than full reads, so the file may still be ambient-injected — which is acceptable.
-
-**Jersey v1.** PRD §6.4 (new sub-section), §15 (context-budget risk), §11.2 (ambient injection rate KPI).
-
-### 4. Freshness checking at the tool-use boundary
+### 3. Freshness checking at the tool-use boundary
 
 **What it does.** Before any `corpus.*` tool call that returns file content (`getFile`, `getArticle`, `getBundle`), the runtime checks whether the corpus file's `last_verified` date is older than the primary source's last-modified header. If so, it emits a "stale relative to primary source" signal alongside the tool result.
 
@@ -79,7 +54,7 @@ Each behaviour follows a consistent template: **what it does**, **what fails wit
 
 **Jersey v1.** PRD §5.1 (freshness as guardrail), §7.0.1 (the three failure modes), §8 (sub-agent definitions).
 
-### 5. Citation verification at the response boundary
+### 4. Citation verification at the response boundary
 
 **What it does.** Before any agent response is returned to the user, a citation-verifier sub-agent re-reads each cited file and confirms the claim it supports is actually supported by that file. Responses that fail verification get one retry; second failures are downgraded to "I don't have a confident answer; here is what the corpus does say" with raw citations.
 
@@ -93,19 +68,19 @@ The verifier runs on a higher-precision model than the main agent (Opus for veri
 
 **Jersey v1.** PRD §8 (sub-agent definitions), §6.3 (the retrieval contract), §12 (Opus 4.7 for the verifier model).
 
-### 6. Tool deny-list and sandbox
+### 5. Tool deny-list and sandbox
 
 **What it does.** A `canUseTool` callback inspects every tool call before execution and rejects calls that would: invoke destructive operations (`rm -rf`, `sudo`, package installs), reach forbidden network destinations, fetch primary-source URLs via the generic `WebFetch` tool (instead of the cached `primarySource.fetch`), or read corpus content via Bash + `cat`/`head`/`tail`/`less` (instead of the typed `corpus.*` lane). Bash is sandboxed to a per-tenant directory.
 
 **What fails without it.** Bash is general-purpose. Without constraints, an agent can read anywhere on disk, hit any URL, run any command. For a multi-tenant SaaS that's an architectural-restraint violation and a compliance problem. Specifically: an agent reading corpus content via Bash bypasses freshness checks and audit logging.
 
-**How it broadly works.** The SDK's `canUseTool` callback is invoked for every tool call. It returns allow / deny / ask. The deny rules live in a deny-list per tenant (a deny-list is preferred over an allow-list for the Bash lane because we want the agent to retain the natural shell expressiveness for standard tools like `rg`/`jq`/`sed`). A separate PostToolUse hook on Bash scans the command text for corpus paths and logs them to a session-scoped "seen via Bash" set (consumed by ambient retrieval dedup in #3).
+**How it broadly works.** The SDK's `canUseTool` callback is invoked for every tool call. It returns allow / deny / ask. The deny rules live in a deny-list per tenant (a deny-list is preferred over an allow-list for the Bash lane because we want the agent to retain the natural shell expressiveness for standard tools like `rg`/`jq`/`sed`). The general PostToolUse audit hook (#6) captures Bash command text and tool result for compliance and replay purposes.
 
 **Per-tenant toggle.** Limited — tenants can extend the deny-list (their compliance team adds their own forbidden patterns) but cannot remove deny rules. They can change the sandbox cwd and add allowlisted network hosts.
 
 **Jersey v1.** PRD §7.0.2 (safety on the Bash lane), §9.3 (what tenants cannot do).
 
-### 7. Audit logging on every tool call
+### 6. Audit logging on every tool call
 
 **What it does.** Every tool call, every skill load, every memory operation, and every citation-verifier verdict streams to a per-tenant event log (Postgres table + S3 JSONL mirror).
 
@@ -117,7 +92,7 @@ The verifier runs on a higher-precision model than the main agent (Opus for veri
 
 **Jersey v1.** PRD §11.3 (observability), §9 (tenant audit log).
 
-### 8. Progressive skill disclosure
+### 7. Progressive skill disclosure
 
 **What it does.** Only the **baseline skill body** (citation rules, freshness rules, persona-routing heuristics) is always-resident in the system prompt. Task-skill bodies — operator instructions for a specific persona/task — load on demand when the relevant bundle is loaded, and offload back to a scratch `plan.md` when the conversation pivots.
 
@@ -136,7 +111,7 @@ The verifier runs on a higher-precision model than the main agent (Opus for veri
 Every behaviour in the catalogue satisfies these constraints. New behaviours added later must too:
 
 - **Token-budget-aware.** Each behaviour declares how it affects the steady-state context budget (PRD §5.7). If a new behaviour adds context residency, it has a budget line.
-- **Observable.** Every behaviour emits structured events to the audit log so the team can measure whether it's actually working (e.g. ambient injection rate, citation-verifier reject rate, freshness-checker warn rate).
+- **Observable.** Every behaviour emits structured events to the audit log so the team can measure whether it's actually working (e.g. citation-verifier reject rate, freshness-checker warn rate, bundle-assembler routing accuracy).
 - **Isolated from main-agent context.** Behaviours that involve a sub-agent (bundle-assembler, freshness-checker, citation-verifier) run in their own context windows. The main agent sees only the verdict / result, never the sub-agent's scratch reasoning. This keeps the main agent's context clean and avoids the sub-agent's exploration polluting the main reasoning trace.
 - **Failure returns to the agent as data.** Hooks that detect a problem return a structured signal (e.g. `isError: true` with a typed envelope), not an exception that crashes the loop. The agent dispatches on the signal — retry / pivot / refuse — rather than the runtime making the decision unilaterally.
 - **Per-tenant configurability is bounded.** Tenants can tune thresholds and add restrictions but cannot disable behaviours that protect the architectural principles (citation verification, freshness, audit logging, deny-list). The configurability surface is documented per behaviour.
