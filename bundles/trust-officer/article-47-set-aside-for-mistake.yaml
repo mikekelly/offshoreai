@@ -1,0 +1,149 @@
+# Reference bundle: trust-officer / article-47-set-aside-for-mistake
+#
+# This is the v1 reference bundle authored at week 0. The schema is
+# `getBundleResult` in ../../schemas/corpus.ts.
+#
+# At session start, the bundle-assembler sub-agent calls
+# corpus.getBundle(persona="trust-officer", task="article-47-set-aside-for-mistake")
+# which loads this YAML, resolves every required_file, attaches a
+# freshness verdict per file, expands related_tags into tag-neighbours,
+# and returns the aggregate as a single tool result the main agent reads
+# at the top of the session.
+#
+# The matching skill body lives at
+#   .claude/skills/jersey-trust-officer-article-47-set-aside/SKILL.md
+# (see skills/templates/task.SKILL.md for the template).
+
+persona: trust-officer
+task: article-47-set-aside-for-mistake
+
+# Plain-English statement of when this bundle should warm.
+# Read by the bundle-assembler sub-agent as a routing signal.
+trigger_description: |
+  A Jersey TCB trust officer is asking whether a past trust act
+  (a distribution, an appointment, a transfer into trust) can be
+  undone on the ground that it was made under a mistake — typically
+  a mistake about its tax consequences. Covers both the statutory
+  regime in Trusts (Jersey) Law 1984 Articles 47B-47J and its
+  relationship to the pre-2013 Hastings-Bass / mistake jurisdiction.
+
+# Files the agent must have in context for this task.
+# Every path must exist in the corpus; the build pipeline asserts this.
+required_files:
+  - path: jersey/trusts/article-47-set-aside.md
+    role: canonical-concept
+    why: |
+      The statute-wiki file covering Articles 47-47J. Holds the
+      authoritative text on what conditions the Court must be
+      satisfied of (mistake, "but-for" causation, application by an
+      entitled party, no third-party prejudice), the remedies
+      available (declare invalid ab initio vs partially set aside),
+      and how the statutory regime relates to the pre-2013
+      Hastings-Bass jurisdiction.
+
+  - path: jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md
+    role: use-case-anchor
+    why: |
+      The trust-officer-shaped operator question this bundle exists
+      to answer. Translates the Article 47 doctrine into trustee
+      decision steps (do we have standing, what's the evidence
+      threshold, what affidavit content is required, when to engage
+      Royal Court counsel, what the Court's likely response will be
+      on the facts).
+
+  - path: jersey/trusts/article-51-directions.md
+    role: procedural-context
+    why: |
+      Article 51 is the Royal Court's general directions jurisdiction
+      and is the procedural vehicle a set-aside application typically
+      rides on (a "category 4" application in Public Trustee v Cooper
+      taxonomy). Bundled because the trust officer needs to understand
+      *how* the application is made, not just *whether* the doctrine
+      supports it.
+
+  - path: jersey/trusts/articles-index.md
+    role: navigation-anchor
+    why: |
+      The article-by-article navigation index for Trusts Law 1984.
+      Bundled so the agent can dispatch to adjacent Articles
+      (47A — variation; 47K — applications to set aside by the
+      Comptroller) if the user's question expands beyond the core
+      47-47J regime.
+
+  - path: jersey/trusts/trusts-law-1984.md
+    role: statute-overview
+    why: |
+      The overview file for the statute as a whole. Provides the
+      structural frame (Parts and Article ranges) the agent needs
+      when citing the Article 47 regime in the context of the
+      broader statute (e.g. relationship with Article 9 firewall
+      or Article 35 protective trusts).
+
+# Statute Articles the agent must be able to cite Article-precisely.
+# These resolve via the statute-wiki's articles_covered frontmatter
+# (where populated) or via the articles-index file.
+required_articles:
+  - statute: trusts-law-1984
+    articles: ["47", "47A", "47B", "47C", "47D", "47E", "47F", "47G", "47H", "47I", "47J"]
+
+# Tags whose graph the bundle expands during load.
+# Drawn only from TAGS.md (closed taxonomy).
+related_tags:
+  - mistake
+  - setting-aside
+  - hastings-bass
+  - royal-court
+  - court-application
+  - cross-border-tax
+  - trusts-law-1984
+  - case-law
+  - momentous-decision
+  - fiduciary-duty
+
+# Related bundles the agent should know about — surfaced in help[]
+# blocks when the user's question drifts into adjacent territory.
+related_bundles:
+  - trust-officer/distribution-decisions-and-court-blessing
+  - trust-officer/reserved-powers-blessed
+  - trust-officer/foreign-information-request
+
+# Freshness window for required_files. Stricter for tasks where
+# rules change frequently; this regime has been stable since 2013.
+# Default warn/stale thresholds (180/365 days) are appropriate.
+freshness_max_age_days: 365
+freshness_warn_age_days: 180
+
+# Refusal / warning rules per AGENT-BEHAVIOURS #3 and PRD §6.3.
+refusal_rules:
+  refuse_if_any_required_file_status: [stub]
+  warn_if_any_required_file_status: [draft]
+  refuse_if_worst_freshness_verdict: stale
+  warn_if_worst_freshness_verdict: warn
+
+# The citation pattern the answer must follow. The
+# citation-verifier sub-agent enforces conformance.
+citation_pattern: |
+  Every Jersey-law claim cites the statute Article AND the
+  canonical corpus file. Format:
+    "Under Article 47E of the Trusts (Jersey) Law 1984
+     ([article-47-set-aside.md](jersey/trusts/article-47-set-aside.md)),
+     the Court must be satisfied that the mistake was 'but for'
+     causative of the trust act."
+  If only a secondary source (Big-4, law-firm briefing) supports a
+  point, prefix the claim with "[Secondary]:" and surface the
+  weaker authority to the user.
+
+# A 1-2 sentence "what the agent should walk in knowing" summary
+# that the bundle-assembler sub-agent surfaces to the main agent.
+session_priming: |
+  You are advising a Jersey trust company business officer who is
+  considering whether a past trust act can be set aside under
+  Articles 47B-47J of the Trusts (Jersey) Law 1984 ("the statutory
+  mistake regime"). Your default response shape is: (a) identify
+  whether the relevant grounds are present on the facts the officer
+  describes; (b) identify who has standing to apply; (c) describe
+  the procedural shape (Article 51 directions application, evidence
+  required, affidavit content, costs); (d) flag the Court's likely
+  view based on recent Royal Court authority (M Settlement is a
+  notable refusal; S & T is a recent grant). Every legal proposition
+  must be cited.
