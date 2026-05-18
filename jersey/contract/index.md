@@ -3,7 +3,7 @@ title: Contract and Obligations Law — Jersey
 jurisdiction: jersey
 category: contract
 status: draft
-last_verified: 2026-05-17
+last_verified: 2026-05-18
 tags:
   - contract
   - obligations
@@ -48,6 +48,8 @@ Following Pothier and the Norman tradition, Jersey recognises
 
 ## When you should be reading this section
 
+### Foundations
+
 | The question is about... | Read |
 |---|---|
 | Whether a contract is binding | [`formation.md`](formation.md) |
@@ -58,6 +60,28 @@ Following Pothier and the Norman tradition, Jersey recognises
 | Specific performance | [`specific-performance.md`](specific-performance.md) |
 | Quasi-contract / unjust enrichment | [`unjust-enrichment.md`](unjust-enrichment.md) |
 | Tort / délit | [`delit-tort.md`](delit-tort.md) |
+
+### Drafting and dispute resolution
+
+| The question is about... | Read |
+|---|---|
+| Standard boilerplate clauses | [`boilerplate.md`](boilerplate.md) |
+| Force majeure / frustration | [`force-majeure.md`](force-majeure.md) |
+| Choice of governing law | [`choice-of-law.md`](choice-of-law.md) |
+| Jurisdiction / forum clauses | [`jurisdiction-clauses.md`](jurisdiction-clauses.md) |
+| Arbitration in Jersey | [`arbitration.md`](arbitration.md) |
+| Penalty clauses / liquidated damages | [`penalty-and-liquidated-damages.md`](penalty-and-liquidated-damages.md) |
+| Restrictive covenants / non-compete | [`restraint-of-trade.md`](restraint-of-trade.md) |
+
+### Specific contract types
+
+| The question is about... | Read |
+|---|---|
+| Sale of goods | [`sale-of-goods.md`](sale-of-goods.md) |
+| Services contracts | [`services-contracts.md`](services-contracts.md) |
+| Agency / powers of attorney | [`agency.md`](agency.md) |
+| Guarantees / indemnities | [`guarantees.md`](guarantees.md) |
+| Loan and finance contracts | [`loan-and-finance.md`](loan-and-finance.md) |
 
 ## Where to start
 
