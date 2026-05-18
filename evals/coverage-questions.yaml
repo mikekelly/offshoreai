@@ -12,18 +12,17 @@
 #
 # Last full run: 2026-05-18 (initial baseline)
 
-version: 3
+version: 3-complete
 last_run: 2026-05-18
 notes: |
   v1 (2026-05-18): self-graded baseline after residential-tenancy build.
   v2 (2026-05-18): self-graded after family-law build.
-  v3 (2026-05-18): FIRST MEASURED RUN using the Agent-tool runner —
-  see README.md for methodology. 8 of 17 questions scored against
-  fresh Explore subagents constrained to read-only access on the
-  jersey/ corpus only. All 8 measured outcomes matched v2 predictions:
-  6 pass, 2 fail. The 9 not-yet-measured questions retain their v2
-  self-graded scores (annotated below). Run the remaining 9 to
-  complete full external measurement.
+  v3 (2026-05-18): full externally-measured run via Agent-tool runner.
+  All 17 questions executed by fresh Explore subagents constrained to
+  read-only filesystem access on the jersey/ corpus only.
+  All 17 measured outcomes match v2 predictions: 12 pass, 5 fail.
+  Every failure was an honest "corpus does not answer" with audit
+  references — no confabulation observed.
 
 questions:
 
@@ -86,6 +85,7 @@ questions:
       - "jersey/residential-tenancy/2025-amendment-law.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: all 6 facts surfaced; 3/3 expected files cited
 
   - id: rt-004
     persona: tenant-landlord
@@ -100,6 +100,7 @@ questions:
       - "jersey/residential-tenancy/deposits.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts; cited expected file plus residential-tenancy-law-2011.md and 2025-amendment-law.md
 
   - id: rt-005
     persona: tenant-landlord
@@ -146,6 +147,7 @@ questions:
       - "jersey/road-traffic/*"  # not yet built
     score:
       2026-05-18: fail
+      2026-05-18-measured: fail  # v3 Agent-tool runner: honest refusal, cited driver-motorist persona index acknowledging the gap
 
   # =====================================================
   # PLANNING — Top-20 gap #3 (expected fail)
@@ -229,6 +231,7 @@ questions:
       - "jersey/family/children-jersey-law-2002.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: all facts surfaced including 1996 Hague gap and 1980 Hague abduction risk; cited 3/3 + child-arrangements-orders.md
 
   - id: fa-004
     persona: parent-family
@@ -243,6 +246,7 @@ questions:
       - "jersey/family/parental-responsibility.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts; clean single-file answer from parental-responsibility.md
 
   # =====================================================
   # WELFARE — Top-20 gaps #7, #8 (expected fail)
@@ -260,6 +264,7 @@ questions:
       - "jersey/welfare/*"  # not yet built
     score:
       2026-05-18: fail
+      2026-05-18-measured: fail  # v3 Agent-tool runner: honest refusal + useful trajectory — found incidental Income Support mentions in tenancy/discrimination files; pointed to gov.je / Citizens Advice / jerseylaw.je as external resources
 
   # =====================================================
   # CRIMINAL PROCEDURE — Top-20 gap #10 (expected fail)
@@ -278,6 +283,7 @@ questions:
       - "jersey/crime-fraud/ppce*"  # not yet built
     score:
       2026-05-18: fail
+      2026-05-18-measured: fail  # v3 Agent-tool runner: honest refusal; surfaced echr-human-rights.md as adjacent material (Article 5 liberty, Article 6 fair trial) — useful abstract bridge to the missing PPCE content
 
   # =====================================================
   # SANITY CHECK — original professional personas
@@ -314,6 +320,7 @@ questions:
       - "jersey/aml-cft/mlo-*"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: agent retrieved MLO Articles 5, 6, 7, 8, 11, 12 + compliance-mlro persona Q&A; full risk-based / simplified / enhanced CDD framework surfaced. Original AML content intact.
 
   - id: sn-003
     persona: fund-counsel
@@ -329,6 +336,7 @@ questions:
       - "jersey/funds/expert-fund.md"
     score:
       2026-05-18: pass  # original coverage intact
+      2026-05-18-measured: pass  # v3 Agent-tool runner: agent surfaced richer detail than expected_facts captured — the DSP delegation model in JPF; 48-hour authorisation; Expert Fund minimum-investment thresholds. Expected_facts list should be ratcheted up. Original funds content intact.
 
 # =====================================================
 # Summary tracking
@@ -346,29 +354,40 @@ summary:
       fails are road traffic, planning, welfare, and PPCE.
 
   2026-05-18-measured:
-    total: 8       # representative sample run via Agent-tool runner
-    pass: 6        # rt-001, rt-002, fa-001, fa-002, sn-001, rt-005
+    total: 17
+    pass: 12       # rt-001, rt-002, rt-003, rt-004, rt-005,
+                   # fa-001, fa-002, fa-003, fa-004,
+                   # sn-001, sn-002, sn-003
     partial: 0
-    fail: 2        # rt-rd-001 (road traffic gap), pl-001 (planning gap)
-    not_yet_measured: 9
+    fail: 5        # rt-rd-001, rt-rd-002, pl-001, we-001, cr-001
     notes: |
-      v3 FIRST EXTERNALLY MEASURED RUN — 8 of 17 questions
-      executed by fresh Explore subagents constrained to
-      filesystem reads on the jersey/ corpus only. All 8
-      measured outcomes match v2 self-graded predictions.
-      Critically, the 2 failure cases (rt-rd-001 speeding,
-      pl-001 planning extension) both correctly refused to
-      confabulate from training data and cited COVERAGE-AUDIT.md
-      as the gap-tracking record. The sanity-check question
-      (sn-001, Article 47 trust set-aside) returned a
-      substantively better answer than expected — agent
-      identified Article 47G as the specific operative
-      provision, the 3-limb S&T Trusts test, and divergence
-      from Pitt v Holt — confirming the original offshore-
-      finance content has not been regressed by the
-      resident-facing gap-fills.
+      v3 FULL EXTERNALLY MEASURED RUN — all 17 questions
+      executed via fresh Explore subagents constrained to
+      filesystem reads on the jersey/ corpus only.
 
-      Next steps: run remaining 9 questions (rt-003, rt-004,
-      fa-003, fa-004, rt-rd-002, we-001, cr-001, sn-002,
-      sn-003) to convert the full eval to externally-measured
-      scores.
+      Outcomes match v2 self-graded predictions exactly. All
+      5 failures were honest "corpus does not answer" returns;
+      no agent confabulated. Several agents also returned
+      substantively richer content than the eval rubric
+      anticipated (sn-001 identified Article 47G specifically;
+      sn-003 surfaced the DSP delegation model in JPF;
+      we-001 found incidental Income Support mentions in
+      tenancy/discrimination files; cr-001 bridged to ECHR
+      adjacent material).
+
+      Observations for the eval rubric itself:
+      - expected_facts should be ratcheted up where the corpus
+        is richer than the rubric (sn-001, sn-003 especially)
+      - failure trajectories carry useful signal: which
+        adjacent files agents surface tells us where bridging
+        content might be added when filling the gap proper
+
+      Next priority gaps to fill (currently all measured fail):
+      - rt-rd-001, rt-rd-002 (Road Traffic Law 1956)
+      - pl-001 (Planning and Building Law 2002)
+      - we-001 (Income Support / Social Security)
+      - cr-001 (PPCE 2003)
+
+      Sanity-check questions (sn-001 Article 47, sn-002 MLO
+      CDD, sn-003 JPF/Expert Fund) all pass — gap-fills have
+      not regressed original offshore-finance coverage.
