@@ -38,6 +38,7 @@ see_also:
   - ./residential-tenancy/index.md
   - ./family/index.md
   - ./road-traffic/index.md
+  - ./planning/index.md
   - ./contract/index.md
   - ./use-cases/index.md
   - ./COVERAGE-AUDIT.md
@@ -322,6 +323,17 @@ reach the Magistrate's Court. Includes drink-driving
 (80 mg / 100 ml), speeding, careless / dangerous driving,
 driving without insurance, disqualification. The third
 gap-fill from the coverage audit.
+
+### [Planning](planning/index.md)
+Use and development of land under the **Planning and
+Building (Jersey) Law 2002**, the **General Development
+Order 2011** (permitted-development exemptions), the
+**Building Bye-Laws 2007** (technical standards), and the
+**Island Plan** policy framework. Includes extensions,
+conversions, change of use, listed buildings, conservation
+areas, application process, appeals, and enforcement
+(unauthorised development is criminal). The fourth gap-fill
+from the coverage audit.
 
 ### [Contract and obligations](contract/index.md)
 Jersey contract / obligations law: formation (four classical

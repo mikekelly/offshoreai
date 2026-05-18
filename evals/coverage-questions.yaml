@@ -179,10 +179,15 @@ questions:
       - "Application process to States planning department"
       - "Right of appeal"
     expected_files:
-      - "jersey/planning/*"  # not yet built
+      - "jersey/planning/planning-building-law-2002.md"
+      - "jersey/planning/permitted-development.md"
+      - "jersey/planning/application-process.md"
+      - "jersey/planning/extensions-and-conversions.md"
+      - "jersey/use-cases/jersey-resident/extension-planning-permission.md"
     score:
       2026-05-18: fail
-      2026-05-18-measured: fail  # v3 Agent-tool runner: correctly refused to confabulate; cited COVERAGE-AUDIT.md
+      2026-05-18-measured: fail  # v3 baseline
+      2026-05-18-measured-postfill: pass  # v3-postfill: all expected facts surfaced; 7 files cited including the persona Q&A
 
   # =====================================================
   # FAMILY/MATRIMONIAL — Top-20 gaps #4, #5 (expected fail)
