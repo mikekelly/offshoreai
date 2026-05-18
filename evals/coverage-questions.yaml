@@ -1,0 +1,288 @@
+# Coverage Questions — Offshore AI
+#
+# Tracked test set for measuring how well the knowledge graph
+# answers real user questions. See README.md for methodology.
+#
+# Scoring:
+#   pass    = ≥ 80% of expected facts covered, right files cited
+#   partial = 30-80% coverage
+#   fail    = < 30% coverage, can't answer, or wrong
+#
+# Run cadence: weekly initially, monthly once stable.
+#
+# Last full run: 2026-05-18 (initial baseline)
+
+version: 1
+last_run: 2026-05-18
+notes: |
+  Initial baseline. Questions on the residential-tenancy
+  section reflect that gap has now been filled; questions
+  on other top-20 gaps remain expected-fail until those
+  sections are built.
+
+questions:
+
+  # =====================================================
+  # TRIGGER QUESTION — the gap that prompted the audit
+  # =====================================================
+  - id: rt-001
+    persona: tenant-landlord
+    asked_by: landlord
+    question: "My tenant doesn't pay rent. Can I easily evict them? What protections do they have?"
+    expected_facts:
+      - "No self-help — eviction requires court order"
+      - "7-day written breach notice required first"
+      - "Petty Debts Court has exclusive original jurisdiction"
+      - "Viscount enforces eviction orders"
+      - "Stay of execution likely for vulnerable tenants"
+      - "Timeline typically 2-4 months"
+      - "Tenant defences include set-off for disrepair, discrimination, retaliation"
+    expected_files:
+      - "jersey/residential-tenancy/non-payment-of-rent.md"
+      - "jersey/residential-tenancy/eviction-procedure.md"
+      - "jersey/use-cases/tenant-landlord/evicting-non-paying-tenant.md"
+    score:
+      2026-05-18: pass  # this was the trigger gap; section now built
+
+  # =====================================================
+  # RESIDENTIAL TENANCY (built 2026-05-18)
+  # =====================================================
+  - id: rt-002
+    persona: tenant-landlord
+    asked_by: tenant
+    question: "My landlord just gave me a 3-month notice with no reason. Is that valid?"
+    expected_facts:
+      - "Post-2025 amendment in force from 15 April 2026"
+      - "3-month notice requires a justified ground"
+      - "No-fault notice now requires 12 months"
+      - "Defective notice can be challenged"
+    expected_files:
+      - "jersey/residential-tenancy/notice-periods.md"
+      - "jersey/residential-tenancy/2025-amendment-law.md"
+      - "jersey/use-cases/tenant-landlord/checking-notice-validity.md"
+    score:
+      2026-05-18: pass
+
+  - id: rt-003
+    persona: tenant-landlord
+    asked_by: tenant
+    question: "My landlord wants to raise the rent by 8% — can they?"
+    expected_facts:
+      - "Post-2025 amendment caps annual increases at Jersey RPI"
+      - "Once per year only"
+      - "2 months' written notice required"
+      - "Above-RPI requires 'significantly below market rent' carve-out"
+      - "Rent Tribunal is the dispute forum"
+    expected_files:
+      - "jersey/residential-tenancy/rent-and-rent-reviews.md"
+      - "jersey/residential-tenancy/rent-tribunal.md"
+      - "jersey/residential-tenancy/2025-amendment-law.md"
+    score:
+      2026-05-18: pass
+
+  - id: rt-004
+    persona: tenant-landlord
+    asked_by: landlord
+    question: "Can I take a deposit of 3 months' rent?"
+    expected_facts:
+      - "No statutory cap but more than 6 weeks is unusual"
+      - "Must be lodged with the Tenants' Deposit Scheme"
+      - "Deposit receipt must be provided to tenant"
+      - "Excessive deposits challengeable"
+    expected_files:
+      - "jersey/residential-tenancy/deposits.md"
+    score:
+      2026-05-18: pass
+
+  - id: rt-005
+    persona: tenant-landlord
+    asked_by: tenant
+    question: "I'm renting a room in someone's house and sharing the kitchen. Am I a tenant?"
+    expected_facts:
+      - "Lodgers/boarders excluded from RTJL"
+      - "Test is exclusive possession of a self-contained unit"
+      - "Shared kitchen/bathroom typically lodging"
+      - "Courts look at substance, not label"
+    expected_files:
+      - "jersey/residential-tenancy/lodging-houses-vs-tenancy.md"
+    score:
+      2026-05-18: pass
+
+  # =====================================================
+  # ROAD TRAFFIC — Top-20 gap #2 (expected fail)
+  # =====================================================
+  - id: rt-rd-001
+    persona: driver-motorist
+    asked_by: driver
+    question: "I was caught speeding doing 50 in a 30 zone. What happens?"
+    expected_facts:
+      - "Road Traffic (Jersey) Law 1956 governs"
+      - "Penalty notice vs court summons"
+      - "Magistrate's Court for traffic offences"
+      - "Penalty points / disqualification considerations"
+    expected_files:
+      - "jersey/road-traffic/*"  # not yet built
+    score:
+      2026-05-18: fail
+
+  - id: rt-rd-002
+    persona: driver-motorist
+    asked_by: driver
+    question: "What's the drink-drive limit in Jersey?"
+    expected_facts:
+      - "Specific Jersey BAC limit"
+      - "Breath / blood test procedure"
+      - "Penalties for refusal"
+    expected_files:
+      - "jersey/road-traffic/*"  # not yet built
+    score:
+      2026-05-18: fail
+
+  # =====================================================
+  # PLANNING — Top-20 gap #3 (expected fail)
+  # =====================================================
+  - id: pl-001
+    persona: jersey-resident
+    asked_by: homeowner
+    question: "Do I need planning permission to build an extension on my house?"
+    expected_facts:
+      - "Planning and Building (Jersey) Law 2002 governs"
+      - "Permitted development thresholds"
+      - "Application process to States planning department"
+      - "Right of appeal"
+    expected_files:
+      - "jersey/planning/*"  # not yet built
+    score:
+      2026-05-18: fail
+
+  # =====================================================
+  # FAMILY/MATRIMONIAL — Top-20 gaps #4, #5 (expected fail)
+  # =====================================================
+  - id: fa-001
+    persona: parent-family
+    asked_by: spouse
+    question: "I want to divorce my husband. How do I start in Jersey?"
+    expected_facts:
+      - "Matrimonial Causes (Jersey) Law 1949 governs"
+      - "Royal Court Family Division"
+      - "Grounds for divorce"
+      - "Ancillary relief"
+    expected_files:
+      - "jersey/family/*"  # not yet built
+    score:
+      2026-05-18: fail
+
+  - id: fa-002
+    persona: parent-family
+    asked_by: parent
+    question: "Social Services have started an investigation about my child. What are my rights?"
+    expected_facts:
+      - "Children (Jersey) Law 2002 governs"
+      - "Care orders / supervision orders"
+      - "Right to legal representation"
+      - "Royal Court Family Division"
+    expected_files:
+      - "jersey/family/*"  # not yet built
+    score:
+      2026-05-18: fail
+
+  # =====================================================
+  # WELFARE — Top-20 gaps #7, #8 (expected fail)
+  # =====================================================
+  - id: we-001
+    persona: jersey-resident
+    asked_by: resident
+    question: "Can I claim Income Support if I've just lost my job?"
+    expected_facts:
+      - "Income Support (Jersey) Law 2007 governs"
+      - "Means-tested benefits"
+      - "Residency requirements"
+      - "Application process"
+    expected_files:
+      - "jersey/welfare/*"  # not yet built
+    score:
+      2026-05-18: fail
+
+  # =====================================================
+  # CRIMINAL PROCEDURE — Top-20 gap #10 (expected fail)
+  # =====================================================
+  - id: cr-001
+    persona: jersey-resident
+    asked_by: arrestee
+    question: "I've just been arrested. What are my rights at the police station?"
+    expected_facts:
+      - "Police Procedures and Criminal Evidence (Jersey) Law 2003"
+      - "Right to legal advice"
+      - "Right to silence and what use can be made of it"
+      - "Detention time limits"
+      - "Rights to family/friend notification"
+    expected_files:
+      - "jersey/crime-fraud/ppce*"  # not yet built
+    score:
+      2026-05-18: fail
+
+  # =====================================================
+  # SANITY CHECK — original professional personas
+  # These should still pass — confirms gap-filling for
+  # ordinary residents hasn't regressed offshore coverage.
+  # =====================================================
+  - id: sn-001
+    persona: trust-officer
+    asked_by: trustee
+    question: "I'm a trustee and want to vary a Jersey trust — what's the Article 47B procedure?"
+    expected_facts:
+      - "TJL Article 47B-J on Pitt v Holt-equivalent set-aside"
+      - "Royal Court application"
+      - "Mistake / inadequate deliberation grounds"
+      - "Distinction from S&T Trusts test"
+    expected_files:
+      - "jersey/trusts/article-47-set-aside.md"
+      - "jersey/trusts/tjl-article-47*.md"
+    score:
+      2026-05-18: pass  # original coverage intact
+
+  - id: sn-002
+    persona: compliance-mlro
+    asked_by: mlro
+    question: "Under the MLO 2008, what CDD do I need for a new institutional client?"
+    expected_facts:
+      - "Money Laundering (Jersey) Order 2008"
+      - "Risk-based approach"
+      - "Identification and verification requirements"
+      - "Beneficial-ownership investigation"
+      - "Simplified vs enhanced CDD"
+    expected_files:
+      - "jersey/aml-cft/mlo-*"
+    score:
+      2026-05-18: pass
+
+  - id: sn-003
+    persona: fund-counsel
+    asked_by: gp-counsel
+    question: "What's the JPF regime and how does it differ from an Expert Fund?"
+    expected_facts:
+      - "Jersey Private Fund — fast-track regime"
+      - "≤ 50 investors"
+      - "JFSC notification rather than full authorisation"
+      - "Expert Fund — accredited investors, higher minimum, JFSC consent"
+    expected_files:
+      - "jersey/funds/jersey-private-fund.md"
+      - "jersey/funds/expert-fund.md"
+    score:
+      2026-05-18: pass  # original coverage intact
+
+# =====================================================
+# Summary tracking
+# =====================================================
+summary:
+  2026-05-18:
+    total: 15
+    pass: 8        # 5 resident-facing (residential tenancy now built) + 3 sanity checks
+    partial: 0
+    fail: 7        # other top-20 gaps still unbuilt
+    notes: |
+      Baseline established. Residential-tenancy section build-out has
+      converted 5 expected-fails into passes for the trigger persona.
+      Remaining fails track the rest of the top-20 audit. Sanity-check
+      questions for professional personas all pass — gap-fill has not
+      regressed original coverage.

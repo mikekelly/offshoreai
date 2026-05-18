@@ -3,7 +3,7 @@ title: Jersey — Knowledge Base Entry Point
 jurisdiction: jersey
 category: index
 status: draft
-last_verified: 2026-05-15
+last_verified: 2026-05-18
 tags:
   - jersey
   - index
@@ -35,8 +35,10 @@ see_also:
   - ./employment/index.md
   - ./discrimination/index.md
   - ./property/index.md
+  - ./residential-tenancy/index.md
   - ./contract/index.md
   - ./use-cases/index.md
+  - ./COVERAGE-AUDIT.md
   - ./glossary.md
   - ./sources.md
 ---
@@ -290,6 +292,15 @@ foncière**, hypothec (Jersey real-property security), contract
 passing before the Royal Court, servitudes (Jersey easements),
 leases, **Security Interests (Jersey) Law 2012** for personal
 property, and customary real-property succession.
+
+### [Residential tenancy](residential-tenancy/index.md)
+Residential lettings under the **Residential Tenancy (Jersey)
+Law 2011** as amended by the **2025 Amendment Law** (in force
+15 April 2026): forms of tenancy, condition reports, deposits,
+notice periods (1 month tenant / 3 or 12 months landlord),
+RPI-capped rent reviews, the Rent Tribunal, eviction by
+Petty Debts Court and Viscount enforcement. The first gap-fill
+from the [coverage audit](COVERAGE-AUDIT.md).
 
 ### [Contract and obligations](contract/index.md)
 Jersey contract / obligations law: formation (four classical
