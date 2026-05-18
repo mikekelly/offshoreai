@@ -267,6 +267,74 @@ questions:
         - Contrat héréditaire terminology
       voice: "Should explain Jersey distinctiveness to non-Jersey reader"
 
+  # ===========================================
+  # NEW CROSS-JURISDICTIONAL DEPTH QUESTIONS
+  # Added 2026-05-18 after deepening adjacent-jurisdiction directories
+  # ===========================================
+  - id: show-fund-routes
+    category: cross-jurisdictional
+    question: "I'm an emerging PE manager launching my first sub-US$100m fund. Compare Jersey JPF, Cayman ELP, BVI Approved Fund, Guernsey PIF for me."
+    showcase_bar:
+      substance:
+        - Jersey JPF: 50-investor cap, DSP delegation, 48-hour authorisation
+        - Cayman ELP: dominant closed-ended PE vehicle, registered under Private Funds Act 2020
+        - BVI Approved Fund: 20-investor cap, US$100m AUM ceiling, permanent regime
+        - Guernsey PIF: 3 routes (licensed manager / family / qualifying), 50-investor cap, 1-business-day approval
+        - Decision framework: investor count, manager substance, marketing reach
+
+  - id: show-cell-companies
+    category: cross-jurisdictional
+    question: "Bermuda SAC vs Cayman SPC vs Guernsey PCC vs Guernsey ICC — when do I use each?"
+    showcase_bar:
+      substance:
+        - Guernsey PCC is the original (1997 Ordinance)
+        - Bermuda SAC (2000) is insurance-focused; Cayman SPC (1998) is general-purpose
+        - All four are cell-company vehicles
+        - Guernsey ICC is the outlier — each cell is its own incorporated company
+        - Decision: insurance (Bermuda); funds (Cayman); foreign-court robustness (Guernsey ICC); EU-proximate (Guernsey PCC)
+
+  - id: show-bermuda-captive
+    category: depth-offshore
+    question: "I want to set up a captive insurance company for my multinational group. Why Bermuda and which Class?"
+    showcase_bar:
+      substance:
+        - Bermuda Insurance Act 1978 + class system (Class 1 / 2 / 3 / 3A / 3B / 4 for P&C)
+        - Class 1 pure single-parent captive; Class 2 multi-owner; Class 3 with unrelated business
+        - Class 4 commercial reinsurance (US$100m min capital)
+        - SAC option for multi-line / multi-programme captives
+        - Solvency II equivalence; BMA oversight
+
+  - id: show-iom-portfolio-bond
+    category: depth-offshore
+    question: "I'm a UK HNW investor — why would I hold an Isle of Man portfolio bond?"
+    showcase_bar:
+      substance:
+        - IoM portfolio-bond: single-premium life-assurance wrapper
+        - UK 5% rule for annual tax-deferred withdrawals
+        - Top-slicing relief on chargeable events
+        - IoM Solvency II equivalence; mature industry; major UK insurer subsidiaries
+
+  - id: show-listing-vehicle
+    category: cross-jurisdictional
+    question: "We're listing on NASDAQ. Should we use Cayman Exempted, BVI BC, or Bermuda Exempted as our listing vehicle?"
+    showcase_bar:
+      substance:
+        - Cayman Exempted is the dominant choice
+        - Bermuda Exempted: BMA pre-vetting adds regulatory credibility
+        - BVI BC more limited listing acceptance
+        - Pillar Two: Cayman MCIT 2025; Bermuda CIT 2023; BVI no equivalent yet
+
+  - id: show-emerging-manager-stack
+    category: cross-jurisdictional
+    question: "I'm a BVI-based emerging manager. What's the full structure stack — manager, fund, vehicle?"
+    showcase_bar:
+      substance:
+        - BVI Approved Manager (light-touch alternative to full SIBA)
+        - BVI Incubator Fund (US$20k min, US$20m AUM, 2-year life) or Approved Fund
+        - BVI BC under BCA 2004 for vehicles
+        - Transition path Incubator → Approved → Private Fund → Professional Fund
+        - Economic Substance Act compliance
+
 summary:
   2026-05-18:
     total: 14
