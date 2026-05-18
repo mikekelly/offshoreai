@@ -341,6 +341,62 @@ summary:
     pass: 13
     partial: 1
     fail: 0
+    notes_pre_vista_fill: "Original 14 with show-trusts-comparison at partial."
+
+  2026-05-18-post-vista:
+    total: 14
+    pass: 14
+    partial: 0
+    fail: 0
+    notes: "After BVI VISTA file added, show-trusts-comparison re-measured PASS."
+
+  2026-05-18-cross-jurisdictional:
+    total: 20      # 14 original + 6 new cross-jurisdictional
+    pass: 20
+    partial: 0
+    fail: 0
+    notes: |
+      After deepening all five adjacent jurisdictions (Cayman,
+      BVI, Bermuda, Guernsey, IoM), six new cross-jurisdictional
+      showcase questions added and run via Agent-tool runner.
+      All 6 passed at showcase quality:
+
+      - show-fund-routes — Jersey JPF / Cayman ELP / BVI
+        Approved Fund / Guernsey PIF comparison; 7 files cited
+        across all four jurisdictions; clean decision-driven
+        recommendation
+      - show-cell-companies — Bermuda SAC / Cayman SPC /
+        Guernsey PCC / Guernsey ICC; correct identification
+        of Guernsey ICC as outlier with separate legal
+        personality; 4 files cited (all new)
+      - show-bermuda-captive — Class system explained; NAIC
+        + Solvency II equivalence; SAC option; substantive
+        comparison with Cayman / Guernsey; 6 files cited
+      - show-iom-portfolio-bond — UK 5% rule with ITTOIA 2005
+        Chapter 9 citation; top-slicing relief; Solvency II
+        equivalence; comparison with Dublin / Luxembourg
+      - show-listing-vehicle — Pillar Two deltas (MCIT 2025
+        + BVI MTT + Bermuda CIT 2023); BMA pre-vetting
+        distinction; 7 files cited
+      - show-emerging-manager-stack — 3-tier structure
+        (manager / fund / vehicle); Incubator vs Approved
+        Fund detail; Economic Substance Act overlay;
+        5 files cited
+
+      The adjacent-jurisdiction deepening (commits da0f7c8,
+      675c26a, 5d2780d, aa3ae15, e2d6470, 938ca67) directly
+      enabled these passes. Without the new files, these
+      questions would have generated the same "thin BVI
+      side" partial pattern the original
+      show-trusts-comparison did.
+
+  2026-05-18-scores-cross-jurisdictional:
+    show-fund-routes: pass        # 7 files; investor caps + AUM + auth time + manager + marketing; clean decision matrix
+    show-cell-companies: pass     # 4 files (all new); Guernsey ICC outlier identified; decision matrix
+    show-bermuda-captive: pass    # 6 files; NAIC qualification + Solvency II equivalence + RenaissanceRe etc.
+    show-iom-portfolio-bond: pass # 4 files; ITTOIA 2005 Chapter 9 citation; Dublin/Luxembourg comparison
+    show-listing-vehicle: pass    # 7 files; Pillar Two implementation deltas across 3 jurisdictions
+    show-emerging-manager-stack: pass  # 5 files; 3-tier structure; transition path
     notes: |
       All 14 showcase questions measured via fresh Explore
       subagents. 13 pass at showcase-quality bar (substance +
