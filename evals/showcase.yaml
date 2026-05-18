@@ -404,6 +404,56 @@ questions:
         - Registered property right — transferable, inheritable, mortgageable
         - Combination with Guernsey trust / company for wealth structuring
 
+  # ===========================================
+  # FRONTIER / OF-THE-MOMENT QUESTIONS (added 2026-05-18)
+  # Tests the corpus's frontier/ directory — current state of
+  # in-flight legislative / regulatory / market developments.
+  # These answers must be CURRENT (May 2026 state) and cite
+  # the frontier files explicitly.
+  # ===========================================
+  - id: show-uk-carry-reform
+    category: frontier
+    question: "UK carried-interest reform takes effect 6 April 2026. What changes, and what should PE partners in the Crown Dependencies do about it?"
+    showcase_bar:
+      substance:
+        - Pre-2025 baseline ~28% CGT on qualifying carry
+        - 2025-26 transitional flat 32% CGT
+        - From 6 April 2026 — income tax with 72.5% multiplier giving ~34.1% effective for qualifying carry
+        - Up to 47% effective for non-qualifying / IFM-DIMF carry
+        - Finance Bill 2025-26 mechanic
+        - Q1 2026 practitioner acceleration responses (early crystallisation)
+        - Crown Dependencies residency-planning angle (Jersey HVR, Guernsey Open Market, IoM tax cap)
+      jersey_specific:
+        - Cites the frontier file
+        - Names the residency-planning option
+      voice: "Should sound like a PE-tax specialist briefing a UK partner"
+
+  - id: show-continuation-funds
+    category: frontier
+    question: "Why are continuation funds and GP-led secondaries growing so fast, and why is Guernsey winning that business?"
+    showcase_bar:
+      substance:
+        - 46% of GPs using continuation vehicles in 2026 (doubled from prior year)
+        - Single-asset CF, multi-asset CF, strip-sale, tender-offer mechanics
+        - LP options (roll vs cash) and GP carry crystallisation
+        - GFSC 3-business-day approval for single-asset CFs
+        - Guernsey single-asset CFs treated as not-collective-investment (no CIS authorisation)
+        - Substance / fairness opinions / conflict-of-interest committee mechanics
+      voice: "Should sound like a fund-secondaries specialist explaining to a sophisticated PE investor"
+
+  - id: show-aifmd-ii
+    category: frontier
+    question: "AIFMD II takes effect 16 April 2026. What changes for a Jersey-based AIFM marketing into the EU under NPPR?"
+    showcase_bar:
+      substance:
+        - Directive (EU) 2024/927 effective 16 April 2026
+        - Expanded disclosures on liquidity-management tools, fees, costs, loan-origination
+        - Enhanced Annex IV reporting
+        - JFSC AIF Code splitting into EU AIF Code and UK AIF Code
+        - Loan-origination AIF separate regime
+        - Counterintuitive impact — tightened EU delegation rules make direct CI AIFMs more attractive
+      voice: "Should sound like a Jersey funds lawyer briefing the in-house GC of a fund manager"
+
 summary:
   2026-05-18:
     total: 14
@@ -572,3 +622,49 @@ summary:
     show-parish-hall: pass         # Centenier's mixed prosecutorial/adjudicative role; 15 mph threshold; opt-out right
     show-voisinage: pass           # 4 files; 1204 Normandy split; Le Geyt + Pothier; objective-test distinction from English nuisance
     show-friday-passing: pass      # 8 files; Samedi Division; chain-of-passations title system; civil-law heritage
+
+  2026-05-18-frontier:
+    total: 29      # 26 prior + 3 frontier
+    pass: 29
+    partial: 0
+    fail: 0
+    final: true    # session-end measurement (frontier round)
+    notes: |
+      Frontier / of-the-moment questions PASS at showcase
+      quality. Tests the new `frontier/` directory which
+      tracks bleeding-edge developments with explicit
+      decay-management discipline (status / as_of /
+      expected_decay frontmatter).
+
+      Frontier results:
+
+      - show-uk-carry-reform: PASS — 3 files cited
+        (frontier/uk-carried-interest-reform-2026.md +
+        related). 28% → 32% → 34.1% rate progression;
+        72.5% multiplier; Q1 2026 acceleration; Crown
+        Dependencies residency-planning angle (HVR /
+        Open Market / IoM tax cap).
+      - show-continuation-funds: PASS — 3 files cited
+        (frontier/continuation-funds-and-gp-led-
+        secondaries.md + Guernsey concept files). 46%
+        usage / doubled YoY; 3-business-day GFSC
+        approval; single-asset CF not-CIS treatment;
+        full transaction-structure walkthrough.
+      - show-aifmd-ii: PASS — 3 files cited (frontier/
+        aifmd-ii-april-2026.md + AIF Code + EU delegation).
+        Identified Jersey AIF Code split; correctly
+        called out counterintuitive impact (tightened EU
+        delegation makes direct CI AIFMs more attractive).
+
+      Significance: this confirms the corpus can answer
+      timely / of-the-moment questions about live
+      developments, not just doctrinal snapshots. The
+      frontier/ directory is now a load-bearing part of
+      the demo surface and should be refreshed every ~6
+      months per the standing discipline (see
+      frontier/README.md).
+
+  scores_by_question_frontier:
+    show-uk-carry-reform: pass     # 28→32→34.1% progression; 72.5% multiplier; Q1 2026 acceleration; HVR/Open Market/IoM tax cap
+    show-continuation-funds: pass  # 46% / doubled; 3-BD GFSC approval; single-asset CF not-CIS; full structure walkthrough
+    show-aifmd-ii: pass            # 16 April 2026 effective; AIF Code split; counterintuitive direct-CI-AIFM impact identified
