@@ -335,6 +335,42 @@ questions:
         - Transition path Incubator → Approved → Private Fund → Professional Fund
         - Economic Substance Act compliance
 
+  # ===========================================
+  # SECOND-ROUND DEPTH QUESTIONS (added 2026-05-18)
+  # ===========================================
+  - id: show-cayman-llc
+    category: depth-offshore
+    question: "We're redomiciling a Delaware LLC to Cayman. Is the Cayman LLC the right form, and how does check-the-box work?"
+    showcase_bar:
+      substance:
+        - Limited Liability Companies Act 2016 (Cayman)
+        - Cayman LLC mirrors Delaware LLC
+        - Members (not shareholders), managers, LLC Agreement
+        - US check-the-box default: partnership / disregarded entity
+        - Difference from Cayman Exempted Company and Cayman ELP
+
+  - id: show-jersey-vs-guernsey-trusts
+    category: cross-jurisdictional
+    question: "Jersey vs Guernsey trust — when do I pick which?"
+    showcase_bar:
+      substance:
+        - Both have firewall, reserved powers, statutory mistake regimes
+        - Jersey Article 9(4) more explicit on foreign-judgment non-recognition than Guernsey s.14
+        - Jersey case-law on Article 47B mistake more developed (Re S&T Trusts and progeny)
+        - Both have PCC; Guernsey adds ICC
+        - Decision factors: existing infrastructure, sponsor familiarity, defence intensity
+
+  - id: show-image-rights
+    category: depth-offshore
+    question: "I'm a celebrity wanting to protect and license my image. How does Guernsey's image-rights register work?"
+    showcase_bar:
+      substance:
+        - Image Rights (Bailiwick of Guernsey) Ordinance 2012
+        - Only jurisdiction in the world with statutory image-rights register
+        - Personnage covers name, voice, signature, image, appearance
+        - Registered property right — transferable, inheritable, mortgageable
+        - Combination with Guernsey trust / company for wealth structuring
+
 summary:
   2026-05-18:
     total: 14
