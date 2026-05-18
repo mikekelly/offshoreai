@@ -1,0 +1,28 @@
+{
+  "name": "@offshoreai/build",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Corpus build pipeline — convention validator, hier-tree compile, tag-index compile, vector index, bundle compile.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "bin": {
+    "offshoreai-build": "./src/cli.ts"
+  },
+  "scripts": {
+    "cli": "tsx ./src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "gray-matter": "^4.0.3",
+    "yaml": "^2.6.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

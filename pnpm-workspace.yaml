@@ -1,0 +1,8 @@
+packages:
+  - "packages/*"
+
+# Approve esbuild's postinstall (vitest dependency). Other build
+# scripts stay denied — AGENT-PRINCIPLES Principle 21 sandbox stance:
+# approve only what we actually need.
+allowBuilds:
+  esbuild: true

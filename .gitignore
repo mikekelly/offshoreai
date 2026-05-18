@@ -5,3 +5,27 @@
 *.swp
 *.swo
 Thumbs.db
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+
+# Build output
+dist/
+.cache/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Test
+coverage/
+.vitest-cache/
+
+# Editor
+*.log
+
+# Eval outputs (large; baselines kept under evals/baselines/ are committed selectively)
+evals/baselines/*/tmp/
