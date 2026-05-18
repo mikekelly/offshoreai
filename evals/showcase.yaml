@@ -459,6 +459,23 @@ summary:
       side" partial pattern the original
       show-trusts-comparison did.
 
+  2026-05-18-final:
+    total: 26      # 25 prior + 1 contentious-trust worked-example
+    pass: 26
+    partial: 0
+    fail: 0
+    final: true    # session-end measurement
+    notes: |
+      Contentious-trust worked example showcase question
+      (show-worked-contentious-trust) PASS — 6 files cited
+      including the new worked-example file plus
+      international-lawyer + royal-court-litigator persona
+      Q&A files; quoted Royal Court on rejecting Pitt v
+      Holt distinction; full procedural walkthrough.
+
+      Final session showcase score: 26 / 26 PASS / 0 partial
+      / 0 fail.
+
   2026-05-18-worked-examples:
     total: 25      # 23 prior + 2 worked-example
     pass: 25
