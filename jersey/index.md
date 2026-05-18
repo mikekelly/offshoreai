@@ -42,6 +42,7 @@ see_also:
   - ./welfare/index.md
   - ./crime-fraud/index.md
   - ./health-and-capacity/index.md
+  - ./civil-liberties/index.md
   - ./contract/index.md
   - ./use-cases/index.md
   - ./COVERAGE-AUDIT.md
@@ -371,6 +372,17 @@ Self-Determination (Jersey) Law 2016** (Lasting Powers
 of Attorney, advance decisions, court-appointed
 delegates, Royal Court Protection Division). The seventh
 gap-fill from the coverage audit.
+
+### [Civil liberties](civil-liberties/index.md)
+Two paired civic-rights statutes: the **Freedom of
+Information (Jersey) Law 2011** (public-information
+access right with absolute and qualified exemptions;
+JOIC appeal forum; final appeal to Royal Court) and the
+**Regulation of Investigatory Powers (Jersey) Law 2005**
+(interception, communications data, covert surveillance,
+covert human intelligence sources; Investigatory Powers
+Commissioner oversight). The eighth gap-fill from the
+coverage audit.
 
 ### [Contract and obligations](contract/index.md)
 Jersey contract / obligations law: formation (four classical

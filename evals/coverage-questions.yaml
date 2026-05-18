@@ -333,7 +333,117 @@ questions:
     expected_files:
       - "jersey/legal-system/petty-debts-court.md"
     score:
+      2026-05-18-measured: pass  # civ-001: all 8 expected facts surfaced; 2 files cited
+
+  # =====================================================
+  # CIVIL LIBERTIES — Top-20 gaps #18-19 (new tests)
+  # =====================================================
+  - id: foi-001
+    persona: journalist-ngo-academic
+    asked_by: journalist
+    question: "How do I make a Freedom of Information request to a Jersey public body?"
+    expected_facts:
+      - "Freedom of Information (Jersey) Law 2011 governs"
+      - "Only Scheduled Public Authorities are subject to FOI"
+      - "20 working days for substantive response"
+      - "Absolute exemptions (e.g. personal data) vs qualified exemptions (with public-interest test)"
+      - "Information Commissioner (JOIC) is the appeal forum after internal review"
+      - "Final appeal to Royal Court on points of law"
+      - "Don't need to state purpose"
+    expected_files:
+      - "jersey/civil-liberties/foi-law-2011.md"
+      - "jersey/use-cases/journalist-ngo-academic/making-a-foi-request.md"
+    score:
       2026-05-18: pending  # not yet measured
+
+  - id: ripl-001
+    persona: jersey-resident
+    asked_by: resident
+    question: "How does the police's power to do covert surveillance work in Jersey?"
+    expected_facts:
+      - "Regulation of Investigatory Powers (Jersey) Law 2005 governs"
+      - "Four techniques: interception, communications data, covert surveillance, covert human intelligence sources"
+      - "Codes of Practice supplement the statute and are binding"
+      - "Authorisation required — specific authorisers per technique"
+      - "Investigatory Powers Commissioner oversight (Court of Appeal judge)"
+      - "Annual report to the Bailiff"
+      - "Necessity + proportionality test"
+      - "Based on UK RIPA 2000; UK has moved to IPA 2016 but Jersey RIPL still in force"
+    expected_files:
+      - "jersey/civil-liberties/ripl-law-2005.md"
+    score:
+      2026-05-18-measured: pass  # ripl-001: all 8 expected facts surfaced; 2 files cited
+
+  # =====================================================
+  # REMAINING TOP-20 GAPS — Education, Consumer Safety, HSWL, Rented Dwellings
+  # =====================================================
+  - id: edu-001
+    persona: parent-family
+    asked_by: parent
+    question: "What's the compulsory school age in Jersey, and can the school exclude my child?"
+    expected_facts:
+      - "Education (Jersey) Law 1999 governs"
+      - "Compulsory school age: from first day of term containing 5th birthday until 30 June of year child turns 16"
+      - "Parental duty to ensure full-time education appropriate to age/ability/aptitude"
+      - "Exclusion: fixed-period or permanent"
+      - "Parents have right to be informed, make representations, appeal"
+      - "SEN provision under the EJL 1999"
+      - "Discrimination Law 2013 overlay"
+    expected_files:
+      - "jersey/education/education-law-1999.md"
+    score:
+      2026-05-18: pending
+
+  - id: cs-001
+    persona: jersey-resident
+    asked_by: consumer
+    question: "I bought a faulty product that's actually dangerous — what are my rights?"
+    expected_facts:
+      - "Two parallel routes: Consumer Safety (Jersey) Law 2006 (public-law) and Supply of Goods and Services (Jersey) Law 2009 (contractual)"
+      - "Trading Standards investigates and enforces CSL 2006"
+      - "General safety requirement: reasonably safe goods"
+      - "Recall, suspension notices, prosecution powers"
+      - "Civil claim under SGSL 2009 for refund/replacement/damages"
+      - "Both routes can run in parallel"
+    expected_files:
+      - "jersey/contract/consumer-safety-law-2006.md"
+      - "jersey/contract/sale-of-goods.md"
+    score:
+      2026-05-18: pending
+
+  - id: hsw-001
+    persona: employee-worker
+    asked_by: employee
+    question: "I'm worried about workplace safety. What does the law require my employer to do?"
+    expected_facts:
+      - "Health and Safety at Work (Jersey) Law 1989 governs"
+      - "Employer duty: ensure health, safety, welfare 'so far as is reasonably practicable'"
+      - "Specific duties: safe plant, systems, training, supervision, workplace, environment"
+      - "Health and Safety Inspectorate inspects, investigates, prosecutes"
+      - "Improvement notices and prohibition notices"
+      - "Whistleblower protection (HSWL + EJL 2003)"
+      - "Criminal offences with substantial fines and possible imprisonment"
+      - "Civil claims for negligence / breach of statutory duty available"
+    expected_files:
+      - "jersey/employment/health-and-safety-at-work-law-1989.md"
+    score:
+      2026-05-18: pending
+
+  - id: rd-001
+    persona: tenant-landlord
+    asked_by: tenant
+    question: "My landlord won't fix damp and mould in my flat. What can I do?"
+    expected_facts:
+      - "Two parallel routes: Residential Tenancy (Jersey) Law 2011 (contractual) and Public Health and Safety (Rented Dwellings) (Jersey) Law 2018 (public-law)"
+      - "Environmental Health investigates under PHSRD 2018; free route for tenants"
+      - "Improvement notices, prohibition notices, prosecution"
+      - "Civil set-off / specific performance / damages under RTJL"
+      - "Anti-retaliation provisions"
+    expected_files:
+      - "jersey/residential-tenancy/public-health-rented-dwellings-law-2018.md"
+      - "jersey/residential-tenancy/repairs-and-standards.md"
+    score:
+      2026-05-18: pending
 
   # =====================================================
   # WELFARE — Top-20 gaps #7, #8 (expected fail)
