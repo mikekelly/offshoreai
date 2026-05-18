@@ -426,6 +426,24 @@ summary:
       side" partial pattern the original
       show-trusts-comparison did.
 
+  2026-05-18-second-round:
+    total: 23      # 14 original + 6 cross-jurisdictional + 3 second-round
+    pass: 23
+    partial: 0
+    fail: 0
+    notes: |
+      Second-round questions exercising Cayman LLC + Guernsey
+      trust comparison + Image Rights Register all PASS.
+      Notable depth:
+      - show-cayman-llc: walked LLC vs Exempted Co vs ELP table;
+        check-the-box (Treasury Regulations § 301.7701) cited;
+        Delaware-LLC redomicile mechanics
+      - show-jersey-vs-guernsey-trusts: Article 9(4) vs s.14
+        distinction; Re S&T Trusts and progeny as Jersey's
+        case-law advantage; Guernsey captive-insurance depth
+      - show-image-rights: Ordinance 2012; personnage; sui
+        generis nature; foreign-court recognition limitation
+
   2026-05-18-scores-cross-jurisdictional:
     show-fund-routes: pass        # 7 files; investor caps + AUM + auth time + manager + marketing; clean decision matrix
     show-cell-companies: pass     # 4 files (all new); Guernsey ICC outlier identified; decision matrix
