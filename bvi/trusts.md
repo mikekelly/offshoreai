@@ -78,7 +78,7 @@ Under VISTA:
 - **No** "duty to intervene" obligation on trustee
   regarding the company's business.
 
-See [`vista-trusts.md`](vista-trusts.md) *(to be created)*.
+See [`vista-trusts.md`](vista-trusts.md) for the full VISTA regime — designated companies, office of director rules, trustee disengagement from management, comparison with Jersey and Cayman regimes.
 
 ### Why VISTA matters
 
