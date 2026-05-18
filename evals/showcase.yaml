@@ -336,6 +336,39 @@ questions:
         - Economic Substance Act compliance
 
   # ===========================================
+  # WORKED-EXAMPLE QUESTIONS (added 2026-05-18)
+  # Longer-form transactional walkthroughs threading
+  # multiple concepts — the canonical landing-page
+  # demonstration content.
+  # ===========================================
+  - id: show-worked-topco-listing
+    category: worked-example
+    question: "Walk me through setting up a Jersey TopCo above my UK operating business and listing it on the LSE. What's the structure step by step?"
+    showcase_bar:
+      substance:
+        - Jersey company incorporation under CJL 1991
+        - Share-for-share exchange with UK Opco
+        - UK rollover relief under TCGA s.135
+        - Zero-ten tax position for the TopCo
+        - Economic substance reduced test for holdcos
+        - Pillar Two via MCIT 2025 if in scope
+        - LSE listing rules + UK Takeover Code apply
+        - Jersey capital flexibility (no-par, multiple classes)
+
+  - id: show-worked-family-wealth
+    category: worked-example
+    question: "I'm advising an Italian-domiciled HNW family with assets across Europe, US, Switzerland, and the Caribbean. They want a Jersey trust structure that protects against forced heirship. How would you set this up?"
+    showcase_bar:
+      substance:
+        - Discretionary trust under TJL 1984
+        - Article 9 firewall vs Italian legittima
+        - Article 9A reserved powers
+        - Underlying holding company structure
+        - US blocker for US equity assets
+        - UK-resident beneficiary considerations
+        - CRS / FATCA / DAC6 / TRS reporting
+
+  # ===========================================
   # SECOND-ROUND DEPTH QUESTIONS (added 2026-05-18)
   # ===========================================
   - id: show-cayman-llc
