@@ -1,0 +1,325 @@
+# Showcase Questions — Offshore AI
+#
+# Curated set of ~14 questions designed for a landing-page
+# demonstration. The bar is HIGHER than the coverage eval:
+# an answer must be substantively right AND Jersey-specific
+# AND operationally useful (smart-friend voice) AND well-cited
+# AND tight enough to put on a public marketing page.
+#
+# Coverage-eval pass ≠ showcase-eval pass. Many current passes
+# may turn out to be showcase partials.
+#
+# Scoring dimensions:
+#   substance        — facts correct, no errors
+#   jersey-specific  — actually cites Jersey statutes/cases, not generic
+#   voice            — operational, useful, not recital
+#   citation         — multiple files cited, graph visibly used
+#   tightness        — 60-90 second read, no padding
+#
+# Overall verdict:
+#   pass     — all five dimensions adequate; would put on a landing page
+#   partial  — one or two dimensions weak; needs depth fill before launch
+#   fail     — three or more weak; gap exposed
+
+version: 1
+last_run: 2026-05-18
+notes: |
+  First showcase-eval run. The audit-driven coverage eval
+  reached 26/26 PASS; this run tests against a higher bar
+  designed to mirror what would actually appear on a landing
+  page demonstrating the corpus's range and depth.
+
+questions:
+
+  # ===========================================
+  # DEPTH ON OFFSHORE-FINANCE SPECIALISM
+  # ===========================================
+  - id: show-trusts-firewall
+    category: depth-offshore
+    question: "How does the Article 9 trust firewall work when foreign forced-heirship is in play?"
+    showcase_bar:
+      substance:
+        - Article 9 TJL 1984 governs proper-law, validity, capacity, beneficiary rights
+        - Foreign forced-heirship rules not applied by Jersey court
+        - Article 9 is mandatory choice-of-law for Jersey trusts
+        - Royal Court anti-suit injunctions to protect Jersey trusts
+        - Practical effect: cannot use foreign succession rules to attack Jersey trust
+      jersey_specific:
+        - TJL 1984 specifically cited
+        - Article 9 specifically named
+        - Jersey case law cited if possible (e.g. cases involving foreign succession claims)
+      voice: "Should sound like a Jersey trust litigator explaining to a foreign lawyer"
+
+  - id: show-article-47
+    category: depth-offshore
+    question: "What's the Article 47B procedure to set aside a trustee decision for mistake — and how is Jersey wider than Pitt v Holt?"
+    showcase_bar:
+      substance:
+        - Article 47B-J of TJL 1984
+        - Statutory mistake regime (wider than English common law)
+        - Three-limb S&T Trusts test
+        - Wide definition of mistake under Article 47B (manner of mistake irrelevant)
+        - Jersey rejects Pitt v Holt distinction between mistake and inadequate deliberation
+        - Royal Court Representation procedure
+      jersey_specific:
+        - "Re S&T Trusts [2015] JRC259" cited
+        - Article 47G specifically (for fiduciary-power exercise)
+        - Contrast with Pitt v Holt; Futter v Futter [2013] UKSC 26
+      voice: "Should sound like a Jersey trust litigator addressing a sophisticated reader"
+
+  - id: show-jpf-vs-expert
+    category: depth-offshore
+    question: "I want to launch a club-deal PE fund through Jersey. JPF or Expert Fund?"
+    showcase_bar:
+      substance:
+        - JPF: ≤50 investors, DSP delegation, 48-hour authorisation
+        - Expert Fund: expert-investor qualification, more detailed offering doc, no investor cap
+        - Decision turns on: investor count, regulatory burden tolerance, marketing reach
+        - DSP responsibilities for JPFs
+      jersey_specific:
+        - Both regimes Jersey-specific
+        - JFSC named as regulator
+        - Reference to Designated Service Provider model
+      voice: "Should sound like fund counsel advising a sponsor making a structuring choice"
+
+  # ===========================================
+  # CROSS-JURISDICTIONAL SOPHISTICATION
+  # ===========================================
+  - id: show-trusts-comparison
+    category: cross-jurisdictional
+    question: "Jersey trust vs Cayman STAR vs BVI VISTA — when do I use which?"
+    showcase_bar:
+      substance:
+        - Jersey trust: classic discretionary; firewall via Article 9; broad reserved-powers (Article 9A)
+        - Cayman STAR: purpose-trust regime; enforcer-based; specific use cases
+        - BVI VISTA: trust designed to hold company shares; share-ownership exception
+        - Comparative reasons to choose each (asset type, purpose, control retention)
+      jersey_specific:
+        - Article 9 / 9A specifically
+        - Reference to TJL 1984
+      voice: "Should sound like cross-border trust counsel"
+
+  - id: show-aifmd-nppr
+    category: cross-jurisdictional
+    question: "My Jersey AIF wants to market into Germany. What's the AIFMD NPPR route?"
+    showcase_bar:
+      substance:
+        - AIFMD National Private Placement Regime
+        - Host-state notification to BaFin
+        - Specific AIFMD Article 42 conditions (Article 21 reporting, etc.)
+        - Jersey side: AIFM compliance with Jersey AIFM Regulations 2012
+        - No EU passport — country-by-country
+      jersey_specific:
+        - Jersey AIFM Regulations 2012 named
+        - JFSC role in NPPR
+      voice: "Should sound like fund counsel guiding marketing strategy"
+
+  - id: show-pillar-two
+    category: cross-jurisdictional
+    question: "Pillar Two — how does it apply to a Jersey TopCo above a UK operating business?"
+    showcase_bar:
+      substance:
+        - 15% minimum effective tax rate via MCIT
+        - Multinational Corporate Income Tax (Jersey) Law 2025
+        - QDMTT (Qualified Domestic Minimum Top-up Tax) in Jersey
+        - Interaction with UK Pillar Two implementation
+        - Group consolidation tests
+      jersey_specific:
+        - MCIT Law 2025 specifically
+        - Pillar Two in Jersey context, not generic OECD
+      voice: "Should sound like an international tax advisor"
+
+  # ===========================================
+  # BREADTH INTO RESIDENT-FACING LAW
+  # ===========================================
+  - id: show-eviction
+    category: breadth-resident
+    question: "My tenant won't pay rent — can I evict them in Jersey?"
+    showcase_bar:
+      substance:
+        - 7-day breach notice required first
+        - Petty Debts Court has exclusive jurisdiction
+        - Viscount enforces
+        - 2-4 month timeline, stays of execution
+        - Self-help unlawful (criminal offence)
+        - Tenant defences (set-off, discrimination, vulnerability)
+      jersey_specific:
+        - RTJL 2011
+        - 2025 amendment in force from 15 April 2026
+        - Petty Debts Court / Viscount Jersey-specific
+      voice: "Smart-friend tone; landlord-facing"
+
+  - id: show-arrest
+    category: breadth-resident
+    question: "I've been arrested in Jersey. What are my rights?"
+    showcase_bar:
+      substance:
+        - PPCE 2003 + Codes of Practice
+        - Free legal advice 24/7
+        - 24h initial detention; 36h by inspector; 96h by Royal Court warrant
+        - Right to silence; caution wording
+        - Right to inform someone of arrest
+        - Custody record
+      jersey_specific:
+        - Distinctive Jersey forum (Magistrate's, Royal Court)
+        - States Police + Honorary Police context
+      voice: "Practical, not theoretical; what to do tomorrow morning"
+
+  - id: show-planning
+    category: breadth-resident
+    question: "Do I need planning permission for a rear extension on my Jersey house?"
+    showcase_bar:
+      substance:
+        - PBL 2002
+        - GD Order 2011 permitted-development
+        - Two parallel consents: planning + building approval
+        - Most extensions need application
+        - Conservation areas / listed buildings narrower
+      jersey_specific:
+        - Specific Jersey statute / GD Order
+        - Department for Environment named
+      voice: "Operationally useful homeowner-facing"
+
+  # ===========================================
+  # TIMELY AWARENESS OF RECENT CHANGE
+  # ===========================================
+  - id: show-tenancy-2025
+    category: timely
+    question: "What changed for Jersey residential tenancies on 15 April 2026?"
+    showcase_bar:
+      substance:
+        - Residential Tenancy (Jersey) Amendment Law 2025 in force 15 April 2026
+        - Fixed-term tenancies capped at 3 years; no successive fixed terms
+        - Tenant exit on 1 month notice on any tenancy
+        - Landlord no-fault notice now 12 months (not 3)
+        - Rent increases capped at RPI, once per year, 2 months notice
+        - Rent Tribunal established
+        - Transitional rules for pre-existing tenancies
+      jersey_specific:
+        - 2025 Amendment Law specifically
+        - 15 April 2026 specifically
+      voice: "Awareness of recent reform; should not present pre-amendment law"
+
+  - id: show-drug-driving
+    category: timely
+    question: "Drug-driving in Jersey — what are the rules today, and what's coming?"
+    showcase_bar:
+      substance:
+        - Current: impairment-only regime, no statutory drug limits
+        - Substantive offence under RTJL 1956
+        - Police impairment evidence + blood/urine drug presence
+        - February 2026 reform proposal: statutory limits + roadside drug tests
+        - Reform not yet enacted
+      jersey_specific:
+        - Jersey-specific reform timing
+      voice: "Clear distinction between current law and pending reform"
+
+  # ===========================================
+  # DISTINCTIVE JERSEY CONCEPTS
+  # ===========================================
+  - id: show-parish-hall
+    category: distinctive
+    question: "What's a Parish Hall Enquiry and when does my case go there?"
+    showcase_bar:
+      substance:
+        - Pre-court forum run by Centenier (honorary police)
+        - Up to £200 fine maximum
+        - Centenier can issue caution, fine, or refer to court
+        - Defendant can always opt out to Magistrate's Court
+        - Schedule of offences treatable at Parish Hall (most minor motoring etc.)
+        - 15 mph speeding excess / drink-driving / dangerous driving cannot be Parish Hall
+      jersey_specific:
+        - Centenier role specifically — unique to Jersey/Guernsey
+        - Honorary Police context
+        - Schedule of offences cite to Law Officers' Department
+      voice: "Should sound informed and Jersey-grounded"
+
+  - id: show-voisinage
+    category: distinctive
+    question: "What's voisinage and does it really apply to my neighbour problem?"
+    showcase_bar:
+      substance:
+        - Norman customary doctrine of good neighbourhood
+        - Pothier / Le Geyt foundation
+        - Cause of action distinct from English nuisance
+        - Objective test of unreasonable harm
+        - Royal Court jurisdiction
+      jersey_specific:
+        - Pothier, Le Geyt cited
+        - Norman customary law context
+        - Distinctive to Jersey (and Guernsey)
+      voice: "Sound like a Jersey advocate explaining customary-law roots"
+
+  - id: show-friday-passing
+    category: distinctive
+    question: "Why does my Jersey property transfer happen on a Friday afternoon in court?"
+    showcase_bar:
+      substance:
+        - Real-property transfers passed in the Royal Court
+        - Friday afternoon hearings as historical practice
+        - Two Jurats witness
+        - Contract héréditaire form
+        - Public registry registration follows
+        - Foreign lawyers find this unusual
+      jersey_specific:
+        - Royal Court passing distinctive (no UK equivalent)
+        - Jurats role
+        - Contrat héréditaire terminology
+      voice: "Should explain Jersey distinctiveness to non-Jersey reader"
+
+summary:
+  2026-05-18:
+    total: 14
+    pass: 13
+    partial: 1
+    fail: 0
+    notes: |
+      All 14 showcase questions measured via fresh Explore
+      subagents. 13 pass at showcase-quality bar (substance +
+      Jersey-specificity + operational voice + citation density
+      + tightness). 1 partial: show-trusts-comparison flagged
+      a missing BVI VISTA dedicated file — Jersey and Cayman
+      sides cited 4 files each but BVI side relied on the
+      overview only.
+
+      Notable depth observations:
+
+      - show-article-47 retrieved Re S&T Trusts [2015] JRC259
+        case citation, the three-limb test, Article 47G
+        specifically, and the explicit rejection of Pitt v
+        Holt's distinction
+      - show-pillar-two cited the MCIT Law effective 1 Jan
+        2025, the EUR 750m threshold, and the QDMTT framing
+      - show-aifmd-nppr cited AIFMD Article 42 and §330 KAGB
+        by section number
+      - show-voisinage went beyond rubric to identify the
+        objective-test/strict-liability distinction from
+        English nuisance and the 1204 Duchy of Normandy split
+      - show-friday-passing cited 8 files — the densest
+        citation of any answer
+      - Several answers used operational "smart-friend" voice
+        successfully (eviction, arrest), demonstrating the
+        graph supports landing-page style answers
+
+      Depth gap exposed for next-round fill:
+      - jersey/../bvi/vista-trusts.md needs to be written
+        (BVI directory only has it as a TBD reference)
+      - Adjacent jurisdictions generally remain thin (~11
+        files each); cross-jurisdictional comparisons will
+        keep exposing this until built out
+
+  scores_by_question:
+    show-trusts-firewall: pass     # 6 files cited; Article 9 paragraphs and Article 9(4) on foreign judgments; Article 51 directions
+    show-article-47: pass          # Re S&T Trusts [2015] JRC259 cited; three-limb test; explicit Pitt v Holt rejection
+    show-jpf-vs-expert: pass       # 4 files; DSP model; 48-hour authorisation; 50-investor cap; decision framework
+    show-trusts-comparison: partial # BVI VISTA file flagged as missing by the runner itself; Jersey and Cayman sides good
+    show-aifmd-nppr: pass          # AIFMD Article 42 and §330 KAGB by section number
+    show-pillar-two: pass          # MCIT effective 1 Jan 2025; QDMTT-equivalent; EUR 750m threshold; UK interaction
+    show-eviction: pass            # operational voice; 6 files; 2025 amendment current
+    show-arrest: pass              # 4 files; 24/36/96-hour detention progression; Honorary Police context
+    show-planning: pass            # 6 files; permitted-development thresholds; conservation overlay; criminal sanctions
+    show-tenancy-2025: pass        # all material changes; in-force date called out; transitional rules
+    show-drug-driving: pass        # current law / pending reform distinction; Feb 2026 reform timing
+    show-parish-hall: pass         # Centenier's mixed prosecutorial/adjudicative role; 15 mph threshold; opt-out right
+    show-voisinage: pass           # 4 files; 1204 Normandy split; Le Geyt + Pothier; objective-test distinction from English nuisance
+    show-friday-passing: pass      # 8 files; Samedi Division; chain-of-passations title system; civil-law heritage
