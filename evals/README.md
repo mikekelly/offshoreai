@@ -17,33 +17,108 @@ regressions when content changes.
   the tracked test set. Each entry is a question, the
   persona that asks it, the expected answer characteristics
   (what facts should appear, what files should be cited),
-  and the current scoring.
+  and the scoring history.
+
+## How the runner works
+
+The runner is **Claude's own Agent tool** — there's no
+separate Python harness. Each question in the YAML is
+executed by spawning a fresh **Explore subagent** with the
+following constraints:
+
+1. **No prior context** — fresh agent invocation per question
+   (no cache from the writing or grading agents).
+2. **Tools restricted to read-only filesystem access** —
+   the Explore subagent type provides `Read`, `Glob`,
+   `Grep`, `Bash` (for searches), but explicitly excludes
+   `Write` and `Edit`.
+3. **Working directory fixed** to the Jersey corpus root.
+4. **Prompt instructs** the agent to use *only* corpus
+   files, cite every file it reads, and explicitly say
+   "the corpus does not answer this question" if it can't —
+   no confabulation from training data.
+
+The orchestrator agent then **grades** each answer against
+the YAML's `expected_facts` and `expected_files`. Grading
+is the only step still done by the orchestrator
+introspectively; an LLM-as-judge grader is the planned
+next layer.
+
+### Why subagents instead of a Python SDK harness
+
+The Agent tool gives us everything a Python harness would:
+
+- Fresh context per invocation (no prior-knowledge leakage);
+- Tool restrictions enforced at the subagent boundary;
+- Parallel execution (multiple Agent calls in a single
+  message run concurrently);
+- Token-cost tracking on each subagent return;
+- The same model and tool stack the user actually uses.
+
+It costs more tokens than a bare API call but gives a
+realistic measure of what an agent over this corpus
+actually produces — which is what we care about.
 
 ## How to run
 
-This is **not yet a programmatic harness** — it's a tracked
-question set that an agent can answer against the corpus.
-The intended workflow:
+Manually, until automated:
 
-1. Periodically (e.g. weekly), point an agent at the
-   `jersey/` corpus only and ask each question;
-2. Compare the agent's answer to the expected characteristics;
-3. Score each question:
-   - **Pass** — the agent's answer covers the expected
-     facts and cites the right files;
-   - **Partial** — some expected facts present, others
-     missing;
-   - **Fail** — the agent cannot answer, or the answer is
-     materially wrong;
-4. Update `coverage-questions.yaml` with the date and
-   score;
-5. Track trend over time — passes should rise as gaps are
-   filled; new failures indicate either new gaps or
-   regressions.
+1. Pick a batch of questions from `coverage-questions.yaml`
+   (8-10 in parallel is a comfortable batch size).
+2. For each, spawn an `Explore` agent with a
+   self-contained prompt — see existing eval runs in git
+   history for the template.
+3. Collect responses; grade each against `expected_facts`
+   and `expected_files`.
+4. Update the YAML, adding a dated `*-measured` line under
+   each `score:` block — keep the old self-graded scores
+   too for history.
+5. Update the `summary:` block.
+6. Commit.
 
-A programmatic harness is a planned follow-up: scripted
-agent invocation, automated grading by a stronger model
-checking for the expected facts, dashboards over time.
+### Scoring
+
+| Score | Meaning |
+|---|---|
+| **pass** | ≥ 80% of expected facts covered, expected files cited (or strong equivalents) |
+| **partial** | 30-80% of facts covered, or right files but incomplete facts |
+| **fail** | < 30% of facts covered, agent can't answer, or answer materially wrong |
+
+A **fail** on a gap-question (e.g. `rt-rd-001` speeding,
+when road traffic isn't built) where the agent correctly
+refuses to confabulate is still a fail — but it's the
+"good fail" we want. Honest gap-recognition is part of
+the eval. The bad failure mode would be an agent
+confabulating an answer to a question the corpus doesn't
+support.
+
+## Scoring history
+
+- **v1** (2026-05-18, self-graded): baseline after
+  residential-tenancy build.
+- **v2** (2026-05-18, self-graded): updated after
+  family-law build. Risk: self-grading by the same agent
+  that wrote the content under test is circular.
+- **v3** (2026-05-18, externally measured): 8/17 questions
+  run via the Agent-tool runner. All 8 measured outcomes
+  match v2 predictions, so the family-law and
+  residential-tenancy gap-fills hold up under measurement.
+
+## Planned improvements
+
+- **Complete the full run** — measure the remaining 9
+  questions.
+- **LLM-as-judge grader** — separate grader subagent so
+  the orchestrator stops doing introspective grading.
+- **Trajectory capture** — record exactly which files
+  each runner read, not just the ones it ultimately
+  cited.
+- **Cost tracking** — log tokens per question and trend
+  over time.
+- **Diff reports** — when a question's score changes,
+  show old vs new answer side-by-side.
+- **Pre-commit hook** — re-run a small smoke subset of
+  the eval on any commit to `jersey/`.
 
 ## Question sources
 
@@ -59,20 +134,11 @@ Questions are drawn from:
   [`parent-family`](../jersey/use-cases/parent-family/),
   [`employee-worker`](../jersey/use-cases/employee-worker/));
 - **Existing professional personas** (trust officer, MLRO,
-  etc.) — sanity check that filling resident-facing gaps
-  doesn't regress the original coverage;
+  fund counsel) — sanity check that filling resident-facing
+  gaps doesn't regress the original coverage;
 - **The trigger question** that prompted the audit
-  ("non-paying tenant eviction") — this should now be a
-  clean pass.
-
-## Scoring conventions
-
-- **Pass**: answer covers ≥ 80% of expected facts and
-  cites the right files;
-- **Partial**: 30–80% coverage, or right files cited but
-  facts incomplete;
-- **Fail**: < 30% coverage, can't answer, or materially
-  wrong.
+  ("non-paying tenant eviction") — measured as a clean
+  pass in v3.
 
 ## Not yet covered
 

@@ -12,14 +12,18 @@
 #
 # Last full run: 2026-05-18 (initial baseline)
 
-version: 2
+version: 3
 last_run: 2026-05-18
 notes: |
-  v1 baseline (2026-05-18): residential-tenancy section built;
-  5 RT questions converted to passes plus the trigger gap.
-  v2 (same day): family law section built (Matrimonial Causes
-  1949 and Children Law 2002); fa-001 and fa-002 converted to
-  passes. Remaining fails track the rest of the top-20 audit.
+  v1 (2026-05-18): self-graded baseline after residential-tenancy build.
+  v2 (2026-05-18): self-graded after family-law build.
+  v3 (2026-05-18): FIRST MEASURED RUN using the Agent-tool runner —
+  see README.md for methodology. 8 of 17 questions scored against
+  fresh Explore subagents constrained to read-only access on the
+  jersey/ corpus only. All 8 measured outcomes matched v2 predictions:
+  6 pass, 2 fail. The 9 not-yet-measured questions retain their v2
+  self-graded scores (annotated below). Run the remaining 9 to
+  complete full external measurement.
 
 questions:
 
@@ -43,7 +47,8 @@ questions:
       - "jersey/residential-tenancy/eviction-procedure.md"
       - "jersey/use-cases/tenant-landlord/evicting-non-paying-tenant.md"
     score:
-      2026-05-18: pass  # this was the trigger gap; section now built
+      2026-05-18: pass  # v1/v2 self-graded
+      2026-05-18-measured: pass  # v3 Agent-tool runner: 7/7 facts, 3/3 files
 
   # =====================================================
   # RESIDENTIAL TENANCY (built 2026-05-18)
@@ -63,6 +68,7 @@ questions:
       - "jersey/use-cases/tenant-landlord/checking-notice-validity.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts; cited 2/3 expected files plus equivalents (eviction-procedure.md, grounds-for-termination.md)
 
   - id: rt-003
     persona: tenant-landlord
@@ -108,6 +114,7 @@ questions:
       - "jersey/residential-tenancy/lodging-houses-vs-tenancy.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts, expected file cited + extras
 
   # =====================================================
   # ROAD TRAFFIC — Top-20 gap #2 (expected fail)
@@ -125,6 +132,7 @@ questions:
       - "jersey/road-traffic/*"  # not yet built
     score:
       2026-05-18: fail
+      2026-05-18-measured: fail  # v3 Agent-tool runner: correctly refused to confabulate; cited COVERAGE-AUDIT.md and pointed to the gap
 
   - id: rt-rd-002
     persona: driver-motorist
@@ -155,6 +163,7 @@ questions:
       - "jersey/planning/*"  # not yet built
     score:
       2026-05-18: fail
+      2026-05-18-measured: fail  # v3 Agent-tool runner: correctly refused to confabulate; cited COVERAGE-AUDIT.md
 
   # =====================================================
   # FAMILY/MATRIMONIAL — Top-20 gaps #4, #5 (expected fail)
@@ -179,6 +188,7 @@ questions:
       - "jersey/use-cases/parent-family/getting-divorced.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: 7/7 facts, all 5 expected files cited + jurisdiction-and-foreign-orders.md
 
   - id: fa-002
     persona: parent-family
@@ -200,6 +210,7 @@ questions:
       - "jersey/use-cases/parent-family/social-services-investigation.md"
     score:
       2026-05-18: pass
+      2026-05-18-measured: pass  # v3 Agent-tool runner: 8/8 facts; cited 3/4 expected + jfcas-and-mediation.md + royal-court-family-division.md
 
   - id: fa-003
     persona: parent-family
@@ -287,6 +298,7 @@ questions:
       - "jersey/trusts/tjl-article-47*.md"
     score:
       2026-05-18: pass  # original coverage intact
+      2026-05-18-measured: pass  # v3 Agent-tool runner: better than expected — agent correctly identified Article 47G (not just 47B-J), 3-limb S&T Trusts test, divergence from Pitt v Holt. Sanity check confirms original content not regressed.
 
   - id: sn-002
     persona: compliance-mlro
@@ -329,10 +341,34 @@ summary:
     fail: 5        # road traffic (rt-rd-001, rt-rd-002), planning (pl-001),
                    # welfare (we-001), criminal procedure (cr-001)
     notes: |
-      v2: family-law gap-fill (Matrimonial Causes 1949 +
-      Children Law 2002 + topic articles + 2 persona Q&A
-      files) converts fa-001 and fa-002 to passes and adds
-      fa-003 and fa-004 to the test set. Remaining fails are
-      road traffic, planning, welfare, and PPCE criminal
-      procedure — the next gap-fill targets. Sanity-check
-      questions on the professional personas all still pass.
+      v2 (self-graded): family-law gap-fill converts fa-001
+      and fa-002 to passes and adds fa-003/fa-004. Remaining
+      fails are road traffic, planning, welfare, and PPCE.
+
+  2026-05-18-measured:
+    total: 8       # representative sample run via Agent-tool runner
+    pass: 6        # rt-001, rt-002, fa-001, fa-002, sn-001, rt-005
+    partial: 0
+    fail: 2        # rt-rd-001 (road traffic gap), pl-001 (planning gap)
+    not_yet_measured: 9
+    notes: |
+      v3 FIRST EXTERNALLY MEASURED RUN — 8 of 17 questions
+      executed by fresh Explore subagents constrained to
+      filesystem reads on the jersey/ corpus only. All 8
+      measured outcomes match v2 self-graded predictions.
+      Critically, the 2 failure cases (rt-rd-001 speeding,
+      pl-001 planning extension) both correctly refused to
+      confabulate from training data and cited COVERAGE-AUDIT.md
+      as the gap-tracking record. The sanity-check question
+      (sn-001, Article 47 trust set-aside) returned a
+      substantively better answer than expected — agent
+      identified Article 47G as the specific operative
+      provision, the 3-limb S&T Trusts test, and divergence
+      from Pitt v Holt — confirming the original offshore-
+      finance content has not been regressed by the
+      resident-facing gap-fills.
+
+      Next steps: run remaining 9 questions (rt-003, rt-004,
+      fa-003, fa-004, rt-rd-002, we-001, cr-001, sn-002,
+      sn-003) to convert the full eval to externally-measured
+      scores.
