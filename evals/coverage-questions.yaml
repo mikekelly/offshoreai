@@ -392,7 +392,7 @@ questions:
     expected_files:
       - "jersey/education/education-law-1999.md"
     score:
-      2026-05-18: pending
+      2026-05-18-measured: pass  # edu-001: all 7 facts surfaced; cited the education-law file plus the discrimination overlay (DL 2013) file
 
   - id: cs-001
     persona: jersey-resident
@@ -409,7 +409,7 @@ questions:
       - "jersey/contract/consumer-safety-law-2006.md"
       - "jersey/contract/sale-of-goods.md"
     score:
-      2026-05-18: pending
+      2026-05-18-measured: pass  # cs-001: all 6 facts surfaced; cited 5 files (CSL 2006, sale-of-goods, services-contracts, damages, delit-tort) — agent reached for tort + damages routes I hadn't anticipated
 
   - id: hsw-001
     persona: employee-worker
@@ -427,7 +427,7 @@ questions:
     expected_files:
       - "jersey/employment/health-and-safety-at-work-law-1989.md"
     score:
-      2026-05-18: pending
+      2026-05-18-measured: pass  # hsw-001: all 8 facts surfaced + EJL 2003 unfair-dismissal-for-whistleblowing specific overlay; cited HSWL plus 3 EJL files (el-part-6, el-article-64, el-article-96)
 
   - id: rd-001
     persona: tenant-landlord
@@ -443,7 +443,7 @@ questions:
       - "jersey/residential-tenancy/public-health-rented-dwellings-law-2018.md"
       - "jersey/residential-tenancy/repairs-and-standards.md"
     score:
-      2026-05-18: pending
+      2026-05-18-measured: pass  # rd-001: all 5 facts surfaced including anti-retaliation; cited 5 files weaving across contractual and public-law routes
 
   # =====================================================
   # WELFARE — Top-20 gaps #7, #8 (expected fail)
@@ -574,9 +574,50 @@ summary:
 
   2026-05-18-measured-postfill:
     total: 17
-    pass: 17       # ALL questions now pass
+    pass: 17       # all original 17 questions pass
     partial: 0
     fail: 0
+
+  2026-05-18-full-top-20:
+    total: 26     # 17 baseline + 9 new (cap-001, mh-001, civ-001, foi-001, ripl-001, edu-001, cs-001, hsw-001, rd-001)
+    pass: 26
+    partial: 0
+    fail: 0
+    notes: |
+      All 26 eval questions externally measured PASS via the
+      Agent-tool runner. Covers every top-20 audit gap.
+
+      Sections built this session:
+        1. Residential Tenancy (audit #1)
+        2. Family Law — Matrimonial + Children (audit #4-5)
+        3. Road Traffic (audit #2)
+        4. Planning (audit #3)
+        5. Welfare — IS + SS (audit #7-8)
+        6. Criminal Procedure / PPCE (audit #10)
+        7. Mental Health + Capacity (audit #11-12)
+        8. Petty Debts Court (audit #17)
+        9. Civil Liberties — FOI + RIPL (audit #18-19)
+       10. Education + Consumer Safety + HSWL + Rented
+           Dwellings (audit #14-16, #20)
+
+      Audit gaps remaining: #13 (Marriage and Civil Status
+      2001) was already addressed in family/civil-partnerships-
+      and-same-sex.md. The audit's top-20 is effectively closed.
+
+      The audit-driven loop (audit → identify gap → build →
+      measure → score) has now run 10 iterations across the
+      session. Every conversion was externally measured by
+      fresh Explore subagents constrained to filesystem reads
+      on the jersey/ corpus only. Every "fail" result was an
+      honest "corpus does not answer" with audit references —
+      no confabulation observed at any point.
+
+      Several agents surfaced content richer than the rubric
+      anticipated (cs-001 found tort/damages routes; hsw-001
+      found EJL unfair-dismissal-for-whistleblowing overlay;
+      edu-001 found DL 2013 discrimination overlay) —
+      indicating the cross-reference graph is functioning
+      well beyond the expected_facts narrowly defined.
     notes: |
       Six gap-fill iterations completed in single session
       (residential tenancy → family law → road traffic → planning
