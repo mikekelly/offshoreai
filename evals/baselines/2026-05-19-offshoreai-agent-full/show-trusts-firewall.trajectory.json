@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-trusts-firewall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T11:22:47.527Z",
+  "wallClockSeconds": 39.008,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"firewall\",\"forced-heirship\"],\"mode\":\"and\"}",
+      "inputBytes": 52,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getArticle",
+      "rawName": "mcp__corpus__getArticle",
+      "inputDigest": "{\"statute\":\"trusts-law-1984\",\"article\":\"9\"}",
+      "inputBytes": 43,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 1640,
+    "cacheReadTokens": 52973,
+    "cacheWriteTokens": 57205,
+    "totalCostUsd": 0.42505275
+  },
+  "answer": {
+    "text": "## The Article 9 firewall vs. foreign forced heirship\n\nArticle 9 of the **Trusts (Jersey) Law 1984** is Jersey's choice-of-law \"firewall.\" It tells the Royal Court to decide questions about a Jersey trust — validity, settlor capacity, interpretation, administration, trustees' powers, and beneficial rights — **solely under Jersey law**, and instructs the Court to disregard any rule of foreign law (Article 9(1)) (`jersey/trusts/firewall.md`).\n\nThe mechanics that bite on forced heirship specifically:\n\n- **Article 9(2)** — the Court decides the question **without considering** whether foreign law refuses to recognise trusts or whether the trust \"avoids or defeats\" rights conferred by foreign law. So a French *réserve héréditaire* claim or a German *Pflichtteilsergänzung* clawback against a lifetime transfer into a Jersey trust gets no traction in Jersey.\n- **Article 9(4)** — foreign judgments inconsistent with Article 9 are **unenforceable in Jersey**. A forced-heirship judgment from the civilian forum cannot be enforced against trust assets in Jersey.\n- **Article 9(3A)** — Jersey conflict-of-laws rules (other than Article 9 itself) do not apply, blocking a *renvoi* argument back to the foreign succession law.\n- **Article 9(3)** — Jersey's own *légitime* (customary forced heirship for spouse/children of the movable estate) still applies if the **settlor was Jersey-domiciled**. The firewall doesn't let a Jersey domiciliary escape Jersey legitime by settling a Jersey trust.\n\n**Important savings (Article 9(2A))**: the firewall does **not** validate a disposition where the settlor never had ownership/power to dispose, does not override foreign rules on the formalities of property transfer (so non-Jersey real estate is still governed by the *lex situs* on transfer), and does not cure a will that is invalid under the testator's domicile.\n\n**Practical limits** the corpus flags:\n\n1. The firewall binds the Royal Court and Jersey-located assets; a foreign court may still act **in personam** against a beneficiary resident in that forum, or against trust assets physically located abroad.\n2. Drafting that re-imports the foreign succession regime (e.g., \"trustee to distribute according to the laws of settlor's home jurisdiction\") can undercut the firewall by the back door — express choice of Jersey law as the proper law (engaging Article 4) is the baseline.\n3. A trust that fails the Article 2 existence test (a sham) is not protected — Article 9 protects a trust from foreign-law attack, not non-trusts.\n4. Article 9A on reserved powers complements the firewall — it neutralises *donner et retenir ne vaut* and substance-over-form attacks that would otherwise pair with forced-heirship arguments against reserved-powers settlors.\n\n### Caveats\n\n- The corpus file I'm citing (`jersey/trusts/firewall.md`) is marked **`draft`** — the content has been written up but not editorially verified against the consolidated statute. Confirm wording against the live text on [jerseylaw.je](https://www.jerseylaw.je/laws/current/l_11_1984) before relying on any specific subparagraph.\n- The current Article 9 derives from the **Trusts (Amendment No. 4) (Jersey) Law 2006**; older deeds and case-law may turn on a thinner pre-2006 firewall.\n\n### Sources cited\n\n1. `jersey/trusts/firewall.md` — Article 9 of the Trusts (Jersey) Law 1984 (status: draft; last verified 2026-05-14)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 518
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

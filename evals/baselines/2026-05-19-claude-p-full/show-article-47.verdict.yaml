@@ -1,0 +1,21 @@
+questionId: show-article-47
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. Every expected fact is present and correct, with precise Jersey
+  statutory citations (Articles 47B, 47E, 47G), the S&T Trusts three-limb test,
+  the 'manner irrelevant' divergence from Pitt v Holt, and the Royal Court
+  Representation procedure. Both corpus files verified — zero hallucinated
+  citations. The voice is convincingly that of a Jersey trust litigator
+  (pleading discipline, ab initio, Samedi Division, contemporaneous-evidence
+  emphasis). Efficient four-call trajectory with no redundancy.

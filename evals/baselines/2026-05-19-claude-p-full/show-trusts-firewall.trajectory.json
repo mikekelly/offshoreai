@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-trusts-firewall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T11:22:58.998Z",
+  "wallClockSeconds": 45.418,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"article 9\\\\|firewall\\\\|forced-heirship\\\\|forced heirship\\\" 2>/dev/null | head -30\",\"description\":\"Find files about Article 9 firewal",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/trusts/firewall.md\"}",
+      "inputBytes": 109,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"forced-heirship\\\\|forced heirship\\\\|légitime\\\\|legitime\\\\|réserve\\\" 2>/dev/null | head -20\",\"description\":\"Find files specifically o",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 2533,
+    "cacheReadTokens": 139733,
+    "cacheWriteTokens": 28020,
+    "totalCostUsd": 0.3083615
+  },
+  "answer": {
+    "text": "## How Article 9 of the Trusts (Jersey) Law 1984 — the firewall — works against foreign forced-heirship\n\nArticle 9 is Jersey's choice-of-law rule for trusts and the structural defence against cross-border attacks on a Jersey trust. Its operative mechanics, applied to a forced-heirship scenario, are as follows.\n\n### The headline rule (Article 9(1))\n\nAny question concerning the **validity** of the trust (and of any disposition of property into it), its **interpretation**, the **capacity of the settlor**, the **administration** of the trust, the **powers** of the trustees, **foreign-court variation orders**, and the **beneficial rights** under the trust is determined exclusively by Jersey law — \"no rule of foreign law shall affect such question\" (jersey/trusts/firewall.md).\n\n### The express disregard of foreign forced-heirship (Article 9(2))\n\nThis is the heart of the firewall. The Royal Court determines those Article 9(1) questions **without considering** whether (a) the foreign law prohibits or fails to recognise trusts, or (b) the trust avoids or defeats rights, claims, or interests conferred by any foreign law. So even where a civil-law jurisdiction (e.g. France's *réserve héréditaire*, Italy's analogue, Germany's *Pflichtteilsergänzung*) would treat a lifetime transfer into the Jersey trust as a fraudulent disposition clawable into the deceased's notional estate, the Royal Court will not give effect to that foreign view (jersey/trusts/firewall.md).\n\n### Jersey conflict-of-laws excluded; no *renvoi* (Article 9(3A))\n\nJersey's other conflict-of-laws rules do not apply to Article 9 questions, so a defendant cannot argue that Jersey choice-of-law sends the question back to the foreign succession law. Article 9 is self-contained (jersey/trusts/firewall.md).\n\n### Foreign judgments unenforceable in Jersey (Article 9(4))\n\nIf a foreign court rules — typically at the suit of disinherited heirs — that the transfer into the Jersey trust is invalid or that trust assets must be returned to the deceased's estate, that judgment is **unenforceable in Jersey** to the extent it conflicts with Article 9. This is the strong-form firewall (jersey/trusts/firewall.md).\n\n### *Donner et retenir ne vaut* disapplied (Article 9(6), referenced in firewall.md)\n\nThe Jersey customary rule that one cannot give while retaining control is disapplied inside the trust context, which complements the firewall and Article 9A's reserved-powers safe harbour — relevant because forced-heirship attacks are often paired with substance-over-form claims that the settlor never really parted with the assets (jersey/trusts/firewall.md).\n\n### Carve-outs (Article 9(2A) and 9(3))\n\nThe firewall does **not**:\n- validate a disposition where the settlor had no ownership or no power to dispose;\n- override foreign laws on ownership or the formalities of property transfer (e.g. real-estate transfer rules in the *situs* jurisdiction); or\n- validate a testamentary disposition that is invalid under the testator's domicile law.\n\nAnd Article 9(3) preserves Jersey's own *légitime* (customary forced-heirship) where the settlor is **Jersey-domiciled** — a Jersey-domiciled settlor cannot use a Jersey trust to escape Jersey forced-heirship (jersey/trusts/firewall.md).\n\n### Practical limits\n\nEven with the firewall fully engaged, a Jersey trust is not absolutely immune:\n\n- A foreign court with *in personam* jurisdiction over a Jersey-trust beneficiary resident there can order that beneficiary to act in relation to the trust property; Article 9 binds the Royal Court, not foreign courts.\n- Trust assets physically located in the forced-heirship jurisdiction can be reached directly by the foreign court — the firewall protects what is in Jersey or held through Jersey intermediaries.\n- A **sham** trust (failing Article 2's existence test because the settlor in substance retained beneficial ownership) is not a trust and the firewall never engages.\n- Jersey public policy is a residual override (jersey/trusts/firewall.md).\n\n### Drafting points the corpus calls out\n\n- Make an **express choice of Jersey law** as the proper law (Article 4) so that Article 9 is engaged.\n- Do not include clauses that re-import foreign succession rules through the back door (e.g. a clause directing distributions to track the settlor's home-country succession law).\n- Where forced-heirship exposure is real, consider parallel **substantive lifetime planning in the forced-heirship jurisdiction** (e.g. a notarial *pacte de famille* in France) rather than relying solely on the firewall (jersey/trusts/firewall.md).\n\n### Provenance\n\nArticle 9 in its current form is the product of the **Trusts (Amendment No. 4) (Jersey) Law 2006**, which strengthened the firewall — in particular by extending it to foreign judgments inconsistent with Article 9 and clarifying capacity (jersey/trusts/firewall.md).\n\nFreshness: jersey/trusts/firewall.md has `last_verified: 2026-05-14` (5 days ago — well within 180 days). The file is marked `status: draft`.\n\n### Files cited\n\n1. jersey/trusts/firewall.md",
+    "wordCount": 727
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

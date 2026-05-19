@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-article-47",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T11:25:06.474Z",
+  "wallClockSeconds": 64.827,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/trusts -type f -name \\\"*.md\\\" | head -50\",\"description\":\"List files in jersey/trusts\"}",
+      "inputBytes": 178,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -r -l \\\"47B\\\\|Pitt v Holt\\\\|mistake\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/ --include=\\\"*.md\\\" | head -30\",\"description\":\"Find files mentioning 4",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/trusts/article-47-set-aside.md\"}",
+      "inputBytes": 121,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md\"}",
+      "inputBytes": 150,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 3499,
+    "cacheReadTokens": 150694,
+    "cacheWriteTokens": 38962,
+    "totalCostUsd": 0.40637950000000006
+  },
+  "answer": {
+    "text": "## Article 47B procedure to set aside a trustee decision for mistake\n\nA note on the citation first: Article 47B itself is the **interpretation** provision that defines \"mistake\" for the purposes of the modern statutory regime; the set-aside of a **trustee decision** (exercise of a fiduciary power) is granted under **Article 47G**, and a set-aside of a **transfer into the trust** is granted under **Article 47E**. The whole cluster — Articles 47B–47H — was inserted by the **Trusts (Amendment No. 6) (Jersey) Law 2013**. Practitioners often refer to the cluster loosely as \"Article 47\" or \"Article 47B\"; in formal work cite the sub-Article (`jersey/trusts/article-47-set-aside.md`).\n\n### What counts as a \"mistake\" — Article 47B\n\nArticle 47B defines mistake widely. It covers a mistake as to:\n\n- the **effect** of the transaction;\n- its **consequences** (expressly including tax consequences);\n- any **advantage** the person believed they would gain; or\n- any **fact existing before or at the time of** the disposition or power-exercise.\n\nTestamentary dispositions are excluded — wills sit under a separate jurisdiction (`jersey/trusts/article-47-set-aside.md`; `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`).\n\n### The three-limb Royal Court test\n\nPer *In re S & T Trusts* [2015] JRC259 and the cases that followed, the applicant must show:\n\n1. **A mistake** within the wide Article 47B definition.\n2. **But for the mistake, the disposition or power-exercise would not have been made** in the form it was. (This is the limb most applications fail — *In the Matter of the M Settlement* is a leading negative authority where partial rescission was refused as \"re-writing history\".)\n3. **The mistake was of so serious a character that it would be just** for the Court to grant the declaration.\n\nA failure on any limb defeats the application (`jersey/trusts/article-47-set-aside.md`; `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`).\n\n### Procedure for setting aside a trustee decision (Article 47G)\n\n- **Applicant**: typically the trustee for a 47G case (or the settlor for 47E); beneficiaries or other persons with standing may also apply.\n- **Vehicle**: a **Representation** in the **Royal Court, Samedi Division**, supported by **affidavit evidence** of the relevant person's state of mind at the time of the decision.\n- **Evidence**: contemporaneous documents are critical — file notes, board minutes, e-mails with advisers, the advice given at the time. A reconstruction affidavit years later is weak.\n- **Respondents**: persons affected, including the trustee that took the impugned step, the beneficiaries, and any third party that received property.\n- **Pleading discipline**: pick the right Article (11 for trust-invalidating mistake / 47E for a transfer in / 47G for exercise of a fiduciary power). Pleading the wrong door is the most common pitfall.\n- **Effect of a declaration**: the impugned step is declared voidable and typically void **ab initio**; the position immediately before the power-exercise is restored. **Third parties** who took in good faith and for value before the declaration are typically protected. Foreign tax effects only unwind to the extent the foreign revenue authority recognises the Jersey rescission (HMRC has historically done so for IHT and CGT; the IRS is more cautious and fact-dependent).\n- **Alternative**: where the remedy sought is not unwinding but directing the trustee to take a remedial step, an **Article 51 application for directions** may be the right vehicle, or both reliefs can be sought in one Representation (`jersey/trusts/article-47-set-aside.md`; `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`).\n\n### How Jersey is wider than *Pitt v Holt*\n\nThe English Supreme Court in ***Pitt v Holt; Futter v Futter* [2013] UKSC 26** drew a distinction between:\n\n- a true **\"mistake\"** (an erroneous belief about a relevant fact or law), which can ground rescission; and\n- **\"mere causative ignorance\"** or **\"inadequate deliberation\"**, which generally cannot.\n\nUnder the Jersey statutory regime the Royal Court has **rejected** that distinction. As the corpus quotes the Court's reasoning: \"Under Jersey law, when considering applications under Article 47E, the jurisdiction to give statutory relief requires the Court to decide whether there was any mistake; in Jersey, the **manner of the mistake is irrelevant** and it is therefore inappropriate to make the distinctions applied under English law\" (`jersey/trusts/article-47-set-aside.md`).\n\nPractical consequences:\n\n- An applicant who in England would be tripped up by the *Pitt v Holt* \"mere inadequate deliberation\" carve-out can still satisfy the Article 47B definition in Jersey, provided the three-limb test is met.\n- This width is why English advisers sometimes prefer a **Jersey-law trust** when the principal substantive risk being hedged is the future application of a tax rule the adviser cannot yet see clearly — a \"we didn't think about that\" position is more likely to be remediable in the Royal Court than in the English High Court.\n- Importing the English narrowing into a Jersey brief over-qualifies the client's case; the corpus flags this as a recurring pitfall (`jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`).\n\nLimits remain: the Royal Court is reluctant to treat the loss of a **hoped-for future tax advantage** (as opposed to an unforeseen tax *charge*) as a qualifying mistake, and it will refuse partial rescissions that amount to re-writing history rather than unwinding the impugned step (*M Settlement*; Walkers commentary, cited in `jersey/trusts/article-47-set-aside.md`).\n\n### Freshness\n\nBoth cited files carry `last_verified: 2026-05-14`, five days old as of today — well within the 180-day window.\n\n---\n\n### Cited files\n\n1. `jersey/trusts/article-47-set-aside.md`\n2. `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`",
+    "wordCount": 856
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

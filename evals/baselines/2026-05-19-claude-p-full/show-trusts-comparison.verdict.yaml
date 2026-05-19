@@ -1,0 +1,38 @@
+questionId: show-trusts-comparison
+harness: claude-p
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: fail
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 2
+factsExpected: 4
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: >-
+  Partial. The answer is accurate on what it covers but fundamentally misframes
+  the comparison:
+
+  it treats "Jersey trust" as Jersey NCPT (Article 12 purpose trust) rather than
+  the classic
+
+  discretionary trust with Article 9 firewall and Article 9A reserved powers —
+  the features
+
+  that make Jersey distinctive against STAR and VISTA. Article 9 and 9A are
+  never mentioned,
+
+  which is a jersey_specific miss the rubric explicitly requires. Citations are
+  clean (zero
+
+  hallucinations) but citation recall fails because the two most authoritative
+  corpus files
+
+  (firewall.md, reserved-powers.md) were never read. The "honest gap" framing
+  shows good
+
+  epistemic discipline but a cross-border trust counsel would have led with the
+  firewall.

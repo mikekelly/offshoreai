@@ -1,0 +1,32 @@
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+overall: fail
+dimensions:
+  substance: fail
+  jerseySpecific: n/a
+  citationPrecision: fail
+  citationRecall: n/a
+  freshnessHandling: n/a
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 0
+hallucinatedCitations: 0
+summary: >-
+  Grader emitted unparseable YAML: Unexpected scalar at node end at line 16,
+  column 48:
+
+        - "VISTA is not discussed in the corpus" — false; glossary-extension.md d…
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+  Raw:
+
+  I'll verify the candidate's citations against the actual corpus files.All four
+  files exist. Now let me read them to verify the claims.Now let me check the
+  Article 9 firewall file since the rubric specifically requires it.Now I have
+  all the evidence needed. Let me verify one more claim — the candidate says
+  VISTA's distinctive feature is "relieving the trustee of the prudent-man duty
+  to monitor or intervene in an underlying company's affairs — the
+  'anti-Bartlett' function" and that "has no statutory analogue in Jersey." This
+  is not from the corpus (candidate acknowledges this). Let me check if t

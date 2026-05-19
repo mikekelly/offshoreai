@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-article-47",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T11:25:09.937Z",
+  "wallClockSeconds": 43.241,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getArticle",
+      "rawName": "mcp__corpus__getArticle",
+      "inputDigest": "{\"statute\":\"trusts-law-1984\",\"article\":\"47B\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"mistake\",\"setting-aside\"],\"mode\":\"and\"}",
+      "inputBytes": 49,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/trusts/article-47-set-aside.md\",\"full\":true}",
+      "inputBytes": 60,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md\",\"full\":true}",
+      "inputBytes": 89,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 2615,
+    "cacheReadTokens": 127110,
+    "cacheWriteTokens": 41893,
+    "totalCostUsd": 0.39082625000000004
+  },
+  "answer": {
+    "text": "## Article 47B and the set-aside procedure\n\nA small but important clarification first: **Article 47B itself doesn't contain a \"set-aside procedure\"** — it is the *interpretation* Article for the modern mistake regime, which is the cluster of **Articles 47B–47H** of the Trusts (Jersey) Law 1984 (inserted by the Trusts (Amendment No. 6) (Jersey) Law 2013). The operative set-aside provisions are:\n\n- **Article 47E** — set-aside of a **transfer or disposition of property to a trust** made under mistake; on a successful application the Court declares it voidable and property returns to the transferor.\n- **Article 47G** — set-aside of an **exercise of a fiduciary power** (e.g. a trustee's appointment of capital, a protector's consent) made under mistake.\n- **Article 47B** — supplies the **wide statutory definition of \"mistake\"**: a mistake as to (i) the *effect* of a transaction, (ii) its *consequences* (expressly including tax consequences), (iii) any *advantage* the person believed they would obtain, or (iv) any *fact existing before or at the time of* the disposition or power-exercise. Testamentary dispositions are excluded.\n\n(`jersey/trusts/article-47-set-aside.md`)\n\n### The three-limb test the Royal Court applies\n\nPer *In re S & T Trusts* [2015] JRC259 and the line of authority following it, the applicant must show:\n\n1. There was a **mistake** within the wide Article 47B definition;\n2. **But for** the mistake, the disposition or power-exercise would not have been made in the form it was; and\n3. The mistake was **so serious that it would be just** for the Court to grant relief.\n\nFailure on any limb is fatal; limb 2 (but-for causation, rather than merely a different transaction) is the most common pitfall.\n\n### Procedure in practice\n\n- Application by **Representation** in the **Royal Court, Samedi Division**, supported by affidavit evidence going to the applicant's state of mind at the relevant time.\n- Applicants are typically the **settlor** (47E) or the **trustee** (47G); beneficiaries and others with standing may also apply.\n- **Contemporaneous documentary evidence** of the mistake (file notes, advice given, correspondence) is critical — a reconstruction affidavit years later is weak.\n- Respondents include those affected — trustee, beneficiaries, third-party recipients.\n- Effect of a successful declaration is normally *ab initio* voidness, with third-party good-faith-for-value rights protected; cross-border tax effects depend on whether the foreign revenue authority recognises the Jersey rescission (HMRC historically does; the US IRS is more cautious).\n\n(`jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`)\n\n### How Jersey is wider than *Pitt v Holt*\n\nThe UK Supreme Court in *Pitt v Holt; Futter v Futter* [2013] UKSC 26 drew a distinction between a true **\"mistake\"** (which can ground rescission) and **\"mere causative ignorance\" / \"inadequate deliberation\"** (which generally cannot). The Royal Court has, applying the **statutory** regime, expressly **rejected** that distinction:\n\n> \"Under Jersey law, when considering applications under Article 47E, the jurisdiction to give statutory relief requires the Court to decide whether there was any mistake; in Jersey, the manner of the mistake is irrelevant and it is therefore inappropriate to make the distinctions applied under English law.\"\n\nThe practical consequences:\n\n- A Jersey claim is **easier to make out** than its English equivalent — \"we didn't think about that\" can qualify.\n- Jersey's regime is therefore commonly preferred where the principal substantive risk is **future application of a tax or other rule the adviser cannot yet see clearly**.\n- But the Royal Court still polices the boundary: a **commercial misjudgement**, a **disappointed expectation of a *future* tax advantage** (as distinct from an unforeseen *charge*), or a request for **partial rescission / re-writing of history** will not be granted — see *In re M Settlement* and the Walkers / Carey Olsen commentaries.\n\n(`jersey/trusts/article-47-set-aside.md`; `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`)\n\n### Caveats\n\n- **Both cited files are `status: draft`** in the corpus — the content has been written but not yet promoted to `stable`. Verify against the primary statute and case-law before relying on the detail.\n- Freshness is fine (both last verified 2026-05-14, 5 days old).\n- If the proposed remedy is a direction to the trustee rather than unwinding a transaction, the right vehicle may be an **Article 51** application instead.\n\n### Cited files\n\n1. `jersey/trusts/article-47-set-aside.md`\n2. `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 703
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

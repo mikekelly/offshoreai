@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-jpf-vs-expert",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T11:26:55.690Z",
+  "wallClockSeconds": 35.464,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"jpf\",\"funds\"],\"mode\":\"and\"}",
+      "inputBytes": 37,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"expert-fund\"],\"mode\":\"or\"}",
+      "inputBytes": 36,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/fund-counsel/choosing-fund-regime.md\",\"full\":true}",
+      "inputBytes": 76,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/funds/jersey-private-fund.md\",\"full\":true}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/funds/expert-fund.md\",\"full\":true}",
+      "inputBytes": 50,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 2030,
+    "cacheReadTokens": 95216,
+    "cacheWriteTokens": 69905,
+    "totalCostUsd": 0.53532925
+  },
+  "answer": {
+    "text": "## Short answer\n\nFor a **club-deal PE fund**, the default Jersey regime is the **Jersey Private Fund (JPF)** — provided you can credibly cap the structure at ≤ 50 offers / investors, all of whom are professional / eligible. The corpus explicitly names \"club deal structures\" as a paradigm JPF use case ([jersey/funds/jersey-private-fund.md](jersey/funds/jersey-private-fund.md), \"When to use a JPF\"). Go to **Expert Fund** only if you expect to breach the 50-investor cap or if your investors won't credibly self-certify as professional/eligible but will meet the higher expert-investor net-worth / minimum-investment thresholds.\n\n## Why JPF fits a club deal\n\nThe JPF is Jersey's light-touch private-fund regime, with:\n\n- a **≤ 50 offers / investors** ceiling,\n- **professional / eligible investors only**,\n- **~48-hour JFSC authorisation**,\n- a **JFSC-licensed administrator as Designated Service Provider (DSP)** carrying CDD/AML and standing in for direct JFSC oversight of the fund.\n\nThat economic profile — small investor count, sophisticated LPs, fast time-to-market, low ongoing supervisory burden — is exactly what a club deal needs. ([jersey/funds/jersey-private-fund.md](jersey/funds/jersey-private-fund.md))\n\nThe fund-counsel decision tree puts it the same way: ≤ 50 non-retail investors → **JPF**; > 50 expert investors → **Expert Fund** ([jersey/use-cases/fund-counsel/choosing-fund-regime.md](jersey/use-cases/fund-counsel/choosing-fund-regime.md), \"Decision tree\" and \"Specific scenarios\" — \"PE / VC fund with up to 50 LPs: JPF. Fast, light, costs aligned with closed-ended PE economics\").\n\n## When to switch to Expert Fund instead\n\nThe Expert Fund regime is the right answer if any of the following hold:\n\n- The deal will be **offered to more than 50 potential investors** (note: the cap counts *offers*, not just final subscribers — undershoot the cap by design).\n- You expect to **scale into a larger PE vehicle** beyond the JPF cap.\n- You need **wider expert-investor marketing latitude** or **AIFMD NPPR** positioning for active EU distribution.\n\nExpert Funds have no fixed investor cap but require investors to meet expert criteria (typically US$100k minimum investment or prescribed net-worth thresholds), a more detailed offering memorandum, and slower authorisation (days to weeks rather than 48 hours) ([jersey/funds/expert-fund.md](jersey/funds/expert-fund.md)).\n\n## Pitfall the corpus flags specifically\n\n> \"Going too light: a 'JPF' for what should be an Expert Fund will be re-categorised by the JFSC if you go over the 50-investor cap; better to size up at outset.\" ([jersey/use-cases/fund-counsel/choosing-fund-regime.md](jersey/use-cases/fund-counsel/choosing-fund-regime.md), \"Pitfalls\")\n\nFor a club deal — by definition a small, known investor group — that risk is normally low, which is why JPF is the default. But model the investor count honestly *including offers* before committing.\n\n## Caveats\n\nBoth source files carry status **draft** and were last verified **2026-05-15** (4 days ago — fresh). Draft means the editorial team has written the content but not fully verified it against the primary JFSC sources. Before launching, verify against the JFSC Jersey Private Fund Guide and the Expert Fund Guide directly.\n\n## Cited files\n\n1. [`jersey/funds/jersey-private-fund.md`](jersey/funds/jersey-private-fund.md) — draft, last_verified 2026-05-15\n2. [`jersey/funds/expert-fund.md`](jersey/funds/expert-fund.md) — draft, last_verified 2026-05-15\n3. [`jersey/use-cases/fund-counsel/choosing-fund-regime.md`](jersey/use-cases/fund-counsel/choosing-fund-regime.md) — draft, last_verified 2026-05-15\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 502
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

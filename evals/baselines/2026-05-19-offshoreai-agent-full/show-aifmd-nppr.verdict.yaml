@@ -1,0 +1,34 @@
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: >-
+  Partial. The answer is well-structured, citation-precise, and sounds like fund
+  counsel,
+
+  but misses two load-bearing rubric facts: it never names AIFMD Article 42 (the
+  specific
+
+  AIFMD legal basis for NPPR) or Article 21 reporting obligations. It also fails
+  to surface
+
+  the "Alternative Investment Funds (Jersey) Regulations 2012" by name in the
+  answer text,
+
+  despite the corpus source listing it — the rubric expected the Jersey-side
+  statutory
+
+  instrument to be named. Voice and citation quality are strong; the substance
+  gap on the
+
+  AIFMD article-level detail is the limiting dimension.

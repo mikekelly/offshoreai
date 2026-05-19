@@ -1,0 +1,22 @@
+questionId: show-jpf-vs-expert
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. Every rubric fact is covered accurately: JPF ≤50 investors /
+  48-hour authorisation / DSP delegation, Expert Fund no cap / fuller disclosure
+  / wider marketing, and the decision criteria (investor count, regulatory
+  burden, marketing reach). All four cited corpus files support the claims
+  attached to them — no hallucinated citations. The voice is convincingly
+  fund-counsel: direct recommendation with the decisive caveat on investor
+  count, practical decision framework, and a clear acknowledgement of what the
+  corpus doesn't cover. Efficient 4-tool-call trajectory with no redundancy."

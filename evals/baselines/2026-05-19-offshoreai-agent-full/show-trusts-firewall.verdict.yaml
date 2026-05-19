@@ -1,0 +1,21 @@
+questionId: show-trusts-firewall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 10
+hallucinatedCitations: 0
+summary: Pass. The answer is a thorough, deeply Jersey-specific exposition of
+  every sub-paragraph of Article 9 TJL 1984, with correct citation to the most
+  authoritative corpus file and zero hallucinated claims. The single missing
+  rubric fact (anti-suit injunctions) is not present in the corpus itself, so
+  the agent correctly reported what the corpus contains. Two tool calls, 39
+  seconds — a near-optimal retrieval path. The draft-status caveat and
+  primary-source verification advisory are good practice.

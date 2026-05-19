@@ -1,0 +1,24 @@
+questionId: show-aifmd-nppr
+harness: claude-p
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: |-
+  Partial. The answer covers 3.5 of 5 expected substance facts with
+  strong practical detail on Germany-specific NPPR requirements, BaFin
+  notification, depository, and reverse-solicitation risk. The main gap
+  is the absence of AIFMD Article 42 conditions and Article 21 reporting
+  — though the corpus itself lacks these references, so the harness had
+  no source material. The Jersey AIFM Regulations 2012 are not named
+  despite appearing in the cited file's source metadata. Citation
+  precision is clean, voice is convincingly fund-counsel, and freshness
+  handling is exemplary (draft status flagged with practical caveat).

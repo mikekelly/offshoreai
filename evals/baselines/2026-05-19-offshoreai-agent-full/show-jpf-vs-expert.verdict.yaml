@@ -1,0 +1,26 @@
+questionId: show-jpf-vs-expert
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: >-
+  Pass. Every rubric fact is covered with correct citations — the candidate hit
+
+  all three corpus files, quoted the pitfall verbatim, and correctly
+  characterised
+
+  JPF as the club-deal default with Expert Fund as the scale-up alternative. The
+
+  voice reads as fund counsel advising a sponsor, not a generic offshore
+  summary.
+
+  Efficiency is tight at 5 tool calls with no redundancy.

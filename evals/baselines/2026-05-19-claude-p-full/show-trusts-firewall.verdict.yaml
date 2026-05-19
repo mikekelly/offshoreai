@@ -1,0 +1,23 @@
+questionId: show-trusts-firewall
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer is substantively comprehensive and precisely grounded
+  in the corpus's firewall.md file, covering all five Article 9 paragraphs, the
+  carve-outs, practical limits, and drafting points. Every citation is verified
+  against the source file with zero hallucinations. The main gap is the omission
+  of Royal Court anti-suit injunctions (an expected rubric fact) and the absence
+  of Jersey case law (rubric says "if possible"); neither gap is severe enough
+  to demote overall given the depth and accuracy of the statutory analysis.
+  Voice is well-calibrated — reads as a Jersey trust litigator briefing a
+  foreign counterpart.

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-eviction",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T11:35:25.412Z",
+  "wallClockSeconds": 37.555,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"residential-tenancy\",\"eviction\"],\"mode\":\"and\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"residential-tenancy\",\"non-payment\"],\"mode\":\"and\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/residential-tenancy/non-payment-of-rent.md\",\"full\":true}",
+      "inputBytes": 72,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/residential-tenancy/eviction-procedure.md\",\"full\":true}",
+      "inputBytes": 71,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 1956,
+    "cacheReadTokens": 127069,
+    "cacheWriteTokens": 41032,
+    "totalCostUsd": 0.3689495
+  },
+  "answer": {
+    "text": "## Short answer\n\n**No — you cannot just evict a non-paying tenant in Jersey.** Non-payment of rent is a breach of the tenancy agreement under the **Residential Tenancy (Jersey) Law 2011 (RTJL)**, and the law requires you to follow a statutory procedure ending in a court order and enforcement by the Viscount. Self-help (changing the locks, removing possessions, cutting off utilities) is unlawful and may itself be a criminal offence.\n\n> ⚠️ **Status caveat:** The two corpus files cited below are marked `draft` (last verified 2026-05-18, one day ago). The substantive procedure is drawn from the RTJL and standard Jersey practice, but the draft status means the content has not yet been promoted to `stable` — verify against the primary statute and a Jersey advocate before acting.\n\n## The procedure\n\n### Step 1 — Serve a written breach notice\nThe notice must be in writing, identify the breach (rent due, periods, amount), and require remedy within a **minimum of 7 days**. The 7-day window is statutory; you can give longer but not less (`jersey/residential-tenancy/non-payment-of-rent.md`).\n\n### Step 2 — Wait the notice period\nIf the tenant pays the arrears in full within the notice period, the breach is remedied and you cannot then terminate on the same arrears. Partial payment is not remedy unless you accept it as such.\n\n### Step 3 — Apply to the Petty Debts Court\nThe **Petty Debts Court has exclusive original jurisdiction** over residential tenancy disputes (the Royal Court does not handle these at first instance). You apply for:\n- Termination of the tenancy;\n- An eviction order;\n- Optionally, a money judgment for the arrears.\n\nYou will need to file the tenancy agreement, condition report, rent ledger, the breach notice and proof of service, and a record of attempts to engage the tenant (`jersey/residential-tenancy/eviction-procedure.md`).\n\n### Step 4 — The hearing\nThe court considers whether the breach is made out, whether procedural steps were complied with, any **tenant defences** (set-off for landlord's repair failures, discrimination under the Discrimination (Jersey) Law 2013, harassment), and whether to grant a **stay of execution** — commonly 14–28 days, longer for families with children, tenants on Income Support, or those awaiting social-housing placement.\n\n### Step 5 — Enforcement by the Viscount\nOnly the **Viscount** (a senior judicial officer of the Royal Court) may lawfully execute the eviction. The Viscount attends, gives the tenant a chance to leave with their possessions, removes them (with force if necessary), inventories and stores remaining possessions, and restores possession to you. Items not claimed within 15 days may be disposed of; Viscount's fees are by tariff and can run into hundreds or thousands of pounds.\n\n## Realistic timeline and what landlords get wrong\n\n- **Total elapsed time** from missed payment to actual possession is typically **2–4 months** for a straightforward case — longer if contested, stayed, or appealed.\n- **Do not** change the locks, cut off utilities, remove the tenant's possessions, enter without consent, or sue in the Royal Court at first instance — each is either unlawful, a criminal offence, or jurisdictionally wrong.\n- **Do** document arrears from day 1, serve the 7-day notice promptly, consider a payment plan, and budget for Viscount fees and a likely stay of execution.\n\n## Tenant defences you should expect\n- **Set-off** for the landlord's own breach (unfit premises, failure to repair);\n- **Discrimination** cross-claim under the Discrimination (Jersey) Law 2013;\n- **Harassment** if the landlord has pressured the tenant during the notice period;\n- **Vulnerability** considerations under the Children (Jersey) Law 2002 or Mental Health (Jersey) Law 2016, which typically translate into a stay rather than refusal.\n\n## Files cited\n\n1. `jersey/residential-tenancy/non-payment-of-rent.md` — *draft*, last verified 2026-05-18\n2. `jersey/residential-tenancy/eviction-procedure.md` — *draft*, last verified 2026-05-18\n\n---\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 639
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

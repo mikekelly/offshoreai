@@ -1,0 +1,31 @@
+questionId: show-pillar-two
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: >-
+  Pass. All five expected facts covered accurately with correct Jersey-specific
+  statutory
+
+  references (MCIT Law 2024, QDMTT, IIR, zero-ten interaction, €750m threshold).
+  The most
+
+  valuable single observation: the candidate transparently acknowledges the
+  corpus's UK-side
+
+  gap and directs the user to HMRC sources rather than fabricating UK Pillar Two
+  detail —
+
+  exactly the right behaviour for a citation-mandatory system. Seven tool calls
+  with no
+
+  redundancy; clean retrieval pattern.
