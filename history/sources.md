@@ -93,7 +93,7 @@ sources used for industry narrative and trend articulation.
 
 | # | Title | Publisher | Year | Horizon | URL |
 |---|---|---|---|---|---|
-| C1 | The Channel Islands' Contribution to UK Growth and Investment | TheCityUK + Jersey Finance + Guernsey Finance | Feb 2026 | 2y / 5y | https://www.thecityuk.com/media/kqmfqnw2/tcuk_channelisles_digital_final.pdf |
+| C1 | The Channel Islands' Contribution to UK Growth and Investment (note: Jersey-attributable headline figures of ~£500bn FDI / ~951k UK jobs / ~£62bn UK GDP; Guernsey reports separate figures including ~£58bn capital flows) | TheCityUK + Jersey Finance + Guernsey Finance | Feb 2026 | 2y / 5y | https://www.thecityuk.com/media/kqmfqnw2/tcuk_channelisles_digital_final.pdf |
 | C2 | Jersey's Value to Britain (original; superseded by C1) | Capital Economics (for Jersey Finance) | Oct 2016 | 10y / 25y | https://www.jerseyfinance.je/media/PDF-Research/JERSEY'S%20VALUE%20TO%20BRITAIN%20-%20SUMMARY%20REPORT.pdf |
 | C3 | Jersey's Value to Africa | Capital Economics (for Jersey Finance) | Nov 2014 | 10y | https://www.jerseyfinance.je/our-work/jerseys-value-to-africa/ |
 | C4 | Jersey's Contribution to Global Value Chains | Cebr (for Jersey Finance) | 2021 | 5y | https://www.jerseyfinance.com/insights/jerseys-contribution-to-global-value-chains/ |

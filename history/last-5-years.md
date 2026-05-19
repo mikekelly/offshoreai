@@ -104,10 +104,13 @@ Per the **Cebr 2021 Jersey-Finance-commissioned report
 intermediated approximately **£1.4 trillion** in
 investment flows and supported roughly **5.1 million
 global jobs** as of the report's measurement period
-(2018-2020 data). The 2026 TheCityUK / Jersey Finance /
-Guernsey Finance joint report updates this to a £500bn FDI
-conduit figure into the UK specifically, 951,000 UK jobs,
-£62bn UK GDP.
+(2018-2020 data). The 2026 TheCityUK report quotes
+**Jersey-attributable** figures of **~£500bn FDI conduit
+into the UK, ~951,000 UK jobs supported, and ~£62bn UK
+GDP**; Guernsey reports separate figures (including ~£58bn
+capital flows to the UK plus the insurance / captive
+contribution). The two methodologies are not directly
+comparable but the directional growth is clear.
 
 The growth trajectory across the 5-year window is roughly
 linear-with-acceleration: COVID dampened 2020-21 activity
@@ -147,11 +150,11 @@ driver behind Jersey's industry growth across the window.
 Across the 5-year window, **Jersey has consistently been
 the leading offshore Crown Dependency in the GFCI** (above
 Guernsey and Isle of Man on most rounds), with positioning
-in the global top 30-50 financial centres. The cross-
-Channel-Islands gap has narrowed and re-opened across
-the period without fundamentally changing the relative
-ranking. The 2026 edition (GFCI 39) confirms Jersey's
-continued cluster leadership.
+in the global top 40-50 financial centres. The cross-
+Channel-Islands gap has narrowed and re-opened across the
+period without fundamentally changing the relative ranking.
+**GFCI 39 (March 2026)** has Jersey **ranked 38th** —
+ahead of Guernsey, Isle of Man, and Cayman in that index.
 
 ## Regulatory milestones across the window
 
@@ -204,10 +207,12 @@ assessments of Jersey (July 2024) and Guernsey (on-site
 April 2024) closed the [AML/CFT](../jersey/aml-cft/index.md)
 defensive question that had hung over the prior decade.
 Jersey was rated **C/LC on 39 of 40 FATF Recommendations**
-— a top-tier outcome. The contrast with the 2016 4th-round
-report (which had identified gaps that drove the 2016-2023
-supervisory build-up) is the cleanest 10-year regulatory
-narrative the industry has.
+— top-tier **technical compliance**, with strong but not
+uniformly top-tier **effectiveness** (1 High, 6
+Substantial, 4 Moderate; no Low ratings). The contrast with
+the 2016 4th-round report (which had identified gaps that
+drove the 2016-2023 supervisory build-up) is the cleanest
+10-year regulatory narrative the industry has.
 
 See [`last-10-years.md`](last-10-years.md) for the 4th-vs-
 5th-round contrast in depth.
@@ -311,7 +316,7 @@ have grown faster than blind-pool fund commitments.
 
 [CRS](../jersey/international/crs.md) expansion,
 beneficial-ownership-register transparency (post-2017),
-[DAC6](../jersey/international/dac6.md) (EU mandatory
+[OECD MDR / DAC6-style commitments](../jersey/international/dac6.md) (Jersey is not in EU DAC6 scope; OECD-aligned mandatory
 disclosure), [FATCA](../jersey/international/fatca.md) IGA
 operational reality, and CARF (Crypto-Asset Reporting
 Framework — flagged in [`gaps.md`](gaps.md)) — the

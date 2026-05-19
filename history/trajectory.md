@@ -60,27 +60,36 @@ this is the spine.
 
 ## The trajectory in one paragraph
 
-Across 25 years, Jersey's financial-services industry has
-moved from a **classic 1990s fund-and-trust offshore
-jurisdiction** through three iterations of an external-
-pressure-followed-by-regulatory-build-out cycle into its
-2026 position: a **sophisticated, sourced, top-tier-[AML/CFT](../jersey/aml-cft/index.md)-
-rated, [Pillar-Two](../jersey/tax/pillar-two.md)-compliant,
-multi-product private-capital and family-office centre**
-with the **explicit offensive strategic posture** articulated
-in the [JFSC](../jersey/financial-regulation/jfsc.md)
-2026-2030 Strategy and the Government's 10-year Financial
-Services Competitiveness Programme. The dominant structural
-pattern is the **transparency arc** — secrecy-led use cases
-have diminished; structure-led use cases
-([Article 9 firewall](../jersey/trusts/firewall.md) for
-forced-heirship defence,
-[JPF](../jersey/funds/jersey-private-fund.md) for
-sophisticated PE,
+Across 25 years, Jersey has shifted from a classic offshore
+funds-and-trusts jurisdiction into a highly regulated
+private-capital and private-wealth centre whose competitive
+advantage rests less on opacity and more on **legal
+certainty, tax neutrality, regulatory credibility,
+speed-to-market products, and specialist structuring**. The
+through-line is a **transparency arc**: OECD pressure,
+[FATCA](../jersey/international/fatca.md),
+[CRS](../jersey/international/crs.md), beneficial-ownership
+reporting, [substance](../jersey/tax/economic-substance.md),
+[Pillar Two](../jersey/tax/pillar-two.md), and
+[CARF](../jersey/international/carf.md) have progressively
+reduced information-opacity-led use cases, while
+structure-led use cases — the
+[Article 9 firewall](../jersey/trusts/firewall.md),
+[JPF](../jersey/funds/jersey-private-fund.md) speed-to-
+market,
 [continuation funds](../frontier/continuation-funds-and-gp-led-secondaries.md),
 [family-office vehicles](../jersey/use-cases/family-office-adviser/index.md),
-tokenisation infrastructure) have grown to define the modern
-offer.
+and tokenisation infrastructure — have grown to fill the
+space. The **2024 MoneyVal result** and **2025 Pillar Two
+implementation** removed two major defensive overhangs; the
+[**2026 JFSC strategy**](../jersey/financial-regulation/jfsc-strategy-2026-2030.md)
+and the
+[**Government Financial Services Competitiveness Programme**](../jersey/government/financial-services-competitiveness-programme.md)
+convert that credibility into an explicit growth agenda.
+The **open strategic question** — and this is genuinely
+open — is whether Jersey can improve speed, service,
+innovation, and product depth fast enough to hold share
+against larger or lower-friction IFCs.
 
 ## The four acts
 
@@ -94,17 +103,20 @@ is one of the time-horizon retrospectives in detail.
 The post-Edwards-Report era of building out the
 [JFSC](../jersey/financial-regulation/jfsc.md) (established
 1998 under the
-[FSL 1998](../jersey/financial-regulation/financial-services-jersey-law-1998.md)),
-founding Jersey Finance (2001), modernising trust law
-([Article 9A reserved powers](../jersey/trusts/reserved-powers.md)
-and the
+[**Financial Services Commission (Jersey) Law 1998**](../jersey/financial-regulation/jfsc-law-1998.md)
+— the constituting statute — operating alongside the
+separate
+[**Financial Services (Jersey) Law 1998**](../jersey/financial-regulation/financial-services-jersey-law-1998.md)
+governing financial-services activity), founding Jersey
+Finance (2001), modernising trust law (the **Trusts
+(Amendment No. 4) (Jersey) Law 2006** introduced
+[Article 9A reserved powers](../jersey/trusts/reserved-powers.md)
+and the modern firewall language; the
 [Article 47B mistake regime](../jersey/trusts/article-47-set-aside.md)
-added by the 2006 Amendment No. 4 to the
-[Trusts (Jersey) Law 1984](../jersey/trusts/trusts-law-1984.md)),
-and successfully navigating the early OECD Harmful Tax
-Practices initiative. The industry **professionalised**
-across the period, with Monterey Insight data showing
-strong fund-AUM growth.
+came later — see Act III), and successfully navigating the
+early OECD Harmful Tax Practices initiative. The industry
+**professionalised** across the period, with Monterey
+Insight data showing strong fund-AUM growth.
 
 Defining narrative: **professionalisation**.
 
@@ -148,9 +160,19 @@ powers expanded, financial-intelligence functions reinforced.
 
 Within the cycle, the
 [**Jersey Private Fund (JPF) regime launched (2017)**](../jersey/funds/jersey-private-fund.md)
-— the flagship product innovation of the modern era,
-achieving more than 100 new establishments annually by
-2025. The
+— the flagship product innovation of the modern era. By
+March 2025, Jersey Finance reported a **JPF population of
+~750** with continued strong new-establishment flow; the
+Government's competitiveness report cites **nearly 1,500
+structures since launch** and **£86.7bn administered**
+(definitions and basis differ between the two figures —
+the JPF population is the live regulated count while the
+1,500 figure aggregates structures-since-launch). The
+[**Trusts (Amendment No. 6) (Jersey) Law 2013**](../jersey/trusts/article-47-set-aside.md)
+had inserted the **Article 47B–H statutory mistake regime**
+slightly earlier in the cycle, putting the Royal Court's
+case-law-developed mistake jurisdiction onto a clear
+statutory footing. The
 [**Economic Substance Law (2019)**](../jersey/tax/economic-substance.md)
 established the Crown Dependencies + Overseas Territories
 substance regime as a regulatory cluster — see
@@ -167,33 +189,52 @@ and [`last-5-years.md` — pre-2024 portion](last-5-years.md#regulatory-mileston
 
 ### Act IV — Validation and Offensive Posture (2024-2026)
 
-*The validation arrived. The posture flipped.*
+*The validation arrived. The posture pivoted.*
 
 **MoneyVal 5th Round MER (24 July 2024)** rated Jersey
-Compliant or Largely Compliant on **39 of 40 FATF
-Recommendations** — global top tier. The defensive question
-that hung over the prior decade closed.
+**Compliant or Largely Compliant on 39 of 40 FATF
+Recommendations** — top-tier technical compliance. The
+**effectiveness** picture was strong but not uniformly
+top-tier: **1 High, 6 Substantial, and 4 Moderate**
+effectiveness ratings (no Low ratings). The combination
+was strong enough to close the EU/UK listing-risk question
+that had hung over the prior decade, while leaving real
+work on certain effectiveness Immediate Outcomes.
 
 [**MCIT 2025**](../jersey/international/pillar-two-mcit.md)
-**effective 1 January 2025** — Pillar Two QDMTT live.
-Parallel implementation in Guernsey, IoM, Bermuda (see
-[`../bermuda/tax.md`](../bermuda/tax.md) for the Bermuda
-CIT 2023 equivalent).
+**effective for accounting periods beginning on or after
+1 January 2025** — Jersey has implemented a **Qualified
+Domestic Minimum Top-up Tax (QDMTT)** and a **Qualified
+Income Inclusion Rule (IIR)** for in-scope groups (EUR 750m
+revenue threshold). Jersey has **not** implemented an
+Undertaxed Profits Rule (UTPR). Parallel implementation in
+Guernsey and IoM. Bermuda's
+[CIT 2023](../bermuda/corporate-income-tax-2023.md) is the
+Caribbean-cluster equivalent.
 
 [**JFSC**](../jersey/financial-regulation/jfsc.md)
-**2026-2030 Strategy (23 March 2026)** and **Government FSCP
-(final March 2026)** — the regulator and the government
-both articulated offensive growth verticals (PE, digital
-assets, sustainable finance, family office) rather than
-defensive perimeter-maintenance.
+**2026-2030 Strategy (23 March 2026)** and **Government
+FSCP (final March 2026)** — the regulator and the government
+both articulated growth-supporting priorities (PE, digital
+assets, sustainable finance, family office), proportionate
+risk-based regulation, and improved service-responsiveness.
+The pivot is **as much a response to competitive friction**
+(cost, speed, digitalisation, innovation pressure) **as it
+is a victory lap** on compliance — both plans candidly
+identify competitiveness problems to solve.
 
-[**AIFMD II (16 April 2026)**](../frontier/aifmd-ii-april-2026.md)
-and
-[**UK Carried Interest Reform (6 April 2026)**](../frontier/uk-carried-interest-reform-2026.md)
-took effect — the next wave of frontier developments the
-industry is now navigating.
+[**AIFMD II**](../frontier/aifmd-ii-april-2026.md)
+**(EU transposition / application 16 April 2026)** and
+[**UK Carried Interest Reform**](../frontier/uk-carried-interest-reform-2026.md)
+**(effective 6 April 2026 in the UK)** are the next wave of
+external developments the industry is now navigating. For
+Jersey, the AIFMD II impact is mainly through
+[NPPR](../jersey/funds/aifmd-nppr.md) conditions,
+disclosure, Annex IV reporting uplift, and JFSC code
+alignment.
 
-Defining narrative: **validation enabling offence**.
+Defining narrative: **credibility converted into a growth
+agenda — under competitive pressure**.
 
 Detail: [`last-2-years.md`](last-2-years.md).
 
@@ -221,7 +262,8 @@ Pillar Two evolution as the developments to navigate.
 
 Across all four acts, **information opacity has diminished
 monotonically**: OECD HTP (1998-), FATCA (2014), CRS (2017-),
-DAC6 (2018), beneficial-ownership registers (2017-), CARF
+OECD MDR / DAC6-style commitments (2018-), beneficial-
+ownership registers (2017-), CARF
 (2024-). The cumulative effect: **Jersey is more transparent
 in 2026 than at any prior point**.
 
@@ -247,11 +289,14 @@ act:
 By 2026, Jersey is a **10+ product industry** with
 specialist depth in each.
 
-### Through-line 4 — The Crown Dependencies cluster
+### Through-line 4 — The Crown Dependencies as increasingly specialised in market perception
 
 The Channel Islands and IoM have moved from operating as
-**competing substitutes** in the early acts to operating
-as a **specialised cluster** by Act IV:
+**competing substitutes** in the early acts to being
+**increasingly complementary in market perception** by
+Act IV (there is no formal inter-island division of
+labour; the pattern is emergent from product / regulator
+choices and practitioner specialisation):
 
 - **Jersey** — trust law
   ([Article 9 firewall](../jersey/trusts/firewall.md)),
@@ -281,19 +326,29 @@ cluster** with its own specialisations
 [Bermuda SAC](../bermuda/segregated-accounts-company.md)).
 See [`../CROSS-JURISDICTIONAL-MAP.md`](../CROSS-JURISDICTIONAL-MAP.md).
 
-### Through-line 5 — Sophistication over scale
+### Through-line 5 — Defensible niche, not maximum scale
 
 Jersey did **not become** the largest offshore fund
-jurisdiction (Cayman is) or the largest captive jurisdiction
-(Bermuda is). Instead, Jersey became the **most
-sophisticated** in trust law and in cross-jurisdictional
-PE structuring, and the **most strategically diversified**
-in product mix.
+jurisdiction (Cayman holds that position) or the largest
+captive jurisdiction (Bermuda holds that position).
+Jersey's defensible niche is instead **high-complexity
+structuring**: private capital, TopCo / listing structures,
+trust-law certainty (the
+[Article 9 firewall](../jersey/trusts/firewall.md) and the
+[Article 47B mistake regime](../jersey/trusts/article-47-set-aside.md)),
+[JPF](../jersey/funds/jersey-private-fund.md) speed-to-
+market, and private-wealth / family-office work. The
+[product-mix range](../jersey/funds/index.md) is broader
+than single-product rivals.
 
-This is the **defining strategic choice** of the modern era
-and the source of Jersey's resilience: scale rivals (Cayman)
-are vulnerable to single-product dislocations; Jersey's
-multi-product mix is not.
+This is a **defensible competitive posture** rather than a
+guaranteed-resilience claim — scale rivals (Cayman in funds,
+Bermuda in captives) compete on cost and product depth
+within their specialisms; Jersey competes on the
+combination of compliance credibility, structuring
+sophistication, and product diversity. Whether that
+combination holds share over the next decade is itself the
+strategic question of Act V (below).
 
 ## The 2026 position
 
@@ -305,63 +360,86 @@ industry is the **cumulative outcome** of all four acts:
 | Regulatory framework | Post-Edwards build-out beginning | JFSC 2026-2030 Strategy articulating offensive growth |
 | AML/CFT credentials | Pre-MoneyVal modern framework | MoneyVal 5th-round top tier (C/LC 39/40 FATF Recs) |
 | Corporate tax regime | "20-means-20" | Zero-Ten (since 2009) + MCIT 2025 Pillar Two top-up |
-| Information exchange | Limited (pre-FATCA / CRS) | Full FATCA / CRS / DAC6 / CARF / BO-register architecture |
+| Information exchange | Limited (pre-FATCA / CRS) | Full FATCA / CRS / MDR-style commitments / CARF / BO-register architecture |
 | Substance regime | None | Substance Law 2019 fully embedded, parallel CD regimes |
 | Product mix | Classic funds / trusts / banking | 10+ product industry with PE / family office / tokenisation specialisms |
-| Industry scale (Jersey + Guernsey) | Pre-2001 Monterey baseline | TheCityUK 2026: £500bn FDI conduit; 951k UK jobs; £62bn UK GDP |
-| Strategic posture | Building / defensive | Offensive growth verticals articulated |
-| Crown Dependencies cluster | Loose substitutes | Specialised twins + niche specialist |
-| GFCI position | Not yet measured (GFCI since 2007) | Top-50 globally; leading offshore CD |
+| Jersey-specific industry scale | Pre-2001 Monterey baseline | TheCityUK 2026 (Jersey-attributable): ~£500bn FDI conduit; ~951k UK jobs; ~£62bn UK GDP (Guernsey separately quotes £58bn capital flows to the UK plus insurance/captive contribution) |
+| Strategic posture | Building / defensive | Growth agenda + competitiveness-improvement explicitly named |
+| Crown Dependencies cluster | Loose substitutes | Increasingly complementary in market perception (no formal coordination) |
+| GFCI position (Z/Yen) | Not yet measured (GFCI since 2007) | GFCI 39 (March 2026): Jersey ranked 38th — ahead of Guernsey, Isle of Man, and Cayman in that index |
 
-## What this means going forward
+## Forward-looking — a planning hypothesis, not a prediction
 
-The trajectory analysis informs **forward-looking strategic
-expectations**:
+The four-act pattern is a useful **planning hypothesis** for
+how the next decade may shape up, but the historical cycle
+model does not necessarily predict the future. The actual
+next decade may be disrupted by developments that don't fit
+neatly into "respond-build-embed-validate" — public
+beneficial-ownership pressure, EU/UK tax divergence, UK
+non-dom and carried-interest knock-on effects, sanctions
+pressure, AI/data regulation, digital-asset failures,
+talent and housing constraints, and service-speed pressure.
+These should be treated as material risks to the hypothesis.
 
-### Cycle 4 is opening now
+With that caveat, the working hypothesis:
 
-The pattern says the next cycle will be a **2026-2034
-build-respond-embed-validate cycle** driven by:
+### Cycle 4 may open along familiar lines (2026-2034)
 
-- **SFDR 2.0 implementation** (2027-2028);
+A plausible next-cycle agenda driven by:
+
+- [**SFDR 2.0**](../frontier/sfdr-2-and-sustainable-finance.md)
+  implementation (2027-2028);
 - **EU/UK financial-services equivalence question**
-  (ongoing evolution);
-- **MoneyVal 6th round** (2030s);
-- **Pillar Two evolution** (potential changes to
+  (ongoing evolution; see
+  [`../jersey/immigration-residency/post-brexit-cross-border.md`](../jersey/immigration-residency/post-brexit-cross-border.md));
+- **MoneyVal 6th round** (likely early 2030s);
+- **Pillar Two evolution** (potential OECD changes to
   thresholds, scope, mechanics);
 - **AI / tokenisation regulatory frameworks** (likely
   emerging through the cycle);
-- **Sustainability-data architecture** (post-SFDR 2.0
-  build-out).
+- **CARF** moving from implementation to operational
+  reality (first reports 2027 — see
+  [`../jersey/international/carf.md`](../jersey/international/carf.md));
+- **Public beneficial-ownership pressure** continuing.
 
-The pattern says Jersey will respond, build, embed, and
-validate — and emerge from Cycle 4 with **further-
-strengthened** regulatory credentials and **further-
-broadened** product mix.
+### Plausible product-mix evolution
 
-### The product mix continues to broaden
+If the cycle holds, the next decade may add **tokenised
+structures**, **AI-orchestrated family-office services**,
+**sustainable-finance product lines**, and **continuation-
+and-secondary-market infrastructure** as more mainstream
+additions to the [funds product mix](../jersey/funds/index.md).
 
-Cycle 4 will likely add **tokenised structures**,
-**AI-orchestrated family-office services**, **sustainable-
-finance product lines**, and **continuation-and-secondary-
-market infrastructure** as mainstream additions. The
-sophistication-over-scale strategy continues.
+### Cluster specialisation may continue
 
-### The cluster specialisation continues
+The Channel Islands' increasingly-complementary positioning
+in market perception is likely to continue if the GFSC
+maintains its continuation-fund / captive / ICC lead and
+the JFSC executes on its 2026-2030 digital-and-sustainable
+strategy. The Caribbean cluster will operate in parallel.
+This is an **emergent** rather than coordinated outcome.
 
-Jersey's positioning will likely **deepen on PE / TopCo /
-trust** while Guernsey deepens on **captive / continuation
-/ image rights** and the Caribbean cluster continues its
-specialisation. The Crown Dependencies as a cluster look
-more — not less — coordinated going forward.
+### Transparency arc continues — but pace is uncertain
 
-### The transparency arc continues
+[CARF](../jersey/international/carf.md) implementation
+begins 1 January 2026 with first reports 2027; SFDR 2.0
+will add sustainable-finance transparency; AI-era data-
+disclosure regimes will likely emerge. The arc is highly
+likely to continue but its pace and shape are uncertain.
 
-CARF (Crypto-Asset Reporting Framework) is now active;
-SFDR 2.0 will add sustainable-finance transparency; AI-
-era data-disclosure regimes will likely emerge. Jersey
-will be **even more transparent in 2030 than in 2026**,
-and the structure-led use-case dominance will deepen.
+### The open strategic question
+
+The biggest open question is **competitive friction**.
+Jersey's 2026 strategic plans (both the
+[JFSC 2026-2030 Strategy](../jersey/financial-regulation/jfsc-strategy-2026-2030.md)
+and the
+[Government FSCP](../jersey/government/financial-services-competitiveness-programme.md))
+explicitly identify **speed, cost, service-responsiveness,
+digitalisation, and innovation** as competitiveness
+priorities. Whether Jersey can improve along those
+dimensions fast enough to hold share against larger or
+lower-friction IFCs is **genuinely undetermined** — and
+should be tracked rather than assumed.
 
 ## Cross-references
 

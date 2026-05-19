@@ -80,32 +80,40 @@ three foundational events:
 - **Jersey Finance Limited founded 2001** — the industry-
   promotion body that has driven Jersey's positioning
   through the modern era;
-- The
+- The two 1998 statutes had recently taken effect — the
+  [**Financial Services Commission (Jersey) Law 1998**](../jersey/financial-regulation/jfsc-law-1998.md)
+  (the JFSC's constituting statute) and the separate
   [**Financial Services (Jersey) Law 1998**](../jersey/financial-regulation/financial-services-jersey-law-1998.md)
-  had recently taken effect, establishing the
-  [**JFSC**](../jersey/financial-regulation/jfsc.md) under
-  the [JFSC Law 1998](../jersey/financial-regulation/jfsc-law-1998.md)
-  as the unified regulator (see the
+  (governing financial-services activity that the
+  [**JFSC**](../jersey/financial-regulation/jfsc.md)
+  supervises). See the
   [Jersey financial-regulation index](../jersey/financial-regulation/index.md)
-  for the full statutory architecture);
+  for the full statutory architecture;
 - The **post-Edwards-Report era** (Andrew Edwards' 1998
   *Review of Financial Regulation in the Crown Dependencies*
   commissioned by HM Treasury) was the policy backdrop —
   Jersey was building the regulatory infrastructure that
   the Edwards Report recommended.
 
-**2026** ends the window with the industry in its most
-sophisticated and most transparent form to date —
-post-MoneyVal-2024, post-Pillar-Two-MCIT-2025, with the
-JFSC 2026-2030 Strategy articulating offensive growth.
+**2026** ends the window with the industry **materially
+more regulated, more substance-anchored, and more
+transparent** than at any prior point — post-MoneyVal-2024,
+post-Pillar-Two-MCIT-2025, with the JFSC 2026-2030 Strategy
+and the Government's 10-year Financial Services
+Competitiveness Programme together articulating an explicit
+growth agenda alongside acknowledged competitiveness work.
 
 ## The three cycles
 
 ### Cycle 1 — Professionalisation (2001-2008)
 
 The opening cycle was about **building modern regulatory
-and industry infrastructure** on the foundation of the
-FSL 1998. Key features:
+and industry infrastructure** on the foundation of the two
+1998 statutes — the
+[**Financial Services Commission (Jersey) Law 1998**](../jersey/financial-regulation/jfsc-law-1998.md)
+(the JFSC's constituting statute) and the separate
+[**Financial Services (Jersey) Law 1998**](../jersey/financial-regulation/financial-services-jersey-law-1998.md)
+(governing financial-services activity). Key features:
 
 - [**JFSC**](../jersey/financial-regulation/jfsc.md)
   consolidating as the unified financial-services regulator
@@ -116,12 +124,14 @@ FSL 1998. Key features:
   [General Insurance Mediation Business](../jersey/financial-regulation/fsl-class-gimb.md),
   and [Money Service Business](../jersey/financial-regulation/fsl-class-msb.md));
 - **Jersey Finance** establishing as the promotion body;
-- **Trust law modernisation** — the Trusts (Amendment No.
-  4) (Jersey) Law 2006 introduced
+- **Trust law modernisation** (begun in this cycle, completed
+  in Cycle 3) — the **Trusts (Amendment No. 4) (Jersey) Law
+  2006** introduced
   [Article 9A reserved powers](../jersey/trusts/reserved-powers.md)
-  and the
-  [Article 47B mistake regime](../jersey/trusts/article-47-set-aside.md),
-  building on the
+  and the modern firewall language; the
+  [Article 47B mistake regime](../jersey/trusts/article-47-set-aside.md)
+  was added later by the **Trusts (Amendment No. 6) (Jersey)
+  Law 2013** (see Cycle 3). Both build on the
   [Trusts (Jersey) Law 1984's](../jersey/trusts/trusts-law-1984.md)
   framework (full trusts overview at
   [`../jersey/trusts/index.md`](../jersey/trusts/index.md));
@@ -268,9 +278,10 @@ Jersey's growth:
 
 The **Z/Yen Global Financial Centres Index** has run since
 **2007**. Jersey has consistently ranked in the **global
-top 30-50 financial centres** and the **leading offshore
-Crown Dependency**. The 2026 edition (GFCI 39) confirms
-continued cluster leadership.
+top 40-50 financial centres** and as the **leading offshore
+Crown Dependency**. **GFCI 39 (March 2026)** has Jersey
+ranked **38th** — ahead of Guernsey, Isle of Man, and
+Cayman in that index.
 
 ## Structural patterns across the 25 years
 
@@ -279,11 +290,16 @@ continued cluster leadership.
 Across the entire window, **information opacity has
 diminished** — OECD HTP 1998 onwards,
 [FATCA](../jersey/international/fatca.md) 2014,
-[CRS](../jersey/international/crs.md) 2014-2017,
-[DAC6](../jersey/international/dac6.md) 2018, BO registers
-2017-, CARF 2024-2025 (CARF flagged in
-[`gaps.md`](gaps.md) — doctrinal file not yet written).
-The cumulative effect is that **Jersey is more transparent
+[CRS](../jersey/international/crs.md) 2014-2017, OECD MDR
+/ [DAC6-style mandatory-disclosure](../jersey/international/dac6.md)
+commitments (Jersey is not in EU DAC6 scope; Jersey
+legislation followed later under the OECD MDR framework),
+BO registers 2017-, and
+[CARF](../jersey/international/carf.md) (Jersey signed the
+multilateral agreement in November 2024; domestic
+regulations followed in 2025; implementation starts 1
+January 2026; first reporting / exchanges in 2027). The
+cumulative effect is that **Jersey is more transparent
 in 2026 than at any prior point in its modern history**.
 
 The structural consequence: **secrecy-led use cases have

@@ -134,11 +134,12 @@ crypto-asset holdings).
 
 | Date | Event |
 |---|---|
-| 2022 | OECD publishes CARF |
-| 2023-2024 | CARF Multilateral Competent Authority Agreement signed |
-| 2024-2025 | Implementation legislation enacted by participating jurisdictions |
-| 2026 | First reporting periods begin |
-| 2027 | First reports filed and exchanged |
+| Aug 2022 | OECD publishes CARF |
+| 2023 | CARF Multilateral Competent Authority Agreement opened for signature |
+| **November 2024** | **Jersey signs the CARF multilateral agreement** |
+| 2025 | Jersey domestic implementing regulations |
+| **1 January 2026** | **Jersey CARF implementation begins** (first reporting period) |
+| **2027** | **First reports filed and exchanged** |
 
 Jersey is on the standard implementation timetable. The
 Crown Dependencies + Overseas Territories cluster is
@@ -174,7 +175,8 @@ parallel with CARF compliance.
 
 CARF continues the **decades-long transparency arc** that
 runs from OECD HTP (1998), through FATCA (2014), CRS (2014-
-2017), DAC6 (2018), beneficial-ownership registers (2017-),
+2017), OECD MDR / DAC6-style commitments (2018-),
+beneficial-ownership registers (2017-),
 and now CARF (2024-2027). For the strategic narrative see
 [`../../history/trajectory.md`](../../history/trajectory.md).
 

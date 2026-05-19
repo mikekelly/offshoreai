@@ -58,8 +58,13 @@ narratives shaping the next 12-24 months.
 
 - **Assets Under Administration** in Jersey grew **5%
   in 2025**;
-- **100+ Jersey Private Funds (JPFs)** established in
-  2025 alone — sustained year-over-year growth;
+- **Jersey Private Funds (JPFs)** — population of **~750
+  as of March 2025** per Jersey Finance, with sustained
+  year-over-year new-establishment flow (the Government
+  competitiveness report cites ~1,500 structures since
+  launch and £86.7bn administered — that figure
+  aggregates structures-since-launch rather than the live
+  JPF count);
 - **Sustainable fund AUM projected to reach £123
   billion by 2026** (Jersey Finance projection);
 - **JFSC 2026-2030 Strategy** published 23 March 2026;
@@ -187,7 +192,7 @@ LP capital is increasingly seeking:
 | eGaming | Isle of Man |
 | Sustainable finance | Both Jersey + Guernsey |
 | Tokenisation | Jersey (Innovation Council); Cayman (VASP Act) |
-| Pillar Two QDMTT | All Crown Dependencies (Jersey MCIT 2025, Guernsey + IoM equivalents) |
+| Pillar Two QDMTT + Qualified IIR | All Crown Dependencies (Jersey MCIT 2025, Guernsey + IoM equivalents; none has implemented UTPR) |
 
 See [`../CROSS-JURISDICTIONAL-MAP.md`](../CROSS-JURISDICTIONAL-MAP.md)
 for the full comparison.

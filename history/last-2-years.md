@@ -81,9 +81,14 @@ been broadly stable for several years and confirms financial
 services remains the dominant economic force on the island.
 The TheCityUK / Jersey Finance / Guernsey Finance joint
 report *The Channel Islands' Contribution to UK Growth and
-Investment* (February 2026) quantifies the wider UK linkage:
-**£500bn of FDI conduit, 951,000 UK jobs supported, £62bn
-of UK GDP** attributable to Channel Islands intermediation.
+Investment* (February 2026) quantifies the wider UK linkage.
+The headline figures cited in the report — **£500bn FDI
+conduit, 951,000 UK jobs supported, £62bn UK GDP** — are
+presented as **Jersey's contribution**; Guernsey reports
+separate metrics (including £58bn capital flows to the UK
+plus the insurance / captive contribution). The combined
+Channel Islands picture is therefore the sum, with care
+needed about which figure attaches to which jurisdiction.
 
 On fund services, **Monterey Insight's 31st-edition Jersey
 Fund Report 2025** showed Jersey fund-servicing assets up
@@ -107,9 +112,15 @@ The single most strategically important event of the period.
 The Council of Europe's [MoneyVal](../jersey/aml-cft/moneyval.md)
 published its **5th-round mutual evaluation report on Jersey**
 on 24 July 2024. Jersey was rated **Compliant or Largely
-Compliant on 39 of the 40 FATF Recommendations**, placing it
-in the global top tier for [AML/CFT](../jersey/aml-cft/index.md)
-technical compliance.
+Compliant on 39 of the 40 FATF Recommendations** — top-tier
+**technical compliance**. The **effectiveness** picture was
+strong but not uniformly top-tier: **1 High, 6 Substantial,
+and 4 Moderate** effectiveness ratings across the 11
+Immediate Outcomes (no Low ratings). The combination places
+Jersey among the strongest jurisdictions globally on
+[AML/CFT](../jersey/aml-cft/index.md) compliance while
+leaving real ongoing work on certain effectiveness
+Immediate Outcomes.
 
 This matters because:
 
@@ -131,15 +142,18 @@ materially strengthened AML/CFT credentials.
 ### Pillar Two / MCIT 2025 effective (1 January 2025)
 
 The **Multinational Corporate Income Tax Law (MCIT) 2025**
-came into force on **1 January 2025**, implementing the OECD
-[Pillar Two](../jersey/tax/pillar-two.md) QDMTT (Qualified
-Domestic Minimum Top-up Tax) at 15% for Jersey-resident
-entities of in-scope multinational groups (EUR 750m+
-consolidated revenue thresholds). Equivalent regimes took
+applies to **accounting periods beginning on or after 1
+January 2025**, implementing OECD
+[Pillar Two](../jersey/tax/pillar-two.md) architecture: a
+**Qualified Domestic Minimum Top-up Tax (QDMTT)** and a
+**Qualified Income Inclusion Rule (IIR)** at 15% for
+in-scope multinational groups (EUR 750m+ consolidated
+revenue thresholds). Jersey has **not** implemented an
+Undertaxed Profits Rule (UTPR). Equivalent regimes took
 effect in Guernsey and the Isle of Man on the same
-timetable. Bermuda's Corporate Income Tax Act 2023 (CIT
-2023) is the parallel Caribbean-cluster move — see
-[`../bermuda/tax.md`](../bermuda/tax.md).
+timetable. Bermuda's
+[Corporate Income Tax Act 2023](../bermuda/corporate-income-tax-2023.md)
+is the parallel Caribbean-cluster move.
 
 The structural significance is large: Jersey's headline
 **0%/10%/20% "Zero-Ten"** regime — see
@@ -187,13 +201,18 @@ skills. Together with the JFSC 2026-2030 Strategy, it
 constitutes the most coordinated articulation of regulator-
 plus-government strategic intent the industry has seen.
 
-### AIFMD II (effective 16 April 2026)
+### AIFMD II (EU application 16 April 2026)
 
-**Directive (EU) 2024/927 (AIFMD II)** took effect 16 April
-2026, expanding disclosure obligations on liquidity
-management tools, costs, and loan origination. The JFSC is
-splitting its existing AIF Code into an EU AIF Code and a
-UK AIF Code to reflect the post-Brexit bifurcation
+**Directive (EU) 2024/927 (AIFMD II)** has its EU
+transposition / application milestone at **16 April 2026**,
+expanding disclosure obligations on liquidity management
+tools, costs, and loan origination. For Jersey, the impact
+operates **indirectly** — primarily through
+[NPPR marketing conditions](../jersey/funds/aifmd-nppr.md),
+disclosure, Annex IV reporting uplift, and JFSC AIF Code
+alignment (the JFSC is splitting its existing AIF Code into
+an EU AIF Code and a UK AIF Code to reflect the post-Brexit
+bifurcation)
 (see [`../jersey/immigration-residency/post-brexit-cross-border.md`](../jersey/immigration-residency/post-brexit-cross-border.md)
 for the wider post-Brexit context). For the
 [NPPR marketing route](../jersey/funds/aifmd-nppr.md) into

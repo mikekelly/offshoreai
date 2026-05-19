@@ -451,6 +451,75 @@ offshore-law search tool":
   practitioner who lived through the period may push for
   specific deeper-cut detail in places.
 
+## Factual precision — what to be careful about
+
+A peer-agent review of the trajectory doc on 2026-05-19
+surfaced specific factual precision issues that were
+corrected across the corpus. The key careful-phrasing
+points to remember for the demo:
+
+- **JFSC's constituting statute** — the **Financial
+  Services Commission (Jersey) Law 1998** (not the
+  separately-titled **Financial Services (Jersey) Law
+  1998**, which governs financial-services activity);
+- **Trust amendment chronology** — Article 9A reserved
+  powers were introduced by the **Trusts (Amendment No. 4)
+  (Jersey) Law 2006**; the Article 47B–H statutory
+  mistake regime was inserted by the **Trusts (Amendment
+  No. 6) (Jersey) Law 2013**;
+- **MoneyVal 5th round** — say "top-tier technical
+  compliance (39/40 C/LC) with strong but still-improvable
+  effectiveness (1 High, 6 Substantial, 4 Moderate; no
+  Low ratings)" rather than just "top tier";
+- **MCIT 2025 mechanics** — Jersey has implemented a
+  **QDMTT** and a **Qualified IIR** for accounting periods
+  beginning on or after 1 January 2025; Jersey has **not**
+  implemented a UTPR;
+- **DAC6** — Jersey is not in EU DAC6 scope; Jersey has
+  **OECD MDR / DAC6-style mandatory-disclosure
+  commitments** under the OECD framework;
+- **CARF dates** — Jersey signed the CARF multilateral
+  agreement in **November 2024**; domestic regulations
+  followed in **2025**; implementation starts **1 January
+  2026**; first reports filed and exchanged in **2027**;
+- **JPF numbers** — Jersey Finance reports **~750 JPFs as
+  of March 2025**; the Government competitiveness report
+  cites **~1,500 structures since launch** and **£86.7bn
+  administered** — the second figure aggregates structures-
+  since-launch rather than the live JPF count;
+- **AIFMD II** — refer to **16 April 2026 as the EU
+  transposition / application milestone**; for Jersey the
+  impact is mainly through NPPR conditions, disclosure,
+  Annex IV uplift, and JFSC code alignment;
+- **TheCityUK figures** — **£500bn FDI / 951k UK jobs /
+  £62bn UK GDP** are presented as **Jersey-attributable**;
+  Guernsey reports separate metrics including ~£58bn
+  capital flows and insurance/captive contribution;
+- **GFCI** — say specifically "**GFCI 39 (March 2026):
+  Jersey 38th**, ahead of Guernsey, Isle of Man, and
+  Cayman in that index" rather than generic top-50.
+
+## Strategic-narrative tone
+
+The trajectory.md document and history docs were also
+softened on triumphalist phrasing per the peer review.
+Practitioner-facing language now uses:
+
+- **"Defensible niche, not maximum scale"** instead of
+  "most sophisticated";
+- **"Increasingly complementary in market perception"**
+  instead of "coordinated specialised cluster";
+- **Forward-looking sections labelled as planning
+  hypotheses** not predictions;
+- **Explicit acknowledgement** that Jersey's 2026 strategy
+  is **partly a response to competitive friction** (cost,
+  speed, service, innovation, digitalisation) — not just
+  a victory lap on compliance.
+
+This is the **board-ready calibration**: confident on
+factual claims, candid on competitive pressures, careful
+on forward-looking inference.
+
 ## Quick reference — paths for the demo
 
 ```

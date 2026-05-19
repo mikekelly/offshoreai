@@ -196,20 +196,23 @@ was real and substantial.
 The **MoneyVal 5th-round Mutual Evaluation Report on
 Jersey** was published **24 July 2024**. Jersey was rated
 **Compliant or Largely Compliant on 39 of the 40 FATF
-Recommendations** — placing it in the **global top tier**
-for AML/CFT technical compliance.
+Recommendations** — top-tier **technical compliance**. The
+**effectiveness** picture across the 11 Immediate Outcomes
+was strong but not uniformly top-tier: **1 High, 6
+Substantial, and 4 Moderate** effectiveness ratings (no
+Low ratings).
 
 The narrative arc:
 
 **2016 — "identifiable gaps and substantial work programme"**
 
-→ **2024 — "global top tier; effectiveness validated"**
+→ **2024 — "top-tier technical compliance; strong but
+still-improvable effectiveness"**
 
-This is the **single biggest strategic asset Jersey gained
-across the decade 2016-2024**. The 5th-round outcome
-closes — for the foreseeable future — the EU/UK
-listing-risk question that had hung over Jersey's
-regulatory posture for the prior period.
+The combination was strong enough to close the EU/UK
+listing-risk question that had hung over Jersey's regulatory
+posture for the prior period, while leaving real ongoing
+work on certain effectiveness Immediate Outcomes.
 
 For the wider regulatory significance see
 [`../jersey/aml-cft/moneyval.md`](../jersey/aml-cft/moneyval.md).
@@ -234,9 +237,9 @@ The three milestones operate as a sequence:
 
 | Milestone | Period | Role | Outcome |
 |---|---|---|---|
-| Edwards Report 1998 | 1998-2001 | Policy foundation | FSL 1998; JFSC established |
+| Edwards Report 1998 | 1998-2001 | Policy foundation | Financial Services Commission (Jersey) Law 1998 + Financial Services (Jersey) Law 1998; JFSC established |
 | IMF FSAP 2009 | 2008-2010 | Post-GFC validation | Zero-Ten + supervisory build-out |
-| MoneyVal 4th→5th 2016-2024 | 2016-2024 | AML/CFT validation | Top-tier rating; offensive pivot |
+| MoneyVal 4th→5th 2016-2024 | 2016-2024 | AML/CFT validation | Top-tier technical compliance (39/40 C/LC) with strong-but-improvable effectiveness; enabled growth-agenda pivot |
 
 Each milestone **triggered** a cycle of regulatory and
 industry response that built the foundation for the next.

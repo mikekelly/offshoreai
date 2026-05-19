@@ -110,8 +110,9 @@ limited partnerships.
 [family-office](../jersey/use-cases/family-office-adviser/index.md),
 [listing-vehicle](../jersey/use-cases/founder-entrepreneur/why-jersey-topco.md),
 and tokenisation centre**. Funds are dominated by
-[JPFs](../jersey/funds/jersey-private-fund.md) (over 100
-established in 2025 alone — see
+[JPFs](../jersey/funds/jersey-private-fund.md) (Jersey
+Finance reported a JPF population of ~750 as of March 2025
+with sustained year-on-year new-establishment flow — see
 [`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md)),
 continuation funds (see
 [`../frontier/continuation-funds-and-gp-led-secondaries.md`](../frontier/continuation-funds-and-gp-led-secondaries.md)),
@@ -127,19 +128,21 @@ each.
 The **2016 Capital Economics report** sized Jersey's
 contribution to UK FDI / jobs / GDP at a particular level
 that, by the 2026 TheCityUK update, had **materially
-grown**: £500bn FDI conduit, 951,000 UK jobs, £62bn UK GDP.
-The methodology between the two reports is not exactly
-comparable (TheCityUK 2026 covers Channel Islands jointly,
-Capital Economics 2016 was Jersey-only) but the directional
-growth is unmistakable.
+grown**. The Jersey-attributable 2026 figures are **~£500bn
+FDI conduit, ~951,000 UK jobs, ~£62bn UK GDP** (Guernsey
+quotes separate figures including ~£58bn capital flows
+plus the insurance / captive contribution). The methodology
+between the two reports is not exactly comparable but the
+directional growth is unmistakable.
 
 ### GFCI trajectory
 
 Across the **Z/Yen Global Financial Centres Index** rounds
-since 2016, Jersey has held a **stable top-50 global
-financial-centre position** and consistently led the
-offshore Crown Dependencies cluster. The 2026 round
-(GFCI 39) confirms continued cluster leadership.
+since 2016, Jersey has held a **stable global top-40-to-50
+position** and consistently led the offshore Crown
+Dependencies cluster. **GFCI 39 (March 2026)** has Jersey
+ranked **38th**, ahead of Guernsey, Isle of Man, and Cayman
+in that index.
 
 ## The MoneyVal arc — the cleanest 10-year story
 
@@ -193,7 +196,11 @@ launched 2017, allowed up to 50 sophisticated investors with
 **48-hour authorisation** and a Designated Service Provider
 (DSP) delegated-compliance model. It became one of the most
 successful product launches in Jersey's regulatory history;
-by 2025, over 100 new JPFs were established annually. The
+by March 2025 the live JPF population was **~750** (per
+Jersey Finance), with the Government competitiveness report
+citing ~1,500 structures since launch and £86.7bn
+administered (the latter being a broader structures-since-
+launch metric than the live JPF count). The
 operational view of JPF registration is at
 [`../jersey/use-cases/fund-counsel/jpf-registration.md`](../jersey/use-cases/fund-counsel/jpf-registration.md);
 the fund-counsel persona at
@@ -356,7 +363,7 @@ international financial secrecy.
 The corpus view is that this perspective should be
 **triangulated against** — not ignored, but also not
 accepted uncritically. The MoneyVal 2024 outcome, the
-substance regime, the CRS / FATCA / DAC6 transparency
+substance regime, the CRS / FATCA / OECD-MDR transparency
 architecture, and the public-register debates all argue
 that Jersey is **more transparent than at any prior point
 in its modern history**, and the methodological choices
@@ -374,14 +381,17 @@ and reputational pressure. By 2026, the posture has
 strategies (JFSC 2026-2030 Strategy, FSCP) and pitching
 PE / family-office / sustainable / digital growth verticals.
 
-### Pattern 2 — Sophistication over scale
+### Pattern 2 — Defensible niche, not maximum scale
 
 Jersey did **not become the largest** offshore fund
 jurisdiction (Cayman is) or the largest captive
-jurisdiction (Bermuda is). Instead, it became the
-**most sophisticated** in trust law, the most diverse
-in PE product range, and the most strategically positioned
-for the next decade of structuring work.
+jurisdiction (Bermuda is). Its **defensible niche** is
+high-complexity structuring (PE, TopCo / listing
+structures, trust-law certainty), product-mix breadth,
+and the post-MoneyVal-2024 compliance credibility — a
+combination Jersey is well-positioned to compete on but
+which is not guaranteed to hold share against scale rivals
+or lower-friction IFCs going forward.
 
 ### Pattern 3 — The Crown Dependencies as a cluster
 
@@ -394,7 +404,7 @@ substitutes. This was visible across the substance regime
 
 ### Pattern 4 — The transparency arc
 
-Beneficial-ownership registers, CRS expansion, DAC6,
+Beneficial-ownership registers, CRS expansion, OECD MDR / DAC6-style mandatory-disclosure commitments,
 country-by-country reporting, and the CARF crypto-asset
 reporting framework all moved transparency forward across
 the decade. The remaining Jersey use cases are uniformly
