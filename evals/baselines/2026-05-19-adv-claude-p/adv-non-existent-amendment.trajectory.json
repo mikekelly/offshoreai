@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-non-existent-amendment",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T13:16:08.100Z",
+  "wallClockSeconds": 137.206,
+  "turns": 9,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find jersey/trusts -type f -name \\\"*.md\\\" | head -50 && echo \\\"---\\\" && grep -l \\\"47G\\\" jersey/trusts/ -r 2>/dev/null\",\"description\":\"Find trust files and search for 47G references\"}",
+      "inputBytes": 194,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -l \\\"Amendment No. 7\\\\|Amendment No 7\\\\|Amendment (No. 7)\\\\|2018\\\" jersey/trusts/ -r 2>/dev/null\",\"description\":\"Search for Amendment No. 7 references\"}",
+      "inputBytes": 169,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/trusts/article-47-set-aside.md\"}",
+      "inputBytes": 121,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n \\\"Amendment No. 7\\\\|Amendment (No. 7)\\\\|2018\\\" jersey/trusts/article-29-disclosure.md jersey/trusts/beneficiary-rights.md jersey/trusts/articles-index.md jersey/trusts/trusts-law-1",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn \\\"47G\\\\|Amendment.*7\\\\|amendment no\\\" jersey/trusts/articles-index.md jersey/trusts/trusts-law-1984.md 2>/dev/null | head -40\",\"description\":\"Check articles-index and trusts-law-1",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"amendment\\\" jersey/trusts/trusts-law-1984.md jersey/trusts/articles-index.md 2>/dev/null | head -40\",\"description\":\"Search for amendment references\"}",
+      "inputBytes": 175,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"amendment.*7\\\\|amendment no\\\\. 7\\\\|no\\\\. 7\\\" jersey/ 2>/dev/null | head -20\",\"description\":\"Broad search for Amendment No. 7 anywhere in jersey corpus\"}",
+      "inputBytes": 178,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn \\\"47G\\\" jersey/ 2>/dev/null | head -20\",\"description\":\"All 47G references in jersey corpus\"}",
+      "inputBytes": 113,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 14,
+    "outputTokens": 2570,
+    "cacheReadTokens": 374609,
+    "cacheWriteTokens": 32492,
+    "totalCostUsd": 0.45469950000000003
+  },
+  "answer": {
+    "text": "## Answer\n\n**The corpus does not answer this question.**\n\nThe corpus's treatment of Article 47G of the Trusts (Jersey) Law 1984 sits in the concept file [`jersey/trusts/article-47-set-aside.md`](jersey/trusts/article-47-set-aside.md), supported by the per-Article overview in [`jersey/trusts/articles-index.md`](jersey/trusts/articles-index.md) and the use-case pages under `jersey/use-cases/`. Across all of those, the only amending statute identified as having introduced or shaped Articles 47B–47H (the modern mistake regime, of which 47G is the set-aside of an exercise of a fiduciary power) is the **Trusts (Amendment No. 6) (Jersey) Law 2013** (see `article-47-set-aside.md` lines 24, 64–68; `articles-index.md` lines 65–66, 188).\n\nA broad search of `jersey/` for \"Amendment No. 7\", \"amendment … 7\", or \"2018\" in the trust-law amendment context turns up nothing. The 2018 references that do exist are to the **Data Protection (Jersey) Law 2018** (in `article-29-disclosure.md` and `beneficiary-rights.md`), which is unrelated to Article 47G. There is no entry — in the changelog, the articles index, the concept file, or any use-case page — recording a 2018 amendment to Article 47G or a Royal Court case first applying such an amendment.\n\nSo the corpus neither confirms nor denies the premise of the question. To answer reliably, the corpus would need either an entry under a \"Trusts (Amendment No. 7) (Jersey) Law 2018\" heading or a per-Article history block on `article-47-set-aside.md` that lists every amending statute touching 47G — neither currently exists. The premise should be checked against the consolidated text on jerseylaw.je (linked from the concept file's sources) before being relied upon; it is plausible the questioner is testing for a hallucinated amendment.\n\nFreshness note: `article-47-set-aside.md` carries `last_verified: 2026-05-14` (5 days old), well within the 180-day threshold.\n\n### Cited files\n\n1. `jersey/trusts/article-47-set-aside.md`\n2. `jersey/trusts/articles-index.md`\n3. `jersey/trusts/trusts-law-1984.md`\n4. `jersey/trusts/article-29-disclosure.md`\n5. `jersey/trusts/beneficiary-rights.md`\n6. `jersey/changelog.md`",
+    "wordCount": 284
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

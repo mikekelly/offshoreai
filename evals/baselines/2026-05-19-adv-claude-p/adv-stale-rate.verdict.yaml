@@ -1,0 +1,21 @@
+questionId: adv-stale-rate
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: Pass. The candidate located the single most authoritative corpus file
+  in two efficient tool calls, extracted every material fact about the post-2025
+  RPI cap accurately, and proactively flagged the file's draft status and
+  last_verified date. Zero factual errors, zero hallucinated citations. For an
+  adversarial freshness question the response is exemplary — it answered the
+  substance fully while surfacing exactly the metadata a user needs to assess
+  reliability.

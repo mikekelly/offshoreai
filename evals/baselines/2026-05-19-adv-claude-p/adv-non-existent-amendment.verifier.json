@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 5,
+  "claimsWithCitation": 5,
+  "notes": "All substantive claims are structural assertions about what the corpus does and does not say, and each is supported by a verified corpus path. The characterisation of Article 47G as 'set-aside of an exercise of a fiduciary power' matches article-47-set-aside.md line 128. The identification of Amendment No. 6 of 2013 as the sole amending statute named in the corpus is confirmed at article-47-set-aside.md lines 24, 64–68 and articles-index.md lines 65–66, 188 — all line references check out. The claim that 2018 references in the trust files relate to the Data Protection (Jersey) Law 2018, not any trust-law amendment, is confirmed (article-29-disclosure.md line 157; beneficiary-rights.md lines 197–199). The last_verified date of 2026-05-14 is accurate (line 6 of article-47-set-aside.md). The 'Cited files' list includes trusts-law-1984.md and changelog.md which were searched as part of the negative-result investigation but produced no relevant hits — listing them is transparent rather than misleading. Note: article-47-set-aside.md carries status: draft, not stable; the response does not flag this, but it does not misrepresent the status either.",
+  "rejectCount": 0,
+  "costUsd": 0.35117975
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 6,
+  "claimsWithCitation": 6,
+  "notes": "All four cited corpus files support the claims made about them. The fsl-article-9.md 'Competence and capability' bullets match verbatim (lines 58–64). The licensing.md fit-and-proper headings match (lines 78–87). The fit-and-proper-changes.md and employment-of-trust-staff.md files are correctly characterised as covering procedures rather than experience thresholds. The negative claim (no numeric experience floor anywhere in the corpus) is supported by the grep searches in the tool-call log. All four files have status: draft rather than stable — not a rejection issue since the response correctly reports freshness dates and the claims are about corpus coverage rather than affirmative legal advice, but worth noting for downstream consumers.",
+  "rejectCount": 0,
+  "costUsd": 0.25137675000000004
+}

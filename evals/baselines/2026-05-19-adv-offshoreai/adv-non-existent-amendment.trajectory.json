@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-non-existent-amendment",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:15:12.941Z",
+  "wallClockSeconds": 88.162,
+  "turns": 9,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getArticle",
+      "rawName": "mcp__corpus__getArticle",
+      "inputDigest": "{\"statute\":\"trusts-law-1984\",\"article\":\"47G\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"trusts-law-1984\",\"article-47\"],\"mode\":\"and\"}",
+      "inputBytes": 54,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"article-47\"],\"mode\":\"and\"}",
+      "inputBytes": 36,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"trusts-law-1984\",\"mistake\"],\"mode\":\"and\"}",
+      "inputBytes": 51,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/trusts/article-47-set-aside.md\",\"full\":true}",
+      "inputBytes": 60,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/trusts/trusts-law-1984.md\",\"full\":true}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"trusts-law-1984\",\"articles-index\"],\"mode\":\"and\"}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/trusts/articles-index.md\",\"full\":true}",
+      "inputBytes": 54,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 14,
+    "outputTokens": 2828,
+    "cacheReadTokens": 480403,
+    "cacheWriteTokens": 50229,
+    "totalCostUsd": 0.62490275
+  },
+  "answer": {
+    "text": "The corpus does not address Trusts (Amendment No. 7) (Jersey) Law 2018 or any amendment to Article 47G arising from it. I cannot answer the specific question as framed, and in particular I cannot identify \"the first Royal Court case to apply the amendment\" from the corpus material.\n\n## What the corpus does say about Article 47G and amendment history\n\nThe Article 47B–47J statutory mistake regime — including **Article 47G** (set-aside of an exercise of powers in relation to a trust for mistake) — was **introduced by the Trusts (Amendment No. 6) (Jersey) Law 2013**. The corpus describes the regime as a single statutory mechanism enacted by that amendment, not by any later amendment:\n\n> \"The regime was introduced by the **Trusts (Amendment No. 6) (Jersey) Law 2013** to put on a clear statutory footing the Royal Court's previous case-law-developed approach to mistake.\"\n> — `jersey/trusts/article-47-set-aside.md`\n\nThe Articles Index reinforces this: \"These nine Articles work as a single statutory mechanism introduced by the 2013 amendment\" (`jersey/trusts/articles-index.md`). The same index identifies the two most material amendments to the Trusts Law as **Amendment No. 4 of 2006** (reserved powers, perpetuities) and **Amendment No. 6 of 2013** (mistake regime) — Amendment No. 7 is not mentioned.\n\nThe closest the corpus comes to acknowledging post-2013 amendment activity is a note in the Law overview that the Government published a **2024 consultation on amendments**, with re-verification recommended against the States Assembly (`jersey/trusts/trusts-law-1984.md`).\n\n## What this means for your question\n\nThe corpus is silent on whether Trusts (Amendment No. 7) (Jersey) Law 2018 amended Article 47G, on what (if anything) it changed in 47G, and on any Royal Court case applying such an amendment. Given the citation mandate that governs me, I will **not** synthesise an answer from outside the corpus.\n\nTo resolve the question definitively, verify against the primary sources directly: the **States Assembly** record for Trusts (Amendment No. 7) (Jersey) Law 2018, the consolidated text of the Trusts (Jersey) Law 1984 on **jerseylaw.je**, and the Royal Court's decided-cases database.\n\n## Caveats\n\nThe file I am citing (`jersey/trusts/article-47-set-aside.md`) is **status: draft, last_verified 2026-05-14** (5 days old — fresh, but draft authority not stable). The articles index is also **status: draft**. Both should be treated as orientation, not authority, and the underlying statute consulted before action.\n\n## Cited files\n\n1. `jersey/trusts/article-47-set-aside.md`\n2. `jersey/trusts/articles-index.md`\n3. `jersey/trusts/trusts-law-1984.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 411
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

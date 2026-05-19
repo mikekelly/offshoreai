@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 6,
+  "claimsWithCitation": 6,
+  "notes": "All substantive claims are supported by the cited corpus file. (1) The M Settlement decision and its outcome (Royal Court declined the application) matches lines 210–211. (2) The ground — partial rescission amounting to re-writing of history rather than unwinding — matches lines 211–213. (3) The draft status and last_verified date of 2026-05-14 match the frontmatter at lines 4–5. (4) The observation that the corpus does not record a JRC neutral citation number is correct — only the case name appears in the file. (5) The corpus source for the M Settlement being a secondary Collas Crill commentary matches line 44–47 and line 277. (6) The Carey Olsen 'No re-writing history' commentary is correctly identified at lines 40–41 and referenced throughout the file. The draft-status caveat the response itself flags is appropriate and transparent. The Collas Crill URL in the response matches the corpus source URL at line 277.",
+  "rejectCount": 0,
+  "costUsd": 0.174905
+}

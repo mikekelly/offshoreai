@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-no-citation-baseline",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T13:16:07.794Z",
+  "wallClockSeconds": 136.894,
+  "turns": 12,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"principal person\\\\|principal-person\\\\|fit and proper\\\\|fit-and-p",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"principal person\\\\|principal-person\\\" 2>/dev/null\",\"description\"",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -l -i \\\"years\\\\|experience\\\\|year\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/financial-regulation/licensing.md /Users/mike/code/offshoreai/.claude/wo",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/financial-regulation/licensing.md\"}",
+      "inputBytes": 124,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/use-cases/trust-officer/fit-and-proper-changes.md\"}",
+      "inputBytes": 140,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/use-cases/trust-officer/employment-of-trust-staff.md\"}",
+      "inputBytes": 143,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i \\\"year\\\\|experience\\\\|principal\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/financial-regulation/fsl-class-tcb.md\",\"description\":\"Search TCB fil",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i \\\"year\\\\|experience\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/financial-regulation/codes-of-practice.md 2>/dev/null\",\"description\":\"Search cod",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 8,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"years.*experience\\\\|experience.*years\\\\|trust officer experience\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/ 2>/dev/null\",\"description\":\"Sea",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 9,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/financial-regulation/fsl-article-9.md\"}",
+      "inputBytes": 128,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 10,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"tcb.*experience\\\\|trust.*experience\\\\|principal.*experience\\\\|five year\\\\|five-year\\\\|seven year\\\\|10 year\\\\|ten year\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-w",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 15,
+    "outputTokens": 3422,
+    "cacheReadTokens": 436175,
+    "cacheWriteTokens": 41467,
+    "totalCostUsd": 0.56288125
+  },
+  "answer": {
+    "text": "The corpus does not answer this question with a specific years-of-experience threshold.\n\nThe Jersey corpus describes the fit-and-proper regime for principal persons qualitatively but never gives a numeric minimum of trust-officer experience that the JFSC expects:\n\n- `jersey/financial-regulation/fsl-article-9.md` lists the Schedule 1 fit-and-proper criteria, and under \"Competence and capability\" cites \"Qualifications appropriate to the role\", \"Experience in similar regulated activity\", \"Ongoing professional development\", \"Track record of competent performance\", and \"Knowledge of Jersey regulatory framework\" — but no year-count.\n- `jersey/financial-regulation/licensing.md` describes the principal-person questionnaire process and the broad headings the JFSC assesses (honesty/integrity, competence and capability, financial soundness, regulatory history, criminal record, conflicts, track record), again without quantifying expected experience.\n- `jersey/use-cases/trust-officer/fit-and-proper-changes.md` covers what triggers prior approval / notification when principal persons change, not what level of experience the JFSC looks for at approval.\n- `jersey/use-cases/trust-officer/employment-of-trust-staff.md` covers fit-and-proper as a procedural step in hiring senior TCB staff but says nothing about an experience floor.\n- A targeted grep across `jersey/` for \"years experience\", \"five year\", \"ten year\", etc., turned up no TCB principal-person experience requirement; matches were all unrelated (record-retention periods, residency tests, employment notice scales).\n\nSo the corpus answers \"what the JFSC tests\" (the qualitative fit-and-proper criteria) but not \"how much trust-officer experience the JFSC typically wants\" for principal-person approval. To answer this concretely you'd need the JFSC's TCB Code of Practice and its published principal-person guidance — neither is summarised on this point in the corpus today.\n\nAll cited files have `last_verified` dates between 2026-05-15 and 2026-05-17 (within the last 180 days), so no freshness flag.\n\nFiles cited:\n\n1. `jersey/financial-regulation/fsl-article-9.md`\n2. `jersey/financial-regulation/licensing.md`\n3. `jersey/use-cases/trust-officer/fit-and-proper-changes.md`\n4. `jersey/use-cases/trust-officer/employment-of-trust-staff.md`",
+    "wordCount": 268
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

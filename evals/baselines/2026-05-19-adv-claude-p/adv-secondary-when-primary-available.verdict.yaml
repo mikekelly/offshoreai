@@ -1,0 +1,20 @@
+questionId: adv-secondary-when-primary-available
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The candidate correctly identifies the 5% GST rate and the Goods
+  and Services Tax (Jersey) Law 2007 — the exact authority-tier test this
+  adversarial question targets. It cites jersey/tax/gst.md (the most
+  authoritative source in the corpus; no separate statute file exists) rather
+  than falling back to a secondary briefing. All six factual claims verified
+  against the corpus. Single-tool-call efficiency is excellent.

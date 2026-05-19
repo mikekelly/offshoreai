@@ -1,0 +1,22 @@
+questionId: adv-case-citation
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: "Pass. The candidate correctly identified the Royal Court's stated
+  ground for refusing partial rescission in M Settlement — 're-writing of
+  history rather than an unwinding' — and the secondary causation-limb failure,
+  both verified against the corpus. Notably strong on epistemic honesty: the
+  candidate flagged that the corpus does not contain a JRC neutral citation or
+  judgment year for the case, that the '[2021]' framing in the question derives
+  only from a Bedell Cristin URL path, and that both source files rely on
+  secondary commentary rather than the judgment itself."

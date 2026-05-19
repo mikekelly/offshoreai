@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-secondary-when-primary-available",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:16:33.611Z",
+  "wallClockSeconds": 43.863,
+  "turns": 2,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/tax/gst.md\"}",
+      "inputBytes": 28,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 501,
+    "cacheReadTokens": 74625,
+    "cacheWriteTokens": 35373,
+    "totalCostUsd": 0.27095375
+  },
+  "answer": {
+    "text": "The standard rate of GST in Jersey is **5%**, imposed by the **Goods and Services Tax (Jersey) Law 2007** and administered by Revenue Jersey. The rate rose from 3% to 5% in 2011 and remains flat — there is no separate higher or intermediate band; other supplies are either zero-rated (e.g. exports) or exempt (e.g. certain finance/insurance, housing, healthcare, education).\n\nCaveat: the corpus file `jersey/tax/gst.md` carries `status: draft` (last_verified 2026-05-14). The 5% rate and 2007 statute are well-established, but as a draft file you may want to re-verify the rate against Revenue Jersey before relying on it for advice — the file itself flags this.\n\nCited files:\n1. `jersey/tax/gst.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 131
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

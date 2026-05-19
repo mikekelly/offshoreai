@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 17,
+  "claimsWithCitation": 17,
+  "notes": "All 17 substantive Jersey legal claims are supported by the two cited corpus files (rent-and-rent-reviews.md and 2025-amendment-law.md). Claims verified include: the in-force date (15 April 2026), the RPI cap mechanism, the once-yearly rule with 12-month clock from previous increase, the 2-month notice requirement and its contents (identify RPI figure, show calculation, round consistently), the enforceability consequences of above-RPI increases without Tribunal approval (tenant not required to pay excess, refusal is not arrears), the narrow 'significantly below market rent' carve-out requiring Rent Tribunal testing, and the exclusion of initial rent from the cap. No primary-source Article citations are present — both files cite corpus paths rather than statute Articles — but no active bundle requires Article-level citations, so this conforms to the baseline citation rule. The response correctly flags the draft status of the primary cited file and includes the standard disclaimer. One soft note: the claim that the landlord must 'round consistently (typically to the nearest pound)' tracks the corpus verbatim but the corpus itself marks this as 'typically' rather than a statutory requirement — the response faithfully preserves that qualification.",
+  "rejectCount": 0,
+  "costUsd": 0.24277175
+}

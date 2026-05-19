@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-no-citation-baseline",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:15:08.708Z",
+  "wallClockSeconds": 83.926,
+  "turns": 9,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"jfsc\",\"tcb\",\"fit-and-proper\",\"principal-persons\"],\"mode\":\"or\",\"limit\":25}",
+      "inputBytes": 83,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"tcb\",\"fit-and-proper\"],\"mode\":\"and\",\"limit\":15}",
+      "inputBytes": 57,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"principal-persons\"],\"mode\":\"or\",\"limit\":15}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/financial-regulation/licensing.md\"}",
+      "inputBytes": 51,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/trust-officer/fit-and-proper-changes.md\"}",
+      "inputBytes": 67,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"tcb\",\"tcb-code\"],\"mode\":\"or\",\"limit\":15}",
+      "inputBytes": 50,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/financial-regulation/fsl-class-tcb.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/trust-officer/fit-and-proper-changes.md\",\"full\":true}",
+      "inputBytes": 79,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 12,
+    "outputTokens": 2601,
+    "cacheReadTokens": 373984,
+    "cacheWriteTokens": 45073,
+    "totalCostUsd": 0.5337832499999999
+  },
+  "answer": {
+    "text": "## The corpus does not give a specific years-of-experience figure\n\nThe Jersey corpus describes the JFSC's fit-and-proper test for principal persons of a TCB in qualitative terms but does **not** quote a specific quantum of trust officer experience (e.g. \"five years\" or \"ten years\") that the JFSC typically expects. Both relevant files are also marked `draft`, so I will not cite them as settled authority.\n\n### What the corpus does say\n\nFor principal-person approval at a Jersey TCB, the JFSC applies a fit-and-proper assessment by reference to:\n\n- **Honesty, integrity and reputation**;\n- **Competence and capability for the role**;\n- **Financial soundness**;\n- **Regulatory history** in any jurisdiction;\n- **Criminal record**;\n- **Conflicts of interest**;\n- **Track record in prior similar roles**.\n\nThe test is applied both at the individual level and at the level of the organisation as a whole, and runs as a **continuing** obligation — adverse events (criminal conviction, regulatory action, insolvency) trigger re-assessment ([`jersey/financial-regulation/licensing.md`](jersey/financial-regulation/licensing.md), draft, last verified 2026-05-15).\n\nA new principal person also requires **prior JFSC consent before the appointment takes effect**, supported by a principal-person questionnaire and references ([`jersey/use-cases/trust-officer/fit-and-proper-changes.md`](jersey/use-cases/trust-officer/fit-and-proper-changes.md), draft, last verified 2026-05-15).\n\n### What the corpus does not cover\n\nThe corpus does **not** quote:\n\n- a minimum number of years of fiduciary / trust officer experience the JFSC looks for;\n- expected professional qualifications (e.g. STEP, ICSA / CGI, ACCA);\n- whether expectations differ between principals of a large bank-owned TCB and a boutique TCB;\n- how the JFSC treats overseas trust experience as a substitute for Jersey experience.\n\nThese are the kinds of specifics that, in practice, sit in the **JFSC Codes of Practice for Trust Company Business** and the JFSC's **fit-and-proper guidance notes** — primary sources the corpus references but does not reproduce the quantitative detail of.\n\n### Caveats and recommendation\n\n- Both files cited above are status `draft` — drafted but not yet editorially verified against the primary sources. Treat them as orientation, not authority.\n- For a definitive answer on what trust officer experience the JFSC expects in practice for principal-person approval, verify directly against the JFSC TCB Code of Practice and the JFSC fit-and-proper guidance (jerseyfsc.org), and consider speaking to JFSC supervision in advance for novel cases.\n\n### Cited files\n\n1. `jersey/financial-regulation/licensing.md` (draft, last verified 2026-05-15)\n2. `jersey/use-cases/trust-officer/fit-and-proper-changes.md` (draft, last verified 2026-05-15)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 405
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

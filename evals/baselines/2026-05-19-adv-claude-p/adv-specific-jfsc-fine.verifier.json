@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 9,
+  "claimsWithCitation": 9,
+  "notes": "All substantive claims are supported by the cited corpus files. Every claim attaches at least one corpus path and the content at that path backs the assertion. Soft warning: all seven cited files carry status: draft rather than stable, so the underlying content has not yet been editorially promoted — but each file's content does support the claims made. The response's core conclusion — that the corpus does not provide a specific monetary cap for the Article 7 criminal fine — is confirmed by inspection of fsl-article-7.md, which says 'Substantial fines' without a numeric figure.",
+  "rejectCount": 0,
+  "costUsd": 0.34220000000000006
+}

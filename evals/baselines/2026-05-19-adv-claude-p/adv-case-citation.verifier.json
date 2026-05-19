@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 4,
+  "claimsWithCitation": 4,
+  "notes": "All four substantive Jersey legal claims (Court declined partial rescission as re-writing of history; causation-limb failure; Court 'wary of being asked to re-write history' / frame relief as unwinding in full; commercial misjudgement bullet not tied to M Settlement) are cited to corpus file paths and verified against those files. Two minor factual inaccuracies exist in the draft's meta-commentary about the corpus itself (not in the legal claims): (1) the draft associates Bedell Cristin with M Settlement, but the [bc] link at article-47-set-aside.md:206 is used for successful applications generally, not for M Settlement — only Collas Crill is cited for M Settlement; (2) the draft says 'Collas Crill / Bedell Cristin briefing URLs sit in a 2021 path' but only the Bedell Cristin URL contains 'fy-2021', not the Collas Crill URL. These are provenance-characterisation errors rather than unsupported legal claims, so they do not trigger a reject, but the user should be aware the Bedell Cristin association is inaccurate.",
+  "rejectCount": 0,
+  "costUsd": 0.5230805000000001
+}

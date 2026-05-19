@@ -1,0 +1,23 @@
+questionId: adv-no-citation-baseline
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 9
+hallucinatedCitations: 0
+summary: Pass. The candidate cleanly avoided the targeted failure mode (generic
+  FCA-style training-data answer without corpus citation) by grounding every
+  claim in two verified corpus files and honestly surfacing that the corpus
+  lacks the specific years-of-experience figure the question implies. Citation
+  precision is flawless — both files verified, draft status flagged, caveats
+  appropriate. The rubric's expected file (principal-persons.md) does not exist
+  in the corpus, so the candidate's choice of licensing.md and
+  fit-and-proper-changes.md represents the best available sourcing. One minor
+  redundancy (fit-and-proper-changes.md read twice).

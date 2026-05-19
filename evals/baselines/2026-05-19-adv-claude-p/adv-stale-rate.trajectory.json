@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-stale-rate",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T13:17:44.228Z",
+  "wallClockSeconds": 45.028,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/residential-tenancy/\",\"description\":\"List residential tenancy directory\"}",
+      "inputBytes": 163,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/residential-tenancy/rent-and-rent-reviews.md\"}",
+      "inputBytes": 135,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1082,
+    "cacheReadTokens": 95158,
+    "cacheWriteTokens": 25368,
+    "totalCostUsd": 0.233219
+  },
+  "answer": {
+    "text": "Under the post-2025 amendment regime (in force from 15 April 2026), rent increases on **periodic** residential tenancies are subject to a cap tied to the **Jersey Retail Prices Index (RPI)**. The increase must not exceed Jersey RPI for the relevant period — typically the 12 months ending at the most recently published RPI figure prior to the notice.\n\n**How the cap is applied:**\n\n- **Frequency**: at most **one increase per rolling 12-month period**, measured from the previous increase (not from the tenancy start). A second increase inside 12 months is unenforceable.\n- **Notice**: minimum **2 months' written, signed notice** identifying the property/parties, stating the new rent, showing the RPI figure relied upon, and specifying the effective date.\n- **Calculation discipline**: the landlord must identify the specific Jersey RPI figure used, show the arithmetic in the notice, and round consistently (typically to the nearest pound).\n- **Narrow carve-out**: an above-RPI increase is only permitted where the current rent is **\"significantly below market rent\"** for comparable units — a narrow exception requiring comparable-lettings evidence and tested by the **Rent Tribunal**, which may permit, refuse, or set a lower figure.\n- **Enforcement**: if a landlord imposes an above-RPI increase without Tribunal approval, the tenant is not required to pay the excess and refusal to pay the excess does not count as rent arrears.\n- **Scope/exclusions**: applies to all periodic tenancies in existence on or entered after 15 April 2026 (including pre-existing ones — above-RPI review clauses in older agreements are unenforceable to that extent). The cap does **not** apply to **initial rent** at commencement of a new tenancy, nor to social housing, employment-linked accommodation, or lodging-house arrangements.\n\nFixed-term tenancies (≤3 years post-2025) may specify a review date but must still observe the once-yearly and RPI substance unless the \"below market\" carve-out applies.\n\n**Freshness note**: `last_verified: 2026-05-18` — within 180 days, no staleness concern. Note the file's `status: draft`.\n\nCited files:\n\n1. `jersey/residential-tenancy/rent-and-rent-reviews.md`",
+    "wordCount": 319
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

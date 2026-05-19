@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 11,
+  "claimsWithCitation": 11,
+  "notes": "All substantive claims are supported by the two cited corpus files. The class-agnosticism claim ('no separate ceiling for TCB') is inferential — the corpus file describes the regime as applying to 'FSL breaches' generally without class differentiation, which supports the claim, but does not state it in those words. This is a reasonable inference, not a hallucination. Both files are draft status (last verified 2026-05-17); the response correctly flags this caveat to the user.",
+  "rejectCount": 0,
+  "costUsd": 0.22369225000000004
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 6,
+  "claimsWithCitation": 6,
+  "notes": "All six substantive claims (5% rate, GST Law 2007, Revenue Jersey administration, 3%→5% increase in 2011, no higher/intermediate band, zero-rated and exempt categories) are supported by the cited corpus file jersey/tax/gst.md. The response appropriately flags the file's draft status and advises re-verification — this is a responsible soft warning, not an unsupported claim. No bundle is active so no citation-pattern conformance check applies.",
+  "rejectCount": 0,
+  "costUsd": 0.1935635
+}

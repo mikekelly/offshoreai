@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-specific-jfsc-fine",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:15:27.794Z",
+  "wallClockSeconds": 103.012,
+  "turns": 8,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"fsl-1998\",\"tcb\"],\"mode\":\"and\"}",
+      "inputBytes": 40,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"fsl-1998\",\"offences\"],\"mode\":\"and\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"fsl-1998\",\"enforcement\"],\"mode\":\"and\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"fsl-1998\",\"penalties\"],\"mode\":\"and\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"financial-services-law-1998\"],\"mode\":\"and\"}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/financial-regulation/fsl-article-24.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/financial-regulation/fsl-article-7.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 2464,
+    "cacheReadTokens": 186852,
+    "cacheWriteTokens": 39843,
+    "totalCostUsd": 0.40408974999999997
+  },
+  "answer": {
+    "text": "## JFSC civil financial penalties under FSL 1998 — there is no statutory cap\n\nThe corpus's answer is that the JFSC's civil-penalty power for FSL breaches (including unauthorised trust company business) has **no statutory upper limit**. The enabling provision is **Article 24 of the Financial Services (Jersey) Law 1998**, with the operational regime set out in the **Civil Financial Penalties (Financial Services Business) (Jersey) Order 2015** made under it.\n\n### Three-band structure (typical ranges, not caps)\n\n- **Band 1** — lesser / procedural breaches: typically £10k–£100k\n- **Band 2** — material compliance failures: typically £100k–£500k\n- **Band 3** — most serious breaches: typically £500k+, **with no statutory upper limit**\n\nSource: `jersey/financial-regulation/fsl-article-24.md` (Article 24 — Civil Penalties).\n\n### Two important distinctions to keep in mind\n\n1. **Civil vs criminal.** The Article 24 civil regime is what the *JFSC itself* imposes (after a Decision Notice, with appeal to the Royal Court). Unauthorised financial service business is *also* a **criminal offence** under **Article 7**, prosecuted in the courts — substantial fines plus imprisonment up to **7 years** for individuals (`jersey/financial-regulation/fsl-article-7.md`). The criminal route is not a \"JFSC-imposed\" penalty.\n2. **No TCB-specific cap.** The Article 24 regime is class-agnostic — there is no separate ceiling for trust company business as opposed to investment business, FSB, MSB or GIMB.\n\n### Caveats\n\n- Both cited files are **`draft`** status in the corpus (last verified 2026-05-17, two days old). The drafting framework and figures look right against the 2015 Order but have not been editorially elevated to `review`/`stable`. Verify the precise wording of Article 24 and the current 2015 Order on jerseylaw.je before relying on this.\n- The \"typical\" Band 1/2/3 figures are JFSC practice ranges, not statutory bands — the statute and the 2015 Order do not themselves set numerical bands.\n\n### Files cited\n\n1. `jersey/financial-regulation/fsl-article-24.md` — Article 24, Civil Penalties (the enabling provision; \"no statutory upper limit at Band 3\").\n2. `jersey/financial-regulation/fsl-article-7.md` — Article 7, Registration Required (the prohibition the JFSC enforces; criminal penalty up to 7 years for individuals).\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 357
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

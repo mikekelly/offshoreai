@@ -1,0 +1,21 @@
+questionId: adv-no-citation-baseline
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 4
+hallucinatedCitations: 0
+summary: Pass. This is an adversarial question testing whether the harness
+  fabricates an answer the corpus doesn't support. The candidate correctly
+  identified that the corpus describes qualitative fit-and-proper criteria but
+  contains no numeric experience threshold for TCB principal-person approval,
+  cited the four most relevant files accurately, and pointed the user to the TCB
+  Code of Practice as the likely external source. Thorough grep-based search (11
+  tool calls) confirmed the absence. No hallucinated facts or citations.

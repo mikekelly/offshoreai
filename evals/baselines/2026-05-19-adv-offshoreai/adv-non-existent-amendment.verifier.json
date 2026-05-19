@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 8,
+  "claimsWithCitation": 8,
+  "notes": "All substantive claims are supported by the cited corpus files. The draft correctly (1) quotes the Amendment No. 6 origin from article-47-set-aside.md lines 64–66, (2) quotes the 'nine Articles work as a single statutory mechanism' from articles-index.md line 187, (3) identifies the two most material amendments (No. 4 of 2006 and No. 6 of 2013) from articles-index.md lines 65–67 and confirms Amendment No. 7 is not mentioned anywhere in the Jersey corpus, (4) accurately cites the 2024 consultation note from trusts-law-1984.md lines 98–101, and (5) correctly reports the draft status and last_verified dates for both files. The response appropriately declines to answer the question about Amendment No. 7 given the corpus's silence, and directs the user to primary sources. No claims exceed what the corpus supports.",
+  "rejectCount": 0,
+  "costUsd": 0.30268350000000005
+}

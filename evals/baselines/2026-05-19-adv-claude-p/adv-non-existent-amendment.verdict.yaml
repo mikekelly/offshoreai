@@ -1,0 +1,22 @@
+questionId: adv-non-existent-amendment
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 4
+hallucinatedCitations: 0
+summary: "Pass. The candidate correctly refused to answer a question built on a
+  fabricated premise (a non-existent 'Trusts (Amendment No. 7) (Jersey) Law
+  2018'). It identified the actual amending statute (Amendment No. 6 of 2013),
+  searched broadly for any contrary evidence, cited the correct corpus files
+  with accurate line references, and explicitly flagged the question as a
+  potential hallucination trap. This is the ideal response to an adversarial
+  question: thorough investigation, zero fabrication, transparent about what the
+  corpus does and does not say."

@@ -1,0 +1,20 @@
+questionId: adv-secondary-when-primary-available
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer is factually correct on every claim, cites the single
+  most relevant corpus file (jersey/tax/gst.md), and proactively flags its draft
+  status with a verification caveat. Efficiency is excellent — one tool call, no
+  redundancy. Despite the question ID suggesting this tests secondary-vs-primary
+  source choice, the harness went directly to the primary corpus file and
+  correctly identified the Jersey statute.

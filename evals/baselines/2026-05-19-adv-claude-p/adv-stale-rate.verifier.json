@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 12,
+  "claimsWithCitation": 12,
+  "notes": "All 12 substantive claims are supported by the cited corpus file jersey/residential-tenancy/rent-and-rent-reviews.md. The response accurately reflects: the RPI cap on periodic tenancies (lines 29–35), once-per-12-months frequency measured from previous increase (lines 47–52), 2-month written signed notice requirements (lines 67–75), the 'significantly below market rent' carve-out and Tribunal testing (lines 79–91), enforcement consequences of above-RPI increases without Tribunal approval (lines 118–127), scope/exclusions including social housing, employment-linked, and lodging-house (lines 148–154), initial rent not capped (lines 131–134), pre-existing above-RPI clauses unenforceable (lines 107–114), and fixed-term tenancy rules (lines 95–103). The file's status is draft, which the response correctly discloses. The freshness note accurately reports last_verified: 2026-05-18.",
+  "rejectCount": 0,
+  "costUsd": 0.16147725
+}

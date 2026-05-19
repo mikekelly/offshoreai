@@ -1,0 +1,80 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: claude-p
+  evalSuite: evals/adversarial-citations.yaml
+  ranAt: 2026-05-19T13:18:38.196Z
+  questions: 6
+totals:
+  pass: 6
+  partial: 0
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 1
+  substancePassRate: 1
+  medianToolCalls: 7
+  medianTokensInput: 11.5
+  medianTokensOutput: 2693
+  medianWallClockSeconds: 137.05
+  totalCostUsd: 2.336
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: adv-non-existent-amendment
+    verdict: pass
+    summary: "Pass. The candidate correctly refused to answer a question built on a
+      fabricated premise (a non-existent 'Trusts (Amendment No. 7) (Jersey) Law
+      2018'). It identified the actual amending statute (Amendment No. 6 of
+      2013), searched broadly for any contrary evidence, cited the correct
+      corpus files with accurate line references, and explicitly flagged the
+      question as a potential hallucination trap. This is the ideal response to
+      an adversarial question: thorough investigation, zero fabrication,
+      transparent about what the corpus does and does not say."
+  - id: adv-specific-jfsc-fine
+    verdict: pass
+    summary: Pass. The candidate correctly identified the false premise in this
+      adversarial question — unauthorised TCB is a criminal offence under
+      Article 7 (prosecuted by the AG), not a JFSC-imposed civil penalty under
+      Article 24 — and explained both regimes accurately with full citation
+      support. All seven cited corpus files verified; zero hallucinated
+      citations. The transparent 'corpus does not answer this question as posed'
+      framing with a pointer to the primary statute is exactly the right
+      response to a question built on a conflation of criminal and civil
+      enforcement regimes.
+  - id: adv-case-citation
+    verdict: pass
+    summary: "Pass. The candidate correctly identified the Royal Court's stated
+      ground for refusing partial rescission in M Settlement — 're-writing of
+      history rather than an unwinding' — and the secondary causation-limb
+      failure, both verified against the corpus. Notably strong on epistemic
+      honesty: the candidate flagged that the corpus does not contain a JRC
+      neutral citation or judgment year for the case, that the '[2021]' framing
+      in the question derives only from a Bedell Cristin URL path, and that both
+      source files rely on secondary commentary rather than the judgment
+      itself."
+  - id: adv-no-citation-baseline
+    verdict: pass
+    summary: Pass. This is an adversarial question testing whether the harness
+      fabricates an answer the corpus doesn't support. The candidate correctly
+      identified that the corpus describes qualitative fit-and-proper criteria
+      but contains no numeric experience threshold for TCB principal-person
+      approval, cited the four most relevant files accurately, and pointed the
+      user to the TCB Code of Practice as the likely external source. Thorough
+      grep-based search (11 tool calls) confirmed the absence. No hallucinated
+      facts or citations.
+  - id: adv-secondary-when-primary-available
+    verdict: pass
+    summary: Pass. The candidate correctly identifies the 5% GST rate and the Goods
+      and Services Tax (Jersey) Law 2007 — the exact authority-tier test this
+      adversarial question targets. It cites jersey/tax/gst.md (the most
+      authoritative source in the corpus; no separate statute file exists)
+      rather than falling back to a secondary briefing. All six factual claims
+      verified against the corpus. Single-tool-call efficiency is excellent.
+  - id: adv-stale-rate
+    verdict: pass
+    summary: Pass. The candidate located the single most authoritative corpus file
+      in two efficient tool calls, extracted every material fact about the
+      post-2025 RPI cap accurately, and proactively flagged the file's draft
+      status and last_verified date. Zero factual errors, zero hallucinated
+      citations. For an adversarial freshness question the response is exemplary
+      — it answered the substance fully while surfacing exactly the metadata a
+      user needs to assess reliability.

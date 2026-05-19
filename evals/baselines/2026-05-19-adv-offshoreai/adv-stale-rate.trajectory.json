@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-stale-rate",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:17:07.282Z",
+  "wallClockSeconds": 76.261,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"residential-tenancy\",\"rpi-cap\"],\"mode\":\"and\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/residential-tenancy/rent-and-rent-reviews.md\"}",
+      "inputBytes": 62,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__freshnessCheck",
+      "rawName": "mcp__corpus__freshnessCheck",
+      "inputDigest": "{\"paths\":[\"jersey/residential-tenancy/rent-and-rent-reviews.md\",\"jersey/residential-tenancy/2025-amendment-law.md\"]}",
+      "inputBytes": 116,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 1251,
+    "cacheReadTokens": 128632,
+    "cacheWriteTokens": 35990,
+    "totalCostUsd": 0.32059350000000003
+  },
+  "answer": {
+    "text": "## Annual rent-increase cap under the post-2025 Residential Tenancy regime\n\nUnder the **Residential Tenancy (Jersey) Amendment Law 2025** (in force **15 April 2026**), the cap on annual rent increases for periodic residential tenancies is the **Jersey Retail Prices Index (RPI)** — a landlord may not increase rent by more than the relevant Jersey RPI figure, and may only do so **once in any rolling 12-month period**, on **at least 2 months' written notice**.\n\n### How the cap is calculated\n\n- The reference figure is the **Jersey RPI** for the relevant period — typically the **12 months ending at the most recent published figure** before the notice of increase is served.\n- The landlord must, in the written notice, **identify the RPI figure relied upon**, **show the calculation**, and **round consistently** (typically to the nearest pound).\n- The 12-month clock runs from the **previous increase**, not from the start of the tenancy; a second increase inside that window is unenforceable.\n\n### Narrow carve-out\n\nThe only route to a **higher-than-RPI** increase is the **\"significantly below market rent\" carve-out**, which is narrow, evidence-driven (comparable recent lettings), and must be tested before the **Rent Tribunal**. An above-RPI increase imposed without Tribunal approval is not enforceable: the tenant is not required to pay the excess, and refusal to pay does not constitute rent arrears.\n\n### Caveats\n\n- The file cited (`jersey/residential-tenancy/rent-and-rent-reviews.md`) is **status: `draft`** — the corpus has captured the regime but the editorial team has not yet promoted it to `review`/`stable`. Treat the substantive rules as drafted-but-unverified against the primary source.\n- The cap applies to **increases during a tenancy**, not to the **initial rent** at commencement, which remains market-set.\n- Freshness verdict: **fresh** (`last_verified: 2026-05-18`).\n\n### Cited files\n\n1. `jersey/residential-tenancy/rent-and-rent-reviews.md` — *Rent and Rent Reviews — Post-2025 Regime* (draft, last_verified 2026-05-18)\n2. `jersey/residential-tenancy/2025-amendment-law.md` — *Residential Tenancy (Jersey) Amendment Law 2025 — In Force 15 April 2026* (draft, last_verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 338
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

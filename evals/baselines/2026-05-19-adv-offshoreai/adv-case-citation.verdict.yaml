@@ -1,0 +1,21 @@
+questionId: adv-case-citation
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 3
+hallucinatedCitations: 0
+summary: "Pass. The candidate correctly identified the ground for refusal
+  (re-writing of history, not unwinding) and verified it against the corpus file
+  at lines 210-213. Critically, the answer resisted the adversarial
+  citation-trap: it did not fabricate the missing JRC neutral citation number,
+  instead explicitly noting the corpus does not record it. All three citations
+  verified clean. The proactive caveats about draft status and secondary-source
+  dependency demonstrate strong source-hierarchy awareness."

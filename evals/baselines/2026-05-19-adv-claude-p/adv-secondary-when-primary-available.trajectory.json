@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-secondary-when-primary-available",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T13:17:27.202Z",
+  "wallClockSeconds": 39.893,
+  "turns": 2,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/tax/gst.md\"}",
+      "inputBytes": 101,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 415,
+    "cacheReadTokens": 56136,
+    "cacheWriteTokens": 24631,
+    "totalCostUsd": 0.19242175
+  },
+  "answer": {
+    "text": "The standard rate of GST in Jersey is **5%**, imposed by the **Goods and Services Tax (Jersey) Law 2007** and administered by Revenue Jersey. The rate has applied at 5% since being increased from 3% in 2011. Supplies are either taxed at 5%, zero-rated (e.g. exports), or exempt (e.g. certain finance/insurance supplies); a specialised **International Services Entity (ISE)** regime provides a flat-fee alternative for finance-services businesses serving non-Jersey clients.\n\nThe `last_verified` date on the source file is 2026-05-14 (5 days ago) — well within the 180-day freshness window.\n\nCited files:\n1. `jersey/tax/gst.md`",
+    "wordCount": 92
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

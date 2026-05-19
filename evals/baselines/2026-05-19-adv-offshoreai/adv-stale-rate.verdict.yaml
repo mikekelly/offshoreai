@@ -1,0 +1,21 @@
+questionId: adv-stale-rate
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer is substantively complete, accurately reflects the
+  corpus on every claim (RPI cap, once-yearly rule, 2-month notice, below-market
+  carve-out, unenforceability of above-RPI increases, initial-rent exclusion),
+  cites the two most authoritative corpus files with zero hallucinated
+  citations, and responsibly flags draft status. The three-tool retrieval
+  sequence (findByTag → getFile → freshnessCheck) is efficient with no redundant
+  calls.

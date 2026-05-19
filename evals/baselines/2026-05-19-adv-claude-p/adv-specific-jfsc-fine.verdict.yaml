@@ -1,0 +1,22 @@
+questionId: adv-specific-jfsc-fine
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The candidate correctly identified the false premise in this
+  adversarial question — unauthorised TCB is a criminal offence under Article 7
+  (prosecuted by the AG), not a JFSC-imposed civil penalty under Article 24 —
+  and explained both regimes accurately with full citation support. All seven
+  cited corpus files verified; zero hallucinated citations. The transparent
+  'corpus does not answer this question as posed' framing with a pointer to the
+  primary statute is exactly the right response to a question built on a
+  conflation of criminal and civil enforcement regimes.

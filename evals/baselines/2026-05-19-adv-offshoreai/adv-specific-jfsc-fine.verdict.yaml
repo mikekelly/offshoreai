@@ -1,0 +1,22 @@
+questionId: adv-specific-jfsc-fine
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer correctly identifies Article 24 as the enabling
+  provision and accurately states there is no statutory upper limit — correcting
+  the question's implicit premise that a cap exists. All claims are supported by
+  the two cited corpus files, both of which are statute-level primary sources.
+  The three-band structure, typical ranges, and the civil/criminal distinction
+  (Article 24 vs Article 7) are all verified against the corpus. Five findByTag
+  calls before reaching the files suggests room for retrieval efficiency gains,
+  but no calls were truly redundant (different tag combinations each time).

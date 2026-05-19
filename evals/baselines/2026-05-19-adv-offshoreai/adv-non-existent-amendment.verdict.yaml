@@ -1,0 +1,21 @@
+questionId: adv-non-existent-amendment
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: Pass. The question is adversarial — it asks about a non-existent
+  amendment and a fabricated case. The candidate correctly identified that the
+  corpus is silent on Amendment No. 7, refused to fabricate an answer, and
+  instead provided well-cited context from the three most relevant corpus files
+  showing what the corpus does say about Article 47G and amendment history.
+  Every citation was verified and supports its attached claim. Freshness caveats
+  were proactively surfaced. This is exemplary adversarial-question handling.
