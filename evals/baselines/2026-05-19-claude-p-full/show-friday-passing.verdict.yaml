@@ -1,0 +1,38 @@
+questionId: show-friday-passing
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: >-
+  Pass. The answer correctly explains Royal Court passing, the Friday-afternoon
+
+  scheduling practice (corroborated across four corpus files), the Norman
+  customary
+
+  law rationale, and the Samedi Division's historical Saturday-sitting origin.
+  The
+
+  single notable gap is the missing "contrat héréditaire" terminology — the
+  candidate
+
+  cited commercial-leases.md (which contains the term at line 42) but extracted
+  only
+
+  the Friday/Jurats detail without surfacing the form name. All seven citations
+
+  verified; no hallucinations. Jersey-specific scored partial for the missing
+  term
+
+  and thin Jurats explanation, but substance and citation precision are both
+  pass,
+
+  supporting overall pass.

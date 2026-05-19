@@ -1,0 +1,34 @@
+questionId: show-friday-passing
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 6
+citationsTotal: 4
+hallucinatedCitations: 0
+summary: >-
+  Partial. The answer correctly explains the contract-passing mechanism and its
+  Norman
+
+  customary-law heritage, but commits a material retrieval failure: it tells the
+  user "the
+
+  corpus is silent on the Friday-afternoon convention" when at least three
+  corpus files
+
+  (commercial-leases.md, flying-freeholds.md, force-majeure.md) explicitly
+  mention Friday
+
+  afternoon passing, and commercial-leases.md also documents two-Jurat
+  witnessing and the
+
+  contrat héréditaire form. The false negative assertion is the most damaging
+  element —
+
+  the user is actively steered away from information the corpus contains.

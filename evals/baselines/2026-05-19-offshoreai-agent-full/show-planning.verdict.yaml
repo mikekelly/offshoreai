@@ -1,0 +1,32 @@
+questionId: show-planning
+harness: offshoreai-agent
+overall: fail
+dimensions:
+  substance: fail
+  jerseySpecific: n/a
+  citationPrecision: fail
+  citationRecall: n/a
+  freshnessHandling: n/a
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 0
+hallucinatedCitations: 0
+summary: >-
+  Grader emitted unparseable YAML: Unexpected scalar at node end at line 13,
+  column 44:
+
+        - "Most extensions need application" conveyed clearly — two-storey always…
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+  Raw:
+
+  I'll verify the candidate's citations against the actual corpus files.Now let
+  me read the three primary cited files and the restrictive covenants file.Now
+  let me check the enforcement file and the planning-building-law-2002 file to
+  verify the "criminal offence / unlimited fines" claim.All citations verified.
+  Now I have the full picture. Let me check the freshness metadata on cited
+  files.All files have `last_verified: 2026-05-18` (yesterday) and `status:
+  draft`. Now let me check if there's a prior baseline verdict for this
+  question.No prior verdict files exist for this question — only the curre

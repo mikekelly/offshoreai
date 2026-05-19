@@ -1,0 +1,23 @@
+questionId: show-arrest
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected substance facts with correct
+  detail, quotes the Jersey caution verbatim, correctly renders the
+  24/36/96-hour detention ladder with authorising officers, and delivers
+  practical advice in the voice the rubric requests. Every citation verified
+  against the corpus — zero hallucinated citations. The answer correctly
+  identifies the distinctive Jersey forums (Magistrate's Court, Royal Court) and
+  the States Police / Honorary Police dual-force structure. The freshness caveat
+  noting draft status is a bonus. Four tool calls, no redundancy, under 49
+  seconds — efficient.

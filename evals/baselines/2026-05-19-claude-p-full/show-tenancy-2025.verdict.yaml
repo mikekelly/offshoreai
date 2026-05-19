@@ -1,0 +1,31 @@
+questionId: show-tenancy-2025
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: >-
+  Pass. All seven expected facts covered accurately and with supporting detail
+  drawn
+
+  faithfully from the corpus file. The answer is Jersey-specific throughout,
+  names the
+
+  correct statute, correctly presents the post-amendment regime without
+  conflating it
+
+  with pre-amendment law, and cites the single most authoritative corpus file
+  with zero
+
+  hallucination. Two tool calls with no redundancy — highly efficient for a
+  comprehensive
+
+  answer.

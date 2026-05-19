@@ -1,0 +1,19 @@
+questionId: show-drug-driving
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 2
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected facts with accurate detail,
+  draws a clear structural distinction between current impairment-based law and
+  the pending February 2026 reform proposal, and cites the single most relevant
+  corpus file. The proactive draft-status caveat at the top is good practice.
+  Efficient two-call retrieval with no redundancy.

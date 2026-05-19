@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-arrest",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T11:37:43.982Z",
+  "wallClockSeconds": 39.205,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"ppce-2003\",\"arrest\"],\"mode\":\"or\",\"limit\":20}",
+      "inputBytes": 54,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/jersey-resident/just-arrested-police-station.md\",\"full\":true}",
+      "inputBytes": 87,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/crime-fraud/rights-at-police-station.md\",\"full\":true}",
+      "inputBytes": 69,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/crime-fraud/arrest.md\",\"full\":true}",
+      "inputBytes": 51,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2514,
+    "cacheReadTokens": 127692,
+    "cacheWriteTokens": 41676,
+    "totalCostUsd": 0.387211
+  },
+  "answer": {
+    "text": "# Your rights if arrested in Jersey\n\nThe governing statute is the **Police Procedures and Criminal Evidence (Jersey) Law 2003 (\"PPCE 2003\")** and its Codes of Practice. The single most important thing to do is **ask for a solicitor immediately and don't answer substantive questions until you've spoken to one**.\n\n## Headline rights\n\n| Right | Position |\n|---|---|\n| **Free legal advice** | 24/7 duty solicitor (free of charge) or your own choice; can be delayed only in very serious cases, authorised at senior level. If you initially decline and then change your mind mid-interview, questioning must stop. |\n| **Inform someone of your arrest** | One person, told by police at public expense, as soon as practicable. |\n| **Inform consulate** | If you are a foreign national. |\n| **Right to silence** | \"You are not obliged to say anything unless you wish to do so, but what you say may be put into writing and given in evidence.\" Adverse inferences from silence at the police station are narrower in Jersey than in England. |\n| **Written notice of rights** | Provided by the custody officer on arrival, in your language. |\n| **Custody record** | A full log of every event in detention; you can ask to see it during detention and are entitled to a copy on release. |\n| **Interpreter** | Free, professional, before interview if you don't speak English well enough. |\n| **Appropriate adult** | Required if you are a juvenile (under 18) or a vulnerable adult. |\n| **Medical attention** | If unwell, injured, or needing medication. |\n| **Rest** | At least 8 continuous hours' rest in any 24-hour period; meals, water, toilet access. |\n\n## What the arresting officer must have done\n\nOn arrest, the officer must tell you you're under arrest, state the offence, caution you, identify themselves, and use no more force than necessary. Failure can render the arrest unlawful and provide grounds for excluding subsequent evidence and for civil claims (wrongful arrest, false imprisonment) (`jersey/crime-fraud/arrest.md`).\n\n## Detention time limits\n\n| Stage | Limit | Authorised by |\n|---|---|---|\n| Initial detention | **24 hours** | Custody officer |\n| Extension (serious offences) | up to **36 hours** | Police inspector |\n| Royal Court warrant of further detention | up to **96 hours total** | Royal Court (Magistrate) |\n| Beyond 96 hours | Must **charge or release** |\n\nThe custody officer must review your detention at prescribed intervals (typically every 6 hours initially). Detention beyond these limits is unlawful (`jersey/crime-fraud/rights-at-police-station.md`).\n\n## In interview\n\n- Open audio recording is required (Code E).\n- Caution at the start of each session.\n- Your solicitor can be present if requested.\n- No oppression (raised voices, intimidation, prolonged questioning); appropriate breaks; you must not be interviewed if too intoxicated, unwell, or distressed to follow.\n- A \"no comment\" interview, or a prepared statement read by your solicitor, is a legitimate option.\n\n## Practical sequence at the station\n\n1. Stay calm; identify yourself truthfully (refusal to give your name is itself an offence in some contexts).\n2. Ask for a solicitor immediately — by name or duty solicitor.\n3. Use your call to inform someone.\n4. Read the notice of rights.\n5. Don't answer substantive questions until you've had legal advice.\n6. Cooperate with procedural steps (booking, photographing, fingerprinting).\n7. On release, get a copy of the custody record and follow up with your solicitor; comply scrupulously with any bail conditions.\n\nIf you believe a right has been breached, tell your solicitor at the first opportunity, note the time and details, complain through formal channels post-release, and consider seeking exclusion of resulting evidence at any subsequent trial (`jersey/crime-fraud/rights-at-police-station.md`).\n\n## Caveats\n\n- The three corpus files cited are marked **`draft`** in the corpus (last verified 2026-05-18, 1 day old). The content is editorially drafted but the editors have flagged it as not yet fully verified against the primary text of the PPCE 2003 and its Codes of Practice. Confirm specifics against the statute and Codes before relying on any time-limit, threshold, or procedural detail.\n- The corpus summarises the PPCE 2003 and Codes; for the authoritative text consult the Jersey Law website (jerseylaw.je) and the published Codes of Practice.\n\n## Cited files\n\n1. `jersey/use-cases/jersey-resident/just-arrested-police-station.md` (draft, last verified 2026-05-18)\n2. `jersey/crime-fraud/rights-at-police-station.md` (draft, last verified 2026-05-18)\n3. `jersey/crime-fraud/arrest.md` (draft, last verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting. If you have actually just been arrested, request a solicitor before anything else.",
+    "wordCount": 764
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

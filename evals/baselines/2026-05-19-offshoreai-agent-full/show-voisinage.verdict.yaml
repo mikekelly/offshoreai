@@ -1,0 +1,35 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: >-
+  Pass. All five expected substance facts are present and correct: Norman
+  customary doctrine,
+
+  Pothier/Le Geyt foundation, distinction from English nuisance, objective
+  unreasonable-harm
+
+  test, and Royal Court jurisdiction. The answer is Jersey-specific throughout,
+  never lapses
+
+  into generic offshore language, and reads like a Jersey advocate explaining
+  the customary
+
+  roots. The single citation to jersey/property/voisinage.md is verified — every
+  claim maps
+
+  to content in the file. The candidate's proactive caveat about the file's
+  draft status is
+
+  a notable quality signal. Two tool calls, zero redundancy, 26 seconds — highly
+  efficient.

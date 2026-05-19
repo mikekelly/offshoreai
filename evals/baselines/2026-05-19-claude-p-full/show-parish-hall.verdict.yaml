@@ -1,0 +1,22 @@
+questionId: show-parish-hall
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: |-
+  Pass. The answer covers all six expected substance facts accurately and with
+  correct Jersey-specific grounding — Centenier role, £200 ceiling, powers,
+  opt-out right, treatable schedule, and exclusions all verified against the
+  corpus file. Every claim is supported by the cited parish-hall-enquiries.md.
+  Voice is natural and Jersey-informed. Notably efficient at 2 tool calls and
+  32 seconds. The candidate also added useful extras (records/consequences,
+  disqualification limitation) that are accurate per the corpus.

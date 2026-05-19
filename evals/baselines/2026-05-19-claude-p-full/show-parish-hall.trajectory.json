@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-parish-hall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T11:45:21.681Z",
+  "wallClockSeconds": 32.125,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"parish hall\\\" 2>/dev/null | head -20\",\"description\":\"Find files mentioning Parish Hall\"}",
+      "inputBytes": 156,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/road-traffic/parish-hall-enquiries.md\"}",
+      "inputBytes": 128,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1676,
+    "cacheReadTokens": 97658,
+    "cacheWriteTokens": 27263,
+    "totalCostUsd": 0.26116275
+  },
+  "answer": {
+    "text": "## What is a Parish Hall Enquiry?\n\nA **Parish Hall Enquiry** is Jersey's distinctive pre-court forum for routine minor offences — most often motoring. It is presided over by a **Centenier**, an *elected, unpaid* honorary police officer of the parish in which the alleged offence occurred. There is no direct equivalent in the UK or other common-law systems: it blends prosecutorial and limited adjudicative functions in one official, justified by long parish tradition (`jersey/road-traffic/parish-hall-enquiries.md`).\n\nAt the Enquiry, the Centenier reviews the evidence (typically from the States Police or other Honorary Police), engages with the alleged offender, and may either **caution** (no further action, but recorded), **issue a written fine up to £200 per offence**, or **refer to Magistrate's Court** if the matter is beyond Parish Hall scope. Crucially, a fine or caution can be imposed **only if the offender both admits the offence and accepts the proposed penalty** — anyone who disputes the offence must be sent to court (`jersey/road-traffic/parish-hall-enquiries.md`).\n\nThe process is informal — usually 15–30 minutes, no robes, no transcript, no advocate's address — but you have rights: to be informed of the alleged offence in advance, to bring a friend/family member/advocate, to decline to admit, to demand Magistrate's Court at any point, to appeal to Magistrate's Court for a re-hearing, and to a copy of the Centenier's record (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## When does your case go there?\n\nYour case is **likely** to be heard at Parish Hall if it is a routine motoring or minor offence such as:\n\n- Minor speeding (under 15 mph over the limit)\n- Mobile phone offences\n- Failing to display an insurance disc\n- Some traffic-light offences\n- Some minor careless-driving cases\n- Parking offences\n\n(`jersey/road-traffic/parish-hall-enquiries.md`)\n\nYour case is **excluded** from Parish Hall — and goes directly to Magistrate's Court — if it involves:\n\n- Speeding 15 mph or more over the limit\n- Drink-driving (any reading)\n- Drug-driving\n- Dangerous driving (Article 23 of the Road Traffic Law)\n- Causing death or serious injury by driving\n- Driving while disqualified\n- Failing to stop/report after an accident (in serious cases)\n- Any offence carrying **mandatory disqualification**\n- Any offence the Centenier judges to exceed the £200 ceiling\n\n(`jersey/road-traffic/parish-hall-enquiries.md`)\n\nThe schedule of Parish-Hall-treatable offences is maintained by the Law Officers' Department and reviewed periodically (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## Two things worth flagging\n\n- A Parish Hall outcome **is not** a formal criminal conviction for most purposes, but it **is** recorded, **can endorse your driving licence**, and **may be reported** to other authorities (e.g. licensing). Don't assume it's consequence-free (`jersey/road-traffic/parish-hall-enquiries.md`).\n- The Centenier **cannot impose disqualification**. If disqualification is on the table, you'll be in Magistrate's Court regardless (`jersey/road-traffic/parish-hall-enquiries.md`).\n\nThe corpus's `parish-hall-enquiries.md` is dated `last_verified: 2026-05-18` and currently marked `status: draft` — well within the 180-day freshness window (today is 2026-05-19).\n\n---\n\n## Files cited\n\n1. `jersey/road-traffic/parish-hall-enquiries.md`",
+    "wordCount": 471
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

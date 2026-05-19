@@ -1,0 +1,20 @@
+questionId: show-tenancy-2025
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: |-
+  Pass. The answer covers all seven expected facts accurately and in detail,
+  correctly cites the two most relevant corpus files, and explicitly flags
+  their draft status with a verify-against-primary-source caveat. The
+  response is well-structured, Jersey-specific throughout, and aware of the
+  reform's recency. Two tool calls with zero redundancy — an efficient run.

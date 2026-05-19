@@ -1,0 +1,35 @@
+questionId: show-eviction
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: >-
+  Pass. All six expected substance facts are present and correct, with no
+  factual errors.
+
+  Citation precision is clean — both cited files verified, no hallucinations.
+  The main gap is
+
+  the complete omission of the 2025 Amendment Law (in force 15 April 2026),
+  which the rubric
+
+  lists as a jersey_specific expectation and the corpus index marks as mandatory
+  for 2026
+
+  questions. This demotes jersey_specific to partial but does not reach overall
+  demotion
+
+  because the cited files were verified post-amendment and the substantive
+  procedure described
+
+  is accurate. Freshness handling was notably strong — draft status flagged
+  proactively.

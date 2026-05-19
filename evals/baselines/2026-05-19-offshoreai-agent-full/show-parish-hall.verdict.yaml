@@ -1,0 +1,21 @@
+questionId: show-parish-hall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six rubric facts accurately, cites the
+  single authoritative corpus file, and every claim is verified against the
+  source. Jersey-specific grounding is strong — Centenier role, Honorary Police
+  context, and Law Officers' Department schedule are all correctly presented
+  with no generic offshore language. The candidate proactively flagged the draft
+  status of the source file and recommended verification, which is exemplary
+  freshness handling. Efficient two-tool-call trajectory with no redundancy.

@@ -1,0 +1,22 @@
+questionId: show-eviction
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All six substance items are covered accurately and in detail,
+  citations are precise and verified, and the tone is a natural landlord-facing
+  smart-friend voice. The single notable gap is the omission of the 2025
+  Amendment Law (in force 15 April 2026) — a jersey_specific rubric item present
+  in the section index.md but absent from the two files the candidate read. This
+  demotes jersey_specific to partial but does not affect overall verdict since
+  the procedural content is fully correct under the post-amendment regime
+  regardless. Clean four-call trajectory with no redundancy.

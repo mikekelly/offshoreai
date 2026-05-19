@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-drug-driving",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T11:43:55.433Z",
+  "wallClockSeconds": 35.924,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls jersey/road-traffic/\",\"description\":\"List road-traffic section files\"}",
+      "inputBytes": 85,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/road-traffic/drug-driving.md\"}",
+      "inputBytes": 119,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i \\\"drug\\\" jersey/road-traffic/index.md jersey/road-traffic/drink-driving.md 2>/dev/null | head -40\",\"description\":\"Find drug-driving references in related files\"}",
+      "inputBytes": 184,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 1955,
+    "cacheReadTokens": 140122,
+    "cacheWriteTokens": 26092,
+    "totalCostUsd": 0.28205600000000003
+  },
+  "answer": {
+    "text": "I have enough to answer. The corpus has a dedicated drug-driving file with both the current regime and the reform pipeline.\n\n---\n\n# Drug-driving in Jersey — current rules and what's coming\n\n## Today (May 2026): impairment, not concentration\n\nDriving while impaired by drugs is an offence under the **Road Traffic (Jersey) Law 1956**. Unlike drink-driving — which has a fixed alcohol limit and a mechanical \"over the limit\" test — Jersey's drug-driving regime is **impairment-based**: the prosecution must prove on objective evidence that the driver was actually unfit to drive (poor control, slurred speech, failed field sobriety tests, plus blood or urine confirming drug presence) (`jersey/road-traffic/drug-driving.md`).\n\nWhat Jersey deliberately **does not yet have**:\n\n- No **statutory drug-concentration limits** (no equivalent of the English specified-limit regime);\n- No **roadside drug-testing powers** for police (no drug-wipe swabs);\n- No **per se offence** — being over a numeric limit is not, on its own, the offence.\n\nThe practical consequence: prosecution is evidentially harder than drink-driving, because impairment must be made out (`jersey/road-traffic/drug-driving.md`).\n\n### Procedure currently in use\n\n1. Stop by States or Honorary Police on observed signs of impairment;\n2. Field sobriety tests (balance, walking, eye-movement);\n3. Arrest on reasonable suspicion;\n4. Blood / urine sample at the station;\n5. Charge based on impairment evidence **plus** drug presence;\n6. Proceedings in the Magistrate's Court (`jersey/road-traffic/drug-driving.md`).\n\n### Substances and defences\n\nThe offence is **substance-neutral** — controlled drugs, lawful prescription medication, OTC medicines with drowsiness warnings, and combinations with alcohol all qualify if impairment is real. \"I had a prescription\" is not a defence to impairment. Substantive defences are limited to identity, impairment not made out, procedural defects in sampling, narrow \"innocent ingestion\", and lawful-prescription-within-label as relevant only to some charges but not impairment itself (`jersey/road-traffic/drug-driving.md`).\n\n### Sentencing\n\nTracks drink-driving: mandatory disqualification (typically 12+ months for a first offence), fine up to £2,000, imprisonment up to 6 months, licence endorsement, with aggravation for accidents, passengers, or refusal to cooperate (`jersey/road-traffic/drug-driving.md`).\n\n## What's coming: the February 2026 reform proposal\n\nIn **February 2026**, States representatives proposed legislation that would bring Jersey closer to the UK drug-driving regime:\n\n- **Statutory drug limits** for controlled and some prescription substances;\n- **Roadside testing powers** for police (swab tests similar to UK drug-wipes);\n- **Per se offences** — being over the limit becomes the offence, no impairment required;\n- **Mandatory disqualification** on conviction.\n\nThe proposal is **not yet enacted** as of May 2026. The States Assembly's timetable suggests possible introduction during 2026 or 2027; until then the impairment-based regime continues to apply (`jersey/road-traffic/drug-driving.md`). The road-traffic index flags this as a \"current gap; 2026 reform pending\" (`jersey/road-traffic/index.md`).\n\n## Caveats on the source\n\n- `jersey/road-traffic/drug-driving.md` has **status: draft** (not stable), and the only cited source is an **ITV News** piece from 14 February 2026 — a journalistic, not primary-legislative, source. The substantive impairment regime under the 1956 Law is described without a per-Article citation in this file. Treat the reform-pipeline detail as a news-grade summary pending legislative confirmation.\n- `last_verified: 2026-05-18` — one day old, well inside the 180-day freshness window.\n\n---\n\n## Files cited\n\n1. `jersey/road-traffic/drug-driving.md`\n2. `jersey/road-traffic/index.md`",
+    "wordCount": 517
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

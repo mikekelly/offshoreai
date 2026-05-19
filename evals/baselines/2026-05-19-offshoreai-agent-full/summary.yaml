@@ -1,0 +1,273 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-19T11:47:36.959Z
+  questions: 14
+totals:
+  pass: 10
+  partial: 2
+  fail: 2
+dimensionAggregates:
+  citationPrecisionPassRate: 0.86
+  jerseySpecificPassRate: 0.67
+  substancePassRate: 0.71
+  medianToolCalls: 4
+  medianTokensInput: 9.5
+  medianTokensOutput: 1920.5
+  medianWallClockSeconds: 36.51
+  totalCostUsd: 5.4384
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-trusts-firewall
+    verdict: pass
+    summary: Pass. The answer is a thorough, deeply Jersey-specific exposition of
+      every sub-paragraph of Article 9 TJL 1984, with correct citation to the
+      most authoritative corpus file and zero hallucinated claims. The single
+      missing rubric fact (anti-suit injunctions) is not present in the corpus
+      itself, so the agent correctly reported what the corpus contains. Two tool
+      calls, 39 seconds — a near-optimal retrieval path. The draft-status caveat
+      and primary-source verification advisory are good practice.
+  - id: show-article-47
+    verdict: pass
+    summary: >-
+      Pass. The answer covers all six expected facts with practitioner-grade
+      precision,
+
+      correctly names Jersey statutes and the S&T Trusts case, and maintains the
+      voice of
+
+      a Jersey trust litigator throughout. Every claim is supported by the two
+      cited corpus
+
+      files with zero hallucinated citations. The opening clarification that
+      Article 47B is
+
+      the interpretation Article (not itself the set-aside mechanism) is a
+      particularly
+
+      strong detail that exceeds the rubric's expectations. Retrieval was
+      efficient at 4
+
+      tool calls with no redundancy.
+  - id: show-jpf-vs-expert
+    verdict: pass
+    summary: >-
+      Pass. Every rubric fact is covered with correct citations — the candidate
+      hit
+
+      all three corpus files, quoted the pitfall verbatim, and correctly
+      characterised
+
+      JPF as the club-deal default with Expert Fund as the scale-up alternative.
+      The
+
+      voice reads as fund counsel advising a sponsor, not a generic offshore
+      summary.
+
+      Efficiency is tight at 5 tool calls with no redundancy.
+  - id: show-trusts-comparison
+    verdict: fail
+    summary: >-
+      Grader emitted unparseable YAML: Unexpected scalar at node end at line 16,
+      column 48:
+
+            - "VISTA is not discussed in the corpus" — false; glossary-extension.md d…
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+      Raw:
+
+      I'll verify the candidate's citations against the actual corpus files.All
+      four files exist. Now let me read them to verify the claims.Now let me
+      check the Article 9 firewall file since the rubric specifically requires
+      it.Now I have all the evidence needed. Let me verify one more claim — the
+      candidate says VISTA's distinctive feature is "relieving the trustee of
+      the prudent-man duty to monitor or intervene in an underlying company's
+      affairs — the 'anti-Bartlett' function" and that "has no statutory
+      analogue in Jersey." This is not from the corpus (candidate acknowledges
+      this). Let me check if t
+  - id: show-aifmd-nppr
+    verdict: partial
+    summary: >-
+      Partial. The answer is well-structured, citation-precise, and sounds like
+      fund counsel,
+
+      but misses two load-bearing rubric facts: it never names AIFMD Article 42
+      (the specific
+
+      AIFMD legal basis for NPPR) or Article 21 reporting obligations. It also
+      fails to surface
+
+      the "Alternative Investment Funds (Jersey) Regulations 2012" by name in
+      the answer text,
+
+      despite the corpus source listing it — the rubric expected the Jersey-side
+      statutory
+
+      instrument to be named. Voice and citation quality are strong; the
+      substance gap on the
+
+      AIFMD article-level detail is the limiting dimension.
+  - id: show-pillar-two
+    verdict: pass
+    summary: >-
+      Pass. All five expected facts covered accurately with correct
+      Jersey-specific statutory
+
+      references (MCIT Law 2024, QDMTT, IIR, zero-ten interaction, €750m
+      threshold). The most
+
+      valuable single observation: the candidate transparently acknowledges the
+      corpus's UK-side
+
+      gap and directs the user to HMRC sources rather than fabricating UK Pillar
+      Two detail —
+
+      exactly the right behaviour for a citation-mandatory system. Seven tool
+      calls with no
+
+      redundancy; clean retrieval pattern.
+  - id: show-eviction
+    verdict: pass
+    summary: >-
+      Pass. All six expected substance facts are present and correct, with no
+      factual errors.
+
+      Citation precision is clean — both cited files verified, no
+      hallucinations. The main gap is
+
+      the complete omission of the 2025 Amendment Law (in force 15 April 2026),
+      which the rubric
+
+      lists as a jersey_specific expectation and the corpus index marks as
+      mandatory for 2026
+
+      questions. This demotes jersey_specific to partial but does not reach
+      overall demotion
+
+      because the cited files were verified post-amendment and the substantive
+      procedure described
+
+      is accurate. Freshness handling was notably strong — draft status flagged
+      proactively.
+  - id: show-arrest
+    verdict: pass
+    summary: >-
+      Pass. All six expected substance facts are present and correct, citations
+
+      are precise and well-verified, and the answer's practical voice — opening
+
+      with "ask for a solicitor immediately" and closing with a step-by-step
+
+      station sequence — matches the rubric intent exactly. The one gap is
+
+      jersey_specific: the answer does not mention the States Police / Honorary
+
+      Police distinction or explicitly name the Magistrate's Court and Royal
+      Court
+
+      as the two criminal forums (it only references "Royal Court (Magistrate)"
+
+      in the detention table). The corpus file arrest.md covers Honorary Police
+
+      at length but the candidate didn't surface it. This keeps jersey_specific
+
+      at partial but doesn't demote the overall verdict given the strength of
+
+      every other dimension. Freshness handling was exemplary — draft status
+
+      flagged with a clear caveat. Four tool calls, no redundancy, under 40
+
+      seconds.
+  - id: show-planning
+    verdict: fail
+    summary: >-
+      Grader emitted unparseable YAML: Unexpected scalar at node end at line 13,
+      column 44:
+
+            - "Most extensions need application" conveyed clearly — two-storey always…
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+      Raw:
+
+      I'll verify the candidate's citations against the actual corpus files.Now
+      let me read the three primary cited files and the restrictive covenants
+      file.Now let me check the enforcement file and the
+      planning-building-law-2002 file to verify the "criminal offence /
+      unlimited fines" claim.All citations verified. Now I have the full
+      picture. Let me check the freshness metadata on cited files.All files have
+      `last_verified: 2026-05-18` (yesterday) and `status: draft`. Now let me
+      check if there's a prior baseline verdict for this question.No prior
+      verdict files exist for this question — only the curre
+  - id: show-tenancy-2025
+    verdict: pass
+    summary: |-
+      Pass. The answer covers all seven expected facts accurately and in detail,
+      correctly cites the two most relevant corpus files, and explicitly flags
+      their draft status with a verify-against-primary-source caveat. The
+      response is well-structured, Jersey-specific throughout, and aware of the
+      reform's recency. Two tool calls with zero redundancy — an efficient run.
+  - id: show-drug-driving
+    verdict: pass
+    summary: Pass. The answer covers all five expected facts with accurate detail,
+      draws a clear structural distinction between current impairment-based law
+      and the pending February 2026 reform proposal, and cites the single most
+      relevant corpus file. The proactive draft-status caveat at the top is good
+      practice. Efficient two-call retrieval with no redundancy.
+  - id: show-parish-hall
+    verdict: pass
+    summary: Pass. The answer covers all six rubric facts accurately, cites the
+      single authoritative corpus file, and every claim is verified against the
+      source. Jersey-specific grounding is strong — Centenier role, Honorary
+      Police context, and Law Officers' Department schedule are all correctly
+      presented with no generic offshore language. The candidate proactively
+      flagged the draft status of the source file and recommended verification,
+      which is exemplary freshness handling. Efficient two-tool-call trajectory
+      with no redundancy.
+  - id: show-voisinage
+    verdict: pass
+    summary: >-
+      Pass. All five expected substance facts are present and correct: Norman
+      customary doctrine,
+
+      Pothier/Le Geyt foundation, distinction from English nuisance, objective
+      unreasonable-harm
+
+      test, and Royal Court jurisdiction. The answer is Jersey-specific
+      throughout, never lapses
+
+      into generic offshore language, and reads like a Jersey advocate
+      explaining the customary
+
+      roots. The single citation to jersey/property/voisinage.md is verified —
+      every claim maps
+
+      to content in the file. The candidate's proactive caveat about the file's
+      draft status is
+
+      a notable quality signal. Two tool calls, zero redundancy, 26 seconds —
+      highly efficient.
+  - id: show-friday-passing
+    verdict: partial
+    summary: >-
+      Partial. The answer correctly explains the contract-passing mechanism and
+      its Norman
+
+      customary-law heritage, but commits a material retrieval failure: it tells
+      the user "the
+
+      corpus is silent on the Friday-afternoon convention" when at least three
+      corpus files
+
+      (commercial-leases.md, flying-freeholds.md, force-majeure.md) explicitly
+      mention Friday
+
+      afternoon passing, and commercial-leases.md also documents two-Jurat
+      witnessing and the
+
+      contrat héréditaire form. The false negative assertion is the most
+      damaging element —
+
+      the user is actively steered away from information the corpus contains.

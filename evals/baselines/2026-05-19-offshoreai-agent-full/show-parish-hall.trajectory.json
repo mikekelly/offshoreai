@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-parish-hall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T11:42:56.510Z",
+  "wallClockSeconds": 25.451,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"parish-hall\"]}",
+      "inputBytes": 24,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/road-traffic/parish-hall-enquiries.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1314,
+    "cacheReadTokens": 129063,
+    "cacheWriteTokens": 35586,
+    "totalCostUsd": 0.31983399999999995
+  },
+  "answer": {
+    "text": "## What a Parish Hall Enquiry is\n\nA **Parish Hall Enquiry** is a pre-court forum, presided over by an elected, unpaid honorary-police **Centenier** of the parish where the alleged offence took place. It is the route by which the majority of routine Jersey motoring offences are resolved without ever reaching the Magistrate's Court. There is no direct equivalent in the UK or other common-law jurisdictions — it is not a fixed-penalty notice, not a fiscal fine, and not a court (`jersey/road-traffic/parish-hall-enquiries.md`).\n\nThe Centenier reviews the evidence, decides whether to charge, and can:\n\n- caution (recorded, no further action);\n- issue a written fine of up to **£200 per offence**; or\n- refer to the Magistrate's Court if the matter exceeds Parish Hall scope.\n\nA Centenier can only fine or caution if the defendant **admits** the offence **and accepts** the penalty. A defendant who disputes the offence — or who simply prefers a court hearing — has the right to demand the Magistrate's Court instead, and can appeal any Parish Hall outcome by requesting a re-hearing there (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## When your case goes there\n\n**Typical Parish Hall matter** (routine motoring):\n\n- minor speeding (under 15 mph over);\n- mobile phone offences;\n- failing to display insurance disc;\n- some traffic-light and minor careless-driving offences;\n- parking offences (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n**Excluded — goes straight to Magistrate's Court by summons**:\n\n- speeding 15 mph or more over the limit;\n- drink-driving (any reading) or drug-driving;\n- dangerous driving (Art. 23 RTJL 1956);\n- causing death or serious injury by driving;\n- driving while disqualified;\n- failing to stop/report (serious cases);\n- any offence carrying mandatory disqualification;\n- anything the Centenier judges to exceed the £200 ceiling (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## Caveats\n\n- The cited file is **`draft`** status (last_verified 2026-05-18). The content is written but has not been editorially re-verified against primary sources, so treat the £200 ceiling and the schedule of offences as indicative; the Law Officers' Department maintains the authoritative schedule and reviews it periodically.\n- The corpus does not specify the current schedule of offences in detail — verify with the States of Jersey Police or Law Officers' Department for the precise list applicable to your case.\n\n## Sources cited\n\n1. `jersey/road-traffic/parish-hall-enquiries.md` (status: draft; last_verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 395
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

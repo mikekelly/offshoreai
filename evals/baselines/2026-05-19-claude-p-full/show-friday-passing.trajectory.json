@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T11:49:27.000Z",
+  "wallClockSeconds": 74.7,
+  "turns": 12,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/\",\"description\":\"List property folder\"}",
+      "inputBytes": 138,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/contract-passing.md\"}",
+      "inputBytes": 119,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -ri \\\"friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/ -l\",\"description\":\"Search for Friday references in corpus\"}",
+      "inputBytes": 167,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i \\\"friday\\\\|afternoon\\\\|samedi\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/flying-freeholds.md /Users/mike/code/offshoreai/.claude/workt",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -ri \\\"samedi\\\\|samedi division\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/ -l\",\"description\":\"Find Samedi Division references\"}",
+      "inputBytes": 178,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i -B 2 -A 4 \\\"samedi\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/legal-system/royal-court.md /Users/mike/code/offshoreai/.claude/worktrees/dreamy-",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/commercial-leases.md\",\"offset\":40,\"limit\":80}",
+      "inputBytes": 143,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/flying-freeholds.md\",\"offset\":150,\"limit\":30}",
+      "inputBytes": 143,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 8,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/contract/force-majeure.md\",\"offset\":115,\"limit\":25}",
+      "inputBytes": 140,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 9,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/legal-system/royal-court.md\",\"offset\":79,\"limit\":60}",
+      "inputBytes": 141,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 10,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -H \\\"last_verified\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/commercial-leases.md /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozn",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 17,
+    "outputTokens": 4078,
+    "cacheReadTokens": 522483,
+    "cacheWriteTokens": 40069,
+    "totalCostUsd": 0.61370775
+  },
+  "answer": {
+    "text": "All cited files were verified within the past week, so freshness is fine.\n\n## Answer\n\nYour transfer happens that way because Jersey real-property law requires every conveyance of land to be **\"passed\" before the Royal Court** — buyer and seller (typically their advocates as attorneys) appear in court, the contract is read or referenced, the Greffier records it, and **legal title passes at that moment in the courtroom**. The transfer is a court act, not a private deed exchange as it is in England (`jersey/property/contract-passing.md`; `jersey/property/real-property-overview.md`).\n\nThe forum is the Royal Court's **Samedi Division**. The name itself (\"samedi\" = Saturday) is a clue: it is so called *after the historical Saturday sittings* — i.e. there is a long-standing tradition that this branch of the Court sits at the end of the week for civil and conveyancing business (`jersey/legal-system/royal-court.md`). In modern practice, contract passings for real-property dealings sit on a **Friday afternoon** slot — the corpus records this explicitly for:\n\n- conventional sales and hypothecs of land (`jersey/property/contract-passing.md` describes the procedure; the Friday-afternoon scheduling is given in the files below),\n- **commercial leases of 9 years or more** (\"Passing on a Friday afternoon at the Royal Court; Two Jurats sit to witness\") (`jersey/property/commercial-leases.md`),\n- **flying-freehold transfers** (\"Royal Court passing (Friday afternoon)\") (`jersey/property/flying-freeholds.md`),\n- and is referenced in the contract-law context too: \"Royal Court passing required (Friday afternoon hearings) … Court closure historically triggered force-majeure arguments\" (`jersey/contract/force-majeure.md`).\n\n**Why a court hearing at all?** The corpus explains the rationale as a Norman-customary-law inheritance: real-property transfers are made *publicly* before the Royal Court so the Court acts as the **repository of property records**, giving **certainty about title transitions** and **public visibility** of who is dealing with what land (price terms remain private) — and the system has been preserved for its historic importance (`jersey/property/contract-passing.md`).\n\n**Why Friday specifically?** The corpus consistently *describes* Friday-afternoon passing as the established practice across at least four files, but it does not give a separate doctrinal reason beyond the Samedi Division's historical end-of-week sitting pattern. So the honest answer is: the Friday-afternoon slot is the modern continuation of the Samedi (Saturday) civil-sitting tradition — **the corpus does not give a more specific reason** than that for the choice of Friday.\n\n### Files cited\n1. `jersey/property/contract-passing.md`\n2. `jersey/property/real-property-overview.md`\n3. `jersey/property/commercial-leases.md`\n4. `jersey/property/flying-freeholds.md`\n5. `jersey/contract/force-majeure.md`\n6. `jersey/legal-system/royal-court.md`\n7. `jersey/glossary.md`",
+    "wordCount": 387
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

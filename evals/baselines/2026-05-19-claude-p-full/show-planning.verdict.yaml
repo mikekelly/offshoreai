@@ -1,0 +1,34 @@
+questionId: show-planning
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: >-
+  Pass. The answer is substantively strong on the homeowner-facing planning
+  question — GD Order
+
+  2011 permitted-development route, conservation/listed restrictions, two
+  parallel consents, and
+
+  the Certificate of Lawful Development are all correctly sourced and
+  well-structured. The most
+
+  load-bearing weakness is omitting PBL 2002 by name and the Department for the
+  Environment, both
+
+  traceable to not reading planning/index.md or planning-building-law-2002.md
+  despite having them
+
+  in the ls output. All three citations verified clean with zero hallucinations.
+  Efficient at 3
+
+  tool calls and 34 seconds.

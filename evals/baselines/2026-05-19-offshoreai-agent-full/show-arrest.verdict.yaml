@@ -1,0 +1,28 @@
+questionId: show-arrest
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 3
+hallucinatedCitations: 0
+summary: |-
+  Pass. All six expected substance facts are present and correct, citations
+  are precise and well-verified, and the answer's practical voice — opening
+  with "ask for a solicitor immediately" and closing with a step-by-step
+  station sequence — matches the rubric intent exactly. The one gap is
+  jersey_specific: the answer does not mention the States Police / Honorary
+  Police distinction or explicitly name the Magistrate's Court and Royal Court
+  as the two criminal forums (it only references "Royal Court (Magistrate)"
+  in the detention table). The corpus file arrest.md covers Honorary Police
+  at length but the candidate didn't surface it. This keeps jersey_specific
+  at partial but doesn't demote the overall verdict given the strength of
+  every other dimension. Freshness handling was exemplary — draft status
+  flagged with a clear caveat. Four tool calls, no redundancy, under 40
+  seconds.

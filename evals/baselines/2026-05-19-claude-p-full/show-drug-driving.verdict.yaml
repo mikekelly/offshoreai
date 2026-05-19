@@ -1,0 +1,48 @@
+questionId: show-drug-driving
+harness: claude-p
+overall: fail
+dimensions:
+  substance: fail
+  jerseySpecific: n/a
+  citationPrecision: fail
+  citationRecall: n/a
+  freshnessHandling: n/a
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 0
+hallucinatedCitations: 0
+summary: >-
+  Grader emitted unparseable YAML: Unexpected scalar at node end at line 38,
+  column 51:
+
+          notes: "current gap; 2026 reform pending" confirmed at line 68
+                                                    ^^^^^^^^^^^^^^^^^^^^
+
+
+  Raw:
+
+  I'll verify the candidate's citations against the actual corpus files.Both
+  cited files verified. All claims in the candidate answer are supported by the
+  actual corpus content. Here's the verdict:
+
+
+  ```yaml
+
+  verdict_kind: structured_eval_verdict_v1
+
+  question_id: show-drug-driving
+
+  harness: claude-p
+
+  overall: pass
+
+
+  dimensions:
+    substance:
+      score: pass
+      facts_covered: 5 of 5
+      notable_correct:
+        - Correctly identifies impairment-only regime with no statutory drug limits
+        - Accurately describes RTJL 1956 as the substantive offence statute
+        - Police procedure (field sobriety + blo

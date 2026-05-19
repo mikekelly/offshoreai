@@ -1,0 +1,24 @@
+questionId: show-pillar-two
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 19
+hallucinatedCitations: 0
+summary: 'Pass. All five rubric facts covered with correct Jersey-specific
+  framing. The answer reads like structured international tax advisory —
+  identifies the MCIT/QDMTT collection hierarchy, the zero-ten coexistence, the
+  €750m threshold mechanics, and the strategic stay-vs-migrate question.
+  Citations are precise and verified against four primary corpus files; no
+  hallucinations. The candidate honestly scopes what the corpus does not cover
+  (UK-side Pillar Two mechanics) rather than fabricating. Minor note: the
+  statute is named "Law 2024" following the corpus source file, while
+  COVERAGE-AUDIT.md says "Law 2025" — this is a corpus inconsistency, not a
+  candidate error.'

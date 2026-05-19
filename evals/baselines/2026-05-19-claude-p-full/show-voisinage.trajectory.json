@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T11:46:41.807Z",
+  "wallClockSeconds": 52.37,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -ril \\\"voisinage\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/ | head -30\",\"description\":\"Find files mentioning voisinage\"}",
+      "inputBytes": 172,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/voisinage.md\"}",
+      "inputBytes": 112,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/contract/delit-tort.md\"}",
+      "inputBytes": 113,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -A 3 -B 1 \\\"voisinage\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/boundary-disputes.md /Users/mike/code/offshoreai/.claude/worktrees/dream",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 10,
+    "outputTokens": 2693,
+    "cacheReadTokens": 187568,
+    "cacheWriteTokens": 31419,
+    "totalCostUsd": 0.35752775
+  },
+  "answer": {
+    "text": "## What voisinage is\n\n**Voisinage** is a **Norman customary-law doctrine** preserved in Jersey that governs the relationship between neighbouring landowners. At its core, it requires each owner to use their property in a way that does not cause **unreasonable harm** to neighbours — harm that exceeds the ordinary inconveniences of living next to someone (`jersey/property/voisinage.md`).\n\nIt is distinctively Jersey: most modern systems have abandoned it, and it sits alongside (but is not the same as) English-style private nuisance. Jersey's tort/délit framework lists voisinage as a **specific customary Jersey doctrine**, with strict-liability elements and case law including *Rockhampton Apartments* (`jersey/contract/delit-tort.md`).\n\n## When it bites\n\nTo make out a claim under voisinage, the corpus says you need (`jersey/property/voisinage.md`):\n\n1. **Harm** that is objectively identifiable;\n2. **Caused by the defendant's use of their property**;\n3. **Exceeding ordinary inconveniences** of the neighbourhood;\n4. **Without adequate justification**.\n\nImportantly, voisinage **can apply without fault** — it has objective/strict-liability flavour, unlike negligence. It is also **not limited** to the English nuisance categories of \"smell, smoke, noise\" — its scope is broader (`jersey/property/voisinage.md`).\n\n## Typical fact patterns the corpus says it covers\n\nPer `jersey/property/voisinage.md`, voisinage has been used for:\n\n- excessive noise (including late-night noise from commercial premises and inter-apartment noise);\n- smells from livestock, kitchens, or activities;\n- smoke / fumes;\n- vibrations from machinery or construction (prolonged or excessive construction, not just temporary);\n- surface water / drainage;\n- tree roots / overhanging branches;\n- light obstruction (specific Jersey rules);\n- agricultural manure/slurry spreading.\n\nDefences include reasonable use, claimant consent/acquiescence, statutory authority, and (limited) prescription. Remedies the Royal Court can grant include **injunctions**, **damages**, and orders for **specific preventative measures** (`jersey/property/voisinage.md`).\n\n## Two important traps the corpus flags\n\n- **Planning permission does not defeat voisinage.** Holding planning consent is not a complete answer; regulatory compliance is at most evidence of reasonable use (`jersey/property/voisinage.md`).\n- **Servitudes don't override voisinage either.** A neighbour with a valid easement can still breach voisinage if they exercise it excessively (`jersey/property/voisinage.md`).\n\n## So does it apply to *your* problem?\n\nThe corpus cannot answer that — you haven't told me what the neighbour is doing. The honest pre-screen from `jersey/property/voisinage.md` is:\n\n- Is there objectively identifiable **harm** to you/your property (not just irritation)?\n- Is it **caused by how they use their land** (not, e.g., personal conduct unrelated to the property)?\n- Does it **exceed normal neighbourhood inconvenience** — i.e., would a reasonable Jersey neighbour in the same area find this beyond the pale?\n- Is there **no statutory authority or servitude** properly justifying it?\n\nIf yes to all four, voisinage is in scope. The corpus's practical recommendation is to **document the interference** (logs, photographs, recordings), build a **correspondence trail** with the neighbour, **engage experts early** (acoustic, environmental) where relevant, **try mediation first**, and instruct a Jersey advocate familiar with the doctrine before any Order of Justice in the Royal Court (`jersey/property/voisinage.md`).\n\n## Freshness / status note\n\nBoth files I relied on are within the 180-day freshness window (`voisinage.md` last_verified 2026-05-18; `delit-tort.md` last_verified 2026-05-17). However, **`jersey/property/voisinage.md` is marked `status: draft`** — meaning it has not yet reached `stable` editorial status. Several sections refer generically to \"specific Jersey case law\" without naming the cases (except *Rockhampton Apartments*, named in `jersey/contract/delit-tort.md`). Treat this as an orientation, not a litigation-ready memo.\n\n---\n\n**Cited files:**\n\n1. `jersey/property/voisinage.md`\n2. `jersey/contract/delit-tort.md`\n3. `jersey/property/boundary-disputes.md`\n4. `jersey/property/index.md`\n5. `jersey/property/easements-and-rights-of-way.md`",
+    "wordCount": 558
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

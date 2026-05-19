@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-planning",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T11:39:34.916Z",
+  "wallClockSeconds": 33.629,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls jersey/planning/\",\"description\":\"List planning section files\"}",
+      "inputBytes": 77,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/planning/extensions-and-conversions.md\"}",
+      "inputBytes": 129,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/planning/permitted-development.md\"}",
+      "inputBytes": 124,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 1437,
+    "cacheReadTokens": 138796,
+    "cacheWriteTokens": 28466,
+    "totalCostUsd": 0.2832805
+  },
+  "answer": {
+    "text": "## Answer\n\n**It depends — but in many cases, yes.** Whether you need planning permission for a rear extension on a Jersey house turns on whether the proposed works fit within the \"permitted development\" exemptions in the **Planning and Building (General Development) (Jersey) Order 2011** (the \"GD Order 2011\"). If they do, automatic planning permission is granted and you don't need to apply; if they don't, a full planning application is required.\n\n### The permitted-development route\n\nThe GD Order 2011 grants automatic permission for **single-storey rear extensions** within specified limits on size, depth, and height. For a typical Jersey-sized property, a **small single-storey rear extension** (e.g. roughly a 3–4 m projection) **may be permitted development**. The corpus does not list the exact numerical thresholds — it directs you to check the current text of the Order itself.\n\n### When you definitely need planning permission\n\nEven for a rear extension, an application is required if:\n\n- The extension exceeds the GD Order's size, depth, or height limits;\n- It is a **two-storey** extension — these always require an application;\n- The property is in a **conservation area** — full application typically needed even within the usual permitted-development thresholds;\n- The property is **listed** — listed-building consent is always required (and is separate from planning permission; both may be needed);\n- The property sits in the **Coastal National Park / Green Zone**, or an **Article 31 direction** has withdrawn permitted-development rights at that location;\n- The extension sits close to a **boundary**, which can trigger neighbour-rights issues even when otherwise within limits.\n\n### Other things that go alongside, regardless\n\nPermitted development only deals with the *planning* side. Even if you don't need planning permission you will still typically need:\n\n- **Building approval** under the Building Bye-Laws 2007;\n- Compliance with any **restrictive covenants** on the title (a private-law matter that can prohibit works that planning would allow).\n\n### Recommended practical sequence\n\nIf you're unsure whether your specific rear extension is permitted development, the corpus recommends applying for a **Certificate of Lawful Development** — a lower-fee confirmation that gives certainty and protects against future enforcement, sale, and insurance issues. Pre-application advice from the planning department is also available. The cost of getting it wrong includes enforcement action requiring you to reverse the works, problems on sale (buyers' solicitors check), and, in serious cases, criminal liability for unauthorised development.\n\n### Freshness\n\nBoth source files are `status: draft` with `last_verified: 2026-05-18` (one day before today), so they are well inside the 180-day freshness window. Note however the draft status — the documents themselves flag that they describe categories at a general level and direct readers to \"always check the current Order for exact wording and conditions.\"\n\n### Files cited\n\n1. `jersey/index.md` (planning section overview)\n2. `jersey/planning/extensions-and-conversions.md`\n3. `jersey/planning/permitted-development.md`",
+    "wordCount": 463
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

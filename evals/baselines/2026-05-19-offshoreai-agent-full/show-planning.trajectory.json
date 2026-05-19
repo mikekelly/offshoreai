@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-planning",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T11:39:11.723Z",
+  "wallClockSeconds": 31.416,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"planning\",\"permitted-development\"],\"mode\":\"and\"}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"planning\"],\"mode\":\"and\"}",
+      "inputBytes": 34,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/jersey-resident/extension-planning-permission.md\",\"full\":true}",
+      "inputBytes": 88,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/planning/permitted-development.md\",\"full\":true}",
+      "inputBytes": 63,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/planning/extensions-and-conversions.md\",\"full\":true}",
+      "inputBytes": 68,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 1927,
+    "cacheReadTokens": 128311,
+    "cacheWriteTokens": 41633,
+    "totalCostUsd": 0.37260175
+  },
+  "answer": {
+    "text": "## Do I need planning permission for a rear extension on my Jersey house?\n\n**Short answer: Probably yes, unless it's modest enough to fall fully within \"permitted development\" under the Planning and Building (General Development) (Jersey) Order 2011 (\"GD Order 2011\").**\n\n### How to think about it\n\nThe GD Order 2011 grants automatic planning permission for a range of minor works, including **single-storey rear extensions** — but only if they fall within specific numeric limits on floor area, depth, height, eaves height, distance from boundaries, and materials. Anything outside those thresholds, or a **two-storey** rear extension of any size, needs a full planning application under the Planning and Building (Jersey) Law 2002 (`jersey/planning/extensions-and-conversions.md`; `jersey/planning/permitted-development.md`).\n\nFor a typical Jersey-sized property, a small single-storey rear extension (e.g. ~3–4m projection, single storey) may be permitted development; anything larger or two-storey almost always requires application (`jersey/planning/extensions-and-conversions.md`).\n\n### Important overlays that narrow or remove permitted development\n\n- **Listed building** — listed-building consent is needed even where permitted development would otherwise cover the works.\n- **Conservation area** — many exemptions don't apply or are narrower; a full application is typical even for modest works.\n- **Green Zone / Coastal National Park** — restricted to protect landscape.\n- **Article 31 directions** — the Minister can remove permitted-development rights in specific locations.\n\n(`jersey/planning/permitted-development.md`)\n\n### Even if planning permission isn't needed\n\n- **Building approval** under the **Building Bye-Laws 2007** is a separate consent and is still required for the technical standards (structure, insulation, fire, drainage).\n- **Private restrictive covenants** on the title can prohibit works that planning would otherwise allow — check the title (`jersey/planning/extensions-and-conversions.md`; `jersey/property/restrictive-covenants.md` is cross-referenced).\n\n### If you're unsure\n\nApply for a **Certificate of Lawful Development** — a lower-fee route that confirms whether your proposal falls within permitted development and gives certainty for future sale, refinancing, or against enforcement (`jersey/planning/permitted-development.md`; `jersey/use-cases/jersey-resident/extension-planning-permission.md`).\n\n### What happens if you build without permission\n\nUnauthorised development is a **criminal offence** under the Planning and Building (Jersey) Law 2002: unlimited fines (imprisonment in serious cases), enforcement notices requiring reversal at your cost, stop notices halting work, sale and mortgage/insurance complications, and no guarantee that a retrospective application will be granted (`jersey/use-cases/jersey-resident/extension-planning-permission.md`).\n\n### Caveats on these sources\n\nThe cited files (`jersey/planning/permitted-development.md`, `jersey/planning/extensions-and-conversions.md`, `jersey/use-cases/jersey-resident/extension-planning-permission.md`) are all marked **`status: draft`** in the corpus — content is drafted but not yet verified against the primary text of the GD Order 2011. The exact numeric thresholds (floor area, depth, height, eaves height, boundary distances) are deliberately not stated in the corpus and must be checked against the current GD Order 2011 itself before relying on them. The corpus does not at this stage reproduce the specific permitted-development limits applicable to rear extensions — for those, consult the GD Order 2011 directly or the Department for the Environment's pre-application advice service.\n\n### Cited files\n\n1. `jersey/use-cases/jersey-resident/extension-planning-permission.md` (draft, last verified 2026-05-18)\n2. `jersey/planning/permitted-development.md` (draft, last verified 2026-05-18)\n3. `jersey/planning/extensions-and-conversions.md` (draft, last verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 506
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

@@ -1,0 +1,32 @@
+questionId: show-voisinage
+harness: claude-p
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: >-
+  Partial. The answer is substantively accurate, well-structured, and every
+  citation
+
+  checks out — but it fails to name Pothier and Le Geyt despite both names
+  appearing
+
+  on line 46 of the file it read, which is the single most load-bearing
+  jersey_specific
+
+  marker the rubric demands. Voice reads as a structured corpus summary rather
+  than a
+
+  Jersey advocate explaining customary-law roots. Strong on citation discipline
+  and
+
+  freshness handling; the partial verdict rests on the missing jurist names and
+  voice.
