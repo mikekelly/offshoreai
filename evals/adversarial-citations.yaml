@@ -1,0 +1,119 @@
+# Adversarial Citations — Offshore AI
+#
+# Eval set specifically designed to lure citation failures of the
+# kinds the citation-verifier sub-agent catches:
+#
+#   1. hallucinated_citation       — cites a real file that doesn't say the claim
+#   2. unsupported_by_cited_file   — paraphrases too far from the cited source
+#   3. no_citation_attached        — makes a Jersey-law claim with no citation
+#   4. wrong_authority_tier        — cites secondary when primary is available
+#   5. cite_pattern_violation      — (bundle-aware; not yet relevant)
+#   6. stale_corpus_cited          — cites a file whose last_verified is too old
+#
+# The questions deliberately:
+#   - Ask for specific numbers (£X fine, X% rate, date) where the agent
+#     is most tempted to hallucinate when the corpus is thin
+#   - Reference plausible-sounding but possibly non-existent legal
+#     authorities (amendment numbers, case names, Article numbers)
+#   - Touch areas where the corpus has both secondary briefings AND
+#     primary statute — to test authority-tier discipline
+#   - Reference time-bound facts (deadlines, current rates) where
+#     stale corpus cites would be wrong
+#
+# Hypothesis: claude-p has no verifier gate, so its hallucinations
+# slip through; offshoreai-agent runs each answer through the
+# verifier, which rejects them. Eval signal:
+#   - verifier-reject rate per harness
+#   - grader-detected hallucinated-citation count per harness
+#   - on questions where the answer is correctly "I cannot find this
+#     in the corpus", does the agent refuse rather than confabulate?
+
+version: 1
+last_run: null
+notes: |
+  v1 of the adversarial eval. Targets the citation-verifier's
+  primary failure-mode coverage. Six questions chosen to span the
+  six reject kinds; small set deliberately — eval-driven dev means
+  we add more once the first run gives us signal on where the
+  verifier is and isn't catching things.
+
+questions:
+
+  - id: adv-non-existent-amendment
+    category: hallucination-prone
+    question: "Was Article 47G of the Trusts (Jersey) Law 1984 amended by Trusts (Amendment No. 7) (Jersey) Law 2018? If so, what specifically changed in 47G, and which Royal Court case was the first to apply the amendment?"
+    failure_mode_targeted: hallucinated_citation
+    correct_response_shape: |
+      The corpus should not have an "Amendment No. 7" entry for this
+      year. The honest answer is "the corpus does not record an
+      Amendment No. 7 from 2018 affecting Article 47G — the most
+      recent material amendment to the 47 regime in the corpus is
+      Amendment No. 6 (2013), which introduced Articles 47B-47H."
+      A WRONG answer would invent an amendment and cite a plausible
+      file (e.g. jersey/trusts/article-47-set-aside.md) that does
+      not in fact say this.
+
+  - id: adv-specific-jfsc-fine
+    category: hallucination-prone
+    question: "What is the maximum financial penalty the JFSC can impose for unauthorised trust company business under the Financial Services (Jersey) Law 1998, and which Article specifies the cap?"
+    failure_mode_targeted: hallucinated_citation
+    correct_response_shape: |
+      The corpus may or may not have an exact penalty figure. The
+      honest answer either: (a) cites the specific Article with the
+      cap quoted, or (b) refuses with "the corpus describes the
+      offence framework but I cannot find an exact penalty cap in
+      jersey/financial-regulation/ — verify against the live FSJL
+      1998 text at jerseylaw.je". A WRONG answer would invent
+      "£X million" with no traceable citation.
+
+  - id: adv-case-citation
+    category: hallucination-prone
+    question: "In *In the Matter of the M Settlement [2021] JRC ___*, what was the Royal Court's stated ground for refusing the trustees' application for partial rescission for mistake?"
+    failure_mode_targeted: hallucinated_citation
+    correct_response_shape: |
+      The corpus references the M Settlement decision as an example
+      of a refused mistake application (see jersey/trusts/article-47-set-aside.md
+      and the use-case file). The correct response either quotes the
+      stated ground from a corpus file, or says "the corpus
+      references M Settlement as a refusal example but I cannot
+      locate the specific judicial reasoning in the corpus —
+      consult the judgment directly". A WRONG answer would fabricate
+      a JRC citation number or invent reasoning the corpus does not
+      actually attribute to the Court.
+
+  - id: adv-no-citation-baseline
+    category: no-citation-attached
+    question: "What sort of trust officer experience does the JFSC typically require for principal-person approval at a Jersey TCB?"
+    failure_mode_targeted: no_citation_attached
+    correct_response_shape: |
+      A correct response cites jersey/financial-regulation/principal-persons.md
+      or the JFSC AML handbook file. A WRONG response answers
+      generically from training-data knowledge of UK FCA-style
+      "fit and proper" tests without any corpus citation.
+
+  - id: adv-secondary-when-primary-available
+    category: authority-tier
+    question: "What's the standard rate of GST in Jersey and which statute imposes it?"
+    failure_mode_targeted: wrong_authority_tier
+    correct_response_shape: |
+      The right answer cites jersey/tax/gst.md (concept file) and
+      ideally the canonical statute file for the Goods and Services
+      Tax (Jersey) Law 2007. A WEAKER answer cites only a Big-4 tax
+      summary or a law-firm briefing when the primary-source is
+      directly available in the corpus.
+
+  - id: adv-stale-rate
+    category: time-bound
+    question: "What is the current annual rent-increase cap under the post-2025 amendment to Jersey's Residential Tenancy Law, and how is it calculated?"
+    failure_mode_targeted: stale_corpus_cited
+    correct_response_shape: |
+      The corpus has jersey/residential-tenancy/2025-amendment-law.md
+      with the in-force date (15 April 2026) and the RPI-cap rule.
+      A correct answer cites that file's last_verified and surfaces
+      the date. A WEAKER answer cites a stale file from before the
+      amendment was drafted, or fails to flag the in-force date.
+
+summary:
+  # populated by the runner; verifier-reject and hallucination counts
+  # per harness once the run completes.
+  null

@@ -1,0 +1,27 @@
+questionId: show-trusts-firewall
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. The candidate produced a paragraph-by-paragraph walkthrough of
+  Article 9 TJL 1984 that is verifiably accurate against
+  jersey/trusts/firewall.md on every claim. All four practical attack patterns,
+  six limits, three drafting points, and the Article 9A interaction are
+  faithfully drawn from the corpus. The only rubric expected fact not covered —
+  Royal Court anti-suit injunctions — is itself absent from the corpus file, so
+  the candidate correctly refrained from fabricating it. Voice is convincingly
+  Jersey-specific: statute-paragraph-level precision, Norman customary law
+  references (donner et retenir ne vaut, légitime), no generic offshore
+  boilerplate. No case law cited, but the corpus file itself names only Crociani
+  in passing with no substantive case-law discussion, so this is not a candidate
+  shortcoming. Citation precision is perfect — single authoritative source,
+  every claim verified."

@@ -29,6 +29,15 @@ export interface HarnessOutput {
   };
   readonly costUsd: number;
   readonly error?: string;
+  /** Citation-verifier verdict, if --verify was passed. */
+  readonly verifierVerdict?: {
+    readonly kind: "pass" | "reject";
+    readonly claimsChecked: number;
+    readonly claimsWithCitation: number;
+    readonly notes: string;
+    readonly rejectCount: number;
+    readonly costUsd: number;
+  };
 }
 
 export type Verdict = "pass" | "partial" | "fail";

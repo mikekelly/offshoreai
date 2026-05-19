@@ -63,23 +63,46 @@ it shipped and what it had to ship it with.
 
 ## Verdict shape
 
-You return exactly one of the following, in the format below. No
-prose, no preamble, no commentary outside the verdict structure.
+You return exactly one of the following, as a single JSON object
+between ```json fences. No prose, no preamble, no commentary outside
+the JSON. **JSON, not YAML** — YAML breaks on quoted phrases followed
+by descriptive text, which is a common pattern when you quote claim
+text.
 
 ### PASS
 
-```yaml
-verdict: pass
-claims_checked: <n>
-claims_with_citation: <n>
-claims_with_primary_source_citation: <n>
-notes: |
-  <one short paragraph; mention any soft warnings — e.g. one claim
-  cited a draft-status file but it was still supported; the user may
-  reasonably want a follow-up>
+```json
+{
+  "verdict": "pass",
+  "claims_checked": 0,
+  "claims_with_citation": 0,
+  "claims_with_primary_source_citation": 0,
+  "notes": "<one short paragraph; mention any soft warnings — e.g. one claim cited a draft-status file but it was still supported; the user may reasonably want a follow-up>"
+}
 ```
 
 ### REJECT-WITH-REASONS
+
+```json
+{
+  "verdict": "reject",
+  "reasons": [
+    {
+      "claim": "<verbatim or close-paraphrase quote from the draft>",
+      "issue_kind": "<one of: hallucinated_citation, unsupported_by_cited_file, no_citation_attached, wrong_authority_tier, cite_pattern_violation, stale_corpus_cited>",
+      "cited_source": "<path or URL>",
+      "detail": "<one paragraph explaining specifically what's wrong>"
+    }
+  ],
+  "remediation_hint": "<one short paragraph the main agent can use on its retry>"
+}
+```
+
+The original YAML schema below is kept as a fallback description; the
+JSON schema above is authoritative. If you find yourself emitting YAML
+out of habit, stop and re-emit as JSON.
+
+(Legacy YAML — DO NOT EMIT — kept for documentation only:)
 
 ```yaml
 verdict: reject

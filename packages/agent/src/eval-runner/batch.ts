@@ -18,6 +18,8 @@ export interface BatchOptions {
   readonly tagIndexPath?: string;
   readonly graderModel?: string;
   readonly skipGrader?: boolean;
+  /** Run the citation-verifier on each answer before grading. */
+  readonly verify?: boolean;
 }
 
 export interface BatchSummary {
@@ -58,6 +60,7 @@ export async function runBatch(opts: BatchOptions): Promise<BatchSummary> {
     const output = await runHarness(opts.harness, q, {
       repoRoot: opts.repoRoot,
       ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
+      ...(opts.verify ? { verify: true } : {}),
     });
     outputs.push(output);
 
@@ -71,6 +74,14 @@ export async function runBatch(opts: BatchOptions): Promise<BatchSummary> {
       JSON.stringify(buildTrajectoryRecord(opts.evalSuite, output), null, 2) + "\n",
       "utf8",
     );
+    if (output.verifierVerdict) {
+      await writeFile(
+        resolve(opts.outputDir, `${q.id}.verifier.json`),
+        JSON.stringify(output.verifierVerdict, null, 2) + "\n",
+        "utf8",
+      );
+      console.log(`[${opts.harness}] ${q.id}: verifier ${output.verifierVerdict.kind.toUpperCase()} (${output.verifierVerdict.claimsChecked} claims; ${output.verifierVerdict.rejectCount} rejections; \$${output.verifierVerdict.costUsd.toFixed(4)})`);
+    }
 
     if (opts.skipGrader) {
       console.log(`[${opts.harness}] ${q.id}: dispatched (${output.wallClockSeconds.toFixed(1)}s, ${output.toolCalls.length} tools); grading skipped`);

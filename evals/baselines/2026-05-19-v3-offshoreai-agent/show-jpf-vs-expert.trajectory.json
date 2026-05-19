@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-jpf-vs-expert",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T12:46:47.842Z",
+  "wallClockSeconds": 38.934,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"jpf\",\"private-equity\"],\"mode\":\"or\",\"limit\":20}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"expert-fund\"],\"mode\":\"or\",\"limit\":20}",
+      "inputBytes": 47,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/fund-counsel/choosing-fund-regime.md\"}",
+      "inputBytes": 64,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/fund-counsel/hedge-fund-pe-vehicles.md\"}",
+      "inputBytes": 66,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/funds/expert-fund.md\"}",
+      "inputBytes": 38,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2206,
+    "cacheReadTokens": 130572,
+    "cacheWriteTokens": 41100,
+    "totalCostUsd": 0.377351
+  },
+  "answer": {
+    "text": "## Short answer\n\nFor a **club-deal PE fund**, the **Jersey Private Fund (JPF)** is the default Jersey regime. Club deals — a small group of professional / institutional co-investors backing a defined opportunity — are explicitly called out as a textbook JPF use case (`jersey/funds/jersey-private-fund.md`). Reach for an **Expert Fund** only if you expect to push past the 50-investor cap or need wider marketing latitude.\n\n## Why JPF fits a club deal\n\n- **Investor cap aligns naturally.** A JPF accepts up to **50 offers / investors**, all professional or \"eligible\" — i.e. exactly the shape of a club. (`jersey/funds/jersey-private-fund.md`)\n- **Fast and light.** JFSC authorisation typically issues within **~48 hours**; the regime is \"light-touch\" with a Jersey-licensed administrator acting as the **designated service provider** (DSP) instead of direct fund-level JFSC supervision. (`jersey/funds/jersey-private-fund.md`)\n- **PPM, not prospectus.** Disclosure is a Private Placement Memorandum plus eligible-investor self-certification — costs and timeline fit closed-ended PE economics. (`jersey/use-cases/fund-counsel/choosing-fund-regime.md`)\n- **Vehicle flexibility.** JPF can be a Jersey LP (most common for PE), a no-par-value company, a unit trust, or a cell company. (`jersey/funds/jersey-private-fund.md`)\n\n## When to flip to Expert Fund instead\n\nThe Expert Fund regime has **no specific investor cap** (subject to each investor meeting \"expert\" criteria — typically US$100k minimum subscription, net-assets threshold, or institutional status) and tolerates **wider private placement marketing**, including AIFMD NPPR positioning into EU member states. The trade-off: more detailed offering memorandum, days-to-weeks authorisation rather than 48 hours, and a fully FSB-licensed service provider stack. (`jersey/funds/expert-fund.md`, `jersey/use-cases/fund-counsel/choosing-fund-regime.md`)\n\nConcretely, prefer Expert Fund if any of the following is true:\n\n- Investor count is expected to materially exceed 50.\n- Your distribution model is broader private placement to expert investors across multiple jurisdictions, rather than a known closed club.\n- You need AIFMD NPPR marketing into the EU as a structural requirement.\n\n## Decision summary for your facts\n\nA **club deal** is, by definition, a bounded set of known co-investors on a single deal or programme — the JPF was built for this. Unless you're planning to scale the investor list beyond ~50, or to actively market beyond the club, **JPF is the right call**. (`jersey/use-cases/fund-counsel/hedge-fund-pe-vehicles.md` calls out \"club deals, single-LP\" expressly among the PE/VC use cases that fit the JPF.)\n\n## Caveats on the sources\n\nAll four corpus files I cited (`jersey-private-fund.md`, `expert-fund.md`, `choosing-fund-regime.md`, `hedge-fund-pe-vehicles.md`) carry **status: draft** with `last_verified: 2026-05-15`. Freshness is fine (4 days old), but the corpus's editorial team has not yet verified these files to `stable`. Re-check the JPF rules against the **JFSC Jersey Private Fund Guide** and the Expert-Fund criteria against the **JFSC Jersey Expert Fund Guide** before filing.\n\n## Files cited\n\n1. `jersey/funds/jersey-private-fund.md` (draft, last_verified 2026-05-15)\n2. `jersey/funds/expert-fund.md` (draft, last_verified 2026-05-15)\n3. `jersey/use-cases/fund-counsel/choosing-fund-regime.md` (draft, last_verified 2026-05-15)\n4. `jersey/use-cases/fund-counsel/hedge-fund-pe-vehicles.md` (draft, last_verified 2026-05-15)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 478
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

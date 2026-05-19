@@ -1,0 +1,21 @@
+questionId: show-jpf-vs-expert
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. The answer covers every rubric fact — JPF 50-investor cap, 48h
+  authorisation, DSP delegation, Expert Fund's no-cap/heavier-disclosure
+  trade-off, and the three-axis decision framework — all accurately sourced from
+  four corpus files with zero hallucinated citations. Voice reads as fund
+  counsel advising a sponsor: direct recommendation (JPF), structured flip-to
+  criteria, and a practical decision summary. Freshness caveat on draft-status
+  files is a bonus. Efficient retrieval at 6 tool calls with no redundancy."

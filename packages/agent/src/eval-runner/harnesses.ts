@@ -1,6 +1,7 @@
 // Harness adapters. Same input (question + repoRoot) → uniform HarnessOutput.
 
 import { spawn } from "node:child_process";
+import { runCitationVerifier } from "../citation-verifier.js";
 import { runQuery } from "../runtime.js";
 import { readSessionToolCalls } from "./session-log.js";
 import type { EvalQuestion, HarnessName, HarnessOutput } from "./types.js";
@@ -9,6 +10,7 @@ export interface HarnessOptions {
   readonly repoRoot: string;
   readonly tagIndexPath?: string;
   readonly maxTurns?: number;
+  readonly verify?: boolean;
 }
 
 export async function runHarness(
@@ -37,6 +39,7 @@ async function runOffshoreaiAgent(q: EvalQuestion, opts: HarnessOptions): Promis
       question: q.question,
       repoRoot: opts.repoRoot,
       evalMode: true,
+      verify: opts.verify ?? false,
       ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
       ...(opts.maxTurns ? { maxTurns: opts.maxTurns } : {}),
     });
@@ -54,6 +57,16 @@ async function runOffshoreaiAgent(q: EvalQuestion, opts: HarnessOptions): Promis
         cacheWriteTokens: r.usage.cacheCreationInputTokens,
       },
       costUsd: r.costUsd,
+      ...(r.verifierVerdict ? {
+        verifierVerdict: {
+          kind: r.verifierVerdict.kind,
+          claimsChecked: r.verifierVerdict.claimsChecked,
+          claimsWithCitation: r.verifierVerdict.claimsWithCitation,
+          notes: r.verifierVerdict.notes,
+          rejectCount: r.verifierVerdict.reasons.length,
+          costUsd: r.verifierVerdict.costUsd,
+        },
+      } : {}),
     };
   } catch (err) {
     return errorOutput(q.id, "offshoreai-agent", t0, err);
@@ -141,6 +154,27 @@ async function runClaudeP(q: EvalQuestion, opts: HarnessOptions): Promise<Harnes
       ? await readSessionToolCalls(opts.repoRoot, resultEvt.session_id)
       : [];
 
+    // Run the citation-verifier on the claude-p answer too if requested.
+    // The verifier is harness-agnostic — it reads the answer and
+    // checks citations against the corpus, regardless of how the
+    // answer was produced.
+    let verifierVerdict;
+    if (opts.verify && resultEvt.result?.trim().length) {
+      const v = await runCitationVerifier({
+        repoRoot: opts.repoRoot,
+        candidateAnswer: resultEvt.result,
+        toolCallLog: toolCalls.map((c) => ({ name: c.name, inputDigest: c.inputDigest })),
+      });
+      verifierVerdict = {
+        kind: v.kind,
+        claimsChecked: v.claimsChecked,
+        claimsWithCitation: v.claimsWithCitation,
+        notes: v.notes,
+        rejectCount: v.reasons.length,
+        costUsd: v.costUsd,
+      };
+    }
+
     return {
       questionId: q.id,
       harness: "claude-p",
@@ -155,6 +189,7 @@ async function runClaudeP(q: EvalQuestion, opts: HarnessOptions): Promise<Harnes
         cacheWriteTokens: resultEvt.usage?.cache_creation_input_tokens ?? 0,
       },
       costUsd: resultEvt.total_cost_usd ?? 0,
+      ...(verifierVerdict ? { verifierVerdict } : {}),
     };
   } catch (err) {
     return errorOutput(q.id, "claude-p", t0, err);

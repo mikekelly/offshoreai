@@ -7,6 +7,7 @@ import {
   createCorpusToolsServer,
 } from "@offshoreai/tools-corpus";
 import { baselineSystemPrompt } from "./baseline-system-prompt.js";
+import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
 import { buildTaxonomyBlock } from "./taxonomy-block.js";
 
 export interface RunQueryOptions {
@@ -20,6 +21,8 @@ export interface RunQueryOptions {
   readonly maxTurns?: number;
   /** Toggle: append a one-line eval framing to the user prompt. Default false. */
   readonly evalMode?: boolean;
+  /** Toggle: run the citation-verifier on the final answer. Default false. */
+  readonly verify?: boolean;
 }
 
 export interface RunQueryResult {
@@ -38,6 +41,8 @@ export interface RunQueryResult {
     readonly inputDigest: string;
     readonly isError: boolean;
   }>;
+  /** Citation-verifier verdict if --verify was requested. */
+  readonly verifierVerdict?: VerifierVerdict;
 }
 
 export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
@@ -126,6 +131,15 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     }
   }
 
+  let verifierVerdict: VerifierVerdict | undefined;
+  if (opts.verify && answer.trim().length > 0) {
+    verifierVerdict = await runCitationVerifier({
+      repoRoot: opts.repoRoot,
+      candidateAnswer: answer,
+      toolCallLog: toolCalls.map((c) => ({ name: c.name, inputDigest: c.inputDigest })),
+    });
+  }
+
   return {
     answer,
     turns,
@@ -133,5 +147,6 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     usage,
     costUsd,
     toolCalls,
+    ...(verifierVerdict ? { verifierVerdict } : {}),
   };
 }

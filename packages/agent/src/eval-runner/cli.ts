@@ -19,6 +19,7 @@ interface CliArgs {
   tagIndexPath: string | undefined;
   skipGrader: boolean;
   graderModel: string | undefined;
+  verify: boolean;
 }
 
 function parseArgs(argv: string[]): CliArgs {
@@ -30,6 +31,7 @@ function parseArgs(argv: string[]): CliArgs {
   let tagIndexPath: string | undefined = "packages/build/dist/tag-index.json";
   let skipGrader = false;
   let graderModel: string | undefined;
+  let verify = false;
 
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -50,6 +52,7 @@ function parseArgs(argv: string[]): CliArgs {
     else if (a === "--no-tag-index") tagIndexPath = undefined;
     else if (a === "--skip-grader") skipGrader = true;
     else if (a === "--grader-model") graderModel = argv[++i];
+    else if (a === "--verify") verify = true;
     else if (a === "--help" || a === "-h") printHelp(0);
   }
 
@@ -62,7 +65,7 @@ function parseArgs(argv: string[]): CliArgs {
     console.error("Missing --output <dir>");
     printHelp(1);
   }
-  return { mode, harness: harness ?? ("offshoreai-agent" as HarnessName), evalSuite, ids, outputDir, tagIndexPath, skipGrader, graderModel };
+  return { mode, harness: harness ?? ("offshoreai-agent" as HarnessName), evalSuite, ids, outputDir, tagIndexPath, skipGrader, graderModel, verify };
 }
 
 function printHelp(exit: number): never {
@@ -122,5 +125,6 @@ if (args.mode === "regrade-fails") {
     ...(args.tagIndexPath ? { tagIndexPath: args.tagIndexPath } : {}),
     ...(args.graderModel ? { graderModel: args.graderModel } : {}),
     skipGrader: args.skipGrader,
+    verify: args.verify,
   });
 }

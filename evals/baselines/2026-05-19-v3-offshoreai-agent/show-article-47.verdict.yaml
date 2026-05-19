@@ -1,0 +1,23 @@
+questionId: show-article-47
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: "Pass. The answer is substantively excellent: all six rubric facts are
+  covered, the Article 47B/47E/47G distinction is correctly made (a nuance the
+  use-case file itself gets wrong), the three-limb S&T Trusts test is accurately
+  stated, and the Pitt v Holt divergence is clearly explained with the
+  load-bearing 'manner of mistake is irrelevant' formulation. Every citation
+  checks out against the corpus. Voice is confident, practitioner-grade, and
+  Jersey-specific throughout. The candidate's proactive flagging of the use-case
+  file's mis-labelling and both files' draft status is a mark of quality that
+  goes beyond the rubric requirements."

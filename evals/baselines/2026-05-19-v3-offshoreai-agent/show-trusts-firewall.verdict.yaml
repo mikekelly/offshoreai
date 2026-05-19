@@ -1,0 +1,25 @@
+questionId: show-trusts-firewall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 10
+hallucinatedCitations: 0
+summary: Pass. The answer covers Article 9 with paragraph-level precision (9(1),
+  9(2), 9(2A), 9(3), 9(3A), 9(4)), correctly identifies the forced-heirship
+  disregard as the operative lever, and explains practical limits (foreign
+  in-personam jurisdiction, asset location, sham, public policy) — all verified
+  against the corpus. The single missing rubric fact (anti-suit injunctions)
+  exists in a different corpus file the harness didn't retrieve; this is a
+  retrieval gap, not a factual error. Voice is strong
+  practitioner-to-foreign-lawyer throughout, with apt Continental terminology.
+  Only 1 file cited despite the corpus having additional relevant material,
+  which keeps citation recall at partial, but not enough to demote the overall
+  verdict given the core file is the right one.
