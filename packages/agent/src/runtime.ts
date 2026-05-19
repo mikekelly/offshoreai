@@ -73,7 +73,7 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
   for await (const msg of query({
     prompt,
     options: {
-      mcpServers: { offshoreai_corpus: corpusServer },
+      mcpServers: { corpus: corpusServer },
       allowedTools,
       systemPrompt: { type: "preset", preset: "claude_code", append: baselineSystemPrompt },
       maxTurns: opts.maxTurns ?? 20,

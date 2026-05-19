@@ -26,6 +26,9 @@ importers:
       '@offshoreai/tools-corpus':
         specifier: workspace:*
         version: link:../tools-corpus
+      yaml:
+        specifier: ^2.6.1
+        version: 2.9.0
     devDependencies:
       '@types/node':
         specifier: ^22.9.0

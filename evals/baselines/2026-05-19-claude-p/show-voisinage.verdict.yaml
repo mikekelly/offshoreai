@@ -1,0 +1,22 @@
+questionId: show-voisinage
+harness: claude-p
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: |-
+  Partial. The answer is well-structured with strong citation precision and
+  excellent freshness handling, but misses two of five substance rubric items:
+  Le Geyt is never named and Pothier's foundational role is only glancingly
+  mentioned. The Guernsey connection (rubric: "Distinctive to Jersey and
+  Guernsey") is absent. These are load-bearing for a question specifically
+  about customary-law roots. Voice and citation precision are strong; the
+  gap is in the doctrinal-foundation depth the rubric demands.

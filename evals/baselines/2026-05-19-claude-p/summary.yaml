@@ -1,0 +1,73 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: claude-p
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-19T09:52:01.995Z
+  questions: 3
+totals:
+  pass: 2
+  partial: 1
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 0.67
+  substancePassRate: 0.67
+  medianToolCalls: 0
+  medianTokensInput: 9
+  medianTokensOutput: 1881
+  medianWallClockSeconds: 38.7
+  totalCostUsd: 0.8043
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-article-47
+    verdict: pass
+    summary: >-
+      Pass. The answer covers all six expected facts with Jersey-specific
+      statutory
+
+      references, cases, and the correct Pitt v Holt contrast. Every citation
+
+      verified against the corpus. The one minor error — "47B–47J" instead of
+
+      "47B–47H" — does not materially mislead. Voice is confident and
+      practitioner-
+
+      grade. The claude-p harness produced this without observable tool calls,
+
+      suggesting the corpus content was in context; efficiency is excellent.
+  - id: show-parish-hall
+    verdict: pass
+    summary: >-
+      Pass. The answer covers all six rubric facts accurately and in detail, is
+
+      thoroughly Jersey-grounded (Centenier role, Honorary Police, Law Officers'
+
+      Department schedule, Article 23 RTJL), and every factual claim traces
+      cleanly
+
+      to the cited corpus file. The candidate also proactively flagged the
+      file's
+
+      draft status and freshness date — a model citation-hygiene behaviour.
+      Voice
+
+      is informed and accessible, matching the rubric intent. No factual errors,
+
+      no hallucinated citations, no generic offshore language.
+  - id: show-voisinage
+    verdict: partial
+    summary: >-
+      Partial. The answer is well-structured with strong citation precision and
+
+      excellent freshness handling, but misses two of five substance rubric
+      items:
+
+      Le Geyt is never named and Pothier's foundational role is only glancingly
+
+      mentioned. The Guernsey connection (rubric: "Distinctive to Jersey and
+
+      Guernsey") is absent. These are load-bearing for a question specifically
+
+      about customary-law roots. Voice and citation precision are strong; the
+
+      gap is in the doctrinal-foundation depth the rubric demands.

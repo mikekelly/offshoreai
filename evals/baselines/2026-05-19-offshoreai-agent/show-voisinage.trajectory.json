@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T09:44:29.657Z",
+  "wallClockSeconds": 28.675,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"voisinage\"]}",
+      "inputBytes": 22,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/property/voisinage.md\",\"full\":true}",
+      "inputBytes": 51,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 1507,
+    "cacheReadTokens": 92364,
+    "cacheWriteTokens": 18047,
+    "totalCostUsd": 0.19671575
+  },
+  "answer": {
+    "text": "## What voisinage is\n\n**Voisinage** is Jersey's Norman customary-law doctrine of \"good neighbourhood.\" It requires a property owner not to use their land in a way that causes **unreasonable harm** to a neighbour — broadly similar in result to English nuisance, but rooted in Jersey's customary law and capable of operating **without fault** (i.e. on an objective basis). It can apply to noise, smells, smoke/fumes, vibrations, drainage/surface water, tree roots and overhanging branches, light obstruction, and similar interferences ([`jersey/property/voisinage.md`](jersey/property/voisinage.md)).\n\n> ⚠️ **Status caveat:** the corpus file on voisinage is currently marked `draft` — drafted but not yet editorially verified against primary sources. Treat the framing below as orientation, not authority.\n\n## The threshold test\n\nA voisinage claim needs four things ([`jersey/property/voisinage.md`](jersey/property/voisinage.md)):\n\n1. **Harm** that is objectively identifiable;\n2. **Caused by** the defendant's use of their property;\n3. **Exceeding** the ordinary inconveniences of neighbourhood; and\n4. **Without** adequate justification.\n\nTwo practical points the corpus highlights:\n\n- **Planning permission does not exclude voisinage** — the fact your neighbour has consent for an activity does not, on its own, defeat a claim.\n- Voisinage does **not override valid servitudes**, but **excessive use** of a servitude can still breach it.\n\n## Does it apply to *your* neighbour problem?\n\nThe corpus cannot tell you that — and I shouldn't pretend it can. Whether voisinage bites depends on:\n\n- the **type** of interference (noise, smell, drainage, light, roots, etc. — all are within scope in principle);\n- whether it **exceeds ordinary neighbourhood inconvenience** (the load-bearing threshold);\n- whether the neighbour has a **defence** — reasonable use, your prior consent/acquiescence, statutory authority, or (limited) prescription;\n- whether a **servitude** is engaged.\n\nIf you can share what the actual interference is (kind, intensity, duration, when it started, what you've already done about it), I can point you at the more specific corpus material — e.g. construction-noise treatment, agricultural smells, commercial-residential interface, or the procedure for an Order of Justice in the Royal Court. The corpus also recommends, as practical first steps: **document the interference** (logs, photographs, recordings), build a **correspondence trail** with the neighbour, **engage relevant experts** (acoustic, environmental) early, and **mediate** before litigating ([`jersey/property/voisinage.md`](jersey/property/voisinage.md)).\n\n## Sources cited\n\n1. [`jersey/property/voisinage.md`](jersey/property/voisinage.md) — *draft*, last verified 2026-05-18.\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 389
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

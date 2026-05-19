@@ -1,0 +1,21 @@
+questionId: show-article-47
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: |-
+  Pass. The answer covers all six expected facts with Jersey-specific statutory
+  references, cases, and the correct Pitt v Holt contrast. Every citation
+  verified against the corpus. The one minor error — "47B–47J" instead of
+  "47B–47H" — does not materially mislead. Voice is confident and practitioner-
+  grade. The claude-p harness produced this without observable tool calls,
+  suggesting the corpus content was in context; efficiency is excellent.

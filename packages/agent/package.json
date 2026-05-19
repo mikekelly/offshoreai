@@ -6,11 +6,13 @@
   "scripts": {
     "auth-test": "tsx ./src/auth-test.ts",
     "query": "tsx ./src/query-cli.ts",
+    "eval": "tsx ./src/eval-runner/cli.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "*",
-    "@offshoreai/tools-corpus": "workspace:*"
+    "@offshoreai/tools-corpus": "workspace:*",
+    "yaml": "^2.6.1"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",

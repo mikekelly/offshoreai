@@ -1,0 +1,23 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 3
+factsExpected: 5
+citationsTotal: 4
+hallucinatedCitations: 0
+summary: |-
+  Partial. The answer accurately reproduces the voisinage threshold test and
+  correctly distinguishes the doctrine from English nuisance, but omits two
+  rubric-required facts: it never names Pothier or Le Geyt (despite both
+  appearing at line 46 of the cited file) and never notes the doctrine is
+  distinctive to Jersey and Guernsey. Only one corpus file was cited where
+  cross-references to customary-law.md and pothier-and-the-coutume.md would
+  have filled these gaps. The voice is competent but reads more like a
+  knowledge-base summary than a Jersey advocate explaining customary-law roots.

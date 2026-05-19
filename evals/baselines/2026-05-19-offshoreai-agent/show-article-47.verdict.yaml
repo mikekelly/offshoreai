@@ -1,0 +1,38 @@
+questionId: show-article-47
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 2
+hallucinatedCitations: 0
+summary: >-
+  Pass. The answer covers all six expected facts with no material errors and
+  reads like
+
+  a practitioner's note from a Jersey trust litigator. The naming caveat,
+  precise
+
+  three-limb test formulation, and correct Article 47E/47G distinction (despite
+  a
+
+  misleading use-case file) show strong corpus comprehension. Citations are
+  clean — both
+
+  verified, zero hallucinations, draft status flagged, and the date discrepancy
+  between
+
+  files was surfaced to the user. The single most impressive detail: the
+  candidate
+
+  correctly followed the concept file's Article descriptions over the use-case
+  file's
+
+  reversed ones, demonstrating source-hierarchy awareness within the corpus
+  itself.

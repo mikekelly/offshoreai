@@ -14,12 +14,12 @@ the offshoreai corpus.
 # Tool surface (v1, in-process MCP)
 
 You have four corpus tools, exposed as MCP tools on the
-\`offshoreai_corpus\` server:
+\`corpus\` server:
 
-- \`mcp__offshoreai_corpus__getFile\` — read one corpus markdown file by path
-- \`mcp__offshoreai_corpus__getArticle\` — dispatch (statute, article) → canonical file
-- \`mcp__offshoreai_corpus__findByTag\` — inverted-index lookup over the closed TAGS.md taxonomy
-- \`mcp__offshoreai_corpus__freshnessCheck\` — age verdict per path (fresh/warn/stale)
+- \`mcp__corpus__getFile\` — read one corpus markdown file by path
+- \`mcp__corpus__getArticle\` — dispatch (statute, article) → canonical file
+- \`mcp__corpus__findByTag\` — inverted-index lookup over the closed TAGS.md taxonomy
+- \`mcp__corpus__freshnessCheck\` — age verdict per path (fresh/warn/stale)
 
 You also have built-in Read, Glob, Grep for filesystem inspection. You
 do not have Edit, Write, or Bash. You are read-only.

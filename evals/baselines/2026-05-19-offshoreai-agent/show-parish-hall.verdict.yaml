@@ -1,0 +1,21 @@
+questionId: show-parish-hall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All six expected facts present and correct, Jersey-specific
+  terminology (Centenier, Honorary Police, Law Officers' Department) used
+  throughout, and the single corpus citation fully supports every claim. The
+  answer reads as informed Jersey-grounded guidance, not generic offshore prose.
+  Draft-status caveat is a model freshness-handling response. One mildly
+  redundant call (grep fallback after findByTag) but overall efficient at 4 tool
+  calls and 39 seconds.

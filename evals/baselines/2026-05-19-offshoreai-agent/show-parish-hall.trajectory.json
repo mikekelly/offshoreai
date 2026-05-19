@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-parish-hall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T09:43:03.384Z",
+  "wallClockSeconds": 38.829,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"parish-hall-enquiry\"]}",
+      "inputBytes": 32,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "ToolSearch",
+      "rawName": "ToolSearch",
+      "inputDigest": "{\"query\":\"select:Grep,Glob\",\"max_results\":5}",
+      "inputBytes": 44,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -ril \\\"parish hall\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/ 2>/dev/null | head -20\",\"description\":\"Search corpus for parish hall enquiry\"}",
+      "inputBytes": 192,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/road-traffic/parish-hall-enquiries.md\",\"full\":true}",
+      "inputBytes": 67,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 10,
+    "outputTokens": 1708,
+    "cacheReadTokens": 166602,
+    "cacheWriteTokens": 19792,
+    "totalCostUsd": 0.249751
+  },
+  "answer": {
+    "text": "## Parish Hall Enquiry — what it is\n\nA **Parish Hall Enquiry** is a pre-court forum unique to Jersey, presided over by an elected **Centenier** (an honorary, unpaid parish police officer) of the parish where the alleged offence occurred. It is the route by which **most routine motoring offences** are resolved without reaching the Magistrate's Court. There is no direct UK or other common-law equivalent — it has features of a fixed-penalty notice, a prosecutorial decision, and a summary hearing combined.\n\nThe Centenier reviews the evidence, decides whether to charge, and can dispose of the matter with a caution, a written fine of up to **£200 per offence**, or referral to court. They can only impose a fine or caution if you **admit** the offence and **accept** the penalty — and you have the right at any point to **opt out and demand a Magistrate's Court hearing instead** ([`jersey/road-traffic/parish-hall-enquiries.md`](jersey/road-traffic/parish-hall-enquiries.md)).\n\n## When your case goes there\n\nTypical Parish Hall matters include:\n- minor speeding (**under 15 mph** over the limit)\n- mobile phone offences\n- failing to display insurance disc\n- some traffic-light and minor careless-driving offences\n- parking offences\n\nYour case **does not** go to Parish Hall — it is summoned directly to the Magistrate's Court — for:\n- speeding **15 mph or more** over the limit\n- drink-driving or drug-driving (any reading)\n- dangerous driving (Article 23 RTJL)\n- causing death or serious injury by driving\n- driving while disqualified\n- serious failure-to-stop / report-after-accident\n- any offence carrying **mandatory disqualification**, or where the Centenier judges the £200 ceiling inadequate\n\n([`jersey/road-traffic/parish-hall-enquiries.md`](jersey/road-traffic/parish-hall-enquiries.md))\n\n## Caveats\n\n- **Draft status.** The corpus file I'm citing is marked `draft` — its content has been written but is not yet editorially verified against primary sources. Treat the Centenier's powers, the £200 ceiling, and the offence schedule as indicative; the authoritative list of Parish-Hall-eligible offences is maintained by the Law Officers' Department and reviewed periodically.\n- **Freshness.** Last verified 2026-05-18 (yesterday) — fresh.\n- **Strategic note from the corpus:** if you have a possible defence, if disqualification is on the table, or if licence endorsement matters for insurance, the corpus flags that Magistrate's Court (where an advocate can argue the case) is often the better forum despite the slower timeline — admitting at Parish Hall to get it over with can be a pitfall.\n\n## Sources cited\n\n1. [`jersey/road-traffic/parish-hall-enquiries.md`](jersey/road-traffic/parish-hall-enquiries.md) — status: **draft**, last_verified 2026-05-18\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 420
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}
