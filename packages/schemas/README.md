@@ -1,32 +1,35 @@
-# schemas/
+# @offshoreai/schemas
 
 Per-tool Zod input/output schemas and the §7.0.3 five-part descriptions
-for every tool the v1 agent exposes. This directory is the **contract**
-between the agent and the typed SDK tool surface.
+for every tool the v1 agent exposes. This is the **contract** between
+the agent and the typed SDK tool surface.
 
-**Status: spec.** The files in this directory are not yet built or
-installed. They use Zod for shape declaration but no `package.json` lives
-next to them. Week 3 of [`IMPLEMENTATION-PLAN.md`](../IMPLEMENTATION-PLAN.md)
-lifts this directory into `packages/schemas/` as the published
-`@offshoreai/schemas` package, and the matching handlers live in
-`packages/tools-corpus/`, `packages/tools-memory/`, etc.
+**Status: published workspace package.** Started life under `schemas/`
+at the repo root as a design artefact; promoted to `packages/schemas/`
+at the start of week 3 once the handlers in `packages/tools-corpus/`
+needed to import from it. Consumers import via:
 
-Keeping the schemas in a flat top-level directory during week 0 makes
-the contract easy to review without wading into a package skeleton, and
-matches the AGENTS.md "design artefact first, then promote" pattern.
+```ts
+import { getFileInput, getFileResult, getFileDescription } from "@offshoreai/schemas/corpus";
+```
 
 ---
 
 ## Layout
 
 ```
-schemas/
+packages/schemas/
 ├── README.md            ← this file
-├── common.ts            ← shared types (Tag, FilePath, Status, FreshnessVerdict, ErrorEnvelope, …)
-├── corpus.ts            ← 11 tools per PRD §7.1
-├── memory.ts            ← 7 tools per PRD §7.4 (per-tenant A-Mem)
-├── primary-source.ts    ← 1 tool per PRD §7.2 (cached fetch + last-modified)
-└── register.ts          ← 3 tools per PRD §7.3 (JFSC, companies, charities)
+├── package.json
+├── tsconfig.json
+└── src/
+    ├── index.ts             ← barrel re-export
+    ├── common.ts            ← shared types (Tag, FilePath, Status, FreshnessVerdict, ErrorEnvelope, …)
+    ├── corpus.ts            ← 11 tools per PRD §7.1
+    ├── memory.ts            ← 7 tools per PRD §7.4 (per-tenant A-Mem)
+    ├── primary-source.ts    ← 1 tool per PRD §7.2 (cached fetch + last-modified)
+    ├── register.ts          ← 3 tools per PRD §7.3 (JFSC, companies, charities)
+    └── eval-trajectory.ts   ← trajectory + batch-summary shapes for the eval runner
 ```
 
 Each per-namespace file exports, for every tool:

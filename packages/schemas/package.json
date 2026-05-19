@@ -1,0 +1,26 @@
+{
+  "name": "@offshoreai/schemas",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Zod schemas + §7.0.3 five-part descriptions for the v1 typed tool surface (corpus, memory, primary-source, register) and for the eval trajectory format.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./common": "./src/common.ts",
+    "./corpus": "./src/corpus.ts",
+    "./memory": "./src/memory.ts",
+    "./primary-source": "./src/primary-source.ts",
+    "./register": "./src/register.ts",
+    "./eval-trajectory": "./src/eval-trajectory.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
