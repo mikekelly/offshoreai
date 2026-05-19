@@ -1,0 +1,77 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: claude-p
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-19T10:40:26.512Z
+  questions: 3
+totals:
+  pass: 3
+  partial: 0
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 1
+  substancePassRate: 1
+  medianToolCalls: 3
+  medianTokensInput: 9
+  medianTokensOutput: 2184
+  medianWallClockSeconds: 43.82
+  totalCostUsd: 0.9516
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-article-47
+    verdict: pass
+    summary: >-
+      Pass. The answer covers all six expected facts with no errors, cites S&T
+      Trusts [2015] JRC259
+
+      and Article 47G specifically, and delivers the Pitt v Holt contrast with
+      the load-bearing
+
+      "manner of the mistake is irrelevant" quote — all verified against the
+      corpus. The voice is
+
+      that of a Jersey trust litigator: precise on sub-Article numbering, candid
+      about the naming
+
+      ambiguity, and practically useful on evidence, costs, and cross-border
+      tax-authority recognition.
+
+      Three tool calls, zero redundancy, 53 seconds — clean and efficient.
+  - id: show-parish-hall
+    verdict: pass
+    summary: Pass. The answer covers all six expected substance facts accurately and
+      with correct Jersey-specific detail (Centenier, Honorary Police, Law
+      Officers' Department schedule). Every claim is cited to the single most
+      authoritative corpus file and every citation checks out against the source
+      text. The voice is informed and Jersey-grounded, not generic offshore
+      boilerplate. The freshness caveat on the draft-status file is a nice
+      touch. Efficient two-tool-call trajectory.
+  - id: show-voisinage
+    verdict: pass
+    summary: >-
+      Pass. All five expected facts present and correct; citations verified
+      against both corpus files
+
+      with zero hallucinations. The answer is deeply Jersey-specific — grounded
+      in Norman customary law,
+
+      Pothier/Le Geyt, and the Rockhampton Apartments line of authority — with
+      no generic offshore
+
+      language. Voice is the only soft spot: the doctrinal explanation reads
+      like an advocate briefing,
+
+      but the third section's meta-commentary on corpus draft status and agent
+      limitations breaks
+
+      character. On balance the voice partial does not demote the overall
+      verdict because the core
+
+      explanation — which is what the user came for — lands squarely in the
+      rubric's "Jersey advocate
+
+      explaining customary-law roots" register, and every other dimension is
+      clean pass. Efficient
+
+      three-call retrieval with no redundancy.

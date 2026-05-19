@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T10:38:50.182Z",
+  "wallClockSeconds": 43.819,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -r -l -i \\\"voisinage\\\" /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/ 2>/dev/null\",\"description\":\"Find files mentioning voisinage\"}",
+      "inputBytes": 177,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/voisinage.md\"}",
+      "inputBytes": 112,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/contract/delit-tort.md\"}",
+      "inputBytes": 113,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 2184,
+    "cacheReadTokens": 134979,
+    "cacheWriteTokens": 31687,
+    "totalCostUsd": 0.32017825000000005
+  },
+  "answer": {
+    "text": "## What voisinage is\n\n**Voisinage** is a Norman customary-law doctrine that Jersey has preserved (and most other modern systems have abandoned). It governs how neighbouring landowners must treat each other: each owner has to use their property in a way that does not cause **unreasonable harm** to neighbours — i.e. harm that exceeds the ordinary inconveniences of neighbourhood. It is rooted in Pothier and Le Geyt, developed by Royal Court jurisprudence, and is conceptually distinct from English nuisance even though the practical outcomes often overlap (`jersey/property/voisinage.md`).\n\nKey features that distinguish it from English nuisance (`jersey/property/voisinage.md`, `jersey/contract/delit-tort.md`):\n- Strict-liability / objective elements — it can apply **without fault**.\n- No requirement that the harm fit into the English \"smell, smoke, noise\" enumerated categories.\n- Broader range of activities potentially captured.\n- Sits within Jersey's wider law of délit / tort but as its own customary head, with a leading line of authority including *Rockhampton Apartments* referenced in `jersey/contract/delit-tort.md`.\n\nTo establish liability the claimant must show:\n1. Objectively identifiable **harm**,\n2. caused by the defendant's **use of property**,\n3. **exceeding ordinary inconveniences** of neighbourhood,\n4. **without adequate justification** (`jersey/property/voisinage.md`).\n\nDefences include reasonable use, statutory authority, consent/acquiescence, prescription (limited), and (limited) pre-existing state. Remedies are injunction, damages, and orders for specific preventative measures (`jersey/property/voisinage.md`).\n\n## Does it apply to your neighbour problem?\n\nThe corpus doesn't say what your problem is, so I can only point to the categories it lists as typically within voisinage's scope (`jersey/property/voisinage.md`):\n\n- Excessive noise from a neighbouring property.\n- Smells (livestock, kitchens, restaurant fumes).\n- Smoke / fumes.\n- Vibrations from machinery / construction (temporary construction inconvenience usually doesn't qualify; \"excessive or prolonged\" can).\n- Surface water / drainage.\n- Tree roots / overhanging branches.\n- Light obstruction (specific Jersey rules).\n- Inter-unit issues in apartment buildings (noise, smells, common parts).\n- Commercial-residential interface (late-night noise, refuse, pests).\n\nA few specifics from the corpus that often catch people out:\n- **Planning permission does not exclude voisinage** — even an authorised use can still breach the duty (`jersey/property/voisinage.md`).\n- **Servitudes don't override voisinage either**: a valid easement may permit the activity, but *excessive* use of the servitude can still breach voisinage.\n- **Don't assume English nuisance applies wholesale** — that's flagged as a leading pitfall.\n\nPractical path the corpus recommends: log/photograph/record the interference, write to the neighbour, try mediation, get expert evidence (acoustic, environmental), and if it has to go further it's an Order of Justice in the Royal Court (`jersey/property/voisinage.md`).\n\n## Caveats on what I'm telling you\n\n- Both source files are marked **`status: draft`** — they're scaffolding, not stable verified content. Several sections in `jersey/property/voisinage.md` say things like \"Specific Jersey case law on each category\" without actually naming the cases, and the only specific case referenced in either file is *Rockhampton Apartments* in `jersey/contract/delit-tort.md`. So the corpus gives you the doctrine in outline but does not yet give you the case-law detail you'd need for a real decision.\n- `last_verified` dates are both within the last few days (2026-05-18 and 2026-05-17), well inside the 180-day window — freshness is not the issue, draft status is.\n- Whether voisinage applies to **your** problem depends on facts the corpus doesn't have. Tell me what the neighbour is doing and I can map it onto the categories above; for an actual claim you'd want a Jersey advocate familiar with voisinage, as the corpus itself recommends.\n\n## Files cited\n\n1. `jersey/property/voisinage.md`\n2. `jersey/contract/delit-tort.md`",
+    "wordCount": 572
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

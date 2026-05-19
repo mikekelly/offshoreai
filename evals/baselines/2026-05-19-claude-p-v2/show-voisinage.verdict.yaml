@@ -1,0 +1,40 @@
+questionId: show-voisinage
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: >-
+  Pass. All five expected facts present and correct; citations verified against
+  both corpus files
+
+  with zero hallucinations. The answer is deeply Jersey-specific — grounded in
+  Norman customary law,
+
+  Pothier/Le Geyt, and the Rockhampton Apartments line of authority — with no
+  generic offshore
+
+  language. Voice is the only soft spot: the doctrinal explanation reads like an
+  advocate briefing,
+
+  but the third section's meta-commentary on corpus draft status and agent
+  limitations breaks
+
+  character. On balance the voice partial does not demote the overall verdict
+  because the core
+
+  explanation — which is what the user came for — lands squarely in the rubric's
+  "Jersey advocate
+
+  explaining customary-law roots" register, and every other dimension is clean
+  pass. Efficient
+
+  three-call retrieval with no redundancy.

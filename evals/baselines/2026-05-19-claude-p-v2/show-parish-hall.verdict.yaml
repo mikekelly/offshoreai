@@ -1,0 +1,21 @@
+questionId: show-parish-hall
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected substance facts accurately and
+  with correct Jersey-specific detail (Centenier, Honorary Police, Law Officers'
+  Department schedule). Every claim is cited to the single most authoritative
+  corpus file and every citation checks out against the source text. The voice
+  is informed and Jersey-grounded, not generic offshore boilerplate. The
+  freshness caveat on the draft-status file is a nice touch. Efficient
+  two-tool-call trajectory.

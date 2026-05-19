@@ -1,0 +1,31 @@
+questionId: show-article-47
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: >-
+  Pass. The answer covers all six expected facts with no errors, cites S&T
+  Trusts [2015] JRC259
+
+  and Article 47G specifically, and delivers the Pitt v Holt contrast with the
+  load-bearing
+
+  "manner of the mistake is irrelevant" quote — all verified against the corpus.
+  The voice is
+
+  that of a Jersey trust litigator: precise on sub-Article numbering, candid
+  about the naming
+
+  ambiguity, and practically useful on evidence, costs, and cross-border
+  tax-authority recognition.
+
+  Three tool calls, zero redundancy, 53 seconds — clean and efficient.

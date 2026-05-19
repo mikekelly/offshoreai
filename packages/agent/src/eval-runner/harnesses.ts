@@ -2,6 +2,7 @@
 
 import { spawn } from "node:child_process";
 import { runQuery } from "../runtime.js";
+import { readSessionToolCalls } from "./session-log.js";
 import type { EvalQuestion, HarnessName, HarnessOutput } from "./types.js";
 
 export interface HarnessOptions {
@@ -82,6 +83,7 @@ interface ClaudePResultEvent {
   type: "result";
   subtype: string;
   result: string;
+  session_id?: string;
   num_turns?: number;
   total_cost_usd?: number;
   duration_ms?: number;
@@ -131,13 +133,21 @@ async function runClaudeP(q: EvalQuestion, opts: HarnessOptions): Promise<Harnes
     const resultEvt = parsed.find((e): e is ClaudePResultEvent => e.type === "result") as ClaudePResultEvent | undefined;
     if (!resultEvt) throw new Error("No result event in claude -p output");
 
+    // claude -p's --output-format json envelope doesn't enumerate
+    // individual tool calls, but Claude Code persists the full session
+    // JSONL to ~/.claude/projects/<encoded-cwd>/<session_id>.jsonl.
+    // Read it back to populate trajectory.toolCalls.
+    const toolCalls = resultEvt.session_id
+      ? await readSessionToolCalls(opts.repoRoot, resultEvt.session_id)
+      : [];
+
     return {
       questionId: q.id,
       harness: "claude-p",
       answer: resultEvt.result,
       turns: resultEvt.num_turns ?? 0,
       wallClockSeconds: (Date.now() - t0) / 1000,
-      toolCalls: [], // claude -p default JSON doesn't enumerate tool calls
+      toolCalls,
       usage: {
         inputTokens: resultEvt.usage?.input_tokens ?? 0,
         outputTokens: resultEvt.usage?.output_tokens ?? 0,

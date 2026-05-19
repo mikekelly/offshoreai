@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-article-47",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T10:35:49.346Z",
+  "wallClockSeconds": 52.91,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find /Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"47B\\\\|mistake\\\\|pitt v holt\\\" 2>/dev/null | head -30\",\"descripti",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/trusts/article-47-set-aside.md\"}",
+      "inputBytes": 121,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md\"}",
+      "inputBytes": 150,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 3019,
+    "cacheReadTokens": 144375,
+    "cacheWriteTokens": 35758,
+    "totalCostUsd": 0.37119500000000005
+  },
+  "answer": {
+    "text": "## Article 47B and setting aside a trustee decision for mistake\n\nA naming point first: in Jersey trust law the **\"Article 47B procedure\"** is really the regime at **Articles 47C–47H** of the **Trusts (Jersey) Law 1984** (inserted by the Trusts (Amendment No. 6) (Jersey) Law 2013). **Article 47B itself is the interpretation section** — it carries the wide statutory definition of \"mistake\". A trustee's exercise of a fiduciary power is set aside under **Article 47G**; a transfer *into* a trust is set aside under **Article 47E**. Citing \"Article 47\" alone is ambiguous (Article 47 simpliciter is the older variation-of-trusts jurisdiction; 47A handles failed purpose trusts), so a Jersey brief should always cite the sub-Article (jersey/trusts/article-47-set-aside.md).\n\n### Substantive ground — what counts as a \"mistake\" (Article 47B)\n\nArticle 47B defines mistake broadly. A qualifying mistake can be as to:\n\n- the **effect** of the transaction;\n- its **consequences**, *including its tax consequences*;\n- any **advantage** the person believed they would gain; or\n- any **fact existing before or at the time of** the disposition or power-exercise.\n\nTestamentary dispositions are expressly excluded from the \"transfer into a trust\" limb (jersey/trusts/article-47-set-aside.md).\n\n### Operative articles\n\n- **Article 47E** — set-aside of a *transfer or disposition of property to a trust*. Standing: transferor or person acting on their behalf. Effect: Court declares the transfer voidable; property returns to the transferor on any conditions the Court imposes.\n- **Article 47G** — set-aside of an *exercise of a fiduciary power* (the trustee-decision route). Standing: trustee, protector, beneficiary or other appropriate person. Effect: the power-exercise is declared voidable and unwound, restoring the position immediately prior. This is the article that catches, e.g., a trustee's appointment of capital made without appreciating a tax charge, a protector's consent given under a factual misapprehension, or a settlor's exercise of a reserved power producing unintended results.\n- **Articles 47C, 47D, 47F, 47H** — standing rules, consequences of a declaration, limitations on relief, and protection of third parties (jersey/trusts/article-47-set-aside.md).\n\n### The three-limb test (S & T Trusts [2015] JRC259 and following)\n\nThe Royal Court will grant relief under 47E or 47G only if the applicant shows:\n\n1. **There was a mistake** within the wide Article 47B definition.\n2. **But for the mistake, the disposition or power-exercise would not have been made** in the form it was.\n3. **The mistake was of so serious a character that it would be just** for the Court to make a declaration.\n\nFailure on any one limb defeats the application; limb 2 is the most common point of failure (the applicant can usually show they would have done *something different*, not that they would have done *nothing*) (jersey/trusts/article-47-set-aside.md, jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md).\n\n### Procedure\n\n- **Vehicle**: a **Representation** in the Royal Court (Samedi Division), supported by affidavit evidence of the relevant state of mind at the relevant time.\n- **Respondents**: the trustee that took the impugned decision, the beneficiaries, and any third party that received property under the impugned transaction.\n- **Evidence**: contemporaneous documentary evidence is critical — file notes, board minutes, adviser correspondence, the actual advice given. A reconstruction affidavit years after the fact is weak.\n- **Costs**: the application is typically a \"friendly\" proceeding; trustee costs usually come out of the trust fund, while a settlor-applicant in a personal-mistake case generally bears their own costs (jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md).\n- **Effect of a declaration**: typically void *ab initio*, with the Court retaining flexibility to fashion relief; good-faith-for-value third-party rights are usually protected; foreign tax authorities recognise the unwind to varying degrees (HMRC has historically accepted Jersey rescissions for IHT/CGT purposes; the IRS is more cautious) (jersey/trusts/article-47-set-aside.md).\n\n### How Jersey is **wider than Pitt v Holt**\n\nIn ***Pitt v Holt; Futter v Futter* [2013] UKSC 26** the UK Supreme Court drew a line between a true **\"mistake\"** (an erroneous belief about a relevant fact or law), which can ground rescission, and **\"mere causative ignorance\"** or **\"inadequate deliberation\"**, which generally cannot. English law is therefore narrower: a trustee who simply failed to think about a consequence (rather than positively believing something false about it) is largely out of court.\n\nThe Royal Court, applying the statutory regime, has **expressly rejected that distinction**. As paraphrased in the corpus:\n\n> Under Jersey law … the jurisdiction to give statutory relief requires the Court to decide whether there was *any* mistake; in Jersey, the **manner of the mistake is irrelevant** and it is therefore inappropriate to make the distinctions applied under English law.\n\nSo a Jersey 47E/47G applicant whose case rests on plain ignorance, oversight or \"we didn't think about that\" can still get over limb 1 of the test, where the equivalent English Pitt-v-Holt applicant would not. The Court still polices the test through limbs 2 and 3 (and through its reluctance to permit *partial* rescissions that amount to re-writing history — see *In re M Settlement* — or to treat the loss of a hoped-for *future* tax advantage as a qualifying mistake), but the **threshold for what kind of mental state counts** is materially wider than in England. That width is part of why an English adviser may prefer a Jersey-law trust when the principal risk being hedged is the future application of a tax rule the adviser cannot yet see clearly (jersey/trusts/article-47-set-aside.md, jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md).\n\n### Freshness\n\nBoth cited files carry `last_verified: 2026-05-14`, i.e. 5 days old as of today (2026-05-19) — well within the 180-day window.\n\n### Cited files\n\n1. `jersey/trusts/article-47-set-aside.md`\n2. `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`",
+    "wordCount": 897
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}
