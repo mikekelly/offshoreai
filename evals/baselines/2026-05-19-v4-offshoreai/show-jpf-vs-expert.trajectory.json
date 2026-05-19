@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-jpf-vs-expert",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T14:17:36.902Z",
+  "wallClockSeconds": 29.553,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/expert-fund.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 1557,
+    "cacheReadTokens": 70424,
+    "cacheWriteTokens": 72754,
+    "totalCostUsd": 0.5288845
+  },
+  "answer": {
+    "text": "## Recommendation: JPF, almost certainly\n\nFor a **club-deal PE fund**, the **Jersey Private Fund (JPF)** is the default and explicitly-designed regime. The JPF concept file names \"**club deal structures**\" and \"**private equity funds and co-investment vehicles**\" as canonical use cases, with up to **50 offers / investors**, **professional or eligible** investors only, **~48-hour JFSC authorisation**, and a Jersey-licensed administrator acting as the **designated service provider (DSP)** carrying CDD/AML responsibility on the fund's behalf (`knowledge/jersey/funds/jersey-private-fund.md`).\n\nA club deal is, by definition, a small group of sophisticated investors co-investing on a single deal or narrow strategy — that fits the JPF's investor cap and light-touch posture exactly. You'd typically structure as a **Jersey limited partnership** (the most common JPF form) with a Jersey GP and the DSP administrator.\n\n## When to step up to an Expert Fund instead\n\nReach for the **Expert Fund** only if one of these is true (`knowledge/jersey/funds/expert-fund.md`):\n\n- **Investor count will exceed 50** — the JPF cap is hard;\n- You need **wider marketing latitude** to expert investors in jurisdictions permitting private placement;\n- You need a more formal **offering memorandum** posture (e.g., for institutional LPs whose internal policies require it);\n- You need a structure more aligned with **AIFMD NPPR** marketing into the EU (the Expert Fund file flags this as a typical use case, though JPFs can also be marketed under NPPR — see `knowledge/jersey/funds/aifmd-nppr.md`).\n\nAuthorisation time stretches from ~48 hours (JPF) to **days-to-weeks** (Expert Fund), and the regime is materially more involved on disclosure.\n\n## Practical takeaway\n\nUnless you're expecting >50 investors or need the wider marketing/disclosure profile, **launch as a JPF as a Jersey LP with a Jersey GP and a JFSC-licensed administrator as DSP**. Verify with your Jersey administrator that your investor list fits the eligible-investor self-certification regime, and confirm any EU/UK marketing footprint up-front — that's what most often pushes a fund out of the JPF regime.\n\n## Caveats\n\n- Both concept files cited are **status: `draft`** (last verified 2026-05-15). The headline rules are correct as drafted, but treat the precise thresholds and timelines as needing verification against the JFSC's current JPF Guide and Codes of Practice for Certified Funds before you file.\n- AIFMD NPPR and the new **AIFMD II** application from 16 April 2026 may affect any EU-marketing strand; check `knowledge/frontier/aifmd-ii-april-2026.md` before final structuring.\n\n## Cited files\n\n1. `knowledge/jersey/funds/jersey-private-fund.md`\n2. `knowledge/jersey/funds/expert-fund.md`\n3. `knowledge/jersey/funds/aifmd-nppr.md` (referenced for EU-marketing context)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 419
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

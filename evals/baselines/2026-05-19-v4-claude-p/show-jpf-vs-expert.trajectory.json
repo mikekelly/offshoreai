@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-jpf-vs-expert",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T14:18:09.311Z",
+  "wallClockSeconds": 54.8,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls knowledge/jersey/funds/\",\"description\":\"List Jersey funds directory\"}",
+      "inputBytes": 84,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/knowledge/jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 129,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/knowledge/jersey/funds/expert-fund.md\"}",
+      "inputBytes": 121,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/knowledge/jersey/funds/index.md\"}",
+      "inputBytes": 115,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -ri \\\"club\\\" knowledge/jersey/funds/ knowledge/jersey/use-cases/ 2>/dev/null | head -30\",\"description\":\"Search for club deal references\"}",
+      "inputBytes": 154,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/knowledge/jersey/use-cases/fund-counsel/choosing-fund-regime.md\"}",
+      "inputBytes": 147,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 12,
+    "outputTokens": 2136,
+    "cacheReadTokens": 360226,
+    "cacheWriteTokens": 44986,
+    "totalCostUsd": 0.5147355
+  },
+  "answer": {
+    "text": "## Recommendation: **JPF** is the default for a Jersey club-deal PE fund\n\nThe corpus answers this question quite directly. The Jersey Private Fund regime is purpose-built for exactly this fact pattern, and \"club deal structures\" is explicitly named as one of its default use cases.\n\n### Why JPF fits a club deal\n\nA club deal — by definition a small number of known, sophisticated co-investors aligned around a specific transaction or strategy — sits squarely inside the JPF design envelope:\n\n- **Investor cap of up to 50 offers/investors** at any time, which comfortably accommodates the typical club's 5–25 LPs. The cap is on *offers* as well as holders, so structure your fundraise accordingly.\n- **Professional / eligible investors only** — appropriate for the institutional and HNW participants typical of club deals.\n- **48-hour fast-track JFSC authorisation**, which matters when a club deal is organised around a specific opportunity with a real closing window.\n- **Designated Service Provider (DSP) substitution model** — a Jersey-licensed administrator carries the CDD/AML and ongoing supervision burden, so the fund itself is light-touch from the manager's perspective.\n- **Structural flexibility** to use a Jersey LP (the standard PE form), a no-par-value company, a unit trust, or a PCC/ICC cell company, picked on investor tax preference.\n\nThe fund-counsel use-case file is unambiguous on the scenario: *\"PE / VC fund with up to 50 LPs: JPF. Fast, light, costs aligned with closed-ended PE economics.\"* It explicitly flags going Expert Fund-heavy for a club deal as a pitfall — *\"a public-fund-style filing for a club deal is expensive and delays time-to-market.\"*\n\n### When you would step up to an Expert Fund instead\n\nPer the comparison table and the Expert Fund concept file, you'd move to Expert Fund only if:\n\n- The club is likely to exceed **50 investors/offers** (Expert has no specific cap, subject to expert criteria);\n- You need **wider expert-investor marketing latitude** beyond limited private placement; or\n- The deal requires fuller **AIFMD NPPR** positioning for EU marketing (Expert is explicitly identified as supporting this; JPF marketing is described as \"limited private placement\").\n\nThe Expert Fund authorisation timeline is \"few days to weeks\" rather than ~48 hours, the offering document is a fuller offering memorandum rather than a light PPM, and disclosure expectations are higher. The \"Going too light\" pitfall warns that if you organise a JPF and then breach 50 investors, the JFSC will re-categorise you — so size honestly at outset.\n\n### Practical answer for a club deal\n\nDefault to **JPF, structured as a Jersey limited partnership** (the most common PE form per the JPF concept file), with a Jersey-licensed administrator as DSP. Only reach for Expert Fund if your club is genuinely scaling past ~50 LPs/offers, or if EU NPPR distribution is core to the strategy.\n\n### Freshness note\n\nAll cited fund files have `last_verified: 2026-05-14` or `2026-05-15`, well within the 180-day window (today: 2026-05-19). No stale-source caveat applies.\n\n---\n\n### Files cited\n\n1. `knowledge/jersey/funds/jersey-private-fund.md`\n2. `knowledge/jersey/funds/expert-fund.md`\n3. `knowledge/jersey/funds/index.md`\n4. `knowledge/jersey/use-cases/fund-counsel/choosing-fund-regime.md`",
+    "wordCount": 497
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

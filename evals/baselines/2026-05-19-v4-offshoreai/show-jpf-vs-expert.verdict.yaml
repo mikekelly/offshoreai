@@ -1,0 +1,22 @@
+questionId: show-jpf-vs-expert
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: "Pass. The answer covers all four rubric substance dimensions
+  accurately, with every claim verified against the corpus. Voice is spot-on
+  fund-counsel register — opens with a clear recommendation, structures the
+  Expert Fund as a step-up contingency, and closes with a practical filing
+  checklist. Citation discipline is strong: both primary concept files cited, no
+  hallucinations, and the candidate proactively flags draft status and advises
+  primary-source verification. Two tool calls with zero redundancy is optimal
+  efficiency for this question."

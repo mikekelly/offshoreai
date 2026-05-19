@@ -1,0 +1,16 @@
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+overall: fail
+dimensions:
+  substance: fail
+  jerseySpecific: n/a
+  citationPrecision: fail
+  citationRecall: n/a
+  freshnessHandling: n/a
+  voice: n/a
+factsCovered: 0
+factsExpected: 0
+citationsTotal: 0
+hallucinatedCitations: 0
+summary: "Harness dispatched but errored: Claude Code returned an error result:
+  You've hit your limit · resets 6:20pm (Europe/Jersey)"

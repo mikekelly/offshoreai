@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-aifmd-nppr",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T14:18:20.892Z",
+  "wallClockSeconds": 10.798,
+  "turns": 0,
+  "toolCalls": [],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "totalCostUsd": 0
+  },
+  "answer": {
+    "text": "# DISPATCH ERROR\n\nClaude Code returned an error result: You've hit your limit · resets 6:20pm (Europe/Jersey)",
+    "wordCount": 17
+  },
+  "errors": [
+    {
+      "where": "dispatch",
+      "detail": "Claude Code returned an error result: You've hit your limit · resets 6:20pm (Europe/Jersey)"
+    }
+  ],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}
