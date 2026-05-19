@@ -1,0 +1,29 @@
+{
+  "name": "@offshoreai/tools-corpus",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Typed in-process corpus tools registered with the Claude Agent SDK. v1 ships 4 of the 11 PRD §7.1 tools (getFile, getArticle, findByTag, freshnessCheck); the rest land as bundles, semantic search, and editorial telemetry come online.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./register": "./src/register.ts",
+    "./toon": "./src/toon.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "*",
+    "@offshoreai/build": "workspace:*",
+    "@offshoreai/schemas": "workspace:*",
+    "gray-matter": "^4.0.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

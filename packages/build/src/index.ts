@@ -18,5 +18,14 @@ export type { HierTree, HierTreeNode } from "./compile/hier-tree.js";
 export { compileTagIndex } from "./compile/tag-index.js";
 export type { TagIndex } from "./compile/tag-index.js";
 
-export { loadCorpus } from "./compile/loader.js";
+export {
+  loadCorpus,
+  getTags,
+  getTitle,
+  getStatus,
+  getLastVerified,
+  getArticlesCovered,
+  getPersona,
+  getCategory,
+} from "./compile/loader.js";
 export type { CorpusRecord, CorpusKind } from "./compile/loader.js";

@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "auth-test": "tsx ./src/auth-test.ts"
+    "auth-test": "tsx ./src/auth-test.ts",
+    "query": "tsx ./src/query-cli.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@anthropic-ai/claude-agent-sdk": "*"
+    "@anthropic-ai/claude-agent-sdk": "*",
+    "@offshoreai/tools-corpus": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
