@@ -1,0 +1,22 @@
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 16
+hallucinatedCitations: 0
+summary: "Pass. The answer covers all four expected substance areas with
+  correct, well-structured comparative analysis and zero hallucinated citations.
+  The Jersey-specific treatment is strong — Article 9, 9A, and TJL 1984 are
+  named and accurately described. The main weakness is citation recall: the
+  dedicated firewall.md file was never read or cited despite the firewall being
+  a central claim, and the Jersey trust files were cited without being directly
+  consulted via getFile. One unsupported comparative claim ('most
+  case-law-tested') is minor. Draft-status flagging is exemplary."

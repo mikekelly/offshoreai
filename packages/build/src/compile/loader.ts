@@ -36,7 +36,19 @@ export interface LoadOptions {
   readonly globs?: ReadonlyArray<string>;
 }
 
-const DEFAULT_GLOBS = ["jersey/**/*.md"];
+// Jurisdiction directories at the repo root. Each is internally
+// self-contained and follows the same frontmatter convention. Adjacent
+// jurisdictions (cayman/, bvi/, etc.) are thinner than jersey/ but
+// they're real content — show-trusts-comparison style questions need
+// findByTag and getFile to reach them.
+const DEFAULT_GLOBS = [
+  "jersey/**/*.md",
+  "cayman/**/*.md",
+  "bvi/**/*.md",
+  "guernsey/**/*.md",
+  "bermuda/**/*.md",
+  "isle-of-man/**/*.md",
+];
 
 const META_BASENAMES = new Set(["README.md", "COVERAGE-AUDIT.md"]);
 
