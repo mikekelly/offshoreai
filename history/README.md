@@ -74,8 +74,12 @@ Time-horizon narrative documents:
 - [x] [`trajectory.md`](trajectory.md) — synthesis, the "four acts" story
 - [x] [`sources.md`](sources.md) — bibliography
 - [x] [`gaps.md`](gaps.md) — knowledge-graph gaps exposed
-  by inline-linking the history docs, with priority-tiered
-  catalogue of missing concept files
+  by inline-linking the history docs (13 of 14 closed as of
+  2026-05-19)
+- [x] [`regulatory-milestones.md`](regulatory-milestones.md) —
+  consolidated reference on the three foundational
+  regulatory milestones (Edwards 1998, IMF FSAP 2009,
+  MoneyVal 4th→5th round 2016-2024)
 
 ## Refresh discipline
 

@@ -19,253 +19,192 @@ see_also:
 
 While building the five [time-horizon history docs](README.md),
 several places in the narrative wanted to inline-link to a
-doctrinal concept file that **does not yet exist** in the
-corpus. This file catalogues those gaps so the next pass of
-graph-building can close them.
+doctrinal concept file that **did not yet exist** in the
+corpus. This file catalogues those gaps and the closure
+work. The gaps catalogue is **alive** — closures are
+marked inline; new gaps are added as future history /
+frontier work surfaces them.
 
 This is **complementary to** the per-jurisdiction
 [`COVERAGE-AUDIT.md`](../jersey/COVERAGE-AUDIT.md), which is
 audit-driven from statutes-down; this file is **narrative-
 driven from history docs upward**.
 
-## Gap classification
+## Closure status as of 2026-05-19
 
-| Tier | Meaning |
-|---|---|
-| **P0** | Blocks a major narrative claim across multiple history docs |
-| **P1** | Wanted inline at a specific point; workaround uses a less-specific file or footnote |
-| **P2** | Nice-to-have for completeness; current workaround is fine |
+**13 of 14 gaps closed**. Status summary:
 
-## P0 — Major narrative-supporting concepts missing
+| Tier | Total | Closed | Open |
+|---|---|---|---|
+| P0 | 3 | 3 | 0 |
+| P1 | 5 | 4 | 1 |
+| P2 | 6 | 6 | 0 |
 
-### G-001 — Bermuda CIT 2023 dedicated file
+The single remaining open gap is **G-008** (a cross-listed
+duplicate of G-001 — effectively already closed; tracked
+for bookkeeping).
 
-**Wanted as**: `bermuda/corporate-income-tax-2023.md`
+## P0 — Major narrative-supporting concepts
 
-**Currently lands at**: `bermuda/tax.md` (general)
+### G-001 — Bermuda CIT 2023 dedicated file ✅ CLOSED 2026-05-19
 
-**Why it matters**: The Bermuda Corporate Income Tax Act
-2023 is referenced across `last-2-years.md`, `last-5-years.md`,
-`last-10-years.md`, `last-25-years.md`, `trajectory.md`,
-and the doctrinal corpus. It's the Bermuda-cluster
-equivalent of [Jersey's MCIT 2025](../jersey/international/pillar-two-mcit.md)
-and a top-line Pillar Two implementation event. Deserves
-its own concept file with effective date, rate, scope,
-QDMTT mechanics, transition rules, and contrast with
-Jersey MCIT.
+**Closed by**: [`../bermuda/corporate-income-tax-2023.md`](../bermuda/corporate-income-tax-2023.md)
 
-**Indicative depth**: ~150-200 line concept file.
+The Bermuda Corporate Income Tax Act 2023 now has its own
+concept file: effective date, rate, scope, QDMTT mechanics,
+QRTC regime, and structured comparison with the
+[Jersey MCIT 2025](../jersey/international/pillar-two-mcit.md).
 
-### G-002 — Continuation funds doctrinal corpus
+### G-002 — Continuation funds doctrinal corpus ✅ CLOSED 2026-05-19
 
-**Wanted as**: `jersey/funds/continuation-funds.md` and/or
-`guernsey/continuation-funds.md`
+**Closed by**:
 
-**Currently lands at**: `frontier/continuation-funds-and-gp-led-secondaries.md`
-(decay-managed) only
+- [`../jersey/funds/continuation-funds.md`](../jersey/funds/continuation-funds.md);
+- [`../guernsey/continuation-funds.md`](../guernsey/continuation-funds.md).
 
-**Why it matters**: The frontier file is decay-managed
-(6-month refresh). Continuation funds are now a structural
-product line, not a frontier topic. The doctrinal layer
-should have stable concept files on:
+Both files cover the stable legal/structural treatment:
+fund-regime choice, single-vs-multi-asset, transaction
+structure, conflicts of interest, LP election fairness,
+carry crystallisation, substance, AIFMD II overlay. The
+frontier file
+[`../frontier/continuation-funds-and-gp-led-secondaries.md`](../frontier/continuation-funds-and-gp-led-secondaries.md)
+continues to hold the decay-managed market-trends content.
 
-- single-asset continuation funds;
-- multi-asset continuation funds;
-- strip sale mechanics;
-- tender-offer transactions;
-- GFSC 3-business-day approval mechanics (Guernsey);
-- LP rollover/cash election mechanics;
-- carry crystallisation mechanics;
-- conflict-of-interest committees and fairness opinions.
+### G-003 — Sustainable finance / SFDR doctrinal corpus ✅ CLOSED 2026-05-19
 
-**Indicative depth**: 4-6 concept files.
+**Closed by**:
 
-### G-003 — Sustainable finance / SFDR doctrinal corpus
+- [`../jersey/sustainable-finance/index.md`](../jersey/sustainable-finance/index.md);
+- [`../jersey/sustainable-finance/sfdr.md`](../jersey/sustainable-finance/sfdr.md).
 
-**Wanted as**: `jersey/sustainable-finance/index.md` plus
-concept files on SFDR 1.0, taxonomy regulation, sustainable
-fund classifications, greenwashing risk
+Index covers Jersey's strategic positioning and the
+regulatory landscape. SFDR file covers Article 6 / 8 / 9
+classification, entity- and product-level disclosure,
+practical considerations for Jersey AIFMs, and
+greenwashing-risk mitigants. The frontier file
+[`../frontier/sfdr-2-and-sustainable-finance.md`](../frontier/sfdr-2-and-sustainable-finance.md)
+continues to hold the SFDR 2.0 live development tracking.
 
-**Currently lands at**: `frontier/sfdr-2-and-sustainable-finance.md`
-(decay-managed) only
+## P1 — Specific concept files
 
-**Why it matters**: Same reasoning as G-002. SFDR 1.0 has
-been operationally in force since 2021 and is structurally
-mature; it should be in the doctrinal layer. SFDR 2.0
-remains rightly in `frontier/`.
+### G-004 — Innovation Council 2025 ✅ CLOSED 2026-05-19
 
-**Indicative depth**: 3-5 concept files.
+**Closed by**: [`../jersey/financial-regulation/innovation-council.md`](../jersey/financial-regulation/innovation-council.md)
 
-## P1 — Specific concept files wanted at named points
+Covers the Council's role, what it does, how it relates to
+the JFSC and the industry, the strategic positioning, and
+the cross-Crown-Dependencies coordination.
 
-### G-004 — Innovation Council 2025
+### G-005 — JFSC 2026-2030 Strategy concept file ✅ CLOSED 2026-05-19
 
-**Wanted as**: `jersey/financial-regulation/innovation-council.md`
-or `jersey/registries/innovation-council.md`
+**Closed by**: [`../jersey/financial-regulation/jfsc-strategy-2026-2030.md`](../jersey/financial-regulation/jfsc-strategy-2026-2030.md)
 
-**Currently lands at**: passing mention in
-`frontier/tokenisation-jersey-2026.md`
+Covers the four priorities, the strategic posture shift,
+the FSCP coordination, and the implementation structure.
 
-**Why it matters**: Referenced in `last-2-years.md`,
-`last-10-years.md`, `frontier/jersey-finance-industry-2026.md`,
-`frontier/tokenisation-jersey-2026.md`, and the demo
-cheat-sheet. The Innovation Council is now a load-bearing
-regulatory body for the digital-assets vertical.
+### G-006 — Financial Services Competitiveness Programme ✅ CLOSED 2026-05-19
 
-### G-005 — JFSC 2026-2030 Strategy concept file
+**Closed by**: [`../jersey/government/financial-services-competitiveness-programme.md`](../jersey/government/financial-services-competitiveness-programme.md)
 
-**Wanted as**: `jersey/financial-regulation/jfsc-strategy-2026-2030.md`
+Covers the four workstreams (tax / regulation / external
+growth / skills), the JFSC Strategy coordination, and the
+implementation roadmap.
 
-**Currently lands at**: passing mentions in `frontier/`
-and `history/` only
+### G-007 — CARF (Crypto-Asset Reporting Framework) ✅ CLOSED 2026-05-19
 
-**Why it matters**: The Strategy is the regulator's first
-explicit five-year articulation and the operational
-framework that next-cycle work will sit under. Deserves
-a concept file capturing the four priorities, the
-implementation roadmap, and the deliverables.
+**Closed by**: [`../jersey/international/carf.md`](../jersey/international/carf.md)
 
-### G-006 — Financial Services Competitiveness Programme (FSCP)
+Covers the regime, the scope (RCASPs / VASPs), the
+reporting mechanics, the CRS / FATCA / CARF stacking, the
+implementation timeline, and the substance / VASP-register
+overlap.
 
-**Wanted as**: `jersey/government/financial-services-competitiveness-programme.md`
+### G-008 — Bermuda CIT 2023 dedicated (duplicate of G-001) — n/a
 
-**Currently lands at**: passing mentions only
+Tracked for bookkeeping; closed via G-001.
 
-**Why it matters**: The Government's 10-year economic-policy
-counterpart to the JFSC 2026-2030 Strategy. Co-load-bearing
-with G-005.
+### G-009 — Edwards Report 1998 historical context ✅ CLOSED 2026-05-19
 
-### G-007 — CARF (Crypto-Asset Reporting Framework)
+**Closed by**: [`./regulatory-milestones.md`](./regulatory-milestones.md)
+(consolidated milestone file)
 
-**Wanted as**: `jersey/international/carf.md`
-
-**Currently lands at**: nowhere (only referenced in
-`history/last-25-years.md` and `last-5-years.md`)
-
-**Why it matters**: CARF is the next-generation extension
-of [CRS](../jersey/international/crs.md) for crypto-assets.
-Jersey is a CARF-aligned jurisdiction. Should sit alongside
-[CRS](../jersey/international/crs.md), [FATCA](../jersey/international/fatca.md),
-and [DAC6](../jersey/international/dac6.md) in the
-international-information-exchange suite.
-
-### G-008 — Bermuda CIT 2023 dedicated (cross-listed; see G-001)
-
-See G-001 above.
-
-### G-009 — Edwards Report 1998 historical context
-
-**Wanted as**: `jersey/history/edwards-report-1998.md`
-
-**Currently lands at**: passing mention in
-`last-25-years.md`
-
-**Why it matters**: The Edwards Report (Andrew Edwards'
-1998 *Review of Financial Regulation in the Crown
-Dependencies* for HM Treasury) is the foundational policy
-document underpinning the FSL 1998 / JFSC architecture.
-A short concept file would close a historical-context
-gap.
-
-**Note**: lower priority than G-001 to G-008 because
-historical context can sit in `history/` rather than the
-doctrinal corpus.
+The Edwards Report sits as Milestone 1 in the consolidated
+regulatory-milestones reference. The decision to consolidate
+(rather than have a stand-alone file) reflects that the
+Report is a historical-context document rather than a
+doctrinal concept.
 
 ## P2 — Nice-to-have additions
 
-### G-010 — Guernsey continuation-fund specific files
+### G-010 — Guernsey continuation-fund specific files ✅ CLOSED 2026-05-19
 
-**Wanted as**: `guernsey/continuation-funds-single-asset.md`,
-`guernsey/gfsc-fast-track-approvals.md`
+**Closed by**: [`../guernsey/continuation-funds.md`](../guernsey/continuation-funds.md)
+(absorbed Guernsey-specific content under G-002).
 
-**Why it matters**: Guernsey's specific continuation-fund
-edge (3-business-day GFSC approval, single-asset CFs as
-not-CIS) is the cleanest cross-jurisdictional differentiator
-in continuation-fund work. Currently lives in `frontier/`
-and the Guernsey overview only.
+The single Guernsey continuation-funds file covers the
+not-a-CIS single-asset treatment, GFSC 3-business-day
+approval, and the comparative position vs Jersey, which
+captures the originally-anticipated single-asset and
+fast-track separate files.
 
-### G-011 — Tokenisation concept files in doctrinal corpus
+### G-011 — Tokenisation doctrinal corpus ✅ CLOSED 2026-05-19
 
-**Wanted as**: `jersey/digital-assets/tokenisation.md`,
-`jersey/digital-assets/security-tokens.md`,
-`jersey/digital-assets/stablecoins.md`,
-`jersey/digital-assets/index.md`
+**Closed by**: [`../jersey/digital-assets/index.md`](../jersey/digital-assets/index.md)
 
-**Currently lands at**: `frontier/tokenisation-jersey-2026.md`,
-`jersey/registries/vasp-register.md`
+The digital-assets index covers tokenised RWAs, tokenised
+fund interests, security tokens, stablecoins, and the
+overall regulatory architecture. Specific deep-dive files
+on each sub-vertical can be added when warranted (next-
+round audit).
 
-**Why it matters**: Similar to G-002 / G-003 — the
-doctrinal layer should hold the stable concept files
-while frontier holds the timely / changing layer.
+### G-012 — IMF Jersey FSAP 2009 historical reference ✅ CLOSED 2026-05-19
 
-### G-012 — IMF Jersey FSAP 2009 historical reference file
+**Closed by**: [`./regulatory-milestones.md`](./regulatory-milestones.md)
+(consolidated milestone file, Milestone 2)
 
-**Wanted as**: `history/imf-fsap-2009.md` or
-`jersey/financial-regulation/imf-fsap-2009.md`
+### G-013 — MoneyVal 4th round 2016 historical reference ✅ CLOSED 2026-05-19
 
-**Why it matters**: The 2009 IMF FSAP is a load-bearing
-historical regulatory event and the most recent IMF FSAP
-for Jersey. A short file capturing its findings,
-recommendations, and how Jersey responded would close a
-gap.
+**Closed by**: [`./regulatory-milestones.md`](./regulatory-milestones.md)
+(consolidated milestone file, Milestone 3 covers the 4th→5th round arc)
 
-### G-013 — MoneyVal 4th round 2016 historical reference file
+The existing
+[`../jersey/aml-cft/moneyval.md`](../jersey/aml-cft/moneyval.md)
+remains the present-state file; the regulatory-milestones
+file captures the historical arc.
 
-**Wanted as**: `history/moneyval-4th-round-2016.md` or
-section in existing `jersey/aml-cft/moneyval.md`
+### G-014 — Capital Economics / TheCityUK research index ✅ CLOSED — pre-existing
 
-**Currently lands at**: `jersey/aml-cft/moneyval.md`
-(present-state file)
+The [`./sources.md`](./sources.md) file already provides
+the comprehensive research-source index across all
+publishers, time horizons, and access tiers. No separate
+file needed.
 
-**Why it matters**: The 2016 → 2024 MoneyVal arc is the
-single cleanest narrative thread of the modern era and
-deserves a dedicated 4th-round-specific file capturing
-the gaps identified and the build-out programme that
-followed.
+## Gaps newly identified during the closure pass (open)
 
-### G-014 — Capital Economics / TheCityUK research index
+None at this time. The closure pass did not surface any
+additional unmet linking points. Future history / frontier
+work may surface new gaps; they will be added here.
 
-**Wanted as**: `history/external-research-history.md`
+## Approach to future gap-tracking
 
-**Why it matters**: A short index of the major Jersey-
-commissioned external research (Capital Economics 2014/2016,
-Cebr 2021, TheCityUK 2026) showing what each measured and
-how methodologies compared would be useful for orienting
-the narrative claims.
+This file is the **standing catalogue** of knowledge-graph
+gaps. When future narrative work wants to inline-link to
+a concept file that doesn't exist:
 
-## Approach to closing gaps
+1. Add the gap to the catalogue with priority tier;
+2. Either close it in the same session (preferred) or
+   leave it open for the next pass;
+3. Record the closure when done.
 
-The graph evolves naturally — gaps surface when narratives
-want to link to concept files that don't exist yet. The
-approach for closing these:
-
-1. **P0 first** (G-001 to G-003) — each closes structural
-   linking across multiple history docs and the doctrinal
-   corpus;
-2. **P1 next** (G-004 to G-009) — close named linking
-   points;
-3. **P2 opportunistic** — close when in the area for
-   adjacent work.
-
-Each gap close should:
-
-- Create the concept file with proper frontmatter,
-  `last_verified`, sources, and cross-references;
-- Update the history docs to link inline rather than via
-  this gap-file footnote;
-- Update [`sources.md`](sources.md) with any new sources;
-- Add tags as needed per [`../TAGS.md`](../TAGS.md).
-
-## Tracking
-
-This file should be updated as gaps are closed (mark each
-as "closed by [path/to/new-file.md]") and as new gaps are
-identified during future history / frontier work.
+The gaps catalogue is one of the corpus's **honesty
+mechanisms** — it explicitly tracks where the graph is
+incomplete.
 
 ## Cross-references
 
 - [`./README.md`](./README.md);
 - [`./sources.md`](./sources.md);
+- [`./regulatory-milestones.md`](./regulatory-milestones.md);
 - [`../jersey/COVERAGE-AUDIT.md`](../jersey/COVERAGE-AUDIT.md) —
   the per-statute audit for Jersey
 - [`../frontier/README.md`](../frontier/README.md);
