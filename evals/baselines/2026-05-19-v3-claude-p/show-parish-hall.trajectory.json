@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-parish-hall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T13:06:08.443Z",
+  "wallClockSeconds": 35.801,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls jersey/road-traffic/ 2>/dev/null; echo \\\"---\\\"; ls jersey/crime-fraud/ 2>/dev/null\",\"description\":\"List road traffic and crime-fraud directories\"}",
+      "inputBytes": 161,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/road-traffic/parish-hall-enquiries.md\"}",
+      "inputBytes": 128,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1803,
+    "cacheReadTokens": 97735,
+    "cacheWriteTokens": 27250,
+    "totalCostUsd": 0.264295
+  },
+  "answer": {
+    "text": "## What's a Parish Hall Enquiry?\n\nA **Parish Hall Enquiry** is a distinctive Jersey pre-court forum, presided over by a **Centenier** — an elected, unpaid honorary police officer of the parish where the alleged offence took place. There is no direct equivalent in the UK or other common-law jurisdictions; it has flavours of a fixed-penalty notice, a fiscal fine, and a court, but with its own procedure and a £200-per-offence ceiling. It is the route by which most routine Jersey motoring offences are disposed of without ever reaching the Magistrate's Court. The proceedings are informal (typically 15–30 minutes, no robes, no transcripts) (`jersey/road-traffic/parish-hall-enquiries.md`).\n\nAt the enquiry the Centenier reviews the evidence, decides whether there's enough to charge, and — crucially — may only issue a **caution** or a **written fine of up to £200** if the offender both **admits** the offence and **accepts** the proposed penalty. A defendant who disputes the offence (or who simply prefers a formal hearing) has the right at any point to demand the case be sent to **Magistrate's Court** instead, and can appeal any Parish Hall outcome by requesting a Magistrate's Court re-hearing. You may bring a friend, family member, or advocate for support (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## When does my case go there?\n\nTypical Parish Hall fare — routine motoring matters:\n\n- minor speeding (under 15 mph over the limit)\n- mobile-phone offences\n- failure to display insurance disc\n- some traffic-light offences\n- minor careless driving (in some cases)\n- parking offences\n\nThe \"schedule of offences\" treatable at Parish Hall is maintained by the Law Officers' Department and reviewed periodically (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## When does it NOT go there?\n\nThe Parish Hall route is **excluded** — these go straight to Magistrate's Court by summons:\n\n- speeding 15 mph or more over the limit\n- drink-driving (any reading)\n- drug-driving\n- dangerous driving (Article 23 RTJL)\n- causing death or serious injury by driving\n- driving while disqualified\n- failing to stop / report after an accident (serious cases)\n- any offence carrying mandatory disqualification\n- any offence for which the Centenier judges the £200 ceiling inadequate\n\nIn short: if you admit a minor motoring offence and would accept a modest fine, expect Parish Hall; if the matter is disputed, or carries possible disqualification or a higher penalty, you'll be in Magistrate's Court (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## Procedural mechanics\n\nA typical enquiry: police report the offence to the parish → you're summoned to the Parish Hall → the Centenier meets you and reviews the evidence → you're invited to admit or deny → if you admit, the Centenier proposes a penalty which you can accept or reject in favour of court; if you deny, the matter is referred to Magistrate's Court → the outcome is recorded (`jersey/road-traffic/parish-hall-enquiries.md`).\n\n## One thing to be aware of\n\nA Parish Hall outcome is not a formal criminal conviction for most purposes, but it **is** recorded, **can** endorse your driving licence, and may be reported to other authorities (e.g. with licensing implications). So accepting a £200 Parish Hall fine isn't always a softer option than a court £50 fine — get advice if endorsement matters to your insurance or licensing position (`jersey/road-traffic/parish-hall-enquiries.md`).\n\nFreshness: the source file's `last_verified` is 2026-05-18 (one day old), well within the 180-day window.\n\n---\n\n### Cited files\n\n1. `jersey/road-traffic/parish-hall-enquiries.md`",
+    "wordCount": 549
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

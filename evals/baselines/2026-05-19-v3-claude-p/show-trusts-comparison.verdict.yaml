@@ -1,0 +1,23 @@
+questionId: show-trusts-comparison
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All four expected substance facts are present and accurately
+  sourced. Every citation verified — no hallucinations, no factual errors.
+  Jersey-specific grounding is strong (Article 9, 9A, 12, TJL 1984 all named and
+  correctly described). The one notable weakness is citation recall: the Article
+  9/9A claims are sourced from secondary use-case files rather than the
+  available statute-level concept files (firewall.md, reserved-powers.md). Three
+  redundant grep calls in the trajectory (overlapping STAR/VISTA/Cayman
+  searches) but overall retrieval was efficient for a cross-cutting comparison
+  question."

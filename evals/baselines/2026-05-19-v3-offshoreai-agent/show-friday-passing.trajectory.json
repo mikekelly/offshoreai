@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:05:18.507Z",
+  "wallClockSeconds": 45.194,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"contract-passing\",\"conveyancing\"],\"mode\":\"or\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/property/contract-passing.md\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/property/contract-passing.md\",\"full\":true}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/legal-system/royal-court.md\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"property\",\"real-property\"],\"mode\":\"or\",\"section\":\"property\"}",
+      "inputBytes": 70,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/property/real-property-overview.md\"}",
+      "inputBytes": 52,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 12,
+    "outputTokens": 2268,
+    "cacheReadTokens": 370668,
+    "cacheWriteTokens": 43514,
+    "totalCostUsd": 0.5140564999999999
+  },
+  "answer": {
+    "text": "## The corpus does not directly answer the Friday-afternoon scheduling question\n\nThe Jersey corpus covers **why** real-property transfers happen in court at all, but it does not specifically document the well-known practitioner convention that contract passing is scheduled for Friday afternoons. The closest material is:\n\n**What the corpus does cover.** Jersey real-property transfers are effected by *contract passing* before the **Samedi Division of the Royal Court** — the buyer and seller (typically through lawyers acting as attorneys) appear, the contract is read or referenced, the Greffier records it, and title transfers at that moment (`jersey/property/contract-passing.md`). The Samedi Division is described as the Royal Court's day-to-day civil forum and is \"named after the historical Saturday sittings\" (`jersey/legal-system/royal-court.md`). The contract-passing file itself says only that the Samedi Division sits \"most weekdays\" and does not single out Fridays.\n\n**Why the procedure exists at all.** This is a **Norman customary-law inheritance**: public transfer of real property before the Royal Court, with the Court as the repository of property records, ensures certainty and visibility of title transitions — different from English conveyancing, which is largely private until Land Registry entry (`jersey/property/contract-passing.md`; `jersey/property/real-property-overview.md`).\n\n**Caveats.**\n- Both cited files are status **`draft`** — content drafted but not yet fully verified against primary sources. Per the corpus's authority rules, treat them as orienting rather than definitive.\n- The corpus is **silent** on the specific Friday-afternoon listing convention. For the actual current sitting schedule of the Samedi Division and the day on which property contracts are passed, verify directly with the Judicial Greffe / Royal Court listings or a Jersey advocate. I should not synthesise an explanation for Friday-afternoon scheduling that the corpus does not contain.\n\n### Files cited\n1. `jersey/property/contract-passing.md` (draft, last verified 2026-05-17)\n2. `jersey/legal-system/royal-court.md` (draft, last verified 2026-05-14)\n3. `jersey/property/real-property-overview.md` (draft, last verified 2026-05-17)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 320
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

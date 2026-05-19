@@ -1,0 +1,20 @@
+questionId: show-parish-hall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six rubric substance facts accurately, is
+  thoroughly Jersey-grounded (Centenier, Honorary Police, Law Officers'
+  Department, Article 23 RTJL 1956), and every claim traces cleanly to the cited
+  corpus file. The freshness caveat on the draft-status file is a model of
+  responsible disclosure. Three tool calls with zero redundancy — efficient
+  retrieval path via tag search, full file read, and freshness check.

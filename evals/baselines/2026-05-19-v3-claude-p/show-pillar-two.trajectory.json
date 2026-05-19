@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-pillar-two",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T12:55:33.010Z",
+  "wallClockSeconds": 84.423,
+  "turns": 11,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"pillar.two\\\\|pillar two\\\\|pillar-two\\\" 2>/dev/null | head -30\",\"description\":\"Find Pillar Two files in Jersey corpus\"}",
+      "inputBytes": 186,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/tax/pillar-two.md\"}",
+      "inputBytes": 108,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/international/pillar-two-mcit.md\"}",
+      "inputBytes": 123,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find jersey -type f -name \\\"*.md\\\" | xargs grep -l -i \\\"topco\\\\|top.co\\\\|uk.operating\\\\|operating.business\\\\|uk.subsid\\\" 2>/dev/null | head -20\",\"description\":\"Find TopCo/UK operating busi",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls jersey/use-cases/ 2>/dev/null && echo \\\"---\\\" && find jersey/use-cases -name \\\"*pillar*\\\" -o -name \\\"*founder*\\\" 2>/dev/null\",\"description\":\"List use-cases dir and pillar/founder files\"",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md\"}",
+      "inputBytes": 142,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls jersey/use-cases/founder-entrepreneur/ 2>/dev/null && echo \\\"---\\\" && find jersey -name \\\"topco*\\\" -o -name \\\"*topco*\\\" 2>/dev/null\",\"description\":\"Look for topco files\"}",
+      "inputBytes": 185,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -r -l \\\"UK opco\\\\|UK operating\\\\|UK subsidiary\\\\|TopCo\\\\|Top.Co\\\\|top-co\\\\|UK trading\\\" jersey/ 2>/dev/null | head -20\",\"description\":\"Search TopCo UK subsidiary patterns\"}",
+      "inputBytes": 189,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 8,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/use-cases/founder-entrepreneur/topco-tax.md\"}",
+      "inputBytes": 134,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 9,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md\"}",
+      "inputBytes": 163,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 14,
+    "outputTokens": 4472,
+    "cacheReadTokens": 384820,
+    "cacheWriteTokens": 41099,
+    "totalCostUsd": 0.56114875
+  },
+  "answer": {
+    "text": "I have enough to answer. Task-tracking isn't needed for a single-question research answer.\n\n---\n\n## Pillar Two applied to a Jersey TopCo above a UK operating business\n\n### The framework\n\nPillar Two is the OECD/G20 Inclusive Framework's global-minimum-tax regime. It targets **MNE groups with consolidated revenue of €750m+** in at least two of the four preceding fiscal years, and imposes a **15% minimum effective tax rate (ETR)** on GloBE income, computed jurisdiction by jurisdiction. Three operative rules: an **Income Inclusion Rule (IIR)** at parent level, an **Undertaxed Profits Rule (UTPR)** as backstop, and a **Qualified Domestic Minimum Top-up Tax (QDMTT)** that lets the source jurisdiction collect the top-up itself (`jersey/tax/pillar-two.md`, `jersey/international/pillar-two-mcit.md`).\n\n### Jersey's implementation — MCIT\n\nJersey has implemented Pillar Two via the **Multinational Corporate Income Tax (Jersey) Law 2024 (\"MCIT Law\")**, effective for accounting periods commencing on or after **1 January 2025**. The MCIT is structured as a Jersey **QDMTT-equivalent plus an IIR / Domestic Top-up Tax** for in-scope constituent entities. The deliberate policy is that **Jersey collects the top-up itself rather than ceding it** to the parent jurisdiction under that parent's IIR (`jersey/tax/pillar-two.md`, `jersey/international/pillar-two-mcit.md`).\n\n### Application to the specific structure (Jersey TopCo above UK Opco)\n\nTwo sub-cases — they turn entirely on whether group consolidated revenue clears €750m:\n\n**1. Group below the €750m threshold (the typical founder TopCo).**\nPillar Two does not engage. The Jersey TopCo continues on zero-ten — **0%** as a generic holding company under Article 123A — and the UK Opco is taxed under UK domestic corporation tax. No MCIT filing, no top-up. This is the position for the great majority of Jersey TopCos (`jersey/tax/pillar-two.md` §\"Who is in scope\"; `jersey/use-cases/founder-entrepreneur/topco-tax.md`; `jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`; `jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md` Step 4).\n\n**2. Group at or above €750m consolidated revenue.**\nPillar Two engages and produces a coordinated pair of results across the two jurisdictions:\n\n- **Jersey TopCo side.** The TopCo is a Jersey constituent entity (Jersey-resident, Jersey-managed). Jersey applies the MCIT: GloBE income is computed under the OECD's standardised rules (starting from consolidated accounting income with prescribed adjustments — different from local Jersey taxable income), the Jersey jurisdictional ETR is calculated, and if it is below 15% a **top-up to 15%** is charged. Because the MCIT functions as a QDMTT, that top-up stays in Jersey rather than being collected by the UK or any other parent jurisdiction. **Zero-ten is not displaced** as the local-tax regime — MCIT sits *on top* of it; the total Jersey burden for in-scope groups becomes \"at least 15%\" regardless of whether the TopCo's local classification was 0%, 10%, or 20% (`jersey/tax/pillar-two.md` §\"Interaction with zero-ten\"; `jersey/international/pillar-two-mcit.md` table).\n\n- **UK Opco side.** The UK Opco is taxed under UK corporation tax in the ordinary way; the UK is also a Pillar Two jurisdiction and runs its own parallel rules. The worked example notes only that \"UK Pillar Two implementation runs in parallel\" and that \"group consolidation tests apply\" — the corpus does not elaborate on the UK's domestic Pillar Two mechanics (`jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md` Step 4).\n\n- **Who ends up collecting what.** Without Jersey's QDMTT, the UK (as the operating-business jurisdiction and a likely parent in many post-IPO structures) or other parent jurisdictions could have collected the top-up on Jersey-booked low-taxed income under the IIR. Jersey's MCIT pre-empts that by collecting the top-up at source (`jersey/international/pillar-two-mcit.md` §\"Qualified Domestic Top-up Tax\"; `jersey/tax/pillar-two.md` §\"Jersey's response\").\n\n### Mechanics and reliefs worth knowing\n\n- **GloBE income ≠ Jersey local taxable income** — separate computation under OECD methodology (`jersey/tax/pillar-two.md`).\n- **Substance-based income exclusion** — formulaic carve-out for payroll + tangible assets, phasing down over time (`jersey/international/pillar-two-mcit.md` §\"Excluded income\").\n- **Excluded entities** — government, international organisations, pension funds, certain investment funds and REIT-type vehicles; not generally relevant to a commercial TopCo (`jersey/international/pillar-two-mcit.md`, `jersey/tax/pillar-two.md`).\n- **Compliance** — registration, separate MCIT return, GIR coordination across the group, specialist software/advisers typically required (`jersey/tax/pillar-two.md` §\"Compliance\"; `jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`).\n- **Substance Law 2019 still applies** in parallel — Pillar Two does not displace the economic-substance regime (`jersey/international/pillar-two-mcit.md` §\"Challenging\"; `jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md` Step 3).\n\n### Strategic implication for this structure\n\nFor founder/pre-IPO groups below €750m, a Jersey TopCo above a UK Opco continues to deliver the zero-ten + no-Jersey-WHT economics that motivate the structure. As the group scales through the threshold, the headline Jersey rate effectively becomes 15% (via MCIT), the comparative advantage versus an onshore (UK/Ireland) holdco narrows, and the structure is typically re-evaluated — though non-tax advantages (capital flexibility under CJL 1991, no Jersey CGT at investor level, LSE acceptance, UK Takeover Code applicability) often still justify staying in Jersey (`jersey/use-cases/founder-entrepreneur/pillar-two-impact.md` §\"Strategic considerations\"; `jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md` \"Why this structure\").\n\n### Caveats\n\n- All four Pillar Two files in the corpus carry **`status: draft`**. Their `last_verified` dates (2026-05-15 to 2026-05-18) are recent (within 180 days of today's 2026-05-19), so no staleness flag — but the draft status itself is a quality caveat the reader should weigh.\n- The corpus does **not** describe UK domestic Pillar Two mechanics (Multinational Top-up Tax / Domestic Top-up Tax) in any detail — only that they \"run in parallel\". A complete answer on the UK-side treatment of the Jersey TopCo's income would need UK-side sources outside this corpus.\n\n---\n\n### Files cited\n\n1. `jersey/tax/pillar-two.md`\n2. `jersey/international/pillar-two-mcit.md`\n3. `jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`\n4. `jersey/use-cases/founder-entrepreneur/topco-tax.md`\n5. `jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`",
+    "wordCount": 858
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

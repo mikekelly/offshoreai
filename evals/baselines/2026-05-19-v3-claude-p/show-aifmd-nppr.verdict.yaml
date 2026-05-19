@@ -1,0 +1,22 @@
+questionId: show-aifmd-nppr
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers 4 of 5 expected facts with zero hallucinated
+  citations and a practical fund-counsel voice. The main gap is AIFMD Article 42
+  — the directive-level provision creating NPPR — which is absent from both the
+  answer and the corpus, so the candidate couldn't source it. The
+  Jersey-specific dimension is partial because the candidate describes 'Jersey's
+  AIFMD-equivalent regime' without naming the Alternative Investment Funds
+  (Jersey) Regulations 2012, despite that statute appearing in the cited file's
+  source metadata. Clean 4-call trajectory with no redundancy.

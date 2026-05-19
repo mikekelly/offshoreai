@@ -1,0 +1,24 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. The answer correctly covers all five expected substance facts —
+  Norman customary doctrine, Pothier foundation, distinction from English
+  nuisance, objective unreasonable-harm test, and Royal Court jurisdiction — and
+  every claim traces cleanly to the cited corpus file. The main weakness is
+  jersey_specific depth: Le Geyt is named in the corpus sources section but not
+  surfaced in the answer, no Jersey case names appear (Rockhampton Apartments
+  was available in delit-tort.md), and the voice reads more like a structured
+  legal briefing than a Jersey advocate explaining customary-law roots. Citation
+  precision is clean with zero hallucinations. Efficiency is excellent at just 2
+  tool calls."

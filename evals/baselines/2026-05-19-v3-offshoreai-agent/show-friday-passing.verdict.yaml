@@ -1,0 +1,23 @@
+questionId: show-friday-passing
+harness: offshoreai-agent
+overall: fail
+dimensions:
+  substance: fail
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: fail
+  freshnessHandling: pass
+  voice: fail
+factsCovered: 2
+factsExpected: 6
+citationsTotal: 4
+hallucinatedCitations: 0
+summary: "Fail. The answer's central thesis — that the corpus is silent on
+  Friday-afternoon scheduling — is factually wrong: at least three corpus files
+  (commercial-leases.md, flying-freeholds.md, force-majeure.md) explicitly
+  mention Friday afternoon Royal Court passing, and commercial-leases.md adds
+  two Jurats witnessing and contrat héréditaire terminology. The candidate's tag
+  search was too narrow, missing the most relevant files. Citation precision is
+  fine for what was cited, but catastrophic recall failure led to a materially
+  misleading answer that would send the user elsewhere for information the
+  corpus actually contains."

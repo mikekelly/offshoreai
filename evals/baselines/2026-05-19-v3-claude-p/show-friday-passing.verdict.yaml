@@ -1,0 +1,21 @@
+questionId: show-friday-passing
+harness: claude-p
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Partial. The answer covers the core mechanics well — Royal Court
+  passing, Friday-afternoon slot, two Jurats, Public Registry registration — and
+  every citation checks out against the corpus. The load-bearing gap is the
+  complete omission of 'contrat héréditaire' terminology, which appeared at line
+  42 of commercial-leases.md that the candidate itself cited, and which was an
+  explicit rubric item in both substance and jersey_specific. Voice is good for
+  a non-Jersey reader. Citation precision is clean with zero hallucinations.

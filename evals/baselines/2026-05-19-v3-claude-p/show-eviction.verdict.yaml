@@ -1,0 +1,21 @@
+questionId: show-eviction
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The candidate nails all six substance points with accurate detail
+  drawn from three well-chosen corpus files. Every claim is cited and every
+  citation verified — zero hallucinations. The answer is thoroughly
+  Jersey-specific (RTJL 2011, 2025 amendment, Petty Debts Court, Viscount),
+  addresses the landlord in a practical smart-friend register, and includes a
+  model freshness caveat noting draft status and the post-amendment regime.
+  Three tool calls, no redundancy, 41 seconds — maximally efficient.

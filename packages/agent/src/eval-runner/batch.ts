@@ -20,6 +20,8 @@ export interface BatchOptions {
   readonly skipGrader?: boolean;
   /** Run the citation-verifier on each answer before grading. */
   readonly verify?: boolean;
+  /** Max concurrent dispatch+grade pipelines within the batch. Default 1 (sequential). */
+  readonly concurrency?: number;
 }
 
 export interface BatchSummary {
@@ -52,57 +54,82 @@ export interface BatchSummary {
 export async function runBatch(opts: BatchOptions): Promise<BatchSummary> {
   await mkdir(opts.outputDir, { recursive: true });
 
+  const concurrency = Math.max(1, opts.concurrency ?? 1);
   const verdicts: GraderVerdict[] = [];
   const outputs: HarnessOutput[] = [];
 
-  for (const q of opts.questions) {
-    console.log(`[${opts.harness}] ${q.id}: dispatching...`);
-    const output = await runHarness(opts.harness, q, {
-      repoRoot: opts.repoRoot,
-      ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
-      ...(opts.verify ? { verify: true } : {}),
-    });
-    outputs.push(output);
+  // Bounded-parallelism pipeline: a pool of `concurrency` workers
+  // each pulls the next question and runs dispatch → optional verify
+  // (inside runHarness) → write artefacts → grade → write verdict.
+  // Order of completion is non-deterministic; output files are
+  // independent so this is safe.
+  const queue = opts.questions.slice();
+  const workers = Array.from({ length: concurrency }, async (_, workerId) => {
+    while (queue.length > 0) {
+      const q = queue.shift();
+      if (!q) break;
+      const tag = concurrency > 1 ? `[${opts.harness}/w${workerId}]` : `[${opts.harness}]`;
+      console.log(`${tag} ${q.id}: dispatching...`);
+      const output = await runHarness(opts.harness, q, {
+        repoRoot: opts.repoRoot,
+        ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
+        ...(opts.verify ? { verify: true } : {}),
+      });
+      outputs.push(output);
 
-    await writeFile(
-      resolve(opts.outputDir, `${q.id}.answer.md`),
-      output.answer + "\n",
-      "utf8",
-    );
-    await writeFile(
-      resolve(opts.outputDir, `${q.id}.trajectory.json`),
-      JSON.stringify(buildTrajectoryRecord(opts.evalSuite, output), null, 2) + "\n",
-      "utf8",
-    );
-    if (output.verifierVerdict) {
       await writeFile(
-        resolve(opts.outputDir, `${q.id}.verifier.json`),
-        JSON.stringify(output.verifierVerdict, null, 2) + "\n",
+        resolve(opts.outputDir, `${q.id}.answer.md`),
+        output.answer + "\n",
         "utf8",
       );
-      console.log(`[${opts.harness}] ${q.id}: verifier ${output.verifierVerdict.kind.toUpperCase()} (${output.verifierVerdict.claimsChecked} claims; ${output.verifierVerdict.rejectCount} rejections; \$${output.verifierVerdict.costUsd.toFixed(4)})`);
+      await writeFile(
+        resolve(opts.outputDir, `${q.id}.trajectory.json`),
+        JSON.stringify(buildTrajectoryRecord(opts.evalSuite, output), null, 2) + "\n",
+        "utf8",
+      );
+      if (output.verifierVerdict) {
+        await writeFile(
+          resolve(opts.outputDir, `${q.id}.verifier.json`),
+          JSON.stringify(output.verifierVerdict, null, 2) + "\n",
+          "utf8",
+        );
+        console.log(`${tag} ${q.id}: verifier ${output.verifierVerdict.kind.toUpperCase()} (${output.verifierVerdict.claimsChecked} claims; ${output.verifierVerdict.rejectCount} rejections; \$${output.verifierVerdict.costUsd.toFixed(4)})`);
+      }
+
+      if (opts.skipGrader) {
+        console.log(`${tag} ${q.id}: dispatched (${output.wallClockSeconds.toFixed(1)}s, ${output.toolCalls.length} tools); grading skipped`);
+        continue;
+      }
+
+      console.log(`${tag} ${q.id}: grading...`);
+      const verdict = await gradeAnswer(q, output, {
+        repoRoot: opts.repoRoot,
+        ...(opts.graderModel ? { model: opts.graderModel } : {}),
+      });
+      verdicts.push(verdict);
+
+      await writeFile(
+        resolve(opts.outputDir, `${q.id}.verdict.yaml`),
+        yamlStringify(verdict),
+        "utf8",
+      );
+
+      console.log(`${tag} ${q.id}: ${verdict.overall.toUpperCase()} (${verdict.factsCovered}/${verdict.factsExpected} facts; ${verdict.hallucinatedCitations} hallucinated citations)`);
     }
+  });
 
-    if (opts.skipGrader) {
-      console.log(`[${opts.harness}] ${q.id}: dispatched (${output.wallClockSeconds.toFixed(1)}s, ${output.toolCalls.length} tools); grading skipped`);
-      continue;
-    }
+  await Promise.all(workers);
 
-    console.log(`[${opts.harness}] ${q.id}: grading...`);
-    const verdict = await gradeAnswer(q, output, {
-      repoRoot: opts.repoRoot,
-      ...(opts.graderModel ? { model: opts.graderModel } : {}),
-    });
-    verdicts.push(verdict);
-
-    await writeFile(
-      resolve(opts.outputDir, `${q.id}.verdict.yaml`),
-      yamlStringify(verdict),
-      "utf8",
-    );
-
-    console.log(`[${opts.harness}] ${q.id}: ${verdict.overall.toUpperCase()} (${verdict.factsCovered}/${verdict.factsExpected} facts; ${verdict.hallucinatedCitations} hallucinated citations)`);
+  // Restore deterministic order for summary.perQuestion based on the
+  // input question order, since parallel completion shuffles outputs.
+  const verdictById = new Map(verdicts.map((v) => [v.questionId, v]));
+  const orderedVerdicts: GraderVerdict[] = [];
+  for (const q of opts.questions) {
+    const v = verdictById.get(q.id);
+    if (v) orderedVerdicts.push(v);
   }
+  verdicts.length = 0;
+  verdicts.push(...orderedVerdicts);
 
   const summary = aggregate(opts, outputs, verdicts);
   await writeFile(

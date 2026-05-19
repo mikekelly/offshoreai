@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-aifmd-nppr",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T12:51:06.833Z",
+  "wallClockSeconds": 33.573,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"nppr\",\"funds\"],\"mode\":\"and\"}",
+      "inputBytes": 38,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"eu-marketing\"],\"mode\":\"or\"}",
+      "inputBytes": 37,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/funds/aifmd-nppr.md\",\"full\":true}",
+      "inputBytes": 49,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/fund-counsel/aifmd-nppr-registration.md\",\"full\":true}",
+      "inputBytes": 79,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1892,
+    "cacheReadTokens": 128943,
+    "cacheWriteTokens": 38878,
+    "totalCostUsd": 0.354799
+  },
+  "answer": {
+    "text": "## Marketing a Jersey AIF into Germany under NPPR\n\nGermany is one of the **stricter NPPR jurisdictions** in the EU, but the route is well-trodden for Jersey AIFs. The mechanics break down into two layers: Jersey-side AIFM registration and German-side BaFin notification.\n\n### Layer 1 — Jersey-side prerequisites\n\nBefore you can notify any EU member state, the **AIFM must be JFSC-registered** under Jersey's AIFMD-equivalent regime and demonstrate substantive AIFMD-equivalent compliance:\n\n- capital adequacy proportionate to AIFM size\n- risk-management framework equivalent to AIFMD Art 15\n- liquidity management for open-ended AIFs\n- **AIFMD-equivalent depository** arrangements (a \"lighter\" Jersey depository alone is generally insufficient for EU-marketed AIFs — a combined arrangement is common)\n- transparency to investors (annual report, periodic reporting)\n- regulatory reporting to JFSC\n\n(`jersey/funds/aifmd-nppr.md`; `jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`)\n\n### Layer 2 — Germany-specific NPPR notification\n\nGermany's NPPR sits under **§330 KAGB** (the *Kapitalanlagegesetzbuch*) and is administered by **BaFin** as the competent authority. The corpus flags Germany as having \"strict NPPR rules\" with the following Germany-specific features:\n\n- a **local fact-sheet** (Wesentliche Anlegerinformationen-style document) is required;\n- a **local distributor** is sometimes required;\n- **ongoing reporting** obligations apply after acceptance.\n\n(`jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`)\n\n### Process\n\n1. Confirm AIFMD-equivalent classification of the fund.\n2. Complete JFSC AIFM registration in Jersey.\n3. Stand up AIFMD-equivalent compliance + EU-grade depository.\n4. Prepare the BaFin notification package (Germany-specific documentation).\n5. Submit to BaFin; await clearance.\n6. Market **only to German professional investors** within the NPPR limits.\n\n### Key caveats\n\n- **No third-country passport.** Full AIFMD passporting for Jersey AIFs was proposed but never implemented — NPPR remains the practical EU route (`jersey/funds/aifmd-nppr.md`).\n- **Reverse solicitation is narrow.** If a German investor approaches the AIF unsolicited, no NPPR notification is needed, but BaFin scrutinises these claims and active outreach dressed up as reverse solicitation attracts enforcement risk (`jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`).\n- **UK is now a separate stream.** Marketing into the UK uses the UK's own NPPR with the FCA — Brexit split this from EU NPPR (`jersey/funds/aifmd-nppr.md`).\n\n### Source/status flags\n\nBoth cited files are marked **status: `draft`** (`last_verified: 2026-05-15`, 4 days old — fresh on the freshness contract but **drafted but unverified** on the status contract). The Germany-specific KAGB references in particular should be confirmed against BaFin's current guidance and Jersey counsel before you act. The corpus does not contain a standalone deep-dive on §330 KAGB or BaFin notification mechanics — the use-case file is the closest material we have.\n\n### Cited files\n\n1. `jersey/funds/aifmd-nppr.md` (status: draft; last verified 2026-05-15)\n2. `jersey/use-cases/fund-counsel/aifmd-nppr-registration.md` (status: draft; last verified 2026-05-15)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 438
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

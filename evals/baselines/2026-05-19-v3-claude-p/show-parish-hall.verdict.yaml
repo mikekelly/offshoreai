@@ -1,0 +1,22 @@
+questionId: show-parish-hall
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected substance facts accurately and
+  with correct Jersey-specific detail. The Centenier role, £200 ceiling,
+  caution/fine/referral powers, opt-out right, Law Officers' schedule, and
+  exclusion list (15 mph excess, drink-driving, dangerous driving) are all
+  present and verified against the corpus file. Voice is informed and
+  Jersey-grounded throughout. Citation precision is perfect — every claim traces
+  to jersey/road-traffic/parish-hall-enquiries.md and is confirmed. Efficient
+  two-tool retrieval with no redundancy.

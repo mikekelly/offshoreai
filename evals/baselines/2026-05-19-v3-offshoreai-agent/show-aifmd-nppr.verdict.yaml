@@ -1,0 +1,25 @@
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Partial. The answer is substantively strong on 4 of 5 rubric facts —
+  NPPR mechanics, BaFin notification, Jersey-side JFSC registration, and the
+  no-passport constraint are all well-covered and accurately cited. The critical
+  gap is AIFMD Article 42 (the specific AIFMD provision authorising NPPR) and
+  Article 21 reporting, which the rubric explicitly expects and the candidate
+  omits entirely. The corpus itself does not mention Article 42, so this is a
+  corpus-coverage gap rather than a retrieval failure, but the rubric measures
+  the answer not the corpus. Jersey-specific scoring is partial because the
+  statute is named imprecisely ('Jersey AIFM Regulations 2012' vs the correct
+  'Alternative Investment Funds (Jersey) Regulations 2012'). Citations are clean
+  and freshness handling is notably good.

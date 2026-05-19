@@ -1,0 +1,173 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-19T13:06:50.062Z
+  questions: 14
+totals:
+  pass: 11
+  partial: 2
+  fail: 1
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 0.5
+  substancePassRate: 0.79
+  medianToolCalls: 4
+  medianTokensInput: 8
+  medianTokensOutput: 1922.5
+  medianWallClockSeconds: 35.46
+  totalCostUsd: 5.3215
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-trusts-firewall
+    verdict: pass
+    summary: Pass. The answer covers Article 9 with paragraph-level precision (9(1),
+      9(2), 9(2A), 9(3), 9(3A), 9(4)), correctly identifies the forced-heirship
+      disregard as the operative lever, and explains practical limits (foreign
+      in-personam jurisdiction, asset location, sham, public policy) — all
+      verified against the corpus. The single missing rubric fact (anti-suit
+      injunctions) exists in a different corpus file the harness didn't
+      retrieve; this is a retrieval gap, not a factual error. Voice is strong
+      practitioner-to-foreign-lawyer throughout, with apt Continental
+      terminology. Only 1 file cited despite the corpus having additional
+      relevant material, which keeps citation recall at partial, but not enough
+      to demote the overall verdict given the core file is the right one.
+  - id: show-article-47
+    verdict: pass
+    summary: "Pass. The answer is substantively excellent: all six rubric facts are
+      covered, the Article 47B/47E/47G distinction is correctly made (a nuance
+      the use-case file itself gets wrong), the three-limb S&T Trusts test is
+      accurately stated, and the Pitt v Holt divergence is clearly explained
+      with the load-bearing 'manner of mistake is irrelevant' formulation. Every
+      citation checks out against the corpus. Voice is confident,
+      practitioner-grade, and Jersey-specific throughout. The candidate's
+      proactive flagging of the use-case file's mis-labelling and both files'
+      draft status is a mark of quality that goes beyond the rubric
+      requirements."
+  - id: show-jpf-vs-expert
+    verdict: pass
+    summary: "Pass. The answer covers every rubric fact — JPF 50-investor cap, 48h
+      authorisation, DSP delegation, Expert Fund's no-cap/heavier-disclosure
+      trade-off, and the three-axis decision framework — all accurately sourced
+      from four corpus files with zero hallucinated citations. Voice reads as
+      fund counsel advising a sponsor: direct recommendation (JPF), structured
+      flip-to criteria, and a practical decision summary. Freshness caveat on
+      draft-status files is a bonus. Efficient retrieval at 6 tool calls with no
+      redundancy."
+  - id: show-trusts-comparison
+    verdict: partial
+    summary: "Partial. The answer correctly distinguishes STAR (purpose-trust) from
+      VISTA (share-ownership) and provides a useful comparative table, but
+      fundamentally misframes the Jersey side by narrowing it to Article 12 NCPT
+      rather than the classic Jersey discretionary trust. Article 9 (firewall),
+      Article 9A (reserved powers), and TJL 1984 — all rubric requirements — are
+      entirely absent, despite the BVI VISTA corpus file the agent read
+      explicitly comparing VISTA against 'Jersey classical trust + Article 9A
+      reserved powers'. Citations are clean but recall is poor: the two most
+      authoritative Jersey files for this comparison were never retrieved."
+  - id: show-aifmd-nppr
+    verdict: partial
+    summary: Partial. The answer is substantively strong on 4 of 5 rubric facts —
+      NPPR mechanics, BaFin notification, Jersey-side JFSC registration, and the
+      no-passport constraint are all well-covered and accurately cited. The
+      critical gap is AIFMD Article 42 (the specific AIFMD provision authorising
+      NPPR) and Article 21 reporting, which the rubric explicitly expects and
+      the candidate omits entirely. The corpus itself does not mention Article
+      42, so this is a corpus-coverage gap rather than a retrieval failure, but
+      the rubric measures the answer not the corpus. Jersey-specific scoring is
+      partial because the statute is named imprecisely ('Jersey AIFM Regulations
+      2012' vs the correct 'Alternative Investment Funds (Jersey) Regulations
+      2012'). Citations are clean and freshness handling is notably good.
+  - id: show-pillar-two
+    verdict: pass
+    summary: "Pass. All five rubric substance facts are present and correct per the
+      corpus. The answer is firmly Jersey-specific — names the MCIT statute,
+      explains its QDMTT structure, discusses zero-ten interaction, and
+      addresses the UK OpCo jurisdictional-ETR point the question specifically
+      asks about. Voice lands as international tax advisor: structured,
+      practical, with strategic migration and substance considerations. All four
+      citations verified; no hallucinations. The candidate says 'Law 2024' where
+      the rubric says '2025' but the corpus itself says '2024' (effective 1 Jan
+      2025), so the candidate is faithful to the source material."
+  - id: show-eviction
+    verdict: pass
+    summary: Pass. All six rubric substance facts are present and correct with
+      verified citations — the answer is substantively complete and every claim
+      traces to corpus files that support it. The main gap is omitting the 2025
+      Amendment Law (in force 15 April 2026), which the rubric expects under
+      jersey_specific; this drops jersey_specific to partial but does not affect
+      overall given strong substance and citation precision. Voice nails the
+      smart-friend landlord-facing tone with a practical 'tomorrow morning'
+      action sequence. Efficient 5-call trajectory with zero redundancy.
+  - id: show-arrest
+    verdict: pass
+    summary: Pass. All six rubric substance facts are present and correct; citations
+      are precise and verified against corpus; voice is practical and
+      actionable. The one notable gap is the omission of States Police vs
+      Honorary Police context and the distinctive Jersey court forums — the
+      candidate read arrest.md which has a full Honorary Police section but
+      didn't surface it, dropping jersey_specific to partial. This does not
+      demote the overall verdict because substance and citation precision are
+      both pass, and the answer is Jersey-specific in framing (PPCE 2003, Royal
+      Court warrant, narrower adverse-inference rule).
+  - id: show-planning
+    verdict: pass
+    summary: Pass. The answer covers all five rubric substance points correctly and
+      with accurate citations. The strongest dimension is citation precision —
+      every claim traces to a corpus file that supports it, with no hallucinated
+      citations. The only soft spot is jersey_specific scored partial because
+      the candidate omits the Department for the Environment by name (the rubric
+      expects it and the corpus names it prominently), but all three Jersey
+      statutes are correctly cited with full titles, so the overall verdict
+      holds at pass.
+  - id: show-tenancy-2025
+    verdict: pass
+    summary: Pass. The answer covers all 7 expected facts with no factual errors,
+      names the correct Jersey statute and in-force date, and presents the
+      material as a recent reform rather than settled law. All three citations
+      verified against the corpus — every claim is directly supported. Efficient
+      3-call trajectory (tag search → primary file → freshness check) with no
+      redundancy. The inclusion of transitional rules, what-did-not-change, and
+      the draft-status caveat goes beyond the rubric minimum.
+  - id: show-drug-driving
+    verdict: pass
+    summary: Pass. All five rubric facts covered with no errors; the answer cleanly
+      separates current impairment-only law from the pending February 2026
+      reform proposal, matching the voice requirement exactly. Single corpus
+      file cited three times, each citation verified as fully supporting its
+      attached claims. Notably efficient retrieval — two tool calls (findByTag →
+      getFile) with zero redundancy. The draft-status caveat was a welcome
+      addition beyond rubric requirements.
+  - id: show-parish-hall
+    verdict: pass
+    summary: Pass. The answer covers all six rubric substance facts accurately, is
+      thoroughly Jersey-grounded (Centenier, Honorary Police, Law Officers'
+      Department, Article 23 RTJL 1956), and every claim traces cleanly to the
+      cited corpus file. The freshness caveat on the draft-status file is a
+      model of responsible disclosure. Three tool calls with zero redundancy —
+      efficient retrieval path via tag search, full file read, and freshness
+      check.
+  - id: show-voisinage
+    verdict: pass
+    summary: "Pass. The answer correctly covers all five expected substance facts —
+      Norman customary doctrine, Pothier foundation, distinction from English
+      nuisance, objective unreasonable-harm test, and Royal Court jurisdiction —
+      and every claim traces cleanly to the cited corpus file. The main weakness
+      is jersey_specific depth: Le Geyt is named in the corpus sources section
+      but not surfaced in the answer, no Jersey case names appear (Rockhampton
+      Apartments was available in delit-tort.md), and the voice reads more like
+      a structured legal briefing than a Jersey advocate explaining
+      customary-law roots. Citation precision is clean with zero hallucinations.
+      Efficiency is excellent at just 2 tool calls."
+  - id: show-friday-passing
+    verdict: fail
+    summary: "Fail. The answer's central thesis — that the corpus is silent on
+      Friday-afternoon scheduling — is factually wrong: at least three corpus
+      files (commercial-leases.md, flying-freeholds.md, force-majeure.md)
+      explicitly mention Friday afternoon Royal Court passing, and
+      commercial-leases.md adds two Jurats witnessing and contrat héréditaire
+      terminology. The candidate's tag search was too narrow, missing the most
+      relevant files. Citation precision is fine for what was cited, but
+      catastrophic recall failure led to a materially misleading answer that
+      would send the user elsewhere for information the corpus actually
+      contains."

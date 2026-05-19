@@ -1,0 +1,23 @@
+questionId: show-arrest
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All six rubric substance facts are present and correct; citations
+  are precise and verified against corpus; voice is practical and actionable.
+  The one notable gap is the omission of States Police vs Honorary Police
+  context and the distinctive Jersey court forums — the candidate read arrest.md
+  which has a full Honorary Police section but didn't surface it, dropping
+  jersey_specific to partial. This does not demote the overall verdict because
+  substance and citation precision are both pass, and the answer is
+  Jersey-specific in framing (PPCE 2003, Royal Court warrant, narrower
+  adverse-inference rule).

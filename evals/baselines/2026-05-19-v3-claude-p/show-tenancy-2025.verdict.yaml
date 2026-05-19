@@ -1,0 +1,21 @@
+questionId: show-tenancy-2025
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: Pass. The answer covers all 7 expected facts correctly and in detail,
+  with no factual errors. Every claim traces back to the single cited corpus
+  file (jersey/residential-tenancy/2025-amendment-law.md), which fully supports
+  them. The answer presents only post-amendment law as the rubric requires,
+  correctly names the 2025 Amendment Law and the 15 April 2026 commencement
+  date, and proactively flags the file's freshness metadata. Efficient
+  two-tool-call trajectory with no redundancy.

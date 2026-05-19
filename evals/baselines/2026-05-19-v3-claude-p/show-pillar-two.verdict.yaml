@@ -1,0 +1,23 @@
+questionId: show-pillar-two
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. The answer comprehensively covers all five expected facts — 15%
+  minimum ETR, MCIT Law, QDMTT, UK interaction, group consolidation tests — with
+  accurate, verified citations to all five corpus files. The two-case structure
+  (sub-€750m vs above) is the exact framing the corpus files use, and the
+  strategic-implication section adds genuine advisory value. The only minor
+  wrinkle is naming the statute 'Law 2024' (following the primary corpus file)
+  when the rubric and one other corpus file say 'Law 2025' — a corpus
+  inconsistency, not a candidate error. Voice is credibly that of an
+  international tax advisor throughout.

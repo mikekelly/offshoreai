@@ -1,0 +1,21 @@
+questionId: show-drug-driving
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 9
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected facts with accurate,
+  well-structured detail and a clear current-law vs pending-reform distinction
+  matching the voice rubric. Every claim traces to
+  jersey/road-traffic/drug-driving.md, which fully supports the content with
+  zero hallucinated citations. The candidate added a valuable transparency note
+  about the file's draft status and news-only sourcing. Efficient three-tool
+  trajectory with no redundancy.

@@ -1,0 +1,24 @@
+questionId: show-arrest
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected facts with zero factual
+  errors. Every claim traces cleanly to the cited corpus files — caution wording
+  is verbatim, detention limits match exactly, and the
+  no-adverse-inference-from-silence distinction (Jersey narrower than England)
+  is a valuable Jersey-specific detail beyond the rubric minimum. Voice is
+  strongly practical ('ask for a solicitor immediately', numbered what-to-do
+  list). Four tool calls with no redundancy is efficient. The only minor gap is
+  that the Magistrate's Court and Royal Court as trial forums are mentioned only
+  in passing rather than prominently, but the question is about rights on
+  arrest, not the court process, so this does not demote.

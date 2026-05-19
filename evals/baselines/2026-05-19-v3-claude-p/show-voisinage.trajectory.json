@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T13:07:31.751Z",
+  "wallClockSeconds": 55.171,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -r -l -i \\\"voisinage\\\" jersey/ 2>/dev/null | head -30\",\"description\":\"Find files mentioning voisinage\"}",
+      "inputBytes": 120,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/voisinage.md\"}",
+      "inputBytes": 112,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/boundary-disputes.md\"}",
+      "inputBytes": 120,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i \\\"voisinage\\\" jersey/contract/delit-tort.md jersey/property/index.md jersey/glossary-extension.md jersey/use-cases/international-lawyer/jersey-as-mixed-jurisdiction.md jersey/re",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/contract/delit-tort.md\",\"offset\":90,\"limit\":60}",
+      "inputBytes": 136,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/glossary-extension.md\",\"offset\":358,\"limit\":12}",
+      "inputBytes": 136,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 12,
+    "outputTokens": 2672,
+    "cacheReadTokens": 282135,
+    "cacheWriteTokens": 31222,
+    "totalCostUsd": 0.40306499999999995
+  },
+  "answer": {
+    "text": "## What voisinage is\n\n**Voisinage** is a Jersey **Norman customary-law doctrine** that governs the relationship between neighbouring landowners. It imposes a duty on each owner to use their property in a way that does **not cause unreasonable harm** to neighbours, and is enforced by the Royal Court (`jersey/property/voisinage.md`). The glossary frames it as a Jersey customary \"tort concept\" — a neighbour obligation not to cause unreasonable harm, with strict-liability elements (`jersey/glossary-extension.md`).\n\nKey features that distinguish voisinage from English nuisance:\n\n- **Customary, not statutory** — derived from Norman customary law (Le Geyt, Pothier) and developed by Royal Court jurisprudence (`jersey/property/voisinage.md`).\n- **No fault requirement** — voisinage can apply **objectively**, without proving fault, and is not confined to enumerated English categories like \"smell, smoke, noise\" (`jersey/property/voisinage.md`).\n- **Recognised in Jersey case law** — `Rockhampton Apartments` is cited as illustrative (`jersey/contract/delit-tort.md`).\n\n## Does it apply to your neighbour problem?\n\nThe corpus says voisinage **may** apply where there is:\n\n1. **Harm** that is objectively identifiable;\n2. Caused by the **defendant's use of property**;\n3. **Exceeding the ordinary inconveniences** of neighbourhood living; and\n4. **Without adequate justification** (`jersey/property/voisinage.md`).\n\nTypical claims the corpus lists include excessive noise, smells (livestock, kitchens), smoke/fumes, vibration from machinery or construction, surface water/drainage, tree roots and overhanging branches, and light obstruction (`jersey/property/voisinage.md`). It also flags specific commercial-residential, apartment (inter-unit noise/smells), and rural/agricultural contexts. So if your problem fits one of those patterns and the interference goes beyond ordinary neighbourhood inconvenience, voisinage is a plausible cause of action.\n\nThings that **do not** automatically defeat (or save) a voisinage claim:\n\n- **Planning permission does not exclude voisinage** — regulatory compliance is only evidence of reasonable use, not a shield (`jersey/property/voisinage.md`).\n- **Valid servitudes** are not overridden by voisinage, but **excessive use of a servitude** can still breach it (`jersey/property/voisinage.md`).\n- Available defences include reasonable use, pre-existing state (limited), consent/acquiescence, statutory authority, and prescription (limited) (`jersey/property/voisinage.md`).\n\nIf the issue is really about **where the boundary lies** rather than how the neighbour is using their land, voisinage is the wrong frame — that's a boundary-disputes question (deeds, plans, Vue de Vicomte, prescription), though voisinage is cross-referenced there too (`jersey/property/boundary-disputes.md`). If you are a tenant complaining about your landlord or another tenant's interference, voisinage is also referenced alongside quiet-enjoyment and ordinary tort/nuisance (`jersey/residential-tenancy/quiet-enjoyment-and-access.md`).\n\n## Remedies and how to proceed\n\nThe Royal Court can grant an **injunction**, **damages**, or **specific performance of preventative measures** (`jersey/property/voisinage.md`). The corpus recommends documenting the interference (logs, photos, recordings), engaging acoustic/environmental experts early, building a correspondence trail with the neighbour, attempting **mediation first**, and instructing a Jersey advocate familiar with voisinage; litigation proceeds by Order of Justice under Royal Court civil procedure, often with a site visit (`jersey/property/voisinage.md`).\n\n## Caveats\n\n- The file is **`status: draft`** and several sub-sections repeatedly point to \"specific Jersey case law\" without naming or summarising it — so the doctrine is described at principle level rather than at the level of citable Royal Court authorities. For an actual neighbour dispute, the corpus is enough to orient you but **not enough to advise on outcome** — you need a Jersey advocate to test the facts against the cases.\n- All cited files have `last_verified: 2026-05-18` (today is 2026-05-19), so freshness is fine — none are over 180 days old.\n\n## Cited files\n\n1. `jersey/property/voisinage.md`\n2. `jersey/property/boundary-disputes.md`\n3. `jersey/contract/delit-tort.md`\n4. `jersey/glossary-extension.md`\n5. `jersey/residential-tenancy/quiet-enjoyment-and-access.md`",
+    "wordCount": 554
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

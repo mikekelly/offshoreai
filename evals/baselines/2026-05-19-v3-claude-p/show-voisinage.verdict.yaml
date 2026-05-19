@@ -1,0 +1,25 @@
+questionId: show-voisinage
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected substance facts (Norman
+  customary doctrine, Pothier/Le Geyt, distinct from English nuisance, objective
+  unreasonable-harm test, Royal Court jurisdiction) accurately and with correct
+  citations to corpus files. Every citation was verified against the source and
+  supports the attached claim — zero hallucinations across five cited files. The
+  voice is appropriately advocate-like, explaining customary-law roots
+  accessibly while maintaining Jersey-specific precision, including the honest
+  caveat that the source file is draft status with thin case-law detail. The
+  candidate's separation of voisinage from boundary-dispute questions and the
+  tenancy cross-reference show genuine corpus navigation rather than
+  surface-level retrieval.

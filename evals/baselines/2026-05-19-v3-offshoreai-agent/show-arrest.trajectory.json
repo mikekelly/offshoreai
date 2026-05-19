@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-arrest",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T12:57:08.276Z",
+  "wallClockSeconds": 34.28,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"ppce-2003\",\"arrest\"],\"mode\":\"or\"}",
+      "inputBytes": 43,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/jersey-resident/just-arrested-police-station.md\",\"full\":true}",
+      "inputBytes": 87,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/crime-fraud/rights-at-police-station.md\",\"full\":true}",
+      "inputBytes": 69,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/crime-fraud/arrest.md\",\"full\":true}",
+      "inputBytes": 51,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1940,
+    "cacheReadTokens": 130940,
+    "cacheWriteTokens": 43236,
+    "totalCostUsd": 0.384235
+  },
+  "answer": {
+    "text": "# Your rights on arrest in Jersey\n\nYour rights are set out in the **Police Procedures and Criminal Evidence (Jersey) Law 2003** (PPCE 2003) and its Codes of Practice. The single most important practical step: **ask for a solicitor immediately and decline to answer substantive questions until you've spoken to one**.\n\n## Headline rights\n\n| Right | Position |\n|---|---|\n| **Free legal advice** | 24/7 duty solicitor or your own choice; free; confidential; before any interview. Delay only on specific statutory grounds in very serious cases, authorised at senior level. |\n| **Inform someone** | One person told of your arrest and location, at public expense. Delayable on narrow grounds at inspector level. |\n| **Consular notification** | If a foreign national, your consulate/High Commission can be notified. |\n| **Right to silence** | Caution: *\"You are not obliged to say anything unless you wish to do so, but what you say may be put into writing and given in evidence.\"* No adverse inference from police-station silence is typically drawn (narrower than England post-2003). |\n| **Written notice of rights** | Provided by the custody officer in your language on arrival. |\n| **Custody record** | Comprehensive log of every event; sight on request during detention; copy on release. |\n| **Interpreter** | If you don't speak English well enough, at public expense, before any interview. |\n| **Appropriate adult** | For juveniles under 18, mentally vulnerable persons, or those with significant learning difficulties — interview cannot proceed without one (save defined urgent circumstances). |\n| **Medical attention** | If unwell, injured, or needing medication. |\n| **Physical conditions** | Meals, drinking water, toilet access, heat/light; **at least 8 continuous hours' rest** in any 24-hour period. |\n\n## Detention limits\n\n| Stage | Limit | Authorised by |\n|---|---|---|\n| Initial | **24 hours** | Custody officer |\n| Extension for serious offences | up to **36 hours** | Police inspector or higher |\n| Warrant of further detention | up to **96 hours total** | Royal Court (Magistrate) |\n| Beyond 96 hours | Charge or release required | — |\n\nDetention beyond these limits is unlawful and grounds for habeas corpus / wrongful-imprisonment claim. The custody officer must review detention at prescribed intervals.\n\n## Interview safeguards\n\n- **Open audio recording** under Code E; caution at the start of each session.\n- **No oppression** (raised voice, intimidation, prolonged questioning prohibited).\n- **Solicitor present** if requested; if you change your mind mid-interview, questioning must stop.\n- Police must not interview you if you are too intoxicated, unwell, or distressed to follow.\n\n## If a right is breached\n\nTell your solicitor immediately, note times and details, formal complaint after release, and seek **exclusion of resulting evidence** at any trial; serious breaches may ground a civil claim.\n\n## Caveats\n\n- **Status caveat**: all three cited corpus files are currently `draft` status (last verified 2026-05-18). The substance reflects the PPCE 2003 and Codes of Practice but has not yet been editorially raised to `stable`. Verify against the primary statute and Codes before acting on points that matter operationally.\n- This is general guidance only — **engage a Jersey criminal advocate immediately** if you are actually in custody.\n\n## Cited files\n\n1. `jersey/use-cases/jersey-resident/just-arrested-police-station.md` (draft, last verified 2026-05-18)\n2. `jersey/crime-fraud/rights-at-police-station.md` (draft, last verified 2026-05-18)\n3. `jersey/crime-fraud/arrest.md` (draft, last verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 578
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

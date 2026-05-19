@@ -1,0 +1,21 @@
+questionId: show-planning
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. Strong homeowner-facing answer with well-structured
+  permitted-development analysis, all citations verified against the corpus with
+  zero hallucinations. The most load-bearing gap is the omission of the parent
+  statute (PBL 2002) and the Department for the Environment — both appear in the
+  planning index.md which the candidate listed but never read. Substance still
+  meets threshold at 4/5 expected facts; jersey_specific is partial because the
+  GD Order is named but the principal statute and decision-maker are not.

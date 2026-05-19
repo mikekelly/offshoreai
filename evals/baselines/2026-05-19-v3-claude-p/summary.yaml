@@ -1,0 +1,172 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: claude-p
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-19T13:11:14.313Z
+  questions: 14
+totals:
+  pass: 13
+  partial: 1
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 0.79
+  substancePassRate: 0.93
+  medianToolCalls: 4
+  medianTokensInput: 9.5
+  medianTokensOutput: 2456
+  medianWallClockSeconds: 48.15
+  totalCostUsd: 5.2742
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-trusts-firewall
+    verdict: pass
+    summary: "Pass. The candidate produced a paragraph-by-paragraph walkthrough of
+      Article 9 TJL 1984 that is verifiably accurate against
+      jersey/trusts/firewall.md on every claim. All four practical attack
+      patterns, six limits, three drafting points, and the Article 9A
+      interaction are faithfully drawn from the corpus. The only rubric expected
+      fact not covered — Royal Court anti-suit injunctions — is itself absent
+      from the corpus file, so the candidate correctly refrained from
+      fabricating it. Voice is convincingly Jersey-specific:
+      statute-paragraph-level precision, Norman customary law references (donner
+      et retenir ne vaut, légitime), no generic offshore boilerplate. No case
+      law cited, but the corpus file itself names only Crociani in passing with
+      no substantive case-law discussion, so this is not a candidate
+      shortcoming. Citation precision is perfect — single authoritative source,
+      every claim verified."
+  - id: show-article-47
+    verdict: pass
+    summary: Pass. The answer covers all six expected facts with no material errors,
+      correctly identifies the Article 47B interpretation-vs-operative-power
+      nuance, reproduces the three-limb S&T Trusts test and the Pitt v Holt
+      divergence with precision, and reads convincingly as a Jersey trust
+      litigator's brief. Both cited corpus files fully support every claim.
+      Efficiency is strong — four non-redundant tool calls, 61 seconds.
+  - id: show-jpf-vs-expert
+    verdict: pass
+    summary: "Pass. Every expected fact is present and correctly sourced: JPF ≤50
+      cap, 48-hour authorisation, DSP delegation model, Expert Fund's no-cap /
+      expert-investor / detailed-offering-doc shape, and the decision factors
+      that distinguish them. All three citations verified against the corpus
+      with zero hallucinations. The answer reads as fund counsel advising a
+      sponsor — leading with a clear recommendation, naming the structural
+      flip-points, and closing with a practical one-liner. Efficient four-call
+      trajectory with no redundancy."
+  - id: show-trusts-comparison
+    verdict: pass
+    summary: "Pass. All four expected substance facts are present and accurately
+      sourced. Every citation verified — no hallucinations, no factual errors.
+      Jersey-specific grounding is strong (Article 9, 9A, 12, TJL 1984 all named
+      and correctly described). The one notable weakness is citation recall: the
+      Article 9/9A claims are sourced from secondary use-case files rather than
+      the available statute-level concept files (firewall.md,
+      reserved-powers.md). Three redundant grep calls in the trajectory
+      (overlapping STAR/VISTA/Cayman searches) but overall retrieval was
+      efficient for a cross-cutting comparison question."
+  - id: show-aifmd-nppr
+    verdict: pass
+    summary: Pass. The answer covers 4 of 5 expected facts with zero hallucinated
+      citations and a practical fund-counsel voice. The main gap is AIFMD
+      Article 42 — the directive-level provision creating NPPR — which is absent
+      from both the answer and the corpus, so the candidate couldn't source it.
+      The Jersey-specific dimension is partial because the candidate describes
+      'Jersey's AIFMD-equivalent regime' without naming the Alternative
+      Investment Funds (Jersey) Regulations 2012, despite that statute appearing
+      in the cited file's source metadata. Clean 4-call trajectory with no
+      redundancy.
+  - id: show-pillar-two
+    verdict: pass
+    summary: Pass. The answer comprehensively covers all five expected facts — 15%
+      minimum ETR, MCIT Law, QDMTT, UK interaction, group consolidation tests —
+      with accurate, verified citations to all five corpus files. The two-case
+      structure (sub-€750m vs above) is the exact framing the corpus files use,
+      and the strategic-implication section adds genuine advisory value. The
+      only minor wrinkle is naming the statute 'Law 2024' (following the primary
+      corpus file) when the rubric and one other corpus file say 'Law 2025' — a
+      corpus inconsistency, not a candidate error. Voice is credibly that of an
+      international tax advisor throughout.
+  - id: show-eviction
+    verdict: pass
+    summary: Pass. The candidate nails all six substance points with accurate detail
+      drawn from three well-chosen corpus files. Every claim is cited and every
+      citation verified — zero hallucinations. The answer is thoroughly
+      Jersey-specific (RTJL 2011, 2025 amendment, Petty Debts Court, Viscount),
+      addresses the landlord in a practical smart-friend register, and includes
+      a model freshness caveat noting draft status and the post-amendment
+      regime. Three tool calls, no redundancy, 41 seconds — maximally efficient.
+  - id: show-arrest
+    verdict: pass
+    summary: Pass. The answer covers all six expected facts with zero factual
+      errors. Every claim traces cleanly to the cited corpus files — caution
+      wording is verbatim, detention limits match exactly, and the
+      no-adverse-inference-from-silence distinction (Jersey narrower than
+      England) is a valuable Jersey-specific detail beyond the rubric minimum.
+      Voice is strongly practical ('ask for a solicitor immediately', numbered
+      what-to-do list). Four tool calls with no redundancy is efficient. The
+      only minor gap is that the Magistrate's Court and Royal Court as trial
+      forums are mentioned only in passing rather than prominently, but the
+      question is about rights on arrest, not the court process, so this does
+      not demote.
+  - id: show-planning
+    verdict: pass
+    summary: Pass. Strong homeowner-facing answer with well-structured
+      permitted-development analysis, all citations verified against the corpus
+      with zero hallucinations. The most load-bearing gap is the omission of the
+      parent statute (PBL 2002) and the Department for the Environment — both
+      appear in the planning index.md which the candidate listed but never read.
+      Substance still meets threshold at 4/5 expected facts; jersey_specific is
+      partial because the GD Order is named but the principal statute and
+      decision-maker are not.
+  - id: show-tenancy-2025
+    verdict: pass
+    summary: Pass. The answer covers all 7 expected facts correctly and in detail,
+      with no factual errors. Every claim traces back to the single cited corpus
+      file (jersey/residential-tenancy/2025-amendment-law.md), which fully
+      supports them. The answer presents only post-amendment law as the rubric
+      requires, correctly names the 2025 Amendment Law and the 15 April 2026
+      commencement date, and proactively flags the file's freshness metadata.
+      Efficient two-tool-call trajectory with no redundancy.
+  - id: show-drug-driving
+    verdict: pass
+    summary: Pass. The answer covers all five expected facts with accurate,
+      well-structured detail and a clear current-law vs pending-reform
+      distinction matching the voice rubric. Every claim traces to
+      jersey/road-traffic/drug-driving.md, which fully supports the content with
+      zero hallucinated citations. The candidate added a valuable transparency
+      note about the file's draft status and news-only sourcing. Efficient
+      three-tool trajectory with no redundancy.
+  - id: show-parish-hall
+    verdict: pass
+    summary: Pass. The answer covers all six expected substance facts accurately and
+      with correct Jersey-specific detail. The Centenier role, £200 ceiling,
+      caution/fine/referral powers, opt-out right, Law Officers' schedule, and
+      exclusion list (15 mph excess, drink-driving, dangerous driving) are all
+      present and verified against the corpus file. Voice is informed and
+      Jersey-grounded throughout. Citation precision is perfect — every claim
+      traces to jersey/road-traffic/parish-hall-enquiries.md and is confirmed.
+      Efficient two-tool retrieval with no redundancy.
+  - id: show-voisinage
+    verdict: pass
+    summary: Pass. The answer covers all five expected substance facts (Norman
+      customary doctrine, Pothier/Le Geyt, distinct from English nuisance,
+      objective unreasonable-harm test, Royal Court jurisdiction) accurately and
+      with correct citations to corpus files. Every citation was verified
+      against the source and supports the attached claim — zero hallucinations
+      across five cited files. The voice is appropriately advocate-like,
+      explaining customary-law roots accessibly while maintaining
+      Jersey-specific precision, including the honest caveat that the source
+      file is draft status with thin case-law detail. The candidate's separation
+      of voisinage from boundary-dispute questions and the tenancy
+      cross-reference show genuine corpus navigation rather than surface-level
+      retrieval.
+  - id: show-friday-passing
+    verdict: partial
+    summary: Partial. The answer covers the core mechanics well — Royal Court
+      passing, Friday-afternoon slot, two Jurats, Public Registry registration —
+      and every citation checks out against the corpus. The load-bearing gap is
+      the complete omission of 'contrat héréditaire' terminology, which appeared
+      at line 42 of commercial-leases.md that the candidate itself cited, and
+      which was an explicit rubric item in both substance and jersey_specific.
+      Voice is good for a non-Jersey reader. Citation precision is clean with
+      zero hallucinations.

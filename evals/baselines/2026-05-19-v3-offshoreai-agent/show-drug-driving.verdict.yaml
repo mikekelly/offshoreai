@@ -1,0 +1,21 @@
+questionId: show-drug-driving
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered with no errors; the answer cleanly
+  separates current impairment-only law from the pending February 2026 reform
+  proposal, matching the voice requirement exactly. Single corpus file cited
+  three times, each citation verified as fully supporting its attached claims.
+  Notably efficient retrieval — two tool calls (findByTag → getFile) with zero
+  redundancy. The draft-status caveat was a welcome addition beyond rubric
+  requirements.

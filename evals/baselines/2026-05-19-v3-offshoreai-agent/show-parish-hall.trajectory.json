@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-parish-hall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:02:51.755Z",
+  "wallClockSeconds": 30.795,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"parish-hall\"],\"mode\":\"or\"}",
+      "inputBytes": 36,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/road-traffic/parish-hall-enquiries.md\",\"full\":true}",
+      "inputBytes": 67,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__freshnessCheck",
+      "rawName": "mcp__corpus__freshnessCheck",
+      "inputDigest": "{\"paths\":[\"jersey/road-traffic/parish-hall-enquiries.md\"]}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1408,
+    "cacheReadTokens": 131324,
+    "cacheWriteTokens": 38320,
+    "totalCostUsd": 0.340402
+  },
+  "answer": {
+    "text": "## What a Parish Hall Enquiry is\n\nA **Parish Hall Enquiry** is a pre-court forum unique to Jersey, presided over by a **Centenier** — an elected, unpaid honorary police officer of one of Jersey's 12 parishes. It is the route by which the **majority of routine motoring and minor criminal matters** are resolved without ever reaching the Magistrate's Court. It has no direct equivalent in the UK or other common-law systems (`jersey/road-traffic/parish-hall-enquiries.md`).\n\nThe Centenier reviews the evidence, decides whether to charge, and — if the matter falls within Parish Hall scope — can **caution**, **issue a written fine of up to £200 per offence**, or **refer the case to Magistrate's Court**. A fine or caution can only be imposed if the defendant **admits** the offence **and accepts** the penalty; otherwise the matter must go to court.\n\n## When your case goes there\n\nTypical Parish Hall matter (`jersey/road-traffic/parish-hall-enquiries.md`):\n\n- Minor speeding (under 15 mph over the limit)\n- Mobile-phone offences\n- Failing to display an insurance disc\n- Some traffic-light offences\n- Minor careless driving (some cases)\n- Parking offences\n\n## When it does **not** go to Parish Hall\n\nThe Parish Hall route is excluded for, and the case is sent straight to **Magistrate's Court**, when the offence involves (`jersey/road-traffic/parish-hall-enquiries.md`):\n\n- Speeding **15 mph or more** over the limit\n- **Drink-driving** (any reading) or **drug-driving**\n- **Dangerous driving** (Article 23 RTJL 1956)\n- Causing death or serious injury by driving\n- Driving while disqualified\n- Failing to stop / report after a serious accident\n- Any offence carrying **mandatory disqualification**\n- Any matter where the Centenier judges the £200 ceiling inadequate\n\n## Your key procedural rights\n\nYou can **bring a friend, family member, or advocate**, **decline to admit** the offence, and at any point **demand that the case be heard at Magistrate's Court instead** — including appealing a Parish Hall outcome by requesting a Magistrate's Court re-hearing.\n\n## Caveats\n\n- The cited file is **`draft`** status (last verified 2026-05-18). The content is freshly drafted but has not yet reached the higher `review`/`stable` editorial bar — treat the £200 ceiling and the schedule of Parish-Hall-eligible offences as indicative; the live schedule is maintained by the Law Officers' Department and reviewed periodically.\n- Endorsement of your driving licence **can still follow** a Parish Hall outcome for relevant offences, so it is not a \"no consequences\" route.\n\n## Sources cited\n\n1. `jersey/road-traffic/parish-hall-enquiries.md` (draft, last verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 424
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-trusts-comparison",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T12:48:15.633Z",
+  "wallClockSeconds": 41.463,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"cayman\",\"star-trusts\"],\"mode\":\"or\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"bvi\",\"vista\"],\"mode\":\"or\"}",
+      "inputBytes": 36,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"purpose-trust\"]}",
+      "inputBytes": 26,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"cayman/star-trusts.md\"}",
+      "inputBytes": 32,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"bvi/vista-trusts.md\"}",
+      "inputBytes": 30,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/trusts/purpose-trusts.md\"}",
+      "inputBytes": 42,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2533,
+    "cacheReadTokens": 132771,
+    "cacheWriteTokens": 42737,
+    "totalCostUsd": 0.39685675
+  },
+  "answer": {
+    "text": "## Jersey NCPT vs Cayman STAR vs BVI VISTA — when to use which\n\nThe three regimes solve **two different problems**, which is the key to the choice.\n\n### Two purpose-trust regimes vs one share-ownership regime\n\n**Jersey Article 12 non-charitable purpose trust (NCPT)** and **Cayman STAR** are both **purpose-trust regimes** — they let a trust exist for a stated purpose without beneficiaries, enforced by a mandatory **enforcer**. Both have unlimited duration and are functionally similar; the differences are statutory detail, who can act as enforcer, redomiciliation options, and trustee licensing regime (`jersey/trusts/purpose-trusts.md`; `cayman/star-trusts.md`).\n\n**BVI VISTA** solves a **different problem**. It is a **share-ownership regime** for trusts holding shares of a designated BVI Business Company. Its signature feature is **disengaging the trustee from the *Bartlett v Barclays Bank* duty** to monitor and intervene in the underlying company's affairs. The trustee holds legal title but is not required (and not liable for failing) to second-guess directors. \"Office of Director Rules\" in the trust instrument preserve settlor/family control over management (`bvi/vista-trusts.md`).\n\n### When to use which\n\n| Use case | Pick |\n|---|---|\n| Holding shares of an **operating family business** where the settlor wants chosen directors to run it without trustee interference | **BVI VISTA** — the regime is purpose-built for this. STAR/NCPT do not directly disapply the Bartlett duty |\n| **Orphan SPV** in securitisation, aviation/shipping finance, structured finance (no beneficiaries; SPV off-balance-sheet) | **Jersey NCPT** or **Cayman STAR** — interchangeable on the legal mechanics; choose by trustee location, redomiciliation flexibility, and tax/regulatory fit of the SPV |\n| Holding the shares of a **Private Trust Company (PTC)** | **Jersey NCPT** or **Cayman STAR** — both are standard. Jersey is the natural choice if the PTC and its underlying trusts are otherwise Jersey-based |\n| **Family-governance** purpose vehicle (heritage assets, defined non-charitable purposes) | **Jersey NCPT** or **Cayman STAR** — pick by the jurisdiction of the surrounding family structure. Jersey foundations are an adjacent vehicle worth considering |\n| **Mixed beneficiary + purpose** trust | **Cayman STAR** specifically permits this in statute; Jersey accommodates it via separate provisions |\n| Settlor wants **regulatory and licensing** centre with deep TCB ecosystem and Royal Court supervision | **Jersey NCPT** |\n\n### Caveats\n\n- All three source files are **`draft` status** in this corpus — the comparison is drafted but the editorial team has not yet promoted them to `review`/`stable`. Verify the statutory detail (in particular VISTA's office-of-director rules and STAR Act 1997 enforcer provisions) against the underlying statutes before relying on this in a transaction.\n- The corpus is **Jersey-primary**; Cayman and BVI files exist as adjacent-jurisdiction comparison material. For deep Cayman-only or BVI-only structuring questions, a Cayman/BVI-specialist source is preferable.\n- A Jersey **foundation** can sometimes substitute for an NCPT in family-governance contexts (`jersey/foundations/foundations-law-2009.md`) — worth considering before settling on a purpose trust.\n\n### Cited files\n\n1. `jersey/trusts/purpose-trusts.md` (draft, 2026-05-14)\n2. `cayman/star-trusts.md` (draft, 2026-05-17)\n3. `bvi/vista-trusts.md` (draft, 2026-05-18)\n4. `jersey/foundations/foundations-law-2009.md` (draft, 2026-05-14)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 512
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

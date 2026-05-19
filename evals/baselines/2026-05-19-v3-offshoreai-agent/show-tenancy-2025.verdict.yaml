@@ -1,0 +1,21 @@
+questionId: show-tenancy-2025
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all 7 expected facts with no factual errors,
+  names the correct Jersey statute and in-force date, and presents the material
+  as a recent reform rather than settled law. All three citations verified
+  against the corpus — every claim is directly supported. Efficient 3-call
+  trajectory (tag search → primary file → freshness check) with no redundancy.
+  The inclusion of transitional rules, what-did-not-change, and the draft-status
+  caveat goes beyond the rubric minimum.

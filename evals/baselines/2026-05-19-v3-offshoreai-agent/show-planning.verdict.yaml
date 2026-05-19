@@ -1,0 +1,21 @@
+questionId: show-planning
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five rubric substance points correctly and
+  with accurate citations. The strongest dimension is citation precision — every
+  claim traces to a corpus file that supports it, with no hallucinated
+  citations. The only soft spot is jersey_specific scored partial because the
+  candidate omits the Department for the Environment by name (the rubric expects
+  it and the corpus names it prominently), but all three Jersey statutes are
+  correctly cited with full titles, so the overall verdict holds at pass.

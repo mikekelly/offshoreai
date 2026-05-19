@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-19T13:09:35.818Z",
+  "wallClockSeconds": 84.893,
+  "turns": 13,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls jersey/property/ 2>/dev/null\",\"description\":\"List property section files\"}",
+      "inputBytes": 89,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -l -i \\\"friday\\\" jersey/property/*.md jersey/legal-system/*.md 2>/dev/null\",\"description\":\"Find Friday references in property/legal-system\"}",
+      "inputBytes": 157,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/contract-passing.md\"}",
+      "inputBytes": 119,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"friday\\\" jersey/ 2>/dev/null\",\"description\":\"Find all Friday references across jersey corpus\"}",
+      "inputBytes": 118,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i \\\"friday\\\\|samedi\\\" jersey/property/*.md jersey/legal-system/*.md 2>/dev/null\",\"description\":\"Find Friday/Samedi references in property and legal-system\"}",
+      "inputBytes": 177,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/legal-system/royal-court.md\",\"offset\":70,\"limit\":90}",
+      "inputBytes": 141,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -B2 -A5 -i \\\"friday\\\" jersey/property/commercial-leases.md jersey/property/flying-freeholds.md\",\"description\":\"Look at Friday context in property files\"}",
+      "inputBytes": 173,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/commercial-leases.md\",\"offset\":1,\"limit\":80}",
+      "inputBytes": 142,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 8,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/flying-freeholds.md\",\"offset\":140,\"limit\":40}",
+      "inputBytes": 143,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 9,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/property/real-property-overview.md\",\"offset\":50,\"limit\":40}",
+      "inputBytes": 148,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 10,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"friday afternoon\\\\|samedi.*friday\\\\|why.*friday\\\\|friday.*sitting\\\\|friday.*pass\\\" jersey/ 2>/dev/null\",\"description\":\"Look for explanation of Friday afternoon\"}",
+      "inputBytes": 187,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 11,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/dreamy-wozniak-a3f90d/jersey/contract/force-majeure.md\",\"offset\":115,\"limit\":30}",
+      "inputBytes": 140,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 18,
+    "outputTokens": 3092,
+    "cacheReadTokens": 553929,
+    "cacheWriteTokens": 33012,
+    "totalCostUsd": 0.5606795000000001
+  },
+  "answer": {
+    "text": "Your Jersey real-property transfer happens on a Friday afternoon in court because that is the **scheduled sitting of the Royal Court at which conveyancing contracts are passed**. The corpus describes the mechanics but does not give an underlying historical rationale for the Friday slot specifically.\n\nKey points the corpus supports:\n\n- Jersey real-property transfers are not effected privately (as in English conveyancing). Title passes by an *act of the Royal Court* — the contract is read/referenced, the Greffier records it, and the transfer takes effect at that moment (`jersey/property/contract-passing.md`, `jersey/property/real-property-overview.md`).\n- The forum is the **Samedi Division** of the Royal Court — named after its historical Saturday sittings, and now the day-to-day civil/administrative court of the Bailiff or Deputy Bailiff (`jersey/legal-system/royal-court.md`).\n- The corpus explicitly identifies **Friday afternoon** as the conveyancing slot for the passing of contracts: it is when the Royal Court takes commercial leases of 9+ years (`jersey/property/commercial-leases.md`), flying-freehold transfers (`jersey/property/flying-freeholds.md`), and sales of Jersey real property generally (`jersey/contract/force-majeure.md`, which also notes that Royal Court closure of that slot has historically triggered force-majeure arguments on delayed completions).\n- Two **Jurats** sit to witness the passing, alongside the Bailiff/Deputy Bailiff (`jersey/property/commercial-leases.md`; cf. `jersey/legal-system/royal-court.md` on Samedi composition).\n- Lawyers (advocates) typically appear as **attorneys** under powers of attorney for absent parties, so the buyer/seller usually does not have to be physically present (`jersey/property/contract-passing.md`).\n- Possession typically transfers the same day; registration in the Public Registry, and registration of any hypothec, follow the passing (`jersey/property/contract-passing.md`).\n\nWhat the corpus does **not** say: it does not explain *why* the Royal Court allocates Friday afternoons specifically to conveyancing passings (e.g. any historical or administrative origin of the weekly Friday slot). To that narrower \"why Friday\" question, **the corpus does not answer this question** — it documents the practice without giving its rationale. The general \"why a court at all\" rationale (Norman customary law, public transfer of real property, the Royal Court as the repository of property records, certainty of title transitions) is given in `jersey/property/contract-passing.md`.\n\nAll cited files have `last_verified` dates from May 2026 — well within the 180-day freshness window.\n\n**Files cited:**\n1. `jersey/property/contract-passing.md`\n2. `jersey/property/real-property-overview.md`\n3. `jersey/property/commercial-leases.md`\n4. `jersey/property/flying-freeholds.md`\n5. `jersey/legal-system/royal-court.md`\n6. `jersey/contract/force-majeure.md`",
+    "wordCount": 361
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

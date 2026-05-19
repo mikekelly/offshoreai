@@ -1,0 +1,23 @@
+questionId: show-pillar-two
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All five rubric substance facts are present and correct per the
+  corpus. The answer is firmly Jersey-specific — names the MCIT statute,
+  explains its QDMTT structure, discusses zero-ten interaction, and addresses
+  the UK OpCo jurisdictional-ETR point the question specifically asks about.
+  Voice lands as international tax advisor: structured, practical, with
+  strategic migration and substance considerations. All four citations verified;
+  no hallucinations. The candidate says 'Law 2024' where the rubric says '2025'
+  but the corpus itself says '2024' (effective 1 Jan 2025), so the candidate is
+  faithful to the source material."

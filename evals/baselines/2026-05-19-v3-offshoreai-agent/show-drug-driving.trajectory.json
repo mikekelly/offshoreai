@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-drug-driving",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T13:01:14.896Z",
+  "wallClockSeconds": 25.504,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"drug-driving\"]}",
+      "inputBytes": 25,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/road-traffic/drug-driving.md\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1306,
+    "cacheReadTokens": 131097,
+    "cacheWriteTokens": 36421,
+    "totalCostUsd": 0.32586974999999996
+  },
+  "answer": {
+    "text": "The corpus has one directly on-point file (status `draft`, last verified yesterday, so fresh). Per the system prompt, draft files get a warning that content is drafted but unverified. Let me draft the answer.\n\n## Drug-driving in Jersey\n\n### The position today (May 2026)\n\nDriving while **impaired by drugs** is an offence under the **Road Traffic (Jersey) Law 1956**. Prosecution runs on an **impairment** theory — police must prove the driver was unfit to drive properly, on objective evidence (poor control, failed field sobriety tests, drugs in blood or urine). Crucially, Jersey has **no statutory drug-concentration limits**, **no roadside drug-screening power** (beyond impairment-based field tests), and **no per se offence** of being over a numeric limit regardless of impairment. That makes the evidential threshold higher than for drink-driving's mechanical \"over the limit\" rule. ([jersey/road-traffic/drug-driving.md](jersey/road-traffic/drug-driving.md))\n\nThe offence is **substance-neutral** — impairment by controlled drugs (cannabis, cocaine, MDMA, heroin), prescription medication (sedatives, opioids, benzodiazepines), OTC medicines, or a drug/alcohol combination all qualify. A lawful prescription is not a defence to impairment. Sentencing tracks drink-driving: **mandatory disqualification** (typically 12+ months on a first offence), fine up to **£2,000**, imprisonment up to **6 months**, and licence endorsement. ([jersey/road-traffic/drug-driving.md](jersey/road-traffic/drug-driving.md))\n\n### What's coming\n\nIn **February 2026**, States representatives proposed legislation to bring Jersey closer to the English specified-limit regime by:\n\n- introducing **statutory drug limits** for controlled and some prescription substances;\n- giving police **roadside testing powers** (swab tests akin to UK drug-wipes);\n- creating **per se offences** (over the limit = the offence, no impairment proof needed);\n- imposing **mandatory disqualification** on conviction.\n\nThe proposal is **not yet enacted** as of May 2026; the States Assembly's timetable suggests possible introduction during 2026 or 2027. Until then, the impairment-based regime continues to apply. ([jersey/road-traffic/drug-driving.md](jersey/road-traffic/drug-driving.md))\n\n### Caveats\n\n- The cited file's status is `draft` — its content reflects an editorial drafting pass but has not yet been verified to `review` / `stable`. Treat the specifics (sentencing maxima, February 2026 proposal details) as drafted but unverified, and confirm against the Road Traffic (Jersey) Law 1956 and the States Assembly proposition before relying.\n- `last_verified` is 2026-05-18 (1 day old), so the underlying check is fresh.\n\n### Sources cited\n\n1. [jersey/road-traffic/drug-driving.md](jersey/road-traffic/drug-driving.md) — `draft`, last verified 2026-05-18\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 389
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

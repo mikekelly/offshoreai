@@ -1,0 +1,23 @@
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 5
+factsExpected: 9
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: "Partial. The answer correctly distinguishes STAR (purpose-trust) from
+  VISTA (share-ownership) and provides a useful comparative table, but
+  fundamentally misframes the Jersey side by narrowing it to Article 12 NCPT
+  rather than the classic Jersey discretionary trust. Article 9 (firewall),
+  Article 9A (reserved powers), and TJL 1984 — all rubric requirements — are
+  entirely absent, despite the BVI VISTA corpus file the agent read explicitly
+  comparing VISTA against 'Jersey classical trust + Article 9A reserved powers'.
+  Citations are clean but recall is poor: the two most authoritative Jersey
+  files for this comparison were never retrieved."
