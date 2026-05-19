@@ -33,5 +33,6 @@ evals/baselines/*/tmp/
 # Per-machine Claude Code state (NOT the whole .claude/ — future
 # .claude/skills/, .claude/agents/, .claude/commands/ get committed
 # per PRD §5.2). Just the local-only bits.
+.claude/worktrees/
 .claude/scheduled_tasks.lock
 .claude/settings.local.json

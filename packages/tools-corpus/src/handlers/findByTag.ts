@@ -39,9 +39,9 @@ export function makeFindByTagTool(ctx: CorpusContext) {
 
       const filtered = matches.filter((rec) => {
         if (args.section) {
-          // Section is the second path segment under jurisdiction (e.g. knowledge/jersey/<section>/...)
+          // Section is the third path segment under knowledge/<jurisdiction>/<section>/...
           const parts = rec.path.split("/");
-          if (parts[1] !== args.section) return false;
+          if (parts[2] !== args.section) return false;
         }
         if (args.status && args.status.length > 0) {
           if (!args.status.includes(getStatus(rec) as never)) return false;

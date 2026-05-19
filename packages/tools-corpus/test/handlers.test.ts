@@ -217,6 +217,15 @@ describe("findByTag", () => {
     expect(result.content[0].text).not.toContain("knowledge/jersey/trusts/stub.md");
   });
 
+  it("filters by section under knowledge/<jurisdiction>/<section>", async () => {
+    const ctx = await makeCtx();
+    const t = makeFindByTagTool(ctx);
+    const result = await t.handler({ tags: ["trusts"], mode: "and", section: "trusts", status: undefined, limit: 20 }, {});
+    expect(result.isError).toBeFalsy();
+    expect(result.content[0].text).toContain("knowledge/jersey/trusts/firewall.md");
+    expect(result.content[0].text).toContain("knowledge/jersey/trusts/article-47-mistake.md");
+  });
+
   it("returns definitive empty state on zero matches", async () => {
     const ctx = await makeCtx();
     const t = makeFindByTagTool(ctx);

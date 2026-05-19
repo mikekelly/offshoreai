@@ -10,9 +10,10 @@
   "packageManager": "pnpm@11.1.3",
   "scripts": {
     "build:corpus": "pnpm --filter @offshoreai/build run cli",
+    "health": "pnpm --filter @offshoreai/build run health",
     "test": "pnpm -r --no-bail test",
     "typecheck": "pnpm -r --no-bail typecheck",
-    "lint": "pnpm -r --no-bail lint"
+    "lint": "pnpm -r --if-present --no-bail lint"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

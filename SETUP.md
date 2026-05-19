@@ -1,10 +1,10 @@
 # SETUP.md
 
-First-run developer setup for the offshoreai agent runtime. This document is
-forward-looking — the agent runtime hasn't been built yet (week 1 of
-[`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md) §14 starts the
-implementation). What it describes is the layout that week 1–3 work will
-create, and the prerequisites a developer needs in place to begin.
+First-run developer setup for the offshoreai corpus, build pipeline, and
+current TypeScript agent runtime. The implementation is an MVP, not the full
+PRD target: the workspace currently has build/validation, schemas, v1 corpus
+tools, an agent query runner, and eval harnesses; memory, primary-source
+fetching, bundles, and tenant deployment are still future phases.
 
 For corpus-only work (editorial, content writing) you do **not** need any
 of the runtime prerequisites below. The corpus is plain markdown; clone the
@@ -20,14 +20,14 @@ via [`CLAUDE.md`](CLAUDE.md). Allow ~90 minutes for a thorough first pass.
 
 ---
 
-## Prerequisites for the agent runtime
+## Prerequisites
 
 | Tool | Version | Why |
 |---|---|---|
 | Node.js | 22 LTS | PRD §12 — primary runtime |
 | pnpm | ≥ 9 | PRD §12 — workspace package manager |
-| Postgres | ≥ 16 | PRD §12 — relational + pgvector |
-| pgvector | ≥ 0.7 | PRD §5.3, §6.1 — semantic memory + summary embeddings |
+| Postgres | ≥ 16 | Future memory/runtime phases; not required for current corpus tools |
+| pgvector | ≥ 0.7 | Future semantic memory + summary embeddings |
 | git | any recent | obvious |
 
 macOS quickstart:
@@ -39,7 +39,7 @@ nvm install 22 && nvm use 22
 # pnpm
 corepack enable && corepack prepare pnpm@latest --activate
 
-# Postgres + pgvector (Homebrew)
+# Optional for future memory/vector phases: Postgres + pgvector (Homebrew)
 brew install postgresql@16 pgvector
 brew services start postgresql@16
 createdb offshoreai_dev
@@ -49,80 +49,69 @@ psql offshoreai_dev -c "CREATE EXTENSION IF NOT EXISTS vector;"
 Linux: use the official Postgres apt/dnf repo + the `pgvector` package from
 the same repo, then `CREATE EXTENSION vector` as above.
 
-Docker-compose is acceptable if you prefer; a `docker-compose.dev.yml` will
-land alongside the first runtime package in week 1.
+Docker-compose is acceptable for the future database-backed phases, but there
+is no committed dev compose file yet.
 
 ---
 
 ## Environment variables
 
-The agent runtime needs the following at runtime; the build pipeline needs
-the first two. Create `.env.local` in the repo root (gitignored).
+The current deterministic build/test/health commands do not require API keys.
+The agent query and eval runners need an Anthropic key. Future memory/vector
+phases will need the database and embedding keys. Create `.env.local` in the
+repo root when you need runtime credentials (gitignored).
 
 | Var | Required for | Source |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | build pipeline (hier-tree summaries), agent runtime | console.anthropic.com |
-| `VOYAGE_API_KEY` | build pipeline (summary embeddings) | voyageai.com |
-| `DATABASE_URL` | agent runtime, build pipeline (vector index write) | local Postgres, e.g. `postgres://localhost/offshoreai_dev` |
-| `OFFSHOREAI_TENANT_ID` | dev tenant scoping for `memory.*` | freeform string — `dev` is fine |
+| `ANTHROPIC_API_KEY` | agent query/eval runners; future summary generation | console.anthropic.com |
+| `VOYAGE_API_KEY` | future summary embeddings | voyageai.com |
+| `DATABASE_URL` | future memory/vector index write | local Postgres, e.g. `postgres://localhost/offshoreai_dev` |
+| `OFFSHOREAI_TENANT_ID` | future tenant scoping for `memory.*` | freeform string — `dev` is fine |
 
 Do not commit `.env.local`. The repo's `.gitignore` covers it.
 
 ---
 
-## Repo layout (what week 1 will create)
+## Repo layout
 
-Today the repo is corpus + design docs. Week 1 of PRD §14 adds the agent
-runtime in-tree as a pnpm workspace. The planned layout:
+The repo is a pnpm workspace with the corpus at the root and runtime packages
+under `packages/`:
 
 ```
 offshoreai/
 ├── README.md, AGENTS.md, CLAUDE.md, CONVENTIONS.md, TAGS.md, …  ← unchanged
 ├── knowledge/jersey/                                                       ← corpus, unchanged
-├── schemas/                                                      ← Zod tool schemas (spec)
 ├── bundles/                                                      ← compiled retrieval contracts
 ├── prompts/sub-agents/                                           ← sub-agent system prompts
 ├── skills/templates/                                             ← reference SKILL.md files
 ├── IMPLEMENTATION-PLAN.md                                        ← week-by-week task backlog
 ├── SETUP.md                                                      ← this file
-├── package.json, pnpm-workspace.yaml, tsconfig.base.json        ← week-1 deliverables
-└── packages/                                                    ← week-1+ deliverables
+├── package.json, pnpm-workspace.yaml, tsconfig.base.json
+└── packages/
     ├── build/              # @offshoreai/build — corpus compile pipeline
-    ├── schemas/            # @offshoreai/schemas — promoted from /schemas
+    ├── schemas/            # @offshoreai/schemas — tool/eval schemas
     ├── tools-corpus/       # @offshoreai/tools-corpus
-    ├── tools-memory/       # @offshoreai/tools-memory
-    ├── tools-primary-source/
-    ├── tools-register/
     └── agent/              # @offshoreai/agent — SDK runtime
 ```
 
-The `schemas/` directory at the root exists *now* as a spec — TypeScript
-files using Zod to declare the tool input/output shapes and the §7.0.3
-five-part descriptions. Those files are not buildable yet (no
-`package.json` next to them). Week 3 of PRD §14 lifts them into
-`packages/schemas/` as the published `@offshoreai/schemas` package and
-adds the actual handlers in `packages/tools-corpus/` etc.
-
-This staging — spec-first in `schemas/`, package-second in `packages/` —
-matches the AGENTS.md "what's deliberately not in this document" pattern:
-the gaps get filled as design artefacts first, then promoted to
-implementation when the relevant PRD §14 week arrives.
-
 ---
 
-## First-run commands (post-week-1)
+## First-run commands
 
-Once week 1's deliverables land, the daily-driver commands will be:
+Daily-driver commands:
 
 ```bash
 pnpm install                      # restore workspace deps
-pnpm build:corpus                 # convention validate + hier-tree + tag-index + bundle compile
+pnpm build:corpus all             # validate + hier-tree + tag-index
+pnpm health                       # deterministic housekeeping report
 pnpm test                         # vitest across all packages
-pnpm dev                          # start the agent runtime against a local tenant
+pnpm typecheck                    # TypeScript typecheck across packages
+pnpm --filter @offshoreai/agent query -- --question "What is voisinage?"
 ```
 
-Each command's owning package and exit codes are documented in
-[`IMPLEMENTATION-PLAN.md`](IMPLEMENTATION-PLAN.md) under the relevant week.
+`pnpm build:corpus all` currently reports the known conformance backlog rather
+than treating it as a hard blocker. `pnpm health` compares that backlog against
+the committed baseline and fails only on deterministic regressions.
 
 ---
 
