@@ -74,15 +74,19 @@ upward into the broader [`last-10-years.md`](last-10-years.md).
 2021 is a useful starting point because it is the year **two
 foundational regulatory frameworks were stable**:
 
-- The **Taxation (Companies — Economic Substance) (Jersey)
-  Law 2019** had been fully operational for ~18 months
-  with the first full-year filings landed (and parallel
-  laws in Guernsey, IoM, BVI, Cayman, Bermuda);
+- The
+  [**Taxation (Companies — Economic Substance) (Jersey) Law 2019**](../jersey/tax/economic-substance.md)
+  had been fully operational for ~18 months with the first
+  full-year filings landed (and parallel laws in Guernsey,
+  IoM, BVI, Cayman, Bermuda);
 - The **post-Brexit equilibrium** had emerged — Jersey's
-  AIFMD NPPR (Article 42) marketing arrangements survived
-  intact, and the EU/UK financial-services-equivalence
-  question stabilised into the present form (no equivalence,
-  practical via NPPRs).
+  [AIFMD NPPR (Article 42) marketing arrangements](../jersey/funds/aifmd-nppr.md)
+  survived intact (operational view at
+  [`../jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`](../jersey/use-cases/fund-counsel/aifmd-nppr-registration.md)),
+  and the EU/UK financial-services-equivalence question
+  stabilised into the present form (no equivalence,
+  practical via NPPRs) — see
+  [`../jersey/immigration-residency/post-brexit-cross-border.md`](../jersey/immigration-residency/post-brexit-cross-border.md).
 
 By contrast, **2026** ends the window with the JFSC
 2026-2030 Strategy, the Government's 10-year FSCP, the
@@ -153,14 +157,17 @@ continued cluster leadership.
 
 ### 2021 — Economic Substance embedded
 
-The first full-year Economic Substance returns for Jersey
-were filed in 2020-2021 (covering 2019 accounting periods).
-The regime — and parallel regimes in Guernsey, IoM, BVI,
-Cayman, Bermuda — moved from "new compliance burden" to
-"operational reality" through the window. The early
-**discomfort** with the regime gave way to **acceptance**
-as the industry built out substance infrastructure
-(directors, staff, premises) that the regime requires.
+The first full-year
+[Economic Substance](../jersey/tax/economic-substance.md)
+returns for Jersey were filed in 2020-2021 (covering 2019
+accounting periods). The regime — and parallel regimes in
+Guernsey, IoM, BVI, Cayman, Bermuda — moved from "new
+compliance burden" to "operational reality" through the
+window. The early **discomfort** with the regime gave way
+to **acceptance** as the industry built out substance
+infrastructure (directors, staff, premises) that the regime
+requires. The TopCo-specific substance view is at
+[`../jersey/use-cases/founder-entrepreneur/substance-for-topco.md`](../jersey/use-cases/founder-entrepreneur/substance-for-topco.md).
 
 The substance regime is now a **structural fixture** of
 how the Crown Dependencies operate; structure decisions
@@ -185,12 +192,16 @@ enacted the Corporate Income Tax Act 2023**, introducing a
 was the first time Bermuda had introduced a corporate income
 tax. The political significance — a "no-tax" jurisdiction
 formally accepting taxation — was substantial. See
-[`../bermuda/corporate-income-tax-2023.md`](../bermuda/corporate-income-tax-2023.md).
+[`../bermuda/tax.md`](../bermuda/tax.md) (the CIT 2023 detail
+lives in the Bermuda tax overview pending a dedicated file —
+flagged in [`./gaps.md`](gaps.md)) and the broader
+[Bermuda index](../bermuda/index.md).
 
 ### 2024 — MoneyVal 5th round (Jersey + Guernsey)
 
-The **MoneyVal 5th Round** assessments of Jersey (July 2024)
-and Guernsey (on-site April 2024) closed the AML/CFT
+The [**MoneyVal**](../jersey/aml-cft/moneyval.md) 5th Round
+assessments of Jersey (July 2024) and Guernsey (on-site
+April 2024) closed the [AML/CFT](../jersey/aml-cft/index.md)
 defensive question that had hung over the prior decade.
 Jersey was rated **C/LC on 39 of 40 FATF Recommendations**
 — a top-tier outcome. The contrast with the 2016 4th-round
@@ -268,9 +279,16 @@ guidance posture.
 Across the 5-year window, **family-office services**
 emerged as one of the most reliable growth segments. The
 generational wealth transfer (per Capgemini WWR), the
-demand for tailored structures, and the Article 9 firewall
-all combined to make Jersey a primary family-office
-jurisdiction.
+demand for tailored structures, and the
+[Article 9 firewall](../jersey/trusts/firewall.md) all
+combined to make Jersey a primary family-office jurisdiction.
+The full operational view of family-office work lives in the
+[family-office adviser persona](../jersey/use-cases/family-office-adviser/index.md)
+— including
+[when to use a PTC](../jersey/use-cases/family-office-adviser/when-ptc.md),
+[trust vs foundation](../jersey/use-cases/family-office-adviser/trust-or-foundation.md),
+[CRS / FATCA family overlay](../jersey/use-cases/family-office-adviser/crs-fatca-family.md),
+and the [Jersey vs Guernsey choice](../jersey/use-cases/family-office-adviser/jersey-vs-guernsey-choice.md).
 
 ## Structural patterns over the window
 
@@ -291,15 +309,20 @@ have grown faster than blind-pool fund commitments.
 
 ### Pattern 3 — The transparency arc continued
 
-CRS expansion, beneficial-ownership-register transparency
-(post-2017), DAC6 (EU mandatory disclosure), CARF (Crypto-
-Asset Reporting Framework) — the trajectory across the
-window is uniformly **toward more transparency**, with
-the corresponding **closure of certain historical use
-cases** that depended on opacity. The remaining use cases
-(forced-heirship defence, tax-efficient structuring,
-substance-driven holdco location, jurisdiction-of-trust
-choice) are uniformly **structure-led, not secrecy-led**.
+[CRS](../jersey/international/crs.md) expansion,
+beneficial-ownership-register transparency (post-2017),
+[DAC6](../jersey/international/dac6.md) (EU mandatory
+disclosure), [FATCA](../jersey/international/fatca.md) IGA
+operational reality, and CARF (Crypto-Asset Reporting
+Framework — flagged in [`gaps.md`](gaps.md)) — the
+trajectory across the window is uniformly **toward more
+transparency**, with the corresponding **closure of certain
+historical use cases** that depended on opacity. The
+remaining use cases (forced-heirship defence via the
+[firewall](../jersey/trusts/firewall.md), tax-efficient
+structuring, substance-driven holdco location,
+jurisdiction-of-trust choice) are uniformly **structure-led,
+not secrecy-led**.
 
 ### Pattern 4 — Crown Dependencies specialisation strengthened
 
@@ -325,7 +348,7 @@ this embedding cycle followed.
 - [`./last-2-years.md`](./last-2-years.md);
 - [`./last-10-years.md`](./last-10-years.md);
 - [`./trajectory.md`](./trajectory.md);
-- [`../jersey/financial-regulation/substance.md`](../jersey/financial-regulation/substance.md);
-- [`../jersey/tax/pillar-two-mcit.md`](../jersey/tax/pillar-two-mcit.md);
+- [`../jersey/tax/economic-substance.md`](../jersey/tax/economic-substance.md);
+- [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md);
 - [`../jersey/aml-cft/index.md`](../jersey/aml-cft/index.md);
 - [`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md).

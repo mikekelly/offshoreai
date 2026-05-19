@@ -80,9 +80,14 @@ three foundational events:
 - **Jersey Finance Limited founded 2001** — the industry-
   promotion body that has driven Jersey's positioning
   through the modern era;
-- The **Financial Services (Jersey) Law 1998** had recently
-  taken effect, establishing the **JFSC** (1998) as the
-  unified regulator;
+- The
+  [**Financial Services (Jersey) Law 1998**](../jersey/financial-regulation/financial-services-jersey-law-1998.md)
+  had recently taken effect, establishing the
+  [**JFSC**](../jersey/financial-regulation/jfsc.md) under
+  the [JFSC Law 1998](../jersey/financial-regulation/jfsc-law-1998.md)
+  as the unified regulator (see the
+  [Jersey financial-regulation index](../jersey/financial-regulation/index.md)
+  for the full statutory architecture);
 - The **post-Edwards-Report era** (Andrew Edwards' 1998
   *Review of Financial Regulation in the Crown Dependencies*
   commissioned by HM Treasury) was the policy backdrop —
@@ -102,18 +107,29 @@ The opening cycle was about **building modern regulatory
 and industry infrastructure** on the foundation of the
 FSL 1998. Key features:
 
-- **JFSC** consolidating as the unified financial-services
-  regulator (separate divisions for banking, insurance,
-  trust, fund services);
+- [**JFSC**](../jersey/financial-regulation/jfsc.md)
+  consolidating as the unified financial-services regulator
+  (separate divisions including the
+  [TCB class](../jersey/financial-regulation/fsl-class-tcb.md),
+  [Fund Services Business class](../jersey/financial-regulation/fsl-class-fsb.md),
+  [Investment Business class](../jersey/financial-regulation/fsl-class-investment-business.md),
+  [General Insurance Mediation Business](../jersey/financial-regulation/fsl-class-gimb.md),
+  and [Money Service Business](../jersey/financial-regulation/fsl-class-msb.md));
 - **Jersey Finance** establishing as the promotion body;
 - **Trust law modernisation** — the Trusts (Amendment No.
-  4) (Jersey) Law 2006 introduced Article 9A reserved
-  powers and the Article 47B mistake regime, building on
-  the Trusts (Jersey) Law 1984's framework;
-- **Funds-industry growth** — Jersey's fund-services industry
-  expanded substantially through the period, with Monterey
-  Insight data showing **continuous AUM growth** across the
-  cycle (Monterey's fund-report series started 1995);
+  4) (Jersey) Law 2006 introduced
+  [Article 9A reserved powers](../jersey/trusts/reserved-powers.md)
+  and the
+  [Article 47B mistake regime](../jersey/trusts/article-47-set-aside.md),
+  building on the
+  [Trusts (Jersey) Law 1984's](../jersey/trusts/trusts-law-1984.md)
+  framework (full trusts overview at
+  [`../jersey/trusts/index.md`](../jersey/trusts/index.md));
+- **Funds-industry growth** — Jersey's
+  [fund-services industry](../jersey/funds/index.md) expanded
+  substantially through the period, with Monterey Insight
+  data showing **continuous AUM growth** across the cycle
+  (Monterey's fund-report series started 1995);
 - **OECD Harmful Tax Practices initiative** (1998 onwards) —
   Jersey navigated the early OECD pressure successfully,
   ending the period off the **OECD non-cooperative
@@ -133,27 +149,33 @@ features:
   endorsed the regulatory framework while identifying
   improvement areas. The 2009 FSAP remains the most recent
   IMF FSAP for Jersey (Jersey is a voluntary participant);
-- **Zero-Ten tax regime** introduced 2009 — Jersey's
-  corporate income tax regime moved to the **0% standard
-  rate / 10% for regulated financial-services entities /
-  20% for utilities, real-estate-income, and import/retail-
-  large-business** structure that remains in force today
-  (with the 2025 MCIT 15% top-up overlay for in-scope
-  multinationals). This replaced the prior "20-means-20"
-  regime;
-- **FATCA implementation** — the 2014 US-Jersey IGA brought
-  FATCA reporting into Jersey trust and fund operations,
-  marking the start of the modern **information-exchange
-  era**;
-- **Common Reporting Standard (CRS) negotiation** — the
-  OECD's CRS was developed across this cycle, with Jersey
-  among the early-committer jurisdictions;
+- [**Zero-Ten tax regime**](../jersey/tax/zero-ten.md)
+  introduced 2009 — Jersey's corporate income tax regime
+  moved to the **0% standard rate / 10% for regulated
+  financial-services entities / 20% for utilities,
+  real-estate-income, and import/retail-large-business**
+  structure that remains in force today (with the 2025 MCIT
+  15% top-up overlay for in-scope multinationals — see
+  [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md)).
+  This replaced the prior "20-means-20" regime;
+- [**FATCA**](../jersey/international/fatca.md)
+  **implementation** — the 2014 US-Jersey IGA brought FATCA
+  reporting into Jersey trust and fund operations, marking
+  the start of the modern **information-exchange era**
+  (see the
+  [trust-officer FATCA-classification view](../jersey/use-cases/trust-officer/fatca-classification.md));
+- [**Common Reporting Standard (CRS)**](../jersey/international/crs.md)
+  negotiation — the OECD's CRS was developed across this
+  cycle, with Jersey among the early-committer jurisdictions
+  (operational view at
+  [`../jersey/use-cases/trust-officer/crs-classification.md`](../jersey/use-cases/trust-officer/crs-classification.md));
 - **AIFMD implementation (2014)** — the EU's Alternative
   Investment Fund Managers Directive came into force July
   2013 with national transposition through 2014; Jersey
   responded by implementing the AIF Code and pursuing the
-  Article 42 NPPR pathway for marketing into the EU. This
-  shaped the next decade of Jersey funds business;
+  [Article 42 NPPR pathway](../jersey/funds/aifmd-nppr.md)
+  for marketing into the EU. This shaped the next decade
+  of Jersey funds business;
 - **Brexit referendum** (June 2016) — at the very end of
   the cycle, marking the start of the post-Brexit equilibrium
   question.
@@ -169,22 +191,29 @@ cycle.
 The current cycle is the **subject of
 [`last-10-years.md`](last-10-years.md)**. Headline events:
 
-- **MoneyVal 4th Round MER (2016)** — identified gaps;
-- **JPF launch (2017)** — the dominant funds-product
-  innovation of the cycle;
+- [**MoneyVal**](../jersey/aml-cft/moneyval.md) **4th Round
+  MER (2016)** — identified gaps;
+- [**JPF launch (2017)**](../jersey/funds/jersey-private-fund.md)
+  — the dominant funds-product innovation of the cycle;
 - **Beneficial-ownership registers (2017-)** — transparency
   arc continued;
-- **Economic Substance Law (2019)** — defined the
-  Crown-Dependencies-as-cluster substance regime;
+- [**Economic Substance Law (2019)**](../jersey/tax/economic-substance.md)
+  — defined the Crown-Dependencies-as-cluster substance regime;
 - **Brexit working through (2020-2024)** — Jersey's
-  NPPR-based AIFMD positioning held;
-- **Pillar Two negotiation and adoption (2022-2024)**;
+  [NPPR-based AIFMD positioning](../jersey/funds/aifmd-nppr.md)
+  held;
+- **Pillar Two negotiation and adoption (2022-2024)** — see
+  [`../jersey/tax/pillar-two.md`](../jersey/tax/pillar-two.md);
 - **MoneyVal 5th Round MER (2024)** — top-tier validation;
-- **MCIT 2025 effective** — Pillar Two QDMTT live;
-- **JFSC 2026-2030 Strategy (March 2026)** — offensive
-  growth posture articulated;
-- **AIFMD II effective (April 2026)**;
-- **UK Carried Interest Reform effective (April 2026)**.
+- [**MCIT 2025 effective**](../jersey/international/pillar-two-mcit.md)
+  — Pillar Two QDMTT live;
+- [**JFSC**](../jersey/financial-regulation/jfsc.md)
+  **2026-2030 Strategy (March 2026)** — offensive growth
+  posture articulated;
+- **AIFMD II effective (April 2026)** — see
+  [`../frontier/aifmd-ii-april-2026.md`](../frontier/aifmd-ii-april-2026.md);
+- **UK Carried Interest Reform effective (April 2026)** —
+  see [`../frontier/uk-carried-interest-reform-2026.md`](../frontier/uk-carried-interest-reform-2026.md).
 
 The defining narrative is the **2016 → 2024 MoneyVal arc**:
 identifiable gaps to global top tier.
@@ -202,13 +231,17 @@ window, with periods of acceleration (2003-2007, 2015-2020,
 
 Composition of the fund book has shifted materially:
 
-- **2001**: dominantly listed-fund-of-funds, hedge funds,
-  unit trusts, and conventional unit-trust / OEIC structures;
+- **2001**: dominantly
+  [listed-fund](../jersey/funds/listed-fund.md)-of-funds,
+  hedge funds, unit trusts, and conventional unit-trust /
+  OEIC structures;
 - **2026**: dominantly **private capital** — closed-end PE,
   VC, infrastructure, real estate; **continuation funds /
-  GP-led secondaries** as a major and growing category;
-  **JPFs** the workhorse vehicle; **tokenised structures**
-  emerging.
+  GP-led secondaries** as a major and growing category (see
+  [`../frontier/continuation-funds-and-gp-led-secondaries.md`](../frontier/continuation-funds-and-gp-led-secondaries.md));
+  [**JPFs**](../jersey/funds/jersey-private-fund.md) the
+  workhorse vehicle; **tokenised structures** emerging
+  (see [`../jersey/registries/vasp-register.md`](../jersey/registries/vasp-register.md)).
 
 ### Global PE / wealth context
 
@@ -244,16 +277,21 @@ continued cluster leadership.
 ### Pattern 1 — The transparency arc
 
 Across the entire window, **information opacity has
-diminished** — OECD HTP 1998 onwards, FATCA 2014, CRS
-2014-2017, DAC6 2018, BO registers 2017-, CARF 2024-2025.
+diminished** — OECD HTP 1998 onwards,
+[FATCA](../jersey/international/fatca.md) 2014,
+[CRS](../jersey/international/crs.md) 2014-2017,
+[DAC6](../jersey/international/dac6.md) 2018, BO registers
+2017-, CARF 2024-2025 (CARF flagged in
+[`gaps.md`](gaps.md) — doctrinal file not yet written).
 The cumulative effect is that **Jersey is more transparent
 in 2026 than at any prior point in its modern history**.
 
 The structural consequence: **secrecy-led use cases have
 materially diminished**; **structure-led use cases**
-(substance-driven holdco location, trust law for forced-
-heirship defence, fund regulation choice, tokenisation
-infrastructure) have grown to fill the space.
+([substance-driven holdco location](../jersey/tax/economic-substance.md),
+[trust law for forced-heirship defence](../jersey/trusts/firewall.md),
+fund regulation choice, tokenisation infrastructure) have
+grown to fill the space.
 
 ### Pattern 2 — The regulatory build-out cycle
 
@@ -323,9 +361,9 @@ horizons together, see [`trajectory.md`](trajectory.md).
 - [`./trajectory.md`](./trajectory.md);
 - [`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md);
-- [`../jersey/financial-regulation/substance.md`](../jersey/financial-regulation/substance.md);
+- [`../jersey/tax/economic-substance.md`](../jersey/tax/economic-substance.md);
 - [`../jersey/tax/zero-ten.md`](../jersey/tax/zero-ten.md);
-- [`../jersey/tax/pillar-two-mcit.md`](../jersey/tax/pillar-two-mcit.md);
+- [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md);
 - [`../jersey/aml-cft/index.md`](../jersey/aml-cft/index.md);
 - [`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md);
 - [`../jersey/trusts/firewall.md`](../jersey/trusts/firewall.md);

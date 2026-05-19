@@ -75,19 +75,26 @@ It bridges [`last-5-years.md`](last-5-years.md) upward to
 2016 is the natural starting point because it bundles three
 foundational events:
 
-- **MoneyVal 4th Round MER on Jersey** (the regulatory
-  baseline);
+- [**MoneyVal**](../jersey/aml-cft/moneyval.md) **4th Round
+  MER on Jersey** (the regulatory baseline);
 - **Capital Economics' *Jersey's Value to Britain*** (the
   industry-narrative baseline);
 - **The Brexit referendum** (June 2016), which set in motion
-  the EU/UK financial-services equivalence question that
-  the Crown Dependencies have navigated ever since.
+  the EU/UK financial-services equivalence question that the
+  Crown Dependencies have navigated ever since — see
+  [`../jersey/immigration-residency/post-brexit-cross-border.md`](../jersey/immigration-residency/post-brexit-cross-border.md).
 
 By 2026, the picture is materially different: MoneyVal 5th
-round complete with a top-tier outcome, Substance Law in
-its fifth operating year, JPF (Jersey Private Fund) launched
-2017 maturing into a dominant product, Pillar Two MCIT 2025
-in force, AIFMD II live, JFSC 2026-2030 Strategy published.
+round complete with a top-tier outcome,
+[Substance Law](../jersey/tax/economic-substance.md) in its
+fifth operating year, [JPF (Jersey Private
+Fund)](../jersey/funds/jersey-private-fund.md) launched
+2017 maturing into a dominant product,
+[Pillar Two](../jersey/tax/pillar-two.md)
+[MCIT 2025](../jersey/international/pillar-two-mcit.md) in
+force, AIFMD II live,
+[JFSC](../jersey/financial-regulation/jfsc.md) 2026-2030
+Strategy published.
 
 ## Headline structural change
 
@@ -99,11 +106,16 @@ listed-fund-of-funds, hedge funds, and conventional PE
 limited partnerships.
 
 **2026**: Jersey is a **multi-product private-capital,
-trust, family-office, listing-vehicle, and tokenisation
-centre**. Funds are dominated by JPFs (over 100 established
-in 2025 alone — see [`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md)),
-continuation funds, single-asset vehicles, and sophisticated
-PE structures.
+[trust](../jersey/trusts/index.md),
+[family-office](../jersey/use-cases/family-office-adviser/index.md),
+[listing-vehicle](../jersey/use-cases/founder-entrepreneur/why-jersey-topco.md),
+and tokenisation centre**. Funds are dominated by
+[JPFs](../jersey/funds/jersey-private-fund.md) (over 100
+established in 2025 alone — see
+[`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md)),
+continuation funds (see
+[`../frontier/continuation-funds-and-gp-led-secondaries.md`](../frontier/continuation-funds-and-gp-led-secondaries.md)),
+single-asset vehicles, and sophisticated PE structures.
 
 The defining structural shift is the **broadening of the
 product mix** — from a 3-4-product industry to a 10+
@@ -176,16 +188,23 @@ on-site visit producing comparable conclusions.
 
 ### 2017 — Jersey Private Fund (JPF) launch
 
-The **Jersey Private Fund regime**, launched 2017, allowed
-up to 50 sophisticated investors with **48-hour
-authorisation** and a Designated Service Provider (DSP)
-delegated-compliance model. It became one of the most
+The [**Jersey Private Fund regime**](../jersey/funds/jersey-private-fund.md),
+launched 2017, allowed up to 50 sophisticated investors with
+**48-hour authorisation** and a Designated Service Provider
+(DSP) delegated-compliance model. It became one of the most
 successful product launches in Jersey's regulatory history;
-by 2025, over 100 new JPFs were established annually.
+by 2025, over 100 new JPFs were established annually. The
+operational view of JPF registration is at
+[`../jersey/use-cases/fund-counsel/jpf-registration.md`](../jersey/use-cases/fund-counsel/jpf-registration.md);
+the fund-counsel persona at
+[`../jersey/use-cases/fund-counsel/index.md`](../jersey/use-cases/fund-counsel/index.md);
+the wider [funds index](../jersey/funds/index.md) covers
+the comparable [Expert Fund](../jersey/funds/expert-fund.md),
+[Eligible Investor Fund](../jersey/funds/eligible-investor-fund.md),
+and [Listed Fund](../jersey/funds/listed-fund.md) regimes.
 
 The JPF is the **structural innovation** that defines the
-decade for the funds industry. See
-[`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md).
+decade for the funds industry.
 
 ### 2017-2019 — Beneficial-ownership transparency
 
@@ -203,24 +222,31 @@ earlier are largely closed by this transition.
 
 ### 2019 — Taxation (Economic Substance) Law
 
-The **Substance Law 2019** was a foundational regulatory
-event: Jersey-resident companies carrying on "relevant
-activities" (banking, insurance, fund management,
-financing-and-leasing, headquarters, distribution-and-
-service-centre, shipping, holding company, IP, eGaming)
-must demonstrate **economic substance** in Jersey
-(directors meeting in Jersey, adequate staff and premises,
-core income-generating activities in Jersey).
+The [**Substance Law 2019**](../jersey/tax/economic-substance.md)
+was a foundational regulatory event: Jersey-resident
+companies carrying on "relevant activities" (banking,
+insurance, fund management, financing-and-leasing,
+headquarters, distribution-and-service-centre, shipping,
+holding company, IP, eGaming) must demonstrate **economic
+substance** in Jersey (directors meeting in Jersey, adequate
+staff and premises, core income-generating activities in
+Jersey).
 
 The parallel legislation in Guernsey, IoM, BVI, Cayman, and
 Bermuda established the **Crown Dependencies + Overseas
-Territories substance regime** as a cluster. The impact on
-how structures were designed was profound: the **"empty
-brass plate"** model became operationally impossible; real
-substance had to be located somewhere, and Jersey's mature
-TCB / fund-administration / professional-services
-infrastructure made it the natural choice for many
-structures. See [`../jersey/financial-regulation/substance.md`](../jersey/financial-regulation/substance.md).
+Territories substance regime** as a cluster — see
+[`../CROSS-JURISDICTIONAL-MAP.md`](../CROSS-JURISDICTIONAL-MAP.md).
+The impact on how structures were designed was profound:
+the **"empty brass plate"** model became operationally
+impossible; real substance had to be located somewhere, and
+Jersey's mature
+[Trust Company Business](../jersey/financial-regulation/fsl-class-tcb.md)
+/ fund-administration / professional-services infrastructure
+(under the
+[Financial Services (Jersey) Law 1998](../jersey/financial-regulation/financial-services-jersey-law-1998.md))
+made it the natural choice for many structures. The TopCo-
+specific application is at
+[`../jersey/use-cases/founder-entrepreneur/substance-for-topco.md`](../jersey/use-cases/founder-entrepreneur/substance-for-topco.md).
 
 ### 2020-2024 — BEPS implementation and Pillar Two negotiation
 
@@ -281,19 +307,30 @@ the most consequential product lines in private capital
 ### Wealth management
 
 The **family-office segment** grew steadily across the
-decade, driven by the generational wealth transfer and
-the demand for tailored structures. The Article 9 firewall,
-Article 9A reserved powers, and the foundation product
+decade, driven by the generational wealth transfer and the
+demand for tailored structures. The
+[Article 9 firewall](../jersey/trusts/firewall.md),
+[Article 9A reserved powers](../jersey/trusts/reserved-powers.md),
+the [Article 47B mistake regime](../jersey/trusts/article-47-set-aside.md),
+and the [foundation product](../jersey/foundations/index.md)
 all matured. **Private Trust Company (PTC)** structures
-became standard for ultra-HNW families.
+became standard for ultra-HNW families — see
+[`../jersey/use-cases/family-office-adviser/when-ptc.md`](../jersey/use-cases/family-office-adviser/when-ptc.md).
+The full operational worked example is at
+[`../jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`](../jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md).
 
 ### Tokenisation and digital assets
 
 The decade saw tokenisation move through three phases:
 **2016-2019 (ICO era and conceptual exploration)**;
 **2019-2023 (R&D, regulatory scoping, VASP regime
-development)**; **2024-2026 (deployment, Innovation
-Council, 14 registered VASPs)**.
+development)**; **2024-2026 (deployment, Innovation Council,
+14 registered VASPs — see
+[`../jersey/registries/vasp-register.md`](../jersey/registries/vasp-register.md)
+and the
+[MLRO view](../jersey/use-cases/compliance-mlro/vasp-crypto-customers.md))**.
+Full frontier coverage at
+[`../frontier/tokenisation-jersey-2026.md`](../frontier/tokenisation-jersey-2026.md).
 
 ### Banking
 
@@ -384,7 +421,7 @@ validate cycle stood.
 - [`./last-25-years.md`](./last-25-years.md);
 - [`./trajectory.md`](./trajectory.md);
 - [`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md);
-- [`../jersey/financial-regulation/substance.md`](../jersey/financial-regulation/substance.md);
+- [`../jersey/tax/economic-substance.md`](../jersey/tax/economic-substance.md);
 - [`../jersey/aml-cft/index.md`](../jersey/aml-cft/index.md);
-- [`../jersey/tax/pillar-two-mcit.md`](../jersey/tax/pillar-two-mcit.md);
+- [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md);
 - [`../jersey/tax/zero-ten.md`](../jersey/tax/zero-ten.md).

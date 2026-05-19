@@ -73,6 +73,9 @@ Time-horizon narrative documents:
 - [x] [`last-25-years.md`](last-25-years.md) (2001-2026)
 - [x] [`trajectory.md`](trajectory.md) — synthesis, the "four acts" story
 - [x] [`sources.md`](sources.md) — bibliography
+- [x] [`gaps.md`](gaps.md) — knowledge-graph gaps exposed
+  by inline-linking the history docs, with priority-tiered
+  catalogue of missing concept files
 
 ## Refresh discipline
 

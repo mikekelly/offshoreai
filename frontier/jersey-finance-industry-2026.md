@@ -146,7 +146,7 @@ The industry's self-description for 2026. Key drivers:
    [`sfdr-2-and-sustainable-finance.md`](sfdr-2-and-sustainable-finance.md);
 6. **Pillar Two MCIT 2025** operating its first year of
    compliance — see
-   [`../jersey/tax/pillar-two-mcit.md`](../jersey/tax/pillar-two-mcit.md).
+   [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md).
 
 ### Structural shifts in product mix
 
@@ -264,7 +264,7 @@ for the full comparison.
 - [`../jersey/funds/index.md`](../jersey/funds/index.md);
 - [`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md);
-- [`../jersey/tax/pillar-two-mcit.md`](../jersey/tax/pillar-two-mcit.md);
+- [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md);
 - [`../jersey/aml-cft/index.md`](../jersey/aml-cft/index.md);
 - [`../guernsey/private-investment-fund.md`](../guernsey/private-investment-fund.md);
 - [`../guernsey/funds.md`](../guernsey/funds.md);
