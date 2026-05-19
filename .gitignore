@@ -29,3 +29,9 @@ coverage/
 
 # Eval outputs (large; baselines kept under evals/baselines/ are committed selectively)
 evals/baselines/*/tmp/
+
+# Per-machine Claude Code state (NOT the whole .claude/ — future
+# .claude/skills/, .claude/agents/, .claude/commands/ get committed
+# per PRD §5.2). Just the local-only bits.
+.claude/scheduled_tasks.lock
+.claude/settings.local.json
