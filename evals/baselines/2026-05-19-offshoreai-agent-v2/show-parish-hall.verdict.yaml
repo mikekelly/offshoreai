@@ -1,0 +1,20 @@
+questionId: show-parish-hall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected substance facts accurately, is
+  distinctly Jersey-grounded (Centenier, Honorary Police, Parish Hall, Law
+  Officers' Department schedule), cites the single most relevant corpus file,
+  and every claim is directly supported by that file. The candidate also
+  correctly flagged the draft status of the source, which is exemplary freshness
+  handling. Efficient two-tool retrieval with no redundancy.

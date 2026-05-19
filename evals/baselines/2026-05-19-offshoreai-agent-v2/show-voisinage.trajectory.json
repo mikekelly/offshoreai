@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T10:20:44.243Z",
+  "wallClockSeconds": 33.291,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"voisinage\"]}",
+      "inputBytes": 22,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/property/voisinage.md\",\"full\":true}",
+      "inputBytes": 51,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 1317,
+    "cacheReadTokens": 126331,
+    "cacheWriteTokens": 35546,
+    "totalCostUsd": 0.318318
+  },
+  "answer": {
+    "text": "## What voisinage is\n\n**Voisinage** is Jersey's Norman customary-law doctrine governing relations between neighbouring landowners. It obliges each owner to use their property in a way that does not cause **unreasonable harm** to neighbours — harm that **exceeds the ordinary inconveniences of neighbourhood** and lacks adequate justification. It is distinct from English nuisance: voisinage can apply on an **objective basis without proof of fault**, and it is not confined to enumerated categories like smell, smoke and noise. (`jersey/property/voisinage.md`)\n\n## Does it apply to your neighbour problem?\n\nIt might — but only if the facts fit the threshold. The corpus identifies four elements you would need to be able to show:\n\n1. **Harm** that is objectively identifiable;\n2. **Caused by** the neighbour's use of their property;\n3. **Exceeding** the ordinary inconveniences of neighbourhood living; and\n4. **Without** adequate justification.\n\nThe doctrine has been applied to **excessive noise, smells (livestock, kitchens), smoke and fumes, vibrations, surface water and drainage, tree roots and overhanging branches, and light obstruction**, among others. Construction or commercial activities can qualify if they are excessive or prolonged rather than merely temporary. (`jersey/property/voisinage.md`)\n\nThings that often **defeat** a claim: reasonable use of the property, the claimant's consent or acquiescence, statutory authority for the activity, and (in limited circumstances) prescription. Note that **planning permission does not by itself exclude voisinage** — regulatory compliance is only evidence of reasonable use, not a defence in itself. (`jersey/property/voisinage.md`)\n\n## Practical next steps from the corpus\n\n- **Document** the interference (logs, photographs, recordings);\n- Build a **correspondence trail** with the neighbour;\n- **Mediate** as a first step where possible;\n- Consider **expert evidence** (acoustic, environmental) early;\n- If litigation is needed, the route is an **Order of Justice in the Royal Court**, where the available remedies are **injunction, damages, and specific performance** of preventative measures;\n- **Engage a Jersey advocate familiar with voisinage** — and avoid the common pitfall of assuming the English nuisance test transposes wholesale. (`jersey/property/voisinage.md`)\n\n## Caveats\n\n- The corpus file I am citing is marked **`status: draft`** (last verified 2026-05-18). It is drafted but not editorially verified to \"stable\", so treat the specific contours — especially the case-law references it gestures to without naming — as indicative rather than authoritative. Several sub-sections refer to \"specific Jersey case law\" without citing it, which is a gap.\n- Whether your particular situation crosses the threshold is fact-sensitive and turns on Royal Court jurisprudence that the corpus does not reproduce in full. A Jersey advocate is the right next step before relying on this as advice.\n\n## Sources cited\n\n1. `jersey/property/voisinage.md` (status: draft; last verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 455
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

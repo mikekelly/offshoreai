@@ -1,0 +1,23 @@
+questionId: show-article-47
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected facts with precision,
+  correctly distinguishes the definitional (47B) from operative (47E, 47G)
+  provisions, states the three-limb S&T Trusts test accurately, and explains the
+  Jersey/Pitt v Holt divergence with the load-bearing quote ("manner of the
+  mistake is irrelevant"). Voice is strong — reads as a Jersey trust litigator's
+  brief with practitioner warnings (Article triage pitfall,
+  reconstruction-affidavit weakness, HMRC vs IRS recognition). Both corpus
+  citations verified with zero hallucinations. The four-tool retrieval sequence
+  was efficient and non-redundant.

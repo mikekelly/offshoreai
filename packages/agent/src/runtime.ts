@@ -7,6 +7,7 @@ import {
   createCorpusToolsServer,
 } from "@offshoreai/tools-corpus";
 import { baselineSystemPrompt } from "./baseline-system-prompt.js";
+import { buildTaxonomyBlock } from "./taxonomy-block.js";
 
 export interface RunQueryOptions {
   /** The user's question. */
@@ -48,6 +49,11 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
       : { repoRoot: opts.repoRoot },
   );
 
+  const taxonomyBlock = opts.tagIndexPath
+    ? await buildTaxonomyBlock(opts.repoRoot, opts.tagIndexPath)
+    : "";
+  const fullSystemPrompt = baselineSystemPrompt + taxonomyBlock;
+
   const allowedTools = [
     ...corpusAllowedToolNames(),
     "Read",
@@ -75,7 +81,7 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     options: {
       mcpServers: { corpus: corpusServer },
       allowedTools,
-      systemPrompt: { type: "preset", preset: "claude_code", append: baselineSystemPrompt },
+      systemPrompt: { type: "preset", preset: "claude_code", append: fullSystemPrompt },
       maxTurns: opts.maxTurns ?? 20,
       permissionMode: "bypassPermissions",
       cwd: opts.repoRoot,

@@ -158,6 +158,39 @@ describe("getArticle", () => {
   });
 });
 
+describe("findByTag did-you-mean", () => {
+  it("suggests the closest valid tag when input is a near-miss", async () => {
+    const root = await makeFixtureRepo({
+      "TAGS.md": TAGS_MD,
+      "jersey/trusts/firewall.md": FIREWALL,
+      "jersey/trusts/article-47-mistake.md": MISTAKE,
+      "jersey/trusts/stub.md": STUB,
+    });
+    // We need a tag-index for the suggestion path — write one synthesised
+    // from the fixture and pass it through buildCorpusContext.
+    const tagIndex = {
+      schemaVersion: "tag_index_v1",
+      tagToFiles: {
+        "firewall": ["jersey/trusts/firewall.md"],
+        "setting-aside": ["jersey/trusts/article-47-mistake.md"],
+        "mistake": ["jersey/trusts/article-47-mistake.md"],
+      },
+      coOccurrence: {},
+      stats: { uniqueTags: 3, totalTagApplications: 3, filesIndexed: 3 },
+    };
+    await writeFile(join(root, "tag-index.json"), JSON.stringify(tagIndex), "utf8");
+
+    const ctx = await buildCorpusContext({ repoRoot: root, tagIndexPath: "tag-index.json" });
+    const t = makeFindByTagTool(ctx);
+    // Agent guesses "set-aside" — the canonical is "setting-aside".
+    const result = await t.handler({ tags: ["set-aside"], mode: "and", section: undefined, status: undefined, limit: 20 }, {});
+    expect(result.isError).toBe(true);
+    expect(result.content[0].text).toContain("error_kind: invalid_tag");
+    expect(result.content[0].text).toContain("setting-aside");
+    expect(result.content[0].text).toContain("did you mean");
+  });
+});
+
 describe("findByTag", () => {
   it("returns AND-intersection by default", async () => {
     const ctx = await makeCtx();

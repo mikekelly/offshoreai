@@ -6,6 +6,7 @@ import { z } from "zod";
 import type { CorpusContext } from "../context.js";
 import { getLastVerified, getStatus, getTags, getTitle } from "../context.js";
 import { errorResult, successResult } from "../error-envelope.js";
+import { suggestClosest } from "../levenshtein.js";
 import { help, scalar, table, toon } from "../toon.js";
 
 const inputShape = {
@@ -64,14 +65,30 @@ export function makeFindByTagTool(ctx: CorpusContext) {
           ? args.tags.filter((t) => !knownTags.includes(t))
           : [];
         if (unknown.length > 0) {
+          // "Did you mean" recovery per PRD §7.0.1 row 3.
+          const suggestionPairs = unknown.map((t) => {
+            const closest = knownTags ? suggestClosest(t, knownTags, 3) : [];
+            return { input: t, suggestions: closest };
+          });
+          const helpLines: string[] = [];
+          const concrete = suggestionPairs.filter((p) => p.suggestions.length > 0);
+          if (concrete.length > 0) {
+            for (const { input, suggestions } of concrete) {
+              helpLines.push(`For "${input}", did you mean: ${suggestions.join(", ")}? Re-run findByTag with the corrected tag.`);
+            }
+          } else {
+            helpLines.push("No close match in the compiled tag-index. Scan the corpus tag taxonomy in your system prompt or call `getFile path=TAGS.md` to see the canonical list.");
+          }
           return errorResult({
             errorKind: "invalid_tag",
             message: `Tag(s) not found in compiled tag-index: ${unknown.join(", ")}.`,
-            context: { unknown_tags: unknown.join("|") },
-            helpLines: [
-              "Inspect TAGS.md for the closed taxonomy",
-              "Call `expandTags` (when implemented) to broaden a partial-hit tag set",
-            ],
+            context: {
+              unknown_tags: unknown.join("|"),
+              suggestions: suggestionPairs
+                .map((p) => `${p.input}→${p.suggestions.join(",") || "(no near match)"}`)
+                .join("|"),
+            },
+            helpLines,
           });
         }
         return successResult(toon([

@@ -1,0 +1,49 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-19T10:21:25.436Z
+  questions: 3
+totals:
+  pass: 3
+  partial: 0
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 1
+  substancePassRate: 1
+  medianToolCalls: 2
+  medianTokensInput: 8
+  medianTokensOutput: 1317
+  medianWallClockSeconds: 33.29
+  totalCostUsd: 1.3915
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-article-47
+    verdict: pass
+    summary: Pass. The answer covers all six expected facts with precision,
+      correctly distinguishes the definitional (47B) from operative (47E, 47G)
+      provisions, states the three-limb S&T Trusts test accurately, and explains
+      the Jersey/Pitt v Holt divergence with the load-bearing quote ("manner of
+      the mistake is irrelevant"). Voice is strong — reads as a Jersey trust
+      litigator's brief with practitioner warnings (Article triage pitfall,
+      reconstruction-affidavit weakness, HMRC vs IRS recognition). Both corpus
+      citations verified with zero hallucinations. The four-tool retrieval
+      sequence was efficient and non-redundant.
+  - id: show-parish-hall
+    verdict: pass
+    summary: Pass. The answer covers all six expected substance facts accurately, is
+      distinctly Jersey-grounded (Centenier, Honorary Police, Parish Hall, Law
+      Officers' Department schedule), cites the single most relevant corpus
+      file, and every claim is directly supported by that file. The candidate
+      also correctly flagged the draft status of the source, which is exemplary
+      freshness handling. Efficient two-tool retrieval with no redundancy.
+  - id: show-voisinage
+    verdict: pass
+    summary: 'Pass. Every rubric fact is present and correct: Norman customary
+      doctrine, Pothier/Le Geyt foundation, distinction from English nuisance,
+      objective unreasonable-harm test, Royal Court jurisdiction. The single
+      cited corpus file (jersey/property/voisinage.md) supports every claim
+      made. Voice is appropriately advocate-like — practical, structured, with a
+      clear "next steps" section and honest caveats about draft status.
+      Efficient two-call trajectory with zero redundancy.'

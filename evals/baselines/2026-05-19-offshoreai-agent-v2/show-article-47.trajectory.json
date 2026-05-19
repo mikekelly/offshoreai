@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-article-47",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-19T10:17:19.227Z",
+  "wallClockSeconds": 83.568,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getArticle",
+      "rawName": "mcp__corpus__getArticle",
+      "inputDigest": "{\"statute\":\"trusts-law-1984\",\"article\":\"47B\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"mistake\",\"trusts-law-1984\"],\"mode\":\"and\"}",
+      "inputBytes": 51,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/trusts/article-47-set-aside.md\",\"full\":true}",
+      "inputBytes": 60,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md\",\"full\":true}",
+      "inputBytes": 89,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2193,
+    "cacheReadTokens": 95605,
+    "cacheWriteTokens": 74553,
+    "totalCostUsd": 0.56862375
+  },
+  "answer": {
+    "text": "## The Article 47B–H procedure\n\nA small but important framing point first: **Article 47B itself is the interpretation/definitions provision** for the mistake regime. The operative set-aside power for a **trustee decision** (i.e. an exercise of a fiduciary power) sits at **Article 47G**; **Article 47E** is the parallel provision for a transfer of property *into* a trust. Together, Articles 47B–47H are the modern statutory mistake regime introduced by the **Trusts (Amendment No. 6) (Jersey) Law 2013** (`jersey/trusts/article-47-set-aside.md`).\n\n**The procedure**\n\n1. **Identify the right Article.** Mistake invalidating the trust itself = Article 11. Mistake about a transfer into a trust = 47E. Mistake about a trustee's (or protector's, or settlor's) **exercise of a fiduciary power** = 47G. Pleading the wrong one is the most common pitfall.\n2. **Frame the mistake against Article 47B's four limbs** — a mistake as to the *effect* of the transaction, its *consequences* (including tax consequences), any *advantage* the actor believed they would gain, or any *fact existing before or at the time of* the disposition or power-exercise. Testamentary dispositions are expressly excluded.\n3. **Apply the three-limb Royal Court test** (per *In re S & T Trusts* [2015] JRC259):\n   - (i) there was a mistake within the wide Article 47B definition;\n   - (ii) **but for** the mistake, the power-exercise would not have been made in the form it was; and\n   - (iii) the mistake is of so serious a character that it would be **just** for the Court to grant a declaration.\n4. **Issue by Representation** in the Royal Court, Samedi Division, supported by affidavit evidence of the decision-maker's state of mind at the relevant time. Contemporaneous documentary evidence (file notes, board minutes, adviser correspondence) is critical — reconstruction affidavits years later are weak.\n5. **Join all affected parties** as respondents: the trustee that made the impugned decision, beneficiaries, any third-party transferees.\n6. **Relief.** If granted, the declaration renders the power-exercise **voidable** (typically *ab initio*), unwinding it and restoring the *status quo ante*. Bona fide third-party rights for value are normally protected. Foreign tax consequences only fall away if the foreign revenue authority recognises the Jersey rescission (HMRC historically does; the IRS is more cautious).\n\n## How Jersey is wider than *Pitt v Holt*\n\nThe English Supreme Court in ***Pitt v Holt; Futter v Futter* [2013] UKSC 26** distinguished between a true **mistake** (which can ground rescission) and **\"mere causative ignorance\" or \"inadequate deliberation\"** (which generally cannot).\n\nUnder the statutory regime, **the Royal Court has rejected that distinction**. The Court's stated position is that, on an Article 47E/G application, the only question is whether there was *any* mistake within the wide Article 47B definition — **\"the manner of the mistake is irrelevant\"** — and the English distinction does not apply (`jersey/trusts/article-47-set-aside.md`). The practical effect: facts that would fail in the English High Court as mere inadequate deliberation can still ground a successful set-aside in Jersey, which is the policy reason English advisers sometimes prefer a Jersey-law trust where the principal risk is a future tax-or-other-rule change the adviser cannot yet see clearly.\n\nThe Court is, however, **not unlimited**: lost *future* tax advantages (as distinct from unforeseen *charges*) and applications that are substantively partial rewrites rather than unwinds have been refused (e.g. *In re M Settlement*).\n\n## Caveats\n\nBoth corpus files I have relied on are marked **`draft`** (last verified 2026-05-14, 5 days old) — the substance reflects editorial work but has not been moved to `stable`. Verify against the cited primary sources before acting.\n\n## Files cited\n\n1. `jersey/trusts/article-47-set-aside.md`\n2. `jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 605
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}
