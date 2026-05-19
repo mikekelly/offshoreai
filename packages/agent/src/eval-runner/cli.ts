@@ -5,11 +5,13 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { runBatch } from "./batch.js";
 import { loadEvalSuite } from "./load-eval.js";
+import { regradeParseFailures } from "./regrade.js";
 import type { HarnessName } from "./types.js";
 
 const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", "..", "..");
 
 interface CliArgs {
+  mode: "batch" | "regrade-fails";
   harness: HarnessName;
   evalSuite: string;
   ids: string[] | null;
@@ -20,6 +22,7 @@ interface CliArgs {
 }
 
 function parseArgs(argv: string[]): CliArgs {
+  let mode: "batch" | "regrade-fails" = "batch";
   let harness: HarnessName | undefined;
   let evalSuite = "evals/showcase.yaml";
   let outputDir = "";
@@ -30,7 +33,11 @@ function parseArgs(argv: string[]): CliArgs {
 
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--harness") {
+    if (a === "--mode") {
+      const v = argv[++i];
+      if (v !== "batch" && v !== "regrade-fails") throw new Error(`Unknown --mode: ${v}`);
+      mode = v;
+    } else if (a === "--harness") {
       const v = argv[++i];
       if (v !== "offshoreai-agent" && v !== "claude-p" && v !== "explore-subagent") {
         throw new Error(`Unknown harness: ${v}`);
@@ -46,7 +53,8 @@ function parseArgs(argv: string[]): CliArgs {
     else if (a === "--help" || a === "-h") printHelp(0);
   }
 
-  if (!harness) {
+  // batch mode requires --harness; regrade-fails reads it from existing summary.yaml
+  if (mode === "batch" && !harness) {
     console.error("Missing --harness <offshoreai-agent|claude-p>");
     printHelp(1);
   }
@@ -54,7 +62,7 @@ function parseArgs(argv: string[]): CliArgs {
     console.error("Missing --output <dir>");
     printHelp(1);
   }
-  return { harness: harness!, evalSuite, ids, outputDir, tagIndexPath, skipGrader, graderModel };
+  return { mode, harness: harness ?? ("offshoreai-agent" as HarnessName), evalSuite, ids, outputDir, tagIndexPath, skipGrader, graderModel };
 }
 
 function printHelp(exit: number): never {
@@ -77,34 +85,42 @@ CLI — it requires invocation from inside a parent Claude Code session.
 }
 
 const args = parseArgs(process.argv.slice(2));
-
-const allQuestions = await loadEvalSuite(REPO_ROOT, args.evalSuite);
-const selected = args.ids
-  ? allQuestions.filter((q) => args.ids!.includes(q.id))
-  : allQuestions;
-
-if (args.ids && selected.length < args.ids.length) {
-  const found = new Set(selected.map((q) => q.id));
-  const missing = args.ids.filter((id) => !found.has(id));
-  console.error(`Warning: ${missing.length} id(s) not found in ${args.evalSuite}: ${missing.join(", ")}`);
-}
-
-if (selected.length === 0) {
-  console.error("No matching questions; nothing to do.");
-  process.exit(1);
-}
-
-console.log(`Running ${selected.length} question(s) through ${args.harness} → ${args.outputDir}`);
-
 const absOut = resolve(REPO_ROOT, args.outputDir);
 
-await runBatch({
-  harness: args.harness,
-  questions: selected,
-  outputDir: absOut,
-  repoRoot: REPO_ROOT,
-  evalSuite: args.evalSuite,
-  ...(args.tagIndexPath ? { tagIndexPath: args.tagIndexPath } : {}),
-  ...(args.graderModel ? { graderModel: args.graderModel } : {}),
-  skipGrader: args.skipGrader,
-});
+if (args.mode === "regrade-fails") {
+  await regradeParseFailures({
+    outputDir: absOut,
+    repoRoot: REPO_ROOT,
+    evalSuite: args.evalSuite,
+    ...(args.graderModel ? { graderModel: args.graderModel } : {}),
+  });
+} else {
+  const allQuestions = await loadEvalSuite(REPO_ROOT, args.evalSuite);
+  const selected = args.ids
+    ? allQuestions.filter((q) => args.ids!.includes(q.id))
+    : allQuestions;
+
+  if (args.ids && selected.length < args.ids.length) {
+    const found = new Set(selected.map((q) => q.id));
+    const missing = args.ids.filter((id) => !found.has(id));
+    console.error(`Warning: ${missing.length} id(s) not found in ${args.evalSuite}: ${missing.join(", ")}`);
+  }
+
+  if (selected.length === 0) {
+    console.error("No matching questions; nothing to do.");
+    process.exit(1);
+  }
+
+  console.log(`Running ${selected.length} question(s) through ${args.harness} → ${args.outputDir}`);
+
+  await runBatch({
+    harness: args.harness,
+    questions: selected,
+    outputDir: absOut,
+    repoRoot: REPO_ROOT,
+    evalSuite: args.evalSuite,
+    ...(args.tagIndexPath ? { tagIndexPath: args.tagIndexPath } : {}),
+    ...(args.graderModel ? { graderModel: args.graderModel } : {}),
+    skipGrader: args.skipGrader,
+  });
+}

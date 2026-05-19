@@ -7,7 +7,7 @@
 
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { stringify as yamlStringify, parse as yamlParse } from "yaml";
+import { stringify as yamlStringify } from "yaml";
 import { query } from "@anthropic-ai/claude-agent-sdk";
 import type { DimensionScore, EvalQuestion, GraderVerdict, HarnessOutput, Verdict } from "./types.js";
 
@@ -62,7 +62,7 @@ ${harnessOutput.toolCalls.length > 0
 
 # Your job
 
-Read the rubric and the answer. Verify the candidate's citations against the actual corpus files using corpus.getFile or Read. Emit the structured verdict YAML exactly as your system prompt specifies, between two \`\`\`yaml fences. Do not include any other prose.`;
+Read the rubric and the answer. Verify the candidate's citations against the actual corpus files using Read. Emit the structured verdict as a JSON object exactly as your system prompt specifies, between two \`\`\`json fences. JSON only — not YAML. Do not include any other prose.`;
 
   let assembled = "";
   for await (const msg of query({
@@ -91,14 +91,27 @@ Read the rubric and the answer. Verify the candidate's citations against the act
 // ---------------------------------------------------------------------------
 
 function parseGraderVerdict(qid: string, harness: HarnessOutput["harness"], raw: string): GraderVerdict {
-  const fence = raw.match(/```yaml\s*([\s\S]*?)```/);
-  const body = fence ? fence[1]! : raw;
+  // Prefer ```json fence; fall back to ```yaml for backward compat with older grader runs.
+  const jsonFence = raw.match(/```json\s*([\s\S]*?)```/);
+  const yamlFence = raw.match(/```yaml\s*([\s\S]*?)```/);
+  const fenceBody = jsonFence?.[1] ?? yamlFence?.[1] ?? raw;
 
   let doc: Record<string, unknown>;
   try {
-    doc = yamlParse(body) as Record<string, unknown>;
-  } catch (e) {
-    return failVerdict(qid, harness, `Grader emitted unparseable YAML: ${(e as Error).message}\n\nRaw:\n${raw.slice(0, 600)}`);
+    doc = JSON.parse(fenceBody.trim()) as Record<string, unknown>;
+  } catch (jsonErr) {
+    // Fallback: if it parses as JSON-with-trailing-text or a YAML envelope
+    // somehow slipped through, try to extract the first balanced JSON object.
+    const extracted = extractFirstJsonObject(fenceBody);
+    if (extracted) {
+      try {
+        doc = JSON.parse(extracted) as Record<string, unknown>;
+      } catch (e2) {
+        return failVerdict(qid, harness, `Grader emitted unparseable output. JSON attempt: ${(jsonErr as Error).message}. Extracted-JSON attempt: ${(e2 as Error).message}\n\nRaw:\n${raw.slice(0, 600)}`);
+      }
+    } else {
+      return failVerdict(qid, harness, `Grader emitted unparseable output (no JSON object found): ${(jsonErr as Error).message}\n\nRaw:\n${raw.slice(0, 600)}`);
+    }
   }
 
   const dims = (doc["dimensions"] as Record<string, unknown> | undefined) ?? {};
@@ -135,6 +148,34 @@ function parseGraderVerdict(qid: string, harness: HarnessOutput["harness"], raw:
     hallucinatedCitations: hallucinated,
     summary: typeof doc["summary"] === "string" ? (doc["summary"] as string).trim() : "(no summary)",
   };
+}
+
+// Best-effort extraction of the first balanced { ... } JSON object from a
+// string, ignoring braces inside JSON strings. Used as a fallback when the
+// grader emits some prose before/after the JSON block.
+function extractFirstJsonObject(s: string): string | null {
+  let depth = 0;
+  let start = -1;
+  let inString = false;
+  let escape = false;
+  for (let i = 0; i < s.length; i++) {
+    const ch = s[i]!;
+    if (inString) {
+      if (escape) escape = false;
+      else if (ch === "\\") escape = true;
+      else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') { inString = true; continue; }
+    if (ch === "{") {
+      if (start < 0) start = i;
+      depth += 1;
+    } else if (ch === "}") {
+      depth -= 1;
+      if (depth === 0 && start >= 0) return s.slice(start, i + 1);
+    }
+  }
+  return null;
 }
 
 function asVerdict(v: unknown): Verdict {

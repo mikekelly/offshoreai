@@ -40,68 +40,74 @@ Each grading invocation receives:
 
 ## Your output — the structured verdict
 
-You emit a single YAML block. No prose, no preamble, no commentary
-outside the block.
+You emit a single JSON block. No prose, no preamble, no commentary
+outside the block. **JSON, not YAML** — YAML is fragile to quoted
+phrases followed by descriptive text on the same line, which is a
+common pattern in your "notable_correct" / "notable_wrong" lists. JSON
+is unambiguous about string boundaries; use it.
 
-```yaml
-verdict_kind: structured_eval_verdict_v1
-question_id: <question-id>
-harness: <harness-name>
-overall: <pass | partial | fail>
+```json
+{
+  "verdict_kind": "structured_eval_verdict_v1",
+  "question_id": "<question-id>",
+  "harness": "<harness-name>",
+  "overall": "<pass | partial | fail>",
 
-dimensions:
-  substance:
-    score: <pass | partial | fail>
-    facts_covered: <n_covered> of <n_expected>
-    notable_correct:
-      - <one-line>
-    notable_wrong:
-      - <one-line>
-  jersey_specific:
-    score: <pass | partial | fail>
-    statutes_named: [<list>]
-    cases_named: [<list>]
-    generic_offshore_language_detected: <true | false>
-  voice:
-    score: <pass | partial | fail>
-    rubric_intent: <the question's voice line>
-    matched: <true | partial | false>
-  citation_precision:
-    score: <pass | partial | fail>
-    claims_with_citation: <n>
-    claims_without_citation: <n>
-    hallucinated_citations: <n>          # claim cites a file that doesn't support it
-    citation_paths_verified:
-      - path: <corpus path>
-        supports_claim: <true | false>
-        notes: <one line>
-  citation_recall:
-    score: <pass | partial | fail>
-    most_authoritative_source_used: <true | partial | false>
-    detail: |
-      <one-paragraph; e.g. "cited secondary law-firm briefing when
-      statute file in the bundle covers same point">
-  freshness_handling:
-    score: <pass | partial | fail | n/a>
-    stale_files_cited: [<list of paths>]
-    stale_flagged_to_user: <true | false>
-    notes: <one line>
-  efficiency:
-    tool_calls: <n>
-    tokens_input: <n>
-    tokens_output: <n>
-    wall_clock_seconds: <n>
-    redundant_calls: <n>                  # same path read twice, etc.
+  "dimensions": {
+    "substance": {
+      "score": "<pass | partial | fail>",
+      "facts_covered": "<n_covered> of <n_expected>",
+      "notable_correct": ["<one-line>"],
+      "notable_wrong": ["<one-line>"]
+    },
+    "jersey_specific": {
+      "score": "<pass | partial | fail>",
+      "statutes_named": ["<list>"],
+      "cases_named": ["<list>"],
+      "generic_offshore_language_detected": false
+    },
+    "voice": {
+      "score": "<pass | partial | fail>",
+      "rubric_intent": "<the question's voice line>",
+      "matched": "<true | partial | false>"
+    },
+    "citation_precision": {
+      "score": "<pass | partial | fail>",
+      "claims_with_citation": 0,
+      "claims_without_citation": 0,
+      "hallucinated_citations": 0,
+      "citation_paths_verified": [
+        { "path": "<corpus path>", "supports_claim": true, "notes": "<one line>" }
+      ]
+    },
+    "citation_recall": {
+      "score": "<pass | partial | fail>",
+      "most_authoritative_source_used": "<true | partial | false>",
+      "detail": "<one paragraph; e.g. cited secondary law-firm briefing when statute file in the bundle covers same point>"
+    },
+    "freshness_handling": {
+      "score": "<pass | partial | fail | n/a>",
+      "stale_files_cited": ["<list of paths>"],
+      "stale_flagged_to_user": false,
+      "notes": "<one line>"
+    },
+    "efficiency": {
+      "tool_calls": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "wall_clock_seconds": 0,
+      "redundant_calls": 0
+    }
+  },
 
-summary: |
-  <one paragraph, ≤ 100 words. The pull-quote a reviewer reads when
-  scanning a regression report. Open with the verdict, then the most
-  load-bearing dimension, then the most useful single observation>
+  "summary": "<one paragraph, ≤ 100 words. The pull-quote a reviewer reads when scanning a regression report. Open with the verdict, then the most load-bearing dimension, then the most useful single observation.>",
 
-regression_signal:
-  is_new_failure: <true | false>          # set true if this run regressed vs a prior baseline on this question
-  is_new_pass: <true | false>             # set true if this run passes a question that failed in the prior baseline
-  delta_notes: <one-line; only meaningful when a baseline is available>
+  "regression_signal": {
+    "is_new_failure": false,
+    "is_new_pass": false,
+    "delta_notes": "<one-line; only meaningful when a baseline is available>"
+  }
+}
 ```
 
 ---

@@ -1,32 +1,22 @@
 questionId: show-planning
 harness: offshoreai-agent
-overall: fail
+overall: pass
 dimensions:
-  substance: fail
-  jerseySpecific: n/a
-  citationPrecision: fail
-  citationRecall: n/a
-  freshnessHandling: n/a
-  voice: n/a
-factsCovered: 0
-factsExpected: 0
-citationsTotal: 0
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
 hallucinatedCitations: 0
-summary: >-
-  Grader emitted unparseable YAML: Unexpected scalar at node end at line 13,
-  column 44:
-
-        - "Most extensions need application" conveyed clearly — two-storey always…
-                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-  Raw:
-
-  I'll verify the candidate's citations against the actual corpus files.Now let
-  me read the three primary cited files and the restrictive covenants file.Now
-  let me check the enforcement file and the planning-building-law-2002 file to
-  verify the "criminal offence / unlimited fines" claim.All citations verified.
-  Now I have the full picture. Let me check the freshness metadata on cited
-  files.All files have `last_verified: 2026-05-18` (yesterday) and `status:
-  draft`. Now let me check if there's a prior baseline verdict for this
-  question.No prior verdict files exist for this question — only the curre
+summary: "Pass. All five expected substance facts covered accurately, every
+  citation verified against the corpus with no hallucinations, and the answer is
+  Jersey-specific throughout (three Jersey statutes named, Department for the
+  Environment referenced, no generic offshore language). The strongest dimension
+  is freshness handling: the candidate proactively flagged draft status on all
+  three cited files and directed the user to the GD Order 2011 primary text for
+  numeric thresholds the corpus deliberately omits — a model of responsible
+  caveat practice."

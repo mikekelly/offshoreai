@@ -5,9 +5,9 @@ run:
   ranAt: 2026-05-19T11:47:36.959Z
   questions: 14
 totals:
-  pass: 10
-  partial: 2
-  fail: 2
+  pass: 11
+  partial: 3
+  fail: 0
 dimensionAggregates:
   citationPrecisionPassRate: 0.86
   jerseySpecificPassRate: 0.67
@@ -67,26 +67,18 @@ perQuestion:
 
       Efficiency is tight at 5 tool calls with no redundancy.
   - id: show-trusts-comparison
-    verdict: fail
-    summary: >-
-      Grader emitted unparseable YAML: Unexpected scalar at node end at line 16,
-      column 48:
-
-            - "VISTA is not discussed in the corpus" — false; glossary-extension.md d…
-                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-      Raw:
-
-      I'll verify the candidate's citations against the actual corpus files.All
-      four files exist. Now let me read them to verify the claims.Now let me
-      check the Article 9 firewall file since the rubric specifically requires
-      it.Now I have all the evidence needed. Let me verify one more claim — the
-      candidate says VISTA's distinctive feature is "relieving the trustee of
-      the prudent-man duty to monitor or intervene in an underlying company's
-      affairs — the 'anti-Bartlett' function" and that "has no statutory
-      analogue in Jersey." This is not from the corpus (candidate acknowledges
-      this). Let me check if t
+    verdict: partial
+    summary: Partial. The Jersey side is strong — Article 9A reserved-powers and
+      Article 12 NCPT coverage are thorough and well-cited — but the answer
+      fails to deliver the cross-jurisdictional comparison the question asks
+      for. The classic discretionary trust (rubric item 1) is never discussed;
+      VISTA is barely sketched; and no decision matrix for when-to-use-which is
+      provided. The candidate's honest refusal to synthesise from training data
+      is principled but leaves two of the four rubric bullets substantively
+      uncovered. Citation precision is clean (no hallucinations), but citation
+      recall suffers from never reading firewall.md for the Article 9 claims.
+      Voice reads as a knowledge-retrieval system rather than cross-border trust
+      counsel.
   - id: show-aifmd-nppr
     verdict: partial
     summary: >-
@@ -181,26 +173,15 @@ perQuestion:
 
       seconds.
   - id: show-planning
-    verdict: fail
-    summary: >-
-      Grader emitted unparseable YAML: Unexpected scalar at node end at line 13,
-      column 44:
-
-            - "Most extensions need application" conveyed clearly — two-storey always…
-                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-      Raw:
-
-      I'll verify the candidate's citations against the actual corpus files.Now
-      let me read the three primary cited files and the restrictive covenants
-      file.Now let me check the enforcement file and the
-      planning-building-law-2002 file to verify the "criminal offence /
-      unlimited fines" claim.All citations verified. Now I have the full
-      picture. Let me check the freshness metadata on cited files.All files have
-      `last_verified: 2026-05-18` (yesterday) and `status: draft`. Now let me
-      check if there's a prior baseline verdict for this question.No prior
-      verdict files exist for this question — only the curre
+    verdict: pass
+    summary: "Pass. All five expected substance facts covered accurately, every
+      citation verified against the corpus with no hallucinations, and the
+      answer is Jersey-specific throughout (three Jersey statutes named,
+      Department for the Environment referenced, no generic offshore language).
+      The strongest dimension is freshness handling: the candidate proactively
+      flagged draft status on all three cited files and directed the user to the
+      GD Order 2011 primary text for numeric thresholds the corpus deliberately
+      omits — a model of responsible caveat practice."
   - id: show-tenancy-2025
     verdict: pass
     summary: |-

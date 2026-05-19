@@ -1,32 +1,24 @@
 questionId: show-trusts-comparison
 harness: offshoreai-agent
-overall: fail
+overall: partial
 dimensions:
-  substance: fail
-  jerseySpecific: n/a
-  citationPrecision: fail
-  citationRecall: n/a
-  freshnessHandling: n/a
-  voice: n/a
-factsCovered: 0
-factsExpected: 0
-citationsTotal: 0
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 2
+factsExpected: 4
+citationsTotal: 10
 hallucinatedCitations: 0
-summary: >-
-  Grader emitted unparseable YAML: Unexpected scalar at node end at line 16,
-  column 48:
-
-        - "VISTA is not discussed in the corpus" — false; glossary-extension.md d…
-                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-  Raw:
-
-  I'll verify the candidate's citations against the actual corpus files.All four
-  files exist. Now let me read them to verify the claims.Now let me check the
-  Article 9 firewall file since the rubric specifically requires it.Now I have
-  all the evidence needed. Let me verify one more claim — the candidate says
-  VISTA's distinctive feature is "relieving the trustee of the prudent-man duty
-  to monitor or intervene in an underlying company's affairs — the
-  'anti-Bartlett' function" and that "has no statutory analogue in Jersey." This
-  is not from the corpus (candidate acknowledges this). Let me check if t
+summary: Partial. The Jersey side is strong — Article 9A reserved-powers and
+  Article 12 NCPT coverage are thorough and well-cited — but the answer fails to
+  deliver the cross-jurisdictional comparison the question asks for. The classic
+  discretionary trust (rubric item 1) is never discussed; VISTA is barely
+  sketched; and no decision matrix for when-to-use-which is provided. The
+  candidate's honest refusal to synthesise from training data is principled but
+  leaves two of the four rubric bullets substantively uncovered. Citation
+  precision is clean (no hallucinations), but citation recall suffers from never
+  reading firewall.md for the Article 9 claims. Voice reads as a
+  knowledge-retrieval system rather than cross-border trust counsel.
