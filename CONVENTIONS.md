@@ -23,11 +23,11 @@ In particular:
   on `article-47-set-aside.md` without prior context should immediately
   understand they are reading about Jersey trust law's mistake-based
   set-aside regime.
-- **Links carry meaning.** A bare `[Article 9](firewall.md)` link tells an
+- **Links carry meaning.** A bare `[Article 9](./knowledge/jersey/trusts/firewall.md)` link tells an
   oriented reader where to find a known concept but tells a cold reader
   nothing. Prefer `[the firewall — Article 9 — which makes Jersey law
   govern validity of a Jersey trust and disapplies foreign forced-
-  heirship rules](firewall.md)` even if it makes the prose longer.
+  heirship rules](./knowledge/jersey/trusts/firewall.md)` even if it makes the prose longer.
 
 ## File layout
 

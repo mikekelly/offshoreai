@@ -125,7 +125,7 @@ support.
 Questions are drawn from:
 
 - **Coverage audit gaps** (see
-  [`../jersey/COVERAGE-AUDIT.md`](../jersey/COVERAGE-AUDIT.md))
+  [`../jersey/COVERAGE-AUDIT.md`](../knowledge/jersey/COVERAGE-AUDIT.md))
   — top-20 gaps each get representative questions;
 - **Ordinary-resident personas**
   ([`jersey-resident`](../jersey/use-cases/jersey-resident/),

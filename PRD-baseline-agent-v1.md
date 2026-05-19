@@ -77,7 +77,7 @@ The **Jersey TCB Trust Officer Agent**. Jersey's regulated trust-company populat
 
 ## 3. Users & jobs-to-be-done
 
-Drawn from the corpus's persona taxonomy (`jersey/use-cases/`):
+Drawn from the corpus's persona taxonomy (`knowledge/jersey/use-cases/`):
 
 | Persona | Daily job v1 must do | Why this persona first |
 |---|---|---|
@@ -219,7 +219,7 @@ Each persona/task pair becomes a Claude Skill. Concretely:
 
 The skill's `description` field is what Claude uses to decide whether to invoke. We get persona routing for free, model-side, instead of building a router.
 
-Every use-case file in the corpus (`jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md` and its 32 siblings) gets a paired skill at `.claude/skills/jersey-trust-officer-article-47-set-aside/SKILL.md` that:
+Every use-case file in the corpus (`knowledge/jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md` and its 32 siblings) gets a paired skill at `.claude/skills/jersey-trust-officer-article-47-set-aside/SKILL.md` that:
 - Names which corpus files form the "bundle" for this task.
 - Names the canonical statute Articles required.
 - Names the tags whose graph to expand.
@@ -302,10 +302,10 @@ For every persona/task we know about (every use-case file), we pre-compile a **b
 persona: trust-officer
 task: article-47-set-aside-for-mistake
 required_files:
-  - jersey/trusts/article-47-set-aside.md
-  - jersey/trusts/article-47-set-aside-procedure.md
-  - jersey/trusts/trusts-law-1984-articles-47-47I.md
-  - jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md
+  - knowledge/jersey/trusts/article-47-set-aside.md
+  - knowledge/jersey/trusts/article-47-set-aside-procedure.md
+  - knowledge/jersey/trusts/trusts-law-1984-articles-47-47I.md
+  - knowledge/jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md
 required_articles:
   - { statute: trusts-law-1984, articles: ["47", "47A", "47B", "47C", "47D", "47E", "47F", "47G", "47H", "47I"] }
 related_tags: [mistake, setting-aside, royal-court, court-application, hastings-bass]
@@ -412,7 +412,7 @@ AXI was originally a spec for *agent-driven CLIs*. We don't build CLIs over our 
 
     ```
     error_kind: stale_corpus
-    path: jersey/trusts/firewall.md
+    path: knowledge/jersey/trusts/firewall.md
     last_verified: 2025-09-03
     age_days: 622
     threshold_days: 365
@@ -519,7 +519,7 @@ TypeScript module `@offshoreai/tools-corpus`. Functions defined with Zod input s
 **Read individual items**
 - `corpus.getFile(path)` → file content + frontmatter
 - `corpus.getArticle(statute, article)` → canonical article-wiki file
-- `corpus.glossaryLookup(term)` → from `jersey/glossary.md`
+- `corpus.glossaryLookup(term)` → from `knowledge/jersey/glossary.md`
 
 **Navigate by structure**
 - `corpus.findByTag(tags, mode = "and")` → matching file paths

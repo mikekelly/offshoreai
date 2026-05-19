@@ -72,27 +72,29 @@ The shape:
 offshoreai/
 ├── README.md                  ← you are here
 ├── CONVENTIONS.md             ← file conventions, frontmatter spec, link style
-├── jersey/
-│   ├── README.md              ← Jersey build plan (human-readable)
-│   ├── index.md               ← LLM entry point for Jersey
-│   ├── glossary.md
-│   ├── sources.md
-│   ├── changelog.md
-│   ├── government/
-│   ├── legal-system/
-│   ├── financial-regulation/
-│   ├── tax/
-│   ├── companies/
-│   ├── trusts/
-│   ├── foundations/
-│   ├── funds/
-│   ├── banking/
-│   ├── insurance/
-│   ├── immigration-residency/
-│   ├── aml-cft/
-│   ├── international/
-│   └── registries/
-└── <future-jurisdictions>/
+├── KNOWLEDGE-BASE-PRINCIPLES.md
+├── AGENTS.md / CLAUDE.md      ← cold-start reading order
+├── TAGS.md
+├── PRD-baseline-agent-v1.md
+├── DEMO-CHEAT-SHEET-KPMG-PE-PARTNER.md
+├── evals/                     ← coverage + showcase eval YAMLs and runner docs
+└── knowledge/                 ← the Obsidian vault / knowledge base
+    ├── CROSS-JURISDICTIONAL-MAP.md
+    ├── frontier/              ← cross-jurisdictional frontier (UK carry, AIFMD II, continuation funds)
+    ├── jersey/
+    │   ├── README.md          ← Jersey build plan (human-readable)
+    │   ├── index.md           ← LLM entry point for Jersey
+    │   ├── history/           ← Jersey industry trajectory (4 acts) + sources + gaps
+    │   ├── frontier/          ← Jersey-specific frontier files
+    │   ├── glossary.md, sources.md, changelog.md
+    │   ├── government/, legal-system/, financial-regulation/, tax/
+    │   ├── companies/, trusts/, foundations/, funds/
+    │   ├── banking/, insurance/, immigration-residency/
+    │   ├── aml-cft/, international/, registries/
+    │   ├── digital-assets/, sustainable-finance/
+    │   └── use-cases/         ← persona-anchored Q&A
+    ├── guernsey/, bermuda/, bvi/, cayman/, isle-of-man/
+    └── <future-jurisdictions>/
 ```
 
 Each jurisdiction mirrors the same top-level taxonomy where it makes sense,

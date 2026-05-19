@@ -22,7 +22,7 @@ Read in this order. The order is deliberate — each document assumes the ones a
 2. **[`KNOWLEDGE-BASE-PRINCIPLES.md`](KNOWLEDGE-BASE-PRINCIPLES.md)** — the strategic commitments behind the corpus (one concept per file, agent-orientation, tags as the primary navigation layer for agents, `last_verified` as the freshness contract, source hierarchy, layer separation). ~15 min.
 3. **[`CONVENTIONS.md`](CONVENTIONS.md)** — the operational rules for content files (frontmatter spec, prose style, cross-linking, sources, updating, stubs). This is *how* the principles in (2) get applied. ~10 min.
 4. **[`TAGS.md`](TAGS.md)** — the canonical closed taxonomy of tags. Skim the categories; you don't need to memorise the list, just know it's authoritative and additions go via PR. ~5 min.
-5. **[`jersey/index.md`](jersey/index.md)** — a concrete example of the agent-facing front door for one jurisdiction. Read it to see how all of (1)–(4) actually land in the corpus. ~10 min.
+5. **[`knowledge/jersey/index.md`](knowledge/jersey/index.md)** — a concrete example of the agent-facing front door for one jurisdiction. Read it to see how all of (1)–(4) actually land in the corpus. ~10 min.
 
 ### Part 2 — what the agent is (read these in full)
 

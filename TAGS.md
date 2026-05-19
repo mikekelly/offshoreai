@@ -246,4 +246,4 @@ When you encounter a concept that needs a new tag:
 ## Removing tags
 
 Tags can be removed only when **no file uses them**. Run
-`grep -r "tag-name" jersey/` first.
+`grep -r "tag-name" knowledge/` first.

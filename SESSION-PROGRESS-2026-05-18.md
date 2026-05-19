@@ -14,7 +14,7 @@ workstreams in sequence:
 ### Workstream 1 — Coverage audit and gap-filling (top-20)
 
 Built the coverage audit at
-[`jersey/COVERAGE-AUDIT.md`](jersey/COVERAGE-AUDIT.md),
+[`knowledge/jersey/COVERAGE-AUDIT.md`](knowledge/jersey/COVERAGE-AUDIT.md),
 identified the corpus's structural bias toward
 sophisticated-finance personas, and systematically closed
 every top-20 audit gap through the loop **audit → fill →
@@ -34,7 +34,7 @@ Sections built:
 7. **Mental health + capacity** (gaps #11, #12) —
    `jersey/health-and-capacity/`
 8. **Petty Debts Court** (gap #17) —
-   `jersey/legal-system/petty-debts-court.md`
+   `knowledge/jersey/legal-system/petty-debts-court.md`
 9. **Civil liberties (FOI + RIPL)** (gaps #18, #19) —
    `jersey/civil-liberties/`
 10. **Education + Consumer Safety + HSWL + Rented
@@ -107,13 +107,13 @@ assurance.
 Plus three worked transactional examples threading
 multiple sections:
 
-- `jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`
-- `jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`
-- `jersey/use-cases/international-lawyer/worked-example-contentious-trust-litigation.md`
+- `knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`
+- `knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`
+- `knowledge/jersey/use-cases/international-lawyer/worked-example-contentious-trust-litigation.md`
 
 And a top-level synthesis surface:
 
-- [`CROSS-JURISDICTIONAL-MAP.md`](CROSS-JURISDICTIONAL-MAP.md)
+- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)
 
 ## Eval scoreboards as of session end
 
@@ -244,7 +244,7 @@ range and depth across:
   landing-page-bar showcase eval
 - [`evals/README.md`](evals/README.md) — the runner
   methodology
-- [`jersey/COVERAGE-AUDIT.md`](jersey/COVERAGE-AUDIT.md)
+- [`knowledge/jersey/COVERAGE-AUDIT.md`](knowledge/jersey/COVERAGE-AUDIT.md)
   — the Jersey statute coverage matrix
-- [`CROSS-JURISDICTIONAL-MAP.md`](CROSS-JURISDICTIONAL-MAP.md)
+- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)
   — the cross-offshore comparison surface

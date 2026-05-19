@@ -44,9 +44,9 @@ questions:
       - "Timeline typically 2-4 months"
       - "Tenant defences include set-off for disrepair, discrimination, retaliation"
     expected_files:
-      - "jersey/residential-tenancy/non-payment-of-rent.md"
-      - "jersey/residential-tenancy/eviction-procedure.md"
-      - "jersey/use-cases/tenant-landlord/evicting-non-paying-tenant.md"
+      - "knowledge/jersey/residential-tenancy/non-payment-of-rent.md"
+      - "knowledge/jersey/residential-tenancy/eviction-procedure.md"
+      - "knowledge/jersey/use-cases/tenant-landlord/evicting-non-paying-tenant.md"
     score:
       2026-05-18: pass  # v1/v2 self-graded
       2026-05-18-measured: pass  # v3 Agent-tool runner: 7/7 facts, 3/3 files
@@ -64,9 +64,9 @@ questions:
       - "No-fault notice now requires 12 months"
       - "Defective notice can be challenged"
     expected_files:
-      - "jersey/residential-tenancy/notice-periods.md"
-      - "jersey/residential-tenancy/2025-amendment-law.md"
-      - "jersey/use-cases/tenant-landlord/checking-notice-validity.md"
+      - "knowledge/jersey/residential-tenancy/notice-periods.md"
+      - "knowledge/jersey/residential-tenancy/2025-amendment-law.md"
+      - "knowledge/jersey/use-cases/tenant-landlord/checking-notice-validity.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts; cited 2/3 expected files plus equivalents (eviction-procedure.md, grounds-for-termination.md)
@@ -82,9 +82,9 @@ questions:
       - "Above-RPI requires 'significantly below market rent' carve-out"
       - "Rent Tribunal is the dispute forum"
     expected_files:
-      - "jersey/residential-tenancy/rent-and-rent-reviews.md"
-      - "jersey/residential-tenancy/rent-tribunal.md"
-      - "jersey/residential-tenancy/2025-amendment-law.md"
+      - "knowledge/jersey/residential-tenancy/rent-and-rent-reviews.md"
+      - "knowledge/jersey/residential-tenancy/rent-tribunal.md"
+      - "knowledge/jersey/residential-tenancy/2025-amendment-law.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: all 6 facts surfaced; 3/3 expected files cited
@@ -99,7 +99,7 @@ questions:
       - "Deposit receipt must be provided to tenant"
       - "Excessive deposits challengeable"
     expected_files:
-      - "jersey/residential-tenancy/deposits.md"
+      - "knowledge/jersey/residential-tenancy/deposits.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts; cited expected file plus residential-tenancy-law-2011.md and 2025-amendment-law.md
@@ -114,7 +114,7 @@ questions:
       - "Shared kitchen/bathroom typically lodging"
       - "Courts look at substance, not label"
     expected_files:
-      - "jersey/residential-tenancy/lodging-houses-vs-tenancy.md"
+      - "knowledge/jersey/residential-tenancy/lodging-houses-vs-tenancy.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts, expected file cited + extras
@@ -135,11 +135,11 @@ questions:
       - "Statutory evidential protection: cannot convict on single witness opinion alone (corroboration needed)"
       - "Procedure: summons → first appearance → plea → trial-if-not-guilty → sentence"
     expected_files:
-      - "jersey/road-traffic/speeding.md"
-      - "jersey/road-traffic/road-traffic-law-1956.md"
-      - "jersey/road-traffic/parish-hall-enquiries.md"
-      - "jersey/road-traffic/court-procedure.md"
-      - "jersey/use-cases/driver-motorist/caught-speeding.md"
+      - "knowledge/jersey/road-traffic/speeding.md"
+      - "knowledge/jersey/road-traffic/road-traffic-law-1956.md"
+      - "knowledge/jersey/road-traffic/parish-hall-enquiries.md"
+      - "knowledge/jersey/road-traffic/court-procedure.md"
+      - "knowledge/jersey/use-cases/driver-motorist/caught-speeding.md"
     score:
       2026-05-18: fail
       2026-05-18-measured: fail  # v3 baseline: corpus did not answer
@@ -158,9 +158,9 @@ questions:
       - "Magistrate's Court forum (cannot be Parish Hall)"
       - "Contrast with drug-driving — currently impairment-based; statutory limits proposed Feb 2026 but not yet in force"
     expected_files:
-      - "jersey/road-traffic/drink-driving.md"
-      - "jersey/road-traffic/drug-driving.md"
-      - "jersey/use-cases/driver-motorist/drink-drive-limit.md"
+      - "knowledge/jersey/road-traffic/drink-driving.md"
+      - "knowledge/jersey/road-traffic/drug-driving.md"
+      - "knowledge/jersey/use-cases/driver-motorist/drink-drive-limit.md"
     score:
       2026-05-18: fail
       2026-05-18-measured: fail  # v3 baseline: corpus did not answer
@@ -179,11 +179,11 @@ questions:
       - "Application process to States planning department"
       - "Right of appeal"
     expected_files:
-      - "jersey/planning/planning-building-law-2002.md"
-      - "jersey/planning/permitted-development.md"
-      - "jersey/planning/application-process.md"
-      - "jersey/planning/extensions-and-conversions.md"
-      - "jersey/use-cases/jersey-resident/extension-planning-permission.md"
+      - "knowledge/jersey/planning/planning-building-law-2002.md"
+      - "knowledge/jersey/planning/permitted-development.md"
+      - "knowledge/jersey/planning/application-process.md"
+      - "knowledge/jersey/planning/extensions-and-conversions.md"
+      - "knowledge/jersey/use-cases/jersey-resident/extension-planning-permission.md"
     score:
       2026-05-18: fail
       2026-05-18-measured: fail  # v3 baseline
@@ -205,11 +205,11 @@ questions:
       - "Decree nisi → 6 weeks 1 day → decree absolute"
       - "Ancillary relief under Articles 25-31; no pension sharing"
     expected_files:
-      - "jersey/family/matrimonial-causes-law-1949.md"
-      - "jersey/family/divorce-grounds.md"
-      - "jersey/family/divorce-procedure.md"
-      - "jersey/family/ancillary-relief.md"
-      - "jersey/use-cases/parent-family/getting-divorced.md"
+      - "knowledge/jersey/family/matrimonial-causes-law-1949.md"
+      - "knowledge/jersey/family/divorce-grounds.md"
+      - "knowledge/jersey/family/divorce-procedure.md"
+      - "knowledge/jersey/family/ancillary-relief.md"
+      - "knowledge/jersey/use-cases/parent-family/getting-divorced.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: 7/7 facts, all 5 expected files cited + jurisdiction-and-foreign-orders.md
@@ -228,10 +228,10 @@ questions:
       - "JFCAS guardian appointed in public-law cases"
       - "Kinship carer alternatives must be considered"
     expected_files:
-      - "jersey/family/children-jersey-law-2002.md"
-      - "jersey/family/care-and-supervision.md"
-      - "jersey/family/parental-responsibility.md"
-      - "jersey/use-cases/parent-family/social-services-investigation.md"
+      - "knowledge/jersey/family/children-jersey-law-2002.md"
+      - "knowledge/jersey/family/care-and-supervision.md"
+      - "knowledge/jersey/family/parental-responsibility.md"
+      - "knowledge/jersey/use-cases/parent-family/social-services-investigation.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: 8/8 facts; cited 3/4 expected + jfcas-and-mediation.md + royal-court-family-division.md
@@ -248,9 +248,9 @@ questions:
       - "Jersey not party to 1996 Hague Convention — recognition issues"
       - "Unilateral removal risks abduction proceedings (1980 Hague)"
     expected_files:
-      - "jersey/family/child-relocation.md"
-      - "jersey/family/parental-responsibility.md"
-      - "jersey/family/children-jersey-law-2002.md"
+      - "knowledge/jersey/family/child-relocation.md"
+      - "knowledge/jersey/family/parental-responsibility.md"
+      - "knowledge/jersey/family/children-jersey-law-2002.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: all facts surfaced including 1996 Hague gap and 1980 Hague abduction risk; cited 3/3 + child-arrangements-orders.md
@@ -265,7 +265,7 @@ questions:
       - "PR if born in Jersey after 2 Dec 2016 and registered on birth certificate"
       - "Otherwise: Parental Responsibility Agreement (prescribed form, filed with Family Division) or court order"
     expected_files:
-      - "jersey/family/parental-responsibility.md"
+      - "knowledge/jersey/family/parental-responsibility.md"
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: 4/4 facts; clean single-file answer from parental-responsibility.md
@@ -286,9 +286,9 @@ questions:
       - "Distinguishable from ordinary Powers of Attorney 1995 (which fall away on capacity loss)"
       - "If no LPA when capacity lost, alternative is a court-appointed delegate (slower, costlier)"
     expected_files:
-      - "jersey/health-and-capacity/lasting-powers-of-attorney.md"
-      - "jersey/health-and-capacity/capacity-and-self-determination-law-2016.md"
-      - "jersey/use-cases/jersey-resident/lasting-power-of-attorney.md"
+      - "knowledge/jersey/health-and-capacity/lasting-powers-of-attorney.md"
+      - "knowledge/jersey/health-and-capacity/capacity-and-self-determination-law-2016.md"
+      - "knowledge/jersey/use-cases/jersey-resident/lasting-power-of-attorney.md"
     score:
       2026-05-18-measured: pass  # cap-001: all expected facts surfaced; 2/3 expected files cited (persona Q&A not separately cited but unnecessary given main files)
 
@@ -309,8 +309,8 @@ questions:
       - "Nearest Relative role and statutory powers"
       - "Right to Independent Mental Health Advocate (IMHA) and legal representation"
     expected_files:
-      - "jersey/health-and-capacity/mental-health-law-2016.md"
-      - "jersey/health-and-capacity/compulsory-admission.md"
+      - "knowledge/jersey/health-and-capacity/mental-health-law-2016.md"
+      - "knowledge/jersey/health-and-capacity/compulsory-admission.md"
     score:
       2026-05-18-measured: pass  # mh-001: all 8 expected facts surfaced; 3 files cited (mental-health-law-2016.md, compulsory-admission.md, index.md)
 
@@ -331,7 +331,7 @@ questions:
       - "Enforcement by Viscount: wage arrest, bank-account arrest, goods arrest"
       - "Appeal to Royal Court with leave"
     expected_files:
-      - "jersey/legal-system/petty-debts-court.md"
+      - "knowledge/jersey/legal-system/petty-debts-court.md"
     score:
       2026-05-18-measured: pass  # civ-001: all 8 expected facts surfaced; 2 files cited
 
@@ -351,8 +351,8 @@ questions:
       - "Final appeal to Royal Court on points of law"
       - "Don't need to state purpose"
     expected_files:
-      - "jersey/civil-liberties/foi-law-2011.md"
-      - "jersey/use-cases/journalist-ngo-academic/making-a-foi-request.md"
+      - "knowledge/jersey/civil-liberties/foi-law-2011.md"
+      - "knowledge/jersey/use-cases/journalist-ngo-academic/making-a-foi-request.md"
     score:
       2026-05-18: pending  # not yet measured
 
@@ -370,7 +370,7 @@ questions:
       - "Necessity + proportionality test"
       - "Based on UK RIPA 2000; UK has moved to IPA 2016 but Jersey RIPL still in force"
     expected_files:
-      - "jersey/civil-liberties/ripl-law-2005.md"
+      - "knowledge/jersey/civil-liberties/ripl-law-2005.md"
     score:
       2026-05-18-measured: pass  # ripl-001: all 8 expected facts surfaced; 2 files cited
 
@@ -390,7 +390,7 @@ questions:
       - "SEN provision under the EJL 1999"
       - "Discrimination Law 2013 overlay"
     expected_files:
-      - "jersey/education/education-law-1999.md"
+      - "knowledge/jersey/education/education-law-1999.md"
     score:
       2026-05-18-measured: pass  # edu-001: all 7 facts surfaced; cited the education-law file plus the discrimination overlay (DL 2013) file
 
@@ -406,8 +406,8 @@ questions:
       - "Civil claim under SGSL 2009 for refund/replacement/damages"
       - "Both routes can run in parallel"
     expected_files:
-      - "jersey/contract/consumer-safety-law-2006.md"
-      - "jersey/contract/sale-of-goods.md"
+      - "knowledge/jersey/contract/consumer-safety-law-2006.md"
+      - "knowledge/jersey/contract/sale-of-goods.md"
     score:
       2026-05-18-measured: pass  # cs-001: all 6 facts surfaced; cited 5 files (CSL 2006, sale-of-goods, services-contracts, damages, delit-tort) — agent reached for tort + damages routes I hadn't anticipated
 
@@ -425,7 +425,7 @@ questions:
       - "Criminal offences with substantial fines and possible imprisonment"
       - "Civil claims for negligence / breach of statutory duty available"
     expected_files:
-      - "jersey/employment/health-and-safety-at-work-law-1989.md"
+      - "knowledge/jersey/employment/health-and-safety-at-work-law-1989.md"
     score:
       2026-05-18-measured: pass  # hsw-001: all 8 facts surfaced + EJL 2003 unfair-dismissal-for-whistleblowing specific overlay; cited HSWL plus 3 EJL files (el-part-6, el-article-64, el-article-96)
 
@@ -440,8 +440,8 @@ questions:
       - "Civil set-off / specific performance / damages under RTJL"
       - "Anti-retaliation provisions"
     expected_files:
-      - "jersey/residential-tenancy/public-health-rented-dwellings-law-2018.md"
-      - "jersey/residential-tenancy/repairs-and-standards.md"
+      - "knowledge/jersey/residential-tenancy/public-health-rented-dwellings-law-2018.md"
+      - "knowledge/jersey/residential-tenancy/repairs-and-standards.md"
     score:
       2026-05-18-measured: pass  # rd-001: all 5 facts surfaced including anti-retaliation; cited 5 files weaving across contractual and public-law routes
 
@@ -458,10 +458,10 @@ questions:
       - "Residency requirements"
       - "Application process"
     expected_files:
-      - "jersey/welfare/income-support-law-2007.md"
-      - "jersey/welfare/income-support-eligibility.md"
-      - "jersey/welfare/social-security-law-1974.md"
-      - "jersey/use-cases/jersey-resident/just-lost-job-income-support.md"
+      - "knowledge/jersey/welfare/income-support-law-2007.md"
+      - "knowledge/jersey/welfare/income-support-eligibility.md"
+      - "knowledge/jersey/welfare/social-security-law-1974.md"
+      - "knowledge/jersey/use-cases/jersey-resident/just-lost-job-income-support.md"
     score:
       2026-05-18: fail
       2026-05-18-measured: fail  # v3 baseline
@@ -485,10 +485,10 @@ questions:
       - "Interpreter at public expense if not English-proficient"
       - "Appropriate adult required for juveniles / vulnerable persons"
     expected_files:
-      - "jersey/crime-fraud/ppce-law-2003.md"
-      - "jersey/crime-fraud/rights-at-police-station.md"
-      - "jersey/crime-fraud/arrest.md"
-      - "jersey/use-cases/jersey-resident/just-arrested-police-station.md"
+      - "knowledge/jersey/crime-fraud/ppce-law-2003.md"
+      - "knowledge/jersey/crime-fraud/rights-at-police-station.md"
+      - "knowledge/jersey/crime-fraud/arrest.md"
+      - "knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md"
     score:
       2026-05-18: fail
       2026-05-18-measured: fail  # v3 baseline
@@ -509,7 +509,7 @@ questions:
       - "Mistake / inadequate deliberation grounds"
       - "Distinction from S&T Trusts test"
     expected_files:
-      - "jersey/trusts/article-47-set-aside.md"
+      - "knowledge/jersey/trusts/article-47-set-aside.md"
       - "jersey/trusts/tjl-article-47*.md"
     score:
       2026-05-18: pass  # original coverage intact
@@ -541,8 +541,8 @@ questions:
       - "JFSC notification rather than full authorisation"
       - "Expert Fund — accredited investors, higher minimum, JFSC consent"
     expected_files:
-      - "jersey/funds/jersey-private-fund.md"
-      - "jersey/funds/expert-fund.md"
+      - "knowledge/jersey/funds/jersey-private-fund.md"
+      - "knowledge/jersey/funds/expert-fund.md"
     score:
       2026-05-18: pass  # original coverage intact
       2026-05-18-measured: pass  # v3 Agent-tool runner: agent surfaced richer detail than expected_facts captured — the DSP delegation model in JPF; 48-hour authorisation; Expert Fund minimum-investment thresholds. Expected_facts list should be ratcheted up. Original funds content intact.

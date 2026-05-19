@@ -601,7 +601,7 @@ summary:
         graph supports landing-page style answers
 
       Depth gap exposed for next-round fill:
-      - jersey/../bvi/vista-trusts.md needs to be written
+      - knowledge/bvi/vista-trusts.md needs to be written
         (BVI directory only has it as a TBD reference)
       - Adjacent jurisdictions generally remain thin (~11
         files each); cross-jurisdictional comparisons will
@@ -662,7 +662,7 @@ summary:
       frontier/ directory is now a load-bearing part of
       the demo surface and should be refreshed every ~6
       months per the standing discipline (see
-      frontier/README.md).
+      knowledge/frontier/README.md).
 
   scores_by_question_frontier:
     show-uk-carry-reform: pass     # 28→32→34.1% progression; 72.5% multiplier; Q1 2026 acceleration; HVR/Open Market/IoM tax cap
