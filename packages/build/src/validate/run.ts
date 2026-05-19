@@ -31,7 +31,13 @@ export interface ValidateOptions {
   readonly checkLinks?: boolean;
 }
 
-const DEFAULT_GLOBS = ["jersey/**/*.md"];
+// Per the May-2026 restructure, corpus content is under
+// knowledge/<jurisdiction>/. The validator scans Jersey content
+// (where the TAGS.md taxonomy is grounded); adjacent jurisdictions
+// are scanned by the compile pipeline but not strictly validated
+// against TAGS.md (their tag conventions may diverge — editorial
+// decision pending).
+const DEFAULT_GLOBS = ["knowledge/jersey/**/*.md"];
 
 export async function validateCorpus(opts: ValidateOptions): Promise<ValidationResult> {
   const { repoRoot } = opts;
@@ -68,7 +74,7 @@ export async function validateCorpus(opts: ValidateOptions): Promise<ValidationR
     // similar are out-of-scope for the validator.
     if (Object.keys(parsed.data).length === 0) {
       // Heuristic: only flag missing frontmatter on files in section
-      // directories under jersey/<section>/<anything>.md other than
+      // directories under knowledge/jersey/<section>/<anything>.md other than
       // README.md, COVERAGE-AUDIT.md, etc. (top-level meta files).
       const isMeta = isMetaFile(rel);
       if (!isMeta) {

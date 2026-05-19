@@ -19,7 +19,7 @@ import {
 export type CorpusKind = "concept" | "index" | "meta" | "other";
 
 export interface CorpusRecord {
-  /** Repo-relative path, e.g. "jersey/trusts/article-47-set-aside.md". */
+  /** Repo-relative path, e.g. "knowledge/jersey/trusts/article-47-set-aside.md". */
   readonly path: string;
   /** Absolute filesystem path. */
   readonly abs: string;
@@ -36,18 +36,13 @@ export interface LoadOptions {
   readonly globs?: ReadonlyArray<string>;
 }
 
-// Jurisdiction directories at the repo root. Each is internally
-// self-contained and follows the same frontmatter convention. Adjacent
-// jurisdictions (cayman/, bvi/, etc.) are thinner than jersey/ but
-// they're real content — show-trusts-comparison style questions need
-// findByTag and getFile to reach them.
+// Per the May-2026 restructure, all corpus content lives under
+// knowledge/<jurisdiction>/. Plus the cross-jurisdictional synthesis
+// surface (knowledge/CROSS-JURISDICTIONAL-MAP.md) and the
+// cross-jurisdictional frontier (knowledge/frontier/) at knowledge/'s
+// top level. One glob covers everything jurisdiction-agnostically.
 const DEFAULT_GLOBS = [
-  "jersey/**/*.md",
-  "cayman/**/*.md",
-  "bvi/**/*.md",
-  "guernsey/**/*.md",
-  "bermuda/**/*.md",
-  "isle-of-man/**/*.md",
+  "knowledge/**/*.md",
 ];
 
 const META_BASENAMES = new Set(["README.md", "COVERAGE-AUDIT.md"]);

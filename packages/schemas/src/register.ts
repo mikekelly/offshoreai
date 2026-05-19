@@ -58,7 +58,7 @@ ambiguous.
 
 Relationships: pairs with register.lookupJfscPermission when the
 question is "does this entity hold a regulated permission". Pairs
-with corpus.getFile on jersey/companies/ for the legal framework
+with corpus.getFile on knowledge/jersey/companies/ for the legal framework
 governing whatever the registry surfaces. Pairs with
 primarySource.fetch on the JFSC registry URL when the user wants
 the live HTML evidence rather than the cached scrape.
@@ -112,7 +112,7 @@ status under Article 115 ITL — that is a separate Revenue Jersey
 determination; cite the corpus's tax/charities files for the
 interaction rules.
 
-Relationships: pairs with corpus.getFile on jersey/charities/ for
+Relationships: pairs with corpus.getFile on knowledge/jersey/charities/ for
 the regulatory framework. Pairs with primarySource.fetch on the
 Charity Commissioner's register URL for the live HTML.
 
@@ -170,12 +170,12 @@ fit-and-proper test is JFSC-internal; the public register only
 shows that someone passed it as of a date, not the underlying
 data. Do NOT use it to enumerate the full population of TCB
 licensees — the register UI does not support bulk export; the
-corpus file jersey/financial-regulation/jfsc.md covers the
+corpus file knowledge/jersey/financial-regulation/jfsc.md covers the
 population-level summary.
 
 Relationships: pairs with register.lookupCompany when you want
 both the corporate and the regulatory picture for the same entity.
-Pairs with corpus.getFile on jersey/financial-regulation/ for the
+Pairs with corpus.getFile on knowledge/jersey/financial-regulation/ for the
 legal framework. Pairs with primarySource.fetch on the JFSC
 register page for live evidence.
 

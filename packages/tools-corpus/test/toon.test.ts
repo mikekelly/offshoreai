@@ -13,15 +13,15 @@ describe("toon renderer", () => {
         "files",
         ["path", "status", "tags"] as const,
         [
-          { path: "jersey/trusts/firewall.md", status: "stable", tags: ["firewall", "trusts-law-1984"] },
-          { path: "jersey/trusts/article-9.md", status: "stable", tags: ["firewall"] },
+          { path: "knowledge/jersey/trusts/firewall.md", status: "stable", tags: ["firewall", "trusts-law-1984"] },
+          { path: "knowledge/jersey/trusts/article-9.md", status: "stable", tags: ["firewall"] },
         ],
       ),
     ]);
     expect(out).toBe(
       "files[2]{path,status,tags}:\n" +
-      "  jersey/trusts/firewall.md,stable,firewall|trusts-law-1984\n" +
-      "  jersey/trusts/article-9.md,stable,firewall",
+      "  knowledge/jersey/trusts/firewall.md,stable,firewall|trusts-law-1984\n" +
+      "  knowledge/jersey/trusts/article-9.md,stable,firewall",
     );
   });
 

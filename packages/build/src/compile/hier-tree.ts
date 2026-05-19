@@ -67,10 +67,11 @@ export async function compileHierTree(opts: CompileHierTreeOptions): Promise<Hie
   const records = await loadCorpus({ repoRoot: opts.repoRoot });
   const asOf = opts.asOf ?? new Date();
 
-  // Group records by their containing directory. The tree's root is
-  // the jurisdiction (e.g. jersey/); each subdirectory is a section.
-  // Within a section, index.md is the section node and other .md files
-  // are its children.
+  // Group records by their containing directory. The tree's roots are
+  // the jurisdiction directories (knowledge/jersey/, knowledge/cayman/, ...);
+  // each subdirectory under a jurisdiction is a section. Within a
+  // section, index.md is the section node and other .md files are
+  // its children.
   const recordsByDir = new Map<string, CorpusRecord[]>();
   for (const rec of records) {
     const dir = posix.dirname(rec.path);
@@ -80,12 +81,20 @@ export async function compileHierTree(opts: CompileHierTreeOptions): Promise<Hie
 
   // Build a directory tree first, then flatten into nodes.
   const allDirs = Array.from(recordsByDir.keys()).sort();
-  // Heuristic: the corpus has jurisdiction directories at the top
-  // (jersey/, future bvi/, etc). Use them as roots.
+  // Heuristic: post-May-2026 restructure, corpus content lives under
+  // knowledge/<jurisdiction>/. Pre-restructure layout (used by tests
+  // with fixture corpora) put <jurisdiction>/ at the top level. Detect
+  // both: if a dir starts with "knowledge/", the jurisdiction is the
+  // second segment; otherwise it's the first.
   const jurisdictionDirs = new Set<string>();
   for (const dir of allDirs) {
     const parts = dir.split(posix.sep);
-    if (parts.length >= 1 && parts[0]) jurisdictionDirs.add(parts[0]);
+    if (parts.length === 0 || !parts[0]) continue;
+    if (parts[0] === "knowledge") {
+      if (parts.length >= 2 && parts[1]) jurisdictionDirs.add(`knowledge/${parts[1]}`);
+    } else {
+      jurisdictionDirs.add(parts[0]);
+    }
   }
 
   const stats = {

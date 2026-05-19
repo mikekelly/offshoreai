@@ -103,9 +103,9 @@ tags:
 async function makeCtx() {
   const root = await makeFixtureRepo({
     "TAGS.md": TAGS_MD,
-    "jersey/trusts/firewall.md": FIREWALL,
-    "jersey/trusts/article-47-mistake.md": MISTAKE,
-    "jersey/trusts/stub.md": STUB,
+    "knowledge/jersey/trusts/firewall.md": FIREWALL,
+    "knowledge/jersey/trusts/article-47-mistake.md": MISTAKE,
+    "knowledge/jersey/trusts/stub.md": STUB,
   });
   return buildCorpusContext({ repoRoot: root });
 }
@@ -114,10 +114,10 @@ describe("getFile", () => {
   it("returns body + frontmatter projection", async () => {
     const ctx = await makeCtx();
     const t = makeGetFileTool(ctx);
-    const result = await t.handler({ path: "jersey/trusts/firewall.md", full: false, fields: undefined }, {});
+    const result = await t.handler({ path: "knowledge/jersey/trusts/firewall.md", full: false, fields: undefined }, {});
     expect(result.isError).toBeFalsy();
     const text = result.content[0].text;
-    expect(text).toContain("path: jersey/trusts/firewall.md");
+    expect(text).toContain("path: knowledge/jersey/trusts/firewall.md");
     expect(text).toContain("status: stable");
     expect(text).toContain("Firewall body");
   });
@@ -125,7 +125,7 @@ describe("getFile", () => {
   it("refuses on stub", async () => {
     const ctx = await makeCtx();
     const t = makeGetFileTool(ctx);
-    const result = await t.handler({ path: "jersey/trusts/stub.md", full: false, fields: undefined }, {});
+    const result = await t.handler({ path: "knowledge/jersey/trusts/stub.md", full: false, fields: undefined }, {});
     expect(result.isError).toBe(true);
     expect(result.content[0].text).toContain("error_kind: stub_file");
   });
@@ -133,7 +133,7 @@ describe("getFile", () => {
   it("errors on missing path", async () => {
     const ctx = await makeCtx();
     const t = makeGetFileTool(ctx);
-    const result = await t.handler({ path: "jersey/nope.md", full: false, fields: undefined }, {});
+    const result = await t.handler({ path: "knowledge/jersey/nope.md", full: false, fields: undefined }, {});
     expect(result.isError).toBe(true);
     expect(result.content[0].text).toContain("error_kind: missing_file");
   });
@@ -145,7 +145,7 @@ describe("getArticle", () => {
     const t = makeGetArticleTool(ctx);
     const result = await t.handler({ statute: "trusts-law-1984", article: "47A" }, {});
     expect(result.isError).toBeFalsy();
-    expect(result.content[0].text).toContain("canonical_path: jersey/trusts/article-47-mistake.md");
+    expect(result.content[0].text).toContain("canonical_path: knowledge/jersey/trusts/article-47-mistake.md");
     expect(result.content[0].text).toContain("covers_articles: 47|47A");
   });
 
@@ -162,18 +162,18 @@ describe("findByTag did-you-mean", () => {
   it("suggests the closest valid tag when input is a near-miss", async () => {
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/firewall.md": FIREWALL,
-      "jersey/trusts/article-47-mistake.md": MISTAKE,
-      "jersey/trusts/stub.md": STUB,
+      "knowledge/jersey/trusts/firewall.md": FIREWALL,
+      "knowledge/jersey/trusts/article-47-mistake.md": MISTAKE,
+      "knowledge/jersey/trusts/stub.md": STUB,
     });
     // We need a tag-index for the suggestion path — write one synthesised
     // from the fixture and pass it through buildCorpusContext.
     const tagIndex = {
       schemaVersion: "tag_index_v1",
       tagToFiles: {
-        "firewall": ["jersey/trusts/firewall.md"],
-        "setting-aside": ["jersey/trusts/article-47-mistake.md"],
-        "mistake": ["jersey/trusts/article-47-mistake.md"],
+        "firewall": ["knowledge/jersey/trusts/firewall.md"],
+        "setting-aside": ["knowledge/jersey/trusts/article-47-mistake.md"],
+        "mistake": ["knowledge/jersey/trusts/article-47-mistake.md"],
       },
       coOccurrence: {},
       stats: { uniqueTags: 3, totalTagApplications: 3, filesIndexed: 3 },
@@ -197,8 +197,8 @@ describe("findByTag", () => {
     const t = makeFindByTagTool(ctx);
     const result = await t.handler({ tags: ["mistake", "concept-file"], mode: "and", section: undefined, status: undefined, limit: 20 }, {});
     expect(result.isError).toBeFalsy();
-    expect(result.content[0].text).toContain("jersey/trusts/article-47-mistake.md");
-    expect(result.content[0].text).toContain("jersey/trusts/stub.md"); // stub still in findByTag — it's getFile that refuses on stub
+    expect(result.content[0].text).toContain("knowledge/jersey/trusts/article-47-mistake.md");
+    expect(result.content[0].text).toContain("knowledge/jersey/trusts/stub.md"); // stub still in findByTag — it's getFile that refuses on stub
   });
 
   it("OR-unions when mode=or", async () => {
@@ -206,7 +206,7 @@ describe("findByTag", () => {
     const t = makeFindByTagTool(ctx);
     const result = await t.handler({ tags: ["firewall"], mode: "or", section: undefined, status: undefined, limit: 20 }, {});
     expect(result.isError).toBeFalsy();
-    expect(result.content[0].text).toContain("jersey/trusts/firewall.md");
+    expect(result.content[0].text).toContain("knowledge/jersey/trusts/firewall.md");
   });
 
   it("filters by status", async () => {
@@ -214,7 +214,7 @@ describe("findByTag", () => {
     const t = makeFindByTagTool(ctx);
     const result = await t.handler({ tags: ["trusts"], mode: "and", section: undefined, status: ["stable"], limit: 20 }, {});
     expect(result.isError).toBeFalsy();
-    expect(result.content[0].text).not.toContain("jersey/trusts/stub.md");
+    expect(result.content[0].text).not.toContain("knowledge/jersey/trusts/stub.md");
   });
 
   it("returns definitive empty state on zero matches", async () => {
@@ -232,7 +232,7 @@ describe("freshnessCheck", () => {
     const ctx = await makeCtx();
     const t = makeFreshnessCheckTool(ctx);
     const result = await t.handler({
-      paths: ["jersey/trusts/firewall.md", "jersey/trusts/article-47-mistake.md"],
+      paths: ["knowledge/jersey/trusts/firewall.md", "knowledge/jersey/trusts/article-47-mistake.md"],
       warnDays: 180,
       staleDays: 365,
     }, {});
@@ -248,7 +248,7 @@ describe("freshnessCheck", () => {
   it("reports missing paths", async () => {
     const ctx = await makeCtx();
     const t = makeFreshnessCheckTool(ctx);
-    const result = await t.handler({ paths: ["jersey/nope.md"], warnDays: 180, staleDays: 365 }, {});
+    const result = await t.handler({ paths: ["knowledge/jersey/nope.md"], warnDays: 180, staleDays: 365 }, {});
     expect(result.isError).toBeFalsy();
     expect(result.content[0].text).toContain("missing");
   });

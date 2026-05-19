@@ -28,7 +28,7 @@ import {
 // ===========================================================================
 
 export const getFileInput = z.object({
-  path: filePath.describe("Repo-relative markdown path, e.g. jersey/trusts/article-47-set-aside.md."),
+  path: filePath.describe("Repo-relative markdown path, e.g. knowledge/jersey/trusts/article-47-set-aside.md."),
   full: z.boolean().default(false).describe("If true, return the entire file; default returns the first ~120 lines with a truncation hint."),
   fields: z.array(z.enum(["title", "tags", "sources", "articlesCovered", "seeAlso"])).optional()
     .describe("Opt-in extra frontmatter fields. Defaults to a minimal projection: path, status, lastVerified, tags."),
@@ -358,7 +358,7 @@ definitive next-read.
 // ===========================================================================
 
 export const treeInput = z.object({
-  section: z.string().optional().describe("Subtree root; omit for the whole jurisdiction tree. Accepts 'jersey/trusts' style paths."),
+  section: z.string().optional().describe("Subtree root; omit for the whole jurisdiction tree. Accepts 'knowledge/jersey/trusts' style paths."),
   depth: z.number().int().min(1).max(5).default(2).describe("How many levels to descend."),
   includeSummaries: z.boolean().default(true).describe("Include the auto-generated 1-3 sentence summary per node."),
 });

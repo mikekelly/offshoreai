@@ -78,7 +78,7 @@ runtime in-tree as a pnpm workspace. The planned layout:
 ```
 offshoreai/
 ├── README.md, AGENTS.md, CLAUDE.md, CONVENTIONS.md, TAGS.md, …  ← unchanged
-├── jersey/                                                       ← corpus, unchanged
+├── knowledge/jersey/                                                       ← corpus, unchanged
 ├── schemas/                                                      ← Zod tool schemas (spec)
 ├── bundles/                                                      ← compiled retrieval contracts
 ├── prompts/sub-agents/                                           ← sub-agent system prompts

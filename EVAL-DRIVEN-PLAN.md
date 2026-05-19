@@ -18,7 +18,7 @@ next week.
 
 - **`evals/coverage-questions.yaml`** — 17 questions across personas. v3-postfill: 14 PASS / 3 FAIL. Coverage bar: "can the corpus answer this?".
 - **`evals/showcase.yaml`** — 14 landing-page-bar questions. 13 PASS / 1 PARTIAL. Showcase bar: substance + Jersey-specificity + voice + citation density + tightness.
-- **Runner methodology** — fresh `Explore` subagents per question, read-only sandbox on `jersey/`. Documented in `evals/README.md`.
+- **Runner methodology** — fresh `Explore` subagents per question, read-only sandbox on `knowledge/jersey/`. Documented in `evals/README.md`.
 - **Grader** — currently the orchestrator agent doing *introspective* grading. The `evals/README.md` itself flags this as circular.
 - **Trajectory** — not captured. We see pass/fail but not tool-call sequence, turn count, or token budget per question.
 
@@ -47,7 +47,7 @@ The introspective grader and missing trajectory mean any score delta we measure 
 
 Once Phase 0 lands, re-run the existing eval suites under the hardened grader. Establish two preliminary controls:
 
-- **`explore-subagent`** — the current runner (Claude Code Agent tool, Read/Glob/Grep/Bash, sandboxed to `jersey/`). The legacy baseline.
+- **`explore-subagent`** — the current runner (Claude Code Agent tool, Read/Glob/Grep/Bash, sandboxed to `knowledge/jersey/`). The legacy baseline.
 - **`claude-p`** — `claude -p` invoked via Bash, same prompt, same corpus. The "vanilla harness, no typed tools" baseline.
 
 These two baselines bracket "what the corpus alone produces with general-purpose retrieval." Anything we build on top has to beat them — and the delta is the marginal value of our customisations.

@@ -25,7 +25,7 @@ const DEFAULT_LINE_BUDGET = 120;
 // constraints. Using `.shape` on the existing schema would couple
 // us tightly; the input surface is small enough to repeat.
 const inputShape = {
-  path: z.string().describe("Repo-relative markdown path, e.g. jersey/trusts/article-47-set-aside.md."),
+  path: z.string().describe("Repo-relative markdown path, e.g. knowledge/jersey/trusts/article-47-set-aside.md."),
   full: z.boolean().default(false).describe("If true, return the entire file; default returns the first ~120 lines with a truncation hint."),
   fields: z.array(z.enum(["title", "tags", "sources", "articlesCovered", "seeAlso"])).optional().describe("Opt-in extra frontmatter fields. Default projection: path, status, lastVerified, tags."),
 };

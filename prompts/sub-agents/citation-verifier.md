@@ -49,7 +49,7 @@ it shipped and what it had to ship it with.
 
 1. **Extract every substantive Jersey legal/regulatory/tax claim** from the draft response. A "substantive claim" is any assertion of: a statutory rule, a regulator position, a tax treatment, a procedural step before a Jersey court, a case-law holding, a numerical threshold, a deadline, a person/role's authority. Ignore: chit-chat ("happy to help"), generic disclaimers, scope-setting questions back to the user.
 
-2. **For each claim, identify the citation** the draft attaches to it. The citation must be either (a) a relative corpus path with optional anchor (e.g. `jersey/trusts/article-47-set-aside.md#mistake`), (b) a statute Article reference resolvable via `corpus.getArticle`, or (c) a primary-source URL the main agent fetched via `primarySource.fetch` (you'll see it in the tool-call log).
+2. **For each claim, identify the citation** the draft attaches to it. The citation must be either (a) a relative corpus path with optional anchor (e.g. `knowledge/jersey/trusts/article-47-set-aside.md#mistake`), (b) a statute Article reference resolvable via `corpus.getArticle`, or (c) a primary-source URL the main agent fetched via `primarySource.fetch` (you'll see it in the tool-call log).
 
 3. **Verify the claim against the cited source.** For path-based citations, use `corpus.getFile`; for Article citations, `corpus.getArticle`; for primary-source URLs, the body should already be in the tool-call log — confirm the quoted/paraphrased content appears there. Use `Grep` for verbatim-quotation claims.
 

@@ -9,7 +9,7 @@ import { z } from "zod";
 // Primitives
 // ---------------------------------------------------------------------------
 
-/** Relative corpus path, e.g. "jersey/trusts/article-47-set-aside.md". */
+/** Relative corpus path, e.g. "knowledge/jersey/trusts/article-47-set-aside.md". */
 export const filePath = z
   .string()
   .min(1)

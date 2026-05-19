@@ -66,8 +66,8 @@ describe("validateCorpus", () => {
   it("passes a well-formed concept file", async () => {
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/concept.md": VALID_FRONTMATTER,
-      "jersey/trusts/other.md": VALID_FRONTMATTER,
+      "knowledge/jersey/trusts/concept.md": VALID_FRONTMATTER,
+      "knowledge/jersey/trusts/other.md": VALID_FRONTMATTER,
     });
     const result = await validateCorpus({ repoRoot: root });
     expect(result.violations).toEqual([]);
@@ -79,7 +79,7 @@ describe("validateCorpus", () => {
     const file = VALID_FRONTMATTER.replace("  - firewall", "  - made-up-tag");
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/concept.md": file,
+      "knowledge/jersey/trusts/concept.md": file,
     });
     const result = await validateCorpus({ repoRoot: root, checkLinks: false });
     const kinds = result.violations.map((v) => v.kind);
@@ -89,7 +89,7 @@ describe("validateCorpus", () => {
   it("flags missing frontmatter on a non-meta file", async () => {
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/no-frontmatter.md": "# Just a heading, no frontmatter.\n",
+      "knowledge/jersey/trusts/no-frontmatter.md": "# Just a heading, no frontmatter.\n",
     });
     const result = await validateCorpus({ repoRoot: root, checkLinks: false });
     expect(result.violations[0]?.kind).toBe("missing_frontmatter");
@@ -98,7 +98,7 @@ describe("validateCorpus", () => {
   it("skips README.md as a meta file", async () => {
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/README.md": "# Jersey README — no frontmatter expected.\n",
+      "knowledge/jersey/README.md": "# Jersey README — no frontmatter expected.\n",
     });
     const result = await validateCorpus({ repoRoot: root, checkLinks: false });
     expect(result.violations).toEqual([]);
@@ -119,7 +119,7 @@ describe("validateCorpus", () => {
     );
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/concept.md": file,
+      "knowledge/jersey/trusts/concept.md": file,
     });
     const result = await validateCorpus({ repoRoot: root, checkLinks: false });
     expect(result.violations.some((v) => v.kind === "too_few_tags")).toBe(true);
@@ -128,7 +128,7 @@ describe("validateCorpus", () => {
   it("flags broken see_also", async () => {
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/concept.md": VALID_FRONTMATTER,
+      "knowledge/jersey/trusts/concept.md": VALID_FRONTMATTER,
       // no other.md created
     });
     const result = await validateCorpus({ repoRoot: root });

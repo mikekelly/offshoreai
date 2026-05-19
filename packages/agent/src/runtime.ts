@@ -13,7 +13,7 @@ import { buildTaxonomyBlock } from "./taxonomy-block.js";
 export interface RunQueryOptions {
   /** The user's question. */
   readonly question: string;
-  /** Repo root containing the jersey/ corpus. */
+  /** Repo root containing the knowledge/jersey/ corpus. */
   readonly repoRoot: string;
   /** Optional path (relative to repoRoot) to a pre-compiled tag-index.json. */
   readonly tagIndexPath?: string;

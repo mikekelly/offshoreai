@@ -45,7 +45,7 @@ Every Jersey legal, regulatory, or tax claim in your response must cite
 a corpus file. The citation has to be one of:
 
 1. **A relative corpus path with optional anchor**, e.g.
-   `jersey/trusts/article-47-set-aside.md#mistake`. The user clicks the
+   `knowledge/jersey/trusts/article-47-set-aside.md#mistake`. The user clicks the
    link and arrives at the file that supports your claim.
 2. **A statute Article reference** when the bundle declares a citation
    pattern using `(statute, article)` shape. The agent SDK resolves the

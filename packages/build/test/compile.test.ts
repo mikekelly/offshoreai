@@ -137,11 +137,11 @@ describe("compileTagIndex", () => {
   it("emits an inverted index and a co-occurrence matrix", async () => {
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/index.md": TRUSTS_INDEX,
-      "jersey/trusts/firewall.md": FIREWALL_FILE,
-      "jersey/trusts/article-47.md": MISTAKE_FILE,
-      "jersey/tax/index.md": TAX_INDEX,
-      "jersey/tax/zero-ten.md": ZERO_TEN,
+      "knowledge/jersey/trusts/index.md": TRUSTS_INDEX,
+      "knowledge/jersey/trusts/firewall.md": FIREWALL_FILE,
+      "knowledge/jersey/trusts/article-47.md": MISTAKE_FILE,
+      "knowledge/jersey/tax/index.md": TAX_INDEX,
+      "knowledge/jersey/tax/zero-ten.md": ZERO_TEN,
     });
     const index = await compileTagIndex({ repoRoot: root });
 
@@ -152,7 +152,7 @@ describe("compileTagIndex", () => {
     expect(index.tagToFiles["trusts"]?.length).toBe(3);
 
     // firewall tag only on firewall.md.
-    expect(index.tagToFiles["firewall"]).toEqual(["jersey/trusts/firewall.md"]);
+    expect(index.tagToFiles["firewall"]).toEqual(["knowledge/jersey/trusts/firewall.md"]);
 
     // Co-occurrence: trusts and trusts-law-1984 should co-occur on 2 files.
     expect(index.coOccurrence["trusts"]?.["trusts-law-1984"]).toBe(2);
@@ -167,19 +167,19 @@ describe("compileHierTree", () => {
   it("builds a tree with section indexes as parents of concept files", async () => {
     const root = await makeFixtureRepo({
       "TAGS.md": TAGS_MD,
-      "jersey/trusts/index.md": TRUSTS_INDEX,
-      "jersey/trusts/firewall.md": FIREWALL_FILE,
-      "jersey/trusts/article-47.md": MISTAKE_FILE,
-      "jersey/tax/index.md": TAX_INDEX,
-      "jersey/tax/zero-ten.md": ZERO_TEN,
+      "knowledge/jersey/trusts/index.md": TRUSTS_INDEX,
+      "knowledge/jersey/trusts/firewall.md": FIREWALL_FILE,
+      "knowledge/jersey/trusts/article-47.md": MISTAKE_FILE,
+      "knowledge/jersey/tax/index.md": TAX_INDEX,
+      "knowledge/jersey/tax/zero-ten.md": ZERO_TEN,
     });
     const tree = await compileHierTree({
       repoRoot: root,
       asOf: new Date("2026-05-18T00:00:00Z"),
     });
 
-    expect(tree.roots.length).toBe(1); // jersey
-    expect(tree.roots[0]?.path.startsWith("jersey")).toBe(true);
+    expect(tree.roots.length).toBe(1); // knowledge/jersey
+    expect(tree.roots[0]?.path.startsWith("knowledge/jersey")).toBe(true);
 
     const jersey = tree.roots[0]!;
     // Two section children: trusts and tax.
@@ -187,12 +187,12 @@ describe("compileHierTree", () => {
 
     const trusts = jersey.children.find((c) => c.path.includes("trusts"));
     expect(trusts).toBeDefined();
-    expect(trusts!.path).toBe("jersey/trusts/index.md");
+    expect(trusts!.path).toBe("knowledge/jersey/trusts/index.md");
     expect(trusts!.title).toBe("Trusts (section)");
     expect(trusts!.children.length).toBe(2); // firewall + article-47
     expect(trusts!.children.map((c) => c.path).sort()).toEqual([
-      "jersey/trusts/article-47.md",
-      "jersey/trusts/firewall.md",
+      "knowledge/jersey/trusts/article-47.md",
+      "knowledge/jersey/trusts/firewall.md",
     ]);
 
     // ageDays computed against asOf 2026-05-18; last_verified 2026-05-14 → 4 days.

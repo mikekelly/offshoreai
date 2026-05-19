@@ -58,7 +58,7 @@ the Article number and the canonical corpus file path:
 
 ```
 Under Article 47E of the Trusts (Jersey) Law 1984
-([article-47-set-aside.md](jersey/trusts/article-47-set-aside.md)),
+([article-47-set-aside.md](knowledge/jersey/trusts/article-47-set-aside.md)),
 the Court must be satisfied that the mistake was "but for" causative
 of the trust act.
 ```

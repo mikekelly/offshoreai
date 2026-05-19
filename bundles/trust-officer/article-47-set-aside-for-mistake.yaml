@@ -30,7 +30,7 @@ trigger_description: |
 # Files the agent must have in context for this task.
 # Every path must exist in the corpus; the build pipeline asserts this.
 required_files:
-  - path: jersey/trusts/article-47-set-aside.md
+  - path: knowledge/jersey/trusts/article-47-set-aside.md
     role: canonical-concept
     why: |
       The statute-wiki file covering Articles 47-47J. Holds the
@@ -41,7 +41,7 @@ required_files:
       and how the statutory regime relates to the pre-2013
       Hastings-Bass jurisdiction.
 
-  - path: jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md
+  - path: knowledge/jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md
     role: use-case-anchor
     why: |
       The trust-officer-shaped operator question this bundle exists
@@ -51,7 +51,7 @@ required_files:
       Royal Court counsel, what the Court's likely response will be
       on the facts).
 
-  - path: jersey/trusts/article-51-directions.md
+  - path: knowledge/jersey/trusts/article-51-directions.md
     role: procedural-context
     why: |
       Article 51 is the Royal Court's general directions jurisdiction
@@ -61,7 +61,7 @@ required_files:
       *how* the application is made, not just *whether* the doctrine
       supports it.
 
-  - path: jersey/trusts/articles-index.md
+  - path: knowledge/jersey/trusts/articles-index.md
     role: navigation-anchor
     why: |
       The article-by-article navigation index for Trusts Law 1984.
@@ -70,7 +70,7 @@ required_files:
       Comptroller) if the user's question expands beyond the core
       47-47J regime.
 
-  - path: jersey/trusts/trusts-law-1984.md
+  - path: knowledge/jersey/trusts/trusts-law-1984.md
     role: statute-overview
     why: |
       The overview file for the statute as a whole. Provides the
@@ -126,7 +126,7 @@ citation_pattern: |
   Every Jersey-law claim cites the statute Article AND the
   canonical corpus file. Format:
     "Under Article 47E of the Trusts (Jersey) Law 1984
-     ([article-47-set-aside.md](jersey/trusts/article-47-set-aside.md)),
+     ([article-47-set-aside.md](knowledge/jersey/trusts/article-47-set-aside.md)),
      the Court must be satisfied that the mistake was 'but for'
      causative of the trust act."
   If only a secondary source (Big-4, law-firm briefing) supports a

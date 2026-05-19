@@ -77,12 +77,12 @@ async function runOffshoreaiAgent(q: EvalQuestion, opts: HarnessOptions): Promis
 // claude-p — vanilla Claude Code CLI, no typed tools
 // ---------------------------------------------------------------------------
 
-const CLAUDE_P_PROMPT_TEMPLATE = (question: string) => `You are answering an eval question against the offshoreai Jersey corpus.
+const CLAUDE_P_PROMPT_TEMPLATE = (question: string) => `You are answering an eval question against the offshoreai corpus (Jersey-anchored, with adjacent jurisdictions under knowledge/<jurisdiction>/).
 
 Your tools are Read, Glob, Grep, Bash — read-only filesystem access only. You may not invoke any other agent.
 
 Constraints:
-- Use ONLY corpus files under jersey/. Do not draw on training-data knowledge of Jersey law.
+- Use ONLY corpus files under knowledge/. Do not draw on training-data knowledge of Jersey or other offshore law.
 - Cite every file you read inline using its repo-relative path.
 - If the corpus does not answer the question, say so explicitly: "the corpus does not answer this question" — do not confabulate.
 - Where last_verified > 180 days, surface that to the reader.

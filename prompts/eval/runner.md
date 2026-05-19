@@ -101,7 +101,7 @@ Agent(
     access. You may not invoke any other agent.
 
     Constraints:
-    - Use ONLY corpus files under jersey/. Do not draw on training-data
+    - Use ONLY corpus files under knowledge/jersey/. Do not draw on training-data
       knowledge of Jersey law.
     - Cite every file you read inline using its relative path.
     - If the corpus does not answer the question, say so explicitly:

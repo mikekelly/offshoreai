@@ -31,7 +31,7 @@ flags as circular.
 
 The runner dispatches each question to a named harness:
 
-- `explore-subagent` — the existing methodology (Claude Code's `Agent` tool with subagent_type=Explore, sandboxed to `jersey/`). The legacy baseline.
+- `explore-subagent` — the existing methodology (Claude Code's `Agent` tool with subagent_type=Explore, sandboxed to `knowledge/jersey/`). The legacy baseline.
 - `claude-p` — `claude -p "<prompt>"` invoked via Bash. The "vanilla Claude Code, no typed tools" baseline.
 - `offshoreai-agent` — our future agent runtime, once weeks 1-7 of [`../../IMPLEMENTATION-PLAN.md`](../../IMPLEMENTATION-PLAN.md) ship. The thing we're building.
 
