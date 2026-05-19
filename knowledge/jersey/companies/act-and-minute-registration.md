@@ -36,7 +36,7 @@ take effect.
 ## What Article 64 says
 
 Upon **court confirmation** under
-[Article 63](court-confirmation-order.md), the court's **Act
+[Article 63](./court-confirmation-order.md), the court's **Act
 (order)** and the **minute of reduction** must be **registered
 with the Registrar** for the reduction to take effect.
 
@@ -57,14 +57,14 @@ Both must be **delivered to the Registrar** together.
 
 The reduction takes effect on **registration**. As with the
 solvency-statement route (under
-[Article 61B](solvency-registration.md)), the **registration is
+[Article 61B](./solvency-registration.md)), the **registration is
 the operative step** — until then, the reduction is not
 effective even though the court has confirmed.
 
 ## Cross-reference
 
 The parallel registration provision for the solvency-statement
-route is [Article 61B](solvency-registration.md). Both routes
+route is [Article 61B](./solvency-registration.md). Both routes
 require registration as the trigger for effective reduction.
 
 ## Pitfalls

@@ -145,8 +145,8 @@ IoM civil procedure:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/legal-system/index.md`](../jersey/legal-system/index.md);
 - [`../jersey/legal-system/royal-court.md`](../jersey/legal-system/royal-court.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -160,10 +160,10 @@ For insurance groups:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`tax.md`](tax.md);
-- [`bma.md`](bma.md);
+- [`overview.md`](./overview.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`tax.md`](./tax.md);
+- [`bma.md`](./bma.md);
 - [`../jersey/index.md`](../jersey/index.md);
 - [`../cayman/jersey-comparison.md`](../cayman/jersey-comparison.md).

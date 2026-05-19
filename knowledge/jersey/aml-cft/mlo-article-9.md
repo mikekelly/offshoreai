@@ -105,7 +105,7 @@ This information:
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-10.md`](mlo-article-10.md);
-- [`mlo-article-12.md`](mlo-article-12.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-10.md`](./mlo-article-10.md);
+- [`mlo-article-12.md`](./mlo-article-12.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

@@ -149,7 +149,7 @@ But unlike a company:
 
 ## Cross-references
 
-- [`foundations-law-2009.md`](foundations-law-2009.md) — the
+- [`foundations-law-2009.md`](./foundations-law-2009.md) — the
   parent statute overview.
-- [`qualified-member.md`](qualified-member.md) — the mandatory
+- [`qualified-member.md`](./qualified-member.md) — the mandatory
   JFSC-regulated council member.

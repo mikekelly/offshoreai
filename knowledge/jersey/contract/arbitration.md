@@ -153,9 +153,9 @@ Jersey-seated arbitrations commonly use:
 
 ## Cross-references
 
-- [`jurisdiction-clauses.md`](jurisdiction-clauses.md);
-- [`choice-of-law.md`](choice-of-law.md);
+- [`jurisdiction-clauses.md`](./jurisdiction-clauses.md);
+- [`choice-of-law.md`](./choice-of-law.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../trusts/article-51-directions.md`](../trusts/article-51-directions.md);
 - [`../use-cases/royal-court-litigator/index.md`](../use-cases/royal-court-litigator/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

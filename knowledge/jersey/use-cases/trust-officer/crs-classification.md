@@ -178,4 +178,4 @@ For each trust:
 ## Cross-references
 
 - [`../../international/crs.md`](../../international/crs.md)
-- [`fatca-classification.md`](fatca-classification.md)
+- [`fatca-classification.md`](./fatca-classification.md)

@@ -81,7 +81,7 @@ For the Rossi family:
   governance precision of a Council-driven entity.
 
 For this scenario, the **discretionary trust** is
-chosen. See [`trust-or-foundation.md`](trust-or-foundation.md)
+chosen. See [`trust-or-foundation.md`](./trust-or-foundation.md)
 for the decision framework.
 
 ### Step 2 — Set up the Jersey discretionary trust
@@ -162,7 +162,7 @@ replace the professional trustee:
 For the Rossi family, a PTC may be added once the
 structure matures and family-governance is the priority.
 
-See [`when-ptc.md`](when-ptc.md).
+See [`when-ptc.md`](./when-ptc.md).
 
 ### Step 5 — Italian forced-heirship overlay
 
@@ -316,12 +316,12 @@ On Mr Rossi's death:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`trust-or-foundation.md`](trust-or-foundation.md);
-- [`when-ptc.md`](when-ptc.md);
-- [`cross-offshore-wealth-structure.md`](cross-offshore-wealth-structure.md);
-- [`crs-fatca-family.md`](crs-fatca-family.md);
-- [`forced-heirship-jurisdictions.md`](forced-heirship-jurisdictions.md);
+- [`index.md`](./index.md);
+- [`trust-or-foundation.md`](./trust-or-foundation.md);
+- [`when-ptc.md`](./when-ptc.md);
+- [`cross-offshore-wealth-structure.md`](./cross-offshore-wealth-structure.md);
+- [`crs-fatca-family.md`](./crs-fatca-family.md);
+- [`forced-heirship-jurisdictions.md`](./forced-heirship-jurisdictions.md);
 - [`../../trusts/firewall.md`](../../trusts/firewall.md);
 - [`../../trusts/reserved-powers.md`](../../trusts/reserved-powers.md);
 - [`../../trusts/article-47-set-aside.md`](../../trusts/article-47-set-aside.md);

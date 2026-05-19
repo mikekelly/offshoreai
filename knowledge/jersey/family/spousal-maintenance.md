@@ -103,8 +103,8 @@ maintenance** pending substantive resolution:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
-- [`ancillary-relief.md`](ancillary-relief.md);
-- [`divorce-procedure.md`](divorce-procedure.md);
+- [`index.md`](./index.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
+- [`ancillary-relief.md`](./ancillary-relief.md);
+- [`divorce-procedure.md`](./divorce-procedure.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

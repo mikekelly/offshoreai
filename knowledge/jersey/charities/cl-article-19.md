@@ -91,7 +91,7 @@ For charity trustees:
 
 ## Cross-references
 
-- [`cl-part-3-commissioner.md`](cl-part-3-commissioner.md);
-- [`cl-article-7.md`](cl-article-7.md);
-- [`cl-article-13.md`](cl-article-13.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-part-3-commissioner.md`](./cl-part-3-commissioner.md);
+- [`cl-article-7.md`](./cl-article-7.md);
+- [`cl-article-13.md`](./cl-article-13.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

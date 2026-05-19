@@ -88,7 +88,7 @@ It includes:
 - **Removing hedges or trees** in some contexts;
 - **Advertisements**.
 
-See [`development-defined.md`](development-defined.md).
+See [`development-defined.md`](./development-defined.md).
 
 ### Permitted development
 
@@ -108,7 +108,7 @@ The exemptions have **conditions** — even a permitted
 development can require permission if a condition is
 exceeded (e.g. height, distance from boundary).
 
-See [`permitted-development.md`](permitted-development.md).
+See [`permitted-development.md`](./permitted-development.md).
 
 ### Material change of use
 
@@ -137,7 +137,7 @@ Listed buildings require **listed building consent** for
 alterations affecting the special character, in addition
 to ordinary planning permission.
 
-See [`listed-buildings.md`](listed-buildings.md).
+See [`listed-buildings.md`](./listed-buildings.md).
 
 ### Conservation areas
 
@@ -149,7 +149,7 @@ be designated as **conservation areas**:
 - Trees in conservation areas have special protection;
 - Demolition typically requires consent.
 
-See [`conservation-areas.md`](conservation-areas.md).
+See [`conservation-areas.md`](./conservation-areas.md).
 
 ## Decision-making hierarchy
 
@@ -166,7 +166,7 @@ architectural impact, providing non-binding advice.
 ## Application process
 
 Typical sequence (covered in detail in
-[`application-process.md`](application-process.md)):
+[`application-process.md`](./application-process.md)):
 
 1. **Pre-application advice** — free drop-in or paid pre-app;
 2. **Application submitted** with fee, drawings, supporting
@@ -203,7 +203,7 @@ serious cases. **Retrospective applications** are possible
 but not guaranteed to succeed; building first and asking
 permission later is risky.
 
-See [`enforcement.md`](enforcement.md).
+See [`enforcement.md`](./enforcement.md).
 
 ## Appeals
 
@@ -214,7 +214,7 @@ From a Department / Committee / Minister decision:
 - **Royal Court** — judicial review on points of law;
 - **Strict time limits** apply.
 
-See [`appeals.md`](appeals.md).
+See [`appeals.md`](./appeals.md).
 
 ## Recent reforms
 
@@ -225,15 +225,15 @@ direction.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`development-defined.md`](development-defined.md);
-- [`permitted-development.md`](permitted-development.md);
-- [`application-process.md`](application-process.md);
-- [`island-plan.md`](island-plan.md);
-- [`building-bye-laws.md`](building-bye-laws.md);
-- [`listed-buildings.md`](listed-buildings.md);
-- [`conservation-areas.md`](conservation-areas.md);
-- [`enforcement.md`](enforcement.md);
-- [`appeals.md`](appeals.md);
+- [`index.md`](./index.md);
+- [`development-defined.md`](./development-defined.md);
+- [`permitted-development.md`](./permitted-development.md);
+- [`application-process.md`](./application-process.md);
+- [`island-plan.md`](./island-plan.md);
+- [`building-bye-laws.md`](./building-bye-laws.md);
+- [`listed-buildings.md`](./listed-buildings.md);
+- [`conservation-areas.md`](./conservation-areas.md);
+- [`enforcement.md`](./enforcement.md);
+- [`appeals.md`](./appeals.md);
 - [`../property/index.md`](../property/index.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

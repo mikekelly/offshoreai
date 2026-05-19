@@ -106,7 +106,7 @@ The JFSC cooperates with:
 
 ## Cross-references
 
-- [`bbl-article-10.md`](bbl-article-10.md);
-- [`bbl-part-4-prudential.md`](bbl-part-4-prudential.md);
-- [`bbl-part-6-enforcement.md`](bbl-part-6-enforcement.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-10.md`](./bbl-article-10.md);
+- [`bbl-part-4-prudential.md`](./bbl-part-4-prudential.md);
+- [`bbl-part-6-enforcement.md`](./bbl-part-6-enforcement.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

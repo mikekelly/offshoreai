@@ -138,9 +138,9 @@ Guernsey statutes are available at:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/legal-system/index.md`](../jersey/legal-system/index.md);
 - [`../jersey/legal-system/customary-law.md`](../jersey/legal-system/customary-law.md);
 - [`../jersey/legal-system/normandy-and-jersey-law.md`](../jersey/legal-system/normandy-and-jersey-law.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

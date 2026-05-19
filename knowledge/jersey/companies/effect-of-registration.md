@@ -60,7 +60,7 @@ The company on incorporation:
   under Article 3H);
 - has the **powers of a natural person** acting as beneficial
   owner of the company's assets (under
-  [Article 18](corporate-capacity.md) *(planned)*);
+  [Article 18](./corporate-capacity.md) *(planned)*);
 - can act through agents (directors, secretary, officers).
 
 ## "Conclusive evidence"
@@ -94,7 +94,7 @@ it is the proof that the company exists.
 ## Subsequent name changes
 
 The certificate of incorporation contains the **original name**.
-On a later name change under [Article 14](change-of-name.md)
+On a later name change under [Article 14](./change-of-name.md)
 *(planned)*, a **new certificate** is issued reflecting the new
 name. The company is the same legal person; only the name has
 changed.
@@ -103,7 +103,7 @@ changed.
 
 - **Acting before incorporation**. Pre-incorporation contracts
   do not bind the not-yet-existent company; see
-  [`pre-incorporation-contracts.md`](pre-incorporation-contracts.md)
+  [`pre-incorporation-contracts.md`](./pre-incorporation-contracts.md)
   *(planned — Article 21)*. A person contracting "for the
   company" before incorporation may end up personally liable.
 - **Misreading the certificate date**. The incorporation date is

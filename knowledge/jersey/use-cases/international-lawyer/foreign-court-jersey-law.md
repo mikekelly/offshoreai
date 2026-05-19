@@ -195,6 +195,6 @@ For a foreign-court Jersey-law issue:
 
 ## Cross-references
 
-- [`expert-evidence-jersey.md`](expert-evidence-jersey.md)
-- [`article-9-firewall.md`](article-9-firewall.md)
-- [`article-47-mistake.md`](article-47-mistake.md)
+- [`expert-evidence-jersey.md`](./expert-evidence-jersey.md)
+- [`article-9-firewall.md`](./article-9-firewall.md)
+- [`article-47-mistake.md`](./article-47-mistake.md)

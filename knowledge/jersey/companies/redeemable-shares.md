@@ -88,7 +88,7 @@ Where redemption would otherwise reduce paid-up capital below
 historical levels, the **Part 12 reduction-of-capital
 procedure** (with Article 61A solvency statement) may also be
 relevant — but
-[Article 58C](not-a-reduction.md) generally provides that Part 11
+[Article 58C](./not-a-reduction.md) generally provides that Part 11
 redemptions are **not treated as reductions of capital**.
 
 ## Treasury treatment
@@ -97,7 +97,7 @@ Once redeemed, the company may either:
 
 - **Cancel** the shares (the historical default);
 - **Hold them as treasury shares** under
-  [Article 58A](treasury-shares.md) (the modern alternative).
+  [Article 58A](./treasury-shares.md) (the modern alternative).
 
 ## Pitfalls
 

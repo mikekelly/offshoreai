@@ -60,7 +60,7 @@ regime), additional restrictions apply:
 ## The special-resolution gate
 
 A **special resolution** under
-[Article 90](special-resolution.md) *(planned)* of the Companies
+[Article 90](./special-resolution.md) *(planned)* of the Companies
 Law is the threshold: typically requires:
 
 - the **majority specified in the deed** (the Companies Law
@@ -108,7 +108,7 @@ needs:
 - **Court approval**.
 
 For post-1991 companies, alteration of class rights is governed by
-[Article 52 (variation of class rights)](variation-of-class-rights.md)
+[Article 52 (variation of class rights)](./variation-of-class-rights.md)
 *(planned)* — which has its own mechanism (typically a class
 meeting and class-special-resolution).
 
@@ -133,7 +133,7 @@ A typical alteration of articles:
    circulation) per the deed.
 3. **Special resolution** passed.
 4. **Filed copy** of the resolution delivered to the Registrar
-   under [Article 100](filing-of-resolutions.md) *(planned)*.
+   under [Article 100](./filing-of-resolutions.md) *(planned)*.
 5. **Updated articles** become the company's constitution from
    the resolution date (or such later date as the resolution
    provides).

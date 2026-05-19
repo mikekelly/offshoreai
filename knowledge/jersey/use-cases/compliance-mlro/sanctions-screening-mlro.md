@@ -193,4 +193,4 @@ For an active match:
 
 - [`../../aml-cft/sanctions.md`](../../aml-cft/sanctions.md)
 - [`../trust-officer/sanctions-screening.md`](../trust-officer/sanctions-screening.md)
-- [`sanctions-match-handling.md`](sanctions-match-handling.md)
+- [`sanctions-match-handling.md`](./sanctions-match-handling.md)

@@ -172,6 +172,6 @@ supervisory authority:
 
 ## Cross-references
 
-- [`dpl-articles-index.md`](dpl-articles-index.md);
-- [`index.md`](index.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md);
+- [`index.md`](./index.md);
 - [`../international/exchange-of-information.md`](../international/exchange-of-information.md).

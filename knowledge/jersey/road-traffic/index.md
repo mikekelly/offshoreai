@@ -56,33 +56,33 @@ and the corpus had no coverage at all.
 
 ### The statute and enforcement infrastructure
 
-- [`road-traffic-law-1956.md`](road-traffic-law-1956.md) — RTJL 1956 overview
-- [`honorary-police.md`](honorary-police.md) — Connétables, Centeniers, Vingteniers
-- [`parish-hall-enquiries.md`](parish-hall-enquiries.md) — the distinctive Jersey forum
-- [`court-procedure.md`](court-procedure.md) — Centenier → Parish Hall → Magistrate's Court → Royal Court
+- [`road-traffic-law-1956.md`](./road-traffic-law-1956.md) — RTJL 1956 overview
+- [`honorary-police.md`](./honorary-police.md) — Connétables, Centeniers, Vingteniers
+- [`parish-hall-enquiries.md`](./parish-hall-enquiries.md) — the distinctive Jersey forum
+- [`court-procedure.md`](./court-procedure.md) — Centenier → Parish Hall → Magistrate's Court → Royal Court
 
 ### Common offences
 
-- [`speeding.md`](speeding.md) — speed limits, fine bands, disqualification thresholds
-- [`drink-driving.md`](drink-driving.md) — 80mg / 100ml limit; breath test procedure
-- [`drug-driving.md`](drug-driving.md) — current gap; 2026 reform pending
-- [`careless-and-dangerous-driving.md`](careless-and-dangerous-driving.md) — the distinction
-- [`driving-without-insurance.md`](driving-without-insurance.md)
-- [`driving-while-disqualified.md`](driving-while-disqualified.md)
-- [`failing-to-stop-or-report.md`](failing-to-stop-or-report.md)
-- [`mobile-phone-while-driving.md`](mobile-phone-while-driving.md)
+- [`speeding.md`](./speeding.md) — speed limits, fine bands, disqualification thresholds
+- [`drink-driving.md`](./drink-driving.md) — 80mg / 100ml limit; breath test procedure
+- [`drug-driving.md`](./drug-driving.md) — current gap; 2026 reform pending
+- [`careless-and-dangerous-driving.md`](./careless-and-dangerous-driving.md) — the distinction
+- [`driving-without-insurance.md`](./driving-without-insurance.md)
+- [`driving-while-disqualified.md`](./driving-while-disqualified.md)
+- [`failing-to-stop-or-report.md`](./failing-to-stop-or-report.md)
+- [`mobile-phone-while-driving.md`](./mobile-phone-while-driving.md)
 
 ### Licensing and registration
 
-- [`driving-licences.md`](driving-licences.md) — including foreign-licence exchange
-- [`vehicle-registration.md`](vehicle-registration.md)
-- [`third-party-insurance.md`](third-party-insurance.md) — Motor Traffic (TPI) Law 1948
+- [`driving-licences.md`](./driving-licences.md) — including foreign-licence exchange
+- [`vehicle-registration.md`](./vehicle-registration.md)
+- [`third-party-insurance.md`](./third-party-insurance.md) — Motor Traffic (TPI) Law 1948
 
 ### Sanctions and procedure
 
-- [`disqualification.md`](disqualification.md) — grounds and durations
-- [`fines-and-endorsement.md`](fines-and-endorsement.md) — Jersey's endorsement system
-- [`appeals.md`](appeals.md) — Magistrate's → Royal Court
+- [`disqualification.md`](./disqualification.md) — grounds and durations
+- [`fines-and-endorsement.md`](./fines-and-endorsement.md) — Jersey's endorsement system
+- [`appeals.md`](./appeals.md) — Magistrate's → Royal Court
 
 ## At-a-glance — what every Jersey driver should know
 

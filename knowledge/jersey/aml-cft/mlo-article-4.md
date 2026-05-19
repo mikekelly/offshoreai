@@ -117,9 +117,9 @@ The JFSC will:
 
 ## Cross-references
 
-- [`mlo-article-3.md`](mlo-article-3.md) — risk assessment
+- [`mlo-article-3.md`](./mlo-article-3.md) — risk assessment
   driving controls;
-- [`aml-cft-handbook.md`](aml-cft-handbook.md) — JFSC
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md) — JFSC
   expectations;
 - [`../use-cases/compliance-mlro/training-programme.md`](../use-cases/compliance-mlro/training-programme.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

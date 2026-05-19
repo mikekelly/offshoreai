@@ -54,12 +54,12 @@ catch:
 A Jersey trust created before 1984 is **brought within** the modern
 statutory framework on commencement of the Law, subject to:
 
-- **savings provisions** in [Article 59](savings.md) preserving
+- **savings provisions** in [Article 59](./savings.md) preserving
   pre-existing rights and powers;
 - **specific transitional rules** in subsequent amending Laws —
   notably the perpetuity-abolition transition for trusts created
   before / after the relevant 2006 date (see
-  [`duration.md`](duration.md));
+  [`duration.md`](./duration.md));
 - the **mistake regime** in Articles 47B–H, introduced by the 2013
   amendment, which applies prospectively from its commencement.
 

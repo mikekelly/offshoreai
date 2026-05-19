@@ -139,10 +139,10 @@ For large MNE groups (€750m+):
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — full regime.
-- [`itl-article-123a.md`](itl-article-123a.md) — 0% rate.
-- [`itl-article-123d.md`](itl-article-123d.md) — 20% rate
+- [`zero-ten.md`](./zero-ten.md) — full regime.
+- [`itl-article-123a.md`](./itl-article-123a.md) — 0% rate.
+- [`itl-article-123d.md`](./itl-article-123d.md) — 20% rate
   categories.
-- [`pillar-two.md`](pillar-two.md) — Pillar Two interaction.
+- [`pillar-two.md`](./pillar-two.md) — Pillar Two interaction.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

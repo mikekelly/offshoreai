@@ -106,10 +106,10 @@ Practical compliance involves **careful diary management** and
 For incoming **high-net-worth individuals**, Jersey offers a
 bespoke **High-Value Residency** regime under regulation 2(1)(e)
 of the Control of Housing and Work Law. The tax position is
-modified — see [`high-value-residency-tax.md`](high-value-residency-tax.md)
+modified — see [`high-value-residency-tax.md`](./high-value-residency-tax.md)
 (stub) for details.
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md) — what is
+- [`personal-income-tax.md`](./personal-income-tax.md) — what is
   taxed once residence is established.

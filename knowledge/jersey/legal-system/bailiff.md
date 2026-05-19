@@ -60,6 +60,6 @@ A practitioner appearing before the Royal Court typically faces:
 
 ## Cross-references
 
-- [`royal-court.md`](royal-court.md) — the court the Bailiff
+- [`royal-court.md`](./royal-court.md) — the court the Bailiff
   presides over.
-- [`jurats.md`](jurats.md) — the lay judges of fact.
+- [`jurats.md`](./jurats.md) — the lay judges of fact.

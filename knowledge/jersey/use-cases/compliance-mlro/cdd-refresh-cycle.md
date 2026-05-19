@@ -184,6 +184,6 @@ For an immediate refresh:
 
 ## Cross-references
 
-- [`customer-due-diligence.md`](customer-due-diligence.md)
-- [`edd-when-required.md`](edd-when-required.md)
-- [`bwra.md`](bwra.md)
+- [`customer-due-diligence.md`](./customer-due-diligence.md)
+- [`edd-when-required.md`](./edd-when-required.md)
+- [`bwra.md`](./bwra.md)

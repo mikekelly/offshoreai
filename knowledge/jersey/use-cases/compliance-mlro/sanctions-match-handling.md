@@ -216,5 +216,5 @@ For an active match:
 
 ## Cross-references
 
-- [`sanctions-screening-mlro.md`](sanctions-screening-mlro.md)
+- [`sanctions-screening-mlro.md`](./sanctions-screening-mlro.md)
 - [`../../aml-cft/sanctions.md`](../../aml-cft/sanctions.md)

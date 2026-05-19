@@ -85,6 +85,6 @@ law is modern statute.
 
 ## Cross-references
 
-- [`sources-of-law.md`](sources-of-law.md) — broader hierarchy.
+- [`sources-of-law.md`](./sources-of-law.md) — broader hierarchy.
 - [`../legal-system/royal-court.md`](./royal-court.md)
   — the customary-law-influenced court.

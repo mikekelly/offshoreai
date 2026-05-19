@@ -218,5 +218,5 @@ For ongoing compliance:
 
 ## Cross-references
 
-- [`pre-ipo-jersey.md`](pre-ipo-jersey.md)
-- [`private-vs-public.md`](private-vs-public.md)
+- [`pre-ipo-jersey.md`](./pre-ipo-jersey.md)
+- [`private-vs-public.md`](./private-vs-public.md)

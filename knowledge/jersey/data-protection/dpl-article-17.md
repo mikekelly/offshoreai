@@ -116,7 +116,7 @@ For Jersey TCBs / banks responding to client SARs:
 
 ## Cross-references
 
-- [`dpl-article-22.md`](dpl-article-22.md);
-- [`dpl-part-3-rights.md`](dpl-part-3-rights.md);
+- [`dpl-article-22.md`](./dpl-article-22.md);
+- [`dpl-part-3-rights.md`](./dpl-part-3-rights.md);
 - [`../use-cases/compliance-mlro/data-protection-aml-overlap.md`](../use-cases/compliance-mlro/data-protection-aml-overlap.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

@@ -59,17 +59,17 @@ subsidiary as its subsidiary.
 
 Group-relationship definitions are operationally significant in:
 
-- **Cross-shareholding prohibition** ([Article 26](holding-company-membership.md))
+- **Cross-shareholding prohibition** ([Article 26](./holding-company-membership.md))
   — a subsidiary cannot be a member of its holding body, subject to
   specific exceptions;
-- **Group accounting** ([Part 16](accounts.md)) — accounting
+- **Group accounting** ([Part 16](./accounts.md)) — accounting
   consolidation rules engage the subsidiary/holding body framework;
-- **Takeover and merger** ([Part 18 and 18B](takeover-offers.md))
+- **Takeover and merger** ([Part 18 and 18B](./takeover-offers.md))
   — squeeze-out and merger thresholds reference group structures;
-- **Distributions** ([Part 17](distribution-restrictions.md)) — the
+- **Distributions** ([Part 17](./distribution-restrictions.md)) — the
   Article 115 solvency test for a parent company must consider the
   position of subsidiaries;
-- **Disclosure** ([Articles 75, 83, 84](director-disclosure.md))
+- **Disclosure** ([Articles 75, 83, 84](./director-disclosure.md))
   — directors' interests and group disclosures.
 
 ## The control limbs
@@ -117,7 +117,7 @@ wholly-owned subsidiaries — apply only to wholly-owned subsidiaries.
 
 ## Article 2A — further provisions
 
-[Article 2A](subsidiary-further-provisions.md) supplements Article 2
+[Article 2A](./subsidiary-further-provisions.md) supplements Article 2
 with detail on:
 
 - attribution of holdings (when shares held by nominees count to the
@@ -141,7 +141,7 @@ with detail on:
 - **Trust-held shares.** Where a trust holds the shares of a
   company, the trustee (as legal owner) is not automatically a
   "holding body" of the underlying company in the Article 2 sense
-  — see [Article 2A](subsidiary-further-provisions.md). The trust
+  — see [Article 2A](./subsidiary-further-provisions.md). The trust
   framework is treated specially.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -125,8 +125,8 @@ For Jersey companies:
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md)
-- [`distributions-and-deemed-distributions.md`](distributions-and-deemed-distributions.md)
-- [`pillar-two.md`](pillar-two.md)
+- [`zero-ten.md`](./zero-ten.md)
+- [`distributions-and-deemed-distributions.md`](./distributions-and-deemed-distributions.md)
+- [`pillar-two.md`](./pillar-two.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

@@ -35,7 +35,7 @@ providing supporting and specific provisions.
 
 - **LTC contribution** collection;
 - **Specific** mechanics integrated with income-tax collection;
-- See [`long-term-care.md`](long-term-care.md).
+- See [`long-term-care.md`](./long-term-care.md).
 
 ## Schedule 2 — Benefit exemptions
 
@@ -81,8 +81,8 @@ providing supporting and specific provisions.
 
 ## Cross-references
 
-- [`itl-articles-index.md`](itl-articles-index.md)
-- [`itl-part-12-allowances.md`](itl-part-12-allowances.md)
-- [`long-term-care.md`](long-term-care.md)
+- [`itl-articles-index.md`](./itl-articles-index.md)
+- [`itl-part-12-allowances.md`](./itl-part-12-allowances.md)
+- [`long-term-care.md`](./long-term-care.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

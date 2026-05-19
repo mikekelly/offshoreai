@@ -160,6 +160,6 @@ A Jersey REIT typically needs:
 
 ## Cross-references
 
-- [`vehicle-structuring.md`](vehicle-structuring.md)
+- [`vehicle-structuring.md`](./vehicle-structuring.md)
 - [`../../funds/listed-fund.md`](../../funds/listed-fund.md)
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md)

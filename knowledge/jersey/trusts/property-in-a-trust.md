@@ -68,7 +68,7 @@ trust practice of progressive funding:
 
 Where a non-original-settlor contributes property, that person may
 become a "settlor" for the purposes of the
-[Article 1](interpretation-and-definitions.md) definition (the
+[Article 1](./interpretation-and-definitions.md) definition (the
 definition is wide: "a person who provides trust property"). The
 practical consequence is in foreign tax analyses (e.g., UK or US
 "grantor" analyses) where the identity of contributors matters more
@@ -84,7 +84,7 @@ than in pure Jersey law.
 - It does **not** override Article 9 firewall analysis on settlor
   *capacity*. A settlor who lacked capacity under their personal
   law (e.g., a minor under foreign domicile rules) is captured by
-  Article 9 rules on capacity — see [`firewall.md`](firewall.md).
+  Article 9 rules on capacity — see [`firewall.md`](./firewall.md).
 - It does **not** answer the question of legitimate provenance. The
   trustee's AML/CFT obligations require source-of-funds and
   source-of-wealth analysis on each contribution to the trust;

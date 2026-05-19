@@ -117,7 +117,7 @@ A complaint procedure must:
 
 ## Cross-references
 
-- [`ibl-articles-index.md`](ibl-articles-index.md);
-- [`ibl-article-3.md`](ibl-article-3.md);
-- [`category-a-permit.md`](category-a-permit.md);
-- [`category-b-permit.md`](category-b-permit.md).
+- [`ibl-articles-index.md`](./ibl-articles-index.md);
+- [`ibl-article-3.md`](./ibl-article-3.md);
+- [`category-a-permit.md`](./category-a-permit.md);
+- [`category-b-permit.md`](./category-b-permit.md).

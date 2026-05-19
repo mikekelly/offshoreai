@@ -85,7 +85,7 @@ A proxy votes **on the member's behalf**:
 ## Comparison with corporate representative
 
 For **corporate members**, an [Article 93 corporate
-representative](corporate-representation.md) is typically
+representative](./corporate-representation.md) is typically
 preferable to a proxy:
 
 - **Broader authority** as if the corporate member itself

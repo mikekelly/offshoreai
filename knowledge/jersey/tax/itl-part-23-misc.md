@@ -77,7 +77,7 @@ The States Assembly's annual budget:
 
 ## Cross-references
 
-- [`itl-articles-index.md`](itl-articles-index.md)
-- [`revenue-jersey.md`](revenue-jersey.md)
+- [`itl-articles-index.md`](./itl-articles-index.md)
+- [`revenue-jersey.md`](./revenue-jersey.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

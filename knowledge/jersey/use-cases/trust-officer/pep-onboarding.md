@@ -185,6 +185,6 @@ For a PEP onboarding:
 
 ## Cross-references
 
-- [`cdd-new-trust.md`](cdd-new-trust.md)
+- [`cdd-new-trust.md`](./cdd-new-trust.md)
 - [`../../aml-cft/aml-cft-handbook.md`](../../aml-cft/aml-cft-handbook.md)
-- [`sanctions-screening.md`](sanctions-screening.md)
+- [`sanctions-screening.md`](./sanctions-screening.md)

@@ -57,7 +57,7 @@ It typically does **not** extend to:
 
 ## Procedure
 
-Similar to [Article 45 register inspection](register-inspection.md):
+Similar to [Article 45 register inspection](./register-inspection.md):
 
 - **Reasonable notice** to the company;
 - **Inspection during business hours**;

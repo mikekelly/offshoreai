@@ -81,8 +81,8 @@ For comparison with Bermuda reinsurance market:
 
 ## Cross-references
 
-- [`ibl-article-13.md`](ibl-article-13.md);
-- [`ibl-article-15.md`](ibl-article-15.md);
-- [`ibl-part-4-prudential.md`](ibl-part-4-prudential.md);
+- [`ibl-article-13.md`](./ibl-article-13.md);
+- [`ibl-article-15.md`](./ibl-article-15.md);
+- [`ibl-part-4-prudential.md`](./ibl-part-4-prudential.md);
 - [`../bermuda/insurance.md`](../../../jersey/bermuda/insurance.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

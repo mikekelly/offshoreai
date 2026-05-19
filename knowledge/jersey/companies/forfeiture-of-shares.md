@@ -42,7 +42,7 @@ calls or installments** as required by:
 ## When forfeiture applies
 
 Forfeiture is a remedy for **partly-paid shares** under
-[Article 37](different-amounts-on-shares.md). The mechanism:
+[Article 37](./different-amounts-on-shares.md). The mechanism:
 
 1. The company issues shares with **part of the subscription
    price** unpaid;

@@ -66,8 +66,8 @@ round, the post-Brexit equilibrium, the Pillar Two
 negotiation and implementation arc, and the emergence of
 continuation funds and tokenisation as new product lines.
 
-It bridges the more granular [`last-2-years.md`](last-2-years.md)
-upward into the broader [`last-10-years.md`](last-10-years.md).
+It bridges the more granular [`last-2-years.md`](./last-2-years.md)
+upward into the broader [`last-10-years.md`](./last-10-years.md).
 
 ## The window in context
 
@@ -75,18 +75,18 @@ upward into the broader [`last-10-years.md`](last-10-years.md).
 foundational regulatory frameworks were stable**:
 
 - The
-  [**Taxation (Companies — Economic Substance) (Jersey) Law 2019**](../tax/economic-substance.md)
+  [**Taxation (Companies — Economic Substance) (Jersey) Law 2019**](../../tax/economic-substance.md)
   had been fully operational for ~18 months with the first
   full-year filings landed (and parallel laws in Guernsey,
   IoM, BVI, Cayman, Bermuda);
 - The **post-Brexit equilibrium** had emerged — Jersey's
-  [AIFMD NPPR (Article 42) marketing arrangements](../funds/aifmd-nppr.md)
+  [AIFMD NPPR (Article 42) marketing arrangements](../../funds/aifmd-nppr.md)
   survived intact (operational view at
-  [`../jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`](../use-cases/fund-counsel/aifmd-nppr-registration.md)),
+  [`../jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`](../../use-cases/fund-counsel/aifmd-nppr-registration.md)),
   and the EU/UK financial-services-equivalence question
   stabilised into the present form (no equivalence,
   practical via NPPRs) — see
-  [`../jersey/immigration-residency/post-brexit-cross-border.md`](../immigration-residency/post-brexit-cross-border.md).
+  [`../jersey/immigration-residency/post-brexit-cross-border.md`](../../immigration-residency/post-brexit-cross-border.md).
 
 By contrast, **2026** ends the window with the JFSC
 2026-2030 Strategy, the Government's 10-year FSCP, the
@@ -161,7 +161,7 @@ ahead of Guernsey, Isle of Man, and Cayman in that index.
 ### 2021 — Economic Substance embedded
 
 The first full-year
-[Economic Substance](../tax/economic-substance.md)
+[Economic Substance](../../tax/economic-substance.md)
 returns for Jersey were filed in 2020-2021 (covering 2019
 accounting periods). The regime — and parallel regimes in
 Guernsey, IoM, BVI, Cayman, Bermuda — moved from "new
@@ -170,7 +170,7 @@ window. The early **discomfort** with the regime gave way
 to **acceptance** as the industry built out substance
 infrastructure (directors, staff, premises) that the regime
 requires. The TopCo-specific substance view is at
-[`../jersey/use-cases/founder-entrepreneur/substance-for-topco.md`](../use-cases/founder-entrepreneur/substance-for-topco.md).
+[`../jersey/use-cases/founder-entrepreneur/substance-for-topco.md`](../../use-cases/founder-entrepreneur/substance-for-topco.md).
 
 The substance regime is now a **structural fixture** of
 how the Crown Dependencies operate; structure decisions
@@ -195,16 +195,16 @@ enacted the Corporate Income Tax Act 2023**, introducing a
 was the first time Bermuda had introduced a corporate income
 tax. The political significance — a "no-tax" jurisdiction
 formally accepting taxation — was substantial. See
-[`../bermuda/tax.md`](../../bermuda/tax.md) (the CIT 2023 detail
+[`../bermuda/tax.md`](../../../bermuda/tax.md) (the CIT 2023 detail
 lives in the Bermuda tax overview pending a dedicated file —
-flagged in [`./gaps.md`](gaps.md)) and the broader
-[Bermuda index](../../bermuda/index.md).
+flagged in [`./gaps.md`](./gaps.md)) and the broader
+[Bermuda index](../../../bermuda/index.md).
 
 ### 2024 — MoneyVal 5th round (Jersey + Guernsey)
 
-The [**MoneyVal**](../aml-cft/moneyval.md) 5th Round
+The [**MoneyVal**](../../aml-cft/moneyval.md) 5th Round
 assessments of Jersey (July 2024) and Guernsey (on-site
-April 2024) closed the [AML/CFT](../aml-cft/index.md)
+April 2024) closed the [AML/CFT](../../aml-cft/index.md)
 defensive question that had hung over the prior decade.
 Jersey was rated **C/LC on 39 of 40 FATF Recommendations**
 — top-tier **technical compliance**, with strong but not
@@ -214,13 +214,13 @@ the 2016 4th-round report (which had identified gaps that
 drove the 2016-2023 supervisory build-up) is the cleanest
 10-year regulatory narrative the industry has.
 
-See [`last-10-years.md`](last-10-years.md) for the 4th-vs-
+See [`last-10-years.md`](./last-10-years.md) for the 4th-vs-
 5th-round contrast in depth.
 
 ### 2025 — MCIT 2025 effective
 
 The **MCIT 2025** took effect 1 January 2025 — see
-[`last-2-years.md`](last-2-years.md) for detail. Jersey,
+[`last-2-years.md`](./last-2-years.md) for detail. Jersey,
 Guernsey, IoM, and Bermuda all implemented QDMTT regimes
 on parallel timetables.
 
@@ -285,15 +285,15 @@ Across the 5-year window, **family-office services**
 emerged as one of the most reliable growth segments. The
 generational wealth transfer (per Capgemini WWR), the
 demand for tailored structures, and the
-[Article 9 firewall](../trusts/firewall.md) all
+[Article 9 firewall](../../trusts/firewall.md) all
 combined to make Jersey a primary family-office jurisdiction.
 The full operational view of family-office work lives in the
-[family-office adviser persona](../use-cases/family-office-adviser/index.md)
+[family-office adviser persona](../../use-cases/family-office-adviser/index.md)
 — including
-[when to use a PTC](../use-cases/family-office-adviser/when-ptc.md),
-[trust vs foundation](../use-cases/family-office-adviser/trust-or-foundation.md),
-[CRS / FATCA family overlay](../use-cases/family-office-adviser/crs-fatca-family.md),
-and the [Jersey vs Guernsey choice](../use-cases/family-office-adviser/jersey-vs-guernsey-choice.md).
+[when to use a PTC](../../use-cases/family-office-adviser/when-ptc.md),
+[trust vs foundation](../../use-cases/family-office-adviser/trust-or-foundation.md),
+[CRS / FATCA family overlay](../../use-cases/family-office-adviser/crs-fatca-family.md),
+and the [Jersey vs Guernsey choice](../../use-cases/family-office-adviser/jersey-vs-guernsey-choice.md).
 
 ## Structural patterns over the window
 
@@ -314,17 +314,17 @@ have grown faster than blind-pool fund commitments.
 
 ### Pattern 3 — The transparency arc continued
 
-[CRS](../international/crs.md) expansion,
+[CRS](../../international/crs.md) expansion,
 beneficial-ownership-register transparency (post-2017),
-[OECD MDR / DAC6-style commitments](../international/dac6.md) (Jersey is not in EU DAC6 scope; OECD-aligned mandatory
-disclosure), [FATCA](../international/fatca.md) IGA
+[OECD MDR / DAC6-style commitments](../../international/dac6.md) (Jersey is not in EU DAC6 scope; OECD-aligned mandatory
+disclosure), [FATCA](../../international/fatca.md) IGA
 operational reality, and CARF (Crypto-Asset Reporting
-Framework — flagged in [`gaps.md`](gaps.md)) — the
+Framework — flagged in [`gaps.md`](./gaps.md)) — the
 trajectory across the window is uniformly **toward more
 transparency**, with the corresponding **closure of certain
 historical use cases** that depended on opacity. The
 remaining use cases (forced-heirship defence via the
-[firewall](../trusts/firewall.md), tax-efficient
+[firewall](../../trusts/firewall.md), tax-efficient
 structuring, substance-driven holdco location,
 jurisdiction-of-trust choice) are uniformly **structure-led,
 not secrecy-led**.
@@ -342,7 +342,7 @@ The 5-year window is best understood as the **post-
 foundation embedding cycle**: the frameworks established in
 2016-2020 became operational, the AML/CFT defensive
 position closed, and the industry pivoted from defence to
-offence. The wider [`last-10-years.md`](last-10-years.md)
+offence. The wider [`last-10-years.md`](./last-10-years.md)
 covers the **foundation-building era** (2016-2020) that
 this embedding cycle followed.
 
@@ -353,7 +353,7 @@ this embedding cycle followed.
 - [`./last-2-years.md`](./last-2-years.md);
 - [`./last-10-years.md`](./last-10-years.md);
 - [`./trajectory.md`](./trajectory.md);
-- [`../jersey/tax/economic-substance.md`](../tax/economic-substance.md);
-- [`../jersey/international/pillar-two-mcit.md`](../international/pillar-two-mcit.md);
-- [`../jersey/aml-cft/index.md`](../aml-cft/index.md);
-- [`../jersey/funds/jersey-private-fund.md`](../funds/jersey-private-fund.md).
+- [`../jersey/tax/economic-substance.md`](../../tax/economic-substance.md);
+- [`../jersey/international/pillar-two-mcit.md`](../../international/pillar-two-mcit.md);
+- [`../jersey/aml-cft/index.md`](../../aml-cft/index.md);
+- [`../jersey/funds/jersey-private-fund.md`](../../funds/jersey-private-fund.md).

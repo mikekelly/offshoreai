@@ -139,9 +139,9 @@ Where a clause is held to be penal:
 
 ## Cross-references
 
-- [`damages.md`](damages.md);
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`force-majeure.md`](force-majeure.md);
-- [`boilerplate.md`](boilerplate.md);
+- [`damages.md`](./damages.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`force-majeure.md`](./force-majeure.md);
+- [`boilerplate.md`](./boilerplate.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

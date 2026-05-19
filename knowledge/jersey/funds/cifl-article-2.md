@@ -133,10 +133,10 @@ A CIFL fund can be:
 
 ## Cross-references
 
-- [`cifl-article-4.md`](cifl-article-4.md);
-- [`cifl-article-7.md`](cifl-article-7.md);
-- [`public-funds.md`](public-funds.md);
-- [`expert-fund.md`](expert-fund.md);
-- [`eligible-investor-fund.md`](eligible-investor-fund.md);
-- [`jersey-private-fund.md`](jersey-private-fund.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-article-4.md`](./cifl-article-4.md);
+- [`cifl-article-7.md`](./cifl-article-7.md);
+- [`public-funds.md`](./public-funds.md);
+- [`expert-fund.md`](./expert-fund.md);
+- [`eligible-investor-fund.md`](./eligible-investor-fund.md);
+- [`jersey-private-fund.md`](./jersey-private-fund.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

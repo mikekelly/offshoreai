@@ -181,9 +181,9 @@ Cayman funds:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`cima.md`](cima.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`cima.md`](./cima.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/funds/index.md`](../jersey/funds/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

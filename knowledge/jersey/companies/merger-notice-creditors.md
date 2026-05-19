@@ -76,10 +76,10 @@ exercise their objection rights under Articles 127FD and 127FE.
 
 ## Cross-references
 
-- [`merger-court-application.md`](merger-court-application.md) —
+- [`merger-court-application.md`](./merger-court-application.md) —
   Article 127FD: company application to court where no solvency
   statement.
-- [`merger-creditor-objection.md`](merger-creditor-objection.md) —
+- [`merger-creditor-objection.md`](./merger-creditor-objection.md) —
   Article 127FE: creditor objection where solvency statement made.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -65,9 +65,9 @@ unwilling to put it into liquidation.
 
 ## Cross-references
 
-- [`creditors-winding-up-court-order.md`](creditors-winding-up-court-order.md)
+- [`creditors-winding-up-court-order.md`](./creditors-winding-up-court-order.md)
   — Article 157C: court order.
-- [`creditors-winding-up-provisional-liquidator.md`](creditors-winding-up-provisional-liquidator.md)
+- [`creditors-winding-up-provisional-liquidator.md`](./creditors-winding-up-provisional-liquidator.md)
   — Article 157B: provisional liquidator pending hearing.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -95,11 +95,11 @@ The employer must:
 
 ## Cross-references
 
-- [`dl-article-3.md`](dl-article-3.md);
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-article-10.md`](dl-article-10.md);
-- [`dl-part-3-areas.md`](dl-part-3-areas.md);
-- [`dl-part-4-equal-pay.md`](dl-part-4-equal-pay.md);
-- [`dl-part-5-exemptions.md`](dl-part-5-exemptions.md);
+- [`dl-article-3.md`](./dl-article-3.md);
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-article-10.md`](./dl-article-10.md);
+- [`dl-part-3-areas.md`](./dl-part-3-areas.md);
+- [`dl-part-4-equal-pay.md`](./dl-part-4-equal-pay.md);
+- [`dl-part-5-exemptions.md`](./dl-part-5-exemptions.md);
 - [`../employment/index.md`](../employment/index.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-articles-index.md`](./dl-articles-index.md).

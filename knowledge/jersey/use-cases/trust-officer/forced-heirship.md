@@ -143,4 +143,4 @@ Even where Article 9 holds:
 ## Cross-references
 
 - [`../../trusts/firewall.md`](../../trusts/firewall.md)
-- [`firewall-question.md`](firewall-question.md)
+- [`firewall-question.md`](./firewall-question.md)

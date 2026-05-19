@@ -173,9 +173,9 @@ For a Royal Court challenge:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`planning-building-law-2002.md`](planning-building-law-2002.md);
-- [`application-process.md`](application-process.md);
-- [`enforcement.md`](enforcement.md);
+- [`index.md`](./index.md);
+- [`planning-building-law-2002.md`](./planning-building-law-2002.md);
+- [`application-process.md`](./application-process.md);
+- [`enforcement.md`](./enforcement.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../legal-system/judicial-review.md`](../legal-system/judicial-review.md).

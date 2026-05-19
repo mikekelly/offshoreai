@@ -80,7 +80,7 @@ left in an ambiguous state post-reduction.
 ## Comparison with solvency-statement route
 
 The solvency-statement route under
-[Article 61A](solvency-statement.md) doesn't involve a court
+[Article 61A](./solvency-statement.md) doesn't involve a court
 order — the reduction simply takes effect on registration of
 the solvency statement and minute.
 
@@ -90,11 +90,11 @@ contested reductions but operationally heavier.
 
 ## Cross-references
 
-- [`court-confirmation.md`](court-confirmation.md) — Article 62:
+- [`court-confirmation.md`](./court-confirmation.md) — Article 62:
   the application that produces this order.
-- [`act-and-minute-registration.md`](act-and-minute-registration.md)
+- [`act-and-minute-registration.md`](./act-and-minute-registration.md)
   — Article 64: registering the order and minute.
-- [`liability-on-reduced-shares.md`](liability-on-reduced-shares.md)
+- [`liability-on-reduced-shares.md`](./liability-on-reduced-shares.md)
   — Article 65: continuing liability on reduced shares.
 
 ## Pitfalls

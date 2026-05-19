@@ -56,32 +56,32 @@ addressing gaps #4 (Matrimonial Causes 1949) and #5
 
 ### Divorce and separation
 
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md) — the statute
-- [`divorce-grounds.md`](divorce-grounds.md) — Article 7 fault and non-fault
-- [`divorce-procedure.md`](divorce-procedure.md) — petition, decree nisi, decree absolute
-- [`ancillary-relief.md`](ancillary-relief.md) — splitting assets; the sharing principle
-- [`spousal-maintenance.md`](spousal-maintenance.md) — interim and final
-- [`prenuptial-agreements.md`](prenuptial-agreements.md) — Radmacher applied in Jersey
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md) — the statute
+- [`divorce-grounds.md`](./divorce-grounds.md) — Article 7 fault and non-fault
+- [`divorce-procedure.md`](./divorce-procedure.md) — petition, decree nisi, decree absolute
+- [`ancillary-relief.md`](./ancillary-relief.md) — splitting assets; the sharing principle
+- [`spousal-maintenance.md`](./spousal-maintenance.md) — interim and final
+- [`prenuptial-agreements.md`](./prenuptial-agreements.md) — Radmacher applied in Jersey
 
 ### Children
 
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md) — the statute
-- [`parental-responsibility.md`](parental-responsibility.md) — who has it, how acquired
-- [`child-arrangements-orders.md`](child-arrangements-orders.md) — residence, contact, specific issue, prohibited steps
-- [`care-and-supervision.md`](care-and-supervision.md) — public-law child protection
-- [`child-relocation.md`](child-relocation.md) — moving a child out of Jersey
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md) — the statute
+- [`parental-responsibility.md`](./parental-responsibility.md) — who has it, how acquired
+- [`child-arrangements-orders.md`](./child-arrangements-orders.md) — residence, contact, specific issue, prohibited steps
+- [`care-and-supervision.md`](./care-and-supervision.md) — public-law child protection
+- [`child-relocation.md`](./child-relocation.md) — moving a child out of Jersey
 
 ### Status and recognition
 
-- [`civil-partnerships-and-same-sex.md`](civil-partnerships-and-same-sex.md) — 2012 Law and 2018 Order
-- [`cohabitation.md`](cohabitation.md) — the gap in financial protection
-- [`adoption-jersey-law-1961.md`](adoption-jersey-law-1961.md) — adoption regime
-- [`jurisdiction-and-foreign-orders.md`](jurisdiction-and-foreign-orders.md) — domicile / habitual residence; mirror orders
+- [`civil-partnerships-and-same-sex.md`](./civil-partnerships-and-same-sex.md) — 2012 Law and 2018 Order
+- [`cohabitation.md`](./cohabitation.md) — the gap in financial protection
+- [`adoption-jersey-law-1961.md`](./adoption-jersey-law-1961.md) — adoption regime
+- [`jurisdiction-and-foreign-orders.md`](./jurisdiction-and-foreign-orders.md) — domicile / habitual residence; mirror orders
 
 ### Forum and procedure
 
-- [`royal-court-family-division.md`](royal-court-family-division.md) — court structure
-- [`jfcas-and-mediation.md`](jfcas-and-mediation.md) — the Jersey Family Court Advisory Service and ADR
+- [`royal-court-family-division.md`](./royal-court-family-division.md) — court structure
+- [`jfcas-and-mediation.md`](./jfcas-and-mediation.md) — the Jersey Family Court Advisory Service and ADR
 
 ## Reform pipeline (as of May 2026)
 

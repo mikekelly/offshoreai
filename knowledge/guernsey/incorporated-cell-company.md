@@ -189,12 +189,12 @@ the choice.
 
 ## Cross-references
 
-- [`protected-cell-company.md`](protected-cell-company.md);
-- [`companies.md`](companies.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
-- [`gfsc.md`](gfsc.md);
-- [`index.md`](index.md);
+- [`protected-cell-company.md`](./protected-cell-company.md);
+- [`companies.md`](./companies.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
+- [`gfsc.md`](./gfsc.md);
+- [`index.md`](./index.md);
 - [`../bermuda/segregated-accounts-company.md`](../bermuda/segregated-accounts-company.md);
 - [`../cayman/segregated-portfolio-company.md`](../cayman/segregated-portfolio-company.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md).

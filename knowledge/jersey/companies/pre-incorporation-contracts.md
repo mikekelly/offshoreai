@@ -49,7 +49,7 @@ personal liability of the original signatory.
 ## The pre-incorporation problem
 
 A Jersey company exists only from the date of its certificate of
-incorporation under [Article 9](effect-of-registration.md). Before
+incorporation under [Article 9](./effect-of-registration.md). Before
 that:
 
 - it has **no legal personality**;

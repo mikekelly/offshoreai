@@ -110,8 +110,8 @@ form:
   structures.
 
 The PCC / ICC choice is particularly Guernsey-strong —
-see [`protected-cell-company.md`](protected-cell-company.md)
-and [`incorporated-cell-company.md`](incorporated-cell-company.md).
+see [`protected-cell-company.md`](./protected-cell-company.md)
+and [`incorporated-cell-company.md`](./incorporated-cell-company.md).
 
 ## Comparison with Jersey JPF
 
@@ -190,11 +190,11 @@ than transformative.
 
 ## Cross-references
 
-- [`funds.md`](funds.md);
-- [`gfsc.md`](gfsc.md);
-- [`protected-cell-company.md`](protected-cell-company.md);
-- [`incorporated-cell-company.md`](incorporated-cell-company.md);
-- [`index.md`](index.md);
+- [`funds.md`](./funds.md);
+- [`gfsc.md`](./gfsc.md);
+- [`protected-cell-company.md`](./protected-cell-company.md);
+- [`incorporated-cell-company.md`](./incorporated-cell-company.md);
+- [`index.md`](./index.md);
 - [`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md);
 - [`../jersey/funds/expert-fund.md`](../jersey/funds/expert-fund.md);
 - [`../cayman/private-funds-act.md`](../cayman/private-funds-act.md);

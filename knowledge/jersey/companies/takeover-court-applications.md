@@ -90,9 +90,9 @@ The bar is high but not insuperable.
 
 ## Cross-references
 
-- [`squeeze-out.md`](squeeze-out.md) — Article 117: trigger for
+- [`squeeze-out.md`](./squeeze-out.md) — Article 117: trigger for
   court applications on the offeror side.
-- [`sell-out.md`](sell-out.md) — Article 119: trigger for court
+- [`sell-out.md`](./sell-out.md) — Article 119: trigger for court
   applications on the minority side.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

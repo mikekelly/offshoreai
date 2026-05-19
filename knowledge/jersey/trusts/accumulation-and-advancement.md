@@ -143,7 +143,7 @@ defaults.
 The Article expressly confirms **no time limit** on the exercise of
 accumulation or distribution powers. This is consistent with
 Jersey's **abolition of the rule against perpetuities** for trusts
-created after 2006 — see [`duration.md`](duration.md).
+created after 2006 — see [`duration.md`](./duration.md).
 
 ## Practical considerations
 

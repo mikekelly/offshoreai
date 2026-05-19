@@ -57,7 +57,7 @@ The auditor has **statutory access** to:
 - **Third-party documents** relevant to the audit.
 
 Refusal to give the auditor access is an offence under
-[Article 113C](false-statements-to-auditors.md).
+[Article 113C](./false-statements-to-auditors.md).
 
 ## Audit planning
 

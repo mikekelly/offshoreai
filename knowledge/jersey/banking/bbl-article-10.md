@@ -118,8 +118,8 @@ Failure to comply with Article 10:
 
 ## Cross-references
 
-- [`bbl-article-6.md`](bbl-article-6.md);
-- [`bbl-article-14.md`](bbl-article-14.md);
-- [`bbl-part-3-supervision.md`](bbl-part-3-supervision.md);
-- [`bbl-part-6-enforcement.md`](bbl-part-6-enforcement.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-6.md`](./bbl-article-6.md);
+- [`bbl-article-14.md`](./bbl-article-14.md);
+- [`bbl-part-3-supervision.md`](./bbl-part-3-supervision.md);
+- [`bbl-part-6-enforcement.md`](./bbl-part-6-enforcement.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

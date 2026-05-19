@@ -68,7 +68,7 @@ The MLO 2008 implements:
 
 ## Cross-references
 
-- [`mlo-articles-index.md`](mlo-articles-index.md);
-- [`money-laundering-order-2008.md`](money-laundering-order-2008.md);
-- [`aml-cft-handbook.md`](aml-cft-handbook.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md);
+- [`money-laundering-order-2008.md`](./money-laundering-order-2008.md);
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

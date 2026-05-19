@@ -74,7 +74,7 @@ capital base. But it has **fewer historical use restrictions**:
 - The company has more **discretion in allocation** between
   classes;
 - **Multi-currency** denominations are operationally cleaner —
-  see [Article 38B](currency-conversion-rate.md).
+  see [Article 38B](./currency-conversion-rate.md).
 
 The stated-capital account is still subject to the **Part 12
 reduction-of-capital** rules with the Article 61A solvency-
@@ -110,7 +110,7 @@ accounting practice typically:
 
 ## Relief from transfer requirements
 
-[Article 39B](relief-from-transfers.md) lets the States provide
+[Article 39B](./relief-from-transfers.md) lets the States provide
 relief from the requirement to maintain separate stated-capital
 accounts in specified circumstances — primarily for **specific
 restructuring transactions**.

@@ -108,7 +108,7 @@ abuse purposes** without renegotiating each bilateral treaty.
 
 ## Cross-references
 
-- [`tieas.md`](tieas.md) — the lighter info-exchange agreements
+- [`tieas.md`](./tieas.md) — the lighter info-exchange agreements
   for non-DTA partners.
 - [`../tax/international-tax.md`](../tax/international-tax.md) —
   international tax framework overview.

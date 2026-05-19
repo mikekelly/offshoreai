@@ -111,7 +111,7 @@ Employers relying on Article 41:
 
 ## Cross-references
 
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-article-43.md`](dl-article-43.md);
-- [`dl-part-5-exemptions.md`](dl-part-5-exemptions.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-article-43.md`](./dl-article-43.md);
+- [`dl-part-5-exemptions.md`](./dl-part-5-exemptions.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

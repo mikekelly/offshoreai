@@ -98,8 +98,8 @@ Late filing of the annual return:
 
 ## Cross-references
 
-- [`fjl-part-4-council.md`](fjl-part-4-council.md) — records
+- [`fjl-part-4-council.md`](./fjl-part-4-council.md) — records
   and accounts duty;
-- [`fjl-part-13-misc.md`](fjl-part-13-misc.md) — Registrar and
+- [`fjl-part-13-misc.md`](./fjl-part-13-misc.md) — Registrar and
   register;
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

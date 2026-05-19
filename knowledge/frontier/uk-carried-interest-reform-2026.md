@@ -253,7 +253,7 @@ LPs are asking sponsors:
 
 ### Frontier
 
-- [`continuation-funds-and-gp-led-secondaries.md`](continuation-funds-and-gp-led-secondaries.md);
-- [`aifmd-ii-april-2026.md`](aifmd-ii-april-2026.md);
+- [`continuation-funds-and-gp-led-secondaries.md`](./continuation-funds-and-gp-led-secondaries.md);
+- [`aifmd-ii-april-2026.md`](./aifmd-ii-april-2026.md);
 - [`jersey-finance-industry-2026.md`](../jersey/frontier/jersey-finance-industry-2026.md);
-- [`README.md`](README.md).
+- [`README.md`](./README.md).

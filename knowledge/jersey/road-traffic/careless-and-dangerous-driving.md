@@ -122,7 +122,7 @@ These go to the **Royal Court** and carry substantial
 imprisonment plus mandatory long disqualifications.
 
 The 2020s amendments expanded these grounds — see
-[`road-traffic-law-1956.md`](road-traffic-law-1956.md).
+[`road-traffic-law-1956.md`](./road-traffic-law-1956.md).
 
 ## Distinguishing the two
 
@@ -164,11 +164,11 @@ Indicators of careless:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`road-traffic-law-1956.md`](road-traffic-law-1956.md);
-- [`speeding.md`](speeding.md);
-- [`drink-driving.md`](drink-driving.md);
-- [`disqualification.md`](disqualification.md);
-- [`court-procedure.md`](court-procedure.md);
+- [`index.md`](./index.md);
+- [`road-traffic-law-1956.md`](./road-traffic-law-1956.md);
+- [`speeding.md`](./speeding.md);
+- [`drink-driving.md`](./drink-driving.md);
+- [`disqualification.md`](./disqualification.md);
+- [`court-procedure.md`](./court-procedure.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md).

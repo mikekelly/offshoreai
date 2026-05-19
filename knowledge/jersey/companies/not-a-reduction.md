@@ -46,7 +46,7 @@ Part 11 **do not constitute a capital reduction** requiring **Part
 
 **Part 12** (Reduction of Capital, Articles 60–66A) imposes a
 formal procedure including the
-[Article 61A solvency-statement](solvency-statement.md) or, in
+[Article 61A solvency-statement](./solvency-statement.md) or, in
 the alternative, court confirmation. The procedure has real
 operational cost.
 

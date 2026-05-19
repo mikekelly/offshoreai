@@ -45,7 +45,7 @@ information. This file maps the **landscape**.
   the relevant tax authority;
 - **Comprehensive**: covers bank accounts, custodial accounts,
   cash-value insurance, certain entity accounts;
-- See [`crs.md`](crs.md).
+- See [`crs.md`](./crs.md).
 
 ### FATCA
 
@@ -54,7 +54,7 @@ information. This file maps the **landscape**.
 - **Jersey reports** to the Comptroller of Revenue, which
   exchanges with the IRS;
 - **Specific** to US-tied accounts / persons;
-- See [`fatca.md`](fatca.md).
+- See [`fatca.md`](./fatca.md).
 
 ### Tax Information Exchange Agreements (TIEAs)
 
@@ -64,7 +64,7 @@ information. This file maps the **landscape**.
   tax authorities;
 - Largely **superseded** by DTAs with EOI articles, CRS, and
   multilateral CbC;
-- See [`tieas.md`](tieas.md).
+- See [`tieas.md`](./tieas.md).
 
 ### DTAs — Article 26
 
@@ -74,7 +74,7 @@ information. This file maps the **landscape**.
   **automatic** in some cases;
 - **Subject to** treaty safeguards (relevance, fiscal
   necessity, confidentiality);
-- See [`dtas.md`](dtas.md).
+- See [`dtas.md`](./dtas.md).
 
 ### Country-by-Country Reporting (CbCR)
 
@@ -84,7 +84,7 @@ information. This file maps the **landscape**.
   enables exchange;
 - **Jersey-resident** parents file with the Comptroller of
   Revenue, which exchanges with treaty partners;
-- See [`./beps-overview.md`](beps-overview.md).
+- See [`./beps-overview.md`](./beps-overview.md).
 
 ### Substance reporting
 
@@ -178,10 +178,10 @@ For Jersey-based structures:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./crs.md`](crs.md);
-- [`./fatca.md`](fatca.md);
-- [`./tieas.md`](tieas.md);
-- [`./dtas.md`](dtas.md);
-- [`./beps-overview.md`](beps-overview.md);
+- [`./index.md`](./index.md);
+- [`./crs.md`](./crs.md);
+- [`./fatca.md`](./fatca.md);
+- [`./tieas.md`](./tieas.md);
+- [`./dtas.md`](./dtas.md);
+- [`./beps-overview.md`](./beps-overview.md);
 - [`../registries/beneficial-ownership.md`](../registries/beneficial-ownership.md).

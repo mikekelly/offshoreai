@@ -66,5 +66,5 @@ and have **binding precedent** value for the Royal Court.
 
 ## Cross-references
 
-- [`royal-court.md`](royal-court.md) — the court below.
-- [`privy-council.md`](privy-council.md) — the court above.
+- [`royal-court.md`](./royal-court.md) — the court below.
+- [`privy-council.md`](./privy-council.md) — the court above.

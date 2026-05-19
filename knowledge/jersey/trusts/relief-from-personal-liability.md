@@ -56,7 +56,7 @@ Honesty is the threshold. A **dishonest** trustee — one acting in
 bad faith, with knowledge that the act is a breach, or with
 indifference to whether it is — is **not eligible** for Article 45
 relief. This is consistent with the irreducible core in
-[Article 30](breach-of-trust-liability.md) (no exoneration for
+[Article 30](./breach-of-trust-liability.md) (no exoneration for
 fraud).
 
 ### 2. Reasonableness
@@ -67,7 +67,7 @@ made an honest mistake but **fell below the standard of a reasonable
 trustee** does not satisfy this limb.
 
 The professional-trustee skill uplift in
-[Article 21](trustee-duties.md) applies: a professional trustee's
+[Article 21](./trustee-duties.md) applies: a professional trustee's
 "reasonable" standard is higher than a lay trustee's.
 
 ### 3. Ought fairly to be excused
@@ -81,7 +81,7 @@ whether **fairness** points toward relief. Factors:
   fault — is full recovery disproportionate?;
 - whether the trustee took **steps to mitigate** the breach;
 - whether the trustee **sought directions** under
-  [Article 51](article-51-directions.md) — and if not, why not.
+  [Article 51](./article-51-directions.md) — and if not, why not.
 
 The "ought fairly to be excused" limb is the most discretionary; the
 Royal Court has a wide remit.
@@ -93,7 +93,7 @@ Article 45 relief is typically sought:
 - **defensively** — as part of the trustee's response to a
   breach-of-trust claim by beneficiaries;
 - **proactively** — by the trustee under
-  [Article 51](article-51-directions.md), after a self-discovered
+  [Article 51](./article-51-directions.md), after a self-discovered
   breach, asking the Court for relief alongside directions on
   remediation.
 
@@ -130,7 +130,7 @@ The two are independent. A trustee with a strong deed-exoneration
 defence does not need Article 45; a trustee without one has Article
 45 as the residual hope. The Court has recognised that Article 45
 does **not** displace the irreducible-core rules from
-[Article 30](breach-of-trust-liability.md) — gross negligence and
+[Article 30](./breach-of-trust-liability.md) — gross negligence and
 wilful misconduct remain unprotectable.
 
 ## "Omitting to obtain court directions"
@@ -142,7 +142,7 @@ the failure to apply was itself honest and reasonable in context.
 
 The Court will be sceptical where the matter was clearly
 "momentous" within the *Public Trustee v Cooper* framework — see
-[`article-51-directions.md`](article-51-directions.md). A trustee
+[`article-51-directions.md`](./article-51-directions.md). A trustee
 that should have applied for blessing and did not is more
 exposed than a trustee that proceeded with a genuinely borderline
 decision.

@@ -98,5 +98,5 @@ about property prices and population.
 
 - [`../tax/high-value-residency-tax.md`](../tax/high-value-residency-tax.md)
   — the bespoke tax regime.
-- [`control-of-housing-and-work-law.md`](control-of-housing-and-work-law.md)
+- [`control-of-housing-and-work-law.md`](./control-of-housing-and-work-law.md)
   — the parent statute.

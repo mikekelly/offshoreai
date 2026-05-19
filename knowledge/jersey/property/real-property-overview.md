@@ -87,7 +87,7 @@ property:
 - **No transfer of legal title** to the lender;
 - **Charge** registered in the Public Registry;
 - **Enforceable** through specific Court process (dégrèvement);
-- See [`hypothec.md`](hypothec.md).
+- See [`hypothec.md`](./hypothec.md).
 
 ### Rente
 
@@ -108,7 +108,7 @@ favour of another:
 - **Right of light**;
 - **Drainage easements**;
 - **Specific** customary servitudes;
-- See [`servitudes.md`](servitudes.md).
+- See [`servitudes.md`](./servitudes.md).
 
 ### Privilège
 
@@ -169,9 +169,9 @@ For foreign lawyers:
 
 ## Cross-references
 
-- [`loi-1880-sur-la-propriete-fonciere.md`](loi-1880-sur-la-propriete-fonciere.md);
-- [`hypothec.md`](hypothec.md);
-- [`servitudes.md`](servitudes.md);
-- [`contract-passing.md`](contract-passing.md);
+- [`loi-1880-sur-la-propriete-fonciere.md`](./loi-1880-sur-la-propriete-fonciere.md);
+- [`hypothec.md`](./hypothec.md);
+- [`servitudes.md`](./servitudes.md);
+- [`contract-passing.md`](./contract-passing.md);
 - [`../legal-system/normandy-and-jersey-law.md`](../legal-system/normandy-and-jersey-law.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

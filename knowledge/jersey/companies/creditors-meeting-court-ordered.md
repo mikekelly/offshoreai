@@ -61,6 +61,6 @@ This balances:
 
 ## Cross-references
 
-- [`creditors-meeting.md`](creditors-meeting.md) — Article 160.
+- [`creditors-meeting.md`](./creditors-meeting.md) — Article 160.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

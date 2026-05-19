@@ -95,7 +95,7 @@ Council** (with leave) on points of law.
 
 ## Cross-references
 
-- [`cl-part-3-commissioner.md`](cl-part-3-commissioner.md);
-- [`cl-part-5-investigations.md`](cl-part-5-investigations.md);
-- [`cl-articles-index.md`](cl-articles-index.md);
+- [`cl-part-3-commissioner.md`](./cl-part-3-commissioner.md);
+- [`cl-part-5-investigations.md`](./cl-part-5-investigations.md);
+- [`cl-articles-index.md`](./cl-articles-index.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md).

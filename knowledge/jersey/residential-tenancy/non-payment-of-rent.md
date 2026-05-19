@@ -182,7 +182,7 @@ several tenant-protective doctrines:
 ### Substantive
 
 - **Tenant set-off** for landlord breach (e.g. unfit
-  premises — see [`repairs-and-standards.md`](repairs-and-standards.md)) may
+  premises — see [`repairs-and-standards.md`](./repairs-and-standards.md)) may
   reduce or extinguish the arrears claim;
 - **Discrimination defence** — if the eviction is in
   reality discriminatory under the Discrimination (Jersey)
@@ -263,13 +263,13 @@ several tenant-protective doctrines:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`eviction-procedure.md`](eviction-procedure.md);
-- [`grounds-for-termination.md`](grounds-for-termination.md);
-- [`notice-periods.md`](notice-periods.md);
-- [`repairs-and-standards.md`](repairs-and-standards.md);
-- [`petty-debts-court-tenancy.md`](petty-debts-court-tenancy.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`eviction-procedure.md`](./eviction-procedure.md);
+- [`grounds-for-termination.md`](./grounds-for-termination.md);
+- [`notice-periods.md`](./notice-periods.md);
+- [`repairs-and-standards.md`](./repairs-and-standards.md);
+- [`petty-debts-court-tenancy.md`](./petty-debts-court-tenancy.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md);
 - [`../use-cases/tenant-landlord/evicting-non-paying-tenant.md`](../use-cases/tenant-landlord/evicting-non-paying-tenant.md);
 - [`../discrimination/index.md`](../discrimination/index.md).

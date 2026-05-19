@@ -42,7 +42,7 @@ the beneficial owner**" of trust property, subject to:
 
 - the **trust terms**;
 - the **trustee's duties** (notably under
-  [Article 21](trustee-duties.md) and the equitable jurisdiction);
+  [Article 21](./trustee-duties.md) and the equitable jurisdiction);
 - any requirement in the trust terms that **third-party consent** be
   obtained before exercising particular powers.
 
@@ -116,10 +116,10 @@ constrained by:
 - the **proper-purpose doctrine** — a power must be exercised for
   the purpose for which it was conferred, not for some collateral
   purpose. Misuse for collateral purposes opens the door to
-  [Article 47G/H](article-47-set-aside.md) set-aside.
-- the **impartiality** duty under [Article 23](trustee-impartiality.md);
+  [Article 47G/H](./article-47-set-aside.md) set-aside.
+- the **impartiality** duty under [Article 23](./trustee-impartiality.md);
 - the **prudent-person standard** under
-  [Article 21](trustee-duties.md);
+  [Article 21](./trustee-duties.md);
 - the **deed's express limitations** (e.g., a power "exercisable
   only with consent of X" requires X's consent every time).
 
@@ -134,7 +134,7 @@ freedom. In practice, deeds often constrain this:
 - **consent of an investment committee** required for material
   changes;
 - **delegation to a professional investment manager** under
-  [Article 25](trustee-delegation.md).
+  [Article 25](./trustee-delegation.md).
 
 The trustee's overarching duty is to **invest prudently** with a view
 to the beneficiaries' interests — not merely to act within the

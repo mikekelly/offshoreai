@@ -276,6 +276,6 @@ this is a real and growing structural pattern.
 ### Frontier
 
 - [`aifmd-ii-april-2026.md`](../../frontier/aifmd-ii-april-2026.md);
-- [`jersey-finance-industry-2026.md`](jersey-finance-industry-2026.md);
-- [`tokenisation-jersey-2026.md`](tokenisation-jersey-2026.md);
+- [`jersey-finance-industry-2026.md`](./jersey-finance-industry-2026.md);
+- [`tokenisation-jersey-2026.md`](./tokenisation-jersey-2026.md);
 - [`README.md`](../../frontier/README.md).

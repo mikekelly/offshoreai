@@ -124,8 +124,8 @@ The **Jersey Advisory and Conciliation Service** is the
 
 ## Cross-references
 
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-6-unfair-dismissal.md`](el-part-6-unfair-dismissal.md);
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-6-unfair-dismissal.md`](./el-part-6-unfair-dismissal.md);
 - [`../discrimination/dl-articles-index.md`](../discrimination/dl-articles-index.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-articles-index.md`](./el-articles-index.md).

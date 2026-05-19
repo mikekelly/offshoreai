@@ -241,11 +241,11 @@ For the Minister:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`parental-responsibility.md`](parental-responsibility.md);
-- [`adoption-jersey-law-1961.md`](adoption-jersey-law-1961.md);
-- [`jfcas-and-mediation.md`](jfcas-and-mediation.md);
-- [`royal-court-family-division.md`](royal-court-family-division.md);
+- [`index.md`](./index.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`parental-responsibility.md`](./parental-responsibility.md);
+- [`adoption-jersey-law-1961.md`](./adoption-jersey-law-1961.md);
+- [`jfcas-and-mediation.md`](./jfcas-and-mediation.md);
+- [`royal-court-family-division.md`](./royal-court-family-division.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md).

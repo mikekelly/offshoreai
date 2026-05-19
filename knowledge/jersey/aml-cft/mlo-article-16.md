@@ -112,7 +112,7 @@ Best practice (and JFSC expectation):
 
 ## Cross-references
 
-- [`pocl-article-34a.md`](pocl-article-34a.md);
-- [`mlo-part-4-reporting.md`](mlo-part-4-reporting.md);
+- [`pocl-article-34a.md`](./pocl-article-34a.md);
+- [`mlo-part-4-reporting.md`](./mlo-part-4-reporting.md);
 - [`../use-cases/compliance-mlro/index.md`](../use-cases/compliance-mlro/index.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

@@ -105,8 +105,8 @@ Resolution coordinates with:
 
 ## Cross-references
 
-- [`bbl-article-14.md`](bbl-article-14.md);
-- [`bbl-article-23.md`](bbl-article-23.md);
-- [`bbl-article-24.md`](bbl-article-24.md);
-- [`bbl-part-5-resolution.md`](bbl-part-5-resolution.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-14.md`](./bbl-article-14.md);
+- [`bbl-article-23.md`](./bbl-article-23.md);
+- [`bbl-article-24.md`](./bbl-article-24.md);
+- [`bbl-part-5-resolution.md`](./bbl-part-5-resolution.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

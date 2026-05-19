@@ -121,9 +121,9 @@ Common scenarios:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`insurance.md`](insurance.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`insurance.md`](./insurance.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/trusts/index.md`](../jersey/trusts/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

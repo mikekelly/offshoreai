@@ -74,8 +74,8 @@ This contrasts with the default position — a Jersey company has
 On the trigger event:
 
 - the company **enters a winding-up process** — typically a
-  **summary winding up** under [Article 144 (limited duration)](winding-up.md)
-  *(planned cluster)* / [Article 145](winding-up.md);
+  **summary winding up** under [Article 144 (limited duration)](./winding-up.md)
+  *(planned cluster)* / [Article 145](./winding-up.md);
 - the **liquidator** (often the directors or a designated person
   under the memorandum) realises the assets and distributes them;
 - the company is **dissolved** on completion of the wind-up.

@@ -224,5 +224,5 @@ For a family philanthropic establishment:
 
 ## Cross-references
 
-- [`philanthropic-vehicle.md`](philanthropic-vehicle.md)
+- [`philanthropic-vehicle.md`](./philanthropic-vehicle.md)
 - [`../../registries/charities-register.md`](../../registries/charities-register.md)

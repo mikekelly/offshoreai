@@ -103,10 +103,10 @@ Common scenarios:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`companies.md`](companies.md);
-- [`bma.md`](bma.md);
+- [`overview.md`](./overview.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`companies.md`](./companies.md);
+- [`bma.md`](./bma.md);
 - [`../jersey/funds/index.md`](../jersey/funds/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

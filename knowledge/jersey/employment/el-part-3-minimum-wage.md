@@ -80,5 +80,5 @@ Specific exemptions / modifications:
 
 ## Cross-references
 
-- [`el-article-16.md`](el-article-16.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-16.md`](./el-article-16.md);
+- [`el-articles-index.md`](./el-articles-index.md).

@@ -72,5 +72,5 @@ with the practical context as well as the law.
 
 ## Cross-references
 
-- [`royal-court.md`](royal-court.md)
-- [`bailiff.md`](bailiff.md)
+- [`royal-court.md`](./royal-court.md)
+- [`bailiff.md`](./bailiff.md)

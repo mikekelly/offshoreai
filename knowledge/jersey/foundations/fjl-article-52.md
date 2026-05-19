@@ -94,7 +94,7 @@ In exceptional cases:
 
 ## Cross-references
 
-- [`fjl-article-49.md`](fjl-article-49.md);
-- [`fjl-article-50.md`](fjl-article-50.md);
-- [`fjl-part-13-misc.md`](fjl-part-13-misc.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-49.md`](./fjl-article-49.md);
+- [`fjl-article-50.md`](./fjl-article-50.md);
+- [`fjl-part-13-misc.md`](./fjl-part-13-misc.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

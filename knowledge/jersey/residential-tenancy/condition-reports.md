@@ -135,8 +135,8 @@ For tenants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`deposits.md`](deposits.md);
-- [`tenancy-agreements.md`](tenancy-agreements.md);
-- [`repairs-and-standards.md`](repairs-and-standards.md).
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`deposits.md`](./deposits.md);
+- [`tenancy-agreements.md`](./tenancy-agreements.md);
+- [`repairs-and-standards.md`](./repairs-and-standards.md).

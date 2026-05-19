@@ -204,11 +204,11 @@ When acquiring Jersey real property:
 
 ## Cross-references
 
-- [`servitudes.md`](servitudes.md);
-- [`real-property-overview.md`](real-property-overview.md);
-- [`contract-passing.md`](contract-passing.md);
-- [`commercial-leases.md`](commercial-leases.md);
-- [`flying-freeholds.md`](flying-freeholds.md);
+- [`servitudes.md`](./servitudes.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`contract-passing.md`](./contract-passing.md);
+- [`commercial-leases.md`](./commercial-leases.md);
+- [`flying-freeholds.md`](./flying-freeholds.md);
 - [`../contract/restraint-of-trade.md`](../contract/restraint-of-trade.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

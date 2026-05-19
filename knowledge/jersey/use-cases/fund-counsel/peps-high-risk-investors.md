@@ -163,6 +163,6 @@ For a PEP / high-risk applicant:
 
 ## Cross-references
 
-- [`cdd-fund-investors.md`](cdd-fund-investors.md)
+- [`cdd-fund-investors.md`](./cdd-fund-investors.md)
 - [`../trust-officer/pep-onboarding.md`](../trust-officer/pep-onboarding.md)
 - [`../../aml-cft/aml-cft-handbook.md`](../../aml-cft/aml-cft-handbook.md)

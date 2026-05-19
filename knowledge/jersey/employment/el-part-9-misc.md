@@ -84,7 +84,7 @@ Tribunal — failure to follow can attract uplift.
 
 ## Cross-references
 
-- [`el-articles-index.md`](el-articles-index.md);
-- [`employment-jersey-law-2003.md`](employment-jersey-law-2003.md);
+- [`el-articles-index.md`](./el-articles-index.md);
+- [`employment-jersey-law-2003.md`](./employment-jersey-law-2003.md);
 - [`../discrimination/index.md`](../discrimination/index.md);
 - [`../immigration-residency/chwl-article-19.md`](../immigration-residency/chwl-article-19.md).

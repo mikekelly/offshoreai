@@ -63,7 +63,7 @@ Article 134 covers the **passive** form of non-cooperation
 
 ## Cross-references
 
-- [`inspector-non-cooperation.md`](inspector-non-cooperation.md)
+- [`inspector-non-cooperation.md`](./inspector-non-cooperation.md)
   — Article 134.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

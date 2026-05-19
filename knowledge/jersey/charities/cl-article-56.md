@@ -101,8 +101,8 @@ Conduct may also attract:
 
 ## Cross-references
 
-- [`cl-part-7-enforcement.md`](cl-part-7-enforcement.md);
-- [`cl-article-30.md`](cl-article-30.md);
-- [`cl-article-39.md`](cl-article-39.md);
+- [`cl-part-7-enforcement.md`](./cl-part-7-enforcement.md);
+- [`cl-article-30.md`](./cl-article-30.md);
+- [`cl-article-39.md`](./cl-article-39.md);
 - [`../crime-fraud/index.md`](../crime-fraud/index.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-articles-index.md`](./cl-articles-index.md).

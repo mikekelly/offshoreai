@@ -82,13 +82,13 @@ The employer can be liable for:
 - **Defence**: "all reasonable steps" to prevent the
   harassment.
 
-See [`dl-part-3-harassment.md`](dl-part-3-harassment.md) for
+See [`dl-part-3-harassment.md`](./dl-part-3-harassment.md) for
 more detail.
 
 ## Cross-references
 
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-article-6.md`](dl-article-6.md);
-- [`dl-part-2-forms.md`](dl-part-2-forms.md);
-- [`dl-part-3-harassment.md`](dl-part-3-harassment.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-article-6.md`](./dl-article-6.md);
+- [`dl-part-2-forms.md`](./dl-part-2-forms.md);
+- [`dl-part-3-harassment.md`](./dl-part-3-harassment.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

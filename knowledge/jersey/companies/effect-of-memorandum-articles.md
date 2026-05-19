@@ -89,7 +89,7 @@ The statutory contract has some peculiarities:
 - It is **automatically applicable** to new members on becoming
   members — no need for re-execution.
 - It can be **altered** by special resolution under
-  [Article 11](alteration-of-memorandum-articles.md) *(planned)*,
+  [Article 11](./alteration-of-memorandum-articles.md) *(planned)*,
   which is unusual for a contract (ordinary contracts cannot be
   amended unilaterally by majority).
 - Certain **rights conferred on outside third parties** by the

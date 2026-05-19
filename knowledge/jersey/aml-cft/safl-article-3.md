@@ -92,8 +92,8 @@ A designation:
 
 ## Cross-references
 
-- [`safl-article-4.md`](safl-article-4.md) — UN listings;
-- [`safl-article-5.md`](safl-article-5.md) — UK listings;
-- [`safl-article-10.md`](safl-article-10.md) — asset-freezing
+- [`safl-article-4.md`](./safl-article-4.md) — UN listings;
+- [`safl-article-5.md`](./safl-article-5.md) — UK listings;
+- [`safl-article-10.md`](./safl-article-10.md) — asset-freezing
   effect;
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-articles-index.md`](./safl-articles-index.md).

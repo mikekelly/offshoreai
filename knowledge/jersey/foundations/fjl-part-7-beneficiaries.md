@@ -88,7 +88,7 @@ foundation's records, and the **register of beneficiaries**
 
 ## Cross-references
 
-- [`fjl-article-28.md`](fjl-article-28.md);
-- [`fjl-article-29.md`](fjl-article-29.md);
-- [`fjl-article-30.md`](fjl-article-30.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-28.md`](./fjl-article-28.md);
+- [`fjl-article-29.md`](./fjl-article-29.md);
+- [`fjl-article-30.md`](./fjl-article-30.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

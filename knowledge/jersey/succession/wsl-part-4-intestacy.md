@@ -124,7 +124,7 @@ settlement** is often preferred:
 
 ## Cross-references
 
-- [`wsl-article-14.md`](wsl-article-14.md);
-- [`wsl-article-15.md`](wsl-article-15.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md);
+- [`wsl-article-14.md`](./wsl-article-14.md);
+- [`wsl-article-15.md`](./wsl-article-15.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md).

@@ -67,7 +67,7 @@ A change of name on continuance may require:
 
 ## Cross-references
 
-- [`name-requirements.md`](name-requirements.md) — Article 13:
+- [`name-requirements.md`](./name-requirements.md) — Article 13:
   Jersey company-name requirements.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

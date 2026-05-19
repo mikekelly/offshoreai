@@ -139,7 +139,7 @@ prejudiced**:
 
 ## Cross-references
 
-- [`fjl-article-38.md`](fjl-article-38.md);
-- [`fjl-article-40.md`](fjl-article-40.md);
-- [`fjl-part-10-migration.md`](fjl-part-10-migration.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-38.md`](./fjl-article-38.md);
+- [`fjl-article-40.md`](./fjl-article-40.md);
+- [`fjl-part-10-migration.md`](./fjl-part-10-migration.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

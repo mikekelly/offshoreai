@@ -104,7 +104,7 @@ The application is **substantial**:
 
 ## Cross-references
 
-- [`bbl-article-4.md`](bbl-article-4.md);
-- [`bbl-article-6.md`](bbl-article-6.md);
-- [`bbl-part-2-registration.md`](bbl-part-2-registration.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-4.md`](./bbl-article-4.md);
+- [`bbl-article-6.md`](./bbl-article-6.md);
+- [`bbl-part-2-registration.md`](./bbl-part-2-registration.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

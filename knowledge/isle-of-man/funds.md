@@ -112,8 +112,8 @@ IoM has a particular specialty in:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`companies.md`](companies.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`companies.md`](./companies.md);
 - [`../jersey/funds/index.md`](../jersey/funds/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

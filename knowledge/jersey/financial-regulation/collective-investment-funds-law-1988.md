@@ -91,5 +91,5 @@ Jersey is a **significant funds jurisdiction**:
 
 - [`../funds/index.md`](../funds/index.md) — Jersey funds sector
   overview.
-- [`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md)
+- [`financial-services-jersey-law-1998.md`](./financial-services-jersey-law-1998.md)
   — the FSB regime for fund-service providers.

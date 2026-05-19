@@ -180,4 +180,4 @@ For programme:
 ## Cross-references
 
 - [`../../aml-cft/aml-cft-handbook.md`](../../aml-cft/aml-cft-handbook.md)
-- [`customer-due-diligence.md`](customer-due-diligence.md)
+- [`customer-due-diligence.md`](./customer-due-diligence.md)

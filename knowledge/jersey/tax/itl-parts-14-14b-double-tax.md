@@ -118,7 +118,7 @@ For large MNE groups under Pillar Two:
 
 ## Cross-references
 
-- [`international-tax.md`](international-tax.md)
+- [`international-tax.md`](./international-tax.md)
 - [`../international/dtas.md`](../international/dtas.md)
 - [`../international/tieas.md`](../international/tieas.md)
 

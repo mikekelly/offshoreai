@@ -205,6 +205,6 @@ For programme:
 
 ## Cross-references
 
-- [`filing-a-sar.md`](filing-a-sar.md)
+- [`filing-a-sar.md`](./filing-a-sar.md)
 - [`../trust-officer/sar-threshold.md`](../trust-officer/sar-threshold.md)
 - [`../../aml-cft/proceeds-of-crime-law-1999.md`](../../aml-cft/proceeds-of-crime-law-1999.md)

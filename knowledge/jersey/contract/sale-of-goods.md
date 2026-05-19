@@ -107,7 +107,7 @@ Default rules under Jersey law:
 
 Jersey sales with international parties:
 
-- **Choice of law** — see [`choice-of-law.md`](choice-of-law.md);
+- **Choice of law** — see [`choice-of-law.md`](./choice-of-law.md);
 - **CISG** — Jersey is not a CISG state;
 - **Incoterms** routinely used;
 - **Specific** Jersey customs / GST issues.
@@ -150,10 +150,10 @@ Jersey sales with international parties:
 
 ## Cross-references
 
-- [`formation.md`](formation.md);
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`damages.md`](damages.md);
-- [`specific-performance.md`](specific-performance.md);
-- [`misrepresentation.md`](misrepresentation.md);
+- [`formation.md`](./formation.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`damages.md`](./damages.md);
+- [`specific-performance.md`](./specific-performance.md);
+- [`misrepresentation.md`](./misrepresentation.md);
 - [`../property/real-property-overview.md`](../property/real-property-overview.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

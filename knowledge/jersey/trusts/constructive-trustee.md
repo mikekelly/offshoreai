@@ -53,7 +53,7 @@ of bona fide purchasers for value.
 
 Article 33 is the statutory basis for the **proprietary remedy** in
 breach-of-trust cases. Whereas
-[Article 30](breach-of-trust-liability.md) provides a **personal
+[Article 30](./breach-of-trust-liability.md) provides a **personal
 remedy** against the breaching trustee (compensation), Article 33
 provides a **proprietary remedy** against the recipient of
 misappropriated trust property — the third party "knowingly receives"

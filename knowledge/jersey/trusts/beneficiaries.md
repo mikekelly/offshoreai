@@ -100,14 +100,14 @@ contexts:
 
 ## Relationship with other Articles
 
-- [Article 2](existence-of-a-trust.md) — accommodates beneficiaries
+- [Article 2](./existence-of-a-trust.md) — accommodates beneficiaries
   "whether or not yet ascertained or in existence", complementing
   Article 10.
-- [Article 10A](disclaimer-of-interest.md) — a beneficiary's right
+- [Article 10A](./disclaimer-of-interest.md) — a beneficiary's right
   to disclaim.
-- [Article 12](purpose-trusts.md) — non-charitable purpose trusts
+- [Article 12](./purpose-trusts.md) — non-charitable purpose trusts
   exist *without* beneficiaries, supervised by an enforcer instead.
-- [Article 36](class-interests.md) — class-interest
+- [Article 36](./class-interests.md) — class-interest
   rules for closed and open classes.
 
 ## Pitfalls

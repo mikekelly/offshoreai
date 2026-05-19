@@ -76,6 +76,6 @@ company. Common scenarios:
 
 ## Cross-references
 
-- [`strike-off.md`](strike-off.md) — Article 205.
+- [`strike-off.md`](./strike-off.md) — Article 205.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

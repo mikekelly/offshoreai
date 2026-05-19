@@ -111,7 +111,7 @@ satisfies Article 3 requirements while providing fuller terms.
 
 ## Cross-references
 
-- [`el-part-2-particulars-pay.md`](el-part-2-particulars-pay.md);
-- [`el-part-5-termination.md`](el-part-5-termination.md);
-- [`el-article-64.md`](el-article-64.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-part-2-particulars-pay.md`](./el-part-2-particulars-pay.md);
+- [`el-part-5-termination.md`](./el-part-5-termination.md);
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-articles-index.md`](./el-articles-index.md).

@@ -92,6 +92,6 @@ The employee may lose entitlement by:
 
 ## Cross-references
 
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-7-redundancy.md`](el-part-7-redundancy.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-7-redundancy.md`](./el-part-7-redundancy.md);
+- [`el-articles-index.md`](./el-articles-index.md).

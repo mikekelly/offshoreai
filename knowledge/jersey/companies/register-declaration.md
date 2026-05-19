@@ -76,7 +76,7 @@ contractual protection.
 
 Many modern Jersey companies maintain shares in
 **uncertificated form** under
-[Article 51A](uncertificated-securities.md) — the share is
+[Article 51A](./uncertificated-securities.md) — the share is
 recorded electronically in the register and **no physical
 certificate exists** to be lost in the first place.
 

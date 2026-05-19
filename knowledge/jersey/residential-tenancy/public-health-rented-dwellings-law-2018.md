@@ -165,13 +165,13 @@ The two regimes interact:
   scrutinised for retaliation;
 - **Set-off** of substantiated repair costs against rent
   is available under the contractual route — see
-  [`repairs-and-standards.md`](repairs-and-standards.md).
+  [`repairs-and-standards.md`](./repairs-and-standards.md).
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`repairs-and-standards.md`](repairs-and-standards.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`non-payment-of-rent.md`](non-payment-of-rent.md);
+- [`index.md`](./index.md);
+- [`repairs-and-standards.md`](./repairs-and-standards.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`non-payment-of-rent.md`](./non-payment-of-rent.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

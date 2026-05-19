@@ -46,7 +46,7 @@ the Registrar can require the company to change it.
 
 ## When the power is used
 
-The Registrar's veto in [Article 13](name-requirements.md) catches
+The Registrar's veto in [Article 13](./name-requirements.md) catches
 problematic names **before incorporation**. Article 15 is the
 catch-up power for names that:
 
@@ -80,7 +80,7 @@ specific events:
 4. **Court confirmation or override** — Court can confirm,
    modify, or set aside the direction.
 5. **Implementation** — if confirmed, the company changes its
-   name following the [Article 14](change-of-name.md) procedure.
+   name following the [Article 14](./change-of-name.md) procedure.
 
 ## Appeal grounds
 
@@ -102,7 +102,7 @@ problem identified, or if the Registrar's reasoning is flawed.
   compliance window can expose officers to offences under the
   Companies Law and can lead the Registrar to **strike the
   company off** under
-  [Article 205](registrar-strike-off.md) *(planned)*.
+  [Article 205](./registrar-strike-off.md) *(planned)*.
 - **Treating it as administrative when it should be appealed** —
   if the company has a substantive defence, file the appeal in
   the 21-day window.

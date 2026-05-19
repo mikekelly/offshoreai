@@ -193,11 +193,11 @@ Voisinage claims typically proceed by:
 
 ## Cross-references
 
-- [`boundary-disputes.md`](boundary-disputes.md);
-- [`real-property-overview.md`](real-property-overview.md);
-- [`servitudes.md`](servitudes.md);
+- [`boundary-disputes.md`](./boundary-disputes.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`servitudes.md`](./servitudes.md);
 - [`../contract/delit-tort.md`](../contract/delit-tort.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
 - [`../legal-system/royal-court-rules.md`](../legal-system/royal-court-rules.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

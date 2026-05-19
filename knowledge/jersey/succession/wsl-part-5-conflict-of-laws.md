@@ -30,7 +30,7 @@ rule:
 - **Movables** governed by **domicile law** at death;
 - **Jersey immovables** governed by **Jersey law**;
 - **Foreign immovables** governed by **foreign-situs law**;
-- See also [`wsl-article-3.md`](wsl-article-3.md).
+- See also [`wsl-article-3.md`](./wsl-article-3.md).
 
 ## Article 28 — Recognition of foreign wills
 
@@ -123,8 +123,8 @@ For testators from **forced-heirship** jurisdictions
 
 ## Cross-references
 
-- [`wsl-article-3.md`](wsl-article-3.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md);
+- [`wsl-article-3.md`](./wsl-article-3.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md);
 - [`../trusts/firewall.md`](../trusts/firewall.md);
 - [`../use-cases/family-office-adviser/uk-iht-exposure.md`](../use-cases/family-office-adviser/uk-iht-exposure.md);
 - [`../use-cases/international-lawyer/uk-iht-foreign-domiciled.md`](../use-cases/international-lawyer/uk-iht-foreign-domiciled.md).

@@ -104,7 +104,7 @@ The JFSC may impose **conditions** including:
 
 ## Cross-references
 
-- [`cifl-article-4.md`](cifl-article-4.md);
-- [`cifl-article-7.md`](cifl-article-7.md);
-- [`public-funds.md`](public-funds.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-article-4.md`](./cifl-article-4.md);
+- [`cifl-article-7.md`](./cifl-article-7.md);
+- [`public-funds.md`](./public-funds.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

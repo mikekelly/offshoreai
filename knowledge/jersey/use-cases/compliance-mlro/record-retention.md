@@ -161,5 +161,5 @@ For an active situation:
 
 ## Cross-references
 
-- [`bwra.md`](bwra.md)
+- [`bwra.md`](./bwra.md)
 - [`../../aml-cft/money-laundering-order-2008.md`](../../aml-cft/money-laundering-order-2008.md)

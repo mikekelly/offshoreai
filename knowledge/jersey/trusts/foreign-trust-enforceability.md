@@ -98,7 +98,7 @@ holds the real estate; the foreign trust holds the vehicle.
 
 ## Article 9 firewall does not apply
 
-A critical distinction: the [**Article 9 firewall**](firewall.md) is
+A critical distinction: the [**Article 9 firewall**](./firewall.md) is
 in Part 2 and applies only to **Jersey trusts**. A **foreign trust**
 does not get Article 9 protection — Jersey will not disapply foreign
 forced-heirship or matrimonial rules in support of a foreign trust.
@@ -117,7 +117,7 @@ Common scenarios in which Article 49 is invoked before the Royal
 Court:
 
 - a **Jersey-resident trustee** of a foreign trust seeking
-  directions under [Article 51](article-51-directions.md) — the
+  directions under [Article 51](./article-51-directions.md) — the
   Court will apply the foreign proper law to substantive questions
   while applying Jersey procedure;
 - a **beneficiary** seeking to enforce a foreign trust against
@@ -143,7 +143,7 @@ Court:
 - **Proper law uncertainty.** If the trust's proper law is unclear,
   Article 49 cannot be confidently applied. The Court may have to
   determine the proper law first under
-  [Article 4](proper-law.md) principles before reaching the
+  [Article 4](./proper-law.md) principles before reaching the
   Article 49 question.
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

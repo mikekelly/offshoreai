@@ -59,7 +59,7 @@ intent.
 
 Article 47A codifies this for Jersey, applying both to **charitable**
 purpose trusts (the traditional cy-près domain) and to
-**non-charitable** purpose trusts under [Article 12](purpose-trusts.md)
+**non-charitable** purpose trusts under [Article 12](./purpose-trusts.md)
 (a Jersey-specific extension).
 
 ## When the jurisdiction is engaged
@@ -103,7 +103,7 @@ consistent with the settlor's intent. The **Attorney General**
 typically participates in the application.
 
 For **non-charitable purpose trusts** (under
-[Article 12](purpose-trusts.md)), Article 47A's extension of the
+[Article 12](./purpose-trusts.md)), Article 47A's extension of the
 cy-près-style power is more constrained — the redirection must still
 be to a purpose, but it can be non-charitable. The **enforcer** is
 typically the applicant; the AG may participate where there is a
@@ -127,7 +127,7 @@ Division), with:
 
 ## Relationship with Article 42
 
-[Article 42](failure-or-lapse.md) is the **default resulting
+[Article 42](./failure-or-lapse.md) is the **default resulting
 trust** rule — when a trust fails, the property reverts to the
 settlor or the settlor's personal representative. Article 47A
 **displaces** Article 42 for purpose trusts where the Court is

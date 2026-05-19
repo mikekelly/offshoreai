@@ -114,12 +114,12 @@ Key BVI industry:
 
 ## Cross-references
 
-- [`fsc.md`](fsc.md);
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`business-company.md`](business-company.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
+- [`fsc.md`](./fsc.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`business-company.md`](./business-company.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md);
 - [`../cayman/financial-regulation.md`](../cayman/financial-regulation.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

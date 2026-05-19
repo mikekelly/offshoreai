@@ -53,9 +53,9 @@ The register:
 
 ## Companion provisions
 
-- [`auditor-registration.md`](auditor-registration.md) — Article
+- [`auditor-registration.md`](./auditor-registration.md) — Article
   111: how a person becomes registered.
-- [`auditor-qualification.md`](auditor-qualification.md) —
+- [`auditor-qualification.md`](./auditor-qualification.md) —
   Article 112: qualification routes through professional bodies.
 
 ## Pitfalls

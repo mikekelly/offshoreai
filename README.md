@@ -105,7 +105,7 @@ which means an agent answering a comparison question
 
 ## File conventions
 
-See [CONVENTIONS.md](CONVENTIONS.md) for the full spec. Summary:
+See [CONVENTIONS.md](./CONVENTIONS.md) for the full spec. Summary:
 
 **Frontmatter** (YAML) on every content file:
 

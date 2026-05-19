@@ -258,10 +258,10 @@ decision is judged in that context, not in the abstract.
   change to the terms of the trust, the proper vehicle is Article 47
   variation, not Article 51 directions.
 - **Articles 47B–47H (mistake)** — where the relief sought is to undo
-  a past transaction, see [`article-47-set-aside.md`](article-47-set-aside.md).
+  a past transaction, see [`article-47-set-aside.md`](./article-47-set-aside.md).
 - **Article 26 (information / trustee duties)** — the duty to
   provide information sits within a wider framework of trustee duties;
-  see [`beneficiary-rights.md`](beneficiary-rights.md).
+  see [`beneficiary-rights.md`](./beneficiary-rights.md).
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984
 [ptvc]: https://www.lawjournals.co.uk/cases_referred/public-trustee-v-cooper-2001-wtlr-901/

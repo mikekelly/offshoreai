@@ -51,7 +51,7 @@ government's economic-policy plan.
 
 Financial services constitutes **38.5% of Jersey's
 national income in 2024** (Statistics Jersey — see
-[`../../history/sources.md`](../history/sources.md)). It
+[`../../history/sources.md`](../history/finance/sources.md)). It
 is the dominant economic sector and the primary source of
 Government revenue. A coordinated long-horizon policy plan
 is therefore strategically essential.
@@ -175,7 +175,7 @@ Read together, the FSCP and the JFSC Strategy articulate
 This is the most coordinated multi-stakeholder strategy
 articulation Jersey's financial-services sector has had —
 see the **trajectory** synthesis at
-[`../../history/trajectory.md`](../history/trajectory.md)
+[`../../history/trajectory.md`](../history/finance/trajectory.md)
 for how this fits into the four-act narrative.
 
 ## Pitfalls
@@ -220,6 +220,6 @@ for how this fits into the four-act narrative.
 ### Context
 
 - [`../../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md);
-- [`../../history/last-2-years.md`](../history/last-2-years.md);
-- [`../../history/trajectory.md`](../history/trajectory.md);
-- [`../../history/sources.md`](../history/sources.md).
+- [`../../history/last-2-years.md`](../history/finance/last-2-years.md);
+- [`../../history/trajectory.md`](../history/finance/trajectory.md);
+- [`../../history/sources.md`](../history/finance/sources.md).

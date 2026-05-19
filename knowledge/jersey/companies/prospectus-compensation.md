@@ -107,7 +107,7 @@ in any letters appended to the prospectus, distinguishing
 ## Strict liability vs negligence
 
 The Article 30 claim is **not strict liability**. The defendant
-has access to the [Article 31](prospectus-exemption.md) exemption
+has access to the [Article 31](./prospectus-exemption.md) exemption
 defences — most importantly, the **reasonable-investigation /
 reasonable-belief** defence. A defendant who took reasonable
 steps to verify the prospectus contents has a defence.
@@ -124,7 +124,7 @@ Claimants are typically:
 
 — who can show **loss** caused by the misstatement.
 
-[Article 32](prospectus-recovery.md) addresses procedural aspects
+[Article 32](./prospectus-recovery.md) addresses procedural aspects
 of recovery, including that the compensation is treated as a debt
 rather than a member-contribution issue.
 

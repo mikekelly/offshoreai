@@ -89,9 +89,9 @@ developed.
 
 ## Cross-references
 
-- [`unfair-prejudice-minister-jfsc.md`](unfair-prejudice-minister-jfsc.md)
+- [`unfair-prejudice-minister-jfsc.md`](./unfair-prejudice-minister-jfsc.md)
   — Article 142: Minister / JFSC application.
-- [`unfair-prejudice-court-powers.md`](unfair-prejudice-court-powers.md)
+- [`unfair-prejudice-court-powers.md`](./unfair-prejudice-court-powers.md)
   — Article 143: court remedies.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

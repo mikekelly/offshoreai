@@ -211,11 +211,11 @@ neighbour relations:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`servitudes.md`](servitudes.md);
-- [`contract-passing.md`](contract-passing.md);
-- [`voisinage.md`](voisinage.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`servitudes.md`](./servitudes.md);
+- [`contract-passing.md`](./contract-passing.md);
+- [`voisinage.md`](./voisinage.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
 - [`../legal-system/royal-court-rules.md`](../legal-system/royal-court-rules.md);
 - [`../registries/land-registry.md`](../registries/land-registry.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

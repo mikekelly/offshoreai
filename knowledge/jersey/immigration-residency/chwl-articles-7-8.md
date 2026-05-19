@@ -87,7 +87,7 @@ Status can be **lost** through:
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-article-4.md`](chwl-article-4.md);
-- [`chwl-article-5.md`](chwl-article-5.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-article-4.md`](./chwl-article-4.md);
+- [`chwl-article-5.md`](./chwl-article-5.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

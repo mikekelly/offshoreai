@@ -96,8 +96,8 @@ Monitoring is **calibrated to risk**:
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-6.md`](mlo-article-6.md);
-- [`mlo-article-12.md`](mlo-article-12.md);
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-6.md`](./mlo-article-6.md);
+- [`mlo-article-12.md`](./mlo-article-12.md);
 - [`../use-cases/compliance-mlro/cdd-refresh-cycle.md`](../use-cases/compliance-mlro/cdd-refresh-cycle.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

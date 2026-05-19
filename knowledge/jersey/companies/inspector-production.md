@@ -69,8 +69,8 @@ The duty extends to:
 
 ## Cross-references
 
-- [`inspector-powers.md`](inspector-powers.md) — Article 129.
-- [`privileged-information.md`](privileged-information.md) —
+- [`inspector-powers.md`](./inspector-powers.md) — Article 129.
+- [`privileged-information.md`](./privileged-information.md) —
   Article 139: privilege limits on production.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

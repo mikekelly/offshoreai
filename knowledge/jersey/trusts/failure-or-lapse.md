@@ -59,14 +59,14 @@ engaged).
 Article 42 is the **default destination** rule when a trust runs out
 of beneficiaries or interests. It sits alongside:
 
-- [Article 36 class interests](class-interests.md) — when a class
+- [Article 36 class interests](./class-interests.md) — when a class
   closes without members, the income accumulates pending a member
   or class closure; if the class closes without ever having members,
   Article 42 takes over;
-- [Article 43 termination](termination-of-trust.md) — termination
+- [Article 43 termination](./termination-of-trust.md) — termination
   procedurally; Article 42 sets where the property goes when no
   destination is specified;
-- [Article 47A](court-purpose-trust-redirection.md) —
+- [Article 47A](./court-purpose-trust-redirection.md) —
   cy-près-style redirection by the Royal Court for charitable and
   non-charitable purpose trusts when the original purpose fails.
 
@@ -85,7 +85,7 @@ The default is **rebuttable** by:
 - **express deed terms** providing a different default — most
   modern deeds include a "**default beneficiary**" or "**default
   charity**" clause that displaces Article 42;
-- **the operation of [Article 47A](court-purpose-trust-redirection.md)
+- **the operation of [Article 47A](./court-purpose-trust-redirection.md)
  ** for purpose trusts where the Court can redirect the
   property to alternative purposes consistent with the settlor's
   intent.
@@ -101,7 +101,7 @@ settlor's estate. Practical consequences:
 - the **succession rules** of the settlor's domicile (or relevant
   jurisdiction) may now apply to the property;
 - **forced-heirship rules** that the firewall under
-  [Article 9](firewall.md) had protected against during the trust's
+  [Article 9](./firewall.md) had protected against during the trust's
   existence may now bite on the reverted property in the settlor's
   estate;
 - **inheritance tax / equivalent** in the settlor's home
@@ -118,7 +118,7 @@ The Article expressly mentions the **Attorney General** as a
 potential applicant. The AG's role is particularly relevant for:
 
 - **charitable trusts** that have failed — the AG may apply for
-  redirection (under [Article 47A](court-purpose-trust-redirection.md)
+  redirection (under [Article 47A](./court-purpose-trust-redirection.md)
  ) or for Article 42 default treatment;
 - **non-charitable purpose trusts** where the purpose has failed
   and there is a public-interest dimension;

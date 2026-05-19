@@ -76,7 +76,7 @@ Once made, the restraint order:
 
 ## Cross-references
 
-- [`pocl-article-18.md`](pocl-article-18.md);
-- [`pocl-article-19.md`](pocl-article-19.md);
-- [`pocl-part-3-restraint.md`](pocl-part-3-restraint.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-18.md`](./pocl-article-18.md);
+- [`pocl-article-19.md`](./pocl-article-19.md);
+- [`pocl-part-3-restraint.md`](./pocl-part-3-restraint.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

@@ -95,4 +95,4 @@ client-pricing pressure. The ISE regime removes that friction.
 
 ## Cross-references
 
-- [`gst.md`](gst.md) — the general GST regime.
+- [`gst.md`](./gst.md) — the general GST regime.

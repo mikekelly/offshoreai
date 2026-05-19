@@ -310,11 +310,11 @@ If the Royal Court grants set-aside:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`article-47-mistake.md`](article-47-mistake.md);
-- [`article-9-firewall.md`](article-9-firewall.md);
-- [`article-51-trustee.md`](article-51-trustee.md);
-- [`coordinating-jersey-advocates.md`](coordinating-jersey-advocates.md);
+- [`index.md`](./index.md);
+- [`article-47-mistake.md`](./article-47-mistake.md);
+- [`article-9-firewall.md`](./article-9-firewall.md);
+- [`article-51-trustee.md`](./article-51-trustee.md);
+- [`coordinating-jersey-advocates.md`](./coordinating-jersey-advocates.md);
 - [`../../trusts/article-47-set-aside.md`](../../trusts/article-47-set-aside.md);
 - [`../../trusts/article-51-directions.md`](../../trusts/article-51-directions.md);
 - [`../../trusts/firewall.md`](../../trusts/firewall.md);

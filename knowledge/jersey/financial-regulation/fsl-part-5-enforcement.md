@@ -129,7 +129,7 @@ Areas of recent JFSC enforcement focus:
 
 ## Cross-references
 
-- [`enforcement.md`](enforcement.md);
-- [`fsl-article-19.md`](fsl-article-19.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md);
-- [`jfsc.md`](jfsc.md).
+- [`enforcement.md`](./enforcement.md);
+- [`fsl-article-19.md`](./fsl-article-19.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md);
+- [`jfsc.md`](./jfsc.md).

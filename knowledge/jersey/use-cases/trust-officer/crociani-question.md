@@ -141,5 +141,5 @@ For new trusts:
 
 ## Cross-references
 
-- [`firewall-question.md`](firewall-question.md)
+- [`firewall-question.md`](./firewall-question.md)
 - [`../../trusts/firewall.md`](../../trusts/firewall.md)

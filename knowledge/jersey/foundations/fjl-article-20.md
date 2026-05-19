@@ -127,8 +127,8 @@ Records are accessible by:
 
 ## Cross-references
 
-- [`fjl-article-25.md`](fjl-article-25.md) — guardian access;
-- [`fjl-article-30.md`](fjl-article-30.md) — beneficiary
+- [`fjl-article-25.md`](./fjl-article-25.md) — guardian access;
+- [`fjl-article-30.md`](./fjl-article-30.md) — beneficiary
   rights;
-- [`fjl-part-8-administration.md`](fjl-part-8-administration.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-part-8-administration.md`](./fjl-part-8-administration.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

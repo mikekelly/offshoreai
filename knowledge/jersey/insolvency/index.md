@@ -45,18 +45,18 @@ the statutory regimes.
 
 | The question is about... | Read |
 |---|---|
-| Insolvent individual in Jersey | [bdl-articles-index.md](bdl-articles-index.md) |
+| Insolvent individual in Jersey | [bdl-articles-index.md](./bdl-articles-index.md) |
 | Insolvent Jersey company | This section plus Companies Law Part 21 ([`../companies/index.md`](../companies/index.md)) |
-| Choosing between désastre and creditors' winding-up | [bdl-vs-creditors-winding-up.md](bdl-vs-creditors-winding-up.md) *(planned)* or `bankruptcy-desastre-law-1990.md` |
+| Choosing between désastre and creditors' winding-up | [bdl-vs-creditors-winding-up.md](./bdl-vs-creditors-winding-up.md) *(planned)* or `bankruptcy-desastre-law-1990.md` |
 | Trustee insolvency and trust property | [`../trusts/trustee-estate-and-insolvency.md`](../trusts/trustee-estate-and-insolvency.md) |
-| Recognition of foreign insolvency in Jersey | [foreign-insolvency-recognition.md](foreign-insolvency-recognition.md) *(planned)* |
-| Cross-border insolvency cooperation | [bdl-part-7-misc.md](bdl-part-7-misc.md) |
+| Recognition of foreign insolvency in Jersey | [foreign-insolvency-recognition.md](./foreign-insolvency-recognition.md) *(planned)* |
+| Cross-border insolvency cooperation | [bdl-part-7-misc.md](./bdl-part-7-misc.md) |
 
 ## Where to start
 
-1. **[`bankruptcy-desastre-law-1990.md`](bankruptcy-desastre-law-1990.md)**
+1. **[`bankruptcy-desastre-law-1990.md`](./bankruptcy-desastre-law-1990.md)**
    — concept overview of désastre;
-2. **[`bdl-articles-index.md`](bdl-articles-index.md)** —
+2. **[`bdl-articles-index.md`](./bdl-articles-index.md)** —
    article-by-article scaffold;
 3. **[`../companies/summary-winding-up-insolvency.md`](../companies/summary-winding-up-insolvency.md)**
    and Companies Law Part 21 files for company-specific
@@ -79,4 +79,4 @@ the statutory regimes.
 
 - [`../companies/index.md`](../companies/index.md);
 - [`../trusts/trustee-estate-and-insolvency.md`](../trusts/trustee-estate-and-insolvency.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

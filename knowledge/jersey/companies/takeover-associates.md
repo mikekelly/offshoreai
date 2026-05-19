@@ -89,9 +89,9 @@ path.
 
 ## Cross-references
 
-- [`squeeze-out.md`](squeeze-out.md) — Article 117 (where the
+- [`squeeze-out.md`](./squeeze-out.md) — Article 117 (where the
   associates rule narrows the 90% denominator).
-- [`sell-out.md`](sell-out.md) — Article 119 (where it broadens
+- [`sell-out.md`](./sell-out.md) — Article 119 (where it broadens
   the sell-out trigger).
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

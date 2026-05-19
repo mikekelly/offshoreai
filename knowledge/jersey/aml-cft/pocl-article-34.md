@@ -120,8 +120,8 @@ Article 34 carries the following defences:
 
 ## Cross-references
 
-- [`pocl-article-34a.md`](pocl-article-34a.md) — nominated
+- [`pocl-article-34a.md`](./pocl-article-34a.md) — nominated
   officer obligations;
-- [`pocl-article-35.md`](pocl-article-35.md) — tipping off;
-- [`schedule-2-businesses.md`](schedule-2-businesses.md);
+- [`pocl-article-35.md`](./pocl-article-35.md) — tipping off;
+- [`schedule-2-businesses.md`](./schedule-2-businesses.md);
 - [`../use-cases/compliance-mlro/knowledge-or-suspicion.md`](../use-cases/compliance-mlro/knowledge-or-suspicion.md).

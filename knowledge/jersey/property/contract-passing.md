@@ -157,9 +157,9 @@ Jersey real-property contracts contain:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`loi-1880-sur-la-propriete-fonciere.md`](loi-1880-sur-la-propriete-fonciere.md);
-- [`hypothec.md`](hypothec.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`loi-1880-sur-la-propriete-fonciere.md`](./loi-1880-sur-la-propriete-fonciere.md);
+- [`hypothec.md`](./hypothec.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../registries/land-registry.md`](../registries/land-registry.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

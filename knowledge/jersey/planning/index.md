@@ -59,31 +59,31 @@ change-of-use commercial, conservation-area properties.
 
 ### Statute and framework
 
-- [`planning-building-law-2002.md`](planning-building-law-2002.md) — PBL 2002 overview
-- [`development-defined.md`](development-defined.md) — what counts as "development"
-- [`island-plan.md`](island-plan.md) — the policy framework
-- [`building-bye-laws.md`](building-bye-laws.md) — technical standards (separate from planning)
+- [`planning-building-law-2002.md`](./planning-building-law-2002.md) — PBL 2002 overview
+- [`development-defined.md`](./development-defined.md) — what counts as "development"
+- [`island-plan.md`](./island-plan.md) — the policy framework
+- [`building-bye-laws.md`](./building-bye-laws.md) — technical standards (separate from planning)
 
 ### Permission
 
-- [`permitted-development.md`](permitted-development.md) — the General Development Order 2011 exemptions
-- [`application-process.md`](application-process.md) — pre-app → registration → 21-day notice → consultation → decision
-- [`fees-and-timelines.md`](fees-and-timelines.md)
-- [`extensions-and-conversions.md`](extensions-and-conversions.md) — common scenarios
-- [`change-of-use.md`](change-of-use.md) — commercial / residential / mixed
+- [`permitted-development.md`](./permitted-development.md) — the General Development Order 2011 exemptions
+- [`application-process.md`](./application-process.md) — pre-app → registration → 21-day notice → consultation → decision
+- [`fees-and-timelines.md`](./fees-and-timelines.md)
+- [`extensions-and-conversions.md`](./extensions-and-conversions.md) — common scenarios
+- [`change-of-use.md`](./change-of-use.md) — commercial / residential / mixed
 
 ### Special protections
 
-- [`listed-buildings.md`](listed-buildings.md) — listed buildings consent
-- [`conservation-areas.md`](conservation-areas.md) — additional protections
-- [`green-zone-and-countryside.md`](green-zone-and-countryside.md) — landscape protections
+- [`listed-buildings.md`](./listed-buildings.md) — listed buildings consent
+- [`conservation-areas.md`](./conservation-areas.md) — additional protections
+- [`green-zone-and-countryside.md`](./green-zone-and-countryside.md) — landscape protections
 
 ### Disputes and enforcement
 
-- [`appeals.md`](appeals.md) — appeals against refusal or conditions
-- [`third-party-objections.md`](third-party-objections.md) — neighbours' rights
-- [`enforcement.md`](enforcement.md) — unauthorised development, enforcement notices
-- [`retrospective-applications.md`](retrospective-applications.md)
+- [`appeals.md`](./appeals.md) — appeals against refusal or conditions
+- [`third-party-objections.md`](./third-party-objections.md) — neighbours' rights
+- [`enforcement.md`](./enforcement.md) — unauthorised development, enforcement notices
+- [`retrospective-applications.md`](./retrospective-applications.md)
 
 ## At a glance
 

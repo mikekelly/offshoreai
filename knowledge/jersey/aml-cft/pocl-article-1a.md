@@ -104,11 +104,11 @@ Despite the broad scope:
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-article-30.md`](pocl-article-30.md) — concealing
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-article-30.md`](./pocl-article-30.md) — concealing
   offence;
-- [`pocl-article-32.md`](pocl-article-32.md) — acquisition,
+- [`pocl-article-32.md`](./pocl-article-32.md) — acquisition,
   use, possession;
 - [`../use-cases/compliance-mlro/knowledge-or-suspicion.md`](../use-cases/compliance-mlro/knowledge-or-suspicion.md);
-- [`tax-evasion-as-predicate.md`](tax-evasion-as-predicate.md)
+- [`tax-evasion-as-predicate.md`](./tax-evasion-as-predicate.md)
   *(may exist)*.

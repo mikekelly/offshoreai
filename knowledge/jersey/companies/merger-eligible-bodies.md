@@ -70,7 +70,7 @@ can participate.
 
 ## Cross-references
 
-- [`merger-eligible-merged-bodies.md`](merger-eligible-merged-bodies.md)
+- [`merger-eligible-merged-bodies.md`](./merger-eligible-merged-bodies.md)
   — Article 127C: eligibility as the **merged** (surviving)
   body.
 

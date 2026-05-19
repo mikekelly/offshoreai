@@ -36,10 +36,10 @@ see_also:
 
 The **States Assembly** (formerly "the States of Jersey") is Jersey's
 unicameral parliament. It is the legislative body of a self-governing
-[Crown Dependency](crown-dependency.md) and is responsible for primary
+[Crown Dependency](./crown-dependency.md) and is responsible for primary
 legislation, the Annual Government Plan (which sets taxation and
 spending), and the holding to account of the executive
-[Council of Ministers](council-of-ministers.md).
+[Council of Ministers](./council-of-ministers.md).
 
 ## Composition — current term (elected at the 2022 general election)
 
@@ -49,7 +49,7 @@ under which the Assembly comprises **49 elected members**, made up of:
 - **37 Deputies** elected from **nine new electoral constituencies**
   across the Island; and
 - **12 Connétables** — one elected from each of the [twelve civil
-  parishes](parishes.md), serving ex officio as members of the Assembly.
+  parishes](./parishes.md), serving ex officio as members of the Assembly.
 
 ([statesassembly.je — How members are elected][how-elected];
 [londonoffice.gov.je][london])
@@ -85,7 +85,7 @@ limited or no voting rights on most matters:
   who **presides** over the Assembly. See [bailiff.md](../legal-system/bailiff.md).
 - The **Lieutenant-Governor** of Jersey, the King's representative —
   attends but does not vote. See
-  [lieutenant-governor.md](lieutenant-governor.md).
+  [lieutenant-governor.md](./lieutenant-governor.md).
 - The **Dean of Jersey** — the senior clergyman of the Established
   Church on the Island.
 - The **Attorney General** and the **Solicitor General** — the Crown
@@ -117,7 +117,7 @@ The States Assembly:
    *enregistrement*), the Projet becomes a **Law of Jersey** with its
    stated commencement date. This Privy Council route is the formal
    acknowledgment that Jersey legislates under the Crown rather than
-   under the UK Parliament — see [crown-dependency.md](crown-dependency.md).
+   under the UK Parliament — see [crown-dependency.md](./crown-dependency.md).
 2. **Adopts the Annual Government Plan**, which sets income-tax,
    GST and other revenue-raising measures and authorises departmental
    spending for the year. See [tax/index.md](../tax/index.md).
@@ -143,17 +143,17 @@ The Assembly's procedural framework is set out in:
 ## How this fits together
 
 - The Assembly **legislates**: see this page and
-  [crown-dependency.md](crown-dependency.md) for the constitutional
+  [crown-dependency.md](./crown-dependency.md) for the constitutional
   context.
 - The Assembly's **Ministers** form the executive: see
-  [council-of-ministers.md](council-of-ministers.md).
+  [council-of-ministers.md](./council-of-ministers.md).
 - The Assembly's Laws are interpreted and applied by the
   [Royal Court](../legal-system/royal-court.md), and ultimately by the
   [Court of Appeal](../legal-system/court-of-appeal.md) and the
   Judicial Committee of the Privy Council.
 - The Assembly is **distinct from** the parish assemblies, which deal
   with parish-level matters under the
-  [Connétables](parishes.md).
+  [Connétables](./parishes.md).
 
 [how-elected]: https://statesassembly.je/how-states-members-are-elected
 [about]: https://statesassembly.je/about-the-states-assembly

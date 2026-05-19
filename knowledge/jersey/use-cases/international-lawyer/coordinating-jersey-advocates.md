@@ -228,5 +228,5 @@ For ongoing practice:
 
 ## Cross-references
 
-- [`advocate-vs-solicitor.md`](advocate-vs-solicitor.md)
-- [`royal-court-procedure.md`](royal-court-procedure.md)
+- [`advocate-vs-solicitor.md`](./advocate-vs-solicitor.md)
+- [`royal-court-procedure.md`](./royal-court-procedure.md)

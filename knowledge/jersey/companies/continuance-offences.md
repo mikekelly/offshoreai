@@ -64,7 +64,7 @@ consequences for creditors, members and the public interest.
 
 ## Cross-references
 
-- [`continuance-solvency.md`](continuance-solvency.md) — Article
+- [`continuance-solvency.md`](./continuance-solvency.md) — Article
   127W: the solvency-statement obligation.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

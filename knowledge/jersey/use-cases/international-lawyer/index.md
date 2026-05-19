@@ -47,39 +47,39 @@ cases involving Jersey entities.
 
 ### Procedural
 
-- [Royal Court procedure for non-Jersey lawyers — what to expect](royal-court-procedure.md)
-- [When do I need a Jersey Advocate vs Jersey Solicitor?](advocate-vs-solicitor.md)
-- [Service of foreign proceedings in Jersey](service-of-proceedings.md)
-- [Enforcement of foreign judgments in Jersey](enforcement-foreign-judgments.md)
+- [Royal Court procedure for non-Jersey lawyers — what to expect](./royal-court-procedure.md)
+- [When do I need a Jersey Advocate vs Jersey Solicitor?](./advocate-vs-solicitor.md)
+- [Service of foreign proceedings in Jersey](./service-of-proceedings.md)
+- [Enforcement of foreign judgments in Jersey](./enforcement-foreign-judgments.md)
 
 ### Jersey trusts in cross-border disputes
 
-- [Article 9 firewall — how strong is it?](article-9-firewall.md)
-- [Article 47 mistake — wider than English Pitt v Holt](article-47-mistake.md)
-- [Article 51 directions for the trustee — when and how](article-51-trustee.md)
-- [Beneficiary information rights — Schmidt v Rosewood applied in Jersey](beneficiary-information-jersey.md)
+- [Article 9 firewall — how strong is it?](./article-9-firewall.md)
+- [Article 47 mistake — wider than English Pitt v Holt](./article-47-mistake.md)
+- [Article 51 directions for the trustee — when and how](./article-51-trustee.md)
+- [Beneficiary information rights — Schmidt v Rosewood applied in Jersey](./beneficiary-information-jersey.md)
 
 ### Jersey companies in cross-border deals
 
-- [Jersey TopCo in a UK / US M&A deal — what to know](jersey-topco-ma.md)
-- [Squeeze-out under Part 18 for a Jersey target — vs UK takeover scheme](squeeze-out-vs-scheme.md)
-- [Continuance / merger of Jersey companies in restructuring context](restructuring-context.md)
+- [Jersey TopCo in a UK / US M&A deal — what to know](./jersey-topco-ma.md)
+- [Squeeze-out under Part 18 for a Jersey target — vs UK takeover scheme](./squeeze-out-vs-scheme.md)
+- [Continuance / merger of Jersey companies in restructuring context](./restructuring-context.md)
 
 ### Jersey law in foreign-court disputes
 
-- [Foreign court applying Jersey law — what to expect](foreign-court-jersey-law.md)
-- [Expert evidence on Jersey law — how it works](expert-evidence-jersey.md)
-- [Foreign-domiciled settlor / UK IHT exposure of a Jersey trust](uk-iht-foreign-domiciled.md)
+- [Foreign court applying Jersey law — what to expect](./foreign-court-jersey-law.md)
+- [Expert evidence on Jersey law — how it works](./expert-evidence-jersey.md)
+- [Foreign-domiciled settlor / UK IHT exposure of a Jersey trust](./uk-iht-foreign-domiciled.md)
 
 ### Sanctions and AML
 
-- [Jersey vs UK sanctions regimes — divergences](jersey-uk-sanctions.md)
-- [Sharing AML information with Jersey trustees / counsel](sharing-aml-information.md)
+- [Jersey vs UK sanctions regimes — divergences](./jersey-uk-sanctions.md)
+- [Sharing AML information with Jersey trustees / counsel](./sharing-aml-information.md)
 
 ### Working with Jersey counterparts
 
-- [Engaging Jersey trust companies — practical tips](engaging-jersey-trustees.md)
-- [Coordinating with Jersey Advocates — workflow and expectations](coordinating-jersey-advocates.md)
+- [Engaging Jersey trust companies — practical tips](./engaging-jersey-trustees.md)
+- [Coordinating with Jersey Advocates — workflow and expectations](./coordinating-jersey-advocates.md)
 
 ## Cross-references
 

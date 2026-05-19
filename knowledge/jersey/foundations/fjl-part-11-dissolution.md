@@ -117,6 +117,6 @@ as company désastre. In practice:
 
 ## Cross-references
 
-- [`fjl-articles-index.md`](fjl-articles-index.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md);
 - [`../companies/dissolution.md`](../../../jersey/companies/dissolution.md)
   *(if exists)* — company analogue.

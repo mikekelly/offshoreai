@@ -17,9 +17,9 @@ For full diff history, see the git log.
 
 ## 2026-05-14
 
-- Initial corpus scaffold created. Top-level [`index.md`](index.md),
-  [`README.md`](README.md), [`glossary.md`](glossary.md),
-  [`sources.md`](sources.md) and section directories laid down.
+- Initial corpus scaffold created. Top-level [`index.md`](./index.md),
+  [`README.md`](./README.md), [`glossary.md`](./glossary.md),
+  [`sources.md`](./sources.md) and section directories laid down.
 - First-slice content drafted for Phase 1: government, legal-system,
   tax (zero-ten, personal, GST), companies (Companies Law 1991
   overview). All marked `status: draft` pending second-pass
@@ -29,24 +29,24 @@ For full diff history, see the git log.
   (Jersey) Law 1984, Foundations (Jersey) Law 2009, Financial Services
   Commission (Jersey) Law 1998.
 - **Use-cases layer introduced** under
-  [`use-cases/`](use-cases/index.md). Trust-officer persona started:
-  [`use-cases/trust-officer/index.md`](use-cases/trust-officer/index.md)
+  [`use-cases/`](./use-cases/index.md). Trust-officer persona started:
+  [`use-cases/trust-officer/index.md`](./use-cases/trust-officer/index.md)
   lists ~30 canonical questions; three written to depth:
-  [distribution decisions and Court blessing](use-cases/trust-officer/distribution-decisions-and-court-blessing.md),
-  [Article 47 set-aside for mistake](use-cases/trust-officer/article-47-set-aside-for-mistake.md),
-  and [beneficiary information rights](use-cases/trust-officer/beneficiary-information-rights.md).
+  [distribution decisions and Court blessing](./use-cases/trust-officer/distribution-decisions-and-court-blessing.md),
+  [Article 47 set-aside for mistake](./use-cases/trust-officer/article-47-set-aside-for-mistake.md),
+  and [beneficiary information rights](./use-cases/trust-officer/beneficiary-information-rights.md).
 - Supporting topic-graph files deepened from stubs:
-  [`trusts/article-47-set-aside.md`](trusts/article-47-set-aside.md)
+  [`trusts/article-47-set-aside.md`](./trusts/article-47-set-aside.md)
   (Articles 47B–47H, *S & T Trusts* three-limb test, divergence from
   *Pitt v Holt*),
-  [`trusts/article-51-directions.md`](trusts/article-51-directions.md)
+  [`trusts/article-51-directions.md`](./trusts/article-51-directions.md)
   (four *Public Trustee v Cooper* categories, *S Settlement* test,
   Beddoe procedure),
-  [`trusts/beneficiary-rights.md`](trusts/beneficiary-rights.md)
+  [`trusts/beneficiary-rights.md`](./trusts/beneficiary-rights.md)
   (*Schmidt v Rosewood* supervisory jurisdiction, Jersey presumptions
   by document type, DPJL 2018 interaction).
 - **Statute-wiki layer started** for the Trusts (Jersey) Law 1984.
-  New [`trusts/articles-index.md`](trusts/articles-index.md) lists
+  New [`trusts/articles-index.md`](./trusts/articles-index.md) lists
   every Article 1–61 (66 active provisions) with deep-file links.
   Articles 1–15 of the Trusts Law now have dedicated deep files
   covering interpretation/definitions, existence (Art 2),
@@ -118,7 +118,7 @@ For full diff history, see the git log.
   hundred Articles, est. 10–15 turns).
 
 - **Companies (Jersey) Law 1991 statute-wiki started.** New
-  [`companies/articles-index.md`](companies/articles-index.md) lists
+  [`companies/articles-index.md`](./companies/articles-index.md) lists
   every active Article across the 24 Parts of the Law (and
   Schedules 1, 2). Deep files written for Part 1 (Articles 1, 2,
   2A, 2B — interpretation and group-relationship definitions) and
@@ -139,10 +139,10 @@ For full diff history, see the git log.
   TAGS.md addition first.
 
 - **Index files rewritten for cold-reader orientation.** Rewrote
-  [`index.md`](index.md), [`trusts/index.md`](trusts/index.md),
-  [`trusts/articles-index.md`](trusts/articles-index.md),
-  [`use-cases/index.md`](use-cases/index.md), and
-  [`use-cases/trust-officer/index.md`](use-cases/trust-officer/index.md)
+  [`index.md`](./index.md), [`trusts/index.md`](./trusts/index.md),
+  [`trusts/articles-index.md`](./trusts/articles-index.md),
+  [`use-cases/index.md`](./use-cases/index.md), and
+  [`use-cases/trust-officer/index.md`](./use-cases/trust-officer/index.md)
   to open with a **what / why / when / where-to-start** section,
   group links by **conceptual theme** rather than flat alphabetical
   or numerical lists, and give every link a **substantive

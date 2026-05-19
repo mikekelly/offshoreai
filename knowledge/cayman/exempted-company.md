@@ -153,7 +153,7 @@ structures for:
 
 For structured finance and asset-backed transactions —
 often combined with a STAR trust over the SPV shares for
-true orphan status (see [`star-trusts.md`](star-trusts.md)).
+true orphan status (see [`star-trusts.md`](./star-trusts.md)).
 
 ### Pre-IPO and listing
 
@@ -177,7 +177,7 @@ it carries on a regulated activity, such as:
   business**;
 - Acting as **CIMA-licensed** investment manager.
 
-See [`funds.md`](funds.md) and [`cima.md`](cima.md).
+See [`funds.md`](./funds.md) and [`cima.md`](./cima.md).
 
 ## Annual obligations
 
@@ -237,13 +237,13 @@ have substantive obligations.
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`index.md`](index.md);
-- [`exempted-limited-partnership.md`](exempted-limited-partnership.md);
-- [`segregated-portfolio-company.md`](segregated-portfolio-company.md);
-- [`private-funds-act.md`](private-funds-act.md);
-- [`star-trusts.md`](star-trusts.md);
-- [`cima.md`](cima.md);
-- [`tax.md`](tax.md);
+- [`companies.md`](./companies.md);
+- [`index.md`](./index.md);
+- [`exempted-limited-partnership.md`](./exempted-limited-partnership.md);
+- [`segregated-portfolio-company.md`](./segregated-portfolio-company.md);
+- [`private-funds-act.md`](./private-funds-act.md);
+- [`star-trusts.md`](./star-trusts.md);
+- [`cima.md`](./cima.md);
+- [`tax.md`](./tax.md);
 - [`../bvi/business-company.md`](../bvi/business-company.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md).

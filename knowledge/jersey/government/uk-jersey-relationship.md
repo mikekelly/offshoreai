@@ -145,7 +145,7 @@ Periodic debates touch on:
 
 ## Cross-references
 
-- [`./crown-dependency.md`](crown-dependency.md);
-- [`./index.md`](index.md);
+- [`./crown-dependency.md`](./crown-dependency.md);
+- [`./index.md`](./index.md);
 - [`../legal-system/privy-council.md`](../legal-system/privy-council.md);
 - [`../legal-system/sources-of-law.md`](../legal-system/sources-of-law.md).

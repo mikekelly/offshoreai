@@ -31,7 +31,7 @@ see_also:
 
 Article 115A of the **[Companies (Jersey) Law 1991][cjl]**
 specifies the **consequences** when a distribution is made in
-breach of [Article 115](distribution-restrictions.md) —
+breach of [Article 115](./distribution-restrictions.md) —
 typically requiring **repayment** by the recipient members and
 exposing directors to personal liability.
 
@@ -78,7 +78,7 @@ Directors who **authorised the unlawful distribution**:
 
 - May be **personally liable** to the company for the amount;
 - Face **disqualification** under
-  [Article 78](disqualification-orders.md);
+  [Article 78](./disqualification-orders.md);
 - May face **criminal liability** for fraudulent solvency
   statements;
 - Are exposed in any **subsequent insolvency** of the company —
@@ -119,11 +119,11 @@ For a member receiving a distribution:
 
 ## Cross-references
 
-- [`distribution-restrictions.md`](distribution-restrictions.md)
+- [`distribution-restrictions.md`](./distribution-restrictions.md)
   — Article 115: the underlying restriction.
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A:
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A:
   the parallel solvency mechanism (for capital reduction).
-- [`directors-duties.md`](directors-duties.md) — Article 74:
+- [`directors-duties.md`](./directors-duties.md) — Article 74:
   directors' duties triggered by an unlawful distribution.
 
 ## Pitfalls

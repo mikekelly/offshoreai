@@ -75,7 +75,7 @@ Convicted directors face:
 - **Penalty** specified in Schedule 1 of the Companies Law
   (typically fine, imprisonment, or both);
 - **Disqualification** under
-  [Article 78](disqualification-orders.md) *(planned)*;
+  [Article 78](./disqualification-orders.md) *(planned)*;
 - **Personal liability** for the concealed debts (in some
   contexts).
 

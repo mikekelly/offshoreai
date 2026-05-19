@@ -124,9 +124,9 @@ The JFSC works with:
 
 ## Cross-references
 
-- [`cifl-articles-index.md`](cifl-articles-index.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md);
 - [`../financial-regulation/fund-services-business.md`](../../../jersey/financial-regulation/fund-services-business.md);
-- [`expert-fund.md`](expert-fund.md);
-- [`eligible-investor-fund.md`](eligible-investor-fund.md);
-- [`jersey-private-fund.md`](jersey-private-fund.md);
-- [`unregulated-funds.md`](unregulated-funds.md).
+- [`expert-fund.md`](./expert-fund.md);
+- [`eligible-investor-fund.md`](./eligible-investor-fund.md);
+- [`jersey-private-fund.md`](./jersey-private-fund.md);
+- [`unregulated-funds.md`](./unregulated-funds.md).

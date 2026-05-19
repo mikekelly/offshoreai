@@ -237,8 +237,8 @@ faithfully, others tighter, others looser.
 
 ### Frontier
 
-- [`uk-carried-interest-reform-2026.md`](uk-carried-interest-reform-2026.md);
+- [`uk-carried-interest-reform-2026.md`](./uk-carried-interest-reform-2026.md);
 - [`sfdr-2-and-sustainable-finance.md`](../jersey/frontier/sfdr-2-and-sustainable-finance.md);
-- [`continuation-funds-and-gp-led-secondaries.md`](continuation-funds-and-gp-led-secondaries.md);
+- [`continuation-funds-and-gp-led-secondaries.md`](./continuation-funds-and-gp-led-secondaries.md);
 - [`jersey-finance-industry-2026.md`](../jersey/frontier/jersey-finance-industry-2026.md);
-- [`README.md`](README.md).
+- [`README.md`](./README.md).

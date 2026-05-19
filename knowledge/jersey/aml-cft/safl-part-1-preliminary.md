@@ -62,6 +62,6 @@ Jersey activity and Jersey-connected offshore activity.
 
 ## Cross-references
 
-- [`safl-articles-index.md`](safl-articles-index.md);
-- [`sanctions.md`](sanctions.md);
-- [`safl-article-3.md`](safl-article-3.md).
+- [`safl-articles-index.md`](./safl-articles-index.md);
+- [`sanctions.md`](./sanctions.md);
+- [`safl-article-3.md`](./safl-article-3.md).

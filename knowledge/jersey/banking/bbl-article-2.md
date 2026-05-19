@@ -138,7 +138,7 @@ Once an activity is within Article 2:
 
 ## Cross-references
 
-- [`bbl-article-4.md`](bbl-article-4.md);
-- [`bbl-article-6.md`](bbl-article-6.md);
-- [`top-50-policy.md`](top-50-policy.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-4.md`](./bbl-article-4.md);
+- [`bbl-article-6.md`](./bbl-article-6.md);
+- [`top-50-policy.md`](./top-50-policy.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

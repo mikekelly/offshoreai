@@ -179,9 +179,9 @@ legal advice may favour one or the other.
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/trusts/index.md`](../jersey/trusts/index.md);
 - [`../jersey/trusts/firewall.md`](../jersey/trusts/firewall.md);
 - [`../jersey/trusts/reserved-powers.md`](../jersey/trusts/reserved-powers.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

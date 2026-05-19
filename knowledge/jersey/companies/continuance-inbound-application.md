@@ -73,9 +73,9 @@ The completeness of the application materially drives the
 
 ## Cross-references
 
-- [`continuance-articles.md`](continuance-articles.md) — Article
+- [`continuance-articles.md`](./continuance-articles.md) — Article
   127L: articles of continuance.
-- [`continuance-name.md`](continuance-name.md) — Article 127M:
+- [`continuance-name.md`](./continuance-name.md) — Article 127M:
   name.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

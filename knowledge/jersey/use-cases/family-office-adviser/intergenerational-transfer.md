@@ -219,6 +219,6 @@ For intergenerational planning:
 
 ## Cross-references
 
-- [`trust-or-foundation.md`](trust-or-foundation.md)
-- [`family-governance-overlay.md`](family-governance-overlay.md)
-- [`jersey-succession.md`](jersey-succession.md)
+- [`trust-or-foundation.md`](./trust-or-foundation.md)
+- [`family-governance-overlay.md`](./family-governance-overlay.md)
+- [`jersey-succession.md`](./jersey-succession.md)

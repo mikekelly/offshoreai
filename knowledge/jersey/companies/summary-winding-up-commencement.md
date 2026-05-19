@@ -63,7 +63,7 @@ arrangements in place before the cut-over.
 
 ## Cross-references
 
-- [`summary-winding-up-status-effect.md`](summary-winding-up-status-effect.md)
+- [`summary-winding-up-status-effect.md`](./summary-winding-up-status-effect.md)
   — Article 148.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -61,6 +61,6 @@ Subject to:
 
 ## Cross-references
 
-- [`dl-article-3.md`](dl-article-3.md);
-- [`dl-articles-index.md`](dl-articles-index.md);
-- [`discrimination-jersey-law-2013.md`](discrimination-jersey-law-2013.md).
+- [`dl-article-3.md`](./dl-article-3.md);
+- [`dl-articles-index.md`](./dl-articles-index.md);
+- [`discrimination-jersey-law-2013.md`](./discrimination-jersey-law-2013.md).

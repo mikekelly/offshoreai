@@ -35,7 +35,7 @@ Options:
 - **Boutique TCB** — more personal service, family-office feel,
   but smaller scale;
 - **Family PTC** — direct family control with regulatory wrapper
-  (see [`when-ptc.md`](when-ptc.md));
+  (see [`when-ptc.md`](./when-ptc.md));
 - **Individual** — only for non-commercial single-trust
   arrangements; not common.
 
@@ -112,7 +112,7 @@ A family Private Trust Company:
 - **Regulatory exposure** of family directors.
 
 Suits: **substantial multi-trust** families with **engaged
-directors** (see [`when-ptc.md`](when-ptc.md)).
+directors** (see [`when-ptc.md`](./when-ptc.md)).
 
 ### Individual trustee
 
@@ -213,5 +213,5 @@ For trustee selection:
 
 ## Cross-references
 
-- [`when-ptc.md`](when-ptc.md)
+- [`when-ptc.md`](./when-ptc.md)
 - [`../trust-officer/index.md`](../trust-officer/index.md)

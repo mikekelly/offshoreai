@@ -176,4 +176,4 @@ For a planned migration:
 ## Cross-references
 
 - [`../../companies/continuance.md`](../../companies/continuance.md)
-- [`fund-termination.md`](fund-termination.md)
+- [`fund-termination.md`](./fund-termination.md)

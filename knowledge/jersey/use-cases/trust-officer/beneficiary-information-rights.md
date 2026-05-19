@@ -189,7 +189,7 @@ deed and accepted practice, not a *Schmidt*-type entitlement.
    **Royal Court under Article 51** for directions; this protects the
    trustee on costs and shifts the contest into the supervisory
    framework. See
-   [distribution-decisions-and-court-blessing.md](distribution-decisions-and-court-blessing.md)
+   [distribution-decisions-and-court-blessing.md](./distribution-decisions-and-court-blessing.md)
    and
    [`trusts/article-51-directions.md`](../../trusts/article-51-directions.md).
 
@@ -242,7 +242,7 @@ A topic-graph file dedicated to this interaction is planned at
 - Topic-graph reference: [`trusts/article-51-directions.md`](../../trusts/article-51-directions.md)
   — how to bring a directions application about disclosure.
 - Related use-case: ["Foreign court / regulator demands trust
-  information"](foreign-information-request.md) *(stub)*.
+  information"](./foreign-information-request.md) *(stub)*.
 
 [schmidt]: https://en.wikipedia.org/wiki/Schmidt_v_Rosewood_Trust_Ltd
 [schmidt-wiki]: https://en.wikipedia.org/wiki/Schmidt_v_Rosewood_Trust_Ltd

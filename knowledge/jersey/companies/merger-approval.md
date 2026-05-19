@@ -65,11 +65,11 @@ separately.
 
 ## Cross-references
 
-- [`merger-simplified-approval.md`](merger-simplified-approval.md)
+- [`merger-simplified-approval.md`](./merger-simplified-approval.md)
   — Article 127FA: simplified approval for subsidiary mergers.
-- [`merger-member-objection.md`](merger-member-objection.md) —
+- [`merger-member-objection.md`](./merger-member-objection.md) —
   Article 127FB: minority objection.
-- [`special-resolution.md`](special-resolution.md) — Article 90:
+- [`special-resolution.md`](./special-resolution.md) — Article 90:
   what a special resolution is.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

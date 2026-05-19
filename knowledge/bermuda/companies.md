@@ -151,10 +151,10 @@ Common scenarios:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`bma.md`](bma.md);
+- [`overview.md`](./overview.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`bma.md`](./bma.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

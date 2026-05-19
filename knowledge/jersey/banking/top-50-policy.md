@@ -65,5 +65,5 @@ The policy effects show in:
 
 ## Cross-references
 
-- [`banking-business-law-1991.md`](banking-business-law-1991.md)
+- [`banking-business-law-1991.md`](./banking-business-law-1991.md)
   — the registration framework that operationalises the policy.

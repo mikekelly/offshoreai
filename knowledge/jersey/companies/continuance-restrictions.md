@@ -68,7 +68,7 @@ Article 127N (inbound) and Article 127U (outbound).
 
 ## Cross-references
 
-- [`continuance-eligible-bodies.md`](continuance-eligible-bodies.md)
+- [`continuance-eligible-bodies.md`](./continuance-eligible-bodies.md)
   — Article 127H: eligibility gateway.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

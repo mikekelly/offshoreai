@@ -98,8 +98,8 @@ For a serious breach by the employer:
 
 ## Cross-references
 
-- [`el-article-36.md`](el-article-36.md);
-- [`el-article-42.md`](el-article-42.md);
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-5-termination.md`](el-part-5-termination.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-36.md`](./el-article-36.md);
+- [`el-article-42.md`](./el-article-42.md);
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-5-termination.md`](./el-part-5-termination.md);
+- [`el-articles-index.md`](./el-articles-index.md).

@@ -195,4 +195,4 @@ For an IP-holding decision:
 
 - [`../../tax/economic-substance.md`](../../tax/economic-substance.md)
 - [`../../tax/pillar-two.md`](../../tax/pillar-two.md)
-- [`why-jersey-topco.md`](why-jersey-topco.md)
+- [`why-jersey-topco.md`](./why-jersey-topco.md)

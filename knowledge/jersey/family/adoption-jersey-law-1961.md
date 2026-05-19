@@ -147,7 +147,7 @@ Adoption from overseas is **complex**:
 ## Adoption from care
 
 In public-law cases (see
-[`care-and-supervision.md`](care-and-supervision.md)), the
+[`care-and-supervision.md`](./care-and-supervision.md)), the
 care plan may be adoption:
 
 - **Placement order** authorises the Minister to place
@@ -180,10 +180,10 @@ Law 2024** is drafted but not in force. It will affect:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`parental-responsibility.md`](parental-responsibility.md);
-- [`care-and-supervision.md`](care-and-supervision.md);
-- [`civil-partnerships-and-same-sex.md`](civil-partnerships-and-same-sex.md);
-- [`royal-court-family-division.md`](royal-court-family-division.md);
+- [`index.md`](./index.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`parental-responsibility.md`](./parental-responsibility.md);
+- [`care-and-supervision.md`](./care-and-supervision.md);
+- [`civil-partnerships-and-same-sex.md`](./civil-partnerships-and-same-sex.md);
+- [`royal-court-family-division.md`](./royal-court-family-division.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

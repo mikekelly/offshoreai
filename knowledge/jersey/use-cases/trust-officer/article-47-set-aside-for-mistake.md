@@ -196,7 +196,7 @@ A successful declaration under Articles 47C–H typically:
 6. **Consider Article 51 alternative**. Sometimes the appropriate
    relief is not set-aside but a **direction** under Article 51
    blessing a remedial step. See
-   [distribution-decisions-and-court-blessing.md](distribution-decisions-and-court-blessing.md)
+   [distribution-decisions-and-court-blessing.md](./distribution-decisions-and-court-blessing.md)
    and
    [`trusts/article-51-directions.md`](../../trusts/article-51-directions.md).
 7. **Issue Representation** in the Royal Court (Samedi Division)
@@ -238,7 +238,7 @@ A successful declaration under Articles 47C–H typically:
   — when the Article 51 directions jurisdiction is the right vehicle
   instead.
 - Related use-case: ["The trustee was invalidly appointed. Can the
-  Court ratify?"](invalid-trustee-ratification.md) *(stub)*.
+  Court ratify?"](./invalid-trustee-ratification.md) *(stub)*.
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984
 [viberts]: https://www.viberts.com/news-insights/setting-aside-trusts-on-the-grounds-of-mistake-as-to-tax-consequences-s-t-trusts/

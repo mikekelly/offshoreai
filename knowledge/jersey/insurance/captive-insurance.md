@@ -102,7 +102,7 @@ Cayman, and (for European groups) Luxembourg.
 
 ## Cross-references
 
-- [`category-b-permit.md`](category-b-permit.md) — the typical
+- [`category-b-permit.md`](./category-b-permit.md) — the typical
   permit type.
 - [`../companies/cell-companies.md`](../companies/cell-companies.md)
   — cell-company structures for captives.

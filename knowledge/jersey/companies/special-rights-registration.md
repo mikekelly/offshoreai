@@ -98,7 +98,7 @@ features), it is more substantial.
 ## Updating particulars
 
 Where the rights are **varied** under
-[Article 52](variation-of-class-rights.md), the registered
+[Article 52](./variation-of-class-rights.md), the registered
 particulars must be **updated** to reflect the new position.
 Failure to update is an offence.
 

@@ -108,8 +108,8 @@ the coverage audit. Canonical entry points:
 
 ### Worked persona questions
 
-- [**Getting divorced — how do I start?**](getting-divorced.md)
-- [**Social Services investigation — what are my rights?**](social-services-investigation.md)
+- [**Getting divorced — how do I start?**](./getting-divorced.md)
+- [**Social Services investigation — what are my rights?**](./social-services-investigation.md)
 
 ## Cross-references
 

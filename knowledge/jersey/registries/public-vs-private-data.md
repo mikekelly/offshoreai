@@ -160,8 +160,8 @@ discoverable.
 
 ## Cross-references
 
-- [`registry-access-procedures.md`](registry-access-procedures.md);
-- [`fs-dpi-law-2020.md`](fs-dpi-law-2020.md);
-- [`beneficial-ownership.md`](beneficial-ownership.md);
+- [`registry-access-procedures.md`](./registry-access-procedures.md);
+- [`fs-dpi-law-2020.md`](./fs-dpi-law-2020.md);
+- [`beneficial-ownership.md`](./beneficial-ownership.md);
 - [`../use-cases/journalist-ngo-academic/index.md`](../use-cases/journalist-ngo-academic/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

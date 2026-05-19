@@ -108,9 +108,9 @@ After suspension:
 
 ## Cross-references
 
-- [`fsl-article-9.md`](fsl-article-9.md);
-- [`fsl-article-10.md`](fsl-article-10.md);
-- [`fsl-article-20.md`](fsl-article-20.md);
-- [`fsl-part-4-supervision.md`](fsl-part-4-supervision.md);
-- [`fsl-part-5-enforcement.md`](fsl-part-5-enforcement.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-article-9.md`](./fsl-article-9.md);
+- [`fsl-article-10.md`](./fsl-article-10.md);
+- [`fsl-article-20.md`](./fsl-article-20.md);
+- [`fsl-part-4-supervision.md`](./fsl-part-4-supervision.md);
+- [`fsl-part-5-enforcement.md`](./fsl-part-5-enforcement.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

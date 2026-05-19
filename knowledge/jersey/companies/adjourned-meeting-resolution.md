@@ -58,7 +58,7 @@ When the meeting **reconvenes** at a later date:
 ## Effective date
 
 For purposes such as filing under
-[Article 100](filing-of-resolutions.md), the **effective date**
+[Article 100](./filing-of-resolutions.md), the **effective date**
 of a resolution passed at an adjourned meeting is typically the
 **date the resolution was actually passed** (i.e., the
 reconvened-session date), not the original meeting date.

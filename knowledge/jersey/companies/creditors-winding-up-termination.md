@@ -66,7 +66,7 @@ liquidation. Article 185A provides the procedural route.
 
 ## Cross-references
 
-- [`creditors-winding-up-company-termination.md`](creditors-winding-up-company-termination.md)
+- [`creditors-winding-up-company-termination.md`](./creditors-winding-up-company-termination.md)
   — Article 157D: company-initiated termination application.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

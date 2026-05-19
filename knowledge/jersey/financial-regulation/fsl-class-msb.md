@@ -117,8 +117,8 @@ The Jersey MSB sector is **relatively small**:
 
 ## Cross-references
 
-- [`fsl-article-2.md`](fsl-article-2.md);
-- [`fsl-article-7.md`](fsl-article-7.md);
+- [`fsl-article-2.md`](./fsl-article-2.md);
+- [`fsl-article-7.md`](./fsl-article-7.md);
 - [`../banking/bbl-articles-index.md`](../banking/bbl-articles-index.md);
 - [`../use-cases/compliance-mlro/vasp-crypto-customers.md`](../use-cases/compliance-mlro/vasp-crypto-customers.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

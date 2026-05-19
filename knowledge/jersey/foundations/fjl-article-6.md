@@ -94,8 +94,8 @@ A well-drafted charter will:
 
 ## Cross-references
 
-- [`fjl-article-7.md`](fjl-article-7.md) — regulations (the
+- [`fjl-article-7.md`](./fjl-article-7.md) — regulations (the
   private companion document);
-- [`fjl-article-4.md`](fjl-article-4.md) — establishment;
-- [`fjl-articles-index.md`](fjl-articles-index.md) — full
+- [`fjl-article-4.md`](./fjl-article-4.md) — establishment;
+- [`fjl-articles-index.md`](./fjl-articles-index.md) — full
   index.

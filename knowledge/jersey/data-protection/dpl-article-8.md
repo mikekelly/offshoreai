@@ -137,7 +137,7 @@ Controllers should **document**:
 
 ## Cross-references
 
-- [`dpl-article-9.md`](dpl-article-9.md);
-- [`dpl-article-2.md`](dpl-article-2.md);
-- [`dpl-part-2-principles.md`](dpl-part-2-principles.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-article-9.md`](./dpl-article-9.md);
+- [`dpl-article-2.md`](./dpl-article-2.md);
+- [`dpl-part-2-principles.md`](./dpl-part-2-principles.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

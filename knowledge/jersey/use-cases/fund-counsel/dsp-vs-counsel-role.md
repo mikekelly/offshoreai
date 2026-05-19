@@ -200,4 +200,4 @@ For an existing JPF:
 ## Cross-references
 
 - [`../../funds/jersey-private-fund.md`](../../funds/jersey-private-fund.md)
-- [`jpf-registration.md`](jpf-registration.md)
+- [`jpf-registration.md`](./jpf-registration.md)

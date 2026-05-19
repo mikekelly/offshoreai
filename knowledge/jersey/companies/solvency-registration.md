@@ -44,7 +44,7 @@ be **delivered to the registrar together**.
 
 ### Solvency statement
 
-Per [Article 61A](solvency-statement.md):
+Per [Article 61A](./solvency-statement.md):
 
 - Identification of the company;
 - Date;
@@ -81,7 +81,7 @@ The typical reduction sequence:
 2. **Board minute** authorising the reduction (subject to member
    resolution and solvency statement);
 3. **Special resolution** of members under
-   [Article 61](reduction-of-capital-accounts.md);
+   [Article 61](./reduction-of-capital-accounts.md);
 4. **Solvency statement** signed by all directors (Article 61A);
 5. **Statutory declaration** sworn by a director;
 6. **Filing** with the Registrar (Article 61B);

@@ -123,9 +123,9 @@ The Commissioner may remove a charity:
 
 ## Cross-references
 
-- [`cl-article-5.md`](cl-article-5.md);
-- [`cl-article-6.md`](cl-article-6.md);
-- [`cl-part-3-commissioner.md`](cl-part-3-commissioner.md);
-- [`cl-part-4-trustees.md`](cl-part-4-trustees.md);
-- [`cl-articles-index.md`](cl-articles-index.md);
+- [`cl-article-5.md`](./cl-article-5.md);
+- [`cl-article-6.md`](./cl-article-6.md);
+- [`cl-part-3-commissioner.md`](./cl-part-3-commissioner.md);
+- [`cl-part-4-trustees.md`](./cl-part-4-trustees.md);
+- [`cl-articles-index.md`](./cl-articles-index.md);
 - [`../registries/charities-register.md`](../registries/charities-register.md).

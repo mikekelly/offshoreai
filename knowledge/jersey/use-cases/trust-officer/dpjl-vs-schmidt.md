@@ -153,5 +153,5 @@ Schmidt** for trust information. The trustee should:
 
 ## Cross-references
 
-- [`beneficiary-information-rights.md`](beneficiary-information-rights.md)
+- [`beneficiary-information-rights.md`](./beneficiary-information-rights.md)
 - [`../../trusts/article-29-disclosure.md`](../../trusts/article-29-disclosure.md)

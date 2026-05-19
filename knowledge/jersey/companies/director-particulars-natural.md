@@ -29,7 +29,7 @@ see_also:
 
 Article 84 of the **[Companies (Jersey) Law 1991][cjl]** specifies
 the **particulars** that must be recorded for **natural-person
-directors** in the [register of directors and secretaries](register-of-directors-secretaries.md).
+directors** in the [register of directors and secretaries](./register-of-directors-secretaries.md).
 
 ## What gets recorded
 
@@ -77,9 +77,9 @@ Particulars must be **updated promptly** on changes:
 
 ## Companion provisions
 
-- [`director-particulars-corporate.md`](director-particulars-corporate.md)
+- [`director-particulars-corporate.md`](./director-particulars-corporate.md)
   — Article 84A: corporate directors.
-- [`secretary-particulars.md`](secretary-particulars.md) —
+- [`secretary-particulars.md`](./secretary-particulars.md) —
   Article 85: secretaries.
 
 ## Pitfalls

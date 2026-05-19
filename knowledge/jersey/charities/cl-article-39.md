@@ -97,7 +97,7 @@ The investigated charity has rights to:
 
 ## Cross-references
 
-- [`cl-part-5-investigations.md`](cl-part-5-investigations.md);
-- [`cl-article-19.md`](cl-article-19.md);
-- [`cl-article-30.md`](cl-article-30.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-part-5-investigations.md`](./cl-part-5-investigations.md);
+- [`cl-article-19.md`](./cl-article-19.md);
+- [`cl-article-30.md`](./cl-article-30.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

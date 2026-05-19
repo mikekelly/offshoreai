@@ -27,7 +27,7 @@ see_also:
 # Article 2A — Further Provisions on Subsidiaries and Holding Bodies
 
 Article 2A of the **[Companies (Jersey) Law 1991][cjl]** supplements
-the basic [Article 2](subsidiary-and-holding-body.md) definitions
+the basic [Article 2](./subsidiary-and-holding-body.md) definitions
 with operational rules on:
 
 - **attribution** of shareholdings (when shares held indirectly count

@@ -149,9 +149,9 @@ If charged:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`drink-driving.md`](drink-driving.md);
-- [`road-traffic-law-1956.md`](road-traffic-law-1956.md);
-- [`disqualification.md`](disqualification.md);
-- [`court-procedure.md`](court-procedure.md);
+- [`index.md`](./index.md);
+- [`drink-driving.md`](./drink-driving.md);
+- [`road-traffic-law-1956.md`](./road-traffic-law-1956.md);
+- [`disqualification.md`](./disqualification.md);
+- [`court-procedure.md`](./court-procedure.md);
 - [`../use-cases/driver-motorist/index.md`](../use-cases/driver-motorist/index.md).

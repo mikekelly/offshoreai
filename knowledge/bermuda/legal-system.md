@@ -119,8 +119,8 @@ Bermuda legal practice is **substantially English**:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/legal-system/index.md`](../jersey/legal-system/index.md);
 - [`../cayman/legal-system.md`](../cayman/legal-system.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

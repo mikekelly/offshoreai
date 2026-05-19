@@ -116,8 +116,8 @@ The FSC participates in:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`financial-regulation.md`](financial-regulation.md);
+- [`overview.md`](./overview.md);
+- [`financial-regulation.md`](./financial-regulation.md);
 - [`../jersey/financial-regulation/jfsc.md`](../jersey/financial-regulation/jfsc.md);
 - [`../cayman/cima.md`](../cayman/cima.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -126,8 +126,8 @@ Where modification is not feasible:
 
 ## Cross-references
 
-- [`cl-part-3-commissioner.md`](cl-part-3-commissioner.md);
-- [`cl-article-5.md`](cl-article-5.md);
-- [`cl-article-6.md`](cl-article-6.md);
-- [`cl-articles-index.md`](cl-articles-index.md);
+- [`cl-part-3-commissioner.md`](./cl-part-3-commissioner.md);
+- [`cl-article-5.md`](./cl-article-5.md);
+- [`cl-article-6.md`](./cl-article-6.md);
+- [`cl-articles-index.md`](./cl-articles-index.md);
 - [`../trusts/court-purpose-trust-redirection.md`](../trusts/court-purpose-trust-redirection.md).

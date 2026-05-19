@@ -130,6 +130,6 @@ A registered Jersey charity:
 
 ## Cross-references
 
-- [`cl-articles-index.md`](cl-articles-index.md);
-- [`index.md`](index.md);
+- [`cl-articles-index.md`](./cl-articles-index.md);
+- [`index.md`](./index.md);
 - [`../registries/charities-register.md`](../registries/charities-register.md).

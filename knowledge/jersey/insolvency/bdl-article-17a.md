@@ -116,7 +116,7 @@ test is broadly the same; the procedural vehicle differs
 
 ## Cross-references
 
-- [`bdl-article-17b.md`](bdl-article-17b.md) — undervalue
+- [`bdl-article-17b.md`](./bdl-article-17b.md) — undervalue
   transactions;
-- [`bdl-part-5-avoidance.md`](bdl-part-5-avoidance.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-part-5-avoidance.md`](./bdl-part-5-avoidance.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

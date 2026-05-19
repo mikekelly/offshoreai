@@ -81,9 +81,9 @@ For connected-person preferences, **desire is presumed**.
 
 ## Cross-references
 
-- [`transactions-at-undervalue.md`](transactions-at-undervalue.md)
+- [`transactions-at-undervalue.md`](./transactions-at-undervalue.md)
   — Article 176.
-- [`transactions-preferences-definitions.md`](transactions-preferences-definitions.md)
+- [`transactions-preferences-definitions.md`](./transactions-preferences-definitions.md)
   — Article 176B.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

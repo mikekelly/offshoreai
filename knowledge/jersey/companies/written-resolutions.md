@@ -69,13 +69,13 @@ The basic Article 95 written-resolution mechanism requires
 **unanimous member consent**. The **simplified procedures** in
 Articles 95ZA, 95ZB, and 95ZC permit:
 
-- **Director-proposed** written resolutions ([Article 95ZA](directors-written-resolutions.md))
+- **Director-proposed** written resolutions ([Article 95ZA](./directors-written-resolutions.md))
   — circulated to members for consideration;
 - **Member-proposed** written resolutions
-  ([Article 95ZB](members-written-resolution.md)) — members can
+  ([Article 95ZB](./members-written-resolution.md)) — members can
   initiate;
 - **Statements** accompanying resolutions
-  ([Article 95ZC](written-resolution-statement.md)).
+  ([Article 95ZC](./written-resolution-statement.md)).
 
 These variants allow **threshold approvals** (e.g., 75% for
 special resolutions) without requiring unanimous signing.
@@ -83,7 +83,7 @@ special resolutions) without requiring unanimous signing.
 ## Sole-member companies
 
 A **sole-member** company uses the **simpler procedure** in
-[Article 95A](sole-member-decisions.md) — the single member
+[Article 95A](./sole-member-decisions.md) — the single member
 records decisions in writing.
 
 ## Effect — same as meeting-passed

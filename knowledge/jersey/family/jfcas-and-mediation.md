@@ -154,10 +154,10 @@ For litigators:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`child-arrangements-orders.md`](child-arrangements-orders.md);
-- [`care-and-supervision.md`](care-and-supervision.md);
-- [`ancillary-relief.md`](ancillary-relief.md);
-- [`royal-court-family-division.md`](royal-court-family-division.md);
+- [`index.md`](./index.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`child-arrangements-orders.md`](./child-arrangements-orders.md);
+- [`care-and-supervision.md`](./care-and-supervision.md);
+- [`ancillary-relief.md`](./ancillary-relief.md);
+- [`royal-court-family-division.md`](./royal-court-family-division.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

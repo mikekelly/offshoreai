@@ -211,5 +211,5 @@ For a new engagement:
 
 ## Cross-references
 
-- [`choosing-trustee.md`](choosing-trustee.md)
+- [`choosing-trustee.md`](./choosing-trustee.md)
 - [`../trust-officer/index.md`](../trust-officer/index.md)

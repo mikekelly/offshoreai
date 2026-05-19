@@ -166,5 +166,5 @@ After authorisation:
 
 - [`../../funds/jersey-private-fund.md`](../../funds/jersey-private-fund.md)
   — JPF regime detail.
-- [`choosing-fund-regime.md`](choosing-fund-regime.md) —
+- [`choosing-fund-regime.md`](./choosing-fund-regime.md) —
   upstream regime-choice question.

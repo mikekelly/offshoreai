@@ -130,10 +130,10 @@ Schedules are **updated by Order** of the Minister:
 
 ## Cross-references
 
-- [`fsl-articles-index.md`](fsl-articles-index.md);
-- [`fsl-article-9.md`](fsl-article-9.md);
-- [`fsl-class-tcb.md`](fsl-class-tcb.md);
-- [`fsl-class-fsb.md`](fsl-class-fsb.md);
-- [`fsl-class-investment-business.md`](fsl-class-investment-business.md);
-- [`fsl-class-gimb.md`](fsl-class-gimb.md);
-- [`fsl-class-msb.md`](fsl-class-msb.md).
+- [`fsl-articles-index.md`](./fsl-articles-index.md);
+- [`fsl-article-9.md`](./fsl-article-9.md);
+- [`fsl-class-tcb.md`](./fsl-class-tcb.md);
+- [`fsl-class-fsb.md`](./fsl-class-fsb.md);
+- [`fsl-class-investment-business.md`](./fsl-class-investment-business.md);
+- [`fsl-class-gimb.md`](./fsl-class-gimb.md);
+- [`fsl-class-msb.md`](./fsl-class-msb.md).

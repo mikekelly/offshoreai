@@ -96,7 +96,7 @@ law, not Jersey law.
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — the corporate tax regime that
+- [`zero-ten.md`](./zero-ten.md) — the corporate tax regime that
   drives the distribution-rule policy.
-- [`personal-income-tax.md`](personal-income-tax.md) — the
+- [`personal-income-tax.md`](./personal-income-tax.md) — the
   shareholder's personal tax position.

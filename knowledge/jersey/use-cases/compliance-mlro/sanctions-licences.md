@@ -183,5 +183,5 @@ For programme:
 
 ## Cross-references
 
-- [`sanctions-match-handling.md`](sanctions-match-handling.md)
+- [`sanctions-match-handling.md`](./sanctions-match-handling.md)
 - [`../../aml-cft/sanctions.md`](../../aml-cft/sanctions.md)

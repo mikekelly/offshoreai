@@ -122,9 +122,9 @@ After distribution:
 
 ## Cross-references
 
-- [`fjl-article-41.md`](fjl-article-41.md);
-- [`fjl-article-42.md`](fjl-article-42.md);
-- [`fjl-article-44.md`](fjl-article-44.md);
-- [`fjl-part-11-dissolution.md`](fjl-part-11-dissolution.md);
+- [`fjl-article-41.md`](./fjl-article-41.md);
+- [`fjl-article-42.md`](./fjl-article-42.md);
+- [`fjl-article-44.md`](./fjl-article-44.md);
+- [`fjl-part-11-dissolution.md`](./fjl-part-11-dissolution.md);
 - [`../charities/cl-part-6-cy-pres.md`](../charities/cl-part-6-cy-pres.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

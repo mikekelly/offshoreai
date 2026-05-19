@@ -118,6 +118,6 @@ and has been amended since to maintain alignment:
 
 ## Cross-references
 
-- [`dpl-articles-index.md`](dpl-articles-index.md);
-- [`data-protection-jersey-law-2018.md`](data-protection-jersey-law-2018.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md);
+- [`data-protection-jersey-law-2018.md`](./data-protection-jersey-law-2018.md);
 - [`../international/exchange-of-information.md`](../international/exchange-of-information.md).

@@ -63,8 +63,8 @@ is used throughout Part 18B; Article 127A is the look-up.
 
 ## Cross-references
 
-- [`mergers.md`](mergers.md) — Part 18B overview.
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A
+- [`mergers.md`](./mergers.md) — Part 18B overview.
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A
   solvency-statement concept extended to mergers.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -99,7 +99,7 @@ The Lt-Governor's role has evolved:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./crown-dependency.md`](crown-dependency.md);
-- [`./bailiff-and-bailiwick.md`](bailiff-and-bailiwick.md)
+- [`./index.md`](./index.md);
+- [`./crown-dependency.md`](./crown-dependency.md);
+- [`./bailiff-and-bailiwick.md`](./bailiff-and-bailiwick.md)
   *(if exists)* or [`../legal-system/bailiff.md`](../legal-system/bailiff.md).

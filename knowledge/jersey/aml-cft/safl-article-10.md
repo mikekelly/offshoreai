@@ -141,7 +141,7 @@ sanctions compliance.
 
 ## Cross-references
 
-- [`safl-article-11.md`](safl-article-11.md);
-- [`safl-article-15.md`](safl-article-15.md) — licences;
+- [`safl-article-11.md`](./safl-article-11.md);
+- [`safl-article-15.md`](./safl-article-15.md) — licences;
 - [`../use-cases/compliance-mlro/sanctions-match-handling.md`](../use-cases/compliance-mlro/sanctions-match-handling.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-articles-index.md`](./safl-articles-index.md).

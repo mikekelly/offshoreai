@@ -130,8 +130,8 @@ Trust trustee record-keeping is similar:
 
 ## Cross-references
 
-- [`fjl-article-20.md`](fjl-article-20.md);
-- [`fjl-article-33.md`](fjl-article-33.md);
-- [`fjl-article-34.md`](fjl-article-34.md);
-- [`fjl-part-8-administration.md`](fjl-part-8-administration.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-20.md`](./fjl-article-20.md);
+- [`fjl-article-33.md`](./fjl-article-33.md);
+- [`fjl-article-34.md`](./fjl-article-34.md);
+- [`fjl-part-8-administration.md`](./fjl-part-8-administration.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

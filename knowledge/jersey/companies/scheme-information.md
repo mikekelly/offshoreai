@@ -83,7 +83,7 @@ and any deficiency is fatal to sanction.
 
 ## Cross-references
 
-- [`scheme-of-arrangement.md`](scheme-of-arrangement.md) — the
+- [`scheme-of-arrangement.md`](./scheme-of-arrangement.md) — the
   Article 125 framework.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

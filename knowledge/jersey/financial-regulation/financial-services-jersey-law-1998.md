@@ -157,8 +157,8 @@ The JFSC has wide enforcement powers:
 
 ## Cross-references
 
-- [`jfsc.md`](jfsc.md) — the regulator.
-- [`codes-of-practice.md`](codes-of-practice.md) — conduct
+- [`jfsc.md`](./jfsc.md) — the regulator.
+- [`codes-of-practice.md`](./codes-of-practice.md) — conduct
   standards.
-- [`licensing.md`](licensing.md) — fit-and-proper / registration.
-- [`enforcement.md`](enforcement.md) — JFSC enforcement powers.
+- [`licensing.md`](./licensing.md) — fit-and-proper / registration.
+- [`enforcement.md`](./enforcement.md) — JFSC enforcement powers.

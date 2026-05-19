@@ -129,7 +129,7 @@ provisions.
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md)
-- [`itl-part-12-allowances.md`](itl-part-12-allowances.md)
+- [`personal-income-tax.md`](./personal-income-tax.md)
+- [`itl-part-12-allowances.md`](./itl-part-12-allowances.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

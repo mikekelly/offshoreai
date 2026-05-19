@@ -118,5 +118,5 @@ For an active request:
 
 ## Cross-references
 
-- [`jfsc-visit-preparation.md`](jfsc-visit-preparation.md)
-- [`reporting-breaches.md`](reporting-breaches.md)
+- [`jfsc-visit-preparation.md`](./jfsc-visit-preparation.md)
+- [`reporting-breaches.md`](./reporting-breaches.md)

@@ -84,7 +84,7 @@ The principal use cases:
    divorce. A protective structure may reduce that exposure — but
    foreign divorce courts have considerable freedom and the
    protection is not absolute. See
-   [`firewall.md`](firewall.md) on Article 9.
+   [`firewall.md`](./firewall.md) on Article 9.
 3. **Protection from imprudent spending.** A "spendthrift" structure
    limits the beneficiary's ability to dissipate the interest in
    advance — the beneficiary cannot assign or pledge the future
@@ -122,7 +122,7 @@ The cross-border position is complex: a foreign bankruptcy court may
 not respect the Jersey trust's protective mechanism, particularly
 where the beneficiary's assets in the foreign jurisdiction include
 distributions received from the trust. The firewall under
-[Article 9](firewall.md) protects the trust against the foreign-
+[Article 9](./firewall.md) protects the trust against the foreign-
 judgment-enforcement route in Jersey, but distributions made into
 the foreign jurisdiction are at the trustee's risk.
 

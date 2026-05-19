@@ -52,10 +52,10 @@ Outside the JFSC:
 
 ## Files in this section *(all stubs at this revision)*
 
-- [**companies-registry.md**](companies-registry.md) *(Stub.)*
-- [**foundations-registry.md**](foundations-registry.md) *(Stub.)*
-- [**business-names.md**](business-names.md) *(Stub.)*
-- [**beneficial-ownership.md**](beneficial-ownership.md) *(Stub.)*
-- [**vasp-register.md**](vasp-register.md) *(Stub.)*
-- [**land-registry.md**](land-registry.md) *(Stub.)*
-- [**charities-register.md**](charities-register.md) *(Stub.)*
+- [**companies-registry.md**](./companies-registry.md) *(Stub.)*
+- [**foundations-registry.md**](./foundations-registry.md) *(Stub.)*
+- [**business-names.md**](./business-names.md) *(Stub.)*
+- [**beneficial-ownership.md**](./beneficial-ownership.md) *(Stub.)*
+- [**vasp-register.md**](./vasp-register.md) *(Stub.)*
+- [**land-registry.md**](./land-registry.md) *(Stub.)*
+- [**charities-register.md**](./charities-register.md) *(Stub.)*

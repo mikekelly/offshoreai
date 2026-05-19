@@ -76,7 +76,7 @@ A person is **not guilty** of the offence if:
 - The act was done in **good faith** in compliance with a
   duty under the Law.
 
-See [`pocl-article-32a.md`](pocl-article-32a.md) for the
+See [`pocl-article-32a.md`](./pocl-article-32a.md) for the
 common defences regime.
 
 ## Practical scenarios
@@ -110,8 +110,8 @@ Article 30 overlaps with:
 
 ## Cross-references
 
-- [`pocl-article-31.md`](pocl-article-31.md);
-- [`pocl-article-32.md`](pocl-article-32.md);
-- [`pocl-article-32a.md`](pocl-article-32a.md);
+- [`pocl-article-31.md`](./pocl-article-31.md);
+- [`pocl-article-32.md`](./pocl-article-32.md);
+- [`pocl-article-32a.md`](./pocl-article-32a.md);
 - [`../use-cases/compliance-mlro/knowledge-or-suspicion.md`](../use-cases/compliance-mlro/knowledge-or-suspicion.md);
 - [`../use-cases/compliance-mlro/consent-requests.md`](../use-cases/compliance-mlro/consent-requests.md).

@@ -133,4 +133,4 @@ For an immediate request:
 ## Cross-references
 
 - [`../../trusts/beneficiaries.md`](../../trusts/beneficiaries.md)
-- [`distribution-decisions-and-court-blessing.md`](distribution-decisions-and-court-blessing.md)
+- [`distribution-decisions-and-court-blessing.md`](./distribution-decisions-and-court-blessing.md)

@@ -59,7 +59,7 @@ A **captive insurer** is an insurer:
 - Participants insure their risks through "cells" or accounts
   within the captive;
 - See PCC / ICC structures
-  ([`ibl-part-6-captives.md`](ibl-part-6-captives.md)).
+  ([`ibl-part-6-captives.md`](./ibl-part-6-captives.md)).
 
 ### Reinsurance captive
 
@@ -111,7 +111,7 @@ Jersey's market is smaller than Guernsey's but offers:
 
 ## Cross-references
 
-- [`captive-insurance.md`](captive-insurance.md);
-- [`ibl-part-6-captives.md`](ibl-part-6-captives.md);
-- [`category-b-permit.md`](category-b-permit.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`captive-insurance.md`](./captive-insurance.md);
+- [`ibl-part-6-captives.md`](./ibl-part-6-captives.md);
+- [`category-b-permit.md`](./category-b-permit.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

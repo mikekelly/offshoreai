@@ -141,8 +141,8 @@ The **Jersey Advisory and Conciliation Service** offers:
 
 ## Cross-references
 
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-part-3-areas.md`](dl-part-3-areas.md);
-- [`dl-part-4-equal-pay.md`](dl-part-4-equal-pay.md);
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-part-3-areas.md`](./dl-part-3-areas.md);
+- [`dl-part-4-equal-pay.md`](./dl-part-4-equal-pay.md);
 - [`../employment/el-part-8-tribunal.md`](../employment/el-part-8-tribunal.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-articles-index.md`](./dl-articles-index.md).

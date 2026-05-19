@@ -196,8 +196,8 @@ in a competitive offshore landscape.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`overview.md`](overview.md);
-- [`protected-cell-company.md`](protected-cell-company.md);
-- [`gfsc.md`](gfsc.md);
-- [`trust-law-differences-from-jersey.md`](trust-law-differences-from-jersey.md).
+- [`index.md`](./index.md);
+- [`overview.md`](./overview.md);
+- [`protected-cell-company.md`](./protected-cell-company.md);
+- [`gfsc.md`](./gfsc.md);
+- [`trust-law-differences-from-jersey.md`](./trust-law-differences-from-jersey.md).

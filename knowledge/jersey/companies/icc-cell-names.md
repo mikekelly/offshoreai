@@ -64,8 +64,8 @@ naming convention reflecting the different legal structure.
 
 ## Cross-references
 
-- [`pcc-names.md`](pcc-names.md) — Article 127YS: PCC naming.
-- [`name-requirements.md`](name-requirements.md) — Article 13:
+- [`pcc-names.md`](./pcc-names.md) — Article 127YS: PCC naming.
+- [`name-requirements.md`](./name-requirements.md) — Article 13:
   general name rules.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

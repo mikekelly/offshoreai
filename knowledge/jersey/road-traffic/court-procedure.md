@@ -32,7 +32,7 @@ see_also:
 | **Royal Court** | The most serious offences (causing death by driving); appeals from Magistrate's Court |
 | **Court of Appeal** | Further appeals on points of law |
 
-See [`parish-hall-enquiries.md`](parish-hall-enquiries.md)
+See [`parish-hall-enquiries.md`](./parish-hall-enquiries.md)
 for the distinctive Jersey Parish Hall layer.
 
 ## The Magistrate's Court route
@@ -177,11 +177,11 @@ For defendants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`parish-hall-enquiries.md`](parish-hall-enquiries.md);
-- [`disqualification.md`](disqualification.md);
-- [`fines-and-endorsement.md`](fines-and-endorsement.md);
-- [`appeals.md`](appeals.md);
+- [`index.md`](./index.md);
+- [`parish-hall-enquiries.md`](./parish-hall-enquiries.md);
+- [`disqualification.md`](./disqualification.md);
+- [`fines-and-endorsement.md`](./fines-and-endorsement.md);
+- [`appeals.md`](./appeals.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../use-cases/driver-motorist/index.md`](../use-cases/driver-motorist/index.md).

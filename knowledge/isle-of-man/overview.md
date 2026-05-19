@@ -148,13 +148,13 @@ A **key difference** from Jersey:
 
 ## Cross-references
 
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
-- [`tax.md`](tax.md);
-- [`fsa.md`](fsa.md);
-- [`egaming.md`](egaming.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
+- [`tax.md`](./tax.md);
+- [`fsa.md`](./fsa.md);
+- [`egaming.md`](./egaming.md);
 - [`../jersey/index.md`](../jersey/index.md);
 - [`../guernsey/index.md`](../guernsey/index.md).

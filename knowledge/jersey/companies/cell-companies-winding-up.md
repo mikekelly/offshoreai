@@ -71,8 +71,8 @@ company regime and the general insolvency law.
 
 ## Cross-references
 
-- [`cell-companies.md`](cell-companies.md) — Part 18D overview.
-- [`pcc-summary-winding-up.md`](pcc-summary-winding-up.md) —
+- [`cell-companies.md`](./cell-companies.md) — Part 18D overview.
+- [`pcc-summary-winding-up.md`](./pcc-summary-winding-up.md) —
   Article 127YV: PCC-specific winding-up provisions.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

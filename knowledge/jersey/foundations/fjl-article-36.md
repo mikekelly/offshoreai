@@ -88,6 +88,6 @@ For **dispute** purposes:
 
 ## Cross-references
 
-- [`fjl-article-35.md`](fjl-article-35.md);
-- [`fjl-article-37.md`](fjl-article-37.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-35.md`](./fjl-article-35.md);
+- [`fjl-article-37.md`](./fjl-article-37.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -188,10 +188,10 @@ Jersey courts construe restraints:
 
 ## Cross-references
 
-- [`boilerplate.md`](boilerplate.md);
-- [`formation.md`](formation.md);
-- [`damages.md`](damages.md);
-- [`specific-performance.md`](specific-performance.md);
+- [`boilerplate.md`](./boilerplate.md);
+- [`formation.md`](./formation.md);
+- [`damages.md`](./damages.md);
+- [`specific-performance.md`](./specific-performance.md);
 - [`../employment/index.md`](../employment/index.md);
 - [`../companies/cjl-article-100.md`](../../../jersey/companies/cjl-article-100.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

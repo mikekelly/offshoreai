@@ -42,17 +42,17 @@ full Bermuda practice, engage **Bermuda counsel**.
 
 | Topic | File |
 |---|---|
-| Bermuda overview | [overview.md](overview.md) |
-| Jersey comparison | [jersey-comparison.md](jersey-comparison.md) |
-| Bermuda companies | [companies.md](companies.md) |
-| Bermuda trusts | [trusts.md](trusts.md) |
-| Bermuda funds | [funds.md](funds.md) |
-| Bermuda insurance (the specialty) | [insurance.md](insurance.md) |
-| ILS / catastrophe bonds | [ils.md](ils.md) |
-| Bermuda tax | [tax.md](tax.md) |
-| Bermuda financial regulation | [financial-regulation.md](financial-regulation.md) |
-| BMA | [bma.md](bma.md) |
-| Bermuda legal system | [legal-system.md](legal-system.md) |
+| Bermuda overview | [overview.md](./overview.md) |
+| Jersey comparison | [jersey-comparison.md](./jersey-comparison.md) |
+| Bermuda companies | [companies.md](./companies.md) |
+| Bermuda trusts | [trusts.md](./trusts.md) |
+| Bermuda funds | [funds.md](./funds.md) |
+| Bermuda insurance (the specialty) | [insurance.md](./insurance.md) |
+| ILS / catastrophe bonds | [ils.md](./ils.md) |
+| Bermuda tax | [tax.md](./tax.md) |
+| Bermuda financial regulation | [financial-regulation.md](./financial-regulation.md) |
+| BMA | [bma.md](./bma.md) |
+| Bermuda legal system | [legal-system.md](./legal-system.md) |
 
 ## Cross-references
 

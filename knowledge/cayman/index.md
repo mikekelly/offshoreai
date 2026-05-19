@@ -39,17 +39,17 @@ Cayman practice, engage **Cayman attorneys**.
 
 | Topic | File |
 |---|---|
-| Cayman overview | [overview.md](overview.md) |
-| Jersey comparison | [jersey-comparison.md](jersey-comparison.md) |
-| Cayman companies | [companies.md](companies.md) |
-| Cayman trusts | [trusts.md](trusts.md) |
-| Cayman funds | [funds.md](funds.md) |
-| Cayman insurance | [insurance.md](insurance.md) |
-| Cayman tax | [tax.md](tax.md) |
-| Cayman financial regulation | [financial-regulation.md](financial-regulation.md) |
-| CIMA | [cima.md](cima.md) |
-| Cayman legal system | [legal-system.md](legal-system.md) |
-| STAR trusts | [star-trusts.md](star-trusts.md) |
+| Cayman overview | [overview.md](./overview.md) |
+| Jersey comparison | [jersey-comparison.md](./jersey-comparison.md) |
+| Cayman companies | [companies.md](./companies.md) |
+| Cayman trusts | [trusts.md](./trusts.md) |
+| Cayman funds | [funds.md](./funds.md) |
+| Cayman insurance | [insurance.md](./insurance.md) |
+| Cayman tax | [tax.md](./tax.md) |
+| Cayman financial regulation | [financial-regulation.md](./financial-regulation.md) |
+| CIMA | [cima.md](./cima.md) |
+| Cayman legal system | [legal-system.md](./legal-system.md) |
+| STAR trusts | [star-trusts.md](./star-trusts.md) |
 
 ## Cross-references
 

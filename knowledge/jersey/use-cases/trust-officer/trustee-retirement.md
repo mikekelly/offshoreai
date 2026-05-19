@@ -146,5 +146,5 @@ limited even without comprehensive release.
 ## Cross-references
 
 - [`../../trusts/trustee-duties.md`](../../trusts/trustee-duties.md)
-- [`trustee-removal.md`](trustee-removal.md)
-- [`trustee-appointment.md`](trustee-appointment.md)
+- [`trustee-removal.md`](./trustee-removal.md)
+- [`trustee-appointment.md`](./trustee-appointment.md)

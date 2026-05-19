@@ -191,11 +191,11 @@ remain key for EU-focused.
 
 ## Cross-references
 
-- [`insurance.md`](insurance.md);
-- [`fsa.md`](fsa.md);
-- [`companies-acts-1931-vs-2006.md`](companies-acts-1931-vs-2006.md);
-- [`tax.md`](tax.md);
-- [`index.md`](index.md);
+- [`insurance.md`](./insurance.md);
+- [`fsa.md`](./fsa.md);
+- [`companies-acts-1931-vs-2006.md`](./companies-acts-1931-vs-2006.md);
+- [`tax.md`](./tax.md);
+- [`index.md`](./index.md);
 - [`../jersey/insurance/index.md`](../jersey/insurance/index.md);
 - [`../guernsey/insurance.md`](../guernsey/insurance.md);
 - [`../bermuda/insurance.md`](../bermuda/insurance.md).

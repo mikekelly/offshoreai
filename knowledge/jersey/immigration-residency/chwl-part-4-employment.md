@@ -99,7 +99,7 @@ Specific rules for:
 
 ## Cross-references
 
-- [`chwl-article-19.md`](chwl-article-19.md);
-- [`employment-status-categories.md`](employment-status-categories.md);
-- [`chwl-part-5-enforcement.md`](chwl-part-5-enforcement.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-19.md`](./chwl-article-19.md);
+- [`employment-status-categories.md`](./employment-status-categories.md);
+- [`chwl-part-5-enforcement.md`](./chwl-part-5-enforcement.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

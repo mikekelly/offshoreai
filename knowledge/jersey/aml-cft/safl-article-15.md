@@ -137,8 +137,8 @@ For applicants:
 
 ## Cross-references
 
-- [`safl-article-10.md`](safl-article-10.md);
-- [`safl-article-11.md`](safl-article-11.md);
-- [`safl-part-4-licensing.md`](safl-part-4-licensing.md);
+- [`safl-article-10.md`](./safl-article-10.md);
+- [`safl-article-11.md`](./safl-article-11.md);
+- [`safl-part-4-licensing.md`](./safl-part-4-licensing.md);
 - [`../use-cases/compliance-mlro/sanctions-licences.md`](../use-cases/compliance-mlro/sanctions-licences.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-articles-index.md`](./safl-articles-index.md).

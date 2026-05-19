@@ -98,6 +98,6 @@ The guardian:
 
 ## Cross-references
 
-- [`fjl-article-22.md`](fjl-article-22.md);
-- [`fjl-part-5-guardian.md`](fjl-part-5-guardian.md);
-- [`council-and-guardian.md`](council-and-guardian.md).
+- [`fjl-article-22.md`](./fjl-article-22.md);
+- [`fjl-part-5-guardian.md`](./fjl-part-5-guardian.md);
+- [`council-and-guardian.md`](./council-and-guardian.md).

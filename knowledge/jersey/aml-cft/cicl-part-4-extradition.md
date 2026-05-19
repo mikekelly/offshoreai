@@ -97,6 +97,6 @@ Jersey extraditions are **rare**:
 
 ## Cross-references
 
-- [`cicl-articles-index.md`](cicl-articles-index.md);
-- [`cicl-part-2-mla.md`](cicl-part-2-mla.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
+- [`cicl-part-2-mla.md`](./cicl-part-2-mla.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md).

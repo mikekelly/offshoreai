@@ -181,5 +181,5 @@ For a SAR being filed:
 
 ## Cross-references
 
-- [`filing-a-sar.md`](filing-a-sar.md)
-- [`consent-requests.md`](consent-requests.md)
+- [`filing-a-sar.md`](./filing-a-sar.md)
+- [`consent-requests.md`](./consent-requests.md)

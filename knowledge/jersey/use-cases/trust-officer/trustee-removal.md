@@ -170,6 +170,6 @@ A removed trustee:
 
 ## Cross-references
 
-- [`trustee-retirement.md`](trustee-retirement.md)
-- [`trustee-appointment.md`](trustee-appointment.md)
+- [`trustee-retirement.md`](./trustee-retirement.md)
+- [`trustee-appointment.md`](./trustee-appointment.md)
 - [`../../trusts/trustee-duties.md`](../../trusts/trustee-duties.md)

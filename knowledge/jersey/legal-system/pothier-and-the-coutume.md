@@ -163,9 +163,9 @@ In Jersey practice, Pothier is cited:
 
 ## Cross-references
 
-- [`normandy-and-jersey-law.md`](normandy-and-jersey-law.md);
-- [`code-le-geyt.md`](code-le-geyt.md);
-- [`customary-law.md`](customary-law.md);
-- [`sources-of-law.md`](sources-of-law.md);
+- [`normandy-and-jersey-law.md`](./normandy-and-jersey-law.md);
+- [`code-le-geyt.md`](./code-le-geyt.md);
+- [`customary-law.md`](./customary-law.md);
+- [`sources-of-law.md`](./sources-of-law.md);
 - [`../contract/index.md`](../contract/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

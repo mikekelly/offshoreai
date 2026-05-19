@@ -128,4 +128,4 @@ It came into force on **17 July 2009**.
 
 - [`../registries/index.md`](../registries/index.md);
 - [`../financial-regulation/jfsc.md`](../financial-regulation/jfsc.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -144,10 +144,10 @@ The JFSC updates Codes periodically:
 
 ## Cross-references
 
-- [`codes-of-practice.md`](codes-of-practice.md);
-- [`fsl-class-tcb.md`](fsl-class-tcb.md);
-- [`fsl-class-fsb.md`](fsl-class-fsb.md);
-- [`fsl-class-investment-business.md`](fsl-class-investment-business.md);
-- [`fsl-class-gimb.md`](fsl-class-gimb.md);
-- [`fsl-class-msb.md`](fsl-class-msb.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`codes-of-practice.md`](./codes-of-practice.md);
+- [`fsl-class-tcb.md`](./fsl-class-tcb.md);
+- [`fsl-class-fsb.md`](./fsl-class-fsb.md);
+- [`fsl-class-investment-business.md`](./fsl-class-investment-business.md);
+- [`fsl-class-gimb.md`](./fsl-class-gimb.md);
+- [`fsl-class-msb.md`](./fsl-class-msb.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

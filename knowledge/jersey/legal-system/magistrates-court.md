@@ -116,6 +116,6 @@ For practitioners:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./royal-court.md`](royal-court.md);
-- [`./court-of-appeal.md`](court-of-appeal.md).
+- [`./index.md`](./index.md);
+- [`./royal-court.md`](./royal-court.md);
+- [`./court-of-appeal.md`](./court-of-appeal.md).

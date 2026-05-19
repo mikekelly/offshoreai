@@ -71,7 +71,7 @@ leases efficiently.
 
 ## Cross-references
 
-- [`disclaimer-onerous-property.md`](disclaimer-onerous-property.md)
+- [`disclaimer-onerous-property.md`](./disclaimer-onerous-property.md)
   — Article 171: general disclaimer power.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

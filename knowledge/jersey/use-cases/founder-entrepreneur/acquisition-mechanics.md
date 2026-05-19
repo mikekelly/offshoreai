@@ -239,6 +239,6 @@ For an active sale:
 
 ## Cross-references
 
-- [`sale-of-topco.md`](sale-of-topco.md)
+- [`sale-of-topco.md`](./sale-of-topco.md)
 - [`../../companies/mergers.md`](../../companies/mergers.md)
 - [`../../companies/continuance.md`](../../companies/continuance.md)

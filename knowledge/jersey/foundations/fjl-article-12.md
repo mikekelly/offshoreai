@@ -86,7 +86,7 @@ For counterparties dealing with a Jersey foundation:
 
 ## Cross-references
 
-- [`fjl-article-13.md`](fjl-article-13.md);
-- [`fjl-article-14.md`](fjl-article-14.md);
-- [`fjl-part-3-capacity.md`](fjl-part-3-capacity.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-13.md`](./fjl-article-13.md);
+- [`fjl-article-14.md`](./fjl-article-14.md);
+- [`fjl-part-3-capacity.md`](./fjl-part-3-capacity.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -42,7 +42,7 @@ provisions to **both Jersey and foreign trusts**:
 Part 4 of the Trusts Law (Articles 50–57) contains **general
 provisions** that the legislature wanted to apply broadly:
 
-- [Article 51](article-51-directions.md) — Court directions
+- [Article 51](./article-51-directions.md) — Court directions
   jurisdiction;
 - Article 52 — execution of instruments by Court order;
 - Article 53 — payment of costs;
@@ -76,7 +76,7 @@ Article 50's bridging function means a **Jersey-resident trustee of
 a foreign trust** has access to Royal Court directions, costs
 relief, and other procedural supports — even though the substantive
 trust law is foreign. The combination of
-[Article 5 jurisdiction](court-jurisdiction-over-trusts.md) and
+[Article 5 jurisdiction](./court-jurisdiction-over-trusts.md) and
 Article 50 extension makes the Royal Court a workable forum for
 many foreign-trust applications.
 

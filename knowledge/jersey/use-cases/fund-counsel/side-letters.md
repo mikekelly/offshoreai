@@ -185,5 +185,5 @@ For an existing fund:
 
 ## Cross-references
 
-- [`investor-reporting.md`](investor-reporting.md)
-- [`dsp-vs-counsel-role.md`](dsp-vs-counsel-role.md)
+- [`investor-reporting.md`](./investor-reporting.md)
+- [`dsp-vs-counsel-role.md`](./dsp-vs-counsel-role.md)

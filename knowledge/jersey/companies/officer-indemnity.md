@@ -99,10 +99,10 @@ own terms.
 
 ## Cross-references
 
-- [`directors-duties.md`](directors-duties.md) — Article 74: the
+- [`directors-duties.md`](./directors-duties.md) — Article 74: the
   duties the officer is being indemnified against (subject to
   the irreducible-core exclusions).
-- [`relief-from-breach.md`](relief-from-breach.md) — Article 67A:
+- [`relief-from-breach.md`](./relief-from-breach.md) — Article 67A:
   court relief that may complement indemnity in unavoidable-
   circumstances breaches.
 

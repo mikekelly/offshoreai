@@ -153,7 +153,7 @@ DPO tasks:
 
 ## Cross-references
 
-- [`dpl-article-43.md`](dpl-article-43.md);
-- [`dpl-part-5-transfers.md`](dpl-part-5-transfers.md);
-- [`dpl-part-2-principles.md`](dpl-part-2-principles.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-article-43.md`](./dpl-article-43.md);
+- [`dpl-part-5-transfers.md`](./dpl-part-5-transfers.md);
+- [`dpl-part-2-principles.md`](./dpl-part-2-principles.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

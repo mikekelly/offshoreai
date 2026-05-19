@@ -91,10 +91,10 @@ JFSC criticism themes:
 
 ## Cross-references
 
-- [`mlo-article-3.md`](mlo-article-3.md) — BWRA driving
+- [`mlo-article-3.md`](./mlo-article-3.md) — BWRA driving
   training;
-- [`mlo-article-4.md`](mlo-article-4.md) — procedures
+- [`mlo-article-4.md`](./mlo-article-4.md) — procedures
   including training;
-- [`mlo-article-16.md`](mlo-article-16.md) — MLRO training;
-- [`aml-cft-handbook.md`](aml-cft-handbook.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-article-16.md`](./mlo-article-16.md) — MLRO training;
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

@@ -166,4 +166,4 @@ For a matter:
 ## Cross-references
 
 - [`../../legal-system/legal-profession.md`](../../legal-system/legal-profession.md)
-- [`royal-court-procedure.md`](royal-court-procedure.md)
+- [`royal-court-procedure.md`](./royal-court-procedure.md)

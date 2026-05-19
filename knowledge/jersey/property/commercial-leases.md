@@ -215,11 +215,11 @@ After expiry, where tenant remains:
 
 ## Cross-references
 
-- [`leases.md`](leases.md);
-- [`real-property-overview.md`](real-property-overview.md);
-- [`contract-passing.md`](contract-passing.md);
-- [`hypothec.md`](hypothec.md);
-- [`servitudes.md`](servitudes.md);
+- [`leases.md`](./leases.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`contract-passing.md`](./contract-passing.md);
+- [`hypothec.md`](./hypothec.md);
+- [`servitudes.md`](./servitudes.md);
 - [`../immigration-residency/chwl-article-10.md`](../immigration-residency/chwl-article-10.md);
 - [`../tax/stamp-duty.md`](../tax/stamp-duty.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -176,7 +176,7 @@ Workers who **raise concerns** about workplace safety:
 - **Safety representatives** in larger workplaces have
   statutory roles.
 
-See [`el-articles-index.md`](el-articles-index.md) for
+See [`el-articles-index.md`](./el-articles-index.md) for
 employment-law protections.
 
 ## Civil claims
@@ -223,8 +223,8 @@ For workers:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`el-articles-index.md`](el-articles-index.md);
+- [`index.md`](./index.md);
+- [`el-articles-index.md`](./el-articles-index.md);
 - [`../use-cases/employee-worker/index.md`](../use-cases/employee-worker/index.md);
 - [`../use-cases/founder-entrepreneur/index.md`](../use-cases/founder-entrepreneur/index.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);

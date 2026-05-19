@@ -69,7 +69,7 @@ registration to:
 
 This is a **policy** rather than a statutory requirement, but
 is the operating constraint on banking entry to Jersey. See
-[`top-50-policy.md`](top-50-policy.md).
+[`top-50-policy.md`](./top-50-policy.md).
 
 ## The registration regime
 
@@ -122,7 +122,7 @@ A **family office** holding family money:
 
 ## Cross-references
 
-- [`bbl-article-2.md`](bbl-article-2.md);
-- [`bbl-article-6.md`](bbl-article-6.md);
-- [`top-50-policy.md`](top-50-policy.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-2.md`](./bbl-article-2.md);
+- [`bbl-article-6.md`](./bbl-article-6.md);
+- [`top-50-policy.md`](./top-50-policy.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

@@ -107,11 +107,11 @@ framework.
 
 ## Current frontier files
 
-- [`uk-carried-interest-reform-2026.md`](uk-carried-interest-reform-2026.md)
+- [`uk-carried-interest-reform-2026.md`](./uk-carried-interest-reform-2026.md)
   — the new UK carry regime in force from 6 April 2026
-- [`aifmd-ii-april-2026.md`](aifmd-ii-april-2026.md) —
+- [`aifmd-ii-april-2026.md`](./aifmd-ii-april-2026.md) —
   AIFMD II requirements effective 16 April 2026
-- [`continuation-funds-and-gp-led-secondaries.md`](continuation-funds-and-gp-led-secondaries.md)
+- [`continuation-funds-and-gp-led-secondaries.md`](./continuation-funds-and-gp-led-secondaries.md)
   — the dominant PE liquidity trend
 - [`tokenisation-jersey-2026.md`](../jersey/frontier/tokenisation-jersey-2026.md)
   — Jersey's evolving digital-assets posture

@@ -123,7 +123,7 @@ The offences typically require **knowledge or suspicion**:
 
 ## Cross-references
 
-- [`cicl-articles-index.md`](cicl-articles-index.md);
-- [`pocl-article-1a.md`](pocl-article-1a.md);
-- [`pocl-article-30.md`](pocl-article-30.md);
-- [`safl-article-20.md`](safl-article-20.md).
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
+- [`pocl-article-1a.md`](./pocl-article-1a.md);
+- [`pocl-article-30.md`](./pocl-article-30.md);
+- [`safl-article-20.md`](./safl-article-20.md).

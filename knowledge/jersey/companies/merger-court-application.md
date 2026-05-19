@@ -67,9 +67,9 @@ fast track available for healthy mergers.
 
 ## Cross-references
 
-- [`merger-resolutions-certificates.md`](merger-resolutions-certificates.md)
+- [`merger-resolutions-certificates.md`](./merger-resolutions-certificates.md)
   — Article 127E: directors' solvency certificate.
-- [`merger-creditor-objection.md`](merger-creditor-objection.md) —
+- [`merger-creditor-objection.md`](./merger-creditor-objection.md) —
   Article 127FE: creditor objection where all certificates made.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

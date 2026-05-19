@@ -115,8 +115,8 @@ If verification cannot be completed:
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-8.md`](mlo-article-8.md) — beneficial owners;
-- [`mlo-article-12.md`](mlo-article-12.md) — EDD;
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-8.md`](./mlo-article-8.md) — beneficial owners;
+- [`mlo-article-12.md`](./mlo-article-12.md) — EDD;
 - [`../use-cases/compliance-mlro/beneficial-owners-complex.md`](../use-cases/compliance-mlro/beneficial-owners-complex.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

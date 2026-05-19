@@ -235,5 +235,5 @@ For comparative research:
 
 ## Cross-references
 
-- [`jersey-constitutional-status.md`](jersey-constitutional-status.md)
-- [`fatf-moneyval-jersey.md`](fatf-moneyval-jersey.md)
+- [`jersey-constitutional-status.md`](./jersey-constitutional-status.md)
+- [`fatf-moneyval-jersey.md`](./fatf-moneyval-jersey.md)

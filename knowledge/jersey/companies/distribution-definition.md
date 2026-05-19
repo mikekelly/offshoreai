@@ -48,7 +48,7 @@ company to its **members**, whether by:
 ## Why the definition matters
 
 The Article 114 definition is the **gateway** to
-[Article 115](distribution-restrictions.md) — the solvency-test
+[Article 115](./distribution-restrictions.md) — the solvency-test
 restriction on distributions. Anything that counts as a
 "distribution" must satisfy Article 115; anything that doesn't is
 outside the regime.
@@ -92,11 +92,11 @@ substance-over-form analysis in distribution cases.
 
 ## Cross-references
 
-- [`distribution-restrictions.md`](distribution-restrictions.md)
+- [`distribution-restrictions.md`](./distribution-restrictions.md)
   — Article 115: the solvency-test restriction.
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A:
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A:
   the parallel solvency mechanism for capital reduction.
-- [`unlawful-distribution-consequences.md`](unlawful-distribution-consequences.md)
+- [`unlawful-distribution-consequences.md`](./unlawful-distribution-consequences.md)
   — Article 115A: what happens when a distribution is unlawful.
 
 ## Pitfalls

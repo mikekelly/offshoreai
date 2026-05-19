@@ -73,7 +73,7 @@ prescribed authoriser) on specific grounds (national
 security, serious crime, etc.). Unauthorised interception
 is a criminal offence.
 
-See [`interception-of-communications.md`](interception-of-communications.md).
+See [`interception-of-communications.md`](./interception-of-communications.md).
 
 ### Acquisition of communications data
 
@@ -107,7 +107,7 @@ Intrusive surveillance has the highest authorisation
 threshold; directed surveillance lower but still
 formally regulated.
 
-See [`covert-surveillance.md`](covert-surveillance.md).
+See [`covert-surveillance.md`](./covert-surveillance.md).
 
 ### Covert human intelligence sources (CHIS)
 
@@ -121,7 +121,7 @@ information without the subject's knowledge:
 - **Vulnerable CHIS** (minors, mentally impaired persons)
   — specific protections.
 
-See [`covert-human-intelligence-sources.md`](covert-human-intelligence-sources.md).
+See [`covert-human-intelligence-sources.md`](./covert-human-intelligence-sources.md).
 
 ## Authorising authorities
 
@@ -246,12 +246,12 @@ practice.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`interception-of-communications.md`](interception-of-communications.md);
-- [`covert-surveillance.md`](covert-surveillance.md);
-- [`covert-human-intelligence-sources.md`](covert-human-intelligence-sources.md);
-- [`investigatory-powers-commissioner.md`](investigatory-powers-commissioner.md);
-- [`relationship-with-data-protection.md`](relationship-with-data-protection.md);
+- [`index.md`](./index.md);
+- [`interception-of-communications.md`](./interception-of-communications.md);
+- [`covert-surveillance.md`](./covert-surveillance.md);
+- [`covert-human-intelligence-sources.md`](./covert-human-intelligence-sources.md);
+- [`investigatory-powers-commissioner.md`](./investigatory-powers-commissioner.md);
+- [`relationship-with-data-protection.md`](./relationship-with-data-protection.md);
 - [`../crime-fraud/ppce-law-2003.md`](../crime-fraud/ppce-law-2003.md);
 - [`../data-protection/index.md`](../data-protection/index.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md);

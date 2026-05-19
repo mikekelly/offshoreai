@@ -78,7 +78,7 @@ see_also:
 ---
 ```
 
-- `tags` enables cross-cutting discovery — see [TAGS.md](TAGS.md) for the
+- `tags` enables cross-cutting discovery — see [TAGS.md](./TAGS.md) for the
   canonical taxonomy. Tags are the **primary organisational layer** for an
   agent searching the graph; the folder structure is convenient for humans
   but tags are how concepts cluster.
@@ -124,7 +124,7 @@ see_also:
 
 ## Tags
 
-- Use **only tags listed in [TAGS.md](TAGS.md)**. Don't invent. If a
+- Use **only tags listed in [TAGS.md](./TAGS.md)**. Don't invent. If a
   concept needs a tag that isn't there, add the tag to TAGS.md with a
   one-line description first.
 - Aim for **5–10 tags** on a substantive content file. Three tags is too

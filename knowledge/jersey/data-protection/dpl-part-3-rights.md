@@ -130,7 +130,7 @@ decisions:
 
 ## Cross-references
 
-- [`dpl-article-8.md`](dpl-article-8.md);
-- [`dpl-part-2-principles.md`](dpl-part-2-principles.md);
-- [`dpl-part-6-authority.md`](dpl-part-6-authority.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-article-8.md`](./dpl-article-8.md);
+- [`dpl-part-2-principles.md`](./dpl-part-2-principles.md);
+- [`dpl-part-6-authority.md`](./dpl-part-6-authority.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

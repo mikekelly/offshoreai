@@ -122,7 +122,7 @@ The categories are **load-bearing**:
 - **Licensed** status under specific HVR rules;
 - **Allowed** to acquire qualified property;
 - **Subject to** specific HVR-prescribed conditions;
-- See [`high-value-residency.md`](high-value-residency.md).
+- See [`high-value-residency.md`](./high-value-residency.md).
 
 ### Inter-spouse rules
 
@@ -133,9 +133,9 @@ The categories are **load-bearing**:
 
 ## Cross-references
 
-- [`residential-status-categories.md`](residential-status-categories.md);
-- [`employment-status-categories.md`](employment-status-categories.md);
-- [`chwl-article-10.md`](chwl-article-10.md);
-- [`chwl-article-19.md`](chwl-article-19.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md);
-- [`high-value-residency.md`](high-value-residency.md).
+- [`residential-status-categories.md`](./residential-status-categories.md);
+- [`employment-status-categories.md`](./employment-status-categories.md);
+- [`chwl-article-10.md`](./chwl-article-10.md);
+- [`chwl-article-19.md`](./chwl-article-19.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md);
+- [`high-value-residency.md`](./high-value-residency.md).

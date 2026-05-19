@@ -124,8 +124,8 @@ discriminatory conduct by junior staff.
 
 ## Cross-references
 
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-article-10.md`](dl-article-10.md);
-- [`dl-part-3-areas.md`](dl-part-3-areas.md);
-- [`dl-part-3-harassment.md`](dl-part-3-harassment.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-article-10.md`](./dl-article-10.md);
+- [`dl-part-3-areas.md`](./dl-part-3-areas.md);
+- [`dl-part-3-harassment.md`](./dl-part-3-harassment.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

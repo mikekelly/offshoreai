@@ -106,9 +106,9 @@ Changes to guardian:
 
 ## Cross-references
 
-- [`fjl-article-22.md`](fjl-article-22.md);
-- [`fjl-article-23.md`](fjl-article-23.md);
-- [`fjl-article-25.md`](fjl-article-25.md);
-- [`fjl-article-45.md`](fjl-article-45.md);
-- [`fjl-part-5-guardian.md`](fjl-part-5-guardian.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-22.md`](./fjl-article-22.md);
+- [`fjl-article-23.md`](./fjl-article-23.md);
+- [`fjl-article-25.md`](./fjl-article-25.md);
+- [`fjl-article-45.md`](./fjl-article-45.md);
+- [`fjl-part-5-guardian.md`](./fjl-part-5-guardian.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -137,7 +137,7 @@ largest reinsurance market, focused on:
 
 - **Catastrophe** reinsurance;
 - **Special-purpose insurers** for ILS / cat bonds (see
-  [`ils.md`](ils.md));
+  [`ils.md`](./ils.md));
 - **Captive insurance** for corporate self-insurance
   structures;
 - **Specialty lines** (D&O, environmental, etc.).
@@ -157,7 +157,7 @@ Bermuda funds use:
   strategy or multi-cell funds.
 
 Bermuda funds are regulated under the **Investment Funds
-Act 2006** — see [`funds.md`](funds.md).
+Act 2006** — see [`funds.md`](./funds.md).
 
 ### Holding companies and listings
 
@@ -186,7 +186,7 @@ of form alone. Regulation attaches to specific activities:
 - **Trust business** — Trusts (Regulation of Trust
   Business) Act 2001.
 
-See [`bma.md`](bma.md) for the regulator.
+See [`bma.md`](./bma.md) for the regulator.
 
 ## Substance overlay
 
@@ -217,13 +217,13 @@ deep substance already.
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`index.md`](index.md);
-- [`insurance.md`](insurance.md);
-- [`funds.md`](funds.md);
-- [`ils.md`](ils.md);
-- [`bma.md`](bma.md);
-- [`tax.md`](tax.md);
+- [`companies.md`](./companies.md);
+- [`index.md`](./index.md);
+- [`insurance.md`](./insurance.md);
+- [`funds.md`](./funds.md);
+- [`ils.md`](./ils.md);
+- [`bma.md`](./bma.md);
+- [`tax.md`](./tax.md);
 - [`../cayman/exempted-company.md`](../cayman/exempted-company.md);
 - [`../bvi/business-company.md`](../bvi/business-company.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md).

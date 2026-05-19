@@ -70,7 +70,7 @@ appeal right is the long-stop protection.
 
 ## Cross-references
 
-- [`merger-commission-consent.md`](merger-commission-consent.md) —
+- [`merger-commission-consent.md`](./merger-commission-consent.md) —
   Article 127FF: consent requirement.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

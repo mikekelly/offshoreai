@@ -103,7 +103,7 @@ A **distinctive Jersey feature** — civil-law style:
 - **Modern** Jersey position contested;
 - **Practical** convergence with English consideration in
   most cases;
-- See [`cause.md`](cause.md).
+- See [`cause.md`](./cause.md).
 
 ### Consent
 
@@ -168,7 +168,7 @@ Most Jersey contracts:
 - **Civil-law** influence — specific performance is the
   primary remedy in continental thinking;
 - **Specific** Jersey case law;
-- See [`specific-performance.md`](specific-performance.md).
+- See [`specific-performance.md`](./specific-performance.md).
 
 ### Termination
 
@@ -184,9 +184,9 @@ Most Jersey contracts:
 
 ## Cross-references
 
-- [`formation.md`](formation.md);
-- [`cause.md`](cause.md);
-- [`performance-and-breach.md`](performance-and-breach.md);
+- [`formation.md`](./formation.md);
+- [`cause.md`](./cause.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
 - [`../legal-system/english-law-as-persuasive.md`](../legal-system/english-law-as-persuasive.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

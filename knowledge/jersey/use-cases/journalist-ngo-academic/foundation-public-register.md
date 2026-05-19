@@ -174,4 +174,4 @@ For investigation:
 ## Cross-references
 
 - [`../../registries/foundations-registry.md`](../../registries/foundations-registry.md)
-- [`public-info-jersey-companies.md`](public-info-jersey-companies.md)
+- [`public-info-jersey-companies.md`](./public-info-jersey-companies.md)

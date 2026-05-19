@@ -146,7 +146,7 @@ The high-level steps:
   challenged in litigation.
 - **Directors' duties to each cell.** Directors of a cell company
   owe duties to each cell — see
-  [`pcc-director-duties.md`](pcc-director-duties.md) (Article
+  [`pcc-director-duties.md`](./pcc-director-duties.md) (Article
   127YR).
 
 ## Index of Part 18D deep files

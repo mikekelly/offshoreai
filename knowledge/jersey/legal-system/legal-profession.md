@@ -84,5 +84,5 @@ judges.
 
 ## Cross-references
 
-- [`royal-court.md`](royal-court.md) — the court Advocates appear
+- [`royal-court.md`](./royal-court.md) — the court Advocates appear
   in.

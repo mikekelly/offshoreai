@@ -56,9 +56,9 @@ Land here if your question involves any of:
 | The question is about... | Read |
 |---|---|
 | Whether a foundation or a trust is the right vehicle | This section plus [`../trusts/index.md`](../trusts/index.md) |
-| What a foundation actually is | [`foundations-law-2009.md`](foundations-law-2009.md) |
-| Foundation governance — council, guardian, qualified member | [`council-and-guardian.md`](council-and-guardian.md) *(stub)*, [`qualified-member.md`](qualified-member.md) *(stub)* |
-| When to use a foundation in commercial / philanthropic / orphan structures | [`uses.md`](uses.md) *(stub)* |
+| What a foundation actually is | [`foundations-law-2009.md`](./foundations-law-2009.md) |
+| Foundation governance — council, guardian, qualified member | [`council-and-guardian.md`](./council-and-guardian.md) *(stub)*, [`qualified-member.md`](./qualified-member.md) *(stub)* |
+| When to use a foundation in commercial / philanthropic / orphan structures | [`uses.md`](./uses.md) *(stub)* |
 | Foreign-tax characterisation of a Jersey foundation | Not in this section — model in the relevant foreign tax regime |
 
 If your question is about a **trust** rather than a foundation,
@@ -68,7 +68,7 @@ use cases but very different legal mechanics.
 
 ## Where to start as a cold reader
 
-1. **[`foundations-law-2009.md`](foundations-law-2009.md)** —
+1. **[`foundations-law-2009.md`](./foundations-law-2009.md)** —
    what a Jersey foundation is, the governance organs (council,
    guardian, qualified member), the charter / regulations split,
    how a foundation comes into existence, typical use cases.
@@ -80,10 +80,10 @@ use cases but very different legal mechanics.
 
 ### Theme 1 — The statute
 
-- **[`foundations-law-2009.md`](foundations-law-2009.md)** —
+- **[`foundations-law-2009.md`](./foundations-law-2009.md)** —
   Foundations (Jersey) Law 2009: definition; council; guardian;
   qualified member; founder; charter; regulations.
-- **[`fjl-articles-index.md`](fjl-articles-index.md)** —
+- **[`fjl-articles-index.md`](./fjl-articles-index.md)** —
   article-by-article wiki of the Foundations (Jersey) Law 2009
   with Part-cluster files and individual article files for the
   most-cited provisions (Articles 4-7, 15-17, 22-23, 26, 28-30,
@@ -91,15 +91,15 @@ use cases but very different legal mechanics.
 
 ### Theme 2 — Governance organs
 
-- [`council-and-guardian.md`](council-and-guardian.md) *(stub)*
+- [`council-and-guardian.md`](./council-and-guardian.md) *(stub)*
   — the council manages, the guardian supervises.
-- [`qualified-member.md`](qualified-member.md) *(stub)* — the
+- [`qualified-member.md`](./qualified-member.md) *(stub)* — the
   mandatory JFSC-regulated council member providing Jersey
   substance and regulatory nexus.
 
 ### Theme 3 — Uses
 
-- [`uses.md`](uses.md) *(stub)* — philanthropic structures;
+- [`uses.md`](./uses.md) *(stub)* — philanthropic structures;
   orphan SPVs; family-governance vehicles; succession; private
   trust company holding structures.
 

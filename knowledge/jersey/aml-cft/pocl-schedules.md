@@ -44,7 +44,7 @@ Law.
 
 Schedule 2 is the **substantive** schedule — the list of
 **supervised business** activities. See
-[`schedule-2-businesses.md`](schedule-2-businesses.md) for the
+[`schedule-2-businesses.md`](./schedule-2-businesses.md) for the
 full list and explanatory notes.
 
 The Schedule has been **extensively amended** since 1999:
@@ -68,7 +68,7 @@ The Schedule has been **extensively amended** since 1999:
 
 ## Cross-references
 
-- [`schedule-2-businesses.md`](schedule-2-businesses.md);
-- [`pocl-part-6-supervised.md`](pocl-part-6-supervised.md);
-- [`money-laundering-order-2008.md`](money-laundering-order-2008.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`schedule-2-businesses.md`](./schedule-2-businesses.md);
+- [`pocl-part-6-supervised.md`](./pocl-part-6-supervised.md);
+- [`money-laundering-order-2008.md`](./money-laundering-order-2008.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

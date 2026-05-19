@@ -116,8 +116,8 @@ A tenant facing harassment may:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`repairs-and-standards.md`](repairs-and-standards.md);
-- [`eviction-procedure.md`](eviction-procedure.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`repairs-and-standards.md`](./repairs-and-standards.md);
+- [`eviction-procedure.md`](./eviction-procedure.md);
 - [`../property/voisinage.md`](../property/voisinage.md).

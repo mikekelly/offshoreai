@@ -124,6 +124,6 @@ Short of formal enforcement, the JFSC uses:
 
 ## Cross-references
 
-- [`bbl-articles-index.md`](bbl-articles-index.md);
-- [`bbl-article-10.md`](bbl-article-10.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md);
+- [`bbl-article-10.md`](./bbl-article-10.md);
 - [`../financial-regulation/jfsc.md`](../financial-regulation/jfsc.md).

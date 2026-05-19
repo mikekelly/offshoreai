@@ -55,7 +55,7 @@ typically becomes effective on registration.
 ## Comparison with no-par-value
 
 The Article 38 mechanism for par-value is **partly mirrored** by
-[Article 38A](alteration-no-par-value.md) for no-par-value
+[Article 38A](./alteration-no-par-value.md) for no-par-value
 companies. Differences:
 
 | Feature | Article 38 (par-value) | Article 38A (no-par-value) |
@@ -74,12 +74,12 @@ capital reduction** (reducing paid-up share capital, share premium,
 or stated capital below historical levels) is governed by **Part
 12** of the Companies Law:
 
-- [Article 61](reduction-of-capital-accounts.md) — reduction of
+- [Article 61](./reduction-of-capital-accounts.md) — reduction of
   capital accounts;
-- [Article 61A](solvency-statement.md) — the **solvency-statement**
+- [Article 61A](./solvency-statement.md) — the **solvency-statement**
   mechanic that is the centrepiece of Jersey's capital-management
   regime;
-- [Article 62 and 63](court-confirmation.md) — Court confirmation
+- [Article 62 and 63](./court-confirmation.md) — Court confirmation
   procedure where it is required.
 
 So Article 38 is the **operational mechanism** for routine

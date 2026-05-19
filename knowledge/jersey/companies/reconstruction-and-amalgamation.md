@@ -101,11 +101,11 @@ specified conditions). Which route to choose depends on:
 
 ## Cross-references
 
-- [`scheme-of-arrangement.md`](scheme-of-arrangement.md) —
+- [`scheme-of-arrangement.md`](./scheme-of-arrangement.md) —
   Article 125 foundation.
-- [`scheme-information.md`](scheme-information.md) — Article 126
+- [`scheme-information.md`](./scheme-information.md) — Article 126
   disclosure.
-- [`mergers.md`](mergers.md) — Part 18B statutory merger
+- [`mergers.md`](./mergers.md) — Part 18B statutory merger
   alternative.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

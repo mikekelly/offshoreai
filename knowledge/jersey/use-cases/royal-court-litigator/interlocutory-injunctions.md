@@ -235,5 +235,5 @@ For an active situation:
 
 ## Cross-references
 
-- [`order-of-justice.md`](order-of-justice.md)
+- [`order-of-justice.md`](./order-of-justice.md)
 - [`../../legal-system/royal-court.md`](../../legal-system/royal-court.md)

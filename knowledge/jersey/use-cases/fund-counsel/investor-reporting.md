@@ -182,5 +182,5 @@ For an existing fund:
 
 ## Cross-references
 
-- [`dsp-vs-counsel-role.md`](dsp-vs-counsel-role.md)
+- [`dsp-vs-counsel-role.md`](./dsp-vs-counsel-role.md)
 - [`../../funds/index.md`](../../funds/index.md)

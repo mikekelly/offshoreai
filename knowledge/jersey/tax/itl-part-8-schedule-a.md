@@ -103,8 +103,8 @@ For non-Jersey-resident landlords:
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md)
-- [`no-capital-gains-tax.md`](no-capital-gains-tax.md) —
+- [`personal-income-tax.md`](./personal-income-tax.md)
+- [`no-capital-gains-tax.md`](./no-capital-gains-tax.md) —
   trading vs capital question.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

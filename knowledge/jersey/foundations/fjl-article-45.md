@@ -107,8 +107,8 @@ trust-law approach:
 
 ## Cross-references
 
-- [`fjl-article-46.md`](fjl-article-46.md) — applications;
-- [`fjl-article-47.md`](fjl-article-47.md) — mistake /
+- [`fjl-article-46.md`](./fjl-article-46.md) — applications;
+- [`fjl-article-47.md`](./fjl-article-47.md) — mistake /
   hastiness;
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../trusts/article-51-directions.md`](../trusts/article-51-directions.md)

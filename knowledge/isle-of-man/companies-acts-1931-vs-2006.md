@@ -189,7 +189,7 @@ The IoM is a major eGaming jurisdiction:
 - **Specific** eGaming Supervision Commission
   regulation applies separately.
 
-See [`egaming.md`](egaming.md).
+See [`egaming.md`](./egaming.md).
 
 ### Insurance vehicle
 
@@ -212,10 +212,10 @@ Act.
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`index.md`](index.md);
-- [`egaming.md`](egaming.md);
-- [`insurance.md`](insurance.md);
+- [`companies.md`](./companies.md);
+- [`index.md`](./index.md);
+- [`egaming.md`](./egaming.md);
+- [`insurance.md`](./insurance.md);
 - [`../bvi/business-company.md`](../bvi/business-company.md);
 - [`../cayman/exempted-company.md`](../cayman/exempted-company.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md);

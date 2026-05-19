@@ -44,29 +44,29 @@ detail.
 
 ### Public information
 
-- [What information about Jersey companies is publicly accessible?](public-info-jersey-companies.md)
-- [Can I see beneficial ownership of a Jersey company?](beneficial-ownership-access.md)
-- [How do I search the Jersey Companies Registry?](searching-companies-registry.md)
-- [Are foundation registers public?](foundation-public-register.md)
-- [What about Jersey trusts — are they registered?](jersey-trusts-registration.md)
+- [What information about Jersey companies is publicly accessible?](./public-info-jersey-companies.md)
+- [Can I see beneficial ownership of a Jersey company?](./beneficial-ownership-access.md)
+- [How do I search the Jersey Companies Registry?](./searching-companies-registry.md)
+- [Are foundation registers public?](./foundation-public-register.md)
+- [What about Jersey trusts — are they registered?](./jersey-trusts-registration.md)
 
 ### Sources
 
-- [Where are Jersey laws and regulations published?](finding-jersey-laws.md)
-- [Where are Royal Court judgments published?](finding-court-judgments.md)
-- [JFSC publications, statements, and regulatory action](jfsc-publications.md)
+- [Where are Jersey laws and regulations published?](./finding-jersey-laws.md)
+- [Where are Royal Court judgments published?](./finding-court-judgments.md)
+- [JFSC publications, statements, and regulatory action](./jfsc-publications.md)
 
 ### Context
 
-- [What is Jersey's status — UK, EU, neither?](jersey-constitutional-status.md)
-- [How does Jersey's regulatory regime compare to other offshore centres?](jersey-vs-other-offshore.md)
-- [What does FATF / Moneyval say about Jersey?](fatf-moneyval-jersey.md)
+- [What is Jersey's status — UK, EU, neither?](./jersey-constitutional-status.md)
+- [How does Jersey's regulatory regime compare to other offshore centres?](./jersey-vs-other-offshore.md)
+- [What does FATF / Moneyval say about Jersey?](./fatf-moneyval-jersey.md)
 
 ### Transparency questions
 
-- [Where Jersey is and isn't transparent — current state](transparency-evolution.md)
-- [EU and OECD pressure on Jersey — what's been the response?](eu-oecd-pressure.md)
-- [Beneficial-ownership transparency vs financial-privacy balance](privacy-vs-transparency.md)
+- [Where Jersey is and isn't transparent — current state](./transparency-evolution.md)
+- [EU and OECD pressure on Jersey — what's been the response?](./eu-oecd-pressure.md)
+- [Beneficial-ownership transparency vs financial-privacy balance](./privacy-vs-transparency.md)
 
 ## Cross-references
 

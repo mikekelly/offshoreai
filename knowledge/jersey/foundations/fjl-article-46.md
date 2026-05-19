@@ -99,7 +99,7 @@ apply for a **costs order**:
 
 ## Cross-references
 
-- [`fjl-article-45.md`](fjl-article-45.md);
-- [`fjl-article-47.md`](fjl-article-47.md);
+- [`fjl-article-45.md`](./fjl-article-45.md);
+- [`fjl-article-47.md`](./fjl-article-47.md);
 - [`../trusts/article-51-directions.md`](../trusts/article-51-directions.md);
 - [`../use-cases/royal-court-litigator/blessing-application.md`](../use-cases/royal-court-litigator/blessing-application.md).

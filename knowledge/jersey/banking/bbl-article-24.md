@@ -91,8 +91,8 @@ The scheme pays out when:
 
 ## Cross-references
 
-- [`bbl-article-14.md`](bbl-article-14.md);
-- [`bbl-articles-18-22.md`](bbl-articles-18-22.md);
-- [`bbl-part-5-resolution.md`](bbl-part-5-resolution.md);
-- [`depositor-compensation.md`](depositor-compensation.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-14.md`](./bbl-article-14.md);
+- [`bbl-articles-18-22.md`](./bbl-articles-18-22.md);
+- [`bbl-part-5-resolution.md`](./bbl-part-5-resolution.md);
+- [`depositor-compensation.md`](./depositor-compensation.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

@@ -2,7 +2,7 @@
 
 Region-non-specific design doc for the **customised agent behaviours** that the offshoreai agent runtime adds on top of the Claude Agent SDK's default loop. Each behaviour exists for a specific reason — a failure mode the default loop doesn't handle, a guardrail the domain requires, a budget the architecture has to respect.
 
-This doc complements [`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md) (the *what* — strategic commitments) and the per-jurisdiction PRDs (the *when and at what scale* — implementation specifics). It is the *why and broadly how* layer between them. When a new behaviour is added to any product agent on this corpus, document it here first; PRD-level rollout follows.
+This doc complements [`AGENT-PRINCIPLES.md`](./AGENT-PRINCIPLES.md) (the *what* — strategic commitments) and the per-jurisdiction PRDs (the *when and at what scale* — implementation specifics). It is the *why and broadly how* layer between them. When a new behaviour is added to any product agent on this corpus, document it here first; PRD-level rollout follows.
 
 The layering, restated:
 

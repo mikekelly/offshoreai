@@ -189,5 +189,5 @@ For an enforcement action:
 
 ## Cross-references
 
-- [`article-9-firewall.md`](article-9-firewall.md)
+- [`article-9-firewall.md`](./article-9-firewall.md)
 - [`../../legal-system/royal-court.md`](../../legal-system/royal-court.md)

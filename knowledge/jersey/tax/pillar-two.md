@@ -129,9 +129,9 @@ tax software and advisers.
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — the underlying corporate tax
+- [`zero-ten.md`](./zero-ten.md) — the underlying corporate tax
   regime.
-- [`economic-substance.md`](economic-substance.md) — the parallel
+- [`economic-substance.md`](./economic-substance.md) — the parallel
   substance regime for low-tax companies.
 - [`../international/index.md`](../international/index.md) — the
   international tax-policy context.

@@ -100,12 +100,12 @@ In practical terms:
 - An ordinary Jersey holding company likewise sits at **0%**.
 - A non-Jersey-resident company is not within Jersey corporate tax
   on profits other than profits from a Jersey establishment or from
-  Jersey land. (See [company-residence.md](company-residence.md).)
+  Jersey land. (See [company-residence.md](./company-residence.md).)
 
 A company within Article 123C(2) "shall not be entitled, when paying a
 dividend, to make any deduction" of tax from the dividend, by contrast
 with a company within Article 123D (which deducts at 10%) — see
-[distributions-and-deemed-distributions.md](distributions-and-deemed-distributions.md).
+[distributions-and-deemed-distributions.md](./distributions-and-deemed-distributions.md).
 
 ## The 10% rate — "financial services companies" (Article 123D)
 
@@ -150,7 +150,7 @@ within scope. ([Revenue Jersey Statement of Practice — Article 123D(4)(e)][sop
 
 A company within Article 123D may, when paying a dividend, deduct tax
 at the rate of 10% — see
-[distributions-and-deemed-distributions.md](distributions-and-deemed-distributions.md).
+[distributions-and-deemed-distributions.md](./distributions-and-deemed-distributions.md).
 
 ## The 20% rate — utility companies (Article 123C(3))
 
@@ -218,7 +218,7 @@ political-economy problem in the 2000s: it had to be paired with rules
 that brought distributions home to Jersey-resident shareholders so as
 not to leak the Jersey tax base. Those rules — **deemed distribution**
 and **shareholder-loan** rules — are covered separately in
-[distributions-and-deemed-distributions.md](distributions-and-deemed-distributions.md).
+[distributions-and-deemed-distributions.md](./distributions-and-deemed-distributions.md).
 For non-Jersey-resident shareholders, a 0% Jersey company typically
 involves no Jersey withholding (because Article 123C(2) companies do
 not deduct), and Jersey simply does not tax the foreign holder.
@@ -229,11 +229,11 @@ not deduct), and Jersey simply does not tax the foreign holder.
   "relevant activities" are subject to a separate substance regime
   under the Taxation (Companies — Economic Substance) (Jersey) Law 2019.
   This is in addition to, not part of, zero-ten — see
-  [economic-substance.md](economic-substance.md).
+  [economic-substance.md](./economic-substance.md).
 - **OECD Pillar Two.** Jersey has implemented the OECD Pillar Two 15%
   minimum tax for large in-scope multinational groups, via a domestic
   top-up. This sits over the top of zero-ten for groups in scope —
-  see [pillar-two.md](pillar-two.md).
+  see [pillar-two.md](./pillar-two.md).
 
 ## Historical note
 

@@ -117,7 +117,7 @@ Where the council is **deadlocked**:
 
 ## Cross-references
 
-- [`fjl-article-15.md`](fjl-article-15.md);
-- [`fjl-article-17.md`](fjl-article-17.md);
-- [`fjl-part-4-council.md`](fjl-part-4-council.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-15.md`](./fjl-article-15.md);
+- [`fjl-article-17.md`](./fjl-article-17.md);
+- [`fjl-part-4-council.md`](./fjl-part-4-council.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

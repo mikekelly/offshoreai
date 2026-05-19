@@ -81,7 +81,7 @@ Amendments have addressed:
 
 ## Cross-references
 
-- [`cl-articles-index.md`](cl-articles-index.md);
-- [`charities-law-2014.md`](charities-law-2014.md);
+- [`cl-articles-index.md`](./cl-articles-index.md);
+- [`charities-law-2014.md`](./charities-law-2014.md);
 - [`../tax/itl-part-15-exemptions.md`](../tax/itl-part-15-exemptions.md);
 - [`../registries/charities-register.md`](../registries/charities-register.md).

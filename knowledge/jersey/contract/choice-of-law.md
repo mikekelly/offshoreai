@@ -168,10 +168,10 @@ A Jersey court applies foreign law as **fact** (not law):
 
 ## Cross-references
 
-- [`jurisdiction-clauses.md`](jurisdiction-clauses.md);
-- [`arbitration.md`](arbitration.md);
-- [`formation.md`](formation.md);
+- [`jurisdiction-clauses.md`](./jurisdiction-clauses.md);
+- [`arbitration.md`](./arbitration.md);
+- [`formation.md`](./formation.md);
 - [`../trusts/firewall.md`](../trusts/firewall.md);
 - [`../property/index.md`](../property/index.md);
 - [`../international/sanctions.md`](../aml-cft/sanctions.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

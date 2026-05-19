@@ -33,7 +33,7 @@ interests for conflict-of-interest analysis.
 
 ## What Article 74ZA says
 
-For [Article 74](directors-duties.md) purposes, **persons
+For [Article 74](./directors-duties.md) purposes, **persons
 connected** with a director include:
 
 - **Spouses**;
@@ -66,7 +66,7 @@ The **connected-persons list** captures the typical workarounds:
 
 The connected-person rules engage:
 
-- The [Article 75](director-disclosure.md) **disclosure duty** —
+- The [Article 75](./director-disclosure.md) **disclosure duty** —
   the director must disclose interests of connected persons,
   not just their own personal interests;
 - The Article 74 **conflict-of-interest** duty — a connected

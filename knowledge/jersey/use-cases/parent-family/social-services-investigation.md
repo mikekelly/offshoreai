@@ -263,7 +263,7 @@ do" standard (per *Re B-S*).
 
 ## Cross-references
 
-- [`index.md`](index.md);
+- [`index.md`](./index.md);
 - [`../../family/index.md`](../../family/index.md);
 - [`../../family/children-jersey-law-2002.md`](../../family/children-jersey-law-2002.md);
 - [`../../family/care-and-supervision.md`](../../family/care-and-supervision.md);

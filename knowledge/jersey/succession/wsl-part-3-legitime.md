@@ -112,8 +112,8 @@ For non-Jersey-domiciled testators with Jersey property:
 
 ## Cross-references
 
-- [`wsl-article-14.md`](wsl-article-14.md);
-- [`wsl-article-15.md`](wsl-article-15.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md);
+- [`wsl-article-14.md`](./wsl-article-14.md);
+- [`wsl-article-15.md`](./wsl-article-15.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md);
 - [`../trusts/firewall.md`](../trusts/firewall.md);
 - [`../use-cases/family-office-adviser/jersey-succession.md`](../use-cases/family-office-adviser/jersey-succession.md).

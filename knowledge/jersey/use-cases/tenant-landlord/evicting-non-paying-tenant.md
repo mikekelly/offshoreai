@@ -191,7 +191,7 @@ Material ones:
 
 ## Cross-references
 
-- [`index.md`](index.md);
+- [`index.md`](./index.md);
 - [`../../residential-tenancy/non-payment-of-rent.md`](../../residential-tenancy/non-payment-of-rent.md);
 - [`../../residential-tenancy/eviction-procedure.md`](../../residential-tenancy/eviction-procedure.md);
 - [`../../residential-tenancy/notice-periods.md`](../../residential-tenancy/notice-periods.md);

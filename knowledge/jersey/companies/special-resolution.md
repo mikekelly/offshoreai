@@ -60,7 +60,7 @@ A special resolution can only be passed at a meeting **of which
 the notice specifies the intention** to propose the resolution
 as a special resolution. The notice must:
 
-- Be **duly given** under [Article 91](notice-of-meetings.md);
+- Be **duly given** under [Article 91](./notice-of-meetings.md);
 - **Specify** that the resolution will be proposed as special;
 - Include the **proposed text** of the resolution.
 
@@ -90,7 +90,7 @@ concepts in Jersey company law.
 ## Written resolutions
 
 A special resolution can also be passed as a **written
-resolution** under [Article 95](written-resolutions.md):
+resolution** under [Article 95](./written-resolutions.md):
 
 - All members entitled to vote (or per the deed) sign in writing;
 - No meeting required;

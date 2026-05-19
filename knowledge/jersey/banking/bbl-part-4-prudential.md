@@ -123,7 +123,7 @@ Other prudential requirements include:
 
 ## Cross-references
 
-- [`bbl-article-10.md`](bbl-article-10.md);
-- [`bbl-article-14.md`](bbl-article-14.md);
-- [`bbl-part-5-resolution.md`](bbl-part-5-resolution.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-10.md`](./bbl-article-10.md);
+- [`bbl-article-14.md`](./bbl-article-14.md);
+- [`bbl-part-5-resolution.md`](./bbl-part-5-resolution.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

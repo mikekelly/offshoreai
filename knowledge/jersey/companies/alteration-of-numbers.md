@@ -56,7 +56,7 @@ change. The States Assembly retains oversight of the Order.
 ## Relationship with Article 17D
 
 Article 17C lets the Minister **adjust** the threshold. The more
-radical [Article 17D](30-member-limit-abolition.md) gives the
+radical [Article 17D](./30-member-limit-abolition.md) gives the
 **States** a power to **abolish** the private-company member limit
 entirely. The States has historically exercised the Article 17D
 power, abolishing the limit for private companies in modern

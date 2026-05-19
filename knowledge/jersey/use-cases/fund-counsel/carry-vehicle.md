@@ -173,5 +173,5 @@ For an existing carry vehicle:
 
 ## Cross-references
 
-- [`vehicle-structuring.md`](vehicle-structuring.md)
+- [`vehicle-structuring.md`](./vehicle-structuring.md)
 - [`../../funds/jersey-private-fund.md`](../../funds/jersey-private-fund.md)

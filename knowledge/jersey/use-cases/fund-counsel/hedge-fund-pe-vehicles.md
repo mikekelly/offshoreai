@@ -135,6 +135,6 @@ A **cell-company JPF** can host multiple strategies:
 
 ## Cross-references
 
-- [`choosing-fund-regime.md`](choosing-fund-regime.md)
-- [`vehicle-structuring.md`](vehicle-structuring.md)
+- [`choosing-fund-regime.md`](./choosing-fund-regime.md)
+- [`vehicle-structuring.md`](./vehicle-structuring.md)
 - [`../../funds/jersey-private-fund.md`](../../funds/jersey-private-fund.md)

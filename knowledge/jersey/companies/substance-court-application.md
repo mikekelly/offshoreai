@@ -78,7 +78,7 @@ position.
 
 ## Cross-references
 
-- [`substance-court-powers.md`](substance-court-powers.md) —
+- [`substance-court-powers.md`](./substance-court-powers.md) —
   Article 143B: court remedies.
 - [`../tax/economic-substance.md`](../tax/economic-substance.md)
   — substance regime overview (planned).

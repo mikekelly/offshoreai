@@ -98,7 +98,7 @@ Breach of restraint order is:
 
 ## Cross-references
 
-- [`pocl-article-17.md`](pocl-article-17.md);
-- [`pocl-article-19.md`](pocl-article-19.md);
-- [`pocl-part-3-restraint.md`](pocl-part-3-restraint.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-17.md`](./pocl-article-17.md);
+- [`pocl-article-19.md`](./pocl-article-19.md);
+- [`pocl-part-3-restraint.md`](./pocl-part-3-restraint.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

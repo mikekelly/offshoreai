@@ -65,7 +65,7 @@ The evidential effect is **prima facie**, not conclusive:
 
 ## Combination with Article 20
 
-[Article 20](form-of-contracts.md) governs the **substantive
+[Article 20](./form-of-contracts.md) governs the **substantive
 authority** of a person to bind the company. Article 67C governs
 the **evidential weight** of a document executed under that
 authority. Together:
@@ -74,9 +74,9 @@ authority. Together:
 - Article 67C makes the document evidence that the act was
   properly authorised.
 
-## Combination with [Article 19](no-implied-notice.md)
+## Combination with [Article 19](./no-implied-notice.md)
 
-[Article 19](no-implied-notice.md) abolishes **constructive
+[Article 19](./no-implied-notice.md) abolishes **constructive
 notice** of public records. So a counterparty:
 
 - Is **not deemed to know** the company's deed contents (Article

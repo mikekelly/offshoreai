@@ -190,4 +190,4 @@ For programme:
 ## Cross-references
 
 - [`../../registries/vasp-register.md`](../../registries/vasp-register.md)
-- [`edd-when-required.md`](edd-when-required.md)
+- [`edd-when-required.md`](./edd-when-required.md)

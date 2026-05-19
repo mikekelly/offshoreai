@@ -101,7 +101,7 @@ who hold authority to act on its behalf. This is the
 
 This is **internal delegation** within the corporate trustee and is
 distinct from external delegation under
-[Article 25](trustee-delegation.md). The Article 25 framework
+[Article 25](./trustee-delegation.md). The Article 25 framework
 applies when the corporate trustee delegates to a **third party**
 (e.g., an investment manager); internal officer delegation is
 governed by Article 28.
@@ -133,7 +133,7 @@ The Royal Court approach:
 - the remaining directors take the decision;
 - if all directors are conflicted, the corporate trustee is **disabled**
   from acting and should consider applying to the Royal Court for
-  directions under [Article 51](article-51-directions.md) (a
+  directions under [Article 51](./article-51-directions.md) (a
   category-3 surrender of discretion).
 
 ## PTC director-change continuity

@@ -75,7 +75,7 @@ strategy, complexity of claims, cross-border issues.
 
 ## Cross-references
 
-- [`summary-winding-up-insolvency.md`](summary-winding-up-insolvency.md)
+- [`summary-winding-up-insolvency.md`](./summary-winding-up-insolvency.md)
   — Article 151: alternative conversion to creditors' winding
   up.
 

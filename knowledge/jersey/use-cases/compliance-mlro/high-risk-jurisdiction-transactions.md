@@ -170,6 +170,6 @@ For programme:
 
 ## Cross-references
 
-- [`edd-when-required.md`](edd-when-required.md)
-- [`peps-in-customer-base.md`](peps-in-customer-base.md)
+- [`edd-when-required.md`](./edd-when-required.md)
+- [`peps-in-customer-base.md`](./peps-in-customer-base.md)
 - [`../../aml-cft/aml-cft-handbook.md`](../../aml-cft/aml-cft-handbook.md)

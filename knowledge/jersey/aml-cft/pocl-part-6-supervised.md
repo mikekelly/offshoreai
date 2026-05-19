@@ -95,13 +95,13 @@ JFSC fines of £100k+ are not uncommon for material failures.
 ## Schedule 2 detail
 
 The detailed scope of "supervised business" is in **Schedule
-2** of POCL — see [`schedule-2-businesses.md`](schedule-2-businesses.md)
+2** of POCL — see [`schedule-2-businesses.md`](./schedule-2-businesses.md)
 for the full list and explanatory notes.
 
 ## Cross-references
 
-- [`schedule-2-businesses.md`](schedule-2-businesses.md);
-- [`money-laundering-order-2008.md`](money-laundering-order-2008.md);
-- [`aml-cft-handbook.md`](aml-cft-handbook.md);
+- [`schedule-2-businesses.md`](./schedule-2-businesses.md);
+- [`money-laundering-order-2008.md`](./money-laundering-order-2008.md);
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md);
 - [`../financial-regulation/trust-company-business.md`](../../../jersey/financial-regulation/trust-company-business.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

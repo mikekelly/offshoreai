@@ -44,7 +44,7 @@ be paid **out of the trust property**.
 ## Why this matters
 
 Trust applications — particularly **friendly** applications under
-[Article 51](article-51-directions.md) for directions, blessings, or
+[Article 51](./article-51-directions.md) for directions, blessings, or
 variation — are **costly**:
 
 - counsel for the trustee;
@@ -98,7 +98,7 @@ A **Beddoe application** — where the trustee asks the Court for
 directions on whether to bring or defend trust-funded litigation —
 is itself a friendly proceeding to which Article 53 applies. The
 Beddoe order then governs costs of the substantive proceeding the
-trustee is contemplating. See [`article-51-directions.md`](article-51-directions.md)
+trustee is contemplating. See [`article-51-directions.md`](./article-51-directions.md)
 and the use-case at
 [`use-cases/trust-officer/distribution-decisions-and-court-blessing.md`](../use-cases/trust-officer/distribution-decisions-and-court-blessing.md).
 

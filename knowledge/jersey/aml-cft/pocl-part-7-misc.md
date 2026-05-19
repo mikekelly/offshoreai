@@ -98,6 +98,6 @@ The Law works with:
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
 - [`../use-cases/compliance-mlro/sanctions-screening-mlro.md`](../use-cases/compliance-mlro/sanctions-screening-mlro.md);
 - [`../use-cases/royal-court-litigator/interlocutory-injunctions.md`](../use-cases/royal-court-litigator/interlocutory-injunctions.md).

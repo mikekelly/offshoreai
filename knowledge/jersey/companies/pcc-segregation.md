@@ -96,11 +96,11 @@ personality is universally recognised.
 
 ## Cross-references
 
-- [`pcc-cellular-assets.md`](pcc-cellular-assets.md) — Article
+- [`pcc-cellular-assets.md`](./pcc-cellular-assets.md) — Article
   127YU: cellular vs non-cellular asset detail.
-- [`pcc-summary-winding-up.md`](pcc-summary-winding-up.md) —
+- [`pcc-summary-winding-up.md`](./pcc-summary-winding-up.md) —
   Article 127YV.
-- [`pcc-court-liability.md`](pcc-court-liability.md) — Article
+- [`pcc-court-liability.md`](./pcc-court-liability.md) — Article
   127YW.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

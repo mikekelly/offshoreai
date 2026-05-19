@@ -108,7 +108,7 @@ duties. In practice this means:
 
 Where the transaction is **momentous**, the trustee will commonly
 seek **Royal Court blessing** under
-[Article 51](article-51-directions.md) for each trust's side of the
+[Article 51](./article-51-directions.md) for each trust's side of the
 transaction. The blessing protects the trustee's decision against
 later challenge by beneficiaries asserting that the transaction
 favoured the other trust.

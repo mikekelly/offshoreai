@@ -151,7 +151,7 @@ ELPs that are **not investment vehicles** (e.g., joint-
 venture partnerships, holding partnerships) typically
 avoid registration as funds. The distinction turns on
 whether the ELP is an "investment fund" for the purposes
-of the Private Funds Act 2020 — see [`private-funds-act.md`](private-funds-act.md).
+of the Private Funds Act 2020 — see [`private-funds-act.md`](./private-funds-act.md).
 
 ## Tax treatment
 
@@ -218,12 +218,12 @@ mid-1990s, modernising:
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`exempted-company.md`](exempted-company.md);
-- [`funds.md`](funds.md);
-- [`private-funds-act.md`](private-funds-act.md);
-- [`segregated-portfolio-company.md`](segregated-portfolio-company.md);
-- [`tax.md`](tax.md);
-- [`cima.md`](cima.md);
+- [`companies.md`](./companies.md);
+- [`exempted-company.md`](./exempted-company.md);
+- [`funds.md`](./funds.md);
+- [`private-funds-act.md`](./private-funds-act.md);
+- [`segregated-portfolio-company.md`](./segregated-portfolio-company.md);
+- [`tax.md`](./tax.md);
+- [`cima.md`](./cima.md);
 - [`../jersey/funds/limited-partnership.md`](../../jersey/funds/limited-partnership.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

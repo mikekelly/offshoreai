@@ -110,8 +110,8 @@ Charity trustees:
 
 ## Cross-references
 
-- [`cl-part-4-trustees.md`](cl-part-4-trustees.md);
-- [`cl-article-32.md`](cl-article-32.md);
+- [`cl-part-4-trustees.md`](./cl-part-4-trustees.md);
+- [`cl-article-32.md`](./cl-article-32.md);
 - [`../trusts/trustee-duties.md`](../trusts/trustee-duties.md);
 - [`../foundations/fjl-article-17.md`](../foundations/fjl-article-17.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-articles-index.md`](./cl-articles-index.md).

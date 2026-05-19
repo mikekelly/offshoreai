@@ -115,7 +115,7 @@ Jersey sanctions prosecutions are **relatively rare**:
 
 ## Cross-references
 
-- [`safl-article-10.md`](safl-article-10.md);
-- [`safl-article-11.md`](safl-article-11.md);
-- [`safl-part-5-enforcement.md`](safl-part-5-enforcement.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-article-10.md`](./safl-article-10.md);
+- [`safl-article-11.md`](./safl-article-11.md);
+- [`safl-part-5-enforcement.md`](./safl-part-5-enforcement.md);
+- [`safl-articles-index.md`](./safl-articles-index.md).

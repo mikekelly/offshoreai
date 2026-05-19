@@ -107,8 +107,8 @@ the statute:
 
 ## Cross-references
 
-- [`bdl-article-17a.md`](bdl-article-17a.md);
-- [`bdl-article-17b.md`](bdl-article-17b.md);
-- [`bdl-part-5-avoidance.md`](bdl-part-5-avoidance.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md);
+- [`bdl-article-17a.md`](./bdl-article-17a.md);
+- [`bdl-article-17b.md`](./bdl-article-17b.md);
+- [`bdl-part-5-avoidance.md`](./bdl-part-5-avoidance.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md);
 - [`../legal-system/normandy-and-jersey-law.md`](../legal-system/normandy-and-jersey-law.md).

@@ -156,7 +156,7 @@ For a typical TopCo:
 - **0% rate** under zero-ten generally;
 - **Full substance** required for IP business;
 - **Foreign tax** characterisation may add complexity;
-- **See [`ip-holding.md`](ip-holding.md)**.
+- **See [`ip-holding.md`](./ip-holding.md)**.
 
 #### Pre-IPO TopCo
 
@@ -191,5 +191,5 @@ For a new TopCo:
 ## Cross-references
 
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md)
-- [`why-jersey-topco.md`](why-jersey-topco.md)
-- [`substance-for-topco.md`](substance-for-topco.md)
+- [`why-jersey-topco.md`](./why-jersey-topco.md)
+- [`substance-for-topco.md`](./substance-for-topco.md)

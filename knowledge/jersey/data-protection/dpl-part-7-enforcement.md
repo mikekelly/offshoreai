@@ -130,6 +130,6 @@ Common JOIC enforcement themes:
 
 ## Cross-references
 
-- [`dpl-part-6-authority.md`](dpl-part-6-authority.md);
-- [`dpl-article-43.md`](dpl-article-43.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-part-6-authority.md`](./dpl-part-6-authority.md);
+- [`dpl-article-43.md`](./dpl-article-43.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

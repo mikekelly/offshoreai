@@ -44,7 +44,7 @@ cluster covers procedural and remedial provisions.
 
 ## Articles 56-60 — Fair reasons
 
-See [`el-article-64.md`](el-article-64.md) for the five
+See [`el-article-64.md`](./el-article-64.md) for the five
 potentially fair reasons.
 
 Each reason has detailed procedural and substantive
@@ -150,8 +150,8 @@ Typical procedure:
 
 ## Cross-references
 
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-5-termination.md`](el-part-5-termination.md);
-- [`el-part-8-tribunal.md`](el-part-8-tribunal.md);
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-5-termination.md`](./el-part-5-termination.md);
+- [`el-part-8-tribunal.md`](./el-part-8-tribunal.md);
 - [`../discrimination/dl-articles-index.md`](../discrimination/dl-articles-index.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-articles-index.md`](./el-articles-index.md).

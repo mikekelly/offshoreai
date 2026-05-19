@@ -242,12 +242,12 @@ If detained:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`ppce-law-2003.md`](ppce-law-2003.md);
-- [`arrest.md`](arrest.md);
-- [`arrest-and-detention.md`](arrest-and-detention.md);
-- [`bail.md`](bail.md);
-- [`legal-aid-criminal.md`](legal-aid-criminal.md);
-- [`youth-justice.md`](youth-justice.md);
+- [`index.md`](./index.md);
+- [`ppce-law-2003.md`](./ppce-law-2003.md);
+- [`arrest.md`](./arrest.md);
+- [`arrest-and-detention.md`](./arrest-and-detention.md);
+- [`bail.md`](./bail.md);
+- [`legal-aid-criminal.md`](./legal-aid-criminal.md);
+- [`youth-justice.md`](./youth-justice.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

@@ -61,31 +61,31 @@ substantive coverage.
 
 ### Contributory scheme
 
-- [`social-security-law-1974.md`](social-security-law-1974.md) — SS Law 1974 overview
-- [`contributions.md`](contributions.md) — Class 1 / 2; rates; employer obligations
-- [`pensions.md`](pensions.md) — Jersey old-age pension based on contribution record
-- [`short-term-incapacity-allowance.md`](short-term-incapacity-allowance.md) — illness benefit
-- [`maternity-benefits.md`](maternity-benefits.md) — maternity, paternity, adoption grants
-- [`death-benefits.md`](death-benefits.md) — survivor benefits, death grant
+- [`social-security-law-1974.md`](./social-security-law-1974.md) — SS Law 1974 overview
+- [`contributions.md`](./contributions.md) — Class 1 / 2; rates; employer obligations
+- [`pensions.md`](./pensions.md) — Jersey old-age pension based on contribution record
+- [`short-term-incapacity-allowance.md`](./short-term-incapacity-allowance.md) — illness benefit
+- [`maternity-benefits.md`](./maternity-benefits.md) — maternity, paternity, adoption grants
+- [`death-benefits.md`](./death-benefits.md) — survivor benefits, death grant
 
 ### Means-tested scheme
 
-- [`income-support-law-2007.md`](income-support-law-2007.md) — IS Law 2007 overview
-- [`income-support-eligibility.md`](income-support-eligibility.md) — 5-year residence; work expectation; means test
-- [`income-support-components.md`](income-support-components.md) — housing, living, health, childcare components
-- [`work-requirement.md`](work-requirement.md) — full-time work expectation; exemptions
+- [`income-support-law-2007.md`](./income-support-law-2007.md) — IS Law 2007 overview
+- [`income-support-eligibility.md`](./income-support-eligibility.md) — 5-year residence; work expectation; means test
+- [`income-support-components.md`](./income-support-components.md) — housing, living, health, childcare components
+- [`work-requirement.md`](./work-requirement.md) — full-time work expectation; exemptions
 
 ### Other schemes
 
 - [`long-term-care.md`](../tax/long-term-care.md) — LTC Law 2012 (sits across welfare and tax)
-- [`pension-plus.md`](pension-plus.md) — pension top-up
-- [`food-vouchers-and-emergency.md`](food-vouchers-and-emergency.md) — Customer and Local Services discretionary help
+- [`pension-plus.md`](./pension-plus.md) — pension top-up
+- [`food-vouchers-and-emergency.md`](./food-vouchers-and-emergency.md) — Customer and Local Services discretionary help
 
 ### Administration and disputes
 
-- [`customer-and-local-services.md`](customer-and-local-services.md) — the administering department
-- [`appeals.md`](appeals.md) — Social Security Tribunal and Royal Court routes
-- [`fraud-and-overpayment.md`](fraud-and-overpayment.md) — recovery, prosecution
+- [`customer-and-local-services.md`](./customer-and-local-services.md) — the administering department
+- [`appeals.md`](./appeals.md) — Social Security Tribunal and Royal Court routes
+- [`fraud-and-overpayment.md`](./fraud-and-overpayment.md) — recovery, prosecution
 
 ## At a glance
 

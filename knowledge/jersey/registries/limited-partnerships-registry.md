@@ -127,8 +127,8 @@ For foreign tax:
 
 ## Cross-references
 
-- [`companies-registry.md`](companies-registry.md);
-- [`foundations-registry.md`](foundations-registry.md);
+- [`companies-registry.md`](./companies-registry.md);
+- [`foundations-registry.md`](./foundations-registry.md);
 - [`../funds/index.md`](../funds/index.md);
-- [`registry-access-procedures.md`](registry-access-procedures.md);
+- [`registry-access-procedures.md`](./registry-access-procedures.md);
 - [`../tax/substance-law-2019.md`](../../../jersey/tax/substance-law-2019.md) *(if exists)*.

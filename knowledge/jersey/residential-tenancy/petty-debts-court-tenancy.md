@@ -52,7 +52,7 @@ Under the RTJL, the Petty Debts Court hears:
 It does **not** hear:
 
 - **Rent-increase** disputes — Rent Tribunal (see
-  [`rent-tribunal.md`](rent-tribunal.md));
+  [`rent-tribunal.md`](./rent-tribunal.md));
 - **Discrimination** claims as such — Employment &
   Discrimination Tribunal (though it may grant tenancy-side
   relief in parallel);
@@ -101,10 +101,10 @@ Court**:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`eviction-procedure.md`](eviction-procedure.md);
-- [`non-payment-of-rent.md`](non-payment-of-rent.md);
-- [`deposits.md`](deposits.md);
-- [`rent-tribunal.md`](rent-tribunal.md);
+- [`index.md`](./index.md);
+- [`eviction-procedure.md`](./eviction-procedure.md);
+- [`non-payment-of-rent.md`](./non-payment-of-rent.md);
+- [`deposits.md`](./deposits.md);
+- [`rent-tribunal.md`](./rent-tribunal.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md).

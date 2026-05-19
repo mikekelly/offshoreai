@@ -97,8 +97,8 @@ For practitioners:
 
 ## Cross-references
 
-- [`fjl-article-29.md`](fjl-article-29.md) — no entitlement;
-- [`fjl-article-30.md`](fjl-article-30.md) — information
+- [`fjl-article-29.md`](./fjl-article-29.md) — no entitlement;
+- [`fjl-article-30.md`](./fjl-article-30.md) — information
   rights;
-- [`fjl-part-7-beneficiaries.md`](fjl-part-7-beneficiaries.md);
+- [`fjl-part-7-beneficiaries.md`](./fjl-part-7-beneficiaries.md);
 - [`../trusts/article-10-beneficiaries.md`](../../../jersey/trusts/article-10-beneficiaries.md).

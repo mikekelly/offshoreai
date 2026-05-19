@@ -168,8 +168,8 @@ Contractual exclusion of misrepresentation liability:
 
 ## Cross-references
 
-- [`contract-overview.md`](contract-overview.md);
-- [`formation.md`](formation.md);
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`damages.md`](damages.md);
-- [`index.md`](index.md).
+- [`contract-overview.md`](./contract-overview.md);
+- [`formation.md`](./formation.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`damages.md`](./damages.md);
+- [`index.md`](./index.md).

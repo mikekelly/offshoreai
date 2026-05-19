@@ -71,7 +71,7 @@ covenant compliance — which protects creditors in turn.
 
 ## Cross-references
 
-- [`merger-resolutions-certificates.md`](merger-resolutions-certificates.md)
+- [`merger-resolutions-certificates.md`](./merger-resolutions-certificates.md)
   — Article 127E: source of the solvency certificate.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

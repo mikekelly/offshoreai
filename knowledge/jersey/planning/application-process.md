@@ -163,7 +163,7 @@ Within 28 days of the decision:
 - **Royal Court** judicial-review route exists for
   procedural challenges.
 
-See [`appeals.md`](appeals.md).
+See [`appeals.md`](./appeals.md).
 
 ## Common conditions
 
@@ -193,7 +193,7 @@ This is a **separate process** with:
 - Technical (not aesthetic) focus.
 
 You **cannot start work** until both consents are in
-place. See [`building-bye-laws.md`](building-bye-laws.md).
+place. See [`building-bye-laws.md`](./building-bye-laws.md).
 
 ## Fees
 
@@ -240,13 +240,13 @@ planning permission you don't yet have.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`planning-building-law-2002.md`](planning-building-law-2002.md);
-- [`permitted-development.md`](permitted-development.md);
-- [`fees-and-timelines.md`](fees-and-timelines.md);
-- [`extensions-and-conversions.md`](extensions-and-conversions.md);
-- [`appeals.md`](appeals.md);
-- [`enforcement.md`](enforcement.md);
-- [`building-bye-laws.md`](building-bye-laws.md);
-- [`island-plan.md`](island-plan.md);
+- [`index.md`](./index.md);
+- [`planning-building-law-2002.md`](./planning-building-law-2002.md);
+- [`permitted-development.md`](./permitted-development.md);
+- [`fees-and-timelines.md`](./fees-and-timelines.md);
+- [`extensions-and-conversions.md`](./extensions-and-conversions.md);
+- [`appeals.md`](./appeals.md);
+- [`enforcement.md`](./enforcement.md);
+- [`building-bye-laws.md`](./building-bye-laws.md);
+- [`island-plan.md`](./island-plan.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

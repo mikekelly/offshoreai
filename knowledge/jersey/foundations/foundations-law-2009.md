@@ -84,8 +84,8 @@ The Law requires:
 foundations page][jfsc-fdn].)
 
 For more detail see
-[council-and-guardian.md](council-and-guardian.md) and
-[qualified-member.md](qualified-member.md). *(Both are stubs.)*
+[council-and-guardian.md](./council-and-guardian.md) and
+[qualified-member.md](./qualified-member.md). *(Both are stubs.)*
 
 ## Charter and regulations
 

@@ -36,18 +36,18 @@ Companies (Jersey) Law 1991. See
 
 ### Concept overviews
 
-- [**insurance-business-law-1996.md**](insurance-business-law-1996.md)
+- [**insurance-business-law-1996.md**](./insurance-business-law-1996.md)
   — structure of the Law.
-- [**category-a-permit.md**](category-a-permit.md) — Category A
+- [**category-a-permit.md**](./category-a-permit.md) — Category A
   permits.
-- [**category-b-permit.md**](category-b-permit.md) — Category B
+- [**category-b-permit.md**](./category-b-permit.md) — Category B
   permits.
-- [**captive-insurance.md**](captive-insurance.md) — typical captive
+- [**captive-insurance.md**](./captive-insurance.md) — typical captive
   structures.
 
 ### Article-by-article statute wiki
 
-- [**ibl-articles-index.md**](ibl-articles-index.md) — IBL 1996
+- [**ibl-articles-index.md**](./ibl-articles-index.md) — IBL 1996
   article-by-article: Part-cluster files for all 7 Parts, individual
   articles for insurance business (Article 2), permit categories (3),
   permit requirement (4), grant (6), capital / solvency (13), and

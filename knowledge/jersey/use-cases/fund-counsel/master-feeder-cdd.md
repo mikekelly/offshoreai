@@ -170,5 +170,5 @@ For a master-feeder structure:
 
 ## Cross-references
 
-- [`cdd-fund-investors.md`](cdd-fund-investors.md)
+- [`cdd-fund-investors.md`](./cdd-fund-investors.md)
 - [`../../aml-cft/aml-cft-handbook.md`](../../aml-cft/aml-cft-handbook.md)

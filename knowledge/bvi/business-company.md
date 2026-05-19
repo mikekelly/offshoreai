@@ -184,8 +184,8 @@ required.
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

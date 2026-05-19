@@ -109,8 +109,8 @@ For **family-office** structures:
 
 ## Cross-references
 
-- [`fjl-article-29.md`](fjl-article-29.md) — no entitlement;
+- [`fjl-article-29.md`](./fjl-article-29.md) — no entitlement;
 - [`../trusts/schmidt-v-rosewood.md`](../../../jersey/trusts/schmidt-v-rosewood.md);
 - [`../trusts/article-29-disclosure.md`](../trusts/article-29-disclosure.md)
   *(if exists)*;
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

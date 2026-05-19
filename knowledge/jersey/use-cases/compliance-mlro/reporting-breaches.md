@@ -200,6 +200,6 @@ For an identified breach:
 
 ## Cross-references
 
-- [`jfsc-visit-preparation.md`](jfsc-visit-preparation.md)
+- [`jfsc-visit-preparation.md`](./jfsc-visit-preparation.md)
 - [`../../financial-regulation/codes-of-practice.md`](../../financial-regulation/codes-of-practice.md)
 - [`../../financial-regulation/enforcement.md`](../../financial-regulation/enforcement.md)

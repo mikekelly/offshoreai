@@ -122,4 +122,4 @@ FATCA and CRS are **complementary**:
 
 ## Cross-references
 
-- [`crs.md`](crs.md) — the multilateral CRS framework.
+- [`crs.md`](./crs.md) — the multilateral CRS framework.

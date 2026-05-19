@@ -36,7 +36,7 @@ permanent relocation without:
 - A **court order** permitting the relocation.
 
 Holiday travel is different (see
-[`parental-responsibility.md`](parental-responsibility.md))
+[`parental-responsibility.md`](./parental-responsibility.md))
 — this file is about **permanent moves**.
 
 ## The court's approach
@@ -175,10 +175,10 @@ criminal proceedings in some jurisdictions.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`parental-responsibility.md`](parental-responsibility.md);
-- [`child-arrangements-orders.md`](child-arrangements-orders.md);
-- [`jurisdiction-and-foreign-orders.md`](jurisdiction-and-foreign-orders.md);
-- [`jfcas-and-mediation.md`](jfcas-and-mediation.md);
+- [`index.md`](./index.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`parental-responsibility.md`](./parental-responsibility.md);
+- [`child-arrangements-orders.md`](./child-arrangements-orders.md);
+- [`jurisdiction-and-foreign-orders.md`](./jurisdiction-and-foreign-orders.md);
+- [`jfcas-and-mediation.md`](./jfcas-and-mediation.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

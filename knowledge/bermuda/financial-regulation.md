@@ -128,10 +128,10 @@ Key Bermuda industry:
 
 ## Cross-references
 
-- [`bma.md`](bma.md);
-- [`overview.md`](overview.md);
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`companies.md`](companies.md);
+- [`bma.md`](./bma.md);
+- [`overview.md`](./overview.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`companies.md`](./companies.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

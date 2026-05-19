@@ -59,7 +59,7 @@ need for further member resolution.
 
 ## Cross-references
 
-- [`limited-life-companies.md`](limited-life-companies.md) —
+- [`limited-life-companies.md`](./limited-life-companies.md) —
   Article 3H: limited-life-company concept.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -105,11 +105,11 @@ If the debtor disputes the underlying debt:
 ## Effect of declaration
 
 Once declared, the consequences are set out in
-[`bdl-article-6.md`](bdl-article-6.md) — most importantly,
+[`bdl-article-6.md`](./bdl-article-6.md) — most importantly,
 vesting of the debtor's property in the Viscount.
 
 ## Cross-references
 
-- [`bdl-article-3.md`](bdl-article-3.md) — applications;
-- [`bdl-article-6.md`](bdl-article-6.md) — effect;
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-article-3.md`](./bdl-article-3.md) — applications;
+- [`bdl-article-6.md`](./bdl-article-6.md) — effect;
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

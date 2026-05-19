@@ -113,6 +113,6 @@ Public funds must provide:
 
 ## Cross-references
 
-- [`cifl-articles-index.md`](cifl-articles-index.md);
-- [`cifl-part-5-investor-protection.md`](cifl-part-5-investor-protection.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md);
+- [`cifl-part-5-investor-protection.md`](./cifl-part-5-investor-protection.md);
 - [`../use-cases/fund-counsel/investor-reporting.md`](../use-cases/fund-counsel/investor-reporting.md).

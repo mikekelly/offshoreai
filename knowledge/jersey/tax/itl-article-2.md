@@ -58,7 +58,7 @@ don't align with the calendar.
 
 ## Cross-references
 
-- [`itl-article-1.md`](itl-article-1.md) — charge of tax.
-- [`itl-articles-index.md`](itl-articles-index.md).
+- [`itl-article-1.md`](./itl-article-1.md) — charge of tax.
+- [`itl-articles-index.md`](./itl-articles-index.md).
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

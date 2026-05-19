@@ -141,8 +141,8 @@ recovery, sanctions interface).
 
 ## Cross-references
 
-- [`cicl-articles-index.md`](cicl-articles-index.md);
-- [`pocl-part-7-misc.md`](pocl-part-7-misc.md);
-- [`safl-part-5-enforcement.md`](safl-part-5-enforcement.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
+- [`pocl-part-7-misc.md`](./pocl-part-7-misc.md);
+- [`safl-part-5-enforcement.md`](./safl-part-5-enforcement.md);
 - [`../use-cases/royal-court-litigator/letters-of-request.md`](../use-cases/royal-court-litigator/letters-of-request.md);
 - [`../use-cases/royal-court-litigator/enforcement-jersey-judgments.md`](../use-cases/royal-court-litigator/enforcement-jersey-judgments.md).

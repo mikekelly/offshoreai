@@ -69,7 +69,7 @@ guarantees, personal undertakings, etc.).
 
 A limited Jersey company that **omits the suffix** in its
 correspondence or contracts may face problems under
-[Article 69](name-on-correspondence.md) *(planned — name on
+[Article 69](./name-on-correspondence.md) *(planned — name on
 correspondence)*. Officers can be personally liable on the
 contract.
 
@@ -111,9 +111,9 @@ The first step in any Jersey incorporation:
 
 ## Cross-references
 
-- [`change-of-name.md`](change-of-name.md) — Article 14: changing
+- [`change-of-name.md`](./change-of-name.md) — Article 14: changing
   the name after incorporation by special resolution.
-- [`registrar-name-change-power.md`](registrar-name-change-power.md)
+- [`registrar-name-change-power.md`](./registrar-name-change-power.md)
   — Article 15: Registrar's power to direct a change of name
   after incorporation.
 

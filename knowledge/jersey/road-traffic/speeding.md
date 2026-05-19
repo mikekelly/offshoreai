@@ -176,12 +176,12 @@ lighter penalty):
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`road-traffic-law-1956.md`](road-traffic-law-1956.md);
-- [`parish-hall-enquiries.md`](parish-hall-enquiries.md);
-- [`careless-and-dangerous-driving.md`](careless-and-dangerous-driving.md);
-- [`disqualification.md`](disqualification.md);
-- [`fines-and-endorsement.md`](fines-and-endorsement.md);
-- [`court-procedure.md`](court-procedure.md);
+- [`index.md`](./index.md);
+- [`road-traffic-law-1956.md`](./road-traffic-law-1956.md);
+- [`parish-hall-enquiries.md`](./parish-hall-enquiries.md);
+- [`careless-and-dangerous-driving.md`](./careless-and-dangerous-driving.md);
+- [`disqualification.md`](./disqualification.md);
+- [`fines-and-endorsement.md`](./fines-and-endorsement.md);
+- [`court-procedure.md`](./court-procedure.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md);
 - [`../use-cases/driver-motorist/index.md`](../use-cases/driver-motorist/index.md).

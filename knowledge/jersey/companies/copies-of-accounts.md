@@ -72,9 +72,9 @@ delivery** per the deed.
 
 ## Cross-references
 
-- [`accounts.md`](accounts.md) — Article 105: the accounts
+- [`accounts.md`](./accounts.md) — Article 105: the accounts
   themselves.
-- [`delivery-of-accounts.md`](delivery-of-accounts.md) — Article
+- [`delivery-of-accounts.md`](./delivery-of-accounts.md) — Article
   108: the Registrar-filing mechanics.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

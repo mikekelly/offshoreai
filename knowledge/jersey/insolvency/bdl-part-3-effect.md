@@ -107,6 +107,6 @@ creditors:
 
 ## Cross-references
 
-- [`bdl-article-6.md`](bdl-article-6.md);
-- [`bdl-part-4-administration.md`](bdl-part-4-administration.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-article-6.md`](./bdl-article-6.md);
+- [`bdl-part-4-administration.md`](./bdl-part-4-administration.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

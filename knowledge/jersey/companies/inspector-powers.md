@@ -70,9 +70,9 @@ defeated.
 
 ## Cross-references
 
-- [`inspector-appointment.md`](inspector-appointment.md) —
+- [`inspector-appointment.md`](./inspector-appointment.md) —
   Article 128: appointment trigger.
-- [`inspector-production.md`](inspector-production.md) — Article
+- [`inspector-production.md`](./inspector-production.md) — Article
   130: production of records.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

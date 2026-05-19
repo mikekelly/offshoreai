@@ -88,7 +88,7 @@ different legal jurisdiction.
 
 ## Cross-references
 
-- [`continuance-inbound-certificate.md`](continuance-inbound-certificate.md)
+- [`continuance-inbound-certificate.md`](./continuance-inbound-certificate.md)
   — Article 127O.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

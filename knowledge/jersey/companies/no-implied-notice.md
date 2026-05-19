@@ -57,9 +57,9 @@ consequences:
   authority to sign without member approval, an unusual
   requirement of two-director signing — **does not bind** a
   counterparty who didn't have **actual** notice of it.
-- This is the **mirror image** of [Article 18](corporate-capacity.md)
+- This is the **mirror image** of [Article 18](./corporate-capacity.md)
   (capacity abolished) and works together with
-  [Article 20](form-of-contracts.md) (contract authority).
+  [Article 20](./form-of-contracts.md) (contract authority).
 
 ## Actual notice still binds
 

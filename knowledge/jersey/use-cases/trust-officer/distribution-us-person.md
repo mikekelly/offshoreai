@@ -148,7 +148,7 @@ When proposing a distribution to a US-person beneficiary:
 
 ## Cross-references
 
-- [`distribution-uk-resident.md`](distribution-uk-resident.md) —
+- [`distribution-uk-resident.md`](./distribution-uk-resident.md) —
   UK counterpart.
 - [`../../international/fatca.md`](../../international/fatca.md) —
   FATCA framework.

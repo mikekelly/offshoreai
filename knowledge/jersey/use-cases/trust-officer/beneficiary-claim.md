@@ -161,4 +161,4 @@ defensive consideration.
 ## Cross-references
 
 - [`../../trusts/breach-of-trust-liability.md`](../../trusts/breach-of-trust-liability.md)
-- [`beneficiary-information-rights.md`](beneficiary-information-rights.md)
+- [`beneficiary-information-rights.md`](./beneficiary-information-rights.md)

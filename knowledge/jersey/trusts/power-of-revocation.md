@@ -116,7 +116,7 @@ the trust property or part of the trust's terms. A common pattern:
 ## Interaction with Article 9A reserved powers
 
 A power of revocation is one of the powers expressly listed in
-[Article 9A](reserved-powers.md) as a power the settlor may reserve
+[Article 9A](./reserved-powers.md) as a power the settlor may reserve
 without invalidating the trust. The interaction:
 
 - **Article 9A** confirms reservation does not invalidate the trust;

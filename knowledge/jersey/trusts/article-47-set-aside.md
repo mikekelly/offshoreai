@@ -249,7 +249,7 @@ If the proposed remedy is not setting aside a transaction but
 **directing the trustee** to take a remedial step (e.g., requesting a
 distribution back), the right vehicle is sometimes an **Article 51
 application for directions**, not an Article 47 set-aside. See
-[`article-51-directions.md`](article-51-directions.md). In a
+[`article-51-directions.md`](./article-51-directions.md). In a
 borderline case the trustee will often seek both reliefs in a single
 Representation.
 

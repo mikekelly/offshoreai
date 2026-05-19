@@ -105,8 +105,8 @@ expectations have broadened (FATF, Moneyval).
 
 ## Cross-references
 
-- [`money-laundering-order-2008.md`](money-laundering-order-2008.md)
+- [`money-laundering-order-2008.md`](./money-laundering-order-2008.md)
   — the operative compliance obligations.
-- [`aml-cft-handbook.md`](aml-cft-handbook.md) — JFSC guidance.
-- [`schedule-2-businesses.md`](schedule-2-businesses.md) — the
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md) — JFSC guidance.
+- [`schedule-2-businesses.md`](./schedule-2-businesses.md) — the
   list of supervised activities.

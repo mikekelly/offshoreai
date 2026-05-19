@@ -139,7 +139,7 @@ above-market fees that have not been negotiated is a flag.
 A corporate trustee acting through its directors and officers is not
 "delegating" within Article 25 when it acts via internal officers —
 that is **internal governance** under
-[Article 28](corporate-trustee-resolution.md). Article 25 deals with
+[Article 28](./corporate-trustee-resolution.md). Article 25 deals with
 **external delegation** to third-party agents.
 
 ## Pitfalls

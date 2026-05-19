@@ -223,5 +223,5 @@ For research:
 
 ## Cross-references
 
-- [`finding-court-judgments.md`](finding-court-judgments.md)
-- [`jfsc-publications.md`](jfsc-publications.md)
+- [`finding-court-judgments.md`](./finding-court-judgments.md)
+- [`jfsc-publications.md`](./jfsc-publications.md)

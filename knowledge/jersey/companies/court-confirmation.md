@@ -90,9 +90,9 @@ Standard procedure for a court application:
    significant creditors.
 5. **Hearing** with the Court considering objections (if any).
 6. **Order** of confirmation, modification, or refusal — see
-   [Article 63](court-confirmation-order.md).
+   [Article 63](./court-confirmation-order.md).
 7. **Registration** of the court order and the minute of
-   reduction — see [Article 64](act-and-minute-registration.md).
+   reduction — see [Article 64](./act-and-minute-registration.md).
 
 ## Effect of confirmation
 

@@ -93,5 +93,5 @@ Despite the lower scheme cap:
 
 ## Cross-references
 
-- [`banking-business-law-1991.md`](banking-business-law-1991.md)
+- [`banking-business-law-1991.md`](./banking-business-law-1991.md)
   — the regulatory parent.

@@ -147,9 +147,9 @@ In Jersey conveyancing:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`loi-1880-sur-la-propriete-fonciere.md`](loi-1880-sur-la-propriete-fonciere.md);
-- [`contract-passing.md`](contract-passing.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`loi-1880-sur-la-propriete-fonciere.md`](./loi-1880-sur-la-propriete-fonciere.md);
+- [`contract-passing.md`](./contract-passing.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
 - [`../registries/land-registry.md`](../registries/land-registry.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -93,6 +93,6 @@ Application is by **representation**:
 
 ## Cross-references
 
-- [`fjl-article-45.md`](fjl-article-45.md);
-- [`fjl-article-46.md`](fjl-article-46.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-45.md`](./fjl-article-45.md);
+- [`fjl-article-46.md`](./fjl-article-46.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

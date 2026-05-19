@@ -71,7 +71,7 @@ takes cash and the continuance proceeds.
 
 ## Cross-references
 
-- [`continuance-outbound-approval.md`](continuance-outbound-approval.md)
+- [`continuance-outbound-approval.md`](./continuance-outbound-approval.md)
   — Article 127Q: approval requirement that triggers the
   objection window.
 

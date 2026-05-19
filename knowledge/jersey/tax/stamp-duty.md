@@ -72,7 +72,7 @@ parity** between freehold and share-transfer ownership.
 
 Probate of a Jersey-resident estate triggers a **probate fee**,
 scaled by estate value. As discussed in
-[`no-inheritance-tax.md`](no-inheritance-tax.md), this is a
+[`no-inheritance-tax.md`](./no-inheritance-tax.md), this is a
 **registration fee** not a wealth-transfer tax — modest in
 amount and unrelated to UK / US IHT levels.
 
@@ -112,5 +112,5 @@ jurisdiction's **competitive positioning**.
 
 ## Cross-references
 
-- [`no-capital-gains-tax.md`](no-capital-gains-tax.md)
-- [`no-inheritance-tax.md`](no-inheritance-tax.md)
+- [`no-capital-gains-tax.md`](./no-capital-gains-tax.md)
+- [`no-inheritance-tax.md`](./no-inheritance-tax.md)

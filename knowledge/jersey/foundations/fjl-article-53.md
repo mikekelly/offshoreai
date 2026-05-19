@@ -118,9 +118,9 @@ matters. **Routine** non-compliance addressed through:
 
 ## Cross-references
 
-- [`fjl-part-13-misc.md`](fjl-part-13-misc.md);
-- [`fjl-article-17.md`](fjl-article-17.md);
-- [`fjl-article-32.md`](fjl-article-32.md);
-- [`fjl-article-34.md`](fjl-article-34.md);
+- [`fjl-part-13-misc.md`](./fjl-part-13-misc.md);
+- [`fjl-article-17.md`](./fjl-article-17.md);
+- [`fjl-article-32.md`](./fjl-article-32.md);
+- [`fjl-article-34.md`](./fjl-article-34.md);
 - [`../financial-regulation/fsl-part-5-enforcement.md`](../financial-regulation/fsl-part-5-enforcement.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

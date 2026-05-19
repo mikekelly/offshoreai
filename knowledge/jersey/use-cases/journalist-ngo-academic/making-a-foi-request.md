@@ -212,7 +212,7 @@ schedules may be protected.
 
 ## Cross-references
 
-- [`index.md`](index.md);
+- [`index.md`](./index.md);
 - [`../../civil-liberties/foi-law-2011.md`](../../civil-liberties/foi-law-2011.md);
 - [`../../civil-liberties/foi-exemptions.md`](../../../../jersey/civil-liberties/foi-exemptions.md);
 - [`../../civil-liberties/foi-procedure-and-appeals.md`](../../../../jersey/civil-liberties/foi-procedure-and-appeals.md);

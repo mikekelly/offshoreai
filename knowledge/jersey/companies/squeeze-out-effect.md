@@ -91,9 +91,9 @@ held by the target**:
 
 ## Cross-references
 
-- [`squeeze-out.md`](squeeze-out.md) — Article 117: the
+- [`squeeze-out.md`](./squeeze-out.md) — Article 117: the
   triggering notice.
-- [`takeover-court-applications.md`](takeover-court-applications.md)
+- [`takeover-court-applications.md`](./takeover-court-applications.md)
   — Article 121: dissenting shareholder's court application.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

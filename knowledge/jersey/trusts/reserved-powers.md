@@ -45,7 +45,7 @@ rules about the effect of retention.
 
 Article 9A was inserted by the **Trusts (Amendment No. 4) (Jersey) Law
 2006**, alongside the modernisation of the [Article 9
-firewall](firewall.md). The two provisions are commercially
+firewall](./firewall.md). The two provisions are commercially
 inseparable.
 
 ## What Article 9A says
@@ -75,7 +75,7 @@ A non-exhaustive list of powers a settlor may reserve includes:
   enforcers, protectors, or other office-holders of the trust;
 - a **power to change the investment manager**;
 - a **power to change the proper law** of the trust (cross-refer
-  [Article 41](change-of-proper-law.md));
+  [Article 41](./change-of-proper-law.md));
 - a **power to restrict** the trustee's discretion (e.g., a consent
   power);
 - and other related powers.
@@ -143,7 +143,7 @@ The principal commercial uses:
 Article 9A's permissive list is not unlimited:
 
 - **Sham-trust limits.** Article 9A does not save a trust that fails
-  the [Article 2](existence-of-a-trust.md) existence test because the
+  the [Article 2](./existence-of-a-trust.md) existence test because the
   settlor in substance retains beneficial ownership rather than
   retaining only the listed powers. The line between *reserved
   power* (Article 9A protects) and *retained beneficial ownership*
@@ -161,7 +161,7 @@ Article 9A's permissive list is not unlimited:
 - **Trustee duties not displaced.** A trustee acting under a
   reserved-power direction is protected by Article 9A(3); a trustee
   acting outside such direction remains subject to ordinary fiduciary
-  duties — see [trustee-duties.md](trustee-duties.md).
+  duties — see [trustee-duties.md](./trustee-duties.md).
 
 ## Drafting practice
 

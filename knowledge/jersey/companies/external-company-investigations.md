@@ -64,7 +64,7 @@ but not foreign companies trading in Jersey — a significant gap.
 
 ## Cross-references
 
-- [`external-companies.md`](external-companies.md) — Part 22
+- [`external-companies.md`](./external-companies.md) — Part 22
   regime for external companies.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -238,13 +238,13 @@ ICC-style outcome requires forming separate companies.
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`exempted-company.md`](exempted-company.md);
-- [`exempted-limited-partnership.md`](exempted-limited-partnership.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
-- [`private-funds-act.md`](private-funds-act.md);
+- [`companies.md`](./companies.md);
+- [`exempted-company.md`](./exempted-company.md);
+- [`exempted-limited-partnership.md`](./exempted-limited-partnership.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
+- [`private-funds-act.md`](./private-funds-act.md);
 - [`../bermuda/insurance.md`](../bermuda/insurance.md);
 - [`../guernsey/funds.md`](../guernsey/funds.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

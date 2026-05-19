@@ -37,16 +37,16 @@ For full Guernsey practice, engage **Guernsey advocates**.
 
 | Topic | File |
 |---|---|
-| Guernsey overview | [overview.md](overview.md) |
-| Guernsey vs Jersey comparison | [jersey-comparison.md](jersey-comparison.md) |
-| Guernsey companies | [companies.md](companies.md) |
-| Guernsey trusts | [trusts.md](trusts.md) |
-| Guernsey funds | [funds.md](funds.md) |
-| Guernsey insurance | [insurance.md](insurance.md) |
-| Guernsey tax | [tax.md](tax.md) |
-| Guernsey financial-services regulation | [financial-regulation.md](financial-regulation.md) |
-| GFSC | [gfsc.md](gfsc.md) |
-| Guernsey legal system | [legal-system.md](legal-system.md) |
+| Guernsey overview | [overview.md](./overview.md) |
+| Guernsey vs Jersey comparison | [jersey-comparison.md](./jersey-comparison.md) |
+| Guernsey companies | [companies.md](./companies.md) |
+| Guernsey trusts | [trusts.md](./trusts.md) |
+| Guernsey funds | [funds.md](./funds.md) |
+| Guernsey insurance | [insurance.md](./insurance.md) |
+| Guernsey tax | [tax.md](./tax.md) |
+| Guernsey financial-services regulation | [financial-regulation.md](./financial-regulation.md) |
+| GFSC | [gfsc.md](./gfsc.md) |
+| Guernsey legal system | [legal-system.md](./legal-system.md) |
 
 ## What this section is NOT
 

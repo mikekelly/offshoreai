@@ -80,7 +80,7 @@ address is also valid (within the deed's terms).
 
 ## Cross-references
 
-- [`registered-office.md`](registered-office.md) — Article 67:
+- [`registered-office.md`](./registered-office.md) — Article 67:
   the registered office requirement.
 
 ## Pitfalls

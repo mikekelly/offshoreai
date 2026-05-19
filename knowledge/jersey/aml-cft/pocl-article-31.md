@@ -119,7 +119,7 @@ The standard MLRO response on Article 31 suspicion:
 
 ## Cross-references
 
-- [`pocl-article-30.md`](pocl-article-30.md);
-- [`pocl-article-32.md`](pocl-article-32.md);
-- [`pocl-article-32a.md`](pocl-article-32a.md);
+- [`pocl-article-30.md`](./pocl-article-30.md);
+- [`pocl-article-32.md`](./pocl-article-32.md);
+- [`pocl-article-32a.md`](./pocl-article-32a.md);
 - [`../use-cases/compliance-mlro/internal-disclosure-assessment.md`](../use-cases/compliance-mlro/internal-disclosure-assessment.md).

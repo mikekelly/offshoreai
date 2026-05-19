@@ -38,10 +38,10 @@ The **Royal Court** is Jersey's superior court of first instance and
 appellate court for the Magistrate's Court. It exercises both civil and
 criminal jurisdiction, sits in different formations ("Numbers")
 depending on the work in hand, and is presided over by the
-[Bailiff](bailiff.md) (or in the Bailiff's absence, the Deputy
+[Bailiff](./bailiff.md) (or in the Bailiff's absence, the Deputy
 Bailiff). Final appeals from the Royal Court lie first to the
-[Jersey Court of Appeal](court-of-appeal.md) and ultimately to the
-[Judicial Committee of the Privy Council](privy-council.md).
+[Jersey Court of Appeal](./court-of-appeal.md) and ultimately to the
+[Judicial Committee of the Privy Council](./privy-council.md).
 
 ## Composition
 
@@ -69,7 +69,7 @@ join in sentencing, while the Bailiff rules on points of law,
 admissibility, and procedure.
 
 For more on the Jurats — election, qualification, age limits, current
-membership — see [jurats.md](jurats.md).
+membership — see [jurats.md](./jurats.md).
 
 ## The three principal "Numbers"
 
@@ -151,9 +151,9 @@ Attorney General and Solicitor General — or by their Crown Advocates.
 
 - From the **Magistrate's Court** to the Royal Court (Inferior Number
   for criminal appeals, Samedi for civil).
-- From the **Royal Court** to the **[Jersey Court of Appeal](court-of-appeal.md)**.
+- From the **Royal Court** to the **[Jersey Court of Appeal](./court-of-appeal.md)**.
 - From the Court of Appeal to the **[Judicial Committee of the Privy
-  Council](privy-council.md)**, with leave.
+  Council](./privy-council.md)**, with leave.
 
 ## Court rules
 

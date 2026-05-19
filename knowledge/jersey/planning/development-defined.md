@@ -167,9 +167,9 @@ unauthorised development.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`planning-building-law-2002.md`](planning-building-law-2002.md);
-- [`permitted-development.md`](permitted-development.md);
-- [`application-process.md`](application-process.md);
-- [`change-of-use.md`](change-of-use.md);
-- [`enforcement.md`](enforcement.md).
+- [`index.md`](./index.md);
+- [`planning-building-law-2002.md`](./planning-building-law-2002.md);
+- [`permitted-development.md`](./permitted-development.md);
+- [`application-process.md`](./application-process.md);
+- [`change-of-use.md`](./change-of-use.md);
+- [`enforcement.md`](./enforcement.md).

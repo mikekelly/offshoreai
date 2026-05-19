@@ -126,9 +126,9 @@ Tax residence drives:
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — what tax applies once Jersey
+- [`zero-ten.md`](./zero-ten.md) — what tax applies once Jersey
   residence is established.
-- [`economic-substance.md`](economic-substance.md) — substance
+- [`economic-substance.md`](./economic-substance.md) — substance
   rules for resident companies.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

@@ -136,9 +136,9 @@ If EDD cannot be satisfied:
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-11.md`](mlo-article-11.md);
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-11.md`](./mlo-article-11.md);
 - [`../use-cases/compliance-mlro/peps-in-customer-base.md`](../use-cases/compliance-mlro/peps-in-customer-base.md);
 - [`../use-cases/compliance-mlro/edd-when-required.md`](../use-cases/compliance-mlro/edd-when-required.md);
 - [`../use-cases/compliance-mlro/high-risk-jurisdiction-transactions.md`](../use-cases/compliance-mlro/high-risk-jurisdiction-transactions.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

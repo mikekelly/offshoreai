@@ -225,5 +225,5 @@ For an active enforcement:
 
 ## Cross-references
 
-- [`service-abroad.md`](service-abroad.md)
+- [`service-abroad.md`](./service-abroad.md)
 - [`../international-lawyer/enforcement-foreign-judgments.md`](../international-lawyer/enforcement-foreign-judgments.md)

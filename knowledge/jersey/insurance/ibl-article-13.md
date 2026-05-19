@@ -124,6 +124,6 @@ Insurers report capital and solvency in:
 
 ## Cross-references
 
-- [`ibl-article-6.md`](ibl-article-6.md);
-- [`ibl-part-4-prudential.md`](ibl-part-4-prudential.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-article-6.md`](./ibl-article-6.md);
+- [`ibl-part-4-prudential.md`](./ibl-part-4-prudential.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

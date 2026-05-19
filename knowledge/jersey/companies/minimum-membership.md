@@ -56,7 +56,7 @@ two-member minimum reflects the requirement that public companies
 have a member base broader than a single beneficial owner.
 
 **Private companies have no minimum-of-two requirement** —
-[Article 3](formation-of-a-company.md) permits a single-member
+[Article 3](./formation-of-a-company.md) permits a single-member
 private company.
 
 ### Personal liability for sole-member trading
@@ -99,7 +99,7 @@ In each case, the remaining knowing member should either:
 
 - **Bring in another member** within six months; or
 - **Convert the company to private** under
-  [Article 16](public-to-private.md); or
+  [Article 16](./public-to-private.md); or
 - **Wind up** the company.
 
 Continuing to trade past six months exposes the member personally.

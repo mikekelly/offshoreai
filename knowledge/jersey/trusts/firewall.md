@@ -202,7 +202,7 @@ direction of trustees, etc.) does not invalidate the trust. Without
 Article 9A, the *donner et retenir ne vaut* / *substance over form*
 arguments against reserved-powers trusts would gain traction; with
 it, a Jersey reserved-powers trust is structurally robust. See
-[`reserved-powers.md`](reserved-powers.md).
+[`reserved-powers.md`](./reserved-powers.md).
 
 ## Practical drafting
 
@@ -231,7 +231,7 @@ it, a Jersey reserved-powers trust is structurally robust. See
   trust-law grounds (breach of duty, accounting, removal), Article 9
   does not protect the trustee — it protects the trust against
   *foreign-law* attack, not against *Jersey-law* claims.
-- **Sham analysis.** A trust that fails the [Article 2](existence-of-a-trust.md)
+- **Sham analysis.** A trust that fails the [Article 2](./existence-of-a-trust.md)
   existence test (because the settlor in substance retained
   beneficial ownership) is not protected by Article 9 — a sham is
   not a trust at all and the firewall does not engage.

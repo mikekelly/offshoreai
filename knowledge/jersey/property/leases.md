@@ -169,8 +169,8 @@ A **customary lease form**:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`loi-1880-sur-la-propriete-fonciere.md`](loi-1880-sur-la-propriete-fonciere.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`loi-1880-sur-la-propriete-fonciere.md`](./loi-1880-sur-la-propriete-fonciere.md);
 - [`../immigration-residency/chwl-part-3-housing.md`](../immigration-residency/chwl-part-3-housing.md);
 - [`../tax/personal-income-tax.md`](../tax/personal-income-tax.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

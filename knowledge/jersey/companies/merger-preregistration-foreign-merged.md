@@ -74,9 +74,9 @@ achieve redomiciliation, with different mechanics.
 
 ## Cross-references
 
-- [`merger-preregistration-jersey.md`](merger-preregistration-jersey.md)
+- [`merger-preregistration-jersey.md`](./merger-preregistration-jersey.md)
   — Article 127FJ: all-Jersey case.
-- [`continuance.md`](continuance.md) — Part 18C alternative
+- [`continuance.md`](./continuance.md) — Part 18C alternative
   redomiciliation route.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

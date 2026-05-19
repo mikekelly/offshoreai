@@ -136,9 +136,9 @@ BVI has:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/tax/index.md`](../jersey/tax/index.md);
 - [`../cayman/tax.md`](../cayman/tax.md);
 - [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

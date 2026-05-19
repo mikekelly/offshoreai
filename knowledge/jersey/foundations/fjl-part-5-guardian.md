@@ -97,6 +97,6 @@ guardian is standard. Multi-guardian arrangements work via:
 
 ## Cross-references
 
-- [`fjl-article-22.md`](fjl-article-22.md);
-- [`fjl-article-23.md`](fjl-article-23.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-22.md`](./fjl-article-22.md);
+- [`fjl-article-23.md`](./fjl-article-23.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

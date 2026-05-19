@@ -88,6 +88,6 @@ For **gross misconduct**:
 
 ## Cross-references
 
-- [`el-article-37.md`](el-article-37.md);
-- [`el-part-5-termination.md`](el-part-5-termination.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-37.md`](./el-article-37.md);
+- [`el-part-5-termination.md`](./el-part-5-termination.md);
+- [`el-articles-index.md`](./el-articles-index.md).

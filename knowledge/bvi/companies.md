@@ -29,7 +29,7 @@ company-law statute.
 
 ### BVI Business Company (BC)
 
-The **dominant** vehicle — see [`business-company.md`](business-company.md).
+The **dominant** vehicle — see [`business-company.md`](./business-company.md).
 
 ### Company limited by guarantee
 
@@ -128,8 +128,8 @@ Common scenarios:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`business-company.md`](business-company.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`business-company.md`](./business-company.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

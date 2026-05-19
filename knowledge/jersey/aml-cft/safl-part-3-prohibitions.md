@@ -119,7 +119,7 @@ For Jersey businesses:
 
 ## Cross-references
 
-- [`safl-article-10.md`](safl-article-10.md);
-- [`safl-article-11.md`](safl-article-11.md);
-- [`safl-article-15.md`](safl-article-15.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-article-10.md`](./safl-article-10.md);
+- [`safl-article-11.md`](./safl-article-11.md);
+- [`safl-article-15.md`](./safl-article-15.md);
+- [`safl-articles-index.md`](./safl-articles-index.md).

@@ -67,7 +67,7 @@ Schedule 2 makes the transition workable.
 
 ## Cross-references
 
-- [`transitional-provisions.md`](transitional-provisions.md) —
+- [`transitional-provisions.md`](./transitional-provisions.md) —
   Article 221.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

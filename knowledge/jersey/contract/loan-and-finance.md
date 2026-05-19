@@ -149,7 +149,7 @@ On default:
 ## Interest and default interest
 
 - **Compound interest** subject to penal-clause review;
-- **Default interest** — see [`penalty-and-liquidated-damages.md`](penalty-and-liquidated-damages.md);
+- **Default interest** — see [`penalty-and-liquidated-damages.md`](./penalty-and-liquidated-damages.md);
 - **Specific** Jersey usury / consumer-protection considerations.
 
 ## Regulatory overlay
@@ -193,7 +193,7 @@ Jersey-licensed banking activity:
 
 ## Cross-border finance
 
-- **Choice of law** — see [`choice-of-law.md`](choice-of-law.md);
+- **Choice of law** — see [`choice-of-law.md`](./choice-of-law.md);
 - **Multi-jurisdiction** security packages;
 - **Specific** Jersey enforcement of foreign judgments;
 - **Sanctions** carve-outs increasingly important.
@@ -221,12 +221,12 @@ Jersey-licensed banking activity:
 
 ## Cross-references
 
-- [`guarantees.md`](guarantees.md);
-- [`boilerplate.md`](boilerplate.md);
-- [`penalty-and-liquidated-damages.md`](penalty-and-liquidated-damages.md);
+- [`guarantees.md`](./guarantees.md);
+- [`boilerplate.md`](./boilerplate.md);
+- [`penalty-and-liquidated-damages.md`](./penalty-and-liquidated-damages.md);
 - [`../property/hypothec.md`](../property/hypothec.md);
 - [`../property/security-interests-law-2012.md`](../property/security-interests-law-2012.md);
 - [`../banking/index.md`](../banking/index.md);
 - [`../companies/cjl-article-58.md`](../../../jersey/companies/cjl-article-58.md);
 - [`../insolvency/index.md`](../insolvency/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

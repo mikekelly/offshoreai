@@ -63,6 +63,6 @@ that captures their investor base.
 
 ## Cross-references
 
-- [`jersey-private-fund.md`](jersey-private-fund.md)
-- [`expert-fund.md`](expert-fund.md)
-- [`listed-fund.md`](listed-fund.md)
+- [`jersey-private-fund.md`](./jersey-private-fund.md)
+- [`expert-fund.md`](./expert-fund.md)
+- [`listed-fund.md`](./listed-fund.md)

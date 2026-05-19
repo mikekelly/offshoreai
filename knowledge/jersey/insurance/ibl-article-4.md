@@ -99,7 +99,7 @@ The JFSC will grant a permit if satisfied that:
 
 ## Cross-references
 
-- [`ibl-article-2.md`](ibl-article-2.md);
-- [`ibl-article-3.md`](ibl-article-3.md);
-- [`ibl-article-6.md`](ibl-article-6.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-article-2.md`](./ibl-article-2.md);
+- [`ibl-article-3.md`](./ibl-article-3.md);
+- [`ibl-article-6.md`](./ibl-article-6.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

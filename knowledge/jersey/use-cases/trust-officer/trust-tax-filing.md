@@ -111,8 +111,8 @@ For non-Jersey-resident beneficiaries:
   (assuming no Jersey-source component);
 - **Foreign tax** applies under the beneficiary's home
   jurisdiction;
-- See [`distribution-uk-resident.md`](distribution-uk-resident.md)
-  and [`distribution-us-person.md`](distribution-us-person.md)
+- See [`distribution-uk-resident.md`](./distribution-uk-resident.md)
+  and [`distribution-us-person.md`](./distribution-us-person.md)
   for jurisdiction-specific implications.
 
 ### Underlying Jersey companies
@@ -163,5 +163,5 @@ For each trust under administration:
 - [`../../tax/index.md`](../../tax/index.md)
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md) — underlying
   company taxation.
-- [`crs-classification.md`](crs-classification.md)
-- [`fatca-classification.md`](fatca-classification.md)
+- [`crs-classification.md`](./crs-classification.md)
+- [`fatca-classification.md`](./fatca-classification.md)

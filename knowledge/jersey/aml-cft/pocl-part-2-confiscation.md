@@ -103,6 +103,6 @@ confiscation under Part 2.
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-part-3-restraint.md`](pocl-part-3-restraint.md);
-- [`pocl-part-4-investigations.md`](pocl-part-4-investigations.md).
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-part-3-restraint.md`](./pocl-part-3-restraint.md);
+- [`pocl-part-4-investigations.md`](./pocl-part-4-investigations.md).

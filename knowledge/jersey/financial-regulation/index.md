@@ -41,7 +41,7 @@ permission, and how the regulator's expectations are expressed
 through codes of practice and enforcement.
 
 The regulator is the **[Jersey Financial Services Commission
-(JFSC)](jfsc.md)** — an independent statutory body established by
+(JFSC)](./jfsc.md)** — an independent statutory body established by
 the **[Financial Services Commission (Jersey) Law 1998][fsclaw]**.
 The JFSC supervises every regulated business in Jersey and runs
 the corporate registries. It is funded by industry fees.
@@ -71,13 +71,13 @@ Land here if your question involves any of:
 
 | The question is about... | Read |
 |---|---|
-| What the JFSC actually does | [`jfsc.md`](jfsc.md) |
+| What the JFSC actually does | [`jfsc.md`](./jfsc.md) |
 | Which Law applies to a given financial-services activity | This section plus the relevant Law-specific file |
-| Becoming licensed (TCB / FSB / Investment Business / etc.) | [`licensing.md`](licensing.md) *(stub)* plus the Law-specific file |
-| Fit-and-proper requirements for a person | [`licensing.md`](licensing.md) *(stub)* |
-| Outsourcing of administration | [`licensing.md`](licensing.md) *(stub)* |
-| JFSC enforcement powers (penalties, public statements, directions) | [`enforcement.md`](enforcement.md) *(stub)* |
-| Codes of practice (TCB, FSB, Investment Business, Banking, Insurance) | [`codes-of-practice.md`](codes-of-practice.md) *(stub)* |
+| Becoming licensed (TCB / FSB / Investment Business / etc.) | [`licensing.md`](./licensing.md) *(stub)* plus the Law-specific file |
+| Fit-and-proper requirements for a person | [`licensing.md`](./licensing.md) *(stub)* |
+| Outsourcing of administration | [`licensing.md`](./licensing.md) *(stub)* |
+| JFSC enforcement powers (penalties, public statements, directions) | [`enforcement.md`](./enforcement.md) *(stub)* |
+| Codes of practice (TCB, FSB, Investment Business, Banking, Insurance) | [`codes-of-practice.md`](./codes-of-practice.md) *(stub)* |
 | AML/CFT specifically | [`../aml-cft/index.md`](../aml-cft/index.md) |
 
 If your question is about a **specific fund or insurance vehicle**,
@@ -93,10 +93,10 @@ framework** lives here.
 
 ## Where to start as a cold reader
 
-1. **[`jfsc.md`](jfsc.md)** — the regulator. What it is, what it
+1. **[`jfsc.md`](./jfsc.md)** — the regulator. What it is, what it
    does, who runs it, which Laws it administers, which registers
    it maintains.
-2. **[`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md)**
+2. **[`financial-services-jersey-law-1998.md`](./financial-services-jersey-law-1998.md)**
    *(stub)* — the omnibus regulatory statute. Defines investment
    business, trust company business, fund services business,
    general insurance mediation, money services business.
@@ -121,36 +121,36 @@ framework** lives here.
 
 ### Theme 1 — The regulator
 
-- **[`jfsc.md`](jfsc.md)** — JFSC structure, functions, registers.
-- [`jfsc-law-1998.md`](jfsc-law-1998.md) *(stub)* — the
+- **[`jfsc.md`](./jfsc.md)** — JFSC structure, functions, registers.
+- [`jfsc-law-1998.md`](./jfsc-law-1998.md) *(stub)* — the
   constituting statute (Financial Services Commission (Jersey) Law
   1998).
 
 ### Theme 2 — Principal regulatory Laws
 
-- [`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md)
+- [`financial-services-jersey-law-1998.md`](./financial-services-jersey-law-1998.md)
   — Investment / TCB / FSB / GIMB / MSB gateway statute (concept
   overview).
-- **[`fsl-articles-index.md`](fsl-articles-index.md)** — FSL 1998
+- **[`fsl-articles-index.md`](./fsl-articles-index.md)** — FSL 1998
   article-by-article wiki: Part-cluster files for all 6 Parts plus
   individual files for the regulated activity classes (TCB, FSB,
   Investment Business, GIMB, MSB) and the gateway provisions (2
   financial service business; 7 registration; 8 application; 9 fit-
   and-proper; 10 conditions; 19 Codes of Practice).
-- [`banking-business-law-1991.md`](banking-business-law-1991.md)
+- [`banking-business-law-1991.md`](./banking-business-law-1991.md)
   — deposit-taking (see also `../banking/bbl-articles-index.md`).
-- [`collective-investment-funds-law-1988.md`](collective-investment-funds-law-1988.md)
+- [`collective-investment-funds-law-1988.md`](./collective-investment-funds-law-1988.md)
   — public funds (see also `../funds/cifl-articles-index.md`).
-- [`insurance-business-law-1996.md`](insurance-business-law-1996.md)
+- [`insurance-business-law-1996.md`](./insurance-business-law-1996.md)
   — insurance underwriting (see also `../insurance/ibl-articles-index.md`).
 
 ### Theme 3 — Operating under regulation
 
-- [`codes-of-practice.md`](codes-of-practice.md) *(stub)* —
+- [`codes-of-practice.md`](./codes-of-practice.md) *(stub)* —
   conduct standards for each regulated class.
-- [`licensing.md`](licensing.md) *(stub)* — fit-and-proper,
+- [`licensing.md`](./licensing.md) *(stub)* — fit-and-proper,
   principal persons, key persons, outsourcing.
-- [`enforcement.md`](enforcement.md) *(stub)* — civil financial
+- [`enforcement.md`](./enforcement.md) *(stub)* — civil financial
   penalties, public statements, directions.
 
 ## Cross-section navigation by tag

@@ -219,5 +219,5 @@ Through 2026-2030:
 - [`../digital-assets/index.md`](../digital-assets/index.md);
 - [`../tax/economic-substance.md`](../tax/economic-substance.md);
 - [`../../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md);
-- [`../../history/last-2-years.md`](../history/last-2-years.md);
-- [`../../history/trajectory.md`](../history/trajectory.md).
+- [`../../history/last-2-years.md`](../history/finance/last-2-years.md);
+- [`../../history/trajectory.md`](../history/finance/trajectory.md).

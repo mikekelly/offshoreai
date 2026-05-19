@@ -118,7 +118,7 @@ Costs of MLA cooperation:
 
 ## Cross-references
 
-- [`cicl-article-3.md`](cicl-article-3.md);
-- [`cicl-article-5.md`](cicl-article-5.md);
-- [`cicl-part-3-confiscation.md`](cicl-part-3-confiscation.md);
-- [`cicl-articles-index.md`](cicl-articles-index.md).
+- [`cicl-article-3.md`](./cicl-article-3.md);
+- [`cicl-article-5.md`](./cicl-article-5.md);
+- [`cicl-part-3-confiscation.md`](./cicl-part-3-confiscation.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md).

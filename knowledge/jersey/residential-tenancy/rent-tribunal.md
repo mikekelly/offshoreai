@@ -33,9 +33,9 @@ rent increases** in private residential tenancies.
 It does **not** handle:
 
 - Eviction or breach disputes — these remain with the
-  Petty Debts Court (see [`eviction-procedure.md`](eviction-procedure.md));
+  Petty Debts Court (see [`eviction-procedure.md`](./eviction-procedure.md));
 - Deposit disputes — these go through the Tenants' Deposit
-  Scheme (see [`deposits.md`](deposits.md));
+  Scheme (see [`deposits.md`](./deposits.md));
 - Disrepair / condition disputes — Petty Debts Court;
 - Social housing rent — separate regime applies.
 
@@ -166,9 +166,9 @@ enforceable for ordinary tenants.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`2025-amendment-law.md`](2025-amendment-law.md);
-- [`rent-and-rent-reviews.md`](rent-and-rent-reviews.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`petty-debts-court-tenancy.md`](petty-debts-court-tenancy.md);
+- [`index.md`](./index.md);
+- [`2025-amendment-law.md`](./2025-amendment-law.md);
+- [`rent-and-rent-reviews.md`](./rent-and-rent-reviews.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`petty-debts-court-tenancy.md`](./petty-debts-court-tenancy.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md).

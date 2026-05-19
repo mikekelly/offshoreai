@@ -66,7 +66,7 @@ winding up benefits from experienced practitioners.
 
 ## Cross-references
 
-- [`liquidator-qualifications.md`](liquidator-qualifications.md) —
+- [`liquidator-qualifications.md`](./liquidator-qualifications.md) —
   Article 188.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

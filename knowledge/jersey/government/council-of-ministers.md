@@ -120,7 +120,7 @@ The Council of Ministers is held to account by:
 
 ## Cross-references
 
-- [`./states-assembly.md`](states-assembly.md);
-- [`./crown-dependency.md`](crown-dependency.md);
-- [`./index.md`](index.md);
+- [`./states-assembly.md`](./states-assembly.md);
+- [`./crown-dependency.md`](./crown-dependency.md);
+- [`./index.md`](./index.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md).

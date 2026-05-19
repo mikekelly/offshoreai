@@ -95,7 +95,7 @@ for *no* appointor at all, Article 17 is the only mechanism.
 
 In practice, where there are multiple possible Article 17 appointors
 (e.g., two continuing trustees), the appointment power is exercised
-**jointly** — consistent with [Article 22](co-trustees-acting-together.md).
+**jointly** — consistent with [Article 22](./co-trustees-acting-together.md).
 
 ## When Article 17 is unavailable
 
@@ -106,8 +106,8 @@ representative has not been appointed or cannot act in the time
 required.
 
 The fallback is then a **Royal Court application** under
-[Article 51](article-51-directions.md) (for directions including
-appointment) or [Article 44](court-appointed-resident-trustee.md)
+[Article 51](./article-51-directions.md) (for directions including
+appointment) or [Article 44](./court-appointed-resident-trustee.md)
  (for the appointment of a resident trustee where the
 Court considers the trust requires a Jersey-resident trustee).
 
@@ -125,6 +125,6 @@ Court considers the trust requires a Jersey-resident trustee).
   trustee continues as trustee through changes in its directors;
   Article 17 is not engaged by a board change. The relevant
   internal-governance provisions are in
-  [`corporate-trustee-resolution.md`](corporate-trustee-resolution.md).
+  [`corporate-trustee-resolution.md`](./corporate-trustee-resolution.md).
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

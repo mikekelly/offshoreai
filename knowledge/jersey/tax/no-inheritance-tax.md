@@ -92,7 +92,7 @@ but relevant when planning Jersey wills.
 
 ## Cross-references
 
-- [`no-capital-gains-tax.md`](no-capital-gains-tax.md) — the
+- [`no-capital-gains-tax.md`](./no-capital-gains-tax.md) — the
   companion no-CGT page.
 - [`../trusts/index.md`](../trusts/index.md) — trust planning
   in Jersey.

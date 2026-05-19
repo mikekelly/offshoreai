@@ -86,7 +86,7 @@ The role may attract a **fiduciary characterisation** if:
 
 ## Cross-references
 
-- [`fjl-article-26.md`](fjl-article-26.md) — founder;
+- [`fjl-article-26.md`](./fjl-article-26.md) — founder;
 - [`../trusts/protector-role.md`](../../../jersey/trusts/protector-role.md)
   *(see also if it exists — analogous trust concept)*;
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

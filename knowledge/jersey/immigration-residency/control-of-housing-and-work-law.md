@@ -59,9 +59,9 @@ through a four-category status system.
 - **Registered** — short-term and lower-priority status with
   limited housing access.
 
-(See [`residential-status-categories.md`](residential-status-categories.md)
+(See [`residential-status-categories.md`](./residential-status-categories.md)
 for the housing implications and
-[`employment-status-categories.md`](employment-status-categories.md)
+[`employment-status-categories.md`](./employment-status-categories.md)
 for the work implications.)
 
 ## Administration
@@ -87,7 +87,7 @@ The Law has **teeth** and is enforced.
 
 ## Cross-references
 
-- [`residential-status-categories.md`](residential-status-categories.md)
-- [`employment-status-categories.md`](employment-status-categories.md)
-- [`high-value-residency.md`](high-value-residency.md) — HVR
+- [`residential-status-categories.md`](./residential-status-categories.md)
+- [`employment-status-categories.md`](./employment-status-categories.md)
+- [`high-value-residency.md`](./high-value-residency.md) — HVR
   route.

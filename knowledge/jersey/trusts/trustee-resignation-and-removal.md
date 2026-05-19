@@ -52,7 +52,7 @@ terms**.
 
 A trustee also ceases to hold office where:
 
-- the **Court removes** the trustee (typically under [Article 51](article-51-directions.md));
+- the **Court removes** the trustee (typically under [Article 51](./article-51-directions.md));
 - a **resignation** under the deed's terms takes effect;
 - the **trust terms** otherwise specify (e.g., automatic
   termination on the trustee ceasing to be Jersey-resident).
@@ -76,7 +76,7 @@ A clean trustee exit involves more than the Article 19 mechanics:
 3. **Vesting deed or transfer documentation** for assets that
    require positive transfer (e.g., foreign-registered shares, real
    estate). Jersey trust property vests automatically by operation
-   of [Article 17](trustee-appointment-out-of-court.md), but
+   of [Article 17](./trustee-appointment-out-of-court.md), but
    foreign-located property requires local steps.
 4. **Indemnity and release.** A retiring trustee will typically
    require an indemnity from the trust fund and a release from the
@@ -99,7 +99,7 @@ The trust deed will typically provide for **removal** of a trustee
 by the settlor (during lifetime), by a protector, or by a stated
 majority of beneficiaries. Where the deed is silent or the named
 mechanism cannot be invoked, the Royal Court has power under
-[Article 51](article-51-directions.md) to remove a trustee for
+[Article 51](./article-51-directions.md) to remove a trustee for
 cause. Recognised grounds include:
 
 - breach of trust;
@@ -120,7 +120,7 @@ A **sole trustee** cannot resign without arranging a successor. The
 sole trustee must therefore:
 
 - procure a replacement trustee under the deed's appointment power
-  (or under [Article 17](trustee-appointment-out-of-court.md));
+  (or under [Article 17](./trustee-appointment-out-of-court.md));
 - transfer property to the new trustee;
 - only then resign.
 
@@ -130,7 +130,7 @@ of a successor.
 
 ## The outgoing trustee's continuing position
 
-[Article 34](outgoing-trustee.md) deals specifically
+[Article 34](./outgoing-trustee.md) deals specifically
 with the **position of an outgoing trustee** — including continuing
 liability for acts during trusteeship, the indemnity from the trust
 fund, and the trustee's right to documents and records for the

@@ -63,7 +63,7 @@ would be a dead end.
 
 ## Cross-references
 
-- [`liquidator-misconduct-report.md`](liquidator-misconduct-report.md)
+- [`liquidator-misconduct-report.md`](./liquidator-misconduct-report.md)
   — Article 184.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -200,5 +200,5 @@ For investigation:
 
 ## Cross-references
 
-- [`beneficial-ownership-access.md`](beneficial-ownership-access.md)
+- [`beneficial-ownership-access.md`](./beneficial-ownership-access.md)
 - [`../../trusts/index.md`](../../trusts/index.md)

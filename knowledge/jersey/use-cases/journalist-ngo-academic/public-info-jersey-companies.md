@@ -235,5 +235,5 @@ For an investigation:
 
 ## Cross-references
 
-- [`searching-companies-registry.md`](searching-companies-registry.md)
-- [`beneficial-ownership-access.md`](beneficial-ownership-access.md)
+- [`searching-companies-registry.md`](./searching-companies-registry.md)
+- [`beneficial-ownership-access.md`](./beneficial-ownership-access.md)

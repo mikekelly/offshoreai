@@ -96,7 +96,7 @@ For Jersey-related asset recovery:
 
 ## Cross-references
 
-- [`cicl-article-13.md`](cicl-article-13.md);
-- [`cicl-article-14.md`](cicl-article-14.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
-- [`cicl-articles-index.md`](cicl-articles-index.md).
+- [`cicl-article-13.md`](./cicl-article-13.md);
+- [`cicl-article-14.md`](./cicl-article-14.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md).

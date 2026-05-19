@@ -133,8 +133,8 @@ to work as intended:
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — the corporate tax regime.
-- [`company-residence.md`](company-residence.md) — the residence
+- [`zero-ten.md`](./zero-ten.md) — the corporate tax regime.
+- [`company-residence.md`](./company-residence.md) — the residence
   question prior to substance.
 - [`../companies/substance-court-application.md`](../companies/substance-court-application.md)
   — Companies Law enforcement.

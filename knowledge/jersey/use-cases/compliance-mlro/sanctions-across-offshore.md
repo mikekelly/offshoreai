@@ -232,9 +232,9 @@ For a multi-jurisdictional sanctions matter:
 ## Cross-references
 
 - [`../../aml-cft/safl-articles-index.md`](../../aml-cft/safl-articles-index.md);
-- [`sanctions-screening-mlro.md`](sanctions-screening-mlro.md);
-- [`sanctions-match-handling.md`](sanctions-match-handling.md);
-- [`sanctions-licences.md`](sanctions-licences.md);
+- [`sanctions-screening-mlro.md`](./sanctions-screening-mlro.md);
+- [`sanctions-match-handling.md`](./sanctions-match-handling.md);
+- [`sanctions-licences.md`](./sanctions-licences.md);
 - [`../../../guernsey/index.md`](../../../guernsey/index.md);
 - [`../../../cayman/index.md`](../../../cayman/index.md);
 - [`../../../bvi/index.md`](../../../bvi/index.md);

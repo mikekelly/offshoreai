@@ -120,7 +120,7 @@ For foreign tax authorities:
 
 ## Cross-references
 
-- [`fjl-article-46.md`](fjl-article-46.md);
+- [`fjl-article-46.md`](./fjl-article-46.md);
 - [`../trusts/article-47-mistake.md`](../use-cases/international-lawyer/article-47-mistake.md)
   — trust analogue;
 - [`../use-cases/royal-court-litigator/article-47-application.md`](../use-cases/royal-court-litigator/article-47-application.md);

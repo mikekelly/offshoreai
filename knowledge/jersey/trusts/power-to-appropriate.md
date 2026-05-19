@@ -81,8 +81,8 @@ trustee thinks fit"** — wide. In practice the trustee will:
   company share appropriations).
 
 The wide discretion is not a licence to value arbitrarily. The
-**impartiality** duty ([Article 23](trustee-impartiality.md)) and
-the **prudent-person** duty ([Article 21](trustee-duties.md))
+**impartiality** duty ([Article 23](./trustee-impartiality.md)) and
+the **prudent-person** duty ([Article 21](./trustee-duties.md))
 constrain valuation: a low valuation that advantages the recipient
 disadvantages other beneficiaries.
 
@@ -112,7 +112,7 @@ practice:
   before completion (with sensitivity to confidentiality);
 - where the appropriation is **momentous**, seek the Royal Court's
   blessing under
-  [Article 51](article-51-directions.md) — see
+  [Article 51](./article-51-directions.md) — see
   [`use-cases/trust-officer/distribution-decisions-and-court-blessing.md`](../use-cases/trust-officer/distribution-decisions-and-court-blessing.md).
 
 ## Tax implications

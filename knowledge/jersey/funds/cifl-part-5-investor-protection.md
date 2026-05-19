@@ -96,7 +96,7 @@ the **Channel Islands Financial Ombudsman** provides:
 
 ## Cross-references
 
-- [`cifl-articles-index.md`](cifl-articles-index.md);
-- [`cifl-part-4-conduct.md`](cifl-part-4-conduct.md);
-- [`cifl-part-6-enforcement.md`](cifl-part-6-enforcement.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md);
+- [`cifl-part-4-conduct.md`](./cifl-part-4-conduct.md);
+- [`cifl-part-6-enforcement.md`](./cifl-part-6-enforcement.md);
 - [`../use-cases/fund-counsel/investor-reporting.md`](../use-cases/fund-counsel/investor-reporting.md).

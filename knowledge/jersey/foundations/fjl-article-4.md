@@ -91,13 +91,13 @@ The Registrar publishes prescribed forms and fees. As of 2026:
 ## What to do next
 
 - For the substance of the charter, see
-  [fjl-article-6.md](fjl-article-6.md);
-- For the regulations, see [fjl-article-7.md](fjl-article-7.md);
+  [fjl-article-6.md](./fjl-article-6.md);
+- For the regulations, see [fjl-article-7.md](./fjl-article-7.md);
 - For the consequence of establishment, see
-  [fjl-article-5.md](fjl-article-5.md).
+  [fjl-article-5.md](./fjl-article-5.md).
 
 ## Cross-references
 
 - [Companies (Jersey) Law 1991 Article 11](../../../jersey/companies/article-11.md)
   — analogous constitutive incorporation;
-- [Foundations Law 2009 overview](foundations-law-2009.md).
+- [Foundations Law 2009 overview](./foundations-law-2009.md).

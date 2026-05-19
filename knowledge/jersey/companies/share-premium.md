@@ -91,7 +91,7 @@ Article 61A solvency-statement.
 
 ## Relief from transfers — Article 39B
 
-[Article 39B](relief-from-transfers.md) provides for the **States**
+[Article 39B](./relief-from-transfers.md) provides for the **States**
 to make Regulations relieving companies from the requirement to
 maintain the share-premium account in specified circumstances.
 This is the legislative gateway for streamlining the
@@ -101,14 +101,14 @@ share-premium regime where appropriate.
 
 The complications of the share-premium account are one reason
 modern Jersey practice favours **no-par-value** share capital —
-under [Article 39A](stated-capital.md), no-par-value companies
+under [Article 39A](./stated-capital.md), no-par-value companies
 use a **stated-capital account** instead, which has fewer
 historical use restrictions.
 
 ## Conversion from par-value to no-par-value
 
 A par-value company can **convert to no-par-value** under
-[Article 40A](conversion-par-value.md). On conversion, the
+[Article 40A](./conversion-par-value.md). On conversion, the
 share-premium account typically merges into the stated-capital
 account.
 
@@ -117,7 +117,7 @@ account.
 - **Distributing share premium as a dividend** without following
   Part 12 procedure — exposes the directors to breach claims and
   the recipient shareholders to clawback under
-  [Article 115A](unlawful-distribution-consequences.md) *(planned)*.
+  [Article 115A](./unlawful-distribution-consequences.md) *(planned)*.
 - **Confusing share premium with profits available for
   distribution** — they're different concepts; profits are
   available for ordinary dividends, share premium typically is

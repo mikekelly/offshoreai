@@ -72,6 +72,6 @@ provides authoritative clarity for future dealings.
 
 ## Cross-references
 
-- [`pcc-segregation.md`](pcc-segregation.md) — Article 127YT.
+- [`pcc-segregation.md`](./pcc-segregation.md) — Article 127YT.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

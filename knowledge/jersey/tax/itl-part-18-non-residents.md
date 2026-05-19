@@ -41,7 +41,7 @@ The three categories (Article 126):
   residence;
 - **Non-resident** — outside Jersey for tax purposes.
 
-See [`residence-individuals.md`](residence-individuals.md) for
+See [`residence-individuals.md`](./residence-individuals.md) for
 detail.
 
 ### Temporary absences
@@ -134,8 +134,8 @@ The traditional residence rules are gradually being modernised:
 
 ## Cross-references
 
-- [`residence-individuals.md`](residence-individuals.md)
-- [`high-value-residency-tax.md`](high-value-residency-tax.md)
-- [`personal-income-tax.md`](personal-income-tax.md)
+- [`residence-individuals.md`](./residence-individuals.md)
+- [`high-value-residency-tax.md`](./high-value-residency-tax.md)
+- [`personal-income-tax.md`](./personal-income-tax.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

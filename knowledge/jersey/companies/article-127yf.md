@@ -38,7 +38,7 @@ confirmation statements (127YE) and accounts (127YG): a
 **filings-related** or **secretarial** provision for incorporated
 cells.
 
-See [`cell-companies.md`](cell-companies.md) for the Part 18D
+See [`cell-companies.md`](./cell-companies.md) for the Part 18D
 overview.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

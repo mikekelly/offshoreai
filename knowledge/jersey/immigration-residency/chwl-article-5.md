@@ -66,8 +66,8 @@ Specific conditions apply:
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-part-2-status.md`](chwl-part-2-status.md);
-- [`hvr-2-1-e.md`](hvr-2-1-e.md);
-- [`high-value-residency.md`](high-value-residency.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-part-2-status.md`](./chwl-part-2-status.md);
+- [`hvr-2-1-e.md`](./hvr-2-1-e.md);
+- [`high-value-residency.md`](./high-value-residency.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

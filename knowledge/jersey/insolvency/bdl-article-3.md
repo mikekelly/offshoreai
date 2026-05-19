@@ -105,7 +105,7 @@ After application:
 
 ## Cross-references
 
-- [`bdl-article-4.md`](bdl-article-4.md) — grounds;
-- [`bdl-article-6.md`](bdl-article-6.md) — effect of
+- [`bdl-article-4.md`](./bdl-article-4.md) — grounds;
+- [`bdl-article-6.md`](./bdl-article-6.md) — effect of
   declaration;
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

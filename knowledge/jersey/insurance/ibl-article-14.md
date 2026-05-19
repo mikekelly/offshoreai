@@ -98,7 +98,7 @@ Technical provisions must be:
 
 ## Cross-references
 
-- [`ibl-article-13.md`](ibl-article-13.md);
-- [`ibl-article-15.md`](ibl-article-15.md);
-- [`ibl-part-4-prudential.md`](ibl-part-4-prudential.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-article-13.md`](./ibl-article-13.md);
+- [`ibl-article-15.md`](./ibl-article-15.md);
+- [`ibl-part-4-prudential.md`](./ibl-part-4-prudential.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

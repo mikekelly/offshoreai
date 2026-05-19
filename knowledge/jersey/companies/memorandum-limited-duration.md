@@ -29,7 +29,7 @@ see_also:
 # Article 4C — Memorandum or Articles of Company of Limited Duration
 
 Article 4C specifies the content required where a company is to be a
-**limited-life company** under [Article 3H](limited-life-companies.md).
+**limited-life company** under [Article 3H](./limited-life-companies.md).
 
 ## What Article 4C says
 
@@ -59,7 +59,7 @@ practice:
 The choice affects how the terms can later be altered:
 
 - Memorandum amendments require special resolution under
-  [Article 11](alteration-of-memorandum-articles.md) *(planned)*;
+  [Article 11](./alteration-of-memorandum-articles.md) *(planned)*;
 - Articles amendments also require special resolution but have a
   different procedural feel.
 

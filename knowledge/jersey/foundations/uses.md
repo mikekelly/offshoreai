@@ -133,7 +133,7 @@ The **right choice** depends on:
 
 ## Cross-references
 
-- [`foundations-law-2009.md`](foundations-law-2009.md) — the
+- [`foundations-law-2009.md`](./foundations-law-2009.md) — the
   statute overview.
 - [`../trusts/index.md`](../trusts/index.md) — the trust
   alternative.

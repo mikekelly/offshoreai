@@ -75,7 +75,7 @@ While Cayman SPCs are general-purpose, Bermuda SACs are
 - **Reinsurance** — collateralised reinsurance arrangements.
 
 The Bermuda Monetary Authority (BMA) supervises SACs
-operating in insurance — see [`insurance.md`](insurance.md).
+operating in insurance — see [`insurance.md`](./insurance.md).
 
 ## Formation
 
@@ -232,13 +232,13 @@ insurance / ILS, Bermuda SAC is the standard.
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`exempted-company.md`](exempted-company.md);
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`funds.md`](funds.md);
-- [`bma.md`](bma.md);
-- [`index.md`](index.md);
+- [`companies.md`](./companies.md);
+- [`exempted-company.md`](./exempted-company.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`funds.md`](./funds.md);
+- [`bma.md`](./bma.md);
+- [`index.md`](./index.md);
 - [`../cayman/segregated-portfolio-company.md`](../cayman/segregated-portfolio-company.md);
 - [`../guernsey/funds.md`](../guernsey/funds.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md).

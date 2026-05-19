@@ -181,9 +181,9 @@ For tenants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`2025-amendment-law.md`](2025-amendment-law.md);
-- [`rent-tribunal.md`](rent-tribunal.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`notice-periods.md`](notice-periods.md);
-- [`tenancy-agreements.md`](tenancy-agreements.md).
+- [`index.md`](./index.md);
+- [`2025-amendment-law.md`](./2025-amendment-law.md);
+- [`rent-tribunal.md`](./rent-tribunal.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`notice-periods.md`](./notice-periods.md);
+- [`tenancy-agreements.md`](./tenancy-agreements.md).

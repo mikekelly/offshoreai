@@ -114,7 +114,7 @@ Decisions are subject to **appeal** to the Royal Court:
 
 ## Cross-references
 
-- [`cifl-article-4.md`](cifl-article-4.md);
-- [`cifl-article-6.md`](cifl-article-6.md);
-- [`cifl-article-7.md`](cifl-article-7.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-article-4.md`](./cifl-article-4.md);
+- [`cifl-article-6.md`](./cifl-article-6.md);
+- [`cifl-article-7.md`](./cifl-article-7.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

@@ -78,8 +78,8 @@ guardian directions (subject to the regulations).
 
 ## Cross-references
 
-- [`fjl-article-16.md`](fjl-article-16.md) — qualified
+- [`fjl-article-16.md`](./fjl-article-16.md) — qualified
   member;
-- [`fjl-article-17.md`](fjl-article-17.md) — functions and
+- [`fjl-article-17.md`](./fjl-article-17.md) — functions and
   duties;
-- [`fjl-article-22.md`](fjl-article-22.md) — guardian.
+- [`fjl-article-22.md`](./fjl-article-22.md) — guardian.

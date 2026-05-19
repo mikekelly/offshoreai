@@ -274,5 +274,5 @@ For foreign lawyer approaching Jersey matter:
 - [`../../property/index.md`](../../property/index.md);
 - [`../../contract/index.md`](../../contract/index.md);
 - [`../../succession/index.md`](../../succession/index.md);
-- [`engaging-jersey-trustees.md`](engaging-jersey-trustees.md);
-- [`coordinating-jersey-advocates.md`](coordinating-jersey-advocates.md).
+- [`engaging-jersey-trustees.md`](./engaging-jersey-trustees.md);
+- [`coordinating-jersey-advocates.md`](./coordinating-jersey-advocates.md).

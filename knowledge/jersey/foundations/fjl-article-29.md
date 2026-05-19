@@ -104,9 +104,9 @@ jurisdiction before establishing.
 
 ## Cross-references
 
-- [`fjl-article-28.md`](fjl-article-28.md) — beneficiary
+- [`fjl-article-28.md`](./fjl-article-28.md) — beneficiary
   defined;
-- [`fjl-article-30.md`](fjl-article-30.md) — information
+- [`fjl-article-30.md`](./fjl-article-30.md) — information
   rights;
 - [`../trusts/article-29-disclosure.md`](../trusts/article-29-disclosure.md)
   *(if exists)* — trust analogue;

@@ -79,7 +79,7 @@ Article 195 (and the implementing Regulations) close this gap.
 
 ## Cross-references
 
-- [`external-company-investigations.md`](external-company-investigations.md)
+- [`external-company-investigations.md`](./external-company-investigations.md)
   — Article 140: applying the investigation regime to external
   companies.
 

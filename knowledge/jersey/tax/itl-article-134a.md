@@ -76,9 +76,9 @@ The GAAR is not unilateral Comptroller power:
 
 ## Cross-references
 
-- [`income-tax-law-1961.md`](income-tax-law-1961.md) — parent
+- [`income-tax-law-1961.md`](./income-tax-law-1961.md) — parent
   statute.
-- [`revenue-jersey.md`](revenue-jersey.md) — the Comptroller's
+- [`revenue-jersey.md`](./revenue-jersey.md) — the Comptroller's
   office.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

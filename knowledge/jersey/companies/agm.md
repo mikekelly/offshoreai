@@ -78,9 +78,9 @@ A company that **fails** to hold a required AGM:
 
 - May face **directors' offences** under the Companies Law;
 - The **JFSC may direct** a meeting be called under
-  [Article 88](jfsc-meeting-power.md);
+  [Article 88](./jfsc-meeting-power.md);
 - The **Court may order** a meeting under
-  [Article 94](court-ordered-meetings.md).
+  [Article 94](./court-ordered-meetings.md).
 
 ## Pitfalls
 

@@ -204,11 +204,11 @@ specific structures.
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`exempted-company.md`](exempted-company.md);
-- [`exempted-limited-partnership.md`](exempted-limited-partnership.md);
-- [`tax.md`](tax.md);
-- [`cima.md`](cima.md);
-- [`index.md`](index.md);
+- [`companies.md`](./companies.md);
+- [`exempted-company.md`](./exempted-company.md);
+- [`exempted-limited-partnership.md`](./exempted-limited-partnership.md);
+- [`tax.md`](./tax.md);
+- [`cima.md`](./cima.md);
+- [`index.md`](./index.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md);
 - [`../bvi/business-company.md`](../bvi/business-company.md).

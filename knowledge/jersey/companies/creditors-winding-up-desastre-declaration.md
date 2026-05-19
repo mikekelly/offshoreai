@@ -70,7 +70,7 @@ through the life of the winding up, not just at commencement.
 
 ## Cross-references
 
-- [`summary-winding-up-desastre.md`](summary-winding-up-desastre.md)
+- [`summary-winding-up-desastre.md`](./summary-winding-up-desastre.md)
   — Article 154A: equivalent for summary winding up.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

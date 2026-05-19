@@ -28,7 +28,7 @@ see_also:
 # Article 4B — Memorandum of Company with Guarantor Members
 
 Article 4B specifies the additional memorandum content for a
-**guarantee company** under [Article 3G](guarantee-companies.md).
+**guarantee company** under [Article 3G](./guarantee-companies.md).
 Guarantee companies have **no share capital**; members are
 **guarantors** who undertake to contribute up to a specified
 amount on wind-up.

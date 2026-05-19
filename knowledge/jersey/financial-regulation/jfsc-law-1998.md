@@ -97,7 +97,7 @@ foreign).
 
 ## Cross-references
 
-- [`jfsc.md`](jfsc.md) — the JFSC's role and structure in
+- [`jfsc.md`](./jfsc.md) — the JFSC's role and structure in
   practice.
-- [`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md)
+- [`financial-services-jersey-law-1998.md`](./financial-services-jersey-law-1998.md)
   — the omnibus regulatory statute administered by the JFSC.

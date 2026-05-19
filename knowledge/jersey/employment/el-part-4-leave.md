@@ -116,6 +116,6 @@ The EL contains working-time provisions:
 
 ## Cross-references
 
-- [`el-part-2-particulars-pay.md`](el-part-2-particulars-pay.md);
+- [`el-part-2-particulars-pay.md`](./el-part-2-particulars-pay.md);
 - [`../discrimination/index.md`](../discrimination/index.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-articles-index.md`](./el-articles-index.md).

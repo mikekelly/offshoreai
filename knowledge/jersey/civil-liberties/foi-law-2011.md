@@ -137,7 +137,7 @@ must show:
 The public-interest test is the **balancing exercise** at
 the heart of contested FOI requests.
 
-See [`foi-exemptions.md`](foi-exemptions.md).
+See [`foi-exemptions.md`](./foi-exemptions.md).
 
 ## The Information Commissioner
 
@@ -153,7 +153,7 @@ The Jersey Office of the Information Commissioner (JOIC):
 
 The JOIC's primary role on FOI is to fulfil the **second
 stage** of the appeals process — see
-[`foi-procedure-and-appeals.md`](foi-procedure-and-appeals.md).
+[`foi-procedure-and-appeals.md`](./foi-procedure-and-appeals.md).
 
 ## Appeals route
 
@@ -222,11 +222,11 @@ For a public authority:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`foi-exemptions.md`](foi-exemptions.md);
-- [`foi-procedure-and-appeals.md`](foi-procedure-and-appeals.md);
-- [`foi-scheduled-public-authorities.md`](foi-scheduled-public-authorities.md);
-- [`information-commissioner.md`](information-commissioner.md);
+- [`index.md`](./index.md);
+- [`foi-exemptions.md`](./foi-exemptions.md);
+- [`foi-procedure-and-appeals.md`](./foi-procedure-and-appeals.md);
+- [`foi-scheduled-public-authorities.md`](./foi-scheduled-public-authorities.md);
+- [`information-commissioner.md`](./information-commissioner.md);
 - [`../data-protection/index.md`](../data-protection/index.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md);
 - [`../use-cases/journalist-ngo-academic/index.md`](../use-cases/journalist-ngo-academic/index.md);

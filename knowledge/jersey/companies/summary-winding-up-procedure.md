@@ -70,7 +70,7 @@ the company turns out insolvent).
 
 ## Cross-references
 
-- [`summary-winding-up-commencement.md`](summary-winding-up-commencement.md)
+- [`summary-winding-up-commencement.md`](./summary-winding-up-commencement.md)
   — Article 147: commencement date.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

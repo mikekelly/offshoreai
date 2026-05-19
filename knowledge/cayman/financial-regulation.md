@@ -138,11 +138,11 @@ Key Cayman industry:
 
 ## Cross-references
 
-- [`cima.md`](cima.md);
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
+- [`cima.md`](./cima.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

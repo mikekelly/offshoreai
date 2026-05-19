@@ -131,7 +131,7 @@ unresponsive.
 
 For damage that is breach of agreement, the **7-day breach
 procedure** applies — see
-[`non-payment-of-rent.md`](non-payment-of-rent.md) for the
+[`non-payment-of-rent.md`](./non-payment-of-rent.md) for the
 template.
 
 ## Set-off as a defence
@@ -149,10 +149,10 @@ eviction.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`condition-reports.md`](condition-reports.md);
-- [`non-payment-of-rent.md`](non-payment-of-rent.md);
-- [`eviction-procedure.md`](eviction-procedure.md);
-- [`public-health-rented-dwellings-law-2018.md`](public-health-rented-dwellings-law-2018.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`condition-reports.md`](./condition-reports.md);
+- [`non-payment-of-rent.md`](./non-payment-of-rent.md);
+- [`eviction-procedure.md`](./eviction-procedure.md);
+- [`public-health-rented-dwellings-law-2018.md`](./public-health-rented-dwellings-law-2018.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md).

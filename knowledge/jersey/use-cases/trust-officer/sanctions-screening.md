@@ -187,5 +187,5 @@ For an active situation:
 ## Cross-references
 
 - [`../../aml-cft/sanctions.md`](../../aml-cft/sanctions.md)
-- [`pep-onboarding.md`](pep-onboarding.md) — PEP screening
+- [`pep-onboarding.md`](./pep-onboarding.md) — PEP screening
   parallel.

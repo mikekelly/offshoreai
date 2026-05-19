@@ -99,13 +99,13 @@ Article 116 and the statutory squeeze-out is unavailable.
 
 ## Cross-references
 
-- [`squeeze-out.md`](squeeze-out.md) — Article 117: offeror's
+- [`squeeze-out.md`](./squeeze-out.md) — Article 117: offeror's
   right to acquire dissenting minority.
-- [`sell-out.md`](sell-out.md) — Article 119: minority's right to
+- [`sell-out.md`](./sell-out.md) — Article 119: minority's right to
   be bought out.
-- [`joint-offers.md`](joint-offers.md) — Article 122: how joint
+- [`joint-offers.md`](./joint-offers.md) — Article 122: how joint
   bidders are treated.
-- [`takeover-associates.md`](takeover-associates.md) — Article
+- [`takeover-associates.md`](./takeover-associates.md) — Article
   123: when shares of associates count as held by the offeror.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

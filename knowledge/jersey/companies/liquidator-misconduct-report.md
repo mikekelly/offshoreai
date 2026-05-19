@@ -71,9 +71,9 @@ to asset realisation and ignore the broader regulatory dimension.
 
 ## Cross-references
 
-- [`misconduct-report-obligations.md`](misconduct-report-obligations.md)
+- [`misconduct-report-obligations.md`](./misconduct-report-obligations.md)
   — Article 185: obligations flowing from a misconduct report.
-- [`disqualification-orders.md`](disqualification-orders.md) —
+- [`disqualification-orders.md`](./disqualification-orders.md) —
   Article 78: disqualification regime.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

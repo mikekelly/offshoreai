@@ -88,9 +88,9 @@ The defence rewards **proactive engagement** with the deterioration.
 
 ## Cross-references
 
-- [`fraudulent-trading.md`](fraudulent-trading.md) — Article 178:
+- [`fraudulent-trading.md`](./fraudulent-trading.md) — Article 178:
   fraudulent-trading liability.
-- [`directors-duties.md`](directors-duties.md) — Article 74:
+- [`directors-duties.md`](./directors-duties.md) — Article 74:
   general duties context.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

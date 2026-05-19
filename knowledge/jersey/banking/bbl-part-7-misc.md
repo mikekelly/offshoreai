@@ -107,7 +107,7 @@ many times, including:
 
 ## Cross-references
 
-- [`bbl-articles-index.md`](bbl-articles-index.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md);
 - [`../financial-regulation/jfsc.md`](../financial-regulation/jfsc.md);
 - [`../financial-regulation/codes-of-practice.md`](../financial-regulation/codes-of-practice.md)
   *(if exists)*.

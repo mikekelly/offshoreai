@@ -133,8 +133,8 @@ The JFSC considers the **broader public interest**:
 
 ## Cross-references
 
-- [`bbl-article-4.md`](bbl-article-4.md);
-- [`bbl-part-2-registration.md`](bbl-part-2-registration.md);
-- [`bbl-article-14.md`](bbl-article-14.md) — capital;
-- [`top-50-policy.md`](top-50-policy.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-4.md`](./bbl-article-4.md);
+- [`bbl-part-2-registration.md`](./bbl-part-2-registration.md);
+- [`bbl-article-14.md`](./bbl-article-14.md) — capital;
+- [`top-50-policy.md`](./top-50-policy.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

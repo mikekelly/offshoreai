@@ -77,6 +77,6 @@ materials.
 
 ## Cross-references
 
-- [`inspector-powers.md`](inspector-powers.md) — Article 129.
+- [`inspector-powers.md`](./inspector-powers.md) — Article 129.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

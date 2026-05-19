@@ -29,7 +29,7 @@ see_also:
 
 Article 33 of the **[Companies (Jersey) Law 1991][cjl]** is the
 **criminal** counterpart to the
-[Article 30](prospectus-compensation.md) civil compensation
+[Article 30](./prospectus-compensation.md) civil compensation
 regime. Authorising circulation of a prospectus containing
 material falsehoods or omissions is a criminal offence, subject
 to a reasonable-belief defence.
@@ -48,7 +48,7 @@ statement accuracy** when the prospectus was circulated.
 The offence requires:
 
 - a **prospectus** within the meaning of
-  [Article 29](prospectuses.md);
+  [Article 29](./prospectuses.md);
 - containing a **material falsehood** or **omission**;
 - **circulated** in or from Jersey;
 - with the defendant's **authorisation**.
@@ -63,7 +63,7 @@ circulation.
 
 The defendant has a defence if they can show **reasonable belief
 in accuracy** at the time of circulation. This mirrors the
-[Article 31](prospectus-exemption.md) civil defence — both turn
+[Article 31](./prospectus-exemption.md) civil defence — both turn
 on the same essential due-diligence inquiry.
 
 In practice:
@@ -90,7 +90,7 @@ Convicted offenders face the penalty specified in **Schedule 1**
 of the Companies Law — typically a fine, imprisonment, or both
 (at the Royal Court's discretion). Directors and officers
 convicted may also face **disqualification** under
-[Article 78](disqualification-orders.md) *(planned)*.
+[Article 78](./disqualification-orders.md) *(planned)*.
 
 ## Relationship with general fraud / Proceeds of Crime offences
 

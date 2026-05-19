@@ -90,8 +90,8 @@ Specific defences:
 
 ## Cross-references
 
-- [`mlo-articles-index.md`](mlo-articles-index.md);
-- [`pocl-article-34.md`](pocl-article-34.md);
-- [`pocl-article-34a.md`](pocl-article-34a.md);
-- [`mlo-article-16.md`](mlo-article-16.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md);
+- [`pocl-article-34.md`](./pocl-article-34.md);
+- [`pocl-article-34a.md`](./pocl-article-34a.md);
+- [`mlo-article-16.md`](./mlo-article-16.md);
 - [`../financial-regulation/fsl-part-5-enforcement.md`](../financial-regulation/fsl-part-5-enforcement.md).

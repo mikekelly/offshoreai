@@ -231,5 +231,5 @@ For DP / AML interaction:
 - [`../../data-protection/dpl-part-3-rights.md`](../../data-protection/dpl-part-3-rights.md);
 - [`../../aml-cft/pocl-article-35.md`](../../aml-cft/pocl-article-35.md);
 - [`../../aml-cft/mlo-article-17.md`](../../aml-cft/mlo-article-17.md);
-- [`tipping-off.md`](tipping-off.md);
-- [`record-retention.md`](record-retention.md).
+- [`tipping-off.md`](./tipping-off.md);
+- [`record-retention.md`](./record-retention.md).

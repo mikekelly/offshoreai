@@ -85,10 +85,10 @@ directors free rein to ignore the deed.
 
 ## Companion provisions
 
-- **[Article 19](no-implied-notice.md)** — no implied notice of
+- **[Article 19](./no-implied-notice.md)** — no implied notice of
   public records: counterparties are not deemed to know what's in
   the company's filed documents merely because those are public.
-- **[Article 20](form-of-contracts.md)** — form of contracts: a
+- **[Article 20](./form-of-contracts.md)** — form of contracts: a
   person with express or implied authority to act for the company
   can bind it by normal contractual procedures.
 

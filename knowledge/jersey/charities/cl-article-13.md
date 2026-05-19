@@ -99,7 +99,7 @@ The restricted section commonly used by:
 
 ## Cross-references
 
-- [`cl-article-7.md`](cl-article-7.md);
-- [`cl-article-14.md`](cl-article-14.md);
-- [`cl-part-2-registration.md`](cl-part-2-registration.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-article-7.md`](./cl-article-7.md);
+- [`cl-article-14.md`](./cl-article-14.md);
+- [`cl-part-2-registration.md`](./cl-part-2-registration.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

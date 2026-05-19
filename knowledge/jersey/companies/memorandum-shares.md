@@ -30,8 +30,8 @@ see_also:
 
 Article 4A specifies the **additional content** required in the
 memorandum of a Jersey company **with shares** — i.e., a company
-under [Article 3C](limited-companies.md) (limited by shares) or
-[Article 3D](unlimited-companies.md) (unlimited with shares).
+under [Article 3C](./limited-companies.md) (limited by shares) or
+[Article 3D](./unlimited-companies.md) (unlimited with shares).
 
 ## What Article 4A says
 
@@ -83,8 +83,8 @@ no-par-value** choice:
 
 This drives the **drafting differences** between par-value and
 no-par-value memoranda — see
-[`par-value-companies.md`](par-value-companies.md) and
-[`no-par-value-companies.md`](no-par-value-companies.md).
+[`par-value-companies.md`](./par-value-companies.md) and
+[`no-par-value-companies.md`](./no-par-value-companies.md).
 
 ## Multi-currency capital
 

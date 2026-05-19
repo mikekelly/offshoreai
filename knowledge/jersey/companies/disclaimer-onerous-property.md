@@ -72,9 +72,9 @@ problem assets and focus on realising valuable ones.
 
 ## Cross-references
 
-- [`disclaimer-contract-leases.md`](disclaimer-contract-leases.md)
+- [`disclaimer-contract-leases.md`](./disclaimer-contract-leases.md)
   — Article 172.
-- [`disclaimer-court-powers.md`](disclaimer-court-powers.md) —
+- [`disclaimer-court-powers.md`](./disclaimer-court-powers.md) —
   Article 173.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

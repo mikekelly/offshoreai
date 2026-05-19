@@ -104,8 +104,8 @@ The IBL requires:
 
 ## Cross-references
 
-- [`ibl-article-20.md`](ibl-article-20.md);
+- [`ibl-article-20.md`](./ibl-article-20.md);
 - [`../companies/protected-cell-companies.md`](../../../jersey/companies/protected-cell-companies.md);
 - [`../companies/incorporated-cell-companies.md`](../../../jersey/companies/incorporated-cell-companies.md);
-- [`captive-insurance.md`](captive-insurance.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`captive-insurance.md`](./captive-insurance.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

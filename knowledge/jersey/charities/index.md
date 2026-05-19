@@ -33,20 +33,20 @@ the **Charity Commissioner's guidance**.
 
 | The question is about... | Read |
 |---|---|
-| Is X a charity in Jersey? | [`cl-article-5.md`](cl-article-5.md) — charitable purposes |
-| Registering a Jersey charity | [`cl-part-2-registration.md`](cl-part-2-registration.md) |
-| Charity Commissioner role | [`cl-part-3-commissioner.md`](cl-part-3-commissioner.md) |
-| Public benefit test | [`cl-article-6.md`](cl-article-6.md) |
-| Charity trustee duties | [`cl-part-4-trustees.md`](cl-part-4-trustees.md) |
-| Investigations of charities | [`cl-part-5-investigations.md`](cl-part-5-investigations.md) |
-| Charitable trust vs foundation vs company | [`charitable-structures.md`](charitable-structures.md) *(planned)* |
+| Is X a charity in Jersey? | [`cl-article-5.md`](./cl-article-5.md) — charitable purposes |
+| Registering a Jersey charity | [`cl-part-2-registration.md`](./cl-part-2-registration.md) |
+| Charity Commissioner role | [`cl-part-3-commissioner.md`](./cl-part-3-commissioner.md) |
+| Public benefit test | [`cl-article-6.md`](./cl-article-6.md) |
+| Charity trustee duties | [`cl-part-4-trustees.md`](./cl-part-4-trustees.md) |
+| Investigations of charities | [`cl-part-5-investigations.md`](./cl-part-5-investigations.md) |
+| Charitable trust vs foundation vs company | [`charitable-structures.md`](./charitable-structures.md) *(planned)* |
 | Charities register | [`../registries/charities-register.md`](../registries/charities-register.md) |
 
 ## Where to start
 
-1. **[`charities-law-2014.md`](charities-law-2014.md)** —
+1. **[`charities-law-2014.md`](./charities-law-2014.md)** —
    concept overview;
-2. **[`cl-articles-index.md`](cl-articles-index.md)** —
+2. **[`cl-articles-index.md`](./cl-articles-index.md)** —
    article-by-article scaffold;
 3. **[`../registries/charities-register.md`](../registries/charities-register.md)**.
 

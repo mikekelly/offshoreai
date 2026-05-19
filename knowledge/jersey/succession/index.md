@@ -45,20 +45,20 @@ buildings).
 
 | The question is about... | Read |
 |---|---|
-| Jersey-resident dying with movable property | [`wsl-articles-index.md`](wsl-articles-index.md) |
-| Non-resident with Jersey real property | [`wsl-article-3.md`](wsl-article-3.md) + customary-law rules |
-| Forced heirship-style rules (légitime) | [`wsl-part-3-legitime.md`](wsl-part-3-legitime.md) |
-| Wills — formalities, capacity | [`wsl-article-5.md`](wsl-article-5.md) |
-| Intestacy | [`wsl-part-4-intestacy.md`](wsl-part-4-intestacy.md) |
-| Probate / administration of estates | [`probate.md`](probate.md) *(planned)* |
-| Jersey-domiciled testator with foreign property | [`wsl-part-5-conflict-of-laws.md`](wsl-part-5-conflict-of-laws.md) |
+| Jersey-resident dying with movable property | [`wsl-articles-index.md`](./wsl-articles-index.md) |
+| Non-resident with Jersey real property | [`wsl-article-3.md`](./wsl-article-3.md) + customary-law rules |
+| Forced heirship-style rules (légitime) | [`wsl-part-3-legitime.md`](./wsl-part-3-legitime.md) |
+| Wills — formalities, capacity | [`wsl-article-5.md`](./wsl-article-5.md) |
+| Intestacy | [`wsl-part-4-intestacy.md`](./wsl-part-4-intestacy.md) |
+| Probate / administration of estates | [`probate.md`](./probate.md) *(planned)* |
+| Jersey-domiciled testator with foreign property | [`wsl-part-5-conflict-of-laws.md`](./wsl-part-5-conflict-of-laws.md) |
 | Trust-vs-will planning | [`../trusts/index.md`](../trusts/index.md) |
 
 ## Where to start
 
-1. **[`wills-and-successions-law-1993.md`](wills-and-successions-law-1993.md)**
+1. **[`wills-and-successions-law-1993.md`](./wills-and-successions-law-1993.md)**
    — concept overview;
-2. **[`wsl-articles-index.md`](wsl-articles-index.md)** —
+2. **[`wsl-articles-index.md`](./wsl-articles-index.md)** —
    article-by-article scaffold;
 3. **[`../use-cases/family-office-adviser/jersey-succession.md`](../use-cases/family-office-adviser/jersey-succession.md)**
    — practical use-case.

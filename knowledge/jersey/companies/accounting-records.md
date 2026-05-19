@@ -69,9 +69,9 @@ Most Jersey companies maintain accounting records:
 
 ## Cross-references
 
-- [`retention-of-records.md`](retention-of-records.md) — Article
+- [`retention-of-records.md`](./retention-of-records.md) — Article
   104: how long records must be kept.
-- [`accounts.md`](accounts.md) — Article 105: the annual
+- [`accounts.md`](./accounts.md) — Article 105: the annual
   accounts derived from the accounting records.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -193,4 +193,4 @@ For crossing:
 ## Cross-references
 
 - [`../../tax/pillar-two.md`](../../tax/pillar-two.md)
-- [`topco-tax.md`](topco-tax.md)
+- [`topco-tax.md`](./topco-tax.md)

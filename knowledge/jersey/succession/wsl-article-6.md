@@ -115,6 +115,6 @@ A testator may have:
 
 ## Cross-references
 
-- [`wsl-article-5.md`](wsl-article-5.md);
-- [`wsl-part-2-wills.md`](wsl-part-2-wills.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-article-5.md`](./wsl-article-5.md);
+- [`wsl-part-2-wills.md`](./wsl-part-2-wills.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

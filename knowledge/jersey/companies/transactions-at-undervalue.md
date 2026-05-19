@@ -90,9 +90,9 @@ becomes insolvent.
 
 ## Cross-references
 
-- [`preferences.md`](preferences.md) — Article 176A: the
+- [`preferences.md`](./preferences.md) — Article 176A: the
   companion claw-back for preferences.
-- [`transactions-preferences-definitions.md`](transactions-preferences-definitions.md)
+- [`transactions-preferences-definitions.md`](./transactions-preferences-definitions.md)
   — Article 176B: connected persons and other definitions.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

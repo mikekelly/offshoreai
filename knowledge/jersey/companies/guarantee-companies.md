@@ -90,7 +90,7 @@ external sources (donations, fees, grants).
 
 ## Memorandum and articles
 
-A guarantee-company memorandum (under [Article 4B](memorandum-guarantee.md)
+A guarantee-company memorandum (under [Article 4B](./memorandum-guarantee.md)
 — *planned*):
 
 - states the company is **limited by guarantee**;

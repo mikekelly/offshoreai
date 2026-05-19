@@ -45,7 +45,7 @@ number — most domestic policyholders are served by branches /
 agencies of UK insurers, not Jersey-incorporated Category A
 insurers.
 
-See [`category-a-permit.md`](category-a-permit.md).
+See [`category-a-permit.md`](./category-a-permit.md).
 
 ## Category B — International / Captive business
 
@@ -65,7 +65,7 @@ Category B is the **dominant** Jersey insurance category. Most
 Jersey insurers are captives or international reinsurers
 under Category B.
 
-See [`category-b-permit.md`](category-b-permit.md).
+See [`category-b-permit.md`](./category-b-permit.md).
 
 ## Why two categories
 
@@ -108,8 +108,8 @@ financial centre** with **limited domestic market**:
 
 ## Cross-references
 
-- [`ibl-article-4.md`](ibl-article-4.md);
-- [`category-a-permit.md`](category-a-permit.md);
-- [`category-b-permit.md`](category-b-permit.md);
-- [`ibl-article-20.md`](ibl-article-20.md) — captive permits;
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-article-4.md`](./ibl-article-4.md);
+- [`category-a-permit.md`](./category-a-permit.md);
+- [`category-b-permit.md`](./category-b-permit.md);
+- [`ibl-article-20.md`](./ibl-article-20.md) — captive permits;
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

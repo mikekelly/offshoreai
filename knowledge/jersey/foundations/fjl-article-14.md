@@ -75,7 +75,7 @@ The wide powers enable foundations to be used as:
 
 - **Holding shares** in a Private Trust Company (PTC);
 - **Common** family-office structure;
-- See [`uses.md`](uses.md).
+- See [`uses.md`](./uses.md).
 
 ### Purpose-trust analogue
 
@@ -111,9 +111,9 @@ Powers are **subject to**:
 
 ## Cross-references
 
-- [`fjl-article-12.md`](fjl-article-12.md);
-- [`fjl-article-13.md`](fjl-article-13.md);
-- [`fjl-article-17.md`](fjl-article-17.md);
-- [`fjl-part-3-capacity.md`](fjl-part-3-capacity.md);
-- [`uses.md`](uses.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-12.md`](./fjl-article-12.md);
+- [`fjl-article-13.md`](./fjl-article-13.md);
+- [`fjl-article-17.md`](./fjl-article-17.md);
+- [`fjl-part-3-capacity.md`](./fjl-part-3-capacity.md);
+- [`uses.md`](./uses.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -176,7 +176,7 @@ If charged:
 
 ## Cross-references
 
-- [`index.md`](index.md);
+- [`index.md`](./index.md);
 - [`../../road-traffic/drink-driving.md`](../../road-traffic/drink-driving.md);
 - [`../../road-traffic/drug-driving.md`](../../road-traffic/drug-driving.md);
 - [`../../road-traffic/disqualification.md`](../../road-traffic/disqualification.md);

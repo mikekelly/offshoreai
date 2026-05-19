@@ -92,10 +92,10 @@ Social security and income tax are **legally separate** but
 
 A separate **Long-Term Care contribution** is collected through
 the income-tax mechanism — see
-[`long-term-care.md`](long-term-care.md).
+[`long-term-care.md`](./long-term-care.md).
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md) — the
+- [`personal-income-tax.md`](./personal-income-tax.md) — the
   parallel income-tax charge.
-- [`long-term-care.md`](long-term-care.md) — LTC contribution.
+- [`long-term-care.md`](./long-term-care.md) — LTC contribution.

@@ -54,15 +54,15 @@ Three propositions are packed into the single sentence:
    under Article 30, etc.).
 3. **"Subject to this Law".** Recognition is qualified by the rest
    of the Law. So a trust that fails [Article 11
-   validity](validity-of-a-trust.md), that is for an unlawful
+   validity](./validity-of-a-trust.md), that is for an unlawful
    purpose, or that falls outside the conditions for non-charitable
    purpose trusts (Article 12), is not recognised under Article 3.
 
 ## Interaction with Article 9 (the firewall)
 
 Article 3 is the **recognition** rule for Jersey trusts (i.e., trusts
-whose proper law is Jersey law — see [`proper-law.md`](proper-law.md)).
-Article 9 — the **[firewall](firewall.md)** — does separate work: it
+whose proper law is Jersey law — see [`proper-law.md`](./proper-law.md)).
+Article 9 — the **[firewall](./firewall.md)** — does separate work: it
 protects a Jersey trust against attack on the basis of foreign rules
 (forced heirship, matrimonial regimes, etc.) that would otherwise
 constrain the settlor's freedom to settle.
@@ -77,7 +77,7 @@ that would prefer the property to flow differently.
 Article 3 is about recognition of a **Jersey** trust by the law of
 Jersey. For the recognition of a **foreign** trust by Jersey, see
 Part 3 of the Law — in particular [Article 49 —
-Enforceability of a foreign trust](foreign-trust-enforceability.md)
+Enforceability of a foreign trust](./foreign-trust-enforceability.md)
  The high-level rule is that Jersey will give effect to
 a foreign trust according to its own proper law, subject to public
 policy.
@@ -105,6 +105,6 @@ policy.
   foreign courts to respect a Jersey trust is done by the firewall
   (Article 9), by jurisdiction clauses in the deed, and by tactical
   litigation choices about where to sue and be sued. See
-  [`firewall.md`](firewall.md).
+  [`firewall.md`](./firewall.md).
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

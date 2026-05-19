@@ -63,9 +63,9 @@ result** of the merger:
 
 ## Cross-references
 
-- [`merger-eligible-bodies.md`](merger-eligible-bodies.md) —
+- [`merger-eligible-bodies.md`](./merger-eligible-bodies.md) —
   Article 127B: eligibility as a **merging** body.
-- [`merger-agreement.md`](merger-agreement.md) — Article 127D:
+- [`merger-agreement.md`](./merger-agreement.md) — Article 127D:
   contents of the merger agreement.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

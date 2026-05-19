@@ -161,9 +161,9 @@ A common scenario:
 
 ## Cross-references
 
-- [`fsl-article-2.md`](fsl-article-2.md);
-- [`fsl-article-7.md`](fsl-article-7.md);
-- [`fsl-article-9.md`](fsl-article-9.md) — fit-and-proper;
+- [`fsl-article-2.md`](./fsl-article-2.md);
+- [`fsl-article-7.md`](./fsl-article-7.md);
+- [`fsl-article-9.md`](./fsl-article-9.md) — fit-and-proper;
 - [`../trusts/index.md`](../trusts/index.md);
 - [`../foundations/qualified-member.md`](../foundations/qualified-member.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

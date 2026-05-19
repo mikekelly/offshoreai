@@ -134,8 +134,8 @@ Jersey **sits between** common-law and civil-law approaches.
 
 ## Cross-references
 
-- [`wsl-article-14.md`](wsl-article-14.md);
-- [`wsl-part-3-legitime.md`](wsl-part-3-legitime.md);
+- [`wsl-article-14.md`](./wsl-article-14.md);
+- [`wsl-part-3-legitime.md`](./wsl-part-3-legitime.md);
 - [`../use-cases/international-lawyer/forced-heirship-question.md`](../../../jersey/use-cases/international-lawyer/forced-heirship-question.md)
   *(if exists)*;
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

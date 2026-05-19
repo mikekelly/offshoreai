@@ -74,13 +74,13 @@ under Article 43 alone. The options:
 
 - wait for the **class to close** (typically on the death of the
   named ancestor);
-- apply to the **Royal Court** under [Article 47](court-variation.md)
+- apply to the **Royal Court** under [Article 47](./court-variation.md)
   for variation in favour of an early termination, with
   representation of unborn / unascertained interests by a **guardian
   ad litem** appointed by the Court;
 - exercise a **deed-based termination power** if the deed includes
-  one (cross-refer [Article 37](article-37-variation.md));
-- use [Article 47B–H mistake set-aside](article-47-set-aside.md) if
+  one (cross-refer [Article 37](./article-37-variation.md));
+- use [Article 47B–H mistake set-aside](./article-47-set-aside.md) if
   the trust was created under qualifying mistake (rarely available
   but occasionally relevant).
 
@@ -124,10 +124,10 @@ A typical termination distribution order:
 
 1. **Settlement of trust liabilities** — taxes, fees, expenses,
    contingent claims;
-2. **Trustee reserve** under [Article 43A](trustee-security.md) for
+2. **Trustee reserve** under [Article 43A](./trustee-security.md) for
    continuing exposures;
 3. **Specific bequests** under the deed (often in-specie property
-   appropriated under [Article 27](power-to-appropriate.md));
+   appropriated under [Article 27](./power-to-appropriate.md));
 4. **Pro-rata distribution** of remaining capital among the residuary
    beneficiaries.
 

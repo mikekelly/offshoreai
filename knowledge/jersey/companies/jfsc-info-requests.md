@@ -65,7 +65,7 @@ The auditor must:
 - **Not obstruct** the inquiry.
 
 Failure can lead to **enforcement** under
-[Article 113O](rules-enforcement.md).
+[Article 113O](./rules-enforcement.md).
 
 ## Pitfalls
 

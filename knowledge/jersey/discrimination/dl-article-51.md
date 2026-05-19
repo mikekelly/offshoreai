@@ -106,7 +106,7 @@ Then **burden shifts** to the respondent:
 
 ## Cross-references
 
-- [`dl-part-6-enforcement.md`](dl-part-6-enforcement.md);
-- [`dl-articles-index.md`](dl-articles-index.md);
+- [`dl-part-6-enforcement.md`](./dl-part-6-enforcement.md);
+- [`dl-articles-index.md`](./dl-articles-index.md);
 - [`../employment/el-article-96.md`](../employment/el-article-96.md);
 - [`../employment/el-part-8-tribunal.md`](../employment/el-part-8-tribunal.md).

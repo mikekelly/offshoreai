@@ -58,6 +58,6 @@ employment access.
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md);
-- [`control-of-housing-and-work-law.md`](control-of-housing-and-work-law.md).
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md);
+- [`control-of-housing-and-work-law.md`](./control-of-housing-and-work-law.md).

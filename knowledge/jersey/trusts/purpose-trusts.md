@@ -112,7 +112,7 @@ absence of beneficiaries with standing to bring an enforcement claim.
 - The Royal Court has supervisory jurisdiction over the enforcer's
   performance of the function.
 
-For detail see [`enforcers.md`](enforcers.md).
+For detail see [`enforcers.md`](./enforcers.md).
 
 ## Permissible purposes
 
@@ -138,13 +138,13 @@ Purposes that satisfy these tests include:
 ## Duration
 
 Like other Jersey trusts, an NCPT may continue **for an unlimited
-period** — see [Article 15](duration.md). There is no rule against
+period** — see [Article 15](./duration.md). There is no rule against
 perpetuities for trusts created after the 2006 amendments.
 
 ## Failure / cy-près-style redirection
 
 If the purpose of an NCPT becomes impossible or impracticable, the
-Royal Court has power under [Article 47A](court-purpose-trust-redirection.md)
+Royal Court has power under [Article 47A](./court-purpose-trust-redirection.md)
  to redirect the property to alternative purposes
 consistent with the settlor's intent.
 

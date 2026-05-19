@@ -33,40 +33,40 @@ The Law has **5 Parts** and ~30 active Articles.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 1 | Interpretation | [safl-part-1-preliminary.md](safl-part-1-preliminary.md) |
-| 2 | Application | [safl-part-1-preliminary.md](safl-part-1-preliminary.md) |
+| 1 | Interpretation | [safl-part-1-preliminary.md](./safl-part-1-preliminary.md) |
+| 2 | Application | [safl-part-1-preliminary.md](./safl-part-1-preliminary.md) |
 
 ## Part 2 — Designations
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 3 | Designation by the Minister | [safl-article-3.md](safl-article-3.md) |
-| 4 | UN-listed persons | [safl-article-4.md](safl-article-4.md) |
-| 5 | UK-listed persons | [safl-article-5.md](safl-article-5.md) |
-| 6 — 9 | EU listings, autonomous Jersey designations, listing review | [safl-part-2-designations.md](safl-part-2-designations.md) |
+| 3 | Designation by the Minister | [safl-article-3.md](./safl-article-3.md) |
+| 4 | UN-listed persons | [safl-article-4.md](./safl-article-4.md) |
+| 5 | UK-listed persons | [safl-article-5.md](./safl-article-5.md) |
+| 6 — 9 | EU listings, autonomous Jersey designations, listing review | [safl-part-2-designations.md](./safl-part-2-designations.md) |
 
 ## Part 3 — Prohibitions
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 10 | Asset-freezing prohibition | [safl-article-10.md](safl-article-10.md) |
-| 11 | Making funds / economic resources available | [safl-article-11.md](safl-article-11.md) |
-| 12 — 14 | Specific sectoral prohibitions; financial-services; trade | [safl-part-3-prohibitions.md](safl-part-3-prohibitions.md) |
+| 10 | Asset-freezing prohibition | [safl-article-10.md](./safl-article-10.md) |
+| 11 | Making funds / economic resources available | [safl-article-11.md](./safl-article-11.md) |
+| 12 — 14 | Specific sectoral prohibitions; financial-services; trade | [safl-part-3-prohibitions.md](./safl-part-3-prohibitions.md) |
 
 ## Part 4 — Licensing and Exceptions
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 15 | Licences | [safl-article-15.md](safl-article-15.md) |
-| 16 — 19 | Specific categories — humanitarian, legal fees, basic needs | [safl-part-4-licensing.md](safl-part-4-licensing.md) |
+| 15 | Licences | [safl-article-15.md](./safl-article-15.md) |
+| 16 — 19 | Specific categories — humanitarian, legal fees, basic needs | [safl-part-4-licensing.md](./safl-part-4-licensing.md) |
 
 ## Part 5 — Enforcement and Miscellaneous
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 20 | Criminal offences | [safl-article-20.md](safl-article-20.md) |
-| 21 — 25 | Civil penalties, public statements, appeals | [safl-part-5-enforcement.md](safl-part-5-enforcement.md) |
-| 26 — 30 | Regulations, cooperation, citation | [safl-part-5-enforcement.md](safl-part-5-enforcement.md) |
+| 20 | Criminal offences | [safl-article-20.md](./safl-article-20.md) |
+| 21 — 25 | Civil penalties, public statements, appeals | [safl-part-5-enforcement.md](./safl-part-5-enforcement.md) |
+| 26 — 30 | Regulations, cooperation, citation | [safl-part-5-enforcement.md](./safl-part-5-enforcement.md) |
 
 ## Status
 

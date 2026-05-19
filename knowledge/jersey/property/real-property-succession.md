@@ -139,9 +139,9 @@ is **historically rooted** but increasingly criticised:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`loi-1880-sur-la-propriete-fonciere.md`](loi-1880-sur-la-propriete-fonciere.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`loi-1880-sur-la-propriete-fonciere.md`](./loi-1880-sur-la-propriete-fonciere.md);
 - [`../succession/index.md`](../succession/index.md);
 - [`../succession/wsl-article-2.md`](../succession/wsl-article-2.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

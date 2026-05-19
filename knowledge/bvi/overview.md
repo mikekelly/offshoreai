@@ -116,7 +116,7 @@ The **BVI Financial Services Commission (FSC)**:
 - **Modernised** BVI BC Act 2004;
 - **Replaced** older International Business Company (IBC);
 - **Simple**, **flexible**, **fast**;
-- See [`business-company.md`](business-company.md).
+- See [`business-company.md`](./business-company.md).
 
 ### VISTA trusts
 
@@ -152,11 +152,11 @@ The **BVI Financial Services Commission (FSC)**:
 
 ## Cross-references
 
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`business-company.md`](business-company.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`tax.md`](tax.md);
-- [`fsc.md`](fsc.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`business-company.md`](./business-company.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`tax.md`](./tax.md);
+- [`fsc.md`](./fsc.md);
 - [`../jersey/index.md`](../jersey/index.md).

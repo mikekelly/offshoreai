@@ -190,11 +190,11 @@ structuring.
 
 ## Cross-references
 
-- [`funds.md`](funds.md);
-- [`cima.md`](cima.md);
-- [`private-funds-act.md`](private-funds-act.md);
-- [`exempted-company.md`](exempted-company.md);
-- [`segregated-portfolio-company.md`](segregated-portfolio-company.md);
+- [`funds.md`](./funds.md);
+- [`cima.md`](./cima.md);
+- [`private-funds-act.md`](./private-funds-act.md);
+- [`exempted-company.md`](./exempted-company.md);
+- [`segregated-portfolio-company.md`](./segregated-portfolio-company.md);
 - [`../jersey/funds/expert-fund.md`](../jersey/funds/expert-fund.md);
 - [`../jersey/funds/listed-fund.md`](../jersey/funds/listed-fund.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

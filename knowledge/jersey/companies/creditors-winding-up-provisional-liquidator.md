@@ -70,7 +70,7 @@ court process runs its course.
 
 ## Cross-references
 
-- [`creditors-winding-up-creditor-application.md`](creditors-winding-up-creditor-application.md)
+- [`creditors-winding-up-creditor-application.md`](./creditors-winding-up-creditor-application.md)
   — Article 157A.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

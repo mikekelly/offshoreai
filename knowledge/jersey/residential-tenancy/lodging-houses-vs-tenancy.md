@@ -154,8 +154,8 @@ for an eviction order.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`forms-of-tenancy.md`](forms-of-tenancy.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`forms-of-tenancy.md`](./forms-of-tenancy.md);
 - [`../contract/index.md`](../contract/index.md);
 - [`../property/leases.md`](../property/leases.md).

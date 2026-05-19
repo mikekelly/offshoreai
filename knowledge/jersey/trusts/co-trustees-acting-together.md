@@ -81,7 +81,7 @@ This is important practically:
 
 - it documents the dissenter's position for the future;
 - it engages the **outgoing-trustee protections** in
-  [Article 34](outgoing-trustee.md) should the dissenter
+  [Article 34](./outgoing-trustee.md) should the dissenter
   resign over the decision;
 - it limits the dissenter's personal liability for any consequent
   breach by the trust.
@@ -91,7 +91,7 @@ This is important practically:
 A dissenting trustee in a deadlock — particularly where the deed
 requires unanimity and the trustees cannot agree on a momentous
 decision — may apply to the Royal Court for **directions** under
-[Article 51](article-51-directions.md). The category-3 surrender of
+[Article 51](./article-51-directions.md). The category-3 surrender of
 discretion (where the trustees surrender to the Court because they
 are deadlocked) is the framework. The Court then takes the
 substantive decision.
@@ -102,7 +102,7 @@ A **corporate trustee** is a single legal person, even though
 internally it acts through its board. Article 22's joint-action rule
 applies to **separate trustees**, not to the internal governance of
 a corporate trustee. The corporate trustee's internal decision-
-making is governed by [Article 28](corporate-trustee-resolution.md) —
+making is governed by [Article 28](./corporate-trustee-resolution.md) —
 typically a board resolution or properly delegated officer action.
 
 ## Co-trustees and delegation
@@ -111,7 +111,7 @@ Article 22's unanimity rule applies to the **exercise** of powers,
 not to **administrative implementation**. A unanimous trustee
 decision to (e.g.) sell a trust asset can be **implemented** by one
 trustee acting alone, provided the delegation is consistent with
-[Article 25](trustee-delegation.md). The unanimous decision is the
+[Article 25](./trustee-delegation.md). The unanimous decision is the
 gating step; implementation can be operationally streamlined.
 
 ## Pitfalls
@@ -131,7 +131,7 @@ gating step; implementation can be operationally streamlined.
 - **Deadlock without resolution mechanism.** A deed providing for
   unanimity without a deadlock-resolution mechanism (e.g., independent
   trustee casting vote, protector decision, Court application) is
-  fragile — every standoff requires an [Article 51](article-51-directions.md)
+  fragile — every standoff requires an [Article 51](./article-51-directions.md)
   application.
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

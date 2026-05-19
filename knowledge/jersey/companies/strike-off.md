@@ -76,7 +76,7 @@ It is **simpler and cheaper** than formal winding up, but:
 
 ## Cross-references
 
-- [`strike-off-duration.md`](strike-off-duration.md) — Article
+- [`strike-off-duration.md`](./strike-off-duration.md) — Article
   205A: strike-off at end of limited duration.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

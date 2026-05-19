@@ -148,7 +148,7 @@ A common question: can I rent my house on AirBnB?
   short-let class) requiring permission;
 - **Jersey has been tightening** rules in this area to
   protect housing supply;
-- See [`change-of-use.md`](change-of-use.md).
+- See [`change-of-use.md`](./change-of-use.md).
 
 ## Conservation areas and listed buildings
 
@@ -161,8 +161,8 @@ Everything narrows substantially:
   permission — both may be needed;
 - **Demolition** typically requires consent.
 
-See [`listed-buildings.md`](listed-buildings.md) and
-[`conservation-areas.md`](conservation-areas.md).
+See [`listed-buildings.md`](./listed-buildings.md) and
+[`conservation-areas.md`](./conservation-areas.md).
 
 ## Practical sequence
 
@@ -200,12 +200,12 @@ For a typical Jersey extension:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`permitted-development.md`](permitted-development.md);
-- [`application-process.md`](application-process.md);
-- [`change-of-use.md`](change-of-use.md);
-- [`listed-buildings.md`](listed-buildings.md);
-- [`conservation-areas.md`](conservation-areas.md);
-- [`building-bye-laws.md`](building-bye-laws.md);
-- [`enforcement.md`](enforcement.md);
+- [`index.md`](./index.md);
+- [`permitted-development.md`](./permitted-development.md);
+- [`application-process.md`](./application-process.md);
+- [`change-of-use.md`](./change-of-use.md);
+- [`listed-buildings.md`](./listed-buildings.md);
+- [`conservation-areas.md`](./conservation-areas.md);
+- [`building-bye-laws.md`](./building-bye-laws.md);
+- [`enforcement.md`](./enforcement.md);
 - [`../property/restrictive-covenants.md`](../property/restrictive-covenants.md).

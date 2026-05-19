@@ -81,7 +81,7 @@ intact.
 
 ## Cross-references
 
-- [`merger-approval.md`](merger-approval.md) — Article 127F:
+- [`merger-approval.md`](./merger-approval.md) — Article 127F:
   full approval regime.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

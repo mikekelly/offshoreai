@@ -85,7 +85,7 @@ During pregnancy / leave:
 
 ## Cross-references
 
-- [`el-article-32.md`](el-article-32.md);
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-4-leave.md`](el-part-4-leave.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-32.md`](./el-article-32.md);
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-4-leave.md`](./el-part-4-leave.md);
+- [`el-articles-index.md`](./el-articles-index.md).

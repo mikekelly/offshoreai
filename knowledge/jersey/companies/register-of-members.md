@@ -71,7 +71,7 @@ This means:
 
 "Prima facie" — not conclusive. The register can be:
 
-- **Rectified** under [Article 47](register-rectification.md) if
+- **Rectified** under [Article 47](./register-rectification.md) if
   incorrect;
 - **Challenged** in subsequent proceedings if title evidence
   shows otherwise.
@@ -85,7 +85,7 @@ shares for a beneficial owner:
 - the **registered holder** is the trustee / nominee / custodian;
 - the **beneficial owner** is not on the register;
 - the company is **entitled to treat the registered holder as
-  the full member** (see [Article 48](no-trusts-on-register.md)).
+  the full member** (see [Article 48](./no-trusts-on-register.md)).
 
 The **beneficial-ownership data** is recorded separately under
 the FSDI Law 2020 and is **not public** — see
@@ -94,11 +94,11 @@ the FSDI Law 2020 and is **not public** — see
 
 ## Where the register is kept
 
-[Article 44](register-location.md) governs where the register
+[Article 44](./register-location.md) governs where the register
 must be kept — typically at the registered office or another
 location notified to the Registrar.
 
-[Article 45](register-inspection.md) governs members' right to
+[Article 45](./register-inspection.md) governs members' right to
 inspect.
 
 ## Pitfalls

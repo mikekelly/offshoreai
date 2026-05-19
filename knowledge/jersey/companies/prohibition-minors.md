@@ -50,7 +50,7 @@ captures **protected persons** — those under formal incapacity
 
 The policy reason: a minor cannot validly contract, so cannot
 validly **agree to become a member** under
-[Article 25](definition-of-member.md).
+[Article 25](./definition-of-member.md).
 
 ## How structures accommodate minor beneficiaries
 

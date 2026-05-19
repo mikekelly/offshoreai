@@ -34,7 +34,7 @@ residential tenancy** by either:
 For **breach** by the tenant (including non-payment), the
 landlord uses the **breach procedure** rather than a
 termination notice — see
-[`non-payment-of-rent.md`](non-payment-of-rent.md).
+[`non-payment-of-rent.md`](./non-payment-of-rent.md).
 
 ## Justified grounds (3 months' notice)
 
@@ -46,7 +46,7 @@ The most common ground. Sub-procedure:
 2. If unremedied, **application to Petty Debts Court**;
 3. Court order for termination + eviction.
 
-See [`non-payment-of-rent.md`](non-payment-of-rent.md) for
+See [`non-payment-of-rent.md`](./non-payment-of-rent.md) for
 the detailed procedure.
 
 ### Owner occupation
@@ -158,9 +158,9 @@ Whichever ground is used:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`notice-periods.md`](notice-periods.md);
-- [`non-payment-of-rent.md`](non-payment-of-rent.md);
-- [`eviction-procedure.md`](eviction-procedure.md);
-- [`discrimination-in-housing.md`](discrimination-in-housing.md);
-- [`2025-amendment-law.md`](2025-amendment-law.md).
+- [`index.md`](./index.md);
+- [`notice-periods.md`](./notice-periods.md);
+- [`non-payment-of-rent.md`](./non-payment-of-rent.md);
+- [`eviction-procedure.md`](./eviction-procedure.md);
+- [`discrimination-in-housing.md`](./discrimination-in-housing.md);
+- [`2025-amendment-law.md`](./2025-amendment-law.md).

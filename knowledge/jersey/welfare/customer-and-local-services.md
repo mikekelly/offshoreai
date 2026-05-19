@@ -86,7 +86,7 @@ When a decision is contested:
 3. **Further appeal** to the Royal Court on points of
    law.
 
-See [`appeals.md`](appeals.md).
+See [`appeals.md`](./appeals.md).
 
 ## Fraud and overpayment
 
@@ -111,10 +111,10 @@ Beyond welfare, CLS provides:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`income-support-law-2007.md`](income-support-law-2007.md);
-- [`social-security-law-1974.md`](social-security-law-1974.md);
-- [`appeals.md`](appeals.md);
-- [`fraud-and-overpayment.md`](fraud-and-overpayment.md);
+- [`index.md`](./index.md);
+- [`income-support-law-2007.md`](./income-support-law-2007.md);
+- [`social-security-law-1974.md`](./social-security-law-1974.md);
+- [`appeals.md`](./appeals.md);
+- [`fraud-and-overpayment.md`](./fraud-and-overpayment.md);
 - [`../tax/revenue-jersey.md`](../tax/revenue-jersey.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

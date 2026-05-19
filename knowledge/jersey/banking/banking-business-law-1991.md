@@ -94,6 +94,6 @@ Banks must:
 
 - [`../financial-regulation/banking-business-law-1991.md`](../financial-regulation/banking-business-law-1991.md)
   — regulator's framework view.
-- [`depositor-compensation.md`](depositor-compensation.md) —
+- [`depositor-compensation.md`](./depositor-compensation.md) —
   depositor protection scheme.
-- [`top-50-policy.md`](top-50-policy.md) — historical policy.
+- [`top-50-policy.md`](./top-50-policy.md) — historical policy.

@@ -92,7 +92,7 @@ For Jersey tax compliance:
 
 ## Cross-references
 
-- [`revenue-jersey.md`](revenue-jersey.md) — administering body.
-- [`itl-articles-index.md`](itl-articles-index.md).
+- [`revenue-jersey.md`](./revenue-jersey.md) — administering body.
+- [`itl-articles-index.md`](./itl-articles-index.md).
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

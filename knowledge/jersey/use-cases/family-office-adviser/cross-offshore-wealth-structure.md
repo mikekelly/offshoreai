@@ -272,10 +272,10 @@ For a new cross-offshore family structure:
 
 ## Cross-references
 
-- [`jersey-vs-guernsey-choice.md`](jersey-vs-guernsey-choice.md);
-- [`when-ptc.md`](when-ptc.md);
-- [`family-governance-overlay.md`](family-governance-overlay.md);
-- [`asset-protection.md`](asset-protection.md);
+- [`jersey-vs-guernsey-choice.md`](./jersey-vs-guernsey-choice.md);
+- [`when-ptc.md`](./when-ptc.md);
+- [`family-governance-overlay.md`](./family-governance-overlay.md);
+- [`asset-protection.md`](./asset-protection.md);
 - [`../international-lawyer/multi-jurisdictional-offshore-structure.md`](../international-lawyer/multi-jurisdictional-offshore-structure.md);
 - [`../../../guernsey/index.md`](../../../guernsey/index.md);
 - [`../../../cayman/index.md`](../../../cayman/index.md);

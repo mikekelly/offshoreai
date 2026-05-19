@@ -242,4 +242,4 @@ For an active matter:
 ## Cross-references
 
 - [`../../legal-system/royal-court.md`](../../legal-system/royal-court.md)
-- [`choosing-division.md`](choosing-division.md)
+- [`choosing-division.md`](./choosing-division.md)

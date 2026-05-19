@@ -110,12 +110,12 @@ If CDD cannot be completed:
 
 ## Cross-references
 
-- [`mlo-article-6.md`](mlo-article-6.md) — when CDD applies;
-- [`mlo-article-7.md`](mlo-article-7.md) — identification /
+- [`mlo-article-6.md`](./mlo-article-6.md) — when CDD applies;
+- [`mlo-article-7.md`](./mlo-article-7.md) — identification /
   verification;
-- [`mlo-article-8.md`](mlo-article-8.md) — beneficial
+- [`mlo-article-8.md`](./mlo-article-8.md) — beneficial
   ownership;
-- [`mlo-article-11.md`](mlo-article-11.md) — simplified CDD;
-- [`mlo-article-12.md`](mlo-article-12.md) — enhanced CDD;
+- [`mlo-article-11.md`](./mlo-article-11.md) — simplified CDD;
+- [`mlo-article-12.md`](./mlo-article-12.md) — enhanced CDD;
 - [`../use-cases/compliance-mlro/cdd-refresh-cycle.md`](../use-cases/compliance-mlro/cdd-refresh-cycle.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

@@ -47,15 +47,15 @@ Persons who **cannot serve as auditor**:
 ### Insufficient qualifications
 
 A person without the qualifications required under
-[Articles 111](auditor-registration.md) and
-[112](auditor-qualification.md) is not on the recognised-auditor
+[Articles 111](./auditor-registration.md) and
+[112](./auditor-qualification.md) is not on the recognised-auditor
 register and cannot validly act.
 
 ### Conflicts of interest
 
 A person with a substantive conflict — typically a financial
 interest in the audited company — is ineligible. The
-**independence** rules in [Article 113E](auditor-independence.md)
+**independence** rules in [Article 113E](./auditor-independence.md)
 expand on this.
 
 ### Professional sanctions
@@ -72,7 +72,7 @@ its auditor. This is the most basic independence rule.
 ### Disqualified persons
 
 A person subject to a Companies Law
-[Article 78](disqualification-orders.md) disqualification order
+[Article 78](./disqualification-orders.md) disqualification order
 cannot serve as auditor.
 
 ### Lack of professional standing

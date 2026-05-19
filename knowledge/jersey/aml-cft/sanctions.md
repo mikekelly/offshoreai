@@ -86,5 +86,5 @@ regimes.
 
 ## Cross-references
 
-- [`aml-cft-handbook.md`](aml-cft-handbook.md) — sanctions
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md) — sanctions
   obligations are addressed in the AML/CFT Handbook.

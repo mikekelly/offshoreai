@@ -35,7 +35,7 @@ for compulsory hospital admission:
 
 Plus criminal-justice routes (hospital orders post-
 conviction, etc.) covered in
-[`mental-health-law-2016.md`](mental-health-law-2016.md).
+[`mental-health-law-2016.md`](./mental-health-law-2016.md).
 
 ## Article 17 — Emergency admission
 
@@ -216,12 +216,12 @@ After discharge:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`mental-health-law-2016.md`](mental-health-law-2016.md);
-- [`mental-health-tribunal.md`](mental-health-tribunal.md);
-- [`nearest-relative.md`](nearest-relative.md);
-- [`consent-to-treatment.md`](consent-to-treatment.md);
-- [`guardianship.md`](guardianship.md);
-- [`capacity-and-self-determination-law-2016.md`](capacity-and-self-determination-law-2016.md);
+- [`index.md`](./index.md);
+- [`mental-health-law-2016.md`](./mental-health-law-2016.md);
+- [`mental-health-tribunal.md`](./mental-health-tribunal.md);
+- [`nearest-relative.md`](./nearest-relative.md);
+- [`consent-to-treatment.md`](./consent-to-treatment.md);
+- [`guardianship.md`](./guardianship.md);
+- [`capacity-and-self-determination-law-2016.md`](./capacity-and-self-determination-law-2016.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

@@ -41,20 +41,20 @@ flows.
 
 | The question is about... | Read |
 |---|---|
-| Whether the DPL applies to my activity | [`dpl-article-2.md`](dpl-article-2.md) — application |
-| Legal basis for processing personal data | [`dpl-article-8.md`](dpl-article-8.md) |
-| Data subject rights (access, erasure, etc.) | [`dpl-part-3-rights.md`](dpl-part-3-rights.md) |
-| International data transfers | [`dpl-part-5-transfers.md`](dpl-part-5-transfers.md) |
-| Data breach notification | [`dpl-article-43.md`](dpl-article-43.md) |
-| Information Commissioner powers | [`dpl-part-6-authority.md`](dpl-part-6-authority.md) |
-| GDPR equivalence | [`gdpr-equivalence.md`](gdpr-equivalence.md) *(planned)* |
-| Specific JFSC / AML interaction with DPL | [`dpl-aml-cft-interaction.md`](dpl-aml-cft-interaction.md) *(planned)* |
+| Whether the DPL applies to my activity | [`dpl-article-2.md`](./dpl-article-2.md) — application |
+| Legal basis for processing personal data | [`dpl-article-8.md`](./dpl-article-8.md) |
+| Data subject rights (access, erasure, etc.) | [`dpl-part-3-rights.md`](./dpl-part-3-rights.md) |
+| International data transfers | [`dpl-part-5-transfers.md`](./dpl-part-5-transfers.md) |
+| Data breach notification | [`dpl-article-43.md`](./dpl-article-43.md) |
+| Information Commissioner powers | [`dpl-part-6-authority.md`](./dpl-part-6-authority.md) |
+| GDPR equivalence | [`gdpr-equivalence.md`](./gdpr-equivalence.md) *(planned)* |
+| Specific JFSC / AML interaction with DPL | [`dpl-aml-cft-interaction.md`](./dpl-aml-cft-interaction.md) *(planned)* |
 
 ## Where to start
 
-1. **[`data-protection-jersey-law-2018.md`](data-protection-jersey-law-2018.md)**
+1. **[`data-protection-jersey-law-2018.md`](./data-protection-jersey-law-2018.md)**
    — concept overview;
-2. **[`dpl-articles-index.md`](dpl-articles-index.md)** —
+2. **[`dpl-articles-index.md`](./dpl-articles-index.md)** —
    article-by-article scaffold;
 3. **JOIC website** for current guidance and forms.
 

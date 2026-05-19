@@ -38,7 +38,7 @@ Article 21 of the **[Trusts (Jersey) Law 1984][tjl]** is the **core
 duties** provision. It sets out the **statutory baseline** of trustee
 obligations on top of which the deed and the equitable jurisdiction
 of the Royal Court layer further duties. It is the foundation for the
-breach-of-trust liability in [Article 30](breach-of-trust-liability.md)
+breach-of-trust liability in [Article 30](./breach-of-trust-liability.md)
 
 
 ## What Article 21 says
@@ -102,7 +102,7 @@ saturate fiduciary practice.
 
 The first duty is **compliance with the deed**. Where the deed is
 silent, the trustee acts under the general statutory powers
-([Article 24](trustee-powers.md)) consistent with the duty of
+([Article 24](./trustee-powers.md)) consistent with the duty of
 prudent administration.
 
 ### Preserve and enhance value
@@ -123,7 +123,7 @@ The **no-profit rule** is one of the strictest of fiduciary rules. A
 trustee cannot:
 
 - charge fees for services unless the deed allows or the Court
-  approves (the [Article 26](trustee-remuneration.md) statutory
+  approves (the [Article 26](./trustee-remuneration.md) statutory
   remuneration permission for professional trustees is the major
   exception);
 - take a benefit from a transaction the trustee enters on behalf of
@@ -144,15 +144,15 @@ The trustee must:
   performance; and
 - keep trust property **segregated** from personal assets.
 
-These duties underpin the [Schmidt v Rosewood](beneficiary-rights.md)
+These duties underpin the [Schmidt v Rosewood](./beneficiary-rights.md)
 disclosure framework — without accounts, the trustee cannot give
 the disclosure the supervisory jurisdiction may require.
 
 ### Enforcer for purpose trusts
 
 For non-charitable purpose trusts, the trustee must ensure an
-**enforcer** is in place — see [Articles 12](purpose-trusts.md) and
-[13](enforcers.md).
+**enforcer** is in place — see [Articles 12](./purpose-trusts.md) and
+[13](./enforcers.md).
 
 ## The deed cannot exclude all duties
 
@@ -174,7 +174,7 @@ Although not expressly listed in Article 21, the trustee owes a
 **duty of confidentiality** to the trust — derived from the utmost
 good faith standard and from the case law of the Royal Court. The
 duty bounds the trustee's response to requests for information from
-third parties (see [Schmidt v Rosewood / beneficiary-rights.md](beneficiary-rights.md))
+third parties (see [Schmidt v Rosewood / beneficiary-rights.md](./beneficiary-rights.md))
 and is the basis for the trustee's resistance to fishing-expedition
 disclosure orders.
 
@@ -193,7 +193,7 @@ should know:
   appropriately.
 - The Royal Court line on *Public Trustee v Cooper* applications —
   the trustee's duty to seek Court blessing for momentous decisions
-  (see [`article-51-directions.md`](article-51-directions.md)).
+  (see [`article-51-directions.md`](./article-51-directions.md)).
 
 ## Pitfalls
 

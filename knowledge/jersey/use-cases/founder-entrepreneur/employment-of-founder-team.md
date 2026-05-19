@@ -122,7 +122,7 @@ For Jersey topco employing founders / staff:
 - **Specific** documentation of Jersey activity;
 - **Subject to** Substance Law in-scope categories.
 
-See [`substance-for-topco.md`](substance-for-topco.md).
+See [`substance-for-topco.md`](./substance-for-topco.md).
 
 ### Discrimination considerations
 
@@ -156,7 +156,7 @@ For early-stage equity:
   investors;
 - **Specific** vesting and acceleration provisions;
 - **Specific** drag-along / tag-along arrangements (see
-  [`drag-tag-rofr.md`](drag-tag-rofr.md));
+  [`drag-tag-rofr.md`](./drag-tag-rofr.md));
 - **Specific** investor protections (information rights,
   consent rights).
 
@@ -237,6 +237,6 @@ For new founder team:
 - [`../../employment/el-part-5-termination.md`](../../employment/el-part-5-termination.md);
 - [`../../discrimination/index.md`](../../discrimination/index.md);
 - [`../../immigration-residency/chwl-article-19.md`](../../immigration-residency/chwl-article-19.md);
-- [`share-schemes.md`](share-schemes.md);
-- [`drag-tag-rofr.md`](drag-tag-rofr.md);
-- [`substance-for-topco.md`](substance-for-topco.md).
+- [`share-schemes.md`](./share-schemes.md);
+- [`drag-tag-rofr.md`](./drag-tag-rofr.md);
+- [`substance-for-topco.md`](./substance-for-topco.md).

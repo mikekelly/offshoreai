@@ -114,7 +114,7 @@ For a non-Entitled person to take Jersey employment:
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-part-4-employment.md`](chwl-part-4-employment.md);
-- [`employment-status-categories.md`](employment-status-categories.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-part-4-employment.md`](./chwl-part-4-employment.md);
+- [`employment-status-categories.md`](./employment-status-categories.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

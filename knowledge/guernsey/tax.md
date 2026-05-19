@@ -115,9 +115,9 @@ Tax compliance through:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/tax/index.md`](../jersey/tax/index.md);
 - [`../jersey/tax/zero-ten.md`](../jersey/tax/zero-ten.md);
 - [`../jersey/international/pillar-two-mcit.md`](../jersey/international/pillar-two-mcit.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

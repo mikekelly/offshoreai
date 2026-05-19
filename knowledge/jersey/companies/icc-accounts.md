@@ -71,7 +71,7 @@ legal structure.
 
 ## Cross-references
 
-- [`accounts.md`](accounts.md) — Article 105: general accounts
+- [`accounts.md`](./accounts.md) — Article 105: general accounts
   regime.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

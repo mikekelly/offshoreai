@@ -124,7 +124,7 @@ Article 2 excludes:
 
 - A **cell** of a Jersey PCC operates as a separate underwriter;
 - Each cell must comply with the IBL through the cell company;
-- See [`ibl-part-6-captives.md`](ibl-part-6-captives.md).
+- See [`ibl-part-6-captives.md`](./ibl-part-6-captives.md).
 
 ### Crypto / DeFi insurance
 
@@ -136,7 +136,7 @@ Article 2 excludes:
 
 ## Cross-references
 
-- [`ibl-article-3.md`](ibl-article-3.md);
-- [`ibl-article-4.md`](ibl-article-4.md);
-- [`captive-insurance.md`](captive-insurance.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-article-3.md`](./ibl-article-3.md);
+- [`ibl-article-4.md`](./ibl-article-4.md);
+- [`captive-insurance.md`](./captive-insurance.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

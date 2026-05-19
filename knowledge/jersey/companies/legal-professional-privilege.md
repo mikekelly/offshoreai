@@ -58,7 +58,7 @@ privilege provision for Part 19 investigations.
 
 ## Cross-references
 
-- [`privileged-information.md`](privileged-information.md) —
+- [`privileged-information.md`](./privileged-information.md) —
   Article 139: Part 19 investigations privilege.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

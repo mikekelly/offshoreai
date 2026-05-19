@@ -62,9 +62,9 @@ This is operationally important for:
 
 ## Cross-references
 
-- [`proxies.md`](proxies.md) — Article 96: proxy appointment and
+- [`proxies.md`](./proxies.md) — Article 96: proxy appointment and
   voting.
-- [`notice-of-meetings.md`](notice-of-meetings.md) — Article 91:
+- [`notice-of-meetings.md`](./notice-of-meetings.md) — Article 91:
   meeting notice requirements.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

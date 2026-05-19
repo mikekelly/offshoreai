@@ -75,11 +75,11 @@ how a new cell comes into being.
 
 ## Cross-references
 
-- [`cell-companies.md`](cell-companies.md) — overview of cell
+- [`cell-companies.md`](./cell-companies.md) — overview of cell
   companies generally (Article 3I).
-- [`icc-cell-creation.md`](icc-cell-creation.md) — Article 127YC:
+- [`icc-cell-creation.md`](./icc-cell-creation.md) — Article 127YC:
   the creation mechanic.
-- [`icc-cell-articles.md`](icc-cell-articles.md) — Article 127YB:
+- [`icc-cell-articles.md`](./icc-cell-articles.md) — Article 127YB:
   cell constitutional documents.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

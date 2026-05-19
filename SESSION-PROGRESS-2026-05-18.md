@@ -14,7 +14,7 @@ workstreams in sequence:
 ### Workstream 1 — Coverage audit and gap-filling (top-20)
 
 Built the coverage audit at
-[`knowledge/jersey/COVERAGE-AUDIT.md`](knowledge/jersey/COVERAGE-AUDIT.md),
+[`knowledge/jersey/COVERAGE-AUDIT.md`](./knowledge/jersey/COVERAGE-AUDIT.md),
 identified the corpus's structural bias toward
 sophisticated-finance personas, and systematically closed
 every top-20 audit gap through the loop **audit → fill →
@@ -113,7 +113,7 @@ multiple sections:
 
 And a top-level synthesis surface:
 
-- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)
+- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md)
 
 ## Eval scoreboards as of session end
 
@@ -242,9 +242,9 @@ range and depth across:
   — the audit-driven coverage eval
 - [`evals/showcase.yaml`](evals/showcase.yaml) — the
   landing-page-bar showcase eval
-- [`evals/README.md`](evals/README.md) — the runner
+- [`evals/README.md`](./evals/README.md) — the runner
   methodology
-- [`knowledge/jersey/COVERAGE-AUDIT.md`](knowledge/jersey/COVERAGE-AUDIT.md)
+- [`knowledge/jersey/COVERAGE-AUDIT.md`](./knowledge/jersey/COVERAGE-AUDIT.md)
   — the Jersey statute coverage matrix
-- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)
+- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md)
   — the cross-offshore comparison surface

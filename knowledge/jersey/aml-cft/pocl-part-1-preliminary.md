@@ -67,7 +67,7 @@ constitutes an offence, including:
 - Money-laundering itself;
 - Any other indictable offence.
 
-See [`pocl-article-1a.md`](pocl-article-1a.md) for the
+See [`pocl-article-1a.md`](./pocl-article-1a.md) for the
 deep-dive.
 
 ## Article 2 — Realisable property and gifts
@@ -104,6 +104,6 @@ is the **aggregate** over the period.
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-article-1a.md`](pocl-article-1a.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md).
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-article-1a.md`](./pocl-article-1a.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md).

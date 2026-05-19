@@ -136,9 +136,9 @@ For Article 123D companies in large MNE groups:
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — full regime.
-- [`itl-article-123a.md`](itl-article-123a.md) — 0% standard.
-- [`itl-article-123c.md`](itl-article-123c.md) — 10% financial
+- [`zero-ten.md`](./zero-ten.md) — full regime.
+- [`itl-article-123a.md`](./itl-article-123a.md) — 0% standard.
+- [`itl-article-123c.md`](./itl-article-123c.md) — 10% financial
   services.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

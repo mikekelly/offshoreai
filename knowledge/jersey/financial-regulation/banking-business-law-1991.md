@@ -98,4 +98,4 @@ Jersey banking serves several markets:
 
 - [`../banking/index.md`](../banking/index.md) — Jersey banking
   sector overview.
-- [`jfsc.md`](jfsc.md) — the regulator administering this Law.
+- [`jfsc.md`](./jfsc.md) — the regulator administering this Law.

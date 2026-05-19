@@ -189,7 +189,7 @@ A skeleton response procedure that follows the case law:
 7. **Communicate the position in writing**, with reasons that meet
    the *Schmidt* "good reason" standard for any refusal.
 8. **If the dispute escalates**, apply to the Royal Court for
-   **directions** under [Article 51](article-51-directions.md). This
+   **directions** under [Article 51](./article-51-directions.md). This
    transfers the contest into the supervisory framework, protects the
    trustee on costs (usually out of the fund), and forces the
    beneficiary to articulate the request.
@@ -233,10 +233,10 @@ documents, the trustee should consider:
   vs whether it binds the trustee (typically no, where the trustee is
   not before the foreign court);
 - whether the trustee should pre-emptively seek Royal Court
-  directions under [Article 51](article-51-directions.md) on its
+  directions under [Article 51](./article-51-directions.md) on its
   proper response;
 - the impact on the Jersey **firewall** (Article 9 of the Trusts Law)
-  — see [`firewall.md`](firewall.md) *(stub)*.
+  — see [`firewall.md`](./firewall.md) *(stub)*.
 
 ## What this is **not** about
 

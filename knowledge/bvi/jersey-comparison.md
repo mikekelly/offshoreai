@@ -165,11 +165,11 @@ BVI and Jersey often **combined**:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`business-company.md`](business-company.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`tax.md`](tax.md);
-- [`fsc.md`](fsc.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`business-company.md`](./business-company.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`tax.md`](./tax.md);
+- [`fsc.md`](./fsc.md);
 - [`../jersey/index.md`](../jersey/index.md).

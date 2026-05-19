@@ -106,10 +106,10 @@ needing Article 52 procedure.
 
 ## Companion Articles
 
-- [`object-to-variation.md`](object-to-variation.md) — Article 53:
+- [`object-to-variation.md`](./object-to-variation.md) — Article 53:
   members holding 15%+ of the class may object and apply to the
   Court.
-- [`special-rights-registration.md`](special-rights-registration.md)
+- [`special-rights-registration.md`](./special-rights-registration.md)
   — Article 54: registering particulars of class rights.
 
 ## Pitfalls

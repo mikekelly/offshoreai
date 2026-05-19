@@ -109,7 +109,7 @@ indemnities** in the engagement letter.
 
 ## Cross-references
 
-- [`fjl-article-15.md`](fjl-article-15.md);
-- [`fjl-article-17.md`](fjl-article-17.md);
-- [`fjl-article-45.md`](fjl-article-45.md) — court
+- [`fjl-article-15.md`](./fjl-article-15.md);
+- [`fjl-article-17.md`](./fjl-article-17.md);
+- [`fjl-article-45.md`](./fjl-article-45.md) — court
   jurisdiction.

@@ -162,7 +162,7 @@ than requiring proof of actual harm to the company.
 
 ## Shadow directors
 
-The [Article 1 definition of "director"](companies-interpretation.md)
+The [Article 1 definition of "director"](./companies-interpretation.md)
 captures **shadow directors** — persons whose directions or
 instructions the formally-appointed board is accustomed to
 follow. **Article 74 duties apply to shadow directors** equally:
@@ -195,27 +195,27 @@ Article 74 does not displace these — the directors are bound by
 
 A director who breaches Article 74 may seek relief under:
 
-- [`relief-from-breach.md`](relief-from-breach.md) — Article 67A:
+- [`relief-from-breach.md`](./relief-from-breach.md) — Article 67A:
   for breach in unavoidable circumstances;
 - **Court discretion** to relieve where the director acted
   honestly and reasonably (parallel to Trusts Law Article 45);
 - **Indemnity** from the company under
-  [`officer-indemnity.md`](officer-indemnity.md) — Article 77:
+  [`officer-indemnity.md`](./officer-indemnity.md) — Article 77:
   within the limits the Article permits.
 
 ## Cross-references
 
-- [`connected-persons.md`](connected-persons.md) — Article 74ZA:
+- [`connected-persons.md`](./connected-persons.md) — Article 74ZA:
   who counts as "connected" with a director.
-- [`sole-member-contracts.md`](sole-member-contracts.md) —
+- [`sole-member-contracts.md`](./sole-member-contracts.md) —
   Article 74A: sole-member-director exception.
-- [`director-disclosure.md`](director-disclosure.md) — Article 75:
+- [`director-disclosure.md`](./director-disclosure.md) — Article 75:
   interest-disclosure duty.
-- [`companies-interpretation.md`](companies-interpretation.md) —
+- [`companies-interpretation.md`](./companies-interpretation.md) —
   Article 1: the wide "director" definition.
-- [`officer-indemnity.md`](officer-indemnity.md) — Article 77:
+- [`officer-indemnity.md`](./officer-indemnity.md) — Article 77:
   indemnification.
-- [`disqualification-orders.md`](disqualification-orders.md) —
+- [`disqualification-orders.md`](./disqualification-orders.md) —
   Article 78: disqualification for breach.
 
 ## Pitfalls

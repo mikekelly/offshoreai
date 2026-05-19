@@ -52,20 +52,20 @@ The Article applies to all **capital accounts**:
 
 - The **nominal capital account** (for par-value companies);
 - The **share-premium account** (for par-value companies — see
-  [Article 39](share-premium.md));
+  [Article 39](./share-premium.md));
 - The **stated-capital account** (for no-par-value companies —
-  see [Article 39A](stated-capital.md)).
+  see [Article 39A](./stated-capital.md)).
 
 ## The two routes — solvency statement or court
 
 Article 61 reduction requires **either**:
 
 - **The Article 61A solvency-statement route**
-  ([`solvency-statement.md`](solvency-statement.md)) — directors
+  ([`solvency-statement.md`](./solvency-statement.md)) — directors
   declare solvency post-reduction; reduction takes effect on
   registration; **fast and cheap**; or
 - The **court-confirmation route**
-  ([`court-confirmation.md`](court-confirmation.md) — Article 62)
+  ([`court-confirmation.md`](./court-confirmation.md) — Article 62)
   — application to the Royal Court; required where no solvency
   statement is made.
 
@@ -94,12 +94,12 @@ Reduction always requires **special resolution** of the members —
 typically a two-thirds majority (or the deed's higher threshold).
 Where the reduction affects different classes differently,
 **class-rights variation procedure** under
-[Article 52](variation-of-class-rights.md) is required in
+[Article 52](./variation-of-class-rights.md) is required in
 addition.
 
 ## Carve-out for Part 11 transactions
 
-[Article 58C](not-a-reduction.md) provides that **redemption,
+[Article 58C](./not-a-reduction.md) provides that **redemption,
 buyback, and cancellation under Part 11 are not Part 12
 reductions**. Routine treasury operations don't trigger Article
 61 — they have their own Part 11 procedure.
@@ -118,13 +118,13 @@ Once the reduction takes effect:
 
 ## Cross-references
 
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A:
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A:
   the solvency-statement mechanism — the centrepiece.
-- [`solvency-registration.md`](solvency-registration.md) — Article
+- [`solvency-registration.md`](./solvency-registration.md) — Article
   61B: registering the statement and minute.
-- [`court-confirmation.md`](court-confirmation.md) — Article 62:
+- [`court-confirmation.md`](./court-confirmation.md) — Article 62:
   the court route.
-- [`court-confirmation-order.md`](court-confirmation-order.md) —
+- [`court-confirmation-order.md`](./court-confirmation-order.md) —
   Article 63: court orders.
 
 ## Pitfalls
@@ -137,6 +137,6 @@ Once the reduction takes effect:
   procedure.
 - **Creditor concealment** — directors who hide creditors from
   the solvency analysis face the
-  [Article 66](concealing-creditor-penalty.md) offence.
+  [Article 66](./concealing-creditor-penalty.md) offence.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

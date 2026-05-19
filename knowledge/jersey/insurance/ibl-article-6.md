@@ -121,8 +121,8 @@ Assets backing technical provisions must:
 
 ## Cross-references
 
-- [`ibl-article-4.md`](ibl-article-4.md);
-- [`ibl-article-13.md`](ibl-article-13.md) — capital and
+- [`ibl-article-4.md`](./ibl-article-4.md);
+- [`ibl-article-13.md`](./ibl-article-13.md) — capital and
   solvency;
-- [`ibl-part-4-prudential.md`](ibl-part-4-prudential.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-part-4-prudential.md`](./ibl-part-4-prudential.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

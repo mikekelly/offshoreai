@@ -99,7 +99,7 @@ officers under the Article 20 framework.
   certificates in some cases).
 
 For the seal mechanics, see
-[`company-seals.md`](company-seals.md) — Articles 22–24.
+[`company-seals.md`](./company-seals.md) — Articles 22–24.
 
 ## Court-approval reservations
 

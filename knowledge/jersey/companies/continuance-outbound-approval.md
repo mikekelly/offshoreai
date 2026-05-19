@@ -72,9 +72,9 @@ law).
 
 ## Cross-references
 
-- [`special-resolution.md`](special-resolution.md) — Article 90:
+- [`special-resolution.md`](./special-resolution.md) — Article 90:
   definition of special resolution.
-- [`continuance-outbound-objection.md`](continuance-outbound-objection.md)
+- [`continuance-outbound-objection.md`](./continuance-outbound-objection.md)
   — Article 127S: member objection right.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

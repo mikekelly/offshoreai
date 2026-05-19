@@ -66,7 +66,7 @@ Where violations are found, the Commission can:
 
 ## Cross-references
 
-- [`rules-enforcement.md`](rules-enforcement.md) — Article
+- [`rules-enforcement.md`](./rules-enforcement.md) — Article
   113O: the enforcement mechanics.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

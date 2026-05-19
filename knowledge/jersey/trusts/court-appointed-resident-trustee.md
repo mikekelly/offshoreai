@@ -63,7 +63,7 @@ operationally problematic:
 - **practical administration** — Jersey banking, custody, and legal
   arrangements are simplified by having a Jersey-resident trustee;
 - the trust's **firewall protection** under
-  [Article 9](firewall.md) — though not formally dependent on a
+  [Article 9](./firewall.md) — though not formally dependent on a
   resident trustee — is more robust where the Royal Court is
   unambiguously the natural forum.
 
@@ -75,7 +75,7 @@ trustees.
 
 The Article gives **beneficiary standing** to apply. This is broader
 than the existing-trustees' standing under
-[Article 17](trustee-appointment-out-of-court.md): a beneficiary
+[Article 17](./trustee-appointment-out-of-court.md): a beneficiary
 need not wait for the trustees to nominate a successor or for the
 trustees to act under a deed power. The beneficiary can take the
 initiative.
@@ -123,12 +123,12 @@ administrator without becoming a trustee.
 
 Article 44 sits alongside:
 
-- [Article 17](trustee-appointment-out-of-court.md) — out-of-court
+- [Article 17](./trustee-appointment-out-of-court.md) — out-of-court
   appointment by trustees, last remaining trustee, or personal
   representative;
 - the **deed's appointment mechanism** — typically vested in the
   settlor, protector, or continuing trustees;
-- [Article 51](article-51-directions.md) — general directions
+- [Article 51](./article-51-directions.md) — general directions
   jurisdiction, which can be used to order trustee appointment
   for cause.
 

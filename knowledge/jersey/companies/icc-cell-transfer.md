@@ -70,7 +70,7 @@ the transfer — only the relationship with the host ICC changes.
 
 ## Cross-references
 
-- [`icc-cell-incorporation-independence.md`](icc-cell-incorporation-independence.md)
+- [`icc-cell-incorporation-independence.md`](./icc-cell-incorporation-independence.md)
   — Article 127YH: separating from the ICC entirely.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -110,8 +110,8 @@ Individuals (senior managers) can be:
 
 ## Cross-references
 
-- [`fsl-article-9.md`](fsl-article-9.md);
-- [`fsl-article-21.md`](fsl-article-21.md);
-- [`fsl-part-5-enforcement.md`](fsl-part-5-enforcement.md);
-- [`enforcement.md`](enforcement.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-article-9.md`](./fsl-article-9.md);
+- [`fsl-article-21.md`](./fsl-article-21.md);
+- [`fsl-part-5-enforcement.md`](./fsl-part-5-enforcement.md);
+- [`enforcement.md`](./enforcement.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

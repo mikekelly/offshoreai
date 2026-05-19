@@ -167,6 +167,6 @@ For an active HVR family:
 
 ## Cross-references
 
-- [`hvr-tax-planning.md`](hvr-tax-planning.md)
+- [`hvr-tax-planning.md`](./hvr-tax-planning.md)
 - [`../../immigration-residency/high-value-residency.md`](../../immigration-residency/high-value-residency.md)
 - [`../../tax/stamp-duty.md`](../../tax/stamp-duty.md)

@@ -168,4 +168,4 @@ For ICC:
 ## Cross-references
 
 - [`../../companies/cell-companies.md`](../../companies/cell-companies.md)
-- [`vehicle-structuring.md`](vehicle-structuring.md)
+- [`vehicle-structuring.md`](./vehicle-structuring.md)

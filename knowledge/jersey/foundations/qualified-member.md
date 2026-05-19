@@ -100,9 +100,9 @@ A vacancy must be **filled promptly**:
 
 ## Cross-references
 
-- [`foundations-law-2009.md`](foundations-law-2009.md) — parent
+- [`foundations-law-2009.md`](./foundations-law-2009.md) — parent
   statute.
-- [`council-and-guardian.md`](council-and-guardian.md) — council
+- [`council-and-guardian.md`](./council-and-guardian.md) — council
   composition generally.
 - [`../financial-regulation/financial-services-law-1998.md`](../../../jersey/financial-regulation/financial-services-law-1998.md)
   — the FS(J)L 1998 regime under which qualified members are

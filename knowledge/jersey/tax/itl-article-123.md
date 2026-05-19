@@ -90,11 +90,11 @@ Article 123 is the **legal foundation** of zero-ten:
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — the full zero-ten regime
+- [`zero-ten.md`](./zero-ten.md) — the full zero-ten regime
   overview.
-- [`company-residence.md`](company-residence.md) — practical
+- [`company-residence.md`](./company-residence.md) — practical
   residence-test guidance.
-- [`itl-articles-index.md`](itl-articles-index.md) — full
+- [`itl-articles-index.md`](./itl-articles-index.md) — full
   articles index.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

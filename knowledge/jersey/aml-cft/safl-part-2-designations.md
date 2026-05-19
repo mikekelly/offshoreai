@@ -75,7 +75,7 @@ applicable sanctions.
 
 ## Cross-references
 
-- [`safl-article-3.md`](safl-article-3.md);
-- [`safl-article-4.md`](safl-article-4.md);
-- [`safl-article-5.md`](safl-article-5.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-article-3.md`](./safl-article-3.md);
+- [`safl-article-4.md`](./safl-article-4.md);
+- [`safl-article-5.md`](./safl-article-5.md);
+- [`safl-articles-index.md`](./safl-articles-index.md).

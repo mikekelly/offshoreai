@@ -187,5 +187,5 @@ For a complex-structure customer:
 
 ## Cross-references
 
-- [`customer-due-diligence.md`](customer-due-diligence.md)
+- [`customer-due-diligence.md`](./customer-due-diligence.md)
 - [`../../registries/beneficial-ownership.md`](../../registries/beneficial-ownership.md)

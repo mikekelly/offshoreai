@@ -109,6 +109,6 @@ The Commissioner is **accountable** through:
 
 ## Cross-references
 
-- [`dpl-part-7-enforcement.md`](dpl-part-7-enforcement.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md);
-- [`data-protection-jersey-law-2018.md`](data-protection-jersey-law-2018.md).
+- [`dpl-part-7-enforcement.md`](./dpl-part-7-enforcement.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md);
+- [`data-protection-jersey-law-2018.md`](./data-protection-jersey-law-2018.md).

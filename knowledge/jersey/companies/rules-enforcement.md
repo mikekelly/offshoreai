@@ -68,7 +68,7 @@ The JFSC follows due-process expectations:
 
 ## Cross-references
 
-- [`jfsc-compliance.md`](jfsc-compliance.md) — Article 113M:
+- [`jfsc-compliance.md`](./jfsc-compliance.md) — Article 113M:
   general compliance duty.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -141,7 +141,7 @@ In practice:
 
 ## Cross-references
 
-- [`cl-article-5.md`](cl-article-5.md);
-- [`cl-part-1-preliminary.md`](cl-part-1-preliminary.md);
-- [`cl-part-2-registration.md`](cl-part-2-registration.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-article-5.md`](./cl-article-5.md);
+- [`cl-part-1-preliminary.md`](./cl-part-1-preliminary.md);
+- [`cl-part-2-registration.md`](./cl-part-2-registration.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

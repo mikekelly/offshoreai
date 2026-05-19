@@ -159,4 +159,4 @@ For a new fund:
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md)
 - [`../../tax/pillar-two.md`](../../tax/pillar-two.md)
 - [`../../tax/economic-substance.md`](../../tax/economic-substance.md)
-- [`fund-article-118c.md`](fund-article-118c.md)
+- [`fund-article-118c.md`](./fund-article-118c.md)

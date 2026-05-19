@@ -162,7 +162,7 @@ including:
 - **Procedural defects** in the notice.
 
 Appeals follow the standard planning appeal route — see
-[`appeals.md`](appeals.md).
+[`appeals.md`](./appeals.md).
 
 ## Cost recovery
 
@@ -212,11 +212,11 @@ For neighbours / objectors:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`planning-building-law-2002.md`](planning-building-law-2002.md);
-- [`permitted-development.md`](permitted-development.md);
-- [`application-process.md`](application-process.md);
-- [`retrospective-applications.md`](retrospective-applications.md);
-- [`appeals.md`](appeals.md);
-- [`listed-buildings.md`](listed-buildings.md);
+- [`index.md`](./index.md);
+- [`planning-building-law-2002.md`](./planning-building-law-2002.md);
+- [`permitted-development.md`](./permitted-development.md);
+- [`application-process.md`](./application-process.md);
+- [`retrospective-applications.md`](./retrospective-applications.md);
+- [`appeals.md`](./appeals.md);
+- [`listed-buildings.md`](./listed-buildings.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md).

@@ -98,7 +98,7 @@ Decisions are subject to:
 
 ## Cross-references
 
-- [`ibl-article-4.md`](ibl-article-4.md);
-- [`ibl-article-6.md`](ibl-article-6.md);
-- [`ibl-part-3-supervision.md`](ibl-part-3-supervision.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-article-4.md`](./ibl-article-4.md);
+- [`ibl-article-6.md`](./ibl-article-6.md);
+- [`ibl-part-3-supervision.md`](./ibl-part-3-supervision.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

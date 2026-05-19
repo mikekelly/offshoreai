@@ -41,7 +41,7 @@ see_also:
 A consolidated historical-reference file for the three
 **foundational regulatory milestones** that shape Jersey's
 modern financial-services era. Each is referenced across
-multiple [history](README.md) and doctrinal files; this
+multiple [history](./README.md) and doctrinal files; this
 file is the primary source.
 
 The three milestones:
@@ -71,15 +71,15 @@ modern regulatory architecture. Its recommendations
 underpinned:
 
 - The
-  [**Financial Services (Jersey) Law 1998**](../financial-regulation/financial-services-jersey-law-1998.md)
+  [**Financial Services (Jersey) Law 1998**](../../financial-regulation/financial-services-jersey-law-1998.md)
   consolidating financial-services regulation;
 - The
-  [**JFSC Law 1998**](../financial-regulation/jfsc-law-1998.md)
-  establishing the [JFSC](../financial-regulation/jfsc.md)
+  [**JFSC Law 1998**](../../financial-regulation/jfsc-law-1998.md)
+  establishing the [JFSC](../../financial-regulation/jfsc.md)
   as the unified financial-services regulator;
 - The build-out of **TCB regulation** (Trust Company
   Business class — see
-  [`../jersey/financial-regulation/fsl-class-tcb.md`](../financial-regulation/fsl-class-tcb.md));
+  [`../jersey/financial-regulation/fsl-class-tcb.md`](../../financial-regulation/fsl-class-tcb.md));
 - Parallel reforms in Guernsey and the Isle of Man.
 
 ### Key recommendations
@@ -98,8 +98,8 @@ underpinned:
 Jersey, Guernsey, and the Isle of Man each implemented the
 Edwards recommendations through 1998-2002. The
 **Cycle 1 / Act I — Modernisation** narrative in
-[`trajectory.md`](trajectory.md) and
-[`last-25-years.md`](last-25-years.md) is the build-out
+[`trajectory.md`](./trajectory.md) and
+[`last-25-years.md`](./last-25-years.md) is the build-out
 that followed.
 
 ## Milestone 2 — IMF FSAP Update (2009)
@@ -136,10 +136,10 @@ framework, and AML/CFT against international standards.
 
 The 2009 FSAP findings drove the **Cycle 2 / Act II —
 Re-regulation** narrative (see
-[`trajectory.md`](trajectory.md)). Specific operational
+[`trajectory.md`](./trajectory.md)). Specific operational
 responses included:
 
-- Introduction of [**Zero-Ten corporate tax**](../tax/zero-ten.md)
+- Introduction of [**Zero-Ten corporate tax**](../../tax/zero-ten.md)
   in 2009;
 - Strengthened banking supervision;
 - Build-out of financial-intelligence capability;
@@ -176,7 +176,7 @@ multi-year supervisory build-out:
 - **JFSC resourcing increased substantially** (staff,
   budget, supervisory capability);
 - **Enforcement powers expanded** under the
-  [POCL](../aml-cft/proceeds-of-crime-law-1999.md)
+  [POCL](../../aml-cft/proceeds-of-crime-law-1999.md)
   and FSL frameworks;
 - **Financial-intelligence function reinforced** (the
   Jersey FIU);
@@ -215,21 +215,21 @@ posture for the prior period, while leaving real ongoing
 work on certain effectiveness Immediate Outcomes.
 
 For the wider regulatory significance see
-[`../jersey/aml-cft/moneyval.md`](../aml-cft/moneyval.md).
+[`../jersey/aml-cft/moneyval.md`](../../aml-cft/moneyval.md).
 
 ### Aftermath
 
 The 5th-round outcome enabled the **Cycle 3 → Cycle 4
 pivot**:
 
-- The [**JFSC 2026-2030 Strategy**](../financial-regulation/jfsc-strategy-2026-2030.md)
+- The [**JFSC 2026-2030 Strategy**](../../financial-regulation/jfsc-strategy-2026-2030.md)
   shifts from defensive to offensive posture;
-- The [**FSCP**](../government/financial-services-competitiveness-programme.md)
+- The [**FSCP**](../../government/financial-services-competitiveness-programme.md)
   articulates a 10-year growth plan;
 - **Growth verticals** (digital assets, sustainable
   finance) become explicit strategic priorities.
 
-The full narrative is in [`trajectory.md`](trajectory.md).
+The full narrative is in [`trajectory.md`](./trajectory.md).
 
 ## The three milestones in relation
 
@@ -253,12 +253,12 @@ spine** of Jersey financial services.
 - [`./last-25-years.md`](./last-25-years.md);
 - [`./last-10-years.md`](./last-10-years.md);
 - [`./sources.md`](./sources.md);
-- [`../jersey/aml-cft/moneyval.md`](../aml-cft/moneyval.md);
-- [`../jersey/aml-cft/index.md`](../aml-cft/index.md);
-- [`../jersey/financial-regulation/financial-services-jersey-law-1998.md`](../financial-regulation/financial-services-jersey-law-1998.md);
-- [`../jersey/financial-regulation/jfsc-law-1998.md`](../financial-regulation/jfsc-law-1998.md);
-- [`../jersey/financial-regulation/jfsc.md`](../financial-regulation/jfsc.md);
-- [`../jersey/financial-regulation/jfsc-strategy-2026-2030.md`](../financial-regulation/jfsc-strategy-2026-2030.md);
-- [`../jersey/government/financial-services-competitiveness-programme.md`](../government/financial-services-competitiveness-programme.md);
-- [`../jersey/tax/zero-ten.md`](../tax/zero-ten.md);
-- [`../jersey/tax/economic-substance.md`](../tax/economic-substance.md).
+- [`../jersey/aml-cft/moneyval.md`](../../aml-cft/moneyval.md);
+- [`../jersey/aml-cft/index.md`](../../aml-cft/index.md);
+- [`../jersey/financial-regulation/financial-services-jersey-law-1998.md`](../../financial-regulation/financial-services-jersey-law-1998.md);
+- [`../jersey/financial-regulation/jfsc-law-1998.md`](../../financial-regulation/jfsc-law-1998.md);
+- [`../jersey/financial-regulation/jfsc.md`](../../financial-regulation/jfsc.md);
+- [`../jersey/financial-regulation/jfsc-strategy-2026-2030.md`](../../financial-regulation/jfsc-strategy-2026-2030.md);
+- [`../jersey/government/financial-services-competitiveness-programme.md`](../../government/financial-services-competitiveness-programme.md);
+- [`../jersey/tax/zero-ten.md`](../../tax/zero-ten.md);
+- [`../jersey/tax/economic-substance.md`](../../tax/economic-substance.md).

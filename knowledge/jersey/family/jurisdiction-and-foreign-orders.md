@@ -184,10 +184,10 @@ Recognition issues arise particularly with:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`child-relocation.md`](child-relocation.md);
-- [`civil-partnerships-and-same-sex.md`](civil-partnerships-and-same-sex.md);
+- [`index.md`](./index.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`child-relocation.md`](./child-relocation.md);
+- [`civil-partnerships-and-same-sex.md`](./civil-partnerships-and-same-sex.md);
 - [`../use-cases/international-lawyer/index.md`](../use-cases/international-lawyer/index.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

@@ -205,4 +205,4 @@ For a US-person-related Jersey trust:
 ## Cross-references
 
 - [`../trust-officer/distribution-us-person.md`](../trust-officer/distribution-us-person.md)
-- [`uk-iht-exposure.md`](uk-iht-exposure.md)
+- [`uk-iht-exposure.md`](./uk-iht-exposure.md)

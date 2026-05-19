@@ -72,7 +72,7 @@ Because the foundation has its own legal personality:
 
 ## Cross-references
 
-- [`fjl-article-4.md`](fjl-article-4.md) — how the foundation
+- [`fjl-article-4.md`](./fjl-article-4.md) — how the foundation
   is established;
-- [`fjl-articles-index.md`](fjl-articles-index.md) — full
+- [`fjl-articles-index.md`](./fjl-articles-index.md) — full
   index.

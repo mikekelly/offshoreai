@@ -73,7 +73,7 @@ procedural fairness is essential to legitimacy.
 
 ## Cross-references
 
-- [`inspector-report-evidence.md`](inspector-report-evidence.md) —
+- [`inspector-report-evidence.md`](./inspector-report-evidence.md) —
   Article 138: admissibility of report as evidence.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

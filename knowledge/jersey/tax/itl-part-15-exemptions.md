@@ -75,7 +75,7 @@ taxpayer.
 - **Certified fund** explicit exemption;
 - **Specific** conditions;
 - **Service-provider** alignments;
-- See [`itl-article-123.md`](itl-article-123.md) and [`fund-counsel/fund-article-118c.md`](../use-cases/fund-counsel/fund-article-118c.md).
+- See [`itl-article-123.md`](./itl-article-123.md) and [`fund-counsel/fund-article-118c.md`](../use-cases/fund-counsel/fund-article-118c.md).
 
 ### Other specific
 
@@ -108,7 +108,7 @@ taxpayer.
 
 ## Cross-references
 
-- [`itl-article-123.md`](itl-article-123.md)
+- [`itl-article-123.md`](./itl-article-123.md)
 - [`fund-counsel/fund-article-118c.md`](../use-cases/fund-counsel/fund-article-118c.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

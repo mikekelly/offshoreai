@@ -129,7 +129,7 @@ The DL protects:
 
 ## Cross-references
 
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-article-10.md`](dl-article-10.md);
-- [`dl-part-2-forms.md`](dl-part-2-forms.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-article-10.md`](./dl-article-10.md);
+- [`dl-part-2-forms.md`](./dl-part-2-forms.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

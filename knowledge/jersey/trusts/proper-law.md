@@ -33,7 +33,7 @@ Article 4 of the **[Trusts (Jersey) Law 1984][tjl]** sets out how the
 **proper law** of a trust is determined. The proper law is the system
 of law that governs the trust — its validity, its construction, the
 rights and duties of trustees and beneficiaries, and (subject to the
-[firewall](firewall.md)) the questions Article 9 catches.
+[firewall](./firewall.md)) the questions Article 9 catches.
 
 ## The Article 4 hierarchy
 
@@ -75,7 +75,7 @@ Jersey law as the proper law. This:
 
 A trust whose proper law is *not* Jersey, but which has a Jersey
 trustee or Jersey-situated assets, can come before the Royal Court
-under [Article 5](court-jurisdiction-over-trusts.md), but the Court
+under [Article 5](./court-jurisdiction-over-trusts.md), but the Court
 will apply that *foreign* law to substantive questions of validity
 and interpretation, applying Jersey procedural rules.
 
@@ -87,7 +87,7 @@ the implied-choice limb. It tends to be relevant in:
 - older instruments without an express choice (some 1970s and 1980s
   Channel-Islands family trusts);
 - trusts created by conduct or by oral declaration (see
-  [Article 7](creation-of-a-trust.md)) where the conduct or oral
+  [Article 7](./creation-of-a-trust.md)) where the conduct or oral
   terms imply Jersey law;
 - arrangements where assets and parties are all unambiguously
   Jersey-connected (e.g., a "self-settled trust" by a Jersey
@@ -97,7 +97,7 @@ the implied-choice limb. It tends to be relevant in:
 ## Change of proper law
 
 A trust deed may include a power to change the proper law (express
-recognition is in [Article 41](change-of-proper-law.md)).
+recognition is in [Article 41](./change-of-proper-law.md)).
 The mechanics — what consents are required, the timing of the
 change, the effect on choice-of-law for prior acts — are typically
 spelt out in the deed and are subject to general principles of
@@ -121,7 +121,7 @@ Jersey forum or trustee.
   under "forum and conflicts of law". A trust may have Jersey as its
   proper law and yet name another forum for disputes.
 - **Proper law affects firewall scope.** A non-Jersey-proper-law
-  trust does not engage the [firewall](firewall.md). Where the
+  trust does not engage the [firewall](./firewall.md). Where the
   client's planning depends on the firewall, the proper-law choice
   is dispositive — drafted accordingly.
 

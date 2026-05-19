@@ -87,7 +87,7 @@ UK sanctions law also covers UN listings. In practice:
 
 ## Cross-references
 
-- [`safl-article-5.md`](safl-article-5.md) — UK listings;
-- [`safl-article-10.md`](safl-article-10.md) — asset
+- [`safl-article-5.md`](./safl-article-5.md) — UK listings;
+- [`safl-article-10.md`](./safl-article-10.md) — asset
   freezing;
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-articles-index.md`](./safl-articles-index.md).

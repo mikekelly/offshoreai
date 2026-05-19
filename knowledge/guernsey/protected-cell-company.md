@@ -133,7 +133,7 @@ Guernsey has **two cell-company forms**:
   legal entities, each cell is its own incorporated
   body.
 
-See [`incorporated-cell-company.md`](incorporated-cell-company.md).
+See [`incorporated-cell-company.md`](./incorporated-cell-company.md).
 
 The PCC remains the more common form. The ICC is used
 where:
@@ -186,7 +186,7 @@ its cells:
 - **Funds** — POI Law / specific fund-regime regulations;
 - **Banking** — Banking Supervision Law.
 
-See [`gfsc.md`](gfsc.md) for the regulator.
+See [`gfsc.md`](./gfsc.md) for the regulator.
 
 ## Comparison
 
@@ -220,12 +220,12 @@ integrated provisions in the Companies (Guernsey) Law
 
 ## Cross-references
 
-- [`companies.md`](companies.md);
-- [`incorporated-cell-company.md`](incorporated-cell-company.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
-- [`gfsc.md`](gfsc.md);
-- [`index.md`](index.md);
+- [`companies.md`](./companies.md);
+- [`incorporated-cell-company.md`](./incorporated-cell-company.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
+- [`gfsc.md`](./gfsc.md);
+- [`index.md`](./index.md);
 - [`../bermuda/segregated-accounts-company.md`](../bermuda/segregated-accounts-company.md);
 - [`../cayman/segregated-portfolio-company.md`](../cayman/segregated-portfolio-company.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md).

@@ -77,9 +77,9 @@ Comptroller.
 
 ## Cross-references
 
-- [`itl-part-4-returns.md`](itl-part-4-returns.md) — returns
+- [`itl-part-4-returns.md`](./itl-part-4-returns.md) — returns
   preceding assessment.
-- [`itl-part-6-appeals.md`](itl-part-6-appeals.md) — appeals
+- [`itl-part-6-appeals.md`](./itl-part-6-appeals.md) — appeals
   from assessments.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

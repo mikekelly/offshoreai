@@ -129,7 +129,7 @@ The Viscount's work is funded by:
 
 ## Cross-references
 
-- [`bdl-article-6.md`](bdl-article-6.md);
-- [`bdl-part-4-administration.md`](bdl-part-4-administration.md);
-- [`bdl-part-5-avoidance.md`](bdl-part-5-avoidance.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-article-6.md`](./bdl-article-6.md);
+- [`bdl-part-4-administration.md`](./bdl-part-4-administration.md);
+- [`bdl-part-5-avoidance.md`](./bdl-part-5-avoidance.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

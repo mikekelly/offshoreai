@@ -91,7 +91,7 @@ liquidator to reach beyond directors to **co-conspirators**:
 
 ## Cross-references
 
-- [`wrongful-trading.md`](wrongful-trading.md) — Article 177:
+- [`wrongful-trading.md`](./wrongful-trading.md) — Article 177:
   the companion regime.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

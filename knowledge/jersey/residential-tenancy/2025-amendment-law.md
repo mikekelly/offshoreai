@@ -73,7 +73,7 @@ either:
 
 - **Justify** the termination on a permitted ground
   (breach, sale, owner-occupation, redevelopment — see
-  [`grounds-for-termination.md`](grounds-for-termination.md)); or
+  [`grounds-for-termination.md`](./grounds-for-termination.md)); or
 - Give **12 months' notice** without specific justification
   (the "no-fault long-notice" route).
 
@@ -114,7 +114,7 @@ The Tribunal does **not** handle:
 - **Eviction** or **breach** disputes — those remain with
   the Petty Debts Court.
 
-See [`rent-tribunal.md`](rent-tribunal.md).
+See [`rent-tribunal.md`](./rent-tribunal.md).
 
 ### Strengthened written-form rules
 
@@ -164,7 +164,7 @@ unenforceable and may constitute an offence.
   fixed term — material flexibility;
 - **RPI cap** caps the annual cost-of-living shock;
 - **Rent Tribunal** offers a free / low-cost forum for
-  rent disputes — see [`rent-tribunal.md`](rent-tribunal.md);
+  rent disputes — see [`rent-tribunal.md`](./rent-tribunal.md);
 - **12 months' notice** for no-fault termination by
   landlord — meaningful security of tenure improvement.
 
@@ -190,11 +190,11 @@ unenforceable and may constitute an offence.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`rent-and-rent-reviews.md`](rent-and-rent-reviews.md);
-- [`rent-tribunal.md`](rent-tribunal.md);
-- [`notice-periods.md`](notice-periods.md);
-- [`grounds-for-termination.md`](grounds-for-termination.md);
-- [`forms-of-tenancy.md`](forms-of-tenancy.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`rent-and-rent-reviews.md`](./rent-and-rent-reviews.md);
+- [`rent-tribunal.md`](./rent-tribunal.md);
+- [`notice-periods.md`](./notice-periods.md);
+- [`grounds-for-termination.md`](./grounds-for-termination.md);
+- [`forms-of-tenancy.md`](./forms-of-tenancy.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md).

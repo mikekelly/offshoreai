@@ -93,7 +93,7 @@ specified) ratio:
   Jersey-source income is taxed under the zero-ten
   regime).
 
-See [`migration-pre-ipo.md`](migration-pre-ipo.md).
+See [`migration-pre-ipo.md`](./migration-pre-ipo.md).
 
 ### Step 3 — Jersey TopCo tax position
 
@@ -136,7 +136,7 @@ subsidiaries) has **annual revenue ≥ EUR 750 million**,
 For **smaller groups** below the threshold, Pillar Two
 doesn't engage and the 0% zero-ten position continues.
 
-See [`pillar-two-impact.md`](pillar-two-impact.md) and
+See [`pillar-two-impact.md`](./pillar-two-impact.md) and
 [`../../tax/pillar-two.md`](../../tax/pillar-two.md).
 
 ### Step 5 — Capital structure
@@ -181,7 +181,7 @@ A **prospectus** is required (or an admission-document
 equivalent for AIM listings). Jersey advocates work
 alongside UK securities counsel on the disclosure.
 
-See [`listing-rule-overlay.md`](listing-rule-overlay.md).
+See [`listing-rule-overlay.md`](./listing-rule-overlay.md).
 
 ### Step 7 — Post-IPO governance
 
@@ -211,7 +211,7 @@ The TopCo can pay dividends to public shareholders:
   dividends; UK dividend allowance applies.
 
 See [`../../tax/withholding-on-dividends.md`](../../../../jersey/tax/withholding-on-dividends.md)
-and [`distributions-mechanics.md`](distributions-mechanics.md).
+and [`distributions-mechanics.md`](./distributions-mechanics.md).
 
 ## Why this structure
 
@@ -270,12 +270,12 @@ A pre-listing reorganisation may also involve:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`topco-tax.md`](topco-tax.md);
-- [`migration-pre-ipo.md`](migration-pre-ipo.md);
-- [`pillar-two-impact.md`](pillar-two-impact.md);
-- [`listing-rule-overlay.md`](listing-rule-overlay.md);
-- [`distributions-mechanics.md`](distributions-mechanics.md);
+- [`index.md`](./index.md);
+- [`topco-tax.md`](./topco-tax.md);
+- [`migration-pre-ipo.md`](./migration-pre-ipo.md);
+- [`pillar-two-impact.md`](./pillar-two-impact.md);
+- [`listing-rule-overlay.md`](./listing-rule-overlay.md);
+- [`distributions-mechanics.md`](./distributions-mechanics.md);
 - [`../../companies/index.md`](../../companies/index.md);
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md);
 - [`../../tax/economic-substance.md`](../../tax/economic-substance.md);

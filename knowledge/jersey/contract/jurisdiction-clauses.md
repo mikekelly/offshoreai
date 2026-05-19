@@ -130,9 +130,9 @@ Jersey courts may grant **anti-suit injunctions** to:
 
 ## Cross-references
 
-- [`choice-of-law.md`](choice-of-law.md);
-- [`arbitration.md`](arbitration.md);
+- [`choice-of-law.md`](./choice-of-law.md);
+- [`arbitration.md`](./arbitration.md);
 - [`../legal-system/royal-court-rules.md`](../legal-system/royal-court-rules.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../use-cases/royal-court-litigator/index.md`](../use-cases/royal-court-litigator/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

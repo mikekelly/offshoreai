@@ -75,7 +75,7 @@ The "legibly displayed" requirement means the name must be
 
 A limited company's name must include the suffix
 ("Limited", "Ltd", "avec responsabilité limitée", or "a.r.l." —
-see [Article 13](name-requirements.md)). The Article 69 display
+see [Article 13](./name-requirements.md)). The Article 69 display
 requirement extends to the **full registered name including the
 suffix**.
 
@@ -85,7 +85,7 @@ liability on contracts as a consequence.
 
 ## Companion provision — Article 70
 
-[Article 70](particulars-in-correspondence.md) adds additional
+[Article 70](./particulars-in-correspondence.md) adds additional
 **particulars** that must appear on certain business documents —
 typically the company's **registered number** and **registered
 office address**. Article 69 covers the **name**; Article 70

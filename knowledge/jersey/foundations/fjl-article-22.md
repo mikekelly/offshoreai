@@ -89,9 +89,9 @@ The guardian must **avoid conflicts**:
 
 ## Cross-references
 
-- [`fjl-article-23.md`](fjl-article-23.md) — guardian's
+- [`fjl-article-23.md`](./fjl-article-23.md) — guardian's
   function;
-- [`fjl-part-5-guardian.md`](fjl-part-5-guardian.md) —
+- [`fjl-part-5-guardian.md`](./fjl-part-5-guardian.md) —
   appointment / removal / information;
-- [`council-and-guardian.md`](council-and-guardian.md) —
+- [`council-and-guardian.md`](./council-and-guardian.md) —
   concept overview.

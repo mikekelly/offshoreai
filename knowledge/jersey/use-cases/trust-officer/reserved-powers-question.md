@@ -128,4 +128,4 @@ The questions worth asking are:
 ## Cross-references
 
 - [`../../trusts/reserved-powers.md`](../../trusts/reserved-powers.md)
-- [`sham-trust-question.md`](sham-trust-question.md)
+- [`sham-trust-question.md`](./sham-trust-question.md)

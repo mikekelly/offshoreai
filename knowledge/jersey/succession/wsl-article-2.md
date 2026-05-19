@@ -117,7 +117,7 @@ For **international Jersey clients**:
 
 ## Cross-references
 
-- [`wsl-article-3.md`](wsl-article-3.md);
-- [`wsl-part-3-legitime.md`](wsl-part-3-legitime.md);
-- [`wsl-part-5-conflict-of-laws.md`](wsl-part-5-conflict-of-laws.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-article-3.md`](./wsl-article-3.md);
+- [`wsl-part-3-legitime.md`](./wsl-part-3-legitime.md);
+- [`wsl-part-5-conflict-of-laws.md`](./wsl-part-5-conflict-of-laws.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

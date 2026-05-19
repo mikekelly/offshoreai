@@ -91,6 +91,6 @@ For transactions touching multiple jurisdictions:
 
 ## Cross-references
 
-- [`safl-article-15.md`](safl-article-15.md);
-- [`safl-part-4-licensing.md`](safl-part-4-licensing.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-article-15.md`](./safl-article-15.md);
+- [`safl-part-4-licensing.md`](./safl-part-4-licensing.md);
+- [`safl-articles-index.md`](./safl-articles-index.md).

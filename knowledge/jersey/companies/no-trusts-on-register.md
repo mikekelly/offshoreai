@@ -95,9 +95,9 @@ to its register-keeping; the register is purely legal-title-based.
 
 ## Cross-references
 
-- [`register-of-members.md`](register-of-members.md) — Article 41:
+- [`register-of-members.md`](./register-of-members.md) — Article 41:
   the register itself.
-- [`definition-of-member.md`](definition-of-member.md) — Article 25:
+- [`definition-of-member.md`](./definition-of-member.md) — Article 25:
   who is a "member".
 - [`../trusts/index.md`](../trusts/index.md) — substantive trust
   law for the underlying trust.

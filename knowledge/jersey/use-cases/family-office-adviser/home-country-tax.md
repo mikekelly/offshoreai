@@ -201,5 +201,5 @@ For existing structures:
 
 ## Cross-references
 
-- [`uk-iht-exposure.md`](uk-iht-exposure.md)
-- [`us-grantor-trust.md`](us-grantor-trust.md)
+- [`uk-iht-exposure.md`](./uk-iht-exposure.md)
+- [`us-grantor-trust.md`](./us-grantor-trust.md)

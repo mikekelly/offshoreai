@@ -110,7 +110,7 @@ identical**:
 
 ## Cross-references
 
-- [`dpl-part-1-preliminary.md`](dpl-part-1-preliminary.md);
-- [`dpl-article-8.md`](dpl-article-8.md);
-- [`dpl-part-5-transfers.md`](dpl-part-5-transfers.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-part-1-preliminary.md`](./dpl-part-1-preliminary.md);
+- [`dpl-article-8.md`](./dpl-article-8.md);
+- [`dpl-part-5-transfers.md`](./dpl-part-5-transfers.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

@@ -124,9 +124,9 @@ profile of the shareholder base.
 
 ## Cross-references
 
-- [`scheme-information.md`](scheme-information.md) — Article 126:
+- [`scheme-information.md`](./scheme-information.md) — Article 126:
   explanatory statement.
-- [`reconstruction-and-amalgamation.md`](reconstruction-and-amalgamation.md)
+- [`reconstruction-and-amalgamation.md`](./reconstruction-and-amalgamation.md)
   — Article 127: reconstruction provisions.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

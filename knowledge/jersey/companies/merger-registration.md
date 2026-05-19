@@ -69,7 +69,7 @@ on the merger.
 
 ## Cross-references
 
-- [`merger-completion-effect.md`](merger-completion-effect.md) —
+- [`merger-completion-effect.md`](./merger-completion-effect.md) —
   Article 127FN: substantive effect on completion.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

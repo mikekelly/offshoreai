@@ -149,9 +149,9 @@ For taxpayers identifying past non-compliance:
 
 ## Cross-references
 
-- [`itl-part-7-collection.md`](itl-part-7-collection.md)
-- [`revenue-jersey.md`](revenue-jersey.md)
-- [`itl-article-134a.md`](itl-article-134a.md) — anti-
+- [`itl-part-7-collection.md`](./itl-part-7-collection.md)
+- [`revenue-jersey.md`](./revenue-jersey.md)
+- [`itl-article-134a.md`](./itl-article-134a.md) — anti-
   avoidance.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

@@ -179,7 +179,7 @@ was used and request its calibration certificate.
 
 ## Cross-references
 
-- [`index.md`](index.md);
+- [`index.md`](./index.md);
 - [`../../road-traffic/speeding.md`](../../road-traffic/speeding.md);
 - [`../../road-traffic/parish-hall-enquiries.md`](../../road-traffic/parish-hall-enquiries.md);
 - [`../../road-traffic/court-procedure.md`](../../road-traffic/court-procedure.md);

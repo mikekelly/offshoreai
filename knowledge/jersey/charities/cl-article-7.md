@@ -105,8 +105,8 @@ In practice:
 
 ## Cross-references
 
-- [`cl-article-5.md`](cl-article-5.md);
-- [`cl-article-6.md`](cl-article-6.md);
-- [`cl-article-9.md`](cl-article-9.md);
-- [`cl-part-2-registration.md`](cl-part-2-registration.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-article-5.md`](./cl-article-5.md);
+- [`cl-article-6.md`](./cl-article-6.md);
+- [`cl-article-9.md`](./cl-article-9.md);
+- [`cl-part-2-registration.md`](./cl-part-2-registration.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

@@ -69,7 +69,7 @@ without realising it.
 
 ## Cross-references
 
-- [`articles-of-association.md`](articles-of-association.md) —
+- [`articles-of-association.md`](./articles-of-association.md) —
   Article 5: articles generally.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

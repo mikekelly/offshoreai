@@ -75,13 +75,13 @@ Wages must be paid:
 
 ### Holiday pay
 
-- See [`el-part-4-leave.md`](el-part-4-leave.md);
+- See [`el-part-4-leave.md`](./el-part-4-leave.md);
 - **Calculation** at average pay rate;
 - **Include** regular overtime in some configurations.
 
 ### Maternity / paternity / adoption pay
 
-- See [`el-part-4-leave.md`](el-part-4-leave.md);
+- See [`el-part-4-leave.md`](./el-part-4-leave.md);
 - **Statutory rates**;
 - **Contractual enhancement** common.
 
@@ -97,7 +97,7 @@ Employers must maintain pay records:
 
 ## Cross-references
 
-- [`el-article-3.md`](el-article-3.md);
-- [`el-article-16.md`](el-article-16.md);
-- [`el-part-4-leave.md`](el-part-4-leave.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-3.md`](./el-article-3.md);
+- [`el-article-16.md`](./el-article-16.md);
+- [`el-part-4-leave.md`](./el-part-4-leave.md);
+- [`el-articles-index.md`](./el-articles-index.md).

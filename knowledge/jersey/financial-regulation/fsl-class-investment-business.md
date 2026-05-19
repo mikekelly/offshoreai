@@ -139,7 +139,7 @@ Jersey-based investment business firms serving:
 
 ## Cross-references
 
-- [`fsl-article-2.md`](fsl-article-2.md);
-- [`fsl-article-7.md`](fsl-article-7.md);
-- [`fsl-article-9.md`](fsl-article-9.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-article-2.md`](./fsl-article-2.md);
+- [`fsl-article-7.md`](./fsl-article-7.md);
+- [`fsl-article-9.md`](./fsl-article-9.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

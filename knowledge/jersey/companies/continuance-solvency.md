@@ -72,7 +72,7 @@ creditor notice requirements (Article 127R).
 
 ## Cross-references
 
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A
   parallel concept for reductions of capital.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

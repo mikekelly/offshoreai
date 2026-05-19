@@ -189,9 +189,9 @@ Standard finance-context guarantees:
 
 ## Cross-references
 
-- [`formation.md`](formation.md);
-- [`agency.md`](agency.md);
+- [`formation.md`](./formation.md);
+- [`agency.md`](./agency.md);
 - [`../banking/index.md`](../banking/index.md);
 - [`../companies/cjl-article-58.md`](../../../jersey/companies/cjl-article-58.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

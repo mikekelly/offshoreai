@@ -131,7 +131,7 @@ ascertained.
 
 Where the trustee was a **party to or privy to fraud**, no
 limitation runs. This is consistent with the irreducible-core
-analysis in [Article 30](breach-of-trust-liability.md): fraud is the
+analysis in [Article 30](./breach-of-trust-liability.md): fraud is the
 most egregious breach and is protected against the time-bar
 mechanism.
 
@@ -187,7 +187,7 @@ regime.
   promptly.
 - **Outgoing trustee's 21-year exposure.** A retiring trustee
   faces up to 21 years of potential exposure for past breaches.
-  Security under [Article 43A](trustee-security.md) and indemnity
+  Security under [Article 43A](./trustee-security.md) and indemnity
   packages should anticipate this.
 - **Knowledge attribution to beneficiaries.** Where minor
   beneficiaries have parents or guardians, knowledge attribution

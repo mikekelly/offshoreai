@@ -99,8 +99,8 @@ Even with intestacy:
 
 ## Cross-references
 
-- [`wsl-article-14.md`](wsl-article-14.md);
-- [`wsl-article-22.md`](wsl-article-22.md);
-- [`wsl-part-4-intestacy.md`](wsl-part-4-intestacy.md);
+- [`wsl-article-14.md`](./wsl-article-14.md);
+- [`wsl-article-22.md`](./wsl-article-22.md);
+- [`wsl-part-4-intestacy.md`](./wsl-part-4-intestacy.md);
 - [`../property/real-property-succession.md`](../property/real-property-succession.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

@@ -211,4 +211,4 @@ For an M&A transaction:
 
 - [`../founder-entrepreneur/sale-of-topco.md`](../founder-entrepreneur/sale-of-topco.md)
 - [`../founder-entrepreneur/acquisition-mechanics.md`](../founder-entrepreneur/acquisition-mechanics.md)
-- [`squeeze-out-vs-scheme.md`](squeeze-out-vs-scheme.md)
+- [`squeeze-out-vs-scheme.md`](./squeeze-out-vs-scheme.md)

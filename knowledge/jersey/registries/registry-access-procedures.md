@@ -174,8 +174,8 @@ Some registry searches require:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`companies-registry.md`](companies-registry.md);
-- [`beneficial-ownership.md`](beneficial-ownership.md);
-- [`land-registry.md`](land-registry.md);
+- [`index.md`](./index.md);
+- [`companies-registry.md`](./companies-registry.md);
+- [`beneficial-ownership.md`](./beneficial-ownership.md);
+- [`land-registry.md`](./land-registry.md);
 - [`../use-cases/journalist-ngo-academic/public-info-jersey-companies.md`](../use-cases/journalist-ngo-academic/public-info-jersey-companies.md).

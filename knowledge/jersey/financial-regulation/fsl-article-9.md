@@ -154,8 +154,8 @@ The JFSC may **refuse** for:
 
 ## Cross-references
 
-- [`fsl-article-7.md`](fsl-article-7.md);
-- [`fsl-article-8.md`](fsl-article-8.md);
-- [`fsl-article-10.md`](fsl-article-10.md);
-- [`fsl-schedules.md`](fsl-schedules.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-article-7.md`](./fsl-article-7.md);
+- [`fsl-article-8.md`](./fsl-article-8.md);
+- [`fsl-article-10.md`](./fsl-article-10.md);
+- [`fsl-schedules.md`](./fsl-schedules.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

@@ -82,7 +82,7 @@ the landlord cannot relet immediately.
 A landlord seeking to end a **periodic** tenancy on a
 **justified ground** must give at least **3 months'**
 written notice. Justified grounds include (subject to
-detail in [`grounds-for-termination.md`](grounds-for-termination.md)):
+detail in [`grounds-for-termination.md`](./grounds-for-termination.md)):
 
 - **Breach** of the agreement by the tenant (procedure
   varies — typically the 7-day cure procedure applies
@@ -142,8 +142,8 @@ procedure is:
 3. **Apply to the Petty Debts Court** for termination and
    eviction.
 
-See [`non-payment-of-rent.md`](non-payment-of-rent.md) and
-[`eviction-procedure.md`](eviction-procedure.md).
+See [`non-payment-of-rent.md`](./non-payment-of-rent.md) and
+[`eviction-procedure.md`](./eviction-procedure.md).
 
 A landlord cannot **bypass** the breach procedure by serving
 a 3- or 12-month termination notice "to be safe" — the two
@@ -214,11 +214,11 @@ For tenants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`2025-amendment-law.md`](2025-amendment-law.md);
-- [`forms-of-tenancy.md`](forms-of-tenancy.md);
-- [`grounds-for-termination.md`](grounds-for-termination.md);
-- [`non-payment-of-rent.md`](non-payment-of-rent.md);
-- [`eviction-procedure.md`](eviction-procedure.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`2025-amendment-law.md`](./2025-amendment-law.md);
+- [`forms-of-tenancy.md`](./forms-of-tenancy.md);
+- [`grounds-for-termination.md`](./grounds-for-termination.md);
+- [`non-payment-of-rent.md`](./non-payment-of-rent.md);
+- [`eviction-procedure.md`](./eviction-procedure.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md).

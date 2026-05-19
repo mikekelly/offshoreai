@@ -144,10 +144,10 @@ significant.
 
 ## Cross-references
 
-- [`customary-law.md`](customary-law.md);
-- [`sources-of-law.md`](sources-of-law.md);
-- [`pothier-and-the-coutume.md`](pothier-and-the-coutume.md);
+- [`customary-law.md`](./customary-law.md);
+- [`sources-of-law.md`](./sources-of-law.md);
+- [`pothier-and-the-coutume.md`](./pothier-and-the-coutume.md);
 - [`../succession/wills-and-successions-law-1993.md`](../succession/wills-and-successions-law-1993.md);
 - [`../property/index.md`](../property/index.md);
 - [`../contract/index.md`](../contract/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

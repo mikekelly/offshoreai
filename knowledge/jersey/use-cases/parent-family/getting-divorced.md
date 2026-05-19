@@ -222,7 +222,7 @@ depart from it if necessary to ensure fairness. See
 
 ## Cross-references
 
-- [`index.md`](index.md);
+- [`index.md`](./index.md);
 - [`../../family/index.md`](../../family/index.md);
 - [`../../family/matrimonial-causes-law-1949.md`](../../family/matrimonial-causes-law-1949.md);
 - [`../../family/divorce-grounds.md`](../../family/divorce-grounds.md);

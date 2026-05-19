@@ -126,7 +126,7 @@ The **Cayman Islands Monetary Authority (CIMA)**:
 - **Similar** in function to Jersey purpose trusts but with
   specific Cayman features.
 
-See [`star-trusts.md`](star-trusts.md).
+See [`star-trusts.md`](./star-trusts.md).
 
 ### Segregated Portfolio Companies (SPC)
 
@@ -165,12 +165,12 @@ See [`star-trusts.md`](star-trusts.md).
 
 ## Cross-references
 
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
-- [`tax.md`](tax.md);
-- [`cima.md`](cima.md);
-- [`star-trusts.md`](star-trusts.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
+- [`tax.md`](./tax.md);
+- [`cima.md`](./cima.md);
+- [`star-trusts.md`](./star-trusts.md);
 - [`../jersey/index.md`](../jersey/index.md).

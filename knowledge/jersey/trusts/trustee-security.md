@@ -105,11 +105,11 @@ Factors the Royal Court will consider in a dispute:
 
 Where the trustee and beneficiaries cannot agree on the security
 amount or form, **application to the Royal Court** for directions
-under [Article 51](article-51-directions.md) is the route.
+under [Article 51](./article-51-directions.md) is the route.
 
 ## Interaction with Article 34
 
-[Article 34](outgoing-trustee.md) confirms the outgoing trustee's
+[Article 34](./outgoing-trustee.md) confirms the outgoing trustee's
 release from future beneficiary claims subject to specified
 exceptions. **Article 43A is the security-side complement**: the
 trustee's release is more durable when backed by realistic security

@@ -151,9 +151,9 @@ A founder seeking dissolution where:
 
 ## Cross-references
 
-- [`fjl-article-41.md`](fjl-article-41.md);
-- [`fjl-article-43.md`](fjl-article-43.md);
-- [`fjl-article-44.md`](fjl-article-44.md);
-- [`fjl-article-45.md`](fjl-article-45.md);
-- [`fjl-part-11-dissolution.md`](fjl-part-11-dissolution.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-41.md`](./fjl-article-41.md);
+- [`fjl-article-43.md`](./fjl-article-43.md);
+- [`fjl-article-44.md`](./fjl-article-44.md);
+- [`fjl-article-45.md`](./fjl-article-45.md);
+- [`fjl-part-11-dissolution.md`](./fjl-part-11-dissolution.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

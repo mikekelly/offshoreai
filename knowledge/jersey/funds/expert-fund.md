@@ -73,6 +73,6 @@ standards.
 
 ## Cross-references
 
-- [`jersey-private-fund.md`](jersey-private-fund.md) — JPF
+- [`jersey-private-fund.md`](./jersey-private-fund.md) — JPF
   comparison.
-- [`aifmd-nppr.md`](aifmd-nppr.md) — EU marketing context.
+- [`aifmd-nppr.md`](./aifmd-nppr.md) — EU marketing context.

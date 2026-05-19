@@ -111,7 +111,7 @@ For Schedule D income:
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md)
-- [`zero-ten.md`](zero-ten.md)
+- [`personal-income-tax.md`](./personal-income-tax.md)
+- [`zero-ten.md`](./zero-ten.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

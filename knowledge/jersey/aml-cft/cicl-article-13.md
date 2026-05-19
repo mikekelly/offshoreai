@@ -124,7 +124,7 @@ Article 13 restraint is different from sanctions freezing:
 
 ## Cross-references
 
-- [`cicl-article-14.md`](cicl-article-14.md);
-- [`safl-article-10.md`](safl-article-10.md);
-- [`pocl-part-3-restraint.md`](pocl-part-3-restraint.md);
-- [`cicl-articles-index.md`](cicl-articles-index.md).
+- [`cicl-article-14.md`](./cicl-article-14.md);
+- [`safl-article-10.md`](./safl-article-10.md);
+- [`pocl-part-3-restraint.md`](./pocl-part-3-restraint.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md).

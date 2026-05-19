@@ -198,4 +198,4 @@ For an active M&A transaction:
 
 - [`../../companies/squeeze-out.md`](../../companies/squeeze-out.md)
 - [`../../companies/scheme-of-arrangement.md`](../../companies/scheme-of-arrangement.md)
-- [`jersey-topco-ma.md`](jersey-topco-ma.md)
+- [`jersey-topco-ma.md`](./jersey-topco-ma.md)

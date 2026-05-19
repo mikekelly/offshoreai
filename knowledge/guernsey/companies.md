@@ -180,9 +180,9 @@ Common scenarios:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
 - [`../jersey/companies/index.md`](../jersey/companies/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

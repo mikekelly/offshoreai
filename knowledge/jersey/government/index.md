@@ -50,25 +50,25 @@ Land here if your question involves any of:
 
 | The question is about... | Read |
 |---|---|
-| Whether Jersey is "part of the UK" or "part of the EU" | [`crown-dependency.md`](crown-dependency.md) (short answer to both: no) |
-| Who actually makes Jersey law, and how | [`states-assembly.md`](states-assembly.md) plus this index's "how Jersey legislates" section |
-| Who runs Jersey's executive branch | [`council-of-ministers.md`](council-of-ministers.md) *(stub)* |
+| Whether Jersey is "part of the UK" or "part of the EU" | [`crown-dependency.md`](./crown-dependency.md) (short answer to both: no) |
+| Who actually makes Jersey law, and how | [`states-assembly.md`](./states-assembly.md) plus this index's "how Jersey legislates" section |
+| Who runs Jersey's executive branch | [`council-of-ministers.md`](./council-of-ministers.md) *(stub)* |
 | The Bailiff's unusual dual judicial / parliamentary role | [`bailiff.md`](../legal-system/bailiff.md) *(stub)* and [`../legal-system/royal-court.md`](../legal-system/royal-court.md) |
-| The Lieutenant-Governor's role | [`lieutenant-governor.md`](lieutenant-governor.md) *(stub)* |
-| The 12 parishes and the Connétables | [`parishes.md`](parishes.md) *(stub)* |
-| What happened to Jersey's EU relationship post-Brexit | [`crown-dependency.md`](crown-dependency.md) and [`../international/eu-relationship.md`](../../../jersey/international/eu-relationship.md) *(stub)* |
+| The Lieutenant-Governor's role | [`lieutenant-governor.md`](./lieutenant-governor.md) *(stub)* |
+| The 12 parishes and the Connétables | [`parishes.md`](./parishes.md) *(stub)* |
+| What happened to Jersey's EU relationship post-Brexit | [`crown-dependency.md`](./crown-dependency.md) and [`../international/eu-relationship.md`](../../../jersey/international/eu-relationship.md) *(stub)* |
 | Why Jersey law looks different from English law in places | This section plus [`../legal-system/sources-of-law.md`](../legal-system/sources-of-law.md) *(stub)* |
 
 ## Where to start as a cold reader
 
 If you have no prior context, read in this order:
 
-1. **[`crown-dependency.md`](crown-dependency.md)** — the
+1. **[`crown-dependency.md`](./crown-dependency.md)** — the
    constitutional position, the UK relationship, the post-Brexit
    EU position, and what the UK does and does not do for Jersey.
    This is the foundation for understanding everything else in the
    corpus.
-2. **[`states-assembly.md`](states-assembly.md)** — the
+2. **[`states-assembly.md`](./states-assembly.md)** — the
    legislature. 49 members for the current term (37 Deputies + 12
    Connétables); Senators returning at the 2026 election. Bills
    become Laws via Royal Sanction by Order in Council, not direct
@@ -81,30 +81,30 @@ If you have no prior context, read in this order:
 
 ### Theme 1 — Constitutional position
 
-- **[`crown-dependency.md`](crown-dependency.md)** — Crown
+- **[`crown-dependency.md`](./crown-dependency.md)** — Crown
   Dependency status; UK relationship; EU relationship; defence /
   foreign affairs; international identity. The cornerstone file.
 
 ### Theme 2 — Institutions
 
-- [`states-assembly.md`](states-assembly.md) — legislature.
-- [`council-of-ministers.md`](council-of-ministers.md) —
+- [`states-assembly.md`](./states-assembly.md) — legislature.
+- [`council-of-ministers.md`](./council-of-ministers.md) —
   executive (ministerial system since 2005).
 - [`bailiff.md`](../legal-system/bailiff.md) — Bailiff and Deputy Bailiff (dual
   judicial / parliamentary role; see also
   [`../legal-system/bailiff.md`](../legal-system/bailiff.md)).
-- [`lieutenant-governor.md`](lieutenant-governor.md) — the
+- [`lieutenant-governor.md`](./lieutenant-governor.md) — the
   Sovereign's personal representative in Jersey.
 
 ### Theme 4 — UK-Jersey relationship
 
-- [`uk-jersey-relationship.md`](uk-jersey-relationship.md) —
+- [`uk-jersey-relationship.md`](./uk-jersey-relationship.md) —
   constitutional position, Privy Council process, external
   relations, fiscal autonomy, post-Brexit EU relationship.
 
 ### Theme 3 — Local government
 
-- [`parishes.md`](parishes.md) *(stub)* — the 12 civil parishes
+- [`parishes.md`](./parishes.md) *(stub)* — the 12 civil parishes
   (Grouville, St Brelade, St Clement, St Helier, St John, St
   Lawrence, St Martin, St Mary, St Ouen, St Peter, St Saviour,
   Trinity); Connétables; parish assemblies; honorary police.
@@ -113,7 +113,7 @@ If you have no prior context, read in this order:
 
 The mechanics:
 
-1. The **[States Assembly](states-assembly.md)** debates and adopts a
+1. The **[States Assembly](./states-assembly.md)** debates and adopts a
    **Projet de Loi** (Bill).
 2. The adopted Law is forwarded for **Royal Sanction** by the King
    in Council. Sanction is given by **Order in Council** of the
@@ -130,7 +130,7 @@ formal constitutional fiction that Jersey legislates under the
 **Crown**, not under the UK Parliament. It underpins the
 convention that the UK Parliament does not legislate for Jersey
 without Jersey's consent. See
-[`crown-dependency.md`](crown-dependency.md) for the
+[`crown-dependency.md`](./crown-dependency.md) for the
 constitutional sources.
 
 The route differs qualitatively from the UK, where Royal Assent is

@@ -68,7 +68,7 @@ converts to creditors' winding up under Article 151.
 
 ## Cross-references
 
-- [`summary-winding-up-insolvency.md`](summary-winding-up-insolvency.md)
+- [`summary-winding-up-insolvency.md`](./summary-winding-up-insolvency.md)
   — Article 151: what happens if it turns out insolvent.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

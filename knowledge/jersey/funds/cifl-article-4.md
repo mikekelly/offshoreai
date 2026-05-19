@@ -117,8 +117,8 @@ A public fund needs **both**:
 
 ## Cross-references
 
-- [`cifl-article-2.md`](cifl-article-2.md);
-- [`cifl-article-6.md`](cifl-article-6.md);
-- [`cifl-article-7.md`](cifl-article-7.md);
-- [`public-funds.md`](public-funds.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-article-2.md`](./cifl-article-2.md);
+- [`cifl-article-6.md`](./cifl-article-6.md);
+- [`cifl-article-7.md`](./cifl-article-7.md);
+- [`public-funds.md`](./public-funds.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

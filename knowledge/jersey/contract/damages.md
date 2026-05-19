@@ -178,7 +178,7 @@ For commercial damages:
 
 ## Cross-references
 
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`contract-overview.md`](contract-overview.md);
-- [`specific-performance.md`](specific-performance.md);
-- [`index.md`](index.md).
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`contract-overview.md`](./contract-overview.md);
+- [`specific-performance.md`](./specific-performance.md);
+- [`index.md`](./index.md).

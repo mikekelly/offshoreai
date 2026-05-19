@@ -127,7 +127,7 @@ A discharged debtor who falls into further insolvency:
 
 ## Cross-references
 
-- [`bdl-article-32.md`](bdl-article-32.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md);
-- [`bdl-article-17.md`](bdl-article-17.md);
-- [`bankruptcy-desastre-law-1990.md`](bankruptcy-desastre-law-1990.md).
+- [`bdl-article-32.md`](./bdl-article-32.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md);
+- [`bdl-article-17.md`](./bdl-article-17.md);
+- [`bankruptcy-desastre-law-1990.md`](./bankruptcy-desastre-law-1990.md).

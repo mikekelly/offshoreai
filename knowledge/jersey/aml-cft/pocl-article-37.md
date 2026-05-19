@@ -69,13 +69,13 @@ Supervised businesses are subject to:
 
 ## Schedule 2 detail
 
-See [`schedule-2-businesses.md`](schedule-2-businesses.md)
+See [`schedule-2-businesses.md`](./schedule-2-businesses.md)
 for the full Schedule 2 list and explanatory notes.
 
 ## Cross-references
 
-- [`pocl-articles-38-41.md`](pocl-articles-38-41.md);
-- [`pocl-part-6-supervised.md`](pocl-part-6-supervised.md);
-- [`schedule-2-businesses.md`](schedule-2-businesses.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-articles-38-41.md`](./pocl-articles-38-41.md);
+- [`pocl-part-6-supervised.md`](./pocl-part-6-supervised.md);
+- [`schedule-2-businesses.md`](./schedule-2-businesses.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

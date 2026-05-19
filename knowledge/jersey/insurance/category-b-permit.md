@@ -75,5 +75,5 @@ a "**rent-a-captive**" model.
 
 ## Cross-references
 
-- [`captive-insurance.md`](captive-insurance.md)
+- [`captive-insurance.md`](./captive-insurance.md)
 - [`../companies/cell-companies.md`](../companies/cell-companies.md)

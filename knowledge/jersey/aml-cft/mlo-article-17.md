@@ -124,7 +124,7 @@ After the retention period:
 
 ## Cross-references
 
-- [`mlo-articles-index.md`](mlo-articles-index.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md);
 - [`../use-cases/compliance-mlro/record-retention.md`](../use-cases/compliance-mlro/record-retention.md);
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-16.md`](mlo-article-16.md).
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-16.md`](./mlo-article-16.md).

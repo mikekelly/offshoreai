@@ -139,7 +139,7 @@ times, including:
 
 ## Cross-references
 
-- [`bdl-articles-index.md`](bdl-articles-index.md);
-- [`bdl-article-17.md`](bdl-article-17.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md);
+- [`bdl-article-17.md`](./bdl-article-17.md);
 - [`../trusts/trustee-estate-and-insolvency.md`](../trusts/trustee-estate-and-insolvency.md);
 - [`../foundations/fjl-part-11-dissolution.md`](../foundations/fjl-part-11-dissolution.md).

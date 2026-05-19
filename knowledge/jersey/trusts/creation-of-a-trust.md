@@ -87,7 +87,7 @@ declaration of trust later.
 
 Article 7 does not address what property the settlor must put into
 the trust on creation. That is the function of
-[Article 8](property-in-a-trust.md). A trust can be created with a
+[Article 8](./property-in-a-trust.md). A trust can be created with a
 nominal sum (£10 is a common "settlement sum"), with the principal
 property added later under Article 8's general permission to accept
 additional property.

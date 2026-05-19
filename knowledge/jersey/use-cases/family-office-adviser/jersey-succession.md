@@ -190,4 +190,4 @@ For an estate-planning engagement:
 ## Cross-references
 
 - [`../trust-officer/forced-heirship.md`](../trust-officer/forced-heirship.md)
-- [`intergenerational-transfer.md`](intergenerational-transfer.md)
+- [`intergenerational-transfer.md`](./intergenerational-transfer.md)

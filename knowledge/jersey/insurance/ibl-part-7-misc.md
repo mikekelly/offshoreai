@@ -114,8 +114,8 @@ The JFSC participates in:
 
 ## Cross-references
 
-- [`ibl-articles-index.md`](ibl-articles-index.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md);
 - [`../financial-regulation/jfsc.md`](../financial-regulation/jfsc.md);
-- [`captive-insurance.md`](captive-insurance.md);
-- [`category-a-permit.md`](category-a-permit.md);
-- [`category-b-permit.md`](category-b-permit.md).
+- [`captive-insurance.md`](./captive-insurance.md);
+- [`category-a-permit.md`](./category-a-permit.md);
+- [`category-b-permit.md`](./category-b-permit.md).

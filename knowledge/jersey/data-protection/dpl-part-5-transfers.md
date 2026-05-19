@@ -149,7 +149,7 @@ For Jersey businesses with international operations:
 
 ## Cross-references
 
-- [`dpl-part-4-controller-processor.md`](dpl-part-4-controller-processor.md);
-- [`dpl-article-2.md`](dpl-article-2.md);
+- [`dpl-part-4-controller-processor.md`](./dpl-part-4-controller-processor.md);
+- [`dpl-article-2.md`](./dpl-article-2.md);
 - [`../international/exchange-of-information.md`](../international/exchange-of-information.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

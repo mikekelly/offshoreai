@@ -63,7 +63,7 @@ In practice, an enforcer who wishes to resign will:
 The deed will normally provide for removal of the enforcer — typically
 by the settlor (while alive and competent), by a protector, or by the
 Royal Court on application. Where the deed is silent, the Royal Court
-has jurisdiction under [Article 51](article-51-directions.md) to
+has jurisdiction under [Article 51](./article-51-directions.md) to
 remove an enforcer on application of an interested person.
 
 Grounds for removal vary by deed but generally include:

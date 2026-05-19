@@ -77,7 +77,7 @@ function**.
 
 ## Cross-references
 
-- [`continuance-outbound-effect.md`](continuance-outbound-effect.md)
+- [`continuance-outbound-effect.md`](./continuance-outbound-effect.md)
   — Article 127V: effect of overseas continuance.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

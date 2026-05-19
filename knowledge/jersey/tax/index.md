@@ -43,7 +43,7 @@ and how Jersey's tax system interacts with foreign tax systems
 OECD/G20 minimum-tax framework).
 
 Jersey is **not part of the UK** for tax purposes. It has its own
-tax authority — **[Revenue Jersey](revenue-jersey.md)**, part of
+tax authority — **[Revenue Jersey](./revenue-jersey.md)**, part of
 the Treasury and Resources Ministry — and its own statutes. The
 two principal statutes are:
 
@@ -66,14 +66,14 @@ Land here if your question involves any of the following:
 
 | The question is about... | Read this section, plus... |
 |---|---|
-| How a Jersey company is taxed on its profits | [`zero-ten.md`](zero-ten.md) and [`distributions-and-deemed-distributions.md`](distributions-and-deemed-distributions.md) *(stub)* |
-| How a Jersey-resident individual is taxed | [`personal-income-tax.md`](personal-income-tax.md) |
-| Whether Jersey GST applies to a transaction | [`gst.md`](gst.md) |
-| Whether Jersey has CGT or IHT | [`no-capital-gains-tax.md`](no-capital-gains-tax.md) and [`no-inheritance-tax.md`](no-inheritance-tax.md) (both *stubs* — short answer: no) |
-| Whether a Jersey vehicle has economic-substance obligations | [`economic-substance.md`](economic-substance.md) *(stub)* plus [`../companies/index.md`](../companies/index.md) |
+| How a Jersey company is taxed on its profits | [`zero-ten.md`](./zero-ten.md) and [`distributions-and-deemed-distributions.md`](./distributions-and-deemed-distributions.md) *(stub)* |
+| How a Jersey-resident individual is taxed | [`personal-income-tax.md`](./personal-income-tax.md) |
+| Whether Jersey GST applies to a transaction | [`gst.md`](./gst.md) |
+| Whether Jersey has CGT or IHT | [`no-capital-gains-tax.md`](./no-capital-gains-tax.md) and [`no-inheritance-tax.md`](./no-inheritance-tax.md) (both *stubs* — short answer: no) |
+| Whether a Jersey vehicle has economic-substance obligations | [`economic-substance.md`](./economic-substance.md) *(stub)* plus [`../companies/index.md`](../companies/index.md) |
 | CRS / FATCA classification of a Jersey trust or company | [`../international/crs.md`](../international/crs.md) and [`../international/fatca.md`](../international/fatca.md) — international section |
-| Pillar Two top-up for a multinational with a Jersey entity | [`pillar-two.md`](pillar-two.md) *(stub)* |
-| Stamp duty on Jersey property | [`stamp-duty.md`](stamp-duty.md) *(stub)* |
+| Pillar Two top-up for a multinational with a Jersey entity | [`pillar-two.md`](./pillar-two.md) *(stub)* |
+| Stamp duty on Jersey property | [`stamp-duty.md`](./stamp-duty.md) *(stub)* |
 
 If your question is about **tax of trust distributions to foreign
 beneficiaries** or **Jersey's tax-treatment of trusts as a
@@ -93,17 +93,17 @@ tax position has to be modelled separately.
 If you have no prior context on Jersey tax, read these files in
 order — they orient on everything else.
 
-1. **[`zero-ten.md`](zero-ten.md)** — the corporate tax regime.
+1. **[`zero-ten.md`](./zero-ten.md)** — the corporate tax regime.
    The 0% standard rate is the headline reason Jersey is a finance
    centre. Understand the 10% / 20% exceptions and you understand
    most Jersey-corporate tax questions.
-2. **[`personal-income-tax.md`](personal-income-tax.md)** — the
+2. **[`personal-income-tax.md`](./personal-income-tax.md)** — the
    20% flat rate, marginal relief at the low end, no higher band.
    Includes the YA 2025 exemption thresholds.
-3. **[`gst.md`](gst.md)** — the 5% consumption tax, the
+3. **[`gst.md`](./gst.md)** — the 5% consumption tax, the
    **International Services Entity (ISE)** carve-out for
    finance-business supplies to non-Jersey clients.
-4. **[`economic-substance.md`](economic-substance.md)** *(stub)*
+4. **[`economic-substance.md`](./economic-substance.md)** *(stub)*
    — the post-2019 substance rules that overlay zero-ten for
    relevant-activity companies.
 
@@ -117,19 +117,19 @@ as the presences:
   individuals or on companies. *Trading* profits in Jersey real
   estate or property development are taxed at 20% (a Schedule A /
   property-trade rule) — that is *income* tax on trading profits,
-  not CGT. See [`no-capital-gains-tax.md`](no-capital-gains-tax.md)
+  not CGT. See [`no-capital-gains-tax.md`](./no-capital-gains-tax.md)
   *(stub)*.
 - **No inheritance tax.** Jersey does not impose a tax on
   succession or estate transfer. The customary-law *droit de
   succession* is essentially a registration fee on probate, not a
   wealth-transfer tax. See
-  [`no-inheritance-tax.md`](no-inheritance-tax.md) *(stub)*.
+  [`no-inheritance-tax.md`](./no-inheritance-tax.md) *(stub)*.
 - **No wealth tax.** Jersey does not impose an annual tax on net
   wealth (unlike, e.g., Switzerland's cantonal regime).
 - **No withholding** on dividends paid by a Jersey company within
   the zero-rate regime (Article 123C(2) companies do not deduct).
   Article 123D 10% companies deduct at 10% on payment. See
-  [`zero-ten.md`](zero-ten.md).
+  [`zero-ten.md`](./zero-ten.md).
 - **No VAT.** Jersey's consumption tax is GST at 5%, not VAT.
   Imports from the UK or EU into Jersey are subject to Jersey GST
   on arrival, not UK / EU VAT in transit.
@@ -142,13 +142,13 @@ The headline regime. The 0% standard rate makes Jersey a finance
 centre; the carve-outs at 10% and 20% are narrow but operationally
 significant.
 
-- **[`zero-ten.md`](zero-ten.md)** — the full rate structure with
+- **[`zero-ten.md`](./zero-ten.md)** — the full rate structure with
   Article citations. The single file an agent should read for any
   corporate-tax question.
-- [`distributions-and-deemed-distributions.md`](distributions-and-deemed-distributions.md)
+- [`distributions-and-deemed-distributions.md`](./distributions-and-deemed-distributions.md)
   *(stub)* — how distributions and deemed distributions interact
   with the regime for Jersey-resident shareholders.
-- [`company-residence.md`](company-residence.md) *(stub)* —
+- [`company-residence.md`](./company-residence.md) *(stub)* —
   when a company is "resident in Jersey" for tax purposes
   (incorporation plus management-and-control test).
 
@@ -156,12 +156,12 @@ significant.
 
 20% flat, marginal relief for low income, no higher band.
 
-- **[`personal-income-tax.md`](personal-income-tax.md)** — the
+- **[`personal-income-tax.md`](./personal-income-tax.md)** — the
   full personal-tax page.
-- [`residence-individuals.md`](residence-individuals.md) *(stub)*
+- [`residence-individuals.md`](./residence-individuals.md) *(stub)*
   — when an individual is Jersey-resident / ordinarily resident /
   non-resident.
-- [`high-value-residency-tax.md`](high-value-residency-tax.md)
+- [`high-value-residency-tax.md`](./high-value-residency-tax.md)
   *(stub)* — the bespoke 2(1)(e) High-Value Residency tax regime
   for incoming HNW individuals.
 
@@ -171,8 +171,8 @@ Jersey's 5% consumption tax, similar in mechanism to UK VAT but
 narrower in coverage and with the **ISE** carve-out for
 finance-business entities.
 
-- **[`gst.md`](gst.md)** — full page.
-- [`gst-international-services-entity.md`](gst-international-services-entity.md)
+- **[`gst.md`](./gst.md)** — full page.
+- [`gst-international-services-entity.md`](./gst-international-services-entity.md)
   *(stub)* — the ISE flat-fee regime that lets finance-business
   entities supply non-Jersey clients without GST drag.
 
@@ -180,9 +180,9 @@ finance-business entities.
 
 Sit alongside personal income tax but legally separate.
 
-- [`social-security.md`](social-security.md) *(stub)* — Class 1
+- [`social-security.md`](./social-security.md) *(stub)* — Class 1
   (employed) and Class 2 (self-employed) contributions.
-- [`long-term-care.md`](long-term-care.md) *(stub)* — the LTC
+- [`long-term-care.md`](./long-term-care.md) *(stub)* — the LTC
   contribution collected through the income-tax mechanism.
 
 ### Theme 5 — Economic substance
@@ -191,7 +191,7 @@ Overlays zero-ten for Jersey-resident companies carrying on
 "relevant activities". Driven by the OECD inclusive framework's
 expectations for low/no-tax jurisdictions.
 
-- [`economic-substance.md`](economic-substance.md) *(stub)* — the
+- [`economic-substance.md`](./economic-substance.md) *(stub)* — the
   Taxation (Companies — Economic Substance) (Jersey) Law 2019.
 
 ### Theme 6 — International tax frameworks
@@ -199,9 +199,9 @@ expectations for low/no-tax jurisdictions.
 CRS, FATCA, treaty network, OECD Pillar Two. These sit at the
 boundary of Jersey law and international rules.
 
-- [`international-tax.md`](international-tax.md) *(stub)* —
+- [`international-tax.md`](./international-tax.md) *(stub)* —
   overview.
-- [`pillar-two.md`](pillar-two.md) *(stub)* — Jersey's MCIT /
+- [`pillar-two.md`](./pillar-two.md) *(stub)* — Jersey's MCIT /
   Domestic Minimum Tax implementation for in-scope MNE groups.
 - [CRS](../international/crs.md) *(stub)*, [FATCA](../international/fatca.md)
   *(stub)*, [DTAs](../international/dtas.md) *(stub)*,
@@ -214,15 +214,15 @@ boundary of Jersey law and international rules.
 The absences. Often the most important fact for a cross-border
 planning question.
 
-- [`no-capital-gains-tax.md`](no-capital-gains-tax.md) *(stub)*
-- [`no-inheritance-tax.md`](no-inheritance-tax.md) *(stub)*
+- [`no-capital-gains-tax.md`](./no-capital-gains-tax.md) *(stub)*
+- [`no-inheritance-tax.md`](./no-inheritance-tax.md) *(stub)*
 
 ### Theme 8 — Stamp duty and other transaction taxes
 
 The closest thing Jersey has to UK SDLT / IHT, but narrower in
 scope.
 
-- [`stamp-duty.md`](stamp-duty.md) *(stub)* — land-transaction
+- [`stamp-duty.md`](./stamp-duty.md) *(stub)* — land-transaction
   duty, *droit d'enregistrement* on registered mortgages, probate
   fees.
 
@@ -235,7 +235,7 @@ the most recently completed YA is **2025**.
 
 Tax-allowance figures in this corpus carry the **YA they belong
 to** in the relevant file — see, e.g.,
-[`personal-income-tax.md`](personal-income-tax.md) for the YA 2025
+[`personal-income-tax.md`](./personal-income-tax.md) for the YA 2025
 exemption thresholds (£20,700 single, £33,200 married).
 
 ## Cross-section navigation by tag

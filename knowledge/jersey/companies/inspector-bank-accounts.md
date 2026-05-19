@@ -73,7 +73,7 @@ personal finances when the **specific suspicion** justifies it.
 
 ## Cross-references
 
-- [`inspector-powers.md`](inspector-powers.md) — Article 129
+- [`inspector-powers.md`](./inspector-powers.md) — Article 129
   general inspector powers.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

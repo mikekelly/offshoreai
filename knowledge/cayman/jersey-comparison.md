@@ -176,10 +176,10 @@ Many international structures use **both**:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`star-trusts.md`](star-trusts.md);
-- [`funds.md`](funds.md);
-- [`cima.md`](cima.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`star-trusts.md`](./star-trusts.md);
+- [`funds.md`](./funds.md);
+- [`cima.md`](./cima.md);
 - [`../jersey/index.md`](../jersey/index.md).

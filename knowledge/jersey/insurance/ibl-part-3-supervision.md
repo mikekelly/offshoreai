@@ -103,7 +103,7 @@ standard for Jersey insurers.
 
 ## Cross-references
 
-- [`ibl-articles-index.md`](ibl-articles-index.md);
-- [`ibl-part-4-prudential.md`](ibl-part-4-prudential.md);
-- [`ibl-part-5-conduct.md`](ibl-part-5-conduct.md);
-- [`ibl-part-7-misc.md`](ibl-part-7-misc.md).
+- [`ibl-articles-index.md`](./ibl-articles-index.md);
+- [`ibl-part-4-prudential.md`](./ibl-part-4-prudential.md);
+- [`ibl-part-5-conduct.md`](./ibl-part-5-conduct.md);
+- [`ibl-part-7-misc.md`](./ibl-part-7-misc.md).

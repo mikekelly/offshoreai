@@ -101,13 +101,13 @@ The **Motor Traffic (Third Party Insurance) (Jersey) Law
 policies are standard but third-party-only meets the legal
 requirement.
 
-See [`third-party-insurance.md`](third-party-insurance.md).
+See [`third-party-insurance.md`](./third-party-insurance.md).
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`road-traffic-law-1956.md`](road-traffic-law-1956.md);
-- [`third-party-insurance.md`](third-party-insurance.md);
-- [`parish-hall-enquiries.md`](parish-hall-enquiries.md);
-- [`disqualification.md`](disqualification.md);
+- [`index.md`](./index.md);
+- [`road-traffic-law-1956.md`](./road-traffic-law-1956.md);
+- [`third-party-insurance.md`](./third-party-insurance.md);
+- [`parish-hall-enquiries.md`](./parish-hall-enquiries.md);
+- [`disqualification.md`](./disqualification.md);
 - [`../use-cases/driver-motorist/index.md`](../use-cases/driver-motorist/index.md).

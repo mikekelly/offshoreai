@@ -125,8 +125,8 @@ For Article 27 roles:
 
 ## Cross-references
 
-- [`fjl-article-26.md`](fjl-article-26.md);
-- [`fjl-part-6-founder.md`](fjl-part-6-founder.md);
+- [`fjl-article-26.md`](./fjl-article-26.md);
+- [`fjl-part-6-founder.md`](./fjl-part-6-founder.md);
 - [`../trusts/reserved-powers.md`](../trusts/reserved-powers.md)
   — analogous trust concept;
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -87,7 +87,7 @@ sense. The relief is for genuinely extraordinary circumstances.
 
 ## Cross-references
 
-- [`directors-duties.md`](directors-duties.md) — Article 74: the
+- [`directors-duties.md`](./directors-duties.md) — Article 74: the
   primary substantive director duties.
 - [`relief-from-personal-liability.md`](../trusts/relief-from-personal-liability.md)
   *(planned in trusts/)* — Trusts Law Article 45 gives a parallel

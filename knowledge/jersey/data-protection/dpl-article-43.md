@@ -145,6 +145,6 @@ A single incident affecting **Jersey and EU data subjects**:
 
 ## Cross-references
 
-- [`dpl-part-4-controller-processor.md`](dpl-part-4-controller-processor.md);
-- [`dpl-part-7-enforcement.md`](dpl-part-7-enforcement.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-part-4-controller-processor.md`](./dpl-part-4-controller-processor.md);
+- [`dpl-part-7-enforcement.md`](./dpl-part-7-enforcement.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

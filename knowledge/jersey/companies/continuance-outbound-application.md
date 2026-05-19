@@ -68,9 +68,9 @@ before it can approve.
 
 ## Cross-references
 
-- [`continuance-outbound-approval.md`](continuance-outbound-approval.md)
+- [`continuance-outbound-approval.md`](./continuance-outbound-approval.md)
   — Article 127Q.
-- [`continuance-outbound-creditor-notice.md`](continuance-outbound-creditor-notice.md)
+- [`continuance-outbound-creditor-notice.md`](./continuance-outbound-creditor-notice.md)
   — Article 127R.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

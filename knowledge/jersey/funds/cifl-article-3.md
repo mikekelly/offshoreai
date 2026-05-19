@@ -130,8 +130,8 @@ Functionaries must be:
 
 ## Cross-references
 
-- [`cifl-article-7.md`](cifl-article-7.md);
-- [`cifl-article-2.md`](cifl-article-2.md);
+- [`cifl-article-7.md`](./cifl-article-7.md);
+- [`cifl-article-2.md`](./cifl-article-2.md);
 - [`../use-cases/fund-counsel/dsp-vs-counsel-role.md`](../use-cases/fund-counsel/dsp-vs-counsel-role.md);
 - [`../financial-regulation/fund-services-business.md`](../../../jersey/financial-regulation/fund-services-business.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

@@ -28,7 +28,7 @@ see_also:
 
 Article 32 of the **[Companies (Jersey) Law 1991][cjl]** addresses
 procedural aspects of recovery on a successful
-[Article 30](prospectus-compensation.md) claim. It clarifies that
+[Article 30](./prospectus-compensation.md) claim. It clarifies that
 **shareholder-claimants retain full compensation rights** despite
 their membership, and that compensation is **debt** rather than a
 member-contribution issue in wind-up.

@@ -31,7 +31,7 @@ see_also:
 
 Article 13 of the **[Trusts (Jersey) Law 1984][tjl]** establishes the
 **enforcer** office. An enforcer is required for every
-non-charitable purpose trust under [Article 12](purpose-trusts.md):
+non-charitable purpose trust under [Article 12](./purpose-trusts.md):
 without beneficiaries, somebody must have standing to enforce the
 purposes against the trustee, and the enforcer is that person.
 
@@ -96,7 +96,7 @@ supervisory and enforcement-oriented, not administrative.
 ## Standing to apply to the Royal Court
 
 The enforcer has standing to apply to the Royal Court under
-[Article 51](article-51-directions.md) for directions on the proper
+[Article 51](./article-51-directions.md) for directions on the proper
 performance of the trust's purposes. The enforcer is also a proper
 party to be convened where the trustee applies to the Court on a
 purpose-related matter.
@@ -109,7 +109,7 @@ purpose-related matter.
   as inadequate.
 - **No succession provision.** A deed that names a sole enforcer
   without providing for succession is fragile — see
-  [`enforcer-resignation-removal.md`](enforcer-resignation-removal.md)
+  [`enforcer-resignation-removal.md`](./enforcer-resignation-removal.md)
   for the Article 14 mechanics.
 - **Conflating enforcer and protector.** A **protector** (named in
   most family discretionary trusts) is a different fiduciary office,

@@ -74,14 +74,14 @@ This means in subsequent disputes:
 - **Members and directors are bound** by the recorded decisions
   even if they later dispute them;
 - **Third parties dealing with the company** can rely on the
-  minute record (combined with [Article 67C](evidence-of-authorization.md)
+  minute record (combined with [Article 67C](./evidence-of-authorization.md)
   evidence rules).
 
 ## Companion provisions
 
-- [`minute-book-inspection.md`](minute-book-inspection.md) —
+- [`minute-book-inspection.md`](./minute-book-inspection.md) —
   Article 99: members' right to inspect.
-- [`filing-of-resolutions.md`](filing-of-resolutions.md) —
+- [`filing-of-resolutions.md`](./filing-of-resolutions.md) —
   Article 100: which resolutions must be filed at the Registry.
 
 ## Pitfalls

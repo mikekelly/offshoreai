@@ -66,8 +66,8 @@ Under Article 36, the applicable law governs:
 
 ## Cross-references
 
-- [`fjl-article-36.md`](fjl-article-36.md) — matters
+- [`fjl-article-36.md`](./fjl-article-36.md) — matters
   determined by applicable law;
-- [`fjl-article-37.md`](fjl-article-37.md) — firewall;
+- [`fjl-article-37.md`](./fjl-article-37.md) — firewall;
 - [`../trusts/article-9-firewall.md`](../use-cases/international-lawyer/article-9-firewall.md)
   — analogous trust firewall.

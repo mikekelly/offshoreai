@@ -218,6 +218,6 @@ For an active matter:
 
 ## Cross-references
 
-- [`cost-rules.md`](cost-rules.md)
-- [`indemnity-costs-trust.md`](indemnity-costs-trust.md)
-- [`beddoe-application.md`](beddoe-application.md)
+- [`cost-rules.md`](./cost-rules.md)
+- [`indemnity-costs-trust.md`](./indemnity-costs-trust.md)
+- [`beddoe-application.md`](./beddoe-application.md)

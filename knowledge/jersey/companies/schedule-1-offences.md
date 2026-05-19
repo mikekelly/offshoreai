@@ -67,7 +67,7 @@ Centralising penalties in Schedule 1:
 
 ## Cross-references
 
-- [`punishment-of-offences.md`](punishment-of-offences.md) —
+- [`punishment-of-offences.md`](./punishment-of-offences.md) —
   Article 215.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

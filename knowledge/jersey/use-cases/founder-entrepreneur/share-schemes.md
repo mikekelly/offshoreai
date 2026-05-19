@@ -198,4 +198,4 @@ For listed Jersey TopCos:
 ## Cross-references
 
 - [`../../companies/share-buyback.md`](../../companies/share-buyback.md)
-- [`pre-ipo-jersey.md`](pre-ipo-jersey.md)
+- [`pre-ipo-jersey.md`](./pre-ipo-jersey.md)

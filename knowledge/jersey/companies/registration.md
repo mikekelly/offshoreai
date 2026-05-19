@@ -121,7 +121,7 @@ queries.
   unsigned forms, fees not paid. Routine but causes delays.
 - **Name clashes** — a proposed name too similar to an existing
   Jersey company name will be rejected (see
-  [`name-requirements.md`](name-requirements.md) *(planned —
+  [`name-requirements.md`](./name-requirements.md) *(planned —
   Article 13)*).
 - **Beneficial-ownership disclosure gaps** — the FSDI Law 2020
   data should be complete at incorporation.

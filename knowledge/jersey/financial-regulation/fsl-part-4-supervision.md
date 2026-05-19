@@ -150,7 +150,7 @@ safeguards**.
 
 ## Cross-references
 
-- [`fsl-article-19.md`](fsl-article-19.md);
-- [`fsl-part-5-enforcement.md`](fsl-part-5-enforcement.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md);
-- [`jfsc.md`](jfsc.md).
+- [`fsl-article-19.md`](./fsl-article-19.md);
+- [`fsl-part-5-enforcement.md`](./fsl-part-5-enforcement.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md);
+- [`jfsc.md`](./jfsc.md).

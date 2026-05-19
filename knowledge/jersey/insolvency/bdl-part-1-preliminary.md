@@ -72,5 +72,5 @@ For **trustees** of a trust:
 
 ## Cross-references
 
-- [`bdl-articles-index.md`](bdl-articles-index.md);
-- [`bankruptcy-desastre-law-1990.md`](bankruptcy-desastre-law-1990.md).
+- [`bdl-articles-index.md`](./bdl-articles-index.md);
+- [`bankruptcy-desastre-law-1990.md`](./bankruptcy-desastre-law-1990.md).

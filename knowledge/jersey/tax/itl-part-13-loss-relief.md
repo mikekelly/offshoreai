@@ -98,7 +98,7 @@ Part 13 (Articles 107–110B) governs **loss-relief** mechanisms
 
 ## Cross-references
 
-- [`itl-part-10-schedule-d.md`](itl-part-10-schedule-d.md)
-- [`zero-ten.md`](zero-ten.md)
+- [`itl-part-10-schedule-d.md`](./itl-part-10-schedule-d.md)
+- [`zero-ten.md`](./zero-ten.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

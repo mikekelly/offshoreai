@@ -223,14 +223,14 @@ For those on Income Support:
 - **Engage** with work-expectation requirements
   positively;
 - **Appeal** decisions you disagree with — see
-  [`appeals.md`](appeals.md).
+  [`appeals.md`](./appeals.md).
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`income-support-law-2007.md`](income-support-law-2007.md);
-- [`income-support-components.md`](income-support-components.md);
-- [`work-requirement.md`](work-requirement.md);
-- [`appeals.md`](appeals.md);
-- [`fraud-and-overpayment.md`](fraud-and-overpayment.md);
+- [`index.md`](./index.md);
+- [`income-support-law-2007.md`](./income-support-law-2007.md);
+- [`income-support-components.md`](./income-support-components.md);
+- [`work-requirement.md`](./work-requirement.md);
+- [`appeals.md`](./appeals.md);
+- [`fraud-and-overpayment.md`](./fraud-and-overpayment.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

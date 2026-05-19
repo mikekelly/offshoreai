@@ -130,7 +130,7 @@ For practitioners:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`financial-regulation.md`](financial-regulation.md);
+- [`overview.md`](./overview.md);
+- [`financial-regulation.md`](./financial-regulation.md);
 - [`../jersey/financial-regulation/jfsc.md`](../jersey/financial-regulation/jfsc.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

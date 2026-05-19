@@ -44,7 +44,7 @@ core structure:
 - **Creation** of hypothecs;
 - **Priority** rules;
 - **Enforcement** through dégrèvement;
-- See [`hypothec.md`](hypothec.md).
+- See [`hypothec.md`](./hypothec.md).
 
 ### Part 3 — Rentes
 
@@ -157,9 +157,9 @@ For practitioners:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`hypothec.md`](hypothec.md);
-- [`servitudes.md`](servitudes.md);
-- [`contract-passing.md`](contract-passing.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`hypothec.md`](./hypothec.md);
+- [`servitudes.md`](./servitudes.md);
+- [`contract-passing.md`](./contract-passing.md);
 - [`../legal-system/normandy-and-jersey-law.md`](../legal-system/normandy-and-jersey-law.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -64,16 +64,16 @@ requirements where the prescribed form is followed.
 ## What the memorandum does
 
 The memorandum is one of the company's two **constitutional
-documents** (the other being the [articles of association](articles-of-association.md)
+documents** (the other being the [articles of association](./articles-of-association.md)
 under Article 5). Once registered, it:
 
 - **binds** the company and its members **as if signed covenants
-  existed between them** (under [Article 10](effect-of-memorandum-articles.md)
+  existed between them** (under [Article 10](./effect-of-memorandum-articles.md)
   *(planned)*);
 - is **public** — filed with the JFSC Registrar and available to
   third parties;
 - can be **altered** only by special resolution under
-  [Article 11](alteration-of-memorandum-articles.md) *(planned)*,
+  [Article 11](./alteration-of-memorandum-articles.md) *(planned)*,
   subject to specific protections for member liability.
 
 ## Bilingual provision

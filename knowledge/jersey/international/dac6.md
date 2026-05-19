@@ -148,8 +148,8 @@ exhibiting one or more are reportable:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./exchange-of-information.md`](exchange-of-information.md);
-- [`./crs.md`](crs.md);
-- [`./fatca.md`](fatca.md);
+- [`./index.md`](./index.md);
+- [`./exchange-of-information.md`](./exchange-of-information.md);
+- [`./crs.md`](./crs.md);
+- [`./fatca.md`](./fatca.md);
 - [`../use-cases/international-lawyer/index.md`](../use-cases/international-lawyer/index.md).

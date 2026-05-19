@@ -129,7 +129,7 @@ common-law and treaty jurisdictions.
 
 ## Cross-references
 
-- [`cicl-article-13.md`](cicl-article-13.md);
-- [`cicl-articles-index.md`](cicl-articles-index.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
-- [`safl-article-10.md`](safl-article-10.md).
+- [`cicl-article-13.md`](./cicl-article-13.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
+- [`safl-article-10.md`](./safl-article-10.md).

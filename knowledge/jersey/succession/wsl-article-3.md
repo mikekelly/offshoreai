@@ -120,7 +120,7 @@ A will may be **valid** under WSL if it complies with:
 
 ## Cross-references
 
-- [`wsl-article-2.md`](wsl-article-2.md);
-- [`wsl-article-5.md`](wsl-article-5.md);
-- [`wsl-part-5-conflict-of-laws.md`](wsl-part-5-conflict-of-laws.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-article-2.md`](./wsl-article-2.md);
+- [`wsl-article-5.md`](./wsl-article-5.md);
+- [`wsl-part-5-conflict-of-laws.md`](./wsl-part-5-conflict-of-laws.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

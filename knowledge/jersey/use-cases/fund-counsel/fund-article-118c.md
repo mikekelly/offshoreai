@@ -144,5 +144,5 @@ For an existing fund:
 
 ## Cross-references
 
-- [`fund-tax-zero-ten.md`](fund-tax-zero-ten.md)
+- [`fund-tax-zero-ten.md`](./fund-tax-zero-ten.md)
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md)

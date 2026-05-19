@@ -122,7 +122,7 @@ unjust enrichment**:
 - **Restitution** appropriate;
 - **Jersey** has both civil-law (no cause) and English-style
   (unjust factors) approaches to unjust enrichment;
-- See [`unjust-enrichment.md`](unjust-enrichment.md).
+- See [`unjust-enrichment.md`](./unjust-enrichment.md).
 
 ## Drafting implications
 
@@ -144,9 +144,9 @@ For **gift / no-consideration** documents:
 
 ## Cross-references
 
-- [`contract-overview.md`](contract-overview.md);
-- [`formation.md`](formation.md);
-- [`unjust-enrichment.md`](unjust-enrichment.md);
+- [`contract-overview.md`](./contract-overview.md);
+- [`formation.md`](./formation.md);
+- [`unjust-enrichment.md`](./unjust-enrichment.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
 - [`../legal-system/english-law-as-persuasive.md`](../legal-system/english-law-as-persuasive.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -125,8 +125,8 @@ arrangements.
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-7.md`](mlo-article-7.md);
-- [`mlo-article-8.md`](mlo-article-8.md);
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-7.md`](./mlo-article-7.md);
+- [`mlo-article-8.md`](./mlo-article-8.md);
 - [`../use-cases/compliance-mlro/outsourcing-compliance.md`](../use-cases/compliance-mlro/outsourcing-compliance.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

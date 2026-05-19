@@ -86,11 +86,11 @@ that would be public in other courts is private here.
 
 ### Divorce procedure
 
-See [`divorce-procedure.md`](divorce-procedure.md).
+See [`divorce-procedure.md`](./divorce-procedure.md).
 
 ### Ancillary relief
 
-See [`ancillary-relief.md`](ancillary-relief.md).
+See [`ancillary-relief.md`](./ancillary-relief.md).
 
 ### Children — private law
 
@@ -146,12 +146,12 @@ permission for some grounds.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
-- [`divorce-procedure.md`](divorce-procedure.md);
-- [`ancillary-relief.md`](ancillary-relief.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`care-and-supervision.md`](care-and-supervision.md);
-- [`jfcas-and-mediation.md`](jfcas-and-mediation.md);
+- [`index.md`](./index.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
+- [`divorce-procedure.md`](./divorce-procedure.md);
+- [`ancillary-relief.md`](./ancillary-relief.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`care-and-supervision.md`](./care-and-supervision.md);
+- [`jfcas-and-mediation.md`](./jfcas-and-mediation.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../legal-system/royal-court-rules.md`](../legal-system/royal-court-rules.md).

@@ -229,4 +229,4 @@ For research:
 ## Cross-references
 
 - [`../../aml-cft/moneyval.md`](../../aml-cft/moneyval.md)
-- [`jersey-vs-other-offshore.md`](jersey-vs-other-offshore.md)
+- [`jersey-vs-other-offshore.md`](./jersey-vs-other-offshore.md)

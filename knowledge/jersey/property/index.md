@@ -47,38 +47,38 @@ character, with significant **statutory overlays**:
 
 | The question is about... | Read |
 |---|---|
-| Buying / selling Jersey real property | [`real-property-overview.md`](real-property-overview.md) |
-| Contract passing before the Royal Court | [`contract-passing.md`](contract-passing.md) |
-| Mortgages / hypothecs over Jersey property | [`hypothec.md`](hypothec.md) |
-| Personal property security interests | [`security-interests-law-2012.md`](security-interests-law-2012.md) |
-| Customary inheritance of real property | [`real-property-succession.md`](real-property-succession.md) |
+| Buying / selling Jersey real property | [`real-property-overview.md`](./real-property-overview.md) |
+| Contract passing before the Royal Court | [`contract-passing.md`](./contract-passing.md) |
+| Mortgages / hypothecs over Jersey property | [`hypothec.md`](./hypothec.md) |
+| Personal property security interests | [`security-interests-law-2012.md`](./security-interests-law-2012.md) |
+| Customary inheritance of real property | [`real-property-succession.md`](./real-property-succession.md) |
 | Foreign buyer / HVR property | [`../immigration-residency/chwl-article-10.md`](../immigration-residency/chwl-article-10.md) |
 
 ### Leases and occupation
 
 | The question is about... | Read |
 |---|---|
-| Tenancy / lease law generally | [`leases.md`](leases.md) |
-| Commercial leases (FRI, rent review) | [`commercial-leases.md`](commercial-leases.md) |
-| Apartments / share transfer / flying freehold | [`flying-freeholds.md`](flying-freeholds.md) |
+| Tenancy / lease law generally | [`leases.md`](./leases.md) |
+| Commercial leases (FRI, rent review) | [`commercial-leases.md`](./commercial-leases.md) |
+| Apartments / share transfer / flying freehold | [`flying-freeholds.md`](./flying-freeholds.md) |
 
 ### Boundaries and neighbour relations
 
 | The question is about... | Read |
 |---|---|
-| Servitudes generally | [`servitudes.md`](servitudes.md) |
-| Easements and rights of way | [`easements-and-rights-of-way.md`](easements-and-rights-of-way.md) |
-| Restrictive covenants | [`restrictive-covenants.md`](restrictive-covenants.md) |
-| Deeds of arrangement | [`deeds-of-arrangement.md`](deeds-of-arrangement.md) |
-| Boundary disputes | [`boundary-disputes.md`](boundary-disputes.md) |
-| Voisinage (neighbour-relations doctrine) | [`voisinage.md`](voisinage.md) |
-| Foreshore, seabed, coastal rights | [`foreshore-and-seabed.md`](foreshore-and-seabed.md) |
+| Servitudes generally | [`servitudes.md`](./servitudes.md) |
+| Easements and rights of way | [`easements-and-rights-of-way.md`](./easements-and-rights-of-way.md) |
+| Restrictive covenants | [`restrictive-covenants.md`](./restrictive-covenants.md) |
+| Deeds of arrangement | [`deeds-of-arrangement.md`](./deeds-of-arrangement.md) |
+| Boundary disputes | [`boundary-disputes.md`](./boundary-disputes.md) |
+| Voisinage (neighbour-relations doctrine) | [`voisinage.md`](./voisinage.md) |
+| Foreshore, seabed, coastal rights | [`foreshore-and-seabed.md`](./foreshore-and-seabed.md) |
 
 ## Where to start
 
-1. **[`real-property-overview.md`](real-property-overview.md)**
+1. **[`real-property-overview.md`](./real-property-overview.md)**
    — concept overview of Jersey real-property law;
-2. **[`loi-1880-sur-la-propriete-fonciere.md`](loi-1880-sur-la-propriete-fonciere.md)**
+2. **[`loi-1880-sur-la-propriete-fonciere.md`](./loi-1880-sur-la-propriete-fonciere.md)**
    — the principal statute;
 3. **[`../legal-system/normandy-and-jersey-law.md`](../legal-system/normandy-and-jersey-law.md)**
    — for the customary-law context.

@@ -212,7 +212,7 @@ for the full procedural picture and citation chain.
   protection a blessing confers.
 - **Forum-shopping risk.** A foreign court may not respect a Royal
   Court blessing where the proposed decision has cross-border
-  effects — see [Crociani](crociani-question.md) on Jersey
+  effects — see [Crociani](./crociani-question.md) on Jersey
   jurisdiction clauses *(stub)*. Take advice on whether parallel
   protection is needed.
 - **Using Article 51 for hostile litigation.** Article 51 is not the
@@ -227,7 +227,7 @@ for the full procedural picture and citation chain.
 - Topic-graph reference: [`legal-system/royal-court.md`](../../legal-system/royal-court.md)
   — where these applications are heard.
 - Related use-case: [if the decision was already taken and a mistake
-  has emerged, see "we made a mistake on a previous distribution"](article-47-set-aside-for-mistake.md).
+  has emerged, see "we made a mistake on a previous distribution"](./article-47-set-aside-for-mistake.md).
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984
 [ptvc]: https://www.lawjournals.co.uk/cases_referred/public-trustee-v-cooper-2001-wtlr-901/

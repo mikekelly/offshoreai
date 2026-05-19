@@ -48,7 +48,7 @@ provisions or member consents may permit:
 - **Longer notice** if the deed specifies.
 
 For **special resolutions** the deed must also satisfy
-[Article 90](special-resolution.md)'s notice-specifying-intent
+[Article 90](./special-resolution.md)'s notice-specifying-intent
 requirement.
 
 ## Who must be noticed

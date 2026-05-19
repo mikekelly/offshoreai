@@ -99,7 +99,7 @@ For Jersey TCBs and banks:
 
 ## Cross-references
 
-- [`pocl-article-34.md`](pocl-article-34.md);
-- [`pocl-article-32a.md`](pocl-article-32a.md);
+- [`pocl-article-34.md`](./pocl-article-34.md);
+- [`pocl-article-32a.md`](./pocl-article-32a.md);
 - [`../use-cases/compliance-mlro/internal-disclosure-assessment.md`](../use-cases/compliance-mlro/internal-disclosure-assessment.md);
 - [`../use-cases/compliance-mlro/sar-content.md`](../use-cases/compliance-mlro/sar-content.md).

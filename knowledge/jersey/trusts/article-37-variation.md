@@ -33,7 +33,7 @@ Article 37 of the **[Trusts (Jersey) Law 1984][tjl]** is the
 **self-variation** provision: a trust may be varied **in any manner
 provided by its terms**, without prejudice to the Royal Court's
 separate power to vary trusts under
-[Article 47](court-variation.md).
+[Article 47](./court-variation.md).
 
 ## What Article 37 says
 
@@ -59,7 +59,7 @@ Common variation clauses cover:
 - **dispositive provisions** — additions to or exclusions from the
   beneficiary class, changes to dispositive powers;
 - **fundamental matters** — change of proper law (cross-refer
-  [Article 41](change-of-proper-law.md)), change of governing
+  [Article 41](./change-of-proper-law.md)), change of governing
   jurisdiction clause, change in trust character (e.g., from
   discretionary to fixed-interest).
 
@@ -87,14 +87,14 @@ A variation that:
 - is undertaken in bad faith;
 
 is liable to be **set aside** by the Royal Court — either as an
-ultra-vires act or under [Articles 47G/H](article-47-set-aside.md) for
+ultra-vires act or under [Articles 47G/H](./article-47-set-aside.md) for
 mistake or improper exercise of a fiduciary power.
 
 ## Settlor-held variation powers
 
 A variation power held by the **settlor** is typically not
 fiduciary — it is treated as a personal power retained by the
-settlor under [Article 9A](reserved-powers.md). The settlor may
+settlor under [Article 9A](./reserved-powers.md). The settlor may
 exercise such a power in their own interest, subject to the deed's
 own constraints. (Article 9A confirms that holding such a power does
 not make the settlor a trustee.)
@@ -157,7 +157,7 @@ to:
 - **Cross-border variation and foreign-court recognition.** A
   Jersey deed-based variation is effective as a matter of Jersey
   law; whether a foreign court will give effect to it is a separate
-  question. The firewall under [Article 9](firewall.md) helps but
+  question. The firewall under [Article 9](./firewall.md) helps but
   is not comprehensive.
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

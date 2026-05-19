@@ -1,8 +1,8 @@
 # Agent Principles
 
-Region-non-specific principles for any agent we build on top of the offshoreai knowledge base. The principles travel across jurisdictions (Jersey, Guernsey, Isle of Man, BVI, Cayman, Bermuda, Gibraltar, Malta, Mauritius, Singapore-IFC) and across product flavours (per-firm white-labels, persona-specific agents, public-research agents). The Jersey-specific v1 implementation in [`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md) is one instantiation; this document is what stays constant.
+Region-non-specific principles for any agent we build on top of the offshoreai knowledge base. The principles travel across jurisdictions (Jersey, Guernsey, Isle of Man, BVI, Cayman, Bermuda, Gibraltar, Malta, Mauritius, Singapore-IFC) and across product flavours (per-firm white-labels, persona-specific agents, public-research agents). The Jersey-specific v1 implementation in [`PRD-baseline-agent-v1.md`](./PRD-baseline-agent-v1.md) is one instantiation; this document is what stays constant.
 
-For the corpus-side counterpart — how the knowledge layer itself is organised — see [`KNOWLEDGE-BASE-PRINCIPLES.md`](KNOWLEDGE-BASE-PRINCIPLES.md).
+For the corpus-side counterpart — how the knowledge layer itself is organised — see [`KNOWLEDGE-BASE-PRINCIPLES.md`](./KNOWLEDGE-BASE-PRINCIPLES.md).
 
 These principles compress a series of decisions made while drafting the v1 PRD, informed by the 2026 memory-infrastructure shift (Pinecone Nexus, SAP Datasphere, PageIndex), the agentic-memory surveys (arXiv:2603.07670 and arXiv:2512.13564), Mem0 / A-Mem / Letta as production memory systems, Leonie Monigatti's "Agentic Search for Context Engineering" thesis, and the AXI spec for agent-driven tool surfaces — checked against the actual Claude Agent SDK contract.
 
@@ -82,8 +82,8 @@ These principles compress a series of decisions made while drafting the v1 PRD, 
 
 These are principles for building agents on top of the offshoreai knowledge base. They do not cover:
 
-- **How the knowledge base itself is organised** — see [`KNOWLEDGE-BASE-PRINCIPLES.md`](KNOWLEDGE-BASE-PRINCIPLES.md) and the operational [`CONVENTIONS.md`](CONVENTIONS.md).
-- **The Jersey-specific v1 implementation** — see [`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md).
+- **How the knowledge base itself is organised** — see [`KNOWLEDGE-BASE-PRINCIPLES.md`](./KNOWLEDGE-BASE-PRINCIPLES.md) and the operational [`CONVENTIONS.md`](./CONVENTIONS.md).
+- **The Jersey-specific v1 implementation** — see [`PRD-baseline-agent-v1.md`](./PRD-baseline-agent-v1.md).
 - **Tenant deployment specifics** — covered in §9 of the v1 PRD; will be lifted into a separate `TENANT-PRINCIPLES.md` when the second customer profile gives us enough data to generalise.
 
 When these principles conflict with a downstream decision in the PRD or a tenant configuration, the higher-level principle wins unless the conflict is explicitly justified at the lower level. New principles or amendments require a written rationale and update both this document and the PRD that triggered the change.

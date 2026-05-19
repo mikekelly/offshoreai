@@ -216,7 +216,7 @@ emphasise:
 - Tax treatment depends on jurisdictions of GP entities
   and individual partners;
 - **UK carried-interest reform** (see
-  [`uk-carried-interest-reform-2026.md`](uk-carried-interest-reform-2026.md))
+  [`uk-carried-interest-reform-2026.md`](./uk-carried-interest-reform-2026.md))
   changes the post-6-April-2026 economics
   meaningfully.
 
@@ -278,7 +278,7 @@ emphasise:
   conflict and disclosure space;
 - **EU AIFMD II** disclosure requirements on
   continuation funds (April 2026 onward — see
-  [`aifmd-ii-april-2026.md`](aifmd-ii-april-2026.md));
+  [`aifmd-ii-april-2026.md`](./aifmd-ii-april-2026.md));
 - **ILPA** continuation-fund guidance updates;
 - **JFSC** and **GFSC** specific guidance on
   continuation-fund-related conflicts;
@@ -316,7 +316,7 @@ emphasise:
 
 ### Frontier
 
-- [`uk-carried-interest-reform-2026.md`](uk-carried-interest-reform-2026.md);
-- [`aifmd-ii-april-2026.md`](aifmd-ii-april-2026.md);
+- [`uk-carried-interest-reform-2026.md`](./uk-carried-interest-reform-2026.md);
+- [`aifmd-ii-april-2026.md`](./aifmd-ii-april-2026.md);
 - [`jersey-finance-industry-2026.md`](../jersey/frontier/jersey-finance-industry-2026.md);
-- [`README.md`](README.md).
+- [`README.md`](./README.md).

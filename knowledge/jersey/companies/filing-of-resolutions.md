@@ -46,7 +46,7 @@ Registrar** to ensure:
 Not every resolution must be filed — the Article (and its
 companion provisions) specify which. Typical filing requirements:
 
-- **Special resolutions** under [Article 90](special-resolution.md)
+- **Special resolutions** under [Article 90](./special-resolution.md)
   — virtually always required;
 - **Resolutions altering the memorandum or articles** — to
   effect the change at the Registry;

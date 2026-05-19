@@ -99,7 +99,7 @@ customary law fills gaps.
 
 ## Cross-references
 
-- [`customary-law.md`](customary-law.md) — Norman customary-law
+- [`customary-law.md`](./customary-law.md) — Norman customary-law
   detail.
-- [`royal-court.md`](royal-court.md) — how courts apply these
+- [`royal-court.md`](./royal-court.md) — how courts apply these
   sources.

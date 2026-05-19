@@ -122,7 +122,7 @@ income to onshore taxation:
 
 Jersey's MCIT (2025) implements Pillar Two for in-scope
 multinational groups — see
-[`pillar-two-mcit.md`](pillar-two-mcit.md).
+[`pillar-two-mcit.md`](./pillar-two-mcit.md).
 
 ## Implications for Jersey IFC
 
@@ -149,8 +149,8 @@ multinational groups — see
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./pillar-two-mcit.md`](pillar-two-mcit.md);
+- [`./index.md`](./index.md);
+- [`./pillar-two-mcit.md`](./pillar-two-mcit.md);
 - [`../tax/substance-law-2019.md`](../../../jersey/tax/substance-law-2019.md)
   *(if exists)*;
 - [`../tax/zero-ten.md`](../tax/zero-ten.md);

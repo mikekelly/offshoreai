@@ -135,7 +135,7 @@ The Human Rights (Jersey) Law:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./royal-court.md`](royal-court.md);
-- [`./sources-of-law.md`](sources-of-law.md);
+- [`./index.md`](./index.md);
+- [`./royal-court.md`](./royal-court.md);
+- [`./sources-of-law.md`](./sources-of-law.md);
 - [`../government/uk-jersey-relationship.md`](../government/uk-jersey-relationship.md).

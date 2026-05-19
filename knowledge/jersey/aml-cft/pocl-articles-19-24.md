@@ -105,8 +105,8 @@ order:
 
 ## Cross-references
 
-- [`pocl-article-17.md`](pocl-article-17.md);
-- [`pocl-article-18.md`](pocl-article-18.md);
-- [`pocl-part-3-restraint.md`](pocl-part-3-restraint.md);
-- [`cicl-article-13.md`](cicl-article-13.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-17.md`](./pocl-article-17.md);
+- [`pocl-article-18.md`](./pocl-article-18.md);
+- [`pocl-part-3-restraint.md`](./pocl-part-3-restraint.md);
+- [`cicl-article-13.md`](./cicl-article-13.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

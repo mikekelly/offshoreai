@@ -231,6 +231,6 @@ For research / reporting:
 
 ## Cross-references
 
-- [`beneficial-ownership-access.md`](beneficial-ownership-access.md)
-- [`transparency-evolution.md`](transparency-evolution.md)
-- [`eu-oecd-pressure.md`](eu-oecd-pressure.md)
+- [`beneficial-ownership-access.md`](./beneficial-ownership-access.md)
+- [`transparency-evolution.md`](./transparency-evolution.md)
+- [`eu-oecd-pressure.md`](./eu-oecd-pressure.md)

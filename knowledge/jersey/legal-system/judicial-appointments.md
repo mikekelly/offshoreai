@@ -129,9 +129,9 @@ Appointing authorities consider:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./royal-court.md`](royal-court.md);
-- [`./bailiff.md`](bailiff.md);
-- [`./jurats.md`](jurats.md);
-- [`./court-of-appeal.md`](court-of-appeal.md);
-- [`./magistrates-court.md`](magistrates-court.md).
+- [`./index.md`](./index.md);
+- [`./royal-court.md`](./royal-court.md);
+- [`./bailiff.md`](./bailiff.md);
+- [`./jurats.md`](./jurats.md);
+- [`./court-of-appeal.md`](./court-of-appeal.md);
+- [`./magistrates-court.md`](./magistrates-court.md).

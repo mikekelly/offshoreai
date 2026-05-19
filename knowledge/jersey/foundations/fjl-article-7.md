@@ -99,9 +99,9 @@ be filed on amendment).
 
 ## Cross-references
 
-- [`fjl-article-6.md`](fjl-article-6.md) — charter (public
+- [`fjl-article-6.md`](./fjl-article-6.md) — charter (public
   companion);
-- [`fjl-article-22.md`](fjl-article-22.md) — guardian
+- [`fjl-article-22.md`](./fjl-article-22.md) — guardian
   consent rights;
-- [`fjl-articles-index.md`](fjl-articles-index.md) — full
+- [`fjl-articles-index.md`](./fjl-articles-index.md) — full
   index.

@@ -105,6 +105,6 @@ Common training failings the JFSC criticises:
 
 ## Cross-references
 
-- [`mlo-articles-index.md`](mlo-articles-index.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md);
 - [`../use-cases/compliance-mlro/training-programme.md`](../use-cases/compliance-mlro/training-programme.md);
-- [`aml-cft-handbook.md`](aml-cft-handbook.md).
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md).

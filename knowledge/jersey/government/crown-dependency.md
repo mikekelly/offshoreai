@@ -52,11 +52,11 @@ plainly: Jersey "is a self-governing dependency of the Crown" that
 In practical constitutional terms:
 
 - The **King is head of state**. Locally he is represented by the
-  [Lieutenant-Governor](lieutenant-governor.md), who holds a ceremonial
+  [Lieutenant-Governor](./lieutenant-governor.md), who holds a ceremonial
   office of the Crown rather than an executive office of the Jersey
   government.
-- Jersey has its own **legislature** ([the States Assembly](states-assembly.md)),
-  its own **executive** ([the Council of Ministers](council-of-ministers.md)),
+- Jersey has its own **legislature** ([the States Assembly](./states-assembly.md)),
+  its own **executive** ([the Council of Ministers](./council-of-ministers.md)),
   its own **courts** ([the Royal Court](../legal-system/royal-court.md)
   and on appeal the [Court of Appeal](../legal-system/court-of-appeal.md)),
   its own **tax system** ([Revenue Jersey](../tax/revenue-jersey.md)) and

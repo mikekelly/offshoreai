@@ -129,9 +129,9 @@ Prenuptial agreements signed in other jurisdictions:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`ancillary-relief.md`](ancillary-relief.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
+- [`index.md`](./index.md);
+- [`ancillary-relief.md`](./ancillary-relief.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
 - [`../trusts/firewall.md`](../trusts/firewall.md);
 - [`../use-cases/family-office-adviser/index.md`](../use-cases/family-office-adviser/index.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

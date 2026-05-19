@@ -104,7 +104,7 @@ Confiscation orders calculate:
 
 ## Cross-references
 
-- [`pocl-article-1a.md`](pocl-article-1a.md);
-- [`pocl-article-2.md`](pocl-article-2.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-1a.md`](./pocl-article-1a.md);
+- [`pocl-article-2.md`](./pocl-article-2.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

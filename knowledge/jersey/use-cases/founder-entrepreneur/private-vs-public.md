@@ -184,4 +184,4 @@ For a new TopCo:
 
 - [`../../companies/private-companies.md`](../../companies/private-companies.md)
 - [`../../companies/public-companies.md`](../../companies/public-companies.md)
-- [`pre-ipo-jersey.md`](pre-ipo-jersey.md)
+- [`pre-ipo-jersey.md`](./pre-ipo-jersey.md)

@@ -97,9 +97,9 @@ For a taxpayer considering appeal:
 
 ## Cross-references
 
-- [`itl-part-5-assessment.md`](itl-part-5-assessment.md) —
+- [`itl-part-5-assessment.md`](./itl-part-5-assessment.md) —
   assessment procedure.
-- [`revenue-jersey.md`](revenue-jersey.md) — administering
+- [`revenue-jersey.md`](./revenue-jersey.md) — administering
   authority.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

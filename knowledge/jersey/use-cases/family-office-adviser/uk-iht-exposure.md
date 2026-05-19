@@ -200,4 +200,4 @@ For client consideration:
 ## Cross-references
 
 - [`../trust-officer/distribution-uk-resident.md`](../trust-officer/distribution-uk-resident.md)
-- [`us-grantor-trust.md`](us-grantor-trust.md)
+- [`us-grantor-trust.md`](./us-grantor-trust.md)

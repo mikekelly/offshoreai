@@ -113,7 +113,7 @@ reasonable grounds:
   to the extent of the reduction or the creditor losses);
 - Commits an **offence** under the Companies Law;
 - Faces possible **disqualification** under
-  [Article 78](disqualification-orders.md) *(planned)*.
+  [Article 78](./disqualification-orders.md) *(planned)*.
 
 The liability is **substantial** — it can be the full amount of
 the reduction in some cases. This is the **price** of the
@@ -138,23 +138,23 @@ they are cash-flow solvent. The English test rules them out.
 
 The same solvency-statement mechanism is used for **distributions
 under Part 17** — see
-[Article 115](distribution-restrictions.md) *(planned)*. The
+[Article 115](./distribution-restrictions.md) *(planned)*. The
 directors confirm solvency before authorising a distribution. The
 solvency test is the **unified Jersey-law standard** for capital-
 out-of-company transactions.
 
 ## Cross-references
 
-- [`reduction-of-capital-accounts.md`](reduction-of-capital-accounts.md)
+- [`reduction-of-capital-accounts.md`](./reduction-of-capital-accounts.md)
   — Article 61: the substantive reduction power.
-- [`solvency-registration.md`](solvency-registration.md) — Article
+- [`solvency-registration.md`](./solvency-registration.md) — Article
   61B: registering the statement.
-- [`court-confirmation.md`](court-confirmation.md) — Article 62:
+- [`court-confirmation.md`](./court-confirmation.md) — Article 62:
   the alternative court route.
-- [`directors-duties.md`](directors-duties.md) — Article 74:
+- [`directors-duties.md`](./directors-duties.md) — Article 74:
   the directors' general duties that frame the solvency
   judgment.
-- [`distribution-restrictions.md`](distribution-restrictions.md) —
+- [`distribution-restrictions.md`](./distribution-restrictions.md) —
   Article 115: where the same mechanism applies to ordinary
   distributions.
 

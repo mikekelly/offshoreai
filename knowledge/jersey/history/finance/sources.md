@@ -46,7 +46,7 @@ or strategic claim, the convention is:
 ## Source hierarchy
 
 The corpus uses the source hierarchy from
-[`KNOWLEDGE-BASE-PRINCIPLES.md`](../../../KNOWLEDGE-BASE-PRINCIPLES.md):
+[`KNOWLEDGE-BASE-PRINCIPLES.md`](../../../../KNOWLEDGE-BASE-PRINCIPLES.md):
 
 1. **Primary** — statutes, regulators (JFSC, IMF, MoneyVal,
    OECD), official statistics (Statistics Jersey, BoE)
@@ -241,8 +241,8 @@ be cross-referenced.
 
 - [`./README.md`](./README.md) — what the `history/`
   directory is, vs `frontier/`
-- [`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md)
+- [`../frontier/jersey-finance-industry-2026.md`](../../frontier/jersey-finance-industry-2026.md)
   — the present-day snapshot the history docs lead into
-- [`../KNOWLEDGE-BASE-PRINCIPLES.md`](../../../KNOWLEDGE-BASE-PRINCIPLES.md)
+- [`../KNOWLEDGE-BASE-PRINCIPLES.md`](../../../../KNOWLEDGE-BASE-PRINCIPLES.md)
   — source hierarchy and freshness contract
-- [`../CONVENTIONS.md`](../../../CONVENTIONS.md) — how to cite
+- [`../CONVENTIONS.md`](../../../../CONVENTIONS.md) — how to cite

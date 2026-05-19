@@ -46,7 +46,7 @@ A company must have a **registered office in Jersey** where:
 The registered office is the company's **legal address** for:
 
 - **Service of documents** under
-  [Article 72](service-of-documents.md);
+  [Article 72](./service-of-documents.md);
 - **Statutory inspection** of records (memorandum, articles,
   register of members, register of directors);
 - **Regulator contact** — the JFSC, Revenue Jersey, and other
@@ -85,10 +85,10 @@ later date as specified).
 
 ## Companion provisions
 
-- [`register-location.md`](register-location.md) — Article 44:
+- [`register-location.md`](./register-location.md) — Article 44:
   where the register of members specifically is kept (typically
   the same as the registered office, but not necessarily).
-- [`service-of-documents.md`](service-of-documents.md) — Article
+- [`service-of-documents.md`](./service-of-documents.md) — Article
   72: service of legal documents at the registered office.
 
 ## Pitfalls

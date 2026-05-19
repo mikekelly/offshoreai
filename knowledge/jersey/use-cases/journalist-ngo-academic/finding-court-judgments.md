@@ -200,5 +200,5 @@ For research:
 
 ## Cross-references
 
-- [`finding-jersey-laws.md`](finding-jersey-laws.md)
+- [`finding-jersey-laws.md`](./finding-jersey-laws.md)
 - [`../../legal-system/royal-court.md`](../../legal-system/royal-court.md)

@@ -49,8 +49,8 @@ Treasury shares:
 
 ## How treasury shares work
 
-When a company redeems (under [Article 55](redeemable-shares.md))
-or buys back (under [Article 57](share-buyback.md)) its own
+When a company redeems (under [Article 55](./redeemable-shares.md))
+or buys back (under [Article 57](./share-buyback.md)) its own
 shares, it has two choices:
 
 - **Cancel** the shares — they cease to exist and the issued
@@ -96,7 +96,7 @@ with a holder again.
 
 ## Limits
 
-[Article 58B](treasury-shares-limits.md) imposes **limits on the
+[Article 58B](./treasury-shares-limits.md) imposes **limits on the
 number and nominal value** of shares that can be held as
 treasury. Without limits, a company could theoretically buy back
 its entire share base and hold itself, which would be absurd. The
@@ -104,7 +104,7 @@ limits prevent this.
 
 ## Not a reduction of capital
 
-[Article 58C](not-a-reduction.md) confirms that holding shares as
+[Article 58C](./not-a-reduction.md) confirms that holding shares as
 treasury is **not a reduction of capital** requiring Part 12
 procedure. The shares continue to exist; only the holder has
 changed.

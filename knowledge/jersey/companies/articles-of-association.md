@@ -69,14 +69,14 @@ company. Typical content:
 - **Director conflict and disclosure** — operationalising
   Articles 74 and 75 of the Companies Law;
 - **Distribution mechanics** — operationalising
-  [Article 115](distribution-restrictions.md) *(planned)* solvency
+  [Article 115](./distribution-restrictions.md) *(planned)* solvency
   test;
 - **Indemnification** of directors and officers — operationalising
-  [Article 77](officer-indemnity.md) *(planned)*;
+  [Article 77](./officer-indemnity.md) *(planned)*;
 - **Winding-up** procedural detail.
 
 A company **may adopt all or part** of the
-[Standard Table](standard-table.md) *(planned — Article 6)* — the
+[Standard Table](./standard-table.md) *(planned — Article 6)* — the
 Minister-prescribed model articles — and customise from there.
 
 ## Memorandum vs articles — what goes where
@@ -93,13 +93,13 @@ vs the articles. As a rough rule:
 | Capital structure summary | Capital-mechanics detail |
 
 The **legal effect** of registered memorandum and articles is the
-same under [Article 10](effect-of-memorandum-articles.md) *(planned)*
+same under [Article 10](./effect-of-memorandum-articles.md) *(planned)*
 — both bind the company and its members as if signed covenants.
 
 ## Alteration
 
 Both the memorandum and the articles can be **altered by special
-resolution** under [Article 11](alteration-of-memorandum-articles.md)
+resolution** under [Article 11](./alteration-of-memorandum-articles.md)
 *(planned)*. Alterations cannot increase member liability without
 written consent.
 

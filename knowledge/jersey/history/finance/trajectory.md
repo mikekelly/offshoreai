@@ -67,24 +67,24 @@ advantage rests less on opacity and more on **legal
 certainty, tax neutrality, regulatory credibility,
 speed-to-market products, and specialist structuring**. The
 through-line is a **transparency arc**: OECD pressure,
-[FATCA](../international/fatca.md),
-[CRS](../international/crs.md), beneficial-ownership
-reporting, [substance](../tax/economic-substance.md),
-[Pillar Two](../tax/pillar-two.md), and
-[CARF](../international/carf.md) have progressively
+[FATCA](../../international/fatca.md),
+[CRS](../../international/crs.md), beneficial-ownership
+reporting, [substance](../../tax/economic-substance.md),
+[Pillar Two](../../tax/pillar-two.md), and
+[CARF](../../international/carf.md) have progressively
 reduced information-opacity-led use cases, while
 structure-led use cases — the
-[Article 9 firewall](../trusts/firewall.md),
-[JPF](../funds/jersey-private-fund.md) speed-to-
+[Article 9 firewall](../../trusts/firewall.md),
+[JPF](../../funds/jersey-private-fund.md) speed-to-
 market,
-[continuation funds](../../frontier/continuation-funds-and-gp-led-secondaries.md),
-[family-office vehicles](../use-cases/family-office-adviser/index.md),
+[continuation funds](../../../frontier/continuation-funds-and-gp-led-secondaries.md),
+[family-office vehicles](../../use-cases/family-office-adviser/index.md),
 and tokenisation infrastructure — have grown to fill the
 space. The **2024 MoneyVal result** and **2025 Pillar Two
 implementation** removed two major defensive overhangs; the
-[**2026 JFSC strategy**](../financial-regulation/jfsc-strategy-2026-2030.md)
+[**2026 JFSC strategy**](../../financial-regulation/jfsc-strategy-2026-2030.md)
 and the
-[**Government Financial Services Competitiveness Programme**](../government/financial-services-competitiveness-programme.md)
+[**Government Financial Services Competitiveness Programme**](../../government/financial-services-competitiveness-programme.md)
 convert that credibility into an explicit growth agenda.
 The **open strategic question** — and this is genuinely
 open — is whether Jersey can improve speed, service,
@@ -101,18 +101,18 @@ is one of the time-horizon retrospectives in detail.
 *Building the modern regulatory infrastructure.*
 
 The post-Edwards-Report era of building out the
-[JFSC](../financial-regulation/jfsc.md) (established
+[JFSC](../../financial-regulation/jfsc.md) (established
 1998 under the
-[**Financial Services Commission (Jersey) Law 1998**](../financial-regulation/jfsc-law-1998.md)
+[**Financial Services Commission (Jersey) Law 1998**](../../financial-regulation/jfsc-law-1998.md)
 — the constituting statute — operating alongside the
 separate
-[**Financial Services (Jersey) Law 1998**](../financial-regulation/financial-services-jersey-law-1998.md)
+[**Financial Services (Jersey) Law 1998**](../../financial-regulation/financial-services-jersey-law-1998.md)
 governing financial-services activity), founding Jersey
 Finance (2001), modernising trust law (the **Trusts
 (Amendment No. 4) (Jersey) Law 2006** introduced
-[Article 9A reserved powers](../trusts/reserved-powers.md)
+[Article 9A reserved powers](../../trusts/reserved-powers.md)
 and the modern firewall language; the
-[Article 47B mistake regime](../trusts/article-47-set-aside.md)
+[Article 47B mistake regime](../../trusts/article-47-set-aside.md)
 came later — see Act III), and successfully navigating the
 early OECD Harmful Tax Practices initiative. The industry
 **professionalised** across the period, with Monterey
@@ -120,7 +120,7 @@ Insight data showing strong fund-AUM growth.
 
 Defining narrative: **professionalisation**.
 
-Detail: [`last-25-years.md` — Cycle 1](last-25-years.md#cycle-1--professionalisation-2001-2008).
+Detail: [`last-25-years.md` — Cycle 1](./last-25-years.md#cycle-1--professionalisation-2001-2008).
 
 ### Act II — Re-regulation (2009-2015)
 
@@ -129,12 +129,12 @@ intensifying international pressure.*
 
 The IMF Financial Sector Assessment Programme 2009 review,
 the introduction of the
-[**Zero-Ten**](../tax/zero-ten.md) corporate tax
-regime (2009), [**FATCA**](../international/fatca.md)
+[**Zero-Ten**](../../tax/zero-ten.md) corporate tax
+regime (2009), [**FATCA**](../../international/fatca.md)
 implementation (2014), early
-[**CRS**](../international/crs.md) work, **AIFMD**
+[**CRS**](../../international/crs.md) work, **AIFMD**
 implementation and the
-[Article 42 NPPR positioning](../funds/aifmd-nppr.md)
+[Article 42 NPPR positioning](../../funds/aifmd-nppr.md)
 (2014), and the build-out of the post-GFC JFSC supervisory
 model.
 
@@ -145,21 +145,21 @@ modern era was largely built in this cycle.
 
 Defining narrative: **structural transparency**.
 
-Detail: [`last-25-years.md` — Cycle 2](last-25-years.md#cycle-2--post-gfc-re-regulation-2009-2015).
+Detail: [`last-25-years.md` — Cycle 2](./last-25-years.md#cycle-2--post-gfc-re-regulation-2009-2015).
 
 ### Act III — Build-and-Validate (2016-2023)
 
 *Responding to MoneyVal 4th round findings, navigating
 Brexit, building substance, preparing for Pillar Two.*
 
-The [**MoneyVal**](../aml-cft/moneyval.md) **4th
+The [**MoneyVal**](../../aml-cft/moneyval.md) **4th
 round MER (2016)** identified supervisory and effectiveness
 gaps that drove the **2016-2023 supervisory build-out**:
 JFSC resourcing increased substantially, enforcement
 powers expanded, financial-intelligence functions reinforced.
 
 Within the cycle, the
-[**Jersey Private Fund (JPF) regime launched (2017)**](../funds/jersey-private-fund.md)
+[**Jersey Private Fund (JPF) regime launched (2017)**](../../funds/jersey-private-fund.md)
 — the flagship product innovation of the modern era. By
 March 2025, Jersey Finance reported a **JPF population of
 ~750** with continued strong new-establishment flow; the
@@ -168,24 +168,24 @@ structures since launch** and **£86.7bn administered**
 (definitions and basis differ between the two figures —
 the JPF population is the live regulated count while the
 1,500 figure aggregates structures-since-launch). The
-[**Trusts (Amendment No. 6) (Jersey) Law 2013**](../trusts/article-47-set-aside.md)
+[**Trusts (Amendment No. 6) (Jersey) Law 2013**](../../trusts/article-47-set-aside.md)
 had inserted the **Article 47B–H statutory mistake regime**
 slightly earlier in the cycle, putting the Royal Court's
 case-law-developed mistake jurisdiction onto a clear
 statutory footing. The
-[**Economic Substance Law (2019)**](../tax/economic-substance.md)
+[**Economic Substance Law (2019)**](../../tax/economic-substance.md)
 established the Crown Dependencies + Overseas Territories
 substance regime as a regulatory cluster — see
-[`../CROSS-JURISDICTIONAL-MAP.md`](../../CROSS-JURISDICTIONAL-MAP.md).
+[`../CROSS-JURISDICTIONAL-MAP.md`](../../../CROSS-JURISDICTIONAL-MAP.md).
 Brexit worked through (2020-2024) with Jersey's
-[NPPR-based AIFMD position](../funds/aifmd-nppr.md)
-holding. [Pillar Two](../tax/pillar-two.md) was
+[NPPR-based AIFMD position](../../funds/aifmd-nppr.md)
+holding. [Pillar Two](../../tax/pillar-two.md) was
 negotiated and adopted (2022-2023).
 
 Defining narrative: **build-and-prepare**.
 
-Detail: [`last-10-years.md` — pre-2024](last-10-years.md#the-moneyval-arc--the-cleanest-10-year-story)
-and [`last-5-years.md` — pre-2024 portion](last-5-years.md#regulatory-milestones-across-the-window).
+Detail: [`last-10-years.md` — pre-2024](./last-10-years.md#the-moneyval-arc--the-cleanest-10-year-story)
+and [`last-5-years.md` — pre-2024 portion](./last-5-years.md#regulatory-milestones-across-the-window).
 
 ### Act IV — Validation and Offensive Posture (2024-2026)
 
@@ -201,7 +201,7 @@ was strong enough to close the EU/UK listing-risk question
 that had hung over the prior decade, while leaving real
 work on certain effectiveness Immediate Outcomes.
 
-[**MCIT 2025**](../international/pillar-two-mcit.md)
+[**MCIT 2025**](../../international/pillar-two-mcit.md)
 **effective for accounting periods beginning on or after
 1 January 2025** — Jersey has implemented a **Qualified
 Domestic Minimum Top-up Tax (QDMTT)** and a **Qualified
@@ -209,10 +209,10 @@ Income Inclusion Rule (IIR)** for in-scope groups (EUR 750m
 revenue threshold). Jersey has **not** implemented an
 Undertaxed Profits Rule (UTPR). Parallel implementation in
 Guernsey and IoM. Bermuda's
-[CIT 2023](../../bermuda/corporate-income-tax-2023.md) is the
+[CIT 2023](../../../bermuda/corporate-income-tax-2023.md) is the
 Caribbean-cluster equivalent.
 
-[**JFSC**](../financial-regulation/jfsc.md)
+[**JFSC**](../../financial-regulation/jfsc.md)
 **2026-2030 Strategy (23 March 2026)** and **Government
 FSCP (final March 2026)** — the regulator and the government
 both articulated growth-supporting priorities (PE, digital
@@ -223,20 +223,20 @@ The pivot is **as much a response to competitive friction**
 is a victory lap** on compliance — both plans candidly
 identify competitiveness problems to solve.
 
-[**AIFMD II**](../../frontier/aifmd-ii-april-2026.md)
+[**AIFMD II**](../../../frontier/aifmd-ii-april-2026.md)
 **(EU transposition / application 16 April 2026)** and
-[**UK Carried Interest Reform**](../../frontier/uk-carried-interest-reform-2026.md)
+[**UK Carried Interest Reform**](../../../frontier/uk-carried-interest-reform-2026.md)
 **(effective 6 April 2026 in the UK)** are the next wave of
 external developments the industry is now navigating. For
 Jersey, the AIFMD II impact is mainly through
-[NPPR](../funds/aifmd-nppr.md) conditions,
+[NPPR](../../funds/aifmd-nppr.md) conditions,
 disclosure, Annex IV reporting uplift, and JFSC code
 alignment.
 
 Defining narrative: **credibility converted into a growth
 agenda — under competitive pressure**.
 
-Detail: [`last-2-years.md`](last-2-years.md).
+Detail: [`last-2-years.md`](./last-2-years.md).
 
 ## The through-lines
 
@@ -299,32 +299,32 @@ labour; the pattern is emergent from product / regulator
 choices and practitioner specialisation):
 
 - **Jersey** — trust law
-  ([Article 9 firewall](../trusts/firewall.md)),
-  [TopCo / listing](../use-cases/founder-entrepreneur/why-jersey-topco.md),
-  [JPF](../funds/jersey-private-fund.md),
+  ([Article 9 firewall](../../trusts/firewall.md)),
+  [TopCo / listing](../../use-cases/founder-entrepreneur/why-jersey-topco.md),
+  [JPF](../../funds/jersey-private-fund.md),
   tokenisation, PE breadth;
 - **Guernsey** — captive insurance,
-  [PCC](../../guernsey/protected-cell-company.md) /
-  [ICC](../../guernsey/incorporated-cell-company.md),
+  [PCC](../../../guernsey/protected-cell-company.md) /
+  [ICC](../../../guernsey/incorporated-cell-company.md),
   continuation funds,
-  [image rights](../../guernsey/image-rights-register.md),
+  [image rights](../../../guernsey/image-rights-register.md),
   sustainable finance;
 - **Isle of Man** —
-  [life assurance / portfolio bonds](../../isle-of-man/life-assurance.md),
+  [life assurance / portfolio bonds](../../../isle-of-man/life-assurance.md),
   eGaming, family-office niche;
 
 with the Caribbean cluster
-([Cayman](../../cayman/index.md),
-[BVI](../../bvi/index.md),
-[Bermuda](../../bermuda/index.md)) operating as a **parallel
+([Cayman](../../../cayman/index.md),
+[BVI](../../../bvi/index.md),
+[Bermuda](../../../bermuda/index.md)) operating as a **parallel
 cluster** with its own specialisations
-([Cayman ELP](../../cayman/exempted-limited-partnership.md),
-[Cayman LLC](../../cayman/cayman-llc.md),
-[BVI VISTA](../../bvi/vista-trusts.md),
-[Cayman STAR](../../cayman/star-trusts.md),
-[Bermuda Insurance Classes](../../bermuda/insurance-classes.md),
-[Bermuda SAC](../../bermuda/segregated-accounts-company.md)).
-See [`../CROSS-JURISDICTIONAL-MAP.md`](../../CROSS-JURISDICTIONAL-MAP.md).
+([Cayman ELP](../../../cayman/exempted-limited-partnership.md),
+[Cayman LLC](../../../cayman/cayman-llc.md),
+[BVI VISTA](../../../bvi/vista-trusts.md),
+[Cayman STAR](../../../cayman/star-trusts.md),
+[Bermuda Insurance Classes](../../../bermuda/insurance-classes.md),
+[Bermuda SAC](../../../bermuda/segregated-accounts-company.md)).
+See [`../CROSS-JURISDICTIONAL-MAP.md`](../../../CROSS-JURISDICTIONAL-MAP.md).
 
 ### Through-line 5 — Defensible niche, not maximum scale
 
@@ -334,11 +334,11 @@ captive jurisdiction (Bermuda holds that position).
 Jersey's defensible niche is instead **high-complexity
 structuring**: private capital, TopCo / listing structures,
 trust-law certainty (the
-[Article 9 firewall](../trusts/firewall.md) and the
-[Article 47B mistake regime](../trusts/article-47-set-aside.md)),
-[JPF](../funds/jersey-private-fund.md) speed-to-
+[Article 9 firewall](../../trusts/firewall.md) and the
+[Article 47B mistake regime](../../trusts/article-47-set-aside.md)),
+[JPF](../../funds/jersey-private-fund.md) speed-to-
 market, and private-wealth / family-office work. The
-[product-mix range](../funds/index.md) is broader
+[product-mix range](../../funds/index.md) is broader
 than single-product rivals.
 
 This is a **defensible competitive posture** rather than a
@@ -387,11 +387,11 @@ With that caveat, the working hypothesis:
 
 A plausible next-cycle agenda driven by:
 
-- [**SFDR 2.0**](../frontier/sfdr-2-and-sustainable-finance.md)
+- [**SFDR 2.0**](../../frontier/sfdr-2-and-sustainable-finance.md)
   implementation (2027-2028);
 - **EU/UK financial-services equivalence question**
   (ongoing evolution; see
-  [`../jersey/immigration-residency/post-brexit-cross-border.md`](../immigration-residency/post-brexit-cross-border.md));
+  [`../jersey/immigration-residency/post-brexit-cross-border.md`](../../immigration-residency/post-brexit-cross-border.md));
 - **MoneyVal 6th round** (likely early 2030s);
 - **Pillar Two evolution** (potential OECD changes to
   thresholds, scope, mechanics);
@@ -399,7 +399,7 @@ A plausible next-cycle agenda driven by:
   emerging through the cycle);
 - **CARF** moving from implementation to operational
   reality (first reports 2027 — see
-  [`../jersey/international/carf.md`](../international/carf.md));
+  [`../jersey/international/carf.md`](../../international/carf.md));
 - **Public beneficial-ownership pressure** continuing.
 
 ### Plausible product-mix evolution
@@ -408,7 +408,7 @@ If the cycle holds, the next decade may add **tokenised
 structures**, **AI-orchestrated family-office services**,
 **sustainable-finance product lines**, and **continuation-
 and-secondary-market infrastructure** as more mainstream
-additions to the [funds product mix](../funds/index.md).
+additions to the [funds product mix](../../funds/index.md).
 
 ### Cluster specialisation may continue
 
@@ -421,7 +421,7 @@ This is an **emergent** rather than coordinated outcome.
 
 ### Transparency arc continues — but pace is uncertain
 
-[CARF](../international/carf.md) implementation
+[CARF](../../international/carf.md) implementation
 begins 1 January 2026 with first reports 2027; SFDR 2.0
 will add sustainable-finance transparency; AI-era data-
 disclosure regimes will likely emerge. The arc is highly
@@ -431,9 +431,9 @@ likely to continue but its pace and shape are uncertain.
 
 The biggest open question is **competitive friction**.
 Jersey's 2026 strategic plans (both the
-[JFSC 2026-2030 Strategy](../financial-regulation/jfsc-strategy-2026-2030.md)
+[JFSC 2026-2030 Strategy](../../financial-regulation/jfsc-strategy-2026-2030.md)
 and the
-[Government FSCP](../government/financial-services-competitiveness-programme.md))
+[Government FSCP](../../government/financial-services-competitiveness-programme.md))
 explicitly identify **speed, cost, service-responsiveness,
 digitalisation, and innovation** as competitiveness
 priorities. Whether Jersey can improve along those
@@ -452,26 +452,26 @@ should be tracked rather than assumed.
 
 ### Frontier (what comes next)
 
-- [`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md);
-- [`../frontier/README.md`](../../frontier/README.md);
-- [`../frontier/aifmd-ii-april-2026.md`](../../frontier/aifmd-ii-april-2026.md);
-- [`../frontier/uk-carried-interest-reform-2026.md`](../../frontier/uk-carried-interest-reform-2026.md);
-- [`../frontier/continuation-funds-and-gp-led-secondaries.md`](../../frontier/continuation-funds-and-gp-led-secondaries.md);
-- [`../frontier/sfdr-2-and-sustainable-finance.md`](../frontier/sfdr-2-and-sustainable-finance.md);
-- [`../frontier/tokenisation-jersey-2026.md`](../frontier/tokenisation-jersey-2026.md).
+- [`../frontier/jersey-finance-industry-2026.md`](../../frontier/jersey-finance-industry-2026.md);
+- [`../frontier/README.md`](../../../frontier/README.md);
+- [`../frontier/aifmd-ii-april-2026.md`](../../../frontier/aifmd-ii-april-2026.md);
+- [`../frontier/uk-carried-interest-reform-2026.md`](../../../frontier/uk-carried-interest-reform-2026.md);
+- [`../frontier/continuation-funds-and-gp-led-secondaries.md`](../../../frontier/continuation-funds-and-gp-led-secondaries.md);
+- [`../frontier/sfdr-2-and-sustainable-finance.md`](../../frontier/sfdr-2-and-sustainable-finance.md);
+- [`../frontier/tokenisation-jersey-2026.md`](../../frontier/tokenisation-jersey-2026.md).
 
 ### Doctrinal corpus
 
-- [`../jersey/index.md`](../index.md);
-- [`../jersey/financial-regulation/index.md`](../financial-regulation/index.md);
-- [`../jersey/tax/economic-substance.md`](../tax/economic-substance.md);
-- [`../jersey/tax/zero-ten.md`](../tax/zero-ten.md);
-- [`../jersey/international/pillar-two-mcit.md`](../international/pillar-two-mcit.md);
-- [`../jersey/aml-cft/index.md`](../aml-cft/index.md);
-- [`../jersey/trusts/firewall.md`](../trusts/firewall.md);
-- [`../jersey/trusts/reserved-powers.md`](../trusts/reserved-powers.md);
-- [`../jersey/funds/jersey-private-fund.md`](../funds/jersey-private-fund.md);
-- [`../CROSS-JURISDICTIONAL-MAP.md`](../../CROSS-JURISDICTIONAL-MAP.md).
+- [`../jersey/index.md`](../../index.md);
+- [`../jersey/financial-regulation/index.md`](../../financial-regulation/index.md);
+- [`../jersey/tax/economic-substance.md`](../../tax/economic-substance.md);
+- [`../jersey/tax/zero-ten.md`](../../tax/zero-ten.md);
+- [`../jersey/international/pillar-two-mcit.md`](../../international/pillar-two-mcit.md);
+- [`../jersey/aml-cft/index.md`](../../aml-cft/index.md);
+- [`../jersey/trusts/firewall.md`](../../trusts/firewall.md);
+- [`../jersey/trusts/reserved-powers.md`](../../trusts/reserved-powers.md);
+- [`../jersey/funds/jersey-private-fund.md`](../../funds/jersey-private-fund.md);
+- [`../CROSS-JURISDICTIONAL-MAP.md`](../../../CROSS-JURISDICTIONAL-MAP.md).
 
 ### Source bibliography
 

@@ -217,4 +217,4 @@ For a PTC consideration:
 ## Cross-references
 
 - [`../trust-officer/ptc.md`](../trust-officer/ptc.md)
-- [`trust-or-foundation.md`](trust-or-foundation.md)
+- [`trust-or-foundation.md`](./trust-or-foundation.md)

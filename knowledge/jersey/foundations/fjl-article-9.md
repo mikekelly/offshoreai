@@ -82,6 +82,6 @@ The name change should be **notified** to:
 
 ## Cross-references
 
-- [`fjl-article-8.md`](fjl-article-8.md);
-- [`fjl-part-2-establishment.md`](fjl-part-2-establishment.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-8.md`](./fjl-article-8.md);
+- [`fjl-part-2-establishment.md`](./fjl-part-2-establishment.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

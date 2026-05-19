@@ -137,7 +137,7 @@ Asset-protection planning must therefore consider:
 
 ## Cross-references
 
-- [`bdl-article-17a.md`](bdl-article-17a.md) — preferences;
-- [`bdl-part-5-avoidance.md`](bdl-part-5-avoidance.md);
+- [`bdl-article-17a.md`](./bdl-article-17a.md) — preferences;
+- [`bdl-part-5-avoidance.md`](./bdl-part-5-avoidance.md);
 - [`../use-cases/family-office-adviser/asset-protection.md`](../use-cases/family-office-adviser/asset-protection.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

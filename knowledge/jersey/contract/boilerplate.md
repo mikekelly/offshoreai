@@ -140,12 +140,12 @@ Jersey **does not have** an equivalent of the UK Contracts
 
 ## Governing law and jurisdiction
 
-See [`choice-of-law.md`](choice-of-law.md) and
-[`jurisdiction-clauses.md`](jurisdiction-clauses.md).
+See [`choice-of-law.md`](./choice-of-law.md) and
+[`jurisdiction-clauses.md`](./jurisdiction-clauses.md).
 
 ## Force majeure
 
-See [`force-majeure.md`](force-majeure.md).
+See [`force-majeure.md`](./force-majeure.md).
 
 ## Confidentiality
 
@@ -183,11 +183,11 @@ See [`force-majeure.md`](force-majeure.md).
 
 ## Cross-references
 
-- [`formation.md`](formation.md);
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`damages.md`](damages.md);
-- [`misrepresentation.md`](misrepresentation.md);
-- [`force-majeure.md`](force-majeure.md);
-- [`choice-of-law.md`](choice-of-law.md);
-- [`jurisdiction-clauses.md`](jurisdiction-clauses.md);
-- [`index.md`](index.md).
+- [`formation.md`](./formation.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`damages.md`](./damages.md);
+- [`misrepresentation.md`](./misrepresentation.md);
+- [`force-majeure.md`](./force-majeure.md);
+- [`choice-of-law.md`](./choice-of-law.md);
+- [`jurisdiction-clauses.md`](./jurisdiction-clauses.md);
+- [`index.md`](./index.md).

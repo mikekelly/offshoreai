@@ -214,5 +214,5 @@ For Privy Council appeal:
 
 ## Cross-references
 
-- [`court-of-appeal-appeal.md`](court-of-appeal-appeal.md)
+- [`court-of-appeal-appeal.md`](./court-of-appeal-appeal.md)
 - [`../../legal-system/privy-council.md`](../../legal-system/privy-council.md)

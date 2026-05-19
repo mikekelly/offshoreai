@@ -157,6 +157,6 @@ Operational steps:
 
 ## Cross-references
 
-- [`trustee-retirement.md`](trustee-retirement.md)
-- [`trustee-removal.md`](trustee-removal.md)
-- [`invalid-trustee-ratification.md`](invalid-trustee-ratification.md)
+- [`trustee-retirement.md`](./trustee-retirement.md)
+- [`trustee-removal.md`](./trustee-removal.md)
+- [`invalid-trustee-ratification.md`](./invalid-trustee-ratification.md)

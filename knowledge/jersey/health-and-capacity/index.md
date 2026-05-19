@@ -61,22 +61,22 @@ context.
 
 ### Mental Health Law 2016
 
-- [`mental-health-law-2016.md`](mental-health-law-2016.md) — MHJL overview
-- [`compulsory-admission.md`](compulsory-admission.md) — Article 17 emergency / Article 21 assessment / Article 22 treatment
-- [`consent-to-treatment.md`](consent-to-treatment.md) — treatment with and without consent
-- [`mental-health-tribunal.md`](mental-health-tribunal.md) — the appeal forum
-- [`nearest-relative.md`](nearest-relative.md) — the family role
-- [`guardianship.md`](guardianship.md) — community supervision
+- [`mental-health-law-2016.md`](./mental-health-law-2016.md) — MHJL overview
+- [`compulsory-admission.md`](./compulsory-admission.md) — Article 17 emergency / Article 21 assessment / Article 22 treatment
+- [`consent-to-treatment.md`](./consent-to-treatment.md) — treatment with and without consent
+- [`mental-health-tribunal.md`](./mental-health-tribunal.md) — the appeal forum
+- [`nearest-relative.md`](./nearest-relative.md) — the family role
+- [`guardianship.md`](./guardianship.md) — community supervision
 
 ### Capacity and Self-Determination Law 2016
 
-- [`capacity-and-self-determination-law-2016.md`](capacity-and-self-determination-law-2016.md) — CSDJL overview
-- [`capacity-test.md`](capacity-test.md) — the statutory capacity test
-- [`lasting-powers-of-attorney.md`](lasting-powers-of-attorney.md) — health-and-welfare LPA and property-and-finance LPA
-- [`advance-decisions.md`](advance-decisions.md) — to refuse treatment
-- [`delegates.md`](delegates.md) — court-appointed decision-makers for those who lack capacity
-- [`best-interests.md`](best-interests.md) — the best-interests test
-- [`protection-division.md`](protection-division.md) — the Royal Court Protection Division
+- [`capacity-and-self-determination-law-2016.md`](./capacity-and-self-determination-law-2016.md) — CSDJL overview
+- [`capacity-test.md`](./capacity-test.md) — the statutory capacity test
+- [`lasting-powers-of-attorney.md`](./lasting-powers-of-attorney.md) — health-and-welfare LPA and property-and-finance LPA
+- [`advance-decisions.md`](./advance-decisions.md) — to refuse treatment
+- [`delegates.md`](./delegates.md) — court-appointed decision-makers for those who lack capacity
+- [`best-interests.md`](./best-interests.md) — the best-interests test
+- [`protection-division.md`](./protection-division.md) — the Royal Court Protection Division
 
 ## At a glance
 

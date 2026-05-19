@@ -46,7 +46,7 @@ hazardous driving, drink-driving and (proposed) drug-driving.
 The Magistrate's Court is the principal forum for traffic
 offences, with the **Parish Hall Enquiry** as the
 distinctive Jersey pre-court mechanism — see
-[`parish-hall-enquiries.md`](parish-hall-enquiries.md).
+[`parish-hall-enquiries.md`](./parish-hall-enquiries.md).
 
 ## Related statutes
 
@@ -100,7 +100,7 @@ The Magistrate's Court Guidelines provide structured
 sentencing tariffs. For speeding, the guidelines map fine
 bands and endorsement / disqualification recommendations
 against excess speed and zone limit — see
-[`speeding.md`](speeding.md). For drink-driving, a
+[`speeding.md`](./speeding.md). For drink-driving, a
 structured matrix maps reading bands to fine levels and
 disqualification periods.
 
@@ -120,7 +120,7 @@ relevant parish, not in court. A Centenier can:
 
 The defendant has the **right to demand Magistrate's Court**
 instead at any point. See
-[`parish-hall-enquiries.md`](parish-hall-enquiries.md).
+[`parish-hall-enquiries.md`](./parish-hall-enquiries.md).
 
 ### Threshold for court
 
@@ -148,7 +148,7 @@ between:
   Vingteniers, Constable's Officers (volunteer-elected,
   not salaried).
 
-See [`honorary-police.md`](honorary-police.md).
+See [`honorary-police.md`](./honorary-police.md).
 
 ## Sanctions
 
@@ -178,18 +178,18 @@ the driver's history.
 - **New Highway Code** — updated rules for vulnerable road
   users (cyclists, pedestrians, e-scooters).
 
-See [`drug-driving.md`](drug-driving.md) for the drug-
+See [`drug-driving.md`](./drug-driving.md) for the drug-
 driving reform position.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`parish-hall-enquiries.md`](parish-hall-enquiries.md);
-- [`speeding.md`](speeding.md);
-- [`drink-driving.md`](drink-driving.md);
-- [`drug-driving.md`](drug-driving.md);
-- [`careless-and-dangerous-driving.md`](careless-and-dangerous-driving.md);
-- [`driving-without-insurance.md`](driving-without-insurance.md);
-- [`disqualification.md`](disqualification.md);
-- [`court-procedure.md`](court-procedure.md);
+- [`index.md`](./index.md);
+- [`parish-hall-enquiries.md`](./parish-hall-enquiries.md);
+- [`speeding.md`](./speeding.md);
+- [`drink-driving.md`](./drink-driving.md);
+- [`drug-driving.md`](./drug-driving.md);
+- [`careless-and-dangerous-driving.md`](./careless-and-dangerous-driving.md);
+- [`driving-without-insurance.md`](./driving-without-insurance.md);
+- [`disqualification.md`](./disqualification.md);
+- [`court-procedure.md`](./court-procedure.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md).

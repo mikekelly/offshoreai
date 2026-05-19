@@ -54,7 +54,7 @@ director eligibility.
 Typical grounds:
 
 - **Serious breach of directors' duties** under
-  [Article 74](directors-duties.md);
+  [Article 74](./directors-duties.md);
 - **Fraudulent or wrongful trading** in insolvency contexts
   (Articles 177–178);
 - **Repeated regulatory breaches**;
@@ -77,7 +77,7 @@ Applications typically come from:
 
 ## Acting while disqualified
 
-[Article 79](disqualified-personal-liability.md) addresses the
+[Article 79](./disqualified-personal-liability.md) addresses the
 **consequences** of acting in breach of a disqualification order:
 
 - **Personal liability** for the company's debts incurred during

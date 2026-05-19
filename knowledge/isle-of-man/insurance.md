@@ -129,9 +129,9 @@ The **Isle of Man Financial Services Authority (FSA)**:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`companies.md`](companies.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`companies.md`](./companies.md);
 - [`../jersey/insurance/index.md`](../jersey/insurance/index.md);
 - [`../guernsey/insurance.md`](../guernsey/insurance.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

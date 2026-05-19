@@ -153,9 +153,9 @@ From Royal Court:
 
 ## Cross-references
 
-- [`royal-court.md`](royal-court.md);
-- [`court-of-appeal.md`](court-of-appeal.md);
-- [`judicial-greffe.md`](judicial-greffe.md);
+- [`royal-court.md`](./royal-court.md);
+- [`court-of-appeal.md`](./court-of-appeal.md);
+- [`judicial-greffe.md`](./judicial-greffe.md);
 - [`../use-cases/royal-court-litigator/index.md`](../use-cases/royal-court-litigator/index.md);
 - [`../trusts/article-51-directions.md`](../trusts/article-51-directions.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

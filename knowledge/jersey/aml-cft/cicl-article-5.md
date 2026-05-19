@@ -126,7 +126,7 @@ For requests touching **trust matters**:
 
 ## Cross-references
 
-- [`cicl-article-3.md`](cicl-article-3.md);
-- [`cicl-article-13.md`](cicl-article-13.md);
-- [`cicl-articles-index.md`](cicl-articles-index.md);
+- [`cicl-article-3.md`](./cicl-article-3.md);
+- [`cicl-article-13.md`](./cicl-article-13.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
 - [`../use-cases/royal-court-litigator/letters-of-request.md`](../use-cases/royal-court-litigator/letters-of-request.md).

@@ -79,7 +79,7 @@ deemed expedient but lacking express authority.
 
 These are **functionally distinct** jurisdictions. Cite the
 sub-Article in formal work; see also
-[`article-47-set-aside.md`](article-47-set-aside.md).
+[`article-47-set-aside.md`](./article-47-set-aside.md).
 
 ## When Article 47 is invoked
 
@@ -151,7 +151,7 @@ Common applications:
 
 ## Interaction with Article 37 (deed-based variation)
 
-[Article 37](article-37-variation.md) permits variation **under the
+[Article 37](./article-37-variation.md) permits variation **under the
 deed's terms**. Article 47 is the **Court-led variation** route for
 matters that exceed the deed's variation power or that affect
 non-consenting interests. The two routes are complementary:
@@ -164,7 +164,7 @@ non-consenting interests. The two routes are complementary:
 
 ## Interaction with Article 47A
 
-[Article 47A](court-purpose-trust-redirection.md) is the **cy-près-
+[Article 47A](./court-purpose-trust-redirection.md) is the **cy-près-
 style** redirection power for charitable and non-charitable purpose
 trusts whose purposes have failed. Article 47 is the broader
 variation jurisdiction; Article 47A is the specialist

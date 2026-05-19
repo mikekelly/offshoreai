@@ -158,10 +158,10 @@ When frustration applies:
 
 ## Cross-references
 
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`damages.md`](damages.md);
-- [`formation.md`](formation.md);
-- [`unjust-enrichment.md`](unjust-enrichment.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`damages.md`](./damages.md);
+- [`formation.md`](./formation.md);
+- [`unjust-enrichment.md`](./unjust-enrichment.md);
 - [`../international/sanctions.md`](../aml-cft/sanctions.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

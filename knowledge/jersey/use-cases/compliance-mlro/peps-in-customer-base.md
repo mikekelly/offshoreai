@@ -187,4 +187,4 @@ For an individual PEP case:
 ## Cross-references
 
 - [`../trust-officer/pep-onboarding.md`](../trust-officer/pep-onboarding.md)
-- [`edd-when-required.md`](edd-when-required.md)
+- [`edd-when-required.md`](./edd-when-required.md)

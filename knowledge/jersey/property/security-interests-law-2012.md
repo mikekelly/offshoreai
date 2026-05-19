@@ -177,8 +177,8 @@ The **Security Interests (Jersey) Law 2012** plus specific
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`hypothec.md`](hypothec.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`hypothec.md`](./hypothec.md);
 - [`../insolvency/bdl-article-32.md`](../insolvency/bdl-article-32.md);
 - [`../insolvency/bdl-part-5-avoidance.md`](../insolvency/bdl-part-5-avoidance.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

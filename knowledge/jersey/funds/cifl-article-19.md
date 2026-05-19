@@ -115,7 +115,7 @@ Investors must:
 
 ## Cross-references
 
-- [`cifl-article-4.md`](cifl-article-4.md);
-- [`cifl-article-6.md`](cifl-article-6.md);
-- [`cifl-part-4-conduct.md`](cifl-part-4-conduct.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-article-4.md`](./cifl-article-4.md);
+- [`cifl-article-6.md`](./cifl-article-6.md);
+- [`cifl-part-4-conduct.md`](./cifl-part-4-conduct.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

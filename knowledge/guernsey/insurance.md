@@ -165,9 +165,9 @@ Beyond captives, Guernsey hosts:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`companies.md`](companies.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`companies.md`](./companies.md);
 - [`../jersey/insurance/index.md`](../jersey/insurance/index.md);
 - [`../jersey/insurance/ibl-article-20.md`](../jersey/insurance/ibl-article-20.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

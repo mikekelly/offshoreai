@@ -47,7 +47,7 @@ Jersey. It:
 
 Significant 2025 amendments (in force from 15 April 2026)
 introduced rent caps, a Rent Tribunal, and stronger tenant
-security of tenure — see [`2025-amendment-law.md`](2025-amendment-law.md).
+security of tenure — see [`2025-amendment-law.md`](./2025-amendment-law.md).
 
 ## Scope — when does the RTJL apply?
 
@@ -69,7 +69,7 @@ It does **not** apply to:
 - **Private clubs** (except where the unit is staff
   housing);
 - **Lodgers, boarders, and licensees** — see
-  [`lodging-houses-vs-tenancy.md`](lodging-houses-vs-tenancy.md).
+  [`lodging-houses-vs-tenancy.md`](./lodging-houses-vs-tenancy.md).
 
 Leases of 9 years or more are **commercial-style contracts
 of lease** passed in the Royal Court — see
@@ -106,13 +106,13 @@ month to month) until terminated by notice.
 A document recording the state of the unit at commencement,
 agreed between the parties. Mandatory under the RTJL
 (Condition Reports Order 2014). See
-[`condition-reports.md`](condition-reports.md).
+[`condition-reports.md`](./condition-reports.md).
 
 ### Deposit
 
 Held under the **Tenants' Deposit Scheme** — third-party
 custody, not the landlord's own account. See
-[`deposits.md`](deposits.md).
+[`deposits.md`](./deposits.md).
 
 ## Mandatory and prohibited terms
 
@@ -145,7 +145,7 @@ orders. Appeals lie to the **Royal Court**.
 
 The **Rent Tribunal** (introduced by the 2025 amendment)
 handles disputes over rent increases specifically — see
-[`rent-tribunal.md`](rent-tribunal.md).
+[`rent-tribunal.md`](./rent-tribunal.md).
 
 ## Enforcement
 
@@ -156,7 +156,7 @@ possessions (with force if necessary), and put the landlord
 back in possession. The Viscount disposes of unclaimed
 possessions and accounts to the tenant for the net proceeds
 where the tenant can be located. See
-[`eviction-procedure.md`](eviction-procedure.md).
+[`eviction-procedure.md`](./eviction-procedure.md).
 
 ## Offences
 
@@ -177,7 +177,7 @@ Specific RTJL offences include:
 - ❌ "My tenant didn't pay so I can terminate immediately."
   — No. Non-payment is a breach, requiring 7-day notice to
   remedy before any termination application; see
-  [`non-payment-of-rent.md`](non-payment-of-rent.md).
+  [`non-payment-of-rent.md`](./non-payment-of-rent.md).
 - ❌ "Oral tenancy is fine." — No. The agreement must be
   written and signed; an oral arrangement risks being a
   lodging arrangement (or no enforceable arrangement at
@@ -185,7 +185,7 @@ Specific RTJL offences include:
 - ❌ "I can put any rent-review clause I want." — No
   longer, post-15 April 2026: rent increases capped at RPI
   and limited to once yearly for periodic tenancies. See
-  [`rent-and-rent-reviews.md`](rent-and-rent-reviews.md).
+  [`rent-and-rent-reviews.md`](./rent-and-rent-reviews.md).
 
 ## Structure of the Law
 
@@ -206,14 +206,14 @@ is the first overview tier.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`2025-amendment-law.md`](2025-amendment-law.md);
-- [`forms-of-tenancy.md`](forms-of-tenancy.md);
-- [`tenancy-agreements.md`](tenancy-agreements.md);
-- [`condition-reports.md`](condition-reports.md);
-- [`deposits.md`](deposits.md);
-- [`notice-periods.md`](notice-periods.md);
-- [`non-payment-of-rent.md`](non-payment-of-rent.md);
-- [`eviction-procedure.md`](eviction-procedure.md);
+- [`index.md`](./index.md);
+- [`2025-amendment-law.md`](./2025-amendment-law.md);
+- [`forms-of-tenancy.md`](./forms-of-tenancy.md);
+- [`tenancy-agreements.md`](./tenancy-agreements.md);
+- [`condition-reports.md`](./condition-reports.md);
+- [`deposits.md`](./deposits.md);
+- [`notice-periods.md`](./notice-periods.md);
+- [`non-payment-of-rent.md`](./non-payment-of-rent.md);
+- [`eviction-procedure.md`](./eviction-procedure.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md);
 - [`../property/leases.md`](../property/leases.md).

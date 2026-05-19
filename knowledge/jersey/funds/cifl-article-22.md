@@ -101,7 +101,7 @@ If NAV miscalculation:
 
 ## Cross-references
 
-- [`cifl-article-21.md`](cifl-article-21.md);
-- [`cifl-article-23.md`](cifl-article-23.md);
-- [`cifl-part-4-conduct.md`](cifl-part-4-conduct.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-article-21.md`](./cifl-article-21.md);
+- [`cifl-article-23.md`](./cifl-article-23.md);
+- [`cifl-part-4-conduct.md`](./cifl-part-4-conduct.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

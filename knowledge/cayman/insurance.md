@@ -118,9 +118,9 @@ remains larger** in:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/insurance/index.md`](../jersey/insurance/index.md);
 - [`../guernsey/insurance.md`](../guernsey/insurance.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

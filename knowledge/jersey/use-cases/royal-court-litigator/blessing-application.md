@@ -245,6 +245,6 @@ For an active application:
 
 ## Cross-references
 
-- [`article-51-application.md`](article-51-application.md)
+- [`article-51-application.md`](./article-51-application.md)
 - [`../trust-officer/distribution-decisions-and-court-blessing.md`](../trust-officer/distribution-decisions-and-court-blessing.md)
 - [`../../trusts/article-51-directions.md`](../../trusts/article-51-directions.md)

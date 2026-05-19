@@ -240,11 +240,11 @@ make orders practically unenforceable).
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`parental-responsibility.md`](parental-responsibility.md);
-- [`child-relocation.md`](child-relocation.md);
-- [`care-and-supervision.md`](care-and-supervision.md);
-- [`jfcas-and-mediation.md`](jfcas-and-mediation.md);
-- [`royal-court-family-division.md`](royal-court-family-division.md);
+- [`index.md`](./index.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`parental-responsibility.md`](./parental-responsibility.md);
+- [`child-relocation.md`](./child-relocation.md);
+- [`care-and-supervision.md`](./care-and-supervision.md);
+- [`jfcas-and-mediation.md`](./jfcas-and-mediation.md);
+- [`royal-court-family-division.md`](./royal-court-family-division.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

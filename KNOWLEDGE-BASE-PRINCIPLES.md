@@ -2,7 +2,7 @@
 
 Region-non-specific principles for the offshoreai corpus. The corpus is a hand-curated, source-cited, agent-readable knowledge base for offshore jurisdictions; each jurisdiction is internally self-contained under `knowledge/<jurisdiction>/` and mirrors the same taxonomy where it makes sense, so an agent answering a cross-jurisdiction comparison question finds parallel files at predictable paths.
 
-These principles are the strategic commitments behind the operational rules in [`CONVENTIONS.md`](CONVENTIONS.md). The principles travel across jurisdictions (currently Jersey, Guernsey, Bermuda, BVI, Cayman, and Isle of Man; Gibraltar, Malta, Mauritius, Singapore-IFC and others to follow) and across consumer agents. For the agent-side counterpart — how agents on top of this corpus are designed — see [`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md).
+These principles are the strategic commitments behind the operational rules in [`CONVENTIONS.md`](./CONVENTIONS.md). The principles travel across jurisdictions (currently Jersey, Guernsey, Bermuda, BVI, Cayman, and Isle of Man; Gibraltar, Malta, Mauritius, Singapore-IFC and others to follow) and across consumer agents. For the agent-side counterpart — how agents on top of this corpus are designed — see [`AGENT-PRINCIPLES.md`](./AGENT-PRINCIPLES.md).
 
 The structure draws from Karpathy's [*LLM Wiki*](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) sketch and from the load-bearing observation that LLM agents are now the primary readers of reference material in our domain. The corpus is built for them first, for humans second.
 
@@ -24,9 +24,9 @@ The structure draws from Karpathy's [*LLM Wiki*](https://gist.github.com/karpath
 
 **5. Tags are the primary navigation layer for an agent; folders are convenience for humans.** The folder tree is convenient when you know which subject you're looking in. An agent searching for cross-cutting material ("firewall AND forced-heirship AND US grantor trust") finds nothing useful by walking folders alone — tags are how related material clusters across folders. Every substantive content file carries 5-10 tags from across the categories of the taxonomy.
 
-**6. The tag taxonomy is closed.** Tags come from the canonical [`TAGS.md`](TAGS.md) list only. Adding a new tag requires editing the taxonomy first, with a one-line description, and applying the tag to obviously-related existing files in the same commit. This is what makes tag-driven retrieval reliable — an agent searching for `firewall` doesn't need to also try `firewall-rule` or `art-9-firewall` to be safe.
+**6. The tag taxonomy is closed.** Tags come from the canonical [`TAGS.md`](./TAGS.md) list only. Adding a new tag requires editing the taxonomy first, with a one-line description, and applying the tag to obviously-related existing files in the same commit. This is what makes tag-driven retrieval reliable — an agent searching for `firewall` doesn't need to also try `firewall-rule` or `art-9-firewall` to be safe.
 
-**7. Hierarchical structure (section index → topic file → article) is the retrieval primitive.** The corpus is already a tree: `knowledge/` → jurisdiction `index.md` → section `index.md` → topic file → per-article statute-wiki file. This tree is what a PageIndex-style hierarchical retrieval primitive walks. Build the corpus structure as if it will be navigated by reasoning over summaries of nodes — because it will be. Alongside the doctrinal tree, the corpus operates **three further content layers** — cross-jurisdictional synthesis at [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md), decay-managed frontier content under `knowledge/frontier/` and `knowledge/<jurisdiction>/frontier/`, and per-jurisdiction history under `knowledge/<jurisdiction>/history/` (see [`AGENTS.md`](AGENTS.md) "The corpus has four layers" for the full description).
+**7. Hierarchical structure (section index → topic file → article) is the retrieval primitive.** The corpus is already a tree: `knowledge/` → jurisdiction `index.md` → section `index.md` → topic file → per-article statute-wiki file. This tree is what a PageIndex-style hierarchical retrieval primitive walks. Build the corpus structure as if it will be navigated by reasoning over summaries of nodes — because it will be. Alongside the doctrinal tree, the corpus operates **three further content layers** — cross-jurisdictional synthesis at [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md), decay-managed frontier content under `knowledge/frontier/` and `knowledge/<jurisdiction>/frontier/`, and per-jurisdiction history under `knowledge/<jurisdiction>/history/` (see [`AGENTS.md`](./AGENTS.md) "The corpus has four layers" for the full description).
 
 ---
 
@@ -74,7 +74,7 @@ The structure draws from Karpathy's [*LLM Wiki*](https://gist.github.com/karpath
 
 **20. No marketing voice.** The corpus is a reference, not a brochure. No "[Jurisdiction] is a world-leading offshore centre for…". The agent must be able to read the corpus and produce a sober legal/regulatory answer, not a service-provider sales pitch.
 
-**21. Multi-jurisdiction parallelism.** All corpus content lives under `knowledge/`; each jurisdiction lives in its own subdirectory under `knowledge/` (e.g. `knowledge/jersey/`, `knowledge/guernsey/`, `knowledge/bermuda/`, `knowledge/bvi/`, `knowledge/cayman/`, `knowledge/isle-of-man/`) and is internally self-contained. Where the same concept exists across jurisdictions (a foundations regime, a CRS implementation, a Royal/Supreme/High Court), mirror the path structure so the agent answering a comparison question finds parallel files at predictable paths (`knowledge/<jurisdiction>/trusts/firewall.md`, `knowledge/<jurisdiction>/tax/economic-substance.md`). This parallelism is what makes cross-jurisdiction agents feasible without a separate harmonisation layer. Cross-jurisdictional synthesis lives at [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md).
+**21. Multi-jurisdiction parallelism.** All corpus content lives under `knowledge/`; each jurisdiction lives in its own subdirectory under `knowledge/` (e.g. `knowledge/jersey/`, `knowledge/guernsey/`, `knowledge/bermuda/`, `knowledge/bvi/`, `knowledge/cayman/`, `knowledge/isle-of-man/`) and is internally self-contained. Where the same concept exists across jurisdictions (a foundations regime, a CRS implementation, a Royal/Supreme/High Court), mirror the path structure so the agent answering a comparison question finds parallel files at predictable paths (`knowledge/<jurisdiction>/trusts/firewall.md`, `knowledge/<jurisdiction>/tax/economic-substance.md`). This parallelism is what makes cross-jurisdiction agents feasible without a separate harmonisation layer. Cross-jurisdictional synthesis lives at [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md).
 
 ---
 
@@ -82,9 +82,9 @@ The structure draws from Karpathy's [*LLM Wiki*](https://gist.github.com/karpath
 
 These are strategic commitments behind the corpus. They do not cover:
 
-- **The operational rules for writing files** (frontmatter syntax, filename rules, link style, source citation format) — see [`CONVENTIONS.md`](CONVENTIONS.md).
-- **The canonical tag taxonomy** — see [`TAGS.md`](TAGS.md).
-- **How agents read and reason over the corpus** — see [`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md).
+- **The operational rules for writing files** (frontmatter syntax, filename rules, link style, source citation format) — see [`CONVENTIONS.md`](./CONVENTIONS.md).
+- **The canonical tag taxonomy** — see [`TAGS.md`](./TAGS.md).
+- **How agents read and reason over the corpus** — see [`AGENT-PRINCIPLES.md`](./AGENT-PRINCIPLES.md).
 - **Jurisdiction-specific editorial plans** — see each jurisdiction's `README.md` and `changelog.md`.
 
 When these principles conflict with a downstream operational rule in `CONVENTIONS.md`, the principle is load-bearing and the operational rule should be amended. New principles or amendments require a written rationale and updates to both this document and any downstream docs they change.

@@ -62,7 +62,7 @@ procedures**, ensuring:
 
 ## Cross-references
 
-- [`icc-cell-articles.md`](icc-cell-articles.md) — Article 127YB:
+- [`icc-cell-articles.md`](./icc-cell-articles.md) — Article 127YB:
   cell constitutional documents.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

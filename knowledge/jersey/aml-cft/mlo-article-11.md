@@ -125,7 +125,7 @@ The JFSC examines **SDD application** carefully:
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-12.md`](mlo-article-12.md) — EDD;
-- [`aml-cft-handbook.md`](aml-cft-handbook.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-12.md`](./mlo-article-12.md) — EDD;
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

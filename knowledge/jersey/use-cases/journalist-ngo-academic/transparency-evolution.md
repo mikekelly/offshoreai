@@ -235,5 +235,5 @@ For investigation / reporting:
 
 ## Cross-references
 
-- [`beneficial-ownership-access.md`](beneficial-ownership-access.md)
-- [`eu-oecd-pressure.md`](eu-oecd-pressure.md)
+- [`beneficial-ownership-access.md`](./beneficial-ownership-access.md)
+- [`eu-oecd-pressure.md`](./eu-oecd-pressure.md)

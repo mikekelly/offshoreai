@@ -29,7 +29,7 @@ see_also:
 Article 79 of the **[Companies (Jersey) Law 1991][cjl]**
 establishes **personal liability** for persons who act as
 directors (or in other corporate roles) **while disqualified**
-under [Article 78](disqualification-orders.md).
+under [Article 78](./disqualification-orders.md).
 
 ## What Article 79 covers
 
@@ -86,7 +86,7 @@ the company's affairs in fact — formally or informally.
 
 - **Shadow-director-style involvement** by a disqualified person
   — captured by the broad
-  [Article 1 "director" definition](companies-interpretation.md)
+  [Article 1 "director" definition](./companies-interpretation.md)
   and exposes the person to Article 79 liability.
 - **Family-office structures** where a disqualified principal
   continues to direct via family members — substance over form;

@@ -143,6 +143,6 @@ When proposing a distribution to a UK-resident beneficiary:
 ## Cross-references
 
 - [`../../trusts/beneficiaries.md`](../../trusts/beneficiaries.md)
-- [`distribution-decisions-and-court-blessing.md`](distribution-decisions-and-court-blessing.md)
-- [`distribution-us-person.md`](distribution-us-person.md) — US
+- [`distribution-decisions-and-court-blessing.md`](./distribution-decisions-and-court-blessing.md)
+- [`distribution-us-person.md`](./distribution-us-person.md) — US
   counterpart.

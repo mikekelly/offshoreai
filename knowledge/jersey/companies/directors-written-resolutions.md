@@ -62,7 +62,7 @@ the proposal in writing.
 
 ## Difference from Article 95
 
-The basic [Article 95](written-resolutions.md) mechanism requires
+The basic [Article 95](./written-resolutions.md) mechanism requires
 **unanimous member consent** — every member must sign. The
 Article 95ZA mechanism requires only the **threshold for the
 resolution type** (e.g., 75% for special resolutions, simple
@@ -83,11 +83,11 @@ Common scenarios:
 
 ## Cross-references
 
-- [`written-resolutions.md`](written-resolutions.md) — Article
+- [`written-resolutions.md`](./written-resolutions.md) — Article
   95: the basic unanimous-consent mechanism.
-- [`members-written-resolution.md`](members-written-resolution.md)
+- [`members-written-resolution.md`](./members-written-resolution.md)
   — Article 95ZB: member-proposed variant.
-- [`written-resolution-statement.md`](written-resolution-statement.md)
+- [`written-resolution-statement.md`](./written-resolution-statement.md)
   — Article 95ZC: accompanying statements.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

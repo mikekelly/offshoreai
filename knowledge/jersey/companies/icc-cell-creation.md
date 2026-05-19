@@ -62,8 +62,8 @@ issuance of the certificate. From that moment:
 
 ## Cross-references
 
-- [`icc-cell-application.md`](icc-cell-application.md) — Article
+- [`icc-cell-application.md`](./icc-cell-application.md) — Article
   127YA.
-- [`icc-cell-status.md`](icc-cell-status.md) — Article 127YD.
+- [`icc-cell-status.md`](./icc-cell-status.md) — Article 127YD.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

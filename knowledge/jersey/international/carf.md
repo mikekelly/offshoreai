@@ -178,7 +178,7 @@ runs from OECD HTP (1998), through FATCA (2014), CRS (2014-
 2017), OECD MDR / DAC6-style commitments (2018-),
 beneficial-ownership registers (2017-),
 and now CARF (2024-2027). For the strategic narrative see
-[`../../history/trajectory.md`](../history/trajectory.md).
+[`../../history/trajectory.md`](../history/finance/trajectory.md).
 
 The cumulative effect: **Jersey is more transparent in 2026
 than at any prior point in its modern history**, and CARF
@@ -218,5 +218,5 @@ extends the architecture into the digital-asset domain.
 - [`../use-cases/trust-officer/crs-classification.md`](../use-cases/trust-officer/crs-classification.md);
 - [`../use-cases/trust-officer/fatca-classification.md`](../use-cases/trust-officer/fatca-classification.md);
 - [`../../frontier/tokenisation-jersey-2026.md`](../frontier/tokenisation-jersey-2026.md);
-- [`../../history/last-25-years.md`](../history/last-25-years.md);
-- [`../../history/trajectory.md`](../history/trajectory.md).
+- [`../../history/last-25-years.md`](../history/finance/last-25-years.md);
+- [`../../history/trajectory.md`](../history/finance/trajectory.md).

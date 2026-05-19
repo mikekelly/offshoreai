@@ -49,7 +49,7 @@ memorandum. The mechanics:
   contexts);
 - the difference between issue price and nominal value is recorded
   in the **share premium account** (see
-  [Article 39 share premium](share-premium.md));
+  [Article 39 share premium](./share-premium.md));
 - the company's **paid-up capital** is the aggregate nominal value
   of paid-up shares plus share-premium balances.
 
@@ -59,18 +59,18 @@ Par-value share capital was the default before the introduction of
 no-par-value shares in Jersey law. Most pre-millennium Jersey
 companies are par-value.
 
-Modern Jersey practice has shifted to **no-par-value** ([Article 3F](no-par-value-companies.md))
+Modern Jersey practice has shifted to **no-par-value** ([Article 3F](./no-par-value-companies.md))
 for new incorporations because:
 
 - no-par-value avoids share-premium-account complications;
 - distribution mechanics are simpler under the cash-flow-solvency
-  test of [Article 115](distribution-restrictions.md);
+  test of [Article 115](./distribution-restrictions.md);
 - conversion between currencies is more straightforward;
 - it is more familiar to international counterparties used to
   no-par-value structures (e.g., Cayman, BVI).
 
 A par-value Jersey company can be **converted to no-par-value**
-under [Article 40A](conversion-par-value.md). Many older Jersey
+under [Article 40A](./conversion-par-value.md). Many older Jersey
 companies have undergone this conversion.
 
 ## Practical implications
@@ -81,12 +81,12 @@ A par-value Jersey company has:
   per share, and the categories of shares;
 - a **share premium account** holding excess subscription receipts;
 - specific provisions on **capital alteration** under
-  [Article 38](alteration-par-value.md);
+  [Article 38](./alteration-par-value.md);
 - specific provisions on **conversion to no-par-value** under
-  [Article 40A](conversion-par-value.md).
+  [Article 40A](./conversion-par-value.md).
 
 Distributions to par-value-company shareholders are still governed
-by the [Article 115](distribution-restrictions.md) cash-flow
+by the [Article 115](./distribution-restrictions.md) cash-flow
 solvency test — Jersey did not retain the English "profits
 available for distribution" test even for par-value companies.
 

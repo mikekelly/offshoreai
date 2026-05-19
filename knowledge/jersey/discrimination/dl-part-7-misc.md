@@ -82,7 +82,7 @@ through Order rather than full statutory reform.
 
 ## Cross-references
 
-- [`dl-articles-index.md`](dl-articles-index.md);
-- [`discrimination-jersey-law-2013.md`](discrimination-jersey-law-2013.md);
+- [`dl-articles-index.md`](./dl-articles-index.md);
+- [`discrimination-jersey-law-2013.md`](./discrimination-jersey-law-2013.md);
 - [`../employment/el-articles-index.md`](../employment/el-articles-index.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md).

@@ -92,7 +92,7 @@ Following 2022 events:
 
 ## Cross-references
 
-- [`safl-article-10.md`](safl-article-10.md);
-- [`safl-article-11.md`](safl-article-11.md);
-- [`safl-part-3-prohibitions.md`](safl-part-3-prohibitions.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`safl-article-10.md`](./safl-article-10.md);
+- [`safl-article-11.md`](./safl-article-11.md);
+- [`safl-part-3-prohibitions.md`](./safl-part-3-prohibitions.md);
+- [`safl-articles-index.md`](./safl-articles-index.md).

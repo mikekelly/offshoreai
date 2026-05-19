@@ -133,12 +133,12 @@ stable since the 2009 zero-ten reforms.
 
 ## Cross-references
 
-- [`itl-articles-index.md`](itl-articles-index.md) —
+- [`itl-articles-index.md`](./itl-articles-index.md) —
   article-by-article index *(planned)*.
-- [`zero-ten.md`](zero-ten.md) — corporate tax regime overview.
-- [`personal-income-tax.md`](personal-income-tax.md) — personal
+- [`zero-ten.md`](./zero-ten.md) — corporate tax regime overview.
+- [`personal-income-tax.md`](./personal-income-tax.md) — personal
   tax overview.
-- [`company-residence.md`](company-residence.md) — the residence
+- [`company-residence.md`](./company-residence.md) — the residence
   test under Article 123.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

@@ -103,7 +103,7 @@ On arrest, the officer must:
 - **Caution** the person (formal caution wording);
 - **Provide** identification (uniform / warrant card).
 
-See [`arrest.md`](arrest.md).
+See [`arrest.md`](./arrest.md).
 
 ### Detention
 
@@ -143,7 +143,7 @@ circumstances (e.g. legal advice delay in cases involving
 terrorism or evidence-preservation grounds for offences
 above prescribed threshold).
 
-See [`rights-at-police-station.md`](rights-at-police-station.md).
+See [`rights-at-police-station.md`](./rights-at-police-station.md).
 
 ### The caution
 
@@ -196,7 +196,7 @@ Before searching, the officer must:
 - **Explain** the person's rights;
 - **Record** the search (officer notebook / form).
 
-See [`stop-and-search.md`](stop-and-search.md).
+See [`stop-and-search.md`](./stop-and-search.md).
 
 ### Powers of entry
 
@@ -210,7 +210,7 @@ Police may enter premises:
 Forced entry permitted where occupier refuses or absent,
 or where necessary to prevent obstruction.
 
-See [`powers-of-entry.md`](powers-of-entry.md).
+See [`powers-of-entry.md`](./powers-of-entry.md).
 
 ## Procedural safeguards
 
@@ -259,15 +259,15 @@ human-rights developments.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`stop-and-search.md`](stop-and-search.md);
-- [`powers-of-entry.md`](powers-of-entry.md);
-- [`arrest.md`](arrest.md);
-- [`arrest-and-detention.md`](arrest-and-detention.md);
-- [`rights-at-police-station.md`](rights-at-police-station.md);
-- [`bail.md`](bail.md);
-- [`youth-justice.md`](youth-justice.md);
-- [`appeals-criminal.md`](appeals-criminal.md);
+- [`index.md`](./index.md);
+- [`stop-and-search.md`](./stop-and-search.md);
+- [`powers-of-entry.md`](./powers-of-entry.md);
+- [`arrest.md`](./arrest.md);
+- [`arrest-and-detention.md`](./arrest-and-detention.md);
+- [`rights-at-police-station.md`](./rights-at-police-station.md);
+- [`bail.md`](./bail.md);
+- [`youth-justice.md`](./youth-justice.md);
+- [`appeals-criminal.md`](./appeals-criminal.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md);
 - [`../road-traffic/honorary-police.md`](../road-traffic/honorary-police.md);
 - [`../road-traffic/parish-hall-enquiries.md`](../road-traffic/parish-hall-enquiries.md);

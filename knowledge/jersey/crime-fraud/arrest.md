@@ -161,7 +161,7 @@ A juvenile (under 18):
 - **Appropriate adult** required before interview;
 - **Detention** in specific juvenile facilities where
   practicable;
-- See [`youth-justice.md`](youth-justice.md).
+- See [`youth-justice.md`](./youth-justice.md).
 
 ## Arrest of vulnerable adults
 
@@ -208,12 +208,12 @@ Practical advice:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`ppce-law-2003.md`](ppce-law-2003.md);
-- [`rights-at-police-station.md`](rights-at-police-station.md);
-- [`arrest-and-detention.md`](arrest-and-detention.md);
-- [`stop-and-search.md`](stop-and-search.md);
-- [`bail.md`](bail.md);
-- [`youth-justice.md`](youth-justice.md);
+- [`index.md`](./index.md);
+- [`ppce-law-2003.md`](./ppce-law-2003.md);
+- [`rights-at-police-station.md`](./rights-at-police-station.md);
+- [`arrest-and-detention.md`](./arrest-and-detention.md);
+- [`stop-and-search.md`](./stop-and-search.md);
+- [`bail.md`](./bail.md);
+- [`youth-justice.md`](./youth-justice.md);
 - [`../road-traffic/honorary-police.md`](../road-traffic/honorary-police.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

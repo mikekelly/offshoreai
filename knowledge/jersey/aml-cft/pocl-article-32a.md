@@ -123,8 +123,8 @@ would convert continued administration into an offence) and
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-article-30.md`](pocl-article-30.md);
-- [`pocl-article-34.md`](pocl-article-34.md);
-- [`pocl-article-35.md`](pocl-article-35.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-article-30.md`](./pocl-article-30.md);
+- [`pocl-article-34.md`](./pocl-article-34.md);
+- [`pocl-article-35.md`](./pocl-article-35.md);
 - [`../use-cases/compliance-mlro/consent-requests.md`](../use-cases/compliance-mlro/consent-requests.md).

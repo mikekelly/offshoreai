@@ -88,9 +88,9 @@ The Registrar is **within the JFSC**:
 
 ## Cross-references
 
-- [`fjl-article-50.md`](fjl-article-50.md);
-- [`fjl-article-51.md`](fjl-article-51.md);
-- [`fjl-part-13-misc.md`](fjl-part-13-misc.md);
+- [`fjl-article-50.md`](./fjl-article-50.md);
+- [`fjl-article-51.md`](./fjl-article-51.md);
+- [`fjl-part-13-misc.md`](./fjl-part-13-misc.md);
 - [`../financial-regulation/jfsc.md`](../financial-regulation/jfsc.md);
 - [`../registries/index.md`](../registries/index.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

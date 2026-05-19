@@ -47,6 +47,6 @@ Article 1 defines terms used throughout the Law:
 
 ## Cross-references
 
-- [`fsl-article-2.md`](fsl-article-2.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md);
-- [`financial-services-jersey-law-1998.md`](financial-services-jersey-law-1998.md).
+- [`fsl-article-2.md`](./fsl-article-2.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md);
+- [`financial-services-jersey-law-1998.md`](./financial-services-jersey-law-1998.md).

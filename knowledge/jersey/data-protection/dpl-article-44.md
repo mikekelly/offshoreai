@@ -91,7 +91,7 @@ For Jersey TCBs / banks:
 
 ## Cross-references
 
-- [`dpl-part-5-transfers.md`](dpl-part-5-transfers.md);
-- [`dpl-article-17.md`](dpl-article-17.md);
+- [`dpl-part-5-transfers.md`](./dpl-part-5-transfers.md);
+- [`dpl-article-17.md`](./dpl-article-17.md);
 - [`../international/data-transfers.md`](../../../jersey/international/data-transfers.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

@@ -72,11 +72,11 @@ mergers while protecting the jurisdiction's standards.
 
 ## Cross-references
 
-- [`merger-commission-fees.md`](merger-commission-fees.md) —
+- [`merger-commission-fees.md`](./merger-commission-fees.md) —
   Article 127FG: fees and security for JFSC consent process.
-- [`merger-commission-info.md`](merger-commission-info.md) —
+- [`merger-commission-info.md`](./merger-commission-info.md) —
   Article 127FH: JFSC information-gathering powers.
-- [`merger-commission-decisions.md`](merger-commission-decisions.md)
+- [`merger-commission-decisions.md`](./merger-commission-decisions.md)
   — Article 127FI: appeal rights.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

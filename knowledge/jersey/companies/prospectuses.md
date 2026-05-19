@@ -98,7 +98,7 @@ and **fund offerings to professional investors** operate.
 
 ## Interaction with private-to-public auto-conversion
 
-[Article 17](private-to-public.md) **automatically converts a
+[Article 17](./private-to-public.md) **automatically converts a
 private company to public** when it **circulates a prospectus**.
 Article 29 defines what circulation counts.
 
@@ -126,11 +126,11 @@ Modern Jersey prospectus offerings:
 
 ## Companion Articles
 
-- **[Article 30](prospectus-compensation.md)** — compensation
+- **[Article 30](./prospectus-compensation.md)** — compensation
   liability for misleading statements;
-- **[Article 31](prospectus-exemption.md)** — exemption defences;
-- **[Article 32](prospectus-recovery.md)** — recovery procedure;
-- **[Article 33](prospectus-criminal-liability.md)** — criminal
+- **[Article 31](./prospectus-exemption.md)** — exemption defences;
+- **[Article 32](./prospectus-recovery.md)** — recovery procedure;
+- **[Article 33](./prospectus-criminal-liability.md)** — criminal
   liability.
 
 ## Pitfalls

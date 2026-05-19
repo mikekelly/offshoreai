@@ -136,8 +136,8 @@ Charity trustees:
 
 ## Cross-references
 
-- [`cl-part-3-commissioner.md`](cl-part-3-commissioner.md);
-- [`cl-part-5-investigations.md`](cl-part-5-investigations.md);
+- [`cl-part-3-commissioner.md`](./cl-part-3-commissioner.md);
+- [`cl-part-5-investigations.md`](./cl-part-5-investigations.md);
 - [`../trusts/trustee-duties.md`](../trusts/trustee-duties.md);
 - [`../foundations/fjl-article-17.md`](../foundations/fjl-article-17.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-articles-index.md`](./cl-articles-index.md).

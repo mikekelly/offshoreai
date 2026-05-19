@@ -66,7 +66,7 @@ the regime is not strict-liability for honest actors.
 
 ## Cross-references
 
-- [`officer-indemnity.md`](officer-indemnity.md) — Article 77:
+- [`officer-indemnity.md`](./officer-indemnity.md) — Article 77:
   indemnification framework.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

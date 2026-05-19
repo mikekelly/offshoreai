@@ -239,5 +239,5 @@ For expert evidence engagement:
 
 ## Cross-references
 
-- [`foreign-court-jersey-law.md`](foreign-court-jersey-law.md)
-- [`advocate-vs-solicitor.md`](advocate-vs-solicitor.md)
+- [`foreign-court-jersey-law.md`](./foreign-court-jersey-law.md)
+- [`advocate-vs-solicitor.md`](./advocate-vs-solicitor.md)

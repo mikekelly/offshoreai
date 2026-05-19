@@ -142,11 +142,11 @@ Key Guernsey industry bodies:
 
 ## Cross-references
 
-- [`gfsc.md`](gfsc.md);
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
+- [`gfsc.md`](./gfsc.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

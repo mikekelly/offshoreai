@@ -60,22 +60,22 @@ Articles are dealt with in the topic-specific files in this section.
   capacity of the settlor in relation to the trust property and the
   rights and duties of trustees. Foreign forced-heirship rules and
   similar non-trust regimes are not applied. See
-  [firewall.md](firewall.md). *(File is a stub.)*
+  [firewall.md](./firewall.md). *(File is a stub.)*
 - **Article 9A — Reserved powers.** A Jersey trust is not invalid by
   reason only of the settlor reserving any of a wide menu of powers
   (powers of revocation, powers to direct investment, powers to add or
   remove beneficiaries, powers to direct distributions, etc.). See
-  [reserved-powers.md](reserved-powers.md). *(File is a stub.)*
+  [reserved-powers.md](./reserved-powers.md). *(File is a stub.)*
 - **Article 12 — Purpose trusts.** A Jersey trust may be created for
   a non-charitable purpose, subject to certain requirements (an
   enforcer, suitable wording, and the purpose being lawful and not
-  contrary to public policy). See [purpose-trusts.md](purpose-trusts.md).
+  contrary to public policy). See [purpose-trusts.md](./purpose-trusts.md).
   *(File is a stub.)*
 - **Article 47 — Mistake and set-aside.** The Royal Court has a
   statutory jurisdiction to set aside the exercise of a fiduciary power
   in relation to a trust where the power-holder acted under a
   qualifying mistake. This replaced reliance on the common-law
-  *Hastings-Bass* rule. See [article-47-set-aside.md](article-47-set-aside.md).
+  *Hastings-Bass* rule. See [article-47-set-aside.md](./article-47-set-aside.md).
   *(File is a stub.)*
 - **Article 51 — Directions applications.** The Court's jurisdiction
   to give directions to trustees on the proper exercise of their

@@ -187,5 +187,5 @@ update guidance to align with the final regime. See
 - [`../tax/economic-substance.md`](../tax/economic-substance.md);
 - [`../digital-assets/index.md`](../digital-assets/index.md);
 - [`../../frontier/sfdr-2-and-sustainable-finance.md`](../frontier/sfdr-2-and-sustainable-finance.md);
-- [`../../history/last-5-years.md`](../history/last-5-years.md);
-- [`../../history/last-2-years.md`](../history/last-2-years.md).
+- [`../../history/last-5-years.md`](../history/finance/last-5-years.md);
+- [`../../history/last-2-years.md`](../history/finance/last-2-years.md).

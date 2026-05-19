@@ -121,6 +121,6 @@ Failure to comply with CRS obligations attracts:
 
 ## Cross-references
 
-- [`fatca.md`](fatca.md) — the US-specific equivalent.
+- [`fatca.md`](./fatca.md) — the US-specific equivalent.
 - [`../tax/international-tax.md`](../tax/international-tax.md) —
   broader international tax framework.

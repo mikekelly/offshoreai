@@ -209,6 +209,6 @@ For a family considering a PTC:
 
 ## Cross-references
 
-- [`trust-company-business-scope.md`](trust-company-business-scope.md)
+- [`trust-company-business-scope.md`](./trust-company-business-scope.md)
 - [`../../foundations/uses.md`](../../foundations/uses.md) —
   foundation as orphan vehicle for PTC.

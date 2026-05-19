@@ -70,7 +70,7 @@ shifts**, leaning on third-party regulator outputs and the
 2026 round of strategy-consulting annuals.
 
 This window bridges into the present-day snapshot at
-[`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md).
+[`../frontier/jersey-finance-industry-2026.md`](../../frontier/jersey-finance-industry-2026.md).
 
 ## Headline data
 
@@ -109,7 +109,7 @@ larger than any equivalent period in the prior decade.
 ### MoneyVal 5th Round MER — Jersey (July 2024)
 
 The single most strategically important event of the period.
-The Council of Europe's [MoneyVal](../aml-cft/moneyval.md)
+The Council of Europe's [MoneyVal](../../aml-cft/moneyval.md)
 published its **5th-round mutual evaluation report on Jersey**
 on 24 July 2024. Jersey was rated **Compliant or Largely
 Compliant on 39 of the 40 FATF Recommendations** — top-tier
@@ -118,7 +118,7 @@ strong but not uniformly top-tier: **1 High, 6 Substantial,
 and 4 Moderate** effectiveness ratings across the 11
 Immediate Outcomes (no Low ratings). The combination places
 Jersey among the strongest jurisdictions globally on
-[AML/CFT](../aml-cft/index.md) compliance while
+[AML/CFT](../../aml-cft/index.md) compliance while
 leaving real ongoing work on certain effectiveness
 Immediate Outcomes.
 
@@ -144,7 +144,7 @@ materially strengthened AML/CFT credentials.
 The **Multinational Corporate Income Tax Law (MCIT) 2025**
 applies to **accounting periods beginning on or after 1
 January 2025**, implementing OECD
-[Pillar Two](../tax/pillar-two.md) architecture: a
+[Pillar Two](../../tax/pillar-two.md) architecture: a
 **Qualified Domestic Minimum Top-up Tax (QDMTT)** and a
 **Qualified Income Inclusion Rule (IIR)** at 15% for
 in-scope multinational groups (EUR 750m+ consolidated
@@ -152,18 +152,18 @@ revenue thresholds). Jersey has **not** implemented an
 Undertaxed Profits Rule (UTPR). Equivalent regimes took
 effect in Guernsey and the Isle of Man on the same
 timetable. Bermuda's
-[Corporate Income Tax Act 2023](../../bermuda/corporate-income-tax-2023.md)
+[Corporate Income Tax Act 2023](../../../bermuda/corporate-income-tax-2023.md)
 is the parallel Caribbean-cluster move.
 
 The structural significance is large: Jersey's headline
 **0%/10%/20% "Zero-Ten"** regime — see
-[`../jersey/tax/zero-ten.md`](../tax/zero-ten.md),
+[`../jersey/tax/zero-ten.md`](../../tax/zero-ten.md),
 in place since 2009 — now co-exists with a 15% top-up for
 the in-scope multinational slice. For 95%+ of the corporate
 population (smaller groups, fund vehicles, family-office
 holdcos), Zero-Ten remains unchanged. For in-scope
 multinational groups, the QDMTT applies. See
-[`../jersey/international/pillar-two-mcit.md`](../international/pillar-two-mcit.md)
+[`../jersey/international/pillar-two-mcit.md`](../../international/pillar-two-mcit.md)
 for the detailed MCIT 2025 mechanics.
 
 The first MCIT 2025 returns were due in 2026; outcomes are
@@ -172,17 +172,17 @@ on the watch-list (see frontier).
 ### JFSC 2026-2030 Strategy (23 March 2026)
 
 The **JFSC's 2026-2030 Strategy** was published 23 March
-2026. The [JFSC](../financial-regulation/jfsc.md)
+2026. The [JFSC](../../financial-regulation/jfsc.md)
 was established under the
-[Financial Services (Jersey) Law 1998](../financial-regulation/financial-services-jersey-law-1998.md)
-and the [JFSC Law 1998](../financial-regulation/jfsc-law-1998.md),
+[Financial Services (Jersey) Law 1998](../../financial-regulation/financial-services-jersey-law-1998.md)
+and the [JFSC Law 1998](../../financial-regulation/jfsc-law-1998.md),
 and this is its first explicit five-year strategic
 articulation. The four priorities: maintaining international
 standards while preserving competitive positioning;
 digital-assets / tokenisation as a strategic growth
 vertical; sustainable finance as a parallel vertical;
-[substance](../tax/economic-substance.md) /
-[AML-CFT](../aml-cft/index.md) / operational
+[substance](../../tax/economic-substance.md) /
+[AML-CFT](../../aml-cft/index.md) / operational
 resilience as ongoing supervisory focus.
 
 This is the regulator's first explicit five-year strategic
@@ -208,17 +208,17 @@ transposition / application milestone at **16 April 2026**,
 expanding disclosure obligations on liquidity management
 tools, costs, and loan origination. For Jersey, the impact
 operates **indirectly** — primarily through
-[NPPR marketing conditions](../funds/aifmd-nppr.md),
+[NPPR marketing conditions](../../funds/aifmd-nppr.md),
 disclosure, Annex IV reporting uplift, and JFSC AIF Code
 alignment (the JFSC is splitting its existing AIF Code into
 an EU AIF Code and a UK AIF Code to reflect the post-Brexit
 bifurcation)
-(see [`../jersey/immigration-residency/post-brexit-cross-border.md`](../immigration-residency/post-brexit-cross-border.md)
+(see [`../jersey/immigration-residency/post-brexit-cross-border.md`](../../immigration-residency/post-brexit-cross-border.md)
 for the wider post-Brexit context). For the
-[NPPR marketing route](../funds/aifmd-nppr.md) into
+[NPPR marketing route](../../funds/aifmd-nppr.md) into
 the EU, AIFMD II adds Annex IV reporting uplift. Full
 mechanics in
-[`../frontier/aifmd-ii-april-2026.md`](../../frontier/aifmd-ii-april-2026.md).
+[`../frontier/aifmd-ii-april-2026.md`](../../../frontier/aifmd-ii-april-2026.md).
 
 ### UK Carried Interest Reform (effective 6 April 2026)
 
@@ -227,12 +227,12 @@ the income-tax regime from 6 April 2026, with a 72.5%
 multiplier giving a ~34.1% effective rate on qualifying
 carry (up from the 32% transitional and the pre-2025 ~28%
 CGT baseline). The Crown Dependencies — Jersey
-[High Value Residency](../immigration-residency/high-value-residency.md)
-(see [`../jersey/tax/high-value-residency-tax.md`](../tax/high-value-residency-tax.md)
+[High Value Residency](../../immigration-residency/high-value-residency.md)
+(see [`../jersey/tax/high-value-residency-tax.md`](../../tax/high-value-residency-tax.md)
 for the tax mechanics), Guernsey Open Market, IoM tax cap —
 became active partner-retention discussion points across UK
 private-capital firms through Q1 2026. See
-[`../frontier/uk-carried-interest-reform-2026.md`](../../frontier/uk-carried-interest-reform-2026.md).
+[`../frontier/uk-carried-interest-reform-2026.md`](../../../frontier/uk-carried-interest-reform-2026.md).
 
 ## Industry developments
 
@@ -255,7 +255,7 @@ treatment of single-asset CFs as not collective-investment
 schemes) made it the cleanest jurisdiction for that product;
 Jersey took meaningful continuation-fund share alongside.
 
-See [`../frontier/continuation-funds-and-gp-led-secondaries.md`](../../frontier/continuation-funds-and-gp-led-secondaries.md).
+See [`../frontier/continuation-funds-and-gp-led-secondaries.md`](../../../frontier/continuation-funds-and-gp-led-secondaries.md).
 
 ### Wealth management — scale and rotation
 
@@ -272,26 +272,26 @@ The **great-wealth-transfer** thesis (Capgemini *World Wealth
 Report 2025*: **23.4m HNWIs, US$90.5tn** total wealth, with
 significant generational transfer activity) is the single
 largest structural driver of family-office demand. Jersey's
-[Article 9 firewall](../trusts/firewall.md) and
-[Article 9A reserved-powers](../trusts/reserved-powers.md)
+[Article 9 firewall](../../trusts/firewall.md) and
+[Article 9A reserved-powers](../../trusts/reserved-powers.md)
 trust regime under the
-[Trusts (Jersey) Law 1984](../trusts/trusts-law-1984.md),
-plus the [foundations product](../foundations/index.md),
+[Trusts (Jersey) Law 1984](../../trusts/trusts-law-1984.md),
+plus the [foundations product](../../foundations/index.md),
 make it a primary beneficiary of cross-border family-wealth
 restructuring — see the worked example at
-[`../jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`](../use-cases/family-office-adviser/worked-example-international-family-wealth.md).
+[`../jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`](../../use-cases/family-office-adviser/worked-example-international-family-wealth.md).
 
 ### Tokenisation / digital assets
 
 The **Innovation Council** for digital assets was established
 late 2025. By October 2025, **14 VASPs (Virtual Asset Service
 Providers)** were registered in Jersey — see the
-[VASP register](../registries/vasp-register.md) and
-the [MLRO operational view on VASP/crypto customers](../use-cases/compliance-mlro/vasp-crypto-customers.md).
+[VASP register](../../registries/vasp-register.md) and
+the [MLRO operational view on VASP/crypto customers](../../use-cases/compliance-mlro/vasp-crypto-customers.md).
 The JFSC updated its tokenisation guidance through 2024-2025
 with a MiCA-compatible posture (despite Jersey not being in
 MiCA scope). See
-[`../frontier/tokenisation-jersey-2026.md`](../frontier/tokenisation-jersey-2026.md).
+[`../frontier/tokenisation-jersey-2026.md`](../../frontier/tokenisation-jersey-2026.md).
 
 ### Sustainable finance
 
@@ -321,21 +321,21 @@ private capital that Jersey is well-placed to capture.
 Through this window, the Channel Islands have **specialised**
 rather than directly competed: **Guernsey** leads on
 captive insurance, continuation funds,
-[ICC](../../guernsey/incorporated-cell-company.md) /
-[PCC](../../guernsey/protected-cell-company.md) cell
+[ICC](../../../guernsey/incorporated-cell-company.md) /
+[PCC](../../../guernsey/protected-cell-company.md) cell
 structures, and the
-[image rights register](../../guernsey/image-rights-register.md);
+[image rights register](../../../guernsey/image-rights-register.md);
 **Jersey** leads on trust law
-([Article 9 firewall](../trusts/firewall.md)),
+([Article 9 firewall](../../trusts/firewall.md)),
 TopCo / listing vehicles (see
-[`../jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`](../use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md)),
-[JPFs](../funds/jersey-private-fund.md), and
+[`../jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`](../../use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md)),
+[JPFs](../../funds/jersey-private-fund.md), and
 tokenisation infrastructure. Both have ~equivalent AML/CFT
 credentials post-2024 MoneyVal. The Isle of Man retains
 specialist verticals
-([life assurance / portfolio bonds](../../isle-of-man/life-assurance.md),
+([life assurance / portfolio bonds](../../../isle-of-man/life-assurance.md),
 eGaming). For the full cluster picture see
-[`../CROSS-JURISDICTIONAL-MAP.md`](../../CROSS-JURISDICTIONAL-MAP.md).
+[`../CROSS-JURISDICTIONAL-MAP.md`](../../../CROSS-JURISDICTIONAL-MAP.md).
 
 ### 3. Regulatory direction-of-travel shifted from defence to offence
 
@@ -354,7 +354,7 @@ and is the seam on which the **frontier/** narrative depends.
 ## What this means going into the next horizon
 
 For the wider **5-year retrospective** (see
-[`last-5-years.md`](last-5-years.md)): the 2024-2026 events
+[`last-5-years.md`](./last-5-years.md)): the 2024-2026 events
 should be read against the post-COVID, post-Substance-Law-
 embedding, and ESG-arrival years 2021-2023 — that wider
 window shows the **continuity of the regulatory build-up**
@@ -362,7 +362,7 @@ that culminated in the 2024-2026 milestones.
 
 For the **frontier**: continuation funds, AIFMD II, UK carry
 reform, tokenisation, and SFDR 2.0 are the dominant 2026-2027
-themes (see [`../frontier/README.md`](../../frontier/README.md)).
+themes (see [`../frontier/README.md`](../../../frontier/README.md)).
 
 ## Cross-references
 
@@ -370,7 +370,7 @@ themes (see [`../frontier/README.md`](../../frontier/README.md)).
 - [`./sources.md`](./sources.md);
 - [`./last-5-years.md`](./last-5-years.md);
 - [`./trajectory.md`](./trajectory.md);
-- [`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md);
-- [`../jersey/international/pillar-two-mcit.md`](../international/pillar-two-mcit.md);
-- [`../jersey/aml-cft/index.md`](../aml-cft/index.md);
-- [`../CROSS-JURISDICTIONAL-MAP.md`](../../CROSS-JURISDICTIONAL-MAP.md).
+- [`../frontier/jersey-finance-industry-2026.md`](../../frontier/jersey-finance-industry-2026.md);
+- [`../jersey/international/pillar-two-mcit.md`](../../international/pillar-two-mcit.md);
+- [`../jersey/aml-cft/index.md`](../../aml-cft/index.md);
+- [`../CROSS-JURISDICTIONAL-MAP.md`](../../../CROSS-JURISDICTIONAL-MAP.md).

@@ -45,6 +45,6 @@ Key definitions:
 
 ## Cross-references
 
-- [`wsl-article-2.md`](wsl-article-2.md);
-- [`wsl-article-3.md`](wsl-article-3.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-article-2.md`](./wsl-article-2.md);
+- [`wsl-article-3.md`](./wsl-article-3.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

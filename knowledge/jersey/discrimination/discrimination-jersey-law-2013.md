@@ -152,6 +152,6 @@ Treating a person less favourably because they have:
 
 ## Cross-references
 
-- [`dl-articles-index.md`](dl-articles-index.md);
+- [`dl-articles-index.md`](./dl-articles-index.md);
 - [`../employment/el-articles-index.md`](../employment/el-articles-index.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md).

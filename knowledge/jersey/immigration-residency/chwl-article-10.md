@@ -129,8 +129,8 @@ The CHWL housing controls:
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-part-3-housing.md`](chwl-part-3-housing.md);
-- [`high-value-residency.md`](high-value-residency.md);
-- [`residential-status-categories.md`](residential-status-categories.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-part-3-housing.md`](./chwl-part-3-housing.md);
+- [`high-value-residency.md`](./high-value-residency.md);
+- [`residential-status-categories.md`](./residential-status-categories.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

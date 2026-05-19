@@ -70,6 +70,6 @@ infallibility.
 
 ## Cross-references
 
-- [`inspector-reports.md`](inspector-reports.md) — Article 135.
+- [`inspector-reports.md`](./inspector-reports.md) — Article 135.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

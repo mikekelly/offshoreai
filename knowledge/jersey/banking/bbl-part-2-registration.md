@@ -128,7 +128,7 @@ Registration / revocation decisions are subject to:
 
 ## Cross-references
 
-- [`bbl-article-4.md`](bbl-article-4.md);
-- [`bbl-article-6.md`](bbl-article-6.md);
-- [`bbl-part-3-supervision.md`](bbl-part-3-supervision.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-4.md`](./bbl-article-4.md);
+- [`bbl-article-6.md`](./bbl-article-6.md);
+- [`bbl-part-3-supervision.md`](./bbl-part-3-supervision.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

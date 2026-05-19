@@ -71,6 +71,6 @@ relationship.
 
 ## Cross-references
 
-- [`el-article-3.md`](el-article-3.md);
-- [`el-articles-index.md`](el-articles-index.md);
-- [`employment-jersey-law-2003.md`](employment-jersey-law-2003.md).
+- [`el-article-3.md`](./el-article-3.md);
+- [`el-articles-index.md`](./el-articles-index.md);
+- [`employment-jersey-law-2003.md`](./employment-jersey-law-2003.md).

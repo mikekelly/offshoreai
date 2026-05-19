@@ -114,7 +114,7 @@ Information obtained in investigation:
 
 ## Cross-references
 
-- [`cl-part-3-commissioner.md`](cl-part-3-commissioner.md);
-- [`cl-part-4-trustees.md`](cl-part-4-trustees.md);
-- [`cl-part-7-enforcement.md`](cl-part-7-enforcement.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-part-3-commissioner.md`](./cl-part-3-commissioner.md);
+- [`cl-part-4-trustees.md`](./cl-part-4-trustees.md);
+- [`cl-part-7-enforcement.md`](./cl-part-7-enforcement.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

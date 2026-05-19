@@ -64,9 +64,9 @@ statutory teeth to insist.
 
 ## Cross-references
 
-- [`merger-commission-consent.md`](merger-commission-consent.md) —
+- [`merger-commission-consent.md`](./merger-commission-consent.md) —
   Article 127FF: consent requirement.
-- [`merger-commission-decisions.md`](merger-commission-decisions.md)
+- [`merger-commission-decisions.md`](./merger-commission-decisions.md)
   — Article 127FI: decisions and appeal rights.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

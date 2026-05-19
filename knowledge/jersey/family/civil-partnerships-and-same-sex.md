@@ -55,7 +55,7 @@ relationship producing rights and obligations parallel
 - **Financial relief** on dissolution — parallel to
   divorce ancillary relief;
 - **Parental responsibility** — see
-  [`parental-responsibility.md`](parental-responsibility.md);
+  [`parental-responsibility.md`](./parental-responsibility.md);
 - **Succession** — légitime / douaire equivalents apply.
 
 ## Same-sex marriage
@@ -120,7 +120,7 @@ Same-sex couples and civil partners:
   succession rights to opposite-sex spouse (légitime,
   douaire, intestacy entitlements);
 - **Cohabitant** — no automatic rights; see
-  [`cohabitation.md`](cohabitation.md).
+  [`cohabitation.md`](./cohabitation.md).
 
 ## Pitfalls
 
@@ -133,12 +133,12 @@ Same-sex couples and civil partners:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
-- [`divorce-grounds.md`](divorce-grounds.md);
-- [`parental-responsibility.md`](parental-responsibility.md);
-- [`cohabitation.md`](cohabitation.md);
-- [`adoption-jersey-law-1961.md`](adoption-jersey-law-1961.md);
+- [`index.md`](./index.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
+- [`divorce-grounds.md`](./divorce-grounds.md);
+- [`parental-responsibility.md`](./parental-responsibility.md);
+- [`cohabitation.md`](./cohabitation.md);
+- [`adoption-jersey-law-1961.md`](./adoption-jersey-law-1961.md);
 - [`../discrimination/index.md`](../discrimination/index.md);
 - [`../succession/legitime.md`](../../../jersey/succession/legitime.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

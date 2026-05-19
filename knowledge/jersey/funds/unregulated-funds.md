@@ -74,5 +74,5 @@ specific scenarios.
 
 ## Cross-references
 
-- [`jersey-private-fund.md`](jersey-private-fund.md)
-- [`expert-fund.md`](expert-fund.md)
+- [`jersey-private-fund.md`](./jersey-private-fund.md)
+- [`expert-fund.md`](./expert-fund.md)

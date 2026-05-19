@@ -145,10 +145,10 @@ The industry's self-description for 2026. Key drivers:
    share growing rapidly — see
    [`continuation-funds-and-gp-led-secondaries.md`](../../frontier/continuation-funds-and-gp-led-secondaries.md);
 4. **Tokenisation** moving from R&D to deployment — see
-   [`tokenisation-jersey-2026.md`](tokenisation-jersey-2026.md);
+   [`tokenisation-jersey-2026.md`](./tokenisation-jersey-2026.md);
 5. **SFDR 2.0** on the horizon (2027-2028
    implementation) — see
-   [`sfdr-2-and-sustainable-finance.md`](sfdr-2-and-sustainable-finance.md);
+   [`sfdr-2-and-sustainable-finance.md`](./sfdr-2-and-sustainable-finance.md);
 6. **Pillar Two MCIT 2025** operating its first year of
    compliance — see
    [`../jersey/international/pillar-two-mcit.md`](../international/pillar-two-mcit.md).
@@ -280,6 +280,6 @@ for the full comparison.
 - [`uk-carried-interest-reform-2026.md`](../../frontier/uk-carried-interest-reform-2026.md);
 - [`aifmd-ii-april-2026.md`](../../frontier/aifmd-ii-april-2026.md);
 - [`continuation-funds-and-gp-led-secondaries.md`](../../frontier/continuation-funds-and-gp-led-secondaries.md);
-- [`tokenisation-jersey-2026.md`](tokenisation-jersey-2026.md);
-- [`sfdr-2-and-sustainable-finance.md`](sfdr-2-and-sustainable-finance.md);
+- [`tokenisation-jersey-2026.md`](./tokenisation-jersey-2026.md);
+- [`sfdr-2-and-sustainable-finance.md`](./sfdr-2-and-sustainable-finance.md);
 - [`README.md`](../../frontier/README.md).

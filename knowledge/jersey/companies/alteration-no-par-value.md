@@ -29,7 +29,7 @@ see_also:
 # Article 38A — Alteration of Capital (No-Par-Value Companies)
 
 Article 38A of the **[Companies (Jersey) Law 1991][cjl]** is the
-**no-par-value equivalent** of [Article 38](alteration-par-value.md).
+**no-par-value equivalent** of [Article 38](./alteration-par-value.md).
 It permits a no-par-value company to alter its share capital.
 
 ## What Article 38A permits
@@ -50,16 +50,16 @@ Changes must be **documented and registered**.
 ## Why no-par-value is operationally simpler
 
 Compared to par-value alteration under
-[Article 38](alteration-par-value.md):
+[Article 38](./alteration-par-value.md):
 
 - No **par-value adjustment** complications when consolidating or
   sub-dividing — the share count changes but there's no per-share
   nominal value to recalculate;
 - No **share-premium account** mechanics — the
-  [stated-capital account](stated-capital.md) is used instead and
+  [stated-capital account](./stated-capital.md) is used instead and
   is more flexible;
 - **Currency conversions** (under
-  [Article 38B](currency-conversion-rate.md)) are
+  [Article 38B](./currency-conversion-rate.md)) are
   straightforward — the stated capital account can hold
   multi-currency amounts.
 

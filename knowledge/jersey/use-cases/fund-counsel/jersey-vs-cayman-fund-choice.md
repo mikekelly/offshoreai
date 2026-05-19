@@ -229,6 +229,6 @@ For a new fund:
 
 - [`../../../cayman/funds.md`](../../../cayman/funds.md);
 - [`../../../cayman/jersey-comparison.md`](../../../cayman/jersey-comparison.md);
-- [`hedge-fund-pe-vehicles.md`](hedge-fund-pe-vehicles.md);
+- [`hedge-fund-pe-vehicles.md`](./hedge-fund-pe-vehicles.md);
 - [`jersey-private-fund.md`](../../funds/jersey-private-fund.md);
 - [`../../funds/index.md`](../../funds/index.md).

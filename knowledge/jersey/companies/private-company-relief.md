@@ -61,7 +61,7 @@ private-company realities.
 
 ## Cross-references
 
-- [`private-companies.md`](private-companies.md) — Article 3B:
+- [`private-companies.md`](./private-companies.md) — Article 3B:
   private-company definition.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

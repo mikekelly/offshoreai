@@ -228,4 +228,4 @@ For a new company / funding round:
 ## Cross-references
 
 - [`../../companies/register-of-members.md`](../../companies/register-of-members.md)
-- [`drag-tag-rofr.md`](drag-tag-rofr.md)
+- [`drag-tag-rofr.md`](./drag-tag-rofr.md)

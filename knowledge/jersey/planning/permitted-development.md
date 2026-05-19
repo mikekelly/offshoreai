@@ -189,11 +189,11 @@ not:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`planning-building-law-2002.md`](planning-building-law-2002.md);
-- [`application-process.md`](application-process.md);
-- [`extensions-and-conversions.md`](extensions-and-conversions.md);
-- [`listed-buildings.md`](listed-buildings.md);
-- [`conservation-areas.md`](conservation-areas.md);
-- [`enforcement.md`](enforcement.md);
+- [`index.md`](./index.md);
+- [`planning-building-law-2002.md`](./planning-building-law-2002.md);
+- [`application-process.md`](./application-process.md);
+- [`extensions-and-conversions.md`](./extensions-and-conversions.md);
+- [`listed-buildings.md`](./listed-buildings.md);
+- [`conservation-areas.md`](./conservation-areas.md);
+- [`enforcement.md`](./enforcement.md);
 - [`../property/restrictive-covenants.md`](../property/restrictive-covenants.md).

@@ -92,7 +92,7 @@ these thresholds, not 107.
 ## Article 17D Order — abolition of the 30-member limit
 
 The States has the power under
-[Article 17D](30-member-limit-abolition.md) to abolish the
+[Article 17D](./30-member-limit-abolition.md) to abolish the
 30-member limit for private companies. That Order has historically
 been made. Check the current state of the Order before applying
 the 30-member rule.

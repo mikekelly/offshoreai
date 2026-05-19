@@ -112,8 +112,8 @@ negligence but **not against** wilful default or fraud.
 
 ## Cross-references
 
-- [`fjl-article-15.md`](fjl-article-15.md) — council;
-- [`fjl-part-4-council.md`](fjl-part-4-council.md) —
+- [`fjl-article-15.md`](./fjl-article-15.md) — council;
+- [`fjl-part-4-council.md`](./fjl-part-4-council.md) —
   decisions, indemnity;
 - [`../trusts/article-21.md`](../../../jersey/trusts/article-21.md) —
   analogous trustee duty.

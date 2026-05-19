@@ -199,10 +199,10 @@ choice.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`protected-cell-company.md`](protected-cell-company.md);
-- [`incorporated-cell-company.md`](incorporated-cell-company.md);
-- [`gfsc.md`](gfsc.md);
+- [`index.md`](./index.md);
+- [`protected-cell-company.md`](./protected-cell-company.md);
+- [`incorporated-cell-company.md`](./incorporated-cell-company.md);
+- [`gfsc.md`](./gfsc.md);
 - [`../jersey/trusts/index.md`](../jersey/trusts/index.md);
 - [`../jersey/trusts/firewall.md`](../jersey/trusts/firewall.md);
 - [`../jersey/trusts/reserved-powers.md`](../jersey/trusts/reserved-powers.md);

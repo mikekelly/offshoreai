@@ -80,6 +80,6 @@ A worker can opt out:
 
 ## Cross-references
 
-- [`el-article-24.md`](el-article-24.md);
-- [`el-part-4-leave.md`](el-part-4-leave.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-24.md`](./el-article-24.md);
+- [`el-part-4-leave.md`](./el-part-4-leave.md);
+- [`el-articles-index.md`](./el-articles-index.md).

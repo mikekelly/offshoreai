@@ -200,9 +200,9 @@ For foreign lawyers approaching Jersey law:
 
 ## Cross-references
 
-- [`sources-of-law.md`](sources-of-law.md);
-- [`privy-council.md`](privy-council.md);
-- [`court-of-appeal.md`](court-of-appeal.md);
-- [`royal-court.md`](royal-court.md);
-- [`customary-law.md`](customary-law.md);
-- [`index.md`](index.md).
+- [`sources-of-law.md`](./sources-of-law.md);
+- [`privy-council.md`](./privy-council.md);
+- [`court-of-appeal.md`](./court-of-appeal.md);
+- [`royal-court.md`](./royal-court.md);
+- [`customary-law.md`](./customary-law.md);
+- [`index.md`](./index.md).

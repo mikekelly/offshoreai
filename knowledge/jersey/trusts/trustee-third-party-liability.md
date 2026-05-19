@@ -46,7 +46,7 @@ When a trustee transacts with a third party:
 
 The Article **does not** affect breach-of-trust liability between
 the trustee and the beneficiaries — see
-[`breach-of-trust-liability.md`](breach-of-trust-liability.md).
+[`breach-of-trust-liability.md`](./breach-of-trust-liability.md).
 
 (See the consolidated text at [jerseylaw.je][tjl].)
 
@@ -112,7 +112,7 @@ The "unaware counterparty" scenario typically arises with:
 
 The trustee's right of indemnity ranks **ahead of beneficial
 interests** — see also
-[`trustee-remuneration.md`](trustee-remuneration.md) on the trustee's
+[`trustee-remuneration.md`](./trustee-remuneration.md) on the trustee's
 lien. A trustee with a valid indemnity claim is paid before the
 beneficiaries.
 

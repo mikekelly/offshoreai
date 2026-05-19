@@ -63,9 +63,9 @@ where the directors have failed to do so.
 
 ## Cross-references
 
-- [`strike-off.md`](strike-off.md) — Article 205: general
+- [`strike-off.md`](./strike-off.md) — Article 205: general
   strike-off.
-- [`limited-life-companies.md`](limited-life-companies.md) —
+- [`limited-life-companies.md`](./limited-life-companies.md) —
   Article 3H: limited-life company.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

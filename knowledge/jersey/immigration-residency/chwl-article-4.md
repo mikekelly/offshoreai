@@ -58,7 +58,7 @@ Entitled status can be **lost** through:
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-part-2-status.md`](chwl-part-2-status.md);
-- [`route-to-entitled.md`](route-to-entitled.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-part-2-status.md`](./chwl-part-2-status.md);
+- [`route-to-entitled.md`](./route-to-entitled.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

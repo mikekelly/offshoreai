@@ -218,11 +218,11 @@ Where PR holders disagree:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`children-jersey-law-2002.md`](children-jersey-law-2002.md);
-- [`child-arrangements-orders.md`](child-arrangements-orders.md);
-- [`child-relocation.md`](child-relocation.md);
-- [`care-and-supervision.md`](care-and-supervision.md);
-- [`civil-partnerships-and-same-sex.md`](civil-partnerships-and-same-sex.md);
-- [`adoption-jersey-law-1961.md`](adoption-jersey-law-1961.md);
+- [`index.md`](./index.md);
+- [`children-jersey-law-2002.md`](./children-jersey-law-2002.md);
+- [`child-arrangements-orders.md`](./child-arrangements-orders.md);
+- [`child-relocation.md`](./child-relocation.md);
+- [`care-and-supervision.md`](./care-and-supervision.md);
+- [`civil-partnerships-and-same-sex.md`](./civil-partnerships-and-same-sex.md);
+- [`adoption-jersey-law-1961.md`](./adoption-jersey-law-1961.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

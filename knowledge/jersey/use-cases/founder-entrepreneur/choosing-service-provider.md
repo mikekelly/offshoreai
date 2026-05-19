@@ -232,5 +232,5 @@ For an existing relationship:
 
 ## Cross-references
 
-- [`why-jersey-topco.md`](why-jersey-topco.md)
-- [`substance-for-topco.md`](substance-for-topco.md)
+- [`why-jersey-topco.md`](./why-jersey-topco.md)
+- [`substance-for-topco.md`](./substance-for-topco.md)

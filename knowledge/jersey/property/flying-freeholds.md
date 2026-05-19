@@ -204,11 +204,11 @@ Housing and Work (Jersey) Law 2012:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`contract-passing.md`](contract-passing.md);
-- [`leases.md`](leases.md);
-- [`commercial-leases.md`](commercial-leases.md);
-- [`hypothec.md`](hypothec.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`contract-passing.md`](./contract-passing.md);
+- [`leases.md`](./leases.md);
+- [`commercial-leases.md`](./commercial-leases.md);
+- [`hypothec.md`](./hypothec.md);
 - [`../immigration-residency/chwl-article-10.md`](../immigration-residency/chwl-article-10.md);
 - [`../tax/stamp-duty.md`](../tax/stamp-duty.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

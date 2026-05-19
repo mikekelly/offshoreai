@@ -70,6 +70,6 @@ Confiscation order made:
 
 ## Cross-references
 
-- [`pocl-article-3.md`](pocl-article-3.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-3.md`](./pocl-article-3.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

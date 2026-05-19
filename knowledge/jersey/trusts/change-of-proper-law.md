@@ -52,7 +52,7 @@ changes:
   validity, interpretation, and trustee duties;
 - the **forum** that will most naturally hear trust matters;
 - the application of the **firewall** under
-  [Article 9](firewall.md) (which protects only Jersey trusts).
+  [Article 9](./firewall.md) (which protects only Jersey trusts).
 
 Article 41 confirms that the deed can authorise such a change; the
 mechanics depend on the deed's terms.
@@ -109,7 +109,7 @@ Beyond the legal change, a change of proper law typically involves:
 
 - **trustee change** to a trustee in the new jurisdiction (and
   surrender of the Jersey trustee under
-  [Article 19](trustee-resignation-and-removal.md));
+  [Article 19](./trustee-resignation-and-removal.md));
 - **vesting** of trust property in the new trustee — automatic for
   Jersey-situated property under Article 17 mechanics, but local-law
   transfer is needed for foreign property;
@@ -164,7 +164,7 @@ care.
   planning was supposed to avoid.
 - **Old-trustee continuing liability.** A Jersey trustee that
   resigns on the change of proper law remains liable for breaches
-  during its tenure — see [`outgoing-trustee.md`](outgoing-trustee.md).
+  during its tenure — see [`outgoing-trustee.md`](./outgoing-trustee.md).
   Properly secured indemnity and Article 43A security are essential.
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

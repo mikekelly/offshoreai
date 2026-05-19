@@ -121,7 +121,7 @@ For practitioners advising:
 
 ## Cross-references
 
-- [`bdl-article-17a.md`](bdl-article-17a.md);
-- [`bdl-article-17b.md`](bdl-article-17b.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md);
+- [`bdl-article-17a.md`](./bdl-article-17a.md);
+- [`bdl-article-17b.md`](./bdl-article-17b.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md);
 - [`../use-cases/family-office-adviser/asset-protection.md`](../use-cases/family-office-adviser/asset-protection.md).

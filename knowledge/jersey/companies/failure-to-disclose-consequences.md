@@ -29,7 +29,7 @@ see_also:
 
 Article 76 of the **[Companies (Jersey) Law 1991][cjl]** specifies
 the consequences when a director **fails to comply with the
-[Article 75](director-disclosure.md) disclosure duty**.
+[Article 75](./director-disclosure.md) disclosure duty**.
 
 ## What Article 76 says
 
@@ -78,7 +78,7 @@ In serious cases, the director may also face:
 - **Personal liability** for losses the company suffered as a
   result of the breach;
 - **Disqualification** under
-  [Article 78](disqualification-orders.md);
+  [Article 78](./disqualification-orders.md);
 - **Damage to professional reputation** and potential JFSC
   regulatory consequences for professional directors.
 
@@ -96,11 +96,11 @@ remedies, though it doesn't automatically eliminate the breach.
 
 ## Cross-references
 
-- [`director-disclosure.md`](director-disclosure.md) — Article
+- [`director-disclosure.md`](./director-disclosure.md) — Article
   75: the disclosure duty itself.
-- [`directors-duties.md`](directors-duties.md) — Article 74: the
+- [`directors-duties.md`](./directors-duties.md) — Article 74: the
   broader fiduciary framework.
-- [`disqualification-orders.md`](disqualification-orders.md) —
+- [`disqualification-orders.md`](./disqualification-orders.md) —
   Article 78: disqualification for serious breaches.
 
 ## Pitfalls

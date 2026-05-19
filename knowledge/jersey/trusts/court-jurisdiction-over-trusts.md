@@ -42,7 +42,7 @@ The Royal Court has jurisdiction over a trust where any of the
 following is satisfied:
 
 1. The trust is a **Jersey trust** (proper law is Jersey law — see
-   [`proper-law.md`](proper-law.md)); **or**
+   [`proper-law.md`](./proper-law.md)); **or**
 2. The trustee of a **foreign trust** is resident in Jersey; **or**
 3. **Trust property** (in the case of a foreign trust) is situate in
    Jersey; **or**
@@ -74,7 +74,7 @@ and interpretation by its **proper law**; the Royal Court applies
 Jersey procedural rules and supervisory standards.
 
 So a Jersey-resident trustee of a Bermuda-law trust can come before
-the Royal Court for an [Article 51](article-51-directions.md)
+the Royal Court for an [Article 51](./article-51-directions.md)
 directions application; the Court will apply Bermuda law to the
 substantive question (the proper construction of a power in the
 deed, for example) but Jersey procedure to the application itself.
@@ -96,7 +96,7 @@ contains a jurisdiction clause, the weight to be given to it is
 governed by **Crociani v Crociani [2014] UKPC 40** — see
 [`use-cases/trust-officer/index.md`](../use-cases/trust-officer/index.md)
 (under "forum and conflicts of law") and the discussion in
-[`proper-law.md`](proper-law.md).
+[`proper-law.md`](./proper-law.md).
 
 ## Article 5 and the firewall
 

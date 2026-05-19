@@ -81,6 +81,6 @@ The status system effectively **regulates the housing market**:
 
 ## Cross-references
 
-- [`employment-status-categories.md`](employment-status-categories.md)
-- [`high-value-residency.md`](high-value-residency.md)
-- [`route-to-entitled.md`](route-to-entitled.md)
+- [`employment-status-categories.md`](./employment-status-categories.md)
+- [`high-value-residency.md`](./high-value-residency.md)
+- [`route-to-entitled.md`](./route-to-entitled.md)

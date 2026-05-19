@@ -87,8 +87,8 @@ Status of children:
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-part-3-housing.md`](chwl-part-3-housing.md);
-- [`chwl-part-4-employment.md`](chwl-part-4-employment.md);
-- [`route-to-entitled.md`](route-to-entitled.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-part-3-housing.md`](./chwl-part-3-housing.md);
+- [`chwl-part-4-employment.md`](./chwl-part-4-employment.md);
+- [`route-to-entitled.md`](./route-to-entitled.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

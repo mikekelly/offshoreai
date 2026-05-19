@@ -115,7 +115,7 @@ substantively more than the pre-2020 unregulated regime.
 The PFA covers:
 
 - **Cayman exempted limited partnerships** (the typical
-  PE/VC fund vehicle) — see [`exempted-limited-partnership.md`](exempted-limited-partnership.md);
+  PE/VC fund vehicle) — see [`exempted-limited-partnership.md`](./exempted-limited-partnership.md);
 - **Cayman exempted companies** operated as closed-ended
   funds;
 - **Cayman segregated portfolio companies** (each
@@ -186,12 +186,12 @@ Current consolidated Act is the operative source.
 
 ## Cross-references
 
-- [`funds.md`](funds.md);
-- [`cima.md`](cima.md);
-- [`exempted-company.md`](exempted-company.md);
-- [`exempted-limited-partnership.md`](exempted-limited-partnership.md);
-- [`segregated-portfolio-company.md`](segregated-portfolio-company.md);
-- [`mutual-funds-act.md`](mutual-funds-act.md);
+- [`funds.md`](./funds.md);
+- [`cima.md`](./cima.md);
+- [`exempted-company.md`](./exempted-company.md);
+- [`exempted-limited-partnership.md`](./exempted-limited-partnership.md);
+- [`segregated-portfolio-company.md`](./segregated-portfolio-company.md);
+- [`mutual-funds-act.md`](./mutual-funds-act.md);
 - [`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md);
 - [`../jersey/funds/expert-fund.md`](../jersey/funds/expert-fund.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

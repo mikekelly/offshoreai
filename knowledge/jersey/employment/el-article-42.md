@@ -103,7 +103,7 @@ generally **unfair** even if gross misconduct in fact occurred.
 
 ## Cross-references
 
-- [`el-article-41.md`](el-article-41.md);
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-5-termination.md`](el-part-5-termination.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-41.md`](./el-article-41.md);
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-5-termination.md`](./el-part-5-termination.md);
+- [`el-articles-index.md`](./el-articles-index.md).

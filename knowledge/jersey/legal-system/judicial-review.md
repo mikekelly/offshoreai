@@ -152,7 +152,7 @@ available:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./royal-court.md`](royal-court.md);
-- [`./echr-human-rights.md`](echr-human-rights.md);
+- [`./index.md`](./index.md);
+- [`./royal-court.md`](./royal-court.md);
+- [`./echr-human-rights.md`](./echr-human-rights.md);
 - [`../use-cases/royal-court-litigator/index.md`](../use-cases/royal-court-litigator/index.md).

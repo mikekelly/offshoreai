@@ -120,8 +120,8 @@ Common scenarios:
 
 ## Cross-references
 
-- [`fjl-article-42.md`](fjl-article-42.md);
-- [`fjl-article-43.md`](fjl-article-43.md);
-- [`fjl-article-44.md`](fjl-article-44.md);
-- [`fjl-part-11-dissolution.md`](fjl-part-11-dissolution.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-42.md`](./fjl-article-42.md);
+- [`fjl-article-43.md`](./fjl-article-43.md);
+- [`fjl-article-44.md`](./fjl-article-44.md);
+- [`fjl-part-11-dissolution.md`](./fjl-part-11-dissolution.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

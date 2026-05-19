@@ -79,7 +79,7 @@ Separately, the **JFSC** can remove an auditor from the recognised-
 auditor register for:
 
 - **Breach of professional standards**;
-- **Independence failures** ([Article 113E](auditor-independence.md));
+- **Independence failures** ([Article 113E](./auditor-independence.md));
 - **Discipline issues** at the auditor's professional body;
 - Other **fit-and-proper** concerns.
 

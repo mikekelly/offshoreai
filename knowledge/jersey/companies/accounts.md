@@ -91,17 +91,17 @@ is one of Jersey's commercial attractions for private group
 structures.
 
 The audit, where required, follows
-[Article 113A](auditor-report.md).
+[Article 113A](./auditor-report.md).
 
 ## Companion provisions
 
-- [`accounting-records.md`](accounting-records.md) — Article 103:
+- [`accounting-records.md`](./accounting-records.md) — Article 103:
   the records from which accounts are prepared.
-- [`interim-accounts.md`](interim-accounts.md) — Article 106:
+- [`interim-accounts.md`](./interim-accounts.md) — Article 106:
   publication of interim accounts.
-- [`delivery-of-accounts.md`](delivery-of-accounts.md) — Article
+- [`delivery-of-accounts.md`](./delivery-of-accounts.md) — Article
   108: filing with the Registrar.
-- [`auditor-report.md`](auditor-report.md) — Article 113A:
+- [`auditor-report.md`](./auditor-report.md) — Article 113A:
   the auditor's role.
 
 ## Pitfalls

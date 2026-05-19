@@ -66,7 +66,7 @@ the document as a corporate act of the company.
 
 For **share certificates** specifically, the seal historically
 served the function of authenticating the certificate as evidence
-of title (see [Article 51](certificate-evidence-of-title.md)
+of title (see [Article 51](./certificate-evidence-of-title.md)
 *(planned)*). Modern Jersey practice often relies on signature
 authentication rather than sealing, but where sealing is used,
 the Article 24 securities seal is the appropriate vehicle.
@@ -76,7 +76,7 @@ the Article 24 securities seal is the appropriate vehicle.
 In a modern Jersey company:
 
 - **Uncertificated securities** (see
-  [Article 51A](uncertificated-securities.md) *(planned)*) don't
+  [Article 51A](./uncertificated-securities.md) *(planned)*) don't
   require sealing at all;
 - **Certificated shares** typically use signature authentication
   rather than sealing;

@@ -88,7 +88,7 @@ but under new ownership).
 
 ## Cross-references
 
-- [`merger-registration.md`](merger-registration.md) — Article
+- [`merger-registration.md`](./merger-registration.md) — Article
   127FM: registration mechanic and effective date.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

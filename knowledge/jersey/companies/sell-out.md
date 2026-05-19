@@ -93,11 +93,11 @@ know about it. The notice tells them:
 
 ## Cross-references
 
-- [`takeover-offers.md`](takeover-offers.md) — Article 116:
+- [`takeover-offers.md`](./takeover-offers.md) — Article 116:
   definition of takeover offer.
-- [`squeeze-out.md`](squeeze-out.md) — Article 117: offeror's
+- [`squeeze-out.md`](./squeeze-out.md) — Article 117: offeror's
   reciprocal right.
-- [`sell-out-effect.md`](sell-out-effect.md) — Article 120: how
+- [`sell-out-effect.md`](./sell-out-effect.md) — Article 120: how
   the sell-out is given effect.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -282,5 +282,5 @@ For a multi-jurisdictional structure:
 - [`../../../cayman/index.md`](../../../cayman/index.md);
 - [`../../../bvi/index.md`](../../../bvi/index.md);
 - [`../../../bermuda/index.md`](../../../bermuda/index.md);
-- [`engaging-jersey-trustees.md`](engaging-jersey-trustees.md);
-- [`coordinating-jersey-advocates.md`](coordinating-jersey-advocates.md).
+- [`engaging-jersey-trustees.md`](./engaging-jersey-trustees.md);
+- [`coordinating-jersey-advocates.md`](./coordinating-jersey-advocates.md).

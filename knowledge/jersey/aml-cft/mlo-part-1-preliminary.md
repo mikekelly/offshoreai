@@ -73,6 +73,6 @@ expectations.
 
 ## Cross-references
 
-- [`mlo-articles-index.md`](mlo-articles-index.md);
-- [`proceeds-of-crime-law-1999.md`](proceeds-of-crime-law-1999.md);
-- [`schedule-2-businesses.md`](schedule-2-businesses.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md);
+- [`proceeds-of-crime-law-1999.md`](./proceeds-of-crime-law-1999.md);
+- [`schedule-2-businesses.md`](./schedule-2-businesses.md).

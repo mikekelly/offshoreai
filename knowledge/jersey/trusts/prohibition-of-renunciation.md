@@ -98,13 +98,13 @@ Where a person has been nominated as trustee but the settlor is
 unavailable (deceased, lost capacity, untraceable) and there are no
 existing trustees to receive the notice, the Royal Court can be
 asked to grant relief from the unwanted appointment. The application
-is by Representation under [Article 51](article-51-directions.md)
+is by Representation under [Article 51](./article-51-directions.md)
 and is friendly proceedings.
 
 ## Once accepted — Article 19 governs exit
 
 A trustee who has accepted may only **resign** or be **removed** in
-accordance with [Article 19](trustee-resignation-and-removal.md).
+accordance with [Article 19](./trustee-resignation-and-removal.md).
 The "renunciation after acceptance" prohibition in Article 18 means
 that an accepted trustee cannot simply walk away; they must follow the
 resignation procedure, which preserves continuity.

@@ -186,6 +186,6 @@ For an existing reserved-powers trust:
 
 ## Cross-references
 
-- [`reserved-powers-question.md`](reserved-powers-question.md)
-- [`sham-trust-question.md`](sham-trust-question.md)
+- [`reserved-powers-question.md`](./reserved-powers-question.md)
+- [`sham-trust-question.md`](./sham-trust-question.md)
 - [`../../trusts/reserved-powers.md`](../../trusts/reserved-powers.md)

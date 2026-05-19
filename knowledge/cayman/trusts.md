@@ -61,7 +61,7 @@ distinctive trust offering**:
   charitable-like vehicles;
 - **Specific** STAR Act 1997 with subsequent amendments.
 
-See [`star-trusts.md`](star-trusts.md).
+See [`star-trusts.md`](./star-trusts.md).
 
 ## Firewall
 
@@ -155,8 +155,8 @@ Common scenarios:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`star-trusts.md`](star-trusts.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`star-trusts.md`](./star-trusts.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/trusts/index.md`](../jersey/trusts/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

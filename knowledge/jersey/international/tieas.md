@@ -93,6 +93,6 @@ on request. But TIEAs remain important for:
 
 ## Cross-references
 
-- [`dtas.md`](dtas.md) — Jersey's DTA network.
-- [`crs.md`](crs.md) — automatic exchange replacement for
+- [`dtas.md`](./dtas.md) — Jersey's DTA network.
+- [`crs.md`](./crs.md) — automatic exchange replacement for
   much TIEA work.

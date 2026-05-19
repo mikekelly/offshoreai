@@ -106,8 +106,8 @@ force or before specific amendments:
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-7.md`](mlo-article-7.md);
-- [`mlo-article-12.md`](mlo-article-12.md);
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-7.md`](./mlo-article-7.md);
+- [`mlo-article-12.md`](./mlo-article-12.md);
 - [`../use-cases/compliance-mlro/cdd-refresh-cycle.md`](../use-cases/compliance-mlro/cdd-refresh-cycle.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

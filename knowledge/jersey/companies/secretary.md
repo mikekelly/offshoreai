@@ -49,7 +49,7 @@ The secretary's role typically includes:
 ## The secretary's position
 
 The secretary is an **officer** of the company (within the
-[Article 1 "officer" definition](companies-interpretation.md)) but
+[Article 1 "officer" definition](./companies-interpretation.md)) but
 is **distinct from directors**:
 
 - Secretaries don't have **director-style fiduciary duties** of
@@ -86,9 +86,9 @@ having ultimate responsibility.
 
 ## Cross-references
 
-- [`secretary-qualifications.md`](secretary-qualifications.md) —
+- [`secretary-qualifications.md`](./secretary-qualifications.md) —
   Article 82: who can be a secretary.
-- [`secretary-particulars.md`](secretary-particulars.md) —
+- [`secretary-particulars.md`](./secretary-particulars.md) —
   Article 85: particulars to be registered.
 
 ## Pitfalls

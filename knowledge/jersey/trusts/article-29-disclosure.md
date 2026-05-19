@@ -38,7 +38,7 @@ the categories of trustee material that need *not* be disclosed.
 Article 29 sits alongside (and is supplemented by) the **supervisory
 jurisdiction** of the Royal Court applied in *Schmidt v Rosewood*. The
 two together form Jersey's information-rights framework; see
-[`beneficiary-rights.md`](beneficiary-rights.md) for the full
+[`beneficiary-rights.md`](./beneficiary-rights.md) for the full
 treatment of the supervisory dimension.
 
 ## What Article 29 says
@@ -96,7 +96,7 @@ The two interact as follows:
   ground.
 - For **other materials** — the deed, letters of wishes, deliberations
   — *Schmidt v Rosewood* and Jersey's adapted presumptions govern.
-  See [`beneficiary-rights.md`](beneficiary-rights.md) for the
+  See [`beneficiary-rights.md`](./beneficiary-rights.md) for the
   presumption table by document type.
 - The **Article 29(5) Court order** route operates in parallel with
   the Royal Court's *Schmidt*-jurisdiction order route. In practice
@@ -150,7 +150,7 @@ Article 29 governs disclosure to **beneficiaries and similar**. It
 does not govern requests for trust information from foreign courts
 or regulators. Those are dealt with under:
 
-- the **firewall** ([Article 9](firewall.md)) — for foreign
+- the **firewall** ([Article 9](./firewall.md)) — for foreign
   judgments inconsistent with Jersey law;
 - **mutual-legal-assistance** frameworks — for criminal-law and
   AML/CFT requests;
@@ -166,7 +166,7 @@ under "information and disclosure" for the related questions.
 An interested person — including a beneficiary, a trustee, or
 (presumably) an enforcer — may apply to the Royal Court for an
 **order** as to the extent of disclosure. The application is by
-Representation under [Article 51](article-51-directions.md). The
+Representation under [Article 51](./article-51-directions.md). The
 Court will conduct the *Schmidt*-style balancing exercise and order
 disclosure to whatever extent and with whatever safeguards it
 considers appropriate.

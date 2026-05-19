@@ -52,38 +52,38 @@ Europe's AML/CFT mutual-evaluation body.
 
 ### Concept overviews
 
-- [**proceeds-of-crime-law-1999.md**](proceeds-of-crime-law-1999.md)
+- [**proceeds-of-crime-law-1999.md**](./proceeds-of-crime-law-1999.md)
   — the underlying Law (POCL): money-laundering offences, SAR
   defence, confiscation, Schedule 2 supervised business gateway.
-- [**money-laundering-order-2008.md**](money-laundering-order-2008.md)
+- [**money-laundering-order-2008.md**](./money-laundering-order-2008.md)
   — the operative compliance regulation (CDD, record-keeping,
   reporting, training, internal controls).
-- [**aml-cft-handbook.md**](aml-cft-handbook.md) — the JFSC's
+- [**aml-cft-handbook.md**](./aml-cft-handbook.md) — the JFSC's
   AML/CFT Handbook (risk-based approach, PEPs, EDD).
-- [**sanctions.md**](sanctions.md) — Sanctions and Asset-Freezing
+- [**sanctions.md**](./sanctions.md) — Sanctions and Asset-Freezing
   (Jersey) Law 2014 with UK / UN sanctions alignment.
-- [**moneyval.md**](moneyval.md) — Council of Europe mutual
+- [**moneyval.md**](./moneyval.md) — Council of Europe mutual
   evaluations of Jersey.
-- [**schedule-2-businesses.md**](schedule-2-businesses.md) —
+- [**schedule-2-businesses.md**](./schedule-2-businesses.md) —
   supervised-business categories (DNFBPs and financial-services).
 
 ### Article-by-article statute wikis
 
-- [**pocl-articles-index.md**](pocl-articles-index.md) — POCL 1999
+- [**pocl-articles-index.md**](./pocl-articles-index.md) — POCL 1999
   article-by-article scaffold: Part-cluster files for all 7 Parts,
   individual articles for the substantive ML offences (30-32),
   failure-to-disclose (34-34A), tipping off (35), permitted
   information sharing (36), and criminal-conduct (1A).
-- [**mlo-articles-index.md**](mlo-articles-index.md) — Money
+- [**mlo-articles-index.md**](./mlo-articles-index.md) — Money
   Laundering (Jersey) Order 2008 article-by-article: CDD core
   (Articles 5-8, 11, 12, 13), risk assessment (3), internal
   procedures (4), MLRO (16), record keeping (17), training (19).
-- [**safl-articles-index.md**](safl-articles-index.md) — Sanctions
+- [**safl-articles-index.md**](./safl-articles-index.md) — Sanctions
   and Asset-Freezing (Jersey) Law 2014 article-by-article: Part-
   cluster files for all 5 Parts, individual articles for Minister
   designation (3), UN listings (4), UK listings (5), asset-freezing
   (10), making available (11), licences (15), offences (20).
-- [**cicl-articles-index.md**](cicl-articles-index.md) — Crime
+- [**cicl-articles-index.md**](./cicl-articles-index.md) — Crime
   (International Co-operation) (Jersey) Law 2001 article-by-article:
   Part-cluster files for all 6 Parts, individual articles for letters
   of request (3), evidence (5), foreign restraint orders (13),

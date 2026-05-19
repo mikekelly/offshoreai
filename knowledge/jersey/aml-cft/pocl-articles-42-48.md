@@ -79,7 +79,7 @@ Cross-border cooperation through:
 - **Egmont Group** for FIU-to-FIU sharing;
 - **Recognition** of foreign restraint / confiscation
   orders;
-- See [`cicl-articles-index.md`](cicl-articles-index.md).
+- See [`cicl-articles-index.md`](./cicl-articles-index.md).
 
 ## Articles 46-48 — General
 
@@ -101,7 +101,7 @@ Cash forfeiture and civil recovery:
 
 ## Cross-references
 
-- [`pocl-part-7-misc.md`](pocl-part-7-misc.md);
-- [`cicl-articles-index.md`](cicl-articles-index.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md).
+- [`pocl-part-7-misc.md`](./pocl-part-7-misc.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md).

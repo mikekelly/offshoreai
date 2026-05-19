@@ -61,7 +61,7 @@ applicants who might walk away if the answer is unfavourable.
 
 ## Cross-references
 
-- [`merger-commission-consent.md`](merger-commission-consent.md) —
+- [`merger-commission-consent.md`](./merger-commission-consent.md) —
   Article 127FF: the consent requirement itself.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

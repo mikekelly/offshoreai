@@ -123,6 +123,6 @@ The JFSC works with:
 
 ## Cross-references
 
-- [`codes-of-practice.md`](codes-of-practice.md) — the conduct
+- [`codes-of-practice.md`](./codes-of-practice.md) — the conduct
   standards being enforced.
-- [`licensing.md`](licensing.md) — fit-and-proper context.
+- [`licensing.md`](./licensing.md) — fit-and-proper context.

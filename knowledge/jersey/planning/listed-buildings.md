@@ -164,10 +164,10 @@ Due diligence essential:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`planning-building-law-2002.md`](planning-building-law-2002.md);
-- [`conservation-areas.md`](conservation-areas.md);
-- [`enforcement.md`](enforcement.md);
-- [`island-plan.md`](island-plan.md);
-- [`application-process.md`](application-process.md);
+- [`index.md`](./index.md);
+- [`planning-building-law-2002.md`](./planning-building-law-2002.md);
+- [`conservation-areas.md`](./conservation-areas.md);
+- [`enforcement.md`](./enforcement.md);
+- [`island-plan.md`](./island-plan.md);
+- [`application-process.md`](./application-process.md);
 - [`../property/real-property-overview.md`](../property/real-property-overview.md).

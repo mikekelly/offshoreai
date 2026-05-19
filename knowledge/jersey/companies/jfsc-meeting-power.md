@@ -53,7 +53,7 @@ The JFSC power is exercised where:
   meeting.
 
 In practice the JFSC's power runs in parallel with the Royal
-Court's power under [Article 94](court-ordered-meetings.md) —
+Court's power under [Article 94](./court-ordered-meetings.md) —
 applicants can typically choose which forum to approach.
 
 ## Practical application

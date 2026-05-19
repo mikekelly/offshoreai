@@ -101,8 +101,8 @@ When a council member retires:
 
 ## Cross-references
 
-- [`fjl-article-17.md`](fjl-article-17.md);
-- [`fjl-part-4-council.md`](fjl-part-4-council.md);
+- [`fjl-article-17.md`](./fjl-article-17.md);
+- [`fjl-part-4-council.md`](./fjl-part-4-council.md);
 - [`../trusts/relief-from-personal-liability.md`](../trusts/relief-from-personal-liability.md)
   — analogous trustee position;
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -42,7 +42,7 @@ On resignation or removal:
 - the outgoing trustee must **surrender trust property** in its
   possession to the continuing or successor trustees;
 - the outgoing trustee may exercise the **security right** under
-  [Article 43A](trustee-security.md) — i.e., require reasonable
+  [Article 43A](./trustee-security.md) — i.e., require reasonable
   security for liabilities before surrender;
 - the outgoing trustee gains **release from most beneficiary
   liability**, with **two principal exceptions**:
@@ -59,7 +59,7 @@ property to the continuing or successor trustees. The mechanics:
 
 - **Jersey-situated trust property** vests automatically in the
   successor trustees by operation of
-  [Article 17](trustee-appointment-out-of-court.md);
+  [Article 17](./trustee-appointment-out-of-court.md);
 - **foreign-situated property** requires positive transfer under the
   foreign jurisdiction's rules (e.g., a separate transfer deed for
   foreign real estate, a stock-transfer form for foreign-registered
@@ -92,7 +92,7 @@ The security typically takes the form of:
 - in heavy-exposure cases, **insurance** maintained for a period
   post-exit.
 
-See [`trustee-security.md`](trustee-security.md).
+See [`trustee-security.md`](./trustee-security.md).
 
 ## Release from future liability
 
@@ -153,7 +153,7 @@ not waived by the Article 34 release.
 
 A claim against an outgoing trustee for a breach is subject to the
 Article 57 limitation regime — see
-[`limitation-and-prescription.md`](limitation-and-prescription.md)
+[`limitation-and-prescription.md`](./limitation-and-prescription.md)
  The limitation period typically starts from the date of
 the breach (or from discovery for concealed breaches), not from the
 date of trustee exit.

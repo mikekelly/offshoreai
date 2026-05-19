@@ -115,9 +115,9 @@ Common scenarios:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`business-company.md`](business-company.md);
-- [`fsc.md`](fsc.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`business-company.md`](./business-company.md);
+- [`fsc.md`](./fsc.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/funds/index.md`](../jersey/funds/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

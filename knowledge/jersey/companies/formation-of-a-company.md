@@ -76,7 +76,7 @@ illegal.
 The Article gives the Registrar power to **restrict applications
 exceeding 30 persons** unless the JFSC approves. This historical
 provision is tied to the **30-member limit** for private companies
-(see [Article 17D](30-member-limit-abolition.md)) and to the
+(see [Article 17D](./30-member-limit-abolition.md)) and to the
 broader policy framework on private-vs-public distinction.
 
 In modern practice the 30-person threshold rarely bites at
@@ -104,11 +104,11 @@ A Jersey company incorporation typically involves:
 3. **Preparation** of the memorandum (Article 4 family) and
    articles (Article 5) of association.
 4. **Delivery** of the application documents to the Registrar
-   under [Article 7](incorporation-documents.md).
-5. **Registration** under [Article 8](registration.md) — standard
+   under [Article 7](./incorporation-documents.md).
+5. **Registration** under [Article 8](./registration.md) — standard
    24-hour service or 2-hour fast-track on payment of premium fees.
 6. **Issue of certificate of incorporation** under
-   [Article 9](effect-of-registration.md).
+   [Article 9](./effect-of-registration.md).
 
 Article 3 is the legal anchor for the question of **who may apply**.
 The procedural detail is in Articles 4–12.

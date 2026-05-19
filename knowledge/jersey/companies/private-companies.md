@@ -46,8 +46,8 @@ operating businesses — are private.
 
 Key characteristics:
 
-- **Single-shareholder permissible** ([Article 3](formation-of-a-company.md));
-- **No upper limit on members** since the [Article 17D](30-member-limit-abolition.md)
+- **Single-shareholder permissible** ([Article 3](./formation-of-a-company.md));
+- **No upper limit on members** since the [Article 17D](./30-member-limit-abolition.md)
   Order abolished the historical 30-member ceiling;
 - **No mandatory audit** in many cases (subject to size, regulated
   status, and member resolutions);
@@ -61,7 +61,7 @@ Key characteristics:
 A typical Jersey private-company memorandum:
 
 - states the company is a **private company limited by shares**;
-- elects **no-par-value** share capital ([Article 3F](no-par-value-companies.md))
+- elects **no-par-value** share capital ([Article 3F](./no-par-value-companies.md))
   — the modern default;
 - has a **broad objects** clause or no specific objects (Article 18
   capacity is wide);
@@ -69,14 +69,14 @@ A typical Jersey private-company memorandum:
 - specifies the **initial share capital** (often a nominal amount,
   e.g., 100 ordinary no-par-value shares).
 
-The articles of association ([Article 5](articles-of-association.md))
+The articles of association ([Article 5](./articles-of-association.md))
 contain the operational provisions; many Jersey private companies
-adopt a customised version of the **Standard Table** ([Article 6](standard-table.md)).
+adopt a customised version of the **Standard Table** ([Article 6](./standard-table.md)).
 
 ## Status change — Article 17
 
 A private company can be converted to a public company under
-[Article 17](private-to-public.md) by special resolution and
+[Article 17](./private-to-public.md) by special resolution and
 memorandum amendment. This is the typical route for a private
 company preparing for an IPO.
 
@@ -89,7 +89,7 @@ differences:
 - **No-par-value** option (rare in England);
 - **Cell-company** structures available (PCC, ICC);
 - **Audit relief** is more readily available;
-- **Distribution** mechanics use the [Article 115](distribution-restrictions.md)
+- **Distribution** mechanics use the [Article 115](./distribution-restrictions.md)
   cash-flow-solvency test rather than England's profits-available
   test;
 - **Corporate residence** for tax follows Jersey rules (see

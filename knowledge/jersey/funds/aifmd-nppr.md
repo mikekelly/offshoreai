@@ -93,5 +93,5 @@ which is broadly cooperative with the Jersey position.
 
 ## Cross-references
 
-- [`expert-fund.md`](expert-fund.md) — common Jersey vehicle for
+- [`expert-fund.md`](./expert-fund.md) — common Jersey vehicle for
   AIFMD-NPPR marketing.

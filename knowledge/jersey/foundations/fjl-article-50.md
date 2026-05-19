@@ -92,9 +92,9 @@ Foundation records on the register:
 
 ## Cross-references
 
-- [`fjl-article-49.md`](fjl-article-49.md);
-- [`fjl-article-51.md`](fjl-article-51.md);
-- [`fjl-part-13-misc.md`](fjl-part-13-misc.md);
+- [`fjl-article-49.md`](./fjl-article-49.md);
+- [`fjl-article-51.md`](./fjl-article-51.md);
+- [`fjl-part-13-misc.md`](./fjl-part-13-misc.md);
 - [`../registries/registry-access-procedures.md`](../registries/registry-access-procedures.md);
 - [`../registries/public-vs-private-data.md`](../registries/public-vs-private-data.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

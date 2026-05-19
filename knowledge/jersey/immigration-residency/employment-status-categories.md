@@ -78,5 +78,5 @@ Within Jersey, status-specific employment rules govern movement:
 
 ## Cross-references
 
-- [`residential-status-categories.md`](residential-status-categories.md)
-- [`control-of-housing-and-work-law.md`](control-of-housing-and-work-law.md)
+- [`residential-status-categories.md`](./residential-status-categories.md)
+- [`control-of-housing-and-work-law.md`](./control-of-housing-and-work-law.md)

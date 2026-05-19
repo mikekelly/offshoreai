@@ -38,41 +38,41 @@ topic graph; this persona handles **how to do it in court**.
 
 ### Starting a case
 
-- [Issuing an Order of Justice — what's required](order-of-justice.md)
-- [Choosing the right Royal Court division (Samedi / Inferior Number / Superior Number)](choosing-division.md)
-- [Interlocutory injunctions — Mareva, Norwich Pharmacal, Anton Piller equivalents](interlocutory-injunctions.md)
+- [Issuing an Order of Justice — what's required](./order-of-justice.md)
+- [Choosing the right Royal Court division (Samedi / Inferior Number / Superior Number)](./choosing-division.md)
+- [Interlocutory injunctions — Mareva, Norwich Pharmacal, Anton Piller equivalents](./interlocutory-injunctions.md)
 
 ### Trust applications
 
-- [Article 51 directions application — drafting and procedure](article-51-application.md)
-- [Blessing of a momentous decision under Public Trustee v Cooper category 2](blessing-application.md)
-- [Beddoe application for trustee litigation funding](beddoe-application.md)
-- [Article 47 mistake / hastiness application — practice points](article-47-application.md)
-- [Removal of a trustee](trustee-removal-app.md)
+- [Article 51 directions application — drafting and procedure](./article-51-application.md)
+- [Blessing of a momentous decision under Public Trustee v Cooper category 2](./blessing-application.md)
+- [Beddoe application for trustee litigation funding](./beddoe-application.md)
+- [Article 47 mistake / hastiness application — practice points](./article-47-application.md)
+- [Removal of a trustee](./trustee-removal-app.md)
 
 ### Company applications
 
-- [Schemes of arrangement — convening, sanction hearings](scheme-procedure.md)
-- [Unfair-prejudice petitions](unfair-prejudice-petition.md)
-- [Winding-up applications](winding-up-application.md)
-- [Restoration of dissolved companies](restoration-application.md)
+- [Schemes of arrangement — convening, sanction hearings](./scheme-procedure.md)
+- [Unfair-prejudice petitions](./unfair-prejudice-petition.md)
+- [Winding-up applications](./winding-up-application.md)
+- [Restoration of dissolved companies](./restoration-application.md)
 
 ### Costs
 
-- [Cost rules in Royal Court litigation](cost-rules.md)
-- [Indemnity costs from the trust fund — when available](indemnity-costs-trust.md)
-- [Costs against parties personally vs from estate](personal-vs-estate-costs.md)
+- [Cost rules in Royal Court litigation](./cost-rules.md)
+- [Indemnity costs from the trust fund — when available](./indemnity-costs-trust.md)
+- [Costs against parties personally vs from estate](./personal-vs-estate-costs.md)
 
 ### Appeals
 
-- [Appeal from the Royal Court to Court of Appeal](court-of-appeal-appeal.md)
-- [Leave to appeal to the Privy Council](privy-council-leave.md)
+- [Appeal from the Royal Court to Court of Appeal](./court-of-appeal-appeal.md)
+- [Leave to appeal to the Privy Council](./privy-council-leave.md)
 
 ### Cross-border issues
 
-- [Letters of request for evidence in Jersey](letters-of-request.md)
-- [Service abroad of Jersey proceedings](service-abroad.md)
-- [Enforcement of Jersey judgments abroad](enforcement-jersey-judgments.md)
+- [Letters of request for evidence in Jersey](./letters-of-request.md)
+- [Service abroad of Jersey proceedings](./service-abroad.md)
+- [Enforcement of Jersey judgments abroad](./enforcement-jersey-judgments.md)
 
 ## Cross-references
 

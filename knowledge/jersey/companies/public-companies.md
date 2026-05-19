@@ -82,11 +82,11 @@ companies going public on the LSE because:
 ## Status change — Article 16
 
 A public company can be converted to a private company under
-[Article 16](public-to-private.md). The procedure requires a special
+[Article 16](./public-to-private.md). The procedure requires a special
 resolution and a memorandum amendment.
 
 The reverse — private to public — is under
-[Article 17](private-to-public.md).
+[Article 17](./private-to-public.md).
 
 ## Auditing
 

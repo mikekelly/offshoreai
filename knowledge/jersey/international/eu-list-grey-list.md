@@ -139,9 +139,9 @@ competitive advantage among offshore jurisdictions.
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./beps-overview.md`](beps-overview.md);
-- [`./pillar-two-mcit.md`](pillar-two-mcit.md);
+- [`./index.md`](./index.md);
+- [`./beps-overview.md`](./beps-overview.md);
+- [`./pillar-two-mcit.md`](./pillar-two-mcit.md);
 - [`../tax/substance-law-2019.md`](../../../jersey/tax/substance-law-2019.md)
   *(if exists)*;
 - [`../use-cases/journalist-ngo-academic/eu-oecd-pressure.md`](../use-cases/journalist-ngo-academic/eu-oecd-pressure.md).

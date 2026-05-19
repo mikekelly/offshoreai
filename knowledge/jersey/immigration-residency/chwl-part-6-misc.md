@@ -88,7 +88,7 @@ times:
 
 ## Cross-references
 
-- [`chwl-articles-index.md`](chwl-articles-index.md);
-- [`control-of-housing-and-work-law.md`](control-of-housing-and-work-law.md);
-- [`index.md`](index.md);
-- [`high-value-residency.md`](high-value-residency.md).
+- [`chwl-articles-index.md`](./chwl-articles-index.md);
+- [`control-of-housing-and-work-law.md`](./control-of-housing-and-work-law.md);
+- [`index.md`](./index.md);
+- [`high-value-residency.md`](./high-value-residency.md).

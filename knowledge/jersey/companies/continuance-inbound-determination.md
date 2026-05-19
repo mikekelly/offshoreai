@@ -68,11 +68,11 @@ issues and (where possible) negotiate conditions.
 
 ## Cross-references
 
-- [`continuance-eligible-bodies.md`](continuance-eligible-bodies.md)
+- [`continuance-eligible-bodies.md`](./continuance-eligible-bodies.md)
   — Article 127H.
-- [`continuance-restrictions.md`](continuance-restrictions.md) —
+- [`continuance-restrictions.md`](./continuance-restrictions.md) —
   Article 127I.
-- [`continuance-inbound-certificate.md`](continuance-inbound-certificate.md)
+- [`continuance-inbound-certificate.md`](./continuance-inbound-certificate.md)
   — Article 127O: certificate issued on grant.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

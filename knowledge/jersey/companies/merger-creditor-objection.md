@@ -81,7 +81,7 @@ prejudiced.
 
 ## Cross-references
 
-- [`merger-notice-creditors.md`](merger-notice-creditors.md) —
+- [`merger-notice-creditors.md`](./merger-notice-creditors.md) —
   Article 127FC: creditor notification.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

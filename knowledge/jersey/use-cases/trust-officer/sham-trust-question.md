@@ -129,5 +129,5 @@ For a current request to set up such a trust:
 
 ## Cross-references
 
-- [`reserved-powers-question.md`](reserved-powers-question.md)
+- [`reserved-powers-question.md`](./reserved-powers-question.md)
 - [`../../trusts/reserved-powers.md`](../../trusts/reserved-powers.md)

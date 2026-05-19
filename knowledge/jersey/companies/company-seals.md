@@ -46,7 +46,7 @@ identification is an **offence**.
 ## When seals are used
 
 In modern Jersey practice, ordinary contracts are signed by
-authorised officers under [Article 20](form-of-contracts.md)
+authorised officers under [Article 20](./form-of-contracts.md)
 without applying a seal. Seal use is **typically reserved** for:
 
 - **Documents the deed requires to be sealed** (e.g., specific
@@ -79,9 +79,9 @@ A company may have **more than one seal**, provided each
 satisfies the Article 22 format. Common reasons:
 
 - A **head-office seal** plus a **branch seal** for use abroad
-  (specifically authorised by [Article 23](official-seal-abroad.md));
+  (specifically authorised by [Article 23](./official-seal-abroad.md));
 - A **general seal** plus a **securities seal** specifically for
-  sealing securities documents ([Article 24](official-seal-securities.md));
+  sealing securities documents ([Article 24](./official-seal-securities.md));
 - Operational redundancy.
 
 Each duplicate seal must independently satisfy Article 22's

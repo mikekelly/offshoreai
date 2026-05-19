@@ -83,7 +83,7 @@ it. Practitioners advising on a "Liechtenstein Anstalt" or
 
 ## Cross-references
 
-- [`fjl-articles-index.md`](fjl-articles-index.md) — full
+- [`fjl-articles-index.md`](./fjl-articles-index.md) — full
   article-by-article index;
-- [`foundations-law-2009.md`](foundations-law-2009.md) —
+- [`foundations-law-2009.md`](./foundations-law-2009.md) —
   concept-level overview.

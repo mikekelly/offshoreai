@@ -203,6 +203,6 @@ For IPO preparation:
 
 ## Cross-references
 
-- [`why-jersey-topco.md`](why-jersey-topco.md)
-- [`private-vs-public.md`](private-vs-public.md)
-- [`migration-pre-ipo.md`](migration-pre-ipo.md)
+- [`why-jersey-topco.md`](./why-jersey-topco.md)
+- [`private-vs-public.md`](./private-vs-public.md)
+- [`migration-pre-ipo.md`](./migration-pre-ipo.md)

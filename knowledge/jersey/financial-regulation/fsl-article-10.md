@@ -144,7 +144,7 @@ For Jersey-based regulated firms:
 
 ## Cross-references
 
-- [`fsl-article-7.md`](fsl-article-7.md);
-- [`fsl-article-9.md`](fsl-article-9.md);
-- [`fsl-part-3-registration.md`](fsl-part-3-registration.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-article-7.md`](./fsl-article-7.md);
+- [`fsl-article-9.md`](./fsl-article-9.md);
+- [`fsl-part-3-registration.md`](./fsl-part-3-registration.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

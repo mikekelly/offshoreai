@@ -125,8 +125,8 @@ acquire good title against the Viscount.
 
 ## Cross-references
 
-- [`bdl-article-3.md`](bdl-article-3.md);
-- [`bdl-article-4.md`](bdl-article-4.md);
-- [`bdl-article-17.md`](bdl-article-17.md);
-- [`bdl-part-3-effect.md`](bdl-part-3-effect.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-article-3.md`](./bdl-article-3.md);
+- [`bdl-article-4.md`](./bdl-article-4.md);
+- [`bdl-article-17.md`](./bdl-article-17.md);
+- [`bdl-part-3-effect.md`](./bdl-part-3-effect.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

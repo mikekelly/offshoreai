@@ -78,5 +78,5 @@ Privy Council Jersey-appeal judgments are published on:
 
 ## Cross-references
 
-- [`court-of-appeal.md`](court-of-appeal.md) — the court below.
-- [`royal-court.md`](royal-court.md) — first-instance court.
+- [`court-of-appeal.md`](./court-of-appeal.md) — the court below.
+- [`royal-court.md`](./royal-court.md) — first-instance court.

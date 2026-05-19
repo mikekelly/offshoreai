@@ -67,5 +67,5 @@ Not all residence counts:
 
 ## Cross-references
 
-- [`residential-status-categories.md`](residential-status-categories.md)
-- [`employment-status-categories.md`](employment-status-categories.md)
+- [`residential-status-categories.md`](./residential-status-categories.md)
+- [`employment-status-categories.md`](./employment-status-categories.md)

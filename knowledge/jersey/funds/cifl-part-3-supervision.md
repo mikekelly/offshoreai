@@ -109,6 +109,6 @@ The Code applies in detail to:
 
 ## Cross-references
 
-- [`cifl-articles-index.md`](cifl-articles-index.md);
-- [`cifl-part-4-conduct.md`](cifl-part-4-conduct.md);
-- [`cifl-part-6-enforcement.md`](cifl-part-6-enforcement.md).
+- [`cifl-articles-index.md`](./cifl-articles-index.md);
+- [`cifl-part-4-conduct.md`](./cifl-part-4-conduct.md);
+- [`cifl-part-6-enforcement.md`](./cifl-part-6-enforcement.md).

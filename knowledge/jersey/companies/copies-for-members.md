@@ -43,7 +43,7 @@ has the right to a copy of the memorandum and articles on request.
 ## Why this matters
 
 Members are bound by the memorandum and articles under
-[Article 10](effect-of-memorandum-articles.md), but they need to
+[Article 10](./effect-of-memorandum-articles.md), but they need to
 **know what binds them**. Article 12 gives a statutory right to a
 copy — they cannot be denied access to the document that defines
 their rights and obligations.

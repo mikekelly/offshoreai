@@ -36,16 +36,16 @@ BVI practice, engage **BVI counsel**.
 
 | Topic | File |
 |---|---|
-| BVI overview | [overview.md](overview.md) |
-| Jersey comparison | [jersey-comparison.md](jersey-comparison.md) |
-| BVI companies | [companies.md](companies.md) |
-| BVI Business Company (BC) | [business-company.md](business-company.md) |
-| BVI trusts | [trusts.md](trusts.md) |
-| BVI funds | [funds.md](funds.md) |
-| BVI tax | [tax.md](tax.md) |
-| BVI financial regulation | [financial-regulation.md](financial-regulation.md) |
-| FSC (BVI) | [fsc.md](fsc.md) |
-| BVI legal system | [legal-system.md](legal-system.md) |
+| BVI overview | [overview.md](./overview.md) |
+| Jersey comparison | [jersey-comparison.md](./jersey-comparison.md) |
+| BVI companies | [companies.md](./companies.md) |
+| BVI Business Company (BC) | [business-company.md](./business-company.md) |
+| BVI trusts | [trusts.md](./trusts.md) |
+| BVI funds | [funds.md](./funds.md) |
+| BVI tax | [tax.md](./tax.md) |
+| BVI financial regulation | [financial-regulation.md](./financial-regulation.md) |
+| FSC (BVI) | [fsc.md](./fsc.md) |
+| BVI legal system | [legal-system.md](./legal-system.md) |
 
 ## Cross-references
 

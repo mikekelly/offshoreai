@@ -65,7 +65,7 @@ where:
 - A **specialist registrar provider** maintains the register
   electronically;
 - An **overseas branch register** under
-  [Article 49](overseas-branch-register.md) supplements the
+  [Article 49](./overseas-branch-register.md) supplements the
   principal register.
 
 In all cases, the **principal register** must be in Jersey;

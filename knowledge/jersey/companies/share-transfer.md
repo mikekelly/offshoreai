@@ -88,10 +88,10 @@ accepted.
 
 ## Cross-references
 
-- [`certification-of-transfers.md`](certification-of-transfers.md)
+- [`certification-of-transfers.md`](./certification-of-transfers.md)
   — Article 43: company-issued certificates evidencing transfer
   receipt.
-- [`register-of-members.md`](register-of-members.md) — Article 41:
+- [`register-of-members.md`](./register-of-members.md) — Article 41:
   the register that the transfer affects.
 
 ## Pitfalls

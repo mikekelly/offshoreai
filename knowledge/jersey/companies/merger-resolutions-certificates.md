@@ -72,9 +72,9 @@ gives:
 
 ## Cross-references
 
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A
   parallel solvency-statement concept.
-- [`merger-approval.md`](merger-approval.md) — Article 127F:
+- [`merger-approval.md`](./merger-approval.md) — Article 127F:
   members' approval mechanic.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

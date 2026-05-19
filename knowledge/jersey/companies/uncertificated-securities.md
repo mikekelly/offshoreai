@@ -116,12 +116,12 @@ For shares listed on the LSE or AIM:
 
 ## Cross-references
 
-- [`share-certificates.md`](share-certificates.md) — Article 50:
+- [`share-certificates.md`](./share-certificates.md) — Article 50:
   the certificated alternative.
-- [`certificate-evidence-of-title.md`](certificate-evidence-of-title.md)
+- [`certificate-evidence-of-title.md`](./certificate-evidence-of-title.md)
   — Article 51: certificate evidential effect (does not apply
   to uncertificated shares).
-- [`register-of-members.md`](register-of-members.md) —
+- [`register-of-members.md`](./register-of-members.md) —
   Article 41: the register where uncertificated holdings are
   recorded.
 

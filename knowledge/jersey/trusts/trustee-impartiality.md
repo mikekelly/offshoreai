@@ -96,15 +96,15 @@ Article forbids is a trustee's *own* unauthorised preference.
 ## Article 23 and Article 21
 
 Article 23 sits on top of Article 21's broader duties. A breach of
-impartiality is also a breach of [Article 21](trustee-duties.md)
+impartiality is also a breach of [Article 21](./trustee-duties.md)
 duties — typically a breach of the duty to administer the trust per
 its terms (because the terms imply impartiality), or a breach of the
 utmost-good-faith standard.
 
 The remedy for breach is conventional: compensation to disadvantaged
 beneficiaries, or unwinding of the impugned transaction, on
-application under [Article 30](breach-of-trust-liability.md)
- or [Article 51](article-51-directions.md).
+application under [Article 30](./breach-of-trust-liability.md)
+ or [Article 51](./article-51-directions.md).
 
 ## Letter-of-wishes guidance
 
@@ -124,7 +124,7 @@ the family home"). The trustee:
 
 For a momentous decision in which the letter of wishes is material,
 the trustee may seek the Royal Court's blessing under
-[Article 51](article-51-directions.md) — see the use-case at
+[Article 51](./article-51-directions.md) — see the use-case at
 [distribution-decisions-and-court-blessing.md](../use-cases/trust-officer/distribution-decisions-and-court-blessing.md).
 
 ## Pitfalls

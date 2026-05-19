@@ -187,4 +187,4 @@ For fund termination:
 ## Cross-references
 
 - [`../../companies/winding-up.md`](../../companies/winding-up.md)
-- [`fund-migration.md`](fund-migration.md)
+- [`fund-migration.md`](./fund-migration.md)

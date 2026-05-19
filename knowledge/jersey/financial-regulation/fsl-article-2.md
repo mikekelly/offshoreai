@@ -45,7 +45,7 @@ Each class has its own scope, threshold, and exemptions.
 
 ### Investment business
 
-See [`fsl-class-investment-business.md`](fsl-class-investment-business.md).
+See [`fsl-class-investment-business.md`](./fsl-class-investment-business.md).
 
 Includes:
 
@@ -61,7 +61,7 @@ professional services, and various specific exemptions.
 
 ### Trust company business (TCB)
 
-See [`fsl-class-tcb.md`](fsl-class-tcb.md).
+See [`fsl-class-tcb.md`](./fsl-class-tcb.md).
 
 Includes:
 
@@ -80,7 +80,7 @@ etc.).
 
 ### Fund services business (FSB)
 
-See [`fsl-class-fsb.md`](fsl-class-fsb.md).
+See [`fsl-class-fsb.md`](./fsl-class-fsb.md).
 
 Includes services **to collective investment funds**:
 
@@ -93,14 +93,14 @@ Includes services **to collective investment funds**:
 
 ### General insurance mediation business (GIMB)
 
-See [`fsl-class-gimb.md`](fsl-class-gimb.md).
+See [`fsl-class-gimb.md`](./fsl-class-gimb.md).
 
 Insurance broking — arranging, advising on, or otherwise
 mediating insurance contracts.
 
 ### Money service business (MSB)
 
-See [`fsl-class-msb.md`](fsl-class-msb.md).
+See [`fsl-class-msb.md`](./fsl-class-msb.md).
 
 Money transmission, FX, payment services that are not
 banking.
@@ -152,10 +152,10 @@ disgorgement of profits).
 
 ## Cross-references
 
-- [`fsl-article-7.md`](fsl-article-7.md);
-- [`fsl-class-tcb.md`](fsl-class-tcb.md);
-- [`fsl-class-fsb.md`](fsl-class-fsb.md);
-- [`fsl-class-investment-business.md`](fsl-class-investment-business.md);
-- [`fsl-class-gimb.md`](fsl-class-gimb.md);
-- [`fsl-class-msb.md`](fsl-class-msb.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-article-7.md`](./fsl-article-7.md);
+- [`fsl-class-tcb.md`](./fsl-class-tcb.md);
+- [`fsl-class-fsb.md`](./fsl-class-fsb.md);
+- [`fsl-class-investment-business.md`](./fsl-class-investment-business.md);
+- [`fsl-class-gimb.md`](./fsl-class-gimb.md);
+- [`fsl-class-msb.md`](./fsl-class-msb.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

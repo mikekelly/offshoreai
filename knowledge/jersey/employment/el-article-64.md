@@ -60,7 +60,7 @@ A dismissal is **potentially fair** if for one of:
 
 - **Genuine** reduction in work / role;
 - **Subject to** fair selection and consultation;
-- See [`el-part-7-redundancy.md`](el-part-7-redundancy.md).
+- See [`el-part-7-redundancy.md`](./el-part-7-redundancy.md).
 
 ### 4. Contravention of statute
 
@@ -139,9 +139,9 @@ Claims must be filed in the **Employment Tribunal**:
 
 ## Cross-references
 
-- [`el-part-6-unfair-dismissal.md`](el-part-6-unfair-dismissal.md);
-- [`el-part-5-termination.md`](el-part-5-termination.md);
-- [`el-part-7-redundancy.md`](el-part-7-redundancy.md);
-- [`el-part-8-tribunal.md`](el-part-8-tribunal.md);
+- [`el-part-6-unfair-dismissal.md`](./el-part-6-unfair-dismissal.md);
+- [`el-part-5-termination.md`](./el-part-5-termination.md);
+- [`el-part-7-redundancy.md`](./el-part-7-redundancy.md);
+- [`el-part-8-tribunal.md`](./el-part-8-tribunal.md);
 - [`../discrimination/dl-articles-index.md`](../discrimination/dl-articles-index.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-articles-index.md`](./el-articles-index.md).

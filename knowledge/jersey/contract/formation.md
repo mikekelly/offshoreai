@@ -32,7 +32,7 @@ requires:
 3. **Object** (subject matter — possible, lawful,
    determinable);
 4. **Cause** (the motive / reason for the contract — see
-   [`cause.md`](cause.md)).
+   [`cause.md`](./cause.md)).
 
 These overlap with the **English** requirements of offer,
 acceptance, consideration, and intention to be bound — but
@@ -186,9 +186,9 @@ Most Jersey contracts:
 
 ## Cross-references
 
-- [`contract-overview.md`](contract-overview.md);
-- [`cause.md`](cause.md);
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`misrepresentation.md`](misrepresentation.md);
+- [`contract-overview.md`](./contract-overview.md);
+- [`cause.md`](./cause.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`misrepresentation.md`](./misrepresentation.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

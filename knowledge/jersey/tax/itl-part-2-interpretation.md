@@ -108,9 +108,9 @@ any substantive ITL provision.
 
 ## Cross-references
 
-- [`itl-article-123.md`](itl-article-123.md) — Article 123
+- [`itl-article-123.md`](./itl-article-123.md) — Article 123
   body-corporate residence.
-- [`itl-articles-index.md`](itl-articles-index.md) — full
+- [`itl-articles-index.md`](./itl-articles-index.md) — full
   index.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

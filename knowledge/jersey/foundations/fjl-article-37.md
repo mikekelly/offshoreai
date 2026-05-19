@@ -117,7 +117,7 @@ but the principles are expected to track.
 
 ## Cross-references
 
-- [`fjl-article-36.md`](fjl-article-36.md);
+- [`fjl-article-36.md`](./fjl-article-36.md);
 - [`../trusts/article-9-firewall.md`](../use-cases/international-lawyer/article-9-firewall.md);
 - [`../trusts/crociani.md`](../../../jersey/trusts/crociani.md) — leading
   firewall case.

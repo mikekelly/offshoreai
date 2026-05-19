@@ -102,7 +102,7 @@ births — the **income accumulates** until either:
 - a **member arises** (a child is born, an issue comes into
   existence); or
 - the **class closes** without any members (failure of the class —
-  see [`failure-or-lapse.md`](failure-or-lapse.md) for the
+  see [`failure-or-lapse.md`](./failure-or-lapse.md) for the
   consequences).
 
 The accumulation is a **statutory default**. The deed can override
@@ -111,15 +111,15 @@ or class while the primary class is empty).
 
 ## Interaction with other Articles
 
-- [Article 38](accumulation-and-advancement.md) provides a separate
+- [Article 38](./accumulation-and-advancement.md) provides a separate
   framework for **accumulation under the deed's terms**. Article 36's
   no-members accumulation is a default; Article 38 governs
   expressed accumulation regimes.
-- [Article 42](failure-or-lapse.md) addresses the case where a class
+- [Article 42](./failure-or-lapse.md) addresses the case where a class
   closes without members and the interest **fails**. The default
   result is that property is held for the settlor or the settlor's
   personal representative.
-- [Article 23 impartiality](trustee-impartiality.md) applies to the
+- [Article 23 impartiality](./trustee-impartiality.md) applies to the
   trustee's administration of class interests — particularly
   significant where the trust has both a current class and a
   successor class.
@@ -148,7 +148,7 @@ A well-drafted family trust will:
 - **Accumulation without authority.** The Article 36 accumulation
   arises only where no class member exists. If the trustee is
   accumulating in other circumstances (e.g., during minority),
-  the authority is under [Article 38](accumulation-and-advancement.md)
+  the authority is under [Article 38](./accumulation-and-advancement.md)
   and the deed.
 - **Posthumous and assisted-reproduction children.** The traditional
   "children of X" definition may not cleanly capture modern family

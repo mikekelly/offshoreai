@@ -77,8 +77,8 @@ The deed typically specifies:
 In a no-par-value fund-vehicle company with multiple share classes
 in different currencies, fractional shares are common in each
 class. The Article 40 permission combines with the
-multi-currency permission of [Article 4A](memorandum-shares.md)
-and [Article 38B](currency-conversion-rate.md) to give Jersey
+multi-currency permission of [Article 4A](./memorandum-shares.md)
+and [Article 38B](./currency-conversion-rate.md) to give Jersey
 fund vehicles considerable structural flexibility.
 
 ## Pitfalls

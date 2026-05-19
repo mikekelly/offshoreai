@@ -139,9 +139,9 @@ The Court generally:
 
 ## Cross-references
 
-- [`fjl-article-45.md`](fjl-article-45.md);
-- [`fjl-article-46.md`](fjl-article-46.md);
-- [`fjl-article-47.md`](fjl-article-47.md);
-- [`fjl-part-12-court.md`](fjl-part-12-court.md);
+- [`fjl-article-45.md`](./fjl-article-45.md);
+- [`fjl-article-46.md`](./fjl-article-46.md);
+- [`fjl-article-47.md`](./fjl-article-47.md);
+- [`fjl-part-12-court.md`](./fjl-part-12-court.md);
 - [`../charities/cl-part-6-cy-pres.md`](../charities/cl-part-6-cy-pres.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

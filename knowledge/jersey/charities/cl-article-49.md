@@ -102,8 +102,8 @@ For Jersey charity trustees:
 
 ## Cross-references
 
-- [`cl-part-6-cy-pres.md`](cl-part-6-cy-pres.md);
-- [`cl-article-5.md`](cl-article-5.md);
-- [`cl-article-6.md`](cl-article-6.md);
-- [`cl-article-30.md`](cl-article-30.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-part-6-cy-pres.md`](./cl-part-6-cy-pres.md);
+- [`cl-article-5.md`](./cl-article-5.md);
+- [`cl-article-6.md`](./cl-article-6.md);
+- [`cl-article-30.md`](./cl-article-30.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

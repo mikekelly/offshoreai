@@ -100,7 +100,7 @@ The Viscount typically:
 
 ## Cross-references
 
-- [`pocl-articles-4-7.md`](pocl-articles-4-7.md);
-- [`pocl-articles-13-16.md`](pocl-articles-13-16.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-articles-4-7.md`](./pocl-articles-4-7.md);
+- [`pocl-articles-13-16.md`](./pocl-articles-13-16.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

@@ -79,8 +79,8 @@ For Jersey financial-services entities:
 
 ## Cross-references
 
-- [`dpl-article-8.md`](dpl-article-8.md);
-- [`dpl-article-17.md`](dpl-article-17.md);
-- [`dpl-article-19.md`](dpl-article-19.md);
-- [`dpl-part-3-rights.md`](dpl-part-3-rights.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-article-8.md`](./dpl-article-8.md);
+- [`dpl-article-17.md`](./dpl-article-17.md);
+- [`dpl-article-19.md`](./dpl-article-19.md);
+- [`dpl-part-3-rights.md`](./dpl-part-3-rights.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

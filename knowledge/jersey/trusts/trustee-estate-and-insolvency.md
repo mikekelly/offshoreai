@@ -56,7 +56,7 @@ Article 54 ensures that:
 - a **bankruptcy of the trustee** does not bankrupt the trust.
 
 This is the **structural foundation** of trust insolvency-remoteness
-in Jersey. Combined with [Article 32](trustee-third-party-liability.md)
+in Jersey. Combined with [Article 32](./trustee-third-party-liability.md)
 (third-party liability limited to trust property when capacity is
 known), Article 54 produces the operational segregation that makes
 the trust workable as a wealth vehicle.
@@ -86,7 +86,7 @@ against the trustee's own balance sheet.
 
 A creditor whose claim **arises out of the trust** (e.g., a
 counterparty to a trust-related contract) has the protections of
-[Article 32](trustee-third-party-liability.md) and the trustee's
+[Article 32](./trustee-third-party-liability.md) and the trustee's
 right of indemnity, but the trust property is still protected from
 the trustee's *general* creditors.
 
@@ -109,7 +109,7 @@ necessary for proper performance" includes:
 - **right of indemnity** from the trust fund for properly-incurred
   liabilities;
 - **right to remuneration** under
-  [Article 26](trustee-remuneration.md);
+  [Article 26](./trustee-remuneration.md);
 
 but **excludes**:
 
@@ -127,7 +127,7 @@ apply:
 - the **insolvency court** in the trustee's home jurisdiction
   handles the trustee's own insolvency;
 - the **Jersey court** retains jurisdiction over the trust property
-  under [Article 5](court-jurisdiction-over-trusts.md);
+  under [Article 5](./court-jurisdiction-over-trusts.md);
 - the **trust's interests** are typically recognised by foreign
   insolvency courts as proprietary interests of the beneficiaries,
   not of the trustee — i.e., the trust property is not in the
@@ -140,7 +140,7 @@ internationally; Article 54 codifies the Jersey position.
 
 - **Commingling of trust and personal property.** A trustee that
   fails to maintain segregation (in breach of
-  [Article 21](trustee-duties.md) and Article 54's implicit
+  [Article 21](./trustee-duties.md) and Article 54's implicit
   requirements) creates evidential difficulties — creditors may
   attack the segregation. The remedy is rigorous
   account-segregation in practice.

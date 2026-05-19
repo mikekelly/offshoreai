@@ -163,8 +163,8 @@ ILS investments by insurers / reinsurers:
 
 ## Cross-references
 
-- [`insurance.md`](insurance.md);
-- [`overview.md`](overview.md);
-- [`bma.md`](bma.md);
+- [`insurance.md`](./insurance.md);
+- [`overview.md`](./overview.md);
+- [`bma.md`](./bma.md);
 - [`../jersey/insurance/index.md`](../jersey/insurance/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

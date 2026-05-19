@@ -122,7 +122,7 @@ The Commissioner:
 
 ## Cross-references
 
-- [`cl-part-2-registration.md`](cl-part-2-registration.md);
-- [`cl-part-4-trustees.md`](cl-part-4-trustees.md);
-- [`cl-part-5-investigations.md`](cl-part-5-investigations.md);
-- [`cl-articles-index.md`](cl-articles-index.md).
+- [`cl-part-2-registration.md`](./cl-part-2-registration.md);
+- [`cl-part-4-trustees.md`](./cl-part-4-trustees.md);
+- [`cl-part-5-investigations.md`](./cl-part-5-investigations.md);
+- [`cl-articles-index.md`](./cl-articles-index.md).

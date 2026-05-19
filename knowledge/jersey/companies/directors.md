@@ -80,14 +80,14 @@ established and able to act through identified individuals.
 Articles 84 and 84A require **particulars of directors** to be
 registered — different requirements for natural-person and
 corporate directors. See
-[`director-particulars-natural.md`](director-particulars-natural.md)
-and [`director-particulars-corporate.md`](director-particulars-corporate.md).
+[`director-particulars-natural.md`](./director-particulars-natural.md)
+and [`director-particulars-corporate.md`](./director-particulars-corporate.md).
 
 ## Cross-reference
 
-- [`directors-duties.md`](directors-duties.md) — Article 74: the
+- [`directors-duties.md`](./directors-duties.md) — Article 74: the
   duties owed by directors.
-- [`companies-interpretation.md`](companies-interpretation.md) —
+- [`companies-interpretation.md`](./companies-interpretation.md) —
   Article 1: the wide definition of "director" that catches *de
   facto* and shadow directors.
 

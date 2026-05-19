@@ -170,5 +170,5 @@ For an investigation needing BO:
 ## Cross-references
 
 - [`../../registries/beneficial-ownership.md`](../../registries/beneficial-ownership.md)
-- [`public-info-jersey-companies.md`](public-info-jersey-companies.md)
-- [`transparency-evolution.md`](transparency-evolution.md)
+- [`public-info-jersey-companies.md`](./public-info-jersey-companies.md)
+- [`transparency-evolution.md`](./transparency-evolution.md)

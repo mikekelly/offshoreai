@@ -40,9 +40,9 @@ stages:
    **Viscount**.
 
 This file covers stages 2 and 3 — see
-[`non-payment-of-rent.md`](non-payment-of-rent.md) for the
+[`non-payment-of-rent.md`](./non-payment-of-rent.md) for the
 breach-notice (stage 1) procedure for the most common case
-(unpaid rent), and [`grounds-for-termination.md`](grounds-for-termination.md)
+(unpaid rent), and [`grounds-for-termination.md`](./grounds-for-termination.md)
 for the broader set of grounds.
 
 ## Stage 2 — The Petty Debts Court
@@ -305,11 +305,11 @@ For tenants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`non-payment-of-rent.md`](non-payment-of-rent.md);
-- [`grounds-for-termination.md`](grounds-for-termination.md);
-- [`notice-periods.md`](notice-periods.md);
-- [`petty-debts-court-tenancy.md`](petty-debts-court-tenancy.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`non-payment-of-rent.md`](./non-payment-of-rent.md);
+- [`grounds-for-termination.md`](./grounds-for-termination.md);
+- [`notice-periods.md`](./notice-periods.md);
+- [`petty-debts-court-tenancy.md`](./petty-debts-court-tenancy.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md).

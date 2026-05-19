@@ -155,7 +155,7 @@ Common purposes that are **NOT charitable**:
 
 ## Cross-references
 
-- [`cl-article-6.md`](cl-article-6.md);
-- [`cl-part-1-preliminary.md`](cl-part-1-preliminary.md);
-- [`cl-articles-index.md`](cl-articles-index.md);
-- [`charities-law-2014.md`](charities-law-2014.md).
+- [`cl-article-6.md`](./cl-article-6.md);
+- [`cl-part-1-preliminary.md`](./cl-part-1-preliminary.md);
+- [`cl-articles-index.md`](./cl-articles-index.md);
+- [`charities-law-2014.md`](./charities-law-2014.md).

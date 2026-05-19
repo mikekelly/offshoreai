@@ -69,7 +69,7 @@ this work in a single corporate entity.
 
 ## Cross-references
 
-- [`pcc-cell-status.md`](pcc-cell-status.md) — Article 127YP:
+- [`pcc-cell-status.md`](./pcc-cell-status.md) — Article 127YP:
   cells as non-incorporated compartments.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

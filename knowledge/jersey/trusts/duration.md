@@ -92,7 +92,7 @@ A Jersey trust may terminate:
   Vautier* doctrine, which the Royal Court applies subject to all
   beneficiaries being of full age and consenting).
 
-For the detail of termination see [`termination-of-trust.md`](termination-of-trust.md)
+For the detail of termination see [`termination-of-trust.md`](./termination-of-trust.md)
 
 
 ## Tax planning consequences

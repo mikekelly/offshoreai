@@ -101,7 +101,7 @@ Endowments after establishment:
 
 ## Cross-references
 
-- [`fjl-part-2-establishment.md`](fjl-part-2-establishment.md);
-- [`fjl-article-4.md`](fjl-article-4.md);
-- [`fjl-article-26.md`](fjl-article-26.md) — founder;
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-part-2-establishment.md`](./fjl-part-2-establishment.md);
+- [`fjl-article-4.md`](./fjl-article-4.md);
+- [`fjl-article-26.md`](./fjl-article-26.md) — founder;
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

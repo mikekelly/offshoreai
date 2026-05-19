@@ -135,8 +135,8 @@ For employees:
 
 ## Cross-references
 
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-6-unfair-dismissal.md`](el-part-6-unfair-dismissal.md);
-- [`el-part-8-tribunal.md`](el-part-8-tribunal.md);
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-6-unfair-dismissal.md`](./el-part-6-unfair-dismissal.md);
+- [`el-part-8-tribunal.md`](./el-part-8-tribunal.md);
 - [`../discrimination/index.md`](../discrimination/index.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-articles-index.md`](./el-articles-index.md).

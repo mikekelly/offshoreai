@@ -244,6 +244,6 @@ For investigation / reporting:
 
 ## Cross-references
 
-- [`transparency-evolution.md`](transparency-evolution.md)
-- [`fatf-moneyval-jersey.md`](fatf-moneyval-jersey.md)
-- [`jersey-vs-other-offshore.md`](jersey-vs-other-offshore.md)
+- [`transparency-evolution.md`](./transparency-evolution.md)
+- [`fatf-moneyval-jersey.md`](./fatf-moneyval-jersey.md)
+- [`jersey-vs-other-offshore.md`](./jersey-vs-other-offshore.md)

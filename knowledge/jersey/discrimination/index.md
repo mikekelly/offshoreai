@@ -72,12 +72,12 @@ The DL covers:
 
 | The question is about... | Read |
 |---|---|
-| What characteristics are protected | [`dl-article-3.md`](dl-article-3.md) |
-| Direct vs indirect discrimination | [`dl-article-4.md`](dl-article-4.md) |
-| Harassment in workplace | [`dl-part-3-harassment.md`](dl-part-3-harassment.md) |
-| Disability and reasonable adjustments | [`dl-article-10.md`](dl-article-10.md) |
-| Equal pay claims | [`dl-part-4-equal-pay.md`](dl-part-4-equal-pay.md) |
-| Defending a discrimination claim | [`defending-discrimination-claim.md`](defending-discrimination-claim.md) *(planned)* |
+| What characteristics are protected | [`dl-article-3.md`](./dl-article-3.md) |
+| Direct vs indirect discrimination | [`dl-article-4.md`](./dl-article-4.md) |
+| Harassment in workplace | [`dl-part-3-harassment.md`](./dl-part-3-harassment.md) |
+| Disability and reasonable adjustments | [`dl-article-10.md`](./dl-article-10.md) |
+| Equal pay claims | [`dl-part-4-equal-pay.md`](./dl-part-4-equal-pay.md) |
+| Defending a discrimination claim | [`defending-discrimination-claim.md`](./defending-discrimination-claim.md) *(planned)* |
 
 ## Cross-references
 

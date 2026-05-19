@@ -201,6 +201,6 @@ For trust-litigation costs:
 
 ## Cross-references
 
-- [`beddoe-application.md`](beddoe-application.md)
-- [`cost-rules.md`](cost-rules.md)
-- [`personal-vs-estate-costs.md`](personal-vs-estate-costs.md)
+- [`beddoe-application.md`](./beddoe-application.md)
+- [`cost-rules.md`](./cost-rules.md)
+- [`personal-vs-estate-costs.md`](./personal-vs-estate-costs.md)

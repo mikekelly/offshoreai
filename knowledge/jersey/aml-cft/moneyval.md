@@ -73,5 +73,5 @@ compliance and effectiveness.
 
 ## Cross-references
 
-- [`proceeds-of-crime-law-1999.md`](proceeds-of-crime-law-1999.md)
-- [`aml-cft-handbook.md`](aml-cft-handbook.md)
+- [`proceeds-of-crime-law-1999.md`](./proceeds-of-crime-law-1999.md)
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md)

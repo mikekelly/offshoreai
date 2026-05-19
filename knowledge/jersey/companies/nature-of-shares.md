@@ -56,7 +56,7 @@ provisions on:
 - **Drag and tag** provisions for control transactions;
 - **Restrictions** on transfers to specified persons.
 
-See [`share-transfer.md`](share-transfer.md) — Article 42 — for
+See [`share-transfer.md`](./share-transfer.md) — Article 42 — for
 the registration mechanics.
 
 ### Numbering

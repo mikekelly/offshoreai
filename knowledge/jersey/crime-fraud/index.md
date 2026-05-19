@@ -63,37 +63,37 @@ abstract bridging.
 
 ### Police powers and procedure
 
-- [`ppce-law-2003.md`](ppce-law-2003.md) — statute
+- [`ppce-law-2003.md`](./ppce-law-2003.md) — statute
   overview and Codes of Practice structure
-- [`stop-and-search.md`](stop-and-search.md) — when and
+- [`stop-and-search.md`](./stop-and-search.md) — when and
   how
-- [`powers-of-entry.md`](powers-of-entry.md) — searches
+- [`powers-of-entry.md`](./powers-of-entry.md) — searches
   of premises
-- [`arrest.md`](arrest.md) — arrest powers and procedure
-- [`arrest-and-detention.md`](arrest-and-detention.md) —
+- [`arrest.md`](./arrest.md) — arrest powers and procedure
+- [`arrest-and-detention.md`](./arrest-and-detention.md) —
   what happens at the police station
-- [`rights-at-police-station.md`](rights-at-police-station.md)
+- [`rights-at-police-station.md`](./rights-at-police-station.md)
   — legal advice, notification, silence, interview rules
 
 ### Criminal court process
 
-- [`magistrates-court-criminal.md`](magistrates-court-criminal.md)
+- [`magistrates-court-criminal.md`](./magistrates-court-criminal.md)
   — first-appearance, summary trial, sentencing
-- [`royal-court-criminal.md`](royal-court-criminal.md) —
+- [`royal-court-criminal.md`](./royal-court-criminal.md) —
   indictable cases
-- [`bail.md`](bail.md) — bail decisions and conditions
-- [`legal-aid-criminal.md`](legal-aid-criminal.md) —
+- [`bail.md`](./bail.md) — bail decisions and conditions
+- [`legal-aid-criminal.md`](./legal-aid-criminal.md) —
   public funding for defendants
 
 ### Specific procedural areas
 
-- [`youth-justice.md`](youth-justice.md) — under-18
+- [`youth-justice.md`](./youth-justice.md) — under-18
   procedures
-- [`mental-capacity-in-criminal-proceedings.md`](mental-capacity-in-criminal-proceedings.md)
-- [`appeals-criminal.md`](appeals-criminal.md) —
+- [`mental-capacity-in-criminal-proceedings.md`](./mental-capacity-in-criminal-proceedings.md)
+- [`appeals-criminal.md`](./appeals-criminal.md) —
   Magistrate's Court → Royal Court → Court of Appeal →
   Privy Council
-- [`sentencing-guidelines.md`](sentencing-guidelines.md) —
+- [`sentencing-guidelines.md`](./sentencing-guidelines.md) —
   the Sentencing Guidelines framework
 
 ## At a glance

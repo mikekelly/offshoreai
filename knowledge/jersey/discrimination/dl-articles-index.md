@@ -30,48 +30,48 @@ and ~70 active Articles.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 1 | Interpretation | [dl-part-1-preliminary.md](dl-part-1-preliminary.md) |
-| 2 | Application | [dl-part-1-preliminary.md](dl-part-1-preliminary.md) |
-| 3 | Protected characteristics | [dl-article-3.md](dl-article-3.md) |
+| 1 | Interpretation | [dl-part-1-preliminary.md](./dl-part-1-preliminary.md) |
+| 2 | Application | [dl-part-1-preliminary.md](./dl-part-1-preliminary.md) |
+| 3 | Protected characteristics | [dl-article-3.md](./dl-article-3.md) |
 
 ## Part 2 — Forms of Discrimination
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 4 | Direct and indirect discrimination | [dl-article-4.md](dl-article-4.md) |
-| 5 — 9 | Harassment, victimisation, discrimination by association | [dl-part-2-forms.md](dl-part-2-forms.md) |
-| 10 | Reasonable adjustments (disability) | [dl-article-10.md](dl-article-10.md) |
+| 4 | Direct and indirect discrimination | [dl-article-4.md](./dl-article-4.md) |
+| 5 — 9 | Harassment, victimisation, discrimination by association | [dl-part-2-forms.md](./dl-part-2-forms.md) |
+| 10 | Reasonable adjustments (disability) | [dl-article-10.md](./dl-article-10.md) |
 
 ## Part 3 — Areas of Application
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 11 — 24 | Employment, services, education, premises | [dl-part-3-areas.md](dl-part-3-areas.md) |
-| 25 — 30 | Harassment in specific contexts | [dl-part-3-harassment.md](dl-part-3-harassment.md) |
+| 11 — 24 | Employment, services, education, premises | [dl-part-3-areas.md](./dl-part-3-areas.md) |
+| 25 — 30 | Harassment in specific contexts | [dl-part-3-harassment.md](./dl-part-3-harassment.md) |
 
 ## Part 4 — Equal Pay
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 31 — 40 | Equal pay between sexes, comparators, remedies | [dl-part-4-equal-pay.md](dl-part-4-equal-pay.md) |
+| 31 — 40 | Equal pay between sexes, comparators, remedies | [dl-part-4-equal-pay.md](./dl-part-4-equal-pay.md) |
 
 ## Part 5 — Exemptions
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 41 — 50 | Specific exemptions, occupational requirements | [dl-part-5-exemptions.md](dl-part-5-exemptions.md) |
+| 41 — 50 | Specific exemptions, occupational requirements | [dl-part-5-exemptions.md](./dl-part-5-exemptions.md) |
 
 ## Part 6 — Enforcement
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 51 — 65 | Claims, tribunals, remedies | [dl-part-6-enforcement.md](dl-part-6-enforcement.md) |
+| 51 — 65 | Claims, tribunals, remedies | [dl-part-6-enforcement.md](./dl-part-6-enforcement.md) |
 
 ## Part 7 — Miscellaneous
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 66 — 70 | Regulations, citation | [dl-part-7-misc.md](dl-part-7-misc.md) |
+| 66 — 70 | Regulations, citation | [dl-part-7-misc.md](./dl-part-7-misc.md) |
 
 ## Status
 

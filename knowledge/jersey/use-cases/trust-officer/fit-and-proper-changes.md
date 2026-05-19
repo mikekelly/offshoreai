@@ -161,5 +161,5 @@ For ongoing compliance:
 ## Cross-references
 
 - [`../../financial-regulation/licensing.md`](../../financial-regulation/licensing.md)
-- [`trust-company-business-scope.md`](trust-company-business-scope.md)
-- [`outsourcing.md`](outsourcing.md)
+- [`trust-company-business-scope.md`](./trust-company-business-scope.md)
+- [`outsourcing.md`](./outsourcing.md)

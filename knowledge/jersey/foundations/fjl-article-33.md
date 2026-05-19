@@ -111,8 +111,8 @@ The qualified-member firm typically:
 
 ## Cross-references
 
-- [`fjl-article-20.md`](fjl-article-20.md);
-- [`fjl-article-32.md`](fjl-article-32.md);
-- [`fjl-article-34.md`](fjl-article-34.md);
-- [`fjl-part-8-administration.md`](fjl-part-8-administration.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-20.md`](./fjl-article-20.md);
+- [`fjl-article-32.md`](./fjl-article-32.md);
+- [`fjl-article-34.md`](./fjl-article-34.md);
+- [`fjl-part-8-administration.md`](./fjl-part-8-administration.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -78,7 +78,7 @@ Three authorised routes around the default:
    is rarely available for family trusts with future-generation
    beneficiaries.
 3. **Court order.** The Royal Court can authorise remuneration under
-   [Article 51](article-51-directions.md). Used where the deed is
+   [Article 51](./article-51-directions.md). Used where the deed is
    silent and beneficiary consent is impractical.
 
 ## The professional-trustee statutory exception
@@ -95,7 +95,7 @@ the deed. This reflects:
   (who are paid for skill) from amateur trustees (who are not).
 
 "Professional trustee" in this context tracks the
-[Article 1 definition](interpretation-and-definitions.md) — a
+[Article 1 definition](./interpretation-and-definitions.md) — a
 trustee registered with the JFSC for trust company business.
 
 The reasonableness standard is **market-derived**: the trustee's
@@ -110,7 +110,7 @@ regardless of remuneration authorisation. Recoverable expenses
 include:
 
 - **professional fees** of agents engaged under
-  [Article 25](trustee-delegation.md) (investment managers,
+  [Article 25](./trustee-delegation.md) (investment managers,
   accountants, lawyers, etc.);
 - **administrative costs** (bank fees, custodian fees, regulatory
   filings);

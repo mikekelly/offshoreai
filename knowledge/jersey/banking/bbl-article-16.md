@@ -96,8 +96,8 @@ Lending to:
 
 ## Cross-references
 
-- [`bbl-article-14.md`](bbl-article-14.md);
-- [`bbl-article-15.md`](bbl-article-15.md);
-- [`bbl-article-17.md`](bbl-article-17.md);
-- [`bbl-part-4-prudential.md`](bbl-part-4-prudential.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-14.md`](./bbl-article-14.md);
+- [`bbl-article-15.md`](./bbl-article-15.md);
+- [`bbl-article-17.md`](./bbl-article-17.md);
+- [`bbl-part-4-prudential.md`](./bbl-part-4-prudential.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

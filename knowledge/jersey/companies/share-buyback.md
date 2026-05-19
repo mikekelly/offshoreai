@@ -45,13 +45,13 @@ Purchase **terms** (price, timing, conditions) are set by the
 articles or a **director resolution**.
 
 The company may **hold purchased shares as treasury shares**
-under [Article 58A](treasury-shares.md) or **cancel** them.
+under [Article 58A](./treasury-shares.md) or **cancel** them.
 
 (See the consolidated text at [jerseylaw.je][cjl].)
 
 ## Buyback vs redemption
 
-Redemption ([Article 55](redeemable-shares.md)) and buyback
+Redemption ([Article 55](./redeemable-shares.md)) and buyback
 (Article 57) are similar but distinct:
 
 | Feature | Redemption (Art 55) | Buyback (Art 57) |
@@ -96,14 +96,14 @@ Same as redemption — bought-back shares can be:
 
 - **Cancelled** (extinguishing the shares), or
 - **Held as treasury shares** under
-  [Article 58A](treasury-shares.md).
+  [Article 58A](./treasury-shares.md).
 
 Treasury treatment lets the company **re-issue** the shares
 later, avoiding the cost of cancellation and re-creation.
 
 ## Not a capital reduction
 
-[Article 58C](not-a-reduction.md) provides that buybacks under
+[Article 58C](./not-a-reduction.md) provides that buybacks under
 Part 11 are **not treated as reductions of capital** requiring
 Part 12 procedure. This is a significant operational simplification.
 

@@ -75,7 +75,7 @@ personality.
 
 ## Cross-references
 
-- [`cell-companies.md`](cell-companies.md) — overview comparing
+- [`cell-companies.md`](./cell-companies.md) — overview comparing
   ICCs and PCCs.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

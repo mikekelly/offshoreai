@@ -42,14 +42,14 @@ that distinguish Jersey company types.
 | **Director** | A person occupying the position of director by whatever name called (capturing *de facto* and shadow directors as well as formally appointed directors). |
 | **Memorandum** | The memorandum of association of a company (Article 4 family). |
 | **Articles** | The articles of association of a company (Article 5). |
-| **Member** | A person on the register of members (subject to specifics in [Article 25](definition-of-member.md)). |
+| **Member** | A person on the register of members (subject to specifics in [Article 25](./definition-of-member.md)). |
 | **Officer** | A director, secretary, or designated officer of a company. |
 | **Shares** | Shares in the capital of the company. |
-| **Subsidiary / holding body** | As defined in [Article 2](subsidiary-and-holding-body.md). |
+| **Subsidiary / holding body** | As defined in [Article 2](./subsidiary-and-holding-body.md). |
 
 Other defined terms cover the JFSC ("the Commission"), the Registrar
 of Companies, "ordinary resolution", "special resolution" (further
-specified in [Article 90](special-resolution.md)), and a wide range
+specified in [Article 90](./special-resolution.md)), and a wide range
 of structural matters.
 
 ## "Existing company"
@@ -77,16 +77,16 @@ formally-appointed board:
   appointed director under deed-of-appointment mechanisms.
 
 All such persons owe the **statutory duties** in
-[Article 74](directors-duties.md). This is operationally important
+[Article 74](./directors-duties.md). This is operationally important
 for Jersey TCBs, PTCs, and family-office governance structures —
 the substance of control matters, not just the formal appointment.
 
 ## "Officer" — wider than director
 
 "Officer" is wider than "director" and includes the **secretary**
-([Article 81](secretary.md)) and other persons holding office in
+([Article 81](./secretary.md)) and other persons holding office in
 the company. For some Articles (notably the indemnity provisions
-in [Article 77](officer-indemnity.md)), "officer" is the operative
+in [Article 77](./officer-indemnity.md)), "officer" is the operative
 term.
 
 ## Cross-references to definitions in other Articles
@@ -94,15 +94,15 @@ term.
 Article 1 is the entry point but other Articles provide
 specific definitions:
 
-- [Article 2](subsidiary-and-holding-body.md) — subsidiary,
+- [Article 2](./subsidiary-and-holding-body.md) — subsidiary,
   wholly-owned subsidiary, holding body;
-- [Article 25](definition-of-member.md) — member (further detail);
-- [Article 90](special-resolution.md) — special resolution;
-- [Article 102](part-16-interpretation.md) — accounts-related
+- [Article 25](./definition-of-member.md) — member (further detail);
+- [Article 90](./special-resolution.md) — special resolution;
+- [Article 102](./part-16-interpretation.md) — accounts-related
   definitions for Part 16;
-- [Article 114](distribution-definition.md) — "distribution" for
+- [Article 114](./distribution-definition.md) — "distribution" for
   Part 17;
-- [Article 127A](mergers.md) — merger-related terms for Part 18B.
+- [Article 127A](./mergers.md) — merger-related terms for Part 18B.
 
 ## Pitfalls
 

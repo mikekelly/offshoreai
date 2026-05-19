@@ -107,7 +107,7 @@ The JFSC will:
 
 ## Cross-references
 
-- [`mlo-article-4.md`](mlo-article-4.md);
+- [`mlo-article-4.md`](./mlo-article-4.md);
 - [`../use-cases/compliance-mlro/bwra.md`](../use-cases/compliance-mlro/bwra.md);
-- [`aml-cft-handbook.md`](aml-cft-handbook.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

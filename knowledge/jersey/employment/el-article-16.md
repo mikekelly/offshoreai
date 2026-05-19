@@ -112,7 +112,7 @@ Non-payment of minimum wage:
 
 ## Cross-references
 
-- [`el-part-3-minimum-wage.md`](el-part-3-minimum-wage.md);
-- [`el-article-3.md`](el-article-3.md);
-- [`el-part-2-particulars-pay.md`](el-part-2-particulars-pay.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-part-3-minimum-wage.md`](./el-part-3-minimum-wage.md);
+- [`el-article-3.md`](./el-article-3.md);
+- [`el-part-2-particulars-pay.md`](./el-part-2-particulars-pay.md);
+- [`el-articles-index.md`](./el-articles-index.md).

@@ -99,6 +99,6 @@ For corporate debtors:
 
 ## Cross-references
 
-- [`bdl-article-32.md`](bdl-article-32.md);
-- [`bdl-part-6-discharge.md`](bdl-part-6-discharge.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-article-32.md`](./bdl-article-32.md);
+- [`bdl-part-6-discharge.md`](./bdl-part-6-discharge.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

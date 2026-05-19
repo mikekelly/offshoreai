@@ -113,7 +113,7 @@ responsibilities** that a parent has in relation to a
 child. Includes the right to be consulted on major
 decisions (schooling, healthcare, religion, residence) and
 the responsibility to provide for the child. See
-[`parental-responsibility.md`](parental-responsibility.md).
+[`parental-responsibility.md`](./parental-responsibility.md).
 
 ### Child arrangements orders (Article 10)
 
@@ -129,7 +129,7 @@ issues. Four types:
 - **Prohibited steps** order — restraining a parent from
   doing something.
 
-See [`child-arrangements-orders.md`](child-arrangements-orders.md).
+See [`child-arrangements-orders.md`](./child-arrangements-orders.md).
 
 ### Care and supervision (Part 4)
 
@@ -146,7 +146,7 @@ seek:
 
 The threshold test is **significant harm**, attributable
 either to inadequate parenting or beyond parental
-control. See [`care-and-supervision.md`](care-and-supervision.md).
+control. See [`care-and-supervision.md`](./care-and-supervision.md).
 
 ## Jurisdiction
 
@@ -221,13 +221,13 @@ The **Children and Civil Status (Amendments) (Jersey) Law
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`parental-responsibility.md`](parental-responsibility.md);
-- [`child-arrangements-orders.md`](child-arrangements-orders.md);
-- [`care-and-supervision.md`](care-and-supervision.md);
-- [`child-relocation.md`](child-relocation.md);
-- [`jurisdiction-and-foreign-orders.md`](jurisdiction-and-foreign-orders.md);
-- [`royal-court-family-division.md`](royal-court-family-division.md);
-- [`jfcas-and-mediation.md`](jfcas-and-mediation.md);
-- [`adoption-jersey-law-1961.md`](adoption-jersey-law-1961.md);
+- [`index.md`](./index.md);
+- [`parental-responsibility.md`](./parental-responsibility.md);
+- [`child-arrangements-orders.md`](./child-arrangements-orders.md);
+- [`care-and-supervision.md`](./care-and-supervision.md);
+- [`child-relocation.md`](./child-relocation.md);
+- [`jurisdiction-and-foreign-orders.md`](./jurisdiction-and-foreign-orders.md);
+- [`royal-court-family-division.md`](./royal-court-family-division.md);
+- [`jfcas-and-mediation.md`](./jfcas-and-mediation.md);
+- [`adoption-jersey-law-1961.md`](./adoption-jersey-law-1961.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

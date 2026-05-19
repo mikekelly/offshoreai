@@ -79,8 +79,8 @@ investigation possible where it would otherwise be defeated.
 
 ## Cross-references
 
-- [`inspector-powers.md`](inspector-powers.md) — Article 129.
-- [`privileged-information.md`](privileged-information.md) —
+- [`inspector-powers.md`](./inspector-powers.md) — Article 129.
+- [`privileged-information.md`](./privileged-information.md) —
   Article 139: privilege.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

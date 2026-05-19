@@ -75,7 +75,7 @@ substance regime credible.
 
 ## Cross-references
 
-- [`substance-court-application.md`](substance-court-application.md)
+- [`substance-court-application.md`](./substance-court-application.md)
   — Article 143A.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

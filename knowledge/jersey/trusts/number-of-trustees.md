@@ -85,13 +85,13 @@ They cannot:
 
 Where the deed gives a power of appointment of new trustees, that
 power is the primary mechanism. Where the deed is silent or the
-appointor cannot act, [Article 17](trustee-appointment-out-of-court.md)
+appointor cannot act, [Article 17](./trustee-appointment-out-of-court.md)
 supplies a statutory power of appointment.
 
 If no appointment can be made out of court, an application may be
 made to the Royal Court under
-[Article 51](article-51-directions.md) (or, where there is no resident
-trustee at all, under [Article 44](court-appointed-resident-trustee.md)
+[Article 51](./article-51-directions.md) (or, where there is no resident
+trustee at all, under [Article 44](./court-appointed-resident-trustee.md)
 ).
 
 ## Why the deed's "required minimum" often exceeds one
@@ -112,6 +112,6 @@ statutory minimum, not a recommended structure for substantial trusts.
   legal personality, so a director vacancy on the PTC's board is
   not the same as a trustee vacancy under Article 16. But it may
   trigger Article 22 / Article 28 issues — see
-  [`corporate-trustee-resolution.md`](corporate-trustee-resolution.md).
+  [`corporate-trustee-resolution.md`](./corporate-trustee-resolution.md).
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

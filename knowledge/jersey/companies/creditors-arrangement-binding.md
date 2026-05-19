@@ -69,7 +69,7 @@ falling back on a full scheme of arrangement under Article 125.
 
 ## Cross-references
 
-- [`scheme-of-arrangement.md`](scheme-of-arrangement.md) — Article
+- [`scheme-of-arrangement.md`](./scheme-of-arrangement.md) — Article
   125: alternative court-sanctioned arrangement route.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

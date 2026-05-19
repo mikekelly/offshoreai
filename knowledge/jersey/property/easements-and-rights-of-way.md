@@ -36,7 +36,7 @@ In Jersey customary law:
 - **Fonds servient** = servient tenement (burdened).
 
 This file focuses specifically on **rights of way** and
-other **access servitudes**; see [`servitudes.md`](servitudes.md)
+other **access servitudes**; see [`servitudes.md`](./servitudes.md)
 for the general framework.
 
 ## Categories of right of way
@@ -234,11 +234,11 @@ Royal Court applications:
 
 ## Cross-references
 
-- [`servitudes.md`](servitudes.md);
-- [`boundary-disputes.md`](boundary-disputes.md);
-- [`real-property-overview.md`](real-property-overview.md);
-- [`contract-passing.md`](contract-passing.md);
-- [`voisinage.md`](voisinage.md);
+- [`servitudes.md`](./servitudes.md);
+- [`boundary-disputes.md`](./boundary-disputes.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`contract-passing.md`](./contract-passing.md);
+- [`voisinage.md`](./voisinage.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
 - [`../legal-system/normandy-and-jersey-law.md`](../legal-system/normandy-and-jersey-law.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -135,7 +135,7 @@ For minor children:
 - **Pre-existing** trusts more defensible than late-settled;
 - **Foreign-court order** may not bind Jersey trustee.
 
-See [`asset-protection.md`](asset-protection.md) for detail.
+See [`asset-protection.md`](./asset-protection.md) for detail.
 
 #### Capacity loss
 
@@ -208,5 +208,5 @@ For family planning:
 
 ## Cross-references
 
-- [`intergenerational-transfer.md`](intergenerational-transfer.md)
-- [`asset-protection.md`](asset-protection.md)
+- [`intergenerational-transfer.md`](./intergenerational-transfer.md)
+- [`asset-protection.md`](./asset-protection.md)

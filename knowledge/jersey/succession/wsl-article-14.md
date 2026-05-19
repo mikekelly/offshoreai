@@ -129,9 +129,9 @@ related rights** to civil partnerships:
 
 ## Cross-references
 
-- [`wsl-article-15.md`](wsl-article-15.md) — children's
+- [`wsl-article-15.md`](./wsl-article-15.md) — children's
   légitime;
-- [`wsl-part-3-legitime.md`](wsl-part-3-legitime.md);
-- [`wsl-part-4-intestacy.md`](wsl-part-4-intestacy.md);
+- [`wsl-part-3-legitime.md`](./wsl-part-3-legitime.md);
+- [`wsl-part-4-intestacy.md`](./wsl-part-4-intestacy.md);
 - [`../use-cases/family-office-adviser/jersey-succession.md`](../use-cases/family-office-adviser/jersey-succession.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

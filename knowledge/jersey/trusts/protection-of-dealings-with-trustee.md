@@ -97,9 +97,9 @@ to deal with the property:
 
 The protection runs **as against the beneficiaries**. The
 beneficiaries' recourse for the breach is **against the trustee**
-(under [Article 30](breach-of-trust-liability.md)) and against any
+(under [Article 30](./breach-of-trust-liability.md)) and against any
 **non-protected recipient** (under
-[Article 33](constructive-trustee.md) constructive trust). The
+[Article 33](./constructive-trustee.md) constructive trust). The
 Article 55 BFPV is in the clear.
 
 ## Operational practice

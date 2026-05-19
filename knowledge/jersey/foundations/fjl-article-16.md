@@ -94,8 +94,8 @@ If a foundation **fails to maintain** a qualified member:
 
 ## Cross-references
 
-- [`qualified-member.md`](qualified-member.md) — concept-level
+- [`qualified-member.md`](./qualified-member.md) — concept-level
   overview;
-- [`fjl-article-15.md`](fjl-article-15.md) — council;
+- [`fjl-article-15.md`](./fjl-article-15.md) — council;
 - [`../financial-regulation/trust-company-business.md`](../../../jersey/financial-regulation/trust-company-business.md)
   — TCB regulation.

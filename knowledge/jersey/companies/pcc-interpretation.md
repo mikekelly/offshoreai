@@ -66,6 +66,6 @@ Article 127YO is the look-up for the PCC-specific articles.
 
 ## Cross-references
 
-- [`cell-companies.md`](cell-companies.md) — Part 18D overview.
+- [`cell-companies.md`](./cell-companies.md) — Part 18D overview.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

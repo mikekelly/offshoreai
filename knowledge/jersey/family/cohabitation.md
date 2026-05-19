@@ -150,8 +150,8 @@ For separating cohabitants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`parental-responsibility.md`](parental-responsibility.md);
+- [`index.md`](./index.md);
+- [`parental-responsibility.md`](./parental-responsibility.md);
 - [`../contract/unjust-enrichment.md`](../contract/unjust-enrichment.md);
 - [`../property/index.md`](../property/index.md);
 - [`../succession/index.md`](../succession/index.md);

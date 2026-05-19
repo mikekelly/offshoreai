@@ -84,7 +84,7 @@ records).
 ## Modern alternative — uncertificated shares
 
 For uncertificated shares under
-[Article 51A](uncertificated-securities.md), there is no physical
+[Article 51A](./uncertificated-securities.md), there is no physical
 certificate. The **register entry itself** is the canonical
 record of title, with similar evidential weight.
 

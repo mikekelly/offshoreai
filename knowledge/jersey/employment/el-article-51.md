@@ -85,6 +85,6 @@ Articles 65+ provide the exceptions.
 
 ## Cross-references
 
-- [`el-article-64.md`](el-article-64.md);
-- [`el-part-6-unfair-dismissal.md`](el-part-6-unfair-dismissal.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-article-64.md`](./el-article-64.md);
+- [`el-part-6-unfair-dismissal.md`](./el-part-6-unfair-dismissal.md);
+- [`el-articles-index.md`](./el-articles-index.md).

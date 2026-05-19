@@ -135,9 +135,9 @@ Le Geyt's work:
 
 ## Cross-references
 
-- [`normandy-and-jersey-law.md`](normandy-and-jersey-law.md);
-- [`pothier-and-the-coutume.md`](pothier-and-the-coutume.md);
-- [`customary-law.md`](customary-law.md);
-- [`sources-of-law.md`](sources-of-law.md);
-- [`bailiff.md`](bailiff.md);
-- [`index.md`](index.md).
+- [`normandy-and-jersey-law.md`](./normandy-and-jersey-law.md);
+- [`pothier-and-the-coutume.md`](./pothier-and-the-coutume.md);
+- [`customary-law.md`](./customary-law.md);
+- [`sources-of-law.md`](./sources-of-law.md);
+- [`bailiff.md`](./bailiff.md);
+- [`index.md`](./index.md).

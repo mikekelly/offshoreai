@@ -123,9 +123,9 @@ Typical approval steps (as set out in the Regulations):
 
 ## Cross-references
 
-- [`mergers.md`](mergers.md) — Part 18B statutory merger (the
+- [`mergers.md`](./mergers.md) — Part 18B statutory merger (the
   mirror-image regime).
-- [`reconstruction-and-amalgamation.md`](reconstruction-and-amalgamation.md)
+- [`reconstruction-and-amalgamation.md`](./reconstruction-and-amalgamation.md)
   — Article 127 court-sanctioned alternative.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

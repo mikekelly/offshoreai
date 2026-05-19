@@ -17,7 +17,7 @@ see_also:
 
 ## What this is
 
-While building the five [time-horizon history docs](README.md),
+While building the five [time-horizon history docs](./README.md),
 several places in the narrative wanted to inline-link to a
 doctrinal concept file that **did not yet exist** in the
 corpus. This file catalogues those gaps and the closure
@@ -26,7 +26,7 @@ marked inline; new gaps are added as future history /
 frontier work surfaces them.
 
 This is **complementary to** the per-jurisdiction
-[`COVERAGE-AUDIT.md`](../COVERAGE-AUDIT.md), which is
+[`COVERAGE-AUDIT.md`](../../COVERAGE-AUDIT.md), which is
 audit-driven from statutes-down; this file is **narrative-
 driven from history docs upward**.
 
@@ -48,48 +48,48 @@ for bookkeeping).
 
 ### G-001 — Bermuda CIT 2023 dedicated file ✅ CLOSED 2026-05-19
 
-**Closed by**: [`../bermuda/corporate-income-tax-2023.md`](../../bermuda/corporate-income-tax-2023.md)
+**Closed by**: [`../bermuda/corporate-income-tax-2023.md`](../../../bermuda/corporate-income-tax-2023.md)
 
 The Bermuda Corporate Income Tax Act 2023 now has its own
 concept file: effective date, rate, scope, QDMTT mechanics,
 QRTC regime, and structured comparison with the
-[Jersey MCIT 2025](../international/pillar-two-mcit.md).
+[Jersey MCIT 2025](../../international/pillar-two-mcit.md).
 
 ### G-002 — Continuation funds doctrinal corpus ✅ CLOSED 2026-05-19
 
 **Closed by**:
 
-- [`../jersey/funds/continuation-funds.md`](../funds/continuation-funds.md);
-- [`../guernsey/continuation-funds.md`](../../guernsey/continuation-funds.md).
+- [`../jersey/funds/continuation-funds.md`](../../funds/continuation-funds.md);
+- [`../guernsey/continuation-funds.md`](../../../guernsey/continuation-funds.md).
 
 Both files cover the stable legal/structural treatment:
 fund-regime choice, single-vs-multi-asset, transaction
 structure, conflicts of interest, LP election fairness,
 carry crystallisation, substance, AIFMD II overlay. The
 frontier file
-[`../frontier/continuation-funds-and-gp-led-secondaries.md`](../../frontier/continuation-funds-and-gp-led-secondaries.md)
+[`../frontier/continuation-funds-and-gp-led-secondaries.md`](../../../frontier/continuation-funds-and-gp-led-secondaries.md)
 continues to hold the decay-managed market-trends content.
 
 ### G-003 — Sustainable finance / SFDR doctrinal corpus ✅ CLOSED 2026-05-19
 
 **Closed by**:
 
-- [`../jersey/sustainable-finance/index.md`](../sustainable-finance/index.md);
-- [`../jersey/sustainable-finance/sfdr.md`](../sustainable-finance/sfdr.md).
+- [`../jersey/sustainable-finance/index.md`](../../sustainable-finance/index.md);
+- [`../jersey/sustainable-finance/sfdr.md`](../../sustainable-finance/sfdr.md).
 
 Index covers Jersey's strategic positioning and the
 regulatory landscape. SFDR file covers Article 6 / 8 / 9
 classification, entity- and product-level disclosure,
 practical considerations for Jersey AIFMs, and
 greenwashing-risk mitigants. The frontier file
-[`../frontier/sfdr-2-and-sustainable-finance.md`](../frontier/sfdr-2-and-sustainable-finance.md)
+[`../frontier/sfdr-2-and-sustainable-finance.md`](../../frontier/sfdr-2-and-sustainable-finance.md)
 continues to hold the SFDR 2.0 live development tracking.
 
 ## P1 — Specific concept files
 
 ### G-004 — Innovation Council 2025 ✅ CLOSED 2026-05-19
 
-**Closed by**: [`../jersey/financial-regulation/innovation-council.md`](../financial-regulation/innovation-council.md)
+**Closed by**: [`../jersey/financial-regulation/innovation-council.md`](../../financial-regulation/innovation-council.md)
 
 Covers the Council's role, what it does, how it relates to
 the JFSC and the industry, the strategic positioning, and
@@ -97,14 +97,14 @@ the cross-Crown-Dependencies coordination.
 
 ### G-005 — JFSC 2026-2030 Strategy concept file ✅ CLOSED 2026-05-19
 
-**Closed by**: [`../jersey/financial-regulation/jfsc-strategy-2026-2030.md`](../financial-regulation/jfsc-strategy-2026-2030.md)
+**Closed by**: [`../jersey/financial-regulation/jfsc-strategy-2026-2030.md`](../../financial-regulation/jfsc-strategy-2026-2030.md)
 
 Covers the four priorities, the strategic posture shift,
 the FSCP coordination, and the implementation structure.
 
 ### G-006 — Financial Services Competitiveness Programme ✅ CLOSED 2026-05-19
 
-**Closed by**: [`../jersey/government/financial-services-competitiveness-programme.md`](../government/financial-services-competitiveness-programme.md)
+**Closed by**: [`../jersey/government/financial-services-competitiveness-programme.md`](../../government/financial-services-competitiveness-programme.md)
 
 Covers the four workstreams (tax / regulation / external
 growth / skills), the JFSC Strategy coordination, and the
@@ -112,7 +112,7 @@ implementation roadmap.
 
 ### G-007 — CARF (Crypto-Asset Reporting Framework) ✅ CLOSED 2026-05-19
 
-**Closed by**: [`../jersey/international/carf.md`](../international/carf.md)
+**Closed by**: [`../jersey/international/carf.md`](../../international/carf.md)
 
 Covers the regime, the scope (RCASPs / VASPs), the
 reporting mechanics, the CRS / FATCA / CARF stacking, the
@@ -138,7 +138,7 @@ doctrinal concept.
 
 ### G-010 — Guernsey continuation-fund specific files ✅ CLOSED 2026-05-19
 
-**Closed by**: [`../guernsey/continuation-funds.md`](../../guernsey/continuation-funds.md)
+**Closed by**: [`../guernsey/continuation-funds.md`](../../../guernsey/continuation-funds.md)
 (absorbed Guernsey-specific content under G-002).
 
 The single Guernsey continuation-funds file covers the
@@ -149,7 +149,7 @@ fast-track separate files.
 
 ### G-011 — Tokenisation doctrinal corpus ✅ CLOSED 2026-05-19
 
-**Closed by**: [`../jersey/digital-assets/index.md`](../digital-assets/index.md)
+**Closed by**: [`../jersey/digital-assets/index.md`](../../digital-assets/index.md)
 
 The digital-assets index covers tokenised RWAs, tokenised
 fund interests, security tokens, stablecoins, and the
@@ -168,7 +168,7 @@ round audit).
 (consolidated milestone file, Milestone 3 covers the 4th→5th round arc)
 
 The existing
-[`../jersey/aml-cft/moneyval.md`](../aml-cft/moneyval.md)
+[`../jersey/aml-cft/moneyval.md`](../../aml-cft/moneyval.md)
 remains the present-state file; the regulatory-milestones
 file captures the historical arc.
 
@@ -181,9 +181,98 @@ file needed.
 
 ## Gaps newly identified during the closure pass (open)
 
-None at this time. The closure pass did not surface any
-additional unmet linking points. Future history / frontier
-work may surface new gaps; they will be added here.
+None at this time from the closure pass. Future history /
+frontier work may surface new gaps; they will be added here.
+
+## Non-finance sector history — expansion targets
+
+After scoping the corpus on 2026-05-19, it became clear
+this `history/finance/` directory is the only deep sector
+history in the corpus. Jersey has other meaningful sectors
+whose historical narratives are **not yet built** (see
+[`../README.md`](../README.md) for the parent sector index
+and [`../../economy/index.md`](../../economy/index.md) for
+the GDP partition).
+
+Expansion targets in priority order:
+
+### S-001 (P1) — Real estate history
+
+**Wanted as**: `knowledge/jersey/history/real-estate/`
+(parallel structure to `finance/`)
+
+**Why it matters**: Real estate is the **second-largest
+sector** by GVA (~8-10%). Intersects with the finance /
+wealth-management story, with Jersey's housing-
+affordability debate, and with population policy. A history
+layer would cover the post-1960s growth of property values,
+the HVR programme's property effects, the housing-
+affordability politics through the 2000s-2020s, and the
+population policy debate.
+
+### S-002 (P1) — Wholesale / retail history
+
+**Wanted as**: `knowledge/jersey/history/retail/`
+
+**Why it matters**: ~6-8% of GVA. Long arc through the
+pre-2008 zero-VAT shopping destination era, the 2008 GST
+introduction at 3%, the 2011 GST raise to 5%, post-Brexit
+cross-border-shopping dynamics, post-COVID online-retail
+disruption, and the St Helier high-street decline.
+
+### S-003 (P1) — Construction history
+
+**Wanted as**: `knowledge/jersey/history/construction/`
+
+**Why it matters**: ~5-7% of GVA. Tied to property cycle,
+housing policy, and population policy. Major narrative
+threads include the hospital project debates, St Helier
+regeneration, and population-policy implications for
+housing supply.
+
+### S-004 (P2) — Digital sector history
+
+**Wanted as**: `knowledge/jersey/history/digital/`
+
+Digital sector ~4-5% of GVA and growing. Significant overlap
+with the finance trajectory (FinTech, tokenisation,
+Innovation Council 2025). Could be a section of the finance
+history rather than separate.
+
+### S-005 (P2) — Tourism / hospitality history
+
+**Wanted as**: `knowledge/jersey/history/tourism/`
+
+~3-4% of GVA but historically much larger. The **decline
+narrative** from a 1960s-80s peak is distinctive.
+
+### S-006 (P2) — Agriculture history
+
+**Wanted as**: `knowledge/jersey/history/agriculture/`
+
+~1-2% of GVA but iconic to Jersey identity. Narrative
+includes mid-20th-century dominance, post-1960s
+displacement by finance, Jersey Royal potato as enduring
+brand, Jersey-breed dairy global presence, post-Brexit
+fishing arrangements, and climate-change implications.
+
+### Approach to non-finance histories
+
+Each sector history would follow the **same discipline** as
+this `finance/` directory:
+
+- Time-horizon docs (where the sector's narrative warrants
+  a multi-window retrospective);
+- A trajectory synthesis (equivalent of `trajectory.md`);
+- A sources bibliography of sector-specific third-party
+  reports;
+- A regulatory-milestones reference where applicable;
+- A gaps catalogue.
+
+Build prioritisation will be driven by demo-relevance and
+agent-capability needs — not by completism. P2-tier
+sectors may never warrant the full discipline if they
+remain demo-irrelevant.
 
 ## Approach to future gap-tracking
 
@@ -205,7 +294,7 @@ incomplete.
 - [`./README.md`](./README.md);
 - [`./sources.md`](./sources.md);
 - [`./regulatory-milestones.md`](./regulatory-milestones.md);
-- [`../jersey/COVERAGE-AUDIT.md`](../COVERAGE-AUDIT.md) —
+- [`../jersey/COVERAGE-AUDIT.md`](../../COVERAGE-AUDIT.md) —
   the per-statute audit for Jersey
-- [`../frontier/README.md`](../../frontier/README.md);
-- [`../KNOWLEDGE-BASE-PRINCIPLES.md`](../../../KNOWLEDGE-BASE-PRINCIPLES.md).
+- [`../frontier/README.md`](../../../frontier/README.md);
+- [`../KNOWLEDGE-BASE-PRINCIPLES.md`](../../../../KNOWLEDGE-BASE-PRINCIPLES.md).

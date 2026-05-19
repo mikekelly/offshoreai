@@ -92,6 +92,6 @@ For practitioners:
 
 ## Cross-references
 
-- [`fjl-article-52.md`](fjl-article-52.md);
-- [`fjl-part-13-misc.md`](fjl-part-13-misc.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-52.md`](./fjl-article-52.md);
+- [`fjl-part-13-misc.md`](./fjl-part-13-misc.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

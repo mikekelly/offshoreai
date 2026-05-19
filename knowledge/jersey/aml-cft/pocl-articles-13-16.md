@@ -74,6 +74,6 @@ Specific provisions for **civil debts** of the defendant:
 
 ## Cross-references
 
-- [`pocl-articles-8-12.md`](pocl-articles-8-12.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-articles-8-12.md`](./pocl-articles-8-12.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

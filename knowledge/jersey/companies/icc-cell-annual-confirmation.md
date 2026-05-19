@@ -69,7 +69,7 @@ manage the multiple-cell filing obligation.
 
 ## Cross-references
 
-- [`icc-cell-status.md`](icc-cell-status.md) — Article 127YD:
+- [`icc-cell-status.md`](./icc-cell-status.md) — Article 127YD:
   cells as separate companies subject to general company
   obligations.
 

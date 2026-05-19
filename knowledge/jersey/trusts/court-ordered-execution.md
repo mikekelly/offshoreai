@@ -69,7 +69,7 @@ if** the defaulting party had executed it themselves. Third parties
 execution.
 
 Article 52 is the **practical complement** to the Court's substantive
-jurisdiction under [Article 51](article-51-directions.md): the
+jurisdiction under [Article 51](./article-51-directions.md): the
 Court can direct a result, and Article 52 ensures the result can be
 implemented even if the defaulting party will not co-operate.
 

@@ -211,9 +211,9 @@ In **practice**:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
 - [`../jersey/index.md`](../jersey/index.md).

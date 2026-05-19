@@ -160,11 +160,11 @@ Bermuda is the **leading ILS / cat bond** centre:
 
 ## Cross-references
 
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`companies.md`](companies.md);
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`tax.md`](tax.md);
-- [`bma.md`](bma.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`companies.md`](./companies.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`tax.md`](./tax.md);
+- [`bma.md`](./bma.md);
 - [`../jersey/index.md`](../jersey/index.md);
 - [`../cayman/insurance.md`](../cayman/insurance.md).

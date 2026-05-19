@@ -75,8 +75,8 @@ office typically changes too.
 
 ## Cross-references
 
-- [`fjl-part-2-establishment.md`](fjl-part-2-establishment.md);
-- [`fjl-article-16.md`](fjl-article-16.md) — qualified
+- [`fjl-part-2-establishment.md`](./fjl-part-2-establishment.md);
+- [`fjl-article-16.md`](./fjl-article-16.md) — qualified
   member;
-- [`fjl-part-8-administration.md`](fjl-part-8-administration.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-part-8-administration.md`](./fjl-part-8-administration.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

@@ -116,9 +116,9 @@ The MLRO must maintain:
 
 ## Cross-references
 
-- [`pocl-article-34.md`](pocl-article-34.md);
-- [`pocl-article-34a.md`](pocl-article-34a.md);
-- [`mlo-article-16.md`](mlo-article-16.md);
+- [`pocl-article-34.md`](./pocl-article-34.md);
+- [`pocl-article-34a.md`](./pocl-article-34a.md);
+- [`mlo-article-16.md`](./mlo-article-16.md);
 - [`../use-cases/compliance-mlro/internal-disclosure-assessment.md`](../use-cases/compliance-mlro/internal-disclosure-assessment.md);
 - [`../use-cases/compliance-mlro/sar-content.md`](../use-cases/compliance-mlro/sar-content.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

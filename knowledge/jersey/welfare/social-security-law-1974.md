@@ -192,14 +192,14 @@ pension is below the income-support threshold.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`contributions.md`](contributions.md);
-- [`pensions.md`](pensions.md);
-- [`short-term-incapacity-allowance.md`](short-term-incapacity-allowance.md);
-- [`maternity-benefits.md`](maternity-benefits.md);
-- [`income-support-law-2007.md`](income-support-law-2007.md);
+- [`index.md`](./index.md);
+- [`contributions.md`](./contributions.md);
+- [`pensions.md`](./pensions.md);
+- [`short-term-incapacity-allowance.md`](./short-term-incapacity-allowance.md);
+- [`maternity-benefits.md`](./maternity-benefits.md);
+- [`income-support-law-2007.md`](./income-support-law-2007.md);
 - [`long-term-care.md`](../tax/long-term-care.md);
-- [`customer-and-local-services.md`](customer-and-local-services.md);
-- [`appeals.md`](appeals.md);
+- [`customer-and-local-services.md`](./customer-and-local-services.md);
+- [`appeals.md`](./appeals.md);
 - [`../tax/personal-income-tax.md`](../tax/personal-income-tax.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

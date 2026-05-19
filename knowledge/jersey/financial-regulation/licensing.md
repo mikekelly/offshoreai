@@ -125,7 +125,7 @@ larger providers. The Codes require:
 
 ## Cross-references
 
-- [`codes-of-practice.md`](codes-of-practice.md) — conduct
+- [`codes-of-practice.md`](./codes-of-practice.md) — conduct
   standards applied to licensed entities.
-- [`enforcement.md`](enforcement.md) — what happens if standards
+- [`enforcement.md`](./enforcement.md) — what happens if standards
   are breached.

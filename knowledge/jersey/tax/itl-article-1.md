@@ -62,11 +62,11 @@ January to 31 December). The current YA at this writing is
 
 ## Cross-references
 
-- [`income-tax-law-1961.md`](income-tax-law-1961.md) — statute
+- [`income-tax-law-1961.md`](./income-tax-law-1961.md) — statute
   overview.
-- [`personal-income-tax.md`](personal-income-tax.md) — personal
+- [`personal-income-tax.md`](./personal-income-tax.md) — personal
   income tax at the 20% rate.
-- [`zero-ten.md`](zero-ten.md) — corporate income tax at 0% / 10%
+- [`zero-ten.md`](./zero-ten.md) — corporate income tax at 0% / 10%
   / 20%.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

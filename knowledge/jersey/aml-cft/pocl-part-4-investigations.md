@@ -116,6 +116,6 @@ When served with an order under Part 4:
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-article-35.md`](pocl-article-35.md) — tipping off;
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-article-35.md`](./pocl-article-35.md) — tipping off;
 - [`../use-cases/compliance-mlro/jfsc-information-requests.md`](../use-cases/compliance-mlro/jfsc-information-requests.md).

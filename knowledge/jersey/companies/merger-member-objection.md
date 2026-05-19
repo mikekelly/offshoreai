@@ -67,9 +67,9 @@ takes cash at a court-set price and the merger proceeds.
 
 ## Cross-references
 
-- [`merger-approval.md`](merger-approval.md) — Article 127F:
+- [`merger-approval.md`](./merger-approval.md) — Article 127F:
   approval trigger.
-- [`unfair-prejudice-member-application.md`](unfair-prejudice-member-application.md)
+- [`unfair-prejudice-member-application.md`](./unfair-prejudice-member-application.md)
   — broader unfair-prejudice cause of action under Article 141
   (planned).
 

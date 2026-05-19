@@ -141,8 +141,8 @@ Specific drivers:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/trusts/index.md`](../jersey/trusts/index.md);
 - [`../guernsey/trusts.md`](../guernsey/trusts.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -76,9 +76,9 @@ The corresponding cost:
 
 ## Cross-references
 
-- [`pcc-segregation.md`](pcc-segregation.md) — Article 127YT:
+- [`pcc-segregation.md`](./pcc-segregation.md) — Article 127YT:
   the statutory segregation mechanism.
-- [`pcc-cellular-assets.md`](pcc-cellular-assets.md) — Article
+- [`pcc-cellular-assets.md`](./pcc-cellular-assets.md) — Article
   127YU: cellular vs non-cellular assets.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

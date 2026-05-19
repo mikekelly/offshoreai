@@ -147,8 +147,8 @@ Post-Brexit issues for Jersey:
 
 ## Cross-references
 
-- [`chwl-article-3.md`](chwl-article-3.md);
-- [`chwl-article-19.md`](chwl-article-19.md);
-- [`employment-status-categories.md`](employment-status-categories.md);
+- [`chwl-article-3.md`](./chwl-article-3.md);
+- [`chwl-article-19.md`](./chwl-article-19.md);
+- [`employment-status-categories.md`](./employment-status-categories.md);
 - [`../government/uk-jersey-relationship.md`](../government/uk-jersey-relationship.md);
 - [`../international/index.md`](../international/index.md).

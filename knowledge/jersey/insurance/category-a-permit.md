@@ -62,5 +62,5 @@ within the insurance regime, because of:
 
 ## Cross-references
 
-- [`insurance-business-law-1996.md`](insurance-business-law-1996.md)
-- [`category-b-permit.md`](category-b-permit.md)
+- [`insurance-business-law-1996.md`](./insurance-business-law-1996.md)
+- [`category-b-permit.md`](./category-b-permit.md)

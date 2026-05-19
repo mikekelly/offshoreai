@@ -55,7 +55,7 @@ A director's **interest** in a company contract includes:
 - **Direct** personal interests — e.g., a contract where the
   director is the counterparty;
 - **Indirect** interests through
-  [connected persons](connected-persons.md) (Article 74ZA);
+  [connected persons](./connected-persons.md) (Article 74ZA);
 - **Material** interests in counterparties (e.g., a substantial
   shareholding in a counterparty company);
 - **Fiduciary** interests where the director acts for someone
@@ -118,7 +118,7 @@ directors didn't know is in breach.
 
 ## Consequences of non-disclosure
 
-[Article 76](failure-to-disclose-consequences.md) sets out the
+[Article 76](./failure-to-disclose-consequences.md) sets out the
 consequences:
 
 - The contract may be **voidable** at the company's discretion;
@@ -127,12 +127,12 @@ consequences:
 
 ## Cross-references
 
-- [`directors-duties.md`](directors-duties.md) — Article 74:
+- [`directors-duties.md`](./directors-duties.md) — Article 74:
   the broader duties Article 75 sits beneath.
-- [`connected-persons.md`](connected-persons.md) — Article 74ZA:
+- [`connected-persons.md`](./connected-persons.md) — Article 74ZA:
   who counts as connected (and whose interests must therefore be
   disclosed).
-- [`failure-to-disclose-consequences.md`](failure-to-disclose-consequences.md)
+- [`failure-to-disclose-consequences.md`](./failure-to-disclose-consequences.md)
   — Article 76: what happens when disclosure fails.
 
 ## Pitfalls

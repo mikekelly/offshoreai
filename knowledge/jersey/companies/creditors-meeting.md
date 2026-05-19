@@ -71,9 +71,9 @@ rather than just member-driven with creditor consequences.
 
 ## Cross-references
 
-- [`creditors-meeting-court-ordered.md`](creditors-meeting-court-ordered.md)
+- [`creditors-meeting-court-ordered.md`](./creditors-meeting-court-ordered.md)
   — Article 160A: meeting in court-ordered cases.
-- [`creditors-winding-up-liquidator.md`](creditors-winding-up-liquidator.md)
+- [`creditors-winding-up-liquidator.md`](./creditors-winding-up-liquidator.md)
   — Article 161.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

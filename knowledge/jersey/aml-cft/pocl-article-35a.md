@@ -109,8 +109,8 @@ The Article 35A protection works with:
 
 ## Cross-references
 
-- [`pocl-article-32a.md`](pocl-article-32a.md);
-- [`pocl-article-34.md`](pocl-article-34.md);
-- [`pocl-article-36.md`](pocl-article-36.md);
-- [`pocl-part-5-offences.md`](pocl-part-5-offences.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-32a.md`](./pocl-article-32a.md);
+- [`pocl-article-34.md`](./pocl-article-34.md);
+- [`pocl-article-36.md`](./pocl-article-36.md);
+- [`pocl-part-5-offences.md`](./pocl-part-5-offences.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

@@ -43,8 +43,8 @@ Citations to specific articles use **"Article X ITL 1961"** or
 
 ## Cross-references
 
-- [`income-tax-law-1961.md`](income-tax-law-1961.md) — statute
+- [`income-tax-law-1961.md`](./income-tax-law-1961.md) — statute
   overview.
-- [`itl-articles-index.md`](itl-articles-index.md).
+- [`itl-articles-index.md`](./itl-articles-index.md).
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

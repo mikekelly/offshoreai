@@ -108,12 +108,12 @@ prior trustees has a **duty to act**. Options:
 
 - **Sue the prior trustee** for compensation if recovery is realistic.
 - **Apply to the Royal Court** under
-  [Article 51](article-51-directions.md) for directions on the
+  [Article 51](./article-51-directions.md) for directions on the
   proper course (including Beddoe protection if litigation is
   contemplated).
 - **Notify beneficiaries** if appropriate and consistent with the
   *Schmidt v Rosewood* framework (see
-  [`beneficiary-rights.md`](beneficiary-rights.md)).
+  [`beneficiary-rights.md`](./beneficiary-rights.md)).
 
 A trustee who **discovers and ignores** a historic breach risks
 becoming complicit — the duty to remedy carries forward, and inaction
@@ -134,7 +134,7 @@ genuinely sidelined or deceived co-trustee, not for the inattentive.
 Practical hardening:
 
 - **document dissent in writing** — see
-  [`co-trustees-acting-together.md`](co-trustees-acting-together.md)
+  [`co-trustees-acting-together.md`](./co-trustees-acting-together.md)
   and Article 22;
 - **resign** in serious cases — but note Article 19's restrictions
   on simultaneous resignation;
@@ -185,7 +185,7 @@ negligence even with the clearest deed wording.
 ## Court relief — Article 45
 
 Even where a breach is found, the Royal Court has a discretion under
-[Article 45](relief-from-personal-liability.md) to relieve
+[Article 45](./relief-from-personal-liability.md) to relieve
 the trustee from personal liability where the trustee acted **honestly
 and reasonably and ought fairly to be excused**. This is a
 case-by-case discretionary safety valve, not a routine outcome.
@@ -193,7 +193,7 @@ case-by-case discretionary safety valve, not a routine outcome.
 ## Limitation
 
 Breach-of-trust claims are subject to a limitation period under
-[Article 57](limitation-and-prescription.md). The starting
+[Article 57](./limitation-and-prescription.md). The starting
 point is typically the date of the breach (or, for concealed
 breaches, the date of discovery).
 

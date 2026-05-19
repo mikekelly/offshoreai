@@ -121,8 +121,8 @@ A common challenge:
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-article-36.md`](pocl-article-36.md) — permitted
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-article-36.md`](./pocl-article-36.md) — permitted
   information sharing;
 - [`../use-cases/compliance-mlro/tipping-off.md`](../use-cases/compliance-mlro/tipping-off.md);
 - [`../use-cases/international-lawyer/sharing-aml-information.md`](../use-cases/international-lawyer/sharing-aml-information.md).

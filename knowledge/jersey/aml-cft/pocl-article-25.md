@@ -93,7 +93,7 @@ For a Jersey TCB served with a production order:
 
 ## Cross-references
 
-- [`pocl-article-26.md`](pocl-article-26.md);
-- [`pocl-article-29.md`](pocl-article-29.md);
-- [`pocl-part-4-investigations.md`](pocl-part-4-investigations.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-26.md`](./pocl-article-26.md);
+- [`pocl-article-29.md`](./pocl-article-29.md);
+- [`pocl-part-4-investigations.md`](./pocl-part-4-investigations.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

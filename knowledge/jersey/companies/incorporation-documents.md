@@ -115,8 +115,8 @@ the Companies Law, and Article 7 reflects that.
 
 Once incorporated, changes to director particulars or registered
 office must be notified to the Registrar — see
-[`registered-office.md`](registered-office.md) *(planned —
-Article 67)* and [`register-of-directors-secretaries.md`](register-of-directors-secretaries.md)
+[`registered-office.md`](./registered-office.md) *(planned —
+Article 67)* and [`register-of-directors-secretaries.md`](./register-of-directors-secretaries.md)
 *(planned — Article 83)*.
 
 ## Pitfalls

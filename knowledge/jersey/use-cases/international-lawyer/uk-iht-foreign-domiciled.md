@@ -204,4 +204,4 @@ For UK-connected planning:
 ## Cross-references
 
 - [`../family-office-adviser/uk-iht-exposure.md`](../family-office-adviser/uk-iht-exposure.md)
-- [`article-9-firewall.md`](article-9-firewall.md)
+- [`article-9-firewall.md`](./article-9-firewall.md)

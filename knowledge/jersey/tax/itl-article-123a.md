@@ -93,13 +93,13 @@ For 0%-rate companies in MNE groups (€750m+ revenue):
 - **Pillar Two MCIT** applies;
 - **15% minimum** effective rate;
 - **Top-up to 15%** from 0%;
-- See [`pillar-two.md`](pillar-two.md).
+- See [`pillar-two.md`](./pillar-two.md).
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — full regime overview.
-- [`itl-article-123.md`](itl-article-123.md) — charge and
+- [`zero-ten.md`](./zero-ten.md) — full regime overview.
+- [`itl-article-123.md`](./itl-article-123.md) — charge and
   residence.
-- [`pillar-two.md`](pillar-two.md) — Pillar Two MCIT.
+- [`pillar-two.md`](./pillar-two.md) — Pillar Two MCIT.
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

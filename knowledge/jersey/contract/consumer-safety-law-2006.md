@@ -153,7 +153,7 @@ For suppliers:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`sale-of-goods.md`](sale-of-goods.md);
+- [`index.md`](./index.md);
+- [`sale-of-goods.md`](./sale-of-goods.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md);
 - [`../COVERAGE-AUDIT.md`](../COVERAGE-AUDIT.md).

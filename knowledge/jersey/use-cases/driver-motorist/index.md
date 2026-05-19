@@ -100,8 +100,8 @@ for the section index.
 
 ### Worked persona questions
 
-- [**Caught speeding 50 in a 30 — what happens?**](caught-speeding.md)
-- [**What's the drink-drive limit in Jersey?**](drink-drive-limit.md)
+- [**Caught speeding 50 in a 30 — what happens?**](./caught-speeding.md)
+- [**What's the drink-drive limit in Jersey?**](./drink-drive-limit.md)
 
 ## Cross-references
 

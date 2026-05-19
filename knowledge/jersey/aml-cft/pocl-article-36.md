@@ -129,7 +129,7 @@ Article 36 is **Jersey-law specific**:
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-article-35.md`](pocl-article-35.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-article-35.md`](./pocl-article-35.md);
 - [`../use-cases/compliance-mlro/tipping-off.md`](../use-cases/compliance-mlro/tipping-off.md);
 - [`../use-cases/international-lawyer/sharing-aml-information.md`](../use-cases/international-lawyer/sharing-aml-information.md).

@@ -111,9 +111,9 @@ Some changes require **notification** rather than variation:
 
 ## Cross-references
 
-- [`fsl-article-9.md`](fsl-article-9.md);
-- [`fsl-article-10.md`](fsl-article-10.md);
-- [`fsl-article-12.md`](fsl-article-12.md);
-- [`fsl-article-13.md`](fsl-article-13.md);
-- [`fsl-part-3-registration.md`](fsl-part-3-registration.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-article-9.md`](./fsl-article-9.md);
+- [`fsl-article-10.md`](./fsl-article-10.md);
+- [`fsl-article-12.md`](./fsl-article-12.md);
+- [`fsl-article-13.md`](./fsl-article-13.md);
+- [`fsl-part-3-registration.md`](./fsl-part-3-registration.md);
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

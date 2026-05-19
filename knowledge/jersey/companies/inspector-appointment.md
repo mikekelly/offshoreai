@@ -74,8 +74,8 @@ Inspector appointments are **relatively rare** but powerful:
 
 ## Cross-references
 
-- [`investigations.md`](investigations.md) — Part 19 overview.
-- [`inspector-powers.md`](inspector-powers.md) — Article 129:
+- [`investigations.md`](./investigations.md) — Part 19 overview.
+- [`inspector-powers.md`](./inspector-powers.md) — Article 129:
   what inspectors can do.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

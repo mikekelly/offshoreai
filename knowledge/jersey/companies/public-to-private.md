@@ -116,7 +116,7 @@ material-consideration tests.
    status.
 
 The effective-date mechanics are in
-[Article 17B](status-change-effective-date.md).
+[Article 17B](./status-change-effective-date.md).
 
 ## Pitfalls
 

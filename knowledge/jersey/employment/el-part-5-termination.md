@@ -125,6 +125,6 @@ Where employer's conduct entitles employee to resign:
 
 ## Cross-references
 
-- [`el-part-6-unfair-dismissal.md`](el-part-6-unfair-dismissal.md);
-- [`el-part-7-redundancy.md`](el-part-7-redundancy.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-part-6-unfair-dismissal.md`](./el-part-6-unfair-dismissal.md);
+- [`el-part-7-redundancy.md`](./el-part-7-redundancy.md);
+- [`el-articles-index.md`](./el-articles-index.md).

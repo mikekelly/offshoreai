@@ -85,7 +85,7 @@ For Jersey firms:
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-article-34.md`](pocl-article-34.md);
-- [`pocl-article-34a.md`](pocl-article-34a.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-article-34.md`](./pocl-article-34.md);
+- [`pocl-article-34a.md`](./pocl-article-34a.md);
 - [`../use-cases/compliance-mlro/reporting-breaches.md`](../use-cases/compliance-mlro/reporting-breaches.md).

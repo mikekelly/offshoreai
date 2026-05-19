@@ -182,7 +182,7 @@ For both Incubator and Approved Funds:
 Both regimes can be managed by:
 
 - A **BVI Approved Manager** (see
-  [`approved-manager.md`](approved-manager.md));
+  [`approved-manager.md`](./approved-manager.md));
 - A **full-licensed** BVI Investment Business manager;
 - A **foreign-licensed** manager (with FSC notification).
 
@@ -204,11 +204,11 @@ combination is a common emerging-manager stack.
 
 ## Cross-references
 
-- [`funds.md`](funds.md);
-- [`approved-manager.md`](approved-manager.md);
-- [`fsc.md`](fsc.md);
-- [`business-company.md`](business-company.md);
-- [`index.md`](index.md);
+- [`funds.md`](./funds.md);
+- [`approved-manager.md`](./approved-manager.md);
+- [`fsc.md`](./fsc.md);
+- [`business-company.md`](./business-company.md);
+- [`index.md`](./index.md);
 - [`../cayman/private-funds-act.md`](../cayman/private-funds-act.md);
 - [`../jersey/funds/jersey-private-fund.md`](../jersey/funds/jersey-private-fund.md);
 - [`../jersey/funds/expert-fund.md`](../jersey/funds/expert-fund.md).

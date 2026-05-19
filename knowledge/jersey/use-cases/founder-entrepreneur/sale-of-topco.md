@@ -247,6 +247,6 @@ For a sale process:
 
 ## Cross-references
 
-- [`acquisition-mechanics.md`](acquisition-mechanics.md)
+- [`acquisition-mechanics.md`](./acquisition-mechanics.md)
 - [`../../companies/squeeze-out.md`](../../companies/squeeze-out.md)
 - [`../../tax/no-capital-gains-tax.md`](../../tax/no-capital-gains-tax.md)

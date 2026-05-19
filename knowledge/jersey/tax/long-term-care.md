@@ -67,7 +67,7 @@ Jersey current guidance.
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md) — the
+- [`personal-income-tax.md`](./personal-income-tax.md) — the
   associated income-tax charge.
-- [`social-security.md`](social-security.md) — the parallel
+- [`social-security.md`](./social-security.md) — the parallel
   Class 1/2 contribution regime.

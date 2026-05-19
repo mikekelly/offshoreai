@@ -286,9 +286,9 @@ current consolidated Act before drafting.
 
 ## Cross-references
 
-- [`trusts.md`](trusts.md);
-- [`business-company.md`](business-company.md);
-- [`index.md`](index.md);
+- [`trusts.md`](./trusts.md);
+- [`business-company.md`](./business-company.md);
+- [`index.md`](./index.md);
 - [`../cayman/star-trusts.md`](../cayman/star-trusts.md);
 - [`../jersey/trusts/index.md`](../jersey/trusts/index.md);
 - [`../jersey/trusts/reserved-powers.md`](../jersey/trusts/reserved-powers.md);

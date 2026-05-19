@@ -82,7 +82,7 @@ The constituting statute is the **[Financial Services Commission
 
 The detail of the Board's composition, the appointments process, and
 the JFSC's powers and immunities is treated in
-[jfsc-law-1998.md](jfsc-law-1998.md) *(stub at this revision)*.
+[jfsc-law-1998.md](./jfsc-law-1998.md) *(stub at this revision)*.
 
 ## What the JFSC administers
 
@@ -113,7 +113,7 @@ enforcement and (where relevant) to civil financial penalties.
 The Codes — Trust Company Business, Fund Services Business, Investment
 Business, Banking, Insurance, etc. — are listed on the JFSC's codes
 pages and indexed for this corpus in
-[codes-of-practice.md](codes-of-practice.md) *(stub at this revision)*.
+[codes-of-practice.md](./codes-of-practice.md) *(stub at this revision)*.
 
 ## Registries
 

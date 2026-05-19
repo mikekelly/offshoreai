@@ -29,38 +29,38 @@ and ~30 active Articles.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 1 | Interpretation | [wsl-part-1-preliminary.md](wsl-part-1-preliminary.md) |
-| 2 | Movable / immovable distinction | [wsl-article-2.md](wsl-article-2.md) |
-| 3 | Application | [wsl-article-3.md](wsl-article-3.md) |
+| 1 | Interpretation | [wsl-part-1-preliminary.md](./wsl-part-1-preliminary.md) |
+| 2 | Movable / immovable distinction | [wsl-article-2.md](./wsl-article-2.md) |
+| 3 | Application | [wsl-article-3.md](./wsl-article-3.md) |
 
 ## Part 2 — Wills
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 4 | Capacity | [wsl-part-2-wills.md](wsl-part-2-wills.md) |
-| 5 | Formalities | [wsl-article-5.md](wsl-article-5.md) |
-| 6 | Holograph wills | [wsl-article-6.md](wsl-article-6.md) |
-| 7 — 13 | Revocation, mutual wills, foreign wills | [wsl-part-2-wills.md](wsl-part-2-wills.md) |
+| 4 | Capacity | [wsl-part-2-wills.md](./wsl-part-2-wills.md) |
+| 5 | Formalities | [wsl-article-5.md](./wsl-article-5.md) |
+| 6 | Holograph wills | [wsl-article-6.md](./wsl-article-6.md) |
+| 7 — 13 | Revocation, mutual wills, foreign wills | [wsl-part-2-wills.md](./wsl-part-2-wills.md) |
 
 ## Part 3 — Légitime
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 14 | Spouse / partner légitime | [wsl-article-14.md](wsl-article-14.md) |
-| 15 | Children's légitime | [wsl-article-15.md](wsl-article-15.md) |
-| 16 — 20 | Quantum, claims, lifetime gifts | [wsl-part-3-legitime.md](wsl-part-3-legitime.md) |
+| 14 | Spouse / partner légitime | [wsl-article-14.md](./wsl-article-14.md) |
+| 15 | Children's légitime | [wsl-article-15.md](./wsl-article-15.md) |
+| 16 — 20 | Quantum, claims, lifetime gifts | [wsl-part-3-legitime.md](./wsl-part-3-legitime.md) |
 
 ## Part 4 — Intestacy
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 21 — 26 | Intestacy rules, spouse / children / other relatives | [wsl-part-4-intestacy.md](wsl-part-4-intestacy.md) |
+| 21 — 26 | Intestacy rules, spouse / children / other relatives | [wsl-part-4-intestacy.md](./wsl-part-4-intestacy.md) |
 
 ## Part 5 — Conflict of Laws / Miscellaneous
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 27 — 30 | Foreign element, regulations, citation | [wsl-part-5-conflict-of-laws.md](wsl-part-5-conflict-of-laws.md) |
+| 27 — 30 | Foreign element, regulations, citation | [wsl-part-5-conflict-of-laws.md](./wsl-part-5-conflict-of-laws.md) |
 
 ## Status
 

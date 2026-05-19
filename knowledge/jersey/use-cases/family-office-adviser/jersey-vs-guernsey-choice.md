@@ -279,6 +279,6 @@ For a specific family-office matter:
 
 - [`../../../guernsey/index.md`](../../../guernsey/index.md);
 - [`../../../guernsey/jersey-comparison.md`](../../../guernsey/jersey-comparison.md);
-- [`choosing-trustee.md`](choosing-trustee.md);
-- [`working-with-jersey-trustee.md`](working-with-jersey-trustee.md);
-- [`uk-iht-exposure.md`](uk-iht-exposure.md).
+- [`choosing-trustee.md`](./choosing-trustee.md);
+- [`working-with-jersey-trustee.md`](./working-with-jersey-trustee.md);
+- [`uk-iht-exposure.md`](./uk-iht-exposure.md).

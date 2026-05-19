@@ -211,9 +211,9 @@ For commercial:
 
 ## Cross-references
 
-- [`contract-overview.md`](contract-overview.md);
-- [`misrepresentation.md`](misrepresentation.md);
-- [`damages.md`](damages.md);
+- [`contract-overview.md`](./contract-overview.md);
+- [`misrepresentation.md`](./misrepresentation.md);
+- [`damages.md`](./damages.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
 - [`../legal-system/english-law-as-persuasive.md`](../legal-system/english-law-as-persuasive.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

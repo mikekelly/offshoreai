@@ -131,9 +131,9 @@ For practitioners:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`financial-regulation.md`](financial-regulation.md);
+- [`overview.md`](./overview.md);
+- [`financial-regulation.md`](./financial-regulation.md);
 - [`../jersey/financial-regulation/jfsc.md`](../jersey/financial-regulation/jfsc.md);
 - [`../guernsey/gfsc.md`](../guernsey/gfsc.md);
 - [`../isle-of-man/fsa.md`](../isle-of-man/fsa.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

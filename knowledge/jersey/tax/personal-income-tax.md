@@ -120,7 +120,7 @@ presence in the Island and the surrounding facts; the principal status
 categories used by Revenue Jersey are **resident**, **ordinarily
 resident** and **non-resident**. The criteria, day-counting rules and
 implications for foreign-source income are dealt with separately in
-[residence-individuals.md](residence-individuals.md). *(That file is a
+[residence-individuals.md](./residence-individuals.md). *(That file is a
 stub at this revision.)*
 
 ## Foreign-source income
@@ -128,7 +128,7 @@ stub at this revision.)*
 A Jersey **resident and ordinarily resident** individual is taxable on
 worldwide income, with relief for foreign tax suffered under the
 relevant double-taxation agreement where one exists (see
-[international-tax.md](international-tax.md)) or by unilateral relief
+[international-tax.md](./international-tax.md)) or by unilateral relief
 where it does not. A Jersey **resident but not ordinarily resident**
 individual is taxable on Jersey-source income and on foreign income
 brought into Jersey (a remittance-type regime). A **non-resident** is
@@ -140,9 +140,9 @@ Jersey-employment income and Jersey-property income.
 Personal income tax is separate from:
 
 - **Social-security contributions**, payable on earnings up to an
-  annual ceiling; see [social-security.md](social-security.md).
+  annual ceiling; see [social-security.md](./social-security.md).
 - The **Long-Term Care contribution**, collected through the
-  income-tax mechanism; see [long-term-care.md](long-term-care.md).
+  income-tax mechanism; see [long-term-care.md](./long-term-care.md).
 
 For a Jersey-resident employee, the income tax, social-security
 contribution, and LTC contribution are typically deducted at source
@@ -155,7 +155,7 @@ under the 2(1)(e) **High-Value Residency** route. Those individuals
 have a separate tax computation with a **minimum tax contribution**
 each year, intended to ensure that the wealthy newcomer makes a
 material contribution to Jersey revenues. See
-[high-value-residency-tax.md](high-value-residency-tax.md) and the
+[high-value-residency-tax.md](./high-value-residency-tax.md) and the
 [housing-and-work side](../immigration-residency/high-value-residency.md).
 *(Both files are stubs at this revision.)*
 

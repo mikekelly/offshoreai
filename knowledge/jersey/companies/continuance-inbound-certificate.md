@@ -63,7 +63,7 @@ the effective date:
 
 ## Cross-references
 
-- [`continuance-inbound-effect.md`](continuance-inbound-effect.md)
+- [`continuance-inbound-effect.md`](./continuance-inbound-effect.md)
   — Article 127P: legal effect of issue.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

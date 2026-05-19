@@ -107,7 +107,7 @@ For comparison:
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md) — the
+- [`personal-income-tax.md`](./personal-income-tax.md) — the
   ordinary 20% regime.
-- [`residence-individuals.md`](residence-individuals.md) — the
+- [`residence-individuals.md`](./residence-individuals.md) — the
   general residence rules that HVR status modifies.

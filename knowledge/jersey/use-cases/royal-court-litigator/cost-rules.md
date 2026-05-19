@@ -208,6 +208,6 @@ For an active matter:
 
 ## Cross-references
 
-- [`beddoe-application.md`](beddoe-application.md)
-- [`indemnity-costs-trust.md`](indemnity-costs-trust.md)
-- [`personal-vs-estate-costs.md`](personal-vs-estate-costs.md)
+- [`beddoe-application.md`](./beddoe-application.md)
+- [`indemnity-costs-trust.md`](./indemnity-costs-trust.md)
+- [`personal-vs-estate-costs.md`](./personal-vs-estate-costs.md)

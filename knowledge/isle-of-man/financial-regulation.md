@@ -123,12 +123,12 @@ Key IoM industry:
 
 ## Cross-references
 
-- [`fsa.md`](fsa.md);
-- [`overview.md`](overview.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
-- [`egaming.md`](egaming.md);
+- [`fsa.md`](./fsa.md);
+- [`overview.md`](./overview.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
+- [`egaming.md`](./egaming.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -222,11 +222,11 @@ Foreign-resident respondents:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
-- [`divorce-grounds.md`](divorce-grounds.md);
-- [`ancillary-relief.md`](ancillary-relief.md);
-- [`royal-court-family-division.md`](royal-court-family-division.md);
-- [`jurisdiction-and-foreign-orders.md`](jurisdiction-and-foreign-orders.md);
+- [`index.md`](./index.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
+- [`divorce-grounds.md`](./divorce-grounds.md);
+- [`ancillary-relief.md`](./ancillary-relief.md);
+- [`royal-court-family-division.md`](./royal-court-family-division.md);
+- [`jurisdiction-and-foreign-orders.md`](./jurisdiction-and-foreign-orders.md);
 - [`../succession/legitime.md`](../../../jersey/succession/legitime.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

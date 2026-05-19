@@ -149,8 +149,8 @@ A specific-performance order is enforced through:
 
 ## Cross-references
 
-- [`performance-and-breach.md`](performance-and-breach.md);
-- [`damages.md`](damages.md);
-- [`contract-overview.md`](contract-overview.md);
+- [`performance-and-breach.md`](./performance-and-breach.md);
+- [`damages.md`](./damages.md);
+- [`contract-overview.md`](./contract-overview.md);
 - [`../property/contract-passing.md`](../property/contract-passing.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

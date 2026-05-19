@@ -71,5 +71,5 @@ rules.
 
 ## Cross-references
 
-- [`public-funds.md`](public-funds.md) — broader public-fund
+- [`public-funds.md`](./public-funds.md) — broader public-fund
   context.

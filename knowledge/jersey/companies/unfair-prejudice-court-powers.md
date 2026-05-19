@@ -83,9 +83,9 @@ The most-litigated issue in unfair-prejudice cases is the
 
 ## Cross-references
 
-- [`unfair-prejudice-member-application.md`](unfair-prejudice-member-application.md)
+- [`unfair-prejudice-member-application.md`](./unfair-prejudice-member-application.md)
   — Article 141.
-- [`unfair-prejudice-minister-jfsc.md`](unfair-prejudice-minister-jfsc.md)
+- [`unfair-prejudice-minister-jfsc.md`](./unfair-prejudice-minister-jfsc.md)
   — Article 142.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

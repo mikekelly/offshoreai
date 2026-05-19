@@ -78,7 +78,7 @@ for:
 
 ## Failure to file
 
-[Article 109](accounts-compliance-failure.md) addresses the
+[Article 109](./accounts-compliance-failure.md) addresses the
 consequences of failing to comply with the filing requirements:
 
 - **Offences** for the company and directors;

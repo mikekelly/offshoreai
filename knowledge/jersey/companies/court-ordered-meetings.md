@@ -64,7 +64,7 @@ Common scenarios:
   entrenched management.
 
 The power runs in parallel with the JFSC's similar power under
-[Article 88](jfsc-meeting-power.md) — applicants typically choose
+[Article 88](./jfsc-meeting-power.md) — applicants typically choose
 the forum based on the nature of the dispute.
 
 ## Court's discretion

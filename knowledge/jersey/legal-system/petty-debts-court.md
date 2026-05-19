@@ -232,10 +232,10 @@ For a defendant served with a summons:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`magistrates-court.md`](magistrates-court.md);
-- [`royal-court.md`](royal-court.md);
-- [`royal-court-rules.md`](royal-court-rules.md);
+- [`index.md`](./index.md);
+- [`magistrates-court.md`](./magistrates-court.md);
+- [`royal-court.md`](./royal-court.md);
+- [`royal-court-rules.md`](./royal-court-rules.md);
 - [`../residential-tenancy/petty-debts-court-tenancy.md`](../residential-tenancy/petty-debts-court-tenancy.md);
 - [`../residential-tenancy/eviction-procedure.md`](../residential-tenancy/eviction-procedure.md);
 - [`../insolvency/index.md`](../insolvency/index.md);

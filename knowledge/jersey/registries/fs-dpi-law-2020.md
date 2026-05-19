@@ -128,7 +128,7 @@ The Law operates with:
 
 ## Cross-references
 
-- [`beneficial-ownership.md`](beneficial-ownership.md);
+- [`beneficial-ownership.md`](./beneficial-ownership.md);
 - [`../aml-cft/mlo-article-8.md`](../aml-cft/mlo-article-8.md);
-- [`registry-access-procedures.md`](registry-access-procedures.md);
-- [`index.md`](index.md).
+- [`registry-access-procedures.md`](./registry-access-procedures.md);
+- [`index.md`](./index.md).

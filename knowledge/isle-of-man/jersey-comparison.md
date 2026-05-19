@@ -168,12 +168,12 @@ Strong factors favouring IoM:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`tax.md`](tax.md);
-- [`companies.md`](companies.md);
-- [`trusts.md`](trusts.md);
-- [`funds.md`](funds.md);
-- [`insurance.md`](insurance.md);
-- [`egaming.md`](egaming.md);
+- [`overview.md`](./overview.md);
+- [`tax.md`](./tax.md);
+- [`companies.md`](./companies.md);
+- [`trusts.md`](./trusts.md);
+- [`funds.md`](./funds.md);
+- [`insurance.md`](./insurance.md);
+- [`egaming.md`](./egaming.md);
 - [`../jersey/index.md`](../jersey/index.md);
 - [`../guernsey/jersey-comparison.md`](../guernsey/jersey-comparison.md).

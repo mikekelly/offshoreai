@@ -153,7 +153,7 @@ The canonical sources for Jersey:
 | Moneyval                               | AML/CFT mutual-evaluation reports for Jersey                                                 |
 
 A complete and dated canonical-sources list lives in
-[`sources.md`](sources.md).
+[`sources.md`](./sources.md).
 
 ---
 
@@ -164,7 +164,7 @@ agent for a defined set of question types, even though later phases are
 still stubs.
 
 ### Phase 1 — Foundations *(in progress)*
-- Central entry point ([`index.md`](index.md))
+- Central entry point ([`index.md`](./index.md))
 - `government/` — constitutional position and institutions
 - `legal-system/` — courts and sources of law
 - `tax/` — overview, zero-ten, personal tax, GST, social security
@@ -208,10 +208,10 @@ company taxed?", "how does the Royal Court work?" style questions.
 
 | File | Purpose |
 |---|---|
-| [`index.md`](index.md) | LLM entry point — start here when reading the corpus |
-| [`glossary.md`](glossary.md) | Jersey-specific terms and abbreviations |
-| [`sources.md`](sources.md) | Canonical source roots with last-verified dates |
-| [`changelog.md`](changelog.md) | Updates and re-verifications |
+| [`index.md`](./index.md) | LLM entry point — start here when reading the corpus |
+| [`glossary.md`](./glossary.md) | Jersey-specific terms and abbreviations |
+| [`sources.md`](./sources.md) | Canonical source roots with last-verified dates |
+| [`changelog.md`](./changelog.md) | Updates and re-verifications |
 
 ---
 

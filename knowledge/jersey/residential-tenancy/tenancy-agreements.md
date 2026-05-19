@@ -112,9 +112,9 @@ Where there are multiple tenants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`forms-of-tenancy.md`](forms-of-tenancy.md);
-- [`condition-reports.md`](condition-reports.md);
-- [`deposits.md`](deposits.md);
-- [`rent-and-rent-reviews.md`](rent-and-rent-reviews.md).
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`forms-of-tenancy.md`](./forms-of-tenancy.md);
+- [`condition-reports.md`](./condition-reports.md);
+- [`deposits.md`](./deposits.md);
+- [`rent-and-rent-reviews.md`](./rent-and-rent-reviews.md).

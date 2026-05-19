@@ -97,7 +97,7 @@ override foreign tax positions.
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md) — how
+- [`personal-income-tax.md`](./personal-income-tax.md) — how
   trading is taxed (if reclassified).
-- [`no-inheritance-tax.md`](no-inheritance-tax.md) — companion
+- [`no-inheritance-tax.md`](./no-inheritance-tax.md) — companion
   "no-IHT" page.

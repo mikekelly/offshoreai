@@ -204,10 +204,10 @@ Tension between:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`easements-and-rights-of-way.md`](easements-and-rights-of-way.md);
-- [`boundary-disputes.md`](boundary-disputes.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`easements-and-rights-of-way.md`](./easements-and-rights-of-way.md);
+- [`boundary-disputes.md`](./boundary-disputes.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
 - [`../legal-system/normandy-and-jersey-law.md`](../legal-system/normandy-and-jersey-law.md);
 - [`../government/crown-dependency.md`](../government/crown-dependency.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

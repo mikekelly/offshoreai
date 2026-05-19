@@ -128,10 +128,10 @@ by the **share-capital axis**, both set out in the Article 3 cluster.
   profit and certain charity-style vehicles).
 - **Cell companies.** Article 3I defines **incorporated** and
   **protected** cell companies, with the detailed regime in Part 18D
-  (Articles 127YA–127YW). See [cell-companies.md](cell-companies.md).
+  (Articles 127YA–127YW). See [cell-companies.md](./cell-companies.md).
 
 The orthogonal **public / private** classification sits in Part 4 of
-the Law — see [types-of-company.md](types-of-company.md).
+the Law — see [types-of-company.md](./types-of-company.md).
 
 ## Directors' duties — Article 74
 
@@ -151,7 +151,7 @@ floor, not the ceiling.
 Treatment of practical issues — cross-border directorships,
 shadow-director liability, board minutes as evidence of management
 and control for tax and substance purposes — is in
-[directors-duties.md](directors-duties.md).
+[directors-duties.md](./directors-duties.md).
 
 ## Distributions and the solvency test — Part 17 and Article 61A
 
@@ -167,7 +167,7 @@ company's assets will not be less than the amount of its liabilities.
 Failure to support the distribution with a solvency statement renders
 it unlawful and exposes the directors personally to claims by the
 company and its creditors. See
-[distributions-and-solvency-test.md](distributions-and-solvency-test.md).
+[distributions-and-solvency-test.md](./distributions-and-solvency-test.md).
 
 ## Cell companies — Part 18D
 
@@ -185,7 +185,7 @@ companies:
 
 Cell companies are used heavily in **insurance** (segregating
 underwriting books) and in **funds** (segregating sub-funds within a
-single umbrella). See [cell-companies.md](cell-companies.md).
+single umbrella). See [cell-companies.md](./cell-companies.md).
 
 ## Mergers, demergers, continuance — Parts 18A, 18B, 18BA, 18C
 
@@ -201,7 +201,7 @@ The Companies Law allows Jersey companies to:
   a foreign company), or out of Jersey into another jurisdiction
   (emigration), under Part 18C — i.e., corporate **redomiciliation**.
 
-See [mergers-and-continuance.md](mergers-and-continuance.md).
+See [mergers-and-continuance.md](./mergers-and-continuance.md).
 
 ## Unfair prejudice and just-and-equitable winding-up — Part 20
 
@@ -210,7 +210,7 @@ Part 20 for relief on the basis that the company's affairs are
 being or have been conducted in a manner **unfairly prejudicial** to
 the member's interests. The Court has a wide range of remedies,
 including a share-purchase order at a court-determined valuation.
-See [unfair-prejudice.md](unfair-prejudice.md).
+See [unfair-prejudice.md](./unfair-prejudice.md).
 
 ## Economic substance test — Part 20A
 
@@ -232,7 +232,7 @@ Jersey has two principal corporate insolvency / wind-up routes:
 
 A **creditors' winding-up** route also sits within Part 21 and can be
 initiated where a company cannot continue solvent. See
-[winding-up.md](winding-up.md).
+[winding-up.md](./winding-up.md).
 
 ## Relationship with other Laws
 

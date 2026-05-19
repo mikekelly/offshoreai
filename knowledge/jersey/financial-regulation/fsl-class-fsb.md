@@ -159,10 +159,10 @@ Business**. It addresses:
 
 ## Cross-references
 
-- [`fsl-article-2.md`](fsl-article-2.md);
-- [`fsl-article-7.md`](fsl-article-7.md);
-- [`fsl-article-9.md`](fsl-article-9.md);
+- [`fsl-article-2.md`](./fsl-article-2.md);
+- [`fsl-article-7.md`](./fsl-article-7.md);
+- [`fsl-article-9.md`](./fsl-article-9.md);
 - [`../funds/index.md`](../funds/index.md);
 - [`../funds/cifl-articles-index.md`](../funds/cifl-articles-index.md);
 - [`../funds/aifmd-nppr.md`](../funds/aifmd-nppr.md);
-- [`fsl-articles-index.md`](fsl-articles-index.md).
+- [`fsl-articles-index.md`](./fsl-articles-index.md).

@@ -172,7 +172,7 @@ Jersey in-scope groups must:
 
 ## Cross-references
 
-- [`./index.md`](index.md);
+- [`./index.md`](./index.md);
 - [`../tax/zero-ten.md`](../tax/zero-ten.md);
 - [`../tax/itl-articles-index.md`](../tax/itl-articles-index.md);
 - [`../tax/substance-law-2019.md`](../../../jersey/tax/substance-law-2019.md)

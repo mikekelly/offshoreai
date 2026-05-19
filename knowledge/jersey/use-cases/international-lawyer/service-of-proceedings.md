@@ -151,4 +151,4 @@ For active service:
 ## Cross-references
 
 - [`../../legal-system/index.md`](../../legal-system/index.md)
-- [`enforcement-foreign-judgments.md`](enforcement-foreign-judgments.md)
+- [`enforcement-foreign-judgments.md`](./enforcement-foreign-judgments.md)

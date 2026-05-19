@@ -102,7 +102,7 @@ For Jersey-resident shareholders:
 
 ## Cross-references
 
-- [`distributions-and-deemed-distributions.md`](distributions-and-deemed-distributions.md)
-- [`zero-ten.md`](zero-ten.md)
+- [`distributions-and-deemed-distributions.md`](./distributions-and-deemed-distributions.md)
+- [`zero-ten.md`](./zero-ten.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

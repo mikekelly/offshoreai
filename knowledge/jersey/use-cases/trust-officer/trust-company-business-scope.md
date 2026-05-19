@@ -162,5 +162,5 @@ If the activity is TCB:
 ## Cross-references
 
 - [`../../financial-regulation/financial-services-jersey-law-1998.md`](../../financial-regulation/financial-services-jersey-law-1998.md)
-- [`fit-and-proper-changes.md`](fit-and-proper-changes.md)
-- [`ptc.md`](ptc.md)
+- [`fit-and-proper-changes.md`](./fit-and-proper-changes.md)
+- [`ptc.md`](./ptc.md)

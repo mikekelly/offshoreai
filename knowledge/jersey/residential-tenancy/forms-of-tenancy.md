@@ -36,7 +36,7 @@ frequency — monthly rent → monthly periodic tenancy.
 - **Continues indefinitely** until terminated by notice;
 - **Notice periods** — tenant 1 month, landlord 3 months
   (justified) or 12 months (no-fault) — see
-  [`notice-periods.md`](notice-periods.md);
+  [`notice-periods.md`](./notice-periods.md);
 - **Post-2025**: rent capped at RPI, once-yearly increases
   only;
 - **Governed** by the RTJL 2011 throughout.
@@ -104,9 +104,9 @@ Tenancies entered before 15 April 2026:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`residential-tenancy-law-2011.md`](residential-tenancy-law-2011.md);
-- [`2025-amendment-law.md`](2025-amendment-law.md);
-- [`notice-periods.md`](notice-periods.md);
-- [`tenancy-agreements.md`](tenancy-agreements.md);
+- [`index.md`](./index.md);
+- [`residential-tenancy-law-2011.md`](./residential-tenancy-law-2011.md);
+- [`2025-amendment-law.md`](./2025-amendment-law.md);
+- [`notice-periods.md`](./notice-periods.md);
+- [`tenancy-agreements.md`](./tenancy-agreements.md);
 - [`../property/commercial-leases.md`](../property/commercial-leases.md).

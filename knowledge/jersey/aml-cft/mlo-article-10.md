@@ -99,7 +99,7 @@ The JFSC expects:
 
 ## Cross-references
 
-- [`mlo-article-5.md`](mlo-article-5.md);
-- [`mlo-article-9.md`](mlo-article-9.md);
-- [`mlo-article-12.md`](mlo-article-12.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-article-5.md`](./mlo-article-5.md);
+- [`mlo-article-9.md`](./mlo-article-9.md);
+- [`mlo-article-12.md`](./mlo-article-12.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

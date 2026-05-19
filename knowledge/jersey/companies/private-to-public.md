@@ -120,7 +120,7 @@ public status applies from admission.
 
 The third auto-conversion trigger: **circulation of a
 prospectus** (in the Jersey Companies Law sense — see
-[Article 29](prospectuses.md) *(planned)*). A private company
+[Article 29](./prospectuses.md) *(planned)*). A private company
 that issues a prospectus is deemed public from circulation.
 
 ## Court relief

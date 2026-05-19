@@ -66,8 +66,8 @@ The cell-identifier:
 
 ## Cross-references
 
-- [`icc-cell-names.md`](icc-cell-names.md) — Article 127YL:
+- [`icc-cell-names.md`](./icc-cell-names.md) — Article 127YL:
   contrasting ICC naming.
-- [`name-requirements.md`](name-requirements.md) — Article 13.
+- [`name-requirements.md`](./name-requirements.md) — Article 13.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

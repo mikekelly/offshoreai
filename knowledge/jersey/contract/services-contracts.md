@@ -166,10 +166,10 @@ Standard provisions cover:
 
 ## Cross-references
 
-- [`sale-of-goods.md`](sale-of-goods.md);
-- [`agency.md`](agency.md);
-- [`formation.md`](formation.md);
-- [`damages.md`](damages.md);
+- [`sale-of-goods.md`](./sale-of-goods.md);
+- [`agency.md`](./agency.md);
+- [`formation.md`](./formation.md);
+- [`damages.md`](./damages.md);
 - [`../financial-regulation/jfsc-codes-of-practice.md`](../../../jersey/financial-regulation/jfsc-codes-of-practice.md);
 - [`../legal-system/legal-profession.md`](../legal-system/legal-profession.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

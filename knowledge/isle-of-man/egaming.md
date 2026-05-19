@@ -171,9 +171,9 @@ Jersey has **limited** equivalent activity:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`tax.md`](tax.md);
-- [`fsa.md`](fsa.md);
-- [`financial-regulation.md`](financial-regulation.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
-- [`index.md`](index.md).
+- [`overview.md`](./overview.md);
+- [`tax.md`](./tax.md);
+- [`fsa.md`](./fsa.md);
+- [`financial-regulation.md`](./financial-regulation.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
+- [`index.md`](./index.md).

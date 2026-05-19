@@ -129,6 +129,6 @@ Equal-pay claims:
 
 ## Cross-references
 
-- [`dl-part-4-equal-pay.md`](dl-part-4-equal-pay.md);
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-part-4-equal-pay.md`](./dl-part-4-equal-pay.md);
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

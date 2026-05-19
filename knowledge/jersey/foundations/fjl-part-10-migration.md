@@ -118,5 +118,5 @@ Jersey foundations have historically migrated to / from:
 
 - [`../companies/migration.md`](../../../jersey/companies/migration.md)
   *(if exists)* — analogous company continuance regime;
-- [`../foundations/foundations-law-2009.md`](foundations-law-2009.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`../foundations/foundations-law-2009.md`](./foundations-law-2009.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

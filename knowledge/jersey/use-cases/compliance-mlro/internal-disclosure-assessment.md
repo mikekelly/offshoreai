@@ -217,6 +217,6 @@ For programme:
 
 ## Cross-references
 
-- [`filing-a-sar.md`](filing-a-sar.md)
-- [`knowledge-or-suspicion.md`](knowledge-or-suspicion.md)
-- [`tipping-off.md`](tipping-off.md)
+- [`filing-a-sar.md`](./filing-a-sar.md)
+- [`knowledge-or-suspicion.md`](./knowledge-or-suspicion.md)
+- [`tipping-off.md`](./tipping-off.md)

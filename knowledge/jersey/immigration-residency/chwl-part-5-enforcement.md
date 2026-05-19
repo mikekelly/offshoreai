@@ -91,6 +91,6 @@ Common themes in CHWL enforcement:
 
 ## Cross-references
 
-- [`chwl-articles-index.md`](chwl-articles-index.md);
-- [`chwl-article-10.md`](chwl-article-10.md);
-- [`chwl-article-19.md`](chwl-article-19.md).
+- [`chwl-articles-index.md`](./chwl-articles-index.md);
+- [`chwl-article-10.md`](./chwl-article-10.md);
+- [`chwl-article-19.md`](./chwl-article-19.md).

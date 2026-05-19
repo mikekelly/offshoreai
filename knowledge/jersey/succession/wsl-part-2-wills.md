@@ -128,7 +128,7 @@ the testator's lifetime, but:
 
 ## Cross-references
 
-- [`wsl-article-5.md`](wsl-article-5.md);
-- [`wsl-article-6.md`](wsl-article-6.md);
-- [`wsl-part-3-legitime.md`](wsl-part-3-legitime.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-article-5.md`](./wsl-article-5.md);
+- [`wsl-article-6.md`](./wsl-article-6.md);
+- [`wsl-part-3-legitime.md`](./wsl-part-3-legitime.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

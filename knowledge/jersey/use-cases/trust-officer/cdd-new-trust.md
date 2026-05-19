@@ -186,4 +186,4 @@ For onboarding a new trust:
 - [`../../aml-cft/money-laundering-order-2008.md`](../../aml-cft/money-laundering-order-2008.md)
 - [`../../aml-cft/aml-cft-handbook.md`](../../aml-cft/aml-cft-handbook.md)
 - [`../compliance-mlro/customer-due-diligence.md`](../compliance-mlro/customer-due-diligence.md)
-- [`cdd-foundation.md`](cdd-foundation.md)
+- [`cdd-foundation.md`](./cdd-foundation.md)

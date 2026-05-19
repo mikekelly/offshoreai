@@ -112,7 +112,7 @@ The Population Office maintains:
 
 ## Cross-references
 
-- [`chwl-article-10.md`](chwl-article-10.md);
-- [`chwl-part-2-status.md`](chwl-part-2-status.md);
-- [`residential-status-categories.md`](residential-status-categories.md);
-- [`chwl-articles-index.md`](chwl-articles-index.md).
+- [`chwl-article-10.md`](./chwl-article-10.md);
+- [`chwl-part-2-status.md`](./chwl-part-2-status.md);
+- [`residential-status-categories.md`](./residential-status-categories.md);
+- [`chwl-articles-index.md`](./chwl-articles-index.md).

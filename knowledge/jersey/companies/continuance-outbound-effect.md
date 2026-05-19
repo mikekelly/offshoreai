@@ -82,7 +82,7 @@ Crucially:
 
 ## Cross-references
 
-- [`continuance-inbound-effect.md`](continuance-inbound-effect.md)
+- [`continuance-inbound-effect.md`](./continuance-inbound-effect.md)
   — Article 127P: mirror inbound effect.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

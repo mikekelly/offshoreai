@@ -198,5 +198,5 @@ For investigation:
 
 ## Cross-references
 
-- [`finding-court-judgments.md`](finding-court-judgments.md)
+- [`finding-court-judgments.md`](./finding-court-judgments.md)
 - [`../../financial-regulation/enforcement.md`](../../financial-regulation/enforcement.md)

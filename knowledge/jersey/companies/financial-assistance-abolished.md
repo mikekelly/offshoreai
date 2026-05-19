@@ -75,10 +75,10 @@ The rule was widely criticised as:
 Jersey's policy: the underlying mischief is better addressed by:
 
 - **Directors' duties** under
-  [Article 74](directors-duties.md) *(planned)* — directors who
+  [Article 74](./directors-duties.md) *(planned)* — directors who
   authorise financial assistance must act in the company's best
   interests;
-- **Solvency tests** under [Article 115](distribution-restrictions.md)
+- **Solvency tests** under [Article 115](./distribution-restrictions.md)
   *(planned)* and Part 12 capital-reduction rules — preventing
   asset-stripping that leaves the company insolvent;
 - **Insolvency-act clawbacks** under Part 21 — voiding

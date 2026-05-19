@@ -109,14 +109,14 @@ contractual obligation:
 - **Reliance** loss in some cases;
 - **Restitution** in unjust enrichment cases;
 - **Specific** Jersey rules;
-- See [`damages.md`](damages.md).
+- See [`damages.md`](./damages.md).
 
 ### Specific performance
 
 - **Broader** in Jersey than English equity;
 - **Available** for specific categories;
 - **Subject to** practicability and supervision concerns;
-- See [`specific-performance.md`](specific-performance.md).
+- See [`specific-performance.md`](./specific-performance.md).
 
 ### Termination
 
@@ -188,9 +188,9 @@ A contract is **frustrated** when:
 
 ## Cross-references
 
-- [`contract-overview.md`](contract-overview.md);
-- [`formation.md`](formation.md);
-- [`damages.md`](damages.md);
-- [`specific-performance.md`](specific-performance.md);
-- [`misrepresentation.md`](misrepresentation.md);
-- [`index.md`](index.md).
+- [`contract-overview.md`](./contract-overview.md);
+- [`formation.md`](./formation.md);
+- [`damages.md`](./damages.md);
+- [`specific-performance.md`](./specific-performance.md);
+- [`misrepresentation.md`](./misrepresentation.md);
+- [`index.md`](./index.md).

@@ -220,5 +220,5 @@ For appeal consideration:
 
 ## Cross-references
 
-- [`privy-council-leave.md`](privy-council-leave.md)
+- [`privy-council-leave.md`](./privy-council-leave.md)
 - [`../../legal-system/court-of-appeal.md`](../../legal-system/court-of-appeal.md)

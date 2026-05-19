@@ -126,7 +126,7 @@ The **Jersey Bank Depositors Compensation Scheme**:
 - Administered by the **States Treasury** with JFSC
   involvement.
 
-See [`depositor-compensation.md`](depositor-compensation.md)
+See [`depositor-compensation.md`](./depositor-compensation.md)
 for the scheme overview.
 
 ## Cross-jurisdictional resolution
@@ -142,7 +142,7 @@ For Jersey banks that are part of foreign banking groups:
 
 ## Cross-references
 
-- [`bbl-articles-index.md`](bbl-articles-index.md);
-- [`depositor-compensation.md`](depositor-compensation.md);
-- [`bbl-part-4-prudential.md`](bbl-part-4-prudential.md);
-- [`bbl-part-6-enforcement.md`](bbl-part-6-enforcement.md).
+- [`bbl-articles-index.md`](./bbl-articles-index.md);
+- [`depositor-compensation.md`](./depositor-compensation.md);
+- [`bbl-part-4-prudential.md`](./bbl-part-4-prudential.md);
+- [`bbl-part-6-enforcement.md`](./bbl-part-6-enforcement.md).

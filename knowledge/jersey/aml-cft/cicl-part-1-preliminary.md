@@ -74,6 +74,6 @@ CICL operates against the backdrop of:
 
 ## Cross-references
 
-- [`cicl-articles-index.md`](cicl-articles-index.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`safl-articles-index.md`](safl-articles-index.md).
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`safl-articles-index.md`](./safl-articles-index.md).

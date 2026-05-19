@@ -227,11 +227,11 @@ is possible**, Magistrate's Court is appropriate.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`road-traffic-law-1956.md`](road-traffic-law-1956.md);
-- [`honorary-police.md`](honorary-police.md);
-- [`court-procedure.md`](court-procedure.md);
-- [`speeding.md`](speeding.md);
+- [`index.md`](./index.md);
+- [`road-traffic-law-1956.md`](./road-traffic-law-1956.md);
+- [`honorary-police.md`](./honorary-police.md);
+- [`court-procedure.md`](./court-procedure.md);
+- [`speeding.md`](./speeding.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md);
 - [`../government/index.md`](../government/index.md);
 - [`../use-cases/driver-motorist/index.md`](../use-cases/driver-motorist/index.md).

@@ -40,17 +40,17 @@ full Isle of Man practice, engage **Isle of Man advocates**.
 
 | Topic | File |
 |---|---|
-| Isle of Man overview | [overview.md](overview.md) |
-| Jersey comparison | [jersey-comparison.md](jersey-comparison.md) |
-| Isle of Man companies | [companies.md](companies.md) |
-| Isle of Man trusts | [trusts.md](trusts.md) |
-| Isle of Man funds | [funds.md](funds.md) |
-| Isle of Man insurance | [insurance.md](insurance.md) |
-| Isle of Man tax | [tax.md](tax.md) |
-| Isle of Man financial regulation | [financial-regulation.md](financial-regulation.md) |
-| FSA (Isle of Man) | [fsa.md](fsa.md) |
-| Isle of Man legal system | [legal-system.md](legal-system.md) |
-| Isle of Man eGaming | [egaming.md](egaming.md) |
+| Isle of Man overview | [overview.md](./overview.md) |
+| Jersey comparison | [jersey-comparison.md](./jersey-comparison.md) |
+| Isle of Man companies | [companies.md](./companies.md) |
+| Isle of Man trusts | [trusts.md](./trusts.md) |
+| Isle of Man funds | [funds.md](./funds.md) |
+| Isle of Man insurance | [insurance.md](./insurance.md) |
+| Isle of Man tax | [tax.md](./tax.md) |
+| Isle of Man financial regulation | [financial-regulation.md](./financial-regulation.md) |
+| FSA (Isle of Man) | [fsa.md](./fsa.md) |
+| Isle of Man legal system | [legal-system.md](./legal-system.md) |
+| Isle of Man eGaming | [egaming.md](./egaming.md) |
 
 ## Cross-references
 

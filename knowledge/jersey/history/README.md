@@ -1,100 +1,90 @@
 ---
-title: History — Jersey / Channel Islands / Crown Dependencies Industry Trajectories
+title: Jersey History — Sector-Indexed
 status: stable
 last_verified: 2026-05-19
 tags:
   - history
-  - jersey-finance
-  - channel-islands
-  - crown-dependencies
-  - trajectory
+  - jersey
+  - index
 see_also:
-  - ./sources.md
-  - ../frontier/README.md
-  - ../jersey/index.md
+  - ./finance/README.md
+  - ../economy/index.md
+  - ../index.md
 ---
 
-# History
+# Jersey History — Sector-Indexed
 
 ## What this is
 
-A set of **time-horizon narrative documents** tracking the
-trajectory of Jersey's (and the wider Crown Dependencies')
-financial-services industry over four windows:
+The parent index for Jersey's **sector-history** corpus. Each
+sub-directory is a single sector's historical narrative,
+following the discipline of source-cited time-horizon
+retrospectives plus a synthesis layer.
 
-- **Last 2 years** (2024-2026) — recent history; bridges
-  into `frontier/`
-- **Last 5 years** (2021-2026) — strategic memory
-- **Last 10 years** (2016-2026) — structural arc
-- **Last 25 years** (2001-2026) — the modern era
+This directory exists because **Jersey's economy is finance-
+dominant but not finance-exclusive**. The finance sector is
+~38.5% of national income; the remaining ~60% sits across
+real estate, public administration, retail / wholesale,
+construction, digital, hospitality, agriculture, and other
+services. Each of those has its own history, even if only
+some warrant a deep narrative layer in this corpus.
 
-Plus a synthesis:
+For the wider economic picture see
+[`../economy/index.md`](../economy/index.md).
 
-- **Trajectory** — what knits the four horizons together;
-  the "how Jersey got here" story.
+## Sub-directories
 
-## Why this is separate from `frontier/`
+### `finance/` — Jersey Finance Industry history (deep)
 
-| Aspect | `frontier/` | `history/` |
-|---|---|---|
-| **Subject** | Live, in-flight developments | Stable retrospectives |
-| **Decay** | 6-month `expected_decay` discipline | Low decay; revisited as new editions of source reports drop |
-| **Status enum** | `consultation`, `draft`, `in-force`, `pending` | `stable` |
-| **Refresh cadence** | Every 6 months minimum | Annually or when major new source publishes |
-| **Tone** | Forward-looking, change-tracking | Retrospective, pattern-extracting |
+The dominant sector by economic weight. **Built out.** The
+[finance history](./finance/README.md) covers four time-
+horizon retrospectives (last 2 / 5 / 10 / 25 years), a
+"four acts" trajectory synthesis, a regulatory-milestones
+reference (Edwards Report 1998, IMF FSAP 2009, MoneyVal
+4th→5th round), a 45-source bibliography, and a gaps
+catalogue.
 
-The frontier docs answer *"what's happening right now?"*
-The history docs answer *"how did we get here?"* —
-together they bookend the doctrinal corpus.
+Start at [`finance/README.md`](./finance/README.md) and
+[`finance/trajectory.md`](./finance/trajectory.md).
 
-## Source discipline
+### Future sector histories — deferred
 
-Every claim in a history doc cites a named third-party
-source from [`sources.md`](sources.md). The hierarchy
-preferred is:
+These sectors have meaningful historical narratives but are
+not yet built out in this corpus. Flagged in
+[`finance/gaps.md`](./finance/gaps.md) as next-batch
+expansion targets:
 
-1. Supranational regulator (IMF, MoneyVal, OECD)
-2. Top-tier strategy consultancy (Bain, McKinsey, BCG)
-3. Big 4 (KPMG, PwC, Deloitte, EY)
-4. Named research house (Capital Economics, Cebr, Monterey,
-   Z/Yen)
-5. Industry-commissioned (Jersey Finance, TheCityUK)
-6. Counterweight (Tax Justice Network)
+- **Real estate** — high economic weight (~8-10% of GDP);
+  intersects with the finance / wealth-management story;
+  also covers Jersey housing-affordability debates and
+  the population-policy question.
+- **Wholesale / retail** — ~6-8% of GDP; the long arc of
+  Jersey's retail sector through the changing import-duty
+  regime and post-COVID online-retail disruption.
+- **Construction** — ~5-7% of GDP; tied to the property /
+  housing / population story.
+- **Digital sector** — newer (Digital Jersey founded 2013;
+  Innovation Council launched 2025); growth narrative;
+  intersects with finance via tokenisation and FinTech.
+- **Tourism / hospitality** — historically very important;
+  long-term decline from 1960s-80s peak (~3-4% of GDP
+  now); a distinct decline narrative.
+- **Agriculture** — small economic weight (~1-2% of GDP)
+  but iconic to Jersey identity (Jersey Royal potatoes,
+  Jersey cows / dairy); historical narrative if not
+  ongoing economic weight.
 
-See [`sources.md`](sources.md) for the full bibliography.
-
-## File index
-
-Time-horizon narrative documents:
-
-- [x] [`last-2-years.md`](last-2-years.md) (2024-2026)
-- [x] [`last-5-years.md`](last-5-years.md) (2021-2026)
-- [x] [`last-10-years.md`](last-10-years.md) (2016-2026)
-- [x] [`last-25-years.md`](last-25-years.md) (2001-2026)
-- [x] [`trajectory.md`](trajectory.md) — synthesis, the "four acts" story
-- [x] [`sources.md`](sources.md) — bibliography
-- [x] [`gaps.md`](gaps.md) — knowledge-graph gaps exposed
-  by inline-linking the history docs (13 of 14 closed as of
-  2026-05-19)
-- [x] [`regulatory-milestones.md`](regulatory-milestones.md) —
-  consolidated reference on the three foundational
-  regulatory milestones (Edwards 1998, IMF FSAP 2009,
-  MoneyVal 4th→5th round 2016-2024)
-
-## Refresh discipline
-
-Each time-horizon doc carries an `as_of:` and a
-`source_refresh_due:` date in frontmatter. The latter is
-set to "next expected source update" — e.g., when the
-next Bain Global PE Report or MoneyVal report is due.
+Build prioritisation will be driven by demo-relevance and
+agent-capability needs, captured in
+[`finance/gaps.md`](./finance/gaps.md).
 
 ## Cross-references
 
-- [`sources.md`](sources.md) — the bibliography
-- [`../frontier/README.md`](../../frontier/README.md) — live
-  developments
-- [`../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md)
-  — the May 2026 state-of-play snapshot the history docs
-  lead into
-- [`../jersey/index.md`](../index.md) — Jersey
-  doctrinal entry point
+- [`./finance/README.md`](./finance/README.md) — the
+  finance-sector history (the only deep sector history
+  built so far);
+- [`../economy/index.md`](../economy/index.md) — Jersey
+  economy overview with GDP partition by sector;
+- [`../index.md`](../index.md) — Jersey corpus entry point;
+- [`../../../README.md`](../../../README.md) — repo-level
+  README.

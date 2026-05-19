@@ -142,7 +142,7 @@ Foreign creditors:
 
 ## Cross-references
 
-- [`bdl-part-6-discharge.md`](bdl-part-6-discharge.md);
-- [`bdl-article-17.md`](bdl-article-17.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md);
+- [`bdl-part-6-discharge.md`](./bdl-part-6-discharge.md);
+- [`bdl-article-17.md`](./bdl-article-17.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md);
 - [`../trusts/trustee-estate-and-insolvency.md`](../trusts/trustee-estate-and-insolvency.md).

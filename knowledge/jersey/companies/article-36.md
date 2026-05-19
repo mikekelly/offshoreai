@@ -28,8 +28,8 @@ Article 36 of the **[Companies (Jersey) Law 1991][cjl]** is one of
 the small number of provisions whose statutory heading is not
 clearly published in the consolidated text accessed for this
 corpus. It sits within Part 8 (Share Capital) between
-[Article 35](shares-at-discount-abolished.md) (abolition of the
-discount rule) and [Article 37](different-amounts-on-shares.md)
+[Article 35](./shares-at-discount-abolished.md) (abolition of the
+discount rule) and [Article 37](./different-amounts-on-shares.md)
 (provision for different amounts on shares).
 
 ## Status

@@ -84,7 +84,7 @@ progress, unwinding it is complex.
 
 ## Cross-references
 
-- [`bdl-article-3.md`](bdl-article-3.md);
-- [`bdl-article-4.md`](bdl-article-4.md);
-- [`bdl-article-6.md`](bdl-article-6.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-article-3.md`](./bdl-article-3.md);
+- [`bdl-article-4.md`](./bdl-article-4.md);
+- [`bdl-article-6.md`](./bdl-article-6.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

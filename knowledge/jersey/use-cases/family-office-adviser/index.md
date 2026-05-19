@@ -50,43 +50,43 @@ managing succession and intergenerational transfer.
 
 ### Vehicle selection
 
-- [Trust or foundation — how to choose?](trust-or-foundation.md)
-- [When is a Private Trust Company (PTC) right?](when-ptc.md)
-- [Family-office governance overlay — foundation, purpose trust, or holding company?](family-governance-overlay.md)
-- [Underlying portfolio company — Jersey LLC vs partnership vs company?](portfolio-company-vehicle.md)
+- [Trust or foundation — how to choose?](./trust-or-foundation.md)
+- [When is a Private Trust Company (PTC) right?](./when-ptc.md)
+- [Family-office governance overlay — foundation, purpose trust, or holding company?](./family-governance-overlay.md)
+- [Underlying portfolio company — Jersey LLC vs partnership vs company?](./portfolio-company-vehicle.md)
 
 ### Tax characterisation
 
-- [How will my structure be characterised in [home country] for tax purposes?](home-country-tax.md)
-- [UK IHT exposure of a Jersey trust settled by a UK-domiciled settlor](uk-iht-exposure.md)
-- [US grantor-trust treatment of Jersey vehicles](us-grantor-trust.md)
-- [CRS / FATCA reporting on family members](crs-fatca-family.md)
+- [How will my structure be characterised in [home country] for tax purposes?](./home-country-tax.md)
+- [UK IHT exposure of a Jersey trust settled by a UK-domiciled settlor](./uk-iht-exposure.md)
+- [US grantor-trust treatment of Jersey vehicles](./us-grantor-trust.md)
+- [CRS / FATCA reporting on family members](./crs-fatca-family.md)
 
 ### Migration / HVR
 
-- [Should the family member move to Jersey under HVR?](hvr-tax-planning.md)
-- [Jersey property acquisition by HVR family](jersey-property-acquisition.md)
+- [Should the family member move to Jersey under HVR?](./hvr-tax-planning.md)
+- [Jersey property acquisition by HVR family](./jersey-property-acquisition.md)
 
 ### Succession
 
-- [Jersey succession planning — wills and forced heirship](jersey-succession.md)
-- [Intergenerational transfer through Jersey vehicles](intergenerational-transfer.md)
-- [Spouse and minor-children planning](spouse-children-planning.md)
+- [Jersey succession planning — wills and forced heirship](./jersey-succession.md)
+- [Intergenerational transfer through Jersey vehicles](./intergenerational-transfer.md)
+- [Spouse and minor-children planning](./spouse-children-planning.md)
 
 ### Asset protection
 
-- [Asset protection through Jersey vehicles](asset-protection.md) (covers Article 9 firewall, Article 9A reserved powers, pre-divorce / pre-litigation planning)
+- [Asset protection through Jersey vehicles](./asset-protection.md) (covers Article 9 firewall, Article 9A reserved powers, pre-divorce / pre-litigation planning)
 
 ### Charitable / philanthropic
 
-- [Family philanthropic vehicle — Jersey foundation or charitable trust?](philanthropic-vehicle.md)
-- [Granting structures vs operating-charity structures](charitable-vs-operating.md)
+- [Family philanthropic vehicle — Jersey foundation or charitable trust?](./philanthropic-vehicle.md)
+- [Granting structures vs operating-charity structures](./charitable-vs-operating.md)
 
 ### Operational
 
-- [Choosing a Jersey trustee](choosing-trustee.md)
-- [Working with a Jersey trust officer](working-with-jersey-trustee.md)
-- [What a private-client lawyer in [home jurisdiction] needs to know about Jersey trustees and foundations](foreign-lawyer-introduction.md)
+- [Choosing a Jersey trustee](./choosing-trustee.md)
+- [Working with a Jersey trust officer](./working-with-jersey-trustee.md)
+- [What a private-client lawyer in [home jurisdiction] needs to know about Jersey trustees and foundations](./foreign-lawyer-introduction.md)
 
 ## Cross-references
 

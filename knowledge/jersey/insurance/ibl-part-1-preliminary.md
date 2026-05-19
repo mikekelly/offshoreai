@@ -48,11 +48,11 @@ Article 1 defines key terms:
 
 The Law and JFSC Code distinguish between:
 
-- **Permit Category A** — see [category-a-permit.md](category-a-permit.md);
-- **Permit Category B** — see [category-b-permit.md](category-b-permit.md).
+- **Permit Category A** — see [category-a-permit.md](./category-a-permit.md);
+- **Permit Category B** — see [category-b-permit.md](./category-b-permit.md).
 
 ## Cross-references
 
-- [`ibl-article-2.md`](ibl-article-2.md);
-- [`ibl-article-3.md`](ibl-article-3.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-article-2.md`](./ibl-article-2.md);
+- [`ibl-article-3.md`](./ibl-article-3.md);
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

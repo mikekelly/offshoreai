@@ -81,6 +81,6 @@ Jersey foundations are:
 
 ## Cross-references
 
-- [`fjl-articles-index.md`](fjl-articles-index.md);
-- [`foundations-law-2009.md`](foundations-law-2009.md);
-- [`index.md`](index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md);
+- [`foundations-law-2009.md`](./foundations-law-2009.md);
+- [`index.md`](./index.md).

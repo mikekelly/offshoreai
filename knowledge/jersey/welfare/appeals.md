@@ -150,10 +150,10 @@ allowed, but the threshold is high. Don't rely on it.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`income-support-law-2007.md`](income-support-law-2007.md);
-- [`social-security-law-1974.md`](social-security-law-1974.md);
-- [`customer-and-local-services.md`](customer-and-local-services.md);
-- [`fraud-and-overpayment.md`](fraud-and-overpayment.md);
+- [`index.md`](./index.md);
+- [`income-support-law-2007.md`](./income-support-law-2007.md);
+- [`social-security-law-1974.md`](./social-security-law-1974.md);
+- [`customer-and-local-services.md`](./customer-and-local-services.md);
+- [`fraud-and-overpayment.md`](./fraud-and-overpayment.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

@@ -90,7 +90,7 @@ The verbatim definitions (per the consolidated text) include:
   may be exercised" deliberately captures discretionary objects, who
   have no fixed entitlement but are within the supervisory
   jurisdiction of the Royal Court (see
-  [`beneficiary-rights.md`](beneficiary-rights.md)).
+  [`beneficiary-rights.md`](./beneficiary-rights.md)).
 - **"Breach of trust" includes breach of Law-imposed duties.** This
   is the foundation for, e.g., Article 21 (general trustee duties)
   to ground breach-of-trust liability under Article 30 even where
@@ -99,20 +99,20 @@ The verbatim definitions (per the consolidated text) include:
 ## What Article 1 does **not** define
 
 - **"Trust"** is not defined in Article 1; its existence is
-  established by [Article 2](existence-of-a-trust.md) rather than by
+  established by [Article 2](./existence-of-a-trust.md) rather than by
   definitional fiat.
 - **"Protector"** is not defined; the protector role is recognised
   in practice and in the case law but not in Article 1.
 - **"Letter of wishes"** is not defined; its treatment flows from
   case law on confidentiality (see
-  [`beneficiary-rights.md`](beneficiary-rights.md)).
+  [`beneficiary-rights.md`](./beneficiary-rights.md)).
 
 ## Cross-references
 
-- [`existence-of-a-trust.md`](existence-of-a-trust.md) — Article 2,
+- [`existence-of-a-trust.md`](./existence-of-a-trust.md) — Article 2,
   the substantive existence test that "trust" rests on.
-- [`enforcers.md`](enforcers.md) — Article 13, the definition that
+- [`enforcers.md`](./enforcers.md) — Article 13, the definition that
   the Article 1 "enforcer" cross-refers to.
-- [`articles-index.md`](articles-index.md) — full Article list.
+- [`articles-index.md`](./articles-index.md) — full Article list.
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984

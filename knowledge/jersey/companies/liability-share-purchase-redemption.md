@@ -70,8 +70,8 @@ to repay sums they had treated as theirs.
 
 ## Cross-references
 
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A:
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A:
   the solvency-statement regime.
-- [`share-buyback.md`](share-buyback.md) — Article 57.
+- [`share-buyback.md`](./share-buyback.md) — Article 57.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

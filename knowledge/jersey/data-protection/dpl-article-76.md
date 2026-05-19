@@ -92,7 +92,7 @@ For Jersey-regulated entities:
 
 ## Cross-references
 
-- [`dpl-part-7-enforcement.md`](dpl-part-7-enforcement.md);
-- [`dpl-article-43.md`](dpl-article-43.md);
+- [`dpl-part-7-enforcement.md`](./dpl-part-7-enforcement.md);
+- [`dpl-article-43.md`](./dpl-article-43.md);
 - [`../use-cases/compliance-mlro/data-protection-aml-overlap.md`](../use-cases/compliance-mlro/data-protection-aml-overlap.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

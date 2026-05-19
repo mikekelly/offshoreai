@@ -46,7 +46,7 @@ timeframes**.
 ## Why this matters
 
 The Article 95ZB mechanism is the **written-resolution analogue**
-of [Article 89](requisition-of-meetings.md) (requisition of
+of [Article 89](./requisition-of-meetings.md) (requisition of
 meetings):
 
 - A **minority** of members can force consideration of a

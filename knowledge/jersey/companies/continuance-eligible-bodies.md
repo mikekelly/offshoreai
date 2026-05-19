@@ -84,8 +84,8 @@ Article 127H is the eligibility gateway.
 
 ## Cross-references
 
-- [`continuance.md`](continuance.md) — Part 18C overview.
-- [`continuance-restrictions.md`](continuance-restrictions.md) —
+- [`continuance.md`](./continuance.md) — Part 18C overview.
+- [`continuance-restrictions.md`](./continuance-restrictions.md) —
   Article 127I: restrictions.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -120,9 +120,9 @@ In practice:
 
 ## Cross-references
 
-- [`fjl-article-22.md`](fjl-article-22.md);
-- [`fjl-article-23.md`](fjl-article-23.md);
-- [`fjl-article-30.md`](fjl-article-30.md) — beneficiary
+- [`fjl-article-22.md`](./fjl-article-22.md);
+- [`fjl-article-23.md`](./fjl-article-23.md);
+- [`fjl-article-30.md`](./fjl-article-30.md) — beneficiary
   rights;
-- [`fjl-part-5-guardian.md`](fjl-part-5-guardian.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-part-5-guardian.md`](./fjl-part-5-guardian.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

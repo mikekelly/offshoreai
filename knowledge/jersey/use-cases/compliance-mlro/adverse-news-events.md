@@ -202,5 +202,5 @@ For programme:
 
 ## Cross-references
 
-- [`peps-in-customer-base.md`](peps-in-customer-base.md)
-- [`knowledge-or-suspicion.md`](knowledge-or-suspicion.md)
+- [`peps-in-customer-base.md`](./peps-in-customer-base.md)
+- [`knowledge-or-suspicion.md`](./knowledge-or-suspicion.md)

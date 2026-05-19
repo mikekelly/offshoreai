@@ -96,9 +96,9 @@ The IBL requires:
 
 ## Cross-references
 
-- [`ibl-article-20.md`](ibl-article-20.md);
-- [`ibl-part-6-captives.md`](ibl-part-6-captives.md);
+- [`ibl-article-20.md`](./ibl-article-20.md);
+- [`ibl-part-6-captives.md`](./ibl-part-6-captives.md);
 - [`../companies/protected-cell-companies.md`](../../../jersey/companies/protected-cell-companies.md);
 - [`../companies/incorporated-cell-companies.md`](../../../jersey/companies/incorporated-cell-companies.md);
 - [`../guernsey/insurance.md`](../../../jersey/guernsey/insurance.md);
-- [`ibl-articles-index.md`](ibl-articles-index.md).
+- [`ibl-articles-index.md`](./ibl-articles-index.md).

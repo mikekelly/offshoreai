@@ -168,9 +168,9 @@ For tenants:
 
 ## Cross-references
 
-- [`index.md`](index.md);
+- [`index.md`](./index.md);
 - [`../discrimination/index.md`](../discrimination/index.md);
 - [`../discrimination/dl-articles-index.md`](../discrimination/dl-articles-index.md);
-- [`grounds-for-termination.md`](grounds-for-termination.md);
-- [`notice-periods.md`](notice-periods.md);
+- [`grounds-for-termination.md`](./grounds-for-termination.md);
+- [`notice-periods.md`](./notice-periods.md);
 - [`../use-cases/tenant-landlord/index.md`](../use-cases/tenant-landlord/index.md).

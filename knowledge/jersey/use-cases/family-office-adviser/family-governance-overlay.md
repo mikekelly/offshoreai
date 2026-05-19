@@ -194,6 +194,6 @@ For an active family-office consideration:
 
 ## Cross-references
 
-- [`trust-or-foundation.md`](trust-or-foundation.md)
-- [`when-ptc.md`](when-ptc.md)
+- [`trust-or-foundation.md`](./trust-or-foundation.md)
+- [`when-ptc.md`](./when-ptc.md)
 - [`../../foundations/uses.md`](../../foundations/uses.md)

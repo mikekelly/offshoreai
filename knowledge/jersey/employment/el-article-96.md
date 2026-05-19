@@ -91,8 +91,8 @@ The Tribunal does **not** hear:
 
 ## Cross-references
 
-- [`el-part-8-tribunal.md`](el-part-8-tribunal.md);
-- [`el-article-64.md`](el-article-64.md);
+- [`el-part-8-tribunal.md`](./el-part-8-tribunal.md);
+- [`el-article-64.md`](./el-article-64.md);
 - [`../discrimination/dl-articles-index.md`](../discrimination/dl-articles-index.md);
 - [`../legal-system/royal-court.md`](../legal-system/royal-court.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-articles-index.md`](./el-articles-index.md).

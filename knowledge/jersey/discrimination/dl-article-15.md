@@ -120,9 +120,9 @@ Claims by aggrieved customers:
 
 ## Cross-references
 
-- [`dl-article-3.md`](dl-article-3.md);
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-article-10.md`](dl-article-10.md);
-- [`dl-part-3-areas.md`](dl-part-3-areas.md);
-- [`dl-part-5-exemptions.md`](dl-part-5-exemptions.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-article-3.md`](./dl-article-3.md);
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-article-10.md`](./dl-article-10.md);
+- [`dl-part-3-areas.md`](./dl-part-3-areas.md);
+- [`dl-part-5-exemptions.md`](./dl-part-5-exemptions.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

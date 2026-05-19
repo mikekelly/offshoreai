@@ -77,7 +77,7 @@ must:
 - **Have household income and assets** within the
   thresholds.
 
-See [`income-support-eligibility.md`](income-support-eligibility.md).
+See [`income-support-eligibility.md`](./income-support-eligibility.md).
 
 ## Components of Income Support
 
@@ -181,7 +181,7 @@ Decisions can be:
 - **Further appealed** to the Royal Court on points of
   law.
 
-See [`appeals.md`](appeals.md).
+See [`appeals.md`](./appeals.md).
 
 ## Practical recommendations
 
@@ -200,12 +200,12 @@ For those who may be eligible:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`income-support-eligibility.md`](income-support-eligibility.md);
-- [`income-support-components.md`](income-support-components.md);
-- [`work-requirement.md`](work-requirement.md);
-- [`social-security-law-1974.md`](social-security-law-1974.md);
-- [`customer-and-local-services.md`](customer-and-local-services.md);
-- [`appeals.md`](appeals.md);
+- [`index.md`](./index.md);
+- [`income-support-eligibility.md`](./income-support-eligibility.md);
+- [`income-support-components.md`](./income-support-components.md);
+- [`work-requirement.md`](./work-requirement.md);
+- [`social-security-law-1974.md`](./social-security-law-1974.md);
+- [`customer-and-local-services.md`](./customer-and-local-services.md);
+- [`appeals.md`](./appeals.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md);
 - [`../residential-tenancy/index.md`](../residential-tenancy/index.md).

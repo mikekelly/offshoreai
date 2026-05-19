@@ -102,7 +102,7 @@ The DPL applies to processing:
 
 ## Cross-references
 
-- [`dpl-article-2.md`](dpl-article-2.md);
-- [`dpl-article-8.md`](dpl-article-8.md);
-- [`dpl-article-9.md`](dpl-article-9.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-article-2.md`](./dpl-article-2.md);
+- [`dpl-article-8.md`](./dpl-article-8.md);
+- [`dpl-article-9.md`](./dpl-article-9.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

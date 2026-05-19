@@ -98,7 +98,7 @@ Key points:
 
 ## Cross-references
 
-- [`fjl-article-27.md`](fjl-article-27.md) — other persons;
-- [`fjl-articles-index.md`](fjl-articles-index.md);
+- [`fjl-article-27.md`](./fjl-article-27.md) — other persons;
+- [`fjl-articles-index.md`](./fjl-articles-index.md);
 - [`../trusts/article-9a-reserved-powers.md`](../../../jersey/trusts/article-9a-reserved-powers.md)
   — analogous trust regime.

@@ -27,19 +27,29 @@ The corpus has materially grown since this cheat-sheet was
 first drafted on 18 May 2026. New capabilities to leverage
 in the demo:
 
-- **`history/` directory** with five time-horizon
-  retrospectives (last 2 / 5 / 10 / 25 years + trajectory
-  synthesis) — gives senior commercial advisor the
-  "how did Jersey get here" strategic narrative;
-- **`knowledge/jersey/history/sources.md`** with 45 verified
+- **`knowledge/jersey/history/finance/`** with five time-
+  horizon retrospectives (last 2 / 5 / 10 / 25 years +
+  trajectory synthesis) — gives senior commercial advisor
+  the "how did Jersey get here" strategic narrative for
+  the dominant sector; non-finance sectors (real estate,
+  retail, construction, digital, tourism, agriculture)
+  are flagged as expansion targets;
+- **`knowledge/jersey/economy/index.md`** — Jersey's
+  economy in shape and proportion: GDP partition (~40%
+  finance / ~60% everything else) with short summaries
+  of real estate, public sector, retail, construction,
+  digital, tourism, agriculture. Lets the agent give a
+  defensible answer to *"how is Jersey's economy
+  structured?"* without defaulting to *"it's just finance"*;
+- **`knowledge/jersey/history/finance/sources.md`** with 45 verified
   high-reputation sources (IMF, MoneyVal, OECD, Bain,
   McKinsey, BCG, KPMG, PwC, EY, Deloitte, Capgemini,
   Capital Economics, Cebr, TheCityUK, Monterey, Z/Yen,
   Tax Justice Network) — gives the demo source-cited
   rigor;
-- **`knowledge/jersey/history/regulatory-milestones.md`** — Edwards Report
+- **`knowledge/jersey/history/finance/regulatory-milestones.md`** — Edwards Report
   1998, IMF FSAP 2009, MoneyVal 4th→5th round 2016-2024;
-- **`knowledge/jersey/history/gaps.md`** — explicit knowledge-graph gap
+- **`knowledge/jersey/history/finance/gaps.md`** — explicit knowledge-graph gap
   tracking with 13 of 14 closed; the
   **honesty mechanism** is itself a credibility signal;
 - **Continuation funds doctrinal corpus** —
@@ -70,7 +80,7 @@ in the demo:
 > 6 April 2026, and what are Crown Dependencies clients
 > actually doing about it?"**
 
-Pulls from [`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md).
+Pulls from [`knowledge/frontier/uk-carried-interest-reform-2026.md`](./knowledge/frontier/uk-carried-interest-reform-2026.md).
 Demonstrates: currency (effective just last month);
 specific numbers (72.5% multiplier, 34.1% effective
 rate); operator-shaped voice; Crown Dependencies
@@ -79,7 +89,7 @@ residency-planning angle. **Showcase eval PASS.**
 > **"AIFMD II just kicked in — what changed for my
 > Jersey AIFM clients marketing into Germany via NPPR?"**
 
-Pulls from [`knowledge/frontier/aifmd-ii-april-2026.md`](knowledge/frontier/aifmd-ii-april-2026.md).
+Pulls from [`knowledge/frontier/aifmd-ii-april-2026.md`](./knowledge/frontier/aifmd-ii-april-2026.md).
 **Showcase eval PASS.** Identifies the counterintuitive
 positioning (tightened EU delegation makes direct CI
 AIFMs more attractive).
@@ -90,10 +100,10 @@ AIFMs more attractive).
 
 Pulls from BOTH:
 
-- [`knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`](knowledge/frontier/continuation-funds-and-gp-led-secondaries.md)
+- [`knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`](./knowledge/frontier/continuation-funds-and-gp-led-secondaries.md)
   (market dynamics, 46% adoption stat);
-- [`knowledge/jersey/funds/continuation-funds.md`](knowledge/jersey/funds/continuation-funds.md)
-  and [`knowledge/guernsey/continuation-funds.md`](knowledge/guernsey/continuation-funds.md)
+- [`knowledge/jersey/funds/continuation-funds.md`](./knowledge/jersey/funds/continuation-funds.md)
+  and [`knowledge/guernsey/continuation-funds.md`](./knowledge/guernsey/continuation-funds.md)
   (legal architecture, not-a-CIS treatment, 3-business-
   day GFSC approval, transaction structure).
 
@@ -106,7 +116,7 @@ moment** for this audience.
 > **"How did Jersey get to the position it's in now?
 > Walk me through the trajectory."**
 
-Pulls from [`knowledge/jersey/history/trajectory.md`](knowledge/jersey/history/trajectory.md).
+Pulls from [`knowledge/jersey/history/finance/trajectory.md`](./knowledge/jersey/history/finance/trajectory.md).
 **The "four acts"** narrative: Modernisation (2001-2008) →
 Re-regulation (2009-2015) → Build-and-Validate (2016-
 2023) → Validation-and-Offensive-Posture (2024-2026).
@@ -119,15 +129,15 @@ Dependencies cluster; sophistication-over-scale).
 > **"What's the 2016 vs 2024 MoneyVal arc, and what does
 > it mean for Jersey going forward?"**
 
-Pulls from [`knowledge/jersey/history/regulatory-milestones.md`](knowledge/jersey/history/regulatory-milestones.md)
-and [`knowledge/jersey/aml-cft/moneyval.md`](knowledge/jersey/aml-cft/moneyval.md).
+Pulls from [`knowledge/jersey/history/finance/regulatory-milestones.md`](./knowledge/jersey/history/finance/regulatory-milestones.md)
+and [`knowledge/jersey/aml-cft/moneyval.md`](./knowledge/jersey/aml-cft/moneyval.md).
 Clean 8-year narrative: identifiable gaps → top tier.
 Enables the offensive-posture pivot articulated in
-[`knowledge/jersey/financial-regulation/jfsc-strategy-2026-2030.md`](knowledge/jersey/financial-regulation/jfsc-strategy-2026-2030.md).
+[`knowledge/jersey/financial-regulation/jfsc-strategy-2026-2030.md`](./knowledge/jersey/financial-regulation/jfsc-strategy-2026-2030.md).
 
 > **"Show me the source base."**
 
-Pulls from [`knowledge/jersey/history/sources.md`](knowledge/jersey/history/sources.md).
+Pulls from [`knowledge/jersey/history/finance/sources.md`](./knowledge/jersey/history/finance/sources.md).
 45 verified sources organised across nine categories
 (supranational regulator, local regulator/government,
 Jersey-commissioned, Big 4, strategy consulting,
@@ -161,33 +171,33 @@ Showcase `show-cell-companies`, PASS.
 > **"Walk me through setting up a Jersey TopCo above a UK
 > Opco listing on the LSE — the full step-by-step."**
 
-Worked example at [`knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`](knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md).
+Worked example at [`knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`](./knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md).
 9-step structure; UK TCGA s.135 rollover relief;
 zero-ten; Substance Law; MCIT 2025; LSE listing rules.
 
 > **"How do I structure international family wealth
 > through Jersey for an Italian-domiciled HNW client?"**
 
-Worked example at [`knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`](knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md).
+Worked example at [`knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`](./knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md).
 
 > **"My client is a Jersey trust beneficiary. The trustee
 > made a £15m appointment based on wrong tax advice. How
 > do we unwind?"**
 
-Worked example at [`knowledge/jersey/use-cases/international-lawyer/worked-example-contentious-trust-litigation.md`](knowledge/jersey/use-cases/international-lawyer/worked-example-contentious-trust-litigation.md).
+Worked example at [`knowledge/jersey/use-cases/international-lawyer/worked-example-contentious-trust-litigation.md`](./knowledge/jersey/use-cases/international-lawyer/worked-example-contentious-trust-litigation.md).
 
 ## The corpus's structural showcase pieces
 
 ### Top-level synthesis
 
-- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)
+- [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md)
   — comparison matrix across six jurisdictions.
 
-- [`knowledge/jersey/history/trajectory.md`](knowledge/jersey/history/trajectory.md) —
+- [`knowledge/jersey/history/finance/trajectory.md`](./knowledge/jersey/history/finance/trajectory.md) —
   **NEW** — the four-acts narrative + five structural
   through-lines + 2001-vs-2026 position table.
 
-- [`knowledge/frontier/README.md`](knowledge/frontier/README.md) — the
+- [`knowledge/frontier/README.md`](./knowledge/frontier/README.md) — the
   bleeding-edge tracking discipline; explicit `as_of`
   and `expected_decay` frontmatter.
 
@@ -204,20 +214,20 @@ Worked example at [`knowledge/jersey/use-cases/international-lawyer/worked-examp
   — 26 questions covering the top-20 audit gaps;
   **26 PASS** under external measurement.
 
-- [`evals/README.md`](evals/README.md) — the runner
+- [`evals/README.md`](./evals/README.md) — the runner
   methodology. The fact that this exists is itself a
   credibility signal.
 
 ### Source rigor
 
-- [`knowledge/jersey/history/sources.md`](knowledge/jersey/history/sources.md) — **NEW** —
+- [`knowledge/jersey/history/finance/sources.md`](./knowledge/jersey/history/finance/sources.md) — **NEW** —
   45 verified high-reputation sources across nine
   categories. Includes counterweight perspectives (Tax
   Justice Network) for triangulation.
 
 ### Honesty mechanisms
 
-- [`knowledge/jersey/history/gaps.md`](knowledge/jersey/history/gaps.md) — **NEW** —
+- [`knowledge/jersey/history/finance/gaps.md`](./knowledge/jersey/history/finance/gaps.md) — **NEW** —
   explicit knowledge-graph gap catalogue with priority
   tiering. **13 of 14 gaps closed** as of 2026-05-19.
   Demonstrates: the corpus knows what it doesn't know.
@@ -267,8 +277,8 @@ acknowledgement is the right play.
 
 - *"Walk me through QDMTT compliance for a portfolio
   holdco with multiple subsidiary chains."* — corpus
-  now has both [`knowledge/jersey/international/pillar-two-mcit.md`](knowledge/jersey/international/pillar-two-mcit.md)
-  and [`knowledge/bermuda/corporate-income-tax-2023.md`](knowledge/bermuda/corporate-income-tax-2023.md);
+  now has both [`knowledge/jersey/international/pillar-two-mcit.md`](./knowledge/jersey/international/pillar-two-mcit.md)
+  and [`knowledge/bermuda/corporate-income-tax-2023.md`](./knowledge/bermuda/corporate-income-tax-2023.md);
   comparative depth improved; operational PE walkthrough
   still pending.
 
@@ -294,14 +304,14 @@ before. **This will land hardest** because the reform
 took effect one month ago and they're dealing with it
 daily.
 
-Then show [`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md)
+Then show [`knowledge/frontier/uk-carried-interest-reform-2026.md`](./knowledge/frontier/uk-carried-interest-reform-2026.md)
 directly so they see the frontmatter discipline.
 
 ### Demonstrate strategic narrative (5 min — NEW)
 
 This is **the new demo moment** for this audience.
 
-Open [`knowledge/jersey/history/trajectory.md`](knowledge/jersey/history/trajectory.md) and
+Open [`knowledge/jersey/history/finance/trajectory.md`](./knowledge/jersey/history/finance/trajectory.md) and
 walk through the "four acts" narrative briefly. A senior
 PE adviser at KPMG Crown Dependencies will recognise the
 period markers (Edwards Report, IMF FSAP, MoneyVal 4th
@@ -309,7 +319,7 @@ round build-out, MoneyVal 5th round validation, Pillar
 Two, AIFMD II) and the through-lines (transparency arc;
 sophistication-over-scale; defensive-to-offensive pivot).
 
-Then show [`knowledge/jersey/history/sources.md`](knowledge/jersey/history/sources.md) to
+Then show [`knowledge/jersey/history/finance/sources.md`](./knowledge/jersey/history/finance/sources.md) to
 demonstrate that the narrative is source-cited.
 
 ### Demonstrate depth (8 min)
@@ -318,14 +328,14 @@ Pick **one worked example**. Suggest the TopCo IPO
 walkthrough — most directly PE-relevant. Show the file
 and then run the question through the runner.
 
-Then pull up [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)
+Then pull up [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md)
 and show the decision frameworks.
 
 If continuation funds comes up (likely for this
 audience), show **both** the frontier file and the new
 doctrinal files at
-[`knowledge/jersey/funds/continuation-funds.md`](knowledge/jersey/funds/continuation-funds.md)
-and [`knowledge/guernsey/continuation-funds.md`](knowledge/guernsey/continuation-funds.md)
+[`knowledge/jersey/funds/continuation-funds.md`](./knowledge/jersey/funds/continuation-funds.md)
+and [`knowledge/guernsey/continuation-funds.md`](./knowledge/guernsey/continuation-funds.md)
 — demonstrates the architecture: doctrinal corpus for
 the stable legal-architecture layer, frontier for the
 market-dynamics layer.
@@ -341,7 +351,7 @@ This signals **engineering discipline**.
 
 ### Demonstrate honesty (2 min — NEW)
 
-Show [`knowledge/jersey/history/gaps.md`](knowledge/jersey/history/gaps.md). Demonstrate
+Show [`knowledge/jersey/history/finance/gaps.md`](./knowledge/jersey/history/finance/gaps.md). Demonstrate
 that the corpus **explicitly tracks what it doesn't
 know**, with 13 of 14 gaps closed since the catalogue
 was first written one day ago. This is the **single
@@ -395,7 +405,7 @@ Each is roughly 1-2 weeks of work.
 | Captive insurance | ✅ Strong | `show-bermuda-captive` |
 | Life assurance | ✅ Strong | `show-iom-portfolio-bond` |
 | Image rights | ✅ Strong | `show-image-rights` |
-| **Strategic/historical narrative** | ✅ **NEW Strong** | `knowledge/jersey/history/trajectory.md` |
+| **Strategic/historical narrative** | ✅ **NEW Strong** | `knowledge/jersey/history/finance/trajectory.md` |
 | **JFSC Strategy + FSCP** | ✅ **NEW Strong** | Two dedicated concept files |
 | **Innovation Council** | ✅ **NEW Strong** | `knowledge/jersey/financial-regulation/innovation-council.md` |
 | **CARF** | ✅ **NEW Strong** | `knowledge/jersey/international/carf.md` |
@@ -419,7 +429,7 @@ offshore-law search tool":
 - **Measured** — two evals (coverage + showcase) with
   every PASS externally measured;
 - **Honest refusal** — corpus declines to confabulate
-  on gaps and points to the gap catalogue (`knowledge/jersey/history/gaps.md`);
+  on gaps and points to the gap catalogue (`knowledge/jersey/history/finance/gaps.md`);
 - **Cross-jurisdictional** — six jurisdictions with
   comparison matrices;
 - **Threaded** — worked examples weave statute / tax /
@@ -429,7 +439,7 @@ offshore-law search tool":
   McKinsey, BCG, KPMG, PwC, EY, Deloitte, Capgemini,
   Capital Economics, Cebr, TheCityUK, Monterey, Z/Yen,
   Tax Justice Network);
-- **Gap transparency** — `knowledge/jersey/history/gaps.md` explicitly
+- **Gap transparency** — `knowledge/jersey/history/finance/gaps.md` explicitly
   tracks what the graph is missing.
 
 ## Risks to manage
@@ -578,7 +588,7 @@ original cheat-sheet (one day ago):
    layers;
 2. **Source-cited rigor** — 45 verified third-party
    sources cited inline across the history docs;
-3. **Honesty mechanism** — `knowledge/jersey/history/gaps.md` explicitly
+3. **Honesty mechanism** — `knowledge/jersey/history/finance/gaps.md` explicitly
    tracks what's missing, with 13 of 14 closed.
 
 The single biggest **new demo moment** is the strategic-

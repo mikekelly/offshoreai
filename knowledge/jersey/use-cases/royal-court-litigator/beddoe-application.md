@@ -211,5 +211,5 @@ For an active situation:
 
 ## Cross-references
 
-- [`article-51-application.md`](article-51-application.md)
+- [`article-51-application.md`](./article-51-application.md)
 - [`../../trusts/article-51-directions.md`](../../trusts/article-51-directions.md)

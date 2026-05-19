@@ -203,4 +203,4 @@ For existing structures:
 ## Cross-references
 
 - [`../fund-counsel/vehicle-structuring.md`](../fund-counsel/vehicle-structuring.md)
-- [`home-country-tax.md`](home-country-tax.md)
+- [`home-country-tax.md`](./home-country-tax.md)

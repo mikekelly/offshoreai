@@ -105,8 +105,8 @@ Victimisation prohibition is **critical**:
 
 ## Cross-references
 
-- [`dl-article-3.md`](dl-article-3.md);
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-article-5.md`](dl-article-5.md);
-- [`dl-part-2-forms.md`](dl-part-2-forms.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-article-3.md`](./dl-article-3.md);
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-article-5.md`](./dl-article-5.md);
+- [`dl-part-2-forms.md`](./dl-part-2-forms.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

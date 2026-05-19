@@ -68,11 +68,11 @@ mergers under Articles 127FK and 127FL.
 
 ## Cross-references
 
-- [`merger-preregistration-foreign-merged.md`](merger-preregistration-foreign-merged.md)
+- [`merger-preregistration-foreign-merged.md`](./merger-preregistration-foreign-merged.md)
   — Article 127FK: where merged body is not Jersey.
-- [`merger-preregistration-other.md`](merger-preregistration-other.md)
+- [`merger-preregistration-other.md`](./merger-preregistration-other.md)
   — Article 127FL: other cases.
-- [`merger-registration.md`](merger-registration.md) — Article
+- [`merger-registration.md`](./merger-registration.md) — Article
   127FM: registration mechanic.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

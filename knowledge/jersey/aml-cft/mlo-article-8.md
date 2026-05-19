@@ -141,8 +141,8 @@ BO information must be **refreshed**:
 
 ## Cross-references
 
-- [`mlo-article-7.md`](mlo-article-7.md);
-- [`mlo-article-12.md`](mlo-article-12.md);
+- [`mlo-article-7.md`](./mlo-article-7.md);
+- [`mlo-article-12.md`](./mlo-article-12.md);
 - [`../use-cases/compliance-mlro/beneficial-owners-complex.md`](../use-cases/compliance-mlro/beneficial-owners-complex.md);
 - [`../registries/beneficial-ownership.md`](../registries/beneficial-ownership.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

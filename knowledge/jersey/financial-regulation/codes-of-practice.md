@@ -104,9 +104,9 @@ prescribed implementation dates.
 
 ## Cross-references
 
-- [`licensing.md`](licensing.md) — fit-and-proper standards and
+- [`licensing.md`](./licensing.md) — fit-and-proper standards and
   registration.
-- [`enforcement.md`](enforcement.md) — consequences of Code
+- [`enforcement.md`](./enforcement.md) — consequences of Code
   breach.
 - [`../aml-cft/index.md`](../aml-cft/index.md) — the parallel
   AML/CFT Handbook.

@@ -125,7 +125,7 @@ The WSL has been amended periodically:
 
 ## Cross-references
 
-- [`wsl-articles-index.md`](wsl-articles-index.md);
-- [`index.md`](index.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md);
+- [`index.md`](./index.md);
 - [`../use-cases/family-office-adviser/jersey-succession.md`](../use-cases/family-office-adviser/jersey-succession.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md).

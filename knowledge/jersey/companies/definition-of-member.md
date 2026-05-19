@@ -42,7 +42,7 @@ the Law.
   a member of a company, and whose name is entered in its register
   of members, is a member of the company**".
 - **Exception**: protected-cell-company membership rules under
-  [Article 127YQ](protected-cell-company-membership.md) *(planned)*
+  [Article 127YQ](./protected-cell-company-membership.md) *(planned)*
   may modify the position for PCC cells.
 
 (See the consolidated text at [jerseylaw.je][cjl].)
@@ -54,7 +54,7 @@ To be a member, a person must:
 1. **Agree to become a member** — typically by subscribing, by
    accepting a share allotment, or by accepting a transfer; and
 2. **Be entered in the register of members** — the formal record
-   under [Article 41](register-of-members.md) *(planned)*.
+   under [Article 41](./register-of-members.md) *(planned)*.
 
 Both are required. A person who has paid for shares but is not yet
 on the register is **not yet a member** (though may have a
@@ -81,7 +81,7 @@ The beneficial-owner question is handled separately under the
 
 ## Article 48 — "trusts not to be entered on register"
 
-[Article 48](no-trusts-on-register.md) *(planned)* expressly
+[Article 48](./no-trusts-on-register.md) *(planned)* expressly
 states that "trusts" are not to be entered on the register. The
 register shows the **legal holder**, not the underlying
 beneficial-ownership structure.
@@ -116,7 +116,7 @@ A member typically has:
 Protected Cell Companies under Part 18D have specific membership
 mechanics — the PCC itself has members, but cells may have their
 own member relationships. See
-[`cell-companies.md`](cell-companies.md) for the broader context,
+[`cell-companies.md`](./cell-companies.md) for the broader context,
 and Article 127YQ for the specific PCC rules.
 
 ## Pitfalls

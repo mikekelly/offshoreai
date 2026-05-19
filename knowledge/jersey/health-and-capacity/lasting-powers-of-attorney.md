@@ -229,7 +229,7 @@ revoke (typically on safeguarding grounds).
 
 If a person loses capacity without an LPA, family or
 others must apply for a **court-appointed delegate** —
-see [`delegates.md`](delegates.md). This is:
+see [`delegates.md`](./delegates.md). This is:
 
 - **Slower** than using an LPA;
 - **More expensive** (court fees, often legal fees);
@@ -278,13 +278,13 @@ application later.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`capacity-and-self-determination-law-2016.md`](capacity-and-self-determination-law-2016.md);
-- [`capacity-test.md`](capacity-test.md);
-- [`delegates.md`](delegates.md);
-- [`advance-decisions.md`](advance-decisions.md);
-- [`best-interests.md`](best-interests.md);
-- [`protection-division.md`](protection-division.md);
+- [`index.md`](./index.md);
+- [`capacity-and-self-determination-law-2016.md`](./capacity-and-self-determination-law-2016.md);
+- [`capacity-test.md`](./capacity-test.md);
+- [`delegates.md`](./delegates.md);
+- [`advance-decisions.md`](./advance-decisions.md);
+- [`best-interests.md`](./best-interests.md);
+- [`protection-division.md`](./protection-division.md);
 - [`../contract/agency.md`](../contract/agency.md);
 - [`../succession/index.md`](../succession/index.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md);

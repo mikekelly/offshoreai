@@ -129,7 +129,7 @@ including:
 
 ## Cross-references
 
-- [`safl-articles-index.md`](safl-articles-index.md);
-- [`safl-article-20.md`](safl-article-20.md);
-- [`sanctions.md`](sanctions.md);
+- [`safl-articles-index.md`](./safl-articles-index.md);
+- [`safl-article-20.md`](./safl-article-20.md);
+- [`sanctions.md`](./sanctions.md);
 - [`../use-cases/compliance-mlro/sanctions-screening-mlro.md`](../use-cases/compliance-mlro/sanctions-screening-mlro.md).

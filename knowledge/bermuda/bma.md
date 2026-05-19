@@ -132,11 +132,11 @@ For Bermuda regulated entities:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`financial-regulation.md`](financial-regulation.md);
+- [`overview.md`](./overview.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`financial-regulation.md`](./financial-regulation.md);
 - [`../jersey/financial-regulation/jfsc.md`](../jersey/financial-regulation/jfsc.md);
 - [`../cayman/cima.md`](../cayman/cima.md);
 - [`../guernsey/gfsc.md`](../guernsey/gfsc.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

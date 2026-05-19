@@ -47,7 +47,7 @@ Article 1 defines key terms:
 ## Article 2 — Meaning of "deposit-taking business"
 
 This is the **gateway provision** of the BBL — see
-[`bbl-article-2.md`](bbl-article-2.md) for the deep-dive.
+[`bbl-article-2.md`](./bbl-article-2.md) for the deep-dive.
 
 In summary, deposit-taking business consists of:
 
@@ -77,6 +77,6 @@ than every form of money receipt.
 
 ## Cross-references
 
-- [`bbl-article-2.md`](bbl-article-2.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md);
-- [`banking-business-law-1991.md`](banking-business-law-1991.md).
+- [`bbl-article-2.md`](./bbl-article-2.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md);
+- [`banking-business-law-1991.md`](./banking-business-law-1991.md).

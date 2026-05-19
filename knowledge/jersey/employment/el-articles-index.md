@@ -30,60 +30,60 @@ and ~110 active Articles.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 1 | Interpretation | [el-part-1-preliminary.md](el-part-1-preliminary.md) |
-| 2 | Application | [el-part-1-preliminary.md](el-part-1-preliminary.md) |
+| 1 | Interpretation | [el-part-1-preliminary.md](./el-part-1-preliminary.md) |
+| 2 | Application | [el-part-1-preliminary.md](./el-part-1-preliminary.md) |
 
 ## Part 2 — Written Particulars and Pay
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 3 | Statement of written particulars | [el-article-3.md](el-article-3.md) |
-| 4 — 15 | Itemised pay statement, deductions, payslips | [el-part-2-particulars-pay.md](el-part-2-particulars-pay.md) |
+| 3 | Statement of written particulars | [el-article-3.md](./el-article-3.md) |
+| 4 — 15 | Itemised pay statement, deductions, payslips | [el-part-2-particulars-pay.md](./el-part-2-particulars-pay.md) |
 
 ## Part 3 — Minimum Wage
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 16 | Minimum wage | [el-article-16.md](el-article-16.md) |
-| 17 — 22 | Rates, enforcement, records | [el-part-3-minimum-wage.md](el-part-3-minimum-wage.md) |
+| 16 | Minimum wage | [el-article-16.md](./el-article-16.md) |
+| 17 — 22 | Rates, enforcement, records | [el-part-3-minimum-wage.md](./el-part-3-minimum-wage.md) |
 
 ## Part 4 — Working Time and Leave
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 23 — 35 | Working time, holiday, family leave | [el-part-4-leave.md](el-part-4-leave.md) |
+| 23 — 35 | Working time, holiday, family leave | [el-part-4-leave.md](./el-part-4-leave.md) |
 
 ## Part 5 — Termination of Employment
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 36 — 50 | Notice, wrongful dismissal, summary dismissal | [el-part-5-termination.md](el-part-5-termination.md) |
+| 36 — 50 | Notice, wrongful dismissal, summary dismissal | [el-part-5-termination.md](./el-part-5-termination.md) |
 
 ## Part 6 — Unfair Dismissal
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 51 — 63 | Qualifying period, fair reasons | [el-part-6-unfair-dismissal.md](el-part-6-unfair-dismissal.md) |
-| 64 | Right not to be unfairly dismissed | [el-article-64.md](el-article-64.md) |
-| 65 — 78 | Remedies, automatic unfair categories | [el-part-6-unfair-dismissal.md](el-part-6-unfair-dismissal.md) |
+| 51 — 63 | Qualifying period, fair reasons | [el-part-6-unfair-dismissal.md](./el-part-6-unfair-dismissal.md) |
+| 64 | Right not to be unfairly dismissed | [el-article-64.md](./el-article-64.md) |
+| 65 — 78 | Remedies, automatic unfair categories | [el-part-6-unfair-dismissal.md](./el-part-6-unfair-dismissal.md) |
 
 ## Part 7 — Redundancy
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 79 — 95 | Right to redundancy, calculation, consultation | [el-part-7-redundancy.md](el-part-7-redundancy.md) |
+| 79 — 95 | Right to redundancy, calculation, consultation | [el-part-7-redundancy.md](./el-part-7-redundancy.md) |
 
 ## Part 8 — Tribunal
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 96 — 105 | Tribunal jurisdiction, procedure, appeals | [el-part-8-tribunal.md](el-part-8-tribunal.md) |
+| 96 — 105 | Tribunal jurisdiction, procedure, appeals | [el-part-8-tribunal.md](./el-part-8-tribunal.md) |
 
 ## Part 9 — Miscellaneous
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 106 — 110 | Regulations, citation, transitional | [el-part-9-misc.md](el-part-9-misc.md) |
+| 106 — 110 | Regulations, citation, transitional | [el-part-9-misc.md](./el-part-9-misc.md) |
 
 ## Status
 

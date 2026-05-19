@@ -201,4 +201,4 @@ specific positioning within the cluster.
 - [`../use-cases/compliance-mlro/vasp-crypto-customers.md`](../use-cases/compliance-mlro/vasp-crypto-customers.md);
 - [`../../frontier/tokenisation-jersey-2026.md`](../frontier/tokenisation-jersey-2026.md);
 - [`../../frontier/jersey-finance-industry-2026.md`](../frontier/jersey-finance-industry-2026.md);
-- [`../../history/last-2-years.md`](../history/last-2-years.md).
+- [`../../history/last-2-years.md`](../history/finance/last-2-years.md).

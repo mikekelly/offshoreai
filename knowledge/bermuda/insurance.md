@@ -96,7 +96,7 @@ Bermuda has a **multi-class system**:
 - **For ILS / cat bond** transactions;
 - **Fully collateralised** typically;
 - **Specific** regulatory framework;
-- See [`ils.md`](ils.md).
+- See [`ils.md`](./ils.md).
 
 ## Captive insurance
 
@@ -185,12 +185,12 @@ Key Bermuda insurance industry:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`ils.md`](ils.md);
-- [`bma.md`](bma.md);
-- [`companies.md`](companies.md);
-- [`jersey-comparison.md`](jersey-comparison.md);
+- [`overview.md`](./overview.md);
+- [`ils.md`](./ils.md);
+- [`bma.md`](./bma.md);
+- [`companies.md`](./companies.md);
+- [`jersey-comparison.md`](./jersey-comparison.md);
 - [`../jersey/insurance/index.md`](../jersey/insurance/index.md);
 - [`../guernsey/insurance.md`](../guernsey/insurance.md);
 - [`../cayman/insurance.md`](../cayman/insurance.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

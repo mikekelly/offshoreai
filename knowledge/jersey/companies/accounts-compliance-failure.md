@@ -44,13 +44,13 @@ face penalties, including potential **offence status** for
 
 The Article covers failures under any of:
 
-- [Article 103](accounting-records.md) — accounting records;
-- [Article 104](retention-of-records.md) — retention;
-- [Article 105](accounts.md) — accounts preparation;
-- [Article 106](interim-accounts.md) — interim accounts (where
+- [Article 103](./accounting-records.md) — accounting records;
+- [Article 104](./retention-of-records.md) — retention;
+- [Article 105](./accounts.md) — accounts preparation;
+- [Article 106](./interim-accounts.md) — interim accounts (where
   published);
-- [Article 107](copies-of-accounts.md) — copies to members;
-- [Article 108](delivery-of-accounts.md) — delivery to Registrar.
+- [Article 107](./copies-of-accounts.md) — copies to members;
+- [Article 108](./delivery-of-accounts.md) — delivery to Registrar.
 
 ## Consequences
 

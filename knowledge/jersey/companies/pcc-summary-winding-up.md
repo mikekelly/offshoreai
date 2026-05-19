@@ -85,8 +85,8 @@ Regulations or articles) typically involve:
 
 ## Cross-references
 
-- [`pcc-segregation.md`](pcc-segregation.md) — Article 127YT.
-- [`cell-companies-winding-up.md`](cell-companies-winding-up.md)
+- [`pcc-segregation.md`](./pcc-segregation.md) — Article 127YT.
+- [`cell-companies-winding-up.md`](./cell-companies-winding-up.md)
   — Article 127YJ: Part 21 application generally.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

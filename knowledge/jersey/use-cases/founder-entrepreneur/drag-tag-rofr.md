@@ -215,4 +215,4 @@ For a new investment:
 ## Cross-references
 
 - [`../../companies/share-transfer.md`](../../companies/share-transfer.md)
-- [`pre-ipo-jersey.md`](pre-ipo-jersey.md)
+- [`pre-ipo-jersey.md`](./pre-ipo-jersey.md)

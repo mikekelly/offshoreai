@@ -28,7 +28,7 @@ see_also:
 
 Article 74A of the **[Companies (Jersey) Law 1991][cjl]** relaxes
 the strict **self-dealing** prohibition in
-[Article 74](directors-duties.md) for the narrow case of a
+[Article 74](./directors-duties.md) for the narrow case of a
 company with **only one member who is also the sole director**.
 
 ## What Article 74A says
@@ -38,7 +38,7 @@ When a company has:
 - **only one member**; and
 - that member is **also the sole director**;
 
-[Article 74](directors-duties.md) restrictions on **self-dealing
+[Article 74](./directors-duties.md) restrictions on **self-dealing
 contracts** are **relaxed** — provided the contract terms are
 **recorded in writing** or **confirmed in the company's records**.
 
@@ -84,7 +84,7 @@ Article 74A does **not** relax:
 - The **broader directors' duties** (good faith, proper purpose,
   no-profit, care) — these continue to apply;
 - The **solvency-statement requirements** for distributions
-  under [Article 115](distribution-restrictions.md) *(planned)*
+  under [Article 115](./distribution-restrictions.md) *(planned)*
   — the director must still confirm solvency;
 - **Tax obligations** — Revenue Jersey expects arm's-length-type
   documentation even in single-member companies;

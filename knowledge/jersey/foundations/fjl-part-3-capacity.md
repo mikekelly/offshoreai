@@ -78,6 +78,6 @@ Foundations are often used as:
 
 ## Cross-references
 
-- [`fjl-articles-index.md`](fjl-articles-index.md) — full
+- [`fjl-articles-index.md`](./fjl-articles-index.md) — full
   index;
-- [`uses.md`](uses.md) — typical use cases.
+- [`uses.md`](./uses.md) — typical use cases.

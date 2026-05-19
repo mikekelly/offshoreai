@@ -47,11 +47,11 @@ secretaries** recording:
 ## What gets recorded
 
 - For each **natural-person director**: full particulars under
-  [Article 84](director-particulars-natural.md);
+  [Article 84](./director-particulars-natural.md);
 - For each **corporate director**: full particulars under
-  [Article 84A](director-particulars-corporate.md);
+  [Article 84A](./director-particulars-corporate.md);
 - For each **secretary**: full particulars under
-  [Article 85](secretary-particulars.md);
+  [Article 85](./secretary-particulars.md);
 - Dates of **appointment** and **cessation** of office.
 
 ## Where it's kept
@@ -82,11 +82,11 @@ the JFSC's online filing system).
 
 ## Cross-references
 
-- [`director-particulars-natural.md`](director-particulars-natural.md)
+- [`director-particulars-natural.md`](./director-particulars-natural.md)
   — Article 84.
-- [`director-particulars-corporate.md`](director-particulars-corporate.md)
+- [`director-particulars-corporate.md`](./director-particulars-corporate.md)
   — Article 84A.
-- [`secretary-particulars.md`](secretary-particulars.md) —
+- [`secretary-particulars.md`](./secretary-particulars.md) —
   Article 85.
 
 ## Pitfalls

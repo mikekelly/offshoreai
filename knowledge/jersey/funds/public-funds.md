@@ -82,5 +82,5 @@ The prospectus is **JFSC-reviewed** before publication.
 
 - [`../financial-regulation/collective-investment-funds-law-1988.md`](../financial-regulation/collective-investment-funds-law-1988.md)
   — the parent statute.
-- [`jersey-private-fund.md`](jersey-private-fund.md) — the JPF
+- [`jersey-private-fund.md`](./jersey-private-fund.md) — the JPF
   light-touch alternative.

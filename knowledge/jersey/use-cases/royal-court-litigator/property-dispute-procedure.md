@@ -227,4 +227,4 @@ For a property dispute:
 - [`../../property/real-property-succession.md`](../../property/real-property-succession.md);
 - [`../../legal-system/customary-law.md`](../../legal-system/customary-law.md);
 - [`../../legal-system/royal-court-rules.md`](../../legal-system/royal-court-rules.md);
-- [`order-of-justice.md`](order-of-justice.md).
+- [`order-of-justice.md`](./order-of-justice.md).

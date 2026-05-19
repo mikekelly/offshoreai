@@ -148,8 +148,8 @@ Jersey courts apply standard interpretation **presumptions**:
 
 ## Cross-references
 
-- [`sources-of-law.md`](sources-of-law.md);
-- [`english-law-as-persuasive.md`](english-law-as-persuasive.md);
-- [`echr-human-rights.md`](echr-human-rights.md);
-- [`customary-law.md`](customary-law.md);
-- [`index.md`](index.md).
+- [`sources-of-law.md`](./sources-of-law.md);
+- [`english-law-as-persuasive.md`](./english-law-as-persuasive.md);
+- [`echr-human-rights.md`](./echr-human-rights.md);
+- [`customary-law.md`](./customary-law.md);
+- [`index.md`](./index.md).

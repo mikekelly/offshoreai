@@ -34,7 +34,7 @@ see_also:
 
 Jersey's broad-based consumption tax is the **Goods and Services Tax
 (GST)**, introduced by the **Goods and Services Tax (Jersey) Law 2007**
-and administered by [Revenue Jersey](revenue-jersey.md). GST is similar
+and administered by [Revenue Jersey](./revenue-jersey.md). GST is similar
 in mechanism to UK VAT and to other VAT-style taxes, but with a much
 narrower coverage of zero-rated and exempt categories, a lower rate,
 and a specialised regime — the **International Services Entity (ISE)**
@@ -106,7 +106,7 @@ investment businesses and similar are typical ISE registrants.
 
 The mechanics, current annual ISE fee, and eligible-entity definitions
 are dealt with in
-[gst-international-services-entity.md](gst-international-services-entity.md).
+[gst-international-services-entity.md](./gst-international-services-entity.md).
 *(That file is a stub at this revision.)*
 
 ## Imports
@@ -130,7 +130,7 @@ and underpayments carry penalties under the GST Law.
   implementation of an EU directive.
 - Not progressive — the 5% rate is flat across all standard-rated
   supplies.
-- Not a substitute for [stamp duty](stamp-duty.md) on land
+- Not a substitute for [stamp duty](./stamp-duty.md) on land
   transactions, which is a separate charge under separate Laws.
 
 [gov-gst]: https://www.gov.je/TaxesMoney/GST/Pages/default.aspx

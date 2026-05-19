@@ -73,9 +73,9 @@ a standalone.
 
 ## Cross-references
 
-- [`icc-cell-transfer.md`](icc-cell-transfer.md) — Article 127YI:
+- [`icc-cell-transfer.md`](./icc-cell-transfer.md) — Article 127YI:
   transferring a cell from one ICC to another.
-- [`icc-company-becoming-cell.md`](icc-company-becoming-cell.md)
+- [`icc-company-becoming-cell.md`](./icc-company-becoming-cell.md)
   — Article 127YIA: standalone company becoming a cell.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

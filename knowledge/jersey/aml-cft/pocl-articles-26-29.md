@@ -85,6 +85,6 @@ For Jersey service providers facing these orders:
 
 ## Cross-references
 
-- [`pocl-article-25.md`](pocl-article-25.md);
-- [`pocl-part-4-investigations.md`](pocl-part-4-investigations.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-25.md`](./pocl-article-25.md);
+- [`pocl-part-4-investigations.md`](./pocl-part-4-investigations.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

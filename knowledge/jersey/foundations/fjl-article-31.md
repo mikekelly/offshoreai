@@ -116,10 +116,10 @@ When a beneficiary disclaims:
 
 ## Cross-references
 
-- [`fjl-article-28.md`](fjl-article-28.md);
-- [`fjl-article-29.md`](fjl-article-29.md);
-- [`fjl-article-30.md`](fjl-article-30.md);
-- [`fjl-part-7-beneficiaries.md`](fjl-part-7-beneficiaries.md);
+- [`fjl-article-28.md`](./fjl-article-28.md);
+- [`fjl-article-29.md`](./fjl-article-29.md);
+- [`fjl-article-30.md`](./fjl-article-30.md);
+- [`fjl-part-7-beneficiaries.md`](./fjl-part-7-beneficiaries.md);
 - [`../trusts/disclaimer-of-interest.md`](../trusts/disclaimer-of-interest.md)
   — analogous trust provision;
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

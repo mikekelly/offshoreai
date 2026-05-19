@@ -108,6 +108,6 @@ restraint order over client assets:
 
 ## Cross-references
 
-- [`pocl-articles-index.md`](pocl-articles-index.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
 - [`../use-cases/royal-court-litigator/interlocutory-injunctions.md`](../use-cases/royal-court-litigator/interlocutory-injunctions.md).

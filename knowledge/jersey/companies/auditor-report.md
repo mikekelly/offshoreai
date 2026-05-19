@@ -68,8 +68,8 @@ needed. A statement of inability to obtain information is a
 ## Independence
 
 The auditor **confirms independence** — that they are not
-disqualified under [Article 113D](auditor-ineligibility.md) and
-maintained independence under [Article 113E](auditor-independence.md).
+disqualified under [Article 113D](./auditor-ineligibility.md) and
+maintained independence under [Article 113E](./auditor-independence.md).
 
 ## Going concern
 

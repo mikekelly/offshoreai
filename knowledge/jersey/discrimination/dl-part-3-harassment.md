@@ -113,8 +113,8 @@ Harassment claims attract:
 
 ## Cross-references
 
-- [`dl-part-2-forms.md`](dl-part-2-forms.md);
-- [`dl-part-3-areas.md`](dl-part-3-areas.md);
-- [`dl-part-6-enforcement.md`](dl-part-6-enforcement.md);
+- [`dl-part-2-forms.md`](./dl-part-2-forms.md);
+- [`dl-part-3-areas.md`](./dl-part-3-areas.md);
+- [`dl-part-6-enforcement.md`](./dl-part-6-enforcement.md);
 - [`../employment/el-part-6-unfair-dismissal.md`](../employment/el-part-6-unfair-dismissal.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-articles-index.md`](./dl-articles-index.md).

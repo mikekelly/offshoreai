@@ -112,15 +112,15 @@ the offer related accepted those same terms.
 
 ## Cross-references
 
-- [`takeover-offers.md`](takeover-offers.md) — Article 116:
+- [`takeover-offers.md`](./takeover-offers.md) — Article 116:
   definition of takeover offer.
-- [`squeeze-out-effect.md`](squeeze-out-effect.md) — Article 118:
+- [`squeeze-out-effect.md`](./squeeze-out-effect.md) — Article 118:
   effect of the Article 117 notice.
-- [`sell-out.md`](sell-out.md) — Article 119: minority's
+- [`sell-out.md`](./sell-out.md) — Article 119: minority's
   reciprocal right to be bought out.
-- [`takeover-court-applications.md`](takeover-court-applications.md)
+- [`takeover-court-applications.md`](./takeover-court-applications.md)
   — Article 121: court application by dissenting shareholder.
-- [`takeover-associates.md`](takeover-associates.md) — Article
+- [`takeover-associates.md`](./takeover-associates.md) — Article
   123: associates and the 90% computation.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

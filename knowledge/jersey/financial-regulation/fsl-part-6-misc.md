@@ -39,7 +39,7 @@ The Minister may make **Orders** under the Law to:
 
 ## Codes of Practice
 
-See [`fsl-article-19.md`](fsl-article-19.md) — the principal
+See [`fsl-article-19.md`](./fsl-article-19.md) — the principal
 mechanism for detailed conduct standards.
 
 ## Forms and fees
@@ -52,7 +52,7 @@ mechanism for detailed conduct standards.
 
 ## Public register
 
-See [`fsl-part-3-registration.md`](fsl-part-3-registration.md)
+See [`fsl-part-3-registration.md`](./fsl-part-3-registration.md)
 — Article 15 details.
 
 ## Information sharing
@@ -104,12 +104,12 @@ with:
 
 ## Schedules
 
-See [`fsl-schedules.md`](fsl-schedules.md) for the schedules
+See [`fsl-schedules.md`](./fsl-schedules.md) for the schedules
 covering fit-and-proper criteria and activity scopes per
 class.
 
 ## Cross-references
 
-- [`fsl-articles-index.md`](fsl-articles-index.md);
-- [`jfsc.md`](jfsc.md);
-- [`codes-of-practice.md`](codes-of-practice.md).
+- [`fsl-articles-index.md`](./fsl-articles-index.md);
+- [`jfsc.md`](./jfsc.md);
+- [`codes-of-practice.md`](./codes-of-practice.md).

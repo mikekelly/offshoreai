@@ -79,21 +79,21 @@ in detail — it's the trigger for the coverage audit at
 
 ### Specific landlord questions
 
-- ["My tenant won't pay rent — can I just evict them?"](evicting-non-paying-tenant.md)
-- ["My tenant has trashed the place — what about the deposit?"](deposit-dispute-landlord.md)
-- ["Can I refuse to renew?"](non-renewal.md)
+- ["My tenant won't pay rent — can I just evict them?"](./evicting-non-paying-tenant.md)
+- ["My tenant has trashed the place — what about the deposit?"](./deposit-dispute-landlord.md)
+- ["Can I refuse to renew?"](./non-renewal.md)
 
 ### Specific tenant questions
 
-- ["My landlord won't fix the boiler"](repairs-landlord-wont-act.md)
-- ["I got a notice — is it valid?"](checking-notice-validity.md)
-- ["My deposit hasn't been returned"](deposit-dispute-tenant.md)
+- ["My landlord won't fix the boiler"](./repairs-landlord-wont-act.md)
+- ["I got a notice — is it valid?"](./checking-notice-validity.md)
+- ["My deposit hasn't been returned"](./deposit-dispute-tenant.md)
 
 ## Where to start
 
 1. **[`../../residential-tenancy/index.md`](../../residential-tenancy/index.md)** — the residential tenancy section index;
 2. **[`../../residential-tenancy/residential-tenancy-law-2011.md`](../../residential-tenancy/residential-tenancy-law-2011.md)** — RTJL overview;
-3. **[evicting-non-paying-tenant.md](evicting-non-paying-tenant.md)** — the worked example that triggered this build-out.
+3. **[evicting-non-paying-tenant.md](./evicting-non-paying-tenant.md)** — the worked example that triggered this build-out.
 
 ## Cross-references
 

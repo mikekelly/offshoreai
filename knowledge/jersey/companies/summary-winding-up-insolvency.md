@@ -71,9 +71,9 @@ system when initial assumptions turn out wrong.
 
 ## Cross-references
 
-- [`creditors-winding-up-application.md`](creditors-winding-up-application.md)
+- [`creditors-winding-up-application.md`](./creditors-winding-up-application.md)
   — Article 156: Chapter 4 procedure.
-- [`summary-winding-up-desastre.md`](summary-winding-up-desastre.md)
+- [`summary-winding-up-desastre.md`](./summary-winding-up-desastre.md)
   — Article 154A: désastre alternative.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

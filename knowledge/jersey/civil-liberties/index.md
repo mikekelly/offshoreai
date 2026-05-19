@@ -63,24 +63,24 @@ foundational civic-rights statutes that affect:
 
 ### Freedom of Information
 
-- [`foi-law-2011.md`](foi-law-2011.md) — FOI 2011 overview
-- [`foi-scheduled-public-authorities.md`](foi-scheduled-public-authorities.md) — who is subject
-- [`foi-exemptions.md`](foi-exemptions.md) — qualified vs absolute exemptions
-- [`foi-procedure-and-appeals.md`](foi-procedure-and-appeals.md) — request → internal review → Information Commissioner → Royal Court
-- [`information-commissioner.md`](information-commissioner.md) — the JOIC's FOI role
+- [`foi-law-2011.md`](./foi-law-2011.md) — FOI 2011 overview
+- [`foi-scheduled-public-authorities.md`](./foi-scheduled-public-authorities.md) — who is subject
+- [`foi-exemptions.md`](./foi-exemptions.md) — qualified vs absolute exemptions
+- [`foi-procedure-and-appeals.md`](./foi-procedure-and-appeals.md) — request → internal review → Information Commissioner → Royal Court
+- [`information-commissioner.md`](./information-commissioner.md) — the JOIC's FOI role
 
 ### Investigatory Powers
 
-- [`ripl-law-2005.md`](ripl-law-2005.md) — RIPL 2005 overview
-- [`interception-of-communications.md`](interception-of-communications.md) — including postal interception
-- [`covert-surveillance.md`](covert-surveillance.md) — directed and intrusive surveillance
-- [`covert-human-intelligence-sources.md`](covert-human-intelligence-sources.md) — CHIS regime
-- [`investigatory-powers-commissioner.md`](investigatory-powers-commissioner.md) — oversight role
+- [`ripl-law-2005.md`](./ripl-law-2005.md) — RIPL 2005 overview
+- [`interception-of-communications.md`](./interception-of-communications.md) — including postal interception
+- [`covert-surveillance.md`](./covert-surveillance.md) — directed and intrusive surveillance
+- [`covert-human-intelligence-sources.md`](./covert-human-intelligence-sources.md) — CHIS regime
+- [`investigatory-powers-commissioner.md`](./investigatory-powers-commissioner.md) — oversight role
 
 ### Cross-cutting
 
-- [`human-rights-overlay.md`](human-rights-overlay.md) — how ECHR principles bear on civil liberties
-- [`relationship-with-data-protection.md`](relationship-with-data-protection.md) — DPL interaction
+- [`human-rights-overlay.md`](./human-rights-overlay.md) — how ECHR principles bear on civil liberties
+- [`relationship-with-data-protection.md`](./relationship-with-data-protection.md) — DPL interaction
 
 ## At a glance
 

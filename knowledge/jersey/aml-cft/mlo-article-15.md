@@ -109,8 +109,8 @@ obligation.
 
 ## Cross-references
 
-- [`mlo-article-14.md`](mlo-article-14.md);
-- [`mlo-article-16.md`](mlo-article-16.md);
-- [`pocl-article-32a.md`](pocl-article-32a.md);
-- [`pocl-article-34a.md`](pocl-article-34a.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md).
+- [`mlo-article-14.md`](./mlo-article-14.md);
+- [`mlo-article-16.md`](./mlo-article-16.md);
+- [`pocl-article-32a.md`](./pocl-article-32a.md);
+- [`pocl-article-34a.md`](./pocl-article-34a.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md).

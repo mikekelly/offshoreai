@@ -58,7 +58,7 @@ officer in the parish. Centeniers:
 
 - Conduct **Parish Hall Enquiries** for offences arising
   in their parish — see
-  [`parish-hall-enquiries.md`](parish-hall-enquiries.md);
+  [`parish-hall-enquiries.md`](./parish-hall-enquiries.md);
 - Have powers of **arrest and charge** under prescribed
   conditions;
 - **Present cases** at the Magistrate's Court for matters
@@ -141,9 +141,9 @@ distinct.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`parish-hall-enquiries.md`](parish-hall-enquiries.md);
-- [`court-procedure.md`](court-procedure.md);
+- [`index.md`](./index.md);
+- [`parish-hall-enquiries.md`](./parish-hall-enquiries.md);
+- [`court-procedure.md`](./court-procedure.md);
 - [`../government/index.md`](../government/index.md);
 - [`../legal-system/magistrates-court.md`](../legal-system/magistrates-court.md);
 - [`../glossary.md`](../glossary.md).

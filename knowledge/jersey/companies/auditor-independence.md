@@ -98,9 +98,9 @@ Modern audit firms manage independence through:
 
 ## Cross-references
 
-- [`auditor-ineligibility.md`](auditor-ineligibility.md) —
+- [`auditor-ineligibility.md`](./auditor-ineligibility.md) —
   Article 113D: ineligibility includes independence failures.
-- [`auditor-independence-failure.md`](auditor-independence-failure.md)
+- [`auditor-independence-failure.md`](./auditor-independence-failure.md)
   — Article 113F: what happens when independence is lost.
 
 ## Pitfalls

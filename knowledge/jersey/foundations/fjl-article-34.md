@@ -113,9 +113,9 @@ information:
 
 ## Cross-references
 
-- [`fjl-article-32.md`](fjl-article-32.md);
-- [`fjl-article-33.md`](fjl-article-33.md);
-- [`fjl-part-8-administration.md`](fjl-part-8-administration.md);
-- [`fjl-part-13-misc.md`](fjl-part-13-misc.md);
+- [`fjl-article-32.md`](./fjl-article-32.md);
+- [`fjl-article-33.md`](./fjl-article-33.md);
+- [`fjl-part-8-administration.md`](./fjl-part-8-administration.md);
+- [`fjl-part-13-misc.md`](./fjl-part-13-misc.md);
 - [`../registries/fs-dpi-law-2020.md`](../registries/fs-dpi-law-2020.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

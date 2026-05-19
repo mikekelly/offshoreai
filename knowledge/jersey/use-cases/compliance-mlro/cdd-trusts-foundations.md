@@ -199,7 +199,7 @@ must identify **controlling persons**:
 
 ## Cross-references
 
-- [`customer-due-diligence.md`](customer-due-diligence.md)
-- [`beneficial-owners-complex.md`](beneficial-owners-complex.md)
+- [`customer-due-diligence.md`](./customer-due-diligence.md)
+- [`beneficial-owners-complex.md`](./beneficial-owners-complex.md)
 - [`../trust-officer/cdd-new-trust.md`](../trust-officer/cdd-new-trust.md)
 - [`../trust-officer/cdd-foundation.md`](../trust-officer/cdd-foundation.md)

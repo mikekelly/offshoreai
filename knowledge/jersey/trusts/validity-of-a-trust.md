@@ -32,8 +32,8 @@ see_also:
 
 Article 11 of the **[Trusts (Jersey) Law 1984][tjl]** is the
 **validity** provision. It works in conjunction with
-[Article 3](recognition-of-a-trust.md) (recognition) and
-[Article 2](existence-of-a-trust.md) (existence) to establish that a
+[Article 3](./recognition-of-a-trust.md) (recognition) and
+[Article 2](./existence-of-a-trust.md) (existence) to establish that a
 Jersey trust is binding unless an identified vitiating factor applies.
 
 ## What Article 11 says
@@ -64,9 +64,9 @@ any other rule that prohibits the trustee's intended action.
 
 A trust must have **someone or something** to enforce it. The
 ordinary route is **beneficiaries** (Articles 2 and 10). The
-purpose-trust route is open under [Article 12](purpose-trusts.md),
+purpose-trust route is open under [Article 12](./purpose-trusts.md),
 but only if the deed provides for an **enforcer** under
-[Article 13](enforcers.md) and the purpose is one Article 12 permits.
+[Article 13](./enforcers.md) and the purpose is one Article 12 permits.
 
 A non-charitable purpose trust without an enforcer fails Article 11.
 
@@ -76,7 +76,7 @@ A trust created under duress (the settlor was compelled to settle) or
 procured by fraud (e.g., the settlor was misrepresented to about
 material facts) is voidable on application by the affected person.
 The Article 11 ground sits alongside the Articles 47C–H
-**mistake-based set-aside** regime — see [`article-47-set-aside.md`](article-47-set-aside.md)
+**mistake-based set-aside** regime — see [`article-47-set-aside.md`](./article-47-set-aside.md)
 — and the choice between Article 11 invalidity and Articles 47B–H
 set-aside depends on the nature of the vitiating factor.
 
@@ -111,7 +111,7 @@ made by:
 - the **settlor** (or the settlor's personal representative);
 - a **trustee** (where the trustee is concerned that the trust is
   invalid and seeks Court guidance — typically via an
-  [Article 51 directions](article-51-directions.md) application);
+  [Article 51 directions](./article-51-directions.md) application);
 - a **beneficiary**;
 - in appropriate cases, the **Attorney General** (for charitable
   trusts and public-interest matters).
@@ -131,7 +131,7 @@ made by:
 - **Article 9 firewall protects against foreign-law invalidity
   challenges.** A foreign-law rule of forced heirship cannot ground
   Article 11 invalidity in Jersey, because Article 9 disapplies the
-  foreign rule — see [`firewall.md`](firewall.md).
+  foreign rule — see [`firewall.md`](./firewall.md).
 
 [tjl]: https://www.jerseylaw.je/laws/current/l_11_1984
 [pocl]: https://www.jerseylaw.je/laws/unofficialconsolidated/Pages/08.780.aspx

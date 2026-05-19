@@ -181,7 +181,7 @@ the Capacity and Self-Determination Law 2016).
 ## The Mental Health Review Tribunal
 
 The independent appeal forum — see
-[`mental-health-tribunal.md`](mental-health-tribunal.md).
+[`mental-health-tribunal.md`](./mental-health-tribunal.md).
 
 Composed of:
 
@@ -231,13 +231,13 @@ The Minister has issued a statutory Code of Practice:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`compulsory-admission.md`](compulsory-admission.md);
-- [`consent-to-treatment.md`](consent-to-treatment.md);
-- [`mental-health-tribunal.md`](mental-health-tribunal.md);
-- [`nearest-relative.md`](nearest-relative.md);
-- [`guardianship.md`](guardianship.md);
-- [`capacity-and-self-determination-law-2016.md`](capacity-and-self-determination-law-2016.md);
+- [`index.md`](./index.md);
+- [`compulsory-admission.md`](./compulsory-admission.md);
+- [`consent-to-treatment.md`](./consent-to-treatment.md);
+- [`mental-health-tribunal.md`](./mental-health-tribunal.md);
+- [`nearest-relative.md`](./nearest-relative.md);
+- [`guardianship.md`](./guardianship.md);
+- [`capacity-and-self-determination-law-2016.md`](./capacity-and-self-determination-law-2016.md);
 - [`../legal-system/echr-human-rights.md`](../legal-system/echr-human-rights.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

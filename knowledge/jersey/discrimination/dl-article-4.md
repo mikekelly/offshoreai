@@ -138,8 +138,8 @@ If discrimination proven:
 
 ## Cross-references
 
-- [`dl-article-3.md`](dl-article-3.md);
-- [`dl-article-10.md`](dl-article-10.md);
-- [`dl-part-2-forms.md`](dl-part-2-forms.md);
-- [`dl-part-6-enforcement.md`](dl-part-6-enforcement.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-article-3.md`](./dl-article-3.md);
+- [`dl-article-10.md`](./dl-article-10.md);
+- [`dl-part-2-forms.md`](./dl-part-2-forms.md);
+- [`dl-part-6-enforcement.md`](./dl-part-6-enforcement.md);
+- [`dl-articles-index.md`](./dl-articles-index.md).

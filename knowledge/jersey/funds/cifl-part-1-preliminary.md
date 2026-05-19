@@ -49,7 +49,7 @@ Key definitions:
 
 ## Article 3 — Functionaries
 
-See [`cifl-article-3.md`](cifl-article-3.md) for the deep-dive
+See [`cifl-article-3.md`](./cifl-article-3.md) for the deep-dive
 on the functionary regime.
 
 ## Public vs non-public funds
@@ -66,6 +66,6 @@ investors).
 
 ## Cross-references
 
-- [`cifl-article-2.md`](cifl-article-2.md);
-- [`cifl-article-3.md`](cifl-article-3.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-article-2.md`](./cifl-article-2.md);
+- [`cifl-article-3.md`](./cifl-article-3.md);
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

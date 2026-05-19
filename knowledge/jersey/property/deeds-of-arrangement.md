@@ -196,12 +196,12 @@ Historical primogeniture rule:
 
 ## Cross-references
 
-- [`real-property-overview.md`](real-property-overview.md);
-- [`restrictive-covenants.md`](restrictive-covenants.md);
-- [`servitudes.md`](servitudes.md);
-- [`contract-passing.md`](contract-passing.md);
-- [`real-property-succession.md`](real-property-succession.md);
+- [`real-property-overview.md`](./real-property-overview.md);
+- [`restrictive-covenants.md`](./restrictive-covenants.md);
+- [`servitudes.md`](./servitudes.md);
+- [`contract-passing.md`](./contract-passing.md);
+- [`real-property-succession.md`](./real-property-succession.md);
 - [`../succession/index.md`](../succession/index.md);
 - [`../legal-system/customary-law.md`](../legal-system/customary-law.md);
 - [`../registries/land-registry.md`](../registries/land-registry.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

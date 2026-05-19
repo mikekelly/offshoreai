@@ -53,7 +53,7 @@ The mechanics:
    typically requires a two-thirds majority (or the deed's higher
    threshold) of votes cast on the resolution.
 3. **Name availability check** — the new name must satisfy
-   [Article 13](name-requirements.md) requirements.
+   [Article 13](./name-requirements.md) requirements.
 4. **Filing** of the resolution with the Registrar, with the
    memorandum amendment reflecting the new name.
 5. **New certificate** — the Registrar issues an **altered
@@ -108,7 +108,7 @@ The process typically takes a few business days to a week.
 - **Operating under the old name** after the effective date —
   contracts and correspondence should switch to the new name
   promptly to avoid name-on-correspondence offences
-  ([Article 69](name-on-correspondence.md) *(planned)*).
+  ([Article 69](./name-on-correspondence.md) *(planned)*).
 - **Missing the 14-day land-registration notification** — should
   be on the post-change checklist for property-holding companies.
 - **Forgetting third-party updates** — banks, registries,

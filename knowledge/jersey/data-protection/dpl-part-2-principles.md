@@ -97,8 +97,8 @@ demonstrate compliance with**, the principles:
 
 ## Cross-references
 
-- [`dpl-article-8.md`](dpl-article-8.md);
-- [`dpl-article-9.md`](dpl-article-9.md);
-- [`dpl-part-3-rights.md`](dpl-part-3-rights.md);
-- [`dpl-part-4-controller-processor.md`](dpl-part-4-controller-processor.md);
-- [`dpl-articles-index.md`](dpl-articles-index.md).
+- [`dpl-article-8.md`](./dpl-article-8.md);
+- [`dpl-article-9.md`](./dpl-article-9.md);
+- [`dpl-part-3-rights.md`](./dpl-part-3-rights.md);
+- [`dpl-part-4-controller-processor.md`](./dpl-part-4-controller-processor.md);
+- [`dpl-articles-index.md`](./dpl-articles-index.md).

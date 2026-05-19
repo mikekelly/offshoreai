@@ -74,8 +74,8 @@ where there is dispute about:
 
 ## Cross-references
 
-- [`sell-out.md`](sell-out.md) — Article 119: triggering right.
-- [`takeover-court-applications.md`](takeover-court-applications.md)
+- [`sell-out.md`](./sell-out.md) — Article 119: triggering right.
+- [`takeover-court-applications.md`](./takeover-court-applications.md)
   — Article 121: court applications.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

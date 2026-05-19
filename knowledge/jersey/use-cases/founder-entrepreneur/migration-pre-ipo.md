@@ -197,4 +197,4 @@ For a pre-IPO migration:
 ## Cross-references
 
 - [`../../companies/continuance.md`](../../companies/continuance.md)
-- [`pre-ipo-jersey.md`](pre-ipo-jersey.md)
+- [`pre-ipo-jersey.md`](./pre-ipo-jersey.md)

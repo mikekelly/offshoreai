@@ -190,5 +190,5 @@ For a founder TopCo:
 ## Cross-references
 
 - [`../../tax/economic-substance.md`](../../tax/economic-substance.md)
-- [`topco-tax.md`](topco-tax.md)
-- [`why-jersey-topco.md`](why-jersey-topco.md)
+- [`topco-tax.md`](./topco-tax.md)
+- [`why-jersey-topco.md`](./why-jersey-topco.md)

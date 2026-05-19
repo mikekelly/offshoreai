@@ -91,7 +91,7 @@ A person can avoid Article 32 liability by:
 
 ## Cross-references
 
-- [`pocl-article-30.md`](pocl-article-30.md);
-- [`pocl-article-31.md`](pocl-article-31.md);
-- [`pocl-article-32a.md`](pocl-article-32a.md);
+- [`pocl-article-30.md`](./pocl-article-30.md);
+- [`pocl-article-31.md`](./pocl-article-31.md);
+- [`pocl-article-32a.md`](./pocl-article-32a.md);
 - [`../use-cases/compliance-mlro/consent-requests.md`](../use-cases/compliance-mlro/consent-requests.md).

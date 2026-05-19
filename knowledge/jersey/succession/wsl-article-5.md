@@ -74,7 +74,7 @@ In addition to the formal witnessed will, Jersey recognises
 - **Entirely handwritten** by the testator;
 - **Dated** and **signed** by the testator;
 - **No witnesses** required;
-- See [`wsl-article-6.md`](wsl-article-6.md).
+- See [`wsl-article-6.md`](./wsl-article-6.md).
 
 ## Specific scenarios
 
@@ -134,6 +134,6 @@ previous will if not revoked).
 
 ## Cross-references
 
-- [`wsl-article-6.md`](wsl-article-6.md);
-- [`wsl-part-2-wills.md`](wsl-part-2-wills.md);
-- [`wsl-articles-index.md`](wsl-articles-index.md).
+- [`wsl-article-6.md`](./wsl-article-6.md);
+- [`wsl-part-2-wills.md`](./wsl-part-2-wills.md);
+- [`wsl-articles-index.md`](./wsl-articles-index.md).

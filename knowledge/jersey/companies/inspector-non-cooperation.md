@@ -74,7 +74,7 @@ The detail is in the Article and related case law.
 
 ## Cross-references
 
-- [`inspector-obstruction.md`](inspector-obstruction.md) — Article
+- [`inspector-obstruction.md`](./inspector-obstruction.md) — Article
   133.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

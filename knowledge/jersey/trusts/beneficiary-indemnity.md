@@ -111,7 +111,7 @@ breach may have only a proportionate part impounded.
 
 ## Interaction with beneficiary release under Article 30
 
-[Article 30](breach-of-trust-liability.md) provides that
+[Article 30](./breach-of-trust-liability.md) provides that
 beneficiaries may **release** the trustee from liability if they
 have capacity and full knowledge. Article 46 deals with a different
 scenario:

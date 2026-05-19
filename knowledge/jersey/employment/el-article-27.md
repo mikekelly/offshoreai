@@ -79,5 +79,5 @@ Holiday accrues:
 
 ## Cross-references
 
-- [`el-part-4-leave.md`](el-part-4-leave.md);
-- [`el-articles-index.md`](el-articles-index.md).
+- [`el-part-4-leave.md`](./el-part-4-leave.md);
+- [`el-articles-index.md`](./el-articles-index.md).

@@ -55,7 +55,7 @@ Shares have a **nominal value** stated in the memorandum
 amount on their shares — once shares are fully paid, member
 liability is effectively zero.
 
-See [Article 3E par-value companies](par-value-companies.md).
+See [Article 3E par-value companies](./par-value-companies.md).
 
 ### 2. No-par-value limited by shares
 
@@ -64,7 +64,7 @@ the company decides to charge. Members are liable to the company
 for unpaid amounts on their shares; once issued and paid for in
 full, member liability is again zero.
 
-See [Article 3F no-par-value companies](no-par-value-companies.md).
+See [Article 3F no-par-value companies](./no-par-value-companies.md).
 This is the **modern default** in Jersey practice.
 
 ### 3. Guarantee
@@ -73,7 +73,7 @@ Members agree to contribute up to a **specified amount** if the
 company is wound up. There are no shares; members are guarantors.
 Used for not-for-profit and certain charity-style vehicles.
 
-See [Article 3G guarantee companies](guarantee-companies.md).
+See [Article 3G guarantee companies](./guarantee-companies.md).
 
 ## Why limited liability matters
 
@@ -90,7 +90,7 @@ corporate practice and underlies the use of Jersey companies as:
 
 ## Contrast with unlimited
 
-An **unlimited company** under [Article 3D](unlimited-companies.md)
+An **unlimited company** under [Article 3D](./unlimited-companies.md)
 has no limit on member liability — members are personally liable
 for the company's debts on wind-up. Unlimited Jersey companies are
 rare and used for specific structuring reasons (typically tax

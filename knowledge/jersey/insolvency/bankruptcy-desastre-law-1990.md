@@ -156,8 +156,8 @@ jurisdiction and treaty arrangements.
 
 ## Cross-references
 
-- [`bdl-articles-index.md`](bdl-articles-index.md);
-- [`index.md`](index.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md);
+- [`index.md`](./index.md);
 - [`../companies/summary-winding-up-insolvency.md`](../companies/summary-winding-up-insolvency.md);
 - [`../companies/creditors-winding-up-desastre-application.md`](../companies/creditors-winding-up-desastre-application.md);
 - [`../trusts/trustee-estate-and-insolvency.md`](../trusts/trustee-estate-and-insolvency.md).

@@ -68,7 +68,7 @@ Article 127YDA reflects this commercial reality and ensures that:
 
 ## Cross-references
 
-- [`icc-cell-status.md`](icc-cell-status.md) — Article 127YD:
+- [`icc-cell-status.md`](./icc-cell-status.md) — Article 127YD:
   cells as separate legal persons.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

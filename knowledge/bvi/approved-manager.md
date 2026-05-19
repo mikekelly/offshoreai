@@ -212,10 +212,10 @@ when AUM justifies it.
 
 ## Cross-references
 
-- [`financial-regulation.md`](financial-regulation.md);
-- [`funds.md`](funds.md);
-- [`fsc.md`](fsc.md);
-- [`business-company.md`](business-company.md);
-- [`index.md`](index.md);
+- [`financial-regulation.md`](./financial-regulation.md);
+- [`funds.md`](./funds.md);
+- [`fsc.md`](./fsc.md);
+- [`business-company.md`](./business-company.md);
+- [`index.md`](./index.md);
 - [`../cayman/cima.md`](../cayman/cima.md);
 - [`../jersey/financial-regulation/index.md`](../jersey/financial-regulation/index.md).

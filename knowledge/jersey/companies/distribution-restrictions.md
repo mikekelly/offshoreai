@@ -46,7 +46,7 @@ A company may only make distributions if:
    as they become due**.
 
 The solvency-assessment mechanism **parallels
-[Article 61A](solvency-statement.md)'s** framework for capital
+[Article 61A](./solvency-statement.md)'s** framework for capital
 reductions.
 
 (See the consolidated text at [jerseylaw.je][cjl].)
@@ -78,7 +78,7 @@ Article 61A practice.
 ## The solvency statement
 
 The mechanism is parallel to
-[Article 61A](solvency-statement.md):
+[Article 61A](./solvency-statement.md):
 
 - **All directors** sign;
 - **Statutory declaration** typically accompanies;
@@ -107,7 +107,7 @@ TopCo would be blocked.
 ## What types of distribution
 
 Article 115 applies to any "distribution" within the
-[Article 114](distribution-definition.md) definition:
+[Article 114](./distribution-definition.md) definition:
 
 - **Cash dividends**;
 - **In-specie distributions**;
@@ -120,7 +120,7 @@ Article 115 applies to any "distribution" within the
 
 A distribution made **without** the solvency statement, or where
 the statement is **knowingly false**, is **unlawful** under
-[Article 115A](unlawful-distribution-consequences.md):
+[Article 115A](./unlawful-distribution-consequences.md):
 
 - **Members must repay** the unlawful distribution;
 - **Directors face personal liability**;
@@ -128,7 +128,7 @@ the statement is **knowingly false**, is **unlawful** under
 
 ## Court order — Article 115ZA
 
-[Article 115ZA](distribution-retrospective-order.md) provides for
+[Article 115ZA](./distribution-retrospective-order.md) provides for
 a **court order treating a distribution as made in accordance
 with Article 115** — useful for **rectifying** technical
 deficiencies in the procedural compliance with the solvency-
@@ -137,13 +137,13 @@ satisfied.
 
 ## Cross-references
 
-- [`distribution-definition.md`](distribution-definition.md) —
+- [`distribution-definition.md`](./distribution-definition.md) —
   Article 114: what counts as a "distribution".
-- [`solvency-statement.md`](solvency-statement.md) — Article 61A:
+- [`solvency-statement.md`](./solvency-statement.md) — Article 61A:
   the parallel mechanism for capital reduction.
-- [`unlawful-distribution-consequences.md`](unlawful-distribution-consequences.md)
+- [`unlawful-distribution-consequences.md`](./unlawful-distribution-consequences.md)
   — Article 115A.
-- [`distribution-retrospective-order.md`](distribution-retrospective-order.md)
+- [`distribution-retrospective-order.md`](./distribution-retrospective-order.md)
   — Article 115ZA.
 
 ## Pitfalls

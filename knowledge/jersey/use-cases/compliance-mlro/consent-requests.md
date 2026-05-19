@@ -175,6 +175,6 @@ For programme:
 
 ## Cross-references
 
-- [`filing-a-sar.md`](filing-a-sar.md)
-- [`tipping-off.md`](tipping-off.md)
+- [`filing-a-sar.md`](./filing-a-sar.md)
+- [`tipping-off.md`](./tipping-off.md)
 - [`../../aml-cft/proceeds-of-crime-law-1999.md`](../../aml-cft/proceeds-of-crime-law-1999.md)

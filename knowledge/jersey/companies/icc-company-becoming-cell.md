@@ -70,7 +70,7 @@ contracts and assets continue with the same legal entity.
 
 ## Cross-references
 
-- [`icc-cell-incorporation-independence.md`](icc-cell-incorporation-independence.md)
+- [`icc-cell-incorporation-independence.md`](./icc-cell-incorporation-independence.md)
   — Article 127YH: opposite direction (cell becoming standalone).
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

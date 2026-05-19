@@ -67,12 +67,12 @@ director's acts remain valid as against the third party.
 
 The provision works alongside:
 
-- [Article 19](no-implied-notice.md) — no implied notice of
+- [Article 19](./no-implied-notice.md) — no implied notice of
   Registry records, so the third party isn't deemed to know of
   internal defects;
-- [Article 67C](evidence-of-authorization.md) — evidence of
+- [Article 67C](./evidence-of-authorization.md) — evidence of
   authorisation via seal or authorised signature;
-- [Article 18](corporate-capacity.md) — corporate-capacity
+- [Article 18](./corporate-capacity.md) — corporate-capacity
   unlimited by deed.
 
 The four together form the **third-party-protection package** in
@@ -85,7 +85,7 @@ investigate the internal authorisation chain.
 Article 80 doesn't cure the **internal** consequences:
 
 - A director who **acts while disqualified** still faces
-  [Article 79](disqualified-personal-liability.md) personal
+  [Article 79](./disqualified-personal-liability.md) personal
   liability;
 - An **improperly-appointed director** may still have personal
   liability to the company;

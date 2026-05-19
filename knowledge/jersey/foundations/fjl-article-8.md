@@ -76,7 +76,7 @@ A refused name can be appealed:
 
 ## Cross-references
 
-- [`fjl-part-2-establishment.md`](fjl-part-2-establishment.md);
-- [`fjl-article-9.md`](fjl-article-9.md);
-- [`fjl-article-4.md`](fjl-article-4.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-part-2-establishment.md`](./fjl-part-2-establishment.md);
+- [`fjl-article-9.md`](./fjl-article-9.md);
+- [`fjl-article-4.md`](./fjl-article-4.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

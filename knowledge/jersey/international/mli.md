@@ -150,12 +150,12 @@ Test the structure against:
 ## DTAs affected
 
 All of Jersey's bilateral DTAs are subject to MLI modification
-where compatible. See [`dtas.md`](dtas.md) for the list of
+where compatible. See [`dtas.md`](./dtas.md) for the list of
 DTAs.
 
 ## Cross-references
 
-- [`./index.md`](index.md);
-- [`./dtas.md`](dtas.md);
-- [`./beps-overview.md`](beps-overview.md);
+- [`./index.md`](./index.md);
+- [`./dtas.md`](./dtas.md);
+- [`./beps-overview.md`](./beps-overview.md);
 - [`../tax/itl-parts-14-14b-double-tax.md`](../tax/itl-parts-14-14b-double-tax.md).

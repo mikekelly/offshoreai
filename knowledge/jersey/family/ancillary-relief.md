@@ -234,11 +234,11 @@ option.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
-- [`divorce-procedure.md`](divorce-procedure.md);
-- [`spousal-maintenance.md`](spousal-maintenance.md);
-- [`prenuptial-agreements.md`](prenuptial-agreements.md);
+- [`index.md`](./index.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
+- [`divorce-procedure.md`](./divorce-procedure.md);
+- [`spousal-maintenance.md`](./spousal-maintenance.md);
+- [`prenuptial-agreements.md`](./prenuptial-agreements.md);
 - [`../trusts/firewall.md`](../trusts/firewall.md);
 - [`../trusts/article-9.md`](../../../jersey/trusts/article-9.md);
 - [`../succession/legitime.md`](../../../jersey/succession/legitime.md);

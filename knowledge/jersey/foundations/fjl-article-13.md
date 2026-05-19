@@ -99,7 +99,7 @@ To avoid ultra vires issues:
 
 ## Cross-references
 
-- [`fjl-article-12.md`](fjl-article-12.md);
-- [`fjl-article-14.md`](fjl-article-14.md);
-- [`fjl-article-45.md`](fjl-article-45.md);
-- [`fjl-articles-index.md`](fjl-articles-index.md).
+- [`fjl-article-12.md`](./fjl-article-12.md);
+- [`fjl-article-14.md`](./fjl-article-14.md);
+- [`fjl-article-45.md`](./fjl-article-45.md);
+- [`fjl-articles-index.md`](./fjl-articles-index.md).

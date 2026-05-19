@@ -132,7 +132,7 @@ MLA requests are typically **confidential**:
 
 ## Cross-references
 
-- [`cicl-article-5.md`](cicl-article-5.md);
-- [`cicl-article-13.md`](cicl-article-13.md);
-- [`cicl-articles-index.md`](cicl-articles-index.md);
+- [`cicl-article-5.md`](./cicl-article-5.md);
+- [`cicl-article-13.md`](./cicl-article-13.md);
+- [`cicl-articles-index.md`](./cicl-articles-index.md);
 - [`../use-cases/royal-court-litigator/letters-of-request.md`](../use-cases/royal-court-litigator/letters-of-request.md).

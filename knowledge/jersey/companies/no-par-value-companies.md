@@ -54,13 +54,13 @@ Par-value companies have **share premium accounts** that hold the
 excess of issue price over nominal value. The share premium
 account has specific use restrictions (it can be used for certain
 purposes but not freely distributed). No-par-value companies have
-a **stated capital account** ([Article 39A](stated-capital.md))
+a **stated capital account** ([Article 39A](./stated-capital.md))
 that is more flexible.
 
 ### 2. Simpler distributions
 
 Distributions from a no-par-value company are governed by the
-cash-flow solvency test in [Article 115](distribution-restrictions.md)
+cash-flow solvency test in [Article 115](./distribution-restrictions.md)
 with **no separate test** for the source (premium vs profits) —
 the directors simply confirm solvency and the distribution can
 proceed.
@@ -69,7 +69,7 @@ proceed.
 
 A no-par-value company can issue shares in any currency the
 directors choose, without the par-value-based currency-conversion
-complications. [Article 38B](currency-conversion-rate.md) provides
+complications. [Article 38B](./currency-conversion-rate.md) provides
 the conversion mechanics.
 
 ### 4. International familiarity
@@ -103,8 +103,8 @@ each issue.
 
 A newly-incorporated Jersey private company is almost always:
 
-- **private** ([Article 3B](private-companies.md));
-- **limited by shares** ([Article 3C](limited-companies.md));
+- **private** ([Article 3B](./private-companies.md));
+- **limited by shares** ([Article 3C](./limited-companies.md));
 - **no-par-value** (Article 3F).
 
 This is the operational default; departures need a specific

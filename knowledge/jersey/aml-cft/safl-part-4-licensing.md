@@ -99,6 +99,6 @@ A transaction often needs **multiple** licences in parallel.
 
 ## Cross-references
 
-- [`safl-article-15.md`](safl-article-15.md);
-- [`safl-articles-index.md`](safl-articles-index.md);
+- [`safl-article-15.md`](./safl-article-15.md);
+- [`safl-articles-index.md`](./safl-articles-index.md);
 - [`../use-cases/compliance-mlro/sanctions-licences.md`](../use-cases/compliance-mlro/sanctions-licences.md).

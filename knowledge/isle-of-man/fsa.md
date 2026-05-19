@@ -120,7 +120,7 @@ The FSA maintains a **Rule Book**:
 - **Not** under FSA;
 - **Specific** Manx eGaming licensing regime.
 
-See [`egaming.md`](egaming.md).
+See [`egaming.md`](./egaming.md).
 
 ## Comparison with sister regulators
 
@@ -134,8 +134,8 @@ See [`egaming.md`](egaming.md).
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`financial-regulation.md`](financial-regulation.md);
+- [`overview.md`](./overview.md);
+- [`financial-regulation.md`](./financial-regulation.md);
 - [`../jersey/financial-regulation/jfsc.md`](../jersey/financial-regulation/jfsc.md);
 - [`../guernsey/gfsc.md`](../guernsey/gfsc.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

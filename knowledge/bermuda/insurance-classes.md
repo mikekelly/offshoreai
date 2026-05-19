@@ -75,7 +75,7 @@ should be checked for definitive parameters):
 A **Class 3B / 4 / Special Purpose Insurer (SPI)** is
 used principally for **ILS structures** (cat bonds,
 collateralised reinsurance, sidecars) — see
-[`ils.md`](ils.md).
+[`ils.md`](./ils.md).
 
 The SPI is the most regulated-light class for genuinely
 collateralised, fully-funded structures.
@@ -139,7 +139,7 @@ insurance. Captives:
 - **SAC**: captives operated through a Bermuda
   Segregated Accounts Company for multi-line / multi-
   programme structures — see
-  [`segregated-accounts-company.md`](segregated-accounts-company.md).
+  [`segregated-accounts-company.md`](./segregated-accounts-company.md).
 
 ## ILS — Class 3 / Class 3B / SPI
 
@@ -153,7 +153,7 @@ Bermuda dominates the ILS market through:
   used by sponsors to share risk with investors on
   specific portfolios.
 
-See [`ils.md`](ils.md).
+See [`ils.md`](./ils.md).
 
 ## Solvency regime
 
@@ -186,12 +186,12 @@ parents** wanting an EU-near structure.
 
 ## Cross-references
 
-- [`insurance.md`](insurance.md);
-- [`ils.md`](ils.md);
-- [`bma.md`](bma.md);
-- [`exempted-company.md`](exempted-company.md);
-- [`segregated-accounts-company.md`](segregated-accounts-company.md);
-- [`index.md`](index.md);
+- [`insurance.md`](./insurance.md);
+- [`ils.md`](./ils.md);
+- [`bma.md`](./bma.md);
+- [`exempted-company.md`](./exempted-company.md);
+- [`segregated-accounts-company.md`](./segregated-accounts-company.md);
+- [`index.md`](./index.md);
 - [`../cayman/insurance.md`](../cayman/insurance.md);
 - [`../guernsey/insurance.md`](../guernsey/insurance.md);
 - [`../jersey/insurance/index.md`](../jersey/insurance/index.md).

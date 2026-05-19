@@ -82,5 +82,5 @@ Moneyval expectations have broadened:
 
 ## Cross-references
 
-- [`proceeds-of-crime-law-1999.md`](proceeds-of-crime-law-1999.md)
+- [`proceeds-of-crime-law-1999.md`](./proceeds-of-crime-law-1999.md)
   — the parent statute.

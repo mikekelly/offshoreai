@@ -52,7 +52,7 @@ For practitioners and litigants:
 
 ## Cross-references
 
-- [`royal-court.md`](royal-court.md) — the court the Greffe
+- [`royal-court.md`](./royal-court.md) — the court the Greffe
   supports.
 - [`../registries/land-registry.md`](../registries/land-registry.md)
   — the Public Registry held by the Greffe.

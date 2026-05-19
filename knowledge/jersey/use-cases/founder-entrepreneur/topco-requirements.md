@@ -101,7 +101,7 @@ arrangements** typically suffice.
 
 #### Pre-incorporation
 
-- **Choose corporate-services provider** (see [`choosing-service-provider.md`](choosing-service-provider.md));
+- **Choose corporate-services provider** (see [`choosing-service-provider.md`](./choosing-service-provider.md));
 - **Choose company name** (verify availability with Registry);
 - **Draft memorandum and articles**;
 - **Identify directors** (provider's professionals + founder /
@@ -230,6 +230,6 @@ For an existing TopCo:
 
 ## Cross-references
 
-- [`choosing-service-provider.md`](choosing-service-provider.md)
-- [`substance-for-topco.md`](substance-for-topco.md)
+- [`choosing-service-provider.md`](./choosing-service-provider.md)
+- [`substance-for-topco.md`](./substance-for-topco.md)
 - [`../../companies/directors.md`](../../companies/directors.md)

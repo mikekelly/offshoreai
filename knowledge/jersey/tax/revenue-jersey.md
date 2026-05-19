@@ -86,8 +86,8 @@ Revenue Jersey and the **Jersey Financial Services Commission**
 
 ## Cross-references
 
-- [`zero-ten.md`](zero-ten.md) — corporate tax regime
+- [`zero-ten.md`](./zero-ten.md) — corporate tax regime
   administered by Revenue Jersey.
-- [`personal-income-tax.md`](personal-income-tax.md) — personal
+- [`personal-income-tax.md`](./personal-income-tax.md) — personal
   tax administration.
-- [`gst.md`](gst.md) — GST administration.
+- [`gst.md`](./gst.md) — GST administration.

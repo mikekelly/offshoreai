@@ -77,8 +77,8 @@ toward insider transactions in the run-up to insolvency.
 
 ## Cross-references
 
-- [`transactions-at-undervalue.md`](transactions-at-undervalue.md)
+- [`transactions-at-undervalue.md`](./transactions-at-undervalue.md)
   — Article 176.
-- [`preferences.md`](preferences.md) — Article 176A.
+- [`preferences.md`](./preferences.md) — Article 176A.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

@@ -181,4 +181,4 @@ For a new matter:
 ## Cross-references
 
 - [`../../legal-system/royal-court.md`](../../legal-system/royal-court.md)
-- [`order-of-justice.md`](order-of-justice.md)
+- [`order-of-justice.md`](./order-of-justice.md)

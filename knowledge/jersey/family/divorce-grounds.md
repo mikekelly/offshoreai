@@ -186,8 +186,8 @@ fault-based regime applies.
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`matrimonial-causes-law-1949.md`](matrimonial-causes-law-1949.md);
-- [`divorce-procedure.md`](divorce-procedure.md);
-- [`ancillary-relief.md`](ancillary-relief.md);
+- [`index.md`](./index.md);
+- [`matrimonial-causes-law-1949.md`](./matrimonial-causes-law-1949.md);
+- [`divorce-procedure.md`](./divorce-procedure.md);
+- [`ancillary-relief.md`](./ancillary-relief.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

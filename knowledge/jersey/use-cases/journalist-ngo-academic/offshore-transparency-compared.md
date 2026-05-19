@@ -254,9 +254,9 @@ For a transparency investigation:
 
 ## Cross-references
 
-- [`beneficial-ownership-access.md`](beneficial-ownership-access.md);
-- [`public-info-jersey-companies.md`](public-info-jersey-companies.md);
-- [`transparency-evolution.md`](transparency-evolution.md);
+- [`beneficial-ownership-access.md`](./beneficial-ownership-access.md);
+- [`public-info-jersey-companies.md`](./public-info-jersey-companies.md);
+- [`transparency-evolution.md`](./transparency-evolution.md);
 - [`../../registries/public-vs-private-data.md`](../../registries/public-vs-private-data.md);
 - [`../../registries/fs-dpi-law-2020.md`](../../registries/fs-dpi-law-2020.md);
 - [`../../../guernsey/index.md`](../../../guernsey/index.md);

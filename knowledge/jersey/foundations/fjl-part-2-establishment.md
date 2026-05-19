@@ -88,5 +88,5 @@ Endowment after establishment:
 
 ## Cross-references
 
-- [`fjl-article-4.md`](fjl-article-4.md) — establishment;
-- [`fjl-article-26.md`](fjl-article-26.md) — founder.
+- [`fjl-article-4.md`](./fjl-article-4.md) — establishment;
+- [`fjl-article-26.md`](./fjl-article-26.md) — founder.

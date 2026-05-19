@@ -109,11 +109,11 @@ law** in the merged body.
 
 ## Cross-references
 
-- [`scheme-of-arrangement.md`](scheme-of-arrangement.md) — court-
+- [`scheme-of-arrangement.md`](./scheme-of-arrangement.md) — court-
   sanctioned alternative.
-- [`continuance.md`](continuance.md) — Part 18C redomiciliation
+- [`continuance.md`](./continuance.md) — Part 18C redomiciliation
   alternative.
-- [`demergers.md`](demergers.md) — Part 18BA opposite-direction
+- [`demergers.md`](./demergers.md) — Part 18BA opposite-direction
   regime.
 
 ## Index of Part 18B deep files

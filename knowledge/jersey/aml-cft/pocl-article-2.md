@@ -69,7 +69,7 @@ For asset-recovery cases:
 
 ## Cross-references
 
-- [`pocl-article-1a.md`](pocl-article-1a.md);
-- [`pocl-part-1-preliminary.md`](pocl-part-1-preliminary.md);
-- [`pocl-part-2-confiscation.md`](pocl-part-2-confiscation.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-1a.md`](./pocl-article-1a.md);
+- [`pocl-part-1-preliminary.md`](./pocl-part-1-preliminary.md);
+- [`pocl-part-2-confiscation.md`](./pocl-part-2-confiscation.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

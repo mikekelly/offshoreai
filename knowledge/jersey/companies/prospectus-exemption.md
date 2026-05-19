@@ -28,7 +28,7 @@ see_also:
 
 Article 31 of the **[Companies (Jersey) Law 1991][cjl]** sets out
 the **defences** to a prospectus-compensation claim under
-[Article 30](prospectus-compensation.md). A defendant who can
+[Article 30](./prospectus-compensation.md). A defendant who can
 show one of the listed grounds escapes liability.
 
 ## What Article 31 says
@@ -93,7 +93,7 @@ expert's statement if they reasonably believed the expert was
 
 The defence applies to the **defendant** (issuer / director); the
 expert themselves can be liable under
-[Article 30](prospectus-compensation.md) as a person who has
+[Article 30](./prospectus-compensation.md) as a person who has
 accepted responsibility for that part of the prospectus.
 
 ## Claimant's knowledge

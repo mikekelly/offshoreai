@@ -76,7 +76,7 @@ Specific deeds may specify shorter periods.
 
 Many modern Jersey companies maintain shares in
 **uncertificated form** under
-[Article 51A](uncertificated-securities.md) — the share is
+[Article 51A](./uncertificated-securities.md) — the share is
 recorded electronically in the register and **no physical
 certificate is issued**.
 
@@ -87,17 +87,17 @@ there's no certificate to comply with the content requirements.
 
 Where the company has chosen to **seal certificates** (rather
 than authenticate by signature), the
-[Article 24 securities seal](official-seal-securities.md) is
+[Article 24 securities seal](./official-seal-securities.md) is
 typically used.
 
 ## Cross-references
 
-- [`certificate-evidence-of-title.md`](certificate-evidence-of-title.md)
+- [`certificate-evidence-of-title.md`](./certificate-evidence-of-title.md)
   — Article 51: the certificate's evidentiary effect.
-- [`uncertificated-securities.md`](uncertificated-securities.md)
+- [`uncertificated-securities.md`](./uncertificated-securities.md)
   — Article 51A: the alternative regime without physical
   certificates.
-- [`register-declaration.md`](register-declaration.md) —
+- [`register-declaration.md`](./register-declaration.md) —
   Article 46: dealing with lost certificates.
 
 ## Pitfalls

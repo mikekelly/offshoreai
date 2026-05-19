@@ -116,8 +116,8 @@ DL:
 
 ## Cross-references
 
-- [`dl-part-3-harassment.md`](dl-part-3-harassment.md);
-- [`dl-part-4-equal-pay.md`](dl-part-4-equal-pay.md);
-- [`dl-part-5-exemptions.md`](dl-part-5-exemptions.md);
+- [`dl-part-3-harassment.md`](./dl-part-3-harassment.md);
+- [`dl-part-4-equal-pay.md`](./dl-part-4-equal-pay.md);
+- [`dl-part-5-exemptions.md`](./dl-part-5-exemptions.md);
 - [`../employment/el-articles-index.md`](../employment/el-articles-index.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-articles-index.md`](./dl-articles-index.md).

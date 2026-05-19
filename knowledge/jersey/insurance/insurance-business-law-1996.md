@@ -78,6 +78,6 @@ Jersey hosts a notable **reinsurance sector**, serving:
 
 ## Cross-references
 
-- [`category-a-permit.md`](category-a-permit.md)
-- [`category-b-permit.md`](category-b-permit.md)
-- [`captive-insurance.md`](captive-insurance.md)
+- [`category-a-permit.md`](./category-a-permit.md)
+- [`category-b-permit.md`](./category-b-permit.md)
+- [`captive-insurance.md`](./captive-insurance.md)

@@ -112,7 +112,7 @@ non-contested cases. **Reform pending**.
 
 Financial orders made in conjunction with (or after) the
 divorce. The court has broad discretion under Articles
-25-31; see [`ancillary-relief.md`](ancillary-relief.md).
+25-31; see [`ancillary-relief.md`](./ancillary-relief.md).
 
 ## Available orders
 
@@ -198,13 +198,13 @@ relief apply automatically — see
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`divorce-grounds.md`](divorce-grounds.md);
-- [`divorce-procedure.md`](divorce-procedure.md);
-- [`ancillary-relief.md`](ancillary-relief.md);
-- [`spousal-maintenance.md`](spousal-maintenance.md);
-- [`prenuptial-agreements.md`](prenuptial-agreements.md);
-- [`royal-court-family-division.md`](royal-court-family-division.md);
-- [`jurisdiction-and-foreign-orders.md`](jurisdiction-and-foreign-orders.md);
+- [`index.md`](./index.md);
+- [`divorce-grounds.md`](./divorce-grounds.md);
+- [`divorce-procedure.md`](./divorce-procedure.md);
+- [`ancillary-relief.md`](./ancillary-relief.md);
+- [`spousal-maintenance.md`](./spousal-maintenance.md);
+- [`prenuptial-agreements.md`](./prenuptial-agreements.md);
+- [`royal-court-family-division.md`](./royal-court-family-division.md);
+- [`jurisdiction-and-foreign-orders.md`](./jurisdiction-and-foreign-orders.md);
 - [`../succession/legitime.md`](../../../jersey/succession/legitime.md);
 - [`../use-cases/parent-family/index.md`](../use-cases/parent-family/index.md).

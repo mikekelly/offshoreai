@@ -32,56 +32,56 @@ most-cited provisions.
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 1 | Interpretation | [bbl-part-1-preliminary.md](bbl-part-1-preliminary.md) |
-| 2 | Meaning of "deposit-taking business" | [bbl-article-2.md](bbl-article-2.md) |
-| 3 | Excluded business categories | [bbl-part-1-preliminary.md](bbl-part-1-preliminary.md) |
+| 1 | Interpretation | [bbl-part-1-preliminary.md](./bbl-part-1-preliminary.md) |
+| 2 | Meaning of "deposit-taking business" | [bbl-article-2.md](./bbl-article-2.md) |
+| 3 | Excluded business categories | [bbl-part-1-preliminary.md](./bbl-part-1-preliminary.md) |
 
 ## Part 2 — Registration
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 4 | Registration required to carry on deposit-taking business | [bbl-article-4.md](bbl-article-4.md) |
-| 5 | Application for registration | [bbl-part-2-registration.md](bbl-part-2-registration.md) |
-| 6 | Grant of registration | [bbl-article-6.md](bbl-article-6.md) |
-| 7 | Conditions of registration | [bbl-part-2-registration.md](bbl-part-2-registration.md) |
-| 8 | Variation of registration | [bbl-part-2-registration.md](bbl-part-2-registration.md) |
-| 9 | Refusal, suspension, revocation | [bbl-part-2-registration.md](bbl-part-2-registration.md) |
+| 4 | Registration required to carry on deposit-taking business | [bbl-article-4.md](./bbl-article-4.md) |
+| 5 | Application for registration | [bbl-part-2-registration.md](./bbl-part-2-registration.md) |
+| 6 | Grant of registration | [bbl-article-6.md](./bbl-article-6.md) |
+| 7 | Conditions of registration | [bbl-part-2-registration.md](./bbl-part-2-registration.md) |
+| 8 | Variation of registration | [bbl-part-2-registration.md](./bbl-part-2-registration.md) |
+| 9 | Refusal, suspension, revocation | [bbl-part-2-registration.md](./bbl-part-2-registration.md) |
 
 ## Part 3 — Supervision
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 10 | Continuing obligations | [bbl-article-10.md](bbl-article-10.md) |
-| 11 | Information requirements | [bbl-part-3-supervision.md](bbl-part-3-supervision.md) |
-| 12 | On-site inspections | [bbl-part-3-supervision.md](bbl-part-3-supervision.md) |
-| 13 | Directions | [bbl-part-3-supervision.md](bbl-part-3-supervision.md) |
+| 10 | Continuing obligations | [bbl-article-10.md](./bbl-article-10.md) |
+| 11 | Information requirements | [bbl-part-3-supervision.md](./bbl-part-3-supervision.md) |
+| 12 | On-site inspections | [bbl-part-3-supervision.md](./bbl-part-3-supervision.md) |
+| 13 | Directions | [bbl-part-3-supervision.md](./bbl-part-3-supervision.md) |
 
 ## Part 4 — Capital and Prudential
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 14 | Capital requirements | [bbl-article-14.md](bbl-article-14.md) |
-| 15 | Liquidity | [bbl-part-4-prudential.md](bbl-part-4-prudential.md) |
-| 16 | Large exposures | [bbl-part-4-prudential.md](bbl-part-4-prudential.md) |
-| 17 | Other prudential | [bbl-part-4-prudential.md](bbl-part-4-prudential.md) |
+| 14 | Capital requirements | [bbl-article-14.md](./bbl-article-14.md) |
+| 15 | Liquidity | [bbl-part-4-prudential.md](./bbl-part-4-prudential.md) |
+| 16 | Large exposures | [bbl-part-4-prudential.md](./bbl-part-4-prudential.md) |
+| 17 | Other prudential | [bbl-part-4-prudential.md](./bbl-part-4-prudential.md) |
 
 ## Part 5 — Recovery and Resolution
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 18 — 24 | Resolution powers, bail-in, depositor protection | [bbl-part-5-resolution.md](bbl-part-5-resolution.md) |
+| 18 — 24 | Resolution powers, bail-in, depositor protection | [bbl-part-5-resolution.md](./bbl-part-5-resolution.md) |
 
 ## Part 6 — Enforcement
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 25 — 35 | Civil penalties, public statements, criminal offences | [bbl-part-6-enforcement.md](bbl-part-6-enforcement.md) |
+| 25 — 35 | Civil penalties, public statements, criminal offences | [bbl-part-6-enforcement.md](./bbl-part-6-enforcement.md) |
 
 ## Part 7 — Miscellaneous
 
 | Article | Heading | Deep file |
 |---|---|---|
-| 36 — 48 | Regulations, forms, fees, citation | [bbl-part-7-misc.md](bbl-part-7-misc.md) |
+| 36 — 48 | Regulations, forms, fees, citation | [bbl-part-7-misc.md](./bbl-part-7-misc.md) |
 
 ## Status
 

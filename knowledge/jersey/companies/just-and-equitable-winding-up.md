@@ -85,7 +85,7 @@ Article 155 is invoked where:
 
 ## Cross-references
 
-- [`unfair-prejudice-member-application.md`](unfair-prejudice-member-application.md)
+- [`unfair-prejudice-member-application.md`](./unfair-prejudice-member-application.md)
   — Article 141.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

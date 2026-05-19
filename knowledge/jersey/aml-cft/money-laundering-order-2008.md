@@ -96,7 +96,7 @@ and be a Jersey-resident senior employee or officer.
 
 ## Cross-references
 
-- [`proceeds-of-crime-law-1999.md`](proceeds-of-crime-law-1999.md)
+- [`proceeds-of-crime-law-1999.md`](./proceeds-of-crime-law-1999.md)
   — the foundation statute.
-- [`aml-cft-handbook.md`](aml-cft-handbook.md) — JFSC guidance
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md) — JFSC guidance
   on how to comply with the Order.

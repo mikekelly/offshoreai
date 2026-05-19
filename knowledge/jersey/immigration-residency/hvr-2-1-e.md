@@ -163,8 +163,8 @@ Jersey's HVR programme:
 
 ## Cross-references
 
-- [`high-value-residency.md`](high-value-residency.md);
-- [`chwl-article-3.md`](chwl-article-3.md);
+- [`high-value-residency.md`](./high-value-residency.md);
+- [`chwl-article-3.md`](./chwl-article-3.md);
 - [`../tax/high-value-residency-tax.md`](../tax/high-value-residency-tax.md);
 - [`../use-cases/family-office-adviser/hvr-tax-planning.md`](../use-cases/family-office-adviser/hvr-tax-planning.md);
 - [`../tax/itl-articles-index.md`](../tax/itl-articles-index.md).

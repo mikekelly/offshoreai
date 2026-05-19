@@ -279,6 +279,6 @@ Single-property and portfolio-property tokenisation:
 
 ### Frontier
 
-- [`jersey-finance-industry-2026.md`](jersey-finance-industry-2026.md);
-- [`sfdr-2-and-sustainable-finance.md`](sfdr-2-and-sustainable-finance.md);
+- [`jersey-finance-industry-2026.md`](./jersey-finance-industry-2026.md);
+- [`sfdr-2-and-sustainable-finance.md`](./sfdr-2-and-sustainable-finance.md);
 - [`README.md`](../../frontier/README.md).

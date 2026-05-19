@@ -154,5 +154,5 @@ For each trust:
 
 ## Cross-references
 
-- [`trust-tax-filing.md`](trust-tax-filing.md)
+- [`trust-tax-filing.md`](./trust-tax-filing.md)
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md)

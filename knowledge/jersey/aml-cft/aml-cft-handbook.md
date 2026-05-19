@@ -108,5 +108,5 @@ some differences in scope).
 
 ## Cross-references
 
-- [`proceeds-of-crime-law-1999.md`](proceeds-of-crime-law-1999.md)
-- [`money-laundering-order-2008.md`](money-laundering-order-2008.md)
+- [`proceeds-of-crime-law-1999.md`](./proceeds-of-crime-law-1999.md)
+- [`money-laundering-order-2008.md`](./money-laundering-order-2008.md)

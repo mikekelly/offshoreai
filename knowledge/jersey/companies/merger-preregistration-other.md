@@ -81,9 +81,9 @@ abroad with potential liabilities.
 
 ## Cross-references
 
-- [`merger-preregistration-jersey.md`](merger-preregistration-jersey.md)
+- [`merger-preregistration-jersey.md`](./merger-preregistration-jersey.md)
   — Article 127FJ.
-- [`merger-preregistration-foreign-merged.md`](merger-preregistration-foreign-merged.md)
+- [`merger-preregistration-foreign-merged.md`](./merger-preregistration-foreign-merged.md)
   — Article 127FK.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

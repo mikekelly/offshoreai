@@ -143,9 +143,9 @@ For employees:
 
 ## Cross-references
 
-- [`dl-article-3.md`](dl-article-3.md);
-- [`dl-article-4.md`](dl-article-4.md);
-- [`dl-part-3-areas.md`](dl-part-3-areas.md);
-- [`dl-part-6-enforcement.md`](dl-part-6-enforcement.md);
+- [`dl-article-3.md`](./dl-article-3.md);
+- [`dl-article-4.md`](./dl-article-4.md);
+- [`dl-part-3-areas.md`](./dl-part-3-areas.md);
+- [`dl-part-6-enforcement.md`](./dl-part-6-enforcement.md);
 - [`../employment/el-part-2-particulars-pay.md`](../employment/el-part-2-particulars-pay.md);
-- [`dl-articles-index.md`](dl-articles-index.md).
+- [`dl-articles-index.md`](./dl-articles-index.md).

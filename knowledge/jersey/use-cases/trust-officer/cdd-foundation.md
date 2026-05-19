@@ -176,6 +176,6 @@ For a new foundation engagement:
 
 ## Cross-references
 
-- [`cdd-new-trust.md`](cdd-new-trust.md) — trust counterpart.
+- [`cdd-new-trust.md`](./cdd-new-trust.md) — trust counterpart.
 - [`../../foundations/index.md`](../../foundations/index.md)
 - [`../../foundations/qualified-member.md`](../../foundations/qualified-member.md)

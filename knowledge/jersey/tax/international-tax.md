@@ -122,7 +122,7 @@ Jersey has implemented:
   13);
 - **MLI provisions** modifying DTAs (BEPS Action 15);
 - **Pillar Two** minimum tax (effective 2025) — see
-  [`pillar-two.md`](pillar-two.md).
+  [`pillar-two.md`](./pillar-two.md).
 
 ## EU lists
 
@@ -136,6 +136,6 @@ cooperative-jurisdiction status.
 
 ## Cross-references
 
-- [`pillar-two.md`](pillar-two.md) — Pillar Two implementation.
+- [`pillar-two.md`](./pillar-two.md) — Pillar Two implementation.
 - [`../international/index.md`](../international/index.md) —
   international tax frameworks generally.

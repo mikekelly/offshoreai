@@ -95,5 +95,5 @@ Investors do **not** receive:
 
 - [`../financial-regulation/financial-services-jersey-law-1998.md`](../financial-regulation/financial-services-jersey-law-1998.md)
   — the FSB regime for the DSP.
-- [`expert-fund.md`](expert-fund.md) — alternative regime for
+- [`expert-fund.md`](./expert-fund.md) — alternative regime for
   larger / different investor base.

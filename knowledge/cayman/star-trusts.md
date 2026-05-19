@@ -162,8 +162,8 @@ A STAR trust deed:
 
 ## Cross-references
 
-- [`overview.md`](overview.md);
-- [`trusts.md`](trusts.md);
+- [`overview.md`](./overview.md);
+- [`trusts.md`](./trusts.md);
 - [`../jersey/trusts/purpose-trusts.md`](../jersey/trusts/purpose-trusts.md);
 - [`../jersey/trusts/enforcers.md`](../jersey/trusts/enforcers.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

@@ -200,4 +200,4 @@ For active service-out:
 ## Cross-references
 
 - [`../international-lawyer/service-of-proceedings.md`](../international-lawyer/service-of-proceedings.md)
-- [`enforcement-jersey-judgments.md`](enforcement-jersey-judgments.md)
+- [`enforcement-jersey-judgments.md`](./enforcement-jersey-judgments.md)

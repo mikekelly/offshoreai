@@ -120,8 +120,8 @@ The JFSC requires:
 
 ## Cross-references
 
-- [`bbl-article-6.md`](bbl-article-6.md);
-- [`bbl-article-10.md`](bbl-article-10.md);
-- [`bbl-part-4-prudential.md`](bbl-part-4-prudential.md);
-- [`bbl-part-5-resolution.md`](bbl-part-5-resolution.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-6.md`](./bbl-article-6.md);
+- [`bbl-article-10.md`](./bbl-article-10.md);
+- [`bbl-part-4-prudential.md`](./bbl-part-4-prudential.md);
+- [`bbl-part-5-resolution.md`](./bbl-part-5-resolution.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).

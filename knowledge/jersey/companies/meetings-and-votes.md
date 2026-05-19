@@ -35,7 +35,7 @@ The Article establishes default procedures:
 
 - **Reasonable notice** to members before meetings;
 - **Show-of-hands voting** initially, with **polls** available
-  upon demand under [Article 97](poll-demand.md);
+  upon demand under [Article 97](./poll-demand.md);
 - Members **present in person or by proxy** vote per the deed;
 - The **chair has a casting vote** in case of ties on a show of
   hands.

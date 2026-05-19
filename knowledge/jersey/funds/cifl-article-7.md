@@ -128,7 +128,7 @@ The JFSC may:
 
 ## Cross-references
 
-- [`cifl-article-3.md`](cifl-article-3.md);
-- [`cifl-article-4.md`](cifl-article-4.md);
+- [`cifl-article-3.md`](./cifl-article-3.md);
+- [`cifl-article-4.md`](./cifl-article-4.md);
 - [`../financial-regulation/fund-services-business.md`](../../../jersey/financial-regulation/fund-services-business.md);
-- [`cifl-articles-index.md`](cifl-articles-index.md).
+- [`cifl-articles-index.md`](./cifl-articles-index.md).

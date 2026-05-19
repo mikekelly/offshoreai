@@ -154,7 +154,7 @@ LPAs must be:
   used;
 - **Updated** if circumstances change materially.
 
-See [`lasting-powers-of-attorney.md`](lasting-powers-of-attorney.md).
+See [`lasting-powers-of-attorney.md`](./lasting-powers-of-attorney.md).
 
 ## Advance decisions to refuse treatment
 
@@ -177,7 +177,7 @@ Must be:
 - **Not** overridden by subsequent decisions (subject to
   best-interests considerations).
 
-See [`advance-decisions.md`](advance-decisions.md).
+See [`advance-decisions.md`](./advance-decisions.md).
 
 ## Delegates (court-appointed)
 
@@ -200,7 +200,7 @@ Protection Division and require:
 - **Best-interests evidence**;
 - **Specific proposed orders**.
 
-See [`delegates.md`](delegates.md).
+See [`delegates.md`](./delegates.md).
 
 ## The Royal Court Protection Division
 
@@ -213,7 +213,7 @@ capacity matters:
 - **Supervises** delegates;
 - **Makes** declaratory orders.
 
-See [`protection-division.md`](protection-division.md).
+See [`protection-division.md`](./protection-division.md).
 
 ## Code of Practice
 
@@ -277,14 +277,14 @@ For professionals:
 
 ## Cross-references
 
-- [`index.md`](index.md);
-- [`mental-health-law-2016.md`](mental-health-law-2016.md);
-- [`capacity-test.md`](capacity-test.md);
-- [`lasting-powers-of-attorney.md`](lasting-powers-of-attorney.md);
-- [`advance-decisions.md`](advance-decisions.md);
-- [`delegates.md`](delegates.md);
-- [`best-interests.md`](best-interests.md);
-- [`protection-division.md`](protection-division.md);
+- [`index.md`](./index.md);
+- [`mental-health-law-2016.md`](./mental-health-law-2016.md);
+- [`capacity-test.md`](./capacity-test.md);
+- [`lasting-powers-of-attorney.md`](./lasting-powers-of-attorney.md);
+- [`advance-decisions.md`](./advance-decisions.md);
+- [`delegates.md`](./delegates.md);
+- [`best-interests.md`](./best-interests.md);
+- [`protection-division.md`](./protection-division.md);
 - [`../family/parental-responsibility.md`](../family/parental-responsibility.md);
 - [`../succession/index.md`](../succession/index.md);
 - [`../use-cases/jersey-resident/index.md`](../use-cases/jersey-resident/index.md).

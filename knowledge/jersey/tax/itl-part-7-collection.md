@@ -79,7 +79,7 @@ For taxpayers:
 
 ## Cross-references
 
-- [`itl-part-5-assessment.md`](itl-part-5-assessment.md)
-- [`revenue-jersey.md`](revenue-jersey.md)
+- [`itl-part-5-assessment.md`](./itl-part-5-assessment.md)
+- [`revenue-jersey.md`](./revenue-jersey.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

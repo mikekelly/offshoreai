@@ -137,7 +137,7 @@ The **Jersey Employment and Discrimination Tribunal**:
 
 ## Cross-references
 
-- [`el-articles-index.md`](el-articles-index.md);
+- [`el-articles-index.md`](./el-articles-index.md);
 - [`../discrimination/index.md`](../discrimination/index.md);
 - [`../immigration-residency/chwl-article-19.md`](../immigration-residency/chwl-article-19.md);
 - [`../legal-system/index.md`](../legal-system/index.md).

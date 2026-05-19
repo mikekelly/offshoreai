@@ -187,4 +187,4 @@ For a planned distribution:
 
 - [`../../tax/distributions-and-deemed-distributions.md`](../../tax/distributions-and-deemed-distributions.md)
 - [`../../tax/zero-ten.md`](../../tax/zero-ten.md)
-- [`topco-tax.md`](topco-tax.md)
+- [`topco-tax.md`](./topco-tax.md)

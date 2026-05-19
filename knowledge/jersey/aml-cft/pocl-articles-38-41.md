@@ -91,8 +91,8 @@ Common JFSC enforcement themes:
 
 ## Cross-references
 
-- [`pocl-article-37.md`](pocl-article-37.md);
-- [`pocl-part-6-supervised.md`](pocl-part-6-supervised.md);
-- [`mlo-articles-index.md`](mlo-articles-index.md);
-- [`aml-cft-handbook.md`](aml-cft-handbook.md);
-- [`pocl-articles-index.md`](pocl-articles-index.md).
+- [`pocl-article-37.md`](./pocl-article-37.md);
+- [`pocl-part-6-supervised.md`](./pocl-part-6-supervised.md);
+- [`mlo-articles-index.md`](./mlo-articles-index.md);
+- [`aml-cft-handbook.md`](./aml-cft-handbook.md);
+- [`pocl-articles-index.md`](./pocl-articles-index.md).

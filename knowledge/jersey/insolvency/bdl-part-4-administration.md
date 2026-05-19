@@ -140,7 +140,7 @@ approval**:
 
 ## Cross-references
 
-- [`bdl-article-17.md`](bdl-article-17.md);
-- [`bdl-part-5-avoidance.md`](bdl-part-5-avoidance.md);
-- [`bdl-part-6-discharge.md`](bdl-part-6-discharge.md);
-- [`bdl-articles-index.md`](bdl-articles-index.md).
+- [`bdl-article-17.md`](./bdl-article-17.md);
+- [`bdl-part-5-avoidance.md`](./bdl-part-5-avoidance.md);
+- [`bdl-part-6-discharge.md`](./bdl-part-6-discharge.md);
+- [`bdl-articles-index.md`](./bdl-articles-index.md).

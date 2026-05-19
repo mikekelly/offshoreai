@@ -74,7 +74,7 @@ a "discretionary" trust cannot meaningfully operate.
 - **Trustee-held powers** are typically fiduciary, exercised by the
   trustee under the trust deed.
 - **Settlor-held powers** are reserved powers under
-  [Article 9A](reserved-powers.md); they may be fiduciary or
+  [Article 9A](./reserved-powers.md); they may be fiduciary or
   personal depending on the deed.
 - **Protector-held powers** are typically fiduciary.
 
@@ -100,14 +100,14 @@ constraints apply:
 - for the **proper purpose** for which the power was conferred —
   not for a collateral purpose;
 - consistent with the **fiduciary duties** owed (including
-  impartiality under [Article 23](trustee-impartiality.md));
+  impartiality under [Article 23](./trustee-impartiality.md));
 - **without conflict of interest**.
 
 A misuse of a power of appointment — for example, the power-holder
 appointing property to themselves under a hybrid power, or appointing
 under collusion with a beneficiary to defeat another beneficiary's
 interest — is liable to be **set aside** under
-[Articles 47G/H](article-47-set-aside.md) or under the broader
+[Articles 47G/H](./article-47-set-aside.md) or under the broader
 equitable doctrine of fraud on a power.
 
 ## Exercise — formalities
@@ -133,7 +133,7 @@ the impugned appointment.
 Where an appointment is exercised under **mistake**, the modern
 remedy is **set-aside under Articles 47G/47H**. The Royal Court
 applies the three-limb mistake test from *S & T Trusts*; see
-[`article-47-set-aside.md`](article-47-set-aside.md).
+[`article-47-set-aside.md`](./article-47-set-aside.md).
 
 ## Tax consequences of appointment
 

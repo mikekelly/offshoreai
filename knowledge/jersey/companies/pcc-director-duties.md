@@ -71,9 +71,9 @@ statutory effect with a director-level obligation.
 
 ## Cross-references
 
-- [`directors-duties.md`](directors-duties.md) — Article 74:
+- [`directors-duties.md`](./directors-duties.md) — Article 74:
   general directors' duties.
-- [`pcc-segregation.md`](pcc-segregation.md) — Article 127YT:
+- [`pcc-segregation.md`](./pcc-segregation.md) — Article 127YT:
   statutory segregation rule.
 
 [cjl]: https://www.jerseylaw.je/laws/current/l_30_1991

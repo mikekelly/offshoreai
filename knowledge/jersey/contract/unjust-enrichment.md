@@ -154,8 +154,8 @@ Jersey courts apply elements of **both** frameworks:
 
 ## Cross-references
 
-- [`contract-overview.md`](contract-overview.md);
-- [`damages.md`](damages.md);
+- [`contract-overview.md`](./contract-overview.md);
+- [`damages.md`](./damages.md);
 - [`../legal-system/pothier-and-the-coutume.md`](../legal-system/pothier-and-the-coutume.md);
 - [`../trusts/constructive-trustee.md`](../trusts/constructive-trustee.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

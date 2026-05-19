@@ -117,7 +117,7 @@ For Jersey-resident individuals:
 
 ## Cross-references
 
-- [`personal-income-tax.md`](personal-income-tax.md)
-- [`residence-individuals.md`](residence-individuals.md)
+- [`personal-income-tax.md`](./personal-income-tax.md)
+- [`residence-individuals.md`](./residence-individuals.md)
 
 [itl]: https://www.jerseylaw.je/laws/current/l_29_1961

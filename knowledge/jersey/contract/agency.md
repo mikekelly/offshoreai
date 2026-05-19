@@ -177,9 +177,9 @@ Jersey-law agency operating across borders:
 
 ## Cross-references
 
-- [`services-contracts.md`](services-contracts.md);
-- [`guarantees.md`](guarantees.md);
+- [`services-contracts.md`](./services-contracts.md);
+- [`guarantees.md`](./guarantees.md);
 - [`../companies/cjl-article-74a.md`](../../../jersey/companies/cjl-article-74a.md);
 - [`../trusts/index.md`](../trusts/index.md);
 - [`../legal-system/legal-profession.md`](../legal-system/legal-profession.md);
-- [`index.md`](index.md).
+- [`index.md`](./index.md).

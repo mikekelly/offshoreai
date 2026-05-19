@@ -79,6 +79,6 @@ The JFSC:
 
 ## Cross-references
 
-- [`bbl-article-14.md`](bbl-article-14.md);
-- [`bbl-part-4-prudential.md`](bbl-part-4-prudential.md);
-- [`bbl-articles-index.md`](bbl-articles-index.md).
+- [`bbl-article-14.md`](./bbl-article-14.md);
+- [`bbl-part-4-prudential.md`](./bbl-part-4-prudential.md);
+- [`bbl-articles-index.md`](./bbl-articles-index.md).
