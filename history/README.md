@@ -65,13 +65,13 @@ See [`sources.md`](sources.md) for the full bibliography.
 
 ## File index
 
-Time-horizon narrative documents (to be built):
+Time-horizon narrative documents:
 
-- [ ] `last-2-years.md` (2024-2026)
-- [ ] `last-5-years.md` (2021-2026)
-- [ ] `last-10-years.md` (2016-2026)
-- [ ] `last-25-years.md` (2001-2026)
-- [ ] `trajectory.md` — synthesis, the "four acts" story
+- [x] [`last-2-years.md`](last-2-years.md) (2024-2026)
+- [x] [`last-5-years.md`](last-5-years.md) (2021-2026)
+- [x] [`last-10-years.md`](last-10-years.md) (2016-2026)
+- [x] [`last-25-years.md`](last-25-years.md) (2001-2026)
+- [x] [`trajectory.md`](trajectory.md) — synthesis, the "four acts" story
 - [x] [`sources.md`](sources.md) — bibliography
 
 ## Refresh discipline
