@@ -8,7 +8,20 @@ This file is the single source of truth for the cold-start reading order. [CLAUD
 
 ## What this repository is in one paragraph
 
-A research-grade, agent-readable knowledge base for **offshore jurisdictions** — currently Jersey, with other Crown Dependencies, Caribbean and Mediterranean centres to follow. The corpus (markdown files under `<jurisdiction>/`) is the knowledge layer; on top of it sits a planned baseline agent (Claude Agent SDK, TypeScript) plus per-customer white-label agents. The corpus is hand-curated, source-cited, dated, and citation-mandatory for any agent built on it. There is **no implementation code in this repo yet** — the design is in [`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md) and the principles in [`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md) and [`KNOWLEDGE-BASE-PRINCIPLES.md`](KNOWLEDGE-BASE-PRINCIPLES.md).
+A research-grade, agent-readable knowledge base for **offshore jurisdictions**. The corpus currently covers **six jurisdictions** — Jersey (the deepest), plus Guernsey, Bermuda, BVI, Cayman, and Isle of Man — with other centres to follow. All corpus content lives under `knowledge/` (which doubles as a single Obsidian vault); meta and agent docs sit at the repo top level. On top of the corpus sits a planned baseline agent (Claude Agent SDK, TypeScript) plus per-customer white-label agents. The corpus is hand-curated, source-cited, dated, and citation-mandatory for any agent built on it. There is **no implementation code in this repo yet** — the design is in [`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md) and the principles in [`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md) and [`KNOWLEDGE-BASE-PRINCIPLES.md`](KNOWLEDGE-BASE-PRINCIPLES.md).
+
+---
+
+## The corpus has four layers
+
+A senior practitioner or agent should understand the corpus operates with **four distinct content layers**, each with its own discipline:
+
+1. **Doctrinal corpus** — the stable, statute-anchored substance. Files live under `knowledge/<jurisdiction>/` and follow the per-jurisdiction taxonomy (trusts, funds, tax, financial-regulation, aml-cft, foundations, companies, international, use-cases, etc.). `last_verified` is the freshness contract.
+2. **Cross-jurisdictional synthesis** — [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md) compares the six jurisdictions on trust regime, fund regime, cell company, captive, tax / Pillar Two, substance, life assurance, image rights, etc., with decision frameworks for "where should I put X?" questions.
+3. **Frontier** — bleeding-edge developments tracked with explicit `as_of` / `expected_decay` discipline. [`knowledge/frontier/`](knowledge/frontier/) holds cross-jurisdictional frontier topics (UK carry reform, AIFMD II, continuation funds); jurisdiction-specific frontier sits under `knowledge/<jurisdiction>/frontier/` (e.g., [`knowledge/jersey/frontier/`](knowledge/jersey/frontier/) for SFDR, tokenisation, industry-state).
+4. **History** — stable retrospectives under each jurisdiction's `history/` (currently only Jersey — see [`knowledge/jersey/history/`](knowledge/jersey/history/)). Includes time-horizon docs (last 2 / 5 / 10 / 25 years), a "four acts" [trajectory](knowledge/jersey/history/trajectory.md) synthesis, a [`sources.md`](knowledge/jersey/history/sources.md) bibliography of 45 high-reputation third-party sources, a [`regulatory-milestones.md`](knowledge/jersey/history/regulatory-milestones.md) reference, and a [`gaps.md`](knowledge/jersey/history/gaps.md) honesty-mechanism catalogue tracking what the graph is missing.
+
+The corpus is **externally measured** via two evals at [`evals/`](evals/) — coverage (audit-driven) and showcase (landing-page-bar). Runners are fresh `Explore` subagents constrained to read-only filesystem access. Current state: 26/26 coverage PASS, 29/29 showcase PASS.
 
 ---
 
@@ -23,12 +36,16 @@ Read in this order. The order is deliberate — each document assumes the ones a
 3. **[`CONVENTIONS.md`](CONVENTIONS.md)** — the operational rules for content files (frontmatter spec, prose style, cross-linking, sources, updating, stubs). This is *how* the principles in (2) get applied. ~10 min.
 4. **[`TAGS.md`](TAGS.md)** — the canonical closed taxonomy of tags. Skim the categories; you don't need to memorise the list, just know it's authoritative and additions go via PR. ~5 min.
 5. **[`knowledge/jersey/index.md`](knowledge/jersey/index.md)** — a concrete example of the agent-facing front door for one jurisdiction. Read it to see how all of (1)–(4) actually land in the corpus. ~10 min.
+6. **[`knowledge/jersey/history/trajectory.md`](knowledge/jersey/history/trajectory.md)** — the strategic-narrative layer: the "four acts" synthesis of how Jersey's industry reached its current state, with five structural through-lines. Read this so you understand the historical context behind the doctrinal substance. ~10 min.
+7. **[`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)** — the comparison surface across the six jurisdictions. Skim the matrices so you know what cross-jurisdictional answers the corpus supports. ~5 min.
+8. **[`knowledge/frontier/`](knowledge/frontier/) and [`knowledge/jersey/frontier/`](knowledge/jersey/frontier/)** — skim the file titles to understand what's currently in motion (UK carry, AIFMD II, continuation funds, SFDR, tokenisation, Jersey industry state). The frontier discipline (decay-managed `as_of` dates) is itself worth understanding. ~5 min.
+9. **[`knowledge/jersey/history/gaps.md`](knowledge/jersey/history/gaps.md)** — the honesty mechanism: an explicit, priority-tiered catalogue of what the graph is missing. Demonstrates the corpus's epistemic discipline. ~5 min.
 
 ### Part 2 — what the agent is (read these in full)
 
-6. **[`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md)** — region-non-specific commitments for any agent built on this corpus (memory architecture, retrieval, tool surface, output discipline, build order, architectural restraint). ~20 min.
-7. **[`AGENT-BEHAVIOURS.md`](AGENT-BEHAVIOURS.md)** — the region-non-specific design doc for each customised agent behaviour the runtime adds on top of the Claude Agent SDK's default loop (bundle pre-loading, ambient session-state dashboard, freshness checking, citation verification, tool deny-list/sandbox, audit logging, progressive skill disclosure). States the *why* (failure mode addressed) and the *broadly how* (SDK mechanism level) for each. Sits between the principles in (6) and the PRD-level specifics in (8). ~20 min.
-8. **[`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md)** — the Jersey v1 instantiation. Required sections, in this order:
+10. **[`AGENT-PRINCIPLES.md`](AGENT-PRINCIPLES.md)** — region-non-specific commitments for any agent built on this corpus (memory architecture, retrieval, tool surface, output discipline, build order, architectural restraint). ~20 min.
+11. **[`AGENT-BEHAVIOURS.md`](AGENT-BEHAVIOURS.md)** — the region-non-specific design doc for each customised agent behaviour the runtime adds on top of the Claude Agent SDK's default loop (bundle pre-loading, ambient session-state dashboard, freshness checking, citation verification, tool deny-list/sandbox, audit logging, progressive skill disclosure). States the *why* (failure mode addressed) and the *broadly how* (SDK mechanism level) for each. Sits between the principles in (10) and the PRD-level specifics in (12). ~20 min.
+12. **[`PRD-baseline-agent-v1.md`](PRD-baseline-agent-v1.md)** — the Jersey v1 instantiation. Required sections, in this order:
    - **§0 TL;DR** — the bet in one page
    - **§1** the 2026 memory landscape — why the design takes this shape
    - **§4** architecture (especially **§4.2** runtime choice and **§4.3** what we deliberately don't build)
@@ -59,16 +76,17 @@ If you're not an implementation engineer, you can stop earlier in the reading or
 | You are… | Stop after | What to add |
 |---|---|---|
 | **Implementation engineer (TS, agent build-out)** | Part 3 in full | Plus a per-tool spec pass through `PRD §7.1–7.5` |
-| **Content writer (editorial, jurisdiction expansion)** | Part 1 in full + skim `KNOWLEDGE-BASE-PRINCIPLES.md` whenever a structural question arises | Plus the relevant `<jurisdiction>/changelog.md` for context on recent work |
+| **Content writer (editorial, jurisdiction expansion)** | Part 1 items 1-5 in full + skim `KNOWLEDGE-BASE-PRINCIPLES.md` whenever a structural question arises | Plus the relevant `knowledge/<jurisdiction>/changelog.md` for context on recent work; for Jersey, also read [`knowledge/jersey/COVERAGE-AUDIT.md`](knowledge/jersey/COVERAGE-AUDIT.md) and [`knowledge/jersey/history/gaps.md`](knowledge/jersey/history/gaps.md) before adding new content |
 | **Tenant onboarding / white-label deployment** | Part 1 (skim) + `PRD §9` (tenant model) + `AGENT-PRINCIPLES.md` (the restraint principles) | Plus the future `SETUP.md` when written |
 | **Code reviewer / second opinion** | `AGENT-PRINCIPLES.md` + `PRD Appendix C` + the PR's diff | The principles tell you what's load-bearing and what's negotiable |
-| **Strategic / external reader** | `README.md` + the TL;DRs of both principles docs + `PRD §0` | That's the full pitch in under 30 min |
+| **Strategic / external reader / demo audience** | `README.md` + Part 1 items 6-9 (the strategic-narrative + cross-jurisdictional layers) + `PRD §0` | For demo prep: [`DEMO-CHEAT-SHEET-KPMG-PE-PARTNER.md`](DEMO-CHEAT-SHEET-KPMG-PE-PARTNER.md) is a calibrated walk-through |
+| **Frontier maintainer (refreshing decay-managed content)** | Part 1 items 6-9 + read each frontier file's `as_of` and `expected_decay` frontmatter | Plus [`knowledge/jersey/history/sources.md`](knowledge/jersey/history/sources.md) bibliography to know which sources to refresh against |
 
 ---
 
 ## Repository conventions for agents working on this repo
 
-- **Don't edit content files casually.** Corpus files have `last_verified` dates that represent real editorial checks against primary sources. If you change a content file's meaning, bump `last_verified` and append to the jurisdiction's `changelog.md`. If you can't actually verify against the primary source, mark the change `draft` not `stable`.
+- **Don't edit content files casually.** Corpus files have `last_verified` dates that represent real editorial checks against primary sources. If you change a content file's meaning, bump `last_verified` and append to the jurisdiction's `changelog.md` (e.g. `knowledge/jersey/changelog.md`). If you can't actually verify against the primary source, mark the change `draft` not `stable`.
 - **Don't invent tags.** [`TAGS.md`](TAGS.md) is closed. If you need a tag that isn't there, add it to `TAGS.md` with a one-line description in the same commit as the file that uses it.
 - **Don't add invocation surfaces over code we own.** This is the architectural restraint principle (Appendix C of the PRD). Wrapping our own functions in MCP servers or custom CLIs for the agent to invoke through Bash is forbidden — both are indirection over code we own and an agent we control. SDK custom tools are the default. MCP only at real cross-process/cross-language/cross-org boundaries.
 - **Commits.** Short imperative titles, optional clarifying context after an em-dash. Examples in `git log`. Co-Author lines for AI assistants are conventional.

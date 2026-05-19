@@ -389,8 +389,8 @@ AXI was originally a spec for *agent-driven CLIs*. We don't build CLIs over our 
     ```
     count: 8 of 866 total
     files[8]{path,status,last_verified,tags}:
-      jersey/trusts/firewall.md,stable,2026-04-12,firewall|conflict-of-laws|forced-heirship
-      jersey/trusts/article-9.md,stable,2026-04-12,firewall|trusts-law-1984
+      knowledge/jersey/trusts/firewall.md,stable,2026-04-12,firewall|conflict-of-laws|forced-heirship
+      knowledge/jersey/trusts/article-9.md,stable,2026-04-12,firewall|trusts-law-1984
       ...
     help[3]:
       Call `corpus.getFile` with path=<path>
