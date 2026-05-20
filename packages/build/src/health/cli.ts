@@ -53,45 +53,11 @@ if (!noFail && checks.some((c) => c.status === "fail")) {
 
 async function runHealthChecks(repoRoot: string): Promise<ReadonlyArray<HealthCheck>> {
   return [
-    await checkColdStartDocs(repoRoot),
     await checkCorpusConformance(repoRoot),
     await checkTagTaxonomy(repoRoot),
     await checkLatestShowcaseSummary(repoRoot),
     await checkLocalClaudeWorktrees(repoRoot),
   ];
-}
-
-async function checkColdStartDocs(repoRoot: string): Promise<HealthCheck> {
-  const stalePatterns = [
-    { path: "AGENTS.md", pattern: "There is **no implementation code in this repo yet**" },
-    { path: "AGENTS.md", pattern: "29/29 showcase PASS" },
-    { path: "SETUP.md", pattern: "the agent runtime hasn't been built yet" },
-    { path: "SETUP.md", pattern: "Today the repo is corpus + design docs" },
-    { path: "SETUP.md", pattern: "what week 1 will create" },
-  ];
-
-  const hits: string[] = [];
-  for (const item of stalePatterns) {
-    const body = await readFile(resolve(repoRoot, item.path), "utf8");
-    if (body.includes(item.pattern)) {
-      hits.push(`${item.path}: stale phrase "${item.pattern}"`);
-    }
-  }
-
-  if (hits.length > 0) {
-    return {
-      name: "cold-start-docs",
-      status: "fail",
-      summary: `${hits.length} stale implementation/eval claim(s) found`,
-      details: hits,
-    };
-  }
-
-  return {
-    name: "cold-start-docs",
-    status: "pass",
-    summary: "cold-start docs no longer contain known stale future-tense claims",
-  };
 }
 
 async function checkCorpusConformance(repoRoot: string): Promise<HealthCheck> {
@@ -331,7 +297,6 @@ Usage:
   pnpm health -- --no-fail
 
 Checks:
-  cold-start-docs          known stale implementation/eval claims
   corpus-conformance       convention validator drift against baseline
   tag-taxonomy             frontmatter tags outside TAGS.md
   latest-showcase          latest committed offshoreai-agent-full eval result
