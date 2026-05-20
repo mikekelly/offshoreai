@@ -1,0 +1,20 @@
+questionId: show-emerging-manager-stack
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five expected facts are present and correct, with every claim
+  traced to a verified corpus file. The answer names four BVI-specific
+  statutes/regulations, reproduces the tier ladder verbatim, correctly assembles
+  the three-layer start-up stack from the approved-manager.md use-case section,
+  and handles freshness appropriately. No errors, no hallucinated citations, no
+  generic offshore language. Clean pass across all graded dimensions.

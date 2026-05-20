@@ -1,0 +1,22 @@
+questionId: show-arrest
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All six rubric facts are present and correct — PPCE 2003, free
+  24/7 legal advice, the 24/36/96h detention ladder, caution wording, right to
+  inform someone, and custody record. Jersey-specificity is strong: names the
+  PPCE and Human Rights (Jersey) Law, explains Honorary Police powers, notes the
+  narrower adverse-inference position vs England, and references Parish Hall
+  Enquiries. Voice is practical and action-oriented as the rubric requires.
+  Every citation verified against the corpus; no hallucinations. Efficient
+  retrieval in 6 calls / 34 seconds with no redundancy."

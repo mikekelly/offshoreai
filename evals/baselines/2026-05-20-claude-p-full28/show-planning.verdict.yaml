@@ -1,0 +1,21 @@
+questionId: show-planning
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. The answer covers 4 of 5 expected substance facts at the 80%
+  threshold, with excellent citation precision — every claim verified against
+  the two cited corpus files with zero hallucination. The main gap is that PBL
+  2002 is never named by statute (only the subsidiary GD Order 2011 and Building
+  Bye-Laws 2007), and the Department for Environment is absent, dropping
+  jersey_specific to partial. Voice is strong homeowner-facing with practical
+  next steps. Highly efficient at 3 tool calls and 25 seconds.

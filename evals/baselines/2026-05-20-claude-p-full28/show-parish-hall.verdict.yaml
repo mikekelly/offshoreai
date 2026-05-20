@@ -1,0 +1,22 @@
+questionId: show-parish-hall
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The candidate covers all six rubric substance facts accurately
+  and with correct citations to the single authoritative corpus file.
+  Jersey-specific grounding is strong — Centenier role, Honorary Police context,
+  Law Officers' Department schedule are all present and correct. Voice is
+  informed, practical, and Jersey-grounded as the rubric requires. The one minor
+  inefficiency is a redundant Grep-then-Bash search (both looking for the same
+  string), but the answer itself is comprehensive, well-structured, and
+  citation-precise.

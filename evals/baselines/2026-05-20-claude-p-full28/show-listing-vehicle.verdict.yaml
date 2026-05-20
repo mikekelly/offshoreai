@@ -1,0 +1,22 @@
+questionId: show-listing-vehicle
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All four rubric facts covered accurately with precise citations
+  verified against the corpus. The candidate read exactly the three files it
+  needed (the cross-jurisdictional map was already in context), extracted the
+  right details from each, and structured the answer as a clear recommendation
+  hierarchy (Cayman default → Bermuda for insurance → BVI cost-driven). One
+  minor attribution imprecision (attributing 'no equivalent yet' to the BVI file
+  when it's in the Bermuda comparison table) is non-misleading since the Bermuda
+  file is cited. Freshness explicitly addressed including draft-status caveat.

@@ -1,0 +1,23 @@
+questionId: show-article-47
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 2
+hallucinatedCitations: 0
+summary: Pass. Every rubric fact covered correctly with precise Jersey-law
+  specificity — Articles 47B-47H, the S&T Trusts three-limb test, Article 47G
+  for fiduciary-power exercise, Pitt v Holt divergence (manner irrelevant), and
+  Royal Court Representation procedure. Both corpus citations verified; no
+  hallucinated claims. Voice is convincingly that of a Jersey trust litigator.
+  Two redundant Bash grep calls duplicated the initial Grep tool calls but
+  overall efficiency is acceptable at 37 seconds. The answer adds useful depth
+  beyond the rubric minimum (Article 11 distinction, M Settlement
+  partial-rescission limit, future-tax-advantage scepticism).

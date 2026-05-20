@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-iom-portfolio-bond",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-20T13:35:30.206Z",
+  "wallClockSeconds": 27.022,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Grep",
+      "rawName": "Grep",
+      "inputDigest": "{\"pattern\":\"portfolio bond\",\"path\":\"knowledge/isle-of-man\",\"output_mode\":\"files_with_matches\",\"-i\":\"true\"}",
+      "inputBytes": 106,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"portfolio bond\\\" knowledge/isle-of-man 2>/dev/null; echo \\\"---\\\"; ls knowledge/isle-of-man\",\"description\":\"Find portfolio bond files in IoM\"}",
+      "inputBytes": 165,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/isle-of-man/life-assurance.md\"}",
+      "inputBytes": 83,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2830,
+    "outputTokens": 1669,
+    "cacheReadTokens": 133895,
+    "cacheWriteTokens": 37191,
+    "totalCostUsd": 0.35526625
+  },
+  "answer": {
+    "text": "## Why a UK HNW investor holds an Isle of Man portfolio bond\n\nDrawing on `knowledge/isle-of-man/life-assurance.md`, the corpus gives a clear set of reasons.\n\n**The product itself.** An IoM portfolio bond is a *single-premium* investment vehicle wrapped inside a life-assurance policy. You put a lump sum in, and inside the wrapper you can hold a wide range of underlying assets — funds, equities, fixed income, alternatives — with the investment strategy designated by you (usually run through an investment manager). The IoM insurer handles policy administration, and you have surrender flexibility (subject to product penalties).\n\n**The core UK tax driver — the \"5% rule.\"** This is the headline reason for a UK resident. The corpus describes it as a defining UK tax mechanism for offshore life-assurance bonds:\n\n- You can withdraw **5% of the original premium each year, tax-deferred, for up to 20 years**.\n- The chargeable-event charge is deferred until final encashment, when it is treated as deferred income.\n- **Top-slicing relief** then reduces the effective rate for higher-rate / additional-rate taxpayers.\n- The statutory basis is Chapter 9 of Part 4 ITTOIA 2005.\n\nThe net effect, per the corpus, is \"materially better cash-flow tax treatment than ordinary investment for HNW UK-residents\" — alongside ISAs and pensions — plus tax deferral on growth and estate-planning efficiency in some jurisdictions.\n\n**Why the Isle of Man specifically (rather than another offshore centre).** The corpus calls the IoM \"the world's leading offshore life-assurance jurisdiction\" for these products. Its distinguishing strengths:\n\n- **Solvency II equivalence** with the EU — a competitive advantage no other offshore life-assurance domicile in the comparison table holds, giving its insurers regulatory standing and EU-market reach.\n- A **long-established, specialist industry** — major UK and global insurers (Quilter, Standard Life International, Royal London, Canada Life International, Utmost) run IoM subsidiaries, and the IOMFSA has deep sector-specific regulatory expertise.\n- **Tax-neutral treatment of the wrapping insurer**, and a reputable, mature financial-services jurisdiction.\n\nIn the corpus's cross-jurisdiction comparison, the IoM is the \"largest offshore life-assurance domicile,\" while Jersey has only \"some specialty; smaller than IoM,\" Guernsey runs specialty captive life vehicles, and Dublin/Luxembourg serve EU-focused (rather than UK-focused) business. Post-Brexit, the corpus notes the IoM \"remains a competitive alternative for UK-focused business.\"\n\n**Caveats the corpus flags.** Watch for product misclassification in the policyholder's tax jurisdiction, adviser-suitability concerns (these are designed for HNW/sophisticated investors, sold through FCA-authorised advisers, specialist IFAs, and private banks — not mass retail), and AML/CFT exposure in the intermediary chain.\n\n**A note on freshness and status:** the file is `last_verified: 2026-05-18` (well within 180 days, so current) but carries `status: draft` — i.e., not yet a fully verified \"stable\" concept file. Treat the substance, especially the UK tax mechanics, as confirmable rather than authoritative.\n\n---\n\n### Cited files\n\n1. `knowledge/isle-of-man/life-assurance.md`",
+    "wordCount": 462
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

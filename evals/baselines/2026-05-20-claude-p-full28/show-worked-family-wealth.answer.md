@@ -1,0 +1,74 @@
+I have what I need. All four source files have `last_verified` dates within the last week (well inside the 180-day freshness window), so no staleness flags apply.
+
+---
+
+## Setting up a Jersey forced-heirship-protective trust for an Italian-domiciled family
+
+The corpus contains a worked example matching your scenario almost exactly — the fictional "Rossi family": a 70-year-old Italian-domiciled settlor, ~€80m spread across European operating-company shares, US public equities, a Swiss private-bank portfolio, and a Caribbean villa, with a spouse and adult children (one in Italy, one in the UK) plus grandchildren. The structure below follows that template.
+
+### The core protection: the Article 9 firewall
+
+Italy operates forced heirship — the *legittima* — under which the spouse and children have indefeasible reserved shares, and Italian heirs can claw back lifetime gifts that defeated those shares. The defensive mechanism is **Article 9 of the Trusts (Jersey) Law 1984**, the "firewall." It instructs the Royal Court to apply *only* Jersey law to questions of the trust's validity, the settlor's capacity to settle, administration, and beneficial rights, and to **refuse to give effect to foreign forced-heirship rules** (`knowledge/jersey/trusts/firewall.md`).
+
+Three features make this the corpus's strongest forced-heirship defence:
+
+- **Article 9(2)** disregards whether a foreign law treats the disposition as a fraud on heirship rights — Jersey simply does not apply that foreign view.
+- **Article 9(4)** is the strong-form provision: a **foreign judgment inconsistent with Article 9 is unenforceable in Jersey**, so an Italian clawback order cannot be enforced against the Jersey trust assets.
+- **Article 9(3A)** blocks any *renvoi* argument that would send the question back to Italian law (`knowledge/jersey/trusts/firewall.md`).
+
+### Step-by-step structure
+
+Drawing on the worked example (`knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`):
+
+**1. Choose the wrapper.** A **discretionary trust** is the natural choice over a Jersey foundation here — it has the longest history, is well-understood by foreign tax authorities, and the Article 9 firewall is most fully developed for trusts. (A foundation is the alternative if the family prefers a civil-law-familiar, Council-governed vehicle.)
+
+**2. Settle the trust.** Mr Rossi creates a discretionary trust by Settlement Deed with:
+- **Jersey law expressly declared as governing law** — this is what engages the firewall, so it is essential and must be explicit (`knowledge/jersey/trusts/firewall.md`, "Practical drafting");
+- a Jersey-licensed **Trust Company Business** (TCB) as initial trustee;
+- a **broad discretionary beneficiary class** (settlor, spouse, children, grandchildren, future issue, possibly charitable purposes);
+- a **protector** (a trusted external adviser);
+- a **non-binding letter of wishes** setting out the settlor's distribution preferences.
+
+**3. Reserve powers under Article 9A.** The settlor can retain meaningful control without invalidating the trust. **Article 9A of the Trusts (Jersey) Law 1984** confirms that reserving a defined menu of powers — consent to specified trustee actions, power to add/remove beneficiaries, power to remove and replace trustees, revocation, variation, direction — does not make the trust invalid, and the trust takes immediate effect (`knowledge/jersey/trusts/reserved-powers.md`). Article 9A(3) protects the trustee acting on a reserved-power direction, and 9A(3A) confirms the settlor is not thereby made a trustee.
+
+Critically, the drafting must **list reserved powers exactly** (not a catch-all like "all powers the settlor may wish to exercise"), specify the mechanism of exercise, and provide for **succession of those powers on the settlor's death or incapacity** (`knowledge/jersey/trusts/reserved-powers.md`).
+
+**4. Insert an underlying holding layer.** Rather than holding investments directly, interpose asset-holding companies beneath the trust, tailored per asset class:
+- **EU operating-company shares** → Luxembourg or Jersey holdco for treaty access;
+- **US public equities** → a **non-US blocker corporation** (Cayman or BVI) to avoid US estate tax, which otherwise hits US-situs assets held directly by a non-US-domiciled individual at a $60,000 threshold;
+- **Swiss bank portfolio** → held directly by the underlying company;
+- **Caribbean villa** → a BVI company owning the property (avoids Caribbean estate tax on death).
+
+**5. Consider a Private Trust Company (PTC).** As the structure matures and family governance becomes the priority, a Jersey PTC — typically owned by a purpose trust (Jersey Article 12, Cayman STAR, or BVI VISTA) with family members and professionals on the board — can replace the professional trustee.
+
+**6. Article 51 directions as the litigation backstop.** If Italian heirs make claims, the trustee can apply to the **Royal Court for Article 51 directions**, obtaining authoritative Jersey-court confirmation of the firewall position (`knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`).
+
+### What the firewall does *not* do — the honest limits
+
+You should counsel the family that Article 9 "isn't a magic shield" (`knowledge/jersey/use-cases/family-office-adviser/asset-protection.md`):
+
+- **In personam pressure.** Italian-resident beneficiaries remain personally subject to the Italian courts. A foreign court with jurisdiction over a beneficiary can order *that person* to act, and trustee officers can face personal pressure abroad. The firewall binds the Royal Court and Jersey-located assets — not the foreign court (`knowledge/jersey/trusts/firewall.md`; `knowledge/jersey/use-cases/family-office-adviser/asset-protection.md`).
+- **Asset situs.** Assets physically located in a foreign jurisdiction can be reached directly there — the firewall protects what is in Jersey or held through Jersey-located intermediaries. (This is part of why the underlying-company layer routes assets through suitable holding jurisdictions.)
+- **Sham risk.** Article 9A protects *reserved powers*, not *retained beneficial ownership*. A "settlor as sole beneficiary + revocation power + protector" profile invites a sham challenge (the *Esteem* test); the trust must be a genuine wealth-management arrangement with a real trustee role (`knowledge/jersey/trusts/reserved-powers.md`; `knowledge/jersey/use-cases/family-office-adviser/asset-protection.md`).
+- **Establish early.** Article 4(3) lets creditors set aside a fraudulent disposition within a **three-year** window; settling well before any identifiable threat is important. (Less central to pure forced-heirship, but relevant to overall asset protection.)
+- **Don't re-import foreign rules.** A clause directing the trustee to distribute per the settlor's home-country succession law would undercut the firewall by the back door (`knowledge/jersey/trusts/firewall.md`).
+
+### Tax and reporting overlay
+
+The firewall solves the *succession*-law question, not the *tax* question — these are separate (`knowledge/jersey/trusts/reserved-powers.md`). The structure carries substantial ongoing obligations:
+- **UK-resident child** → potential excluded-property-trust treatment, 10-year IHT anniversary charges, distribution matching rules, UK Trust Registration Service — specialist UK advice essential;
+- **Reporting** → CRS (Jersey reports controlling persons to Italy/UK/possibly US), FATCA, possibly DAC6, and **continuing Italian tax declarations** of the trust by the settlor;
+- Note the corpus flags that the **Italian tax authority may challenge the structure retrospectively** if declarations are not made carefully (`knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md`).
+
+### Practical counsel
+
+Beyond relying on the firewall alone, the corpus recommends considering **parallel substantive lifetime planning in Italy itself** (a civil-law family-pact equivalent) where the family is exposed to a forced-heirship jurisdiction, rather than treating Article 9 as a complete answer (`knowledge/jersey/trusts/firewall.md`).
+
+---
+
+### Files cited
+
+1. `knowledge/jersey/trusts/firewall.md` — Article 9 firewall: the core forced-heirship defence, its paragraphs, limits, and drafting practice.
+2. `knowledge/jersey/trusts/reserved-powers.md` — Article 9A reserved powers: retaining settlor control without invalidating the trust, and drafting discipline.
+3. `knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md` — the Italian-domiciled "Rossi family" worked example matching this scenario end to end.
+4. `knowledge/jersey/use-cases/family-office-adviser/asset-protection.md` — strength and practical limits of Jersey asset protection (in personam pressure, sham risk, Article 4(3) three-year clawback).

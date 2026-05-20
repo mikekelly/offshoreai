@@ -1,0 +1,23 @@
+questionId: show-jpf-vs-expert
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: "Pass. Every rubric-expected fact is present and correctly sourced: JPF
+  ≤50 cap, 48-hour authorisation, DSP delegation model with responsibilities
+  enumerated, Expert Fund no-cap / expert-investor / detailed-offering-doc
+  shape, and the decision axes (investor count, regulatory burden, marketing
+  reach). All three cited corpus files verified with zero hallucinated
+  citations. The answer reads as fund counsel advising a sponsor — opening with
+  a clear recommendation, walking through mechanics, identifying the structural
+  flip-point to Expert Fund, and honestly flagging the NPPR gap it chose not to
+  chase. Highly efficient 3-call trajectory with no redundancy."

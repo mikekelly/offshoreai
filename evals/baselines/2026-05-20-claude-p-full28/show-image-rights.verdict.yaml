@@ -1,0 +1,19 @@
+questionId: show-image-rights
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with zero hallucinated
+  citations. The candidate found the single authoritative corpus file in three
+  efficient tool calls (grep, ls+grep, read), extracted every material point,
+  and added genuinely useful context on enforcement limitations and the
+  draft-status caveat. A clean, citation-precise answer with no factual errors.

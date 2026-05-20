@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-eviction",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-20T13:32:51.920Z",
+  "wallClockSeconds": 27.689,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Grep",
+      "rawName": "Grep",
+      "inputDigest": "{\"pattern\":\"evict\",\"path\":\"knowledge/jersey/residential-tenancy\",\"output_mode\":\"files_with_matches\",\"-i\":\"true\"}",
+      "inputBytes": 112,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls -la /Users/mike/code/offshoreai/knowledge/jersey/residential-tenancy/\",\"description\":\"List residential tenancy files\"}",
+      "inputBytes": 133,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/jersey/residential-tenancy/non-payment-of-rent.md\"}",
+      "inputBytes": 103,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/jersey/residential-tenancy/eviction-procedure.md\"}",
+      "inputBytes": 102,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 6,
+    "outputTokens": 1870,
+    "cacheReadTokens": 126044,
+    "cacheWriteTokens": 47661,
+    "totalCostUsd": 0.40768325000000005
+  },
+  "answer": {
+    "text": "## Short answer: No — you cannot simply evict them yourself.\n\nUnder the **Residential Tenancy (Jersey) Law 2011**, non-payment of rent is a breach of the tenancy agreement, but your right to terminate is **not automatic**. You must follow a statutory procedure, and only a court order — enforced by the Viscount — can lawfully recover possession. (`knowledge/jersey/residential-tenancy/non-payment-of-rent.md`)\n\n### The proper procedure\n\n1. **Serve a written breach notice.** It must be in writing, signed by or for you, identify the unpaid rent specifically (period and amount), and require the tenant to remedy by paying the arrears in full within **at least 7 days** (statutory minimum — you can give longer, not less). A partial payment is not \"remedy\" unless you accept it.\n\n2. **Wait out the notice period.** If the tenant pays the arrears in full within the window, the breach is cured and the tenancy continues — you can't then proceed on those same arrears.\n\n3. **Apply to the Petty Debts Court** if the arrears remain unpaid. This court has **exclusive original jurisdiction** over residential-tenancy termination, eviction, and arrears judgments — the Royal Court does not handle these at first instance. You'd file the tenancy agreement, condition report, rent ledger/evidence of arrears, the breach notice with proof of service, and a record of attempts to engage the tenant. You can also seek a money judgment for the arrears. (both files above)\n\n4. **The hearing.** The court checks whether the breach is made out and the procedure was correct, considers any tenant defences (set-off for your own breaches such as failure to repair, a discrimination cross-claim, or harassment), and decides on a stay. It may grant the eviction order (sometimes immediately), grant it with a **stay of execution** (commonly 14–28 days, occasionally up to ~8 weeks), or refuse it for procedural defects or made-out defences.\n\n5. **Enforcement by the Viscount.** Only the Viscount may take possession from a resisting tenant. They attend the property, give the tenant a chance to leave, remove them (with reasonable force / police assistance if needed), inventory and store possessions, and restore possession to you. Viscount's fees, lock-changes and storage are costs you front and may recover from the tenant — often unrecoverable if the tenant is judgment-proof. (`knowledge/jersey/residential-tenancy/eviction-procedure.md`)\n\n### What you must NOT do (self-help is unlawful)\n\nChanging the locks, cutting off utilities, removing the tenant's possessions, or entering without consent are all unlawful — some are **criminal offences** under the RTJL and expose you to damages claims (harassment, conversion, unlawful eviction). (`knowledge/jersey/residential-tenancy/non-payment-of-rent.md`)\n\n### Tenant protections worth knowing\n\nThe 7-day notice is a hard minimum and a defective notice is fatal to your application; tenants may raise set-off, discrimination, or harassment defences; and stays of execution are **routinely granted** for families with children, pregnant tenants, those with disability/mental-health issues, or tenants awaiting Income Support or social-housing placement. (both files)\n\n### Realistic timeline\n\nA straightforward non-payment case typically runs **2–4 months** from missed payment to actual possession, longer if disputed, stayed, or appealed — self-help would be faster but is unlawful. (both files)\n\n---\n\nA note on freshness/status: both source files are `last_verified: 2026-05-18` (2 days ago, well within 180 days) but are marked **`status: draft`**, so treat the procedural detail as not-yet-fully-verified against primary sources.\n\n### Cited files\n1. `knowledge/jersey/residential-tenancy/non-payment-of-rent.md`\n2. `knowledge/jersey/residential-tenancy/eviction-procedure.md`",
+    "wordCount": 548
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

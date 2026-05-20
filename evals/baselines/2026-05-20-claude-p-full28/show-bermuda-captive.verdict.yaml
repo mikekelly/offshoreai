@@ -1,0 +1,22 @@
+questionId: show-bermuda-captive
+harness: claude-p
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Partial. The answer covers Classes 1-3, SAC, Solvency II equivalence,
+  NAIC status, and BMA oversight with perfect citation precision against the two
+  most authoritative corpus files — but completely omits Class 4 commercial
+  reinsurance with the US$100m minimum capital threshold and never mentions
+  Classes 3A/3B, which are rubric-required facts. For a question asking 'which
+  Class?' this is a material gap: a multinational exploring the full Bermuda
+  class spectrum would not learn about the iconic Class 4 tier. Freshness
+  handling is exemplary."

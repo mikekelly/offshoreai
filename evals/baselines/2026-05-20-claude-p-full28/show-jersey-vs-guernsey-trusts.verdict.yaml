@@ -1,0 +1,21 @@
+questionId: show-jersey-vs-guernsey-trusts
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. The candidate covers all five rubric facts with precision —
+  Article 9(4) vs s.14 explicitness, Re S&T Trusts case-law depth, PCC/ICC
+  distinction, and practical decision factors — and adds valuable extras (image
+  rights, PIF/JPF pairing, perpetual duration). Both citations verified against
+  the corpus: the dedicated comparison file and the cross-jurisdictional map are
+  the right sources and fully support every claim. Efficient two-call retrieval
+  with no redundancy."

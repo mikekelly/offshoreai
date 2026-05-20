@@ -1,0 +1,20 @@
+questionId: show-cell-companies
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with zero factual
+  errors. Every claim is cited to the correct corpus file; all five citations
+  verified against the source text. The answer correctly distinguishes each
+  vehicle's primary use case and delivers a clean decision framework. The single
+  borderline redundancy (ls after grep to confirm file existence) is minor. A
+  strong showcase-quality answer.

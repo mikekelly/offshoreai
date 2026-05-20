@@ -1,0 +1,24 @@
+questionId: show-trusts-comparison
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all four expected substance areas with no
+  factual errors, reads like cross-border trust counsel advising on vehicle
+  selection, and every citation verifies cleanly against the corpus. The
+  comparative decision rule (forced-heirship → Jersey, orphan SPV → STAR, family
+  operating co → VISTA) plus the layered-structure insight (Jersey on top,
+  STAR/VISTA underneath) demonstrate genuine synthesis. The only minor note is
+  that 'Trusts (Jersey) Law 1984' is not named explicitly in the prose —
+  Articles 9 and 9A are referenced throughout but the parent statute is named
+  only in the cited file, not the answer text. This does not materially affect
+  the jersey_specific score given the depth of Article-level treatment.

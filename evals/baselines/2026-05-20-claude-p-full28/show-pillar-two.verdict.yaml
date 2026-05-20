@@ -1,0 +1,22 @@
+questionId: show-pillar-two
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected facts with correct
+  Jersey-specific detail, names the MCIT statute, explains the QDMTT mechanism,
+  addresses UK parallel implementation and group consolidation tests, and
+  includes the practitioner-grade strategic-reassessment point. All five
+  citations verified against corpus — zero hallucinations. The only blemish is
+  naming the statute as 'Law 2024' (following pillar-two.md) when the
+  worked-example and rubric say 'Law 2025'; this is a corpus inconsistency, not
+  a fabrication, and does not materially mislead.

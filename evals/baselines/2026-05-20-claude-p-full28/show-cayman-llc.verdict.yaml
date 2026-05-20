@@ -1,0 +1,21 @@
+questionId: show-cayman-llc
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with zero hallucinated
+  citations. The candidate read the primary corpus file (cayman-llc.md) in full
+  and correctly extracted the LLC Act 2016 origin, Delaware-mirror design,
+  members/managers/LLC Agreement mechanics, check-the-box defaults, and the
+  three-way comparison (LLC vs Exempted Co vs ELP). Bonus coverage of Pillar Two
+  MTT, substance obligations, and drafting pitfalls adds practitioner value
+  without bloat. Efficient retrieval in 5 tool calls with no redundancy.

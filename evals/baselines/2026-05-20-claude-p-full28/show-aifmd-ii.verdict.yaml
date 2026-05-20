@@ -1,0 +1,22 @@
+questionId: show-aifmd-ii
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All six expected facts covered accurately, with the
+  counterintuitive delegation-impact point and AIF Code split — the two hardest
+  facts — both correctly sourced to Carey Olsen / Langham Hall commentary via
+  the frontier file. Every citation verified against the corpus; no
+  hallucinations. Voice registers as a funds-lawyer briefing with appropriate
+  practitioner-level terminology and practical orientation. The freshness
+  disclosure (as_of dates, draft status) is an unprompted but valuable addition.
+  Efficient 4-call retrieval with no redundancy.

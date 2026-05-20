@@ -1,0 +1,21 @@
+questionId: show-fund-routes
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with zero hallucinated
+  citations. The answer goes beyond the rubric by adding the BVI Incubator Fund
+  and Approved Manager context (both verified against corpus), framing the
+  Cayman ELP correctly as a vehicle form rather than a capped light-touch
+  regime, and providing a well-structured comparison table and decision
+  narrative. Every citation verified against corpus files. Efficient retrieval
+  in 6 tool calls with no redundancy.

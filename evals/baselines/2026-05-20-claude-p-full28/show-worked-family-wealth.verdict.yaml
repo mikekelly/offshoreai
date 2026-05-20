@@ -1,0 +1,22 @@
+questionId: show-worked-family-wealth
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: n/a
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: "Pass. All 7 expected facts present and correct with no material
+  errors. The answer is deeply Jersey-specific — naming 13 statute provisions
+  and the Esteem sham test — with zero generic offshore language. All four
+  citations verified against the corpus: every claim is supported by its cited
+  source, no hallucinations. Notably strong on the honest-limits section (in
+  personam pressure, asset situs, sham risk, re-import warning, parallel Italian
+  lifetime planning) which goes beyond the rubric's minimum and accurately
+  reflects the corpus's own guidance."

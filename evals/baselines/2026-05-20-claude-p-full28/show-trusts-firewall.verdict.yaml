@@ -1,0 +1,22 @@
+questionId: show-trusts-firewall
+harness: claude-p
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: "Partial overall: substance is strong (4 of 5 rubric facts,
+  paragraph-level Article 9 walkthrough, correct limits and drafting guidance)
+  and citation precision is flawless against the single authoritative file, but
+  the candidate omits the Royal Court anti-suit injunction point the rubric
+  expected — dropping substance to 4/5 rather than 5/5. No Jersey case law cited
+  (rubric says 'if possible' so not penalised). The voice is well-matched to a
+  litigator-to-foreign-lawyer register. Efficiency is excellent at one tool
+  call."

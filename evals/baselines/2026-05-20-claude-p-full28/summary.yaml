@@ -1,0 +1,118 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: claude-p
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-20T15:09:35.038Z
+  questions: 10
+totals:
+  pass: 10
+  partial: 0
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 1
+  substancePassRate: 1
+  medianToolCalls: 4
+  medianTokensInput: 11
+  medianTokensOutput: 2428.5
+  medianWallClockSeconds: 36.88
+  totalCostUsd: 4.4505
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-listing-vehicle
+    verdict: pass
+    summary: Pass. All four rubric facts covered accurately with precise citations
+      verified against the corpus. The candidate read exactly the three files it
+      needed (the cross-jurisdictional map was already in context), extracted
+      the right details from each, and structured the answer as a clear
+      recommendation hierarchy (Cayman default → Bermuda for insurance → BVI
+      cost-driven). One minor attribution imprecision (attributing 'no
+      equivalent yet' to the BVI file when it's in the Bermuda comparison table)
+      is non-misleading since the Bermuda file is cited. Freshness explicitly
+      addressed including draft-status caveat.
+  - id: show-emerging-manager-stack
+    verdict: pass
+    summary: Pass. All five expected facts are present and correct, with every claim
+      traced to a verified corpus file. The answer names four BVI-specific
+      statutes/regulations, reproduces the tier ladder verbatim, correctly
+      assembles the three-layer start-up stack from the approved-manager.md
+      use-case section, and handles freshness appropriately. No errors, no
+      hallucinated citations, no generic offshore language. Clean pass across
+      all graded dimensions.
+  - id: show-worked-topco-listing
+    verdict: pass
+    summary: Pass. All 8 rubric facts covered accurately with zero factual errors.
+      Every claim is backed by a verified corpus citation — five purpose-built
+      use-case files that are the most authoritative sources for this question.
+      The answer is thoroughly Jersey-specific (CJL 1991, zero-ten, MCIT 2025,
+      Substance Law 2019), structurally well-organised as an 8-step walkthrough,
+      and includes practical pitfalls. The draft-status caveat is a good touch.
+      Retrieval was clean and efficient at 7 tool calls with no redundancy.
+  - id: show-worked-family-wealth
+    verdict: pass
+    summary: "Pass. All 7 expected facts present and correct with no material
+      errors. The answer is deeply Jersey-specific — naming 13 statute
+      provisions and the Esteem sham test — with zero generic offshore language.
+      All four citations verified against the corpus: every claim is supported
+      by its cited source, no hallucinations. Notably strong on the
+      honest-limits section (in personam pressure, asset situs, sham risk,
+      re-import warning, parallel Italian lifetime planning) which goes beyond
+      the rubric's minimum and accurately reflects the corpus's own guidance."
+  - id: show-cayman-llc
+    verdict: pass
+    summary: Pass. All five rubric facts covered accurately with zero hallucinated
+      citations. The candidate read the primary corpus file (cayman-llc.md) in
+      full and correctly extracted the LLC Act 2016 origin, Delaware-mirror
+      design, members/managers/LLC Agreement mechanics, check-the-box defaults,
+      and the three-way comparison (LLC vs Exempted Co vs ELP). Bonus coverage
+      of Pillar Two MTT, substance obligations, and drafting pitfalls adds
+      practitioner value without bloat. Efficient retrieval in 5 tool calls with
+      no redundancy.
+  - id: show-jersey-vs-guernsey-trusts
+    verdict: pass
+    summary: "Pass. The candidate covers all five rubric facts with precision —
+      Article 9(4) vs s.14 explicitness, Re S&T Trusts case-law depth, PCC/ICC
+      distinction, and practical decision factors — and adds valuable extras
+      (image rights, PIF/JPF pairing, perpetual duration). Both citations
+      verified against the corpus: the dedicated comparison file and the
+      cross-jurisdictional map are the right sources and fully support every
+      claim. Efficient two-call retrieval with no redundancy."
+  - id: show-image-rights
+    verdict: pass
+    summary: Pass. All five rubric facts covered accurately with zero hallucinated
+      citations. The candidate found the single authoritative corpus file in
+      three efficient tool calls (grep, ls+grep, read), extracted every material
+      point, and added genuinely useful context on enforcement limitations and
+      the draft-status caveat. A clean, citation-precise answer with no factual
+      errors.
+  - id: show-uk-carry-reform
+    verdict: pass
+    summary: Pass. All seven rubric facts are present and correct, both citations
+      verified against corpus sources with zero hallucinations, and the voice is
+      a strong match for a PE-tax specialist briefing. The answer goes well
+      beyond the rubric minimum by covering GP-entity location,
+      carry-vs-co-invest distinction, sponsor-side actions, and a detailed
+      pitfalls section — all supported by the frontier file. The only minor note
+      is that the initial Grep and follow-up Bash grep are mildly redundant, but
+      the four-call trajectory is efficient overall. A strong showcase-quality
+      answer.
+  - id: show-continuation-funds
+    verdict: pass
+    summary: "Pass. The candidate hit all six rubric facts (fairness opinions only
+      partially — covered as 'independent valuation' rather than named
+      explicitly, but the substance is there). Voice is convincingly
+      fund-secondaries-specialist: DPI, LPAC, carry crystallisation, MFN
+      triggers all deployed naturally. Both citations verified clean against the
+      corpus. Notably strong epistemic discipline — flagged the PIF file's draft
+      status and checked freshness dates proactively. Efficient three-call
+      trajectory with zero redundancy."
+  - id: show-aifmd-ii
+    verdict: pass
+    summary: Pass. All six expected facts covered accurately, with the
+      counterintuitive delegation-impact point and AIF Code split — the two
+      hardest facts — both correctly sourced to Carey Olsen / Langham Hall
+      commentary via the frontier file. Every citation verified against the
+      corpus; no hallucinations. Voice registers as a funds-lawyer briefing with
+      appropriate practitioner-level terminology and practical orientation. The
+      freshness disclosure (as_of dates, draft status) is an unprompted but
+      valuable addition. Efficient 4-call retrieval with no redundancy.

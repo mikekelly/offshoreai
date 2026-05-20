@@ -1,0 +1,21 @@
+questionId: show-drug-driving
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected facts with zero errors,
+  clearly distinguishes current impairment-only law from the pending February
+  2026 reform proposal, and correctly cites the single authoritative corpus
+  file. The voice cleanly separates enacted law from legislative pipeline.
+  Efficiency is strong at 3 tool calls with no redundancy. The proactive
+  freshness note flagging draft status and single-source reform coverage is a
+  quality signal beyond what the rubric requires.

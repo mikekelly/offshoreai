@@ -1,0 +1,21 @@
+questionId: show-tenancy-2025
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. The candidate covered all 7 expected substance facts with no
+  errors, correctly named the 2025 Amendment Law and 15 April 2026 commencement,
+  cited the two most authoritative corpus files, and every claim verified
+  against those files. The answer also included bonus detail (fees disclosure,
+  what did not change, Rent Tribunal exclusions) that was accurate. Two targeted
+  Read calls with zero redundancy — a model-efficient retrieval for a
+  single-topic question.

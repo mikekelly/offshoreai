@@ -1,0 +1,22 @@
+questionId: show-uk-carry-reform
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. All seven rubric facts are present and correct, both citations
+  verified against corpus sources with zero hallucinations, and the voice is a
+  strong match for a PE-tax specialist briefing. The answer goes well beyond the
+  rubric minimum by covering GP-entity location, carry-vs-co-invest distinction,
+  sponsor-side actions, and a detailed pitfalls section — all supported by the
+  frontier file. The only minor note is that the initial Grep and follow-up Bash
+  grep are mildly redundant, but the four-call trajectory is efficient overall.
+  A strong showcase-quality answer.

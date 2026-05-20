@@ -1,0 +1,24 @@
+questionId: show-voisinage
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected substance facts (Norman
+  customary doctrine, Pothier/Le Geyt foundation, distinct from English
+  nuisance, objective unreasonable-harm test, Royal Court jurisdiction) with
+  accurate detail drawn from the corpus. Citation precision is clean — every
+  claim maps to a verified corpus line, no hallucinations. The voice is
+  convincingly advocate-to-client, grounded in customary-law explanation with
+  practical guidance. One redundant tool call (grep then bash-grep for the same
+  query) is the only efficiency note. The responsible flagging of draft status
+  and thin case-law detail is a quality touch that a less careful answer would
+  omit.

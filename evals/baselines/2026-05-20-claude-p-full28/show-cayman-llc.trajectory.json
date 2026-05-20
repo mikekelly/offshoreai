@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-cayman-llc",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-20T15:04:19.364Z",
+  "wallClockSeconds": 39.33,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls knowledge/cayman/ 2>/dev/null && echo \\\"---\\\" && grep -rl -i \\\"check-the-box\\\\|check the box\\\\|redomicil\\\\|continuation\\\\|de-register\\\\|transfer by way of continuation\\\" knowledge/cayma",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/cayman/cayman-llc.md\"}",
+      "inputBytes": 74,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"cd knowledge/cayman && for f in companies.md exempted-company.md tax.md; do echo \\\"=== $f ===\\\"; grep -n -i \\\"redomicil\\\\|continuation\\\\|migrat\\\\|de-register\\\\|pillar\\\\|check-the-box\\\\|con",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/cayman/companies.md\",\"offset\":105,\"limit\":30}",
+      "inputBytes": 97,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/cayman/tax.md\",\"offset\":79,\"limit\":30}",
+      "inputBytes": 90,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 12,
+    "outputTokens": 2583,
+    "cacheReadTokens": 301257,
+    "cacheWriteTokens": 42829,
+    "totalCostUsd": 0.48294475
+  },
+  "answer": {
+    "text": "All sources are fresh (last_verified within the last few days; none exceed the 180-day threshold), so no freshness warnings apply.\n\n## Is the Cayman LLC the right form for redomiciling a Delaware LLC?\n\nYes — the Cayman LLC is the form purpose-built for exactly this. The **Limited Liability Companies Act 2016** was introduced specifically to **mirror the Delaware LLC** and make Cayman attractive for cross-border restructurings involving Delaware LLCs (`knowledge/cayman/cayman-llc.md`). It is a distinct legal form — neither a company nor a partnership — combining limited liability for *all* members with the contractual flexibility of an LLC Agreement, member-managed governance by default, and minimal statutory formalities (no shares, no statutory capital concept).\n\nThe decisive advantage over the alternative (a Cayman exempted company) is structural continuity. For a Delaware LLC, **direct conversion to a Cayman LLC is possible**, whereas redomiciling into an exempted company would require converting to a corporate form first (`knowledge/cayman/cayman-llc.md`). Migration in and out is permitted, and mergers/conversions are available, including with foreign LLCs. So if you want like-for-like parity — same form, same membership-interest concept, same LLC Agreement as master document — the Cayman LLC is the right target.\n\nTwo caveats from the corpus:\n- The Cayman LLC is **member-managed by default**, so unless you explicitly elect manager-managed, every member may hold management authority. The whole structure rides on the LLC Agreement, and the corpus flags sloppy drafting as \"fatal\" (`knowledge/cayman/cayman-llc.md`).\n- The corpus warns that migration from a Delaware LLC carries **tax-residency and Pillar Two implications** that need careful handling (`knowledge/cayman/cayman-llc.md`). Cayman has implemented a Pillar Two-equivalent **Multinational Top-up Tax (MTT) from 2025**, a 15% minimum effective rate for groups with €750m+ revenue (`knowledge/cayman/tax.md`). If your group is in scope, that changes the tax calculus. Cayman also has economic-substance obligations (Substance Law 2018) that apply to any entity carrying on relevant activities (`knowledge/cayman/cayman-llc.md`, `knowledge/cayman/tax.md`).\n\nThe general Cayman migration mechanism is **continuance in / continuance out** under specified Registrar procedures (`knowledge/cayman/companies.md`, `knowledge/cayman/exempted-company.md`), and the LLC registers with the Registrar much like an exempted company, with a 50-year tax undertaking available (`knowledge/cayman/cayman-llc.md`).\n\n## How check-the-box works\n\n\"Check-the-box\" is the US federal tax **entity-classification election**. As described in the corpus (`knowledge/cayman/cayman-llc.md`):\n\n- **Default classification.** As a foreign entity owned by US tax persons, the Cayman LLC defaults to a **partnership** (if more than one member) or a **disregarded entity** (if a single member). Both give pass-through / flow-through treatment.\n- **Elective classification.** The entity can instead **elect to be treated as a corporation**. Corporation treatment is useful for blocker structures and for GILTI / Subpart F planning.\n\nThis eligibility for check-the-box is one of the main reasons sponsors pick the LLC over the exempted company — the exempted company is a **per-se corporation in most cases**, so it lacks that flexibility (`knowledge/cayman/cayman-llc.md`). The corpus also flags a pitfall: do not assume the *default* classification is what your structure needs — \"US tax assumption errors\" are listed explicitly, so the election should be a deliberate decision rather than an afterthought.\n\nNote: the corpus describes the *mechanism and consequences* of check-the-box at this conceptual level. It does not contain the procedural detail (e.g., IRS Form 8832, election timing/effective-date rules), as that is US domestic tax administration outside this offshore corpus.\n\n## Cited files\n\n1. `knowledge/cayman/cayman-llc.md`\n2. `knowledge/cayman/companies.md`\n3. `knowledge/cayman/exempted-company.md`\n4. `knowledge/cayman/tax.md`",
+    "wordCount": 550
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

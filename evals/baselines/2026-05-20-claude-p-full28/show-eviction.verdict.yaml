@@ -1,0 +1,22 @@
+questionId: show-eviction
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: "Pass. All six expected substance facts are present, correctly stated,
+  and well-cited against the two most relevant corpus files with zero
+  hallucinated citations. The single meaningful gap is the omission of the 2025
+  Amendment Law (in force 15 April 2026), which the corpus index explicitly
+  marks as required context for any 2026 tenancy question — this cost
+  jersey_specific and citation_recall a partial each. Voice is a clean match:
+  direct, landlord-facing, practical. The ls call after grep was mildly
+  redundant but the overall retrieval was efficient at 4 calls and 28 seconds."

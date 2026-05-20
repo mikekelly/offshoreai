@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-bermuda-captive",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-20T13:35:26.939Z",
+  "wallClockSeconds": 32.686,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls /Users/mike/code/offshoreai/knowledge/bermuda/\",\"description\":\"List Bermuda corpus files\"}",
+      "inputBytes": 105,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Grep",
+      "rawName": "Grep",
+      "inputDigest": "{\"pattern\":\"captive\",\"path\":\"/Users/mike/code/offshoreai/knowledge/bermuda\",\"output_mode\":\"files_with_matches\"}",
+      "inputBytes": 111,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/bermuda/insurance-classes.md\"}",
+      "inputBytes": 82,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/bermuda/insurance.md\"}",
+      "inputBytes": 74,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2830,
+    "outputTokens": 2237,
+    "cacheReadTokens": 137215,
+    "cacheWriteTokens": 40015,
+    "totalCostUsd": 0.38877625000000005
+  },
+  "answer": {
+    "text": "## Why Bermuda\n\nBermuda is the world's leading domicile for captive insurance — it has the largest captive market globally, the deepest reinsurance and specialty-insurance professional infrastructure (brokers, actuaries, insurance managers, specialist legal/accounting firms), and a mature regulatory regime under the **Insurance Act 1978** administered by the BMA. ([knowledge/bermuda/insurance.md](knowledge/bermuda/insurance.md), [knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md))\n\nTwo structural advantages matter especially for a multinational:\n\n- **Solvency II equivalence** — Bermuda's regime (the Bermuda Solvency Capital Requirement) is recognised by the EU as equivalent, so Bermuda vehicles reinsuring EU cedants benefit from reduced collateral requirements. ([knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md), [knowledge/bermuda/insurance.md](knowledge/bermuda/insurance.md))\n- **NAIC qualified jurisdiction** — for US-facing risk, Bermuda is a qualified jurisdiction, again allowing reduced collateral when reinsuring US cedants. ([knowledge/bermuda/insurance.md](knowledge/bermuda/insurance.md))\n\nThe corpus notes the trade-off: relative to lighter-touch domiciles, Bermuda carries higher BMA scrutiny and real substance requirements. By contrast, Cayman is the choice for **healthcare** captives and Guernsey for **European-parent** captives wanting an EU-proximate (PCC-based) structure; Bermuda is typically chosen for the **largest** captives, catastrophe reinsurance, and ILS. ([knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md))\n\n## Which class\n\nThis depends on whose risks the captive will write. For a multinational group, the relevant general-business (P&C) classes are:\n\n- **Class 1 — pure single-parent captive.** This is the right class if the captive insures **only the risks of your own group** (related-party risks). It is the simplest category and the lowest regulatory tier, typical for a large corporate self-insuring its own risks. ([knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md), [knowledge/bermuda/insurance.md](knowledge/bermuda/insurance.md))\n- **Class 2 — group / multi-owner captive.** Use this if the captive is multi-parent (e.g. a joint venture or trade-association structure) **or** if it will write group risks plus a limited amount of unrelated third-party business. ([knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md))\n- **Class 3 — captive writing significant unrelated business.** Relevant only if you intend to write substantial third-party (commercial) business beyond the group, up to specified thresholds. ([knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md))\n\nIf your group has multiple distinct programmes or lines you want kept legally separate, the corpus also flags running the captive through a **Segregated Accounts Company (SAC)** for multi-line / multi-programme structures. ([knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md))\n\n**Bottom line:** for a multinational group self-insuring its own risks, the default is **Class 1** (pure single-parent). Step up to **Class 2** if there are multiple unrelated owners or some limited third-party business, and to **Class 3** only if you plan significant unrelated commercial business. The corpus's stated principle is to pick the *lowest class consistent with your business* to minimise regulatory overhead. ([knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md))\n\nBoth source files carry recent `last_verified` dates (2026-05-17 and 2026-05-18), well within the 180-day freshness window. Note both are marked `status: draft`, and the class parameters are described as \"consolidated and indicative\" — definitive capital and threshold figures should be confirmed against current Bermuda regulations.\n\n## Files cited\n\n1. [knowledge/bermuda/insurance-classes.md](knowledge/bermuda/insurance-classes.md)\n2. [knowledge/bermuda/insurance.md](knowledge/bermuda/insurance.md)",
+    "wordCount": 445
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

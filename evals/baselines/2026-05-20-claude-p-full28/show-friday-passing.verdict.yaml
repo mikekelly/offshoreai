@@ -1,0 +1,23 @@
+questionId: show-friday-passing
+harness: claude-p
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: n/a
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 9
+hallucinatedCitations: 0
+summary: Pass. Strong answer that covers 5 of 6 rubric facts with accurate
+  citations and good voice for a non-Jersey reader. The notable omission is the
+  'contrat héréditaire' terminology — present in commercial-leases.md which the
+  candidate read but didn't extract. Minor conflation of Samedi Division
+  (single-judge per royal-court.md) with the two-Jurats property-passing
+  procedure is a presentation error, not a material factual one. The honest
+  caveat about the corpus not explaining *why Friday specifically* shows good
+  epistemic discipline. Citation precision is clean — all seven cited files
+  verified as supporting their attached claims.

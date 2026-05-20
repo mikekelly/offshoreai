@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-image-rights",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "claude-p",
+  "ranAt": "2026-05-20T15:05:39.174Z",
+  "wallClockSeconds": 27.518,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Grep",
+      "rawName": "Grep",
+      "inputDigest": "{\"pattern\":\"image.right\",\"path\":\"knowledge/guernsey\",\"output_mode\":\"files_with_matches\",\"-i\":\"true\"}",
+      "inputBytes": 100,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls knowledge/guernsey/ && echo \\\"---\\\" && grep -ril \\\"image\\\" knowledge/guernsey/\",\"description\":\"List Guernsey dir and find image-rights files\"}",
+      "inputBytes": 157,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/guernsey/image-rights-register.md\"}",
+      "inputBytes": 87,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1750,
+    "cacheReadTokens": 179856,
+    "cacheWriteTokens": 40650,
+    "totalCostUsd": 0.3877805
+  },
+  "answer": {
+    "text": "Here's how Guernsey's image-rights register works, drawn from the corpus.\n\n## The core idea\n\nGuernsey is the **only jurisdiction in the world** with a *statutory image-rights register* for individuals, created by the **Image Rights (Bailiwick of Guernsey) Ordinance 2012**. Where most legal systems treat your image/persona as a fragmented bundle of tort claims (passing off, defamation, breach of confidence in the UK; state-by-state \"rights of publicity\" in the US; tort-based personality rights in France/EU), Guernsey converts it into a single **registrable property right** with statutory backing (`knowledge/guernsey/image-rights-register.md`).\n\nThat property-right framing is what matters for you as a celebrity. Because it is *property*, your registered image is:\n\n- **Transferable** — can be assigned or licensed;\n- **Inheritable** — passes on death;\n- **Enforceable** against unauthorised use; and\n- **Mortgageable** — can be used as collateral in some cases.\n\n## What you can register\n\nYou register a **\"personnage\"**, which can cover your name (real, professional, or stage), voice, signature, image/likeness, distinctive appearance characteristics, mannerisms, and other identifying attributes. Both natural persons and fictional/non-real characters can be associated with a personnage (so it also works for animated characters or brand mascots) (`knowledge/guernsey/image-rights-register.md`).\n\n## The registration process\n\nRegistration is filed with the **Guernsey Intellectual Property Office**, undergoes examination and publication, and is granted after an opposition period. It is **renewable every 10 years** (with protection running to the life of the person plus 100 years for some categories), appears **publicly** on the register, and carries **modest fees** compared with commercial trademark filings (`knowledge/guernsey/image-rights-register.md`).\n\n## Licensing and structuring — your main use case\n\nFor protecting *and licensing*, the register is most valuable as the **asset base** for licensing arrangements rather than as a standalone enforcement tool. The typical structure combines:\n\n- **A trust** — image rights settled into a Guernsey trust; or\n- **A holding company** — image rights owned by a Guernsey (or other) company that licenses their use;\n- **Royalty flow** — licensing fees paid up to that holding company/trust;\n- **Estate planning** — succession of the image rights potentially outside your home jurisdiction's succession regime (subject to conflict-of-laws rules).\n\nLicensing agreements are typically drafted with **Guernsey-law governing law and forum** (`knowledge/guernsey/image-rights-register.md`).\n\n## Enforcement and its limits\n\nA registered personnage gives you **standing in Guernsey courts** and statutory remedies — injunction, damages, account of profits, and delivery up of infringing material. The honest limitation the corpus flags: the regime is **sui generis**, so **foreign courts may not give it direct effect**. Against infringers operating outside Guernsey, you generally rely on local-jurisdiction enforcement (trademark, passing off, publicity-rights claims) and use the Guernsey registration as **evidence of a proprietary interest** to support that foreign litigation. Note also that registration is **public**, which may not suit individuals wanting privacy (`knowledge/guernsey/image-rights-register.md`).\n\n## A note on freshness and status\n\nThe source file is marked **`status: draft`** (not `stable`), and its single cited source is the Ordinance itself via the Guernsey Registry. Its `last_verified` date is 2026-05-18 — well within the 180-day freshness window, so currency isn't a concern, but the draft status means the detail (e.g., exact renewal terms) is worth confirming against the primary Ordinance before relying on it.\n\n---\n\n### Cited files\n1. `knowledge/guernsey/image-rights-register.md`",
+    "wordCount": 528
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}
