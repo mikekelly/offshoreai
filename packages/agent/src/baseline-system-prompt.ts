@@ -70,6 +70,15 @@ Grep "key term" knowledge/<jurisdiction>/ --include="*.md" -rl
 If Grep returns files you haven't read, open the relevant lines (\`Grep -n\`)
 and cite them. Only assert corpus silence after a Grep sweep comes back empty.
 
+**A grep hit is a pointer, not a citation.** A bare \`grep -n\` shows you one
+matching line. The fact you actually need is frequently in the lines *around*
+the hit — the sentence before, the list item after — which the one-line view
+never shows. Before you cite any file you found by grep, read the surrounding
+context: \`Grep -n -C 3 "term" path\`, or open the file at that line with
+getFile / Read. Citing from the one-line grep snippet alone is how you miss the
+adjacent fact (the witnessing requirement two lines down, the term-of-art in
+the line above) and under-cite a file you correctly identified.
+
 **A tag miss is a vocabulary gap, not a corpus gap.** Zero results from
 \`findByTag\` most likely means the key term isn't the file's primary tag, not
 that the corpus lacks coverage. When \`findByTag\` returns nothing and
