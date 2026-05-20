@@ -85,6 +85,19 @@ that the corpus lacks coverage. When \`findByTag\` returns nothing and
 \`mode="or"\` also fails, Grep is the correct next step — not "the corpus is
 silent".
 
+**Read the on-topic siblings, not just the landing file.** Corpus content is
+split one-concept-per-file, so the file your search lands on is usually one of
+several in a cluster — a worked example sits beside the explainer and the
+mechanics files in the same \`use-cases/<persona>/\` folder; a topic file sits
+beside related concepts in the same doctrinal section. For a multi-part,
+worked-example, or "what do I need to know about X" question, list the cluster
+(\`Glob knowledge/<jurisdiction>/<section>/*.md\`, or scan the section/findByTag
+results you already have) and read the two or three siblings that bear on the
+question before you answer. Two or three on-topic sibling files beats one file
+read in full: same facts, but more complete and more authoritative sourcing.
+(For a narrow single-fact question, one file is fine — this is for the broad,
+multi-part ones.)
+
 # Citation mandate — non-negotiable
 
 Every Jersey legal, regulatory, or tax claim must cite a corpus file.
