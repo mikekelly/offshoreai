@@ -5,7 +5,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { stringify as yamlStringify } from "yaml";
-import { gradeAnswer } from "./grader.js";
+import { failVerdict, gradeAnswer } from "./grader.js";
 import { runHarness } from "./harnesses.js";
 import type { EvalQuestion, GraderVerdict, HarnessName, HarnessOutput, Verdict } from "./types.js";
 
@@ -69,54 +69,102 @@ export async function runBatch(opts: BatchOptions): Promise<BatchSummary> {
       const q = queue.shift();
       if (!q) break;
       const tag = concurrency > 1 ? `[${opts.harness}/w${workerId}]` : `[${opts.harness}]`;
-      console.log(`${tag} ${q.id}: dispatching...`);
-      const output = await runHarness(opts.harness, q, {
-        repoRoot: opts.repoRoot,
-        ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
-        ...(opts.verify ? { verify: true } : {}),
-      });
-      outputs.push(output);
-
-      await writeFile(
-        resolve(opts.outputDir, `${q.id}.answer.md`),
-        output.answer + "\n",
-        "utf8",
-      );
-      await writeFile(
-        resolve(opts.outputDir, `${q.id}.trajectory.json`),
-        JSON.stringify(buildTrajectoryRecord(opts.evalSuite, output), null, 2) + "\n",
-        "utf8",
-      );
-      if (output.verifierVerdict) {
+      // Per-question isolation: a single question failing (dispatch error,
+      // grader API error, write error) must never crash the batch and the
+      // sibling/queued work. Any throw is caught here, recorded as a fail
+      // verdict for this question, and the worker moves on.
+      try {
+        await runQuestion(q, tag);
+      } catch (err) {
+        const detail = (err as Error)?.message ?? String(err);
+        console.error(`${tag} ${q.id}: ERROR — ${detail} (recorded as fail; batch continues)`);
+        const verdict = failVerdict(q.id, opts.harness, `Batch error (isolated): ${detail}`);
+        verdicts.push(verdict);
         await writeFile(
-          resolve(opts.outputDir, `${q.id}.verifier.json`),
-          JSON.stringify(output.verifierVerdict, null, 2) + "\n",
+          resolve(opts.outputDir, `${q.id}.verdict.yaml`),
+          yamlStringify(verdict),
           "utf8",
-        );
-        console.log(`${tag} ${q.id}: verifier ${output.verifierVerdict.kind.toUpperCase()} (${output.verifierVerdict.claimsChecked} claims; ${output.verifierVerdict.rejectCount} rejections; \$${output.verifierVerdict.costUsd.toFixed(4)})`);
+        ).catch(() => {});
       }
-
-      if (opts.skipGrader) {
-        console.log(`${tag} ${q.id}: dispatched (${output.wallClockSeconds.toFixed(1)}s, ${output.toolCalls.length} tools); grading skipped`);
-        continue;
-      }
-
-      console.log(`${tag} ${q.id}: grading...`);
-      const verdict = await gradeAnswer(q, output, {
-        repoRoot: opts.repoRoot,
-        ...(opts.graderModel ? { model: opts.graderModel } : {}),
-      });
-      verdicts.push(verdict);
-
-      await writeFile(
-        resolve(opts.outputDir, `${q.id}.verdict.yaml`),
-        yamlStringify(verdict),
-        "utf8",
-      );
-
-      console.log(`${tag} ${q.id}: ${verdict.overall.toUpperCase()} (${verdict.factsCovered}/${verdict.factsExpected} facts; ${verdict.hallucinatedCitations} hallucinated citations)`);
     }
   });
+
+  async function runQuestion(q: EvalQuestion, tag: string): Promise<void> {
+    console.log(`${tag} ${q.id}: dispatching...`);
+    const output = await runHarness(opts.harness, q, {
+      repoRoot: opts.repoRoot,
+      ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
+      ...(opts.verify ? { verify: true } : {}),
+    });
+    outputs.push(output);
+
+    await writeFile(
+      resolve(opts.outputDir, `${q.id}.answer.md`),
+      output.answer + "\n",
+      "utf8",
+    );
+    await writeFile(
+      resolve(opts.outputDir, `${q.id}.trajectory.json`),
+      JSON.stringify(buildTrajectoryRecord(opts.evalSuite, output), null, 2) + "\n",
+      "utf8",
+    );
+    if (output.verifierVerdict) {
+      await writeFile(
+        resolve(opts.outputDir, `${q.id}.verifier.json`),
+        JSON.stringify(output.verifierVerdict, null, 2) + "\n",
+        "utf8",
+      );
+      console.log(`${tag} ${q.id}: verifier ${output.verifierVerdict.kind.toUpperCase()} (${output.verifierVerdict.claimsChecked} claims; ${output.verifierVerdict.rejectCount} rejections; \$${output.verifierVerdict.costUsd.toFixed(4)})`);
+    }
+
+    if (opts.skipGrader) {
+      console.log(`${tag} ${q.id}: dispatched (${output.wallClockSeconds.toFixed(1)}s, ${output.toolCalls.length} tools); grading skipped`);
+      return;
+    }
+
+    console.log(`${tag} ${q.id}: grading...`);
+    const verdict = await gradeWithRetry(q, output, tag);
+    verdicts.push(verdict);
+
+    await writeFile(
+      resolve(opts.outputDir, `${q.id}.verdict.yaml`),
+      yamlStringify(verdict),
+      "utf8",
+    );
+
+    console.log(`${tag} ${q.id}: ${verdict.overall.toUpperCase()} (${verdict.factsCovered}/${verdict.factsExpected} facts; ${verdict.hallucinatedCitations} hallucinated citations)`);
+  }
+
+  // Bounded retry around the grader call. The grader is itself a Claude
+  // request, so transient API errors (Overloaded, stream idle timeout,
+  // rate limit) are common; without retry they get recorded as fake
+  // content-fails and pollute the baseline. Retries the dispatch up to
+  // 3 attempts with exponential backoff; a persistent failure falls
+  // through to the caller's per-question catch.
+  async function gradeWithRetry(
+    q: EvalQuestion,
+    output: HarnessOutput,
+    tag: string,
+  ): Promise<GraderVerdict> {
+    const maxAttempts = 3;
+    let lastErr: unknown;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        return await gradeAnswer(q, output, {
+          repoRoot: opts.repoRoot,
+          ...(opts.graderModel ? { model: opts.graderModel } : {}),
+        });
+      } catch (err) {
+        lastErr = err;
+        if (attempt < maxAttempts) {
+          const backoffMs = 2000 * 2 ** (attempt - 1); // 2s, 4s
+          console.warn(`${tag} ${q.id}: grader attempt ${attempt}/${maxAttempts} failed (${(err as Error)?.message ?? err}); retrying in ${backoffMs}ms`);
+          await new Promise((r) => setTimeout(r, backoffMs));
+        }
+      }
+    }
+    throw lastErr;
+  }
 
   await Promise.all(workers);
 

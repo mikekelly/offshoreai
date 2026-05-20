@@ -205,7 +205,7 @@ function parseFactsCovered(v: unknown): [number, number] {
   return [0, 0];
 }
 
-function failVerdict(qid: string, harness: HarnessOutput["harness"], reason: string): GraderVerdict {
+export function failVerdict(qid: string, harness: HarnessOutput["harness"], reason: string): GraderVerdict {
   return {
     questionId: qid,
     harness,
