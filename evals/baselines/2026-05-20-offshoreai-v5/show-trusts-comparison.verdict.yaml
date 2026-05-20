@@ -1,0 +1,23 @@
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. The answer covers all four rubric substance points — Jersey
+  Article 9/9A, Cayman STAR as enforcer-based purpose trust, BVI VISTA as
+  share-ownership disengagement trust, and comparative decision criteria — with
+  correct Jersey-specific statutory citations (TJL 1984, Article 9, 9A). Voice
+  reads as cross-border trust counsel: structured, comparative, operationally
+  useful. All five citations verified against corpus files with zero
+  hallucinations. The draft-status caveat is a good freshness-handling practice.
+  The answer is tight (roughly 90-second read) and the three-row decision rule
+  of thumb is an effective closing device."

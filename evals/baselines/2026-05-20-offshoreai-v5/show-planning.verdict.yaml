@@ -1,0 +1,22 @@
+questionId: show-planning
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with inline citations to
+  the correct corpus files — every citation verified as supporting the attached
+  claims. The answer is Jersey-specific throughout (PBL 2002, GD Order 2011,
+  Building Bye-Laws 2007, Department for the Environment all named),
+  operationally useful for a homeowner (Certificate of Lawful Development tip,
+  pre-app drop-in, covenant check, criminal liability warning), and honestly
+  caveats the draft status and numeric-threshold gap. Four tool calls with zero
+  redundancy — clean retrieval path.

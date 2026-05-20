@@ -1,0 +1,39 @@
+## Short answer
+
+For a NASDAQ listing, **Cayman Exempted is the market-standard default** — unless your business is (re)insurance/ILS, in which case **Bermuda Exempted** is the natural home. **BVI BC works and is cheaper, but its exchange acceptance is more limited**, so it's the weaker choice specifically for a US listing.
+
+> ⚠️ All three corpus files I'm relying on are `status: draft` — drafted but not yet editorially verified against primary sources. Treat the substance as directionally reliable but confirm vehicle choice with listing counsel before acting. (Freshness is fine: all three last verified 2026-05-18 / 05-17, well within tolerance.)
+
+## The comparison that matters for NASDAQ
+
+**Cayman Exempted** — the default. Cayman is "one of three jurisdictions (alongside BVI and Delaware) routinely accepted by major exchanges as listing vehicles," and many US-listed operating groups with Asia/EMEA operations list as Cayman exempted companies — the Alibaba / TikTok holdco pattern. Its comparison table records listing acceptance on **NYSE, NASDAQ, HKEx**. Capital flexibility (multi-class shares, no UK-style capital maintenance), fast incorporation (1–2 days), and re-domiciliation in/out all support a pre-IPO holdco. `knowledge/cayman/exempted-company.md`
+
+**Bermuda Exempted** — routinely accepted, insurance-led. The file lists "**Listed holdcos on NYSE / NASDAQ / LSE** (Bermuda is routinely accepted as a listing domicile)" as a core use case. The distinctive feature is **BMA pre-vetting** of incorporations — harder to form, but the regulatory filter delivers counterparty confidence. This is why Bermuda is the conventional choice for insurance/reinsurance listings rather than general tech holdcos. `knowledge/bermuda/exempted-company.md`
+
+**BVI BC** — works, lower cost, but a step down on exchange acceptance. The cross-jurisdictional map flags BVI for "lower-cost smaller listing" with "some exchange-acceptance limits," and the Cayman comparison table explicitly marks BVI listing acceptance as "NYSE, NASDAQ, HKEx (**more limited**)." For a NASDAQ listing of any scale, that limitation cuts against it. `knowledge/bvi/business-company.md`, `knowledge/CROSS-JURISDICTIONAL-MAP.md`
+
+## Decision framing
+
+| Your profile | Lean toward |
+|---|---|
+| US-listed tech / operating holdco | **Cayman Exempted** (the Alibaba/TikTok pattern) |
+| Insurance / reinsurance / ILS listing | **Bermuda Exempted** |
+| Cost-sensitive, smaller listing | **BVI BC** — accepting more limited exchange acceptance |
+
+This is from the corpus's "Where should I form my listing-vehicle TopCo?" framework. `knowledge/CROSS-JURISDICTIONAL-MAP.md`
+
+## Two caveats the corpus flags but doesn't resolve for you
+
+1. **Pillar Two.** All three jurisdictions now have a 15% QDMTT-equivalent for in-scope groups (consolidated revenue ≥ EUR 750m). Bermuda's CIT 2023 is in force for fiscal years from 1 Jan 2025; Cayman's MCIT 2025 and BVI's MTT 2025 are the parallels. If your group is below the threshold the historic no-direct-tax position continues. `knowledge/bermuda/exempted-company.md`, `knowledge/CROSS-JURISDICTIONAL-MAP.md`
+2. **Economic substance.** A holding company in any of the three carries substance obligations under the respective 2018/2019 Substance Acts — pure equity-holding companies get a reduced test. `knowledge/cayman/exempted-company.md`
+
+One thing the corpus does *not* let me assess: NASDAQ's own listing-standard and corporate-governance home-country-practice treatment of each domicile, and the SEC foreign-private-issuer analysis (Form F-1). That's a listing-counsel question, not a corpus one.
+
+## Cited files
+
+1. `knowledge/cayman/exempted-company.md` (draft)
+2. `knowledge/bermuda/exempted-company.md` (draft)
+3. `knowledge/bvi/business-company.md` (draft)
+4. `knowledge/CROSS-JURISDICTIONAL-MAP.md`
+
+> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.

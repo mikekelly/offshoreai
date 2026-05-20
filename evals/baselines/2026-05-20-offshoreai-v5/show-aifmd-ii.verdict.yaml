@@ -1,0 +1,23 @@
+questionId: show-aifmd-ii
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer covers 5 of 6 rubric facts accurately and with strong
+  citation discipline — every claim traced to a verified corpus file, zero
+  hallucinations, exemplary freshness caveats. The one material gap is that the
+  loan-origination AIF separate regime is mentioned only as a disclosure
+  sub-point rather than the significant standalone new framework the corpus
+  identifies; fees/costs are also not named as an explicit disclosure category.
+  Voice is well-calibrated for a funds-lawyer-to-GC register. The
+  counterintuitive delegation-impact point — the most analytically demanding
+  rubric fact — is handled cleanly.

@@ -1,0 +1,20 @@
+questionId: show-parish-hall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: Pass. All six rubric facts present and correct, Jersey-grounded voice
+  with Centenier and Honorary Police context, single citation verified against
+  corpus with full support. One redundant tool call (searched
+  parish-hall-enquiry tag after parish-hall already matched), but the answer is
+  substantively complete and the proactive draft-status caveat is a model
+  freshness-handling behaviour.

@@ -1,0 +1,23 @@
+questionId: show-trusts-firewall
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: "Partial. Substance is strong on four of five rubric facts — Article 9
+  paragraphs (1), (2), (2A), (3), (4) are accurately explained with civil-law
+  examples and practical drafting points — but omits Royal Court anti-suit
+  injunctions, a rubric-expected fact. Jersey-specific scoring is partial: TJL
+  1984 and Article 9 are named but no Jersey case law is cited despite the
+  rubric requesting it. Citation precision is clean (single file, all claims
+  verified), but citation recall is narrow — only one corpus file used and no
+  case-law search attempted. Voice is the strongest dimension: reads like a
+  practitioner briefing a foreign lawyer, not a textbook recital."

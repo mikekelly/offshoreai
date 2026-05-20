@@ -1,0 +1,23 @@
+questionId: show-fund-routes
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. All five expected fact groups fully covered with correct detail;
+  all six cited files verified against the corpus with zero hallucinated
+  citations. The answer goes beyond the rubric minimum with a well-structured
+  comparison table, LP-base-driven decision framework correctly sourced from the
+  cross-jurisdictional map, and proactive draft-status flagging. The only
+  blemish is a minor contextual reuse of the 'launch pad, not a permanent home'
+  phrase from the Incubator Fund section applied to the Approved Fund — not
+  materially misleading. Five targeted tool calls with no redundancy; efficient
+  execution at 44 seconds.

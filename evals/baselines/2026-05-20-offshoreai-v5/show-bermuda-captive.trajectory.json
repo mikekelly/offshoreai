@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-bermuda-captive",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T12:52:21.527Z",
+  "wallClockSeconds": 30.041,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/insurance-classes.md\",\"full\":true}",
+      "inputBytes": 61,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"captive-insurance\"],\"mode\":\"or\"}",
+      "inputBytes": 42,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 4,
+    "outputTokens": 1856,
+    "cacheReadTokens": 91195,
+    "cacheWriteTokens": 52982,
+    "totalCostUsd": 0.423155
+  },
+  "answer": {
+    "text": "I'll pull the Bermuda insurance-class material and the cross-jurisdictional captive framing.## Why Bermuda for a group captive\n\nBermuda is the world's leading captive-insurance domicile, and the structural reasons that matter for a multinational group are:\n\n- **Depth and supervisory familiarity** — the largest captive market globally, with the Bermuda Monetary Authority (BMA) experienced in single-parent and group structures.\n- **Solvency II equivalence** — Bermuda is recognised by the EU as Solvency II-equivalent, so a Bermuda captive/reinsurer benefits from reduced collateral requirements when reinsuring EU cedants. The corpus flags this as a significant Bermuda competitive advantage and notes it is the **only offshore jurisdiction** (alongside Isle of Man) with that equivalence. ([`knowledge/bermuda/insurance-classes.md`](knowledge/bermuda/insurance-classes.md); [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md))\n- **Class 4 cat-reinsurance ecosystem and ILS market** — proximity to the deepest commercial reinsurance and insurance-linked-securities market if your programme ever needs to access that capacity. ([`knowledge/bermuda/insurance-classes.md`](knowledge/bermuda/insurance-classes.md))\n\nThe trade-off the corpus names: **higher BMA scrutiny and substance requirements** than lighter-touch domiciles. (For comparison: Cayman leans to healthcare captives, Guernsey to European-parent PCC-cell captives.)\n\n## Which Class\n\nBermuda classifies P&C (\"general business\") captives under the **Insurance Act 1978** by how much *unrelated* business they write:\n\n| Class | Fits if your captive… |\n|---|---|\n| **Class 1** | writes **only the risks of your own group** (pure single-parent self-insurance) |\n| **Class 2** | is **multi-owner / group / association**, or writes group risks **plus a limited amount of unrelated** business |\n| **Class 3** | writes **significant unrelated (third-party) business** up to specified thresholds |\n\n**For a multinational group self-insuring its own risks, the natural starting point is Class 1** (pure single-parent captive). It moves to **Class 2** if the structure is multi-parent/association or takes on some third-party risk, and to **Class 3** once unrelated business becomes significant. The corpus's guidance is to pick the **lowest class consistent with the business**, since minimum capital, solvency, reporting and BMA engagement all rise sharply up the scale. If you want multiple programmes or lines run through one licensed entity, a **Segregated Accounts Company (SAC)** is the structuring tool. (All: [`knowledge/bermuda/insurance-classes.md`](knowledge/bermuda/insurance-classes.md))\n\nNote these are *general business* classes — the parallel **Class A–E** ladder is for **long-term (life)** captives, relevant only if the captive insures group life/long-term risks.\n\n## Caveats\n\n- The Bermuda insurance-classes file is **`draft` status** — drafted but not yet editorially verified against the primary source. Treat the class boundaries and capital figures (e.g. Class 4's US$100m minimum) as indicative; confirm definitive thresholds against the current Insurance Act 1978 regulations and BMA guidance before relying on them. The file itself carries the same caveat (\"current regulations should be checked for definitive parameters\").\n- The file is fresh (`last_verified` 2026-05-18), so age is not a concern — only the unverified-draft status is.\n\n### Cited files\n1. [`knowledge/bermuda/insurance-classes.md`](knowledge/bermuda/insurance-classes.md) (draft)\n2. [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 483
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

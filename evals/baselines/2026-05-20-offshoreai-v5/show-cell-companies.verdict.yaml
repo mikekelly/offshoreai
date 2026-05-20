@@ -1,0 +1,22 @@
+questionId: show-cell-companies
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered correctly with zero factual errors.
+  The candidate retrieved exactly the four relevant concept files in parallel
+  (no redundant calls), correctly identified each vehicle's distinctive feature
+  and sector orientation, built a clean decision table matching the rubric's
+  insurance/funds/foreign-court/EU-proximate mapping, and proactively flagged
+  all four files' draft status with a recommendation to verify against primary
+  statutes. The verbatim quote of the PCC-vs-ICC framing from the ICC file
+  demonstrates genuine corpus engagement rather than generic offshore prose.

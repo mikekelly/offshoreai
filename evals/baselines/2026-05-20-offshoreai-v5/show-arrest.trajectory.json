@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-arrest",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T12:42:57.909Z",
+  "wallClockSeconds": 26.699,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"arrest\",\"ppce-2003\",\"criminal-procedure\"],\"mode\":\"or\"}",
+      "inputBytes": 64,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Grep",
+      "rawName": "Grep",
+      "inputDigest": "{\"pattern\":\"arrest|police station|right to silence|legal advice\",\"path\":\"knowledge/jersey/crime-fraud\",\"output_mode\":\"files_with_matches\",\"glob\":\"*.md\"}",
+      "inputBytes": 152,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md\",\"full\":true}",
+      "inputBytes": 97,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/crime-fraud/rights-at-police-station.md\",\"full\":true}",
+      "inputBytes": 79,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 6,
+    "outputTokens": 1916,
+    "cacheReadTokens": 162634,
+    "cacheWriteTokens": 56950,
+    "totalCostUsd": 0.4851845
+  },
+  "answer": {
+    "text": "I'll look up Jersey arrest/criminal-procedure rights in the corpus.I have the relevant files. Let me read the persona-shaped use-case file (which directly matches your question) and the core rights file.Both source files are **draft** status (last verified 2026-05-18, 2 days ago), so the content is drafted but not yet editorially verified against the primary source — I'll flag that, but the substance is consistent across both files.\n\n## Your rights on arrest in Jersey\n\nYour rights flow from the **Police Procedures and Criminal Evidence (Jersey) Law 2003** (PPCE 2003) and its Codes of Practice. The single most important: **ask for a solicitor immediately and don't answer substantive questions until you've spoken to one.**\n\n**The core rights:**\n\n- **Free legal advice** — an absolute right to consult a solicitor or advocate, free of charge via the 24/7 duty-solicitor scheme (or your own), in private, *before* any interview. Can be delayed only in very serious cases (e.g. terrorism/evidence-preservation) on specific statutory grounds, authorised at senior level — never routinely. If you initially decline but change your mind mid-interview, questioning must stop.\n- **Right to silence** — you need not answer questions. The caution: *\"You are not obliged to say anything unless you wish to do so, but what you say may be put into writing and given in evidence.\"* A \"no comment\" interview is legitimate, and adverse inferences from police-station silence are narrower in Jersey than in England.\n- **Inform someone** — one person told of your arrest and location, police calling at public expense, as soon as practicable (delayable in serious cases on specific grounds).\n- **Consular notification** — if you're a foreign national.\n- **Written notice of rights** and access to your **custody record** (sight during detention; a copy on release — keep it, it's key evidence if procedure is later challenged).\n- **Interpreter** if you don't speak English well enough; **appropriate adult** if you're under 18 or vulnerable; **medical attention** if needed; adequate cell conditions and rest (at least 8 continuous hours in any 24).\n\n**Detention limits:**\n\n| Stage | Limit | Authorised by |\n|---|---|---|\n| Initial | **24 hours** | Custody officer |\n| Extension (serious offences) | up to **36 hours** | Police inspector |\n| Royal Court warrant of further detention | up to **96 hours total** | Royal Court (Magistrate) |\n| Beyond 96 hours | must **charge or release** | — |\n\nDetention beyond these limits is unlawful. The custody officer must review the grounds at prescribed intervals.\n\n**In interview:** open audio recording (Code E), the caution at the start of each session, your solicitor present if requested, no oppression, breaks, and no questioning if you're unfit (intoxicated/unwell). Don't sign anything without legal advice.\n\n**If a right is breached:** note the time and details, tell your solicitor immediately, complain through formal channels after release. Evidence obtained in breach may be excluded at trial, and serious breaches can ground a civil claim.\n\n### Sources cited\n1. `knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md` (draft, last verified 2026-05-18)\n2. `knowledge/jersey/crime-fraud/rights-at-police-station.md` (draft, last verified 2026-05-18)\n\nRelated corpus files for follow-up: `knowledge/jersey/crime-fraud/arrest.md`, `.../bail.md`, `.../ppce-law-2003.md`, and `knowledge/jersey/legal-system/echr-human-rights.md`.\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting. Both cited files are currently **draft** status — drafted but not yet editorially verified against PPCE 2003 and its Codes of Practice. If you have actually been arrested, speak to the duty solicitor at the station now.",
+    "wordCount": 572
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

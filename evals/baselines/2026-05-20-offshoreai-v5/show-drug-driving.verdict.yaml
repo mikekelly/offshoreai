@@ -1,0 +1,20 @@
+questionId: show-drug-driving
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five rubric facts accurately and entirely
+  from the corpus file, with no factual errors or hallucinated citations. The
+  structure cleanly separates current law from pending reform (matching the
+  voice rubric), names the Jersey-specific statute, flags the draft status of
+  the source, and recommends primary-source verification. Efficient four-call
+  trajectory with no redundancy.

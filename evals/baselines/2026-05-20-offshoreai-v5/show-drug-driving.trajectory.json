@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-drug-driving",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T12:44:04.941Z",
+  "wallClockSeconds": 23.125,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"drug-driving\"]}",
+      "inputBytes": 25,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"drink-driving\",\"road-traffic\"],\"mode\":\"and\"}",
+      "inputBytes": 54,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/road-traffic/drug-driving.md\",\"full\":true}",
+      "inputBytes": 68,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__freshnessCheck",
+      "rawName": "mcp__corpus__freshnessCheck",
+      "inputDigest": "{\"paths\":[\"knowledge/jersey/road-traffic/drug-driving.md\"]}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 6,
+    "outputTokens": 1370,
+    "cacheReadTokens": 162287,
+    "cacheWriteTokens": 52952,
+    "totalCostUsd": 0.44637350000000003
+  },
+  "answer": {
+    "text": "I'll search the corpus for drug-driving coverage.Found the file. It's `draft` status with a `reform-pending` tag — let me read it and check freshness.## Drug-driving in Jersey — current rules and what's coming\n\n**Today (May 2026): an impairment-based regime, no numeric limits.** Driving while impaired by drugs is an offence under the Road Traffic (Jersey) Law 1956. Prosecution turns on **proving impairment** — police must show, on objective evidence (poor control, failed field sobriety tests, blood/urine showing drugs), that the driver was unfit to drive properly. Jersey currently has **no** statutory drug-concentration limits, **no** roadside drug-testing (swab) powers, and **no** per se \"over the limit\" offences. This makes drug-driving a harder evidential case than drink-driving's mechanical \"over the limit\" rule. (`knowledge/jersey/road-traffic/drug-driving.md`)\n\nThe offence is **substance-neutral** — impairment by controlled drugs, prescription medication, OTC medicines, or a drug/alcohol combination all count. \"I have a prescription\" is not a defence to genuine impairment. Sentencing tracks drink-driving: mandatory disqualification (typically 12+ months first offence), fine up to £2,000, up to 6 months' imprisonment, and licence endorsement. (`knowledge/jersey/road-traffic/drug-driving.md`)\n\n**What's coming: a per se reform proposal (not yet enacted).** In **February 2026**, States representatives proposed legislation to introduce statutory drug limits for controlled and some prescription substances, give police roadside swab-testing powers (UK drug-wipe style), create per se offences, and impose mandatory disqualification on conviction. As of May 2026 this is **not yet enacted**; the States Assembly timetable suggests possible introduction during 2026 or 2027. Until then, the impairment-based regime continues to apply. (`knowledge/jersey/road-traffic/drug-driving.md`)\n\n**Caveat — draft content.** The cited file is `status: draft` (last verified 2026-05-18, so freshness is fine but the content is drafted and not yet editorially verified against the primary source). The reform pipeline in particular is fast-moving political detail; verify the current legislative status against the States Assembly and jerseylaw.je before relying on it.\n\n### Cited files\n1. `knowledge/jersey/road-traffic/drug-driving.md` (draft)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 332
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

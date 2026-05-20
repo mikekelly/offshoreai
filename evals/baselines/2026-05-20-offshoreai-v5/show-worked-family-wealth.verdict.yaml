@@ -1,0 +1,23 @@
+questionId: show-worked-family-wealth
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All 7/7 rubric facts covered with no factual errors. The answer
+  is structurally excellent: it opens with the Article 9 firewall as the central
+  defence, walks through a step-by-step setup closely tracking the corpus worked
+  example, and closes with an honest treatment of firewall limits (in rem vs in
+  personam, Article 51 directions needed, tax/transparency as separate
+  questions). All 5 citations verified against the actual corpus files — zero
+  hallucinations. The proactive draft-status caveat and recommendation to verify
+  against jerseylaw.je is exemplary freshness handling. Efficient 6-tool-call
+  trajectory with no redundancy."

@@ -1,0 +1,21 @@
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 5
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: "Partial — substance is the limiting dimension. The answer is
+  well-structured, voice-appropriate, and citation-clean, but omits two
+  rubric-required specifics: AIFMD Article 42 conditions and the named Jersey
+  statute (Alternative Investment Funds (Jersey) Regulations 2012). The AIFMD II
+  value-add is genuine and the freshness caveats are exemplary, but the missing
+  Article 42 reference — the specific AIFMD provision that enables NPPR for
+  third-country AIFMs — is a material gap for a fund-counsel-level answer."

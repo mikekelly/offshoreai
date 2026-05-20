@@ -1,0 +1,22 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five substance facts present and correct; no factual errors;
+  strong Jersey-specific framing with Norman customary law, Pothier, Le Geyt,
+  and the objective-test distinction from English nuisance. Voice hits the
+  Jersey-advocate register with practical operational guidance. The only
+  weakness is citation recall — all content drawn from a single file
+  (voisinage.md) when three cross-referenced files (customary-law.md,
+  pothier-and-the-coutume.md, delit-tort.md) would have deepened the
+  customary-law narrative the rubric prizes. Draft-status handling is exemplary.

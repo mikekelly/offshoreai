@@ -1,0 +1,22 @@
+questionId: show-tenancy-2025
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: Pass. All seven expected facts covered accurately with zero factual
+  errors. The single citation to
+  knowledge/jersey/residential-tenancy/2025-amendment-law.md is verified and
+  supports every claim. The answer is firmly Jersey-specific (names the 2025
+  Amendment Law, the 15 April 2026 commencement, the Rent Tribunal, the Petty
+  Debts Court), presents post-amendment law correctly, and honestly flags the
+  file's draft status. Efficient retrieval — two tool calls, no redundancy, 24
+  seconds wall-clock.

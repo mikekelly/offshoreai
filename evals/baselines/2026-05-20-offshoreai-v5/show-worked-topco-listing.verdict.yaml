@@ -1,0 +1,23 @@
+questionId: show-worked-topco-listing
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 8
+factsExpected: 8
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All 8 expected facts are present and correct, the answer is
+  thoroughly Jersey-specific with named statutes, and the single citation is
+  verified against the corpus file which directly supports every claim. The
+  step-by-step structure closely mirrors the worked-example file and adds useful
+  pitfalls. Citation recall is partial — only the draft worked-example was cited
+  rather than the underlying doctrinal files (zero-ten.md,
+  economic-substance.md, pillar-two-mcit.md) — but this does not demote the
+  overall verdict because the cited file itself cross-references those sources.
+  Efficient 2-call retrieval.

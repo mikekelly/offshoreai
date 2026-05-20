@@ -230,7 +230,9 @@ non-canonical vocabulary). Do NOT use this with invented tags — the
 server rejects them with a "did you mean" hint, but a known-invalid
 tag is a wasted call. Do NOT use it as a substitute for getBundle
 when a bundle is already loaded for the topic; the bundle already
-has the relevant files in context.
+has the relevant files in context. Do NOT issue findByTag calls one
+at a time when the question has multiple facets — fire them all in
+parallel in a single turn.
 
 Relationships: precedes getFile (call findByTag, then read top hits
 with getFile). Precedes expandTags when AND-intersection returned too
@@ -240,9 +242,12 @@ you have canonical tags, semanticSearch only when you don't.
 
 Returns: ranked matching files with path, title, status,
 lastVerified, tags. Read the top 3 with getFile. If count is 0 with
-mode="and", try mode="or" or call expandTags to widen the tag set;
-the response includes a "did you mean" line when one of the input
-tags is unknown.
+mode="and", try mode="or" or call expandTags to widen the tag set.
+IMPORTANT: if count is still 0 after trying mode="or", do NOT
+conclude corpus silence — tags cover primary-subject files only and
+will miss incidental mentions. Run Grep across knowledge/<jurisdiction>/
+for the key terms before asserting the corpus is silent. A tag miss
+is a vocabulary gap, not an absence of coverage.
 `.trim();
 
 // ===========================================================================

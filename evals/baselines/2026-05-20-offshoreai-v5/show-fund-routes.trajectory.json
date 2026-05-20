@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-fund-routes",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T12:45:56.518Z",
+  "wallClockSeconds": 44.448,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/exempted-limited-partnership.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bvi/incubator-and-approved-fund.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/private-investment-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bvi/approved-manager.md\"}",
+      "inputBytes": 44,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 4,
+    "outputTokens": 3232,
+    "cacheReadTokens": 71826,
+    "cacheWriteTokens": 54794,
+    "totalCostUsd": 0.4591955
+  },
+  "answer": {
+    "text": "This is a comparative, multi-jurisdiction question — I'll pull the substantive fund files for all four jurisdictions in parallel, then synthesize.All four source files carry `status: draft` — the content is drafted but not yet editorially verified against primary sources, so treat the specifics below as indicative and confirm before relying on them. Freshness is fine (all verified within the last 2–5 days).\n\n## The four regimes side by side\n\n| Feature | **Jersey JPF** | **Cayman ELP** | **BVI Approved Fund** | **Guernsey PIF** |\n|---|---|---|---|---|\n| What it is | Light-touch private-fund regime | A *vehicle* (partnership form), not a regime — registers as a private fund under the Private Funds Act 2020 | Permanent light-touch fund regime for stable small funds | Fast-track private-fund regime (3 routes) |\n| Max investors | 50 | No statutory cap on the ELP itself | **20** | 50 |\n| AUM ceiling | None | None | **US$100m** | None |\n| Investor type | Professional / eligible only | Set by the LPA (typically sophisticated/professional) | No statutory minimum investment | Professional/sophisticated (R3), family (R2), or via licensed mgr (R1) |\n| Authorisation speed | ~48 hours | 1–2 business days (registration) | Fast-track | 1 business day (Route 1) |\n| Audit required | Yes | (Private Funds Act applies) | **No mandatory audit** | Yes |\n| Manager regime | DSP (Jersey-licensed administrator) carries the regulatory load | GP delegates to Investment Manager | Pairs with **BVI Approved Manager** (2012) | Route 1 = GFSC-licensed manager; R2/R3 no licensed mgr required |\n| EU marketing (NPPR) | **Yes** | No | No | **Yes** |\n\nSources: `knowledge/jersey/funds/jersey-private-fund.md`; `knowledge/cayman/exempted-limited-partnership.md`; `knowledge/bvi/incubator-and-approved-fund.md`; `knowledge/bvi/approved-manager.md`; `knowledge/guernsey/private-investment-fund.md`.\n\n## How this maps to your profile (emerging manager, first fund, sub-US$100m)\n\n**The corpus's own decision framework points to BVI for exactly your profile.** The cross-jurisdictional map's \"Where should I form my fund?\" table lists *\"Emerging manager, sub-$100m, BVI-friendly → BVI Approved Manager + Approved Fund\"* (`knowledge/CROSS-JURISDICTIONAL-MAP.md`). The Approved Fund is purpose-built for \"emerging managers wanting a manageable regulatory burden\" and \"track-record-building vehicles intended to scale later,\" with no mandatory auditor and the lowest regulatory intensity tier (`knowledge/bvi/incubator-and-approved-fund.md`). The **catch is the 20-investor cap and the US$100m ceiling** — if you outgrow either, you must convert up to a BVI Private (50 investors) or Professional Fund. Pair it with the Approved Manager regime, which gives you \"marketing-acceptable\" regulated status without full SIBA licensing (`knowledge/bvi/approved-manager.md`).\n\nThe choice really turns on **your LP base**, which the corpus frames clearly:\n\n- **Predominantly US institutional LPs / Delaware-parallel structure** → **Cayman ELP** is the global default. LPs expect the form, it gives tax transparency in the US/UK/EU, and it pairs naturally with a Delaware LP for US investors (`knowledge/cayman/exempted-limited-partnership.md`). It carries no 20-investor cap, so it doesn't box you in the way the BVI Approved Fund does — but it is more expensive to run.\n\n- **You need to market into the EU/UK** → **Jersey JPF** or **Guernsey PIF**, because only these two offer AIFMD **NPPR** routes (`knowledge/CROSS-JURISDICTIONAL-MAP.md`). The JPF (50 investors, 48-hour authorisation, DSP model) and PIF (50 investors, 1-business-day Route 1) are close competitors; the corpus notes the JPF's distinctive feature is DSP delegation for \"regulatory predictability,\" while the PIF's edge is route flexibility — Route 2 for family pools, Route 3 for qualifying investors (`knowledge/guernsey/private-investment-fund.md`).\n\n- **Family-and-friends / club-deal first fund** → both the **JPF** (explicitly lists \"family-and-friends investment partnerships\" and \"carry vehicles\") and the **Guernsey PIF Route 2** suit this (`knowledge/jersey/funds/jersey-private-fund.md`; `knowledge/guernsey/private-investment-fund.md`).\n\n**Bottom line for a first sub-$100m fund:** if cost and speed dominate and your investor count is small, the **BVI Approved Fund + Approved Manager** is the lowest-friction home and the corpus's named recommendation for your profile — accepting the 20-investor / US$100m ceilings as a \"launch pad, not a permanent home.\" If you have US institutional LPs, default to the **Cayman ELP**. If EU/UK marketing is essential, you're choosing between **Jersey JPF** and **Guernsey PIF**.\n\n## Cited files\n\n1. `knowledge/jersey/funds/jersey-private-fund.md` (draft)\n2. `knowledge/cayman/exempted-limited-partnership.md` (draft)\n3. `knowledge/bvi/incubator-and-approved-fund.md` (draft)\n4. `knowledge/bvi/approved-manager.md` (draft)\n5. `knowledge/guernsey/private-investment-fund.md` (draft)\n6. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 704
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

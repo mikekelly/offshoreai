@@ -1,0 +1,20 @@
+questionId: show-emerging-manager-stack
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with correct BVI statute
+  names and no factual errors. Every claim traces to a verified corpus file; no
+  hallucinated citations. The candidate appropriately flagged the draft status
+  of all three BVI files and added a useful cross-jurisdictional caveat about
+  NPPR absence. One redundant tool call (findByTag with empty params) is the
+  only efficiency blemish in an otherwise clean, well-structured answer.

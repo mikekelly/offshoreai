@@ -1,0 +1,22 @@
+questionId: show-continuation-funds
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All six rubric facts covered (five fully, one — fairness
+  opinions / conflict-of-interest committee mechanics — only in passing), no
+  factual errors, every citation verified against the corpus. The answer reads
+  like a fund-secondaries specialist: correct use of DPI, LPAC, carry
+  crystallisation, not-a-CIS characterisation, and the POI Law 2020 statutory
+  basis. One redundant tool call (frontier file fetched twice, likely due to
+  truncation on the first read). The freshness caveat on the frontier file is
+  exemplary."

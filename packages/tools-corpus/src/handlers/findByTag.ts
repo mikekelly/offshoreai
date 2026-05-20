@@ -101,6 +101,7 @@ export function makeFindByTagTool(ctx: CorpusContext) {
             args.mode === "and"
               ? `Try mode="or" to union the tags instead of intersecting`
               : `Narrow the tag set or pick more discriminating tags`,
+            "BEFORE asserting corpus silence: run Grep with the key terms across knowledge/<jurisdiction>/ — tags cover primary-subject files only; incidental mentions require Grep to find",
             "Call `tree` to orient on which section's index.md the user's question lives in",
           ]),
         ]));

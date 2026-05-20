@@ -1,0 +1,23 @@
+questionId: show-pillar-two
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 13
+hallucinatedCitations: 0
+summary: "Pass. The answer is substantively strong on the Jersey Pillar Two
+  mechanics: MCIT/QDMTT framing, EUR 750m threshold, zero-ten interaction,
+  substance exclusion, and UPE/IIR logic are all correctly explained and
+  corpus-cited with zero hallucinated citations. The weakest dimension is the
+  UK-interaction coverage, which honestly acknowledges the corpus boundary
+  rather than fabricating UK-law content — a defensible choice. The statute is
+  named 'Law 2024' following the corpus source title vs the rubric's 'Law 2025';
+  this is a rubric/corpus discrepancy, not a candidate error. Voice matches the
+  international-tax-advisor register. Draft status flagged appropriately."

@@ -1,0 +1,24 @@
+questionId: show-arrest
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 2
+hallucinatedCitations: 0
+summary: "PASS. All six rubric substance facts are present and correct,
+  citations are clean (two corpus files, both verified, no hallucinations), and
+  the voice is practical and action-oriented as the rubric requires. The main
+  gap is jersey_specific: the answer omits the States Police vs Honorary Police
+  context entirely and does not frame the Magistrate's Court / Royal Court as a
+  distinctive Jersey forum structure — both rubric expectations. The arrest.md
+  file covering the Honorary Police distinction was available and listed as
+  'related' but not incorporated. Despite the partial jersey_specific score, the
+  substance and citation precision are both strong enough to carry the overall
+  verdict to pass per the scoring matrix."

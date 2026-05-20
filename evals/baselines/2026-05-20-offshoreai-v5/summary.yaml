@@ -1,0 +1,31 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-20T13:03:02.764Z
+  questions: 1
+totals:
+  pass: 1
+  partial: 0
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 1
+  substancePassRate: 1
+  medianToolCalls: 2
+  medianTokensInput: 4
+  medianTokensOutput: 1986
+  medianWallClockSeconds: 29.86
+  totalCostUsd: 0.4353
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-article-47
+    verdict: pass
+    summary: Pass. The answer covers all six rubric facts with zero errors, names
+      the right Jersey statutes and cases (including the important Article
+      47B/47G naming distinction), and reads like a Jersey trust litigator
+      briefing a peer. Citation precision is clean — every claim traces to a
+      single well-chosen concept file that the corpus confirms supports each
+      point. The only minor observation is that only one corpus file is cited,
+      which slightly under-demonstrates graph depth, but the file is genuinely
+      the most authoritative source for this question.

@@ -1,0 +1,23 @@
+questionId: show-friday-passing
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 6
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: Partial. The answer correctly explains the Royal Court passing
+  procedure and the Friday-afternoon convention, with honest acknowledgement
+  that the corpus doesn't explain why Friday specifically. However, it misses
+  two of the rubric's most Jersey-distinctive substance points — the two Jurats
+  sitting to witness and the contrat héréditaire terminology — despite citing
+  commercial-leases.md, which contains both facts at lines 42 and 55. Citation
+  precision is clean (all five cited files verified, no hallucinations), and the
+  draft-status caveat on contract-passing.md is good practice. The voice is
+  well-pitched for a non-Jersey reader.

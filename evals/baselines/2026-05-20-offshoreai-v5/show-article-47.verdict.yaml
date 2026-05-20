@@ -1,0 +1,22 @@
+questionId: show-article-47
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six rubric facts with zero errors, names
+  the right Jersey statutes and cases (including the important Article 47B/47G
+  naming distinction), and reads like a Jersey trust litigator briefing a peer.
+  Citation precision is clean — every claim traces to a single well-chosen
+  concept file that the corpus confirms supports each point. The only minor
+  observation is that only one corpus file is cited, which slightly
+  under-demonstrates graph depth, but the file is genuinely the most
+  authoritative source for this question.

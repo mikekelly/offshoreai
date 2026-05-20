@@ -1,0 +1,22 @@
+questionId: show-uk-carry-reform
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All seven expected substance facts are present and correct — the
+  28%→32%→34.1% rate progression, the 72.5% multiplier, non-qualifying up to
+  47%, Finance Bill 2025-26 mechanic, Q1 2026 crystallisation play, and all
+  three Crown Dependencies residency options (Jersey HVR, Guernsey Open Market,
+  IoM tax cap). Every claim traces to the cited frontier file with zero
+  hallucination. Voice is PE-tax-specialist-appropriate: structured,
+  practitioner-grade, with the right caveats (tail liability, substance,
+  anti-avoidance). Two-tool retrieval is efficient."

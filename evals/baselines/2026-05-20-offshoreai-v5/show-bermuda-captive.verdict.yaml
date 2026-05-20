@@ -1,0 +1,23 @@
+questionId: show-bermuda-captive
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer covers 4 of 5 rubric facts with accurate, well-cited
+  substance — Insurance Act 1978, Classes 1/2/3 for captives, SAC, Solvency II
+  equivalence, and BMA oversight are all correctly described and supported by
+  the cited corpus files. The main gap is the omission of Class 3A and 3B from
+  the P&C enumeration and Class 4 not appearing in the main class table (though
+  its US$100m capital is mentioned in caveats). This is defensible since the
+  question asks about a captive and 3A/3B are commercial-insurer classes.
+  Citation precision is clean — both cited files verified. The draft-status
+  caveat is exemplary freshness handling.

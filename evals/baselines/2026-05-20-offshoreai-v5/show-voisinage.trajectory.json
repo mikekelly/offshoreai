@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T12:45:00.448Z",
+  "wallClockSeconds": 26.904,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"voisinage\"]}",
+      "inputBytes": 22,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"delit\",\"tort\"],\"mode\":\"or\"}",
+      "inputBytes": 37,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/voisinage.md\",\"full\":true}",
+      "inputBytes": 61,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2828,
+    "outputTokens": 1720,
+    "cacheReadTokens": 128348,
+    "cacheWriteTokens": 48880,
+    "totalCostUsd": 0.42681399999999997
+  },
+  "answer": {
+    "text": "Voisinage is a genuinely Jersey-specific doctrine, so it's worth being precise about — including a status caveat on the corpus file I'm relying on.\n\n**Note on the source:** The corpus file on voisinage is marked `draft` (last verified 2026-05-18) — the content is drafted but not yet editorially verified against primary sources, so treat the specifics below as indicative and confirm with a Jersey advocate before relying on them.\n\n## What voisinage is\n\n**Voisinage** (literally \"neighbourhood\") is a **Norman customary-law doctrine** of *good neighbourhood* preserved in Jersey law. It requires each landowner to use their property in a way that does not cause **unreasonable harm** to neighbouring owners. It derives from Norman customary law (Le Geyt, Pothier), developed by the Royal Court, and it is **distinct from English nuisance** even though the two often reach the same result (`knowledge/jersey/property/voisinage.md`).\n\nThe practically important differences from English nuisance:\n\n- It can apply on an **objective basis without fault** — you don't necessarily have to show the neighbour was careless;\n- There's **no closed list** of \"smell, smoke, noise\" categories — a broader range of activity can be caught;\n- It rests on a **specific Jersey customary-law foundation**, not the English tort (`knowledge/jersey/property/voisinage.md`).\n\n## Does it apply to your neighbour problem?\n\nIt *may*. The corpus sets out a threshold test — voisinage liability requires:\n\n1. **Harm** that is objectively identifiable;\n2. **Caused by** the neighbour's use of their property;\n3. **Exceeding** the ordinary inconveniences of neighbourhood living; and\n4. **Without** adequate justification (`knowledge/jersey/property/voisinage.md`).\n\nWhether your situation qualifies depends entirely on the facts. The doctrine has been applied (per the corpus) to excessive **noise, smells (livestock, kitchens), smoke/fumes, vibrations, surface water/drainage, tree roots/overhanging branches, and light obstruction**, across rural, construction, commercial-premises, and apartment/inter-unit contexts. So if your problem falls into one of those buckets and crosses the \"more than ordinary inconvenience\" line, voisinage is a plausible route (`knowledge/jersey/property/voisinage.md`).\n\nTwo points that frequently trip people up:\n\n- **Planning permission does not give the neighbour a defence** — lawful planning consent does not exclude a voisinage claim (though regulatory compliance can be *evidence* of reasonable use);\n- A valid **servitude** (Jersey easement) may permit the activity, but *excessive* use of a servitude can still breach voisinage (`knowledge/jersey/property/voisinage.md`).\n\nAvailable **defences** the neighbour might raise include reasonable use, your consent/acquiescence, statutory authority, and (limited) prescription. **Remedies** the Royal Court can grant are an injunction restraining the activity, damages, and orders for preventative measures (`knowledge/jersey/property/voisinage.md`).\n\n## What to do next\n\nThe corpus recommends, in order: **document the interference** (logs, photos, recordings), **engage relevant experts early** (e.g. acoustic or environmental), keep a **correspondence trail** with the neighbour, **try mediation first**, and **instruct a Jersey advocate familiar with voisinage** before litigating by Order of Justice in the Royal Court — Royal Court costs are easy to underestimate (`knowledge/jersey/property/voisinage.md`).\n\nI can't tell you whether *your* specific problem clears the threshold — that's a fact-specific judgement for a Jersey advocate. But the doctrine is real, it's broader than English nuisance, and the categories above suggest it's worth exploring.\n\n## Cited files\n\n1. `knowledge/jersey/property/voisinage.md` *(draft status — drafted but unverified)*\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 538
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

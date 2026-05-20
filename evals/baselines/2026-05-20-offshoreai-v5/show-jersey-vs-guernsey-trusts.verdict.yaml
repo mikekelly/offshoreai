@@ -1,0 +1,23 @@
+questionId: show-jersey-vs-guernsey-trusts
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts are covered with correct specifics and no
+  material errors. The candidate correctly identifies Article 9(4) vs s.14 as
+  the marginal firewall differentiator, names Re S&T Trusts as the leading
+  mistake authority, distinguishes PCC-only (Jersey) from PCC+ICC (Guernsey),
+  and frames practical decision factors correctly. All four citations verified
+  against corpus files. The only notable error is citing 'Article 47B–J' instead
+  of the correct '47B–H' — a minor but real statutory-reference mistake that
+  does not materially mislead. Strong freshness discipline with explicit
+  draft-status caveats and corpus-coverage honesty.

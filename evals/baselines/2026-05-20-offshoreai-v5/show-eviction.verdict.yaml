@@ -1,0 +1,21 @@
+questionId: show-eviction
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected substance facts accurately and
+  with correct Jersey-specific statutory framing (RTJL 2011, Petty Debts Court,
+  Viscount, Discrimination Law 2013, 2025 Amendment). Voice is well-calibrated
+  landlord-facing smart-friend. All three citations verified against corpus —
+  every claim is supported, no hallucinations. The explicit draft-status caveat
+  with advice to verify against the primary statute is strong freshness
+  discipline. Five tool calls with zero redundancy is efficient retrieval.

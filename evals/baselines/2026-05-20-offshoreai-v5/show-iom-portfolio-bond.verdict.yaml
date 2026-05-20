@@ -1,0 +1,19 @@
+questionId: show-iom-portfolio-bond
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All four expected facts covered accurately and completely. Single
+  tool call retrieved the one authoritative corpus file; every claim maps
+  directly to its content with zero hallucinated citations. The candidate's
+  proactive flagging of the file's draft status is a model of responsible
+  corpus-status handling. Efficient single-call retrieval with no redundancy.

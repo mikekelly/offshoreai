@@ -1,0 +1,22 @@
+questionId: show-cayman-llc
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected facts from the rubric — LLC
+  Act 2016, Delaware mirror, members/managers/LLC Agreement, check-the-box
+  defaults, and the distinction from Exempted Company and ELP — with accurate
+  detail drawn from the corpus file. Every citation resolves to
+  knowledge/cayman/cayman-llc.md and every attached claim is directly supported.
+  The draft-status caveat and the migration-specific pitfall callout
+  (tax-residency and Pillar Two) add practical value beyond the minimum bar.
+  Efficient retrieval in 3 tool calls.
