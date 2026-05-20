@@ -1,0 +1,26 @@
+I'll look at the Jersey planning corpus, focusing on permitted development for extensions.The two most relevant files are the permitted-development and extensions ones. Let me read both.## Rear extension on a Jersey house — do you need planning permission?
+
+**It depends on size, but a modest single-storey rear extension is often exempt.** Jersey grants automatic planning permission for certain minor works under the **Planning and Building (General Development) (Jersey) Order 2011** ("GD Order 2011") — the "permitted development" regime. Single-storey rear extensions fall within this regime *if* they stay within the Order's size, depth, and height limits. For a typical Jersey-sized property, a small single-storey rear extension (roughly 3–4m projection) **may** be permitted development; anything larger, or any two-storey extension, requires a full planning application. (`knowledge/jersey/planning/extensions-and-conversions.md`; `knowledge/jersey/planning/permitted-development.md`)
+
+**The common trap:** don't assume "small" or "modest" equals exempt. Exceeding *any* single condition — height, boundary distance, curtilage coverage, projecting in front of the main building line — takes the work outside permitted development and back into the standard application route. (`knowledge/jersey/planning/permitted-development.md`)
+
+**Things that override the exemption entirely:**
+- **Listed building** — listed-building consent is always required, even for otherwise-permitted works.
+- **Conservation area / Coastal National Park / Green Zone** — permitted-development rights are restricted or removed; you'll typically need a full application even within the normal thresholds.
+- **Article 31 directions** — the Minister can strip permitted-development rights in specific locations.
+
+(`knowledge/jersey/planning/permitted-development.md`)
+
+**Separate from planning:** even where no planning permission is needed, you will still likely need **building approval under the Building Bye-Laws 2007**, and you must check any **private restrictive covenants** on your title, which can prohibit works regardless of planning. (`knowledge/jersey/planning/extensions-and-conversions.md`; `knowledge/jersey/planning/permitted-development.md`)
+
+**Recommended step if unsure:** apply for a **Certificate of Lawful Development** — a lower-fee route that confirms your proposal is permitted development and protects against future enforcement and conveyancing problems on sale. (`knowledge/jersey/planning/permitted-development.md`)
+
+### Caveats
+- Both cited files are **status: `draft`** — the content is drafted but not yet editorially verified against the primary source. The GD Order 2011 itself sets the binding limits, and I have not retrieved its exact figures; the corpus gives indicative thresholds only ("typically 3–4m"). **Verify the precise dimensions, distances, and conditions against the current GD Order 2011 on jerseylaw.je** before relying on them.
+- Both files were last verified 2026-05-18 (2 days ago), so they are fresh as drafts.
+
+### Cited files
+1. `knowledge/jersey/planning/extensions-and-conversions.md` (draft)
+2. `knowledge/jersey/planning/permitted-development.md` (draft)
+
+> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.

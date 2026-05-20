@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-continuation-funds",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T16:06:00.384Z",
+  "wallClockSeconds": 32.559,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/continuation-funds-and-gp-led-secondaries.md\",\"full\":true}",
+      "inputBytes": 86,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"continuation-funds\",\"gp-led-secondaries\"],\"mode\":\"or\"}",
+      "inputBytes": 64,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/continuation-funds.md\",\"full\":true}",
+      "inputBytes": 63,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2828,
+    "outputTokens": 2261,
+    "cacheReadTokens": 133414,
+    "cacheWriteTokens": 55368,
+    "totalCostUsd": 0.483422
+  },
+  "answer": {
+    "text": "## Why continuation funds and GP-led secondaries are growing so fast\n\nA continuation fund is a new vehicle into which a sponsor (GP) moves one or more portfolio assets out of an existing fund, giving the original LPs a choice to **roll** their interest into the new vehicle or **cash out** at a negotiated valuation; \"GP-led secondaries\" is the wider category (tender offers, strip sales, preferred equity, structured liquidity). The growth is demand-driven by four reinforcing pressures: weak M&A and IPO exit markets through 2022–2025, LPs demanding **DPI** (realised distributions) to recycle into new commitments, GPs unwilling to sell trophy assets at depressed valuations, and abundant secondaries-market capital ready to deploy (`knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`).\n\nThe trajectory is steep and broad-based. The 2026 Global Private Equity Outlook survey (cited via Dechert, Nov 2025) records **46% of respondents** using GP-led secondaries or continuation vehicles to expedite LP distributions — roughly **double** the prior year — with planned increases over the next 24 months reported by 51% of North American, 55% of APAC, and 43% of EMEA respondents (the EMEA figure up from 14% in 2024) (`knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`).\n\n## Why Guernsey is winning the business\n\nGuernsey is the **leading European jurisdiction** for continuation funds, and the reasons are structural and durable (`knowledge/guernsey/continuation-funds.md`):\n\n- **Single-asset CFs are not treated as collective investment schemes.** Under the Protection of Investors (Bailiwick of Guernsey) Law 2020, a single-asset continuation fund is characterised as a single co-investment vehicle (closer to a joint venture than a pooled, collectively-managed fund), so it can be established **without CIS authorisation**. This is the structurally most important advantage.\n- **Speed.** Single-asset CFs requiring GFSC review get a **3-business-day** approval — the fastest in the European market — letting a sponsor go from term-sheet to closing in 2–3 weeks rather than the typical 4–8.\n- **Explicit strategic positioning** by the GFSC and Guernsey Finance, who have marketed the product line aggressively to UK and European sponsors.\n- **Mature practitioner base** (Mourant, Ogier, Carey Olsen, Walkers, Appleby, plus admin houses Aztec, IQ-EQ, JTC, Apex) that has handled the transaction volume through 2024–2026.\n- **Tax neutrality** (0% standard corporate tax), though Guernsey's QDMTT under the Income Tax (Pillar Two) (Guernsey) Law 2024 applies a 15% top-up to in-scope MNE-group sponsors.\n\nBy contrast, Jersey is **strong but second**: its Jersey Private Fund offers a 48-hour JFSC authorisation and a Designated Service Provider model well-suited to continuation vehicles, and it remains competitive for sponsors with existing Jersey infrastructure or trust/family-office-adjacent transactions — but most sponsors with strong CF deal flow have defaulted to Guernsey, whose not-a-CIS treatment of single-asset deals is the decisive edge (`knowledge/jersey/funds/continuation-funds.md`, `knowledge/guernsey/continuation-funds.md`).\n\n**Caveats on Guernsey's edge:** the not-a-CIS treatment does not auto-apply (the structural characterisation matters; engage the GFSC early on novel structures); CFs still need genuine Guernsey substance; and the post-16 April 2026 AIFMD II disclosure uplift is not exempted by the fast-track (`knowledge/guernsey/continuation-funds.md`).\n\n## Freshness note\n\nThe Guernsey and Jersey doctrinal files are `stable`, last verified 2026-05-19 (fresh). The market-statistics file is a **frontier** document (status `in-active-market`, as_of 2026-05-18) with no `last_verified` date — appropriate for fast-moving content, but treat the survey percentages and \"doubling\" trajectory as point-in-time market data and re-verify against the underlying Dechert/2026 Global PE Outlook source before relying on the figures.\n\n## Cited files\n\n1. `knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`\n2. `knowledge/guernsey/continuation-funds.md`\n3. `knowledge/jersey/funds/continuation-funds.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 571
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

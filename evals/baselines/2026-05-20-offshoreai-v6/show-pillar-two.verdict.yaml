@@ -1,0 +1,24 @@
+questionId: show-pillar-two
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 10
+hallucinatedCitations: 0
+summary: "Pass. The answer covers all five rubric substance facts — 15% minimum
+  ETR, MCIT as QDMTT, EUR 750m threshold with the 2-of-4-year test, UK
+  interaction (UK operating sub above 15%, coordination on GIR), and group
+  consolidation tests. Voice is credibly international-tax-advisor: structured,
+  threshold-first, practical. All five citations verified against corpus; no
+  hallucinations. The only minor gap is that the formal statute name
+  ('Multinational Corporate Income Tax (Jersey) Law 2024' per the corpus) is not
+  cited — the candidate uses 'MCIT' throughout — but the corpus and rubric
+  themselves disagree on '2024' vs '2025', so avoidance is defensible.
+  Draft-status caveat is a strong practitioner touch."

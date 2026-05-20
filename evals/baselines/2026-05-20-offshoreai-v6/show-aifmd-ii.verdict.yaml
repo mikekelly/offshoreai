@@ -1,0 +1,23 @@
+questionId: show-aifmd-ii
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Partial — high-quality answer that covers 4.5 of 6 rubric facts with
+  zero factual errors and excellent citation discipline, but under-treats the
+  loan-origination AIF separate regime (the corpus flags it as a 'significant
+  new framework for credit AIFs' deserving its own section; the candidate only
+  mentions it as a disclosure sub-item) and omits fees/costs from the
+  expanded-disclosures list. Voice, citation precision, citation recall, and
+  freshness handling all pass. The delegation-squeeze counterintuitive impact
+  and the AIF Code split are particularly well handled. Two targeted tool calls
+  with no redundancy — very efficient retrieval.

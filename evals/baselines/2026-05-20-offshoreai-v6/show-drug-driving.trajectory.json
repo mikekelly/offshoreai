@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-drug-driving",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T15:56:56.908Z",
+  "wallClockSeconds": 23.994,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"drug-driving\"],\"mode\":\"or\"}",
+      "inputBytes": 37,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"road-traffic\",\"drink-driving\"],\"mode\":\"or\"}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/road-traffic/drug-driving.md\",\"full\":true}",
+      "inputBytes": 68,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 6,
+    "outputTokens": 1509,
+    "cacheReadTokens": 164190,
+    "cacheWriteTokens": 54084,
+    "totalCostUsd": 0.457875
+  },
+  "answer": {
+    "text": "I'll search the corpus for drug-driving content, checking both current rules and the frontier layer for what's coming.The drug-driving file is tagged `reform-pending` — let me read it in full.The corpus covers this directly. Note the source file is `draft` status, so I'll flag that.\n\n## Drug-driving in Jersey\n\n### The rules today (as of May 2026)\n\nDrug-driving is prosecuted on an **impairment** basis under the Road Traffic (Jersey) Law 1956. Police must prove the driver was *unfit to drive* because of drug use, using objective evidence — poor control, slurred speech, failed field sobriety tests, plus blood/urine confirming drug presence. There is **no per se \"over the limit\" offence** as there is for alcohol.\n\nWhat Jersey does **not** currently have:\n- Statutory drug-concentration limits (no equivalent of the English specified-limit regime);\n- Roadside drug-testing powers (swabs/wipes) beyond impairment-based field tests;\n- Per se offences (being over a numeric limit regardless of actual impairment).\n\nBecause prosecution turns on proving impairment, it is a harder evidential test than drink-driving's mechanical limit. The offence is **substance-neutral** — controlled drugs, prescription medication, OTC medicines, and drug/alcohol combinations all count; \"I have a prescription\" is no defence to genuine impairment. Sentencing tracks drink-driving: mandatory disqualification (typically 12+ months first offence), a fine up to £2,000, imprisonment up to 6 months, and endorsement. ([knowledge/jersey/road-traffic/drug-driving.md](knowledge/jersey/road-traffic/drug-driving.md))\n\n### What's coming\n\nIn **February 2026**, States representatives proposed legislation to bring Jersey closer to the UK model:\n- **Statutory drug limits** for controlled and some prescription substances;\n- **Police roadside testing powers** (swab tests akin to UK drug-wipes);\n- **Per se offences** — being over the limit becomes the offence in itself;\n- **Mandatory disqualification** on conviction.\n\nThe proposal is **not yet enacted**. The States Assembly timetable points to possible introduction during 2026 or 2027; until then, the impairment-based regime continues to apply. ([knowledge/jersey/road-traffic/drug-driving.md](knowledge/jersey/road-traffic/drug-driving.md))\n\n### Caveats\n\n- The cited file is **`draft` status** — the content is drafted but not yet editorially verified against primary sources. Treat the specifics (especially the reform-proposal details and timetable) as indicative and confirm against the States Assembly record and jerseylaw.je before relying on them.\n- `last_verified` is 2026-05-18 (fresh), but a reform pipeline is fast-moving — re-check whether the February 2026 proposal has advanced.\n\n### Cited files\n1. knowledge/jersey/road-traffic/drug-driving.md\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 397
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

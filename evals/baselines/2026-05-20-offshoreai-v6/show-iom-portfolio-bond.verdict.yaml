@@ -1,0 +1,20 @@
+questionId: show-iom-portfolio-bond
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. All four rubric facts covered with depth exceeding the bar — the
+  candidate named the ITTOIA 2005 statutory basis, listed major insurer
+  subsidiaries by name, and added a pitfalls section. Single tool call to the
+  most authoritative file, plus cross-jurisdictional map context from session
+  pre-load. Draft-status caveat was correctly surfaced — a model
+  freshness-handling example.

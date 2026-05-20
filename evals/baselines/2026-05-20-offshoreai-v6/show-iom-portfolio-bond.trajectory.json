@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-iom-portfolio-bond",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T16:00:48.673Z",
+  "wallClockSeconds": 22.247,
+  "turns": 2,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/isle-of-man/life-assurance.md\",\"full\":true}",
+      "inputBytes": 62,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 4,
+    "outputTokens": 1554,
+    "cacheReadTokens": 91619,
+    "cacheWriteTokens": 52820,
+    "totalCostUsd": 0.4148045000000001
+  },
+  "answer": {
+    "text": "I'll pull the Isle of Man life-assurance/portfolio-bond material the cross-jurisdictional map points to.The single most relevant file is `draft` status, so I'll flag that — but it answers the question directly. Freshness is fine (verified 2 days ago).\n\n## Why a UK HNW investor holds an Isle of Man portfolio bond\n\nA portfolio bond is a **single-premium investment wrapped in a life-assurance policy**, written by an IoM-domiciled insurer regulated by the IOMFSA under the Insurance Act 2008. For a UK HNW investor the appeal is the combination of an open investment wrapper plus a specific UK tax treatment:\n\n**1. The UK 5% tax-deferral rule.** This is the central driver. Up to **5% of the original premium can be withdrawn each year free of immediate UK tax for up to 20 years**; the tax is deferred to a \"chargeable event\" (typically final encashment), and **top-slicing relief** then reduces the effective rate for higher-rate / additional-rate payers. The underlying UK statutory basis is Chapter 9 of Part 4 of ITTOIA 2005. This delivers materially better cash-flow tax treatment than holding the same assets directly — useful for a HNW investor managing income alongside ISAs and pensions. (`knowledge/isle-of-man/life-assurance.md`)\n\n**2. A flexible investment wrapper.** The policyholder (usually via an investment manager) can hold a wide range of underlying assets — funds, equities, fixed income, alternatives — inside the bond, with tax-deferred growth and surrender flexibility. (`knowledge/isle-of-man/life-assurance.md`)\n\n**3. Estate-planning utility.** The life-assurance wrapper offers estate-planning efficiency and is frequently used inside family-wealth structures. (`knowledge/isle-of-man/life-assurance.md`)\n\n**4. Why the Isle of Man specifically.** It is the **world's leading offshore life-assurance domicile**, with a long-established industry (subsidiaries of Quilter, Standard Life International, Canada Life International, Utmost and others), specialist IOMFSA regulatory expertise, and — uniquely among the offshore centres in this corpus — **Solvency II equivalence**, giving its insurers strong regulatory standing. Among the six jurisdictions, the corpus rates IoM as dominant in life assurance, with Jersey and Guernsey only \"specialty/smaller.\" (`knowledge/isle-of-man/life-assurance.md`; `knowledge/CROSS-JURISDICTIONAL-MAP.md`)\n\n**Caveats from the corpus:** watch for product **misclassification** in the policyholder's tax jurisdiction, **adviser-suitability** concerns, and AML exposure through the intermediary chain. Bonds are sold predominantly through FCA-authorised advisers / IFAs rather than direct. (`knowledge/isle-of-man/life-assurance.md`)\n\n> **Status caveat:** the source file `knowledge/isle-of-man/life-assurance.md` is marked **`draft`** — the content is drafted but not yet editorially verified against primary sources. Treat the UK 5%-rule mechanics in particular as needing confirmation against ITTOIA 2005 and current HMRC guidance before acting.\n\n### Cited files\n1. `knowledge/isle-of-man/life-assurance.md` (status: draft; last_verified 2026-05-18)\n2. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 435
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

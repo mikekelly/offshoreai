@@ -1,0 +1,21 @@
+questionId: show-worked-topco-listing
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 8
+factsExpected: 8
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All 8 rubric facts covered with correct detail and no material
+  errors. Every claim is cited to a verified corpus file; no hallucinated
+  citations. The candidate correctly identified the UK-can't-outbound-continue
+  constraint (the most substantive structural insight), properly explained TCGA
+  s.135 rollover, and gave an accurate Pillar Two walkthrough including the
+  QDMTT/IIR distinction. Freshness handling was exemplary — proactively flagging
+  draft status despite recent last_verified dates.

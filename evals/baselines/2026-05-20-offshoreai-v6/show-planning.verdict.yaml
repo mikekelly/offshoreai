@@ -1,0 +1,25 @@
+questionId: show-planning
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: Pass. The answer is operationally excellent for a homeowner — clear
+  structure, correct GD Order 2011 treatment, both planning and
+  building-approval consents named, conservation/listed-building restrictions
+  covered, Certificate of Lawful Development recommended, and freshness handling
+  exemplary (draft status flagged, primary-source verification urged). The two
+  gaps are the omission of PBL 2002 as the principal statute and the Department
+  for the Environment as decision-maker, both traceable to not reading the
+  section index or statute-overview file. Substance hits the 80% threshold;
+  citation precision is clean; jersey_specific is partial (GD Order named but
+  PBL 2002 and Department for the Environment missing). Voice is a strong match
+  for homeowner-facing operationally useful.

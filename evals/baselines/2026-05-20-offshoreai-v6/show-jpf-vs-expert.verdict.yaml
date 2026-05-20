@@ -1,0 +1,21 @@
+questionId: show-jpf-vs-expert
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. The candidate nails every rubric fact — JPF 50-investor cap, 48h
+  authorisation, DSP model, Expert Fund uncapped alternative, decision pivot on
+  investor count — with every claim verified against the cited corpus files.
+  Voice is precisely fund-counsel-advising-a-sponsor: opens with a clear
+  recommendation, provides a decision table, flags practical next steps (AIFMD
+  NPPR, vehicle form), and proactively caveats draft status despite the files
+  being only 5 days old. Three targeted tool calls with zero redundancy."

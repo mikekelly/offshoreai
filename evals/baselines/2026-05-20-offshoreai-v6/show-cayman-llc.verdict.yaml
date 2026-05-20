@@ -1,0 +1,21 @@
+questionId: show-cayman-llc
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with zero factual
+  errors. Every citation verified against the corpus — cayman-llc.md is the
+  load-bearing file and it supports every claim attached to it. The answer
+  distinguishes LLC from both Exempted Company and ELP with the correct
+  structural differences (per-se corporation vs check-the-box; GP unlimited
+  liability vs all-member limited liability). The draft-status caveat is a good
+  touch. Efficient at 4 tool calls and 36 seconds.

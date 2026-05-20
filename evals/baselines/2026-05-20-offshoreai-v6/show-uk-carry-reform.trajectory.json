@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-uk-carry-reform",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T16:05:53.212Z",
+  "wallClockSeconds": 35.417,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/uk-carried-interest-reform-2026.md\",\"full\":true}",
+      "inputBytes": 76,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{}",
+      "inputBytes": 2,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2467,
+    "outputTokens": 2196,
+    "cacheReadTokens": 69451,
+    "cacheWriteTokens": 50030,
+    "totalCostUsd": 0.414648
+  },
+  "answer": {
+    "text": "## What changes\n\nUK carried-interest taxation moves from a CGT basis to an **income-tax basis with a partial exclusion**, in force for carry arising on or after 6 April 2026 (`knowledge/frontier/uk-carried-interest-reform-2026.md`):\n\n- **Old regime (to 5 April 2025):** CGT-based, ~28% effective for additional-rate payers.\n- **Transition (6 April 2025 – 5 April 2026):** flat **32%** CGT.\n- **New regime (from 6 April 2026):** carry treated as **income**, subject to income tax + Class 4 NICs. For **qualifying** carry a **72.5% multiplier** brings only 72.5% into charge — ~**34.1%** effective for a 45% taxpayer. **Non-qualifying** carry attracts full income tax + NICs, effective rates up to **~47%**.\n\nThe **qualifying / non-qualifying split** is the load-bearing distinction: qualifying requires genuine investment-management activity and specified fund characteristics. The definition was tightened in the final legislation, though the government dropped the proposed minimum-investment access conditions. Established UK partners at mature sponsors are usually qualifying by default; new entrants, secondaries participants, and non-traditional structures need careful analysis (`knowledge/frontier/uk-carried-interest-reform-2026.md`).\n\n## What PE partners in the Crown Dependencies should do\n\n**Residency planning for UK partners** is the headline response. Jersey's **HVR / 2(1)(e)** route (bespoke tax-rate cap), Guernsey's Open Market, and the IoM tax cap are being marketed more actively to PE partners facing a 34–47% UK charge (`knowledge/frontier/uk-carried-interest-reform-2026.md`; `knowledge/jersey/immigration-residency/high-value-residency.md`; `knowledge/jersey/tax/high-value-residency-tax.md`). But three cautions are flagged: the UK Statutory Residence Test makes *leaving* hard; there is a real **tail liability** on carry that economically accrued while UK-resident even if realised after departure; and the new legislation has specific anti-avoidance provisions around residence changes. Substance in the destination is essential.\n\n**At the structuring level:**\n- **GP-entity location** — CD-domiciled GPs (Jersey companies, Guernsey companies acting as GP of Jersey/Cayman ELP funds) may be more attractive as the carry-allocation entity for non-UK partners, but UK look-through / situs rules still bite where a UK-resident partner gets the economic benefit.\n- **Fund vehicles are largely unaffected** — Jersey JPF, Guernsey PIF and Cayman ELP are unchanged at fund level; the action is at GP-entity carry allocation and vesting (`knowledge/frontier/uk-carried-interest-reform-2026.md`; `knowledge/jersey/funds/jersey-private-fund.md`).\n- **Co-invest vs carry** — co-invest economics remain CGT-treated, so the distinction is now acutely material and must not be misclassified.\n- **Sponsor-side** — document carry arrangements carefully to preserve qualifying status, review GP/LP economics, adjust vesting/forfeiture, and prepare for LP questions on re-pricing and key-partner retention.\n\nNote the pre-6 April 2026 window has now closed: through Q1 2026 many partners accelerated crystallisation to land under the 32% CGT regime, but that planning is no longer available for carry arising after the effective date.\n\n## Freshness caveat\n\nThis is a **frontier file** carrying an explicit `as_of` of **2026-05-18** (status `in-force-2026-04-06`); it is current as of today (2026-05-20). Frontier content is decay-managed and the underlying HMRC guidance is still issuing through 2026, so verify the qualifying-condition detail and effective rates against primary HMRC guidance before advising on a specific position.\n\n## Cited files\n1. `knowledge/frontier/uk-carried-interest-reform-2026.md`\n2. `knowledge/jersey/immigration-residency/high-value-residency.md`\n3. `knowledge/jersey/tax/high-value-residency-tax.md`\n4. `knowledge/jersey/funds/jersey-private-fund.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 512
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

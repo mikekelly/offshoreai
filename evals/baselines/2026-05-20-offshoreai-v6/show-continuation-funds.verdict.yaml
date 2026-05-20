@@ -1,0 +1,22 @@
+questionId: show-continuation-funds
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. All six rubric facts covered with correct detail and no errors.
+  The answer reads like a fund-secondaries specialist: it opens with the
+  demand-side drivers, lands the 46%-doubled stat with regional granularity
+  exceeding rubric requirements, explains the structural not-a-CIS advantage
+  clearly, and positions Jersey as 'strong but second' — exactly matching the
+  corpus. Three files cited, all verified, zero hallucinations, and the
+  freshness note on the frontier file is exemplary. Efficient retrieval in 3
+  tool calls / 33 seconds."

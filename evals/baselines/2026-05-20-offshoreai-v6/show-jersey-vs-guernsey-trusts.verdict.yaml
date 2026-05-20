@@ -1,0 +1,21 @@
+questionId: show-jersey-vs-guernsey-trusts
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. The answer covers all five expected facts with no errors:
+  both-jurisdictions-share features, Article 9(4) vs s.14 distinction, Re S&T
+  Trusts case-law depth, PCC+ICC in Guernsey, and the practical tie-breaker
+  factors. All four citations verified against corpus files; every claim is
+  supported. The answer adds useful bonus depth (image rights, PIF vs JPF, TCB
+  industry size) without padding. Efficient retrieval — four tool calls, no
+  redundancy, 33 seconds."

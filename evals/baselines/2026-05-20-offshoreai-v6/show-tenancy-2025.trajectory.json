@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-tenancy-2025",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T15:56:18.817Z",
+  "wallClockSeconds": 23.186,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"residential-tenancy\"],\"section\":\"residential-tenancy\"}",
+      "inputBytes": 64,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/residential-tenancy/2025-amendment-law.md\",\"full\":true}",
+      "inputBytes": 81,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2828,
+    "outputTokens": 1368,
+    "cacheReadTokens": 130659,
+    "cacheWriteTokens": 51222,
+    "totalCostUsd": 0.43380700000000005
+  },
+  "answer": {
+    "text": "The **Residential Tenancy (Jersey) Amendment Law 2025** came into force on **15 April 2026** — the most significant Jersey residential-tenancy reform in over a decade, amending the Residential Tenancy (Jersey) Law 2011.\n\n> ⚠️ The corpus file I'm relying on is marked **`draft`** — the content is drafted but not yet editorially verified against the primary source. Treat the specifics below as provisional and confirm against the Amendment Law text before acting.\n\n## What changed\n\n**Fixed terms capped at 3 years.** The initial fixed term may not exceed 3 years (down from the prior 9-year ceiling), and **successive fixed terms are prohibited** — a tenancy ends or converts automatically to periodic at expiry.\n\n**Tenant exit on one month's notice.** A tenant may terminate *any* residential tenancy on one month's written notice, including a fixed term — no more fixed-term lock-in.\n\n**Landlord no-fault termination route changed.** To end a periodic tenancy a landlord must either justify it on a permitted ground (breach, sale, owner-occupation, redevelopment) or give **12 months' notice** without justification. This replaces the old 3-month no-fault notice; 3 months' notice now only works on a justified ground.\n\n**Rent caps.** Rent on periodic tenancies can rise only once per year, by no more than the Jersey RPI, with at least 2 months' written notice — subject to a narrow \"significantly below market rent\" carve-out.\n\n**New Rent Tribunal.** An independent tribunal now hears rent-increase disputes (RPI breaches, the market-rent carve-out, the once-yearly rule, notice compliance). It does *not* cover social housing, employment-linked accommodation, or eviction/breach (which stay with the Petty Debts Court).\n\n**Strengthened written-form rules.** Agreements must disclose all tenant-chargeable fees; hidden fees are unenforceable and may be an offence.\n\n## Transitional treatment (at 15 April 2026)\n- **New tenancies** → full post-amendment regime.\n- **Pre-existing periodic** → converts immediately (rent caps, 12-month notice, etc.).\n- **Pre-existing fixed-term** → continues under old law until expiry, then post-amendment rules apply.\n- **Successive-fixed-term clauses** → become unenforceable at expiry, converting to periodic.\n\n## What did *not* change\nPetty Debts Court eviction/breach jurisdiction, Viscount enforcement, the 2014 condition-report regime, the Tenants' Deposit Scheme, the lodging-house exclusion, and the 9-year contract-of-lease ceiling.\n\n## Cited files\n1. `knowledge/jersey/residential-tenancy/2025-amendment-law.md` (status: draft; last verified 2026-05-18 — fresh)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 391
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

@@ -1,0 +1,20 @@
+questionId: show-eviction
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six rubric facts with correct detail, names
+  five Jersey statutes, cites four corpus files that all verify cleanly, and
+  adopts the right landlord-facing smart-friend tone. The freshness caveat
+  flagging draft status and the 2025 Amendment Law is exemplary. Retrieval was
+  efficient — two tag searches followed by three targeted file reads with no
+  redundancy.

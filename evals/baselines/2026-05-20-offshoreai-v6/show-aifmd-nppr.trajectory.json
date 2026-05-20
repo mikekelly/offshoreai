@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-aifmd-nppr",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T15:53:18.914Z",
+  "wallClockSeconds": 21.032,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"aifmd-nppr\",\"eu-marketing\"],\"mode\":\"or\",\"section\":\"funds\"}",
+      "inputBytes": 68,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/aifmd-nppr.md\",\"full\":true}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2741,
+    "outputTokens": 1331,
+    "cacheReadTokens": 69436,
+    "cacheWriteTokens": 48374,
+    "totalCostUsd": 0.3840355
+  },
+  "answer": {
+    "text": "## Marketing a Jersey AIF into Germany via NPPR\n\nGermany is **not** reached through an EU-wide passport — Jersey AIFMs cannot use the full AIFMD passport (the proposed \"third-country passport\" extension to non-EU jurisdictions was never implemented). Instead you access Germany through its **National Private Placement Regime (NPPR)**, country-by-country. The route, in sequence:\n\n1. **AIFM registration with the JFSC** under Jersey's AIFMD-equivalent regime.\n2. **Demonstrate AIFMD-equivalent compliance** — capital adequacy, risk management, conflicts of interest, depositary arrangements, transparency/disclosure to investors, and regulatory reporting.\n3. **AIFMD-equivalent depositary** — for an EU-marketed AIF you need full AIFMD-equivalent depositary arrangements (the \"lighter\" Jersey depositary functions available to non-EU-marketed funds are not sufficient here).\n4. **Notify the German regulator (BaFin)** under Germany's NPPR for that AIF.\n5. Once approved, the AIF may be **marketed to German professional investors** only.\n\nTwo cautions specific to Germany. First, the corpus flags Germany (with France) as having **stricter NPPR rules than some other member states** — so the German notification is at the more demanding end of the country-by-country spectrum (`knowledge/jersey/funds/aifmd-nppr.md`). Second, NPPR marketing is to **professional investors**, not retail.\n\n**Status / freshness caveat:** the source file is marked **`draft`** (last verified 2026-05-15) — the content is drafted but not yet editorially verified, so treat it as indicative and confirm BaFin's current §330/§329 KAGB notification requirements against the primary source before acting. Note also that **AIFMD II** (EU application 16 April 2026) is now live and changes NPPR conditions, disclosure, and Annex IV reporting — see `knowledge/frontier/aifmd-ii-april-2026.md` for what has shifted; I have not read that file in this answer, so check it for the current German notification mechanics.\n\nA common Jersey vehicle used for AIFMD-NPPR marketing is the **Expert Fund** (`knowledge/jersey/funds/expert-fund.md`).\n\n### Cited files\n1. `knowledge/jersey/funds/aifmd-nppr.md` *(draft — unverified)*\n2. `knowledge/jersey/funds/expert-fund.md` *(cross-reference for vehicle choice)*\n3. `knowledge/frontier/aifmd-ii-april-2026.md` *(pointer — AIFMD II changes, not read here)*\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 330
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

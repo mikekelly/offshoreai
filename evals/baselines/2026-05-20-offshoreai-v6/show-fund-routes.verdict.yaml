@@ -1,0 +1,23 @@
+questionId: show-fund-routes
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All five rubric facts covered with correct parameters, no
+  factual errors, and zero hallucinated citations. The answer is
+  well-structured: a comparison table for quick reference, a decision-framework
+  narrative that correctly maps the user's sub-$100m emerging-manager profile to
+  BVI Approved Fund as the tightest fit while explaining the Channel Islands
+  NPPR advantage and Cayman scalability, and a punchy short-version summary. The
+  draft-status caveat on all four vehicle files shows good freshness discipline.
+  Five tool calls with no redundancy is efficient — the cross-jurisdictional map
+  was available from session context without a separate fetch."

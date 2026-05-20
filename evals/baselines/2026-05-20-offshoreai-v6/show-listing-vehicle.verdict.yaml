@@ -1,0 +1,24 @@
+questionId: show-listing-vehicle
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: Pass. All four rubric facts covered with correct corpus citations.
+  Cayman Exempted correctly positioned as the NASDAQ default, Bermuda's BMA
+  pre-vetting flagged, BVI's limited exchange acceptance noted, and Pillar Two
+  overlay mentioned for all three jurisdictions. The only blemish is grouping
+  BVI with Cayman as having 'their own QDMTT regimes' rather than distinguishing
+  the BVI MTT — but the corpus itself (bvi/tax.md, CROSS-JURISDICTIONAL-MAP.md)
+  supports this characterisation despite a contradictory line in the Bermuda
+  comparison table. Proactive draft-status caveat is a strong quality signal.
+  Two redundant getFile calls (re-reading Cayman and BVI with full:true) are
+  minor efficiency waste.

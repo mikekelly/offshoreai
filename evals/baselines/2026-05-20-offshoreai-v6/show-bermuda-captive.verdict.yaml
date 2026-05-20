@@ -1,0 +1,22 @@
+questionId: show-bermuda-captive
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts covered accurately with correct citations
+  to the most authoritative corpus files. The answer correctly identifies
+  Insurance Act 1978, the Class 1-4 system with Class 1 as the recommendation
+  for a single-parent captive, Class 4's US$100m minimum, SAC structuring, and
+  Solvency II equivalence. Every citation verified against the corpus — no
+  hallucinations. The candidate added genuine value with the comparative
+  domicile framing, the NAIC point, and the explicit draft-status/freshness
+  caveat. Efficient at 4 tool calls and 37 seconds.

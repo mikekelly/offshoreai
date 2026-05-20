@@ -1,0 +1,21 @@
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Partial — substance is the limiting dimension. The answer delivers a
+  well-structured, citation-clean, voice-appropriate fund-counsel walkthrough
+  with exemplary freshness caveats, but omits two rubric-required specifics:
+  AIFMD Article 42 (the directive provision enabling NPPR for third-country
+  AIFMs) and the statutory name of the Alternative Investment Funds (Jersey)
+  Regulations 2012. These are the same two gaps as the v5 baseline — no
+  regression but no improvement on the substance dimension."

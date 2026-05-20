@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-jersey-vs-guernsey-trusts",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T16:04:25.891Z",
+  "wallClockSeconds": 33.158,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/trust-law-differences-from-jersey.md\",\"full\":true}",
+      "inputBytes": 78,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"trusts\",\"guernsey\"],\"mode\":\"and\"}",
+      "inputBytes": 43,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/firewall.md\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/reserved-powers.md\"}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2467,
+    "outputTokens": 2363,
+    "cacheReadTokens": 69426,
+    "cacheWriteTokens": 54186,
+    "totalCostUsd": 0.44478550000000006
+  },
+  "answer": {
+    "text": "This is a comparative trust question, so let me pull the synthesis layer plus both jurisdictions' substantive files in parallel.I have the comparison file plus both Jersey substantive files. One status caveat applies across the board: the Guernsey comparison file and both Jersey trust files are all `draft` status, so I'll flag that the content is drafted but not yet editorially verified against primary sources.\n\n## Short answer\n\nFor most cross-border family-wealth structures, Jersey and Guernsey trusts are **competitive substitutes** — both descend from a shared Norman customary heritage, both recognise discretionary/fixed-interest/purpose trusts, both allow settlor-reserved powers, both have a statutory firewall, both permit perpetual duration, and both run a Royal Court supervisory jurisdiction with final appeal to the Privy Council (`knowledge/guernsey/trust-law-differences-from-jersey.md`). So the choice usually turns on a handful of differentiators rather than a categorical \"one is better.\"\n\n## When to lean Jersey\n\n- **Maximum forced-heirship / matrimonial-claim defence.** Jersey's **Article 9 firewall** (Trusts (Jersey) Law 1984, as strengthened by the 2006 Amendment No. 4) is the gold standard. Article 9(1) directs Jersey law alone to govern validity, capacity, administration and beneficial rights; Article 9(2) disregards foreign non-recognition of trusts and forced-heirship attacks; and critically **Article 9(4) makes foreign judgments inconsistent with the Article unenforceable in Jersey** (`knowledge/jersey/trusts/firewall.md`). Guernsey's equivalent (s.14 TGL 2007) is comparable in protection but **less explicit on foreign-judgment non-recognition**, so aggressive-defence structures still marginally prefer Jersey (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n- **Depth of case law on setting aside trustee decisions for mistake.** Both jurisdictions have codified a statutory mistake regime wider than the English *Pitt v Holt* approach, but **Jersey's Article 47B–J jurisprudence is more developed** (the *Re S&T Trusts* line) (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n- **Reserved-powers / settlor-control structures** (e.g. US-grantor-trust planning, founder/patriarch control). Jersey's **Article 9A** sets out a wide, specific statutory menu — revocation, variation, advancement, trustee direction, beneficiary appointment, change of proper law — and confirms reservation neither invalidates the trust nor makes the settlor a trustee (`knowledge/jersey/trusts/reserved-powers.md`). Guernsey has broadly equivalent provisions; the menus differ in detail but you can achieve equivalent outcomes either side.\n- **Trust-company industry depth** — Jersey's TCB industry is the larger of the two (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n\n## When to lean Guernsey\n\n- **Cell structures for trustee/fund vehicles** — Guernsey offers both **PCC and ICC** (it invented the PCC in 1997), versus Jersey's PCC only (`knowledge/guernsey/trust-law-differences-from-jersey.md`; `knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n- **Combination with an image-rights register** — Guernsey is the only jurisdiction in the world with one, relevant if the family has commercially valuable personalities (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n- **Fund-trust combinations using a PIF** rather than Jersey's JPF, where the rest of the structure is already Guernsey-anchored (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n\n## The practical tie-breakers\n\nWhere the two are genuine substitutes, the corpus says the real decision usually rests on non-legal factors: **sponsor familiarity** with one regime, **existing service-provider relationships**, **group/administrator infrastructure location**, and **specific asset or family considerations** (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n\n> Note on status: the three files cited are all marked `draft` — the content is drafted but not yet editorially verified against the primary statutes. Treat the Article-level detail (especially Guernsey s.14 TGL 2007 and the parallel mistake regime) as indicative and verify against the primary sources before relying on it. Freshness is not an issue (all verified within the last week).\n\n## Files cited\n\n1. `knowledge/guernsey/trust-law-differences-from-jersey.md` (draft)\n2. `knowledge/jersey/trusts/firewall.md` (draft) — Trusts (Jersey) Law 1984, Article 9\n3. `knowledge/jersey/trusts/reserved-powers.md` (draft) — Trusts (Jersey) Law 1984, Article 9A\n4. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 582
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

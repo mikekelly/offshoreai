@@ -1,0 +1,22 @@
+questionId: show-image-rights
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The candidate covered all five rubric facts accurately and
+  completely, citing the single most relevant corpus file with zero hallucinated
+  citations. Particularly strong on freshness handling — proactively flagged the
+  file's draft status and advised primary-source verification despite the file
+  being only 2 days old. Efficient single-tool-call retrieval with no
+  redundancy. The personnage attribute list, property-right characteristics,
+  structuring guidance, and cross-jurisdictional comparison all match the corpus
+  verbatim.

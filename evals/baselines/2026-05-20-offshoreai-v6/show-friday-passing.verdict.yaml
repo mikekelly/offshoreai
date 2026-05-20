@@ -1,0 +1,23 @@
+questionId: show-friday-passing
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: partial
+  citationRecall: fail
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 6
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: Partial. The answer correctly explains the Royal Court contract-passing
+  procedure and its Norman customary-law origins, but critically misses the
+  corpus file (commercial-leases.md) that directly answers the user's question —
+  it documents Friday-afternoon passing, two Jurats witnessing, and the contrat
+  héréditaire form. The candidate's grep for 'Friday' in
+  knowledge/jersey/property/ should have found this file but didn't, leading the
+  candidate to incorrectly declare a corpus gap on the Friday timing. Three of
+  six rubric substance facts are missing. Citation precision is clean (no
+  hallucinations), but citation recall fails on the most authoritative source.

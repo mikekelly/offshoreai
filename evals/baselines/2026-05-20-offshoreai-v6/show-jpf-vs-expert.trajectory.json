@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-jpf-vs-expert",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T15:51:35.217Z",
+  "wallClockSeconds": 30.327,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/expert-fund.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/index.md\"}",
+      "inputBytes": 42,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 4,
+    "outputTokens": 1531,
+    "cacheReadTokens": 72195,
+    "cacheWriteTokens": 49973,
+    "totalCostUsd": 0.38672375
+  },
+  "answer": {
+    "text": "## Answer: JPF — almost certainly the right vehicle for a club deal\n\nA \"club deal\" — a small group of sophisticated investors pooling capital for a specific PE opportunity — maps directly onto what the JPF was designed for. The JPF concept file lists **\"single-LP or club deal structures\"** and **\"private equity funds and co-investment vehicles\"** explicitly among its default use cases (`knowledge/jersey/funds/jersey-private-fund.md`). The deciding factor is investor count: a JPF takes **up to 50 offers/investors**, all professional/eligible, with **fast-track JFSC authorisation in ~48 hours** and a Jersey-licensed administrator acting as designated service provider (DSP) who carries the AML/CDD and ongoing-supervision burden so the fund itself stays light-touch (same file).\n\n**Choose the Expert Fund only if you breach the JPF envelope.** The Expert Fund's stated reason for existing, relative to the JPF, is to take **\"large private-equity vehicles exceeding JPF investor count\"** — i.e. when you expect more than 50 investors — and it accepts a slower authorisation (days to weeks), a more detailed offering memorandum, and an \"expert investor\" qualification (≈US$100k minimum or net-worth/institutional thresholds) in exchange for **no specific investor cap** and wider marketing latitude (`knowledge/jersey/funds/expert-fund.md`).\n\n| Decision driver | Points to |\n|---|---|\n| ≤50 investors, club/co-invest | **JPF** |\n| Speed to launch (48h) | **JPF** |\n| >50 investors expected | **Expert Fund** |\n| Wider expert-investor marketing | **Expert Fund** |\n\n**Two things to confirm before committing:**\n- **EU/UK marketing.** If you plan to market into the EU or UK under AIFMD's National Private Placement Regime, that affects the structuring on either route — see `knowledge/jersey/funds/aifmd-nppr.md` (not read here; flag it to your fund counsel).\n- **Vehicle form.** A JPF club deal is most commonly a **Jersey limited partnership**, which is also the conventional PE structure for carry and LP tax treatment (`knowledge/jersey/funds/jersey-private-fund.md`).\n\n**Caveats:**\n- All three corpus files I relied on are **`draft` status** (last verified 2026-05-15, 5 days ago) — drafted but not yet editorially verified against the primary JFSC source. The investor caps, authorisation timelines, and the expert-investor monetary thresholds in particular should be re-verified against the current JFSC Jersey Private Funds Guide and the Expert Funds Guide before you rely on them.\n- The corpus does not give the JPF's precise \"professional/eligible investor\" statutory definition in these files — verify investor eligibility against the JFSC guide.\n\n### Files cited\n1. `knowledge/jersey/funds/jersey-private-fund.md` (draft)\n2. `knowledge/jersey/funds/expert-fund.md` (draft)\n3. `knowledge/jersey/funds/index.md` (draft)\n4. `knowledge/jersey/funds/aifmd-nppr.md` (referenced, not read — for EU/UK marketing)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 430
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

@@ -1,0 +1,25 @@
+questionId: show-article-47
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. Every rubric fact is covered and correct; all claims verified
+  against the corpus file with zero hallucinated citations. The answer names Re
+  S&T Trusts [2015] JRC259, Article 47G specifically for fiduciary-power
+  exercise, and explicitly rejects the Pitt v Holt
+  mistake/inadequate-deliberation distinction with the 'manner of the mistake is
+  irrelevant' formulation from the Royal Court. Voice is well-matched —
+  practitioner-level terminology (Representation, Samedi Division, voidable ab
+  initio), boundary-case awareness (Article 11/51), and cross-border tax nuance
+  (HMRC vs IRS). The proactive draft-status caveat in the opener is a strong
+  freshness-handling signal. One mildly redundant tool call (same file read
+  twice, second with full:true) but overall efficient at 31 seconds.

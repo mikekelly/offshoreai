@@ -1,0 +1,20 @@
+questionId: show-uk-carry-reform
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. Every rubric fact covered (7/7), every citation verified against
+  corpus, voice matches PE-tax specialist briefing. The answer goes meaningfully
+  beyond the rubric minimum with co-invest/carry distinction, GP-entity location
+  analysis, sponsor-side response, and tail-liability cautions — all sourced
+  from the frontier file. Two tool calls, 35 seconds, zero redundancy — textbook
+  retrieval efficiency for a frontier question.

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-cell-companies",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T16:00:04.483Z",
+  "wallClockSeconds": 30.135,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/segregated-accounts-company.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/segregated-portfolio-company.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/protected-cell-company.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/incorporated-cell-company.md\"}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 4,
+    "outputTokens": 2159,
+    "cacheReadTokens": 91632,
+    "cacheWriteTokens": 56895,
+    "totalCostUsd": 0.45540475
+  },
+  "answer": {
+    "text": "This is a comparative cell-company question, so I'll pull the four jurisdiction files in parallel.All four files are `draft` status (verified 2026-05-18, fresh), so I'll flag the unverified caveat below. Here's the comparison.\n\n## Short answer — when to use each\n\nThese four are all members of the **cell-company family** (single regulated entity / shared governance, with statutorily ringfenced sub-pools). The Guernsey PCC was the original (1997); Cayman SPC (1998) and Bermuda SAC (2000) are evolutions; the Guernsey ICC is the second-generation \"each cell is its own company\" form.\n\n| Vehicle | Reach for it when… |\n|---|---|\n| **Bermuda SAC** | Your structure is **insurance-led** — captives, rent-a-captive, ILS / cat-bond series, collateralised reinsurance. SACs are heavily insurance-oriented and BMA-supervised; this is the default cell vehicle inside the world's leading (re)insurance/ILS market. |\n| **Cayman SPC** | You want a **general-purpose, fund-oriented** cell vehicle — multi-strategy / umbrella hedge funds, multiple share-class pools in one entity, where the LP base already expects a Cayman domicile. SPCs are explicitly general-purpose rather than sector-specific. |\n| **Guernsey PCC** | You want the **original, lower-cost single-entity** cell form — captive insurance (its founding and principal use case), funds, structured finance — and you're comfortable relying on statutory ringfencing rather than separate legal personality. |\n| **Guernsey ICC** | **Foreign-court recognition risk is acute**, a counterparty (prime broker, custodian, regulated entity) insists on dealing with a separate corporate personality, or you anticipate **cell migration** in/out of the structure. Each ICC cell is separately incorporated, so its separate-entity status is clear beyond doubt — at slightly higher cost/complexity than a PCC. |\n\n## The key decision axes\n\n1. **Sector.** Insurance/ILS → **Bermuda SAC** (or a Guernsey PCC cell for a European-parent captive). General funds → **Cayman SPC** or **Guernsey PCC**.\n   (`knowledge/bermuda/segregated-accounts-company.md`, `knowledge/cayman/segregated-portfolio-company.md`)\n\n2. **Legal personality of the cell — the PCC vs ICC choice.** A PCC is *one company with ringfenced internal accounts*; an ICC is *a group of separately-incorporated companies under shared governance*. Choose the ICC when statutory segregation alone is too risky — i.e. foreign courts that may not respect a ringfence, counterparties that only deal with companies, or planned cell migration. Otherwise the PCC is more common and cheaper.\n   (`knowledge/guernsey/incorporated-cell-company.md`, `knowledge/guernsey/protected-cell-company.md`)\n\n3. **The shared structural risk for all three single-personality forms (SAC / SPC / PCC):** segregation depends on **proper cell identification when contracting** and on **foreign courts respecting the statutory ringfence**. Improper identification is the primary route to \"piercing the segregation veil.\" The ICC is the structural answer to that risk.\n   (`knowledge/cayman/segregated-portfolio-company.md`, `knowledge/guernsey/protected-cell-company.md`)\n\nThe corpus's own decision frameworks align with this: for a fund, \"multi-strategy single-entity → **Cayman SPC** or **Guernsey PCC**\"; for insurance/ILS, \"**Bermuda SAC** with Class 3 / 3B SPI\" or \"**Guernsey PCC** cell\" for a European-parent captive (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\n> **Caveat — status.** All four cited cell-company files are currently `draft` status (last verified 2026-05-18): the content is drafted but not yet editorially verified against primary sources. Treat the framing above as reliable on the broad distinctions but verify the statutory specifics (SACA 2000, Cayman Companies Act Part XIV, Guernsey Companies Law 2008 / PCC Ordinance 1997) before relying on them.\n\n## Cited files\n1. `knowledge/bermuda/segregated-accounts-company.md` (draft)\n2. `knowledge/cayman/segregated-portfolio-company.md` (draft)\n3. `knowledge/guernsey/protected-cell-company.md` (draft)\n4. `knowledge/guernsey/incorporated-cell-company.md` (draft)\n5. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 562
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

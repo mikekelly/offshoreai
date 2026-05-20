@@ -1,0 +1,20 @@
+questionId: show-tenancy-2025
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 1
+hallucinatedCitations: 0
+summary: Pass. All 7 rubric facts covered correctly with no errors. The answer
+  correctly frames the post-amendment regime as current law with pre-amendment
+  law as contrast only, matching the voice rubric. The single cited corpus file
+  (2025-amendment-law.md) directly supports every claim — verified by reading
+  the file. The proactive draft-status caveat is a model freshness-handling
+  pattern. Two tool calls, 23 seconds — efficient retrieval.

@@ -1,0 +1,22 @@
+questionId: show-trusts-firewall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 11
+hallucinatedCitations: 0
+summary: Pass. The answer is a thorough, deeply Jersey-specific exposition of
+  Article 9 with paragraph-level statutory detail (9(1) through 9(4)), correct
+  forced-heirship application, accurate practical limits, and useful drafting
+  guidance. All 11 cited claims verified against three corpus files with zero
+  hallucinations. The one rubric gap — Royal Court anti-suit injunctions — is
+  absent from the firewall corpus files themselves, so it reflects a corpus gap
+  rather than a retrieval failure. No case law cited, but the rubric marks this
+  as optional. Voice is convincingly practitioner-grade.

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T15:57:55.797Z",
+  "wallClockSeconds": 31.851,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"voisinage\"]}",
+      "inputBytes": 22,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"delit\"],\"mode\":\"or\"}",
+      "inputBytes": 30,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/voisinage.md\",\"full\":true}",
+      "inputBytes": 61,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/contract/delit-tort.md\"}",
+      "inputBytes": 50,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2828,
+    "outputTokens": 1937,
+    "cacheReadTokens": 129195,
+    "cacheWriteTokens": 50812,
+    "totalCostUsd": 0.4447375
+  },
+  "answer": {
+    "text": "## Voisinage — and whether it fits your neighbour problem\n\n**What it is.** Voisinage (\"good neighbourhood\") is a **Norman customary-law doctrine**, preserved in Jersey though abandoned in most modern legal systems, that governs the relationship between neighbouring landowners. It requires each owner to use their land in a way that does **not cause unreasonable harm** to neighbours — harm that exceeds the ordinary inconveniences of neighbourhood, caused by the defendant's use of the property, without adequate justification (`knowledge/jersey/property/voisinage.md`).\n\n**How it differs from English nuisance.** This matters for your problem, because the test is *not* the English one. Voisinage can apply **without fault** (it has objective / strict-liability elements), it is **not confined** to the enumerated \"smell, smoke, noise\" nuisance categories, and it rests on a specific Jersey customary foundation. The corpus flags \"assuming the English nuisance test applies wholesale\" as a classic pitfall (`knowledge/jersey/property/voisinage.md`; `knowledge/jersey/contract/delit-tort.md`).\n\n**Does it apply to your problem?** The corpus lists the situations voisinage typically reaches — and most everyday neighbour disputes fall within them:\n\n- excessive **noise** from the neighbouring property;\n- **smells** (livestock, kitchens, refuse), **smoke / fumes**;\n- **vibrations** from machinery or construction;\n- **surface water / drainage**;\n- **tree roots / overhanging branches**;\n- **light obstruction**;\n- inter-unit noise/smells in apartments (interacting with flying-freehold / share-transfer and service-charge mechanisms).\n\nSo whether it \"really applies\" turns on whether your neighbour's *use of their land* is causing you **identifiable harm beyond ordinary neighbourhood inconvenience, without justification**. Temporary construction noise, for example, is usually just ordinary inconvenience; *prolonged or excessive* disturbance may cross the line (`knowledge/jersey/property/voisinage.md`).\n\n**Two things that do not automatically defeat a claim:** the fact your neighbour has **planning permission** does not exclude voisinage, and the existence of a **servitude** (easement) does not license *excessive* use of it. Conversely, available defences include reasonable use, the claimant's consent/acquiescence, and statutory authority (`knowledge/jersey/property/voisinage.md`).\n\n**Practical next steps the corpus recommends:** document the interference (logs, photos, recordings), engage experts early (e.g. acoustic/environmental), keep a correspondence trail with the neighbour, try **mediation first**, and instruct a Jersey advocate familiar with voisinage; contested claims proceed by Order of Justice in the Royal Court (`knowledge/jersey/property/voisinage.md`).\n\n---\n\n**Important caveats:**\n- Both files I relied on are **`draft` status** — content is drafted but not yet verified against primary sources. Treat the substance as indicative, not settled.\n- The files repeatedly use \"**specific Jersey case law**\" as a placeholder without naming the authorities or stating the test those cases lay down. The leading modern authority on voisinage (referenced only in passing in `delit-tort.md` as *Rockhampton Apartments*) is exactly where the doctrine's current limits are defined — so for *your* specific facts you should verify the live case law with a Jersey advocate before relying on this.\n- I cannot tell you whether it applies to *your* problem without your facts; the above is the framework the corpus supplies for testing it.\n\nCited files:\n1. `knowledge/jersey/property/voisinage.md` (draft, last verified 2026-05-18)\n2. `knowledge/jersey/contract/delit-tort.md` (draft, last verified 2026-05-17)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 514
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

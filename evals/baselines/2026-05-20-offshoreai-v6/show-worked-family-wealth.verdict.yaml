@@ -1,0 +1,22 @@
+questionId: show-worked-family-wealth
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: Pass. All 7/7 rubric facts covered with precision, zero hallucinated
+  citations, and every claim verified against the actual corpus files. The
+  answer is thoroughly Jersey-specific (names TJL 1984, Articles 9, 9A,
+  9(1)-(4), 9A(1)/(3)/(3A), 47B, 51, and Article 2), operationally structured as
+  a step-by-step worked example, and adds valuable practitioner extras (PTC
+  governance, parallel Italian planning, sham caveat). The proactive
+  draft-status caveat demonstrates disciplined freshness handling. Efficient
+  retrieval in 5 tool calls with no redundancy.

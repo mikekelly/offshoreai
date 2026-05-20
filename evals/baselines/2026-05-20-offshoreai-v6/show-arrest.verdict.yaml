@@ -1,0 +1,22 @@
+questionId: show-arrest
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All six rubric facts covered accurately with exact caution
+  wording and the full 24/36/96-hour detention progression. Jersey-specific
+  substance is strong — PPCE 2003 named, States Police and Honorary Police
+  distinguished, adverse-inference difference from England noted. Voice is
+  practical and action-oriented throughout with a dedicated 'Practical
+  priorities' section. All three citations verified against corpus files with
+  zero hallucinations. The candidate also correctly flagged the draft status of
+  the source files — good epistemic discipline.

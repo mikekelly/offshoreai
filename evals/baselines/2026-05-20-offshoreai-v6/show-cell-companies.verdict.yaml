@@ -1,0 +1,22 @@
+questionId: show-cell-companies
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. The candidate covers all five rubric facts correctly: Guernsey
+  PCC as 1997 original, Bermuda SAC insurance-focused, Cayman SPC
+  general-purpose, Guernsey ICC as the separately-incorporated outlier, and the
+  decision framework (insurance→Bermuda, funds→Cayman, foreign-court
+  robustness→ICC, EU-proximate→Guernsey PCC via the European-parent captive
+  reference). All five citations verified against corpus files with zero
+  hallucinations. The proactive draft-status caveat is a strong touch. Four
+  parallel getFile calls with zero redundancy — textbook efficient retrieval."

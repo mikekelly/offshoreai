@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-arrest",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T15:55:22.803Z",
+  "wallClockSeconds": 28.878,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"arrest\",\"ppce-2003\"],\"mode\":\"or\"}",
+      "inputBytes": 43,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"criminal-procedure\",\"suspect-rights\"],\"mode\":\"or\"}",
+      "inputBytes": 60,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md\",\"full\":true}",
+      "inputBytes": 97,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/crime-fraud/rights-at-police-station.md\",\"full\":true}",
+      "inputBytes": 79,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/crime-fraud/arrest.md\",\"full\":true}",
+      "inputBytes": 61,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 6,
+    "outputTokens": 2139,
+    "cacheReadTokens": 163848,
+    "cacheWriteTokens": 60206,
+    "totalCostUsd": 0.5117164999999999
+  },
+  "answer": {
+    "text": "I'll look up the Jersey arrest/police-station rights material in the corpus.The most on-point files are the persona use-case, the rights-at-police-station file, and arrest.md. Let me read the cluster.Your rights on arrest in Jersey are governed by the **Police Procedures and Criminal Evidence (Jersey) Law 2003** (PPCE 2003) and its Codes of Practice. Note these corpus files are currently **draft** status — drafted but not yet fully verified against the primary source, so treat the detail as indicative and confirm with a Jersey advocate.\n\n## At the moment of arrest\nThe officer must tell you that you are under arrest, state the offence, caution you (\"You are not obliged to say anything unless you wish to do so, but what you say may be put into writing and given in evidence\"), identify themselves, and use no more force than necessary. Failure to do these things can render the arrest unlawful. Both States Police and Honorary Police (Centeniers etc.) have full, legally identical arrest powers. (`knowledge/jersey/crime-fraud/arrest.md`)\n\n## Your core rights at the police station\n- **Free legal advice** — the single most important safeguard. Available 24/7 via the duty solicitor or your own choice, in private/privileged, before any interview. Can only be delayed on specific statutory grounds in the most serious cases (e.g. evidence-preservation), authorised at senior level — never routinely. If you decline but change your mind mid-interview, questioning must stop.\n- **Right to silence** — you can say nothing, answer selectively, or give a prepared statement. Adverse inference from silence at police-station interview is narrower in Jersey than in post-2003 England.\n- **Inform someone** — one person told of your arrest and location, police call at public expense.\n- **Consular notification** if you're a foreign national.\n- **Written notice of rights** in your language, plus an **interpreter** if needed (at public expense).\n- **Appropriate adult** if you are under 18 or vulnerable — interview cannot proceed without one (except in defined urgent cases).\n- **Medical attention**, adequate cell conditions, meals, water, and at least 8 continuous hours' rest in any 24-hour period.\n- **Custody record** — you can see it during detention and get a copy on release; it is critical evidence for any later fairness challenge.\n\n(`knowledge/jersey/crime-fraud/rights-at-police-station.md`, `knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md`)\n\n## Detention time limits\n| Stage | Limit | Authorised by |\n|---|---|---|\n| Initial detention | 24 hours | Custody officer |\n| Extension (serious offences) | up to 36 hours | Police inspector or higher |\n| Royal Court warrant of further detention | up to 96 hours total | Royal Court (Magistrate) |\n| Beyond 96 hours | Must charge or release | — |\n\nDetention is reviewed at prescribed intervals; detention beyond these limits is unlawful and can ground a habeas corpus / wrongful-imprisonment claim. (`knowledge/jersey/crime-fraud/rights-at-police-station.md`)\n\n## Interview safeguards\nOpen audio recording (Code E), caution at the start of each session, solicitor present if requested, no oppression, breaks, and no interview if you're unfit (intoxicated, unwell, distressed). (`knowledge/jersey/crime-fraud/rights-at-police-station.md`)\n\n## Practical priorities\nStay calm; identify yourself truthfully (refusing your name can itself be an offence in some contexts); **ask for a solicitor immediately**; don't answer substantive questions or sign anything until you've had advice; use your phone call; and get a copy of the custody record on release. (`knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md`)\n\nIf a right is breached, note the details, tell your solicitor, complain through formal channels, and exclusion of evidence or a civil claim may be available.\n\n---\n\n**Files cited:**\n1. `knowledge/jersey/crime-fraud/arrest.md`\n2. `knowledge/jersey/crime-fraud/rights-at-police-station.md`\n3. `knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 598
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

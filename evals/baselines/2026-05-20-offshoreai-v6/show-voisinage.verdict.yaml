@@ -1,0 +1,23 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Partial — demoted from the prior baseline's pass because the candidate
+  fails to name Pothier or Le Geyt despite the corpus file explicitly listing
+  them as the doctrinal foundation. This is the most load-bearing gap: the
+  rubric's jersey_specific dimension and voice expectation ('sound like a Jersey
+  advocate explaining customary-law roots') both depend on surfacing those
+  scholars. Every other dimension is strong — citations are precise and fully
+  verified, freshness handling is exemplary with an explicit draft-status
+  caveat, and the practical advice is well-structured. The regression is narrow
+  but material: the prior baseline covered 5/5 facts; this one covers 4/5."

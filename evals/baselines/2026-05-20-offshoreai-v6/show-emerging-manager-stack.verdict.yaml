@@ -1,0 +1,22 @@
+questionId: show-emerging-manager-stack
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All five rubric facts covered with correct detail; every claim
+  backed by one of four cited corpus files, all verified. The candidate's
+  proactive flagging of draft status across the BVI corpus is a model of
+  freshness discipline. The three-tier structure (Approved Manager / Incubator
+  or Approved Fund / BC or LP) is cleanly laid out with a comparison table, the
+  full tier ladder, ceiling-breach warnings, and the assembly sequence — all
+  confirmed against the corpus. Efficient retrieval: 5 tool calls, zero
+  redundancy, 37.5 seconds."

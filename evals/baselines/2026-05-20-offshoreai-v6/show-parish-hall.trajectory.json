@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-parish-hall",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-20T15:57:40.154Z",
+  "wallClockSeconds": 26.237,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"parish-hall\"]}",
+      "inputBytes": 24,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/road-traffic/parish-hall-enquiries.md\",\"full\":true}",
+      "inputBytes": 77,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 6,
+    "outputTokens": 1454,
+    "cacheReadTokens": 162965,
+    "cacheWriteTokens": 54037,
+    "totalCostUsd": 0.45559374999999996
+  },
+  "answer": {
+    "text": "I'll look up the Parish Hall Enquiry material in the road-traffic section.I'll read the dedicated Parish Hall Enquiries file.## What a Parish Hall Enquiry is\n\nA **Parish Hall Enquiry** is a distinctively Jersey **pre-court forum**, presided over by a **Centenier** — an elected, unpaid honorary police officer of the parish where the alleged offence took place. It is the route by which the **majority of routine Jersey motoring offences are resolved without ever reaching the Magistrate's Court**. There is no direct equivalent in the UK or other common-law systems — it is not a UK fixed-penalty notice, not a Scottish fiscal fine, and not a court (`knowledge/jersey/road-traffic/parish-hall-enquiries.md`).\n\nAt the enquiry the Centenier reviews the evidence, decides whether there is a case and whether the public interest requires prosecution, and can then **caution**, issue a **written fine of up to £200 per offence**, or **refer the matter to the Magistrate's Court**. Crucially, the Centenier can only fine or caution if you **admit** the offence and **accept** the proposed penalty; if you dispute it, the case must go to court (same file).\n\n## When your case goes there\n\nRoutine, lower-level motoring matters are typical Parish Hall fare. Examples that **can** be dealt with at Parish Hall:\n\n- Minor speeding (under 15 mph excess)\n- Mobile phone offences\n- Failing to display an insurance disc\n- Some traffic-light offences\n- Some minor careless driving\n- Parking offences\n\nThe schedule of treatable offences is maintained by the Law Officers' Department.\n\n## When it does *not* go there\n\nThe Parish Hall route is **excluded** — and the case goes straight to the Magistrate's Court by summons — for:\n\n- Speeding **15 mph or more** over the limit\n- Drink-driving (any reading) and drug-driving\n- Dangerous driving (Article 23 RTJL 1956)\n- Causing death or serious injury by driving\n- Driving while disqualified\n- Failing to stop/report after an accident (serious cases)\n- **Any offence carrying mandatory disqualification**\n- Anything where the Centenier judges the £200 ceiling inadequate\n\n(All of the above from `knowledge/jersey/road-traffic/parish-hall-enquiries.md`.)\n\n## Two things worth knowing\n\n- **You can always opt out.** A defendant can decline to admit and **demand the case be heard at the Magistrate's Court** at any point — and can appeal a Parish Hall outcome by requesting a Magistrate's Court re-hearing.\n- **It still has consequences.** A Parish Hall outcome is recorded and can lead to **licence endorsement** for relevant offences, even though it does not formally count as a court criminal conviction for most purposes. Don't assume \"no court\" means \"no consequences\" — and consider getting advice before admitting, since endorsement can matter for insurance.\n\n**Caveat:** The cited file is currently **`draft`** status (last verified 2026-05-18) — the content is drafted but not yet editorially verified against the primary source. The £200 ceiling and the exact offence schedule in particular are worth confirming against the Law Officers' Department / current Royal Court guidance before relying on them.\n\n---\n\nCited files:\n1. `knowledge/jersey/road-traffic/parish-hall-enquiries.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 516
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}
