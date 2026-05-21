@@ -155,6 +155,12 @@ Adopt the **pattern, not the vendor.** Wrapping our local, in-process corpus beh
 2. **Evolve the result contract** toward typed output-shape + per-claim confidence + provenance (Implication 2), starting with surfacing the confidence material we already compute.
 3. **Keep `claude-p` the arbiter.** If a compiled-artifact path doesn't beat agentic retrieval *and* the vanilla control on a KPI, it doesn't ship — same rule as every other behaviour here.
 
+### Noted future feature — compilation as a read-through cache
+
+A natural evolution, **deferred but worth designing toward now:** treat compiled artifacts as a **read-through cache**. On a miss (no artifact for the routed `(persona, task)` / intent), the agent serves the query-time retrieval result immediately and compiles the artifact *asynchronously* for next time; subsequent hits are served fast and deterministically. This makes "what to compile" **demand-driven** — the cache discovers the hot paths rather than us predicting them — and unifies hand-authored bundles (pre-warmed, human-blessed) with fly-compiled artifacts (populated on miss, `draft` until the citation-verifier blesses them). Invalidation reuses machinery we already have: artifact provenance (which source files, at which `last_verified`) + the freshness-checker (#3) as the invalidation trigger. The hard, load-bearing piece is the **intent-keying function** (two phrasings of the same task must hit the same key, deterministically, or variance re-enters at the routing layer).
+
+We are **not building the cache now.** But the bundle mechanism is being designed cache-ready — explicit key, provenance for precise invalidation, and a trust/status field — so the cache is an additive future step rather than a reformat. The forward design is in [`bundles/DESIGN.md`](./bundles/DESIGN.md).
+
 ---
 
 ## Cross-cutting properties
