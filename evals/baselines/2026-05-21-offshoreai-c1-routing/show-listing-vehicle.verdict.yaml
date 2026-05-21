@@ -1,0 +1,24 @@
+questionId: show-listing-vehicle
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. All four rubric-expected facts are covered: Cayman Exempted as
+  the dominant NASDAQ choice (with the Alibaba pattern), Bermuda's BMA
+  pre-vetting for regulatory credibility, BVI BC's more limited exchange
+  acceptance, and Pillar Two implications including Bermuda CIT 2023 by name.
+  The Pillar Two treatment groups Cayman/BVI as 'QDMTT-equivalents' without
+  naming specific instruments, which is imprecise but directionally correct —
+  notably the rubric's expected fact 'BVI no equivalent yet' is contradicted by
+  the corpus's own bvi/tax.md documenting MTT 2025. The candidate's proactive
+  draft-status warning and listing-counsel caveat add practical value. One
+  redundant tool call (re-reading Cayman file with full:true)."

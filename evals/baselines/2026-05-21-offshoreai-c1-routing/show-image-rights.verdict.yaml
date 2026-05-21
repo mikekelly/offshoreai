@@ -1,0 +1,22 @@
+questionId: show-image-rights
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All five expected facts covered accurately with zero factual
+  errors and zero hallucinated citations. The answer is well-structured for a
+  celebrity audience, correctly identifies Guernsey as the only jurisdiction
+  with this regime, covers the personnage concept, registrable-property-right
+  characteristics, structuring with trusts/companies, and adds useful
+  practitioner-grade detail on enforcement limitations and privacy trade-offs.
+  Highly efficient at one tool call. The proactive draft-status caveat is a
+  strong citation-discipline signal.

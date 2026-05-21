@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-uk-carry-reform",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-21T11:16:45.880Z",
+  "wallClockSeconds": 27.358,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/uk-carried-interest-reform-2026.md\",\"full\":true}",
+      "inputBytes": 76,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__freshnessCheck",
+      "rawName": "mcp__corpus__freshnessCheck",
+      "inputDigest": "{\"paths\":[\"knowledge/frontier/uk-carried-interest-reform-2026.md\"]}",
+      "inputBytes": 67,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2467,
+    "outputTokens": 2065,
+    "cacheReadTokens": 69648,
+    "cacheWriteTokens": 50263,
+    "totalCostUsd": 0.41292775000000004
+  },
+  "answer": {
+    "text": "## What changes on 6 April 2026\n\nThe UK is replacing the CGT-based carried-interest regime with an **income-tax-based regime with a partial exclusion** (`knowledge/frontier/uk-carried-interest-reform-2026.md`, as of 2026-05-18):\n\n| Period | Treatment | Effective rate (additional-rate payer) |\n|---|---|---|\n| Pre-6 Apr 2025 | CGT | ~28% |\n| 6 Apr 2025 – 5 Apr 2026 | CGT, flat 32% | 32% |\n| **From 6 Apr 2026** | **Income tax + Class 4 NICs** | **~34.1% qualifying / up to ~47% non-qualifying** |\n\nFrom 6 April 2026 carry is taxed as **income**, but for **qualifying** carried interest a **72.5% multiplier** applies (only 72.5% is brought into charge), landing an additional-rate payer at ~34.1%. **Non-qualifying** carry takes the full income-tax + NICs hit, up to ~47%. The qualifying definition (genuine investment-management activity, specified fund characteristics) was **tightened** in the final legislation versus earlier drafts, though the government dropped the proposed minimum-investment \"access conditions.\" For most established UK-resident partners at mature sponsors, qualifying status is the default; new entrants, secondaries participants, and non-traditional structures need careful analysis.\n\n## What PE partners in the Crown Dependencies should do\n\n**Residency planning for UK partners** — the most-marketed response. The Crown Dependencies are being actively promoted as a residence destination (`knowledge/frontier/uk-carried-interest-reform-2026.md`):\n- **Jersey 2(1)(e) High-Value Residency** — bespoke route with a tax-rate cap (`knowledge/jersey/immigration-residency/high-value-residency.md`, `knowledge/jersey/tax/high-value-residency-tax.md`);\n- **Guernsey Open Market** (house-purchase-based, standard 20% tax) and **IoM tax cap** as alternatives.\n\nBut the corpus is explicit on the limits: the **UK Statutory Residence Test** has stringent conditions for leaving, there is **tail liability** on carry that economically accrued while UK-resident (even if realised after departure), **substance** in the destination is essential, and the new legislation contains **specific anti-avoidance provisions around residence changes**. Treating UK departure as a clean shield is flagged as a pitfall.\n\n**Structuring and entity-location moves:**\n- **GP-entity location** — Crown Dependencies-domiciled GPs (Jersey/Guernsey companies acting as GP of Jersey/Cayman ELP funds) may become more attractive as the carry-allocation entity for *non-UK* partners, though UK look-through / situs rules still apply where UK-resident partners get the economic benefit.\n- **Carry-allocation mechanics at the GP** are the focal point — fund vehicles themselves (Jersey JPF, Guernsey PIF, Cayman ELP) are unchanged; partnership profit allocation and carry vesting are where the rules bite.\n- **Co-invest vs carry distinction** is now acutely material — co-invest economics remain CGT-treated, and misclassifying one as the other is a named pitfall.\n- **Trust and family-office structures** for deferral, spinouts, and generational transfer.\n\n**Pre-6 April crystallisation** (now largely historical): through Q1 2026 many partners accelerated distributions/disposals to land under the 32% CGT regime.\n\n**Sponsor-side**, advisers should document carry arrangements carefully to preserve qualifying status for each partner, review GP/LP economics, and prepare for LP questions on re-pricing and key-partner retention.\n\n## Caveats\n\nThis is **frontier (decay-managed) content** dated `as_of` 2026-05-18 with `last_verified: null` — it carries no editorial freshness stamp, so verify against the Finance Act 2025-26 text and current HMRC guidance before acting; the corpus itself flags ongoing HMRC manual updates and edge-case rulings through 2026.\n\n### Cited files\n1. `knowledge/frontier/uk-carried-interest-reform-2026.md`\n2. `knowledge/jersey/immigration-residency/high-value-residency.md`\n3. `knowledge/jersey/tax/high-value-residency-tax.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 536
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

@@ -1,0 +1,21 @@
+questionId: show-iom-portfolio-bond
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: Pass. All four expected facts covered accurately — single-premium
+  wrapper, UK 5% rule, top-slicing relief, Solvency II equivalence with named
+  carriers. Both citations verified against corpus files with no hallucinations.
+  The candidate proactively flagged the draft status of the primary source and
+  advised verifying UK tax specifics against primary legislation, which is
+  exactly the right handling for a draft file describing another jurisdiction's
+  tax law. Efficient two-call retrieval.

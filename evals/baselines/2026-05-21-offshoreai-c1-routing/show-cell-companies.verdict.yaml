@@ -1,0 +1,23 @@
+questionId: show-cell-companies
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All five rubric facts are covered accurately: Guernsey PCC as
+  the 1997 original, Bermuda SAC (2000) insurance-focused, Cayman SPC (1998)
+  general-purpose, ICC as the separate-legal-personality outlier, and a correct
+  decision framework mapping each vehicle to its primary use case. Every claim
+  is cited to the right corpus file and every citation checks out. The answer
+  adds useful practitioner detail (cell migration, counterparty insistence on
+  separate personality, sloppy-identification piercing risk) that goes beyond
+  the rubric minimum. Efficient execution — exactly four targeted file reads, no
+  redundancy."

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-listing-vehicle",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-21T11:12:09.663Z",
+  "wallClockSeconds": 39.052,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/exempted-company.md\"}",
+      "inputBytes": 47,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bvi/business-company.md\"}",
+      "inputBytes": 44,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/exempted-company.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/exempted-company.md\",\"full\":true}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"nasdaq\\\\|listing\\\\|exchange-accept\\\\|US-list\\\" /Users/mike/code/offshoreai/knowledge/bvi/ /Users/mike/code/offshoreai/knowledge/bermuda/ /Users/mike/code/offshoreai/knowledge",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 6,
+    "outputTokens": 2732,
+    "cacheReadTokens": 168182,
+    "cacheWriteTokens": 60011,
+    "totalCostUsd": 0.52748975
+  },
+  "answer": {
+    "text": "I'll check the cross-jurisdictional listing material and the specific company files for these three jurisdictions.Let me check the listing-specific detail in the Cayman file and grep for NASDAQ/exchange-acceptance context.## Short answer\n\nFor a **NASDAQ listing, the default and safest choice is the Cayman Exempted Company.** All three are accepted offshore listing domiciles, but they sort by use-case fit:\n\n- **Cayman Exempted** — the standard US-listing vehicle. It is \"one of three jurisdictions (alongside BVI and Delaware) routinely accepted by major exchanges as listing vehicles,\" and the file explicitly notes US-listed companies (the Alibaba / TikTok holdco pattern) list as Cayman exempted companies. Its comparison table lists acceptance on **NYSE, NASDAQ, HKEx**. (`knowledge/cayman/exempted-company.md`)\n- **BVI BC** — also accepted on **NYSE / NASDAQ / HKEx but \"more limited\"** exchange acceptance per the same comparison table. The corpus frames the BC as the volume/standard-structure vehicle rather than the premium listing vehicle. Viable, but with more friction and lower market familiarity for a listed holdco. (`knowledge/cayman/exempted-company.md`; `knowledge/bvi/business-company.md`)\n- **Bermuda Exempted** — \"routinely accepted as a listing domicile\" on **NYSE / NASDAQ / LSE**, but Bermuda's specialism (and where it's the strongest pick) is **(re)insurance and ILS listings**. It also carries a distinguishing procedural step: **BMA pre-vetting consent at incorporation**, which adds a regulatory filter Cayman/BVI don't impose. (`knowledge/bermuda/exempted-company.md`)\n\nThe cross-jurisdictional decision framework agrees: for a \"US-listed tech holdco\" it points to **Cayman Exempted (the Alibaba pattern)**; Bermuda is the lean for an \"insurance / reinsurance listing\"; BVI is the lower-cost option but with \"some exchange-acceptance limits\" (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\n## How to choose between them\n\n| If your business is… | Lean toward |\n|---|---|\n| Tech / general operating company listing on NASDAQ | **Cayman Exempted** |\n| (Re)insurance, ILS, or cat-bond issuer | **Bermuda Exempted** |\n| Cost-sensitive, smaller raise, comfortable with narrower acceptance | **BVI BC** |\n\n## Caveats\n\n- **Pillar Two:** if your group has consolidated revenue ≥ EUR 750m, factor in the 15% top-up taxes now live in all three — Bermuda's **Corporate Income Tax Act 2023** (in force for fiscal years from 1 Jan 2025), and the Cayman/BVI QDMTT-equivalents. Below that threshold the historic no-direct-tax position holds. (`knowledge/bermuda/exempted-company.md`)\n- **Status warning:** the three vehicle files I relied on are all marked **`draft`** in the corpus (drafted but not yet editorially verified against primary sources). Treat the specifics — especially the exchange-acceptance nuances and the BVI \"more limited\" characterisation — as indicative and confirm with listing counsel and the relevant exchange before deciding.\n- The corpus is Jersey-anchored; for the underlying Cayman/BVI/Bermuda company statutes (Companies Act (Cayman) Part XV, BVI Business Companies Act 2004, Bermuda Companies Act 1981) verify against primary sources directly.\n\n## Cited files\n\n1. `knowledge/cayman/exempted-company.md` (draft; last verified 2026-05-18)\n2. `knowledge/bvi/business-company.md` (draft; last verified 2026-05-17)\n3. `knowledge/bermuda/exempted-company.md` (draft; last verified 2026-05-18)\n4. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 488
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

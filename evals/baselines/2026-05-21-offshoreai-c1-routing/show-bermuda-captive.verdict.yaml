@@ -1,0 +1,22 @@
+questionId: show-bermuda-captive
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 9
+hallucinatedCitations: 0
+summary: "Partial. The answer covers 4 of 5 rubric substance points accurately
+  and with verified citations, but entirely omits Class 3A and Class 3B from the
+  P&C class ladder — both are listed in the corpus file and explicitly expected
+  by the rubric. Class 4 appears only as contextual colour rather than as a
+  classification option in the 'Which Class' table. Citation precision is
+  flawless: all three cited files support their attached claims. Freshness
+  handling is exemplary, correctly flagging draft status. The omission of 3A/3B
+  prevents a substance pass and thus an overall pass."

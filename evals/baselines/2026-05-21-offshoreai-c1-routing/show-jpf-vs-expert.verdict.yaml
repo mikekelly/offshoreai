@@ -1,0 +1,23 @@
+questionId: show-jpf-vs-expert
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. The answer covers all five rubric substance points with verified
+  accuracy: JPF ≤50 cap, 48-hour authorisation, DSP model and responsibilities,
+  Expert Fund's uncapped expert-investor regime with more detailed disclosure,
+  and the decision framework turning on investor count, regulatory burden, and
+  marketing reach. All four cited corpus files support their attached claims
+  with zero hallucinated citations. Voice lands squarely as fund counsel
+  advising a sponsor on a structuring choice. The draft-status caveat and
+  freshness check are a bonus — the answer is genuinely useful as a first-pass
+  structuring conversation."

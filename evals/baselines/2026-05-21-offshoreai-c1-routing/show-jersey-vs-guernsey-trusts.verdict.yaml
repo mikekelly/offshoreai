@@ -1,0 +1,22 @@
+questionId: show-jersey-vs-guernsey-trusts
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts are covered accurately with correct
+  statutory references. The answer is well-structured as a Jersey-lean vs
+  Guernsey-lean decision framework, names the key statutes and the Re S&T Trusts
+  case, correctly identifies practical tie-breakers, and adds useful extras
+  (image rights, PIF/JPF, reserved-powers equivalence). All four cited corpus
+  files support their attached claims with zero hallucinated citations. The
+  proactive draft-status caveat on the Guernsey file is a notable quality
+  signal. Three focused tool calls with no redundancy — efficient retrieval.

@@ -1,0 +1,24 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: "Pass. All five substance facts covered accurately and every citation
+  verified against the corpus — zero hallucinations. The one soft spot is
+  jersey_specific: the rubric asks for Pothier and Le Geyt to be cited by name,
+  and neither appears in the candidate's prose despite the corpus file
+  explicitly naming both (line 46). The candidate says 'Norman customary-law
+  doctrine' but never surfaces the jurists. Guernsey's shared voisinage
+  tradition is also unmentioned. These omissions are real but not load-bearing
+  enough to demote overall: the answer is substantively correct, well-cited,
+  appropriately voiced as a Jersey advocate, and the draft-status caveat is
+  exemplary freshness handling."

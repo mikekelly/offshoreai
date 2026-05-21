@@ -1,0 +1,24 @@
+questionId: show-planning
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 9
+hallucinatedCitations: 0
+summary: "Pass. The answer is operationally excellent for a homeowner audience:
+  it correctly frames the GD Order 2011 permitted-development regime, identifies
+  the key qualifiers (conservation area, listed building, Coastal National Park,
+  Article 31 directions), names the parallel building-approval requirement, and
+  flags the draft status of its sources. The one substantive gap is that PBL
+  2002 — the parent statute that creates the planning-permission requirement —
+  is never named, and 'Planning Department' substitutes imprecisely for
+  'Department for the Environment'. Citation precision is perfect: every claim
+  traces to a verified corpus passage. Four tool calls with no redundancy is
+  efficient."

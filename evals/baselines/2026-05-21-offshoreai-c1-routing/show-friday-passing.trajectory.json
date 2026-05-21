@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-21T11:08:18.587Z",
+  "wallClockSeconds": 48.47,
+  "turns": 9,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"contract-passing\",\"conveyancing\"],\"mode\":\"or\",\"section\":\"property\"}",
+      "inputBytes": 77,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rln \\\"Friday\\\" /Users/mike/code/offshoreai/knowledge/jersey/ --include=\\\"*.md\\\"\",\"description\":\"Find files mentioning Friday property passing\"}",
+      "inputBytes": 161,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/contract-passing.md\",\"full\":true}",
+      "inputBytes": 68,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rln -i \\\"friday\\\\|samedi\\\\|afternoon\\\" /Users/mike/code/offshoreai/knowledge/jersey/property/ /Users/mike/code/offshoreai/knowledge/jersey/legal-system/ --include=\\\"*.md\\\"\",\"descript",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i -C3 \\\"friday\\\\|samedi\\\\|afternoon\\\" /Users/mike/code/offshoreai/knowledge/jersey/property/real-property-overview.md /Users/mike/code/offshoreai/knowledge/jersey/legal-system/roy",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/knowledge/jersey/legal-system/royal-court.md\",\"offset\":79,\"limit\":20}",
+      "inputBytes": 111,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -i \\\"propert\\\\|convey\\\\|passing\\\\|friday\\\\|conveyanc\\\" /Users/mike/code/offshoreai/knowledge/jersey/legal-system/royal-court.md; echo \\\"---freshness check---\\\"\",\"description\":\"Sear",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "mcp__corpus__freshnessCheck",
+      "rawName": "mcp__corpus__freshnessCheck",
+      "inputDigest": "{\"paths\":[\"knowledge/jersey/property/contract-passing.md\",\"knowledge/jersey/legal-system/royal-court.md\"]}",
+      "inputBytes": 106,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2834,
+    "outputTokens": 2919,
+    "cacheReadTokens": 321276,
+    "cacheWriteTokens": 52650,
+    "totalCostUsd": 0.5768455000000001
+  },
+  "answer": {
+    "text": "The landing file describes the procedure but says contracts pass \"most weekdays\" — it doesn't pin the Friday convention. Let me check the files that grep flagged for \"Friday\".## Why your transfer happens in the Royal Court at all\n\nIn Jersey, **real-property contracts are \"passed\" before the Royal Court** rather than completed privately between solicitors as in England. The buyer and seller (usually their lawyers acting as attorneys under powers of attorney) appear before the **Samedi Division** of the Royal Court, the contract is read or referenced, the Greffier records and signs it, and **the transfer of title takes effect by that Court act** — the property changes hands at that moment, then the transaction is recorded in the Public Registry (`knowledge/jersey/property/contract-passing.md`; `knowledge/jersey/property/real-property-overview.md`).\n\nThis is a **Norman customary-law inheritance**: real-property transfer is a *public* act, with the Royal Court as the repository of property records, giving certainty about title transitions and public visibility that a sale has occurred (though the price/terms stay private) (`knowledge/jersey/property/contract-passing.md`).\n\n## The \"Friday afternoon\" part\n\nThe Samedi Division is the Court's civil day-to-day forum — its name derives from its **historical Saturday sittings** (\"samedi\" = Saturday), and conveyancing contracts are passed there (`knowledge/jersey/legal-system/royal-court.md`). The corpus records the **Friday-afternoon property-passing convention** as a distinctive Jersey feature in the cross-jurisdictional synthesis layer (`knowledge/CROSS-JURISDICTIONAL-MAP.md`, \"Distinctive other\" row).\n\n**One honesty caveat:** the doctrinal property files describe contracts being passed on \"most weekdays\" and do not themselves single out Friday afternoon, nor do they explain *why* Friday specifically became the customary slot. The Friday-afternoon characterisation appears only in the synthesis map. So the corpus supports the *what* (a recurring Royal Court conveyancing session, by long-standing Samedi convention) but does **not** give the historical reason Friday afternoon in particular became the fixed slot — verify that detail with a Jersey conveyancing advocate.\n\nA further status caveat: `contract-passing.md` and `real-property-overview.md` are both **`draft`** (content drafted but not yet fully verified against primary sources), though freshly dated (last verified 2026-05-17 / fresh).\n\n### Sources cited\n1. `knowledge/jersey/property/contract-passing.md` — *draft*\n2. `knowledge/jersey/property/real-property-overview.md` — *draft*\n3. `knowledge/jersey/legal-system/royal-court.md` — Samedi Division / Saturday naming\n4. `knowledge/CROSS-JURISDICTIONAL-MAP.md` — Friday-afternoon passing convention\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 375
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

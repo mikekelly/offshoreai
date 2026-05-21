@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-planning",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-21T11:06:06.809Z",
+  "wallClockSeconds": 27.627,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"planning\",\"permitted-development\"],\"mode\":\"or\",\"section\":\"jersey\"}",
+      "inputBytes": 76,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls /Users/mike/code/offshoreai/knowledge/jersey/planning/\",\"description\":\"List planning section files\"}",
+      "inputBytes": 115,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/planning/extensions-and-conversions.md\"}",
+      "inputBytes": 66,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/planning/permitted-development.md\"}",
+      "inputBytes": 61,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2743,
+    "outputTokens": 1633,
+    "cacheReadTokens": 129953,
+    "cacheWriteTokens": 50801,
+    "totalCostUsd": 0.43702275
+  },
+  "answer": {
+    "text": "## Do you need planning permission for a rear extension?\n\n**It depends on size.** A modest single-storey rear extension may fall within the **permitted-development** exemptions granted automatically by the **Planning and Building (General Development) (Jersey) Order 2011** (\"GD Order 2011\") — in which case no planning application is needed. But anything that exceeds the Order's limits on **floor area, depth, height, or position** needs a full planning application.\n\nThe corpus's practical position:\n\n- **Single-storey rear extension within the GD Order 2011 limits** (the corpus gives an indicative example of roughly a 3–4m projection, single storey) — likely **permitted development**, no application required. (`knowledge/jersey/planning/extensions-and-conversions.md`; `knowledge/jersey/planning/permitted-development.md`)\n- **Larger or two-storey rear extension** — a **planning application is required**. Two-storey extensions \"always require application\" under current rules. (`knowledge/jersey/planning/extensions-and-conversions.md`)\n\n### Important qualifiers\n\nEven if your extension is within the permitted-development thresholds, it can still need consent, and several factors take it back into the application route:\n\n- **Conservation area** — typically needs a full application even within the size thresholds; many PD rights are narrower or don't apply. (`knowledge/jersey/planning/permitted-development.md`)\n- **Listed building** — **listed-building consent is always required**, regardless of size. (`knowledge/jersey/planning/extensions-and-conversions.md`)\n- **Coastal National Park / Green Zone** — restricted. (`knowledge/jersey/planning/permitted-development.md`)\n- **Boundary proximity** — building close to a boundary can trigger neighbour-rights issues. (`knowledge/jersey/planning/extensions-and-conversions.md`)\n- **Article 31 directions** — the Minister can strip permitted-development rights in specific areas. (`knowledge/jersey/planning/permitted-development.md`)\n\nSeparately, **building approval under the Building Bye-Laws 2007** is a distinct requirement that can apply even where planning permission is not needed. The corpus also warns that the most common mistake is assuming a \"modest\" extension is automatically permitted when its area/height/position in fact exceeds the GD Order limits. (`knowledge/jersey/planning/permitted-development.md`)\n\nThe corpus does not reproduce the exact numeric thresholds (floor area, depth, height) from the GD Order 2011 — both files advise checking the current Order for the precise wording and conditions.\n\n> **Status caveat:** Both files I relied on are marked `draft` (last_verified 2026-05-18) — the content is drafted but not yet editorially verified against the primary source. Confirm the specific dimensional limits against the GD Order 2011 itself, and consider a pre-application enquiry with the Planning Department before relying on a permitted-development assumption.\n\n### Cited files\n1. `knowledge/jersey/planning/extensions-and-conversions.md` (draft)\n2. `knowledge/jersey/planning/permitted-development.md` (draft)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 393
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

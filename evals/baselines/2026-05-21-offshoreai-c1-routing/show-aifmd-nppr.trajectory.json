@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-aifmd-nppr",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-21T11:03:22.382Z",
+  "wallClockSeconds": 32.079,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/aifmd-nppr.md\",\"full\":true}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"eu-marketing\",\"aifmd\"],\"mode\":\"or\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md\",\"full\":true}",
+      "inputBytes": 89,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/aifmd-ii-april-2026.md\",\"full\":true}",
+      "inputBytes": 64,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 2743,
+    "outputTokens": 2142,
+    "cacheReadTokens": 131274,
+    "cacheWriteTokens": 54600,
+    "totalCostUsd": 0.474152
+  },
+  "answer": {
+    "text": "## The route in short\n\nJersey is a **non-EU jurisdiction**, so it cannot use the full AIFMD passport — that is available only to EU-AIFM-managed EU AIFs and has not been extended to third countries. To market into Germany, your AIF goes through Germany's **National Private Placement Regime (NPPR)** — a country-by-country private-placement notification, not an EU-wide right (`knowledge/jersey/funds/aifmd-nppr.md`).\n\n## What's required\n\n**1. JFSC-registered AIFM under Jersey's AIFMD-equivalent regime.** Before any NPPR notification, the AIFM must register with the JFSC and demonstrate AIFMD-equivalent compliance: capital adequacy, risk management (equivalent to AIFMD Art 15), liquidity management for open-ended AIFs, depository arrangements, investor transparency (annual report, periodic reporting), and regulatory reporting (`knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`).\n\n**2. AIFMD-equivalent depository.** An EU-marketed Jersey AIF needs depository arrangements covering custody, oversight, and cash-flow monitoring. Jersey's \"lighter depository\" option is for non-EU-marketed funds only — for NPPR marketing you need full AIFMD-equivalent depository arrangements; a deficient setup is a recognised regulatory mismatch (`knowledge/jersey/funds/aifmd-nppr.md`).\n\n**3. NPPR notification to BaFin (Germany).** Germany is one of the **stricter** NPPR states. The corpus records German-specific conditions under **§330 KAGB**: a local fact-sheet, a local distributor sometimes required, and post-acceptance reporting obligations. The process: confirm BaFin recognises the Jersey AIFM regime as equivalent, prepare the German notification package, submit, and await clearance before any active marketing (`knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`).\n\nOnce cleared, the AIF can be marketed **to German professional investors** only.\n\n## Two things to factor in for 2026\n\n**AIFMD II is now live.** Directive (EU) 2024/927 took effect from **16 April 2026**. NPPR access for Crown Dependencies is preserved, but two requirements have widened that bear directly on a German notification: **expanded investor disclosures** (pre-marketing and ongoing) and **enhanced Annex IV reporting** to ESMA via competent authorities. Germany is flagged as transposing AIFMD II more strictly than Luxembourg or Ireland. Note also Jersey's **AIF Code is being split into an EU AIF Code and a UK AIF Code**, with the EU code (AIFMD II-aligned, the one relevant to your German marketing) expected to be finalised through 2026 (`knowledge/frontier/aifmd-ii-april-2026.md`).\n\n**Reverse solicitation is not a workaround.** NPPR is required only for *active* marketing. A genuine unsolicited approach by a German investor doesn't trigger NPPR — but BaFin scrutinises reverse-solicitation claims, and active outreach disguised as reverse solicitation attracts penalties (`knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`).\n\n## Caveats\n\n- Both core corpus files are **`draft` status** — the content is drafted but not yet editorially verified against the primary sources. Treat the substance, and especially the §330 KAGB detail, as needing confirmation against BaFin's current NPPR requirements and the KAGB before you rely on it.\n- The files were last verified **2026-05-15** (6 days ago — fresh), but AIFMD II member-state transposition is moving and BaFin guidance is evolving through 2026; re-verify the German-specific package contents close to filing.\n\n## Files cited\n\n1. `knowledge/jersey/funds/aifmd-nppr.md` *(draft)*\n2. `knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md` *(draft)*\n3. `knowledge/frontier/aifmd-ii-april-2026.md` *(frontier, in force 2026-04-16)*\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 493
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

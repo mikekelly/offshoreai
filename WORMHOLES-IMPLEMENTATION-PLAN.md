@@ -162,6 +162,35 @@ dimensions, and does not over-route / regress on the rest. Consider also a
 deterministic surfacing signal (e.g. `findByTag` / index results flag
 `derived` nodes first) so routing doesn't rely on the prompt alone.
 
+**Status: NO-GO for prompt-only routing (reverted).** Regression
+`evals/baselines/2026-05-21-offshoreai-c1-routing/` (4 wormholes present +
+the nudge), vs v6:
+- Aggregate flat-to-worse: 23/5/0 vs v6 24/4/0; recall 0.86 vs 0.93;
+  one hallucinated citation appeared. Most of the per-question flips
+  (aifmd-ii/voisinage up, bermuda-captive/continuation-funds down) are
+  non-wormhole questions — i.e. the ~14% run-to-run noise, not routing.
+- The hallucination (`show-worked-family-wealth` cited a non-existent
+  `financial-regulation/private-trust-company.md`) is **not** wormhole-
+  caused — it traces to the worked-example, the wormhole was read last,
+  and v6 didn't hallucinate it. Background agent variance.
+- **The real problem is the value prop:** prompt-only routing makes the
+  agent read the wormhole *in addition to* the cluster, not *instead of*
+  it. Traversal collapsed on only **1 of 4** (topco 6→3); trusts-comparison
+  read wormhole + cluster (6 calls), fund-routes didn't route at all (4),
+  family-wealth read wormhole + cluster (7, worse than v6's 5). The nudge's
+  "spot-verify rather than re-traverse" does not reliably land — the agent
+  doesn't trust the wormhole as *sufficient*.
+
+**Conclusion:** a prompt plea is too weak. C1 needs a **deterministic
+sufficiency/surfacing mechanism**, e.g. (a) a `getWormhole`-style tool or
+a `findByTag`/index result that returns the derived node *first and flags
+it as sufficient*, and/or (b) marking that a wormhole's `derived_from`
+fully covers the cluster so the agent can skip the underlying files with
+confidence. Re-test with that mechanism + repeat runs (the 4-question
+signal is too noisy for a single 28-q run to settle). Until then, the
+wormholes sit in the corpus as valid `draft` nodes, read opportunistically
+but not yet routing-preferred.
+
 **C2 — Scoped staging Write + inline drafting trigger.**
 - Runtime: add `Write` to `allowedTools`, **sandboxed via `canUseTool` to
   `wormholes/candidates/**` only** (AGENT-BEHAVIOURS #5 mechanism); deny

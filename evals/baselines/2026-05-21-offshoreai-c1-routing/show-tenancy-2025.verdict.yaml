@@ -1,0 +1,21 @@
+questionId: show-tenancy-2025
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 3
+hallucinatedCitations: 0
+summary: Pass. The answer covers all 7 expected facts with no factual errors,
+  correctly names the 2025 Amendment Law and 15 April 2026 commencement, and
+  presents exclusively post-amendment law as the rubric requires. Citations are
+  precise — all three corpus paths verified — and the candidate added a useful
+  freshness caveat for the draft-status files. The 3-tool-call trajectory is
+  efficient with no redundant reads. The bonus 'What did not change' and
+  transitional-rules sections exceed the rubric's minimum bar.
