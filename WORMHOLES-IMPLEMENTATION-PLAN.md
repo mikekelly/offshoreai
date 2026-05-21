@@ -153,14 +153,11 @@ informative once wormholes are real).
 author wormhole candidates itself. Phase B is GO, so this is the next
 build. Involves a capability-posture change — review before merge.*
 
-**C1 — Routing (do this first; cheapest, highest-leverage).** Ship the
-routing nudge validated in Phase B (read a `derived: true` node first when
-one covers the question; spot-verify rather than re-traverse). Gate on a
-**full 28-q regression** against the v6 baseline + `claude-p` — confirm it
-collapses traversal on wormhole-covered questions, holds all quality
-dimensions, and does not over-route / regress on the rest. Consider also a
-deterministic surfacing signal (e.g. `findByTag` / index results flag
-`derived` nodes first) so routing doesn't rely on the prompt alone.
+**C1 — Routing (as originally attempted).** Ship the routing nudge
+validated in Phase B (read a `derived: true` node first when one covers the
+question; spot-verify rather than re-traverse), gated on a full 28-q
+regression. *(This was the original C1 plan; the result below redirected it
+— see the revised Conclusion and Phase D.)*
 
 **Status: NO-GO for prompt-only routing (reverted).** Regression
 `evals/baselines/2026-05-21-offshoreai-c1-routing/` (4 wormholes present +
@@ -181,15 +178,21 @@ the nudge), vs v6:
   "spot-verify rather than re-traverse" does not reliably land — the agent
   doesn't trust the wormhole as *sufficient*.
 
-**Conclusion:** a prompt plea is too weak. C1 needs a **deterministic
-sufficiency/surfacing mechanism**, e.g. (a) a `getWormhole`-style tool or
-a `findByTag`/index result that returns the derived node *first and flags
-it as sufficient*, and/or (b) marking that a wormhole's `derived_from`
-fully covers the cluster so the agent can skip the underlying files with
-confidence. Re-test with that mechanism + repeat runs (the 4-question
-signal is too noisy for a single 28-q run to settle). Until then, the
-wormholes sit in the corpus as valid `draft` nodes, read opportunistically
-but not yet routing-preferred.
+**Conclusion (revised — see AGENT-PRINCIPLES #24).** The first read was "a
+prompt plea is too weak, go deterministic." On review that over-corrected.
+The nudge was **confounded**, not proof prompting can't route:
+- the test wormholes are `status: draft`, and the agent's own status rules
+  say draft content is unverified — so it dutifully read the primaries *too*;
+- the nudge competed with the always-resident "read the on-topic siblings"
+  rule, pulling the agent both ways at once.
+The fix is **not** a deterministic surfacing layer (forcing a node into
+context is the RAG move #24 rejects). It is a **semi-deterministic agent
+flow**: a **retrieval phase-skill** loaded JIT (so it's conflict-free — no
+competing sibling rule resident at the same time) that prefers a
+**trustworthy** wormhole (curator-accepted, not `draft`). Re-test with
+curator-accepted wormholes + the skills flow + repeat runs — that is the
+proper retry, in Phase D. Until then the wormholes sit as valid `draft`
+nodes, read opportunistically but not yet routing-preferred.
 
 **C2 — Scoped staging Write + inline drafting trigger.**
 - Runtime: add `Write` to `allowedTools`, **sandboxed via `canUseTool` to
@@ -223,64 +226,89 @@ but not yet routing-preferred.
   the stability gate relaxed, simple prompt-under-triggering. A prompt
   instruction does not reliably make the agent author a node.
 
-**Meta-finding (C1 + C2):** *prompt-driven autonomy is the wrong lever for
-both halves of the loop.* Routing (C1) and drafting (C2) are both unreliable
-when driven by a system-prompt instruction — the agent under-routes and
-under-drafts. The deterministic mechanisms are what to build:
-- **Routing →** a sufficiency-flagged retrieval result (a `getWormhole`-style
-  tool, or `findByTag`/index returning the `derived` node first and marked
-  "covers the cluster") so the agent can skip the underlying files with
-  confidence — not a prompt plea.
-- **Drafting →** the **Phase E log-loop nomination** (demand-driven: a cheap
-  deterministic query nominates recurring expensive shapes; a distillation
-  step writes the candidate through the now-proven sandbox; the verifier
-  gates promotion). This is the right home for authoring — not an inline
-  prompt trigger.
+**Meta-finding (C1 + C2), revised per AGENT-PRINCIPLES #24.** The first
+reading — "prompt-driven autonomy is the wrong lever, go deterministic" —
+was too strong. What the runs actually show is that *isolated prompt
+instructions competing with always-resident rules*, tested against
+*draft-status* wormholes the agent is told to distrust, are unreliable —
+not that prompting can't drive the behaviour. The fix is **structured,
+semi-deterministic agent flow**, not deterministic code or RAG-style
+forcing:
+- **Thin high-level flow + JIT phase-skills** so each phase's context is
+  clean and **conflict-free** (no routing rule fighting a sibling rule), and
+  a **task list** that enforces the agent follows the steps it planned.
+- **Routing →** a *retrieval phase-skill* that prefers a **trustworthy**
+  (curator-accepted) wormhole — re-tested without the draft-distrust and
+  competing-rule confounds.
+- **Drafting →** a *closing proposal phase-skill* (reusing the proven C2
+  sandbox) + a **fresh-context curator sub-agent** that adjudicates
+  add/amend/discard, with **dedup doing the recurrence work** — *not* a
+  deterministic log-loop nomination.
 
-So C2's sandbox + flag are the durable, safe substrate; the *trigger* should
-be Phase E's nomination, not the inline prompt block (which is kept, behind
-the flag, but is not the mechanism to rely on).
+Determinism stays only where #24 says it belongs: the substrate and
+guardrails (the scoped-write sandbox, the validator, git). C2's sandbox +
+flag are exactly that durable substrate; the *trigger* is the in-session
+proposal phase-skill, and the *gate* is the curator sub-agent.
 
 ---
 
-## Phase D — Verifier-gated promotion  **[INF]**
+## Phase D — Skills-driven execution flow (the proper routing retry)  **[INF] [POSTURE]**
 
-*Goal: a candidate becomes a served wormhole only after the
-citation-verifier passes it. Reuses the existing `citation-verifier.ts`.*
+*Goal: replace the isolated routing nudge with a structured agent flow
+(AGENT-PRINCIPLES #24), and re-test routing without the C1 confounds.*
 
 **Deliverables**
-- A promotion step (CLI/job): for each `wormholes/candidates/**` node, run
-  the citation-verifier against its body + `derived_from`; on pass, set the
-  verifier-pass marker, move/commit it into the served corpus location,
-  shallow-link it from the relevant index; on fail, discard or flag for
-  editorial.
-- Wire the Phase A `derived_unverified_stable` rule to the marker.
+- Wire the **SDK skills mechanism** (`.claude/skills/`) into the runtime, and
+  add **`TodoWrite`** to `allowedTools` (the task-list / program-counter).
+  *Verify first* that the agent can load a skill **JIT mid-flow** (agent-
+  invokable), not only at session start — the whole approach rests on this.
+- A **thin high-level flow** in the baseline prompt + a small set of
+  **phase-skills** (orient/retrieve, compare, freshness, …), each carrying
+  *only* its phase's instructions. Fold the existing grep-fallback /
+  grep-context / sibling-reads rules into the relevant phase-skill so they
+  are no longer all resident at once.
+- A **retrieval phase-skill** that, when a `derived: true` node *of
+  trustworthy status* covers the question, reads it first and skips the
+  underlying cluster.
 
 **Acceptance (INF)**
-- A known-good candidate promotes to `status: review`/`stable` and is then
-  found by ordinary `findByTag`/grep/`getFile`.
-- A deliberately-wrong candidate (hallucinated citation) is rejected by the
-  verifier and not promoted.
+- On the 4 wormhole questions (now **curator-accepted**, not `draft`), the
+  agent reads the wormhole *instead of* the cluster and collapses the
+  traversal; no over-routing or quality regression on the full 28-q suite
+  vs v6 + `claude-p`; confirm with repeat runs (single 28-q is too noisy).
 
 ---
 
-## Phase E — Log-loop nomination + eviction  **[INFRA]**
+## Phase E — Propose → curator sub-agent (authoring loop)  **[INF]**
 
-*Goal: demand-driven distillation and culling. Blocked on the audit/event
-log (PRD §11.3 / AGENT-BEHAVIOURS #6), which needs persistence not yet
-built.*
+*Goal: the agentic authoring loop. A closing proposal phase-skill emits a
+candidate; a fresh-context curator sub-agent disposes. Replaces the old
+"verifier-gated promotion" AND the deterministic "log-loop nomination" —
+**not** infra-blocked; it needs no persistence.*
 
-**Deliverables (when unblocked)**
-- A periodic deterministic query over the event log nominating candidate
-  shapes (recurrence × retrieval-cost × source-stability × no-existing-
-  wormhole) — cheap, no inference; inference only on distilling winners.
-- Eviction: wormholes that are cold (never traversed) or bypassed (agent
-  greps past them) are flagged for removal — publish-then-evict.
+**Deliverables**
+- **Proposal phase-skill** (closing step of the flow): when the agent judges
+  it produced a generalised, reusable insight over settled sources after
+  non-trivial traversal, it `Write`s a candidate to `wormholes/candidates/`
+  via the proven C2 sandbox. (C2 showed the agent under-proposes from a
+  prompt block buried in the system prompt; a *dedicated closing
+  phase-skill* loaded JIT is the #24 way to make it reliable — re-test.)
+- **Curator sub-agent** (fresh context — the #23 verifier pattern
+  generalised): takes each candidate cold and returns **ADD / AMEND+ADD /
+  DISCARD**, judging appropriateness, generalisability, **dedup vs existing
+  wormholes** (this is the recurrence signal — repeated proposals of a
+  task-class are the recurring ones), conventions (no second-order), and
+  that every citation traces. On ADD it sets `verifier_passed`, places +
+  shallow-links the node, and (Phase F) opens the PR.
+- Wire the Phase A `derived_unverified_stable` rule to the curator's marker.
 
-**Acceptance**
-- Nomination surfaces the same high-cost recurring shapes a human would
-  pick (sanity-checked against trajectory data); eviction removes a planted
-  cold wormhole.
+**Acceptance (INF)**
+- A proposed good candidate is ADDed (or AMENDed) and then found by ordinary
+  retrieval; a hallucinated/duplicate/over-narrow candidate is DISCARDed; the
+  proposer never self-promotes into the served graph.
+- *Optional later optimiser (not a prerequisite):* a periodic **usage
+  review** evicts cold/bypassed wormholes (publish-then-evict). This is the
+  only step that benefits from measured traversal data.
 
 ---
 
@@ -304,21 +332,32 @@ promotion upstream by PR. Blocked on tenant infrastructure (PRD §9).*
 ## Dependency graph
 
 ```
-A (det) ──▶ B (gate) ──▶ C (posture) ──▶ D (promote) ──▶ E (nominate/evict)
-                                                   └─────▶ F (tenant forks)
+A (done) ─▶ B (done) ─▶ C (C1 NO-GO / C2 core done) ─▶ D (skills flow + routing retry)
+                                                          └─▶ E (propose → curator) ─▶ F (tenant forks)
 ```
 
-A is independent and shippable now. B gates everything after it. C–D are
-the automated authoring loop. E–F are infra-blocked and wait on
-persistence / tenant work respectively.
+A and B are landed. C recorded the negative result that motivated the #24
+redirect. D wires the skills-driven flow and re-tests routing without the
+C1 confounds; E adds the proposal phase-skill + curator sub-agent on top of
+D's flow. F (tenant forks) is infra-blocked. Eviction is an optional
+optimiser, not on the critical path.
 
 ---
 
-## What ships this session (autonomous)
+## Current status
 
-- **Phase A** in full (deterministic, test-gated).
-- **Phase B** attempted: author the wormhole, run the partial eval, record
-  GO/NO-GO honestly. If GO, leave C–F as the planned next steps for review
-  (they involve a posture change and infra; not appropriate to land
-  unsupervised). If NO-GO, record the negative result and stop — the
-  machinery isn't justified.
+- **Phase A — DONE.** Derived-node conventions + validator rules + tests;
+  additive (health == baseline).
+- **Phase B — DONE (GO-with-qualification).** First wormhole + hypothesis
+  test; wormholes are sufficient but need routing.
+- **Phase C — done as an experiment, redirected.** C1 (prompt-only routing)
+  NO-GO and reverted; C2 sandbox + off-by-default flag DONE and safe, but
+  prompt-only drafting under-fires. Both feed the #24 conclusion.
+- **Phase D / E — the #24 build, not yet started.** Gated first on
+  *verifying the SDK supports agent-invoked JIT skill loading* — the whole
+  approach rests on it. These involve a capability-posture change; land with
+  review, not unsupervised.
+- **Phase F — infra-blocked** on tenant infrastructure (PRD §9).
+
+The durable, shipped assets regardless of D/E: Phase A's conventions +
+validator, the 4 hand-authored wormholes, and the C2 sandbox guard + tests.

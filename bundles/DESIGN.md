@@ -94,68 +94,83 @@ answers a question live — find the right files, read the right parts,
 synthesise a cited answer — *is* the capability that produces a wormhole.
 A wormhole is that capability's output, persisted when it's worth keeping.
 
+The loop is a **semi-deterministic agent flow** (AGENT-PRINCIPLES #24), not
+deterministic nomination code: an in-session phase-skill proposes; a
+fresh-context sub-agent disposes.
+
 ```
- draft (inline, cheap) ── at the end of answering, if the agent judges it
-        │                 synthesised a GENERALISED insight, over STABLE
-        │                 sources, after NON-TRIVIAL traversal, it writes a
-        │                 candidate wormhole node (scoped Write) to a
-        │                 staging area and commits it. Drafting != publishing.
+ propose (in-session) ── a closing phase-skill in the agent's flow: if the
+        │                agent judges it synthesised a GENERALISED insight,
+        │                over SETTLED sources, after NON-TRIVIAL traversal, it
+        │                writes a candidate wormhole node (scoped Write) to the
+        │                staging area. Proposing != publishing.
         ▼
- promote (gated) ─────── the citation-verifier (AGENT-BEHAVIOURS #4) MUST
-        │                pass the candidate before it enters the served
-        │                graph. Self-authoring: yes. Self-verifying into
-        │                trust: never — that is the exact bias #4 exists for.
+ adjudicate (fresh ───── a curator sub-agent (its own context — the #23
+   context)              verifier pattern generalised) takes the candidate
+        │                cold and returns ADD / AMEND+ADD / DISCARD, judging
+        │                appropriateness, generalisability, dedup vs existing
+        │                wormholes, conventions (no second-order derivation),
+        │                and that every citation traces. Self-authoring: yes.
+        │                Self-blessing into trust: never.
         ▼
- serve ───────────────── a promoted wormhole is an ordinary node: tagged,
-        │                shallow-linked, found by normal traversal. No
-        │                special lookup path.
+ serve ───────────────── an accepted wormhole is an ordinary node: tagged,
+        │                shallow-linked, found by normal traversal. No special
+        │                lookup path — the agent's retrieval phase-skill prefers
+        │                a trustworthy (curator-accepted) wormhole when one
+        │                covers the task.
         ▼
- evict ───────────────── the log loop culls wormholes that go cold (never
-                         traversed) or bypassed (agent greps past them).
-                         publish-then-evict: quality-gated at birth,
+ evict ───────────────── a periodic usage review culls wormholes that go cold
+                         (never traversed) or bypassed (agent reads past them).
+                         publish-then-evict: quality-gated at the curator,
                          demand-culled at death.
 ```
 
-### Why drafting is inline (and cheap)
+### Why proposing is in-session (and cheap)
 
 The expensive part — loading context and reasoning over it — is already
 paid by the time the agent finishes answering; the generalised insight is
 *hot* right then. A separate batch job would reload the sessions, re-read
-the files, and re-derive it from logs (lossy and costly). Inline is both
+the files, and re-derive it from logs (lossy and costly). In-session is both
 cheaper and higher quality — especially for the **instance→class
 generalisation** (strip this question's specific facts, keep the reusable
 substrate), which the model does best immediately after the specific
 reasoning, with both the specifics and the general structure in mind.
 
-### Why publishing is gated and demand-driven
+### Why a fresh-context curator adjudicates (not the proposer, not a counter)
 
-A single session can judge **quality** (is this a clean, generalised
-insight?) but not **demand** (will this recur / be traversed?) — those are
-orthogonal. So:
+The proposer can judge **quality/generalisability** but must not bless its
+own work into the trusted graph (#23 — the same bias the citation-verifier
+exists for). So a **curator sub-agent** with its own context takes each
+candidate cold and returns **ADD / AMEND+ADD / DISCARD**:
 
-- **Verifier gate (non-negotiable).** A candidate is unverified machine
-  output; it stays quarantined (`status: draft`) until the
-  citation-verifier passes it. A hallucinated wormhole must never become a
-  fast hit for everyone.
-- **Demand: publish-then-evict (the chosen default).** Rather than
-  blocking publication until a shape provably recurs, we let
-  verifier-passed wormholes publish, and rely on the eviction loop to cull
-  the ones that go cold. This favours autonomy and keeps the served graph
-  honest via the cull rather than a birth gate. (The alternative —
-  gate-at-birth on recurrence — stays available if clutter proves a
-  problem.)
+- **It reasons about appropriateness and recurrence rather than measuring
+  them.** "Is this a task-class practitioners hit repeatedly?" is a domain
+  judgment, not a counter read-out. And because the curator dedups against
+  existing wormholes, **recurrence emerges from the proposal stream**:
+  repeatedly-proposed shapes are exactly the recurring ones; the curator
+  keeps/strengthens those and discards one-offs — no offline frequency
+  counter is needed to gate.
+- **AMEND is the value a deterministic rule can't give.** The proposer
+  needn't be perfect; the curator can fix citations, tighten the
+  generalisation, or merge the candidate into an existing wormhole.
+- **Publish-then-evict (the chosen default).** A curator-accepted wormhole
+  publishes; a periodic usage review culls the ones that go cold or are
+  bypassed. Demand is honoured by the cull, not a birth gate. (Gate-at-birth
+  on recurrence stays available if clutter ever proves a problem.)
 
 ### What decides distillation (the trigger)
 
-Most of the signal is **already in the structured event log** (tool-call
-count, files touched, source stability, the verifier verdict) — so
-nomination is a **cheap deterministic query**, not inference over every
-session. The inline self-flag is a near-free *enrichment* (the agent
-pre-labels shape + cost + stability at the moment it has them), feeding
-that aggregate. Inference is spent only on the distillation of nominated
-winners. The same log loop that nominates also evicts (cold / bypassed
-nodes) — one loop governs birth and death. This is the §11.3 audit loop
-(AGENT-BEHAVIOURS #6) earning a second job.
+The trigger is the agent's **own closing-step judgment**, expressed as a
+phase-skill in its flow (AGENT-PRINCIPLES #24) — not a deterministic log
+query nominating candidates. Earlier framings of this design proposed an
+offline audit-log nomination; that is **superseded**. Recurrence does not
+need to be *measured* before proposing — it is *reasoned* by the proposer
+and *confirmed by dedup* at the curator. The structured event log (#6)
+remains useful as an *optional later optimiser* (prioritise or evict by
+observed traversal), but it is **not** a prerequisite and **not** the
+gate. The only genuinely measured-not-reasoned signal is usage of existing
+wormholes, which feeds eviction — itself a low-stakes review the curator
+can run.
 
 ---
 
@@ -220,10 +235,11 @@ read-*write*, but only through a narrow lane: `canUseTool` sandboxes
 sacred). The audit log (#6) captures every write. We reuse the deny-list /
 sandbox (#5) already specced; we don't invent new safety.
 
-**Commit boundary.** The agent may commit its draft to the *staging*
-branch/dir on its own judgement. What it may **not** do unilaterally is
-merge into the served/trusted branch — promotion requires the verifier
-pass. The boundary is *staging vs served*, not *agent vs system*.
+**Commit boundary.** The agent may write its candidate to the *staging*
+dir on its own judgement (the closing proposal phase-skill). What it may
+**not** do unilaterally is merge into the served/trusted graph — that is the
+**curator sub-agent's** decision (add / amend+add / discard). The boundary is
+*staging vs served*, not *agent vs system*.
 
 ---
 
@@ -248,20 +264,27 @@ pass. The boundary is *staging vs served*, not *agent vs system*.
 ## What's irreducibly new (vs reused machinery)
 
 Reused: git (store/versioning/provenance/merge), the convention validator
-(node rules), the citation-verifier #4 (promotion gate), the audit loop #6
-(nomination + eviction), the freshness checker #3 (invalidation), ordinary
-retrieval (lookup). The genuinely new work is small:
+(node rules), the citation-verifier #4 (the pattern the curator generalises),
+the freshness checker #3 (invalidation), ordinary retrieval (lookup), and the
+skills mechanism #22 (now carrying the workflow itself). The genuinely new
+work is small:
 
 1. **Derived-node conventions + validator rules** (Phase A — deterministic).
-2. **The instance→class distillation** — writing a good task-general node
-   (the real quality work; done inline by the agent).
-3. **Scoped staging `Write`** + the inline drafting trigger (runtime
-   posture change).
-4. **Verifier-gated promotion + eviction** wiring into the log loop.
+2. **The skills-driven execution flow** (#24): a thin high-level flow + a
+   task-list naming the phase-skill per step, including a **retrieval
+   phase-skill** that prefers a trustworthy wormhole when one covers the task
+   and a **closing proposal phase-skill**.
+3. **The instance→class distillation** — writing a good task-general node
+   (the real quality work; done in-session by the proposal skill).
+4. **Scoped staging `Write`** (the sandbox guard — done, Phase C2 core).
+5. **The curator sub-agent** — fresh-context add/amend/discard adjudication
+   (the #23 verifier pattern generalised), with dedup doing the recurrence
+   work. This replaces the earlier "deterministic log-loop nomination".
 
 Notably absent from this list: a cache store, a key/intent classifier, a
-separate compiler, a `getBundle`-style lookup for wormholes. The fold
-deleted them.
+separate compiler, a `getBundle`-style lookup for wormholes, **and a
+deterministic nomination/log query** — the agentic propose→adjudicate loop
+(#24) replaces it. The fold deleted the rest.
 
 See [`../WORMHOLES-IMPLEMENTATION-PLAN.md`](../WORMHOLES-IMPLEMENTATION-PLAN.md)
 for the phased build order and eval gates.
