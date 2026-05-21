@@ -55,6 +55,17 @@ export const sourceSchema = z.object({
   kind: sourceKindEnum.optional(), // some early corpus files omit kind; we warn rather than fail
 });
 
+// A derived node (wormhole) records the PRIMARY nodes it distils. path is
+// repo-relative (e.g. knowledge/jersey/...). content_hash + last_verified
+// snapshot the source state at compile time so the freshness checker can
+// invalidate the wormhole when a source drifts; both are optional for
+// hand-authored wormholes (the build pipeline fills them on promotion).
+export const derivedFromSchema = z.object({
+  path: z.string().min(1),
+  content_hash: z.string().min(1).optional(),
+  last_verified: isoDate.optional(),
+});
+
 export const frontmatterSchema = z.object({
   title: z.string().min(1),
   jurisdiction: z.string().regex(jurisdictionPattern, "jurisdiction is lower-kebab-case"),
@@ -66,6 +77,13 @@ export const frontmatterSchema = z.object({
   persona: z.string().regex(/^[a-z]+(-[a-z]+)*$/).optional(),
   sources: z.array(sourceSchema).default([]),
   see_also: z.array(z.string().min(1)).default([]),
+  // Derived-node (wormhole) fields. Absent on primary (hand-authored)
+  // files; present on machine/editor-derived nodes. See CONVENTIONS.md.
+  derived: z.boolean().optional(),
+  derived_from: z.array(derivedFromSchema).optional(),
+  // Set by the promotion path once the citation-verifier has passed a
+  // derived node; gates a derived node reaching status: stable.
+  verifier_passed: z.boolean().optional(),
 });
 
 export type FrontmatterShape = z.infer<typeof frontmatterSchema>;
