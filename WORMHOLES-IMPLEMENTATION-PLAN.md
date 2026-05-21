@@ -277,6 +277,48 @@ proposal phase-skill, and the *gate* is the curator sub-agent.
   traversal; no over-routing or quality regression on the full 28-q suite
   vs v6 + `claude-p`; confirm with repeat runs (single 28-q is too noisy).
 
+**Status: NOT BUILT — the routing value proposition is NO-GO (the premise
+the skills build rests on is disproven).** Before wiring skills, the cheap
+decisive test was run (`/tmp/d-routing/`, not committed): the 4 wormholes
+promoted to trustworthy `review` status **and** an explicit precedence rule
+("if a `review`/`stable` `derived` node covers the question, read it first
+and treat it as sufficient — do NOT read the cluster; this overrides the
+sibling rule"). Both C1 confounds removed. Result, on the 4 wormhole
+questions:
+- Only 2/4 read the wormhole, and the two that did (`trusts-comparison`,
+  `fund-routes`) read the wormhole **and then the full primary cluster
+  anyway** — no short-circuit. The call-count reductions (topco 6→4,
+  family-wealth 5→3) happened on the two questions that **ignored** the
+  wormhole — i.e. noise, not routing. All 5 (incl. control) passed, no
+  hallucinations.
+- **Root cause:** this is now the *third* prompt approach to fail to make
+  the agent skip the primaries. It is **not** an instruction-conflict
+  problem (the precedence rule was explicit) — it is **citation
+  discipline**: a citation-mandatory legal agent correctly refuses to cite
+  a synthesised node in place of reading and citing the primary sources. It
+  re-reads the territory to ground its citations. **The skills mechanism
+  cannot fix this** — it isn't a context-conflict, it's the agent doing the
+  right thing for the domain.
+
+**Conclusion.** The wormhole's core value proposition — *collapse traversal
+by trusting a compiled node instead of reading primaries* — does not hold
+for this agent, and trying to force it would fight the citation discipline
+that is the product's whole point. Per #24 / Appendix C, do **not** build
+the skills + curator machinery to enable a behaviour the agent correctly
+won't perform. The skills-driven flow (#24) remains the right *general*
+execution model, and is worth building for other reasons (clean per-phase
+context, the proposal/curator authoring loop) — but **not justified by
+wormhole routing**, which is its own NO-GO. Reverted the experiment.
+
+**Open reframe (for human decision, not auto-built).** Wormholes may still
+earn their keep as a **navigation / recall aid** rather than a
+traversal-shortcut — the agent reads the wormhole *and* the right primaries
+(which is the correct, safe behaviour), and the wormhole's value is pointing
+it at the right cluster and citation pattern. That is a *different* metric
+(recall / completeness, not tool-call count) and a *different* eval, and it
+is unproven (the test questions passed in v6 without wormholes too). Worth a
+deliberate, separate investigation — not a continuation of the routing build.
+
 ---
 
 ## Phase E — Propose → curator sub-agent (authoring loop)  **[INF]**
@@ -353,11 +395,24 @@ optimiser, not on the critical path.
 - **Phase C — done as an experiment, redirected.** C1 (prompt-only routing)
   NO-GO and reverted; C2 sandbox + off-by-default flag DONE and safe, but
   prompt-only drafting under-fires. Both feed the #24 conclusion.
-- **Phase D / E — the #24 build, not yet started.** Gated first on
-  *verifying the SDK supports agent-invoked JIT skill loading* — the whole
-  approach rests on it. These involve a capability-posture change; land with
-  review, not unsupervised.
+- **SDK skills support — VERIFIED.** The SDK has a first-class skills
+  mechanism (`skills: string[] | 'all'` option; agent-invoked `Skill` tool
+  for JIT body loading; `.claude/skills/` discovery). The #24 approach is
+  buildable.
+- **Phase D — tested, NO-GO, NOT BUILT.** The cheap decisive test
+  (trustworthy wormholes + explicit precedence rule, both C1 confounds
+  removed) showed the agent still reads the wormhole *and* the primaries —
+  citation discipline, not a context-conflict the skills mechanism could
+  fix. The routing value proposition is disproven; the skills build is not
+  justified by it. (See the Phase D Status above.)
+- **Phase E — not built.** The proposal/curator authoring loop is sound in
+  principle, but its purpose (compile wormholes the agent will route to) is
+  undercut by the Phase D NO-GO. Don't build until there's a proven value
+  proposition for wormholes (see the "open reframe" — navigation/recall aid).
 - **Phase F — infra-blocked** on tenant infrastructure (PRD §9).
 
-The durable, shipped assets regardless of D/E: Phase A's conventions +
-validator, the 4 hand-authored wormholes, and the C2 sandbox guard + tests.
+The durable, shipped assets regardless: Phase A's conventions + validator,
+the 4 hand-authored wormholes (valid `draft` nodes, read opportunistically),
+and the C2 sandbox guard + tests. The skills-driven execution model (#24)
+remains the right general direction — but should be motivated by clean
+per-phase context, not by wormhole routing.
