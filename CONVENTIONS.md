@@ -93,6 +93,45 @@ see_also:
 `jurisdiction`, `category`, `status`, `last_verified`, optional `tags` and
 `see_also`. Sources go inline in the index's prose.
 
+### Derived nodes (wormholes)
+
+Most corpus files are **primary**: hand-authored and verified against
+primary sources. A **derived node** (a "wormhole" — see
+[`bundles/DESIGN.md`](./bundles/DESIGN.md)) is a distilled, task-general
+context compiled *from* primary nodes — by the agent at runtime, or by an
+editor consolidating existing material. It carries two extra frontmatter
+fields:
+
+```yaml
+derived: true                                # marks this node as machine/editor-derived
+derived_from:                                # the PRIMARY nodes it distils — provenance
+  - path: knowledge/jersey/<…>/source-a.md
+    content_hash: sha256:<hex>               # body hash at compile time (invalidation)
+    last_verified: YYYY-MM-DD                # source's last_verified at compile time
+  - path: knowledge/jersey/<…>/source-b.md
+    content_hash: sha256:<hex>
+    last_verified: YYYY-MM-DD
+```
+
+Rules (the validator enforces these):
+
+- **Marked + sourced.** `derived: true` ⇒ `derived_from` is present and
+  non-empty.
+- **No second-order derivation.** Every `derived_from.path` must exist and
+  must itself be a *primary* node (not `derived`). A wormhole opens only
+  onto primary ground — never onto another wormhole.
+- **Quarantine until verified.** A derived node starts at `status: draft`
+  and may not reach `status: stable` without a recorded citation-verifier
+  pass (promotion enforces this). `draft` derived nodes are flagged, not
+  cited as authority.
+- All the usual rules still apply: tags from [TAGS.md](./TAGS.md),
+  `last_verified`, a real `title`/`category`, etc.
+
+A derived node whose `derived_from` source has since changed
+(`content_hash` / `last_verified` no longer matches the recorded snapshot)
+is **stale** and is re-drafted on demand rather than cited. Do not derive
+from high-decay frontier content — distil stable doctrine.
+
 ## Prose
 
 - Write for an LLM consumer first, a human consumer second. That means:

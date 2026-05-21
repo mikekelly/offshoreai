@@ -155,11 +155,50 @@ Adopt the **pattern, not the vendor.** Wrapping our local, in-process corpus beh
 2. **Evolve the result contract** toward typed output-shape + per-claim confidence + provenance (Implication 2), starting with surfacing the confidence material we already compute.
 3. **Keep `claude-p` the arbiter.** If a compiled-artifact path doesn't beat agentic retrieval *and* the vanilla control on a KPI, it doesn't ship — same rule as every other behaviour here.
 
-### Noted future feature — compilation as a read-through cache
+### The evolution — wormholes: the agent compiles into the graph
 
-A natural evolution, **deferred but worth designing toward now:** treat compiled artifacts as a **read-through cache**. On a miss (no artifact for the routed `(persona, task)` / intent), the agent serves the query-time retrieval result immediately and compiles the artifact *asynchronously* for next time; subsequent hits are served fast and deterministically. This makes "what to compile" **demand-driven** — the cache discovers the hot paths rather than us predicting them — and unifies hand-authored bundles (pre-warmed, human-blessed) with fly-compiled artifacts (populated on miss, `draft` until the citation-verifier blesses them). Invalidation reuses machinery we already have: artifact provenance (which source files, at which `last_verified`) + the freshness-checker (#3) as the invalidation trigger. The hard, load-bearing piece is the **intent-keying function** (two phrasings of the same task must hit the same key, deterministically, or variance re-enters at the routing layer).
+The compilation idea reaches its natural form when you stop treating
+compiled context as a sidecar and **fold it back into the knowledge
+graph.** A **wormhole** is a *derived* corpus node — a distilled, cited,
+task-general context the **agent itself authors** when it notices it has
+synthesised a generalised, reusable insight over stable sources. It is
+shallow-linked from the entry point (the link is the wormhole's mouth;
+link-depth = warmth) and served by the *same* `findByTag` / grep / tree /
+`getFile` as everything else. A curated bundle is a human-blessed
+wormhole; a wormhole is a machine-drafted bundle — they converge on one
+artifact: a node in the graph.
 
-We are **not building the cache now.** But the bundle mechanism is being designed cache-ready — explicit key, provenance for precise invalidation, and a trust/status field — so the cache is an additive future step rather than a reformat. The forward design is in [`bundles/DESIGN.md`](./bundles/DESIGN.md).
+This fold deletes the bespoke machinery a cache would need:
+
+- **No separate store.** The substrate is **git** — canonical upstream
+  repo + per-tenant forks (the fork boundary *is* the multi-tenant
+  firewall; promotion upstream is a PR). The agent reads one working tree;
+  the retrieval tools need zero changes — a wormhole is just a file.
+- **No key/intent classifier.** The "key" is the graph's own addressing
+  (tags + links + title). Retrieval-by-navigation replaces
+  retrieval-by-key, so the load-bearing classifier problem **dissolves** —
+  and it's served by the very retrieval we're already hardening.
+- **No separate compiler.** The agent *is* the compiler: a wormhole is its
+  ordinary answer capability's output, distilled inline (cheap — the
+  context is already hot) and persisted when worth keeping.
+
+Governance reuses what exists: the **citation-verifier (#4)** is the
+mandatory promotion gate (self-authoring yes, self-verifying-into-trust
+never); the **audit loop (#6)** nominates candidates *and* evicts cold /
+bypassed ones (publish-then-evict); the **freshness checker (#3)**
+invalidates a wormhole when a `derived_from` source moves. Capture is by
+scoped `Write` to a staging path (read-only → narrow read-write, sandboxed
+and audited), not a bespoke tool. The one inviolable rule, carried by the
+metaphor: **a wormhole opens only onto primary ground, never onto another
+wormhole** — no second-order derivation.
+
+We are **not building the automated path now.** Phase A (derived-node
+conventions + validator) and Phase B (one hand-authored wormhole + an eval
+that tests whether it beats agentic retrieval *and* `claude-p`) come
+first; the automated drafting/promotion/eviction is gated on Phase B
+proving the value. The forward design is in
+[`bundles/DESIGN.md`](./bundles/DESIGN.md); the build order is in
+[`WORMHOLES-IMPLEMENTATION-PLAN.md`](./WORMHOLES-IMPLEMENTATION-PLAN.md).
 
 ---
 

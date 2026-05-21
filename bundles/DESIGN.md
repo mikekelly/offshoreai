@@ -1,212 +1,267 @@
-# Bundle mechanism — forward design
+# Bundle / wormhole mechanism — forward design
 
-How the bundle format evolves to support **compiled artifacts** and a
-future **read-through cache** (see the design frame in
-[`../AGENT-BEHAVIOURS.md`](../AGENT-BEHAVIOURS.md#design-frame-knowledge-compilation-and-the-declarative-retrieval-contract)).
+How precompiled context evolves from hand-authored **bundles** into a
+self-densifying graph of **wormholes** — derived shortcut nodes the agent
+authors, served by the same retrieval as the rest of the corpus.
 
 This is a **design, not a build**. Nothing here ships until the
-bundle-vs-agentic-retrieval eval cell shows a compiled path beats both
-agentic retrieval and the sticky `claude-p` control. The point of
-writing it now is that **today's bundle authoring should be
-forward-compatible** — every field below is additive, and the
-hand-authored bundles in this directory remain valid unchanged.
+hypothesis test in Phase B shows a wormhole beats agentic retrieval *and*
+the sticky `claude-p` control on a recurring, expensive question. The
+point of writing it now is that today's bundle authoring stays
+forward-compatible, and the implementation has a spec to build against.
 
-For *how to author a bundle today*, see [`README.md`](./README.md). This
-doc is the *where it's going* layer.
-
----
-
-## The shift: one contract → contract + compiled artifact
-
-A bundle today is a **retrieval contract**: it names the files,
-articles, tags, and rules the agent needs, and the agent reads the files
-itself at session start. The compilation direction adds a second,
-*generated* object alongside it:
-
-| Object | Authored or generated? | What it is | Lifecycle |
-|---|---|---|---|
-| **Bundle definition** | authored (curated) *or* generated (fly) | the contract — key, trigger, required files/articles, tags, freshness, refusal, citation pattern, priming | edited in PR (curated) or minted on cache miss (fly) |
-| **Compiled artifact** | always generated | the *composed, cited, conflict-resolved context* the agent queries instead of the corpus, plus its provenance | built from the definition; invalidated when sources change |
-
-The definition is the *recipe*; the compiled artifact is the *dish*.
-Today we ship only definitions and the agent does the cooking each
-session. Compilation moves the cooking upstream and caches the dish.
+For *how to author a bundle today*, see [`README.md`](./README.md). For
+the strategic frame this sits inside, see the design-frame section of
+[`../AGENT-BEHAVIOURS.md`](../AGENT-BEHAVIOURS.md). For the build order,
+see [`../WORMHOLES-IMPLEMENTATION-PLAN.md`](../WORMHOLES-IMPLEMENTATION-PLAN.md).
 
 ---
 
-## Three fields that make a bundle cache-ready
+## The model in one paragraph
 
-These are the only structural additions needed now. They are additive to
-both the YAML and `getBundleResult`.
+A **bundle** is a hand-authored retrieval contract for a `(persona,
+task)`: the files, articles, tags, freshness window, and citation pattern
+the agent needs. A **wormhole** is the same idea reached from the other
+end: a *derived* node — a distilled, cited, task-general context — that
+the **agent itself authors** when it notices it has just synthesised a
+generalised, reusable insight over stable sources. Both are "precompiled
+context the agent queries instead of re-deriving." A curated bundle is a
+human-blessed wormhole; a wormhole is a machine-drafted bundle. They
+converge on the same artifact: a corpus node, shallow-linked from the
+entry point, served by ordinary traversal.
 
-### 1. An explicit key (`key`)
+The recursive payoff: **compilation folds back into the knowledge graph.**
+A compiled context is not a sidecar cache with its own store, key, and
+lookup — it is a markdown file with frontmatter, tags, and `see_also`
+links, served by the same `findByTag` / grep / tree / `getFile` the agent
+already uses. The retrieval we are hardening *is* the cache index. The
+hardest problem of a separate cache — a deterministic question→key
+classifier — **dissolves**, because retrieval-by-navigation replaces
+retrieval-by-key.
 
-The cache key is what a lookup matches on. Today the unit is
-`(persona, task)`; a future fly-compile cache also keys on a normalized
-**intent** so two phrasings of the same task resolve to one artifact.
+---
+
+## Why "wormhole"
+
+A wormhole is a shortcut through the graph that collapses a long, expensive
+traversal (grep → sibling reads → synthesise) into **one hop** from near
+the entry point to the distilled destination. "Shallow-linked from the
+entry point" is literally the wormhole's mouth, and **link-depth-from-index
+= cache warmth**: a wormhole linked one hop from a section/use-case index
+is hot; a deeper one is cold.
+
+The metaphor also carries the central safety rule: **a wormhole can only
+open onto primary ground, never onto another wormhole.** Every wormhole is
+at most one hop from hand-authored bedrock — no second-order derivation,
+no drift-of-drift, no cycles.
+
+---
+
+## Substrate: git, not a bespoke store
+
+Compiled output is ordinary corpus content, so **git is the store** — it
+already does versioning, provenance (`git blame` / history), divergence
+(branches), contribution-back (PR), and the canonical/tenant relationship
+(upstream + fork). We do **not** build an overlay store or a cache engine.
+
+- **Canonical corpus** = the upstream repo (hand-curated, the source of
+  truth).
+- **Tenant corpus** = a fork. Tenant-specific divergence is commits on the
+  fork; nothing reaches canonical except by PR. `git diff upstream/main`
+  is exactly "what this tenant added." The fork boundary *is* the
+  multi-tenant firewall.
+- **Promotion** of a valuable general wormhole = a PR from fork to
+  upstream, reviewed as a diff, validated by CI. Editorial review is PR
+  review.
+- The agent reads **one working tree** (its fork's checkout), which
+  already contains canonical + derived + tenant content merged by git.
+  **The retrieval tools need zero changes** — a wormhole is just a file.
+
+**Cadence note.** Git's cadence (commit/merge/concurrency) fits *durable
+accretion*, not per-miss machine-speed writes. So compilation is a
+**deliberate, low-frequency accretion**, not a real-time cache: drafts are
+captured cheaply inline (below), but only promoted at git cadence once
+they've earned it. A real-time hot cache, if ever needed, is a volatile
+in-process accelerator *in front of* git — never a rival source of truth.
+We are not building it.
+
+---
+
+## Lifecycle: the agent is the compiler
+
+There is no separate "context compiler" pipeline. The capability that
+answers a question live — find the right files, read the right parts,
+synthesise a cited answer — *is* the capability that produces a wormhole.
+A wormhole is that capability's output, persisted when it's worth keeping.
+
+```
+ draft (inline, cheap) ── at the end of answering, if the agent judges it
+        │                 synthesised a GENERALISED insight, over STABLE
+        │                 sources, after NON-TRIVIAL traversal, it writes a
+        │                 candidate wormhole node (scoped Write) to a
+        │                 staging area and commits it. Drafting != publishing.
+        ▼
+ promote (gated) ─────── the citation-verifier (AGENT-BEHAVIOURS #4) MUST
+        │                pass the candidate before it enters the served
+        │                graph. Self-authoring: yes. Self-verifying into
+        │                trust: never — that is the exact bias #4 exists for.
+        ▼
+ serve ───────────────── a promoted wormhole is an ordinary node: tagged,
+        │                shallow-linked, found by normal traversal. No
+        │                special lookup path.
+        ▼
+ evict ───────────────── the log loop culls wormholes that go cold (never
+                         traversed) or bypassed (agent greps past them).
+                         publish-then-evict: quality-gated at birth,
+                         demand-culled at death.
+```
+
+### Why drafting is inline (and cheap)
+
+The expensive part — loading context and reasoning over it — is already
+paid by the time the agent finishes answering; the generalised insight is
+*hot* right then. A separate batch job would reload the sessions, re-read
+the files, and re-derive it from logs (lossy and costly). Inline is both
+cheaper and higher quality — especially for the **instance→class
+generalisation** (strip this question's specific facts, keep the reusable
+substrate), which the model does best immediately after the specific
+reasoning, with both the specifics and the general structure in mind.
+
+### Why publishing is gated and demand-driven
+
+A single session can judge **quality** (is this a clean, generalised
+insight?) but not **demand** (will this recur / be traversed?) — those are
+orthogonal. So:
+
+- **Verifier gate (non-negotiable).** A candidate is unverified machine
+  output; it stays quarantined (`status: draft`) until the
+  citation-verifier passes it. A hallucinated wormhole must never become a
+  fast hit for everyone.
+- **Demand: publish-then-evict (the chosen default).** Rather than
+  blocking publication until a shape provably recurs, we let
+  verifier-passed wormholes publish, and rely on the eviction loop to cull
+  the ones that go cold. This favours autonomy and keeps the served graph
+  honest via the cull rather than a birth gate. (The alternative —
+  gate-at-birth on recurrence — stays available if clutter proves a
+  problem.)
+
+### What decides distillation (the trigger)
+
+Most of the signal is **already in the structured event log** (tool-call
+count, files touched, source stability, the verifier verdict) — so
+nomination is a **cheap deterministic query**, not inference over every
+session. The inline self-flag is a near-free *enrichment* (the agent
+pre-labels shape + cost + stability at the moment it has them), feeding
+that aggregate. Inference is spent only on the distillation of nominated
+winners. The same log loop that nominates also evicts (cold / bypassed
+nodes) — one loop governs birth and death. This is the §11.3 audit loop
+(AGENT-BEHAVIOURS #6) earning a second job.
+
+---
+
+## The derived-node contract (what makes a node a wormhole)
+
+A wormhole is a corpus file with these additions to the standard
+frontmatter (full spec in [`../CONVENTIONS.md`](../CONVENTIONS.md)). All
+additive — a node without them is an ordinary corpus file.
 
 ```yaml
-key:
-  persona: trust-officer
-  task: article-47-set-aside-for-mistake
-  # Forward field, unused today. The (future) intent classifier maps a
-  # raw question to one of these canonical intents before cache lookup.
-  # Until the classifier exists, routing is (persona, task) only.
-  intents:
-    - "can a past trust act be undone for mistake about its tax effect"
-    - "set aside a distribution / appointment / transfer into trust"
+derived: true                    # marks this as machine-derived, not hand-authored
+derived_from:                    # the PRIMARY nodes this distils — provenance
+  - path: knowledge/jersey/use-cases/founder-entrepreneur/why-jersey-topco.md
+    content_hash: sha256:…       # body hash at compile time (for invalidation)
+    last_verified: 2026-04-02    # frontmatter snapshot at compile time
+  - path: knowledge/jersey/use-cases/founder-entrepreneur/migration-pre-ipo.md
+    content_hash: sha256:…
+    last_verified: 2026-03-15
+status: draft                    # draft = unverified/quarantined; promoted to
+                                 # review/stable only after the verifier passes
+# plus the normal title / jurisdiction / category / tags / sources / see_also
 ```
 
-> **The load-bearing risk lives here.** A cache is only as good as its
-> key. If the question→key classifier is fuzzy or stochastic, near-miss
-> phrasings miss the cache and **variance re-enters at the routing
-> layer** — the exact thing compilation was meant to remove. The
-> `trigger_description` (human-readable) stays as the routing signal for
-> the assembler sub-agent; `key.intents` is the machine-matchable
-> surface the classifier will target. Designing and *evaluating* that
-> classifier deterministically is a prerequisite for the cache, not an
-> afterthought.
+Three rules the validator enforces:
 
-### 2. Provenance for precise invalidation (`provenance`, on the compiled artifact)
+1. **Marked.** `derived: true` ⇒ `derived_from` is present and non-empty.
+2. **No second-order derivation.** Every `derived_from` path must exist
+   and must itself be a *primary* (non-derived) node. A wormhole opening
+   onto another wormhole is rejected.
+3. **Quarantine.** A `derived` node may not carry `status: stable` without
+   a recorded verifier pass (CI/promotion enforces this; authoring-time it
+   starts `draft`).
 
-A compiled artifact records exactly which corpus state it was built from,
-so invalidation is *precise* (not a guessed TTL). This block is
-**generated at compile time**, never authored.
+Invalidation is then free from the graph: when a `derived_from` source's
+current `content_hash` (or `last_verified`) no longer matches the recorded
+snapshot, the freshness checker (#3) nils the wormhole → it is re-drafted
+on next demand.
 
-```yaml
-provenance:
-  compiled_at: 2026-05-21T10:30:00Z
-  corpus_commit: 4f7505e            # repo commit the sources were read at
-  compiler: build                   # build | fly | editorial
-  sources:
-    - path: knowledge/jersey/trusts/article-47-set-aside.md
-      content_hash: sha256:…        # hash of the file body at compile time
-      last_verified: 2026-04-02     # frontmatter snapshot at compile time
-    - path: knowledge/jersey/trusts/article-51-directions.md
-      content_hash: sha256:…
-      last_verified: 2026-03-15
-```
-
-**Invalidation contract:** an artifact is valid iff, for every source,
-the file still exists and its current `content_hash` equals the recorded
-one **and** its freshness is still within the definition's window. Any
-mismatch invalidates the artifact → it is removed from the served set and
-queued for recompile. The **freshness-checker (AGENT-BEHAVIOURS #3) is
-the invalidation trigger** — it already watches `last_verified`; it gains
-the job of nilling artifacts whose sources moved. Because we have
-explicit source→artifact provenance, invalidation is exact: changing one
-corpus file invalidates *only* the artifacts that compiled it.
-
-Corollary the frontmatter already gives us: **don't compile high-decay
-content.** Frontier files (`expected_decay` short) churn too fast to be
-worth caching; stable doctrine is the ideal resident. Compilation
-eligibility is read off the layer + decay metadata, not decided per hand.
-
-### 3. A trust/status field (`origin` + `status`)
-
-A hand-authored bundle is human-blessed; a fly-compiled artifact is a
-*machine synthesis* that could be wrong. The served set must distinguish
-them, and an unverified artifact must be **quarantined until the
-citation-verifier (#4) passes it** — otherwise a hallucinated artifact
-becomes a fast cache hit for everyone.
-
-```yaml
-origin: editorial        # editorial (hand-authored) | compiled (machine)
-status: stable           # reuse the corpus status enum:
-                         #   stable  — curated or verifier-passed; servable
-                         #   draft   — machine-compiled, not yet verified; quarantined
-                         #   stub    — placeholder; never served
-verifier_verdict:        # generated; required before a compiled artifact goes stable
-  kind: pass
-  checked_at: 2026-05-21T10:31:00Z
-```
-
-This reuses the corpus's existing `status` discipline rather than
-inventing a parallel trust model: `stub` is never cited, `draft` is
-flagged/quarantined, `stable` is served. An `editorial` bundle is
-`stable` by authorship; a `compiled` artifact earns `stable` only by
-passing the verifier.
+**Don't derive high-decay content.** Frontier files (`expected_decay`
+short) churn too fast to cache; stable doctrine is the ideal wormhole
+source. Eligibility is read off the layer + decay metadata.
 
 ---
 
-## Lifecycle (with the cache as the future end-state)
+## Capture mechanism: Write + git, no bespoke tool
 
-```
-            ┌─ editorial author writes a definition (curated, stable)
- warm  ─────┤
-            └─ build pipeline compiles the obvious top use-case files
-               at build time  → artifacts (stable after verifier)
+The agent authors a wormhole by **writing a file** (`Write`) and committing
+it — not via a bespoke `proposeWormhole` tool. The two jobs such a tool
+would do are already covered:
 
- serve ─────── agent routes (persona, task[, intent]) → cache lookup
-                 │
-                 ├─ HIT (stable artifact, provenance still valid)
-                 │     → serve the artifact; no query-time retrieval
-                 │
-                 └─ MISS  [FUTURE: read-through cache]
-                       → serve query-time retrieval NOW (never block)
-                       → compile artifact async (origin: compiled, status: draft)
-                       → citation-verifier → pass: promote to stable
-                                            → fail: discard / flag editorial
+- **No answer pollution.** A `Write` call is a `tool_use` block, not a
+  text block, so it does not concatenate into the runtime's accumulated
+  `answer` (unlike interim prose). The capture stays out of the response.
+- **Validation.** The convention validator + CI already enforce
+  frontmatter shape, closed-tag membership, and the derived-node rules
+  above. Validation lives at commit/CI time, not in a capture tool.
 
- invalidate ── freshness-checker detects a source content_hash / last_verified
-               change → nil the affected artifacts → recompile on next miss
-```
+**Posture change (scoped).** This flips the agent from read-only to
+read-*write*, but only through a narrow lane: `canUseTool` sandboxes
+`Write` to the **staging path** (`wormholes/candidates/…`) — the agent can
+*add* candidates, never edit hand-authored corpus (the curated graph stays
+sacred). The audit log (#6) captures every write. We reuse the deny-list /
+sandbox (#5) already specced; we don't invent new safety.
 
-**Today** we do only the `warm` lane (authored definitions; the agent
-retrieves each session). **Compilation** adds build-time artifact
-generation. **The cache** (deferred) adds the miss→serve-now→compile-async
-populate-behind loop, which is what makes "what to compile" demand-driven.
+**Commit boundary.** The agent may commit its draft to the *staging*
+branch/dir on its own judgement. What it may **not** do unilaterally is
+merge into the served/trusted branch — promotion requires the verifier
+pass. The boundary is *staging vs served*, not *agent vs system*.
 
 ---
 
-## Invariants the design must keep
+## Invariants
 
-- **Canonical-only; the firewall holds.** Bundles and their artifacts are
-  built from the canonical corpus and are **shared** across tenants — one
-  tenant's miss can warm the cache for all. Tenant-specific framing
-  (memory, house view) never enters a bundle; it stays in the tenant's
-  own skills (per [`README.md`](./README.md) "What a bundle is *not*").
-  A future cache is therefore a *two-layer* model: a shared canonical
-  artifact layer + a private per-tenant overlay that is never cached
-  globally.
-- **The query-time path is never removed.** A cold or invalidated cache
-  must degrade to agentic retrieval (`findByTag`, grep, `getFile`), never
-  to failure. Compilation optimises the hot paths; PRD §6.4 still governs
-  the tail.
-- **Additive only.** Every field here is optional and defaulted; a bundle
-  with none of them behaves exactly as today. No reformat, no flag day.
-- **Eval-gated, per Appendix C.** A compiled artifact ships only if it
-  beats *its own query-time fallback* and the `claude-p` control on the
-  bundle-vs-agentic eval cell. An artifact that scores worse than the
-  retrieval path it replaced is an **auto-evict** signal — the cache
-  A/B-tests itself against the thing it stands in for.
+- **Canonical-only firewall.** Wormholes derived from the canonical corpus
+  are shareable; tenant-specific framing lives on the tenant fork and never
+  reaches upstream except by PR.
+- **The query-time path is never removed.** A cold/invalidated wormhole
+  graph must degrade to agentic retrieval (`findByTag`, grep, `getFile`),
+  never to failure. Wormholes optimise hot paths; PRD §6.4 governs the tail.
+- **Additive only.** Every field here is optional; a node without them
+  behaves exactly as today. No reformat, no flag day. Today's bundles stay
+  valid.
+- **Eval-gated, per Appendix C.** A wormhole ships only if it beats its own
+  query-time fallback and the `claude-p` control. A wormhole that scores
+  worse than the retrieval path it replaced is an auto-evict signal — the
+  graph A/B-tests itself against the thing it stands in for.
 
 ---
 
-## What to build first (when this is picked up)
+## What's irreducibly new (vs reused machinery)
 
-In dependency order, each gated on the one before earning its keep:
+Reused: git (store/versioning/provenance/merge), the convention validator
+(node rules), the citation-verifier #4 (promotion gate), the audit loop #6
+(nomination + eviction), the freshness checker #3 (invalidation), ordinary
+retrieval (lookup). The genuinely new work is small:
 
-1. **The bundle-vs-agentic eval cell** — measures token / latency /
-   *variance* deltas of a compiled path against agentic retrieval and
-   `claude-p`. This is both the go/no-go gate and the prioritisation
-   instrument (high retrieval-cost + high-variance + stable-source
-   questions are the first compile targets; the trajectory data already
-   identifies them, e.g. `show-worked-topco-listing`).
-2. **`provenance` + content-hashing in the build pipeline** — generate
-   the artifact and its source snapshots deterministically; wire the
-   freshness-checker to invalidate on hash/`last_verified` drift.
-3. **Build-time compilation of the seed catalogue** — compile the
-   existing curated definitions into artifacts; verify; serve.
-4. **The intent classifier + its own eval** — the prerequisite for any
-   fly-compile cache. Must be deterministic enough that paraphrases hit
-   the same key. *Until this is solid, the cache is not safe to build.*
-5. **The read-through cache** — only after 1–4. The miss→serve-now→
-   compile-async→verify→promote loop, with the two-layer canonical/tenant
-   split.
+1. **Derived-node conventions + validator rules** (Phase A — deterministic).
+2. **The instance→class distillation** — writing a good task-general node
+   (the real quality work; done inline by the agent).
+3. **Scoped staging `Write`** + the inline drafting trigger (runtime
+   posture change).
+4. **Verifier-gated promotion + eviction** wiring into the log loop.
 
-The honest sequencing point: steps 1–3 deliver most of the value
-(compiled hot paths, precise invalidation) with machinery we already
-have. Steps 4–5 (the cache) are where the genuinely new, harder work is —
-and they should not start until the keying problem in step 4 has an
-eval that says it's deterministic.
+Notably absent from this list: a cache store, a key/intent classifier, a
+separate compiler, a `getBundle`-style lookup for wormholes. The fold
+deleted them.
+
+See [`../WORMHOLES-IMPLEMENTATION-PLAN.md`](../WORMHOLES-IMPLEMENTATION-PLAN.md)
+for the phased build order and eval gates.
