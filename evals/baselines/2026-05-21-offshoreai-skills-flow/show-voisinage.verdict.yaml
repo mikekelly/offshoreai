@@ -1,0 +1,22 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five expected substance facts accurately,
+  every claim is supported by the cited corpus file, and the voice hits the
+  Jersey-advocate register the rubric asked for. The candidate correctly
+  identified voisinage as a Norman customary doctrine (Pothier / Le Geyt),
+  distinguished it from English nuisance on two concrete axes (no-fault
+  objectivity, no enumerated categories), reproduced the four-element Royal
+  Court test, and flagged the file's draft status — an epistemic-honesty bonus.
+  Efficient three-call retrieval with no redundancy.

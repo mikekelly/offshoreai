@@ -1,0 +1,23 @@
+questionId: show-continuation-funds
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer covers 5 of 6 rubric facts with zero citation errors
+  and excellent freshness handling. The single gap is that strip-sale,
+  tender-offer, and preferred-equity sidecar mechanics are not enumerated as
+  GP-led secondary variants — the candidate treats the category as a label
+  rather than walking through each variant. Voice is convincingly specialist
+  (DPI, LPAC, carry crystallisation, roll/cash, fairness opinion all used
+  naturally). A leaked process-narration sentence at the top ('I have the core
+  frontier file…') is a minor presentation blemish that doesn't affect
+  substance.

@@ -1,0 +1,21 @@
+questionId: show-image-rights
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: Pass. The candidate covered all five expected facts with accurate,
+  well-cited detail drawn from the two most relevant corpus files. Every claim
+  is supported by the cited source text — zero hallucinated citations. The
+  answer adds useful depth beyond the rubric minimum (enforcement remedies,
+  foreign-court recognition limitation, practical structuring mechanics) while
+  correctly flagging the file's draft status and advising primary-source
+  verification. Retrieval was efficient at two tool calls with no redundancy.

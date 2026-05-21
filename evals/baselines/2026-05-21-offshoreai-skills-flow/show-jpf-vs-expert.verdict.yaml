@@ -1,0 +1,22 @@
+questionId: show-jpf-vs-expert
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All four rubric substance points covered accurately and verified
+  against both corpus files. The answer reads like fund counsel advising on a
+  structuring choice — opens with a clear JPF recommendation for the club-deal
+  profile, provides a clean comparison table, identifies the 50-investor
+  threshold as the key switching point, and adds a useful structuring note on
+  vehicle form and DSP mechanics. Both citations verified; no hallucinated
+  citations; no stale sources. The proactive draft-status caveat is a minor
+  voice break but demonstrates good freshness discipline.

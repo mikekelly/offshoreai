@@ -1,0 +1,22 @@
+questionId: show-eviction
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All six rubric substance facts are present and correct; all three
+  citations verified against corpus files with zero hallucinations; voice is
+  spot-on smart-friend landlord-facing. The single material gap is the omission
+  of the 2025 Amendment Law (in force 15 April 2026) — a rubric-required
+  Jersey-specific fact that the residential-tenancy index.md explicitly flags as
+  mandatory context for 2026 questions. This demotes jersey_specific and
+  citation_recall to partial but does not threaten the overall verdict given
+  full substance coverage and clean citations.

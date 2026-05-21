@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-article-47",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-21T15:26:35.091Z",
+  "wallClockSeconds": 30.954,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getArticle",
+      "rawName": "mcp__corpus__getArticle",
+      "inputDigest": "{\"statute\":\"trusts-law-1984\",\"article\":\"47B\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/article-47-set-aside.md\",\"full\":true}",
+      "inputBytes": 70,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 4,
+    "outputTokens": 2265,
+    "cacheReadTokens": 69436,
+    "cacheWriteTokens": 48636,
+    "totalCostUsd": 0.39533799999999997
+  },
+  "answer": {
+    "text": "Note on status before the substance: the corpus file I'm relying on, `knowledge/jersey/trusts/article-47-set-aside.md`, is marked **`draft`** — its content is drafted but not yet editorially verified against the primary sources. Treat the following as indicative and confirm against the statute and cited cases before relying on it. (Freshness is fine: last verified 2026-05-14, 7 days ago.)\n\n## What \"Article 47B\" actually is\n\nA small but important correction to the framing. **Article 47B is the *interpretation* provision** — it supplies the wide statutory definition of \"mistake\" for the whole regime. The Article that actually sets aside a *trustee's decision* (an exercise of a fiduciary power) is **Article 47G**. The cluster, all introduced by the **Trusts (Amendment No. 6) (Jersey) Law 2013**, runs:\n\n- **47B** — interpretation, including the wide definition of \"mistake\"\n- **47E** — set-aside of a *transfer of property to* a trust (the settlor-facing route)\n- **47G** — set-aside of an *exercise of a fiduciary power* (the trustee-decision route)\n- **47C, 47D, 47F, 47H** — standing, consequences, limits on relief, third-party position\n\n(`knowledge/jersey/trusts/article-47-set-aside.md`)\n\n## The Article 47B definition of \"mistake\"\n\nDeliberately broad. It covers a mistake as to the transaction's **effect**, its **consequences** (expressly including tax consequences), any **advantage** the person believed they would gain, and any **fact existing before or at the time** of the disposition or power-exercise. Testamentary dispositions are excluded. (`knowledge/jersey/trusts/article-47-set-aside.md`, Art. 47B)\n\n## The procedure to set aside a trustee decision (Art. 47G)\n\n- **Vehicle:** application by **Representation** in the Royal Court, Samedi Division, supported by affidavit evidence of the relevant state of mind at the time of the decision.\n- **Applicant:** typically the **trustee** (a protector, beneficiary, or other person with standing can also apply).\n- **Test:** the Royal Court applies a **three-limb test** (formulated in *In re S & T Trusts* [2015] JRC259) before granting relief under 47E or 47G:\n  1. there was a mistake within the wide Art. 47B definition;\n  2. **but for** the mistake, the power would not have been exercised in the form it was;\n  3. the mistake was **of so serious a character that it would be just** for the Court to make a declaration.\n  Failure on any limb defeats the application — limb 2 is the most common point of failure.\n- **Effect:** the Court declares the exercise **voidable**; relief unwinds the power-exercise and restores the prior position (ordinarily void *ab initio*, though the Court has flexibility), with good-faith-for-value third-party rights generally protected.\n- **Evidence point:** contemporaneous documentary evidence (file notes, advice, correspondence) is critical; a late reconstruction affidavit is weak.\n\n(`knowledge/jersey/trusts/article-47-set-aside.md`, Arts. 47G, 47B; procedure cross-refers `knowledge/jersey/legal-system/royal-court.md`)\n\n## How Jersey is wider than *Pitt v Holt*\n\nIn *Pitt v Holt; Futter v Futter* [2013] UKSC 26 the English Supreme Court distinguished a true **\"mistake\"** (which can ground rescission) from **\"mere causative ignorance\" or \"inadequate deliberation\"** (which generally cannot). Under the statutory regime the Royal Court of Jersey has **rejected that distinction** — in Jersey \"the manner of the mistake is irrelevant,\" so the English categories don't gate relief. The practical consequence: a future \"we didn't think about that\" position is more likely to be remediable in the Royal Court than in the English High Court. (`knowledge/jersey/trusts/article-47-set-aside.md`, citing *S & T Trusts* and Royal Court commentary)\n\nTwo boundaries the corpus flags: a mistake going to the *very intention to settle* is dealt with under **Article 11**, not 47C–H; and where the remedy sought is *directing* the trustee rather than unwinding a transaction, an **Article 51 directions** application may be the right vehicle. The Court has also declined relief amounting to a \"re-writing of history\" (*In the Matter of the M Settlement*) and is reluctant to treat a disappointed expectation of a *future* tax advantage as a qualifying mistake.\n\nA caveat in the file worth surfacing: the underlying authority here is largely **secondary commentary** (Mondaq, Carey Olsen, Viberts, Walkers, Ogier) rather than the primary judgments or statute text. Per the source hierarchy, verify the three-limb test and the *Pitt v Holt* divergence against *In re S & T Trusts* [2015] JRC259 and the text of Articles 47B–47H on jerseylaw.je before relying on this.\n\n## Cited files\n1. `knowledge/jersey/trusts/article-47-set-aside.md` (status: draft) — Articles 47B, 47E, 47G; three-limb test; *Pitt v Holt* divergence\n2. `knowledge/jersey/legal-system/royal-court.md` — Royal Court Representation procedure (cross-reference)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 732
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

@@ -105,6 +105,7 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     "Read",
     "Glob",
     "Grep",
+    "TodoWrite", // the task-list / program-counter for the #24 phased flow
     ...(drafting ? ["Write"] : []),
   ];
 
@@ -136,6 +137,12 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     options: {
       mcpServers: { corpus: corpusServer },
       allowedTools,
+      // Phase-skills load JIT via the SDK Skill tool (AGENT-PRINCIPLES #24):
+      // descriptions stay resident, bodies load on demand. The detailed
+      // retrieval workflow lives in the corpus-retrieval skill, not the
+      // baseline prompt. settingSources is left omitted (= all sources), so
+      // .claude/skills/ is discovered exactly as the corpus state already was.
+      skills: ["corpus-retrieval"],
       systemPrompt: { type: "preset", preset: "claude_code", append: fullSystemPrompt },
       maxTurns: opts.maxTurns ?? 20,
       cwd: opts.repoRoot,

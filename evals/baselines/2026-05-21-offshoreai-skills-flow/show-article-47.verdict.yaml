@@ -1,0 +1,22 @@
+questionId: show-article-47
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All six expected facts present and correct with zero factual
+  errors. The opening correction that Art. 47B is the interpretation provision
+  while Art. 47G is the actual set-aside mechanism for fiduciary-power exercises
+  is a particularly strong detail that exceeds the rubric's expectations. Every
+  claim traces back to the two cited corpus files with no hallucinated
+  citations. Voice is well-pitched — litigator-grade precision throughout with
+  appropriate caveats about draft status and secondary sources for a
+  sophisticated reader. Efficient two-call retrieval with no redundancy.

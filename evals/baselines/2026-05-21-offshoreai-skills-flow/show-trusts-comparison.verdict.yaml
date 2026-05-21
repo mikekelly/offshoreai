@@ -1,0 +1,24 @@
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 16
+hallucinatedCitations: 0
+summary: "Pass. The answer correctly identifies the three trust regimes as
+  solving distinct problems (forced-heirship defence, no-beneficiary purpose
+  vehicles, trustee disengagement from operating businesses), covers all four
+  expected substance facts with accurate detail, and cites exactly the right
+  corpus files — all verified. The most load-bearing observation: the
+  combined-use paragraph and the VISTA watch-outs section both draw directly
+  from corpus content rather than generic offshore knowledge. Minor imprecision
+  on Article 12 'narrower' characterization (corpus says 'functionally similar')
+  and TJL 1984 not named by its full title despite Articles 9/9A being
+  unmistakably from it — neither materially affects the answer's quality."

@@ -1,0 +1,22 @@
+questionId: show-planning
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five expected substance facts covered accurately with correct
+  Jersey-specific statute naming (PBL 2002, GD Order 2011, Building Bye-Laws
+  2007). Every citation verified — no hallucinations. The answer is
+  operationally useful and homeowner-facing with a clear decision sequence,
+  practical safeguards (Certificate of Lawful Development, restrictive covenants
+  check), and consequences of non-compliance. Draft-status flagging and
+  direction to check primary sources for exact numeric thresholds is model
+  freshness handling. Efficient 4-call retrieval with no redundancy.

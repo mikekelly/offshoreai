@@ -1,0 +1,22 @@
+questionId: show-worked-family-wealth
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. The answer covers all 7 expected facts with correct
+  Jersey-specific statutory detail (Articles 9, 9A, their sub-paragraphs, and
+  the sham/Article 2 boundary), cites the four most relevant corpus files with
+  no hallucinated citations, correctly identifies the limits of the firewall
+  (in-personam jurisdiction, asset location), and flags the draft status of all
+  sources with an explicit verify-before-acting caveat. The retrieval was
+  efficient — 3 parallel tag lookups followed by 4 targeted file reads, no
+  redundancy, 55 seconds wall-clock.

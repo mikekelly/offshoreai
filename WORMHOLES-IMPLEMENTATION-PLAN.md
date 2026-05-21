@@ -399,6 +399,24 @@ optimiser, not on the critical path.
   mechanism (`skills: string[] | 'all'` option; agent-invoked `Skill` tool
   for JIT body loading; `.claude/skills/` discovery). The #24 approach is
   buildable.
+- **Skills-driven execution flow (#24) — BUILT + validated, shipped as the
+  default.** Independent of the wormhole-routing NO-GO, the #24 model was
+  built for its own merits: `.claude/skills/corpus-retrieval/SKILL.md` holds
+  the retrieval workflow as a JIT phase-skill; the baseline prompt's
+  retrieval section is thinned to a 3-step flow (Plan → Retrieve-via-skill →
+  Answer); runtime enables `skills: ['corpus-retrieval']` + `TodoWrite`
+  (`settingSources` left omitted, so no CLAUDE.md confound). Full 28-q
+  regression `evals/baselines/2026-05-21-offshoreai-skills-flow/`: **26/2/0,
+  precision 1.00, 0 hallucinations, no regression vs v6** (the only 2 diffs
+  are improvements). The mechanism works — the agent loads the skill JIT on
+  9/28 (the genuinely multi-part questions) and skips it on simple ones.
+  Honest caveats: (a) the gains over v6 are within the ~14% noise band — this
+  *holds* quality, it doesn't move the number; it's an architecture win
+  (thin prompt, conflict-free phases, extensible to more phase-skills);
+  (b) skill-loading is *inconsistent* (9/28), so a behaviour moved into the
+  skill is skipped when the agent doesn't load it (`show-friday-passing`
+  showed this) — load-bearing rules may be safer kept resident, or the skill
+  description strengthened to load more reliably.
 - **Phase D — tested, NO-GO, NOT BUILT.** The cheap decisive test
   (trustworthy wormholes + explicit precedence rule, both C1 confounds
   removed) showed the agent still reads the wormhole *and* the primaries —

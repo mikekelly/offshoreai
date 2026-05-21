@@ -1,0 +1,21 @@
+questionId: show-worked-topco-listing
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 8
+factsExpected: 8
+citationsTotal: 18
+hallucinatedCitations: 0
+summary: Pass. All 8 expected facts covered accurately with zero hallucinated
+  citations across 7 verified corpus files. The answer correctly identifies the
+  Newco share-for-share route (not continuance) as the UK-specific approach,
+  names four Jersey statutes, walks the full step-by-step from incorporation
+  through post-IPO dividends, and responsibly flags draft status and
+  UK-tax-point limitations. Clean 8-tool retrieval with no redundancy in 54
+  seconds.
