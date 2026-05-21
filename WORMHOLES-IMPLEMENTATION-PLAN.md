@@ -59,7 +59,9 @@ derived-node rules. Pure build-pipeline work; no agent change, no inference.*
   violations** (no real file sets `derived` yet, so the new rules are
   inert on current content — confirms additivity).
 
-**Status: IN PROGRESS (this session).**
+**Status: DONE.** frontmatter/types/validator + 6 tests landed; build
+14/14, tools-corpus 18/18, full typecheck clean; `pnpm health` 4340 ==
+baseline (rules inert on current content — additive confirmed).
 
 ---
 
@@ -107,14 +109,60 @@ mechanism is for.
 **Note on autonomy:** Phase B's eval is the right place to spend inference;
 keep it to ~3–4 question-runs total.
 
+**Status: DONE — result is GO-with-qualification.** Wormhole authored at
+`knowledge/jersey/use-cases/founder-entrepreneur/wormhole-jersey-topco-uk-listing.md`
+(validation-clean: health 4340 == baseline), shallow-linked from the
+founder-entrepreneur `index.md`. Two probes (target `show-worked-topco-listing`
++ control `show-parish-hall`):
+
+| Run | Routing | Target trajectory | Target quality | Control |
+|---|---|---|---|---|
+| baseline (v6) | — | 6 calls, reads worked-example + 4–5 siblings | pass, 8/8 | — |
+| Probe 1 | none | 4 calls, **ignores** the wormhole (saw it in `ls`, read the original cluster) | pass, 8/8 | wormhole untouched |
+| Probe 2 | routing nudge | 3 calls, **reads the wormhole first** + one spot-verify | pass, 8/8, prec+recall+subst pass | wormhole untouched (no over-routing) |
+
+**Findings.** The wormhole is *sufficient* (contains all 8 facts + the
+authoritative citations) but not *preferred* — **passive placement is
+ignored**; the agent puts the wormhole on equal footing with the original
+cluster and reads what it always read. With a routing signal it reads the
+wormhole first and collapses the traversal (worked-example + 4–5 siblings →
+wormhole + 1 spot-verify) while holding all quality dimensions, and does
+**not** over-route on the unrelated control. **Routing is the load-bearing
+component** — exactly the design's prediction. GO to build the automated
+machinery, *provided it includes routing*, not just authoring.
+
+The routing nudge that worked (validated on 2 questions, then reverted as
+unproven for full regression):
+
+> *Prefer a compiled node when one covers the question. Some corpus files are
+> compiled shortcuts (frontmatter `derived: true`) — a distilled
+> task-general synthesis with citations resolved, usually linked "start
+> here" from an index. Read it first and lean on it; spot-verify rather than
+> re-traverse the underlying files.*
+
+This becomes a Phase C deliverable, gated on a full 28-q regression (it is
+inert today — only one derived node exists — so a regression run is only
+informative once wormholes are real).
+
 ---
 
-## Phase C — Scoped staging Write + inline drafting trigger  **[INF] [POSTURE]**
+## Phase C — Wormhole routing + scoped-write drafting  **[INF] [POSTURE]**
 
-*Goal: the agent can author a wormhole candidate itself. Deferred until
-Phase B is GO; involves a capability-posture change — review before merge.*
+*Goal: (1) route the agent to a compiled node when one covers the question
+(Phase B proved this is the load-bearing piece), and (2) let the agent
+author wormhole candidates itself. Phase B is GO, so this is the next
+build. Involves a capability-posture change — review before merge.*
 
-**Deliverables**
+**C1 — Routing (do this first; cheapest, highest-leverage).** Ship the
+routing nudge validated in Phase B (read a `derived: true` node first when
+one covers the question; spot-verify rather than re-traverse). Gate on a
+**full 28-q regression** against the v6 baseline + `claude-p` — confirm it
+collapses traversal on wormhole-covered questions, holds all quality
+dimensions, and does not over-route / regress on the rest. Consider also a
+deterministic surfacing signal (e.g. `findByTag` / index results flag
+`derived` nodes first) so routing doesn't rely on the prompt alone.
+
+**C2 — Scoped staging Write + inline drafting trigger.**
 - Runtime: add `Write` to `allowedTools`, **sandboxed via `canUseTool` to
   `wormholes/candidates/**` only** (AGENT-BEHAVIOURS #5 mechanism); deny
   writes anywhere else. Audit every write (#6).
@@ -127,12 +175,12 @@ Phase B is GO; involves a capability-posture change — review before merge.*
   `tool_use` block, so it stays out of the concatenated answer), not prose.
 
 **Acceptance (INF)**
-- On a corpus of recurring expensive questions, the agent emits
-  well-formed candidate nodes (Phase A validator passes them) and does
-  **not** emit on narrow single-fact questions.
-- No regression on the v6 showcase baseline (the drafting step must not
-  pollute answers or blow up tool budget) — full 28-q run once here,
-  given it's a posture change.
+- C1: on a wormhole-covered question the agent reads the wormhole first and
+  collapses the traversal; no over-routing or quality regression on the
+  full 28-q suite vs v6 + `claude-p`.
+- C2: the agent emits well-formed candidate nodes (Phase A validator passes
+  them) on recurring expensive questions and **not** on narrow single-fact
+  questions; no answer pollution; no tool-budget blow-up.
 
 ---
 
