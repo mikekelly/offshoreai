@@ -211,6 +211,36 @@ but not yet routing-preferred.
   them) on recurring expensive questions and **not** on narrow single-fact
   questions; no answer pollution; no tool-budget blow-up.
 
+**Status (C2):** *core DONE + safe; prompt-driven drafting under-triggers.*
+- Plumbing built and verified: pure `canUseTool` sandbox (9/9 unit tests —
+  allows writes only under `wormholes/candidates/`, denies curated-corpus /
+  `..`-escape / prefix-trick / no-path), wired behind an off-by-default
+  `enableWormholeDrafting` flag (normal path unchanged); the `default` +
+  `canUseTool` permission path **works headlessly (no hang)**.
+- But across 3 live runs the agent **never drafted** a candidate — declining
+  for a mix of defensible reasons (a wormhole already exists for the
+  task-class; the BVI sources are `draft`-status, not stable) and, even with
+  the stability gate relaxed, simple prompt-under-triggering. A prompt
+  instruction does not reliably make the agent author a node.
+
+**Meta-finding (C1 + C2):** *prompt-driven autonomy is the wrong lever for
+both halves of the loop.* Routing (C1) and drafting (C2) are both unreliable
+when driven by a system-prompt instruction — the agent under-routes and
+under-drafts. The deterministic mechanisms are what to build:
+- **Routing →** a sufficiency-flagged retrieval result (a `getWormhole`-style
+  tool, or `findByTag`/index returning the `derived` node first and marked
+  "covers the cluster") so the agent can skip the underlying files with
+  confidence — not a prompt plea.
+- **Drafting →** the **Phase E log-loop nomination** (demand-driven: a cheap
+  deterministic query nominates recurring expensive shapes; a distillation
+  step writes the candidate through the now-proven sandbox; the verifier
+  gates promotion). This is the right home for authoring — not an inline
+  prompt trigger.
+
+So C2's sandbox + flag are the durable, safe substrate; the *trigger* should
+be Phase E's nomination, not the inline prompt block (which is kept, behind
+the flag, but is not the mechanism to rely on).
+
 ---
 
 ## Phase D — Verifier-gated promotion  **[INF]**
