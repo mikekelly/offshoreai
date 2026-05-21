@@ -26,6 +26,11 @@ see_also:
 
 # Trusts — Jersey
 
+> **Comparing Jersey to other trust regimes?**
+> [Jersey trust vs Cayman STAR vs BVI VISTA — when to use which](./wormhole-trust-comparison-jersey-star-vista.md)
+> distils the cross-border vehicle choice (Article 9 firewall + 9A reserved
+> powers vs STAR purpose trusts vs VISTA share-ownership) into one node.
+
 ## What this section is about
 
 This section covers **the Jersey-law trust** — what it is, how it is

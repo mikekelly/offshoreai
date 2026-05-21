@@ -25,6 +25,11 @@ see_also:
 
 # Family Office / Private Client Adviser — Use Cases
 
+> **Forced-heirship-proof international family structure?**
+> [Italian HNW family → forced-heirship-proof Jersey trust — end-to-end](./wormhole-international-family-wealth.md)
+> distils the discretionary-trust + Article 9 firewall + 9A reserved-powers
+> + underlying-holdco + US-blocker + CRS/FATCA/DAC6/TRS structure into one node.
+
 ## Who this section is for
 
 You are an **adviser to a high-net-worth or ultra-high-net-worth
