@@ -7,6 +7,7 @@
     "auth-test": "tsx ./src/auth-test.ts",
     "query": "tsx ./src/query-cli.ts",
     "eval": "tsx ./src/eval-runner/cli.ts",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@types/node": "^22.9.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
   }
 }
