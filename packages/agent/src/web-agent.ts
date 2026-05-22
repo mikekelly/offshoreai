@@ -39,6 +39,14 @@ export type AgentEvent =
   // The SDK session id for this turn — the handle the caller resumes to
   // continue the conversation. Emitted as soon as it's known.
   | { readonly type: "session"; readonly sessionId: string }
+  // The verifier rejected the draft answer and the agent is regenerating a
+  // corrected one. The UI clears the answer/sources and shows why.
+  | {
+      readonly type: "revise";
+      readonly attempt: number;
+      readonly rejectCount: number;
+      readonly reasons: ReadonlyArray<{ claim: string; issueKind: string; citedSource: string; detail: string }>;
+    }
   | {
       readonly type: "citation";
       readonly path: string;
@@ -74,12 +82,32 @@ export interface StreamOptions {
   readonly resume?: string;
 }
 
+interface VerifierReason {
+  readonly claim: string;
+  readonly issueKind: string;
+  readonly citedSource: string;
+  readonly detail: string;
+}
+
+interface VerifierVerdictLike {
+  readonly kind: string;
+  readonly claimsChecked: number;
+  readonly claimsWithCitation: number;
+  readonly reasons: VerifierReason[];
+}
+
 export interface CreateAgentOptions {
   readonly repoRoot: string;
   readonly tagIndexPath?: string;
   readonly maxTurns?: number;
   /** Run the citation-verifier after each answer and emit its verdict. Default true. */
   readonly verify?: boolean;
+  /**
+   * When the verifier rejects an answer, regenerate a corrected one (feeding
+   * the verifier's reasons back to the agent) up to this many times before
+   * surfacing the answer with the unresolved flags. Default 1.
+   */
+  readonly maxVerifyRetries?: number;
 }
 
 export interface OffshoreaiAgent {
@@ -121,6 +149,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
   const fullSystemPrompt = baselineSystemPrompt + taxonomyBlock;
   const allowedTools = [...corpusAllowedToolNames(), "Read", "Glob", "Grep"];
   const verify = opts.verify ?? true;
+  const maxVerifyRetries = opts.maxVerifyRetries ?? 1;
 
   function citationEvent(path: string): Extract<AgentEvent, { type: "citation" }> {
     const rec = corpus.byPath.get(path);
@@ -153,122 +182,164 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
 
   return {
     async *stream(question: string, streamOpts?: StreamOptions): AsyncGenerator<AgentEvent, void, unknown> {
-      const prompt = `Answer the following question against the offshoreai corpus. Follow the citation, freshness, source-hierarchy, and refusal rules in your system prompt.\n\nBegin your response directly with the substantive answer. Do NOT narrate your retrieval or thinking in the answer text — no "let me read…", "I have what I need", "let me pull the files" preambles. Any planning belongs in your thinking, not the answer.\n\nQuestion:\n${question}`;
+      const basePrompt = `Answer the following question against the offshoreai corpus. Follow the citation, freshness, source-hierarchy, and refusal rules in your system prompt.\n\nBegin your response directly with the substantive answer. Do NOT narrate your retrieval or thinking in the answer text — no "let me read…", "I have what I need", "let me pull the files" preambles. Any planning belongs in your thinking, not the answer.\n\nQuestion:\n${question}`;
+
+      const correctionPrompt = (reasons: VerifierReason[]): string =>
+        `A citation verifier reviewed your previous answer and flagged ${reasons.length} claim(s) as inadequately supported by the corpus. Revise your answer to resolve EACH flagged claim: add a corpus citation (repo-relative path, optionally with an Article reference) that supports it, or remove/soften the claim if the corpus does not support it. Do not introduce new uncited claims. Re-read corpus files if you need to.\n\nFlagged claims:\n${reasons
+          .map((r) => `- "${r.claim}" — [${r.issueKind}] ${r.detail}`)
+          .join("\n")}\n\nProduce the FULL corrected answer (not just the changes), beginning directly with the substantive answer.`;
+
       const toolCalls: Array<{ name: string; inputDigest: string }> = [];
-      // `segment` is the contiguous answer text since the last reset; text
-      // emitted before a tool call is narration and gets reset away.
-      // `resultText` is the SDK's canonical final answer (preferred).
-      let segment = "";
-      let resultText = "";
       let turns = 0;
       let costUsd = 0;
       let sessionId = "";
+      let answer = "";
 
       try {
-        for await (const msg of query({
-          prompt,
-          options: {
-            mcpServers: { corpus: corpusServer },
-            allowedTools,
-            systemPrompt: { type: "preset", preset: "claude_code", append: fullSystemPrompt },
-            maxTurns: opts.maxTurns ?? 20,
-            permissionMode: "bypassPermissions",
-            cwd: opts.repoRoot,
-            // Resume an existing SDK session to continue a conversation with
-            // full prior context (messages + tool results) replayed by the SDK.
-            ...(streamOpts?.resume ? { resume: streamOpts.resume } : {}),
-            includePartialMessages: true,
-            // Let the model plan/retrieve in thinking blocks rather than
-            // narrating ("let me read X…") in the user-facing answer text.
-            // Explicit `enabled` (vs `adaptive`) so thinking engages on any
-            // model, not only Opus 4.6+ where adaptive is supported.
-            thinking: { type: "enabled", budgetTokens: 4000 },
-          },
-        })) {
-          // The session id rides on every message; surface it as soon as we
-          // see it so the caller can persist the conversation handle.
-          const sid = (msg as { session_id?: string }).session_id;
-          if (sid && sid !== sessionId) {
-            sessionId = sid;
-            yield { type: "session", sessionId };
-          }
+        let currentPrompt = basePrompt;
+        // The first pass resumes the caller's session (if any); correction
+        // passes resume the session THIS stream advanced, so the agent sees
+        // its own prior draft and the verifier's reasons in context.
+        let currentResume = streamOpts?.resume;
+        let attempt = 0;
+        let finalVerdict: VerifierVerdictLike | null = null;
 
-          // Stream answer text from partial deltas (do NOT also emit from the
-          // assistant message, or text would double). Thinking deltas stream
-          // separately as `reasoning`.
-          if (msg.type === "stream_event") {
-            const ev = (
-              msg as { event?: { type?: string; delta?: { type?: string; text?: string; thinking?: string } } }
-            ).event;
-            if (ev?.type === "content_block_delta") {
-              if (ev.delta?.type === "text_delta" && ev.delta.text) {
-                segment += ev.delta.text;
-                yield { type: "text", delta: ev.delta.text };
-              } else if (ev.delta?.type === "thinking_delta" && ev.delta.thinking) {
-                yield { type: "reasoning", delta: ev.delta.thinking };
-              }
+        for (;;) {
+          // `segment` is the contiguous answer text since the last reset; text
+          // emitted before a tool call is narration and gets reset away.
+          // `resultText` is the SDK's canonical final answer (preferred).
+          let segment = "";
+          let resultText = "";
+
+          for await (const msg of query({
+            prompt: currentPrompt,
+            options: {
+              mcpServers: { corpus: corpusServer },
+              allowedTools,
+              systemPrompt: { type: "preset", preset: "claude_code", append: fullSystemPrompt },
+              maxTurns: opts.maxTurns ?? 20,
+              permissionMode: "bypassPermissions",
+              cwd: opts.repoRoot,
+              // Resume an existing SDK session to continue with full prior
+              // context (messages + tool results) replayed by the SDK.
+              ...(currentResume ? { resume: currentResume } : {}),
+              includePartialMessages: true,
+              // Let the model plan/retrieve in thinking blocks rather than
+              // narrating ("let me read X…") in the user-facing answer text.
+              // Explicit `enabled` (vs `adaptive`) so thinking engages on any
+              // model, not only Opus 4.6+ where adaptive is supported.
+              thinking: { type: "enabled", budgetTokens: 4000 },
+            },
+          })) {
+            // The session id rides on every message; surface it as soon as we
+            // see it so the caller can persist the conversation handle.
+            const sid = (msg as { session_id?: string }).session_id;
+            if (sid && sid !== sessionId) {
+              sessionId = sid;
+              yield { type: "session", sessionId };
             }
-          } else if (msg.type === "assistant") {
-            const content =
-              (msg as { message?: { content?: Array<{ type: string; name?: string; input?: unknown }> } }).message
-                ?.content ?? [];
-            let sawTool = false;
-            for (const block of content) {
-              if (block.type === "tool_use" && block.name) {
-                // Text streamed before this tool call was interstitial
-                // narration, not the answer — tell the UI to clear it.
-                if (!sawTool && segment.trim().length > 0) {
-                  segment = "";
-                  yield { type: "reset" };
+
+            // Stream answer text from partial deltas (do NOT also emit from the
+            // assistant message, or text would double). Thinking deltas stream
+            // separately as `reasoning`.
+            if (msg.type === "stream_event") {
+              const ev = (
+                msg as { event?: { type?: string; delta?: { type?: string; text?: string; thinking?: string } } }
+              ).event;
+              if (ev?.type === "content_block_delta") {
+                if (ev.delta?.type === "text_delta" && ev.delta.text) {
+                  segment += ev.delta.text;
+                  yield { type: "text", delta: ev.delta.text };
+                } else if (ev.delta?.type === "thinking_delta" && ev.delta.thinking) {
+                  yield { type: "reasoning", delta: ev.delta.thinking };
                 }
-                sawTool = true;
-                toolCalls.push({ name: block.name, inputDigest: JSON.stringify(block.input ?? {}).slice(0, 200) });
-                yield { type: "tool", name: block.name, input: block.input ?? {} };
               }
+            } else if (msg.type === "assistant") {
+              const content =
+                (msg as { message?: { content?: Array<{ type: string; name?: string; input?: unknown }> } }).message
+                  ?.content ?? [];
+              let sawTool = false;
+              for (const block of content) {
+                if (block.type === "tool_use" && block.name) {
+                  // Text streamed before this tool call was interstitial
+                  // narration, not the answer — tell the UI to clear it.
+                  if (!sawTool && segment.trim().length > 0) {
+                    segment = "";
+                    yield { type: "reset" };
+                  }
+                  sawTool = true;
+                  toolCalls.push({ name: block.name, inputDigest: JSON.stringify(block.input ?? {}).slice(0, 200) });
+                  yield { type: "tool", name: block.name, input: block.input ?? {} };
+                }
+              }
+            } else if (msg.type === "result") {
+              const r = msg as { num_turns?: number; total_cost_usd?: number; result?: string };
+              turns = r.num_turns ?? turns;
+              costUsd += r.total_cost_usd ?? 0;
+              if (r.result) resultText = r.result;
             }
-          } else if (msg.type === "result") {
-            const r = msg as { num_turns?: number; total_cost_usd?: number; result?: string };
-            turns = r.num_turns ?? turns;
-            costUsd = r.total_cost_usd ?? costUsd;
-            if (r.result) resultText = r.result;
           }
-        }
 
-        // Canonical answer: the SDK's final result text when present, else
-        // the last streamed segment (post-narration-reset).
-        const answer = resultText.trim().length > 0 ? resultText : segment;
+          // Canonical answer for this pass: the SDK's final result text when
+          // present, else the last streamed segment (post-narration-reset).
+          answer = resultText.trim().length > 0 ? resultText : segment;
 
-        // Citations: every corpus path the answer cites, badged for freshness.
-        const seen = new Set<string>();
-        for (const m of answer.matchAll(CORPUS_PATH_RE)) {
-          const path = m[0];
-          if (seen.has(path)) continue;
-          seen.add(path);
-          yield citationEvent(path);
-        }
+          // Citations: every corpus path the answer cites, badged for
+          // freshness. On a retry the UI cleared the sources via `revise`, so
+          // re-emitting here repopulates them for the corrected answer.
+          const seen = new Set<string>();
+          for (const m of answer.matchAll(CORPUS_PATH_RE)) {
+            const path = m[0];
+            if (seen.has(path)) continue;
+            seen.add(path);
+            yield citationEvent(path);
+          }
 
-        // Verifier verdict — the citation-verifier subagent, surfaced to the
-        // user as a visible "second opinion on citation quality" delegation.
-        if (verify && answer.trim().length > 0) {
+          if (!verify || answer.trim().length === 0) break;
+
+          // Verifier — the citation-verifier subagent, surfaced as a visible
+          // "second opinion on citation quality" delegation.
           yield { type: "verify_start" };
           const v = await runCitationVerifier({
             repoRoot: opts.repoRoot,
             candidateAnswer: answer,
             toolCallLog: toolCalls,
           });
+          const reasons = v.reasons.map((r) => ({
+            claim: r.claim,
+            issueKind: r.issueKind,
+            citedSource: r.citedSource,
+            detail: r.detail,
+          }));
+
+          // Pass, or retries exhausted → this is the final verdict (the
+          // exhausted case surfaces the answer WITH its unresolved flags).
+          if (reasons.length === 0 || attempt >= maxVerifyRetries) {
+            finalVerdict = {
+              kind: v.kind,
+              claimsChecked: v.claimsChecked,
+              claimsWithCitation: v.claimsWithCitation,
+              reasons,
+            };
+            break;
+          }
+
+          // Rejected with retries left → regenerate a corrected answer.
+          attempt++;
+          yield { type: "revise", attempt, rejectCount: reasons.length, reasons };
+          currentPrompt = correctionPrompt(reasons);
+          currentResume = sessionId;
+        }
+
+        if (finalVerdict) {
           yield {
             type: "verdict",
-            kind: v.kind,
-            claimsChecked: v.claimsChecked,
-            claimsWithCitation: v.claimsWithCitation,
-            rejectCount: v.reasons.length,
-            notes: v.notes,
-            reasons: v.reasons.map((r) => ({
-              claim: r.claim,
-              issueKind: r.issueKind,
-              citedSource: r.citedSource,
-              detail: r.detail,
-            })),
+            kind: finalVerdict.kind,
+            claimsChecked: finalVerdict.claimsChecked,
+            claimsWithCitation: finalVerdict.claimsWithCitation,
+            rejectCount: finalVerdict.reasons.length,
+            notes: "",
+            reasons: finalVerdict.reasons,
           };
         }
 

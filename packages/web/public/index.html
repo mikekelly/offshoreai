@@ -357,6 +357,27 @@
           }
           case "citation": renderCitation(refs, ev); break;
           case "verify_start": showVerifyRunning(refs); break;
+          case "revise": {
+            // Verifier rejected the draft — clear it and the sources, then
+            // show what's being fixed while the corrected answer regenerates.
+            refs.rawMd = "";
+            refs.answerEl.innerHTML = "";
+            refs.answerEl.classList.add("cursor");
+            refs.sourcesEl.innerHTML = "";
+            refs.sourcesWrap.hidden = true;
+            refs.nSources = 0;
+            let html =
+              `<div class="verdict warn"><div class="headline"><span class="pulse"></span>` +
+              `Verifier flagged ${ev.rejectCount} claim(s) — revising… (attempt ${ev.attempt})</div>`;
+            for (const r of ev.reasons || []) {
+              html += `<div class="reason"><div>${esc(r.claim)}</div><div class="detail">[${esc(r.issueKind)}] ${esc(r.detail)}</div></div>`;
+            }
+            html += `</div>`;
+            refs.verdictWrap.hidden = false;
+            refs.verdictWrap.innerHTML = html;
+            scrollDown();
+            break;
+          }
           case "verdict": renderVerdict(refs, ev); break;
           case "done":
             refs.answerEl.classList.remove("cursor");
