@@ -13,7 +13,8 @@
 // `verdict` event from the citation-verifier.
 
 import { query } from "@anthropic-ai/claude-agent-sdk";
-import { getLastVerified, getStatus, getTitle } from "@offshoreai/build";
+import { getArticlesCovered, getLastVerified, getStatus, getTitle } from "@offshoreai/build";
+import type { CorpusRecord } from "@offshoreai/build";
 import {
   buildCorpusContext,
   corpusAllowedToolNames,
@@ -56,6 +57,13 @@ export type AgentEvent =
       readonly lastVerified: string | null;
       readonly ageDays: number | null;
       readonly freshness: "fresh" | "warn" | "stale" | "missing";
+      // The underlying PRIMARY sources for this corpus file (statute /
+      // regulator guidance / gov page / judgment / secondary), pulled
+      // deterministically from the file's `sources` frontmatter so the UI can
+      // cite the primary source — not the internal corpus path — to the user.
+      readonly sources: ReadonlyArray<{ title: string; url: string; kind: string }>;
+      /** Statute Articles this file covers (from `articles_covered`). */
+      readonly articles: ReadonlyArray<string>;
     }
   | {
       readonly type: "verdict";
@@ -151,6 +159,21 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
   const verify = opts.verify ?? true;
   const maxVerifyRetries = opts.maxVerifyRetries ?? 1;
 
+  function sourcesOf(rec: CorpusRecord): Array<{ title: string; url: string; kind: string }> {
+    const s = (rec.frontmatter as { sources?: unknown }).sources;
+    if (!Array.isArray(s)) return [];
+    return s.flatMap((x) => {
+      if (x && typeof x === "object") {
+        const o = x as Record<string, unknown>;
+        const title = typeof o["title"] === "string" ? o["title"] : "";
+        const url = typeof o["url"] === "string" ? o["url"] : "";
+        const kind = typeof o["kind"] === "string" ? o["kind"] : "";
+        if (title || url) return [{ title, url, kind }];
+      }
+      return [];
+    });
+  }
+
   function citationEvent(path: string): Extract<AgentEvent, { type: "citation" }> {
     const rec = corpus.byPath.get(path);
     if (!rec) {
@@ -163,6 +186,8 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
         lastVerified: null,
         ageDays: null,
         freshness: "missing",
+        sources: [],
+        articles: [],
       };
     }
     const lastVerified = getLastVerified(rec);
@@ -177,12 +202,14 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
       lastVerified,
       ageDays,
       freshness: status === "stale" ? "stale" : freshnessFor(ageDays),
+      sources: sourcesOf(rec),
+      articles: [...getArticlesCovered(rec)],
     };
   }
 
   return {
     async *stream(question: string, streamOpts?: StreamOptions): AsyncGenerator<AgentEvent, void, unknown> {
-      const basePrompt = `Answer the following question against the offshoreai corpus. Follow the citation, freshness, source-hierarchy, and refusal rules in your system prompt.\n\nBegin your response directly with the substantive answer. Do NOT narrate your retrieval or thinking in the answer text — no "let me read…", "I have what I need", "let me pull the files" preambles. Any planning belongs in your thinking, not the answer.\n\nQuestion:\n${question}`;
+      const basePrompt = `Answer the following question against the offshoreai corpus. Follow the citation, freshness, source-hierarchy, and refusal rules in your system prompt.\n\nBegin your response directly with the substantive answer. Do NOT narrate your retrieval or thinking in the answer text — no "let me read…", "I have what I need", "let me pull the files" preambles. Any planning belongs in your thinking, not the answer.\n\nCITATION STYLE (user-facing): attach the PRIMARY SOURCE to each claim inline — the statute and the specific Article/section (e.g. "Trusts (Jersey) Law 1984, Article 9(4)"), or for non-statutory facts the official body (e.g. Revenue Jersey, the JFSC). Do NOT put repo file paths (knowledge/….md) inline in the prose. After the answer, list the corpus files you relied on once, under a short "Corpus provenance" heading — that trailing list is for traceability and must include the repo-relative path of every file supporting a claim.\n\nQuestion:\n${question}`;
 
       const correctionPrompt = (reasons: VerifierReason[]): string =>
         `A citation verifier reviewed your previous answer and flagged ${reasons.length} claim(s) as inadequately supported by the corpus. Revise your answer to resolve EACH flagged claim: add a corpus citation (repo-relative path, optionally with an Article reference) that supports it, or remove/soften the claim if the corpus does not support it. Do not introduce new uncited claims. Re-read corpus files if you need to.\n\nFlagged claims:\n${reasons

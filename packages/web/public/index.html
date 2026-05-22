@@ -98,10 +98,14 @@
       .toolrow b { color: var(--accent); font-weight: 600; }
 
       .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-dim); margin: 16px 0 8px; }
-      .source { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+      .source { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
       .source:last-child { border-bottom: none; }
-      .source .path { font: 12px/1.4 ui-monospace, Menlo, monospace; word-break: break-all; flex: 1 1 100%; }
-      .source .meta { color: var(--ink-dim); flex: 1 1 100%; font-size: 12px; }
+      .source .primary { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 2px; }
+      .source .primary a, .source .primary .ptitle { color: var(--ink); font-weight: 500; }
+      .source .primary a:hover { color: var(--accent); }
+      .source .arts { color: var(--ink-dim); font-size: 12px; margin: 2px 0; }
+      .source .prov { color: var(--ink-dim); font-size: 11.5px; margin-top: 4px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+      .source .prov .provpath { font: 11px/1.4 ui-monospace, Menlo, monospace; word-break: break-all; opacity: 0.8; }
       .badge { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.03em; }
       .badge.fresh { background: rgba(46,160,67,0.16); color: var(--fresh); }
       .badge.warn { background: rgba(210,153,34,0.16); color: var(--warn); }
@@ -222,6 +226,23 @@
         return html;
       }
 
+      // Strip a trailing "Cited files"/"Corpus provenance"/"Sources" list of
+      // corpus paths from the rendered answer — the Sources & freshness panel
+      // replaces it, and the user shouldn't see internal knowledge/*.md paths.
+      // (The verifier already ran server-side against the full text.)
+      function stripProvenance(md) {
+        const lines = String(md).split("\n");
+        for (let i = lines.length - 1; i >= 0; i--) {
+          if (/^#{1,6}\s+(cited files|corpus provenance|sources)\b/i.test(lines[i])) {
+            const tail = lines.slice(i).join("\n");
+            if (/knowledge\/[A-Za-z0-9._/-]+\.md/.test(tail)) {
+              return lines.slice(0, i).join("\n").replace(/\s+$/, "") + "\n";
+            }
+          }
+        }
+        return md;
+      }
+
       function relTime(iso) {
         const d = Date.now() - new Date(iso).getTime();
         const m = Math.floor(d / 60000), h = Math.floor(d / 3600000), days = Math.floor(d / 86400000);
@@ -284,22 +305,50 @@
 
       const scrollDown = () => { transcript.scrollTop = transcript.scrollHeight; };
 
+      const KIND_LABEL = {
+        statute: "statute", guidance: "regulator guidance", "gov-page": "gov.je",
+        judgment: "judgment", secondary: "secondary",
+      };
+
       function renderCitation(refs, c) {
         refs.sourcesWrap.hidden = false;
         refs.nSources++;
         const row = document.createElement("div");
         row.className = "source";
+        const sources = c.sources || [];
+        let html = "";
+
+        // Primary sources first — linked to the statute / official page.
+        if (sources.length) {
+          for (const s of sources) {
+            const label = esc(s.title || s.url);
+            const link = s.url
+              ? `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${label}</a>`
+              : `<span class="ptitle">${label}</span>`;
+            const kind = s.kind ? `<span class="badge status">${esc(KIND_LABEL[s.kind] || s.kind)}</span>` : "";
+            html += `<div class="primary">${link} ${kind}</div>`;
+          }
+        } else {
+          // No primary source on the file (e.g. a synthesis/index doc).
+          html += `<div class="primary"><span class="ptitle">${esc(c.title || c.path)}</span></div>`;
+        }
+
+        if ((c.articles || []).length) {
+          html += `<div class="arts">Articles: ${c.articles.map((a) => esc(String(a))).join(", ")}</div>`;
+        }
+
+        // Provenance: the internal corpus file + freshness badge.
         const fr = c.freshness;
-        const age = c.ageDays == null ? "" : ` · ${c.ageDays}d old`;
-        const meta = fr === "missing"
+        const age = c.ageDays == null ? "" : ` · ${c.ageDays}d`;
+        const prov = fr === "missing"
           ? "path not found in corpus — possible hallucinated citation"
           : (c.lastVerified ? "verified " + c.lastVerified : "no last_verified") + age;
-        row.innerHTML =
-          `<span class="path">${esc(c.path)}</span>` +
-          (c.title ? `<span class="meta">${esc(c.title)}</span>` : "") +
-          `<span class="badge ${fr}">${esc(fr)}</span>` +
+        html +=
+          `<div class="prov"><span class="badge ${fr}">${esc(fr)}</span>` +
           (c.status ? `<span class="badge status">${esc(c.status)}</span>` : "") +
-          `<span class="meta">${esc(meta)}</span>`;
+          `<span class="provpath">${esc(c.path)}</span> · ${esc(prov)}</div>`;
+
+        row.innerHTML = html;
         refs.sourcesEl.appendChild(row);
       }
 
@@ -380,6 +429,10 @@
           }
           case "verdict": renderVerdict(refs, ev); break;
           case "done":
+            // Final clean render: prefer the server's canonical answer and
+            // drop the trailing corpus-path provenance list.
+            refs.rawMd = stripProvenance(ev.answer && ev.answer.trim() ? ev.answer : refs.rawMd);
+            refs.answerEl.innerHTML = mdToHtml(refs.rawMd);
             refs.answerEl.classList.remove("cursor");
             refs.disclaimerEl.hidden = false;
             scrollDown();
@@ -428,8 +481,8 @@
           for (const turn of convo.turns) {
             addUserMsg(turn.question);
             const refs = addAssistantMsg();
-            refs.rawMd = turn.answer;
-            refs.answerEl.innerHTML = mdToHtml(turn.answer);
+            refs.rawMd = stripProvenance(turn.answer);
+            refs.answerEl.innerHTML = mdToHtml(refs.rawMd);
             refs.answerEl.classList.remove("cursor");
             for (const c of turn.citations || []) renderCitation(refs, c);
             if (turn.verdict) renderVerdict(refs, turn.verdict);

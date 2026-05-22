@@ -104,6 +104,8 @@ async function handleAsk(
           lastVerified: ev.lastVerified,
           ageDays: ev.ageDays,
           freshness: ev.freshness,
+          sources: ev.sources,
+          articles: ev.articles,
         });
       } else if (ev.type === "verdict") {
         verdict = {

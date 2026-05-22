@@ -23,6 +23,8 @@ export interface StoredCitation {
   readonly lastVerified: string | null;
   readonly ageDays: number | null;
   readonly freshness: string;
+  readonly sources: ReadonlyArray<{ title: string; url: string; kind: string }>;
+  readonly articles: ReadonlyArray<string>;
 }
 
 export interface StoredVerdict {
