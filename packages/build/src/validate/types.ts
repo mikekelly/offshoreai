@@ -13,12 +13,7 @@ export type ViolationKind =
   | "broken_relative_link"
   | "broken_see_also"
   | "invalid_source_kind"
-  | "invalid_jurisdiction_slug"
-  // Derived-node (wormhole) rules — see CONVENTIONS.md / bundles/DESIGN.md.
-  | "derived_missing_sources"
-  | "derived_source_missing"
-  | "derived_second_order"
-  | "derived_unverified_stable";
+  | "invalid_jurisdiction_slug";
 
 export interface ValidationViolation {
   readonly path: string;

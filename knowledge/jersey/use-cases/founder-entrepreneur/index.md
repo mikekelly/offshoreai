@@ -40,12 +40,6 @@ providers; planning for exit or listing.
 
 ## Canonical questions
 
-> **Start here for the end-to-end listing question:**
-> [Jersey TopCo → UK Opco → LSE listing — compiled walkthrough](./wormhole-jersey-topco-uk-listing.md)
-> distils the whole structure (incorporation, share-for-share exchange,
-> zero-ten, substance, Pillar Two, capital flexibility, LSE rules,
-> distributions) into one citation-complete node.
-
 ### Vehicle and structure
 
 - [Why Jersey for a TopCo?](./why-jersey-topco.md)

@@ -9,38 +9,6 @@ import {
 import { baselineSystemPrompt } from "./baseline-system-prompt.js";
 import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
 import { buildTaxonomyBlock } from "./taxonomy-block.js";
-import {
-  makeWormholeDraftCanUseTool,
-  WORMHOLE_STAGING_SUBDIR,
-} from "./wormhole-draft-guard.js";
-
-// Appended to the system prompt only when wormhole drafting is enabled.
-// The drafting step is a side artifact — it must never change the answer
-// returned to the user (it is emitted via a Write tool_use, not prose).
-const WORMHOLE_DRAFTING_BLOCK = `
-
-# Wormhole drafting (enabled this session)
-
-After you finish a substantive answer, judge whether you produced a
-*generalised, reusable* insight worth compiling into a shortcut node.
-Draft a wormhole candidate ONLY when ALL of these hold:
-- answering required non-trivial traversal (several files, or a grep sweep);
-- the sources you used are stable doctrine (not frontier / high-decay);
-- the insight generalises to a task-class beyond this specific question.
-
-If so, use \`Write\` to create a candidate at
-\`${WORMHOLE_STAGING_SUBDIR}/<persona-or-section>/<task-slug>.md\` containing:
-- frontmatter: title, jurisdiction, category, \`status: draft\`,
-  \`last_verified\` today, 5–9 tags drawn from TAGS.md, \`derived: true\`, and
-  \`derived_from\` listing the PRIMARY files you actually used (repo-relative
-  paths); then
-- a tight, task-general distillation with the authoritative citations
-  resolved inline.
-
-Rules: cite only primary nodes, never another derived node. Do NOT draft for
-narrow single-fact questions. The draft is a side artifact — it must not
-change the answer you give the user. You may only write under
-\`${WORMHOLE_STAGING_SUBDIR}/\`; writes elsewhere are denied.`;
 
 export interface RunQueryOptions {
   /** The user's question. */
@@ -55,13 +23,6 @@ export interface RunQueryOptions {
   readonly evalMode?: boolean;
   /** Toggle: run the citation-verifier on the final answer. Default false. */
   readonly verify?: boolean;
-  /**
-   * Toggle: allow the agent to draft wormhole candidates. When true, the
-   * agent gains a sandboxed Write lane (only under wormholes/candidates/)
-   * and the drafting-trigger instructions. Off by default — the normal
-   * answering/eval path is read-only and unchanged. Phase C2.
-   */
-  readonly enableWormholeDrafting?: boolean;
 }
 
 export interface RunQueryResult {
@@ -96,17 +57,13 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
   const taxonomyBlock = opts.tagIndexPath
     ? await buildTaxonomyBlock(opts.repoRoot, opts.tagIndexPath)
     : "";
-  const drafting = opts.enableWormholeDrafting ?? false;
-  const fullSystemPrompt =
-    baselineSystemPrompt + taxonomyBlock + (drafting ? WORMHOLE_DRAFTING_BLOCK : "");
+  const fullSystemPrompt = baselineSystemPrompt + taxonomyBlock;
 
   const allowedTools = [
     ...corpusAllowedToolNames(),
     "Read",
     "Glob",
     "Grep",
-    "TodoWrite", // the task-list / program-counter for the #24 phased flow
-    ...(drafting ? ["Write"] : []),
   ];
 
   const prompt = opts.evalMode
@@ -124,29 +81,15 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     cacheReadInputTokens: 0,
   };
 
-  // Read-only path bypasses permissions. The drafting path instead routes
-  // every tool call through the sandbox guard (canUseTool), which allows
-  // reads and Writes under wormholes/candidates/ only — so we must not
-  // bypass permissions there.
-  const permissionOptions = drafting
-    ? { permissionMode: "default" as const, canUseTool: makeWormholeDraftCanUseTool(opts.repoRoot) }
-    : { permissionMode: "bypassPermissions" as const };
-
   for await (const msg of query({
     prompt,
     options: {
       mcpServers: { corpus: corpusServer },
       allowedTools,
-      // Phase-skills load JIT via the SDK Skill tool (AGENT-PRINCIPLES #24):
-      // descriptions stay resident, bodies load on demand. The detailed
-      // retrieval workflow lives in the corpus-retrieval skill, not the
-      // baseline prompt. settingSources is left omitted (= all sources), so
-      // .claude/skills/ is discovered exactly as the corpus state already was.
-      skills: ["corpus-retrieval"],
       systemPrompt: { type: "preset", preset: "claude_code", append: fullSystemPrompt },
       maxTurns: opts.maxTurns ?? 20,
+      permissionMode: "bypassPermissions",
       cwd: opts.repoRoot,
-      ...permissionOptions,
     },
   })) {
     if (msg.type === "assistant") {

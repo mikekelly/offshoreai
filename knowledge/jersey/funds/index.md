@@ -33,10 +33,6 @@ under the [Collective Investment Funds (Jersey) Law 1988][cif]. The
 overall framework is graduated by the **sophistication of the
 investor** and the **number of investors** in the fund.
 
-> **Choosing a fund vehicle across jurisdictions?**
-> [Emerging PE manager, first sub-$100m fund — Jersey JPF vs Cayman ELP vs BVI Approved Fund vs Guernsey PIF](./wormhole-fund-routes-emerging-manager.md)
-> distils the cross-border vehicle decision into one node.
-
 ## Files in this section
 
 ### Fund regimes (concept files)

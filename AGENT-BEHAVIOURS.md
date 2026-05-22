@@ -24,8 +24,6 @@ Each behaviour follows a consistent template: **what it does**, **what fails wit
 
 **What fails without it.** The agent first-turn-rediscovers the same corpus material every session. Token budget is burned re-reading files the system already knows are required. Latency stretches as the agent makes 5+ exploratory tool calls before useful work starts. Pinecone's data suggests rediscovery can eat ~85% of agent compute in chatbot-era RAG; bundles eliminate it for known persona/task combinations.
 
-A second, subtler failure mode showed up empirically once we had trajectory capture: **query-time retrieval is non-deterministic, and that non-determinism shows up as score variance.** On identical prompts the agent makes genuinely different retrieval choices run-to-run — greps with line content one run and filenames-only the next; reads a topic file's siblings one run and stops at the landing file the next — and those trajectory differences flip verdicts on ~1-in-7 questions between identical-prompt runs. Two remedies are complementary: a prescriptive retrieval workflow narrows the latitude on the open-ended tail (see the design frame below), and **bundles remove it entirely on the hot paths** — a bundle-covered `(persona, task)` question has no query-time retrieval left to vary. This is the strongest local justification for bundles, stronger than the original tool-call-count argument (which weakened once the agent's median dropped to ~3 calls without bundles).
-
 **How it broadly works.** A `SessionStart` hook invokes a `bundle-assembler` sub-agent (isolated context window) that routes by signals in the system context — persona declared in the tenant CLAUDE.md, task hinted by the customer-supplied initial prompt or by a routing slash-command. The sub-agent picks the matching bundle YAML, calls `corpus.getBundle`, and returns the assembled content as a tool result that the main agent reads at the top of the session.
 
 **Per-tenant toggle.** No — bundles are the primary retrieval contract. Tenants can extend bundles with their own house-view skills but cannot disable bundle pre-loading.
@@ -105,100 +103,6 @@ The verifier runs on a higher-precision model than the main agent (Opus for veri
 **Per-tenant toggle.** Yes — tenants can pin specific task skills always-resident (e.g. a firm that exclusively does trust work might pin the trust-officer skills).
 
 **Jersey v1.** PRD §5.2 (procedural memory as skills), §5.7 (progressive disclosure & context budget).
-
----
-
-## Design frame: knowledge compilation and the declarative retrieval contract
-
-*Added May 2026, prompted by an external signal worth recording: Pinecone "demoted vector search" and shipped **Nexus** (a knowledge-compilation engine) plus **KnowQL** (a declarative retrieval interface). The signal sharpens two of our design choices; it does not change the bet. This section is the frame that ties the bundle behaviour above to that industry direction and to what we measured in our own evals.*
-
-### The thesis, and why it isn't news to this corpus
-
-The compilation thesis is: in the agentic era the bottleneck is no longer *finding* documents but the agent **re-deriving meaning at query time** — fetching N chunks, spending tokens working out what they mean, looping. The fix is to **move reasoning upstream**: precompile source data into typed, cited, task-shaped artifacts, and have the agent query the *artifacts*, not the raw corpus.
-
-This is the bet [`KNOWLEDGE-BASE-PRINCIPLES.md`](./KNOWLEDGE-BASE-PRINCIPLES.md) and PRD §6.4 already made. Our corpus is one-concept-per-file, frontmatter-typed, citation-mandatory, and source-hierarchy ranked; `semanticSearch` is explicitly "plumbing, not the product." We are already a knowledge layer rather than a chunk-and-embed RAG store. So the external launch is **validation, not a pivot** — but it names two things precisely enough to act on.
-
-### Implication 1 — bundles *are* our context compiler
-
-A bundle (behaviour #1) is exactly a "precompiled, typed, cited, task-specific artifact": `(persona, task)` → required files + statute articles + freshness verdicts + citation pattern + conflict rules, in one envelope. `getBundle` is "query the artifact, not the corpus." The reframe is in the **justification**, not the mechanism:
-
-- **Originally:** an efficiency play (collapse ~6 exploratory calls to 1). That argument weakened once the agent's median dropped to ~3 calls without bundles.
-- **Now:** the compilation pattern *and* a **determinism** play. As recorded under behaviour #1, query-time retrieval is stochastic and that variance flips ~1-in-7 verdicts run-to-run. Bundles eliminate the retrieval step on hot paths, so there is nothing left to vary. Efficiency is the bonus; determinism and the compilation pattern are the load-bearing reasons.
-
-The corollary: the **two anti-variance tracks are complementary, not competing** — a prescriptive retrieval *workflow* for the open-ended tail (questions no bundle covers), and bundles for the `(persona, task)` hot paths. Build both; route to the bundle when one exists.
-
-### Implication 2 — the retrieval contract should become declarative
-
-KnowQL's six primitives are a useful gap audit for our tool surface — *intent, filter, provenance, output-shape, confidence, latency-budget*:
-
-| Primitive | Where we stand |
-|---|---|
-| intent | ✓ — the question, plus persona/task routing |
-| filter | ✓ — `findByTag` section/status, `inventory` filters |
-| provenance | ✓ — citation mandate + `sources[].kind` source hierarchy (a relative strength) |
-| output shape | ✗ — tools return TOON text / file lists; answers are free prose the grader inspects |
-| confidence | ~ — `status` (stub/draft/review/stable) and freshness (fresh/warn/stale) are coarse proxies; no per-claim score |
-| latency budget | ✗ — not exposed |
-
-The transferable idea is **not** the syntax — it's that a retrieval call should let the agent **declare output shape + confidence + provenance and get back a composed, cited, scored result**, instead of a file list it then reasons over. We already hold the raw material for confidence (`sources[].kind`, `status`, freshness); we simply don't surface it as a typed per-claim signal. This is a north star for the `corpus.*` result envelope and the bundle contract, not a v1 rewrite.
-
-### The restraint guardrail (Appendix C still governs)
-
-Adopt the **pattern, not the vendor.** Wrapping our local, in-process corpus behind a cross-process knowledge service is exactly the indirection Appendix C forbids — unless it demonstrably beats both the in-process typed tools *and* the sticky `claude-p` control on our own evals. Two costs the launch framing underplays and that our design already accounts for:
-
-- **Staleness.** Precompiled artifacts must rebuild when sources change — the problem our `last_verified` discipline and the freshness-checker (#3) already manage.
-- **Combinatorial limits.** You cannot precompile every persona × task × question; the long tail still needs query-time retrieval. The honest shape is **compile the hot paths, retrieve the tail** — which is already bundles + agentic tools. It's a hybrid, not a revolution.
-
-### What this changes (eval-driven, not faith-driven)
-
-1. **Promote bundles** from a week-7 efficiency line to a determinism-and-compilation bet in the build order — but gate them the usual way: add a **bundle-vs-agentic-retrieval eval cell** that tests the token / latency / *variance* deltas on our corpus against `claude-p` before believing any of the headline numbers.
-2. **Evolve the result contract** toward typed output-shape + per-claim confidence + provenance (Implication 2), starting with surfacing the confidence material we already compute.
-3. **Keep `claude-p` the arbiter.** If a compiled-artifact path doesn't beat agentic retrieval *and* the vanilla control on a KPI, it doesn't ship — same rule as every other behaviour here.
-
-### The evolution — wormholes: the agent compiles into the graph
-
-The compilation idea reaches its natural form when you stop treating
-compiled context as a sidecar and **fold it back into the knowledge
-graph.** A **wormhole** is a *derived* corpus node — a distilled, cited,
-task-general context the **agent itself authors** when it notices it has
-synthesised a generalised, reusable insight over stable sources. It is
-shallow-linked from the entry point (the link is the wormhole's mouth;
-link-depth = warmth) and served by the *same* `findByTag` / grep / tree /
-`getFile` as everything else. A curated bundle is a human-blessed
-wormhole; a wormhole is a machine-drafted bundle — they converge on one
-artifact: a node in the graph.
-
-This fold deletes the bespoke machinery a cache would need:
-
-- **No separate store.** The substrate is **git** — canonical upstream
-  repo + per-tenant forks (the fork boundary *is* the multi-tenant
-  firewall; promotion upstream is a PR). The agent reads one working tree;
-  the retrieval tools need zero changes — a wormhole is just a file.
-- **No key/intent classifier.** The "key" is the graph's own addressing
-  (tags + links + title). Retrieval-by-navigation replaces
-  retrieval-by-key, so the load-bearing classifier problem **dissolves** —
-  and it's served by the very retrieval we're already hardening.
-- **No separate compiler.** The agent *is* the compiler: a wormhole is its
-  ordinary answer capability's output, distilled inline (cheap — the
-  context is already hot) and persisted when worth keeping.
-
-Governance reuses what exists: the **citation-verifier (#4)** is the
-mandatory promotion gate (self-authoring yes, self-verifying-into-trust
-never); the **audit loop (#6)** nominates candidates *and* evicts cold /
-bypassed ones (publish-then-evict); the **freshness checker (#3)**
-invalidates a wormhole when a `derived_from` source moves. Capture is by
-scoped `Write` to a staging path (read-only → narrow read-write, sandboxed
-and audited), not a bespoke tool. The one inviolable rule, carried by the
-metaphor: **a wormhole opens only onto primary ground, never onto another
-wormhole** — no second-order derivation.
-
-We are **not building the automated path now.** Phase A (derived-node
-conventions + validator) and Phase B (one hand-authored wormhole + an eval
-that tests whether it beats agentic retrieval *and* `claude-p`) come
-first; the automated drafting/promotion/eviction is gated on Phase B
-proving the value. The forward design is in
-[`bundles/DESIGN.md`](./bundles/DESIGN.md); the build order is in
-[`WORMHOLES-IMPLEMENTATION-PLAN.md`](./WORMHOLES-IMPLEMENTATION-PLAN.md).
 
 ---
 

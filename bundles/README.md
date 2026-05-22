@@ -11,12 +11,6 @@ The agent enters the conversation already holding the right corpus
 context — no first-turn rediscovery, no re-summarising files it
 summarised yesterday.
 
-This README is *how to author a bundle today*. For *where the mechanism
-is going* — compiled artifacts, provenance-based invalidation, and a
-future read-through cache — see [`DESIGN.md`](./DESIGN.md). Every field
-that design adds is additive; bundles authored against this README stay
-valid.
-
 ---
 
 ## Layout
