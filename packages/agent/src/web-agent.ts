@@ -36,6 +36,9 @@ export type AgentEvent =
   // The citation-verifier subagent is about to run (surfaced to the user
   // as a visible "second opinion on citation quality" delegation).
   | { readonly type: "verify_start" }
+  // The SDK session id for this turn — the handle the caller resumes to
+  // continue the conversation. Emitted as soon as it's known.
+  | { readonly type: "session"; readonly sessionId: string }
   | {
       readonly type: "citation";
       readonly path: string;
@@ -55,8 +58,21 @@ export type AgentEvent =
       readonly notes: string;
       readonly reasons: ReadonlyArray<{ claim: string; issueKind: string; citedSource: string; detail: string }>;
     }
-  | { readonly type: "done"; readonly turns: number; readonly costUsd: number }
+  | {
+      readonly type: "done";
+      readonly turns: number;
+      readonly costUsd: number;
+      // Canonical final answer text + session id, so callers can persist
+      // the turn without replicating the narration-reset bookkeeping.
+      readonly answer: string;
+      readonly sessionId: string;
+    }
   | { readonly type: "error"; readonly message: string };
+
+export interface StreamOptions {
+  /** SDK session id to resume — continues an existing conversation. */
+  readonly resume?: string;
+}
 
 export interface CreateAgentOptions {
   readonly repoRoot: string;
@@ -67,7 +83,7 @@ export interface CreateAgentOptions {
 }
 
 export interface OffshoreaiAgent {
-  stream(question: string): AsyncGenerator<AgentEvent, void, unknown>;
+  stream(question: string, opts?: StreamOptions): AsyncGenerator<AgentEvent, void, unknown>;
 }
 
 const CORPUS_PATH_RE = /knowledge\/[A-Za-z0-9._/-]+\.md/g;
@@ -136,7 +152,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
   }
 
   return {
-    async *stream(question: string): AsyncGenerator<AgentEvent, void, unknown> {
+    async *stream(question: string, streamOpts?: StreamOptions): AsyncGenerator<AgentEvent, void, unknown> {
       const prompt = `Answer the following question against the offshoreai corpus. Follow the citation, freshness, source-hierarchy, and refusal rules in your system prompt.\n\nBegin your response directly with the substantive answer. Do NOT narrate your retrieval or thinking in the answer text — no "let me read…", "I have what I need", "let me pull the files" preambles. Any planning belongs in your thinking, not the answer.\n\nQuestion:\n${question}`;
       const toolCalls: Array<{ name: string; inputDigest: string }> = [];
       // `segment` is the contiguous answer text since the last reset; text
@@ -146,6 +162,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
       let resultText = "";
       let turns = 0;
       let costUsd = 0;
+      let sessionId = "";
 
       try {
         for await (const msg of query({
@@ -157,6 +174,9 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
             maxTurns: opts.maxTurns ?? 20,
             permissionMode: "bypassPermissions",
             cwd: opts.repoRoot,
+            // Resume an existing SDK session to continue a conversation with
+            // full prior context (messages + tool results) replayed by the SDK.
+            ...(streamOpts?.resume ? { resume: streamOpts.resume } : {}),
             includePartialMessages: true,
             // Let the model plan/retrieve in thinking blocks rather than
             // narrating ("let me read X…") in the user-facing answer text.
@@ -165,6 +185,14 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
             thinking: { type: "enabled", budgetTokens: 4000 },
           },
         })) {
+          // The session id rides on every message; surface it as soon as we
+          // see it so the caller can persist the conversation handle.
+          const sid = (msg as { session_id?: string }).session_id;
+          if (sid && sid !== sessionId) {
+            sessionId = sid;
+            yield { type: "session", sessionId };
+          }
+
           // Stream answer text from partial deltas (do NOT also emit from the
           // assistant message, or text would double). Thinking deltas stream
           // separately as `reasoning`.
@@ -244,7 +272,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
           };
         }
 
-        yield { type: "done", turns, costUsd };
+        yield { type: "done", turns, costUsd, answer, sessionId };
       } catch (err) {
         yield { type: "error", message: (err as Error)?.message ?? String(err) };
       }
