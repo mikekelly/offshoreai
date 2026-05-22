@@ -27,6 +27,15 @@ import { buildTaxonomyBlock } from "./taxonomy-block.js";
 export type AgentEvent =
   | { readonly type: "tool"; readonly name: string; readonly input: unknown }
   | { readonly type: "text"; readonly delta: string }
+  // Extended-thinking deltas — the agent's planning/retrieval reasoning,
+  // rendered as a separate (collapsible) trace, never as the answer.
+  | { readonly type: "reasoning"; readonly delta: string }
+  // The answer text streamed so far was interstitial narration emitted
+  // before a tool call; the UI should clear the answer pane and re-stream.
+  | { readonly type: "reset" }
+  // The citation-verifier subagent is about to run (surfaced to the user
+  // as a visible "second opinion on citation quality" delegation).
+  | { readonly type: "verify_start" }
   | {
       readonly type: "citation";
       readonly path: string;
@@ -128,9 +137,13 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
 
   return {
     async *stream(question: string): AsyncGenerator<AgentEvent, void, unknown> {
-      const prompt = `Answer the following question against the offshoreai corpus. Follow the citation, freshness, source-hierarchy, and refusal rules in your system prompt.\n\nQuestion:\n${question}`;
+      const prompt = `Answer the following question against the offshoreai corpus. Follow the citation, freshness, source-hierarchy, and refusal rules in your system prompt.\n\nBegin your response directly with the substantive answer. Do NOT narrate your retrieval or thinking in the answer text — no "let me read…", "I have what I need", "let me pull the files" preambles. Any planning belongs in your thinking, not the answer.\n\nQuestion:\n${question}`;
       const toolCalls: Array<{ name: string; inputDigest: string }> = [];
-      let answer = "";
+      // `segment` is the contiguous answer text since the last reset; text
+      // emitted before a tool call is narration and gets reset away.
+      // `resultText` is the SDK's canonical final answer (preferred).
+      let segment = "";
+      let resultText = "";
       let turns = 0;
       let costUsd = 0;
 
@@ -145,22 +158,42 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
             permissionMode: "bypassPermissions",
             cwd: opts.repoRoot,
             includePartialMessages: true,
+            // Let the model plan/retrieve in thinking blocks rather than
+            // narrating ("let me read X…") in the user-facing answer text.
+            // Explicit `enabled` (vs `adaptive`) so thinking engages on any
+            // model, not only Opus 4.6+ where adaptive is supported.
+            thinking: { type: "enabled", budgetTokens: 4000 },
           },
         })) {
           // Stream answer text from partial deltas (do NOT also emit from the
-          // assistant message, or text would double).
+          // assistant message, or text would double). Thinking deltas stream
+          // separately as `reasoning`.
           if (msg.type === "stream_event") {
-            const ev = (msg as { event?: { type?: string; delta?: { type?: string; text?: string } } }).event;
-            if (ev?.type === "content_block_delta" && ev.delta?.type === "text_delta" && ev.delta.text) {
-              answer += ev.delta.text;
-              yield { type: "text", delta: ev.delta.text };
+            const ev = (
+              msg as { event?: { type?: string; delta?: { type?: string; text?: string; thinking?: string } } }
+            ).event;
+            if (ev?.type === "content_block_delta") {
+              if (ev.delta?.type === "text_delta" && ev.delta.text) {
+                segment += ev.delta.text;
+                yield { type: "text", delta: ev.delta.text };
+              } else if (ev.delta?.type === "thinking_delta" && ev.delta.thinking) {
+                yield { type: "reasoning", delta: ev.delta.thinking };
+              }
             }
           } else if (msg.type === "assistant") {
             const content =
               (msg as { message?: { content?: Array<{ type: string; name?: string; input?: unknown }> } }).message
                 ?.content ?? [];
+            let sawTool = false;
             for (const block of content) {
               if (block.type === "tool_use" && block.name) {
+                // Text streamed before this tool call was interstitial
+                // narration, not the answer — tell the UI to clear it.
+                if (!sawTool && segment.trim().length > 0) {
+                  segment = "";
+                  yield { type: "reset" };
+                }
+                sawTool = true;
                 toolCalls.push({ name: block.name, inputDigest: JSON.stringify(block.input ?? {}).slice(0, 200) });
                 yield { type: "tool", name: block.name, input: block.input ?? {} };
               }
@@ -169,9 +202,13 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
             const r = msg as { num_turns?: number; total_cost_usd?: number; result?: string };
             turns = r.num_turns ?? turns;
             costUsd = r.total_cost_usd ?? costUsd;
-            if (r.result && !answer) answer = r.result;
+            if (r.result) resultText = r.result;
           }
         }
+
+        // Canonical answer: the SDK's final result text when present, else
+        // the last streamed segment (post-narration-reset).
+        const answer = resultText.trim().length > 0 ? resultText : segment;
 
         // Citations: every corpus path the answer cites, badged for freshness.
         const seen = new Set<string>();
@@ -182,8 +219,10 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
           yield citationEvent(path);
         }
 
-        // Verifier verdict — the structural gate, surfaced to the user.
+        // Verifier verdict — the citation-verifier subagent, surfaced to the
+        // user as a visible "second opinion on citation quality" delegation.
         if (verify && answer.trim().length > 0) {
+          yield { type: "verify_start" };
           const v = await runCitationVerifier({
             repoRoot: opts.repoRoot,
             candidateAnswer: answer,
