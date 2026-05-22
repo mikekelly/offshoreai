@@ -300,6 +300,7 @@
           rawMd: "",
           nTools: 0,
           nSources: 0,
+          pendingReset: false,
         };
       }
 
@@ -379,6 +380,17 @@
       function onEvent(refs, ev) {
         switch (ev.type) {
           case "text":
+            // If a revise is pending, replace the prior answer only now that
+            // the corrected one is actually arriving — so a failed retry never
+            // leaves a blank pane.
+            if (refs.pendingReset) {
+              refs.rawMd = "";
+              refs.answerEl.innerHTML = "";
+              refs.sourcesEl.innerHTML = "";
+              refs.sourcesWrap.hidden = true;
+              refs.nSources = 0;
+              refs.pendingReset = false;
+            }
             refs.rawMd += ev.delta;
             refs.answerEl.innerHTML = mdToHtml(refs.rawMd);
             refs.answerEl.classList.add("cursor");
@@ -407,14 +419,11 @@
           case "citation": renderCitation(refs, ev); break;
           case "verify_start": showVerifyRunning(refs); break;
           case "revise": {
-            // Verifier rejected the draft — clear it and the sources, then
-            // show what's being fixed while the corrected answer regenerates.
-            refs.rawMd = "";
-            refs.answerEl.innerHTML = "";
+            // Verifier rejected the draft. Show what's being fixed, but DON'T
+            // tear down the current answer yet — defer the replacement until
+            // the corrected answer actually starts streaming (see "text").
+            refs.pendingReset = true;
             refs.answerEl.classList.add("cursor");
-            refs.sourcesEl.innerHTML = "";
-            refs.sourcesWrap.hidden = true;
-            refs.nSources = 0;
             let html =
               `<div class="verdict warn"><div class="headline"><span class="pulse"></span>` +
               `Verifier flagged ${ev.rejectCount} claim(s) — revising… (attempt ${ev.attempt})</div>`;
@@ -427,6 +436,17 @@
             scrollDown();
             break;
           }
+          case "verify_error":
+            // Verification unavailable (verifier threw or returned unparseable
+            // output). Keep the answer; show a soft caution, never a dead-end.
+            refs.pendingReset = false;
+            refs.answerEl.classList.remove("cursor");
+            refs.verdictWrap.hidden = false;
+            refs.verdictWrap.innerHTML =
+              `<div class="verdict warn"><div class="headline">⚠ Citation check could not be completed</div>` +
+              `<div class="stat">The citation-verifier didn't return a usable result${ev.message ? " (" + esc(ev.message) + ")" : ""}.</div>` +
+              `<div class="stat">The answer is shown as drafted — treat its citations with extra caution and verify the primary sources before relying on them.</div></div>`;
+            break;
           case "verdict": renderVerdict(refs, ev); break;
           case "done":
             // Final clean render: prefer the server's canonical answer and

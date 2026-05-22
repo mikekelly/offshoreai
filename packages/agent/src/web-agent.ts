@@ -22,7 +22,7 @@ import {
   type CorpusContext,
 } from "@offshoreai/tools-corpus";
 import { baselineSystemPrompt } from "./baseline-system-prompt.js";
-import { runCitationVerifier } from "./citation-verifier.js";
+import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
 import { buildTaxonomyBlock } from "./taxonomy-block.js";
 
 export type AgentEvent =
@@ -48,6 +48,10 @@ export type AgentEvent =
       readonly rejectCount: number;
       readonly reasons: ReadonlyArray<{ claim: string; issueKind: string; citedSource: string; detail: string }>;
     }
+  // The verifier could not be evaluated (it threw, or returned unparseable
+  // output). This is "verification unavailable", NOT a content rejection —
+  // the answer stands; the UI shows a soft caution and does not regenerate.
+  | { readonly type: "verify_error"; readonly message: string }
   | {
       readonly type: "citation";
       readonly path: string;
@@ -327,11 +331,31 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
           // Verifier — the citation-verifier subagent, surfaced as a visible
           // "second opinion on citation quality" delegation.
           yield { type: "verify_start" };
-          const v = await runCitationVerifier({
-            repoRoot: opts.repoRoot,
-            candidateAnswer: answer,
-            toolCallLog: toolCalls,
-          });
+          let v: VerifierVerdict;
+          try {
+            v = await runCitationVerifier({
+              repoRoot: opts.repoRoot,
+              candidateAnswer: answer,
+              toolCallLog: toolCalls,
+            });
+          } catch (e) {
+            // Verifier infrastructure failure (SDK / network / usage limit).
+            // NEVER gate on this — the agent's answer is fine; flag verification
+            // as unavailable and stop. No destructive regeneration, no dead-end.
+            yield { type: "verify_error", message: (e as Error)?.message ?? String(e) };
+            break;
+          }
+
+          // A parse/soft failure means the verifier could not be evaluated — it
+          // is "verification unavailable", NOT a substantive rejection, and must
+          // not trigger a (destructive) regeneration. (rejectFromParseFailure in
+          // citation-verifier.ts emits exactly this synthetic reason.)
+          const parseFailed = v.reasons.length === 1 && v.reasons[0]?.claim === "(verifier parse failure)";
+          if (parseFailed) {
+            yield { type: "verify_error", message: v.notes || "verifier output was not parseable" };
+            break;
+          }
+
           const reasons = v.reasons.map((r) => ({
             claim: r.claim,
             issueKind: r.issueKind,
