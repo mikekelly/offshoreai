@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "corpus": {
+      "command": "npx",
+      "args": ["-y", "tsx", "packages/tools-corpus/src/mcp-stdio.ts"]
+    }
+  }
+}
