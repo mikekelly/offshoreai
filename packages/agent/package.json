@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "exports": {
+    "./web-agent": "./src/web-agent.ts"
+  },
   "scripts": {
     "auth-test": "tsx ./src/auth-test.ts",
     "query": "tsx ./src/query-cli.ts",
@@ -11,6 +14,7 @@
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "*",
+    "@offshoreai/build": "workspace:*",
     "@offshoreai/tools-corpus": "workspace:*",
     "yaml": "^2.6.1"
   },
