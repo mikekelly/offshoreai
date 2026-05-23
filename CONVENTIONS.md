@@ -136,6 +136,103 @@ see_also:
   `(see the [Article 51 directions jurisdiction][a51], the Court's
   "friendly" supervisory route)`.
 
+## Inclusion links — the third navigation axis
+
+The corpus has three navigation axes, and links serve two of them. The
+distinction is mechanical and matters for tooling:
+
+| Axis | What it expresses | Source of truth |
+|---|---|---|
+| **Folders** | *Where to edit* — physical layout for editorial work | The directory tree under `knowledge/` |
+| **Tags** | *What this is about* — cross-cutting topical index | Frontmatter `tags`, governed by [TAGS.md](./TAGS.md) |
+| **Inclusion links** | *What context this lives inside* — structural parent → child | Markdown links *on their own line* |
+
+**The rule.** A markdown link on its own line declares a *structural
+parent → child relationship*: the file containing the link is the parent
+of the linked file. A markdown link embedded inside a sentence is a
+*cross-reference* — useful for backlinks and navigation, but not
+structural.
+
+**Worked example.** In [`knowledge/jersey/index.md`](./knowledge/jersey/index.md),
+the "Sections" list contains entries like:
+
+```markdown
+### [Trusts](./trusts/index.md)
+The [Trusts (Jersey) Law 1984](./trusts/trusts-law-1984.md): the Jersey
+trust as a wealth-structuring vehicle…
+```
+
+The heading-link `[Trusts](./trusts/index.md)` is on its own line (the
+heading is the line) and declares: *the Jersey index is the structural
+parent of the trusts section index*. The paragraph-link
+`[Trusts (Jersey) Law 1984](./trusts/trusts-law-1984.md)` is inside
+prose and is a cross-reference — backlink-discoverable, but it does
+*not* make the Trusts Law a child of the Jersey index.
+
+**Polyhierarchy is allowed and expected.** The same file can be the
+child of multiple parents: `firewall.md` is a child of
+`trusts/index.md` (via inclusion link in the trusts section list) *and*
+of `use-cases/family-office-adviser/index.md` (via inclusion link in
+the family-office relevant-concepts list). No duplication of content —
+just two parents in the graph.
+
+**What inclusion links unlock mechanically.** Given the convention,
+tooling (and the agent) can compute, for any file:
+
+- **Structural parents** — files that include it via a bare-line link.
+- **Structural children** — files it includes via bare-line links.
+- **Siblings** — structural children of any of its structural parents.
+- **Ancestors** — transitive parents up the graph.
+
+This is the navigation surface
+[`corpus.tree`](./packages/tools-corpus/src/handlers/) walks, and the
+`depth` / `parentContext` parameters on `getFile` honour. See
+[PRD §3 of corpus-stewardship](./PRD-corpus-stewardship-v1.md) for the
+tooling design.
+
+### Exceptions — bare-line links that are *not* structural
+
+Three legitimate uses of "link on its own line" that are **not**
+inclusion links and should not be treated as parent → child:
+
+1. **Bibliography / sources lists.** A `## Sources` section that lists
+   bare-line links to primary sources is a citation index, not a
+   structural parent claim. Inclusion-link tooling ignores files whose
+   path is *external* (http/https URLs) and lists under headings named
+   `Sources`, `Bibliography`, `References`, `Further reading`.
+2. **Table-of-contents / "See also" lists at the end of a concept
+   file.** These are conventionally cross-references, not declarations
+   of parenthood — the linked files are siblings or peers, not
+   children. Tooling treats lists under headings matching `See also`,
+   `Related`, `Cross-references`, `Cross-refs`, or `Meta` as
+   cross-references, not inclusion links.
+3. **Reference-style link definitions at the end of a file.**
+   `[itl]: https://www.jerseylaw.je/laws/current/l_29_1961` is a
+   markdown link *definition*, not an active link, and never an
+   inclusion link.
+
+When in doubt: if you would say *"this file lives inside that file's
+context"* to a colleague, it's an inclusion link. If you'd say *"this
+file references that file"*, it's a cross-reference.
+
+### Index files are the primary inclusion-link source
+
+Every `index.md` is, by construction, the parent of the files it
+introduces. Concept files rarely declare structural children themselves
+— they cross-reference. So in practice:
+
+- **Section `index.md`** lists its concept files as inclusion links.
+- **Persona / use-case `index.md`** lists the concept files relevant to
+  that persona as inclusion links (polyhierarchy: the same concept is
+  also a child of its section index).
+- **Cross-jurisdictional surfaces** like
+  [`CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md)
+  use inclusion links to express *"this map is the parent context for
+  these comparative files"*.
+- **Concept files** mostly use *inline* cross-references and avoid
+  bare-line links in the body, reserving them for an optional "See
+  also" tail.
+
 ## Tags
 
 - Use **only tags listed in [TAGS.md](./TAGS.md)**. Don't invent. If a
