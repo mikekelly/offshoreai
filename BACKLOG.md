@@ -88,9 +88,85 @@ soft-fail handling of verifier infrastructure errors — see
 
 ---
 
-## iwe-aligned conventions and tool affordances
+## Showcase A/B — measuring the inclusion-link affordances
 
-**Status:** pending design exploration and approval. Design draft in
+**Status:** pending — code, prompt, and treatment arm are shipped;
+eval run blocked on Anthropic API credentials in this environment.
+
+**What shipped.** PRD-corpus-stewardship v1 Part A is committed in
+full (commits `34be6da`, `e70e9e5`, `6a5bbfc`, `b7ed599`):
+
+- `getFile` gained opt-in `depth` and `parentContext` params backed by
+  a precomputed inclusion-link graph.
+- New `corpus.tree` handler walks the inclusion-link graph from a
+  root, returning per-node summaries.
+- Baseline system prompt now lists 5 corpus tools and rewrites the
+  "Read on-topic siblings" nudge to recommend the three inclusion-link
+  mechanisms (`getFile depth:1`, `getFile parentContext:1`, `tree`)
+  over the older "Glob + read each sibling" pattern, with Glob as a
+  fallback for sparse-graph areas.
+
+**What needs validating.** Whether the treatment arm actually moves
+the three PARTIAL cases in
+[`evals/baselines/2026-05-19-offshoreai-agent-full/summary.yaml`](./evals/baselines/2026-05-19-offshoreai-agent-full/summary.yaml).
+
+**Empirical smoke-test against the live MCP** (run on 2026-05-23 with
+the corpus's `mcp__corpus__tree` and `mcp__corpus__getFile` deferred
+tools) — *not a substitute for the full eval, but a check that the
+affordances expose the right files in principle*:
+
+| Partial case | Baseline failure | Smoke-test result | Prediction |
+|---|---|---|---|
+| `show-trusts-comparison` | "never reading firewall.md", VISTA "barely sketched", classic discretionary trust never discussed | `tree` on `CROSS-JURISDICTIONAL-MAP.md` (depth 2, 49 nodes) exposes `firewall.md`, `cayman/star-trusts.md`, `bvi/vista-trusts.md`, `guernsey/trust-law-differences-from-jersey.md` at depth 1 with summaries. `getFile parentContext:1` from `firewall.md` returns CROSS-JURISDICTIONAL-MAP.md with the full trust-regime row | **High confidence the partial moves to pass** — the files the baseline missed are 1 tool-call away |
+| `show-aifmd-nppr` | Missed AIFMD Article 42 + Article 21 reporting + "Jersey AIFM Regulations 2012" naming | `aifmd-nppr.md` is already a direct child of `funds/index.md` — discovery wasn't the gap. The gap is content density inside the file | **Low confidence** — this is a within-file content gap, not a sibling-discovery one |
+| `show-friday-passing` | Asserted corpus silence when ≥3 unrelated files mention Friday-passing incidentally | Inclusion-link graph won't surface incidental mentions in files whose primary topic is something else (leases, force-majeure) | **Unlikely to move** — vocabulary/grep failure, not sibling-context. Useful as non-regression check |
+
+**Run plan when credentials are available** — phased, ~$1.20 then ~$5.40:
+
+```bash
+# Phase 1 — 3 partials only (~$1.20)
+pnpm --filter @offshoreai/agent eval -- \
+  --harness offshoreai-agent \
+  --eval evals/showcase.yaml \
+  --ids show-trusts-comparison,show-aifmd-nppr,show-friday-passing \
+  --output evals/baselines/2026-05-23-iwe-treatment-partials \
+  --concurrency 3
+
+# Phase 2 — full 14 if Phase 1 is positive (~$5.40)
+pnpm --filter @offshoreai/agent eval -- \
+  --harness offshoreai-agent \
+  --eval evals/showcase.yaml \
+  --output evals/baselines/2026-05-23-iwe-treatment-full \
+  --concurrency 4
+```
+
+**Decision rule.** If `show-trusts-comparison` moves PARTIAL → PASS
+in Phase 1 with no regression on the other two, the affordance is
+validated; run Phase 2 to confirm no regression on the 11 passes and
+promote the prompt change to permanent. If `show-trusts-comparison`
+*doesn't* move, investigate why — either the prompt nudge wasn't
+strong enough or the agent didn't pick the right entry point — and
+iterate before re-running.
+
+**Cost estimate basis.** `2026-05-19-offshoreai-agent-full/summary.yaml`
+reports `totalCostUsd: 5.4384` for 14 questions = ~$0.39/q.
+
+**Related shipped work.**
+[`packages/agent/src/baseline-system-prompt.ts`](./packages/agent/src/baseline-system-prompt.ts),
+[`packages/tools-corpus/src/handlers/getFile.ts`](./packages/tools-corpus/src/handlers/getFile.ts),
+[`packages/tools-corpus/src/handlers/tree.ts`](./packages/tools-corpus/src/handlers/tree.ts),
+[`packages/tools-corpus/src/inclusion-links.ts`](./packages/tools-corpus/src/inclusion-links.ts).
+
+---
+
+## iwe-aligned conventions and tool affordances (historical — superseded above)
+
+**Status:** SHIPPED. The original deferred entry is preserved below
+for the design rationale; the validation work moved up to the
+*Showcase A/B* entry above. Move 1 (convention docs), Move 2
+(depth/parentContext/tree + system-prompt integration), and Move 3
+(iwe CLI scaffolding) all landed in commits `c411ddc` → `b7ed599`.
+Design rationale in
 [`PRD-corpus-stewardship-v1.md`](./PRD-corpus-stewardship-v1.md) Part A.
 
 **Concept.** Borrow three things from [`iwe`](https://iwe.md) — a Rust
