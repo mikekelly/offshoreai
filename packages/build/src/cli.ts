@@ -210,6 +210,9 @@ Verbs:
   tree                  Compile packages/build/dist/hier-tree.json
   tags                  Compile packages/build/dist/tag-index.json (+ co-occurrence matrix)
   all                   Run validate (no-fail) + tree + tags in sequence
+  enrich-pinpoints      Add per-article deep-link 'pinpoints' to corpus
+                        frontmatter from packages/build/data/citation-pinpoints.json.
+                        Requires --dry-run or --apply.
 `);
   process.exit(code);
 }

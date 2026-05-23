@@ -2,8 +2,10 @@
 
 First-run developer setup for the offshoreai corpus, build pipeline, and
 current TypeScript agent runtime. The implementation is an MVP, not the full
-PRD target: the workspace currently has build/validation, schemas, v1 corpus
-tools, an agent query runner, and eval harnesses; memory, primary-source
+PRD target: the workspace currently has build/validation (including the
+`enrich-pinpoints` deep-link enrichment), schemas, v1 corpus tools, an agent
+query runner, eval harnesses, and a streaming web UI (see
+[`packages/web/README.md`](./packages/web/README.md)); memory, primary-source
 fetching, bundles, and tenant deployment are still future phases.
 
 For corpus-only work (editorial, content writing) you do **not** need any

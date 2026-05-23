@@ -66,6 +66,19 @@ The verifier runs on a higher-precision model than the main agent (Opus for veri
 
 **Per-tenant toggle.** No — citation discipline is non-negotiable. Tenants cannot disable. They can configure the retry budget (default 1) and the refusal template's wording.
 
+**Drafts-as-messages, as shipped in the web UI.** The streaming web UI in
+[`packages/web`](./packages/web/) takes the gate one step further:
+each verifier attempt is rendered as its own visible draft message in the
+conversation thread, not a hidden retry. The first (rejected) draft stays
+in the transcript marked `Rejected ✕ — superseded by next draft` with the
+verifier's reasons; the corrected draft appears below it marked `Verified
+✓ — N/M claims cited`; on second failure the surviving draft carries
+`Verification unavailable ⚠` rather than a dead-end error. The compliance
+discipline is itself the credibility signal — the user *sees* the gate work.
+Infrastructure failures (verifier throws or returns unparseable output) are
+treated as "verification unavailable", never as content rejections, so a
+flaky verifier can't tear down a good answer.
+
 **Jersey v1.** PRD §8 (sub-agent definitions), §6.3 (the retrieval contract), §12 (Opus 4.7 for the verifier model).
 
 ### 5. Tool deny-list and sandbox

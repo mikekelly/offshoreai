@@ -77,6 +77,12 @@ offshoreai/
 ├── TAGS.md
 ├── PRD-baseline-agent-v1.md
 ├── DEMO-CHEAT-SHEET-KPMG-PE-PARTNER.md
+├── packages/
+│   ├── build/                 ← corpus validator + tag-index + tree compile + pinpoint enrichment
+│   ├── schemas/               ← shared zod schemas
+│   ├── tools-corpus/          ← in-process corpus tools (getFile/getArticle/findByTag/freshnessCheck)
+│   ├── agent/                 ← Claude Agent SDK runtime + citation-verifier + streaming web-agent factory
+│   └── web/                   ← bespoke streaming web UI (chat transcript, visible verifier drafts, primary-source pinpoint chips)
 ├── evals/                     ← coverage + showcase eval YAMLs and runner docs
 └── knowledge/                 ← the Obsidian vault / knowledge base
     ├── CROSS-JURISDICTIONAL-MAP.md

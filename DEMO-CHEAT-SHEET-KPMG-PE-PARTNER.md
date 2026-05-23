@@ -71,6 +71,20 @@ in the demo:
 - **Showcase eval at 29/29 PASS** (was 26/26) — three
   frontier questions added (UK carry, continuation
   funds, AIFMD II) all PASS.
+- **Bespoke streaming web UI** at
+  [`packages/web`](./packages/web/) — the recommended
+  demo surface (not raw CLI). Renders each cited corpus
+  file as a linked primary source (statute / regulator
+  guidance / gov.je) with a freshness badge, plus
+  per-article pinpoint chips that deep-link into
+  jerseylaw.je's consolidated text. Every verifier
+  attempt is its own visible draft in the transcript
+  (Verified ✓ / Rejected ✕ / Verification unavailable ⚠)
+  — the compliance discipline is itself the
+  credibility signal. Threaded conversations support
+  follow-ups (resume the SDK session for context). Run
+  with `pnpm --filter @offshoreai/web start` →
+  http://localhost:3104.
 
 ## What to lead with — questions the corpus answers strongly
 

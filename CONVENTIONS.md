@@ -73,6 +73,10 @@ sources:
     url: <Primary URL>
     accessed: YYYY-MM-DD
     kind: statute | regulation | guidance | judgment | gov-page | secondary
+pinpoints:                                   # auto-generated; do not hand-author
+  - article: "9"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641894
+    source: trusts-jersey-law-1984
 see_also:
   - <relative path to related file>
 ---
@@ -88,6 +92,16 @@ see_also:
 - `articles_covered` (statute-wiki only) records the exact Articles the
   file is the canonical home for, so an agent looking for "Article X" can
   find the file definitively.
+- `pinpoints` is **derived metadata**, not hand-authored — populated by the
+  corpus enrichment script (`pnpm --filter @offshoreai/build cli
+  enrich-pinpoints --apply`) from
+  [`packages/build/data/citation-pinpoints.json`](./packages/build/data/citation-pinpoints.json).
+  Each entry maps an article in `articles_covered` to a deep-link URL on
+  the primary source (e.g. the consolidated statute's per-article anchor
+  on jerseylaw.je), so a downstream UI can offer per-article links rather
+  than linking to the whole document. Re-run on demand; the script is
+  idempotent and won't touch files whose pinpoints already match. Editors
+  shouldn't add or edit this block by hand.
 
 `index.md` files use a lighter frontmatter — they need `title`,
 `jurisdiction`, `category`, `status`, `last_verified`, optional `tags` and

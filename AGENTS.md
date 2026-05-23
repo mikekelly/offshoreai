@@ -76,7 +76,7 @@ If you're not an implementation engineer, you can stop earlier in the reading or
 
 | You are… | Stop after | What to add |
 |---|---|---|
-| **Implementation engineer (TS, agent build-out)** | Part 3 in full | Plus a per-tool spec pass through `PRD §7.1–7.5` |
+| **Implementation engineer (TS, agent build-out)** | Part 3 in full | Plus a per-tool spec pass through `PRD §7.1–7.5`, and [`packages/web/README.md`](./packages/web/README.md) for the streaming web UI's architecture and security model |
 | **Content writer (editorial, jurisdiction expansion)** | Part 1 items 1-5 in full + skim `KNOWLEDGE-BASE-PRINCIPLES.md` whenever a structural question arises | Plus the relevant `knowledge/<jurisdiction>/changelog.md` for context on recent work; for Jersey, also read [`knowledge/jersey/COVERAGE-AUDIT.md`](./knowledge/jersey/COVERAGE-AUDIT.md) and [`knowledge/jersey/history/finance/gaps.md`](./knowledge/jersey/history/finance/gaps.md) before adding new content |
 | **Tenant onboarding / white-label deployment** | Part 1 (skim) + `PRD §9` (tenant model) + `AGENT-PRINCIPLES.md` (the restraint principles) | Plus the future `SETUP.md` when written |
 | **Code reviewer / second opinion** | `AGENT-PRINCIPLES.md` + `PRD Appendix C` + the PR's diff | The principles tell you what's load-bearing and what's negotiable |
