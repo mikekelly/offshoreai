@@ -117,6 +117,86 @@ the committed baseline and fails only on deterministic regressions.
 
 ---
 
+## Optional: iwe — corpus refactor and graph tooling
+
+[iwe](https://iwe.md) is an external Rust CLI + LSP + MCP layer over
+markdown corpora. We use it as a **developer-side editing tool** —
+never on the agent's runtime tool surface (see
+[`PRD-corpus-stewardship-v1.md`](./PRD-corpus-stewardship-v1.md) §3.4).
+It is optional; you don't need it to edit content or run the
+build/test pipeline. Install it when you need any of:
+
+- **Link-safe file rename across the corpus** —
+  `iwe rename <old-key> <new-key>`. Updates every cross-reference
+  atomically. Today, without iwe, this is a grep-and-pray operation
+  over thousands of links.
+- **Section extract / inline refactor** — `iwe extract <doc-key>
+  --section "Title"` pulls a heading-bounded section out into its own
+  one-concept file (the corpus's [`CONVENTIONS.md`](./CONVENTIONS.md)
+  rule). `iwe inline <doc-key> --reference <ref>` reverses it.
+- **Graph statistics** — `iwe stats` reports orphans (files with no
+  structural parent), roots, and graph density. Feeds the
+  [`COVERAGE-AUDIT.md`](./knowledge/jersey/COVERAGE-AUDIT.md)
+  discipline.
+- **Tree visualisation** — `iwe tree -d 2 -k jersey-trusts-index`
+  walks the inclusion-link graph from a root. Same shape as our
+  in-process `corpus.tree` MCP handler but as a developer-terminal
+  command.
+- **DOT graph export** — `iwe export dot | dot -Tpng -o graph.png` to
+  see the corpus structure visually.
+- **LSP editor integration** — VS Code, Neovim, Zed, Helix all
+  support iwe's language server: autocomplete on links, find-references,
+  rename refactoring, hover preview.
+
+### Install
+
+```bash
+cargo install iwe
+# or: download a release binary from https://github.com/iwe-org/iwe/releases
+```
+
+The repo ships [`.iwe/config.toml`](./.iwe/config.toml), so iwe will
+discover the corpus at `knowledge/**/*.md` automatically when run from
+the repo root. Verify with:
+
+```bash
+iwe stats
+iwe tree -d 1   # walk the top-level inclusion-link tree
+```
+
+### What we deliberately don't enable
+
+The [`.iwe/config.toml`](./.iwe/config.toml) does **not** configure
+iwe's LLM-action templates (`expand`, `rewrite`, `keywords`, etc.).
+iwe can pipe text through Claude for AI-driven edits, but our
+editorial discipline runs through PRs with manual review — see
+[`CONVENTIONS.md`](./CONVENTIONS.md). If you want LLM actions for your
+personal workflow, extend `.iwe/config.toml` locally and don't commit
+it. The inclusion-link convention from `CONVENTIONS.md` is also the
+*data* layer iwe operates on; understanding that section first will
+save you confusion when iwe refuses to call a file a child of another.
+
+### iwe vs `corpus.*` MCP tools
+
+The agent talks to the corpus through the in-process
+`@offshoreai/tools-corpus` MCP (`getFile`, `getArticle`, `findByTag`,
+`freshnessCheck`, `tree`). iwe and this MCP overlap on retrieval but
+have complementary strengths:
+
+| Capability | `corpus.*` MCP | iwe CLI |
+|---|---|---|
+| Read file with `last_verified` / `status` envelope | ✓ | ✗ |
+| Dispatch (statute, article) → canonical file | ✓ | ✗ |
+| Closed-TAGS taxonomy index | ✓ | ✗ |
+| Inclusion-link traversal | ✓ | ✓ |
+| Link-safe rename, section extract/inline | ✗ | ✓ |
+| Graph statistics, DOT export | ✗ | ✓ |
+| LSP editor integration | ✗ | ✓ |
+
+Use the MCP from inside an agent session; use iwe from your terminal.
+
+---
+
 ## What this document is *not*
 
 - **A runbook for production deployment** — covered by a future

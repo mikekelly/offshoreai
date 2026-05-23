@@ -1,0 +1,40 @@
+# iwe configuration for the offshoreai corpus.
+#
+# iwe (https://iwe.md) is an external Rust CLI + LSP + MCP layer over
+# markdown corpora. We use it as a *developer-side* editing tool only —
+# it is not exposed to the agent's runtime tool surface (see
+# PRD-corpus-stewardship-v1.md §3.4). Concretely, this config supports:
+#
+#   iwe rename <old-key> <new-key>     # link-safe file rename
+#   iwe extract <doc-key> --section X  # pull a section into its own file
+#   iwe inline <doc-key> --reference R # inline a child file back
+#   iwe stats                          # graph statistics (orphans, roots)
+#   iwe export dot                     # graphviz export
+#   iwe tree -d 2                      # walk the inclusion-link tree
+#
+# Install: `cargo install iwe` (see SETUP.md). The .iwe directory is
+# committed so editor LSP integrations (VS Code, Neovim, Zed, Helix)
+# work out of the box for any contributor who has iwe installed
+# locally.
+#
+# We deliberately do not configure iwe's LLM-action templates here. iwe
+# can pipe text through `claude -p` for AI-driven edits (the
+# seventeen-centuries example uses this for "Expand", "Rewrite",
+# "Keywords" actions), but our editorial discipline runs through PRs
+# with manual review — see CONVENTIONS.md "Updating". If a contributor
+# wants the LLM actions for their personal workflow, they can extend
+# this file locally (and not commit it).
+
+version = 3
+
+[markdown]
+refs_extension = ".md"
+date_format = "%Y-%m-%d"
+
+[library]
+# Path to the markdown root, relative to this .iwe directory's parent
+# (i.e. the repo root). iwe will scan knowledge/**/*.md and build the
+# inclusion-link graph per CONVENTIONS.md "Inclusion links — the third
+# navigation axis".
+path = "knowledge"
+date_format = "%Y-%m-%d"
