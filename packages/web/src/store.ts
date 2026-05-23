@@ -44,6 +44,8 @@ export interface Draft {
   readonly verdict: StoredVerdict | null;
   readonly verifyError: string | null;
   readonly status: DraftStatus;
+  /** True if this draft was superseded by a subsequent corrected draft. */
+  readonly superseded: boolean;
 }
 
 export interface Turn {
@@ -90,9 +92,18 @@ export class ConversationStore {
   readonly #file: string;
   readonly #convos = new Map<string, Conversation>();
   #loaded = false;
+  // Serialize mutating operations so two concurrent /api/ask never clobber
+  // the JSON file with read-modify-write races. Mutators chain off #queue.
+  #queue: Promise<unknown> = Promise.resolve();
 
   constructor(file: string) {
     this.#file = file;
+  }
+
+  #serialize<T>(fn: () => Promise<T>): Promise<T> {
+    const next = this.#queue.then(fn, fn);
+    this.#queue = next.catch(() => undefined);
+    return next;
   }
 
   async #load(): Promise<void> {
@@ -135,19 +146,21 @@ export class ConversationStore {
   }
 
   async create(question: string): Promise<Conversation> {
-    await this.#load();
-    const now = new Date().toISOString();
-    const convo: Conversation = {
-      id: randomUUID(),
-      sessionId: null,
-      title: titleFrom(question),
-      createdAt: now,
-      updatedAt: now,
-      turns: [],
-    };
-    this.#convos.set(convo.id, convo);
-    await this.#save();
-    return convo;
+    return this.#serialize(async () => {
+      await this.#load();
+      const now = new Date().toISOString();
+      const convo: Conversation = {
+        id: randomUUID(),
+        sessionId: null,
+        title: titleFrom(question),
+        createdAt: now,
+        updatedAt: now,
+        turns: [],
+      };
+      this.#convos.set(convo.id, convo);
+      await this.#save();
+      return convo;
+    });
   }
 
   async appendTurn(
@@ -155,20 +168,24 @@ export class ConversationStore {
     turn: Omit<Turn, "createdAt">,
     sessionId: string | null,
   ): Promise<void> {
-    await this.#load();
-    const convo = this.#convos.get(id);
-    if (!convo) return;
-    convo.turns.push({ ...turn, createdAt: new Date().toISOString() });
-    if (sessionId) convo.sessionId = sessionId;
-    convo.updatedAt = new Date().toISOString();
-    await this.#save();
+    return this.#serialize(async () => {
+      await this.#load();
+      const convo = this.#convos.get(id);
+      if (!convo) return;
+      convo.turns.push({ ...turn, createdAt: new Date().toISOString() });
+      if (sessionId) convo.sessionId = sessionId;
+      convo.updatedAt = new Date().toISOString();
+      await this.#save();
+    });
   }
 
   async remove(id: string): Promise<boolean> {
-    await this.#load();
-    const existed = this.#convos.delete(id);
-    if (existed) await this.#save();
-    return existed;
+    return this.#serialize(async () => {
+      await this.#load();
+      const existed = this.#convos.delete(id);
+      if (existed) await this.#save();
+      return existed;
+    });
   }
 }
 
@@ -190,6 +207,7 @@ function migrateTurn(t: Turn | LegacyTurn): Turn {
       verdict,
       verifyError: null,
       status,
+      superseded: false,
     }],
   };
 }

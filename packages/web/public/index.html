@@ -195,13 +195,23 @@
       const form = $("ask"), q = $("q"), go = $("go");
 
       const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+      // Attribute-safe escape — extends esc() with " and ' so the value can
+      // sit inside an HTML attribute (e.g. href="…") without breaking out.
+      const escAttr = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+      // URL scheme allow-list — block javascript:/data:/file: etc. coming
+      // from model output or corpus frontmatter before we ever set href.
+      const isSafeUrl = (u) => /^(https?:\/\/|mailto:|\/|\.\/|\.\.\/|#)/i.test(String(u || "").trim());
 
       // ---- Minimal markdown → HTML (links open in a new tab) ----
       function inlineMd(s) {
         s = esc(s);
         s = s.replace(/`([^`]+)`/g, (_m, c) => "<code>" + c + "</code>");
-        s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g,
-          (_m, t, u) => `<a href="${u}" target="_blank" rel="noopener noreferrer">${t}</a>`);
+        s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_m, t, u) => {
+          // Unsafe scheme → render as plain text, not a link. _m is already
+          // escaped because esc(s) ran above, so this is safe to emit raw.
+          if (!isSafeUrl(u)) return _m;
+          return `<a href="${escAttr(u)}" target="_blank" rel="noopener noreferrer">${t}</a>`;
+        });
         s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
         s = s.replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, "$1<em>$2</em>");
         return s;
@@ -345,8 +355,9 @@
         if (sources.length) {
           for (const s of sources) {
             const label = esc(s.title || s.url);
-            const link = s.url
-              ? `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${label}</a>`
+            // Scheme-check + attribute-escape the URL before it lands in href.
+            const link = (s.url && isSafeUrl(s.url))
+              ? `<a href="${escAttr(s.url)}" target="_blank" rel="noopener noreferrer">${label}</a>`
               : `<span class="ptitle">${label}</span>`;
             const kind = s.kind ? `<span class="badge status">${esc(KIND_LABEL[s.kind] || s.kind)}</span>` : "";
             html += `<div class="primary">${link} ${kind}</div>`;
@@ -519,7 +530,7 @@
             `<div class="stat">${esc(draft.verifyError)}</div>` +
             `<div class="stat">The answer is shown as drafted — treat its citations with extra caution.</div></div>`;
         } else if (draft.verdict) {
-          if (draft.status === "rejected" && /supersed/i.test(draft.verdict.notes || "")) {
+          if (draft.superseded) {
             renderRejectedSuperseded(refs, { rejectCount: draft.verdict.rejectCount, reasons: draft.verdict.reasons });
           } else {
             renderVerdict(refs, draft.verdict);

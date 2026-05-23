@@ -96,8 +96,9 @@ async function handleAsk(
     verdict: StoredVerdict | null;
     verifyError: string | null;
     status: DraftStatus;
+    superseded: boolean;
   };
-  const newDraft = (): DraftAccum => ({ answer: "", citations: [], verdict: null, verifyError: null, status: "verified" });
+  const newDraft = (): DraftAccum => ({ answer: "", citations: [], verdict: null, verifyError: null, status: "verified", superseded: false });
   const drafts: Draft[] = [];
   let cur: DraftAccum = newDraft();
   let sessionId: string | null = convo.sessionId;
@@ -134,6 +135,7 @@ async function handleAsk(
         // Finalize the rejected draft and open a fresh one for the correction.
         cur.answer = ev.answer;
         cur.status = "rejected";
+        cur.superseded = true;
         cur.verdict = {
           kind: "reject",
           claimsChecked: 0,
