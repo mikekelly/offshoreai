@@ -322,6 +322,11 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
                 if (block.type === "tool_use" && block.name) {
                   // Text streamed before this tool call was interstitial
                   // narration, not the answer — tell the UI to clear it.
+                  // (Asymmetry with `reasoning` is intentional: `reset`
+                  // clears only the visible answer pane because the narration
+                  // text was a bug, but accumulated thinking deltas stay in
+                  // the reasoning trace — they were genuine planning, and the
+                  // trace is honest about why the model paused here.)
                   if (!sawTool && segment.trim().length > 0) {
                     segment = "";
                     yield { type: "reset" };

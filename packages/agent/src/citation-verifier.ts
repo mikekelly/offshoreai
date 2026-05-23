@@ -86,7 +86,12 @@ your system prompt specifies. JSON only, no other prose.`;
     prompt: userPrompt,
     options: {
       systemPrompt: { type: "preset", preset: "claude_code", append: systemPrompt },
-      model: opts.model ?? "claude-opus-4-6",
+      // Verifier model is precision-critical (it's the gate). Hard-coding a
+      // specific version means we have to re-cut a commit every time the
+      // alias rotates; allow an env override so ops can pin a current model
+      // without touching code. Defaults to the version the verifier prompt
+      // was tuned against.
+      model: opts.model ?? process.env["OFFSHOREAI_VERIFIER_MODEL"] ?? "claude-opus-4-6",
       allowedTools: ["Read", "Grep"],
       maxTurns: 12,
       permissionMode: "bypassPermissions",

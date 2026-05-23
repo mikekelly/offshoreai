@@ -34,8 +34,29 @@ const REPO_ROOT = resolve(HERE, "..", "..", "..");
 const INDEX_HTML = resolve(HERE, "..", "public", "index.html");
 const RENDER_JS = resolve(HERE, "..", "public", "render.js");
 const TAG_INDEX = resolve(REPO_ROOT, "packages", "build", "dist", "tag-index.json");
-const DATA_FILE = process.env.OFFSHOREAI_WEB_DATA ?? resolve(HERE, "..", ".data", "conversations.json");
-const PORT = Number(process.env.PORT ?? 3104);
+const DATA_FILE = process.env["OFFSHOREAI_WEB_DATA"] ?? resolve(HERE, "..", ".data", "conversations.json");
+const PORT = Number(process.env["PORT"] ?? 3104);
+// Default to loopback only — this UI ships without auth (local dev tool;
+// see README.md). Set OFFSHOREAI_BIND=0.0.0.0 to opt out, but then add
+// auth/origin checks at the perimeter.
+const BIND = process.env["OFFSHOREAI_BIND"] ?? "127.0.0.1";
+const IS_LOCAL_BIND = BIND === "127.0.0.1" || BIND === "localhost" || BIND.startsWith("127.");
+
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const LOCAL_HOSTS = new Set(["127.0.0.1", "localhost"]);
+
+/**
+ * When bound to loopback, reject requests whose Host header isn't a localhost
+ * name — closes the DNS-rebinding vector where a malicious page on another
+ * domain (resolved to 127.0.0.1) tries to talk to this server from a victim
+ * browser. With an explicit non-local bind, the operator is opting in.
+ */
+function hostAllowed(req: IncomingMessage): boolean {
+  if (!IS_LOCAL_BIND) return true;
+  const raw = (req.headers["host"] ?? "").toString().toLowerCase();
+  const host = raw.split(":")[0] ?? "";
+  return LOCAL_HOSTS.has(host);
+}
 
 function readBody(req: IncomingMessage): Promise<string> {
   return new Promise((resolvePromise, reject) => {
@@ -50,6 +71,13 @@ function sendJson(res: ServerResponse, status: number, body: unknown): void {
   res.writeHead(status, { "content-type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(body));
 }
+
+// Per-conversation in-flight lock. Two near-simultaneous asks on the same
+// conversation would otherwise race on `sessionId`: each resumes the value
+// it loaded, advances the SDK session independently, and the store ends up
+// pinned to whichever finishes last — losing one branch silently. Streams
+// on DIFFERENT conversations still run concurrently.
+const inflight = new Map<string, Promise<void>>();
 
 async function handleAsk(
   agent: OffshoreaiAgent,
@@ -71,11 +99,23 @@ async function handleAsk(
     sendJson(res, 400, { error: "missing 'question'" });
     return;
   }
+  if (conversationId !== undefined && !UUID_RE.test(conversationId)) {
+    sendJson(res, 400, { error: "invalid conversationId" });
+    return;
+  }
 
   // Resolve (or create) the conversation; resume its SDK session for context.
   const existing = conversationId ? await store.get(conversationId) : undefined;
   const convo = existing ?? (await store.create(question));
   const resume = convo.sessionId ?? undefined;
+
+  // Serialise streams on the same conversation. Different conversations are
+  // independent and can run in parallel.
+  const prior = inflight.get(convo.id);
+  if (prior) await prior.catch(() => undefined);
+  let releaseLock!: () => void;
+  const lockHeld = new Promise<void>((r) => { releaseLock = r; });
+  inflight.set(convo.id, lockHeld);
 
   res.writeHead(200, {
     "content-type": "application/x-ndjson; charset=utf-8",
@@ -164,6 +204,10 @@ async function handleAsk(
       await store.appendTurn(convo.id, { question, drafts }, sessionId);
     }
     res.end();
+    // Release the per-conversation lock — only if WE still own the slot
+    // (another request may have taken it after us; rare but possible).
+    if (inflight.get(convo.id) === lockHeld) inflight.delete(convo.id);
+    releaseLock();
   }
 }
 
@@ -190,9 +234,22 @@ async function handleRenderJs(res: ServerResponse): Promise<void> {
 }
 
 const store = new ConversationStore(DATA_FILE);
-const agent = await createOffshoreaiAgent({ repoRoot: REPO_ROOT, tagIndexPath: TAG_INDEX });
+let agent: OffshoreaiAgent;
+try {
+  agent = await createOffshoreaiAgent({ repoRoot: REPO_ROOT, tagIndexPath: TAG_INDEX });
+} catch (err) {
+  process.stderr.write(`offshoreai web UI: failed to initialise agent — ${(err as Error)?.message ?? String(err)}\n`);
+  process.exit(2);
+}
 
 const server = createServer((req, res) => {
+  // Reject DNS-rebinding-style requests when we're loopback-only.
+  if (!hostAllowed(req)) {
+    res.writeHead(403, { "content-type": "text/plain" });
+    res.end("forbidden host");
+    return;
+  }
+
   const method = req.method ?? "GET";
   const url = (req.url ?? "/").split("?")[0] ?? "/";
 
@@ -207,6 +264,10 @@ const server = createServer((req, res) => {
   const convoMatch = url.match(/^\/api\/conversations\/([^/]+)$/);
   if (convoMatch) {
     const id = decodeURIComponent(convoMatch[1] ?? "");
+    if (!UUID_RE.test(id)) {
+      sendJson(res, 400, { error: "invalid conversation id" });
+      return;
+    }
     if (method === "GET") {
       void store.get(id).then((c) => (c ? sendJson(res, 200, c) : sendJson(res, 404, { error: "not found" })));
       return;
@@ -228,6 +289,9 @@ const server = createServer((req, res) => {
   res.end("not found");
 });
 
-server.listen(PORT, () => {
-  process.stderr.write(`offshoreai web UI on http://localhost:${PORT}  (repoRoot=${REPO_ROOT})\n`);
+server.listen(PORT, BIND, () => {
+  process.stderr.write(
+    `offshoreai web UI on http://${IS_LOCAL_BIND ? "localhost" : BIND}:${PORT}  ` +
+      `(bind=${BIND}, repoRoot=${REPO_ROOT})\n`,
+  );
 });
