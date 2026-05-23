@@ -187,84 +187,16 @@
       </section>
     </div>
 
-    <script>
+    <script type="module">
+      // Pure rendering helpers live in render.js (single source of truth,
+      // unit-tested in ../test/render.test.ts). Everything else stays here.
+      import { esc, escAttr, isSafeUrl, mdToHtml, stripProvenance } from "./render.js";
+
       const $ = (id) => document.getElementById(id);
       const transcriptInner = $("transcriptInner"), transcript = $("transcript");
       const placeholder = $("placeholder");
       const convList = $("convList");
       const form = $("ask"), q = $("q"), go = $("go");
-
-      const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
-      // Attribute-safe escape — extends esc() with " and ' so the value can
-      // sit inside an HTML attribute (e.g. href="…") without breaking out.
-      const escAttr = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-      // URL scheme allow-list — block javascript:/data:/file: etc. coming
-      // from model output or corpus frontmatter before we ever set href.
-      const isSafeUrl = (u) => /^(https?:\/\/|mailto:|\/|\.\/|\.\.\/|#)/i.test(String(u || "").trim());
-
-      // ---- Minimal markdown → HTML (links open in a new tab) ----
-      function inlineMd(s) {
-        s = esc(s);
-        s = s.replace(/`([^`]+)`/g, (_m, c) => "<code>" + c + "</code>");
-        s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_m, t, u) => {
-          // Unsafe scheme → render as plain text, not a link. _m is already
-          // escaped because esc(s) ran above, so this is safe to emit raw.
-          if (!isSafeUrl(u)) return _m;
-          return `<a href="${escAttr(u)}" target="_blank" rel="noopener noreferrer">${t}</a>`;
-        });
-        s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
-        s = s.replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, "$1<em>$2</em>");
-        return s;
-      }
-      function mdToHtml(md) {
-        const lines = String(md).split("\n");
-        let html = "", i = 0, inUl = false, inOl = false;
-        const closeLists = () => { if (inUl) { html += "</ul>"; inUl = false; } if (inOl) { html += "</ol>"; inOl = false; } };
-        const isBlock = (l) => /^(#{1,6}\s|>|```|\s*[-*]\s|\s*\d+\.\s)/.test(l);
-        while (i < lines.length) {
-          const line = lines[i];
-          if (/^```/.test(line)) {
-            closeLists(); i++; let code = "";
-            while (i < lines.length && !/^```/.test(lines[i])) { code += lines[i] + "\n"; i++; }
-            i++; html += "<pre><code>" + esc(code) + "</code></pre>"; continue;
-          }
-          const h = line.match(/^(#{1,6})\s+(.*)$/);
-          if (h) { closeLists(); const lvl = h[1].length; html += `<h${lvl}>` + inlineMd(h[2]) + `</h${lvl}>`; i++; continue; }
-          if (/^>\s?/.test(line)) {
-            closeLists(); let bq = "";
-            while (i < lines.length && /^>\s?/.test(lines[i])) { bq += lines[i].replace(/^>\s?/, "") + " "; i++; }
-            html += "<blockquote>" + inlineMd(bq.trim()) + "</blockquote>"; continue;
-          }
-          const ol = line.match(/^\s*\d+\.\s+(.*)$/);
-          if (ol) { if (inUl) { html += "</ul>"; inUl = false; } if (!inOl) { html += "<ol>"; inOl = true; } html += "<li>" + inlineMd(ol[1]) + "</li>"; i++; continue; }
-          const ul = line.match(/^\s*[-*]\s+(.*)$/);
-          if (ul) { if (inOl) { html += "</ol>"; inOl = false; } if (!inUl) { html += "<ul>"; inUl = true; } html += "<li>" + inlineMd(ul[1]) + "</li>"; i++; continue; }
-          if (/^\s*$/.test(line)) { closeLists(); i++; continue; }
-          closeLists();
-          let para = line; i++;
-          while (i < lines.length && !/^\s*$/.test(lines[i]) && !isBlock(lines[i])) { para += " " + lines[i]; i++; }
-          html += "<p>" + inlineMd(para) + "</p>";
-        }
-        closeLists();
-        return html;
-      }
-
-      // Strip a trailing "Cited files"/"Corpus provenance"/"Sources" list of
-      // corpus paths from the rendered answer — the Sources & freshness panel
-      // replaces it, and the user shouldn't see internal knowledge/*.md paths.
-      // (The verifier already ran server-side against the full text.)
-      function stripProvenance(md) {
-        const lines = String(md).split("\n");
-        for (let i = lines.length - 1; i >= 0; i--) {
-          if (/^#{1,6}\s+(cited files|corpus provenance|sources)\b/i.test(lines[i])) {
-            const tail = lines.slice(i).join("\n");
-            if (/knowledge\/[A-Za-z0-9._/-]+\.md/.test(tail)) {
-              return lines.slice(0, i).join("\n").replace(/\s+$/, "") + "\n";
-            }
-          }
-        }
-        return md;
-      }
 
       function relTime(iso) {
         const d = Date.now() - new Date(iso).getTime();

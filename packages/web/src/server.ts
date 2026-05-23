@@ -32,6 +32,7 @@ import { ConversationStore, type Draft, type DraftStatus, type StoredCitation, t
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(HERE, "..", "..", "..");
 const INDEX_HTML = resolve(HERE, "..", "public", "index.html");
+const RENDER_JS = resolve(HERE, "..", "public", "render.js");
 const TAG_INDEX = resolve(REPO_ROOT, "packages", "build", "dist", "tag-index.json");
 const DATA_FILE = process.env.OFFSHOREAI_WEB_DATA ?? resolve(HERE, "..", ".data", "conversations.json");
 const PORT = Number(process.env.PORT ?? 3104);
@@ -176,6 +177,17 @@ async function handleIndex(res: ServerResponse): Promise<void> {
   }
 }
 
+async function handleRenderJs(res: ServerResponse): Promise<void> {
+  try {
+    const js = await readFile(RENDER_JS, "utf8");
+    res.writeHead(200, { "content-type": "application/javascript; charset=utf-8" });
+    res.end(js);
+  } catch {
+    res.writeHead(404, { "content-type": "text/plain" });
+    res.end("render.js not found");
+  }
+}
+
 const store = new ConversationStore(DATA_FILE);
 const agent = await createOffshoreaiAgent({ repoRoot: REPO_ROOT, tagIndexPath: TAG_INDEX });
 
@@ -205,6 +217,10 @@ const server = createServer((req, res) => {
   }
   if (method === "GET" && (url === "/" || url === "/index.html")) {
     void handleIndex(res);
+    return;
+  }
+  if (method === "GET" && url === "/render.js") {
+    void handleRenderJs(res);
     return;
   }
   res.writeHead(404, { "content-type": "text/plain" });

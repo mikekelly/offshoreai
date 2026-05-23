@@ -193,7 +193,7 @@ export class ConversationStore {
 // Legacy migration: single-answer turn → drafts[]
 // ---------------------------------------------------------------------------
 
-function migrateTurn(t: Turn | LegacyTurn): Turn {
+export function migrateTurn(t: Turn | LegacyTurn): Turn {
   if (Array.isArray((t as Turn).drafts)) return t as Turn;
   const legacy = t as LegacyTurn;
   const verdict = legacy.verdict ?? null;
