@@ -27,7 +27,7 @@ import { createServer, type IncomingMessage, type ServerResponse } from "node:ht
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createOffshoreaiAgent, type OffshoreaiAgent } from "@offshoreai/agent/web-agent";
-import { ConversationStore, type StoredCitation, type StoredVerdict } from "./store.js";
+import { ConversationStore, type Draft, type DraftStatus, type StoredCitation, type StoredVerdict } from "./store.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(HERE, "..", "..", "..");
@@ -86,17 +86,27 @@ async function handleAsk(
   // Tell the client which conversation this is (esp. for a freshly created one).
   write({ type: "conversation", id: convo.id, title: convo.title, isNew: !existing });
 
-  // Accumulate the turn for persistence as events stream by.
-  const citations: StoredCitation[] = [];
-  let verdict: StoredVerdict | null = null;
-  let answer = "";
+  // Accumulate each draft of the turn as events stream by. A `revise` event
+  // finalizes the current draft as rejected and starts a new one; `verdict`
+  // and `verify_error` finalize the current draft. `done` pushes the final
+  // (live) draft. Every attempt is preserved in history.
+  type DraftAccum = {
+    answer: string;
+    citations: StoredCitation[];
+    verdict: StoredVerdict | null;
+    verifyError: string | null;
+    status: DraftStatus;
+  };
+  const newDraft = (): DraftAccum => ({ answer: "", citations: [], verdict: null, verifyError: null, status: "verified" });
+  const drafts: Draft[] = [];
+  let cur: DraftAccum = newDraft();
   let sessionId: string | null = convo.sessionId;
 
   try {
     for await (const ev of agent.stream(question, resume ? { resume } : undefined)) {
       write(ev);
       if (ev.type === "citation") {
-        citations.push({
+        cur.citations.push({
           path: ev.path,
           exists: ev.exists,
           title: ev.title,
@@ -108,7 +118,7 @@ async function handleAsk(
           articles: ev.articles,
         });
       } else if (ev.type === "verdict") {
-        verdict = {
+        cur.verdict = {
           kind: ev.kind,
           claimsChecked: ev.claimsChecked,
           claimsWithCitation: ev.claimsWithCitation,
@@ -116,18 +126,38 @@ async function handleAsk(
           notes: ev.notes,
           reasons: ev.reasons,
         };
+        cur.status = ev.rejectCount > 0 ? "rejected" : "verified";
+      } else if (ev.type === "verify_error") {
+        cur.verifyError = ev.message;
+        cur.status = "unavailable";
+      } else if (ev.type === "revise") {
+        // Finalize the rejected draft and open a fresh one for the correction.
+        cur.answer = ev.answer;
+        cur.status = "rejected";
+        cur.verdict = {
+          kind: "reject",
+          claimsChecked: 0,
+          claimsWithCitation: 0,
+          rejectCount: ev.rejectCount,
+          notes: "Superseded by the next draft.",
+          reasons: ev.reasons,
+        };
+        drafts.push(cur);
+        cur = newDraft();
       } else if (ev.type === "session") {
         sessionId = ev.sessionId;
       } else if (ev.type === "done") {
-        answer = ev.answer;
+        if (ev.answer) cur.answer = ev.answer;
         if (ev.sessionId) sessionId = ev.sessionId;
       }
     }
   } catch (err) {
     write({ type: "error", message: (err as Error)?.message ?? String(err) });
   } finally {
-    if (answer.trim().length > 0) {
-      await store.appendTurn(convo.id, { question, answer, citations, verdict }, sessionId);
+    // Push the live (final) draft if it has content.
+    if (cur.answer.trim().length > 0) drafts.push(cur);
+    if (drafts.length > 0) {
+      await store.appendTurn(convo.id, { question, drafts }, sessionId);
     }
     res.end();
   }

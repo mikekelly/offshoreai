@@ -69,7 +69,20 @@
       .msg.user { text-align: right; }
       .msg.assistant .card {
         background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px;
+        border-left-width: 3px;
       }
+      .msg.assistant.drafting .card { border-left-color: var(--border); }
+      .msg.assistant.verified .card { border-left-color: var(--fresh); }
+      .msg.assistant.rejected .card { border-left-color: var(--stale); }
+      .msg.assistant.unavailable .card { border-left-color: var(--warn); }
+      .msg.assistant .statusbar {
+        display: flex; justify-content: space-between; align-items: center;
+        font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+        color: var(--ink-dim); margin-bottom: 10px;
+      }
+      .msg.assistant.verified .statuslabel { color: var(--fresh); }
+      .msg.assistant.rejected .statuslabel { color: var(--stale); }
+      .msg.assistant.unavailable .statuslabel { color: var(--warn); }
 
       .answer { word-wrap: break-word; min-height: 12px; }
       .answer > *:first-child { margin-top: 0; }
@@ -271,12 +284,15 @@
         return div;
       }
 
-      // Build an assistant message and return refs the stream/history writes into.
+      // Build an assistant message and return refs the stream/history writes
+      // into. Each message is one DRAFT — a revise event creates a NEW message
+      // below for the corrected draft, leaving the rejected one visible.
       function addAssistantMsg() {
         const div = document.createElement("div");
-        div.className = "msg assistant";
+        div.className = "msg assistant drafting";
         div.innerHTML = `
           <div class="card">
+            <div class="statusbar"><span class="statuslabel">Drafting…</span></div>
             <div class="answer cursor"></div>
             <details class="disc reasoningBox" hidden><summary>Agent reasoning</summary><div class="reasoning-body"></div></details>
             <details class="disc toolsBox" hidden><summary><span class="toolCount">0</span> tool calls</summary><div class="tools"></div></details>
@@ -287,6 +303,7 @@
         transcriptInner.appendChild(div);
         return {
           root: div,
+          statuslabel: div.querySelector(".statuslabel"),
           answerEl: div.querySelector(".answer"),
           reasoningBox: div.querySelector(".reasoningBox"),
           reasoningEl: div.querySelector(".reasoning-body"),
@@ -300,8 +317,13 @@
           rawMd: "",
           nTools: 0,
           nSources: 0,
-          pendingReset: false,
         };
+      }
+
+      function setStatus(refs, status, label) {
+        refs.root.classList.remove("drafting", "verified", "rejected", "unavailable");
+        refs.root.classList.add(status);
+        refs.statuslabel.textContent = label;
       }
 
       const scrollDown = () => { transcript.scrollTop = transcript.scrollHeight; };
@@ -357,6 +379,12 @@
         refs.verdictWrap.hidden = false;
         const reject = v.rejectCount > 0;
         const cls = reject ? "reject" : (v.claimsWithCitation < v.claimsChecked ? "warn" : "pass");
+        // Drive the message-level status (border + statusbar label).
+        if (reject) {
+          setStatus(refs, "rejected", `Rejected ✕ — ${v.rejectCount} unresolved issue(s)`);
+        } else {
+          setStatus(refs, "verified", `Verified ✓ — ${v.claimsWithCitation}/${v.claimsChecked} claims cited`);
+        }
         let html =
           `<div class="verdict ${cls}">` +
           `<div class="headline">✓ Second opinion on citation quality completed</div>` +
@@ -365,6 +393,20 @@
         if (v.notes) html += `<div class="stat">${esc(v.notes)}</div>`;
         for (const r of v.reasons || []) {
           html += `<div class="reason"><div>${esc(r.claim)}</div><div class="detail">[${esc(r.issueKind)}] ${esc(r.citedSource || "—")} · ${esc(r.detail)}</div></div>`;
+        }
+        html += `</div>`;
+        refs.verdictWrap.innerHTML = html;
+      }
+
+      // Render the rejected verdict on a draft that is being SUPERSEDED by a
+      // corrected next draft (the revise path). The card stays in the thread
+      // as a transparent record of what was attempted and why it failed.
+      function renderRejectedSuperseded(refs, ev) {
+        setStatus(refs, "rejected", `Rejected ✕ — superseded by next draft (${ev.rejectCount} claim${ev.rejectCount === 1 ? "" : "s"} flagged)`);
+        refs.verdictWrap.hidden = false;
+        let html = `<div class="verdict reject"><div class="headline">✕ Rejected by the citation-verifier — superseded by the next draft</div>`;
+        for (const r of ev.reasons || []) {
+          html += `<div class="reason"><div>${esc(r.claim)}</div><div class="detail">[${esc(r.issueKind)}] ${esc(r.detail)}</div></div>`;
         }
         html += `</div>`;
         refs.verdictWrap.innerHTML = html;
@@ -380,17 +422,6 @@
       function onEvent(refs, ev) {
         switch (ev.type) {
           case "text":
-            // If a revise is pending, replace the prior answer only now that
-            // the corrected one is actually arriving — so a failed retry never
-            // leaves a blank pane.
-            if (refs.pendingReset) {
-              refs.rawMd = "";
-              refs.answerEl.innerHTML = "";
-              refs.sourcesEl.innerHTML = "";
-              refs.sourcesWrap.hidden = true;
-              refs.nSources = 0;
-              refs.pendingReset = false;
-            }
             refs.rawMd += ev.delta;
             refs.answerEl.innerHTML = mdToHtml(refs.rawMd);
             refs.answerEl.classList.add("cursor");
@@ -418,28 +449,14 @@
           }
           case "citation": renderCitation(refs, ev); break;
           case "verify_start": showVerifyRunning(refs); break;
-          case "revise": {
-            // Verifier rejected the draft. Show what's being fixed, but DON'T
-            // tear down the current answer yet — defer the replacement until
-            // the corrected answer actually starts streaming (see "text").
-            refs.pendingReset = true;
-            refs.answerEl.classList.add("cursor");
-            let html =
-              `<div class="verdict warn"><div class="headline"><span class="pulse"></span>` +
-              `Verifier flagged ${ev.rejectCount} claim(s) — revising… (attempt ${ev.attempt})</div>`;
-            for (const r of ev.reasons || []) {
-              html += `<div class="reason"><div>${esc(r.claim)}</div><div class="detail">[${esc(r.issueKind)}] ${esc(r.detail)}</div></div>`;
-            }
-            html += `</div>`;
-            refs.verdictWrap.hidden = false;
-            refs.verdictWrap.innerHTML = html;
-            scrollDown();
-            break;
-          }
+          // `revise` is handled at the dispatch level (see ask()): it
+          // finalizes the current draft as rejected (keeping it visible) and
+          // opens a NEW assistant message for the corrected draft. It is NOT
+          // routed through onEvent so the new message can replace `refs`.
           case "verify_error":
             // Verification unavailable (verifier threw or returned unparseable
             // output). Keep the answer; show a soft caution, never a dead-end.
-            refs.pendingReset = false;
+            setStatus(refs, "unavailable", "Verification unavailable ⚠");
             refs.answerEl.classList.remove("cursor");
             refs.verdictWrap.hidden = false;
             refs.verdictWrap.innerHTML =
@@ -493,6 +510,23 @@
         } catch {}
       }
 
+      function renderDraftFinalState(refs, draft) {
+        if (draft.verifyError) {
+          setStatus(refs, "unavailable", "Verification unavailable ⚠");
+          refs.verdictWrap.hidden = false;
+          refs.verdictWrap.innerHTML =
+            `<div class="verdict warn"><div class="headline">⚠ Citation check could not be completed</div>` +
+            `<div class="stat">${esc(draft.verifyError)}</div>` +
+            `<div class="stat">The answer is shown as drafted — treat its citations with extra caution.</div></div>`;
+        } else if (draft.verdict) {
+          if (draft.status === "rejected" && /supersed/i.test(draft.verdict.notes || "")) {
+            renderRejectedSuperseded(refs, { rejectCount: draft.verdict.rejectCount, reasons: draft.verdict.reasons });
+          } else {
+            renderVerdict(refs, draft.verdict);
+          }
+        }
+      }
+
       async function openConversation(id) {
         try {
           const convo = await (await fetch("/api/conversations/" + encodeURIComponent(id))).json();
@@ -500,13 +534,15 @@
           clearTranscript();
           for (const turn of convo.turns) {
             addUserMsg(turn.question);
-            const refs = addAssistantMsg();
-            refs.rawMd = stripProvenance(turn.answer);
-            refs.answerEl.innerHTML = mdToHtml(refs.rawMd);
-            refs.answerEl.classList.remove("cursor");
-            for (const c of turn.citations || []) renderCitation(refs, c);
-            if (turn.verdict) renderVerdict(refs, turn.verdict);
-            refs.disclaimerEl.hidden = false;
+            for (const draft of (turn.drafts || [])) {
+              const refs = addAssistantMsg();
+              refs.rawMd = stripProvenance(draft.answer);
+              refs.answerEl.innerHTML = mdToHtml(refs.rawMd);
+              refs.answerEl.classList.remove("cursor");
+              for (const c of draft.citations || []) renderCitation(refs, c);
+              renderDraftFinalState(refs, draft);
+              refs.disclaimerEl.hidden = false;
+            }
           }
           loadConversations();
           scrollDown();
@@ -527,7 +563,9 @@
       async function ask(question) {
         if (placeholder.parentNode) placeholder.remove();
         addUserMsg(question);
-        const refs = addAssistantMsg();
+        // `curRefs` holds the active draft's message. A `revise` event swaps
+        // it: the rejected draft stays visible above, the new draft begins.
+        let curRefs = addAssistantMsg();
         scrollDown();
         try {
           const resp = await fetch("/api/ask", {
@@ -537,7 +575,7 @@
           });
           if (!resp.ok || !resp.body) {
             const t = await resp.text().catch(() => "");
-            onEvent(refs, { type: "error", message: `HTTP ${resp.status} ${t}` });
+            onEvent(curRefs, { type: "error", message: `HTTP ${resp.status} ${t}` });
             return;
           }
           const reader = resp.body.getReader();
@@ -546,11 +584,20 @@
           const handleLine = (line) => {
             if (!line) return;
             let ev; try { ev = JSON.parse(line); } catch { return; }
-            if (ev.type === "conversation") {
-              currentConversationId = ev.id;
+            if (ev.type === "conversation") { currentConversationId = ev.id; return; }
+            if (ev.type === "revise") {
+              // Finalize the current draft (visibly rejected, kept in thread,
+              // trailing corpus-path list stripped), then open a fresh message
+              // for the corrected draft. Subsequent events target the new one.
+              curRefs.rawMd = stripProvenance(ev.answer || curRefs.rawMd);
+              curRefs.answerEl.innerHTML = mdToHtml(curRefs.rawMd);
+              curRefs.answerEl.classList.remove("cursor");
+              renderRejectedSuperseded(curRefs, ev);
+              curRefs = addAssistantMsg();
+              scrollDown();
               return;
             }
-            onEvent(refs, ev);
+            onEvent(curRefs, ev);
           };
           for (;;) {
             const { value, done } = await reader.read();
@@ -561,9 +608,9 @@
           }
           if (buf.trim()) handleLine(buf.trim());
         } catch (err) {
-          onEvent(refs, { type: "error", message: String(err) });
+          onEvent(curRefs, { type: "error", message: String(err) });
         } finally {
-          refs.answerEl.classList.remove("cursor");
+          curRefs.answerEl.classList.remove("cursor");
           loadConversations();
         }
       }

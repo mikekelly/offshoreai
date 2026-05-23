@@ -36,12 +36,32 @@ export interface StoredVerdict {
   readonly reasons: ReadonlyArray<{ claim: string; issueKind: string; citedSource: string; detail: string }>;
 }
 
-export interface Turn {
-  readonly question: string;
+export type DraftStatus = "verified" | "rejected" | "unavailable";
+
+export interface Draft {
   readonly answer: string;
   readonly citations: StoredCitation[];
   readonly verdict: StoredVerdict | null;
+  readonly verifyError: string | null;
+  readonly status: DraftStatus;
+}
+
+export interface Turn {
+  readonly question: string;
+  readonly drafts: Draft[];
   readonly createdAt: string;
+}
+
+/**
+ * Legacy single-answer turn shape — migrated to drafts[] on read so old
+ * conversations keep rendering after the schema change.
+ */
+interface LegacyTurn {
+  question?: string;
+  answer?: string;
+  citations?: StoredCitation[];
+  verdict?: StoredVerdict | null;
+  createdAt?: string;
 }
 
 export interface Conversation {
@@ -80,7 +100,10 @@ export class ConversationStore {
     try {
       const raw = await readFile(this.#file, "utf8");
       const arr = JSON.parse(raw) as Conversation[];
-      for (const c of arr) this.#convos.set(c.id, c);
+      for (const c of arr) {
+        c.turns = c.turns.map(migrateTurn);
+        this.#convos.set(c.id, c);
+      }
     } catch (err) {
       if ((err as NodeJS.ErrnoException)?.code !== "ENOENT") throw err;
     }
@@ -147,4 +170,26 @@ export class ConversationStore {
     if (existed) await this.#save();
     return existed;
   }
+}
+
+// ---------------------------------------------------------------------------
+// Legacy migration: single-answer turn → drafts[]
+// ---------------------------------------------------------------------------
+
+function migrateTurn(t: Turn | LegacyTurn): Turn {
+  if (Array.isArray((t as Turn).drafts)) return t as Turn;
+  const legacy = t as LegacyTurn;
+  const verdict = legacy.verdict ?? null;
+  const status: DraftStatus = verdict ? (verdict.rejectCount > 0 ? "rejected" : "verified") : "verified";
+  return {
+    question: legacy.question ?? "",
+    createdAt: legacy.createdAt ?? new Date().toISOString(),
+    drafts: [{
+      answer: legacy.answer ?? "",
+      citations: legacy.citations ?? [],
+      verdict,
+      verifyError: null,
+      status,
+    }],
+  };
 }

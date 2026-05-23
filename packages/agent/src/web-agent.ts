@@ -41,11 +41,15 @@ export type AgentEvent =
   // continue the conversation. Emitted as soon as it's known.
   | { readonly type: "session"; readonly sessionId: string }
   // The verifier rejected the draft answer and the agent is regenerating a
-  // corrected one. The UI clears the answer/sources and shows why.
+  // corrected one. The UI finalizes the current draft as rejected (keeping it
+  // visible in the thread) and opens a new message for the corrected draft.
+  // `answer` is the canonical text of the rejected draft so the server can
+  // persist it as a historical draft.
   | {
       readonly type: "revise";
       readonly attempt: number;
       readonly rejectCount: number;
+      readonly answer: string;
       readonly reasons: ReadonlyArray<{ claim: string; issueKind: string; citedSource: string; detail: string }>;
     }
   // The verifier could not be evaluated (it threw, or returned unparseable
@@ -377,7 +381,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
 
           // Rejected with retries left → regenerate a corrected answer.
           attempt++;
-          yield { type: "revise", attempt, rejectCount: reasons.length, reasons };
+          yield { type: "revise", attempt, rejectCount: reasons.length, reasons, answer };
           currentPrompt = correctionPrompt(reasons);
           currentResume = sessionId;
         }
