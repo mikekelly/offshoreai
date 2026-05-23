@@ -1,0 +1,21 @@
+questionId: show-article-47
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. All six substance facts covered with no material errors;
+  Jersey-specific statutes and cases correctly named; voice matches the
+  trust-litigator register the rubric demands. Both corpus citations verified —
+  every claim is supported by the cited file. The one redundant tool call
+  (getArticle failing then re-fetching the full file) is minor. The only blemish
+  is leaked internal reasoning at the top of the answer, which is a presentation
+  issue, not a factual one.

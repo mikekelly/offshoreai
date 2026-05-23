@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-eviction",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T14:59:06.735Z",
+  "wallClockSeconds": 37.847,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__tree",
+      "rawName": "mcp__corpus__tree",
+      "inputDigest": "{\"root\":\"knowledge/jersey/residential-tenancy/index.md\",\"depth\":2}",
+      "inputBytes": 66,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/residential-tenancy/non-payment-of-rent.md\",\"full\":true}",
+      "inputBytes": 82,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/residential-tenancy/eviction-procedure.md\",\"full\":true}",
+      "inputBytes": 81,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/residential-tenancy/grounds-for-termination.md\",\"full\":true}",
+      "inputBytes": 86,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2156,
+    "cacheReadTokens": 154023,
+    "cacheWriteTokens": 55019,
+    "totalCostUsd": 0.47482025000000005
+  },
+  "answer": {
+    "text": "# Evicting a non-paying tenant in Jersey\n\n**Short answer: no, you cannot just evict.** Non-payment is a breach of the tenancy agreement under the Residential Tenancy (Jersey) Law 2011, and the only lawful route to possession is by court order. Self-help — changing locks, cutting utilities, removing possessions — is unlawful and may itself be a criminal offence under the RTJL.\n\n## The procedure\n\n1. **Serve a 7-day written breach notice** identifying the unpaid rent and amount and requiring remedy. Signed, delivered to the tenant, with at least 7 days (statutory minimum) to pay (`knowledge/jersey/residential-tenancy/non-payment-of-rent.md`).\n2. **Wait the notice period.** If the tenant pays in full within the 7 days, the breach is remedied and the tenancy continues; you cannot then terminate on the same arrears.\n3. **Apply to the Petty Debts Court** — which has exclusive original jurisdiction under the RTJL — for an order terminating the tenancy, evicting the tenant, and (optionally) a money judgment for the arrears. The Royal Court does not hear residential tenancy disputes at first instance (`knowledge/jersey/residential-tenancy/petty-debts-court-tenancy.md`; `knowledge/jersey/residential-tenancy/eviction-procedure.md`).\n4. **Hearing.** The court considers procedural compliance, whether the breach is made out, any tenant defences (set-off for landlord's failure to repair, discrimination, procedural defects), and vulnerability factors. Stays of execution of 14–28 days (occasionally longer) are routine, especially for families with children or tenants awaiting Income Support / rehousing.\n5. **Enforcement by the Viscount.** Once any stay expires, the Viscount — the only person lawfully entitled to take possession from a resisting tenant — attends, removes the tenant and possessions if needed, and restores possession to you. Viscount's fees are recoverable from the tenant under the lease but often borne by the landlord in practice if the tenant is judgment-proof (`knowledge/jersey/residential-tenancy/eviction-procedure.md`).\n\n## Realistic timeline and cost\n\nA straightforward case typically runs **2–4 months** from the missed payment to actual possession; longer if disputed, stayed, or appealed. Budget for court fees, Viscount fees (several hundred to several thousand pounds), lock change and storage.\n\n## Defences and pitfalls to be aware of\n\n- **Tenant set-off** for landlord's breach (e.g. unfit premises under repair / habitability standards) can reduce or extinguish the arrears claim.\n- **Discrimination (Jersey) Law 2013** — eviction that is in reality discriminatory is contestable.\n- **Retaliation** — eviction following a complaint or repair request invites adverse inferences.\n- **Defective notice** is fatal to the application — get the 7-day notice, service mode, and period right.\n\n## Caveats\n\nThe cited residential-tenancy files are `draft` status (last verified 2026-05-18, five days ago) covering the post-15 April 2026 regime introduced by the Residential Tenancy (Jersey) Amendment Law 2025 — the substance is drafted from the statute but has not yet been promoted to `review`/`stable`. For a contested matter you should engage a Jersey advocate and verify against the statute and current Petty Debts Court procedure.\n\n## Cited files\n\n1. `knowledge/jersey/residential-tenancy/non-payment-of-rent.md`\n2. `knowledge/jersey/residential-tenancy/eviction-procedure.md`\n3. `knowledge/jersey/residential-tenancy/grounds-for-termination.md`\n4. `knowledge/jersey/residential-tenancy/petty-debts-court-tenancy.md` (referenced for jurisdiction)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 504
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

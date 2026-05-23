@@ -1,0 +1,21 @@
+questionId: show-planning
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer covers all five rubric substance points (PBL 2002, GD
+  Order 2011 permitted development, two parallel consents, most extensions need
+  application, conservation/listed narrower), cites the correct and most
+  relevant corpus files, and is written in a homeowner-friendly operational
+  voice. Draft status of both files is proactively flagged with a recommendation
+  to verify against primary sources. Efficient two-tool-call retrieval with no
+  redundancy.

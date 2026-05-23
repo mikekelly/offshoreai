@@ -1,0 +1,22 @@
+questionId: show-cell-companies
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric facts are covered accurately and every claim is
+  cited to the correct corpus file. The candidate correctly identifies Guernsey
+  PCC as the 1997 original, Bermuda SAC as insurance-focused, Cayman SPC as
+  general-purpose, and Guernsey ICC as the separate-personality outlier, then
+  delivers a decision matrix that maps cleanly onto the rubric's expected
+  guidance. Draft status flagged proactively. Four redundant re-reads
+  (offset-based re-fetches of files already retrieved) are the only inefficiency
+  — substance, citations, and structure are strong throughout.

@@ -1,0 +1,22 @@
+questionId: show-voisinage
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 13
+hallucinatedCitations: 0
+summary: "Partial. The answer is well-structured, accurately cited, and handles
+  the draft-status caveat well, but it misses the rubric's most distinctive
+  requirement: naming Pothier and Le Geyt as the doctrinal foundations — names
+  that appear explicitly in the corpus file the candidate read. This omission
+  costs it on both jersey_specific (partial) and voice (the 'explaining
+  customary-law roots' register is thin without the jurists), demoting an
+  otherwise solid pass-level answer. Guernsey as a fellow voisinage jurisdiction
+  also goes unmentioned."

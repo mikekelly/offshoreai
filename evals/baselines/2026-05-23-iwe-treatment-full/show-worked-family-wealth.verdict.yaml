@@ -1,0 +1,21 @@
+questionId: show-worked-family-wealth
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All seven rubric facts are covered with accurate,
+  Jersey-specific detail and zero factual errors. Every citation verified: the
+  five corpus files all support the claims attached to them, with no
+  hallucinated citations. The answer closely mirrors the Rossi-family worked
+  example in the corpus while adding its own structured presentation (limits
+  section, compliance overlay, cross-jurisdictional justification). Draft status
+  of all cited files was proactively flagged — a model freshness disclosure."

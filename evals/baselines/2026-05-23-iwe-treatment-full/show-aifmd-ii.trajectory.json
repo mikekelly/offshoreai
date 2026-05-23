@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-aifmd-ii",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T15:09:27.659Z",
+  "wallClockSeconds": 35.383,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"aifmd-ii\"],\"mode\":\"and\"}",
+      "inputBytes": 34,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"aifmd\",\"nppr\"],\"mode\":\"and\"}",
+      "inputBytes": 38,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/aifmd-ii-april-2026.md\",\"full\":true}",
+      "inputBytes": 64,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/aifmd-nppr.md\",\"full\":true}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2135,
+    "cacheReadTokens": 152133,
+    "cacheWriteTokens": 48016,
+    "totalCostUsd": 0.42958150000000006
+  },
+  "answer": {
+    "text": "## What AIFMD II changes for a Jersey AIFM marketing into the EU under NPPR\n\n**NPPR access is preserved.** The directive maintains Crown Dependencies' access to EU professional investors through member-state National Private Placement Regimes; Jersey and Guernsey continue to meet the EU's tax-transparency and AML criteria, so the route itself is intact (`knowledge/frontier/aifmd-ii-april-2026.md`).\n\n**Direct impact on a Jersey AIFM is concentrated in two areas:**\n\n1. **Expanded investor disclosures.** Pre-marketing and ongoing disclosure obligations are widened — covering liquidity-management, sustainability factors (interlocking with SFDR), and loan-originating-fund-specific disclosures where applicable.\n2. **Enhanced Annex IV reporting** to ESMA via competent authorities — new data fields and more granular reporting on specific asset categories and risk exposures. First submissions under the new requirements are expected end-Q2 / early Q3 2026 (`knowledge/frontier/aifmd-ii-april-2026.md`).\n\n**Indirect — and arguably more important — impact via delegation rules.** AIFMD II tightens substance and oversight obligations on **EU AIFMs that delegate portfolio management to third countries** (including Jersey). EU AIFMs cannot become \"letter-box entities,\" and loan-originating EU AIFMs face specific limits on delegation of origination to non-EU entities. The counter-intuitive consequence flagged by Carey Olsen and Langham Hall: a **direct Jersey AIFM marketing under NPPR** is comparatively *more* attractive than an EU-AIFM-with-Jersey-delegate model (`knowledge/frontier/aifmd-ii-april-2026.md`).\n\n**Jersey-side regulatory response — the AIF Code split.** The JFSC is bifurcating Jersey's AIF Code of Practice into an **EU AIF Code** (aligned with AIFMD II for NPPR marketing) and a **UK AIF Code** (aligned with the UK's evolving post-Brexit AIFM framework). The EU AIF Code is expected to be finalised through 2026 (`knowledge/frontier/aifmd-ii-april-2026.md`).\n\n**Other substantive AIFMD II features** — loan-originating-fund rules, liquidity-management-tool requirements for open-ended AIFs, and tightened asset-stripping rules — apply primarily within the AIFMD II framework itself, but feed through to NPPR-marketed Jersey AIFs via the disclosure and reporting strands above.\n\n**Practical pitfalls** the frontier file flags: treating AIFMD II as a small-deltas exercise (the loan-originating-fund and substance rules are substantive); assuming NPPR is unaffected (disclosure/reporting widened); missing the delegation impact on EU-AIFM-CI-delegate structures; and uneven member-state transposition (Luxembourg/Ireland closer to the directive; Germany/France stricter) meaning a fund marketed across multiple EU jurisdictions may face differing effective requirements.\n\n## Caveats\n\n- The frontier file `knowledge/frontier/aifmd-ii-april-2026.md` carries `status: in-force-2026-04-16` with body `as of 2026-05-18` (5 days before today) — fresh, but frontier content is decay-managed; verify against the directive (Directive (EU) 2024/927), ESMA Q&A, and the JFSC's EU AIF Code as those publications continue through 2026.\n- The doctrinal file `knowledge/jersey/funds/aifmd-nppr.md` is **`draft`** status (last verified 2026-05-15). The substantive NPPR mechanics it describes are correct, but treat as drafted-but-unverified pending review.\n\n## Cited files\n\n1. `knowledge/frontier/aifmd-ii-april-2026.md` (frontier, status `in-force-2026-04-16`)\n2. `knowledge/jersey/funds/aifmd-nppr.md` (doctrinal, status `draft`, last_verified 2026-05-15)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 464
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

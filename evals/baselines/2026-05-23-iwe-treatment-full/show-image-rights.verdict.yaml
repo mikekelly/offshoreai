@@ -1,0 +1,22 @@
+questionId: show-image-rights
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: "Pass. All five rubric facts covered accurately and completely from the
+  single most relevant corpus file with zero hallucinated citations. The
+  candidate proactively flagged the file's draft status and advised
+  primary-source verification — exemplary freshness/status handling. One minor
+  inefficiency: getFile was called twice for the same path (once without full,
+  once with full:true), a redundant call that didn't affect answer quality. The
+  personnage definition, property-right characteristics, structuring guidance,
+  and practical limitations all match the corpus verbatim."

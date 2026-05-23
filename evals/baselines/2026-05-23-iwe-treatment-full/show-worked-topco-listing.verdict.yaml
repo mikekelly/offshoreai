@@ -1,0 +1,23 @@
+questionId: show-worked-topco-listing
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 8
+factsExpected: 8
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All 8 expected facts are present and correctly sourced. The
+  answer is strongly Jersey-specific, naming four Jersey statutes and
+  distinguishing Jersey mechanics from English-law equivalents (solvency-based
+  distributions vs retained-earnings test, capital reductions by solvency
+  statement vs court confirmation). Every claim carries a citation verified
+  against the corpus; no hallucinated citations. Notably efficient at 2 tool
+  calls — the candidate landed on the worked-example file directly and built a
+  comprehensive 8-step walkthrough from it plus cross-referenced concept files.
+  The draft-status caveat is correctly surfaced.

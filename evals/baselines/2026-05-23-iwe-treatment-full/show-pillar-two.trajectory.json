@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-pillar-two",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T14:59:21.289Z",
+  "wallClockSeconds": 71.826,
+  "turns": 9,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"pillar-two\"],\"mode\":\"and\"}",
+      "inputBytes": 36,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"pillar-two\",\"mcit\"],\"mode\":\"or\"}",
+      "inputBytes": 42,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md\",\"full\":true}",
+      "inputBytes": 91,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/international/pillar-two-mcit.md\",\"full\":true}",
+      "inputBytes": 72,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/tax/pillar-two.md\",\"full\":true}",
+      "inputBytes": 57,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/founder-entrepreneur/topco-tax.md\"}",
+      "inputBytes": 71,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rln \\\"UK operating\\\" knowledge/jersey/ --include=\\\"*.md\\\" | head -20\",\"description\":\"Find files mentioning UK operating company\"}",
+      "inputBytes": 147,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md\"}",
+      "inputBytes": 100,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 10,
+    "outputTokens": 4048,
+    "cacheReadTokens": 302283,
+    "cacheWriteTokens": 56164,
+    "totalCostUsd": 0.6034165
+  },
+  "answer": {
+    "text": "I have enough to answer the question with citations. The corpus has a directly on-point worked example for this exact scenario.\n\n# Pillar Two — Jersey TopCo above a UK Opco\n\n## Threshold test — does Pillar Two engage at all?\n\nPillar Two only engages for **MNE groups with annual consolidated revenue of EUR 750 million or more** in at least two of the four preceding fiscal years (`knowledge/jersey/tax/pillar-two.md`; `knowledge/jersey/international/pillar-two-mcit.md`). Below that threshold, the Jersey TopCo continues at its **zero-ten** rate (typically 0% for a pure holding company), and the UK Opco continues to pay UK corporation tax on its trading profits, with no top-up mechanics (`knowledge/jersey/use-cases/founder-entrepreneur/topco-tax.md`; `knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`, Step 4).\n\n## In-scope groups — how the rules apply to the structure\n\nIf the consolidated group is at or above the €750m threshold:\n\n- **Jersey TopCo (the parent / holding entity).** Under zero-ten the TopCo's Jersey ETR will typically be 0%, well below the 15% GloBE minimum. Jersey has implemented the **Multinational Corporate Income Tax (Jersey) Law 2024** (\"MCIT\"), effective for financial years commencing on or after **1 January 2025**, comprising a **Qualified Domestic Minimum Top-up Tax (QDMTT / DTT)** and an **Income Inclusion Rule (IIR)** (`knowledge/jersey/tax/pillar-two.md`; `knowledge/jersey/international/pillar-two-mcit.md`). The QDMTT tops Jersey-booked income up to a 15% ETR; because Jersey collects it locally, the UK does not collect it under its own IIR (`knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`, Step 4: \"the TopCo's Jersey-source income is topped up to 15% rather than ceded to the UK under the IIR\").\n- **UK Opco.** UK corporation tax on the operating profits is well above 15%, so no Pillar Two top-up is generated at the UK level on those profits. The corpus notes that \"UK Pillar Two implementation runs in parallel\" — i.e. the UK has its own GloBE-aligned regime — but does not give the UK CT rate itself; verify the UK-side ETR computation with a UK tax adviser (`knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`, Step 4).\n- **Net cash-tax effect.** Total Jersey tax on the TopCo becomes **at least 15%** for in-scope groups regardless of the zero-ten classification (`knowledge/jersey/tax/pillar-two.md`, *Interaction with zero-ten*). The headline 0% Jersey rate is no longer the result for the in-scope tier (`knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`).\n\n## Mechanics worth flagging\n\n- **GloBE income ≠ Jersey taxable income.** ETR is computed on GloBE income (consolidated-accounting-derived, with prescribed adjustments), not on Jersey local taxable income (`knowledge/jersey/tax/pillar-two.md`, *The 15% effective rate*).\n- **Substance-based income exclusion** (formulaic payroll + tangible-asset carve-out) reduces top-up in early years on a sliding scale (`knowledge/jersey/international/pillar-two-mcit.md`).\n- **Substance Law 2019** continues to apply in parallel — Pillar Two does not displace it (`knowledge/jersey/international/pillar-two-mcit.md`; `knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`, Step 3).\n- **Compliance burden** is material: MCIT registration, GloBE income and ETR calculation, top-up computation, GIR filing, and coordination with the group's home-country Pillar Two filings (`knowledge/jersey/international/pillar-two-mcit.md`; `knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`).\n\n## Out-of-scope holdings — the practical baseline\n\nMost founder TopCo structures are well below €750m; for them, the Jersey TopCo continues at 0% under zero-ten, with no Pillar Two filings (`knowledge/jersey/use-cases/founder-entrepreneur/topco-tax.md`; `knowledge/jersey/tax/pillar-two.md`).\n\n## Caveats\n\nAll four cited files are status **draft** (last_verified 2026-05-15 to 2026-05-18, well within freshness window) — i.e. authored but not yet stable. Treat the analysis as oriented to the right rules and structure but verify against the MCIT Law 2024, the OECD GloBE Model Rules, and the corresponding UK Pillar Two provisions before relying on it. The corpus does not give the precise UK CT rate or the UK QDMTT/IIR mechanics in detail — that is a UK-side question.\n\n## Sources cited\n\n1. `knowledge/jersey/tax/pillar-two.md`\n2. `knowledge/jersey/international/pillar-two-mcit.md`\n3. `knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`\n4. `knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md`\n5. `knowledge/jersey/use-cases/founder-entrepreneur/topco-tax.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 601
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

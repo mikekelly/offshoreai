@@ -1,0 +1,57 @@
+I have what I need. The canonical file is `draft` status, so I'll caveat that. Let me also briefly check the trust-officer use-case file for procedural colour.I have enough to answer.
+
+---
+
+## Article 47B procedure — set-aside of a trustee decision for mistake
+
+### The statutory home
+
+The mistake jurisdiction in Jersey is **statutory**, not common-law. It lives in **Articles 47B–47H of the Trusts (Jersey) Law 1984**, inserted by the **Trusts (Amendment No. 6) (Jersey) Law 2013** to replace the case-law-developed approach. Article 47B is the **interpretation provision** for the cluster — it defines "mistake" widely; the operative set-aside Articles are 47E (transfers *into* a trust) and **47G (exercise of a fiduciary power**, which is the relevant one for a trustee decision). (`knowledge/jersey/trusts/article-47-set-aside.md`)
+
+### What counts as a "mistake" (Article 47B's wide definition)
+
+Article 47B catches a mistake as to:
+
+- the **effect** of a transaction,
+- its **consequences** (expressly including tax consequences),
+- any **advantage** the person believed they would gain, or
+- any **fact existing before or at the time of** the disposition or power-exercise.
+
+Testamentary dispositions are excluded. (`knowledge/jersey/trusts/article-47-set-aside.md`)
+
+### The procedure for setting aside a trustee decision (Article 47G route)
+
+- **Vehicle**: Representation in the **Royal Court, Samedi Division**, with supporting affidavit evidence going to the trustee's state of mind at the time of the power-exercise.
+- **Applicant**: typically the trustee itself, but a protector, beneficiary or other appropriate person with standing can apply.
+- **Evidence**: contemporaneous documentary material (file notes, tax advice, e-mail correspondence) is critical — a reconstruction affidavit years after the event is weak.
+- **Test the Court applies** (per *In re S & T Trusts* [2015] JRC259 and the line that followed): the applicant must show (i) a mistake within Article 47B; (ii) that **but for** the mistake the power-exercise would not have been made in the form it was; and (iii) that the mistake was **of so serious a character that it would be just** for the Court to grant a declaration. Failure on any limb defeats the application; limb 2 is the most common failure point.
+- **Effect of a declaration**: the exercise is **voidable** and is unwound — typically *ab initio*, restoring the position immediately before the power was exercised. Good-faith third-party rights acquired for value are usually protected.
+- **Cross-border tax**: a Jersey declaration is necessary but not sufficient — HMRC has historically accepted Jersey set-aside as restoring the *status quo ante* for IHT/CGT; the IRS is more cautious and fact-dependent.
+- **Related vehicles**: if the right remedy is a direction rather than rescission, an **Article 51** directions application may be more appropriate (and is sometimes combined in a single Representation). If the mistake goes to the **very intention to settle**, **Article 11** (not 47) is the door.
+
+(`knowledge/jersey/trusts/article-47-set-aside.md`; `knowledge/jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md`)
+
+### How Jersey is wider than *Pitt v Holt*
+
+The English Supreme Court in ***Pitt v Holt; Futter v Futter* [2013] UKSC 26** distinguished between:
+
+- a **"mistake"** (an erroneous belief about a relevant fact or law), which can ground rescission, and
+- **"mere causative ignorance"** or **"inadequate deliberation"**, which generally cannot.
+
+The Royal Court has expressly **rejected** that distinction under the statutory regime: under Articles 47C–H the Court asks only whether there was *any* mistake within the wide Article 47B definition — **"the manner of the mistake is irrelevant and it is therefore inappropriate to make the distinctions applied under English law."** The practical consequence: a "we simply didn't think about that" or "we were ignorant of the rule" position that would likely fail in the English High Court can succeed in the Royal Court. This is one of the policy reasons advisers facing unpredictable future tax/regulatory risk prefer Jersey-law trusts. (`knowledge/jersey/trusts/article-47-set-aside.md`)
+
+The width is not unlimited: the Royal Court has refused relief where the applicant sought what was in substance a **re-writing of history** rather than an unwinding (***In the Matter of the M Settlement***), and is reluctant to treat a **disappointed expectation of a future tax advantage** (as opposed to an unforeseen tax *charge*) as a qualifying mistake.
+
+---
+
+### Caveats
+
+- Both cited corpus files are **`status: draft`** (last verified 2026-05-14, 9 days old). The substance reflects the published practitioner commentary and Royal Court authorities cited inline, but the files have not yet been promoted to `review`/`stable` — verify against the cited primary sources (Trusts (Jersey) Law 1984 at jerseylaw.je; *S & T Trusts* [2015] JRC259; *Pitt v Holt* [2013] UKSC 26) before acting.
+- I have not attempted to cite Article 47B via the canonical Article-dispatch tool — `getArticle` could not resolve it because the file does not currently declare 47B in its `articles_covered` frontmatter (a corpus-metadata gap, not a substantive one).
+
+### Files cited
+
+1. `knowledge/jersey/trusts/article-47-set-aside.md` (draft)
+2. `knowledge/jersey/use-cases/trust-officer/article-47-set-aside-for-mistake.md` (draft)
+
+> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.

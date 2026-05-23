@@ -1,0 +1,23 @@
+questionId: show-friday-passing
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer covers all six expected substance facts, uses
+  Jersey-specific terminology (contrat héréditaire, Jurats, Royal Court
+  passing), and explains the procedure's distinctiveness clearly for a
+  non-Jersey reader. All five citations verified against the corpus — no
+  hallucinations. The answer adds genuine analytical value by identifying the
+  tension between contract-passing.md's 'most weekdays' and the
+  property-specific files' 'Friday afternoon' convention, and by honestly
+  flagging that the corpus does not explain why Friday specifically. Draft
+  status correctly flagged with a verification caveat.

@@ -1,0 +1,22 @@
+questionId: show-fund-routes
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five rubric-expected facts are present and correct; no
+  factual errors found. The answer cites six corpus files, every citation
+  verified against the source. The decision framework is well-structured (LP
+  profile, AUM trajectory, substance, marketing reach) and correctly reproduces
+  the cross-jurisdictional map's emerging-manager guidance. Draft-status caveat
+  is proactive and appropriate. Three redundant getFile calls (initial truncated
+  read then full re-read of BVI, Guernsey, Cayman files) are the only efficiency
+  note — no impact on quality.

@@ -1,0 +1,23 @@
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All four expected substance facts covered accurately with
+  correct Article-level detail for Jersey (Article 9, 9A, TJL 1984). Every
+  citation verified against the corpus — no hallucinations, no unsupported
+  claims. Voice matches cross-border trust counsel: practitioner terminology
+  (Bartlett duty, ODRs, orphan SPV, PTC), structured as a 'which tool for which
+  problem' analysis. The combined-structure pattern and decision-in-one-sentence
+  summary are strong practitioner touches. Efficient retrieval at 4 tool calls
+  with zero redundancy. Only minor issues: 'three' vs four file count, and
+  'strongest statutory firewall' is a mild gloss beyond corpus language."

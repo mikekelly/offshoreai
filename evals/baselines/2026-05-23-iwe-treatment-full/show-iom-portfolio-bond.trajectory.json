@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-iom-portfolio-bond",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T15:04:40.898Z",
+  "wallClockSeconds": 35.346,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/isle-of-man/life-assurance.md\"}",
+      "inputBytes": 50,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/isle-of-man/life-assurance.md\",\"full\":true}",
+      "inputBytes": 62,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1735,
+    "cacheReadTokens": 152901,
+    "cacheWriteTokens": 46821,
+    "totalCostUsd": 0.4124967500000001
+  },
+  "answer": {
+    "text": "## Why a UK HNW investor uses an Isle of Man portfolio bond\n\nA portfolio bond is a **single-premium investment wrapped in a life-assurance policy**, issued by an IoM insurer and holding a wide range of underlying assets (funds, equities, fixed income, alternatives) — with the investment strategy typically directed by the policyholder's chosen investment manager (`knowledge/isle-of-man/life-assurance.md`).\n\nFor a UK-resident HNW investor, the principal attractions are:\n\n- **The UK 5% rule (tax-deferred withdrawals).** Up to **5% of the original premium can be withdrawn each year, tax-deferred, for 20 years**. The chargeable event arises only on final encashment, when it is taxed as deferred income. **Top-slicing relief** then reduces the effective rate for higher- and additional-rate payers. The governing UK regime is **Chapter 9 of Part 4 ITTOIA 2005**. This delivers materially better cash-flow tax treatment than ordinary investment (`knowledge/isle-of-man/life-assurance.md`).\n- **A specialist, well-regulated home jurisdiction.** The IoM is the world's leading offshore life-assurance jurisdiction, with major UK groups (Quilter, Standard Life International, Royal London, Canada Life International, Utmost) writing through IoM subsidiaries; the IOMFSA supervises under the **Insurance Act 2008**, and the IoM holds **EU Solvency II equivalence** — the only offshore jurisdiction other than Bermuda to do so (`knowledge/isle-of-man/life-assurance.md`; `knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n- **Investment flexibility inside the wrapper.** Wide asset universe, discretionary-manager designation, and surrender flexibility (subject to product penalties) — used alongside ISAs and pensions as a long-term wrapper (`knowledge/isle-of-man/life-assurance.md`).\n- **Estate-planning utility.** The life-assurance wrapper provides estate-planning efficiency in some jurisdictions; combined with trust structuring it is a recurring component of HNW family-wealth plans — including the cross-jurisdictional family-wealth pattern in this corpus (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\n### Pitfalls to flag\n\n- **Adviser suitability** — IoM bonds are sold through intermediaries; not appropriate for non-sophisticated retail investors.\n- **Product misclassification** in the policyholder's tax jurisdiction can break the expected treatment.\n- **Solvency II equivalence** is a watch-list item (currently stable but reviewed periodically).\n- AML/CFT exposure runs through the intermediary chain (`knowledge/isle-of-man/life-assurance.md`).\n\n### Caveats\n\n- The cited corpus file is **status: `draft`** — drafted but not yet fully verified against primary sources. The UK tax mechanics described (5% rule, top-slicing, ITTOIA 2005 Ch.9 Pt.4) and the Solvency II / IOMFSA framing are standard, but you should verify the specific statutory references and current Solvency II equivalence status against HMRC manuals and the IOMFSA / EIOPA sites before acting.\n- This corpus is Jersey-anchored; the IoM file is at the comparative depth typical of non-Jersey jurisdictions here. For a transaction, the corpus would not be your sole source on IoM-specific product mechanics.\n- `last_verified: 2026-05-18` (fresh — 5 days old).\n\n### Cited files\n\n1. `knowledge/isle-of-man/life-assurance.md` (status: draft)\n2. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 458
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

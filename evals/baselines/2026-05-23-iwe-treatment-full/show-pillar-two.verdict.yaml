@@ -1,0 +1,23 @@
+questionId: show-pillar-two
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 14
+hallucinatedCitations: 0
+summary: Pass. The answer is a well-structured, Jersey-specific Pillar Two
+  analysis for the exact scenario asked — Jersey TopCo above UK Opco. All five
+  rubric facts are covered with accurate detail and every claim is
+  citation-backed against corpus files that genuinely support the claims made.
+  The one minor imperfection — naming the statute as 'Law 2024' rather than 'Law
+  2025' — actually matches the statute source in the corpus's own pillar-two.md
+  frontmatter, making it defensible. Voice is appropriately that of an
+  international tax adviser. Draft-status caveats and verification
+  recommendations are exemplary.

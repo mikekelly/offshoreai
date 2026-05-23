@@ -1,0 +1,23 @@
+questionId: show-trusts-firewall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. The answer is substantively accurate across all Article 9
+  paragraphs, with every claim verified against the corpus firewall file. Two
+  rubric-expected elements are missing — Royal Court anti-suit injunctions and
+  Jersey case law (Crociani is available in sibling files) — but 4 of 5 expected
+  facts are covered with no factual errors. Citation precision is clean: both
+  cited paths support their claims. One redundant tool call (getFile called
+  twice for the same path, once without full, once with full). Voice is strong —
+  reads like practitioner-to-practitioner briefing. The draft-status caveat is a
+  positive quality signal."

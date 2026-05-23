@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-bermuda-captive",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T15:04:07.907Z",
+  "wallClockSeconds": 39.969,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/insurance-classes.md\"}",
+      "inputBytes": 49,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/index.md\"}",
+      "inputBytes": 37,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/insurance.md\"}",
+      "inputBytes": 41,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/segregated-accounts-company.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2225,
+    "cacheReadTokens": 153907,
+    "cacheWriteTokens": 48463,
+    "totalCostUsd": 0.43551225000000005
+  },
+  "answer": {
+    "text": "## Why Bermuda\n\nBermuda is the **world's leading captive-insurance domicile** and the largest offshore market by vehicle count, with a deep professional infrastructure (insurance managers, actuaries, lawyers, BMA supervision), **Solvency II equivalence**, and **NAIC qualified-jurisdiction** status — which matters for an insurer dealing with EU or US-domiciled parents or counterparties (`knowledge/bermuda/insurance.md`; `knowledge/CROSS-JURISDICTIONAL-MAP.md`). On the cross-jurisdictional matrix it is positioned as the **world's leading (re)insurance market** with the Insurance Act 1978 class system specifically designed to give pure captives a light-touch tier and commercial reinsurers a Solvency II-equivalent tier in the same statute (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\n## Which Class\n\nFor a **multinational group's pure single-parent captive** writing only the group's own risks, the corpus's decision framework points to **Class 1**:\n\n> \"Pure single-parent captive → **Bermuda Class 1** or Guernsey PCC cell\" (`knowledge/CROSS-JURISDICTIONAL-MAP.md`)\n\nThe class definition in the substantive file confirms: **Class 1 = pure single-parent captive, only writes risks of parent / group** — the lowest regulatory tier with the lightest minimum capital, solvency, reporting and BMA-supervisory burden (`knowledge/bermuda/insurance-classes.md`). The corpus's guidance is that sponsors pick \"the lowest class consistent with their business to minimise regulatory overhead\" — so Class 1 is correct unless the business intent goes beyond pure related-party risks.\n\nTwo variants to be aware of:\n\n- **Class 2** — if the captive will also write some **limited unrelated / third-party** business, or you bring in other group-affiliated owners (a group / association captive) (`knowledge/bermuda/insurance-classes.md`).\n- **Class 3** — if **significant unrelated business** is contemplated (up to specified thresholds) (`knowledge/bermuda/insurance-classes.md`).\n\nIf the multinational has **multiple distinct subsidiary risk pools** that you want statutorily ringfenced from each other inside a single licensed entity, the standard Bermuda answer is a **Segregated Accounts Company (SAC)** under the Segregated Accounts Companies Act 2000, with one Class 1 (or 2/3) licence at the SAC level and each programme in its own segregated account — Bermuda SACs are heavily used precisely for multi-programme captive structures (`knowledge/bermuda/segregated-accounts-company.md`).\n\n## Caveats\n\n- Both `knowledge/bermuda/insurance-classes.md` and `knowledge/bermuda/insurance.md` are **`status: draft`** in the corpus — drafted but not fully verified against primary sources. Treat the class definitions and minimum-capital figures as orientation; verify against the **Insurance Act 1978** (as amended) and current BMA rules before filing.\n- The corpus's Bermuda coverage is explicitly framed as **adjacent-jurisdiction high-level**: \"For full Bermuda practice, engage Bermuda counsel\" (`knowledge/bermuda/index.md`).\n- The corpus does not give a step-by-step formation sequence for a Class 1 captive or current minimum-capital figures — those need to come from BMA primary sources.\n\n## Sources cited\n\n1. `knowledge/CROSS-JURISDICTIONAL-MAP.md` — decision framework + Bermuda's positioning\n2. `knowledge/bermuda/insurance-classes.md` (draft) — class definitions\n3. `knowledge/bermuda/insurance.md` (draft) — Solvency II / NAIC / market depth\n4. `knowledge/bermuda/segregated-accounts-company.md` (draft) — SAC option for multi-programme captives\n5. `knowledge/bermuda/index.md` — scope and \"engage Bermuda counsel\" framing\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 480
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

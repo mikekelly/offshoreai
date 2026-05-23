@@ -1,0 +1,311 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-23T15:11:26.268Z
+  questions: 28
+totals:
+  pass: 26
+  partial: 2
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 0.89
+  substancePassRate: 1
+  medianToolCalls: 4
+  medianTokensInput: 8
+  medianTokensOutput: 2317.5
+  medianWallClockSeconds: 41.07
+  totalCostUsd: 12.9921
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-trusts-firewall
+    verdict: pass
+    summary: "Pass. The answer is substantively accurate across all Article 9
+      paragraphs, with every claim verified against the corpus firewall file.
+      Two rubric-expected elements are missing — Royal Court anti-suit
+      injunctions and Jersey case law (Crociani is available in sibling files) —
+      but 4 of 5 expected facts are covered with no factual errors. Citation
+      precision is clean: both cited paths support their claims. One redundant
+      tool call (getFile called twice for the same path, once without full, once
+      with full). Voice is strong — reads like practitioner-to-practitioner
+      briefing. The draft-status caveat is a positive quality signal."
+  - id: show-article-47
+    verdict: pass
+    summary: Pass. All six substance facts covered with no material errors;
+      Jersey-specific statutes and cases correctly named; voice matches the
+      trust-litigator register the rubric demands. Both corpus citations
+      verified — every claim is supported by the cited file. The one redundant
+      tool call (getArticle failing then re-fetching the full file) is minor.
+      The only blemish is leaked internal reasoning at the top of the answer,
+      which is a presentation issue, not a factual one.
+  - id: show-jpf-vs-expert
+    verdict: pass
+    summary: Pass. The answer correctly identifies the JPF as the right vehicle for
+      a club-deal PE fund and accurately states all headline features
+      (50-investor cap, 48-hour authorisation, DSP-substitution model) with the
+      Expert Fund as the scale-up path. Every factual claim is supported by the
+      cited corpus files; no hallucinated citations. Voice is well-calibrated as
+      fund counsel advising a structuring choice — direct recommendation with a
+      clear comparison table and explicit switch-over criteria. The draft-status
+      caveat and the note about aifmd-nppr.md show good epistemic discipline.
+  - id: show-trusts-comparison
+    verdict: pass
+    summary: "Pass. All four expected substance facts covered accurately with
+      correct Article-level detail for Jersey (Article 9, 9A, TJL 1984). Every
+      citation verified against the corpus — no hallucinations, no unsupported
+      claims. Voice matches cross-border trust counsel: practitioner terminology
+      (Bartlett duty, ODRs, orphan SPV, PTC), structured as a 'which tool for
+      which problem' analysis. The combined-structure pattern and
+      decision-in-one-sentence summary are strong practitioner touches.
+      Efficient retrieval at 4 tool calls with zero redundancy. Only minor
+      issues: 'three' vs four file count, and 'strongest statutory firewall' is
+      a mild gloss beyond corpus language."
+  - id: show-aifmd-nppr
+    verdict: partial
+    summary: "Partial. The answer is substantively strong — it covers every rubric
+      fact, cites three corpus files accurately, handles draft-status caveats
+      well, and reads like fund counsel. However, the jersey_specific dimension
+      is only partial: the candidate never names the 'Alternative Investment
+      Funds (Jersey) Regulations 2012' (the formal Jersey AIFM statute, present
+      in the corpus source metadata) nor 'AIFMD Article 42' (the NPPR-enabling
+      provision the rubric specifically expects). These are the two
+      rubric-expected Jersey-specific markers. The voice and citation work are
+      excellent."
+  - id: show-pillar-two
+    verdict: pass
+    summary: Pass. The answer is a well-structured, Jersey-specific Pillar Two
+      analysis for the exact scenario asked — Jersey TopCo above UK Opco. All
+      five rubric facts are covered with accurate detail and every claim is
+      citation-backed against corpus files that genuinely support the claims
+      made. The one minor imperfection — naming the statute as 'Law 2024' rather
+      than 'Law 2025' — actually matches the statute source in the corpus's own
+      pillar-two.md frontmatter, making it defensible. Voice is appropriately
+      that of an international tax adviser. Draft-status caveats and
+      verification recommendations are exemplary.
+  - id: show-eviction
+    verdict: pass
+    summary: Pass. The candidate nails every rubric fact — 7-day breach notice,
+      Petty Debts Court exclusive jurisdiction, Viscount enforcement, 2-4 month
+      timeline, self-help as criminal offence, tenant defences — with correct
+      Jersey-specific statute references (RTJL 2011, 2025 Amendment, DL 2013)
+      and a smart-friend landlord-facing tone. All four citations verified
+      against the corpus; no hallucinated citations. Draft-status caveat handled
+      explicitly. Efficient retrieval in 4 tool calls with no redundancy.
+  - id: show-arrest
+    verdict: pass
+    summary: "Pass. All six rubric-expected facts are present and correct with
+      verbatim caution wording and an accurate detention-limits table. Citations
+      are clean — both cited files exist, are statute-sourced, and support every
+      claim. The one soft spot is jersey_specific depth: the answer covers
+      States Police / Honorary Police well but barely mentions the distinctive
+      Magistrate's Court → Royal Court criminal forum beyond a parenthetical in
+      the detention table. Voice is strong — practical, numbered,
+      action-oriented, exactly as the rubric requests. Draft status correctly
+      caveated."
+  - id: show-planning
+    verdict: pass
+    summary: Pass. The answer covers all five rubric substance points (PBL 2002, GD
+      Order 2011 permitted development, two parallel consents, most extensions
+      need application, conservation/listed narrower), cites the correct and
+      most relevant corpus files, and is written in a homeowner-friendly
+      operational voice. Draft status of both files is proactively flagged with
+      a recommendation to verify against primary sources. Efficient
+      two-tool-call retrieval with no redundancy.
+  - id: show-tenancy-2025
+    verdict: pass
+    summary: Pass. All seven expected facts are present and correct; zero factual
+      errors. The candidate used a tight three-call retrieval sequence (tree →
+      getFile → freshnessCheck), cited the most authoritative corpus file,
+      correctly flagged its draft status with an explicit re-verify caveat, and
+      presented the post-amendment regime without falling into the trap of
+      reciting pre-amendment law. The transitional-rules table and 'what did not
+      change' section add useful precision beyond the minimum bar.
+  - id: show-drug-driving
+    verdict: pass
+    summary: Pass. The answer covers all five expected facts accurately, cleanly
+      separates current impairment-based law from the pending February 2026
+      reform proposal, and correctly cites the single authoritative corpus file.
+      The candidate earns additional credit for proactively flagging the file's
+      draft status and recommending primary-source verification — a model
+      freshness/status caveat. Efficient four-call retrieval with no redundancy.
+  - id: show-parish-hall
+    verdict: pass
+    summary: Pass. All six rubric facts are present and correct; the answer is
+      thoroughly Jersey-grounded with Centenier, Honorary Police, parish
+      context, and Article 23 RTJL all named. Citation precision is clean —
+      every claim traces to the single cited file, which fully supports it. The
+      candidate also correctly flagged the file's draft status and advised
+      verification against the Law Officers' Department schedule, demonstrating
+      strong status-handling discipline. Efficient four-tool retrieval with no
+      redundancy.
+  - id: show-voisinage
+    verdict: partial
+    summary: "Partial. The answer is well-structured, accurately cited, and handles
+      the draft-status caveat well, but it misses the rubric's most distinctive
+      requirement: naming Pothier and Le Geyt as the doctrinal foundations —
+      names that appear explicitly in the corpus file the candidate read. This
+      omission costs it on both jersey_specific (partial) and voice (the
+      'explaining customary-law roots' register is thin without the jurists),
+      demoting an otherwise solid pass-level answer. Guernsey as a fellow
+      voisinage jurisdiction also goes unmentioned."
+  - id: show-friday-passing
+    verdict: pass
+    summary: Pass. The answer covers all six expected substance facts, uses
+      Jersey-specific terminology (contrat héréditaire, Jurats, Royal Court
+      passing), and explains the procedure's distinctiveness clearly for a
+      non-Jersey reader. All five citations verified against the corpus — no
+      hallucinations. The answer adds genuine analytical value by identifying
+      the tension between contract-passing.md's 'most weekdays' and the
+      property-specific files' 'Friday afternoon' convention, and by honestly
+      flagging that the corpus does not explain why Friday specifically. Draft
+      status correctly flagged with a verification caveat.
+  - id: show-fund-routes
+    verdict: pass
+    summary: Pass. All five rubric-expected facts are present and correct; no
+      factual errors found. The answer cites six corpus files, every citation
+      verified against the source. The decision framework is well-structured (LP
+      profile, AUM trajectory, substance, marketing reach) and correctly
+      reproduces the cross-jurisdictional map's emerging-manager guidance.
+      Draft-status caveat is proactive and appropriate. Three redundant getFile
+      calls (initial truncated read then full re-read of BVI, Guernsey, Cayman
+      files) are the only efficiency note — no impact on quality.
+  - id: show-cell-companies
+    verdict: pass
+    summary: Pass. All five rubric facts are covered accurately and every claim is
+      cited to the correct corpus file. The candidate correctly identifies
+      Guernsey PCC as the 1997 original, Bermuda SAC as insurance-focused,
+      Cayman SPC as general-purpose, and Guernsey ICC as the
+      separate-personality outlier, then delivers a decision matrix that maps
+      cleanly onto the rubric's expected guidance. Draft status flagged
+      proactively. Four redundant re-reads (offset-based re-fetches of files
+      already retrieved) are the only inefficiency — substance, citations, and
+      structure are strong throughout.
+  - id: show-bermuda-captive
+    verdict: pass
+    summary: Pass. All five citations verified against corpus files with zero
+      hallucinations; the draft-status caveat is exemplary. Substance covers 4
+      of 5 rubric facts — Class 4 (US$100m commercial reinsurance) is the only
+      gap, which is defensible given the question's captive focus. The SAC
+      recommendation for multi-programme structures adds value beyond the
+      minimum rubric. Efficient 4-call trajectory with no redundancy.
+  - id: show-iom-portfolio-bond
+    verdict: pass
+    summary: "Pass. All four rubric facts covered with precise detail —
+      single-premium wrapper, 5% rule with ITTOIA 2005 Ch.9 Pt.4 reference,
+      top-slicing relief, Solvency II equivalence plus named UK insurer
+      subsidiaries. Both citations verified against corpus; no hallucinated
+      claims. The candidate appropriately flagged the draft status of the IoM
+      file and added useful pitfalls. One minor inefficiency: the same file was
+      fetched twice (once without full, once with full flag), but this did not
+      affect quality."
+  - id: show-listing-vehicle
+    verdict: pass
+    summary: "Pass. All four rubric facts covered accurately with clean citation to
+      the most authoritative corpus sources. The one apparent discrepancy —
+      candidate says BVI has MTT 2025 while the rubric expected 'no equivalent
+      yet' — resolves in the candidate's favour: bvi/tax.md and
+      CROSS-JURISDICTIONAL-MAP.md both document BVI MTT 2025; the 'no equivalent
+      yet' appears only in the bermuda/exempted-company.md comparison table,
+      which is an intra-corpus inconsistency the candidate navigated correctly.
+      Efficient three-call trajectory with zero redundancy; draft-status caveats
+      added proactively."
+  - id: show-emerging-manager-stack
+    verdict: pass
+    summary: Pass. The candidate covers all five rubric facts with correct detail
+      and zero factual errors. Every legal and regulatory claim is cited to one
+      of four corpus files, all of which were read and verified as supporting
+      the claims made. The three-entity stack (GP BC, management BC as Approved
+      Manager, fund BC or LP) is drawn verbatim from the corpus's canonical
+      layout. The comparison table between Incubator and Approved Funds is
+      accurate against the source file. The candidate goes beyond the rubric by
+      correctly flagging draft status, AML/CFT obligations, and
+      beneficial-ownership regime — all substantiated by the cited files.
+      Efficient retrieval with six tool calls and no redundancy.
+  - id: show-worked-topco-listing
+    verdict: pass
+    summary: Pass. All 8 expected facts are present and correctly sourced. The
+      answer is strongly Jersey-specific, naming four Jersey statutes and
+      distinguishing Jersey mechanics from English-law equivalents
+      (solvency-based distributions vs retained-earnings test, capital
+      reductions by solvency statement vs court confirmation). Every claim
+      carries a citation verified against the corpus; no hallucinated citations.
+      Notably efficient at 2 tool calls — the candidate landed on the
+      worked-example file directly and built a comprehensive 8-step walkthrough
+      from it plus cross-referenced concept files. The draft-status caveat is
+      correctly surfaced.
+  - id: show-worked-family-wealth
+    verdict: pass
+    summary: "Pass. All seven rubric facts are covered with accurate,
+      Jersey-specific detail and zero factual errors. Every citation verified:
+      the five corpus files all support the claims attached to them, with no
+      hallucinated citations. The answer closely mirrors the Rossi-family worked
+      example in the corpus while adding its own structured presentation (limits
+      section, compliance overlay, cross-jurisdictional justification). Draft
+      status of all cited files was proactively flagged — a model freshness
+      disclosure."
+  - id: show-cayman-llc
+    verdict: pass
+    summary: "Pass. All five rubric substance points covered with correct detail.
+      Every claim is citation-backed against knowledge/cayman/cayman-llc.md,
+      which the candidate read twice (one redundant call). The answer goes
+      beyond the rubric with a useful pitfalls section quoting corpus-specific
+      warnings (migration tax-residency, member-managed default, LLC Agreement
+      drafting). Draft status of the primary file is explicitly flagged with a
+      verify-against-primary-source caveat. One minor terminology issue: 'MCIT'
+      used for Cayman's Pillar Two response instead of 'MTT', sourced from a
+      cross-jurisdictional map inconsistency rather than candidate error."
+  - id: show-jersey-vs-guernsey-trusts
+    verdict: pass
+    summary: "Pass. All five rubric facts are covered accurately and with correct
+      corpus citations. The answer is Jersey-specific throughout — names Jersey
+      statutes (TJL 1984 Articles 9, 9A, 47B-47H), Guernsey statutes (TGL 2007
+      s.14), and case law (Re S&T Trusts) without generic offshore filler. Every
+      claim is cited to a corpus file that supports it; no hallucinated
+      citations. Draft status correctly flagged for all sources with an explicit
+      verify-against-primary-source caveat. One minor inefficiency: the Guernsey
+      comparison file was read twice (once partial, once full), but retrieval
+      was otherwise tight at 6 calls."
+  - id: show-image-rights
+    verdict: pass
+    summary: "Pass. All five rubric facts covered accurately and completely from the
+      single most relevant corpus file with zero hallucinated citations. The
+      candidate proactively flagged the file's draft status and advised
+      primary-source verification — exemplary freshness/status handling. One
+      minor inefficiency: getFile was called twice for the same path (once
+      without full, once with full:true), a redundant call that didn't affect
+      answer quality. The personnage definition, property-right characteristics,
+      structuring guidance, and practical limitations all match the corpus
+      verbatim."
+  - id: show-uk-carry-reform
+    verdict: pass
+    summary: "Pass. All seven rubric facts covered accurately with correct figures,
+      both cited corpus files verified as supporting every claim. Voice is
+      convincingly PE-tax specialist — uses crystallisation, carry/co-invest
+      boundary, look-through, gross-of-tax economics naturally. One minor
+      efficiency note: the frontier file was fetched twice (once without full,
+      once with full:true), but this did not affect answer quality. The answer
+      goes beyond minimum rubric by adding sponsor-side response detail and
+      practical caveats about tail liability and anti-avoidance provisions."
+  - id: show-continuation-funds
+    verdict: pass
+    summary: Pass. The candidate covers 5 of 6 rubric facts accurately and without
+      material errors, hitting the 46% market figure, Guernsey's not-CIS
+      treatment and 3-day approval, LP roll-vs-cash mechanics, and the
+      Jersey/Guernsey comparison with route-flexibility nuance. The two gaps are
+      the GP carry-crystallisation mechanic (named but not explained) and the
+      specific term 'fairness opinions' (covered substantively as 'independent
+      valuation'). Both citations verified — every claim traces cleanly to the
+      frontier file or Guernsey PIF file. Voice is well-calibrated for a
+      PE-sophisticated audience. Freshness handling is exemplary, correctly
+      flagging both files' status with actionable caveats.
+  - id: show-aifmd-ii
+    verdict: pass
+    summary: "Pass. All six rubric facts are present and correct, tightly sourced to
+      the frontier file which is the corpus's authoritative landing point. The
+      voice is excellent — structured, practitioner-grade, with the right mix of
+      directness and caveat. Citation discipline is strong: every claim has a
+      corpus path, both files were verified, freshness was handled with explicit
+      as_of acknowledgement and a draft-status flag. The pitfalls section adds
+      genuine practitioner value beyond the minimum rubric. Efficient retrieval
+      in 4 tool calls with no redundancy."

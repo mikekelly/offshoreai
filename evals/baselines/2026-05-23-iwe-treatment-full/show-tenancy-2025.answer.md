@@ -1,0 +1,31 @@
+The **Residential Tenancy (Jersey) Amendment Law 2025** came into force on **15 April 2026** — the most significant overhaul of Jersey's residential-tenancy regime in over a decade. The headline changes:
+
+## Headline changes
+
+- **Fixed-term cap of 3 years.** Initial fixed terms may not exceed 3 years, and **successive fixed terms are prohibited**: at expiry the tenancy either ends or converts automatically to a periodic tenancy.
+- **Tenant exit on 1 month's notice — even mid-fixed-term.** A tenant may end *any* residential tenancy on one month's written notice, regardless of the fixed term.
+- **Landlord termination: justified ground or 12 months' notice.** A landlord ending a periodic tenancy must either rely on a permitted ground (breach, sale, owner-occupation, redevelopment — served on 3 months' notice) or give **12 months' no-fault notice**. The prior 3-month no-fault notice is gone.
+- **Rent caps — RPI, once a year, 2 months' notice.** Rent on a periodic tenancy may be increased only once per year, by no more than the Jersey RPI for the period, on at least 2 months' written notice, unless the rent is "significantly below market rent" (a narrow, challengeable carve-out).
+- **New independent Rent Tribunal.** Operative from 15 April 2026, it handles disputes over rent increases (RPI compliance, the below-market carve-out, the once-yearly rule, the 2-month notice rule). Social housing, employment-linked accommodation, and eviction/breach disputes are out of scope — eviction stays with the **Petty Debts Court**, enforced by the **Viscount**.
+- **Strengthened written-form rules.** All chargeable fees must be clearly identified in the agreement; hidden fees are unenforceable and may be an offence.
+
+## Transitional treatment
+
+- New tenancies (on or after 15 April 2026): full post-amendment regime.
+- Pre-existing **periodic** tenancies: converted immediately to the new regime (rent cap, 12-month no-fault notice).
+- Pre-existing **fixed-term** tenancies: continue under prior law until expiry, then post-amendment rules apply.
+- Successive-fixed-term clauses become unenforceable at expiry of the current term.
+
+## What did *not* change
+
+The Petty Debts Court's exclusive jurisdiction over eviction/breach, Viscount enforcement, the condition-report regime, the Tenants' Deposit Scheme, the lodging-house exclusion, and the 9-year ceiling (above which a lease becomes a Royal-Court-passed contract of lease) are all unchanged.
+
+## Caveat
+
+The file I'm citing (`knowledge/jersey/residential-tenancy/2025-amendment-law.md`) is **status: `draft`** — its content has been drafted but not yet verified against the primary source to `stable` standard. Re-verify against the in-force Amendment Law text on jerseylaw.je before relying on it operationally.
+
+## Cited
+
+1. `knowledge/jersey/residential-tenancy/2025-amendment-law.md`
+
+> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.

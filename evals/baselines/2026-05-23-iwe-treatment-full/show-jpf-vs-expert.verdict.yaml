@@ -1,0 +1,22 @@
+questionId: show-jpf-vs-expert
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer correctly identifies the JPF as the right vehicle for
+  a club-deal PE fund and accurately states all headline features (50-investor
+  cap, 48-hour authorisation, DSP-substitution model) with the Expert Fund as
+  the scale-up path. Every factual claim is supported by the cited corpus files;
+  no hallucinated citations. Voice is well-calibrated as fund counsel advising a
+  structuring choice — direct recommendation with a clear comparison table and
+  explicit switch-over criteria. The draft-status caveat and the note about
+  aifmd-nppr.md show good epistemic discipline.

@@ -1,0 +1,20 @@
+questionId: show-bermuda-captive
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All five citations verified against corpus files with zero
+  hallucinations; the draft-status caveat is exemplary. Substance covers 4 of 5
+  rubric facts — Class 4 (US$100m commercial reinsurance) is the only gap, which
+  is defensible given the question's captive focus. The SAC recommendation for
+  multi-programme structures adds value beyond the minimum rubric. Efficient
+  4-call trajectory with no redundancy.

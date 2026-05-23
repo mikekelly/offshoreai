@@ -1,0 +1,22 @@
+questionId: show-arrest
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: "Pass. All six rubric-expected facts are present and correct with
+  verbatim caution wording and an accurate detention-limits table. Citations are
+  clean — both cited files exist, are statute-sourced, and support every claim.
+  The one soft spot is jersey_specific depth: the answer covers States Police /
+  Honorary Police well but barely mentions the distinctive Magistrate's Court →
+  Royal Court criminal forum beyond a parenthetical in the detention table.
+  Voice is strong — practical, numbered, action-oriented, exactly as the rubric
+  requests. Draft status correctly caveated."

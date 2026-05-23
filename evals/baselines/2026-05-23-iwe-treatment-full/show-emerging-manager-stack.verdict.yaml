@@ -1,0 +1,24 @@
+questionId: show-emerging-manager-stack
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The candidate covers all five rubric facts with correct detail
+  and zero factual errors. Every legal and regulatory claim is cited to one of
+  four corpus files, all of which were read and verified as supporting the
+  claims made. The three-entity stack (GP BC, management BC as Approved Manager,
+  fund BC or LP) is drawn verbatim from the corpus's canonical layout. The
+  comparison table between Incubator and Approved Funds is accurate against the
+  source file. The candidate goes beyond the rubric by correctly flagging draft
+  status, AML/CFT obligations, and beneficial-ownership regime — all
+  substantiated by the cited files. Efficient retrieval with six tool calls and
+  no redundancy.

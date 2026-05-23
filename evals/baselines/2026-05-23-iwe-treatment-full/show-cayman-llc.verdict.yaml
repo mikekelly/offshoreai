@@ -1,0 +1,23 @@
+questionId: show-cayman-llc
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All five rubric substance points covered with correct detail.
+  Every claim is citation-backed against knowledge/cayman/cayman-llc.md, which
+  the candidate read twice (one redundant call). The answer goes beyond the
+  rubric with a useful pitfalls section quoting corpus-specific warnings
+  (migration tax-residency, member-managed default, LLC Agreement drafting).
+  Draft status of the primary file is explicitly flagged with a
+  verify-against-primary-source caveat. One minor terminology issue: 'MCIT' used
+  for Cayman's Pillar Two response instead of 'MTT', sourced from a
+  cross-jurisdictional map inconsistency rather than candidate error."

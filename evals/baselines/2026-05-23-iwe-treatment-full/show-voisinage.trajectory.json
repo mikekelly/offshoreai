@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T15:01:49.818Z",
+  "wallClockSeconds": 32.911,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"voisinage\"]}",
+      "inputBytes": 22,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/voisinage.md\",\"full\":true}",
+      "inputBytes": 61,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1607,
+    "cacheReadTokens": 151391,
+    "cacheWriteTokens": 44976,
+    "totalCostUsd": 0.39701050000000004
+  },
+  "answer": {
+    "text": "## What voisinage is\n\n**Voisinage** is a Norman customary-law doctrine, preserved in Jersey but abandoned in most other modern legal systems, that governs the relationship between neighbouring landowners. It requires each owner to use their property in a way that does **not cause unreasonable harm** to neighbours — exceeding the ordinary inconveniences of neighbourhood, without adequate justification. It is *distinct* from English nuisance even though the outcomes often overlap (`knowledge/jersey/property/voisinage.md`).\n\nTwo features make it worth flagging up front:\n\n- **It can apply without fault** (objective liability), unlike English nuisance in some formulations.\n- **There is no closed list of \"smell, smoke, noise\" categories** — the doctrine captures a broader range of conduct, including vibrations, drainage and surface water, tree roots and overhanging branches, light obstruction, and inter-unit issues in apartments (`knowledge/jersey/property/voisinage.md`).\n\n## Does it apply to your neighbour problem?\n\nThe corpus cannot answer that for your specific facts, but the **threshold test** it states is:\n\n1. **Harm** that is objectively identifiable;\n2. **Caused by** the defendant's use of their property;\n3. **Exceeding** the ordinary inconveniences of neighbourhood;\n4. **Without** adequate justification (`knowledge/jersey/property/voisinage.md`).\n\nTwo practical points worth knowing before you decide if it fits:\n\n- **Planning permission does not exclude voisinage** — your neighbour having consent for what they're doing is not a complete answer. Regulatory compliance may be *evidence* of reasonable use, but it is not a shield (`knowledge/jersey/property/voisinage.md`).\n- **A valid servitude** (a Jersey easement) is a different matter — voisinage does not override one, but *excessive use* of a servitude can still breach voisinage (`knowledge/jersey/property/voisinage.md`).\n\n**Defences** your neighbour might raise include reasonable use, a pre-existing state of affairs (limited), your consent or acquiescence, statutory authority, or prescription (limited) (`knowledge/jersey/property/voisinage.md`).\n\n## Practical next steps the corpus recommends\n\n- **Document the interference** — logs, photographs, recordings.\n- **Engage experts early** where the harm needs measuring (acoustic, environmental).\n- Build a **correspondence trail** with the neighbour.\n- **Mediate first** where possible — voisinage matters often resolve there.\n- If it escalates, the **Royal Court** hears voisinage claims by Order of Justice, with site visits and expert evidence common (`knowledge/jersey/property/voisinage.md`).\n\nThe most-cited *pitfall* in the file is **assuming the English nuisance test applies wholesale** — engage a Jersey advocate familiar with voisinage rather than relying on English-law instincts (`knowledge/jersey/property/voisinage.md`).\n\n## Caveat on status\n\nThe corpus file I'm citing is marked **`draft`** (last verified 2026-05-18) — the substance has been drafted but is not yet fully verified against primary sources. Before acting on a specific dispute, verify the doctrine and the typical-claim categories with a Jersey advocate and against Royal Court case law directly.\n\n## Cited files\n\n1. `knowledge/jersey/property/voisinage.md` — *draft, last verified 2026-05-18*\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 463
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

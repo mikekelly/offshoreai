@@ -1,0 +1,21 @@
+questionId: show-parish-hall
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. All six rubric facts are present and correct; the answer is
+  thoroughly Jersey-grounded with Centenier, Honorary Police, parish context,
+  and Article 23 RTJL all named. Citation precision is clean — every claim
+  traces to the single cited file, which fully supports it. The candidate also
+  correctly flagged the file's draft status and advised verification against the
+  Law Officers' Department schedule, demonstrating strong status-handling
+  discipline. Efficient four-tool retrieval with no redundancy.

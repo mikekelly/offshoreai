@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-cell-companies",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T15:03:17.907Z",
+  "wallClockSeconds": 62.453,
+  "turns": 9,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/protected-cell-company.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/incorporated-cell-company.md\"}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/segregated-accounts-company.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/segregated-portfolio-company.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/segregated-portfolio-company.md\",\"full\":true,\"offset\":\"120\"}",
+      "inputBytes": 86,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bermuda/segregated-accounts-company.md\",\"full\":true,\"offset\":\"120\"}",
+      "inputBytes": 86,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/protected-cell-company.md\",\"full\":true,\"offset\":\"120\"}",
+      "inputBytes": 82,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/incorporated-cell-company.md\",\"full\":true,\"offset\":\"120\"}",
+      "inputBytes": 85,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 4068,
+    "cacheReadTokens": 157969,
+    "cacheWriteTokens": 60807,
+    "totalCostUsd": 0.56076825
+  },
+  "answer": {
+    "text": "All four cell-company files I'm citing are `status: draft` (last_verified 2026‑05‑18 — fresh, 5 days old). The factual contours are drafted but not yet `review`/`stable`; verify against statute before relying for a real structuring decision.\n\n## The four are siblings, not substitutes\n\nAll four create **statutorily ringfenced cells inside one corporate envelope**; they diverge on (a) whether each cell is its own legal entity and (b) which industry the regime is *built around*. Guernsey invented the form in 1997 (PCC), Cayman copied in 1998 (SPC), Bermuda in 2000 (SAC), and Guernsey then evolved the second-generation ICC. ([`knowledge/guernsey/protected-cell-company.md`](knowledge/guernsey/protected-cell-company.md); [`knowledge/cayman/segregated-portfolio-company.md`](knowledge/cayman/segregated-portfolio-company.md); [`knowledge/bermuda/segregated-accounts-company.md`](knowledge/bermuda/segregated-accounts-company.md); [`knowledge/guernsey/incorporated-cell-company.md`](knowledge/guernsey/incorporated-cell-company.md))\n\n## When to use each\n\n### Bermuda SAC — insurance, ILS, rent-a-captive\nReach for the SAC when the underlying activity is **insurance-shaped**: corporate captive housing multiple lines (D&O, property, BI) in one BMA-licensed entity; a repeat **ILS / cat-bond** issuer where each series sits in its own account, bankruptcy-remote at the series level; or a **rent-a-captive** provider delivering captive economics to third parties. Bermuda's ILS market is the world's largest and SACs are central to it; the BMA pre-vets the SAC and the underlying activity. ([`knowledge/bermuda/segregated-accounts-company.md`](knowledge/bermuda/segregated-accounts-company.md); [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md))\n\n### Cayman SPC — multi-strategy funds and general-purpose segregation\nThe SPC is the **default fund-side cell vehicle**: multi-strategy hedge funds (equity L/S + credit + macro in separate portfolios), securitisation conduits issuing multiple bond series, family-office multi-strategy pools, and insurance segregation within the Cayman insurance market. Used wherever the sponsor wants one CIMA-registered entity, one board, and portfolio-level economics. The corpus notes Cayman has **no statutory ICC equivalent** — if you need each cell to be its own company in Cayman you must form separate companies. ([`knowledge/cayman/segregated-portfolio-company.md`](knowledge/cayman/segregated-portfolio-company.md))\n\n### Guernsey PCC — captive insurance (the original), Europe-proximate funds\nThe PCC is the **original 1997 invention** and remains Guernsey's workhorse. Reach for it for: **captive insurance programmes** (Guernsey is Europe's largest captive jurisdiction by vehicle count, and the PCC was built for this), multi-class / multi-strategy Guernsey funds, securitisation conduits, and any sponsor wanting a single-entity cell vehicle in a European-time-zone IFC with NPPR access. Comparable in substance to Cayman SPC / Bermuda SAC; differentiated by Guernsey's captive depth and (for Europe-facing structures) NPPR routing. ([`knowledge/guernsey/protected-cell-company.md`](knowledge/guernsey/protected-cell-company.md); matrix at [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md))\n\n### Guernsey ICC — when each cell must look like a real company\nThe ICC is the upgrade you reach for when **single legal personality is the binding constraint**. Use it when:\n- **Foreign-court recognition risk is acute** — each ICC cell is separately incorporated and unambiguously a distinct legal entity, eliminating residual cross-cell pooling risk;\n- **Counterparties (prime brokers, custodians, regulated counterparties) insist on dealing with \"a company\"**, not \"a cell of a company\";\n- **Cell migration** is contemplated — an ICC cell can leave the ICC and continue as a standalone (or join another ICC) because it already has its own corporate personality;\n- A **specific regulatory regime** treats cells differently from companies and the sponsor wants company-level treatment.\n\nThe trade-off is slightly higher administrative cost (separate registrations and filings per cell) and more governance overhead. The corpus is explicit that **Guernsey is alone in offering both PCC and ICC** — if the structure requires separate-personality cells, Guernsey is the only choice in this set. ([`knowledge/guernsey/incorporated-cell-company.md`](knowledge/guernsey/incorporated-cell-company.md))\n\n## Quick-pick matrix\n\n| Use case | First-pick vehicle |\n|---|---|\n| Single-parent captive, multi-line | **Bermuda SAC** *or* **Guernsey PCC cell** |\n| Commercial cat reinsurance, $100m+ | **Bermuda** (Class 4 + SAC/SPI for ILS) |\n| ILS / sidecar / cat-bond series | **Bermuda SAC** |\n| European-parent captive | **Guernsey PCC** |\n| Multi-strategy hedge fund | **Cayman SPC** |\n| Multi-series securitisation conduit | **Cayman SPC** or **Guernsey PCC** |\n| Family-office multi-strategy pool | **Cayman SPC** or **Guernsey PCC** |\n| Fund/captive where counterparties require separate-company status per cell | **Guernsey ICC** |\n| Cell migration planned | **Guernsey ICC** |\n\n([`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md) decision frameworks \"Where should I form my fund?\" and \"Where should I form my (re)insurance company?\")\n\n## Common pitfalls (all four)\n\nThe risk profiles are similar: **sloppy cell identification in contracts**, undocumented inter-cellular dealings, common counterparties exposed across multiple cells, and foreign-court non-recognition of statutory segregation in specific jurisdictions. The PCC/SAC/SPC depend on the segregation being respected by the foreign forum; the ICC's separate-personality construction is the structural answer to that risk. ([`knowledge/cayman/segregated-portfolio-company.md`](knowledge/cayman/segregated-portfolio-company.md); [`knowledge/bermuda/segregated-accounts-company.md`](knowledge/bermuda/segregated-accounts-company.md); [`knowledge/guernsey/protected-cell-company.md`](knowledge/guernsey/protected-cell-company.md))\n\n## Cited files\n\n1. [`knowledge/guernsey/protected-cell-company.md`](knowledge/guernsey/protected-cell-company.md) — *draft*\n2. [`knowledge/guernsey/incorporated-cell-company.md`](knowledge/guernsey/incorporated-cell-company.md) — *draft*\n3. [`knowledge/bermuda/segregated-accounts-company.md`](knowledge/bermuda/segregated-accounts-company.md) — *draft*\n4. [`knowledge/cayman/segregated-portfolio-company.md`](knowledge/cayman/segregated-portfolio-company.md) — *draft*\n5. [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](knowledge/CROSS-JURISDICTIONAL-MAP.md)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 757
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

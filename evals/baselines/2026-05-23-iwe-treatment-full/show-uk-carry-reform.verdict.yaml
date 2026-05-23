@@ -1,0 +1,22 @@
+questionId: show-uk-carry-reform
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 2
+hallucinatedCitations: 0
+summary: "Pass. All seven rubric facts covered accurately with correct figures,
+  both cited corpus files verified as supporting every claim. Voice is
+  convincingly PE-tax specialist — uses crystallisation, carry/co-invest
+  boundary, look-through, gross-of-tax economics naturally. One minor efficiency
+  note: the frontier file was fetched twice (once without full, once with
+  full:true), but this did not affect answer quality. The answer goes beyond
+  minimum rubric by adding sponsor-side response detail and practical caveats
+  about tail liability and anti-avoidance provisions."

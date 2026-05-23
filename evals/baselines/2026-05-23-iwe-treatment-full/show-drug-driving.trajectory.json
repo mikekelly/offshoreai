@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-drug-driving",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T15:01:19.649Z",
+  "wallClockSeconds": 27.957,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"road-traffic\",\"drug-driving\"],\"mode\":\"or\"}",
+      "inputBytes": 52,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"drug\\\" /Users/mike/code/offshoreai/.claude/worktrees/clever-kowalevski-372cff/knowledge/jersey/road-traffic/ 2>/dev/null\",\"description\":\"Find drug-related road-traffic files\"}",
+      "inputBytes": 199,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/road-traffic/drug-driving.md\",\"full\":true}",
+      "inputBytes": 68,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__freshnessCheck",
+      "rawName": "mcp__corpus__freshnessCheck",
+      "inputDigest": "{\"paths\":[\"knowledge/jersey/road-traffic/drug-driving.md\"]}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1494,
+    "cacheReadTokens": 152949,
+    "cacheWriteTokens": 46403,
+    "totalCostUsd": 0.40388325
+  },
+  "answer": {
+    "text": "## Today (May 2026) — impairment-based regime\n\nDrug-driving in Jersey is prosecuted as **driving while impaired by drugs** under the Road Traffic (Jersey) Law 1956. Police must prove **actual impairment** on objective evidence (poor control, failed field sobriety tests, blood/urine confirming drugs) — there are **no statutory drug-concentration limits, no per se offences, and no roadside swab-testing powers** equivalent to the UK regime (`knowledge/jersey/road-traffic/drug-driving.md`).\n\nThe offence is **substance-neutral**: controlled drugs, prescription medication (sedatives, opioids, benzodiazepines), OTC medicines with sedating warnings, and drug-plus-alcohol combinations all count. A valid prescription is **not a defence** if impairment is real (`knowledge/jersey/road-traffic/drug-driving.md`).\n\n## Sentencing on conviction\n\nTracks drink-driving: **mandatory disqualification** (typically 12+ months on a first offence), fine up to **£2,000**, imprisonment up to **6 months**, and licence endorsement. Accidents, refusal to cooperate, or presence of passengers aggravate (`knowledge/jersey/road-traffic/drug-driving.md`).\n\n## What's coming — reform pipeline\n\nIn **February 2026**, States representatives proposed legislation to:\n\n- introduce **statutory drug limits** for controlled and some prescription substances;\n- give police **roadside testing powers** (UK-style drug-wipe swabs);\n- create **per se offences** — being over the limit is the offence, regardless of impairment;\n- impose **mandatory disqualification** on conviction.\n\nThe proposal is **not yet enacted** as of May 2026; the States Assembly timetable points to potential introduction during 2026 or 2027. Until then, the impairment-based regime continues (`knowledge/jersey/road-traffic/drug-driving.md`).\n\n## Caveats\n\n- The cited file is **status: draft** — drafted but not editorially verified against the primary statute and States proposition. Treat the reform-pipeline detail in particular as indicative; the corpus does not yet identify the specific proposition number or current Scrutiny stage. Verify against jerseylaw.je (Road Traffic (Jersey) Law 1956) and statesassembly.je for the live legislative position before relying on this.\n- The file is **fresh** (last verified 2026-05-18, 5 days ago).\n\n## Cited files\n\n1. `knowledge/jersey/road-traffic/drug-driving.md` (draft, last verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 324
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

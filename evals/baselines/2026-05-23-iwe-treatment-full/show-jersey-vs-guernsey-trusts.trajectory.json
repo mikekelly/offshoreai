@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-jersey-vs-guernsey-trusts",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T15:07:47.700Z",
+  "wallClockSeconds": 56.003,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/trust-law-differences-from-jersey.md\"}",
+      "inputBytes": 66,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/firewall.md\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/reserved-powers.md\"}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/article-47-set-aside.md\"}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/index.md\"}",
+      "inputBytes": 38,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/trust-law-differences-from-jersey.md\",\"full\":true}",
+      "inputBytes": 78,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 3346,
+    "cacheReadTokens": 159768,
+    "cacheWriteTokens": 55501,
+    "totalCostUsd": 0.51045525
+  },
+  "answer": {
+    "text": "The Guernsey trust-law file is `draft` status — I need to flag that. Let me also check the Guernsey index for any additional comparative context.## Jersey vs Guernsey trust — when to pick which\n\nBoth are siblings — modernised Norman-customary trust regimes with statutory firewalls, settlor reserved powers, non-charitable purpose trusts, perpetual duration, *Schmidt v Rosewood* beneficiary information rights, Royal Court supervision, and final appeal to the Privy Council. For most cross-border family-wealth structures they are **competitive substitutes**, and the choice often turns on sponsor familiarity, administrator location, and existing service-provider relationships rather than legal substance (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n\nThe real differentiators are these.\n\n### Lean Jersey when…\n\n- **Maximum forced-heirship / matrimonial-claim defence is the dominant concern.** Jersey's **Article 9(4)** of the Trusts (Jersey) Law 1984 expressly renders unenforceable in Jersey any foreign judgment inconsistent with the firewall — including judgments based on forced-heirship, matrimonial-property, or anti-trust foreign rules. Guernsey's **s.14 of TGL 2007** is comparable in concept but **less explicit on foreign-judgment non-recognition**; sophisticated defensive structures continue to prefer Jersey for the explicit statutory language (`knowledge/jersey/trusts/firewall.md`; `knowledge/guernsey/trust-law-differences-from-jersey.md`).\n- **You may need to unwind a mistaken trustee or settlor decision.** Both jurisdictions have a statutory mistake jurisdiction wider than English law post-*Pitt v Holt*, but Jersey's **Articles 47B–47H regime** (inserted by Trusts (Amendment No. 6) (Jersey) Law 2013) has substantially deeper case-law development — notably the *Re S & T Trusts* [2015] JRC259 three-limb test (`knowledge/jersey/trusts/article-47-set-aside.md`). Guernsey codified a parallel mistake regime in TGL 2007, but with less developed jurisprudence (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n- **You want a comprehensive, expressly-listed reserved-powers menu.** Jersey's **Article 9A** sets out an explicit (and open-ended) list of permissible reserved powers — revocation, variation, advancement, direction, beneficiary appointment, change of proper law, restriction of trustee discretion, etc. — with an express statutory confirmation that a trustee following such a direction does not commit a breach (Article 9A(3)) and that the settlor is not thereby a trustee (Article 9A(3A)) (`knowledge/jersey/trusts/reserved-powers.md`). Guernsey has substantively similar provisions, but the explicit Jersey menu is often preferred for US-grantor-trust planning and family-office structures.\n- **You want to combine the trust with a JPF.** If the surrounding structure includes a Jersey Private Fund, keeping the trust in Jersey aligns the administrator, regulator, and counsel (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\n### Lean Guernsey when…\n\n- **You need a trustee or PTC structure built on a cell company.** Guernsey **invented the PCC (1997)** and is the only Channel Island with an **ICC** (Incorporated Cell Company) as well — useful for multi-family-PTC platforms or segregated-trustee arrangements (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n- **The combined fund vehicle is a PIF.** The Guernsey Private Investment Fund pairs naturally with a Guernsey trust where the rest of the structure is GFSC-supervised (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n- **Image rights are part of the family's commercially-valuable assets.** Guernsey runs the world's only **Image Rights Register**, and pairing it with a Guernsey trust keeps the assets and the trustee in one jurisdiction (`knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\n### Roughly equivalent\n\n- **Confidentiality / beneficial-ownership reporting** — both private trusts with non-public BO registers accessible to specified authorities.\n- **EU / UK marketing context for any fund overlay** — both NPPR-route jurisdictions.\n- **Trust company regulation** — Jersey TCBs under Financial Services (Jersey) Law 1998; Guernsey under the Regulation of Fiduciaries Law 2000; broadly equivalent (`knowledge/guernsey/trust-law-differences-from-jersey.md`).\n\n### Caveats\n\n- The principal Jersey vs Guernsey trust-comparison file (`knowledge/guernsey/trust-law-differences-from-jersey.md`, last verified 2026-05-18) is **draft** status — drafted but not yet editorially verified against the primary Guernsey statute (TGL 2007). The Jersey-side files I cite (`firewall.md`, `reserved-powers.md`, `article-47-set-aside.md`, last verified 2026-05-14) are also **draft**. Re-verify against the consolidated statutes on jerseylaw.je and guernseylegalresources.gg before acting.\n- The corpus's Guernsey coverage is deliberately scoped as *adjacent-jurisdiction* support for Jersey practitioners, not full Guernsey practice — engage Guernsey advocates for substantive Guernsey-law work (`knowledge/guernsey/index.md`).\n\n### Cited files\n\n1. `knowledge/guernsey/trust-law-differences-from-jersey.md`\n2. `knowledge/jersey/trusts/firewall.md`\n3. `knowledge/jersey/trusts/reserved-powers.md`\n4. `knowledge/jersey/trusts/article-47-set-aside.md`\n5. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n6. `knowledge/guernsey/index.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 656
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

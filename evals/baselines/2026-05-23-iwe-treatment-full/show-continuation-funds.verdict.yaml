@@ -1,0 +1,24 @@
+questionId: show-continuation-funds
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The candidate covers 5 of 6 rubric facts accurately and without
+  material errors, hitting the 46% market figure, Guernsey's not-CIS treatment
+  and 3-day approval, LP roll-vs-cash mechanics, and the Jersey/Guernsey
+  comparison with route-flexibility nuance. The two gaps are the GP
+  carry-crystallisation mechanic (named but not explained) and the specific term
+  'fairness opinions' (covered substantively as 'independent valuation'). Both
+  citations verified — every claim traces cleanly to the frontier file or
+  Guernsey PIF file. Voice is well-calibrated for a PE-sophisticated audience.
+  Freshness handling is exemplary, correctly flagging both files' status with
+  actionable caveats.

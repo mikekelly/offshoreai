@@ -1,0 +1,22 @@
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Partial. The answer is substantively strong — it covers every rubric
+  fact, cites three corpus files accurately, handles draft-status caveats well,
+  and reads like fund counsel. However, the jersey_specific dimension is only
+  partial: the candidate never names the 'Alternative Investment Funds (Jersey)
+  Regulations 2012' (the formal Jersey AIFM statute, present in the corpus
+  source metadata) nor 'AIFMD Article 42' (the NPPR-enabling provision the
+  rubric specifically expects). These are the two rubric-expected
+  Jersey-specific markers. The voice and citation work are excellent."

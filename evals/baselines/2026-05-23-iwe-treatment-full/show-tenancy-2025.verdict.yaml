@@ -1,0 +1,21 @@
+questionId: show-tenancy-2025
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. All seven expected facts are present and correct; zero factual
+  errors. The candidate used a tight three-call retrieval sequence (tree →
+  getFile → freshnessCheck), cited the most authoritative corpus file, correctly
+  flagged its draft status with an explicit re-verify caveat, and presented the
+  post-amendment regime without falling into the trap of reciting pre-amendment
+  law. The transitional-rules table and 'what did not change' section add useful
+  precision beyond the minimum bar.

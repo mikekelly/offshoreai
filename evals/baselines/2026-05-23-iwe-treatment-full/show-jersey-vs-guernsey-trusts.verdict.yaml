@@ -1,0 +1,23 @@
+questionId: show-jersey-vs-guernsey-trusts
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All five rubric facts are covered accurately and with correct
+  corpus citations. The answer is Jersey-specific throughout — names Jersey
+  statutes (TJL 1984 Articles 9, 9A, 47B-47H), Guernsey statutes (TGL 2007
+  s.14), and case law (Re S&T Trusts) without generic offshore filler. Every
+  claim is cited to a corpus file that supports it; no hallucinated citations.
+  Draft status correctly flagged for all sources with an explicit
+  verify-against-primary-source caveat. One minor inefficiency: the Guernsey
+  comparison file was read twice (once partial, once full), but retrieval was
+  otherwise tight at 6 calls."

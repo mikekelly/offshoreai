@@ -1,0 +1,22 @@
+questionId: show-aifmd-ii
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: "Pass. All six rubric facts are present and correct, tightly sourced to
+  the frontier file which is the corpus's authoritative landing point. The voice
+  is excellent — structured, practitioner-grade, with the right mix of
+  directness and caveat. Citation discipline is strong: every claim has a corpus
+  path, both files were verified, freshness was handled with explicit as_of
+  acknowledgement and a draft-status flag. The pitfalls section adds genuine
+  practitioner value beyond the minimum rubric. Efficient retrieval in 4 tool
+  calls with no redundancy."

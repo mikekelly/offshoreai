@@ -1,0 +1,21 @@
+questionId: show-eviction
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The candidate nails every rubric fact — 7-day breach notice,
+  Petty Debts Court exclusive jurisdiction, Viscount enforcement, 2-4 month
+  timeline, self-help as criminal offence, tenant defences — with correct
+  Jersey-specific statute references (RTJL 2011, 2025 Amendment, DL 2013) and a
+  smart-friend landlord-facing tone. All four citations verified against the
+  corpus; no hallucinated citations. Draft-status caveat handled explicitly.
+  Efficient retrieval in 4 tool calls with no redundancy.
