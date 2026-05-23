@@ -23,6 +23,7 @@ import { makeFindByTagTool } from "./handlers/findByTag.js";
 import { makeFreshnessCheckTool } from "./handlers/freshnessCheck.js";
 import { makeGetArticleTool } from "./handlers/getArticle.js";
 import { makeGetFileTool } from "./handlers/getFile.js";
+import { makeTreeTool } from "./handlers/tree.js";
 import { CORPUS_SERVER_NAME } from "./register.js";
 
 // The MCP client launches this process with cwd = the project root it
@@ -38,6 +39,7 @@ const defs = [
   makeGetArticleTool(ctx),
   makeFindByTagTool(ctx),
   makeFreshnessCheckTool(ctx),
+  makeTreeTool(ctx),
 ];
 
 for (const def of defs) {

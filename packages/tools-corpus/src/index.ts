@@ -16,3 +16,10 @@ export { makeGetFileTool } from "./handlers/getFile.js";
 export { makeGetArticleTool } from "./handlers/getArticle.js";
 export { makeFindByTagTool } from "./handlers/findByTag.js";
 export { makeFreshnessCheckTool } from "./handlers/freshnessCheck.js";
+export { makeTreeTool } from "./handlers/tree.js";
+
+// Inclusion-link parser — exported for tests and the Auditor sub-agent
+// (PRD-corpus-stewardship Part B) when it wants to compute the graph
+// without spinning up the full context.
+export { extractInclusionLinkTargets, resolveInclusionTarget } from "./inclusion-links.js";
+export type { InclusionLinkTarget } from "./inclusion-links.js";

@@ -14,6 +14,7 @@ import {
   loadCorpus,
   type CorpusRecord,
 } from "@offshoreai/build";
+import { extractInclusionLinkTargets, resolveInclusionTarget } from "./inclusion-links.js";
 
 export interface TagIndexShape {
   readonly schemaVersion: "tag_index_v1";
@@ -29,6 +30,13 @@ export interface CorpusContext {
   readonly tagIndex: TagIndexShape | null;
   /** index keyed on `${statute}|${articleId}` for getArticle dispatch */
   readonly articleIndex: ReadonlyMap<string, CorpusRecord>;
+  /** For each file path, the repo-relative paths it declares as structural
+   *  children via bare-line inclusion links (per CONVENTIONS.md). Only
+   *  links whose resolved target exists in byPath are included. */
+  readonly inclusionChildren: ReadonlyMap<string, ReadonlyArray<string>>;
+  /** Inverse of inclusionChildren: for each file path, the repo-relative
+   *  paths that declare it as a structural child. */
+  readonly inclusionParents: ReadonlyMap<string, ReadonlyArray<string>>;
 }
 
 export interface BuildContextOptions {
@@ -76,7 +84,40 @@ export async function buildCorpusContext(opts: BuildContextOptions): Promise<Cor
     }
   }
 
-  return { repoRoot: opts.repoRoot, records, byPath, tagIndex, articleIndex };
+  // Inclusion-link graph. Built in one pass: parse each record's body,
+  // resolve each link target against the source path, drop links whose
+  // resolved target isn't a known corpus file. Then invert to get parents.
+  const inclusionChildren = new Map<string, ReadonlyArray<string>>();
+  const parentSets = new Map<string, Set<string>>();
+  for (const rec of records) {
+    const seen = new Set<string>();
+    const children: string[] = [];
+    for (const link of extractInclusionLinkTargets(rec.body)) {
+      const resolved = resolveInclusionTarget(rec.path, link.rawTarget);
+      if (!byPath.has(resolved)) continue;
+      if (resolved === rec.path) continue; // ignore self-links
+      if (seen.has(resolved)) continue;
+      seen.add(resolved);
+      children.push(resolved);
+      if (!parentSets.has(resolved)) parentSets.set(resolved, new Set());
+      parentSets.get(resolved)!.add(rec.path);
+    }
+    inclusionChildren.set(rec.path, children);
+  }
+  const inclusionParents = new Map<string, ReadonlyArray<string>>();
+  for (const [path, parents] of parentSets) {
+    inclusionParents.set(path, [...parents].sort());
+  }
+
+  return {
+    repoRoot: opts.repoRoot,
+    records,
+    byPath,
+    tagIndex,
+    articleIndex,
+    inclusionChildren,
+    inclusionParents,
+  };
 }
 
 export function keyOf(statute: string, article: string): string {

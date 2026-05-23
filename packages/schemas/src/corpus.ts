@@ -32,6 +32,10 @@ export const getFileInput = z.object({
   full: z.boolean().default(false).describe("If true, return the entire file; default returns the first ~120 lines with a truncation hint."),
   fields: z.array(z.enum(["title", "tags", "sources", "articlesCovered", "seeAlso"])).optional()
     .describe("Opt-in extra frontmatter fields. Defaults to a minimal projection: path, status, lastVerified, tags."),
+  depth: z.number().int().min(0).max(3).default(0)
+    .describe("Follow inclusion links N levels into children (per CONVENTIONS.md). 0 returns only the requested file (default). 1 also returns the bodies of its structural children. Capped at 3."),
+  parentContext: z.number().int().min(0).max(2).default(0)
+    .describe("Include N levels of structural parents (files that include this one via a bare-line inclusion link). 0 omits parents (default). 1 includes immediate parents. Capped at 2."),
 });
 
 export const getFileResult = z.object({
@@ -44,6 +48,10 @@ export const getFileResult = z.object({
   bodyTruncated: z.boolean(),
   totalLines: z.number().int().nonnegative(),
   totalTokensEstimate: z.number().int().nonnegative(),
+  /** Files returned via the depth parameter (structural children). */
+  includedChildren: z.array(z.object({ path: filePath, depth: z.number().int().positive(), body: z.string() })).optional(),
+  /** Files returned via the parentContext parameter. */
+  includedParents: z.array(z.object({ path: filePath, level: z.number().int().positive(), body: z.string() })).optional(),
   help: helpBlock,
 });
 export type GetFileResultType = z.infer<typeof getFileResult>;
@@ -78,6 +86,15 @@ size hint; pass full=true for the whole file) plus minimal
 frontmatter. Read the body to ground your claim; cite the path in
 your response; if the frontmatter status is "stub" or "draft", flag
 the lower authority to the user.
+
+Inclusion-graph parameters: depth follows bare-line inclusion links
+into structural children (per CONVENTIONS.md "Inclusion links — the
+third navigation axis"); parentContext returns the files that include
+this one as a structural child. Use depth: 1 when the file is an
+index.md and you want the section's whole working set; use
+parentContext: 1 when you've landed on a concept file and need its
+context. Each included file appears in includedChildren or
+includedParents with its own body and a depth/level marker.
 `.trim();
 
 // ===========================================================================
@@ -363,54 +380,65 @@ definitive next-read.
 // ===========================================================================
 
 export const treeInput = z.object({
-  section: z.string().optional().describe("Subtree root; omit for the whole jurisdiction tree. Accepts 'knowledge/jersey/trusts' style paths."),
-  depth: z.number().int().min(1).max(5).default(2).describe("How many levels to descend."),
-  includeSummaries: z.boolean().default(true).describe("Include the auto-generated 1-3 sentence summary per node."),
+  root: filePath.optional().describe("Subtree root path — usually an index.md, e.g. knowledge/jersey/trusts/index.md. Omit for the corpus-wide root (knowledge/jersey/index.md)."),
+  depth: z.number().int().min(1).max(5).default(2).describe("How many inclusion-link levels to descend from the root."),
+  includeSummaries: z.boolean().default(true).describe("Include a 1-3 sentence summary per node (heuristic-derived from the file's opening prose if no pre-computed summary is available)."),
 });
 
 export const treeResult = z.object({
-  root: z.string(),
+  root: filePath,
   nodes: z.array(z.object({
     path: filePath,
     title: z.string(),
     status,
     lastVerified: isoDate,
+    /** Inclusion-link depth from the root (1 = direct child of root). */
+    depth: z.number().int().positive(),
+    /** Path of the inclusion-link parent within this tree walk. */
+    parent: filePath,
     childCount: z.number().int().nonnegative(),
     summary: z.string().optional(),
   })),
+  truncatedAtDepth: z.boolean().describe("True if the walk hit the depth cap before exhausting the graph."),
   help: helpBlock,
 });
 export type TreeResultType = z.infer<typeof treeResult>;
 
 export const treeDescription = `
-Walk the corpus as a PageIndex-style tree of summaries —
-jurisdiction → section index → topic file → statute article. The
-build pipeline pre-computes a 1-3 sentence summary per node so the
-agent can reason over node summaries rather than node contents,
-choosing where to descend before loading prose.
+Walk the corpus's inclusion-link graph from a root file (typically an
+index.md) and return a flat list of every reachable node with its
+status, last_verified, child count, and a short summary. Traversal
+follows the inclusion-link convention from CONVENTIONS.md — *a
+markdown link on its own line is a structural parent → child
+relationship*. Headings of an index file usually are exactly this
+shape ("### [Trusts](./trusts/index.md)"), so calling tree on an
+index.md walks the agent-readable hierarchy below it.
 
-Use when: the user's question is conceptual and you need to orient
-on what the corpus has on a topic before diving into specific files;
-you have landed in an unfamiliar section and want to understand its
-shape; you are looking for the canonical entry point on a topic and
-the summaries help you choose between candidate index.md files.
+Use when: the user's question is conceptual and you need to orient on
+what the corpus has on a topic before reading specific files; you have
+landed in an unfamiliar section and want its shape; you are looking
+for the canonical entry point on a topic and the summaries help you
+choose between candidate index.md files.
 
-Do NOT use this when you have a specific tag or a specific Article
-in hand — findByTag and getArticle are more direct. Do NOT walk the
-tree at depth > 3 when you're trying to narrow — high-depth walks
-return too many nodes to reason over efficiently; descend
-iteratively instead.
+Do NOT use this when you have a specific tag or a specific Article in
+hand — findByTag and getArticle are more direct. Do NOT walk the tree
+at depth > 3 when you're trying to narrow — high-depth walks return
+too many nodes to reason over efficiently; descend iteratively
+instead.
 
 Relationships: tree is the orientation primitive that precedes
 getFile; findByTag is the lookup primitive that precedes getFile;
-they're complementary entry points to the same read step. Pairs
-with inventory when you want a flat filtered list rather than a
-hierarchical view.
+they're complementary entry points to the same read step. Pairs with
+inventory when you want a flat filtered list rather than a
+hierarchical view. Pairs with neighbours (which uses see_also +
+backlinks + tag-overlap rather than the inclusion-link graph) for
+peer-level discovery.
 
-Returns: a flat list of nodes within the requested subtree, each
-with a 1-3 sentence summary. Pick the most relevant 1-2 nodes and
-read them with getFile; if no node looks right, descend the most
-promising subtree by re-calling tree with a deeper section path.
+Returns: nodes within the requested subtree with depth, parent path,
+child count, and a 1-3 sentence summary. Pick the most relevant 1-2
+nodes and read them with getFile; if no node looks right, descend the
+most promising subtree by re-calling tree with that node as the new
+root.
 `.trim();
 
 // ===========================================================================

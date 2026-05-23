@@ -29,6 +29,7 @@ import { makeFindByTagTool } from "./handlers/findByTag.js";
 import { makeFreshnessCheckTool } from "./handlers/freshnessCheck.js";
 import { makeGetArticleTool } from "./handlers/getArticle.js";
 import { makeGetFileTool } from "./handlers/getFile.js";
+import { makeTreeTool } from "./handlers/tree.js";
 
 export const CORPUS_SERVER_NAME = "corpus";
 
@@ -54,8 +55,9 @@ export async function createCorpusToolsServer(opts: CorpusToolsServerOptions) {
       makeGetArticleTool(ctx),
       makeFindByTagTool(ctx),
       makeFreshnessCheckTool(ctx),
+      makeTreeTool(ctx),
     ],
-    // Always-resident per PRD §5.7 — these four are in the high-frequency set.
+    // Always-resident per PRD §5.7 — these are in the high-frequency set.
     alwaysLoad: true,
   });
 }
@@ -68,5 +70,6 @@ export function corpusAllowedToolNames(serverName: string = CORPUS_SERVER_NAME):
     `mcp__${serverName}__getArticle`,
     `mcp__${serverName}__findByTag`,
     `mcp__${serverName}__freshnessCheck`,
+    `mcp__${serverName}__tree`,
   ];
 }

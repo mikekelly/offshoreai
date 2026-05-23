@@ -11,6 +11,7 @@ import { makeFindByTagTool } from "../src/handlers/findByTag.js";
 import { makeFreshnessCheckTool } from "../src/handlers/freshnessCheck.js";
 import { makeGetArticleTool } from "../src/handlers/getArticle.js";
 import { makeGetFileTool } from "../src/handlers/getFile.js";
+import { makeTreeTool } from "../src/handlers/tree.js";
 
 async function makeFixtureRepo(files: Record<string, string>): Promise<string> {
   const root = await mkdtemp(join(tmpdir(), "tools-corpus-"));
@@ -233,6 +234,215 @@ describe("findByTag", () => {
     expect(result.isError).toBeFalsy();
     expect(result.content[0].text).toContain("count: 0");
     expect(result.content[0].text).toContain("No files matched");
+  });
+});
+
+const JERSEY_INDEX = `---
+title: Jersey
+jurisdiction: jersey
+category: index
+status: stable
+last_verified: 2026-05-14
+---
+
+# Jersey
+
+Some opening prose about Jersey.
+
+### [Trusts](./trusts/index.md)
+The Jersey trusts section.
+
+### [Tax](./tax/index.md)
+The Jersey tax section.
+`;
+
+const TRUSTS_INDEX = `---
+title: Trusts
+jurisdiction: jersey
+category: trusts
+status: stable
+last_verified: 2026-05-14
+---
+
+# Trusts
+
+Opening prose about the trusts section.
+
+## Sections
+
+- [Firewall](./firewall.md) — Article 9 firewall
+- [Mistake](./article-47-mistake.md) — Article 47 set-aside
+
+## Cross-references
+
+- [Tax index](../tax/index.md) — only a cross-reference, not a structural child
+`;
+
+const TAX_INDEX = `---
+title: Tax
+jurisdiction: jersey
+category: tax
+status: stable
+last_verified: 2026-05-14
+---
+
+# Tax
+
+Opening prose about the tax section.
+`;
+
+async function makeInclusionCtx() {
+  const root = await makeFixtureRepo({
+    "TAGS.md": TAGS_MD,
+    "knowledge/jersey/index.md": JERSEY_INDEX,
+    "knowledge/jersey/trusts/index.md": TRUSTS_INDEX,
+    "knowledge/jersey/trusts/firewall.md": FIREWALL,
+    "knowledge/jersey/trusts/article-47-mistake.md": MISTAKE,
+    "knowledge/jersey/tax/index.md": TAX_INDEX,
+  });
+  return buildCorpusContext({ repoRoot: root });
+}
+
+describe("inclusion-link graph (precomputed on context)", () => {
+  it("populates inclusionChildren for index files", async () => {
+    const ctx = await makeInclusionCtx();
+    expect(ctx.inclusionChildren.get("knowledge/jersey/index.md")).toEqual([
+      "knowledge/jersey/trusts/index.md",
+      "knowledge/jersey/tax/index.md",
+    ]);
+    expect(ctx.inclusionChildren.get("knowledge/jersey/trusts/index.md")).toEqual([
+      "knowledge/jersey/trusts/firewall.md",
+      "knowledge/jersey/trusts/article-47-mistake.md",
+    ]);
+  });
+
+  it("excludes links under '## Cross-references' from the structural graph", async () => {
+    const ctx = await makeInclusionCtx();
+    const trustsChildren = ctx.inclusionChildren.get("knowledge/jersey/trusts/index.md");
+    expect(trustsChildren).not.toContain("knowledge/jersey/tax/index.md");
+  });
+
+  it("populates inclusionParents inversely", async () => {
+    const ctx = await makeInclusionCtx();
+    expect(ctx.inclusionParents.get("knowledge/jersey/trusts/index.md")).toEqual([
+      "knowledge/jersey/index.md",
+    ]);
+    expect(ctx.inclusionParents.get("knowledge/jersey/trusts/firewall.md")).toEqual([
+      "knowledge/jersey/trusts/index.md",
+    ]);
+  });
+});
+
+describe("getFile with inclusion-graph params", () => {
+  it("returns just the file when depth=0", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeGetFileTool(ctx);
+    const result = await t.handler(
+      { path: "knowledge/jersey/trusts/index.md", full: false, fields: undefined, depth: 0, parentContext: 0 },
+      {},
+    );
+    expect(result.isError).toBeFalsy();
+    const text = result.content[0].text;
+    expect(text).toContain("path: knowledge/jersey/trusts/index.md");
+    expect(text).not.toContain("included_children_count");
+  });
+
+  it("includes immediate structural children when depth=1", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeGetFileTool(ctx);
+    const result = await t.handler(
+      { path: "knowledge/jersey/trusts/index.md", full: false, fields: undefined, depth: 1, parentContext: 0 },
+      {},
+    );
+    expect(result.isError).toBeFalsy();
+    const text = result.content[0].text;
+    expect(text).toContain("included_children_count: 2");
+    expect(text).toContain("child path=knowledge/jersey/trusts/firewall.md depth=1");
+    expect(text).toContain("child path=knowledge/jersey/trusts/article-47-mistake.md depth=1");
+  });
+
+  it("includes structural parents when parentContext=1", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeGetFileTool(ctx);
+    const result = await t.handler(
+      { path: "knowledge/jersey/trusts/firewall.md", full: false, fields: undefined, depth: 0, parentContext: 1 },
+      {},
+    );
+    expect(result.isError).toBeFalsy();
+    const text = result.content[0].text;
+    expect(text).toContain("included_parents_count: 1");
+    expect(text).toContain("parent path=knowledge/jersey/trusts/index.md level=1");
+  });
+
+  it("walks both parents (level=2) when parentContext=2", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeGetFileTool(ctx);
+    const result = await t.handler(
+      { path: "knowledge/jersey/trusts/firewall.md", full: false, fields: undefined, depth: 0, parentContext: 2 },
+      {},
+    );
+    expect(result.isError).toBeFalsy();
+    const text = result.content[0].text;
+    expect(text).toContain("included_parents_count: 2");
+    expect(text).toContain("parent path=knowledge/jersey/trusts/index.md level=1");
+    expect(text).toContain("parent path=knowledge/jersey/index.md level=2");
+  });
+});
+
+describe("tree", () => {
+  it("walks the inclusion-link graph from a root", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeTreeTool(ctx);
+    const result = await t.handler(
+      { root: "knowledge/jersey/index.md", depth: 2, includeSummaries: false },
+      {},
+    );
+    expect(result.isError).toBeFalsy();
+    const text = result.content[0].text;
+    expect(text).toContain("root: knowledge/jersey/index.md");
+    expect(text).toContain("node_count: 4");
+    expect(text).toContain("knowledge/jersey/trusts/index.md");
+    expect(text).toContain("knowledge/jersey/trusts/firewall.md");
+    expect(text).toContain("knowledge/jersey/trusts/article-47-mistake.md");
+    expect(text).toContain("knowledge/jersey/tax/index.md");
+  });
+
+  it("respects depth=1 (only direct children)", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeTreeTool(ctx);
+    const result = await t.handler(
+      { root: "knowledge/jersey/index.md", depth: 1, includeSummaries: false },
+      {},
+    );
+    expect(result.isError).toBeFalsy();
+    const text = result.content[0].text;
+    expect(text).toContain("node_count: 2");
+    expect(text).toContain("truncated_at_depth: true");
+    expect(text).not.toContain("knowledge/jersey/trusts/firewall.md");
+  });
+
+  it("returns heuristic summaries when includeSummaries=true", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeTreeTool(ctx);
+    const result = await t.handler(
+      { root: "knowledge/jersey/index.md", depth: 1, includeSummaries: true },
+      {},
+    );
+    expect(result.isError).toBeFalsy();
+    const text = result.content[0].text;
+    // Summary is the first prose paragraph after the H1, stripped of markdown.
+    expect(text).toContain("Opening prose about the trusts section");
+  });
+
+  it("errors when the root path is missing", async () => {
+    const ctx = await makeInclusionCtx();
+    const t = makeTreeTool(ctx);
+    const result = await t.handler(
+      { root: "knowledge/jersey/nope.md", depth: 2, includeSummaries: false },
+      {},
+    );
+    expect(result.isError).toBe(true);
+    expect(result.content[0].text).toContain("error_kind: missing_file");
   });
 });
 
