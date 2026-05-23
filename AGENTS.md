@@ -107,6 +107,8 @@ These are real gaps and they'll be filled in dedicated docs as they become urgen
 
 Each of these is flagged in the relevant PRD section. If you arrive needing one and it doesn't exist yet, that's the signal to write it before going further.
 
+**Deferred-but-discussed ideas** that aren't on the build plan yet live in [`BACKLOG.md`](./BACKLOG.md). Each entry needs design exploration + approval before pickup — it's not a roadmap, just the holding area for proposals we've thought about enough to write down.
+
 ---
 
 ## A note on the PRD's status
