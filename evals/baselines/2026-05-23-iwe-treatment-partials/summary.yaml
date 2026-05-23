@@ -1,0 +1,55 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/showcase.yaml
+  ranAt: 2026-05-23T14:54:19.792Z
+  questions: 3
+totals:
+  pass: 1
+  partial: 2
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 0.67
+  jerseySpecificPassRate: 0.67
+  substancePassRate: 0.67
+  medianToolCalls: 6
+  medianTokensInput: 10
+  medianTokensOutput: 2685
+  medianWallClockSeconds: 51.25
+  totalCostUsd: 1.895
+  meanHallucinatedCitationsPerAnswer: 0.33
+perQuestion:
+  - id: show-trusts-comparison
+    verdict: pass
+    summary: "Pass. All nine substance points covered with correct statutory detail;
+      Article 9/9A mechanics decomposed to paragraph level and verified against
+      corpus. Citation precision is clean — five files cited, all support their
+      claims, zero hallucinations. The one minor gap is that 'Trusts (Jersey)
+      Law 1984' is never named by full title in the answer text (only via
+      Article numbers and cited file paths), though this does not rise to a
+      jersey_specific demotion given the depth of Article-level engagement.
+      Voice reads naturally as cross-border trust counsel. Efficient retrieval:
+      four parallel getFile calls, no redundancy, 51s wall-clock."
+  - id: show-aifmd-nppr
+    verdict: partial
+    summary: "Partial. The answer is substantively rich, practically useful, and
+      well-cited — all three corpus paths verified, draft status properly
+      flagged, voice matches fund-counsel guidance. However, two rubric-expected
+      facts are missing: AIFMD Article 42 (the specific third-country NPPR
+      article) is never named, and the Alternative Investment Funds (Jersey)
+      Regulations 2012 are referred to only as 'AIFMD-equivalent regime' without
+      the statute name. The AIFMD II bonus material and reverse-solicitation
+      caveat add genuine value beyond the rubric but cannot compensate for the
+      missing statutory anchors in the jersey_specific dimension."
+  - id: show-friday-passing
+    verdict: partial
+    summary: Partial. Substance is strong — five of six rubric facts covered with
+      honest acknowledgment of corpus limits on the Friday-timing origin — but
+      the candidate missed the 'contrat héréditaire' terminology that appears in
+      commercial-leases.md line 42, a file it cited. Additionally, the candidate
+      incorrectly attributed the Jurats and Friday-afternoon details to
+      contract-passing.md, which does not contain those terms; the actual source
+      is commercial-leases.md. This misattribution counts as one hallucinated
+      citation (attributing specific claims to a file that doesn't support
+      them), demoting citation precision to partial and pulling overall to
+      partial despite otherwise solid work.

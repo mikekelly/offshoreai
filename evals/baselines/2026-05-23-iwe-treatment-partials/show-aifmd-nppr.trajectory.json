@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-aifmd-nppr",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T14:52:04.357Z",
+  "wallClockSeconds": 44.785,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"aifmd\",\"nppr\"],\"mode\":\"or\"}",
+      "inputBytes": 37,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/aifmd-nppr.md\"}",
+      "inputBytes": 47,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md\"}",
+      "inputBytes": 77,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md\",\"full\":true}",
+      "inputBytes": 89,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/aifmd-ii-april-2026.md\"}",
+      "inputBytes": 52,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__freshnessCheck",
+      "rawName": "mcp__corpus__freshnessCheck",
+      "inputDigest": "{\"paths\":[\"knowledge/jersey/funds/aifmd-nppr.md\",\"knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md\",\"knowledge/frontier/aifmd-ii-april-2026.md\"]}",
+      "inputBytes": 163,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 10,
+    "outputTokens": 2472,
+    "cacheReadTokens": 270105,
+    "cacheWriteTokens": 72917,
+    "totalCostUsd": 0.6526337499999999
+  },
+  "answer": {
+    "text": "Both core files are `draft` (verified 2026-05-15) — I'll cite them but flag that they're drafted, not stable.\n\n# Marketing a Jersey AIF into Germany via NPPR\n\n## The route in summary\n\nGermany is **not** accessible via an EU passport for a Jersey AIF — Jersey is non-EU, and the AIFMD third-country passport was proposed but never implemented. The practical route is **country-by-country private placement under the National Private Placement Regime (NPPR)**, which for Germany sits under **§330 KAGB** and is supervised by **BaFin**. Germany is one of the stricter NPPR jurisdictions (alongside France).\n\n## What you need in place\n\n**1. JFSC AIFM registration in Jersey.** The AIFM must be registered with the JFSC under Jersey's AIFMD-equivalent regime and demonstrate AIFMD-equivalent compliance — capital adequacy, AIFMD Art 15-equivalent risk management, liquidity management (for open-ended AIFs), AIFMD-equivalent depository arrangements, investor transparency (annual report, periodic reporting), and regulatory reporting to the JFSC. (`knowledge/jersey/funds/aifmd-nppr.md`; `knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`)\n\n**2. Depository.** A Jersey AIF marketed into the EU typically needs **AIFMD-equivalent depository arrangements** covering custody, oversight, and cash-flow monitoring. Jersey AIFs often combine a JFSC-licensed Jersey depository (lighter functions) with full AIFMD-depository functions performed elsewhere. (`knowledge/jersey/funds/aifmd-nppr.md`; `knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`)\n\n**3. The BaFin NPPR notification (§330 KAGB).** Notify BaFin as Germany's competent authority. Germany-specific requirements flagged in the corpus:\n- a **local fact-sheet**;\n- a **local distributor** is sometimes required;\n- **ongoing reporting** obligations after acceptance.\n\nYou can only market to **professional investors** in Germany once cleared, and only after notification — active marketing without notification is a serious enforcement risk. (`knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`)\n\n## AIFMD II — now in force (effective 16 April 2026)\n\nMost AIFMD II requirements (Directive (EU) 2024/927) took effect **16 April 2026** — about five weeks ago. The directive **preserves Crown Dependencies' NPPR access**, but for Jersey AIFMs marketing into the EU it tightens two areas you should expect to feel:\n\n- **Expanded investor disclosures** — pre-marketing and ongoing disclosures now cover liquidity management, sustainability factors (SFDR interaction), and loan-originating-fund disclosures where applicable;\n- **Enhanced Annex IV reporting** to ESMA — new data fields, more granular reporting on asset categories and risk exposures.\n\nThe JFSC is also splitting its AIF Code into an **EU AIF Code** (aligned with AIFMD II, for NPPR marketing) and a **UK AIF Code**; the EU AIF Code is expected to be finalised through 2026. (`knowledge/frontier/aifmd-ii-april-2026.md`)\n\n## Reverse solicitation caveat\n\nNPPR registration is only required for **active marketing**. Genuine reverse solicitation by a German investor approaching the AIF unsolicited does not trigger NPPR — but BaFin and other member-state authorities scrutinise reverse-solicitation claims, and active outreach disguised as reverse solicitation attracts penalties. (`knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`)\n\n## Caveats\n\n- Both `aifmd-nppr.md` and `aifmd-nppr-registration.md` are **`draft`** status — drafted but not yet editorially verified as `stable`. Re-verify the §330 KAGB / BaFin specifics against current German rules before relying on them.\n- `aifmd-ii-april-2026.md` is a **frontier** file (status `in-force-2026-04-16`); the directive is now operative, and the JFSC's EU AIF Code is still being finalised through 2026 — re-check the JFSC's current published codes before filing.\n\n## Files cited\n\n1. `knowledge/jersey/funds/aifmd-nppr.md`\n2. `knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md`\n3. `knowledge/frontier/aifmd-ii-april-2026.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 529
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T14:52:17.759Z",
+  "wallClockSeconds": 58.187,
+  "turns": 8,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn \\\"Friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/clever-kowalevski-372cff/knowledge/jersey/ --include=\\\"*.md\\\" -l\",\"description\":\"Find files mentioning Friday property pas",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"property\",\"royal-court\"],\"mode\":\"and\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn \\\"Friday\\\\|contract passing\\\\|passing.*court\\\\|passé\\\\|propriété foncière\\\" /Users/mike/code/offshoreai/.claude/worktrees/clever-kowalevski-372cff/knowledge/jersey/property/ --inc",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/contract-passing.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -C 3 \\\"Friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/clever-kowalevski-372cff/knowledge/jersey/ --include=\\\"*.md\\\" | head -100\",\"description\":\"Grep with context around Fr",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/contract-passing.md\",\"offset\":\"120\",\"limit\":\"30\"}",
+      "inputBytes": 84,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -l \\\"^status:\\\" /Users/mike/code/offshoreai/.claude/worktrees/clever-kowalevski-372cff/knowledge/jersey/property/commercial-leases.md /Users/mike/code/offshoreai/.claude/worktrees/cle",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 11,
+    "outputTokens": 2884,
+    "cacheReadTokens": 333334,
+    "cacheWriteTokens": 72415,
+    "totalCostUsd": 0.69141575
+  },
+  "answer": {
+    "text": "## Why your Jersey property transfer happens before the Royal Court\n\nIn Jersey, **real-property contracts are \"passed\" before the Royal Court** rather than completed privately as in England. The buyer and seller (typically represented by their advocates acting as attorneys) appear before the Court; the contract is read or referenced; the Greffier records it; two Jurats sit to witness; and the **transfer takes effect at that Court act** — the property changes hands at that moment, not on signature of the contract (`knowledge/jersey/property/contract-passing.md`; `knowledge/jersey/property/commercial-leases.md` for the Jurats / Friday-afternoon detail).\n\nThe corpus explains the procedure as a **Norman customary law inheritance**: it makes the transfer of real property **public**, places the Royal Court as **repository of property records**, and gives **certainty** about title transitions — quite different from the largely private English conveyancing model (`knowledge/jersey/property/contract-passing.md`).\n\n## Why specifically *Friday afternoon*\n\nThe Friday-afternoon convention is **referenced in the corpus** as the standard slot for property passing — `commercial-leases.md` notes leases of 9+ years are passed \"on a Friday afternoon at the Royal Court\", `flying-freeholds.md` notes \"Royal Court passing (Friday afternoon)\", and `contract/force-majeure.md` notes that historic Court closures on the Friday-afternoon slot have triggered force-majeure arguments — but **the corpus does not contain a substantive explanation of the historical origin of the Friday-afternoon timing itself**. It is described as established Royal Court practice for property passings, not derived from a specific statute.\n\nThe contract-passing file notes that the Samedi Division sits \"most weekdays\" and that property contracts are routinely passed there, with Friday afternoon being the conventional slot in practice — but the *why-Friday* (as opposed to *why-the-Royal-Court*) is not in the corpus.\n\n## Caveats\n\n- All three files I cited (`contract-passing.md`, `commercial-leases.md`, `flying-freeholds.md`, `force-majeure.md`) carry **`status: draft`** — they are drafted but not editorially verified against primary sources. The procedural shape of contract passing is well-established Jersey conveyancing practice, but treat specific procedural details (e.g. exactly which Jurats sit, exact timing rules) as needing verification against an Advocate or the Royal Court Rules before relying on them.\n- `last_verified` dates are all within the last week (fresh), so the freshness verdict is fine; the caveat is the draft status, not staleness.\n\n## Cited files\n\n1. `knowledge/jersey/property/contract-passing.md` (draft)\n2. `knowledge/jersey/property/commercial-leases.md` (draft)\n3. `knowledge/jersey/property/flying-freeholds.md` (draft)\n4. `knowledge/jersey/contract/force-majeure.md` (draft)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 397
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

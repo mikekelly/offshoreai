@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-trusts-comparison",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-23T14:52:10.819Z",
+  "wallClockSeconds": 51.248,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/firewall.md\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/reserved-powers.md\"}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/star-trusts.md\"}",
+      "inputBytes": 42,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bvi/vista-trusts.md\"}",
+      "inputBytes": 40,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 2685,
+    "cacheReadTokens": 64410,
+    "cacheWriteTokens": 72252,
+    "totalCostUsd": 0.55094
+  },
+  "answer": {
+    "text": "I'll pull the three substantive files in parallel — Jersey trust firewall/reserved-powers, Cayman STAR, BVI VISTA — then check freshness.All three regimes are doing **structurally different jobs**. Choose by the problem you're solving, not by jurisdictional preference.\n\n## Use a Jersey trust when the problem is *legal certainty over the trust itself*\n\nThe Jersey offering is built around two statutory pillars:\n\n- **Article 9 firewall** — the strongest in the offshore world for resisting foreign forced-heirship, matrimonial-regime, and substantive-attack claims. Article 9(1) instructs the Royal Court to apply only Jersey law to validity, interpretation, capacity, administration, trustee powers, and beneficial rights; Article 9(2) explicitly disregards foreign laws that don't recognise trusts or that treat the settlement as defeating heirship rights; Article 9(4) makes foreign judgments inconsistent with Article 9 unenforceable in Jersey (`knowledge/jersey/trusts/firewall.md`).\n- **Article 9A reserved powers** — gives a settlor a long statutory menu of retainable powers (revoke, vary, advance, direct investment/distribution, appoint/remove beneficiaries and trustees, change proper law, etc.) without invalidity; the trustee acting on a reserved power is not in breach (9A(3)); reserving powers does not constitute the settlor a trustee (9A(3A)) (`knowledge/jersey/trusts/reserved-powers.md`).\n\n**Pick Jersey when**: maximum forced-heirship defence; controlling-settlor family-office structures; US-grantor-trust planning; standard discretionary family trusts with a need for predictable Jersey jurisprudence.\n\n## Use a Cayman STAR trust when the problem is *no beneficiaries / a non-charitable purpose*\n\nSTAR (Special Trusts — Alternative Regime, 1997) is a **purpose-trust regime**: no beneficiaries required, enforcement by a mandatory **enforcer**, unlimited duration, and purposes need not be charitable. Standard uses are **orphan SPVs** (securitisation / structured-finance vehicles needing no consolidating owner), **PTC holding** (the STAR trust orphans a Private Trust Company), **family-governance** vehicles whose objects don't fit beneficiary form, and **quasi-charitable** purposes that miss the strict charity test (`knowledge/cayman/star-trusts.md`).\n\n**Pick Cayman STAR when**: you need an orphan/bankruptcy-remote structure; you're building a PTC tower; the \"trust\" exists to advance a purpose rather than benefit individuals; or you want the widest non-charitable-purpose latitude.\n\n## Use a BVI VISTA trust when the problem is *operating-company shares in trust*\n\nVISTA (Virgin Islands Special Trusts Act 2003) solves one specific problem: under the classical *Bartlett v Barclays Bank* duty, a trustee holding shares must monitor and intervene in the company's affairs — which is fatal for a family-business succession plan where the founder wants chosen directors running the business undisturbed. VISTA **disengages the trustee from company management**: the trustee holds legal title to the shares of a **designated company** (a BVI BC), but the **office of director rules** (ODRs) in the trust instrument govern who appoints and removes directors and restrict trustee interference. Trustee intervention is the exception, not the default, and is permitted typically only for fraud, regulatory breach, or formal beneficiary complaint (`knowledge/bvi/vista-trusts.md`).\n\n**Pick BVI VISTA when**: settling **operating-business shares** into trust; family-business succession with disengaged trustee; the founder wants legal title in trust but management left to chosen directors.\n\n## The one-line decision rule\n\n| If your structuring problem is… | Use |\n|---|---|\n| Defending the trust against forced-heirship / foreign attack; or controlling-settlor planning | **Jersey** (Article 9 + 9A) |\n| Holding an SPV / PTC with no beneficiary, or a non-charitable purpose | **Cayman STAR** |\n| Holding **operating-company shares** with directors free to run the business | **BVI VISTA** |\n\nThese are **complementary, not competing** — a real family structure often uses more than one (a Jersey trust as the wealth wrapper, a Cayman STAR over a PTC, BVI VISTA holding shares of an operating subsidiary). See `knowledge/CROSS-JURISDICTIONAL-MAP.md` \"Where should I form my trust?\" matrix for the same framing in the synthesis surface.\n\n## Caveats\n\n- All four cited substance files are **`draft` status** in the corpus — drafted but not yet verified to `review`/`stable`. Treat the broad structural distinctions as reliable (they are statutory) but verify any specific drafting point against the primary statutes before acting.\n- Freshness: all four files were last verified within the last 9 days (fresh).\n\n## Cited files\n\n1. `knowledge/jersey/trusts/firewall.md` (draft, last_verified 2026-05-14)\n2. `knowledge/jersey/trusts/reserved-powers.md` (draft, last_verified 2026-05-14)\n3. `knowledge/cayman/star-trusts.md` (draft, last_verified 2026-05-17)\n4. `knowledge/bvi/vista-trusts.md` (draft, last_verified 2026-05-18)\n5. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 705
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143"
+  }
+}

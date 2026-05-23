@@ -1,0 +1,23 @@
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 9
+factsExpected: 9
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: "Pass. All nine substance points covered with correct statutory detail;
+  Article 9/9A mechanics decomposed to paragraph level and verified against
+  corpus. Citation precision is clean — five files cited, all support their
+  claims, zero hallucinations. The one minor gap is that 'Trusts (Jersey) Law
+  1984' is never named by full title in the answer text (only via Article
+  numbers and cited file paths), though this does not rise to a jersey_specific
+  demotion given the depth of Article-level engagement. Voice reads naturally as
+  cross-border trust counsel. Efficient retrieval: four parallel getFile calls,
+  no redundancy, 51s wall-clock."

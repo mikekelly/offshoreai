@@ -1,0 +1,24 @@
+questionId: show-friday-passing
+harness: offshoreai-agent
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: partial
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 1
+summary: Partial. Substance is strong — five of six rubric facts covered with
+  honest acknowledgment of corpus limits on the Friday-timing origin — but the
+  candidate missed the 'contrat héréditaire' terminology that appears in
+  commercial-leases.md line 42, a file it cited. Additionally, the candidate
+  incorrectly attributed the Jurats and Friday-afternoon details to
+  contract-passing.md, which does not contain those terms; the actual source is
+  commercial-leases.md. This misattribution counts as one hallucinated citation
+  (attributing specific claims to a file that doesn't support them), demoting
+  citation precision to partial and pulling overall to partial despite otherwise
+  solid work.
