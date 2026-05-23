@@ -25,6 +25,10 @@ see_also:
   - ./duration.md
   - ./failure-or-lapse.md
   - ./trustee-security.md
+pinpoints:
+  - article: "43"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641936
+    source: trusts-jersey-law-1984
 ---
 
 # Article 43 — Termination of a Jersey Trust

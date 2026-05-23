@@ -26,6 +26,10 @@ see_also:
   - ./proper-law.md
   - ./article-51-directions.md
   - ../legal-system/royal-court.md
+pinpoints:
+  - article: "5"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641887
+    source: trusts-jersey-law-1984
 ---
 
 # Article 5 — Jurisdiction of the Court

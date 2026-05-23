@@ -24,6 +24,10 @@ see_also:
   - ./existence-of-a-trust.md
   - ./property-in-a-trust.md
   - ./validity-of-a-trust.md
+pinpoints:
+  - article: "7"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641892
+    source: trusts-jersey-law-1984
 ---
 
 # Article 7 — Creation of a Trust

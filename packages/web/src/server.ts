@@ -118,6 +118,7 @@ async function handleAsk(
           freshness: ev.freshness,
           sources: ev.sources,
           articles: ev.articles,
+          pinpoints: ev.pinpoints,
         });
       } else if (ev.type === "verdict") {
         cur.verdict = {

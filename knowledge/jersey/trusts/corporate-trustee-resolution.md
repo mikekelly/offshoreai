@@ -26,6 +26,10 @@ see_also:
   - ./co-trustees-acting-together.md
   - ./trustee-delegation.md
   - ../companies/companies-law-1991.md
+pinpoints:
+  - article: "28"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641918
+    source: trusts-jersey-law-1984
 ---
 
 # Article 28 — Corporate Trustee Acting by Resolution

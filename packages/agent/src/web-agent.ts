@@ -72,6 +72,13 @@ export type AgentEvent =
       readonly sources: ReadonlyArray<{ title: string; url: string; kind: string }>;
       /** Statute Articles this file covers (from `articles_covered`). */
       readonly articles: ReadonlyArray<string>;
+      /**
+       * Pinpoint deep-links per article — populated by the corpus
+       * enrichment script (packages/build/src/enrich/pinpoints.ts) from the
+       * file's `pinpoints` frontmatter. Empty when the cited statute isn't
+       * in the pinpoint registry yet.
+       */
+      readonly pinpoints: ReadonlyArray<{ article: string; url: string; source: string }>;
     }
   | {
       readonly type: "verdict";
@@ -182,6 +189,21 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
     });
   }
 
+  function pinpointsOf(rec: CorpusRecord): Array<{ article: string; url: string; source: string }> {
+    const p = (rec.frontmatter as { pinpoints?: unknown }).pinpoints;
+    if (!Array.isArray(p)) return [];
+    return p.flatMap((x) => {
+      if (x && typeof x === "object") {
+        const o = x as Record<string, unknown>;
+        const article = typeof o["article"] === "string" ? o["article"] : "";
+        const url = typeof o["url"] === "string" ? o["url"] : "";
+        const source = typeof o["source"] === "string" ? o["source"] : "";
+        if (article && url) return [{ article, url, source }];
+      }
+      return [];
+    });
+  }
+
   function citationEvent(path: string): Extract<AgentEvent, { type: "citation" }> {
     const rec = corpus.byPath.get(path);
     if (!rec) {
@@ -196,6 +218,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
         freshness: "missing",
         sources: [],
         articles: [],
+        pinpoints: [],
       };
     }
     const lastVerified = getLastVerified(rec);
@@ -212,6 +235,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
       freshness: status === "stale" ? "stale" : freshnessFor(ageDays),
       sources: sourcesOf(rec),
       articles: [...getArticlesCovered(rec)],
+      pinpoints: pinpointsOf(rec),
     };
   }
 

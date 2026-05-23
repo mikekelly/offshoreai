@@ -23,6 +23,10 @@ see_also:
   - ./articles-index.md
   - ./trustee-resignation-and-removal.md
   - ./number-of-trustees.md
+pinpoints:
+  - article: "18"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641906
+    source: trusts-jersey-law-1984
 ---
 
 # Article 18 — Prohibition of Renunciation After Acceptance

@@ -21,6 +21,10 @@ see_also:
   - ./index.md
   - ./articles-index.md
   - ./savings.md
+pinpoints:
+  - article: "58"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641970
+    source: trusts-jersey-law-1984
 ---
 
 # Article 58 — Application of This Law (Temporal)

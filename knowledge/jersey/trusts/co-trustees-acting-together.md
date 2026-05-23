@@ -26,6 +26,10 @@ see_also:
   - ./trustee-impartiality.md
   - ./corporate-trustee-resolution.md
   - ./article-51-directions.md
+pinpoints:
+  - article: "22"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641911
+    source: trusts-jersey-law-1984
 ---
 
 # Article 22 — Duty of Co-Trustees to Act Together

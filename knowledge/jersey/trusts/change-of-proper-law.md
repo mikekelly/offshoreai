@@ -26,6 +26,10 @@ see_also:
   - ./proper-law.md
   - ./firewall.md
   - ./reserved-powers.md
+pinpoints:
+  - article: "41"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641933
+    source: trusts-jersey-law-1984
 ---
 
 # Article 41 — Power to Provide for Change of Proper Law

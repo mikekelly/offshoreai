@@ -25,6 +25,10 @@ see_also:
   - ./trustee-duties.md
   - ./trustee-delegation.md
   - ./power-to-appropriate.md
+pinpoints:
+  - article: "24"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641914
+    source: trusts-jersey-law-1984
 ---
 
 # Article 24 — Powers of Trustee

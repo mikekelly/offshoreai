@@ -24,6 +24,10 @@ see_also:
   - ./beneficiaries.md
   - ./trustee-impartiality.md
   - ./failure-or-lapse.md
+pinpoints:
+  - article: "36"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641928
+    source: trusts-jersey-law-1984
 ---
 
 # Article 36 — Class Interests

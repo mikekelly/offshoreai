@@ -26,6 +26,10 @@ see_also:
   - ./trusts-law-1984.md
   - ./existence-of-a-trust.md
   - ./enforcers.md
+pinpoints:
+  - article: "1"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641883
+    source: trusts-jersey-law-1984
 ---
 
 # Article 1 — Interpretation and Definitions

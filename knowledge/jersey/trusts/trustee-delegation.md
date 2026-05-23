@@ -25,6 +25,10 @@ see_also:
   - ./trustee-powers.md
   - ./trustee-duties.md
   - ./breach-of-trust-liability.md
+pinpoints:
+  - article: "25"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641915
+    source: trusts-jersey-law-1984
 ---
 
 # Article 25 — Delegation by Trustee

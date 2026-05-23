@@ -23,6 +23,10 @@ see_also:
   - ./articles-index.md
   - ./trustee-third-party-liability.md
   - ./constructive-trustee.md
+pinpoints:
+  - article: "55"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641965
+    source: trusts-jersey-law-1984
 ---
 
 # Article 55 — Protection to Persons Dealing with Trustee

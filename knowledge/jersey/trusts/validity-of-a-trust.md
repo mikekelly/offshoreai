@@ -26,6 +26,10 @@ see_also:
   - ./recognition-of-a-trust.md
   - ./article-47-set-aside.md
   - ./firewall.md
+pinpoints:
+  - article: "11"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641898
+    source: trusts-jersey-law-1984
 ---
 
 # Article 11 — Validity of a Jersey Trust

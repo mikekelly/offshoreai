@@ -16,7 +16,7 @@ tags:
   - trusts-law-1984
   - concept-file
 articles_covered:
-  - "9A"
+  - 9A
 sources:
   - title: Trusts (Jersey) Law 1984 — Article 9A (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_11_1984
@@ -32,6 +32,10 @@ see_also:
   - ./firewall.md
   - ./existence-of-a-trust.md
   - ./trustee-duties.md
+pinpoints:
+  - article: 9A
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641895
+    source: trusts-jersey-law-1984
 ---
 
 # Article 9A — Settlor Reserved Powers

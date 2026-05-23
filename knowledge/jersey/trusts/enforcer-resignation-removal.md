@@ -23,6 +23,10 @@ see_also:
   - ./articles-index.md
   - ./enforcers.md
   - ./purpose-trusts.md
+pinpoints:
+  - article: "14"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641901
+    source: trusts-jersey-law-1984
 ---
 
 # Article 14 — Resignation or Removal of Enforcer

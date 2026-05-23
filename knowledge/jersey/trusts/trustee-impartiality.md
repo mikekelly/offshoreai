@@ -26,6 +26,10 @@ see_also:
   - ./trustee-duties.md
   - ./beneficiaries.md
   - ./class-interests.md
+pinpoints:
+  - article: "23"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641912
+    source: trusts-jersey-law-1984
 ---
 
 # Article 23 — Impartiality of Trustee

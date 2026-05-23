@@ -25,6 +25,10 @@ see_also:
   - ./court-variation.md
   - ./reserved-powers.md
   - ./article-51-directions.md
+pinpoints:
+  - article: "37"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641929
+    source: trusts-jersey-law-1984
 ---
 
 # Article 37 — Variation of Terms of a Trust (by trust terms)

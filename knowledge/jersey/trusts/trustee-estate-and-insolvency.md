@@ -24,6 +24,10 @@ see_also:
   - ./articles-index.md
   - ./trustee-third-party-liability.md
   - ./protection-of-dealings-with-trustee.md
+pinpoints:
+  - article: "54"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641964
+    source: trusts-jersey-law-1984
 ---
 
 # Article 54 — Trustee's Estate and Insolvency

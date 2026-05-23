@@ -26,6 +26,10 @@ see_also:
   - ./number-of-trustees.md
   - ./outgoing-trustee.md
   - ./article-51-directions.md
+pinpoints:
+  - article: "19"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641907
+    source: trusts-jersey-law-1984
 ---
 
 # Article 19 — Resignation or Removal of Trustee

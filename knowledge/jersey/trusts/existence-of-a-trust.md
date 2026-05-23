@@ -28,6 +28,10 @@ see_also:
   - ./creation-of-a-trust.md
   - ./recognition-of-a-trust.md
   - ./purpose-trusts.md
+pinpoints:
+  - article: "2"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641884
+    source: trusts-jersey-law-1984
 ---
 
 # Article 2 — Existence of a Trust

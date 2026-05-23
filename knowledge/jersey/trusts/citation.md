@@ -20,6 +20,10 @@ sources:
 see_also:
   - ./index.md
   - ./articles-index.md
+pinpoints:
+  - article: "61"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641973
+    source: trusts-jersey-law-1984
 ---
 
 # Article 61 — Citation

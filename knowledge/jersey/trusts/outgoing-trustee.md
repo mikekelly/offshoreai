@@ -25,6 +25,10 @@ see_also:
   - ./trustee-resignation-and-removal.md
   - ./trustee-security.md
   - ./breach-of-trust-liability.md
+pinpoints:
+  - article: "34"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641925
+    source: trusts-jersey-law-1984
 ---
 
 # Article 34 — Position of Outgoing Trustee

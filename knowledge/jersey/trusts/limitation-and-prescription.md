@@ -25,6 +25,10 @@ see_also:
   - ./articles-index.md
   - ./breach-of-trust-liability.md
   - ./outgoing-trustee.md
+pinpoints:
+  - article: "57"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641967
+    source: trusts-jersey-law-1984
 ---
 
 # Article 57 — Limitation of Actions or Prescription

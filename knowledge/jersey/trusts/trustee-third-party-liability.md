@@ -22,6 +22,10 @@ see_also:
   - ./articles-index.md
   - ./trustee-duties.md
   - ./trustee-remuneration.md
+pinpoints:
+  - article: "32"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641923
+    source: trusts-jersey-law-1984
 ---
 
 # Article 32 — Trustee's Liability to Third Parties

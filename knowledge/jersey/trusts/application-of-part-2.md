@@ -22,6 +22,10 @@ see_also:
   - ./articles-index.md
   - ./proper-law.md
   - ./application-of-part-3.md
+pinpoints:
+  - article: "6"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641890
+    source: trusts-jersey-law-1984
 ---
 
 # Article 6 — Application of Part 2

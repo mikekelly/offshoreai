@@ -26,6 +26,10 @@ see_also:
   - ./number-of-trustees.md
   - ./trustee-appointment-out-of-court.md
   - ./article-51-directions.md
+pinpoints:
+  - article: "44"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641940
+    source: trusts-jersey-law-1984
 ---
 
 # Article 44 — Court Appointment of Resident Trustee

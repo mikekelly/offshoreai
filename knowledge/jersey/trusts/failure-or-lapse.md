@@ -26,6 +26,10 @@ see_also:
   - ./class-interests.md
   - ./termination-of-trust.md
   - ./court-purpose-trust-redirection.md
+pinpoints:
+  - article: "42"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641935
+    source: trusts-jersey-law-1984
 ---
 
 # Article 42 — Failure or Lapse of Interest

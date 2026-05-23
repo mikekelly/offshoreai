@@ -28,6 +28,10 @@ see_also:
   - ./outgoing-trustee.md
   - ./article-51-directions.md
   - ./relief-from-personal-liability.md
+pinpoints:
+  - article: "30"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641921
+    source: trusts-jersey-law-1984
 ---
 
 # Article 30 — Liability for Breach of Trust

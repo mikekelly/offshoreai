@@ -55,6 +55,15 @@ export const sourceSchema = z.object({
   kind: sourceKindEnum.optional(), // some early corpus files omit kind; we warn rather than fail
 });
 
+// Pinpoint deep-link citations — populated by the corpus enrichment script
+// (packages/build/src/enrich/pinpoints.ts) so the UI can offer per-article
+// links into the primary source rather than the whole document.
+export const pinpointSchema = z.object({
+  article: z.string().regex(articlePattern, 'pinpoint article like "47" or "47A"'),
+  url: z.string().url(),
+  source: z.string().min(1),
+});
+
 export const frontmatterSchema = z.object({
   title: z.string().min(1),
   jurisdiction: z.string().regex(jurisdictionPattern, "jurisdiction is lower-kebab-case"),
@@ -66,6 +75,7 @@ export const frontmatterSchema = z.object({
   persona: z.string().regex(/^[a-z]+(-[a-z]+)*$/).optional(),
   sources: z.array(sourceSchema).default([]),
   see_also: z.array(z.string().min(1)).default([]),
+  pinpoints: z.array(pinpointSchema).optional(),
 });
 
 export type FrontmatterShape = z.infer<typeof frontmatterSchema>;

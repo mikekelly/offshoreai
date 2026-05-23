@@ -26,6 +26,10 @@ see_also:
   - ./breach-of-trust-liability.md
   - ./trustee-duties.md
   - ./article-51-directions.md
+pinpoints:
+  - article: "45"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641941
+    source: trusts-jersey-law-1984
 ---
 
 # Article 45 — Court Power to Relieve Trustee from Personal Liability

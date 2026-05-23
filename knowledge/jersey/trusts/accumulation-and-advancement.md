@@ -27,6 +27,10 @@ see_also:
   - ./duration.md
   - ./class-interests.md
   - ./trustee-impartiality.md
+pinpoints:
+  - article: "38"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641930
+    source: trusts-jersey-law-1984
 ---
 
 # Article 38 — Power of Accumulation and Advancement

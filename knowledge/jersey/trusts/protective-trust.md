@@ -25,6 +25,10 @@ see_also:
   - ./articles-index.md
   - ./beneficiaries.md
   - ./firewall.md
+pinpoints:
+  - article: "35"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641927
+    source: trusts-jersey-law-1984
 ---
 
 # Article 35 — Spendthrift or Protective Trust

@@ -19,6 +19,7 @@ import { fileURLToPath } from "node:url";
 import { stringify as yamlStringify } from "yaml";
 import { compileHierTree } from "./compile/hier-tree.js";
 import { compileTagIndex } from "./compile/tag-index.js";
+import { enrichPinpoints } from "./enrich/cli.js";
 import { validateCorpus } from "./validate/run.js";
 import type { ValidationResult } from "./validate/types.js";
 
@@ -46,9 +47,32 @@ switch (verb) {
   case "all":
     await runAll();
     break;
+  case "enrich-pinpoints":
+    await runEnrichPinpoints(args.slice(1));
+    break;
   default:
     console.error(`Unknown verb: ${verb}`);
     printHelpAndExit(1);
+}
+
+async function runEnrichPinpoints(rest: string[]): Promise<void> {
+  const apply = rest.includes("--apply");
+  if (!apply && !rest.includes("--dry-run")) {
+    console.error("enrich-pinpoints requires --dry-run or --apply");
+    process.exit(1);
+  }
+  const summary = await enrichPinpoints({ repoRoot: REPO_ROOT, apply });
+  console.log(`\nScanned:    ${summary.scanned} files`);
+  console.log(`Matched:    ${summary.matched} files cite a known statute`);
+  console.log(`Changed:    ${summary.changed} files ${apply ? "were updated" : "would be updated"}\n`);
+  for (const ch of summary.changes) {
+    console.log(`  ${ch.path}`);
+    console.log(`    before: ${ch.before.length === 0 ? "(no pinpoints)" : ch.before.map((p) => p.article).join(", ")}`);
+    console.log(`    after:  ${ch.after.map((p) => `${p.article} → ${p.url}`).join("\n            ")}`);
+  }
+  if (!apply && summary.changed > 0) {
+    console.log("\n(dry-run — pass --apply to write the changes)");
+  }
 }
 
 async function runValidate(rest: string[]): Promise<void> {

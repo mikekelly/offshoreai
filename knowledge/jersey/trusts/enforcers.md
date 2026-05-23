@@ -25,6 +25,10 @@ see_also:
   - ./purpose-trusts.md
   - ./enforcer-resignation-removal.md
   - ./interpretation-and-definitions.md
+pinpoints:
+  - article: "13"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641900
+    source: trusts-jersey-law-1984
 ---
 
 # Article 13 — Enforcers of Non-Charitable Purpose Trusts

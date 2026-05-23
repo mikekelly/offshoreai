@@ -26,6 +26,10 @@ see_also:
   - ./trustee-powers.md
   - ./article-47-set-aside.md
   - ./beneficiaries.md
+pinpoints:
+  - article: "39"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641931
+    source: trusts-jersey-law-1984
 ---
 
 # Article 39 — Power of Appointment

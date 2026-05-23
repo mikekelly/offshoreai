@@ -23,6 +23,10 @@ see_also:
   - ./number-of-trustees.md
   - ./trustee-resignation-and-removal.md
   - ./court-appointed-resident-trustee.md
+pinpoints:
+  - article: "17"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641905
+    source: trusts-jersey-law-1984
 ---
 
 # Article 17 — Appointment of Trustees Out of Court

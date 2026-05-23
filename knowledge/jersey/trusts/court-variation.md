@@ -27,6 +27,10 @@ see_also:
   - ./article-47-set-aside.md
   - ./article-51-directions.md
   - ./court-purpose-trust-redirection.md
+pinpoints:
+  - article: "47"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641943
+    source: trusts-jersey-law-1984
 ---
 
 # Article 47 — Court Variation of Terms of a Jersey Trust

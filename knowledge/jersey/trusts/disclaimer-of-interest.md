@@ -13,7 +13,7 @@ tags:
   - uk-tax
   - concept-file
 articles_covered:
-  - "10A"
+  - 10A
 sources:
   - title: Trusts (Jersey) Law 1984 — Article 10A (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_11_1984
@@ -23,6 +23,10 @@ see_also:
   - ./index.md
   - ./articles-index.md
   - ./beneficiaries.md
+pinpoints:
+  - article: 10A
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641897
+    source: trusts-jersey-law-1984
 ---
 
 # Article 10A — Disclaimer of Interest

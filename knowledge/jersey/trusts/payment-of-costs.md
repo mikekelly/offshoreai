@@ -24,6 +24,10 @@ see_also:
   - ./articles-index.md
   - ./article-51-directions.md
   - ./trustee-remuneration.md
+pinpoints:
+  - article: "53"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641963
+    source: trusts-jersey-law-1984
 ---
 
 # Article 53 — Payment of Costs

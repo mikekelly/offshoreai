@@ -24,6 +24,10 @@ see_also:
   - ./articles-index.md
   - ./trustee-duties.md
   - ./trustee-delegation.md
+pinpoints:
+  - article: "26"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641916
+    source: trusts-jersey-law-1984
 ---
 
 # Article 26 — Remuneration and Expenses of Trustee

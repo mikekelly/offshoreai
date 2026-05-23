@@ -24,6 +24,10 @@ see_also:
   - ./articles-index.md
   - ./creation-of-a-trust.md
   - ./firewall.md
+pinpoints:
+  - article: "8"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641893
+    source: trusts-jersey-law-1984
 ---
 
 # Article 8 — Property Which May Be Placed in a Trust

@@ -13,7 +13,7 @@ tags:
   - limitation
   - concept-file
 articles_covered:
-  - "43A"
+  - 43A
 sources:
   - title: Trusts (Jersey) Law 1984 — Article 43A (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_11_1984
@@ -25,6 +25,10 @@ see_also:
   - ./outgoing-trustee.md
   - ./termination-of-trust.md
   - ./trustee-resignation-and-removal.md
+pinpoints:
+  - article: 43A
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641938
+    source: trusts-jersey-law-1984
 ---
 
 # Article 43A — Trustee Security

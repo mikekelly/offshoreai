@@ -22,6 +22,10 @@ see_also:
   - ./index.md
   - ./articles-index.md
   - ./article-51-directions.md
+pinpoints:
+  - article: "52"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641962
+    source: trusts-jersey-law-1984
 ---
 
 # Article 52 — Execution of Instruments by Order of the Court

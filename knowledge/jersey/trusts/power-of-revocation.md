@@ -27,6 +27,10 @@ see_also:
   - ./reserved-powers.md
   - ./failure-or-lapse.md
   - ./termination-of-trust.md
+pinpoints:
+  - article: "40"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641932
+    source: trusts-jersey-law-1984
 ---
 
 # Article 40 — Power of Revocation

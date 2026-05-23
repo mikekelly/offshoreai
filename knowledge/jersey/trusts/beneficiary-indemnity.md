@@ -24,6 +24,10 @@ see_also:
   - ./articles-index.md
   - ./breach-of-trust-liability.md
   - ./relief-from-personal-liability.md
+pinpoints:
+  - article: "46"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641942
+    source: trusts-jersey-law-1984
 ---
 
 # Article 46 — Court Power to Impound Beneficiary's Interest for Breach

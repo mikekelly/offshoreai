@@ -24,6 +24,10 @@ see_also:
   - ./trustee-appointment-out-of-court.md
   - ./trustee-resignation-and-removal.md
   - ./corporate-trustee-resolution.md
+pinpoints:
+  - article: "16"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641904
+    source: trusts-jersey-law-1984
 ---
 
 # Article 16 — Number of Trustees

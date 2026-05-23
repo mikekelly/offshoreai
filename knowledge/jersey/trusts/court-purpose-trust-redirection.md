@@ -14,7 +14,7 @@ tags:
   - variation
   - concept-file
 articles_covered:
-  - "47A"
+  - 47A
 sources:
   - title: Trusts (Jersey) Law 1984 — Article 47A (consolidated)
     url: https://www.jerseylaw.je/laws/current/l_11_1984
@@ -26,6 +26,10 @@ see_also:
   - ./purpose-trusts.md
   - ./court-variation.md
   - ./failure-or-lapse.md
+pinpoints:
+  - article: 47A
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641944
+    source: trusts-jersey-law-1984
 ---
 
 # Article 47A — Court Redirection for Failed Charitable / Purpose Trusts

@@ -24,6 +24,10 @@ see_also:
   - ./application-of-part-2.md
   - ./foreign-trust-enforceability.md
   - ./proper-law.md
+pinpoints:
+  - article: "48"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641956
+    source: trusts-jersey-law-1984
 ---
 
 # Article 48 — Application of Part 3

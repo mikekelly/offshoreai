@@ -26,6 +26,10 @@ see_also:
   - ./proper-law.md
   - ./firewall.md
   - ./court-jurisdiction-over-trusts.md
+pinpoints:
+  - article: "49"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641957
+    source: trusts-jersey-law-1984
 ---
 
 # Article 49 — Enforceability of a Foreign Trust

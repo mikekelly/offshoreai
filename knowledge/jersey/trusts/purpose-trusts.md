@@ -27,6 +27,10 @@ see_also:
   - ./enforcers.md
   - ./court-purpose-trust-redirection.md
   - ../foundations/foundations-law-2009.md
+pinpoints:
+  - article: "12"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641899
+    source: trusts-jersey-law-1984
 ---
 
 # Article 12 — Trusts for Non-Charitable Purposes

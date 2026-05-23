@@ -24,6 +24,10 @@ see_also:
   - ./articles-index.md
   - ./breach-of-trust-liability.md
   - ./interpretation-and-definitions.md
+pinpoints:
+  - article: "33"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641924
+    source: trusts-jersey-law-1984
 ---
 
 # Article 33 — Constructive Trustee

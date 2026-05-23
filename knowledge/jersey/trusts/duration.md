@@ -25,6 +25,10 @@ see_also:
   - ./index.md
   - ./articles-index.md
   - ./termination-of-trust.md
+pinpoints:
+  - article: "15"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641902
+    source: trusts-jersey-law-1984
 ---
 
 # Article 15 — Duration of a Jersey Trust

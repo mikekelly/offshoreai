@@ -22,6 +22,10 @@ see_also:
   - ./articles-index.md
   - ./article-51-directions.md
   - ../legal-system/royal-court.md
+pinpoints:
+  - article: "60"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641972
+    source: trusts-jersey-law-1984
 ---
 
 # Article 60 — Rules of Court

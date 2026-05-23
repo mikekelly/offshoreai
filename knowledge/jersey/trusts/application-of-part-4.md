@@ -24,6 +24,10 @@ see_also:
   - ./application-of-part-2.md
   - ./application-of-part-3.md
   - ./article-51-directions.md
+pinpoints:
+  - article: "50"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641960
+    source: trusts-jersey-law-1984
 ---
 
 # Article 50 — Application of Part 4

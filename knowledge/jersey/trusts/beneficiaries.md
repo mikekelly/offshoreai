@@ -26,6 +26,10 @@ see_also:
   - ./beneficiary-rights.md
   - ./disclaimer-of-interest.md
   - ./class-interests.md
+pinpoints:
+  - article: "10"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641896
+    source: trusts-jersey-law-1984
 ---
 
 # Article 10 — Beneficiaries of a Trust

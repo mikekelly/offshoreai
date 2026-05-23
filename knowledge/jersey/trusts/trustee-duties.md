@@ -30,6 +30,10 @@ see_also:
   - ./trustee-remuneration.md
   - ./trustee-delegation.md
   - ./beneficiary-rights.md
+pinpoints:
+  - article: "21"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641910
+    source: trusts-jersey-law-1984
 ---
 
 # Article 21 — Duties of Trustee

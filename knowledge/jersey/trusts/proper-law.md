@@ -25,6 +25,10 @@ see_also:
   - ./existence-of-a-trust.md
   - ./firewall.md
   - ./change-of-proper-law.md
+pinpoints:
+  - article: "4"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641886
+    source: trusts-jersey-law-1984
 ---
 
 # Article 4 — Proper Law of a Trust

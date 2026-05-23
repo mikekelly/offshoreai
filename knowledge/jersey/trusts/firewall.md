@@ -33,6 +33,10 @@ see_also:
   - ./recognition-of-a-trust.md
   - ./proper-law.md
   - ./reserved-powers.md
+pinpoints:
+  - article: "9"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641894
+    source: trusts-jersey-law-1984
 ---
 
 # Article 9 — The Jersey Firewall

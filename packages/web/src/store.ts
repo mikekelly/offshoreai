@@ -25,6 +25,7 @@ export interface StoredCitation {
   readonly freshness: string;
   readonly sources: ReadonlyArray<{ title: string; url: string; kind: string }>;
   readonly articles: ReadonlyArray<string>;
+  readonly pinpoints: ReadonlyArray<{ article: string; url: string; source: string }>;
 }
 
 export interface StoredVerdict {

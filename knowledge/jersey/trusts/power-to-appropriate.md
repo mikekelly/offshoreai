@@ -25,6 +25,10 @@ see_also:
   - ./articles-index.md
   - ./trustee-powers.md
   - ./trustee-impartiality.md
+pinpoints:
+  - article: "27"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641917
+    source: trusts-jersey-law-1984
 ---
 
 # Article 27 — Power to Appropriate

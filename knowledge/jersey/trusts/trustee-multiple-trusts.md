@@ -24,6 +24,10 @@ see_also:
   - ./articles-index.md
   - ./trustee-duties.md
   - ./breach-of-trust-liability.md
+pinpoints:
+  - article: "31"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641922
+    source: trusts-jersey-law-1984
 ---
 
 # Article 31 — Trustee Acting in Respect of More Than One Trust

@@ -26,6 +26,10 @@ see_also:
   - ./validity-of-a-trust.md
   - ./proper-law.md
   - ./firewall.md
+pinpoints:
+  - article: "3"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641885
+    source: trusts-jersey-law-1984
 ---
 
 # Article 3 — Recognition of a Trust by the Law of Jersey

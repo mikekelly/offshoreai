@@ -22,6 +22,10 @@ see_also:
   - ./articles-index.md
   - ./temporal-application-of-law.md
   - ../legal-system/customary-law.md
+pinpoints:
+  - article: "59"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641971
+    source: trusts-jersey-law-1984
 ---
 
 # Article 59 — Saving Provisions

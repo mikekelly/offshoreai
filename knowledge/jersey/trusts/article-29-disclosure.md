@@ -26,6 +26,10 @@ see_also:
   - ./beneficiary-rights.md
   - ./trustee-duties.md
   - ./enforcers.md
+pinpoints:
+  - article: "29"
+    url: https://www.jerseylaw.je/laws/current/l_11_1984#_Toc224641919
+    source: trusts-jersey-law-1984
 ---
 
 # Article 29 — Disclosure
