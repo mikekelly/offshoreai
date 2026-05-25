@@ -15,6 +15,31 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 4B confirmation + plan completion
+
+- **Phase 4B was already complete** from prior Week 0 work
+  per [`../../IMPLEMENTATION-PLAN.md`](../../IMPLEMENTATION-PLAN.md).
+  The three sub-agent prompts referenced by PRD §8 sit at
+  [`prompts/sub-agents/`](../../prompts/sub-agents/):
+  [`citation-verifier.md`](../../prompts/sub-agents/citation-verifier.md)
+  (load-bearing pre-response gate; Opus 4.7);
+  [`bundle-assembler.md`](../../prompts/sub-agents/bundle-assembler.md)
+  (SessionStart hook; Sonnet);
+  [`freshness-checker.md`](../../prompts/sub-agents/freshness-checker.md)
+  (`PreToolUse` on every corpus content call; Sonnet). The
+  runtime wiring (Claude Agent SDK `AgentDefinition` with
+  tool list, model selection, and prompts loaded from these
+  files) is implementation work tracked in
+  IMPLEMENTATION-PLAN, not editorial work. Recording
+  completion only — no editorial change in this session.
+- **Plan now architecturally complete.** Phases 1A–G,
+  2A–F, 3A–G, and 4A–C are all closed (with 3A subsumed in
+  2E, 3B subsumed in 2B). Remaining work is editorial
+  promotion (section-file stubs to substantive content,
+  primary-source verification, soft-law entry seeding) and
+  implementation-side wiring (sub-agent runtime, eval
+  automation).
+
 ## 2026-05-25 — Phase 3E + 3G (service tiers + plain-language explainers)
 
 - **Phase 3E — Service tiers.** New
