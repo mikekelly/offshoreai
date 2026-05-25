@@ -60,7 +60,7 @@ preferred Jersey vehicle.
 | What is an SLP? | This file |
 | Why SLP rather than LP or ILP? | This file (US-tax-classification rationale) |
 | SLP vs Cayman ELP for US-investor fund | This file + [`../../cayman/exempted-limited-partnership.md`](../../cayman/exempted-limited-partnership.md) |
-| Article-level treatment | `slp-articles-index.md` *(stub)* |
+| Article-level treatment | [`slp-articles-index.md`](./slp-articles-index.md) |
 
 ## Use cases
 
@@ -82,15 +82,32 @@ LP 1994 remains the more commonly chosen vehicle —
 specialist choice driven by US-tax considerations or US-
 investor familiarity.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `slp-articles-index.md` *(stub)* — enumeration of Articles.
-- `slp-part-1-preliminary.md` *(stub)*
-- `slp-part-2-formation.md` *(stub)*
-- `slp-part-3-partners.md` *(stub)*
-- `slp-part-4-property-capital.md` *(stub)*
-- `slp-part-5-dissolution.md` *(stub)*
-- `slp-part-6-misc.md` *(stub)*
+Full per-Article wiki at
+[`slp-articles-index.md`](./slp-articles-index.md). The Law
+has **3 Parts** and **47 Articles**:
+
+- **Part 1 (Preliminary)**: Articles 1–2.
+- **Part 2 (Establishment)**: Articles 3–31 covering the
+  load-bearing constitutional Article 3 (separate legal
+  person but not body corporate), registration, partner
+  structure, name, registered office, accounts, contribution,
+  GP / LP rights, partnership property, profit and
+  contribution rules with solvency precondition,
+  **Article 20 limited-partner safe harbours** with GP-
+  liability conversion for participating LPs, admission,
+  assignments, cancellation, dissolution-statement, winding-
+  up, GP-death dissolution, Court-ordered dissolution,
+  compliance order, settling-accounts priority, legal
+  proceedings, authority to sign.
+- **Part 3 (Miscellaneous)**: Articles 32–47 covering
+  registrar, annual administration fee, fees / forms,
+  inspection, record destruction / form, public registry,
+  offences, officer liability (including participating-LP
+  liability), Regulations, Orders, Rules of Court,
+  amendments to other enactments, relationship to other
+  law (excluding LP 1994), citation.
 
 ## Status note
 

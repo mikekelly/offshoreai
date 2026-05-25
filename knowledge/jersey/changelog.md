@@ -15,6 +15,52 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — SLP 2011 — full per-Article wiki
+
+The
+[Separate Limited Partnerships (Jersey) Law 2011](https://www.jerseylaw.je/laws/current/l_6_2011)
+receives full Article-level treatment.
+
+The Law has **3 Parts and 47 Articles**. Per-Article files
+at [`slp-articles-index.md`](./companies/slp-articles-index.md):
+
+- **Part 1 (Preliminary)**: Articles 1–2.
+- **Part 2 (Establishment)**: Articles 3–31 — the load-
+  bearing constitutional Article 3 (separate legal person
+  but **not** body corporate, the intermediate position
+  between LP 1994 and ILP 2011); registration, partner
+  structure, name, registered office, accounts, contribution,
+  GP / LP rights, partnership property, profit and
+  contribution rules, **Article 20 limited-partner safe
+  harbours** with GP-liability conversion for participating
+  LPs (distinct mechanism from LP / ILP — converts LP to
+  GP-equivalent rather than imposing direct liability),
+  admission, assignments, cancellation, dissolution
+  statement, winding-up, GP-death dissolution, Court-ordered
+  dissolution, compliance, settling accounts (with explicit
+  priority order: GP non-capital → LP capital → LP profits
+  → GP capital → GP profits), legal proceedings, authority
+  to sign.
+- **Part 3 (Miscellaneous)**: Articles 32–47 covering
+  registrar, annual administration fee, fees / forms,
+  inspection, record destruction / form, public registry,
+  offences, officer liability (including participating-LP
+  extension), Regulations, Orders, Rules of Court,
+  amendments to other enactments, relationship to other
+  law (excluding LP 1994's application), citation.
+
+Parent
+[`slp-2011-index.md`](./companies/slp-2011-index.md)
+updated to reflect the actual statute structure
+(3 Parts, 47 Articles).
+
+The SLP 2011 statute moves from scaffold-only to ✅
+article-level wiki. The full partnership family (LP, ILP,
+SLP, LLP) now has complete article-level coverage —
+covering Jersey's principal partnership vehicles for fund
+structuring, professional-services, and structured-
+products use cases.
+
 ## 2026-05-25 — ILP 2011 — full per-Article wiki
 
 The
