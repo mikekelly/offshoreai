@@ -15,6 +15,42 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 1C (JFSC soft-law surfaces)
+
+- **JFSC soft-law content surface added.** Five new index
+  files under `financial-regulation/` establishing the
+  architectural surface for the JFSC's soft-law publications
+  — the body of content that shapes supervisory expectations
+  without being directly enforceable as statute or as a Code:
+  [`jfsc-soft-law-index.md`](./financial-regulation/jfsc-soft-law-index.md)
+  (the hub, with the why-this-matters framing — enforcement
+  risk mapping, regulatory direction signals, calibration of
+  the Code);
+  [`jfsc-thematic-reviews-index.md`](./financial-regulation/jfsc-thematic-reviews-index.md)
+  (thematic-review findings; entry-structure guidance);
+  [`jfsc-public-statements-index.md`](./financial-regulation/jfsc-public-statements-index.md)
+  (public statements, enforcement notices, financial-penalty
+  notices, directions, prohibitions; entry-structure
+  guidance with explicit tenant-neutrality permission for
+  citing named firms / individuals in their primary-source-
+  citation capacity);
+  [`jfsc-industry-updates-index.md`](./financial-regulation/jfsc-industry-updates-index.md)
+  (quarterly and targeted updates);
+  [`jfsc-dg-speeches-index.md`](./financial-regulation/jfsc-dg-speeches-index.md)
+  (DG / senior-management speeches).
+- Each per-surface index documents the entry-structure
+  expectations (date, theme, summary, action items, `as_of`)
+  for editorial seeding. Specific dated entries are not
+  populated — that is a continuing editorial workstream
+  pulling from
+  [jerseyfsc.org](https://www.jerseyfsc.org/).
+- [`financial-regulation/index.md`](./financial-regulation/index.md)
+  updated with a new Theme 4 (JFSC soft law) surfacing all
+  five new index files plus the existing
+  [`jfsc-strategy-2026-2030.md`](./financial-regulation/jfsc-strategy-2026-2030.md).
+- Completes the Phase 1 architectural scaffolding for the
+  primary regulation / rules / guidance surface.
+
 ## 2026-05-25 — Phase 1G (residual financial-crime statutes)
 
 - **Four residual financial-crime statutes added.** All

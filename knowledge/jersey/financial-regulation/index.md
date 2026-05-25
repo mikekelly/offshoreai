@@ -164,6 +164,28 @@ framework** lives here.
 - [`enforcement.md`](./enforcement.md) *(stub)* — civil financial
   penalties, public statements, directions.
 
+### Theme 4 — JFSC soft law (regulator behaviour signals)
+
+The JFSC publishes a body of soft-law content that shapes
+supervisory expectations without being directly enforceable
+as statute or as a Code:
+
+- [`jfsc-soft-law-index.md`](./jfsc-soft-law-index.md) — the
+  hub for the soft-law layer, with the regulatory framing of
+  why this matters.
+- [`jfsc-thematic-reviews-index.md`](./jfsc-thematic-reviews-index.md)
+  — JFSC thematic-review findings.
+- [`jfsc-public-statements-index.md`](./jfsc-public-statements-index.md)
+  — public statements, enforcement notices, financial-penalty
+  notices, prohibitions.
+- [`jfsc-industry-updates-index.md`](./jfsc-industry-updates-index.md)
+  — quarterly and targeted industry updates.
+- [`jfsc-dg-speeches-index.md`](./jfsc-dg-speeches-index.md)
+  — DG / senior-management speeches and strategic
+  communications.
+- [`jfsc-strategy-2026-2030.md`](./jfsc-strategy-2026-2030.md)
+  — the current strategic-direction publication.
+
 ## Cross-section navigation by tag
 
 - **`jfsc`** — regulator-driven topics, this section plus
