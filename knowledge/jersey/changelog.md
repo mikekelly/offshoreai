@@ -15,6 +15,78 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 2 (persona / operational layer)
+
+Phase 2 lands the persona-shaped retrieval surface that maps
+wealth-manager queries onto the Phase 1 evidence base. Two
+new role-shaped personas and a new cohort-shaped section.
+
+- **Phase 2E — AIM-listed Jersey plc operating reality.** New
+  persona at
+  [`use-cases/aim-listed-jersey-plc/index.md`](./use-cases/aim-listed-jersey-plc/index.md)
+  covering the steady-state operational reality for a chair /
+  CEO / CFO / GC of an AIM-listed Jersey-incorporated plc:
+  the dual-jurisdiction governance picture (CJL 1991 Jersey-
+  side + AIM Rules / MAR / DTR / UK Takeover Code / QCA /
+  UKCGC UK-side via the
+  [bridges](./external-rules/index.md)); annual cycle of
+  obligations; the four parallel disclosure triggers (MAR 17 /
+  AIM Rule 11 / AIM Rule 26 / DTR 6); related-party regime
+  triangulation; takeover and activist defence; dual-regime
+  reporting where the group includes JFSC-regulated
+  subsidiaries.
+- **Phase 2F — M&A acquirer of Jersey-regulated businesses.**
+  New persona at
+  [`use-cases/m-and-a-acquirer/index.md`](./use-cases/m-and-a-acquirer/index.md)
+  covering the buy-side view: five-stage arc (target
+  identification → LoI / diligence → execution → JFSC change-
+  of-control approval → post-completion integration). JFSC
+  shareholder-controller approval mechanics including
+  acquirer-CDD (parallel to customer onboarding), fit-and-
+  proper for incoming principal persons, business plan,
+  funding-source verification, governance framework
+  documentation. Cross-jurisdictional comparator framing for
+  multi-jurisdiction acquisitions. Public-target Takeover Code
+  layer where applicable.
+- **Phase 2B — Client cohort persona files.** New section at
+  [`use-cases/client-cohorts/index.md`](./use-cases/client-cohorts/index.md)
+  with seven cohort-shaped landing files:
+  [`uk-non-dom.md`](./use-cases/client-cohorts/uk-non-dom.md)
+  (FIG regime, post-2025 reforms, transitional rules);
+  [`uae-expat.md`](./use-cases/client-cohorts/uae-expat.md)
+  (no personal income tax + Sharia / non-Muslim succession
+  routes + DIFC / ADGM common-law islands);
+  [`us-person-abroad.md`](./use-cases/client-cohorts/us-person-abroad.md)
+  (citizenship-based tax, grantor-trust design, PFIC, throwback
+  rules, Form 3520 / 3520-A / 8938 / FBAR);
+  [`sa-expat.md`](./use-cases/client-cohorts/sa-expat.md)
+  (SARB exchange control, SARS worldwide income, tax-residence
+  cessation);
+  [`hk-singapore-expat.md`](./use-cases/client-cohorts/hk-singapore-expat.md)
+  (territorial tax regimes, dual-status profile, sovereign-risk
+  hedging);
+  [`nri.md`](./use-cases/client-cohorts/nri.md) (FEMA / NRE /
+  NRO / FCNR account framework, return planning, R(NOR)
+  transition, Hindu / Muslim personal law);
+  [`gcc-national.md`](./use-cases/client-cohorts/gcc-national.md)
+  (Sharia inheritance, wasiyyah limit, family-business
+  multi-generational structures).
+- **[`use-cases/index.md`](./use-cases/index.md) updated**
+  with the two new role-shaped personas in the
+  Professional / offshore-finance section and the new cohort-
+  shaped landing pages section listing all seven cohort files.
+
+Each cohort file follows the same structure (Who's in the
+cohort / Home-jurisdiction load-bearing facts / Why Jersey /
+Jersey-structure menu / Common objections / Reporting
+exposure / EDD red flags) so additional cohorts can be added
+by an editor without architectural change.
+
+Tenant-neutrality discipline strictly observed: every cohort
+file uses stylised cohort shapes, not named clients or firms;
+every persona file describes role shapes, not staff at named
+groups.
+
 ## 2026-05-25 — Phase 1C (JFSC soft-law surfaces)
 
 - **JFSC soft-law content surface added.** Five new index

@@ -83,6 +83,27 @@ authority needed to cite.
 | Compliance / MLRO | [`compliance-mlro/`](./compliance-mlro/index.md) | Money-laundering reporting officer or compliance officer at a Jersey regulated business, dealing with **AML/CFT**, sanctions, AEoI. | Persona index written. |
 | Journalist / NGO / academic | [`journalist-ngo-academic/`](./journalist-ngo-academic/index.md) | Public-interest researcher — registers, statistics, regulatory history, transparency. | Persona index written. |
 | Royal Court litigator | [`royal-court-litigator/`](./royal-court-litigator/index.md) | Advocate or solicitor running civil litigation in the Royal Court — procedural questions, leading authorities, costs. | Persona index written. |
+| **AIM-listed Jersey plc operating reality** | [`aim-listed-jersey-plc/`](./aim-listed-jersey-plc/index.md) | Chair / CEO / CFO / GC of an AIM-listed Jersey-incorporated plc. Steady-state operating questions on disclosure cadence, related-party regime, governance code, dual-jurisdiction reporting, takeover defence. | Persona index written. |
+| **M&A acquirer of Jersey-regulated businesses** | [`m-and-a-acquirer/`](./m-and-a-acquirer/index.md) | Corporate-development / PE / strategic acquirer on a Jersey-touching M&A transaction. The five-stage arc from target triage to post-completion integration, including JFSC change-of-control mechanics. | Persona index written. |
+
+### Cohort-shaped landing pages
+
+Distinct from the role-shaped personas above, these files are
+organised by the **client's home-jurisdiction profile** — the
+relevant Jersey structuring choices follow from the cohort's
+home rules and reporting exposure. Designed for the
+international wealth RM or financial-planning adviser.
+
+| Cohort | File | Status |
+|---|---|---|
+| Client cohorts hub | [`client-cohorts/index.md`](./client-cohorts/index.md) | Section index. |
+| UK non-domiciled | [`client-cohorts/uk-non-dom.md`](./client-cohorts/uk-non-dom.md) | Draft. |
+| UAE-resident expatriate | [`client-cohorts/uae-expat.md`](./client-cohorts/uae-expat.md) | Draft. |
+| US person abroad | [`client-cohorts/us-person-abroad.md`](./client-cohorts/us-person-abroad.md) | Draft. |
+| South Africa expat / SA HNW | [`client-cohorts/sa-expat.md`](./client-cohorts/sa-expat.md) | Draft. |
+| HK / Singapore expatriate | [`client-cohorts/hk-singapore-expat.md`](./client-cohorts/hk-singapore-expat.md) | Draft. |
+| Non-Resident Indian (NRI) | [`client-cohorts/nri.md`](./client-cohorts/nri.md) | Draft. |
+| GCC national | [`client-cohorts/gcc-national.md`](./client-cohorts/gcc-national.md) | Draft. |
 
 ### Ordinary-resident personas
 
