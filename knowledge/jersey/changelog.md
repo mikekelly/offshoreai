@@ -15,6 +15,66 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Editorial uplift batch 2 (core TCB / IB / AML practices)
+
+Second uplift batch promoting the next-most-impactful stub
+files to substantive draft content. Focus on the **daily
+operational disciplines** that dominate wealth-management
+compliance and trustee practice.
+
+**Code of Practice substantive section files**
+
+- [`financial-regulation/cop-tcb-acting-as-trustee.md`](./financial-regulation/cop-tcb-acting-as-trustee.md)
+  — the core TCB function. Dual Trusts-Law + TCB-Code
+  framework; fiduciary discipline operationalised;
+  distribution decisions; investment management; beneficiary
+  information rights; conflicts management; particular
+  scenarios (multi-generational family trust, JPF trustee,
+  settlor-also-beneficiary, successor trustee).
+- [`financial-regulation/cop-tcb-ptc.md`](./financial-regulation/cop-tcb-ptc.md)
+  — Private Trust Company regime for HNW families.
+  TCB-registration carve-out conditions; administrator's
+  regulatory responsibility; PTC governance including
+  purpose-trust-over-PTC architecture; common
+  administration failure points.
+- [`financial-regulation/cop-ib-disclosure.md`](./financial-regulation/cop-ib-disclosure.md)
+  — fees, charges, conflicts, risks disclosure framework.
+  Multi-stage disclosure (pre-onboarding / onboarding /
+  ongoing / transaction-level); inducements regime
+  particular attention; common failure points.
+- [`financial-regulation/cop-ib-best-execution.md`](./financial-regulation/cop-ib-best-execution.md)
+  — best-execution as multi-factor assessment; execution
+  policy artefact; categories (direct / transmission /
+  discretionary); aggregation and allocation; TCA; common
+  failure points.
+
+**AML/CFT Handbook substantive sub-files**
+
+- [`aml-cft/amlh-controls-mlro.md`](./aml-cft/amlh-controls-mlro.md)
+  — MLRO role detail. Statutory responsibilities;
+  eligibility expectations (seniority / independence /
+  resources / qualifications / JFSC principal-person
+  status); irreducible role; MLRO vs MLCO; role in business
+  decisions; group-MLRO architecture; common failure points.
+- [`aml-cft/amlh-sars-internal-process.md`](./aml-cft/amlh-sars-internal-process.md)
+  — internal SAR workflow. Legal foundation in POCL Article
+  34; five-step workflow from staff-member suspicion through
+  MLRO investigation to determination; threshold for
+  suspicion deliberately low; tipping-off critical
+  constraint; wealth-management practical reality.
+- [`aml-cft/amlh-peps-family-and-associates.md`](./aml-cft/amlh-peps-family-and-associates.md)
+  — PEP-regime extension. Rationale; family-member typical
+  scope; close-associate categories with "known"
+  qualifier; identification routes; EDD application;
+  cessation handling.
+
+**Parent index files updated** in:
+[`cop-tcb-index.md`](./financial-regulation/cop-tcb-index.md),
+[`cop-ib-index.md`](./financial-regulation/cop-ib-index.md),
+[`amlh-internal-controls.md`](./aml-cft/amlh-internal-controls.md),
+[`amlh-sars.md`](./aml-cft/amlh-sars.md), and
+[`amlh-peps.md`](./aml-cft/amlh-peps.md).
+
 ## 2026-05-25 — Post-merge editorial uplift (Phase 1A/1B/2C/2D continuation)
 
 Continuing the editorial backlog flagged at plan completion:

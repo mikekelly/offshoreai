@@ -152,8 +152,12 @@ trivial**. The wealth-management RM needs:
 
 - `amlh-peps-definition.md` *(stub)* — the PEP definition by
   category in detail.
-- `amlh-peps-family-and-associates.md` *(stub)* — the family-
-  member and close-associate scope.
+- [`amlh-peps-family-and-associates.md`](./amlh-peps-family-and-associates.md)
+  — the family-member and close-associate scope. (Draft:
+  rationale for the extension, family-member typical scope,
+  close-associate categories with "known" qualifier,
+  identification routes, EDD application, cessation handling,
+  common failure modes, wealth-management practical reality.)
 - [`amlh-peps-screening.md`](./amlh-peps-screening.md) —
   screening obligations and tooling. (Draft: four screening
   tiers, common failure modes, match-handling workflow,

@@ -122,8 +122,12 @@ volume per se.
 
 ## Sub-section files
 
-- `amlh-sars-internal-process.md` *(stub)* — internal SAR
-  workflow.
+- [`amlh-sars-internal-process.md`](./amlh-sars-internal-process.md)
+  — internal SAR workflow. (Draft: legal foundation in POCL
+  Article 34, five-step workflow from staff-member suspicion
+  through MLRO investigation to determination, threshold for
+  suspicion deliberately low, tipping-off as critical
+  constraint, common failure modes.)
 - `amlh-sars-mlro-investigation.md` *(stub)* — MLRO
   investigation standards.
 - `amlh-sars-external-filing.md` *(stub)* — external SAR

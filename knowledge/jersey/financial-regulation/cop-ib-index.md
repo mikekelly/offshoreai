@@ -73,12 +73,12 @@ cited authoritatively.
 - [`cop-ib-customer-onboarding.md`](./cop-ib-customer-onboarding.md) *(stub)*
 - [`cop-ib-suitability.md`](./cop-ib-suitability.md) — **load-bearing for wealth management.** Suitability assessment, suitability letter, ongoing review. (Draft: four-pillar suitability framework, advised vs discretionary vs execution-only treatment, suitability-letter content, common failure points, AML/CDD interaction.)
 - [`cop-ib-appropriateness.md`](./cop-ib-appropriateness.md) *(stub)* — for non-advised execution-only services.
-- [`cop-ib-disclosure.md`](./cop-ib-disclosure.md) *(stub)* — fees, charges, costs, conflicts.
+- [`cop-ib-disclosure.md`](./cop-ib-disclosure.md) — fees, charges, costs, conflicts. (Draft: what must be disclosed across fees / conflicts / risks / status, when disclosure must happen, common failure points, particular attention to inducements regime, interaction with suitability.)
 - [`cop-ib-complaints.md`](./cop-ib-complaints.md) *(stub)*
 
 ### Dealing, execution, custody
 
-- [`cop-ib-best-execution.md`](./cop-ib-best-execution.md) *(stub)*
+- [`cop-ib-best-execution.md`](./cop-ib-best-execution.md) — best-execution discipline (Draft: best-execution obligation as multi-factor assessment, execution policy artefact, direct execution / transmission / discretionary management categories, aggregation and allocation, cross-venue / multi-venue considerations, TCA, common failure points.)
 - [`cop-ib-order-handling.md`](./cop-ib-order-handling.md) *(stub)*
 - [`cop-ib-client-assets.md`](./cop-ib-client-assets.md) — client money and client assets. (Draft: segregation foundational principle, client money definition and holding requirements, client asset categorisation and custody, reconciliation regime, periodic statements, sub-custody diligence, FCA CASS group-context interaction.)
 - [`cop-ib-personal-account-dealing.md`](./cop-ib-personal-account-dealing.md) *(stub)*

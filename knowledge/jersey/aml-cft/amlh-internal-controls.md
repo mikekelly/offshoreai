@@ -130,8 +130,13 @@ material changes are board-approved.
 
 - `amlh-controls-three-lines.md` *(stub)* — three-lines-of-
   defence in detail.
-- `amlh-controls-mlro.md` *(stub)* — MLRO role, qualifications,
-  resourcing.
+- [`amlh-controls-mlro.md`](./amlh-controls-mlro.md) —
+  MLRO role, qualifications, resourcing. (Draft: statutory
+  responsibilities, seniority / independence / resources /
+  qualifications / JFSC principal-person status expectations,
+  what the MLRO cannot do (irreducible role), MLRO vs MLCO
+  distinction, role in business decisions, group-MLRO
+  architecture, common failure points.)
 - `amlh-controls-mlco.md` *(stub)* — MLCO role.
 - `amlh-controls-board.md` *(stub)* — board responsibilities.
 - `amlh-controls-policies.md` *(stub)* — policy framework
