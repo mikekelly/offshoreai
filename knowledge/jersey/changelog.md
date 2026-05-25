@@ -15,6 +15,75 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Editorial uplift batch 3 (AML customer-types + sanctions + tipping-off + TCB conflicts)
+
+Third uplift batch — seven substantive promotions covering
+the operational disciplines that the wealth-management eval
+scenarios test against.
+
+**AML/CFT Handbook substantive sub-files (5)**
+
+- [`aml-cft/amlh-customer-individual.md`](./aml-cft/amlh-customer-individual.md)
+  — natural-person CDD: identification, verification, tax-
+  residence, purpose / nature, SoF / SoW, PEP / sanctions
+  screening; scenarios for HNW founder, expatriate
+  professional, family-member-of-existing-customer, high-
+  profile public figure, older client with capacity
+  considerations.
+- [`aml-cft/amlh-customer-foreign-trust.md`](./aml-cft/amlh-customer-foreign-trust.md)
+  — foreign-law trust customer CDD: same identification
+  population as Jersey trust with adjustments for foreign-
+  law context, foreign-trustee diligence, governing-law and
+  settlement-formality differences, EDD typical triggers,
+  scenarios for US grantor trust / Cayman / BVI trust /
+  civil-law foundation-equivalent.
+- [`aml-cft/amlh-sars-tipping-off.md`](./aml-cft/amlh-sars-tipping-off.md)
+  — tipping-off offence (POCL Article 35) operational
+  detail: the offence and protected period, what is
+  prohibited and what is permitted, practical scenarios
+  (customer direct question, service continuation,
+  relationship exit, cross-firm communications),
+  operational mitigations, common failure modes.
+- [`aml-cft/amlh-sanctions-screening.md`](./aml-cft/amlh-sanctions-screening.md)
+  — sanctions screening operational discipline across
+  multiple parallel regimes (Jersey / UN / UK OFSI / EU /
+  US OFAC), customer- and transaction- and beneficial-
+  owner-level screening pipeline, match-handling workflow
+  tier-by-tier, common failure modes.
+- [`aml-cft/amlh-ongoing-transaction-monitoring.md`](./aml-cft/amlh-ongoing-transaction-monitoring.md)
+  — transaction-monitoring discipline: what monitoring
+  catches (profile-inconsistency / structuring / pass-
+  through / counterparty-risk / velocity-anomalies);
+  automated and human-review tiers; calibration; alert
+  disposition; wealth-management-specific patterns; common
+  failure modes; integration with SAR pipeline.
+
+**Code of Practice substantive section files (2)**
+
+- [`financial-regulation/cop-tcb-acting-as-director.md`](./financial-regulation/cop-tcb-acting-as-director.md)
+  — TCB principal acting as commercial director of client
+  companies; parallel CJL 1991 Article 74 + TCB Code
+  framework; Article 74 duties owed to company not to
+  above-trust; governance / conflicts / skill expectations;
+  particular scenarios; common failure modes including
+  excessive directorship count.
+- [`financial-regulation/cop-tcb-conflicts.md`](./financial-regulation/cop-tcb-conflicts.md)
+  — TCB conflicts of interest framework: four conflict
+  categories (between TCB and client / between clients /
+  within a single relationship / TCB-staff conflicts);
+  identify-manage-disclose-decline framework; particular
+  scenarios (same TCB serving multiple trusts holding the
+  same asset, TCB-group-as-fund-manager, family
+  relationships of TCB staff, PEP family-member
+  relationships); common failure modes.
+
+**Parent index files updated** in
+[`amlh-customer-types.md`](./aml-cft/amlh-customer-types.md),
+[`amlh-sars.md`](./aml-cft/amlh-sars.md),
+[`amlh-sanctions.md`](./aml-cft/amlh-sanctions.md),
+[`amlh-ongoing-monitoring.md`](./aml-cft/amlh-ongoing-monitoring.md), and
+[`cop-tcb-index.md`](./financial-regulation/cop-tcb-index.md).
+
 ## 2026-05-25 — Editorial uplift batch 2 (core TCB / IB / AML practices)
 
 Second uplift batch promoting the next-most-impactful stub

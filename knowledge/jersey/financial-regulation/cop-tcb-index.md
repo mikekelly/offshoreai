@@ -107,7 +107,7 @@ authoritatively.
 
 ### Operational conduct
 
-- [`cop-tcb-acting-as-director.md`](./cop-tcb-acting-as-director.md) *(stub)* — TCB principal acting as a commercial director of client-administered companies; interaction with director fiduciary duty.
+- [`cop-tcb-acting-as-director.md`](./cop-tcb-acting-as-director.md) — TCB principal acting as a commercial director of client-administered companies; interaction with director fiduciary duty. (Draft: parallel CJL 1991 Article 74 + TCB Code framework, Article 74 duties owed to company not above-trust, governance / conflicts / skill expectations under Code, particular scenarios — company-held-by-trust, fund-structure GP, AIM-listed director, charitable purpose entity, common failure modes including excessive directorship count.)
 - [`cop-tcb-acting-as-trustee.md`](./cop-tcb-acting-as-trustee.md) — operating as a professional trustee under the [Trusts (Jersey) Law 1984](../trusts/trusts-law-1984.md). (Draft: dual Trusts-Law-plus-TCB-Code framework, fiduciary discipline operationalised, distribution decisions, investment management, beneficiary information rights, conflicts management, particular scenarios — multi-generational family trust, JPF trustee, settlor-also-beneficiary, successor trustee.)
 - [`cop-tcb-acting-as-foundation-member.md`](./cop-tcb-acting-as-foundation-member.md) *(stub)* — acting as a Jersey-foundation council member or qualified member.
 - [`cop-tcb-ptc.md`](./cop-tcb-ptc.md) — Private Trust Company carve-out conditions. (Draft: what a PTC is and why families use them, TCB-registration exemption conditions, administrator's role, PTC governance including purpose-trust-over-PTC architecture, when PTC is right / not right, common administration failure points.)
@@ -115,7 +115,7 @@ authoritatively.
 ### Outsourcing and conflicts
 
 - [`cop-tcb-outsourcing.md`](./cop-tcb-outsourcing.md) — outsourcing permissibility, JFSC notification thresholds, continuing-responsibility rule, access by the JFSC. (Draft: non-delegation principle, material vs non-material distinction, required controls, cross-border outsourcing, common scenarios, FCA group-context interaction.)
-- [`cop-tcb-conflicts.md`](./cop-tcb-conflicts.md) *(stub)* — identification, disclosure, and mitigation of conflicts between the TCB and its clients, and between clients.
+- [`cop-tcb-conflicts.md`](./cop-tcb-conflicts.md) — identification, disclosure, and mitigation of conflicts between the TCB and its clients, and between clients. (Draft: four conflict categories — between TCB and client / between clients / within a single relationship / TCB-staff conflicts, identify-manage-disclose-decline framework, particular scenarios — same TCB serving multiple trusts holding the same asset, TCB-group-as-fund-manager, staff family relationships, PEP family-member relationships, common failure modes.)
 
 ### Records, reporting, capital
 

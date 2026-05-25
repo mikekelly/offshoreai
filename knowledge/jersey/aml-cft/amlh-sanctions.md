@@ -102,7 +102,13 @@ documented procedures for handling matches across regimes.
 
 ## Sub-section files
 
-- `amlh-sanctions-screening.md` *(stub)*
+- [`amlh-sanctions-screening.md`](./amlh-sanctions-screening.md)
+  — sanctions screening operational discipline (Draft:
+  multiple parallel sanctions regimes — Jersey / UN / UK
+  OFSI / EU / US OFAC, what sanctions impose, customer- and
+  transaction- and beneficial-owner-level screening pipeline,
+  screening tools, match-handling workflow tier-by-tier,
+  common failure modes.)
 - `amlh-sanctions-reporting.md` *(stub)*
 - `amlh-sanctions-list-management.md` *(stub)*
 - `amlh-sanctions-licences.md` *(stub)*

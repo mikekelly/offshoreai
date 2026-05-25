@@ -133,8 +133,13 @@ volume per se.
 - `amlh-sars-external-filing.md` *(stub)* — external SAR
   process and FIU interface.
 - `amlh-sars-daml-consent.md` *(stub)* — DAML regime.
-- `amlh-sars-tipping-off.md` *(stub)* — tipping-off offence
-  and customer communications.
+- [`amlh-sars-tipping-off.md`](./amlh-sars-tipping-off.md) —
+  tipping-off offence and customer communications. (Draft:
+  the offence and protected period, what is prohibited and
+  what is permitted, practical scenarios — customer direct
+  question, service continuation, relationship exit, cross-
+  firm communications, operational mitigations, common
+  failure modes.)
 
 ## Cross-references
 

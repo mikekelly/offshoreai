@@ -40,11 +40,11 @@ This file is the section index.
 
 | Customer type | Sub-section file |
 |---|---|
-| Natural-person customers | `amlh-customer-individual.md` *(stub)* |
+| Natural-person customers | [`amlh-customer-individual.md`](./amlh-customer-individual.md) — identification + verification + tax-residence + purpose / nature + SoF / SoW + PEP / sanctions screening; scenarios for HNW founder, expatriate, family-member, high-profile public figure, older client with capacity considerations |
 | Jersey companies | `amlh-customer-jersey-company.md` *(stub)* |
 | Foreign companies | `amlh-customer-foreign-company.md` *(stub)* |
 | Jersey trusts | [`amlh-customer-jersey-trust.md`](./amlh-customer-jersey-trust.md) — full population for identification (settlor / contributors / trustees / protector / enforcer / named beneficiaries / class of objects / default beneficiaries), beneficial-ownership framework, purpose-and-intended-nature assessment, EDD triggers, common failure modes |
-| Foreign trusts | `amlh-customer-foreign-trust.md` *(stub)* |
+| Foreign trusts | [`amlh-customer-foreign-trust.md`](./amlh-customer-foreign-trust.md) — similar full identification population to Jersey trust with adjustments for foreign-law context, foreign-trustee diligence, governing-law differences, settlement-formality variations, EDD triggers common, scenarios for US grantor trust / Cayman-BVI trust / civil-law foundation-equivalent |
 | Jersey foundations | `amlh-customer-jersey-foundation.md` *(stub)* — cross-link to [`../foundations/index.md`](../foundations/index.md) |
 | Partnerships (LP / LLP / SLP / ILP) | `amlh-customer-partnership.md` *(stub)* |
 | Charities | `amlh-customer-charity.md` *(stub)* — cross-link to [`../charities/index.md`](../charities/index.md) |

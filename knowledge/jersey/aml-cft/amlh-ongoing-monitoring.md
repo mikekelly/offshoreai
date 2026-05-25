@@ -109,7 +109,12 @@ not operating effectively for enforcement purposes.
 
 ## Sub-section files
 
-- `amlh-ongoing-transaction-monitoring.md` *(stub)*
+- [`amlh-ongoing-transaction-monitoring.md`](./amlh-ongoing-transaction-monitoring.md)
+  — transaction-monitoring discipline (Draft: what monitoring
+  catches — profile-inconsistency / structuring / pass-through
+  / counterparty-risk / velocity-anomalies; automated and
+  human-review tiers; calibration; alert disposition;
+  wealth-management-specific patterns; common failure modes.)
 - `amlh-ongoing-periodic-refresh.md` *(stub)*
 - `amlh-ongoing-trigger-events.md` *(stub)*
 - `amlh-ongoing-monitoring-by-risk-tier.md` *(stub)*
