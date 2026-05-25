@@ -15,6 +15,47 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 4A + 3F + 4C (evals, regulatory calendar, cross-tagging)
+
+- **Phase 4A — wealth-management eval scenarios.** New
+  [`evals/wealth-management-questions.yaml`](../../evals/wealth-management-questions.yaml)
+  with **18 scenarios** across the Phase 1A–G + Phase 2 +
+  Phase 3D surfaces: Codes of Practice (TCB governance, IB
+  suitability), AML/CFT Handbook (EDD on PEPs, SoW vs SoF),
+  external rule-set bridges (UK Takeover Code applicability,
+  AIM Rule 13 related-party, MAR PDMR dealing), vehicle laws
+  (LP vs ILP vs SLP, Jersey LLC vs Cayman LLC), persona files
+  (AIM-listed plc disclosure, M&A acquirer JFSC change-of-
+  control), client cohorts (UK non-dom post-2025, US grantor
+  trust, GCC Sharia defence), and sectors (PE carry timing,
+  crypto / VASP / CARF, family business succession). Eval
+  format matches existing showcase.yaml. Initial run will
+  surface partials and fails that map directly to the
+  promote-stub-section-files editorial backlog.
+- **Phase 3F — group regulatory calendar.** New
+  [`use-cases/aim-listed-jersey-plc/group-regulatory-calendar.md`](./use-cases/aim-listed-jersey-plc/group-regulatory-calendar.md)
+  mapping the year-at-a-glance obligations across four
+  parallel regulatory streams (AIM / LSE, Jersey corporate,
+  Jersey regulatory, AML/CFT) by quarter, plus continuous
+  obligations and event-driven obligation triggers.
+  [`aim-listed-jersey-plc/index.md`](./use-cases/aim-listed-jersey-plc/index.md)
+  updated to reference the sub-file.
+- **Phase 4C — cross-tagging frontier files.** Added
+  `wealth-manager-relevance` and `corporate-finance-relevance`
+  tags (plus several other relevant tags) to the most
+  immediately relevant frontier files:
+  [`uk-carried-interest-reform-2026.md`](../frontier/uk-carried-interest-reform-2026.md)
+  (uk-tax, uk-carry-reform, wealth-manager-relevance, corp-
+  fin-relevance);
+  [`aifmd-ii-april-2026.md`](../frontier/aifmd-ii-april-2026.md)
+  (funds, fund-services-business, alternative-investment-
+  funds, wealth-manager-relevance, corp-fin-relevance);
+  [`continuation-funds-and-gp-led-secondaries.md`](../frontier/continuation-funds-and-gp-led-secondaries.md)
+  (funds, wealth-manager-relevance, corp-fin-relevance);
+  [`carf.md`](./international/carf.md) (wealth-manager-
+  relevance). Further cross-tagging across other frontier and
+  doctrinal files is a continuing editorial workstream.
+
 ## 2026-05-25 — Phase 3D (sector cuts)
 
 - **Sector-shaped structuring orientation surface added.** New

@@ -1,0 +1,352 @@
+# Wealth-Management Eval — Offshore AI
+#
+# Question set designed to measure the corpus's ability to
+# answer the wealth-management persona / cohort / sector
+# scenarios landed in the Phase 1–3 architectural build.
+#
+# Distinct from showcase.yaml (which tests the landing-page bar
+# on offshore-finance depth) and coverage-questions.yaml (which
+# tests audit-driven coverage of resident-facing gaps).
+#
+# This file tests the Phase 1A–1G + Phase 2 + Phase 3D wealth-
+# management surface specifically: JFSC Codes of Practice,
+# AML/CFT Handbook section indexes, external rule-set bridges,
+# Takeovers Panel Law, vehicle laws, persona files (AIM-listed
+# Jersey plc, M&A acquirer), client cohort files (UK non-dom,
+# UAE expat, US person, etc.), and sector cuts (PE founders,
+# UK property, crypto, etc.).
+#
+# Scoring dimensions match showcase.yaml:
+#   substance        — facts correct, no errors
+#   jersey-specific  — actually cites Jersey law / regulator surfaces
+#   voice            — operational, useful, calibrated to the persona
+#   citation         — multiple files cited; the new architecture used
+#   tightness        — readable in 60-90 seconds, no padding
+#
+# Overall verdict:
+#   pass     — all five dimensions adequate
+#   partial  — one or two dimensions weak
+#   fail     — three or more weak; gap exposed
+#
+# Many entries here are NEW SURFACES — the section files they
+# rely on are draft / stub. Initial run will likely surface
+# partials and fails that map directly to the "promote stub
+# section files" editorial backlog.
+
+version: 1
+last_run: null
+notes: |
+  Initial wealth-management eval file landed alongside the
+  Phase 1–3 architectural scaffold. Expect a high partial-rate
+  on first run — most section files are at draft level with
+  stubs underneath. The eval's first job is to expose where
+  promotion-to-substantive-content earns the most demo value.
+
+questions:
+
+  # ===========================================
+  # JFSC CODES OF PRACTICE (Phase 1A)
+  # ===========================================
+
+  - id: wm-cop-tcb-001
+    category: codes-of-practice
+    persona: cco
+    question: "What governance and compliance expectations does the JFSC Code of Practice for Trust Company Business place on a Jersey TCB's board?"
+    expected_files:
+      - knowledge/jersey/financial-regulation/cop-tcb-index.md
+      - knowledge/jersey/financial-regulation/cop-tcb-principles.md
+      - knowledge/jersey/financial-regulation/codes-of-practice.md
+    expected_facts:
+      - Code of Practice for TCB effective 1 January 2021
+      - Eight high-level Principles (integrity, skill / care / diligence, organisation and control, risk management, customer treatment, financial soundness, JFSC cooperation, market integrity)
+      - Principles are mandatory and enforceable independently of specific subsections
+      - Three lines of defence framing for governance
+      - Designated compliance officer required
+      - Senior management approval expected for higher-risk relationships
+
+  - id: wm-cop-ib-suitability-001
+    category: codes-of-practice
+    persona: wealth-rm
+    question: "What does the JFSC Code of Practice for Investment Business require for suitability when advising a retail client?"
+    expected_files:
+      - knowledge/jersey/financial-regulation/cop-ib-index.md
+      - knowledge/jersey/financial-regulation/codes-of-practice.md
+    expected_facts:
+      - Code of Practice for IB effective 17 January 2022
+      - Suitability assessment + suitability letter + ongoing review
+      - Client categorisation (retail / professional / eligible counterparty) drives applicable obligations
+      - Conflicts and fee disclosure
+      - Best execution and order handling
+      - Client assets / client money rules
+    expected_partial: |
+      Section file cop-ib-suitability.md is currently stub;
+      a partial here is acceptable if the agent cites the
+      cop-ib-index.md and explains the structure without
+      claiming the stub gives specific Code wording.
+
+  # ===========================================
+  # AML/CFT HANDBOOK (Phase 1B)
+  # ===========================================
+
+  - id: wm-amlh-edd-pep-001
+    category: aml-handbook
+    persona: mlro
+    question: "We're onboarding a UAE-resident client whose father is a regional governor. What EDD measures does the Handbook require?"
+    expected_files:
+      - knowledge/jersey/aml-cft/amlh-peps.md
+      - knowledge/jersey/aml-cft/amlh-edd.md
+      - knowledge/jersey/aml-cft/amlh-cdd.md
+      - knowledge/jersey/use-cases/client-cohorts/uae-expat.md
+    expected_facts:
+      - PEP regime extends to family members of PEPs
+      - Mandatory EDD for PEPs and family members
+      - Senior-management approval required at onboarding
+      - Source-of-wealth verification at heightened evidentiary standard
+      - Enhanced ongoing monitoring
+      - Source-of-wealth distinct from source-of-funds
+      - Documented decision file expected
+      - The relationship requires careful country-risk overlay (UAE / regional context)
+
+  - id: wm-amlh-sow-001
+    category: aml-handbook
+    persona: mlro
+    question: "What's the difference between source of funds and source of wealth under the AML/CFT Handbook?"
+    expected_files:
+      - knowledge/jersey/aml-cft/amlh-edd.md
+      - knowledge/jersey/aml-cft/amlh-cdd.md
+    expected_facts:
+      - SoF asks where the specific funds for a transaction came from
+      - SoW asks where the customer's cumulative wealth originated
+      - SoW evidentiary standard is higher (documentary evidence, not customer declaration)
+      - SoW is the most common EDD failure point in JFSC enforcement
+      - SoW examples (employment / business sale / inheritance / asset disposal records)
+
+  # ===========================================
+  # EXTERNAL RULE-SET BRIDGES (Phase 1F)
+  # ===========================================
+
+  - id: wm-uk-takeover-jersey-001
+    category: bridges
+    persona: m-and-a-counsel
+    question: "Does the UK Takeover Code apply to a Jersey-incorporated AIM-listed company?"
+    expected_files:
+      - knowledge/jersey/external-rules/uk-takeover-code.md
+      - knowledge/jersey/external-rules/index.md
+      - knowledge/jersey/companies/takeovers-panel-2009-index.md
+    expected_facts:
+      - UK Code applies to companies with registered office in UK / Channel Islands / Isle of Man
+      - AND with securities admitted to trading on UK regulated market / MTF (LSE Main Market or AIM)
+      - For Jersey-incorporated AIM company — yes, Code applies
+      - Bridge file directs to Takeover Panel publication for substantive Rule
+      - Jersey Takeovers Panel has supportive role; UK Panel is primary
+
+  - id: wm-aim-rule13-001
+    category: bridges
+    persona: corporate-finance-adviser
+    question: "Our AIM-listed Jersey plc is entering into a transaction with our 30% shareholder. What process applies?"
+    expected_files:
+      - knowledge/jersey/external-rules/aim-rules.md
+      - knowledge/jersey/companies/directors-duties.md
+      - knowledge/jersey/use-cases/aim-listed-jersey-plc/index.md
+    expected_facts:
+      - AIM Rule 13 — related-party transaction
+      - 5% class tests trigger
+      - NOMAD confirmation that terms are fair and reasonable
+      - Notification with prescribed content
+      - CJL 1991 Article 76 disclosure-of-interest regime parallel obligation
+      - Articles of association may add further constraints
+
+  - id: wm-mar-pdmr-001
+    category: bridges
+    persona: cco
+    question: "Our director wants to sell shares in our Jersey-incorporated AIM company next week. What constraints apply?"
+    expected_files:
+      - knowledge/jersey/external-rules/mar.md
+      - knowledge/jersey/external-rules/aim-rules.md
+    expected_facts:
+      - MAR Article 19 PDMR dealing notification
+      - 3-business-day notification deadline
+      - EUR 5,000 per calendar year threshold
+      - 30-day closed period before financial-report announcement
+      - AIM Rule 21 closed-period restriction in parallel
+      - Issuer dealing policy may add further constraints
+      - Inside-information consideration under MAR Article 7 / 17
+
+  # ===========================================
+  # VEHICLE LAWS (Phase 1D)
+  # ===========================================
+
+  - id: wm-jersey-lp-vs-ilp-001
+    category: vehicle-law
+    persona: fund-counsel
+    question: "What's the difference between a Jersey Limited Partnership and a Jersey Incorporated Limited Partnership for a closed-ended PE fund?"
+    expected_files:
+      - knowledge/jersey/companies/lp-1994-index.md
+      - knowledge/jersey/companies/ilp-2011-index.md
+      - knowledge/jersey/companies/slp-2011-index.md
+    expected_facts:
+      - LP has no separate legal personality (contractual)
+      - ILP has separate legal personality plus body-corporate character
+      - SLP has separate legal personality without body-corporate character
+      - GP / LP structure same across all three
+      - LP is the default for closed-ended PE funds
+      - ILP useful where contracting / property-holding in own name needed
+      - SLP for US-tax-classification preference
+
+  - id: wm-jersey-llc-vs-cayman-llc-001
+    category: vehicle-law
+    persona: fund-counsel
+    question: "Should I use a Jersey LLC or a Cayman LLC for my structure?"
+    expected_files:
+      - knowledge/jersey/companies/llc-2018-index.md
+      - knowledge/cayman/cayman-llc.md
+      - knowledge/CROSS-JURISDICTIONAL-MAP.md
+    expected_facts:
+      - Both modeled on Delaware LLC
+      - Cayman LLC Act 2016 (first-mover advantage globally)
+      - Jersey LLC Law 2018 (response to demand)
+      - Flexible operating-agreement based economics in both
+      - Jersey has deeper LP / ILP / SLP / company toolkit alongside
+      - Choice often driven by US-investor familiarity vs EU/UK-investor familiarity
+
+  # ===========================================
+  # PERSONA FILES (Phase 2E + 2F)
+  # ===========================================
+
+  - id: wm-aim-listed-disclosure-001
+    category: persona
+    persona: wealth-group-chair
+    question: "Our Jersey-incorporated AIM-listed plc has just become aware of material price-sensitive information. What disclosure obligations apply?"
+    expected_files:
+      - knowledge/jersey/use-cases/aim-listed-jersey-plc/index.md
+      - knowledge/jersey/external-rules/mar.md
+      - knowledge/jersey/external-rules/aim-rules.md
+    expected_facts:
+      - MAR Article 17 inside-information disclosure without delay
+      - AIM Rule 11 general disclosure of price-sensitive information
+      - AIM Rule 26 website update where material
+      - DTR 6 dissemination requirements
+      - Four parallel triggers satisfied by RNS-via-NOMAD workflow
+      - Deferral and confidentiality conditions under MAR Article 17(4)-(5)
+
+  - id: wm-acquirer-jfsc-coc-001
+    category: persona
+    persona: m-and-a-counsel
+    question: "We're acquiring a Jersey-licensed TCB. What's the JFSC change-of-control approval process?"
+    expected_files:
+      - knowledge/jersey/use-cases/m-and-a-acquirer/index.md
+      - knowledge/jersey/financial-regulation/codes-of-practice.md
+      - knowledge/jersey/financial-regulation/cop-tcb-index.md
+    expected_facts:
+      - JFSC shareholder-controller approval required before completion
+      - Acquirer CDD (parallel to customer CDD discipline)
+      - Fit-and-proper assessment of incoming principal persons
+      - Business plan submission
+      - Funding-source verification
+      - Governance framework documentation
+      - Typical decision timeline 8-12 weeks for clean transactions
+      - JFSC pre-engagement before announcement is normal practice
+
+  # ===========================================
+  # CLIENT COHORTS (Phase 2B)
+  # ===========================================
+
+  - id: wm-cohort-uk-nondom-001
+    category: cohort
+    persona: wealth-rm
+    question: "Post-April 2025 UK reforms, what's the role of Jersey structures for a new UK arriver?"
+    expected_files:
+      - knowledge/jersey/use-cases/client-cohorts/uk-non-dom.md
+      - knowledge/jersey/use-cases/client-cohorts/index.md
+    expected_facts:
+      - FIG (Foreign Income and Gains) regime replaced remittance basis
+      - Four-year FIG window for new UK arrivers
+      - Historic offshore-trust benefits materially narrowed
+      - IHT became residence-based for long-term residents
+      - Specific structuring use cases remain (forced-heirship defence, family governance, non-UK-asset wrapper)
+      - Transitional Repatriation Facility for previously-untaxed remittances
+
+  - id: wm-cohort-us-grantor-trust-001
+    category: cohort
+    persona: wealth-rm
+    question: "Our client is a US citizen living in London. Can we structure a Jersey trust for them?"
+    expected_files:
+      - knowledge/jersey/use-cases/client-cohorts/us-person-abroad.md
+      - knowledge/jersey/trusts/reserved-powers.md
+    expected_facts:
+      - US citizenship-based worldwide tax
+      - Foreign trusts complex / punitive in default form (throwback rules, PFIC)
+      - Grantor trust treatment available via specific reserved-powers package
+      - Article 9A reserved powers can be structured to satisfy US grantor-trust tests
+      - Trust income runs through settlor's US return; avoids throwback
+      - Requires specific US tax advice on the reserved-powers package
+      - Form 3520 / 3520-A reporting applies
+
+  - id: wm-cohort-uae-sharia-001
+    category: cohort
+    persona: wealth-rm
+    question: "Our Saudi-national UAE-resident client wants succession planning for non-Saudi assets. What's the Jersey solution?"
+    expected_files:
+      - knowledge/jersey/use-cases/client-cohorts/gcc-national.md
+      - knowledge/jersey/use-cases/client-cohorts/uae-expat.md
+      - knowledge/jersey/trusts/firewall.md
+    expected_facts:
+      - Sharia inheritance applies by default to Muslim individuals
+      - Fixed-share distribution under Sharia
+      - Wasiyyah one-third testamentary freedom limit
+      - Article 9 firewall designed to disapply foreign forced-heirship rules including Sharia
+      - Jersey trust holds assets; beneficiary distribution under Jersey law
+      - Article 9A reserved powers retain family-control mechanism
+
+  # ===========================================
+  # SECTORS (Phase 3D)
+  # ===========================================
+
+  - id: wm-sector-pe-carry-001
+    category: sector
+    persona: founder
+    question: "I'm a PE founder considering settling some of my carry interest into a Jersey trust. What's the timing consideration?"
+    expected_files:
+      - knowledge/jersey/sectors/pe-founders.md
+      - knowledge/jersey/trusts/reserved-powers.md
+      - knowledge/frontier/uk-carried-interest-reform-2026.md
+    expected_facts:
+      - Pre-realisation settling has different home-country-tax profile than post-realisation
+      - Specific home-jurisdiction (UK / US / EU) tax advice essential
+      - UK carry reform 2026 changes the calculus for UK-resident recipients
+      - Article 9A reserved powers commonly used for founder structures
+      - Vesting and forfeiture mechanics intersect with trust structuring
+      - GP partner / shareholder agreements may require consent
+
+  - id: wm-sector-crypto-001
+    category: sector
+    persona: cco
+    question: "What's the JFSC and reporting framework for a Jersey-incorporated crypto fund?"
+    expected_files:
+      - knowledge/jersey/sectors/crypto-digital-assets.md
+      - knowledge/jersey/international/carf.md
+      - knowledge/jersey/aml-cft/amlh-risk-assessment.md
+    expected_facts:
+      - JFSC VASP registration regime
+      - VASPs treated as inherently high-risk under FATF / JFSC framing
+      - EDD as default
+      - JPF or Expert Fund vehicle options
+      - CARF effective 1 January 2026, first reports 2027
+      - Tokenisation framework in Jersey accommodates tokenised funds / securities
+
+  - id: wm-sector-fbusiness-succession-001
+    category: sector
+    persona: family-office
+    question: "Our family wants to put the family business into a Jersey trust for succession. What structure do you recommend?"
+    expected_files:
+      - knowledge/jersey/sectors/family-business-succession.md
+      - knowledge/jersey/trusts/reserved-powers.md
+      - knowledge/jersey/trusts/firewall.md
+    expected_facts:
+      - Trust-over-holding-company pattern (operating company → Jersey holding co → Jersey trust)
+      - Foundation alternative for civil-law-flavour families
+      - Private Trust Company hybrid for family control of trustee
+      - Article 9A reserved powers for senior-generation control during transition
+      - Letter of wishes for trustee guidance
+      - Protector / protector council with family representation
+      - Article 51 directions jurisdiction for contested decisions

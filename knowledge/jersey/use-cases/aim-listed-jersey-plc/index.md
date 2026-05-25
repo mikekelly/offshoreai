@@ -248,6 +248,13 @@ TCB, FSB, IB, fund manager, etc.):
   identities** — see
   [`../../external-rules/fca-handbook-jersey-touchpoints.md`](../../external-rules/fca-handbook-jersey-touchpoints.md).
 
+## Sub-files
+
+- [`group-regulatory-calendar.md`](./group-regulatory-calendar.md)
+  — year-at-a-glance calendar mapping the four parallel
+  regulatory streams (AIM / LSE, Jersey corporate, Jersey
+  regulatory, AML/CFT) by quarter.
+
 ## Status
 
 Draft. The structure above and the cross-references are

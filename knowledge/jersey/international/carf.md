@@ -12,6 +12,7 @@ tags:
   - oecd
   - automatic-exchange
   - concept-file
+  - wealth-manager-relevance
 sources:
   - title: OECD — Crypto-Asset Reporting Framework
     url: https://www.oecd.org/tax/exchange-of-tax-information/crypto-asset-reporting-framework.htm

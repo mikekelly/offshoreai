@@ -12,6 +12,9 @@ tags:
   - jersey
   - guernsey
   - cayman
+  - funds
+  - wealth-manager-relevance
+  - corporate-finance-relevance
 sources:
   - title: Dechert — GP-led Secondaries and Continuation Vehicles Boost DPI
     url: https://www.dechert.com/knowledge/onpoint/2025/11/gp-led-secondaries-and-continuation-vehicles-boost-dpi.html

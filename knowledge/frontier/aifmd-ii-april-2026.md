@@ -11,6 +11,11 @@ tags:
   - npr
   - jersey
   - guernsey
+  - funds
+  - fund-services-business
+  - alternative-investment-funds
+  - wealth-manager-relevance
+  - corporate-finance-relevance
 sources:
   - title: Directive (EU) 2024/927 — AIFMD II
     url: https://eur-lex.europa.eu/

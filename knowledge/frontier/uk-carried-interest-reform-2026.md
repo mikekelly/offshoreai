@@ -9,7 +9,11 @@ tags:
   - tax
   - carried-interest
   - uk
+  - uk-tax
+  - uk-carry-reform
   - crown-dependencies
+  - wealth-manager-relevance
+  - corporate-finance-relevance
 sources:
   - title: UK Finance Bill 2025-26 — Carried Interest provisions
     url: https://bills.parliament.uk/
