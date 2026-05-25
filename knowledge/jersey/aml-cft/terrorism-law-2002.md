@@ -11,7 +11,7 @@ tags:
   - statute-wiki
 sources:
   - title: Terrorism (Jersey) Law 2002
-    url: https://www.jerseylaw.je/laws/current/Pages/16.770.aspx
+    url: https://www.jerseylaw.je/laws/current/l_40_2002
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -96,18 +96,36 @@ The
 [JFSC AML/CFT Handbook section on SARs](./amlh-sars.md) treats
 the two regimes in parallel.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `terrorism-articles-index.md` *(stub)* — enumeration of
-  Articles.
-- Per-Article files for the substantive offences, asset-
-  freezing powers, and reporting obligations to be added in
-  the editorial pass.
+- [`./terrorism-articles-index.md`](./terrorism-articles-index.md)
+  — full Article-by-Article enumeration (7 Parts, 68
+  Article slots; Articles 5, 26, 62, 66, 67 deleted).
+- Per-Article files [`terrorism-article-1.md`](./terrorism-article-1.md)
+  – [`terrorism-article-68.md`](./terrorism-article-68.md)
+  (with `terrorism-article-16a.md` as a sub-Article).
+
+The load-bearing Articles for the CFT compliance function are:
+
+- **[Article 2](./terrorism-article-2.md)** — meaning of
+  "terrorism" (threshold definition);
+- **[Article 15](./terrorism-article-15.md)** — use /
+  possession of property for terrorism (principal
+  financing offence);
+- **[Article 16](./terrorism-article-16.md)** — dealing
+  with terrorist property;
+- **[Article 19](./terrorism-article-19.md)** — general
+  SAR duty;
+- **[Article 21](./terrorism-article-21.md)** — FI
+  failure-to-disclose offence (the practical compliance
+  trigger);
+- **[Article 35](./terrorism-article-35.md)** — tipping
+  off.
 
 ## Status note
 
-Draft. **Verify Article structure and current text against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/16.770.aspx)**.
+Draft. **Verify Article text against
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_40_2002)**.
 The Terrorism Law 2002 has been amended periodically since
 enactment.
 

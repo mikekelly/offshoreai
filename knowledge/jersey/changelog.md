@@ -15,6 +15,50 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Terrorism Law 2002 — full per-Article wiki
+
+The Terrorism (Jersey) Law 2002 — Jersey's principal
+counter-terrorist-financing statute — now has Article-by-
+Article coverage under `knowledge/jersey/aml-cft/`. Sixty-
+eight Article files were added across the Law's 7 Parts
+(with Articles 5, 26, 62, 66, 67 written as "[Deleted]"
+placeholders for completeness, and Article 16A inserted as
+a sub-Article). The `terrorism-articles-index.md`
+enumerates the full structure. Source: jerseylaw.je
+`l_40_2002` (replacing the earlier `Pages/16.770.aspx` URL
+in the parent index, which has been corrected).
+
+The load-bearing Articles for the CFT compliance function
+are written substantively:
+
+- **Article 2** — meaning of "terrorism" (the three-
+  element threshold test);
+- **Article 15** — use / possession of property for
+  terrorism (the principal financing offence; 14-year
+  maximum);
+- **Article 16** — dealing with terrorist property;
+- **Article 16A** — insuring against terrorist demands
+  (K&R coverage);
+- **Article 19** — general SAR duty;
+- **Article 21** — FI failure-to-disclose offence with
+  the "reasonable grounds" objective limb (the practical
+  trigger for the JFSC AML/CFT Handbook's CDD discipline);
+- **Article 27** — criminal forfeiture (alongside the
+  civil forfeiture regime under the Forfeiture Law 2018);
+- **Article 35** — tipping off (the constraint on
+  post-SAR client communication).
+
+The `terrorism-law-2002.md` parent file was updated to
+remove its scaffolded-stub language, fix the URL, and
+surface the load-bearing Articles.
+
+Files added (69): `terrorism-articles-index.md` plus
+`terrorism-article-1.md` to `terrorism-article-68.md`
+(with `terrorism-article-16a.md`).
+Files modified (1): `terrorism-law-2002.md`.
+Status: `draft` — text is summarised from primary statute;
+re-verify against jerseylaw.je before citing as `stable`.
+
 ## 2026-05-25 — LLC 2018 — full per-Article wiki
 
 The Limited Liability Companies (Jersey) Law 2018 now has
