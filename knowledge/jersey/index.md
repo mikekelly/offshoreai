@@ -397,6 +397,27 @@ breach, damages, specific performance (broader in Jersey than
 English law), misrepresentation, unjust enrichment / quasi-
 contract, and délit / tort (including voisinage).
 
+### [Service tiers](./service-tiers/index.md)
+**Industry-typical service-tier descriptions** for Jersey-
+based wealth-management businesses, organised by client-asset
+range — [Mass affluent / Standard](./service-tiers/standard-mass-affluent.md)
+(£100k–£1m), [HNW Standard](./service-tiers/standard-hnw.md)
+(£1m–£25m), and [Bespoke UHNW](./service-tiers/bespoke-uhnw.md)
+(£25m+). Tenant-neutral by design — describes industry-typical
+menus, not any specific firm's pricing or product offering.
+
+### [Plain-language explainers](./explainers/index.md)
+**Client-readable explainers** on common Jersey structuring
+concepts. Same accuracy and citation discipline as the
+doctrinal corpus but in a client voice. Current explainers:
+[What is a Jersey trust?](./explainers/what-is-a-jersey-trust.md),
+[Jersey vs UK tax for international clients](./explainers/jersey-vs-uk-tax-context.md),
+and
+[The Article 9 firewall explained](./explainers/article-9-firewall-explained.md).
+Designed for client-meeting preparation, post-meeting
+follow-up, and (with tenant-side customisation) productised
+thought-leadership content.
+
 ### [Decision surfaces](./decision-surfaces/index.md)
 **Cross-cutting navigation aids** that do not fit one-concept-
 per-file. Currently the

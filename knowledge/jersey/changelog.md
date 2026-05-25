@@ -15,6 +15,39 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 3E + 3G (service tiers + plain-language explainers)
+
+- **Phase 3E — Service tiers.** New
+  [`service-tiers/`](./service-tiers/index.md) section with
+  hub index plus three industry-typical service-tier
+  descriptions:
+  [`standard-mass-affluent.md`](./service-tiers/standard-mass-affluent.md)
+  (£100k–£1m, AI-augmented light-touch service is the
+  commercial opportunity at this tier);
+  [`standard-hnw.md`](./service-tiers/standard-hnw.md)
+  (£1m–£25m, bread-and-butter tier for Jersey wealth-management
+  businesses);
+  [`bespoke-uhnw.md`](./service-tiers/bespoke-uhnw.md)
+  (£25m+, full family-office service including Royal Court
+  applications and inter-generational governance). Tenant-
+  neutral by design — describes industry-typical menus, not
+  specific firms' pricing.
+- **Phase 3G — Plain-language explainers.** New
+  [`explainers/`](./explainers/index.md) section with hub
+  index plus three client-readable explainers in a distinct
+  style from doctrinal corpus (same accuracy, same citation
+  discipline, but client voice):
+  [`what-is-a-jersey-trust.md`](./explainers/what-is-a-jersey-trust.md);
+  [`article-9-firewall-explained.md`](./explainers/article-9-firewall-explained.md);
+  [`jersey-vs-uk-tax-context.md`](./explainers/jersey-vs-uk-tax-context.md).
+  Editorial discipline noted in the hub index — explainer
+  style differs from doctrinal style in length, voice, and
+  citation density, but **every claim still cites** the
+  doctrinal concept files. Tenant configuration layer can
+  add branding and adapt voice for client-facing deployment.
+- [`index.md`](./index.md) updated with both new section
+  descriptions.
+
 ## 2026-05-25 — Phase 3C (decision-surface content type + trigger-events map)
 
 - **CONVENTIONS.md amended** with a new
