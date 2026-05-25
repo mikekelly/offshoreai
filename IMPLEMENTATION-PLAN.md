@@ -26,8 +26,10 @@ output feeds the editorial backlog used from week 3 onwards.
 ## Week 0 — readiness gaps (this document and its peers)
 
 Pre-week-1 design artefacts that unblock implementation. These exist
-because AGENTS.md "what's deliberately not in this document" listed them
-as gaps; week 0 closes them so week 1 can start cold.
+because the contributor cold-start guide in
+[`CLAUDE.md`](CLAUDE.md) (formerly `AGENTS.md`) listed them as "what's
+deliberately not in this document" gaps; week 0 closes them so week 1
+can start cold.
 
 | Deliverable | Path | State |
 |---|---|---|
@@ -45,7 +47,7 @@ as gaps; week 0 closes them so week 1 can start cold.
 | Tenant onboarding runbook | `TENANT-ONBOARDING.md` | deferred — not week-1-to-7 blocking |
 
 Acceptance: a new implementation engineer can run `git pull`, read
-[`AGENTS.md`](AGENTS.md), then [`SETUP.md`](SETUP.md), then this file, and
+[`CLAUDE.md`](CLAUDE.md), then [`SETUP.md`](SETUP.md), then this file, and
 have everything they need to start week 1 without further design questions.
 
 ---

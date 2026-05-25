@@ -73,7 +73,7 @@ offshoreai/
 ├── README.md                  ← you are here
 ├── CONVENTIONS.md             ← file conventions, frontmatter spec, link style
 ├── KNOWLEDGE-BASE-PRINCIPLES.md
-├── AGENTS.md / CLAUDE.md      ← cold-start reading order
+├── CLAUDE.md                  ← cold-start reading order (operating discipline + contributor guide)
 ├── TAGS.md
 ├── PRD-baseline-agent-v1.md
 ├── DEMO-CHEAT-SHEET-KPMG-PE-PARTNER.md

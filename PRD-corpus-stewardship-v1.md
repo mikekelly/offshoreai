@@ -137,8 +137,9 @@ better with it.
 - Add a new `corpus.tree` handler that returns the inclusion-graph
   rooted at a path, in TOON format, with depth bound.
 - Document the `iwe` binary as a supported developer-side tool in
-  [`SETUP.md`](./SETUP.md) and AGENTS.md, with usage notes for `iwe
-  rename`, `iwe extract`, `iwe inline`, `iwe stats`, `iwe export dot`.
+  [`SETUP.md`](./SETUP.md) and the contributor cold-start guide in
+  [`CLAUDE.md`](./CLAUDE.md), with usage notes for `iwe rename`,
+  `iwe extract`, `iwe inline`, `iwe stats`, `iwe export dot`.
 
 **Part B:**
 - Ship the **Auditor** sub-agent as a `pnpm corpus-audit` CLI producing
@@ -627,7 +628,7 @@ Proposed sequencing; tied to baseline-agent milestones in
 
 | Milestone | Scope | Depends on | Ships after |
 |---|---|---|---|
-| **A.1 — Convention** | Document inclusion-link convention in CONVENTIONS.md; audit pass over existing files; one-page reading note in AGENTS.md | None | Independent — could ship next week |
+| **A.1 — Convention** | Document inclusion-link convention in CONVENTIONS.md; audit pass over existing files; one-page reading note in the contributor cold-start guide section of [`CLAUDE.md`](./CLAUDE.md) | None | Independent — could ship next week |
 | **A.2 — Tool params** | Add `depth` / `parentContext` to `getFile`; add `corpus.tree`; A/B against showcase eval | Baseline agent eval suite is running | After A.1, after baseline agent v1 ships |
 | **A.3 — iwe pilot** | Install iwe locally; `.iwe/config.toml`; document `iwe rename` / `extract` / `inline` / `stats` in SETUP.md | A.1 | Optional, low priority |
 | **B.1 — Auditor v1** | `pnpm corpus-audit` CLI producing `corpus-health.md`; defect-injection eval fixtures; manager-eval runner | A.1 (uses inclusion-link graph); baseline-agent `corpus.*` tools | After A.1, after baseline agent v1 evals are stable |

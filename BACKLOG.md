@@ -218,9 +218,9 @@ example).
 **Recommended first step, when picked up.** Move 1 alone — add the
 inclusion-link convention to CONVENTIONS.md, audit a representative
 sample of index.md files to confirm they already follow it, and write
-a one-page note in [`AGENTS.md`](./AGENTS.md) explaining the
-graph-structure-from-flat-files reading. No code. Unlocks Moves 2 and
-3 without committing to them.
+a one-page note in the contributor cold-start guide section of
+[`CLAUDE.md`](./CLAUDE.md) explaining the graph-structure-from-flat-files
+reading. No code. Unlocks Moves 2 and 3 without committing to them.
 
 **Open design questions** to resolve before pickup:
 

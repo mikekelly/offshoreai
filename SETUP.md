@@ -16,9 +16,10 @@ repo, edit a file, follow [`CONVENTIONS.md`](CONVENTIONS.md), open a PR.
 
 ## Cold-start reading first
 
-Before touching code or content, read [`AGENTS.md`](AGENTS.md) in full. It is
-the cold-start reading order and it transcludes into Claude Code sessions
-via [`CLAUDE.md`](CLAUDE.md). Allow ~90 minutes for a thorough first pass.
+Before touching code or content, read [`CLAUDE.md`](CLAUDE.md) in full. It
+holds both the answering-agent operating discipline and the contributor
+cold-start guide (folded in from the former `AGENTS.md`). Allow ~90 minutes
+for a thorough first pass.
 
 ---
 
@@ -81,7 +82,7 @@ under `packages/`:
 
 ```
 offshoreai/
-├── README.md, AGENTS.md, CLAUDE.md, CONVENTIONS.md, TAGS.md, …  ← unchanged
+├── README.md, CLAUDE.md, CONVENTIONS.md, KNOWLEDGE-BASE-PRINCIPLES.md, TAGS.md, …  ← unchanged
 ├── knowledge/jersey/                                                       ← corpus, unchanged
 ├── bundles/                                                      ← compiled retrieval contracts
 ├── prompts/sub-agents/                                           ← sub-agent system prompts

@@ -2,7 +2,7 @@
   "name": "@offshoreai/monorepo",
   "version": "0.0.0",
   "private": true,
-  "description": "Offshore AI — Jersey baseline agent monorepo. Corpus at the root, agent runtime in packages/. See AGENTS.md and IMPLEMENTATION-PLAN.md.",
+  "description": "Offshore AI — Jersey baseline agent monorepo. Corpus at the root, agent runtime in packages/. See CLAUDE.md and IMPLEMENTATION-PLAN.md.",
   "type": "module",
   "engines": {
     "node": ">=22.0.0"
