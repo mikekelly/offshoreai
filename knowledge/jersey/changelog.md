@@ -15,6 +15,36 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 1D (vehicle-law completion)
+
+- **Five partnership / LLC vehicle statutes scaffolded.** All
+  were 🟡 ("mentions only") in
+  [`COVERAGE-AUDIT.md`](./COVERAGE-AUDIT.md). New per-statute
+  index files under `companies/`:
+  [`lp-1994-index.md`](./companies/lp-1994-index.md) (Limited
+  Partnerships (Jersey) Law 1994 — the original Jersey LP
+  statute, central to PE / VC / family-office fund vehicles
+  via the GP-LP capital-allocation model; competes with the
+  Cayman ELP for global PE managers);
+  [`ilp-2011-index.md`](./companies/ilp-2011-index.md)
+  (Incorporated Limited Partnerships Law 2011 — separate legal
+  personality + body-corporate character variant);
+  [`slp-2011-index.md`](./companies/slp-2011-index.md)
+  (Separate Limited Partnerships Law 2011 — separate legal
+  personality without body-corporate character, primarily for
+  US-tax-classification preference);
+  [`llp-2017-index.md`](./companies/llp-2017-index.md)
+  (Limited Liability Partnerships Law 2017 — body-corporate
+  partnership with all-member limited liability; default for
+  Jersey professional-services firms);
+  [`llc-2018-index.md`](./companies/llc-2018-index.md)
+  (Limited Liability Companies Law 2018 — Delaware-LLC-style
+  flexible body-corporate vehicle; Jersey's response to global
+  LLC demand). Each index covers vehicle purpose, comparison
+  to siblings, typical use cases, and a scaffolded Part /
+  Article structure as stubs. Closes five gaps from the
+  COVERAGE-AUDIT §1 Companies & Securities table.
+
 ## 2026-05-25 — Phase 1B (AML/CFT Handbook architecture)
 
 - **JFSC AML/CFT Handbook — architecture refactor.** Single
