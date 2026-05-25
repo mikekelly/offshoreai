@@ -15,6 +15,63 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Editorial uplift batch 4 (foundation / regulated-institution / company CDD + TCB record-keeping + FSB Principles)
+
+Fourth uplift batch — five substantive promotions completing
+the most demo-critical customer-type coverage and surfacing
+FSB Code Principles for the first time at substantive level.
+
+**AML/CFT Handbook substantive sub-files (3)**
+
+- [`aml-cft/amlh-customer-jersey-foundation.md`](./aml-cft/amlh-customer-jersey-foundation.md)
+  — Jersey foundation customer CDD. Full population
+  identification (founder, council members, mandatory
+  qualified member, guardian, beneficiaries / class);
+  distinctive points vs trust CDD; charter and regulations
+  review; beneficial-ownership framework; common
+  purposes; EDD triggers; common failure modes.
+- [`aml-cft/amlh-customer-regulated-institution.md`](./aml-cft/amlh-customer-regulated-institution.md)
+  — regulated-institution customer CDD + reliance regime.
+  Definition of regulated-institution; equivalent-
+  jurisdiction test; simplified-CDD permissibility;
+  written reliance arrangements; what can / cannot be
+  relied upon; common scenarios (Jersey custodian for EU
+  AIFM, administrator for Cayman fund, introducer
+  relationships).
+- [`aml-cft/amlh-customer-jersey-company.md`](./aml-cft/amlh-customer-jersey-company.md)
+  — Jersey company customer CDD. Entity-level
+  identification; beneficial-owner trace with worked
+  layered example; senior-managing-official fallback;
+  control-by-other-means extension; purpose-and-intended-
+  nature; scenarios for operating-business / holding-
+  company / family-investment / SPV / cell-company /
+  newly-incorporated; FSDI Law 2020 interaction.
+
+**Code of Practice substantive section files (2)**
+
+- [`financial-regulation/cop-tcb-record-keeping.md`](./financial-regulation/cop-tcb-record-keeping.md)
+  — TCB record-keeping discipline. What records across
+  customer-relationship / decision / operational /
+  regulatory categories; retention periods; electronic-
+  form permissibility; retrievability and access;
+  particular scenarios — long-established trust, sensitive
+  beneficiary information, litigation hold, cross-border
+  records; common failure modes.
+- [`financial-regulation/cop-fsb-principles.md`](./financial-regulation/cop-fsb-principles.md)
+  — FSB Code Principles. Eight Principles in summary
+  (integrity, skill / care / diligence, organisation and
+  control, risk management, investor / fund treatment,
+  financial soundness, JFSC cooperation, market integrity);
+  calibration to FSB context (investor vs customer
+  framework, skill profiles, AIFMD interface); operational
+  implications; load-bearing for enforcement.
+
+**Parent index files updated** in
+[`amlh-customer-types.md`](./aml-cft/amlh-customer-types.md),
+[`cop-tcb-index.md`](./financial-regulation/cop-tcb-index.md),
+and
+[`cop-fsb-index.md`](./financial-regulation/cop-fsb-index.md).
+
 ## 2026-05-25 — Editorial uplift batch 3 (AML customer-types + sanctions + tipping-off + TCB conflicts)
 
 Third uplift batch — seven substantive promotions covering

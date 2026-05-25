@@ -61,7 +61,7 @@ cited authoritatively.
 
 ### Governance and senior management
 
-- [`cop-fsb-principles.md`](./cop-fsb-principles.md) *(stub)* — the Code's high-level principles for FSB conduct.
+- [`cop-fsb-principles.md`](./cop-fsb-principles.md) — the Code's high-level principles for FSB conduct. (Draft: eight Principles in summary — integrity, skill / care / diligence, organisation and control, risk management, investor / fund treatment, financial soundness, JFSC cooperation, market integrity; how they apply differently to FSB vs TCB; operational implications; load-bearing for enforcement.)
 - [`cop-fsb-board-composition.md`](./cop-fsb-board-composition.md) *(stub)*
 - [`cop-fsb-principal-persons.md`](./cop-fsb-principal-persons.md) *(stub)*
 

@@ -119,7 +119,7 @@ authoritatively.
 
 ### Records, reporting, capital
 
-- [`cop-tcb-record-keeping.md`](./cop-tcb-record-keeping.md) *(stub)* — content and retention; interface with the [MLO 2008](../aml-cft/money-laundering-order-2008.md) record obligations.
+- [`cop-tcb-record-keeping.md`](./cop-tcb-record-keeping.md) — content and retention; interface with the [MLO 2008](../aml-cft/money-laundering-order-2008.md) record obligations. (Draft: what records must be kept across customer-relationship / decision / operational / regulatory categories, retention periods, form (electronic permitted with caveats), retrievability and access, particular scenarios — long-established trust / sensitive-beneficiary information / litigation hold / cross-border records, common failure modes.)
 - [`cop-tcb-jfsc-reporting.md`](./cop-tcb-jfsc-reporting.md) *(stub)* — periodic returns and notification of material events.
 - [`cop-tcb-financial-resources.md`](./cop-tcb-financial-resources.md) *(stub)* — adequate capital, professional indemnity insurance, solvency monitoring.
 

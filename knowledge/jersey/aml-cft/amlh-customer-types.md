@@ -41,16 +41,16 @@ This file is the section index.
 | Customer type | Sub-section file |
 |---|---|
 | Natural-person customers | [`amlh-customer-individual.md`](./amlh-customer-individual.md) — identification + verification + tax-residence + purpose / nature + SoF / SoW + PEP / sanctions screening; scenarios for HNW founder, expatriate, family-member, high-profile public figure, older client with capacity considerations |
-| Jersey companies | `amlh-customer-jersey-company.md` *(stub)* |
+| Jersey companies | [`amlh-customer-jersey-company.md`](./amlh-customer-jersey-company.md) — entity-level identification, beneficial-owner trace with worked layered example, senior-managing-official fallback, control-by-other-means extension, purpose-and-intended-nature, scenarios for operating-business / holding-company / family-investment / SPV / PCC/ICC / newly-incorporated, FSDI Law 2020 interaction |
 | Foreign companies | `amlh-customer-foreign-company.md` *(stub)* |
 | Jersey trusts | [`amlh-customer-jersey-trust.md`](./amlh-customer-jersey-trust.md) — full population for identification (settlor / contributors / trustees / protector / enforcer / named beneficiaries / class of objects / default beneficiaries), beneficial-ownership framework, purpose-and-intended-nature assessment, EDD triggers, common failure modes |
 | Foreign trusts | [`amlh-customer-foreign-trust.md`](./amlh-customer-foreign-trust.md) — similar full identification population to Jersey trust with adjustments for foreign-law context, foreign-trustee diligence, governing-law differences, settlement-formality variations, EDD triggers common, scenarios for US grantor trust / Cayman-BVI trust / civil-law foundation-equivalent |
-| Jersey foundations | `amlh-customer-jersey-foundation.md` *(stub)* — cross-link to [`../foundations/index.md`](../foundations/index.md) |
+| Jersey foundations | [`amlh-customer-jersey-foundation.md`](./amlh-customer-jersey-foundation.md) — full population identification (founder / council members / mandatory qualified member / guardian / beneficiaries or class), distinctive points vs trust customer CDD, charter and regulations review, beneficial-ownership framework, common purposes (family-governance / philanthropic / image-rights / orphan-structure), EDD triggers, common failure modes |
 | Partnerships (LP / LLP / SLP / ILP) | `amlh-customer-partnership.md` *(stub)* |
 | Charities | `amlh-customer-charity.md` *(stub)* — cross-link to [`../charities/index.md`](../charities/index.md) |
 | Governmental and public-sector | `amlh-customer-government.md` *(stub)* |
 | Listed-company customers | `amlh-customer-listed-company.md` *(stub)* |
-| Regulated-institution customers (CDD reliance) | `amlh-customer-regulated-institution.md` *(stub)* |
+| Regulated-institution customers (CDD reliance) | [`amlh-customer-regulated-institution.md`](./amlh-customer-regulated-institution.md) — definition of regulated-institution customer, equivalent-jurisdiction test, simplified-CDD permissibility, the reliance regime with written-arrangement requirements, what can / cannot be relied upon, common reliance scenarios (Jersey custodian for EU AIFM, administrator for Cayman fund, introducer relationships), common failure modes |
 | Pension schemes | `amlh-customer-pension.md` *(stub)* |
 | Special-purpose vehicles | `amlh-customer-spv.md` *(stub)* |
 
