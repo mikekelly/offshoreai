@@ -77,7 +77,7 @@ Land here if your question involves any of:
 | Fit-and-proper requirements for a person | [`licensing.md`](./licensing.md) *(stub)* |
 | Outsourcing of administration | [`licensing.md`](./licensing.md) *(stub)* |
 | JFSC enforcement powers (penalties, public statements, directions) | [`enforcement.md`](./enforcement.md) *(stub)* |
-| Codes of practice (TCB, FSB, Investment Business, Banking, Insurance) | [`codes-of-practice.md`](./codes-of-practice.md) *(stub)* |
+| Codes of practice (TCB, FSB, Investment Business, Banking, Insurance, MSB, GIMB, Certified Funds, AIF) | [`codes-of-practice.md`](./codes-of-practice.md) (hub) + per-Code indexes (e.g. [`cop-tcb-index.md`](./cop-tcb-index.md)) |
 | AML/CFT specifically | [`../aml-cft/index.md`](../aml-cft/index.md) |
 
 If your question is about a **specific fund or insurance vehicle**,
@@ -146,8 +146,19 @@ framework** lives here.
 
 ### Theme 3 — Operating under regulation
 
-- [`codes-of-practice.md`](./codes-of-practice.md) *(stub)* —
-  conduct standards for each regulated class.
+- **[`codes-of-practice.md`](./codes-of-practice.md)** — hub for
+  the nine current JFSC Codes of Practice, with effective dates
+  and links into per-Code coverage.
+- Per-Code indexes (per regulated activity class):
+  - [`cop-tcb-index.md`](./cop-tcb-index.md) — Trust Company Business (effective 1 January 2021).
+  - [`cop-fsb-index.md`](./cop-fsb-index.md) — Fund Services Business (effective 15 July 2021).
+  - [`cop-ib-index.md`](./cop-ib-index.md) — Investment Business (effective 17 January 2022). **Wealth-management operating reality.**
+  - [`cop-msb-index.md`](./cop-msb-index.md) — Money Service Business (effective 1 January 2021).
+  - [`cop-gimb-index.md`](./cop-gimb-index.md) — General Insurance Mediation Business (effective 1 January 2021).
+  - [`cop-insurance-index.md`](./cop-insurance-index.md) — Insurance Business (effective 1 January 2021).
+  - [`cop-dtb-index.md`](./cop-dtb-index.md) — Deposit-taking Business (effective 1 January 2025).
+  - [`cop-certified-funds-index.md`](./cop-certified-funds-index.md) — Certified Funds (effective 1 January 2021).
+  - [`cop-aif-index.md`](./cop-aif-index.md) — Alternative Investment Funds (effective 16 April 2026, aligned with AIFMD II).
 - [`licensing.md`](./licensing.md) *(stub)* — fit-and-proper,
   principal persons, key persons, outsourcing.
 - [`enforcement.md`](./enforcement.md) *(stub)* — civil financial

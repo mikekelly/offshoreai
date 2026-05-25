@@ -15,6 +15,54 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25
+
+- **`AGENTS.md` folded into [`CLAUDE.md`](../../CLAUDE.md).** The
+  contributor cold-start guide that previously lived in `AGENTS.md`
+  is now an inline section of `CLAUDE.md`, alongside the answering-
+  agent operating discipline. `AGENTS.md` deleted; cross-references
+  in `README.md`, `SETUP.md`, `IMPLEMENTATION-PLAN.md`,
+  `KNOWLEDGE-BASE-PRINCIPLES.md`, `PRD-corpus-stewardship-v1.md`,
+  `BACKLOG.md`, and `package.json` updated. CLAUDE.md now carries a
+  note on re-creating `AGENTS.md` as a thin pointer if multi-host
+  agent coverage becomes load-bearing again.
+- **Tag taxonomy ambient via `@TAGS.md` transclusion in
+  [`CLAUDE.md`](../../CLAUDE.md).** `TAGS.md` is now @-referenced
+  alongside the existing jurisdiction-orientation transclusions
+  (Jersey index, cross-jurisdictional map, finance-trajectory).
+  Any Claude session opening the project arrives with the closed
+  tag taxonomy in context, removing the on-demand read of `TAGS.md`
+  and making tag discipline ambient for both retrieval and content
+  authoring.
+- **JFSC Codes of Practice — architecture refactor.** Single
+  [`financial-regulation/codes-of-practice.md`](./financial-regulation/codes-of-practice.md)
+  rewritten as a **cross-Code hub** listing all nine current
+  Codes (TCB, FSB, IB, MSB, GIMB, Insurance Business,
+  Deposit-taking Business, Certified Funds, AIF) with their
+  effective dates and per-Code index pointers. **Nine new
+  per-Code index files** added under `financial-regulation/`:
+  [`cop-tcb-index.md`](./financial-regulation/cop-tcb-index.md),
+  [`cop-fsb-index.md`](./financial-regulation/cop-fsb-index.md),
+  [`cop-ib-index.md`](./financial-regulation/cop-ib-index.md),
+  [`cop-msb-index.md`](./financial-regulation/cop-msb-index.md),
+  [`cop-gimb-index.md`](./financial-regulation/cop-gimb-index.md),
+  [`cop-insurance-index.md`](./financial-regulation/cop-insurance-index.md),
+  [`cop-dtb-index.md`](./financial-regulation/cop-dtb-index.md),
+  [`cop-certified-funds-index.md`](./financial-regulation/cop-certified-funds-index.md),
+  [`cop-aif-index.md`](./financial-regulation/cop-aif-index.md).
+  Each declares the section structure of its Code, lists the
+  per-section files (currently stubs), and cross-references the
+  relevant FSL class file and the AML/CFT Handbook. The TCB
+  Code's **Principles** file
+  ([`cop-tcb-principles.md`](./financial-regulation/cop-tcb-principles.md))
+  drafted as a worked example at orientation depth, with explicit
+  caveat that exact Principle wording must be verified against
+  the current JFSC source before being cited authoritatively.
+  Section files (operationalisation per Code) remain stubs
+  pending an editorial pass against the JFSC published Codes.
+  [`financial-regulation/index.md`](./financial-regulation/index.md)
+  updated to point at the new structure.
+
 ## 2026-05-14
 
 - Initial corpus scaffold created. Top-level [`index.md`](./index.md),
