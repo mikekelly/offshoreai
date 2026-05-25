@@ -154,8 +154,11 @@ trivial**. The wealth-management RM needs:
   category in detail.
 - `amlh-peps-family-and-associates.md` *(stub)* — the family-
   member and close-associate scope.
-- `amlh-peps-screening.md` *(stub)* — screening obligations
-  and tooling.
+- [`amlh-peps-screening.md`](./amlh-peps-screening.md) —
+  screening obligations and tooling. (Draft: four screening
+  tiers, common failure modes, match-handling workflow,
+  tools-landscape framing in tenant-neutral terms, PEP-status
+  cessation handling.)
 - `amlh-peps-edd-application.md` *(stub)* — how EDD applies
   for the PEP population.
 - `amlh-peps-exit.md` *(stub)* — when PEP status ends.

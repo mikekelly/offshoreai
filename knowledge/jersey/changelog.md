@@ -15,6 +15,41 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 2C + 2D (substantive content uplift)
+
+- **Phase 2C — Suitability framework.** Promoted
+  [`financial-regulation/cop-ib-suitability.md`](./financial-regulation/cop-ib-suitability.md)
+  from stub to substantive draft: four-pillar suitability
+  framework (client knowledge / experience, financial
+  situation, investment objectives, risk tolerance and
+  capacity); advised vs discretionary vs execution-only
+  treatment; client categorisation as upstream gate;
+  suitability letter content; ongoing suitability cadence;
+  common failure points from JFSC enforcement record;
+  interaction with CDD/EDD. Load-bearing for the daily RM
+  suitability-letter automation cost-down play.
+- **Phase 2D — AML operational depth (key sub-files).**
+  Promoted two of the highest-impact AML/CFT Handbook
+  sub-files from stub to substantive draft:
+  [`aml-cft/amlh-edd-source-of-wealth.md`](./aml-cft/amlh-edd-source-of-wealth.md)
+  (SoW vs SoF distinction, evidence requirements per
+  wealth-origin category, handling incomplete SoW, common
+  failure modes, application by PEP / family-wealth / founder
+  / crypto cohorts) and
+  [`aml-cft/amlh-peps-screening.md`](./aml-cft/amlh-peps-screening.md)
+  (four screening tiers from self-declaration through
+  ongoing re-screening, common failure modes, match-handling
+  workflow, tools-landscape framing in tenant-neutral terms,
+  PEP-status cessation handling). Both files are the most
+  frequent enforcement-failure points in the JFSC record;
+  promoting them to substantive content shifts the corpus
+  from architectural scaffold to operational reference for
+  these sub-topics.
+- Parent index files updated to reflect promotion from stub:
+  [`cop-ib-index.md`](./financial-regulation/cop-ib-index.md),
+  [`amlh-edd.md`](./aml-cft/amlh-edd.md), and
+  [`amlh-peps.md`](./aml-cft/amlh-peps.md).
+
 ## 2026-05-25 — Phase 4A + 3F + 4C (evals, regulatory calendar, cross-tagging)
 
 - **Phase 4A — wealth-management eval scenarios.** New

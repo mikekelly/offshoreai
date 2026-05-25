@@ -71,7 +71,7 @@ cited authoritatively.
 
 - [`cop-ib-client-categorisation.md`](./cop-ib-client-categorisation.md) *(stub)* — retail / professional / eligible counterparty.
 - [`cop-ib-customer-onboarding.md`](./cop-ib-customer-onboarding.md) *(stub)*
-- [`cop-ib-suitability.md`](./cop-ib-suitability.md) *(stub)* — **load-bearing for wealth management.** Suitability assessment, suitability letter, ongoing review.
+- [`cop-ib-suitability.md`](./cop-ib-suitability.md) — **load-bearing for wealth management.** Suitability assessment, suitability letter, ongoing review. (Draft: four-pillar suitability framework, advised vs discretionary vs execution-only treatment, suitability-letter content, common failure points, AML/CDD interaction.)
 - [`cop-ib-appropriateness.md`](./cop-ib-appropriateness.md) *(stub)* — for non-advised execution-only services.
 - [`cop-ib-disclosure.md`](./cop-ib-disclosure.md) *(stub)* — fees, charges, costs, conflicts.
 - [`cop-ib-complaints.md`](./cop-ib-complaints.md) *(stub)*

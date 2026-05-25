@@ -161,8 +161,11 @@ records). See [`../financial-regulation/cop-tcb-index.md`](../financial-regulati
 
 - `amlh-edd-triggers.md` *(stub)* — the trigger taxonomy in
   more detail.
-- `amlh-edd-source-of-wealth.md` *(stub)* — SoW evidence
-  standards by customer profile.
+- [`amlh-edd-source-of-wealth.md`](./amlh-edd-source-of-wealth.md)
+  — SoW evidence standards by customer profile. (Draft: SoW
+  vs SoF distinction, evidence requirements per wealth-origin
+  category, handling incomplete SoW, common failure modes,
+  PEP / family-wealth / founder / crypto applications.)
 - `amlh-edd-source-of-funds-enhanced.md` *(stub)* — SoF at
   EDD evidentiary standard.
 - `amlh-edd-approvals.md` *(stub)* — senior-management
