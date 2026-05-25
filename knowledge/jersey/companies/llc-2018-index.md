@@ -12,7 +12,7 @@ tags:
   - articles-index
 sources:
   - title: Limited Liability Companies (Jersey) Law 2018
-    url: https://www.jerseylaw.je/laws/current/Pages/13.505.aspx
+    url: https://www.jerseylaw.je/laws/current/l_32_2018
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -113,7 +113,7 @@ the Jersey LLC is the right choice.
 ## Status note
 
 Draft. **Verify Article structure and current text against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/13.505.aspx)**
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_32_2018)**
 and against the Cayman LLC Act for comparative reference.
 
 ## Cross-references

@@ -13,7 +13,7 @@ tags:
   - articles-index
 sources:
   - title: Incorporated Limited Partnerships (Jersey) Law 2011
-    url: https://www.jerseylaw.je/laws/current/Pages/13.485.aspx
+    url: https://www.jerseylaw.je/laws/current/l_5_2011
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -106,7 +106,7 @@ of-LP model is well-understood by investors and counterparties.
 ## Status note
 
 Draft. **Verify Article structure and current text against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/13.485.aspx)**
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_5_2011)**
 before relying on specific provisions.
 
 ## Cross-references

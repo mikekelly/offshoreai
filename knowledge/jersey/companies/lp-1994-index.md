@@ -13,7 +13,7 @@ tags:
   - articles-index
 sources:
   - title: Limited Partnerships (Jersey) Law 1994
-    url: https://www.jerseylaw.je/laws/current/Pages/13.475.aspx
+    url: https://www.jerseylaw.je/laws/current/l_22_1994
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -43,7 +43,7 @@ This file is the structural entry point for the statute. The
 per-Article files referenced below are scaffolded as stubs
 pending a primary-source pass against the current consolidated
 text on
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/13.475.aspx).
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_22_1994).
 
 ## The Jersey LP at a glance
 
@@ -145,7 +145,7 @@ statute's broad shape as understood from cross-references in
 the existing corpus and from the published structure of Jersey
 partnership law. **Verify against the current consolidated
 text on
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/13.475.aspx)**
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_22_1994)**
 before relying on specific Article numbers.
 
 ## Cross-references

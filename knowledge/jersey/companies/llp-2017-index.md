@@ -12,7 +12,7 @@ tags:
   - articles-index
 sources:
   - title: Limited Liability Partnerships (Jersey) Law 2017
-    url: https://www.jerseylaw.je/laws/current/Pages/13.500.aspx
+    url: https://www.jerseylaw.je/laws/current/l_2_2017
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -98,7 +98,7 @@ The substantive partner-protection logic is the same.
 
 Draft. **Verify Article structure and claw-back mechanics
 against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/13.500.aspx)**.
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_2_2017)**.
 
 ## Cross-references
 

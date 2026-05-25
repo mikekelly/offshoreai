@@ -15,6 +15,63 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Takeovers Panel Law 2009 — full per-Article wiki + vehicle-law URL fixes
+
+The "limited by primary-source access" caveat on the
+newly-scaffolded statutes was overstated.
+[jerseylaw.je](https://www.jerseylaw.je) is publicly
+accessible via WebFetch; the constraints were URL guesses,
+not access genuine constraints. This commit fixes the URLs
+and lands the first **complete per-Article wiki for one of
+the newly-scaffolded statutes**.
+
+### Companies (Takeovers and Mergers Panel) (Jersey) Law 2009 — full Article coverage
+
+Source-verified against
+[jerseylaw.je/laws/current/l_1_2009](https://www.jerseylaw.je/laws/current/l_1_2009).
+Twenty-five per-Article files covering the Law's full
+structure (3 Parts, 25 Articles):
+
+- [`tmp-articles-index.md`](./companies/tmp-articles-index.md)
+  — enumeration of every Article with deep-file links.
+- **Part 1 (Interpretation)**:
+  [`tmp-article-1.md`](./companies/tmp-article-1.md).
+- **Part 2 (Takeover panel)**:
+  [`tmp-article-2.md`](./companies/tmp-article-2.md) through
+  [`tmp-article-22.md`](./companies/tmp-article-22.md) —
+  covering Panel appointment, rule-making power, further
+  rule provisions, rulings, directions, information powers,
+  disclosure restrictions, disclosure offence, cooperation
+  duty, Commission's reciprocal duty, hearings and appeals,
+  sanctions, compensation, Court enforcement, no-private-
+  cause-of-action, fees / charges / levy regime, Panel
+  litigation capacity, liability exemption, self-
+  incrimination privilege.
+- **Part 3 (Miscellaneous and closing)**:
+  [`tmp-article-23.md`](./companies/tmp-article-23.md)
+  (other legislation preservation),
+  [`tmp-article-24.md`](./companies/tmp-article-24.md)
+  (Regulations / Orders supplementary powers),
+  [`tmp-article-25.md`](./companies/tmp-article-25.md)
+  (citation).
+- [`takeovers-panel-2009-index.md`](./companies/takeovers-panel-2009-index.md)
+  updated with corrected structure (3 Parts, not the 5 the
+  earlier scaffold guessed) and corrected URL
+  (`l_1_2009`).
+
+### Vehicle-law URL corrections
+
+Five URL errors in the earlier vehicle-law scaffolding
+corrected following primary-source verification:
+
+| File | Was | Now |
+|---|---|---|
+| [`lp-1994-index.md`](./companies/lp-1994-index.md) | `Pages/13.475.aspx` (actually LLP 2017) | `l_22_1994` |
+| [`ilp-2011-index.md`](./companies/ilp-2011-index.md) | `Pages/13.485.aspx` (guess) | `l_5_2011` |
+| [`slp-2011-index.md`](./companies/slp-2011-index.md) | `Pages/13.480.aspx` (guess) | `l_6_2011` |
+| [`llp-2017-index.md`](./companies/llp-2017-index.md) | `Pages/13.500.aspx` (guess) | `l_2_2017` |
+| [`llc-2018-index.md`](./companies/llc-2018-index.md) | `Pages/13.505.aspx` (guess) | `l_32_2018` |
+
 ## 2026-05-25 — Editorial uplift batch 4 (foundation / regulated-institution / company CDD + TCB record-keeping + FSB Principles)
 
 Fourth uplift batch — five substantive promotions completing

@@ -13,7 +13,7 @@ tags:
   - articles-index
 sources:
   - title: Separate Limited Partnerships (Jersey) Law 2011
-    url: https://www.jerseylaw.je/laws/current/Pages/13.480.aspx
+    url: https://www.jerseylaw.je/laws/current/l_6_2011
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -96,7 +96,7 @@ investor familiarity.
 
 Draft. **Verify Article structure and US-tax-classification
 mechanics against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/13.480.aspx)**
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_6_2011)**
 and against current US tax advice before relying on the
 classification rationale in a specific structure.
 

@@ -15,7 +15,7 @@ tags:
   - corporate-finance-relevance
 sources:
   - title: Companies (Takeovers and Mergers Panel) (Jersey) Law 2009
-    url: https://www.jerseylaw.je/laws/current/Pages/13.265.aspx
+    url: https://www.jerseylaw.je/laws/current/l_1_2009
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -146,40 +146,61 @@ Each file is a stub pending primary-source verification.
 
 ### Parts
 
-- `tmp-part-1-preliminary.md` *(stub)* — citation, interpretation, application.
-- `tmp-part-2-panel.md` *(stub)* — establishment, composition, governance, and powers of the Jersey Takeovers and Mergers Panel.
-- `tmp-part-3-code.md` *(stub)* — power to issue and amend the Jersey Takeover Code; scope; rule-making.
-- `tmp-part-4-sanctions.md` *(stub)* — sanctions for breach; Panel disciplinary powers; consequences for advisers.
-- `tmp-part-5-miscellaneous.md` *(stub)* — final provisions, transitional arrangements.
+The Law is structured into **three Parts** (corrected from
+the earlier scaffold guess of five):
+
+- **Part 1 — Interpretation** (Article 1).
+- **Part 2 — Takeover panel** (Articles 2–22; the Panel's
+  appointment, rule-making, rulings, directions, information
+  powers, confidentiality, hearings, sanctions, compensation,
+  enforcement, fees, levy, and operational matters).
+- **Part 3 — Miscellaneous and closing** (Articles 23–25;
+  interaction with other legislation, regulations / orders,
+  citation).
 
 ### Articles
 
-- `tmp-articles-index.md` *(stub)* — enumeration of every Article in the statute with deep-file links once populated.
+[`tmp-articles-index.md`](./tmp-articles-index.md) is the
+enumeration of every Article with deep-file links.
 
-(Per-Article files like `tmp-article-1.md`, `tmp-article-2.md`,
-etc. should follow the
-[FSL article-wiki convention](./fsl-articles-index.md) once the
-primary source is open in front of the editor — one file per
-Article with frontmatter, `articles_covered`, sources, and
-inline citations.)
+Per-Article files (each follows the same statute-wiki
+convention as the FSL and MLO Article files):
+
+- [`tmp-article-1.md`](./tmp-article-1.md) — Interpretation.
+- [`tmp-article-2.md`](./tmp-article-2.md) — Appointment of body to oversee takeovers.
+- [`tmp-article-3.md`](./tmp-article-3.md) — Rule-making powers of the Panel.
+- [`tmp-article-4.md`](./tmp-article-4.md) — Further provisions about rules.
+- [`tmp-article-5.md`](./tmp-article-5.md) — Rulings.
+- [`tmp-article-6.md`](./tmp-article-6.md) — Directions.
+- [`tmp-article-7.md`](./tmp-article-7.md) — Power to require documents and information.
+- [`tmp-article-8.md`](./tmp-article-8.md) — Restriction on disclosure.
+- [`tmp-article-9.md`](./tmp-article-9.md) — Offence of disclosure in contravention of Article 8.
+- [`tmp-article-10.md`](./tmp-article-10.md) — Panel's duty of co-operation.
+- [`tmp-article-11.md`](./tmp-article-11.md) — Commission's duty to assist the Panel.
+- [`tmp-article-12.md`](./tmp-article-12.md) — Hearings and appeals.
+- [`tmp-article-13.md`](./tmp-article-13.md) — Sanctions.
+- [`tmp-article-14.md`](./tmp-article-14.md) — Compensation.
+- [`tmp-article-15.md`](./tmp-article-15.md) — Enforcement by the Court.
+- [`tmp-article-16.md`](./tmp-article-16.md) — No action for breach of statutory duty etc.
+- [`tmp-article-17.md`](./tmp-article-17.md) — Fees and charges.
+- [`tmp-article-18.md`](./tmp-article-18.md) — Levy.
+- [`tmp-article-19.md`](./tmp-article-19.md) — Recovery of fees, charges or levy.
+- [`tmp-article-20.md`](./tmp-article-20.md) — Panel as party to proceedings.
+- [`tmp-article-21.md`](./tmp-article-21.md) — Exemption from liability in damages.
+- [`tmp-article-22.md`](./tmp-article-22.md) — Privilege against self-incrimination.
+- [`tmp-article-23.md`](./tmp-article-23.md) — Other legislation relating to takeovers and mergers.
+- [`tmp-article-24.md`](./tmp-article-24.md) — Regulations and Orders.
+- [`tmp-article-25.md`](./tmp-article-25.md) — Citation.
 
 ## Status note
 
-This index file is at draft quality based on the statute's
-**purpose and structure** as understood from the
-[COVERAGE-AUDIT](./../COVERAGE-AUDIT.md) and from the published
-description of the Law. The **per-Article wording, current
-numbering, and any amendments since enactment** require a
-primary-source pass against the consolidated text on
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/13.265.aspx)
-(note: this URL is the believed canonical location for the
-statute — confirm during the source-verification pass and update
-the frontmatter `sources` block if it differs).
-
-Until that pass is complete, an agent answering a Jersey-Panel
-question should cite this index for orientation, the UK Code
-bridge file for the UK side, and the jerseylaw.je source
-directly for the Panel statute's exact wording.
+This index now reflects the **actual structure** of the
+2009 Law verified against the consolidated text at
+[jerseylaw.je/laws/current/l_1_2009](https://www.jerseylaw.je/laws/current/l_1_2009).
+The 25 per-Article files capture each Article's substance
+at draft quality. Specific wording and any subsequent
+amendments should still be checked against the live
+publication before being quoted verbatim in a transaction.
 
 ## Cross-references
 
