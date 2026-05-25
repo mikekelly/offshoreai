@@ -35,8 +35,9 @@ equivalent vehicles. It sits alongside the
 [Cayman LLC](../../cayman/cayman-llc.md) (introduced under the
 Cayman LLC Act 2016) and is conceptually similar.
 
-This file is the structural entry point. Per-Article files are
-scaffolded as stubs.
+This file is the structural entry point. **Per-Article coverage
+is complete** — see [`./llc-articles-index.md`](./llc-articles-index.md)
+for the full Article-by-Article enumeration across 8 Parts.
 
 ## How the Jersey LLC differs from the Jersey company
 
@@ -74,7 +75,12 @@ incorporation.
 | What is the Jersey LLC and how does it differ from a Jersey company? | This file (How it differs) |
 | When choose Jersey LLC over Cayman LLC? | This file + [`../../cayman/cayman-llc.md`](../../cayman/cayman-llc.md) |
 | Can a Jersey LLC be a fund vehicle? | This file (Use cases) + [`../funds/index.md`](../funds/index.md) |
-| Article-level treatment | `llc-articles-index.md` *(stub)* |
+| Article-level treatment | [`./llc-articles-index.md`](./llc-articles-index.md) |
+| The LLC agreement (the central document) | [`./llc-article-3.md`](./llc-article-3.md) |
+| Limited liability shield | [`./llc-article-18.md`](./llc-article-18.md) |
+| Member-managed vs manager-managed | [`./llc-article-21.md`](./llc-article-21.md) |
+| Solvency limit on distributions | [`./llc-article-37.md`](./llc-article-37.md) |
+| Modifiable fiduciary duties | [`./llc-article-47.md`](./llc-article-47.md) |
 
 ## Use cases
 
@@ -97,22 +103,35 @@ LP / ILP / SLP / company toolkit for most structuring needs.
 For specific cases where the LLC's flexibility is decisive,
 the Jersey LLC is the right choice.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `llc-articles-index.md` *(stub)* — enumeration of Articles.
-- `llc-part-1-preliminary.md` *(stub)*
-- `llc-part-2-formation.md` *(stub)*
-- `llc-part-3-members.md` *(stub)*
-- `llc-part-4-managers.md` *(stub)*
-- `llc-part-5-llc-agreement.md` *(stub)* — central document
-  setting economic and governance terms.
-- `llc-part-6-property-capital.md` *(stub)*
-- `llc-part-7-dissolution.md` *(stub)*
-- `llc-part-8-misc.md` *(stub)*
+- [`./llc-articles-index.md`](./llc-articles-index.md) — full
+  Article-by-Article enumeration (8 Parts, 63 Articles, with
+  Articles 12, 46, 49 deleted / not in force).
+- Per-Article files [`llc-article-1.md`](./llc-article-1.md) –
+  [`llc-article-63.md`](./llc-article-63.md) — one file per
+  Article (with `llc-article-2a.md` for the sub-Article on LLC
+  body-corporate election).
+
+The load-bearing distinctive Articles for the Jersey LLC are:
+
+- **[Article 2](./llc-article-2.md)** — separate legal
+  personality;
+- **[Article 3](./llc-article-3.md)** — the LLC agreement
+  (the central operating document);
+- **[Article 18](./llc-article-18.md)** — limited liability
+  shield (no "participation in management" trigger);
+- **[Article 21](./llc-article-21.md)** — member-managed
+  vs manager-managed regimes;
+- **[Article 37](./llc-article-37.md)** — solvency
+  limitation on distributions (bilaterally stricter than CJL
+  1991 Art 115);
+- **[Article 47](./llc-article-47.md)** — modifiable
+  fiduciary duties (the Delaware-LLC-style provision).
 
 ## Status note
 
-Draft. **Verify Article structure and current text against
+Draft. **Verify Article text against
 [jerseylaw.je](https://www.jerseylaw.je/laws/current/l_32_2018)**
 and against the Cayman LLC Act for comparative reference.
 

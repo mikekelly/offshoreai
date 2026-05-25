@@ -15,6 +15,53 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — LLC 2018 — full per-Article wiki
+
+The Limited Liability Companies (Jersey) Law 2018 now has
+Article-by-Article coverage in
+`knowledge/jersey/companies/`. Sixty-three Article files plus
+the `llc-article-2a.md` sub-Article were added, alongside the
+`llc-articles-index.md` enumeration across the Law's 8 Parts
+(with Articles 12, 46, and 49 noted as deleted / not in
+force). Source: jerseylaw.je `l_32_2018`.
+
+The load-bearing Articles for the Jersey LLC's distinctive
+character are written substantively rather than as
+placeholders:
+
+- **Article 2 / 2A** — separate legal personality and the
+  body-corporate election.
+- **Article 3** — the LLC agreement as the central operating
+  document (Delaware-LLC-style flexibility).
+- **Article 18** — limited liability shield without the
+  partnership "participation in management" trigger.
+- **Article 21** — dual-mode management (member-managed vs
+  manager-managed).
+- **Article 37** — solvency limitation on distributions
+  with both cash-flow and net-asset limbs (bilaterally
+  stricter than CJL 1991 Article 115).
+- **Article 47** — modifiable fiduciary duties subject to
+  the fraud / wilful default / gross negligence floor — the
+  doctrinal foundation for fund-GP and JV-vehicle LLC use.
+
+The `llc-2018-index.md` parent file was updated to remove
+its scaffolded-stub language and point into the per-Article
+files; new at-a-glance entries surface the six load-bearing
+Articles directly.
+
+This completes the per-Article wiki workstream for all
+recently-scaffolded Jersey vehicle statutes (TMP 2009,
+LP 1994, ILP 2011, SLP 2011, LLP 2017, LLC 2018).
+
+Files added (66): `llc-articles-index.md` plus
+`llc-article-1.md` to `llc-article-63.md` (with
+`llc-article-2a.md`; Articles 46 and 49 included as
+placeholder "deleted" files for completeness; Article 12 was
+already scaffolded as a "not in force" stub).
+Files modified (1): `llc-2018-index.md`.
+Status: `draft` — text is summarised from primary statute;
+re-verify against jerseylaw.je before citing as `stable`.
+
 ## 2026-05-25 — SLP 2011 — full per-Article wiki
 
 The
