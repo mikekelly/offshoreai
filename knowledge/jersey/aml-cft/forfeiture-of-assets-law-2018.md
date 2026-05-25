@@ -10,7 +10,7 @@ tags:
   - statute-wiki
 sources:
   - title: Forfeiture of Assets (Civil Proceedings) (Jersey) Law 2018
-    url: https://www.jerseylaw.je/laws/current/Pages/08.785.aspx
+    url: https://www.jerseylaw.je/laws/current/l_26_2018
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -80,18 +80,34 @@ freezing / enforcement landscape — see
 [`./amlh-sanctions.md`](./amlh-sanctions.md) for the
 operational framing.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `forfeiture-articles-index.md` *(stub)* — enumeration of
-  Articles.
-- Per-Article files for forfeiture proceedings, freezing
-  orders, innocent-owner protections, and enforcement to be
-  added in the editorial pass.
+- [`./foa-articles-index.md`](./foa-articles-index.md) —
+  full Article-by-Article enumeration (5 Parts, 35
+  Articles).
+- Per-Article files [`./foa-article-1.md`](./foa-article-1.md)
+  – [`./foa-article-35.md`](./foa-article-35.md).
+
+The load-bearing Articles for the civil-recovery regime
+are:
+
+- **[Article 2](./foa-article-2.md)** — meaning of
+  "tainted property" (the operative threshold);
+- **[Article 5](./foa-article-5.md)** — seizure of cash;
+- **[Article 11](./foa-article-11.md)** — summary
+  forfeiture (cash, uncontested);
+- **[Article 15](./foa-article-15.md)** — general
+  forfeiture procedure (contested cases; civil-standard
+  proof);
+- **[Article 22](./foa-article-22.md)** — customer
+  information orders;
+- **[Article 32](./foa-article-32.md)** — tipping-off
+  offence (paralleling POCL Art 35A and Terrorism Art 35).
 
 ## Status note
 
-Draft. **Verify Article structure and current text against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/08.785.aspx)**.
+Draft. **Verify Article text against
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_26_2018)**.
 
 ## Cross-references
 

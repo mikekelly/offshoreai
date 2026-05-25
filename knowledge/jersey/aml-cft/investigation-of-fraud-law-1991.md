@@ -11,7 +11,7 @@ tags:
   - statute-wiki
 sources:
   - title: Investigation of Fraud (Jersey) Law 1991
-    url: https://www.jerseylaw.je/laws/current/Pages/08.490.aspx
+    url: https://www.jerseylaw.je/laws/current/l_8_1991
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -72,18 +72,27 @@ production notices may flow alongside requests under the
 from foreign authorities routed through the Jersey Attorney
 General. The two regimes interlock.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `investigation-fraud-articles-index.md` *(stub)* — enumeration
-  of Articles.
-- Per-Article files for the AG's powers, production notices,
-  search and seizure, enforcement, and privilege to be added
-  in the editorial pass.
+- [`./iof-articles-index.md`](./iof-articles-index.md) —
+  full Article-by-Article enumeration (4 substantive
+  Articles).
+- [`./iof-article-1.md`](./iof-article-1.md) –
+  [`./iof-article-4.md`](./iof-article-4.md).
+
+The load-bearing Article is
+**[Article 2](./iof-article-2.md)** — the Attorney
+General's investigation power (the substantive operative
+provision; analogue to UK SFO section-2 powers).
+[Article 3](./iof-article-3.md) provides the secrecy-
+override gateway that allows JFSC, banks, and TCBs to
+respond without breach of other Jersey secrecy
+obligations.
 
 ## Status note
 
-Draft. **Verify Article structure and current text against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/08.490.aspx)**.
+Draft. **Verify Article text against
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_8_1991)**.
 
 ## Cross-references
 

@@ -11,7 +11,7 @@ tags:
   - statute-wiki
 sources:
   - title: Proceeds of Crime (Supervisory Bodies) (Jersey) Law 2008
-    url: https://www.jerseylaw.je/laws/current/Pages/08.782.aspx
+    url: https://www.jerseylaw.je/laws/current/Pages/08.785.aspx
     accessed: 2026-05-25
     kind: statute
 see_also:
@@ -87,18 +87,39 @@ It surfaces explicitly when:
 - The business needs to confirm the relevant supervisory
   authority for a specific Schedule 2 activity.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `pocsb-articles-index.md` *(stub)* — enumeration of
-  Articles.
-- Per-Article files for designation of supervisory bodies,
-  supervisory powers, information-sharing between bodies,
-  and enforcement to be added in the editorial pass.
+- [`./pocsb-articles-index.md`](./pocsb-articles-index.md)
+  — full Article-by-Article enumeration (6 Parts, 45
+  Articles with sub-Articles 8A, 21A, 33A; Articles 4 and
+  15 repealed).
+- Per-Article files [`./pocsb-article-1.md`](./pocsb-article-1.md)
+  – [`./pocsb-article-45.md`](./pocsb-article-45.md)
+  (with sub-Articles `pocsb-article-8a.md`,
+  `pocsb-article-21a.md`, `pocsb-article-33a.md`).
+
+The load-bearing Articles for the JFSC supervisory
+function are:
+
+- **[Article 5](./pocsb-article-5.md)** — JFSC
+  designation as primary supervisory body;
+- **[Article 8](./pocsb-article-8.md)** — general
+  supervisory powers;
+- **[Article 8A](./pocsb-article-8a.md)** — duty to use
+  a risk-based approach (post-MoneyVal insertion);
+- **[Article 10](./pocsb-article-10.md)** — Schedule 2
+  registration prohibition (the supervised-perimeter
+  gatekeeper);
+- **[Article 22](./pocsb-article-22.md)** — codes of
+  practice (the statutory basis for the AML/CFT
+  Handbook);
+- **[Article 26](./pocsb-article-26.md)** — public
+  statements (the reputational enforcement tool).
 
 ## Status note
 
-Draft. **Verify Article structure and current text against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/08.782.aspx)**.
+Draft. **Verify Article text against
+[jerseylaw.je](https://www.jerseylaw.je/laws/current/Pages/08.785.aspx)**.
 
 ## Cross-references
 

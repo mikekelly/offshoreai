@@ -15,6 +15,76 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Financial-crime statutes — full per-Article wikis (×3)
+
+Article-by-Article coverage of the three remaining
+post-MoneyVal financial-crime statutes added under
+`knowledge/jersey/aml-cft/`. Each statute's parent index
+file was also updated to remove scaffolded-stub language,
+fix URLs to the canonical `l_X_YYYY` form (or the
+`Pages/08.785.aspx` form for PoCSB, where the
+`l_X_YYYY` URL was not found and the `Pages` form
+returns the correct document), and surface the
+load-bearing Articles.
+
+### Investigation of Fraud (Jersey) Law 1991
+
+Compact statute — 4 substantive Articles. Files added (5):
+`iof-articles-index.md` plus
+`iof-article-1.md` to `iof-article-4.md`. The load-bearing
+**Article 2** (AG's investigation power; analogue to UK
+SFO section-2 powers) is written substantively; the others
+tightly. Source: jerseylaw.je `l_8_1991` (replacing the
+earlier `Pages/08.490.aspx` URL).
+
+### Forfeiture of Assets (Civil Proceedings) (Jersey) Law 2018
+
+35 Articles across 5 Parts. Files added (36):
+`foa-articles-index.md` plus
+`foa-article-1.md` to `foa-article-35.md`. Load-bearing
+Articles written substantively: **Article 2** (tainted
+property — dual-criminality, civil standard);
+**Article 5** (cash seizure); **Article 11** (summary
+forfeiture for uncontested cash); **Article 15** (general
+contested-forfeiture procedure, balance-of-probabilities);
+**Article 22** (customer information orders);
+**Article 32** (tipping off — paralleling POCL Art 35A and
+Terrorism Art 35). Source: jerseylaw.je `l_26_2018`
+(replacing the earlier — and mis-assigned —
+`Pages/08.785.aspx` URL, which in fact serves the PoCSB
+2008 document).
+
+### Proceeds of Crime (Supervisory Bodies) (Jersey) Law 2008
+
+45 Articles across 6 Parts plus 3 sub-Articles (8A, 21A,
+33A). Files added (49): `pocsb-articles-index.md` plus
+`pocsb-article-1.md` to `pocsb-article-45.md` (with sub-
+Articles `pocsb-article-8a.md`, `pocsb-article-21a.md`,
+`pocsb-article-33a.md`; Articles 4 and 15 included as
+`[Repealed]` placeholders). Load-bearing Articles written
+substantively: **Article 5** (JFSC as supervisory body);
+**Article 8** (general powers) and **Article 8A** (duty
+to use risk-based approach — the FATF Recommendation 1
+underpinning); **Article 10** (Schedule 2 registration
+gatekeeper); **Article 22** (codes of practice — the
+statutory basis for the JFSC AML/CFT Handbook);
+**Article 26** (public statements — the reputational
+enforcement tool). Source URL fixed to the verified
+`Pages/08.785.aspx` (replacing the earlier
+`Pages/08.782.aspx` in the parent index, which returns
+404).
+
+This completes the per-Article wiki workstream for the
+post-MoneyVal financial-crime statutes. Combined with the
+prior Terrorism Law 2002 commit, all four newly-scaffolded
+financial-crime statutes now have full Article coverage.
+
+Files modified (3): `investigation-of-fraud-law-1991.md`,
+`forfeiture-of-assets-law-2018.md`, `pocsb-law-2008.md`.
+Status: `draft` — text is summarised from primary
+statute; re-verify against jerseylaw.je before citing as
+`stable`.
+
 ## 2026-05-25 — Terrorism Law 2002 — full per-Article wiki
 
 The Terrorism (Jersey) Law 2002 — Jersey's principal
