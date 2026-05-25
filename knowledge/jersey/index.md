@@ -397,6 +397,23 @@ breach, damages, specific performance (broader in Jersey than
 English law), misrepresentation, unjust enrichment / quasi-
 contract, and délit / tort (including voisinage).
 
+### [Sectors](./sectors/index.md)
+**Sector-shaped structuring orientation files** — a third
+navigation axis alongside subject (folders) and persona
+(use-cases). Cuts through the corpus organised by the type
+of asset or business the client is structuring around:
+[PE founders / carry / pre-IPO](./sectors/pe-founders.md),
+[UK real estate](./sectors/uk-property.md),
+[Middle East property](./sectors/middle-east-property.md),
+[crypto and digital assets](./sectors/crypto-digital-assets.md),
+[sports and media talent](./sectors/sports-media-talent.md),
+and
+[family business succession](./sectors/family-business-succession.md).
+For a wealth-management RM or adviser whose client is "a PE
+founder with carry / pre-IPO stock / UK property / crypto
+holdings", the sector file is often the fastest route into a
+structuring conversation.
+
 ### [External rule-sets](./external-rules/index.md)
 **Bridge files** that document the interaction points between
 Jersey-incorporated entities and external rule-sets the corpus

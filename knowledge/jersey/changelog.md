@@ -15,6 +15,40 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 3D (sector cuts)
+
+- **Sector-shaped structuring orientation surface added.** New
+  [`sectors/`](./sectors/) section with one hub index plus six
+  sector files — a **third orthogonal navigation axis**
+  alongside subject (folders) and persona / cohort (use-cases):
+  [`pe-founders.md`](./sectors/pe-founders.md) (carry / founder
+  equity / pre-IPO structuring with UK carry reform 2026
+  framing),
+  [`uk-property.md`](./sectors/uk-property.md) (Jersey
+  wrappers post-2017 UK reforms; ATED / SDLT / NRCGT load-
+  bearing rules; ROE),
+  [`middle-east-property.md`](./sectors/middle-east-property.md)
+  (Sharia-defence structuring for GCC property; DIFC / ADGM
+  overlay),
+  [`crypto-digital-assets.md`](./sectors/crypto-digital-assets.md)
+  (VASP regime; CARF 2026 implementation; tokenisation
+  frontier),
+  [`sports-media-talent.md`](./sectors/sports-media-talent.md)
+  (image rights; multi-jurisdictional source-of-income;
+  career-arc planning; Guernsey image-rights register link),
+  [`family-business-succession.md`](./sectors/family-business-succession.md)
+  (trust-over-holding-company pattern; foundation alternative;
+  PTC hybrid; load-bearing legal tools for the deepest private-
+  wealth conversation).
+- Each sector file follows a consistent structure (What it
+  covers / Why Jersey / Load-bearing considerations / Jersey-
+  structure menu / Sector-specific risks / Reporting overlay /
+  Cross-sector interactions) so additional sectors can be
+  added by an editor without architectural change.
+- [`index.md`](./index.md) updated with the new Sectors
+  section description in the section list, positioned before
+  External rule-sets.
+
 ## 2026-05-25 — Phase 2 (persona / operational layer)
 
 Phase 2 lands the persona-shaped retrieval surface that maps
