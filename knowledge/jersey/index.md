@@ -397,6 +397,16 @@ breach, damages, specific performance (broader in Jersey than
 English law), misrepresentation, unjust enrichment / quasi-
 contract, and délit / tort (including voisinage).
 
+### [Decision surfaces](./decision-surfaces/index.md)
+**Cross-cutting navigation aids** that do not fit one-concept-
+per-file. Currently the
+[trigger-events map](./decision-surfaces/trigger-events.md) —
+a catalogue of regulatory / personal / transactional events
+that should prompt a structuring conversation, designed for
+RM outreach, compliance monitoring, and group-strategic
+review. The decision-surface content type is formalised in
+[CONVENTIONS.md](../../CONVENTIONS.md#decision-surface-content-type).
+
 ### [Sectors](./sectors/index.md)
 **Sector-shaped structuring orientation files** — a third
 navigation axis alongside subject (folders) and persona

@@ -15,6 +15,31 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 3C (decision-surface content type + trigger-events map)
+
+- **CONVENTIONS.md amended** with a new
+  [*Decision-surface content type*](../../CONVENTIONS.md#decision-surface-content-type)
+  section formalising decision surfaces as a third content
+  shape (alongside concept files and index files). Sets the
+  rules: must carry the `decision-surface` tag; no new
+  substantive content (routes only); `status: draft` until
+  fully reviewed; heading text names the authoritative
+  concept the branch leads to; limited proliferation
+  (decision surfaces don't replace concept files).
+- **New section [`knowledge/jersey/decision-surfaces/`](./decision-surfaces/index.md)**
+  with section index and the first decision surface,
+  [`trigger-events.md`](./decision-surfaces/trigger-events.md),
+  cataloguing regulatory / personal / transactional events
+  that should trigger a structuring conversation. Organised
+  by event class (regulatory events at jurisdiction level,
+  client life events, transactional events, regulatory-
+  profile events for the client, group-strategic events).
+  Cross-references the cohort / sector / frontier / aml-cft
+  / external-rules surfaces — every claim is anchored in a
+  concept file as the decision-surface convention requires.
+- [`index.md`](./index.md) updated to surface the new
+  Decision surfaces section.
+
 ## 2026-05-25 — Phase 2C + 2D (substantive content uplift)
 
 - **Phase 2C — Suitability framework.** Promoted

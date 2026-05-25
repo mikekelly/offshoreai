@@ -274,6 +274,65 @@ A stub is a valid file. It must still have full frontmatter (including
 tags) and a one-line description of what it will cover. Stubs are how we
 declare intent without committing to content quality yet.
 
+## Decision-surface content type
+
+Most corpus files are one of two shapes:
+
+- **Concept file** — answers *"what is the rule?"* about a
+  specific concept (a statute Article, a doctrine, a vehicle
+  type). One concept per file.
+- **Index file** — orients on a section, persona, or cohort
+  and points at sibling / child files. Sets the scene.
+
+A third content shape, **decision surfaces**, is permitted
+where a file is genuinely cross-cutting and does not fit
+one-concept-per-file. Examples:
+
+- **Trigger-event maps** — files cataloguing the regulatory
+  / personal / transactional events that should prompt a
+  structuring conversation, with cross-links into doctrinal
+  files for each event.
+- **Comparator surfaces** — files comparing options on
+  multiple dimensions (e.g.
+  [`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md)
+  was an early example before this convention formalised).
+- **Decision trees** — files that walk a decision through
+  branching points and direct the reader to the doctrinal
+  conclusion.
+
+### Rules for decision-surface files
+
+Decision surfaces are valid but they trade a discipline that
+concept files take for granted. The rules:
+
+1. **`document type` tag must include `decision-surface`** —
+   so an agent searching by document type can find them.
+2. **No new substantive content** — a decision surface is a
+   navigation aid; the underlying rules live in concept files
+   and the decision surface cross-references them with
+   meaningful link text. **A claim cited only on a decision-
+   surface file is a corpus failure** — the underlying
+   concept file must exist and must be the citation.
+3. **`status: draft`** unless the decision surface has been
+   reviewed against every concept file it references. Status
+   `stable` only after a full pass.
+4. **Authoritative-aspect-name in heading text** — when the
+   decision surface lists options or branches, the heading
+   text names the authoritative concept the branch leads to
+   (so an agent can follow the heading link without
+   reading the rest of the file).
+5. **Limited proliferation** — a corpus with many decision
+   surfaces and few concept files is a smell. Each decision
+   surface should serve a recurring multi-concept question;
+   one-off decision aids belong in persona files.
+
+### Where decision surfaces live
+
+By convention, decision surfaces sit in a dedicated
+`decision-surfaces/` folder under the relevant jurisdiction,
+or under `knowledge/` if cross-jurisdictional. Persona-
+specific decision surfaces sit inside the persona folder.
+
 ## Tenant neutrality
 
 The corpus is jurisdictional truth, shared across every tenant deployment.
