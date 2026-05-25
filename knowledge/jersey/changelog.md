@@ -15,6 +15,61 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — LLP 2017 — full per-Article wiki
+
+Following the Takeovers Panel Law 2009 per-Article work,
+the next statute to receive full Article-level treatment is
+the
+[Limited Liability Partnerships (Jersey) Law 2017](https://www.jerseylaw.je/laws/current/l_2_2017).
+
+The Law has 5 Parts and 44 Articles (1–43 with Article 23A
+inserted by amendment). Per-Article files cover:
+
+- [`llp-articles-index.md`](./companies/llp-articles-index.md)
+  — enumeration with deep-file links.
+- **Part 1**: [`llp-article-1.md`](./companies/llp-article-1.md)
+  (Interpretation).
+- **Part 2 (Essentials)**:
+  [`llp-article-2.md`](./companies/llp-article-2.md) through
+  [`llp-article-12.md`](./companies/llp-article-12.md) — LLP
+  legal personality, LLP property, LLP liability, partner
+  liability, name, registered office, secretary, records,
+  records form, accounts / audit, claw-back via specified
+  solvency statement.
+- **Part 3 (Relations of partners)**:
+  [`llp-article-13.md`](./companies/llp-article-13.md)
+  through
+  [`llp-article-17.md`](./companies/llp-article-17.md) —
+  partnership agreement primacy, partner dealings,
+  admission / retirement, assignments, agency.
+- **Part 4 (Registration and dissolution)**:
+  [`llp-article-18.md`](./companies/llp-article-18.md)
+  through
+  [`llp-article-23.md`](./companies/llp-article-23.md) plus
+  [`llp-article-23a.md`](./companies/llp-article-23a.md) —
+  registration, declaration amendment, validity rule,
+  dissolution, cancellation, economic-substance trigger.
+  Article 20 deleted by R&O.138/2020.
+- **Part 5 (Miscellaneous and general)**:
+  [`llp-article-24.md`](./companies/llp-article-24.md)
+  through
+  [`llp-article-43.md`](./companies/llp-article-43.md) —
+  legal proceedings, service, compliance orders, registrar,
+  fees, inspection / production-on-AG-application, record
+  destruction, LPP, Public Registry, false-information
+  offences, officer liability, penalties, regulator
+  immunity, Regulations, Orders, Rules of Court,
+  professional rules preservation, customary law,
+  citation.
+
+All Articles source-verified against jerseylaw.je. Parent
+[`llp-2017-index.md`](./companies/llp-2017-index.md)
+updated to reflect the now-complete coverage.
+
+The LLP 2017 statute moves from 🟡 (mentions only) /
+scaffold-only to ✅ (article-level wiki) in the COVERAGE-
+AUDIT terms.
+
 ## 2026-05-25 — Takeovers Panel Law 2009 — full per-Article wiki + vehicle-law URL fixes
 
 The "limited by primary-source access" caveat on the

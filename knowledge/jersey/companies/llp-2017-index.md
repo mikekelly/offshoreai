@@ -79,26 +79,42 @@ The substantive partner-protection logic is the same.
 | Should our Jersey advisory firm use an LLP or a company? | This file (Use cases) + [`./companies-law-1991.md`](./companies-law-1991.md) |
 | Jersey LLP vs UK LLP | This file (comparison) |
 | Can a Jersey LLP be a fund vehicle? | This file (no — use LP / ILP / SLP) |
-| Article-level treatment | `llp-articles-index.md` *(stub)* |
+| Article-level treatment | [`llp-articles-index.md`](./llp-articles-index.md) |
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `llp-articles-index.md` *(stub)* — enumeration of Articles.
-- `llp-part-1-preliminary.md` *(stub)*
-- `llp-part-2-formation-and-incorporation.md` *(stub)*
-- `llp-part-3-members.md` *(stub)* — member status, duties,
-  member-agreement requirements.
-- `llp-part-4-property-and-capital.md` *(stub)*
-- `llp-part-5-clawback.md` *(stub)* — distribution and
-  claw-back rules where the LLP was insolvent.
-- `llp-part-6-dissolution.md` *(stub)*
-- `llp-part-7-misc.md` *(stub)*
+The Law has **5 Parts** and **44 Articles** (1–43 with 23A
+inserted by amendment). Full per-Article wiki at
+[`llp-articles-index.md`](./llp-articles-index.md):
+
+- **Part 1 (Preliminary)** — Article 1.
+- **Part 2 (Essentials of a limited liability partnership)**
+  — Articles 2–12 (legal personality, LLP property, LLP
+  liability, partner liability, name, registered office,
+  secretary, records, accounts / audit, claw-back via
+  specified solvency statement under
+  [Article 12](./llp-article-12.md)).
+- **Part 3 (Relations of partners with one another and
+  third parties)** — Articles 13–17 (partnership agreement
+  primacy, dealings, admission / retirement,
+  assignments, agency).
+- **Part 4 (Registration and dissolution)** — Articles
+  18–23A (registration, declaration amendment, validity
+  rule, dissolution, cancellation, economic-substance
+  trigger).
+- **Part 5 (Miscellaneous and general)** — Articles 24–43
+  (legal proceedings, service, compliance orders,
+  registrar, fees, inspection, offences, penalties,
+  Regulations, Orders, customary-law preservation,
+  citation).
 
 ## Status note
 
-Draft. **Verify Article structure and claw-back mechanics
-against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_2_2017)**.
+Per-Article coverage source-verified against
+[jerseylaw.je/laws/current/l_2_2017](https://www.jerseylaw.je/laws/current/l_2_2017).
+Files at draft status; specific wording should still be
+checked against the live publication before being quoted in
+a transaction.
 
 ## Cross-references
 
