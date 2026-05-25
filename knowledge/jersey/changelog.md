@@ -15,6 +15,60 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — additional turn
+
+- **External rule-sets bridge layer added.** New section
+  [`knowledge/jersey/external-rules/`](./external-rules/index.md)
+  with seven bridge files documenting interaction points between
+  Jersey-incorporated entities and external rule-sets the corpus
+  does not wikify:
+  [`uk-takeover-code.md`](./external-rules/uk-takeover-code.md)
+  (City Code applicability to Jersey-incorporated targets and
+  bidders, Rule 9 / Rule 21 / Rule 36 summaries, scheme-of-
+  arrangement interface with CJL 1991);
+  [`aim-rules.md`](./external-rules/aim-rules.md) (Rules 11,
+  13, 14, 21, 26 + Schedule Two + NOMAD relationship for
+  Jersey AIM TopCos);
+  [`mar.md`](./external-rules/mar.md) (UK MAR + EU MAR for
+  Jersey-incorporated issuers on UK markets — Articles 7, 17,
+  18, 19, including PDMR notifications and closed-period
+  regime, with interaction map onto JFSC IB Code and CJL 1991
+  Article 76);
+  [`qca-code.md`](./external-rules/qca-code.md) (the most
+  commonly adopted AIM governance code; apply-and-explain
+  structure);
+  [`uk-corporate-governance-code.md`](./external-rules/uk-corporate-governance-code.md)
+  (premium-listed Main Market governance);
+  [`dtr.md`](./external-rules/dtr.md) (DTR 4/5/6/7 scope by
+  listing segment, with the DTR 5 vote-holder notification
+  load-bearing for AIM-listed Jersey-incorporated issuers);
+  [`fca-handbook-jersey-touchpoints.md`](./external-rules/fca-handbook-jersey-touchpoints.md)
+  (six common touchpoint patterns for Jersey-licensed groups
+  with UK FCA-authorised subsidiaries, cross-border fund
+  marketing, dual SM&CR/JFSC senior managers, outsourcing,
+  sanctions). The bridge files explicitly direct the agent to
+  cite the foreign source — not the bridge file — for any
+  matter of foreign-rule substance.
+- **Companies (Takeovers and Mergers Panel) (Jersey) Law 2009
+  scaffolded.** New
+  [`companies/takeovers-panel-2009-index.md`](./companies/takeovers-panel-2009-index.md)
+  describing the statute's purpose (establishing the Jersey
+  Takeovers and Mergers Panel and authorising the Jersey
+  Takeover Code), the interaction with the UK City Code (the
+  more frequently applicable regime for Jersey-incorporated
+  public companies), and the interaction with CJL 1991 takeover
+  mechanics (Articles 117–122 squeeze-out and the Part 18A
+  scheme of arrangement). Per-Part and per-Article files are
+  scaffolded as stubs pending a primary-source pass against
+  jerseylaw.je.
+- **[`index.md`](./index.md) updated** to surface both the new
+  External rule-sets section and the Takeovers Panel Law
+  alongside the CJL 1991 in the Companies section description.
+  Closes the "Takeovers and Mergers Panel Law 2009 — single
+  mention" gap previously flagged in
+  [`COVERAGE-AUDIT.md`](./COVERAGE-AUDIT.md) (item under §1
+  Companies & Securities).
+
 ## 2026-05-25
 
 - **`AGENTS.md` folded into [`CLAUDE.md`](../../CLAUDE.md).** The

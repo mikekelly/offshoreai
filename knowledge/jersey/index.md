@@ -186,7 +186,13 @@ guarantee / cell companies — PCC and ICC), incorporation, share
 capital, directors' duties, accounts, distributions and the
 **Article 115 cash-flow solvency test**, mergers, **continuance**
 (redomiciliation), and winding-up. Also LLPs and the various
-flavours of limited partnership.
+flavours of limited partnership. Alongside the CJL 1991 sits the
+[Companies (Takeovers and Mergers Panel) (Jersey) Law 2009](./companies/takeovers-panel-2009-index.md)
+— the Jersey-domestic Takeovers Panel and Code — which interacts
+with the
+[UK Takeover Code](./external-rules/uk-takeover-code.md) for any
+Jersey-incorporated public company admitted to trading on a UK
+market.
 
 ### [Trusts](./trusts/index.md)
 The [Trusts (Jersey) Law 1984](./trusts/trusts-law-1984.md): the
@@ -390,6 +396,26 @@ requirements per Pothier including cause), performance and
 breach, damages, specific performance (broader in Jersey than
 English law), misrepresentation, unjust enrichment / quasi-
 contract, and délit / tort (including voisinage).
+
+### [External rule-sets](./external-rules/index.md)
+**Bridge files** that document the interaction points between
+Jersey-incorporated entities and external rule-sets the corpus
+does **not** wikify: the
+[UK Takeover Code](./external-rules/uk-takeover-code.md), the
+LSE [AIM Rules](./external-rules/aim-rules.md), the
+[Market Abuse Regulation](./external-rules/mar.md), the
+[QCA Corporate Governance Code](./external-rules/qca-code.md),
+the
+[UK Corporate Governance Code](./external-rules/uk-corporate-governance-code.md),
+the
+[UK Disclosure Guidance and Transparency Rules](./external-rules/dtr.md),
+and
+[FCA Handbook touchpoints](./external-rules/fca-handbook-jersey-touchpoints.md)
+for Jersey-licensed groups. For the substance of any external
+rule, the bridge file directs the agent to the foreign source —
+not to itself. Load-bearing for the AIM-listed Jersey plc
+operating reality and for public-M&A involving Jersey-
+incorporated companies.
 
 ---
 
