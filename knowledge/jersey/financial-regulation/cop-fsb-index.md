@@ -69,8 +69,8 @@ cited authoritatively.
 
 - [`cop-fsb-compliance-officer.md`](./cop-fsb-compliance-officer.md) *(stub)*
 - [`cop-fsb-risk-management.md`](./cop-fsb-risk-management.md) *(stub)*
-- [`cop-fsb-aifmd-interface.md`](./cop-fsb-aifmd-interface.md) *(stub)* — where the Code interacts with the AIFMD-era manager regime.
-- [`cop-fsb-jpf-dsp.md`](./cop-fsb-jpf-dsp.md) *(stub)* — Designated Service Provider obligations on a JPF.
+- [`cop-fsb-aifmd-interface.md`](./cop-fsb-aifmd-interface.md) — where the Code interacts with the AIFMD-era manager regime. (Draft: NPPR positioning post-Brexit, Annex IV reporting, depositary requirements, remuneration disclosure, leverage limits, AIFMD II 16 April 2026 transition, common interface failure points.)
+- [`cop-fsb-jpf-dsp.md`](./cop-fsb-jpf-dsp.md) — Designated Service Provider obligations on a JPF. (Draft: DSP role and accountability, JPF regime enabling rationale, eligibility to act as DSP, DSP-JPF agreement, common failure points, interaction with AIFMD where JPF marketed under NPPR.)
 
 ### Customer / investor treatment
 

@@ -15,6 +15,92 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Post-merge editorial uplift (Phase 1A/1B/2C/2D continuation)
+
+Continuing the editorial backlog flagged at plan completion:
+promoting the highest-impact stub section files to substantive
+draft content. The seven files below cover the demo questions
+in [`evals/wealth-management-questions.yaml`](../../evals/wealth-management-questions.yaml)
+that previously depended on stubs.
+
+**Code of Practice substantive section files**
+
+- [`financial-regulation/cop-tcb-customer-onboarding.md`](./financial-regulation/cop-tcb-customer-onboarding.md)
+  — seven-stage onboarding workflow (initial enquiry → risk
+  assessment → CDD → fit assessment → senior-management
+  approval → engagement → ongoing-monitoring setup); common
+  failure points; particular scenarios for multi-jurisdiction
+  family, successor trustee, and PTC onboarding.
+- [`financial-regulation/cop-tcb-outsourcing.md`](./financial-regulation/cop-tcb-outsourcing.md)
+  — non-delegation-of-responsibility foundational principle;
+  material vs non-material distinction; required controls;
+  cross-border outsourcing considerations; common TCB
+  outsourcing scenarios (fund administration, custody, IT,
+  compliance / MLRO with the irreducible-MLRO carve-out);
+  FCA group-context interaction with SYSC 8.
+- [`financial-regulation/cop-ib-client-categorisation.md`](./financial-regulation/cop-ib-client-categorisation.md)
+  — three-category framework (retail / professional /
+  eligible counterparty), per-se vs elective routes, opt-up
+  criteria and warning packages, opt-down rights, service-
+  specific categorisation, documentation expectations,
+  common failure modes — particularly the HNW-default-to-
+  professional pattern that the JFSC has surfaced in
+  enforcement.
+- [`financial-regulation/cop-ib-client-assets.md`](./financial-regulation/cop-ib-client-assets.md)
+  — segregation foundational principle; client money
+  definition and holding requirements; client asset
+  categorisation and custody arrangements (direct vs nominee
+  vs sub-custody); reconciliation regime; periodic
+  statements; sub-custody diligence; FCA CASS group-context
+  interaction.
+- [`financial-regulation/cop-fsb-aifmd-interface.md`](./financial-regulation/cop-fsb-aifmd-interface.md)
+  — Jersey NPPR positioning post-Brexit; Annex IV reporting;
+  depositary requirements; remuneration disclosure;
+  leverage limits; AIFMD II 16 April 2026 transition;
+  common interface failure points.
+- [`financial-regulation/cop-fsb-jpf-dsp.md`](./financial-regulation/cop-fsb-jpf-dsp.md)
+  — JPF Designated Service Provider role; what enables the
+  JPF regime's speed-to-market; DSP obligations under the
+  Code; eligibility to act as DSP; DSP-JPF agreement;
+  common failure points; interaction with AIFMD-track funds.
+
+**AML/CFT Handbook substantive sub-files**
+
+- [`aml-cft/amlh-cdd-identification.md`](./aml-cft/amlh-cdd-identification.md)
+  — two-question framework (who is the customer vs who is
+  the beneficial owner); 25% test with worked layered-
+  structure example; senior-managing-official fallback;
+  control-by-other-means extension; verification standards;
+  electronic-vs-documentary verification; common failure
+  points; scenarios across Jersey trust / foreign trust /
+  foundation / cell company / nominee shareholder
+  arrangements.
+- [`aml-cft/amlh-edd-triggers.md`](./aml-cft/amlh-edd-triggers.md)
+  — seven mandatory triggers in operational detail (PEPs,
+  high-risk-country nexus, BWRA-rated higher, complex /
+  unusual structures, non-face-to-face elevated risk, prior-
+  SAR history, unusual transaction patterns); trigger
+  combinations; mandatory vs discretionary EDD; onboarding-
+  stage trigger assessment; in-life trigger escalation
+  procedures; common trigger-handling failure points.
+- [`aml-cft/amlh-customer-jersey-trust.md`](./aml-cft/amlh-customer-jersey-trust.md)
+  — full identification population for a Jersey trust
+  customer (settlor, contributors, trustees, protector,
+  enforcer, named beneficiaries, class of objects, default
+  beneficiaries); beneficial-ownership framework for
+  discretionary trusts; purpose-and-intended-nature
+  assessment; EDD triggers and measures; interaction with
+  the FSDI Law 2020 register; common trust-CDD failure modes.
+
+**Parent index files updated** to reflect promotion from stub
+in:
+[`cop-tcb-index.md`](./financial-regulation/cop-tcb-index.md),
+[`cop-ib-index.md`](./financial-regulation/cop-ib-index.md),
+[`cop-fsb-index.md`](./financial-regulation/cop-fsb-index.md),
+[`amlh-cdd.md`](./aml-cft/amlh-cdd.md),
+[`amlh-edd.md`](./aml-cft/amlh-edd.md), and
+[`amlh-customer-types.md`](./aml-cft/amlh-customer-types.md).
+
 ## 2026-05-25 — Phase 4B confirmation + plan completion
 
 - **Phase 4B was already complete** from prior Week 0 work

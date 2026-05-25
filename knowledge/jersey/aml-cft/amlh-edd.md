@@ -159,8 +159,12 @@ records). See [`../financial-regulation/cop-tcb-index.md`](../financial-regulati
 
 ## Sub-section files
 
-- `amlh-edd-triggers.md` *(stub)* — the trigger taxonomy in
-  more detail.
+- [`amlh-edd-triggers.md`](./amlh-edd-triggers.md) — the
+  trigger taxonomy in more detail. (Draft: seven mandatory
+  triggers with operational detail, trigger combinations,
+  mandatory vs discretionary EDD, onboarding-stage trigger
+  assessment, in-life trigger escalation procedures, common
+  trigger-handling failure points.)
 - [`amlh-edd-source-of-wealth.md`](./amlh-edd-source-of-wealth.md)
   — SoW evidence standards by customer profile. (Draft: SoW
   vs SoF distinction, evidence requirements per wealth-origin

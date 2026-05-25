@@ -101,7 +101,7 @@ authoritatively.
 
 ### Customer relationships
 
-- [`cop-tcb-customer-onboarding.md`](./cop-tcb-customer-onboarding.md) *(stub)* — onboarding pack, CDD/EDD interface with the [AML/CFT Handbook](../aml-cft/aml-cft-handbook.md), risk-rating.
+- [`cop-tcb-customer-onboarding.md`](./cop-tcb-customer-onboarding.md) — onboarding pack, CDD/EDD interface with the [AML/CFT Handbook](../aml-cft/aml-cft-handbook.md), risk-rating. (Draft: seven-stage onboarding workflow, common failure points, particular scenarios — multi-jurisdiction family, successor trustee, PTC onboarding.)
 - [`cop-tcb-acceptance-and-rejection.md`](./cop-tcb-acceptance-and-rejection.md) *(stub)* — declining or exiting client relationships.
 - [`cop-tcb-customer-treatment.md`](./cop-tcb-customer-treatment.md) *(stub)* — fair treatment, conflicts disclosure, complaints handling.
 
@@ -114,7 +114,7 @@ authoritatively.
 
 ### Outsourcing and conflicts
 
-- [`cop-tcb-outsourcing.md`](./cop-tcb-outsourcing.md) *(stub)* — outsourcing permissibility, JFSC notification thresholds, continuing-responsibility rule, access by the JFSC.
+- [`cop-tcb-outsourcing.md`](./cop-tcb-outsourcing.md) — outsourcing permissibility, JFSC notification thresholds, continuing-responsibility rule, access by the JFSC. (Draft: non-delegation principle, material vs non-material distinction, required controls, cross-border outsourcing, common scenarios, FCA group-context interaction.)
 - [`cop-tcb-conflicts.md`](./cop-tcb-conflicts.md) *(stub)* — identification, disclosure, and mitigation of conflicts between the TCB and its clients, and between clients.
 
 ### Records, reporting, capital

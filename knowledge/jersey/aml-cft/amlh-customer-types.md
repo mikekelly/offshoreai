@@ -43,7 +43,7 @@ This file is the section index.
 | Natural-person customers | `amlh-customer-individual.md` *(stub)* |
 | Jersey companies | `amlh-customer-jersey-company.md` *(stub)* |
 | Foreign companies | `amlh-customer-foreign-company.md` *(stub)* |
-| Jersey trusts | `amlh-customer-jersey-trust.md` *(stub)* — cross-link to [`../trusts/index.md`](../trusts/index.md) |
+| Jersey trusts | [`amlh-customer-jersey-trust.md`](./amlh-customer-jersey-trust.md) — full population for identification (settlor / contributors / trustees / protector / enforcer / named beneficiaries / class of objects / default beneficiaries), beneficial-ownership framework, purpose-and-intended-nature assessment, EDD triggers, common failure modes |
 | Foreign trusts | `amlh-customer-foreign-trust.md` *(stub)* |
 | Jersey foundations | `amlh-customer-jersey-foundation.md` *(stub)* — cross-link to [`../foundations/index.md`](../foundations/index.md) |
 | Partnerships (LP / LLP / SLP / ILP) | `amlh-customer-partnership.md` *(stub)* |

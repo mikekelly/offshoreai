@@ -145,8 +145,14 @@ the Handbook and the relevant
 
 ## Sub-section files
 
-- `amlh-cdd-identification.md` *(stub)* — identifying the
-  customer and the natural-person beneficial owner.
+- [`amlh-cdd-identification.md`](./amlh-cdd-identification.md)
+  — identifying the customer and the natural-person beneficial
+  owner. (Draft: customer-vs-beneficial-owner distinction,
+  25% test with worked layered-structure example, senior-
+  managing-official fallback, control-by-other-means
+  extension, verification standards, common failure points,
+  scenarios across trust / foundation / cell-company /
+  nominee.)
 - `amlh-cdd-verification.md` *(stub)* — verifying identity on
   reliable and independent sources; documentary vs electronic
   verification; certification rules.

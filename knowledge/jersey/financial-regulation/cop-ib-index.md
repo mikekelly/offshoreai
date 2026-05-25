@@ -69,7 +69,7 @@ cited authoritatively.
 
 ### Customer-facing conduct
 
-- [`cop-ib-client-categorisation.md`](./cop-ib-client-categorisation.md) *(stub)* — retail / professional / eligible counterparty.
+- [`cop-ib-client-categorisation.md`](./cop-ib-client-categorisation.md) — retail / professional / eligible counterparty. (Draft: three categories, per-se vs elective routes, opt-up criteria and opt-down rights, service-specific categorisation, documentation expectations, common failure modes including HNW-default-to-professional pattern.)
 - [`cop-ib-customer-onboarding.md`](./cop-ib-customer-onboarding.md) *(stub)*
 - [`cop-ib-suitability.md`](./cop-ib-suitability.md) — **load-bearing for wealth management.** Suitability assessment, suitability letter, ongoing review. (Draft: four-pillar suitability framework, advised vs discretionary vs execution-only treatment, suitability-letter content, common failure points, AML/CDD interaction.)
 - [`cop-ib-appropriateness.md`](./cop-ib-appropriateness.md) *(stub)* — for non-advised execution-only services.
@@ -80,7 +80,7 @@ cited authoritatively.
 
 - [`cop-ib-best-execution.md`](./cop-ib-best-execution.md) *(stub)*
 - [`cop-ib-order-handling.md`](./cop-ib-order-handling.md) *(stub)*
-- [`cop-ib-client-assets.md`](./cop-ib-client-assets.md) *(stub)* — client money and client assets.
+- [`cop-ib-client-assets.md`](./cop-ib-client-assets.md) — client money and client assets. (Draft: segregation foundational principle, client money definition and holding requirements, client asset categorisation and custody, reconciliation regime, periodic statements, sub-custody diligence, FCA CASS group-context interaction.)
 - [`cop-ib-personal-account-dealing.md`](./cop-ib-personal-account-dealing.md) *(stub)*
 
 ### Outsourcing, conflicts, records, reporting
