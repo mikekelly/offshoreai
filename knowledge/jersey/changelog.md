@@ -15,6 +15,53 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — LP 1994 — full per-Article wiki
+
+The
+[Limited Partnerships (Jersey) Law 1994](https://www.jerseylaw.je/laws/current/l_22_1994)
+— Jersey's most-used fund vehicle statute, central to PE
+and VC fund structures — receives full Article-level
+treatment.
+
+The Law has 3 Parts plus inserted Part 2A and 52 Article
+files (Articles 1–41 plus sub-Articles 5A, 16A, 17A, 21A–C,
+29A–F, 30A, 31A, 36A, 37A):
+
+- [`lp-articles-index.md`](./companies/lp-articles-index.md)
+  — enumeration with deep-file links.
+- **Part 1 (Preliminary)** — Articles 1, 2 (interpretation,
+  solvency definition).
+- **Part 2 (Establishment)** — Articles 3–29 including:
+  - LP formation requirement (Article 3);
+  - Registration / amendment / annual confirmation (Articles
+    4, 5, 5A);
+  - GP and LP rights, obligations, profit share, capital
+    return (Articles 11–17 plus 16A, 17A);
+  - Partner liability and contribution mechanics (Articles
+    18, 10);
+  - **The load-bearing safe-harbour Article (Article 19)
+    for limited-partner liability to creditors**, including
+    the extensive list of activities limited partners can
+    engage in without losing limited liability (LPAC
+    service, voting on prescribed matters, derivative
+    actions, etc.);
+  - Admission, assignments, registrar dissolution,
+    reinstatement, winding up framework (Articles 20–27).
+- **Part 2A (Eligible foreign LP continuance)** — Articles
+  29A–F covering the continuance-in regime for foreign LPs.
+- **Part 3 (Miscellaneous)** — Articles 30–41 plus 30A,
+  31A, 36A, 37A.
+
+Parent
+[`lp-1994-index.md`](./companies/lp-1994-index.md) updated
+to reflect the actual statute structure (3 Parts + Part 2A,
+52 Article files) and the now-complete per-Article coverage.
+
+The LP 1994 statute moves from scaffold-only to ✅ (article-
+level wiki). This is the **highest-impact per-Article work
+for wealth-management demo use cases**, given LP 1994's
+centrality to Jersey's PE / VC fund-vehicle market.
+
 ## 2026-05-25 — LLP 2017 — full per-Article wiki
 
 Following the Takeovers Panel Law 2009 per-Article work,

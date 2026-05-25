@@ -76,9 +76,9 @@ personality without body-corporate character).
 | What is a Jersey LP? | This file |
 | Which Jersey partnership vehicle do I want? | This file + sibling vehicle index files |
 | Jersey LP as fund vehicle (closed-ended PE / VC) | This file + [`../funds/jersey-private-fund.md`](../funds/jersey-private-fund.md) + [`../funds/expert-fund.md`](../funds/expert-fund.md) |
-| LP safe harbours — what activities a Limited Partner can do without losing limited liability | `lp-article-safe-harbours.md` *(stub)* |
-| Dissolution / winding-up | `lp-part-dissolution.md` *(stub)* |
-| Registration mechanics | `lp-part-registration.md` *(stub)* |
+| LP safe harbours — what activities a Limited Partner can do without losing limited liability | [`lp-article-19.md`](./lp-article-19.md) |
+| Dissolution / winding-up | [`lp-article-23.md`](./lp-article-23.md), [`lp-article-24.md`](./lp-article-24.md), [`lp-article-25.md`](./lp-article-25.md), [`lp-article-27.md`](./lp-article-27.md) |
+| Registration mechanics | [`lp-article-4.md`](./lp-article-4.md), [`lp-article-5.md`](./lp-article-5.md), [`lp-article-5a.md`](./lp-article-5a.md) |
 
 ## Use cases
 
@@ -100,25 +100,36 @@ by investor familiarity, manager domicile, and tax
 considerations — Jersey LP is increasingly chosen by managers
 with EU/UK investor focus and AIFMD/NPPR-marketing needs.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-### Parts
+The Law has **3 Parts plus an inserted Part 2A** (eligible
+foreign LP continuance) and **52 Article files**. Full
+per-Article wiki at
+[`lp-articles-index.md`](./lp-articles-index.md):
 
-- `lp-part-1-preliminary.md` *(stub)* — citation, interpretation, application.
-- `lp-part-2-formation.md` *(stub)* — formation of the LP, partnership agreement, registration.
-- `lp-part-3-partners.md` *(stub)* — General Partner and Limited Partner duties; safe harbours for Limited Partner activities.
-- `lp-part-4-property-and-capital.md` *(stub)* — partnership property; capital contributions; admission / withdrawal.
-- `lp-part-5-dissolution.md` *(stub)* — dissolution and winding-up procedures.
-- `lp-part-6-misc.md` *(stub)* — registrar; offences; transitional provisions.
-
-### Articles
-
-- `lp-articles-index.md` *(stub)* — enumeration of every Article in the 1994 Law with deep-file links once populated.
-
-(Per-Article files like `lp-article-1.md`, `lp-article-2.md`,
-etc. should follow the per-statute articles-wiki convention
-used elsewhere in the corpus — one file per Article with
-frontmatter, `articles_covered`, sources, and inline citations.)
+- **Part 1 (Preliminary)** — Articles 1–2 (interpretation,
+  solvency definition).
+- **Part 2 (Establishment of limited partnerships)** —
+  Articles 3–29 plus 5A, 16A, 17A, 21A–C (formation,
+  registration, declarations, annual confirmation, partner
+  structure, name, registered office, accounts, contribution,
+  GP rights and obligations, judgment enforcement, LP rights,
+  profit share, dealings, inter-LP rights, third-party rights,
+  capital return, remedies, liability to partnership,
+  **Article 19 limited-partner liability and safe harbours**,
+  admission, assignments, registrar cancellation /
+  dissolution, GP power limitation, reinstatement, winding up
+  on default / GP death / Court order, compliance order,
+  account settlement, legal proceedings, authority to sign).
+- **Part 2A (Eligible foreign LP continuance)** — Articles
+  29A–F (continuance regime; mechanics for foreign-LP
+  migration to Jersey).
+- **Part 3 (Miscellaneous and final provisions)** — Articles
+  30–41 plus 30A, 31A, 36A, 37A (registrar appointment,
+  annual fee, fees / forms, inspection, record destruction,
+  record form, public registry, offences, officer liability,
+  aiders / abettors, Regulations, Orders, Rules of Court,
+  customary law saving, citation).
 
 ## Interaction with other vehicles
 
@@ -140,13 +151,11 @@ frontmatter, `articles_covered`, sources, and inline citations.)
 
 ## Status note
 
-Draft. The article-level structure above reflects the
-statute's broad shape as understood from cross-references in
-the existing corpus and from the published structure of Jersey
-partnership law. **Verify against the current consolidated
-text on
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_22_1994)**
-before relying on specific Article numbers.
+Per-Article coverage source-verified against
+[jerseylaw.je/laws/current/l_22_1994](https://www.jerseylaw.je/laws/current/l_22_1994).
+Files at draft status; specific wording should still be
+checked against the live publication before being quoted
+in a transaction.
 
 ## Cross-references
 
