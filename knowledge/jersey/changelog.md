@@ -15,6 +15,45 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — ILP 2011 — full per-Article wiki
+
+The
+[Incorporated Limited Partnerships (Jersey) Law 2011](https://www.jerseylaw.je/laws/current/l_5_2011)
+receives full Article-level treatment.
+
+The Law has 3 Parts and 39 Articles (Article 26 deleted by
+R&O.138/2020). Per-Article files at
+[`ilp-articles-index.md`](./companies/ilp-articles-index.md):
+
+- **Part 1 (Preliminary)**: Articles 1, 2 — interpretation
+  and solvency definition.
+- **Part 2 (Establishment)**: Articles 3–24 — body-corporate
+  ILP constitutional foundation (Article 3 the load-bearing
+  provision), registration, partner structure, name,
+  registered office, accounts, contribution, GP / LP
+  rights, profit and contribution rules with solvency
+  precondition, **Article 18 limited-partner liability and
+  safe harbours** (the ILP analogue of LP Article 19, with
+  the additional "reasonable creditor belief" qualifier),
+  admission, assignments, winding-up via Regulations,
+  compliance order, service, authority to sign.
+- **Part 3 (Miscellaneous)**: Articles 25–39 — registrar,
+  fees, forms, inspection, record destruction / form,
+  public registry, offences, officer liability,
+  Regulations, Orders, Rules of Court, customary-law
+  preservation (with explicit exclusion of LP 1994),
+  citation.
+
+Parent
+[`ilp-2011-index.md`](./companies/ilp-2011-index.md)
+updated to reflect the actual statute structure (3 Parts,
+39 Articles).
+
+The ILP 2011 statute moves from scaffold-only to ✅
+article-level wiki. Combined with LP 1994, the partnership
+family now has complete article-level coverage for both
+contractual (LP) and incorporated (ILP) variants.
+
 ## 2026-05-25 — LP 1994 — full per-Article wiki
 
 The

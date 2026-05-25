@@ -91,23 +91,37 @@ The ILP is less common than the LP in market practice — most
 Jersey funds use the LP 1994 because the GP-acting-on-behalf-
 of-LP model is well-understood by investors and counterparties.
 
-## Structural coverage — scaffolded
+## Structural coverage
 
-- `ilp-articles-index.md` *(stub)* — enumeration of Articles.
-- `ilp-part-1-preliminary.md` *(stub)*
-- `ilp-part-2-formation-and-incorporation.md` *(stub)* —
-  formation, registration, incorporation effect.
-- `ilp-part-3-partners.md` *(stub)* — GP / LP roles; safe
-  harbours.
-- `ilp-part-4-property-capital.md` *(stub)*
-- `ilp-part-5-dissolution.md` *(stub)*
-- `ilp-part-6-misc.md` *(stub)*
+Full per-Article wiki at
+[`ilp-articles-index.md`](./ilp-articles-index.md). The Law
+has 3 Parts and 39 Articles (Article 26 deleted by
+R&O.138/2020):
+
+- **Part 1 (Preliminary)**: Articles 1–2.
+- **Part 2 (Establishment)**: Articles 3–24 covering body-
+  corporate constitutional foundation (Article 3 — the
+  load-bearing constitutional provision), registration,
+  declarations, partner structure, name, registered office,
+  accounts, contribution, GP / LP rights and obligations,
+  profit / contribution rules with solvency precondition,
+  **Article 18 limited-partner liability and safe
+  harbours**, admission, assignments, winding-up,
+  compliance order, service, authority to sign.
+- **Part 3 (Miscellaneous)**: Articles 25–39 covering
+  registrar, fees, forms, inspection, record destruction /
+  form, public registry, offences, officer liability,
+  Regulations, Orders, Rules of Court, customary-law
+  preservation (with explicit exclusion of LP 1994),
+  citation.
 
 ## Status note
 
-Draft. **Verify Article structure and current text against
-[jerseylaw.je](https://www.jerseylaw.je/laws/current/l_5_2011)**
-before relying on specific provisions.
+Per-Article coverage source-verified against
+[jerseylaw.je/laws/current/l_5_2011](https://www.jerseylaw.je/laws/current/l_5_2011).
+Files at draft status; specific wording should still be
+checked against the live publication before being quoted
+in a transaction.
 
 ## Cross-references
 
