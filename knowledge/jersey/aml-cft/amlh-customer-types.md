@@ -1,0 +1,131 @@
+---
+title: AML/CFT Handbook — CDD by Customer Type
+jurisdiction: jersey
+category: aml-cft
+status: draft
+last_verified: 2026-05-25
+tags:
+  - aml-cft
+  - jersey
+  - aml-handbook
+  - jfsc
+  - regulator-guidance
+  - cdd
+  - beneficial-ownership
+  - wealth-manager-relevance
+sources:
+  - title: JFSC AML/CFT Handbook
+    url: https://www.jerseyfsc.org/industry/aml-cft-handbook/
+    accessed: 2026-05-25
+    kind: regulator-guidance
+see_also:
+  - ./aml-cft-handbook.md
+  - ./amlh-cdd.md
+  - ./amlh-edd.md
+  - ../trusts/index.md
+  - ../foundations/index.md
+  - ../companies/index.md
+---
+
+# AML/CFT Handbook — CDD by Customer Type
+
+The Handbook addresses CDD application **by customer type**
+because the identification and beneficial-ownership obligations
+play out differently depending on the legal structure of the
+customer.
+
+This file is the section index.
+
+## Coverage
+
+| Customer type | Sub-section file |
+|---|---|
+| Natural-person customers | `amlh-customer-individual.md` *(stub)* |
+| Jersey companies | `amlh-customer-jersey-company.md` *(stub)* |
+| Foreign companies | `amlh-customer-foreign-company.md` *(stub)* |
+| Jersey trusts | `amlh-customer-jersey-trust.md` *(stub)* — cross-link to [`../trusts/index.md`](../trusts/index.md) |
+| Foreign trusts | `amlh-customer-foreign-trust.md` *(stub)* |
+| Jersey foundations | `amlh-customer-jersey-foundation.md` *(stub)* — cross-link to [`../foundations/index.md`](../foundations/index.md) |
+| Partnerships (LP / LLP / SLP / ILP) | `amlh-customer-partnership.md` *(stub)* |
+| Charities | `amlh-customer-charity.md` *(stub)* — cross-link to [`../charities/index.md`](../charities/index.md) |
+| Governmental and public-sector | `amlh-customer-government.md` *(stub)* |
+| Listed-company customers | `amlh-customer-listed-company.md` *(stub)* |
+| Regulated-institution customers (CDD reliance) | `amlh-customer-regulated-institution.md` *(stub)* |
+| Pension schemes | `amlh-customer-pension.md` *(stub)* |
+| Special-purpose vehicles | `amlh-customer-spv.md` *(stub)* |
+
+## Cross-cutting themes
+
+### Beneficial ownership
+
+The **25%-or-more** ownership / control threshold is the
+Handbook's default beneficial-ownership identification trigger,
+mirroring the FSDI Law 2020 and FATF standards. Where no
+natural person meets the 25% threshold, the Handbook expects
+identification of the **senior managing official** as the
+beneficial-owner-equivalent.
+
+For complex structures (trusts holding companies that hold
+companies, etc.) the natural-person beneficial owner may sit
+several layers above the immediate customer. The Handbook
+expects the structure to be mapped fully.
+
+### Trust-specific obligations
+
+For a trust customer, the Handbook requires identification of:
+
+- The **settlor** (and any contributor of property);
+- The **trustees** (and the controllers of any corporate
+  trustee);
+- The **protector** if appointed;
+- The **enforcer** for a non-charitable purpose trust;
+- The **named beneficiaries** and the **objects** of any
+  discretionary class.
+
+Plus understanding of the trust **purpose**, the **letter of
+wishes** if any, and the **distribution history / pattern**.
+See [`../trusts/index.md`](../trusts/index.md) for the Jersey
+trust law context.
+
+### Foundation-specific obligations
+
+Similar to trusts but adapted to the foundation structure:
+
+- The **founder**;
+- The **council members** (and any qualified member);
+- The **guardian** if appointed;
+- The **beneficiaries** or class of objects.
+
+See [`../foundations/index.md`](../foundations/index.md).
+
+### Listed-company simplified treatment
+
+The Handbook generally permits **reduced verification** for
+customers that are listed companies on **recognised regulated
+markets** with adequate transparency / disclosure rules — the
+listing acts as a public-disclosure proxy. The exact list of
+recognised markets and the conditions are in the current
+Handbook.
+
+### Regulated-institution reliance
+
+Where the customer is itself a regulated financial institution
+in a jurisdiction with **equivalent AML/CFT standards**, the
+Handbook permits a **lighter touch** and / or **reliance on the
+counterparty's own CDD** through prescribed reliance
+arrangements. See [`./amlh-cdd.md`](./amlh-cdd.md) on reliance.
+
+## Verification status
+
+Section index at draft. Sub-section files are stub. The
+specific list of equivalent jurisdictions and the exact
+beneficial-ownership trigger language must be verified against
+the current Handbook publication.
+
+## Cross-references
+
+- [`./aml-cft-handbook.md`](./aml-cft-handbook.md) — the hub.
+- [`./amlh-cdd.md`](./amlh-cdd.md) — the standard CDD
+  framework being applied here by type.
+- [`../registries/beneficial-ownership.md`](../registries/beneficial-ownership.md)
+  — the related FSDI Law 2020 BO regime.

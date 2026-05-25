@@ -15,6 +15,52 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 1B (AML/CFT Handbook architecture)
+
+- **JFSC AML/CFT Handbook — architecture refactor.** Single
+  [`aml-cft/aml-cft-handbook.md`](./aml-cft/aml-cft-handbook.md)
+  overview file rewritten as a **cross-section hub** with
+  regulatory-stack framing and pointers into thirteen new
+  per-section indexes under
+  [`aml-cft/`](./aml-cft/index.md):
+  [`amlh-risk-assessment.md`](./aml-cft/amlh-risk-assessment.md)
+  (BWRA + customer risk methodology),
+  [`amlh-cdd.md`](./aml-cft/amlh-cdd.md) (three intensities;
+  four CDD obligations; timing; reliance and outsourcing),
+  [`amlh-edd.md`](./aml-cft/amlh-edd.md) (triggers, SoW vs SoF,
+  senior-management approval, enhanced monitoring),
+  [`amlh-peps.md`](./aml-cft/amlh-peps.md) (foreign / domestic
+  / IO PEPs + family + close associates; screening; status
+  cessation),
+  [`amlh-customer-types.md`](./aml-cft/amlh-customer-types.md)
+  (per-type CDD with cross-links to trust / foundation / company
+  surfaces),
+  [`amlh-high-risk-countries.md`](./aml-cft/amlh-high-risk-countries.md)
+  (FATF Black / Grey, JFSC-listed, EU / UK HRTC; country-of-
+  residence vs assets vs counterparty),
+  [`amlh-ongoing-monitoring.md`](./aml-cft/amlh-ongoing-monitoring.md)
+  (transaction monitoring + periodic refresh + trigger events),
+  [`amlh-internal-controls.md`](./aml-cft/amlh-internal-controls.md)
+  (three lines of defence; MLRO / MLCO; board responsibility;
+  policy framework),
+  [`amlh-training.md`](./aml-cft/amlh-training.md),
+  [`amlh-record-keeping.md`](./aml-cft/amlh-record-keeping.md),
+  [`amlh-sars.md`](./aml-cft/amlh-sars.md) (internal / external
+  SAR pipeline; DAML consent; tipping-off),
+  [`amlh-sanctions.md`](./aml-cft/amlh-sanctions.md) (handbook
+  view across Jersey / UK / EU / US / UN regimes), and
+  [`amlh-sector-specific.md`](./aml-cft/amlh-sector-specific.md)
+  (13-sector application table with cross-links to the parallel
+  Codes of Practice).
+- **[`aml-cft/index.md`](./aml-cft/index.md) updated** with a
+  new per-section index table under the Handbook layer; the
+  existing article-by-article statute wikis (POCL, MLO, SAFL,
+  CICL) remain unchanged.
+- Sub-section files under each per-section index remain stubs
+  pending a primary-source pass against the current JFSC
+  Handbook publication. Pattern mirrors the JFSC Codes of
+  Practice scaffold from the previous commit.
+
 ## 2026-05-25 — additional turn
 
 - **External rule-sets bridge layer added.** New section

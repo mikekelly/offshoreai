@@ -59,13 +59,38 @@ Europe's AML/CFT mutual-evaluation body.
   — the operative compliance regulation (CDD, record-keeping,
   reporting, training, internal controls).
 - [**aml-cft-handbook.md**](./aml-cft-handbook.md) — the JFSC's
-  AML/CFT Handbook (risk-based approach, PEPs, EDD).
+  AML/CFT Handbook **hub** with the regulatory-stack framing.
+  Per-section indexes below give agent-navigable coverage by
+  topic.
 - [**sanctions.md**](./sanctions.md) — Sanctions and Asset-Freezing
   (Jersey) Law 2014 with UK / UN sanctions alignment.
 - [**moneyval.md**](./moneyval.md) — Council of Europe mutual
   evaluations of Jersey.
 - [**schedule-2-businesses.md**](./schedule-2-businesses.md) —
   supervised-business categories (DNFBPs and financial-services).
+
+### AML/CFT Handbook — per-section indexes
+
+The Handbook hub above points at thirteen per-section indexes
+that each cover a defined operational area. Each declares a
+sub-section structure as stubs pending an editorial pass against
+the current JFSC Handbook publication.
+
+| Topic | Index file |
+|---|---|
+| Risk assessment (BWRA + customer risk) | [`amlh-risk-assessment.md`](./amlh-risk-assessment.md) |
+| Customer due diligence | [`amlh-cdd.md`](./amlh-cdd.md) |
+| Enhanced due diligence | [`amlh-edd.md`](./amlh-edd.md) |
+| Politically exposed persons | [`amlh-peps.md`](./amlh-peps.md) |
+| CDD by customer type | [`amlh-customer-types.md`](./amlh-customer-types.md) |
+| High-risk countries | [`amlh-high-risk-countries.md`](./amlh-high-risk-countries.md) |
+| Ongoing monitoring | [`amlh-ongoing-monitoring.md`](./amlh-ongoing-monitoring.md) |
+| Internal controls / MLRO | [`amlh-internal-controls.md`](./amlh-internal-controls.md) |
+| Staff training | [`amlh-training.md`](./amlh-training.md) |
+| Record-keeping | [`amlh-record-keeping.md`](./amlh-record-keeping.md) |
+| Suspicious activity reporting | [`amlh-sars.md`](./amlh-sars.md) |
+| Sanctions (handbook view) | [`amlh-sanctions.md`](./amlh-sanctions.md) |
+| Sector-specific application | [`amlh-sector-specific.md`](./amlh-sector-specific.md) |
 
 ### Article-by-article statute wikis
 
