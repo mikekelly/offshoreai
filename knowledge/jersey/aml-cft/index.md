@@ -68,6 +68,19 @@ Europe's AML/CFT mutual-evaluation body.
   evaluations of Jersey.
 - [**schedule-2-businesses.md**](./schedule-2-businesses.md) —
   supervised-business categories (DNFBPs and financial-services).
+- [**terrorism-law-2002.md**](./terrorism-law-2002.md) —
+  Terrorism (Jersey) Law 2002 (substantive terrorism-financing
+  offences, asset-freezing, reporting; CFT counterpart to
+  POCL).
+- [**forfeiture-of-assets-law-2018.md**](./forfeiture-of-assets-law-2018.md)
+  — Forfeiture of Assets (Civil Proceedings) (Jersey) Law 2018
+  (civil forfeiture without prior criminal conviction).
+- [**investigation-of-fraud-law-1991.md**](./investigation-of-fraud-law-1991.md)
+  — Investigation of Fraud (Jersey) Law 1991 (Attorney General
+  information-gathering powers).
+- [**pocsb-law-2008.md**](./pocsb-law-2008.md) — Proceeds of
+  Crime (Supervisory Bodies) (Jersey) Law 2008 (JFSC and other
+  supervisory authorities' statutory powers).
 
 ### AML/CFT Handbook — per-section indexes
 

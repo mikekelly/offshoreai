@@ -15,6 +15,33 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-25 — Phase 1G (residual financial-crime statutes)
+
+- **Four residual financial-crime statutes added.** All
+  previously 🟡 or ❌ in
+  [`COVERAGE-AUDIT.md`](./COVERAGE-AUDIT.md). New overview
+  files under `aml-cft/`:
+  [`terrorism-law-2002.md`](./aml-cft/terrorism-law-2002.md)
+  (Terrorism (Jersey) Law 2002 — substantive terrorism-
+  financing offences, asset-freezing, reporting; the CFT
+  counterpart sitting alongside POCL's ML framework);
+  [`forfeiture-of-assets-law-2018.md`](./aml-cft/forfeiture-of-assets-law-2018.md)
+  (Forfeiture of Assets (Civil Proceedings) (Jersey) Law 2018
+  — civil-standard forfeiture without prior criminal
+  conviction; gap-fills the criminal-conviction-required
+  limitation of POCL confiscation);
+  [`investigation-of-fraud-law-1991.md`](./aml-cft/investigation-of-fraud-law-1991.md)
+  (Investigation of Fraud (Jersey) Law 1991 — Attorney General
+  information-gathering powers for serious or complex fraud;
+  production-notice interaction with tipping-off prohibition);
+  [`pocsb-law-2008.md`](./aml-cft/pocsb-law-2008.md) (Proceeds
+  of Crime (Supervisory Bodies) (Jersey) Law 2008 — the
+  statutory framework giving the JFSC and other bodies their
+  AML/CFT supervisory authority). Closes four COVERAGE-AUDIT
+  gaps under §4 AML / CFT, Proceeds of Crime & Sanctions.
+- [`aml-cft/index.md`](./aml-cft/index.md) updated to surface
+  the four new statutes.
+
 ## 2026-05-25 — Phase 1D (vehicle-law completion)
 
 - **Five partnership / LLC vehicle statutes scaffolded.** All
