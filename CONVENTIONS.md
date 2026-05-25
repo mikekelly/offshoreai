@@ -273,3 +273,50 @@ introduces. Concept files rarely declare structural children themselves
 A stub is a valid file. It must still have full frontmatter (including
 tags) and a one-line description of what it will cover. Stubs are how we
 declare intent without committing to content quality yet.
+
+## Tenant neutrality
+
+The corpus is jurisdictional truth, shared across every tenant deployment.
+Tenant-specific facts never enter corpus content, eval scenarios, or worked
+examples. The rule (operationalising
+[Principle 19 in KNOWLEDGE-BASE-PRINCIPLES.md](./KNOWLEDGE-BASE-PRINCIPLES.md)):
+
+**Forbidden in any file under `knowledge/` or `evals/`:**
+
+- Names of real wealth groups, law firms, fund managers, banks, trust
+  companies, or other commercial entities, **except** as primary-source
+  citations (e.g. citing a JFSC public statement against a named firm is
+  fine; describing a named firm's operating model is not) or as the
+  established public examples in jurisdiction-orientation context (e.g.
+  the existing list of major TCBs in
+  [`fsl-class-tcb.md`](./knowledge/jersey/financial-regulation/fsl-class-tcb.md)
+  is illustrative not endorsing, and stays under editorial review).
+- Identifiable client cohorts ("our typical UAE clients are…").
+- Specific real deals, transactions, tickers, or deal sizes.
+- House views on contested structuring choices that vary by firm.
+- Internal RM playbooks, compensation structures, or proprietary
+  processes.
+
+**Permitted and encouraged:**
+
+- Stylised or anonymised worked examples ("ParentCo plc, AIM-listed
+  Jersey-incorporated, acquires TargetCo UK wealth manager via all-share
+  offer").
+- Role-shaped persona files (international wealth RM, listed-wealth-
+  group chair, fund counsel) without identifying any actual incumbent.
+- Statute, code, or guidance coverage triggered by a real-world
+  development, written generically (the statute applies to *anyone* in
+  the relevant position, not to the specific case that surfaced it).
+- Public-record citations of named firms in their primary-source role
+  (e.g. a Royal Court judgment cites the parties; a JFSC public statement
+  cites the censured firm — these are legitimate references because the
+  named firm *is* part of the primary source).
+
+**Where tenant-specifics properly live.** Per-tenant memory, custom
+skills, tenant-specific evals, and any house-view content sit in the
+tenant configuration layer (see PRD §9), separate from the canonical
+corpus.
+
+**PR review.** A pull-request reviewer should reject any change that
+introduces a forbidden element above. If unsure whether a reference
+crosses the line, the default is to anonymise.

@@ -89,6 +89,8 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `distribution` — Part 17 distributions and dividends
 - `audit` — accounts and audit (Part 16)
 - `takeover` — Part 18 takeovers and squeeze-out / sell-out
+- `takeovers-panel` — Companies (Takeovers and Mergers Panel) (Jersey)
+  Law 2009 and the Jersey Panel
 - `scheme-of-arrangement` — Part 18A compromises and arrangements
 - `merger` — Part 18B statutory merger
 - `demerger` — Part 18BA demerger
@@ -98,6 +100,10 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `fraudulent-trading` — Article 178 fraudulent-trading liability
 - `treasury-shares` — Article 58A treasury shares
 - `financial-assistance` — Article 58 abolition of the rule
+- `aim-listed-group` — files relevant to AIM-listed Jersey-incorporated
+  plcs (operating reality, governance, disclosure cadence)
+- `listed-company-governance` — listed-issuer governance topics that
+  cross the Jersey-incorporation / market-rules boundary
 
 ## Tax-specific concepts
 
@@ -149,9 +155,28 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `uk-tax` — UK tax interaction
 - `uk-iht` — UK inheritance tax interaction
 - `uk-cgt` — UK capital gains tax interaction
+- `uk-non-dom` — UK non-domiciled / FIG regime interaction
+- `uk-carry-reform` — UK carried-interest reform (2026)
 - `crs` — Common Reporting Standard
+- `carf` — Crypto-Asset Reporting Framework
 - `fatca` — US FATCA Model 1 IGA
 - `dac6` — EU DAC6 (cross-border reporting)
+
+## External rule-sets (bridge-file canonical tags)
+
+These tag bridge-files only — files that document interaction points
+between Jersey-law facts and external rule-sets the corpus does not
+wikify.
+
+- `uk-takeover-code` — UK Panel on Takeovers and Mergers Code (the City
+  Code) applied to Jersey-incorporated companies
+- `aim-rules` — London Stock Exchange AIM Rules for Companies / for
+  Nominated Advisers
+- `mar` — EU/UK Market Abuse Regulation
+- `qca-code` — Quoted Companies Alliance Corporate Governance Code
+- `uk-corporate-governance-code` — UK Corporate Governance Code
+- `fca-handbook` — UK Financial Conduct Authority Handbook touchpoints
+- `dtr` — UK Disclosure Guidance and Transparency Rules
 
 ## Regulatory framework
 
@@ -162,14 +187,31 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `general-insurance-mediation` — GIMB regulated activity class
 - `money-services-business` — MSB regulated activity class
 - `banking-business` — Banking Business (Jersey) Law 1991 activity class
+- `deposit-taking-business` — deposit-taking business (the conduct-level
+  framing the JFSC uses in the current Deposit-taking Business Code)
 - `insurance-business` — Insurance Business (Jersey) Law 1996 activity
+- `certified-funds` — certified-fund classification under the Certified
+  Funds Code of Practice
+- `alternative-investment-funds` — Jersey AIF regime / AIF Code of
+  Practice
 - `fit-and-proper` — JFSC fit-and-proper test
 - `principal-persons` — JFSC principal-person / key-person regime
 - `outsourcing` — JFSC outsourcing rules
+- `change-of-control` — JFSC shareholder-controller / change-of-control
+  approval regime
 - `aml-handbook` — JFSC AML/CFT Handbook
+- `code-of-practice` — file is primarily about a JFSC Code of Practice
+- `jfsc-soft-law` — JFSC thematic reviews, public statements,
+  enforcement notices, industry updates, DG speeches
+- `suitability` — investment-suitability obligations under the Codes
+- `conduct-of-business` — conduct-of-business standards under the Codes
 - `sanctions` — sanctions and asset-freezing rules
 - `sar` — suspicious-activity reporting
 - `cdd` — customer due diligence
+- `edd` — enhanced due diligence
+- `pep` — politically exposed persons handling
+- `source-of-funds` — source-of-funds verification
+- `source-of-wealth` — source-of-wealth verification
 - `moneyval` — Moneyval evaluation
 
 ## Document type
@@ -178,6 +220,22 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `articles-index` — per-statute Article enumeration
 - `concept-file` — concept-driven content file
 - `use-case` — persona-driven question file
+- `client-cohort` — cohort-driven file describing the home-jurisdiction
+  tax / structuring context for a client cohort (UK non-dom, UAE expat,
+  etc.) — sibling to `use-case` (persona-driven) but cohort-driven
+- `decision-surface` — cross-cutting decision aid (trigger-event map,
+  comparator, decision tree) that does not fit one-concept-per-file —
+  see `CONVENTIONS.md` for the shape rules
+- `trigger-event` — file describing an event (regulatory change, life
+  event, transactional event) that should trigger a structuring or
+  advisory conversation
+- `bridge-file` — short file that documents the interaction points
+  between Jersey-law facts and an external rule-set the corpus does
+  not wikify (AIM Rules, UK Takeover Code, MAR, FCA Handbook, etc.)
+- `service-tier` — file describing a standardised product / service
+  tier for a defined client segment
+- `worked-example` — stylised, anonymised worked example (per the
+  tenant-neutrality rule in `CONVENTIONS.md`)
 - `glossary` — defined-term file
 - `changelog` — change log
 - `sources` — canonical sources list
@@ -219,6 +277,29 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `founder` — entrepreneur / pre-IPO planner
 - `journalist` — research / public-interest user
 - `legal-counsel` — general legal counsel (Jersey or foreign)
+- `wealth-rm` — relationship manager in a wealth-management business
+  (international or domestic)
+- `wealth-group-chair` — chair / board-member of a wealth-management
+  group (often AIM-listed Jersey-incorporated)
+- `corporate-finance-adviser` — NOMAD / broker / M&A adviser at a
+  corporate-finance house
+- `cco` — chief compliance officer / head of compliance at a regulated
+  business
+- `m-and-a-counsel` — M&A counsel (buy-side or sell-side) acting on
+  Jersey-touching transactions
+
+## Cross-cutting relevance markers
+
+These are *audience* hints rather than subject tags — applied so an
+agent serving a particular persona can surface the file even when the
+file's subject is doctrinal.
+
+- `wealth-manager-relevance` — file is materially relevant to a
+  wealth-management business (RMs, advisers, CCOs, chair)
+- `corporate-finance-relevance` — file is materially relevant to a
+  corporate-finance / capital-markets desk
+- `m-and-a-relevance` — file is materially relevant to acquirers,
+  targets, or counsel on Jersey-touching M&A
 
 ## Source-specific (where the file's authority comes from)
 
