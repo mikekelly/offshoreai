@@ -49,6 +49,10 @@ export interface RunQueryResult {
     readonly appendBytes: number;
     readonly appendSha256: string;
   };
+  /** SDK session_id from the result envelope. Lets a developer inspect
+   *  the full Claude Code JSONL transcript at
+   *  ~/.claude/projects/<encoded-cwd>/<sessionId>.jsonl. */
+  readonly sessionId?: string;
 }
 
 export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
@@ -81,6 +85,7 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
   let answer = "";
   let turns = 0;
   let costUsd = 0;
+  let sessionId: string | undefined;
   let usage = {
     inputTokens: 0,
     outputTokens: 0,
@@ -115,6 +120,7 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     } else if (msg.type === "result") {
       const r = msg as {
         subtype?: string;
+        session_id?: string;
         num_turns?: number;
         total_cost_usd?: number;
         usage?: {
@@ -133,6 +139,7 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
         cacheCreationInputTokens: r.usage?.cache_creation_input_tokens ?? 0,
         cacheReadInputTokens: r.usage?.cache_read_input_tokens ?? 0,
       };
+      if (r.session_id) sessionId = r.session_id;
       // The final result text is also exposed on the result envelope.
       if (r.result && !answer) answer = r.result;
     }
@@ -160,6 +167,7 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
       appendBytes: composed.bytes,
       appendSha256: composed.sha256,
     },
+    ...(sessionId ? { sessionId } : {}),
     ...(verifierVerdict ? { verifierVerdict } : {}),
   };
 }

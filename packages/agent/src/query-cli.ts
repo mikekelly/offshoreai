@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 // Engineer-facing CLI: pnpm --filter @offshoreai/agent query -- --question "..."
 //
+// Minimal dispatch surface — kicks off the SDK custom agent, writes
+// answer.md + trajectory.json (with session_id + system-prompt
+// provenance + token usage) to --output-dir, returns. Does NOT grade
+// or verify — those responsibilities live in the
+// .claude/agents/eval-manager.md subagent invoked via /run-evals.
+//
 // Per AGENT-PRINCIPLES Principle 21 this is an engineer-facing dev CLI,
 // not an agent-facing surface. The agent itself uses the typed
 // in-process MCP tools registered by createCorpusToolsServer.
@@ -17,6 +23,7 @@ interface CliArgs {
   evalMode: boolean;
   outputDir: string | null;
   questionId: string | null;
+  evalSuite: string | null;
   tagIndexPath: string | undefined;
 }
 
@@ -25,6 +32,7 @@ function parseArgs(argv: string[]): CliArgs {
   let evalMode = false;
   let outputDir: string | null = null;
   let questionId: string | null = null;
+  let evalSuite: string | null = null;
   let tagIndexPath: string | undefined = "packages/build/dist/tag-index.json";
 
   for (let i = 0; i < argv.length; i++) {
@@ -33,6 +41,7 @@ function parseArgs(argv: string[]): CliArgs {
     else if (a === "--eval") evalMode = true;
     else if (a === "--output-dir") outputDir = argv[++i] ?? null;
     else if (a === "--question-id") questionId = argv[++i] ?? null;
+    else if (a === "--eval-suite") evalSuite = argv[++i] ?? null;
     else if (a === "--no-tag-index") tagIndexPath = undefined;
     else if (a === "--tag-index") tagIndexPath = argv[++i];
     else if (a === "--help" || a === "-h") printHelp(0);
@@ -44,20 +53,30 @@ function parseArgs(argv: string[]): CliArgs {
     console.error("Missing --question.");
     printHelp(1);
   }
-  return { question, evalMode, outputDir, questionId, tagIndexPath };
+  return { question, evalMode, outputDir, questionId, evalSuite, tagIndexPath };
 }
 
 function printHelp(exit: number): never {
   console.log(`offshoreai-agent query — engineer-facing dev CLI
 
+Kicks off the SDK custom agent for one question. Writes answer +
+trajectory metadata when --output-dir given. Does NOT grade or
+verify — that's the eval-manager subagent's job (invoked via
+/run-evals).
+
 Usage:
   pnpm --filter @offshoreai/agent query -- --question "What is voisinage?"
-  pnpm --filter @offshoreai/agent query -- --eval --question-id show-voisinage --output-dir evals/baselines/<date> --question "..."
+  pnpm --filter @offshoreai/agent query -- \\
+    --question-id sd-aml-001 \\
+    --eval-suite evals/coverage-questions.yaml \\
+    --output-dir /tmp/eval-out/ \\
+    --question "..."
 
 Options:
   -q, --question <text>     The question to ask
       --eval                Prepend eval-mode framing to the question
       --question-id <id>    Required when --output-dir given; names the trajectory/answer files
+      --eval-suite <path>   Recorded in trajectory.evalSuite for provenance
       --output-dir <path>   Persist <id>.answer.md + <id>.trajectory.json
       --tag-index <path>    Compiled tag-index.json path (default: packages/build/dist/tag-index.json)
       --no-tag-index        Run without a precompiled tag-index
@@ -89,6 +108,9 @@ console.log(`cache creation tokens: ${result.usage.cacheCreationInputTokens}`);
 console.log(`cache read tokens:    ${result.usage.cacheReadInputTokens}`);
 console.log(`wall clock:           ${wallClockSeconds.toFixed(2)}s`);
 console.log(`cost (USD):           ${result.costUsd.toFixed(6)}`);
+if (result.sessionId) {
+  console.log(`session id:           ${result.sessionId}`);
+}
 if (result.toolCalls.length > 0) {
   console.log("\ntool call sequence:");
   result.toolCalls.forEach((c, i) => console.log(`  ${i + 1}. ${c.name}  ${c.inputDigest}`));
@@ -101,7 +123,7 @@ if (args.outputDir && args.questionId) {
   const traj = {
     schemaVersion: "eval_trajectory_v1",
     questionId: args.questionId,
-    evalSuite: "evals/showcase.yaml",
+    evalSuite: args.evalSuite ?? "(direct-invocation; no eval suite)",
     harness: "offshoreai-agent",
     ranAt: new Date().toISOString(),
     wallClockSeconds,
@@ -127,12 +149,14 @@ if (args.outputDir && args.questionId) {
     },
     answer: {
       text: result.answer,
-      wordCount: result.answer.trim().split(/\s+/).length,
+      wordCount: result.answer.trim().split(/\s+/).filter(Boolean).length,
     },
     errors: [],
     meta: {
       sdkVersion: "0.3.143",
       trajectoryQuality: "approximate-cited-paths-not-extracted",
+      systemPrompt: result.systemPrompt,
+      ...(result.sessionId ? { sessionId: result.sessionId } : {}),
     },
   };
   await writeFile(

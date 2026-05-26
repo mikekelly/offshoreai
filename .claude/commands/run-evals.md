@@ -1,0 +1,101 @@
+---
+description: Run a batch of eval questions through the offshoreai SDK custom agent and aggregate verdicts. Each question runs in parallel via an `eval-manager` subagent that dispatches the candidate, verifies, grades, optionally evolves the rubric, and writes verdict.yaml.
+argument-hint: --suite <path> --ids <id1,id2,...> [--output <dir>]
+---
+
+You are running `/run-evals`. The args (from `$ARGUMENTS`):
+
+```
+$ARGUMENTS
+```
+
+## What you do
+
+1. **Parse the args.**
+   - `--suite <path>` — repo-relative path to an eval suite YAML (e.g. `evals/coverage-questions.yaml`)
+   - `--ids <id1,id2,...>` — comma-separated question IDs to run (no spaces). Required for now; future iterations may add `--smoke`, `--section <name>` shortcuts.
+   - `--output <dir>` — output directory for artifacts (default: `evals/baselines/<YYYY-MM-DD>-<suite-basename>-<random-4>/`)
+
+   If args are missing, print the usage and stop.
+
+2. **Validate the suite and IDs.**
+   - `Read` the suite YAML. Confirm each requested ID exists in its `questions:` array.
+   - If any ID is missing, list which and stop without running anything (don't run a partial batch).
+
+3. **Create the output directory.**
+   - `mkdir -p` the resolved output path.
+   - Resolve the worktree's repo root (the directory you're running in is the worktree root).
+
+4. **Spawn eval-manager subagents in parallel.**
+   - Use the **Agent tool** to spawn one `eval-manager` subagent per question ID. **Send all of them in a single message with multiple Agent tool calls** so they run concurrently.
+   - The Agent tool's `description` should be `Eval <question_id>`.
+   - The `prompt` for each subagent should include:
+     - `question_id`
+     - `eval_suite_path` (the `--suite` arg, repo-relative)
+     - `output_dir` (the resolved output directory, repo-relative)
+     - `repo_root` (the absolute path to the worktree root)
+   - **Batch size cap**: 8 subagents per parallel batch. If more than 8 IDs were requested, run in waves of 8.
+
+5. **Wait for all subagents to complete.**
+   - Each subagent's return message will be a one-line status (per the `eval-manager` spec) and will have written `<output_dir>/<question_id>.verdict.yaml` to disk.
+
+6. **Aggregate verdicts.**
+   - `Read` each `<output_dir>/<question_id>.verdict.yaml`.
+   - Compute totals: `pass`, `partial`, `fail`.
+   - Compute median wall-clock seconds across the runs (from each `<id>.trajectory.json`).
+   - Sum `usage.totalCostUsd` from each trajectory for total candidate cost.
+   - Collect any `stretchPromotions` across questions — these are the rubric edits made this run.
+
+7. **Write the batch summary.**
+   - `Write` `<output_dir>/summary.yaml`:
+
+```yaml
+schemaVersion: eval_batch_summary_v2
+run:
+  command: /run-evals
+  suite: <suite path>
+  ids: [<id1>, <id2>, ...]
+  ranAt: <ISO timestamp>
+  questions: <count>
+totals:
+  pass: <n>
+  partial: <n>
+  fail: <n>
+dimensionAggregates:
+  citationPrecisionPassRate: <0..1>
+  jerseySpecificPassRate: <0..1>
+  substancePassRate: <0..1>
+  medianWallClockSeconds: <float>
+  totalCostUsd: <float; candidate-only — manager subagents are subscription-billed>
+  meanHallucinatedCitationsPerAnswer: <float>
+rubricEvolution:
+  stretchPromotionsByQuestion:
+    <question_id>: [<promoted fact 1>, <promoted fact 2>]
+    # only includes questions that had promotions
+perQuestion:
+  - id: <question_id>
+    verdict: <pass | partial | fail>
+    factsCovered: <n>
+    factsExpected: <n>
+    hallucinatedCitations: <n>
+    summary: <pull-quote from the verdict>
+```
+
+8. **Report to the user.**
+   - Single message with:
+     - A one-line headline: `<pass>/<partial>/<fail> over <total>. Cost $<x.xx>. <stretchPromotions count> rubric promotions.`
+     - A markdown table: question ID | verdict | facts | summary
+     - Path to `<output_dir>/` for full artifacts
+   - If any question failed or partial, surface the per-question `summary` so the user has the signal immediately rather than having to read the YAML.
+
+## Discipline
+
+- **Don't grade the questions yourself.** Spawn the `eval-manager` subagent for each — that's its job. You orchestrate; it evaluates.
+- **Don't modify the eval YAML yourself.** The `eval-manager` subagent has the scoped permission to append to `stretch_facts`; the orchestrator does not modify the rubric.
+- **Don't bail on partial failures.** If 7 questions complete and 1 errors, write summary.yaml with what you have and report the error explicitly. Don't lose the 7 completed verdicts.
+- **Parallelism matters.** A single message with N Agent tool calls is much faster than N sequential messages. Do batch-up-to-8.
+- **Don't run the full suite without explicit request.** Routine smoke uses the `smoke: true`-flagged subset. Full suite is opt-in via explicit `--ids` listing.
+
+## After the report
+
+If verdicts look clean, suggest the user `git add -A && git commit` the output directory and any rubric edits the eval-manager made. If verdicts have regressions, surface them — don't auto-commit.
