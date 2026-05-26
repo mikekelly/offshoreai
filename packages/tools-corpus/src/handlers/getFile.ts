@@ -1,13 +1,17 @@
 // corpus.getFile — read one corpus file's body + frontmatter.
 //
 // Per PRD §7.1 / schemas/corpus.ts getFileDescription. v1 implementation:
-// - Truncate to 120 lines by default with a size hint.
+// - Returns the whole file body. Corpus files are kept short by
+//   editorial discipline (one concept per file), so partial reads
+//   would just push the agent toward sampling — exactly what the
+//   one-concept-per-file design is meant to avoid.
 // - Project a minimal frontmatter (path, status, lastVerified, tags) by
 //   default; opt-in to additional fields via `fields`.
 // - Refuse on missing file; warn on stub.
 // - Optional depth and parentContext params follow the inclusion-link
 //   graph (per CONVENTIONS.md "Inclusion links — the third navigation
-//   axis").
+//   axis"). Walked files also return whole bodies — the agent asked
+//   for the context, it gets the context.
 
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -20,14 +24,8 @@ import { ageDaysBetween, getLastVerified, getStatus, getTags, getTitle } from ".
 import { errorResult, successResult } from "../error-envelope.js";
 import { help, raw, scalar, table, toon, type ToonLine } from "../toon.js";
 
-const DEFAULT_LINE_BUDGET = 120;
-// Included files (parents/children) are truncated to a tighter budget
-// — they're context, not the primary read.
-const INCLUDED_LINE_BUDGET = 40;
-
 const inputShape = {
   path: z.string().describe("Repo-relative markdown path, e.g. knowledge/jersey/trusts/article-47-set-aside.md."),
-  full: z.boolean().default(false).describe("If true, return the entire file; default returns the first ~120 lines with a truncation hint."),
   fields: z.array(z.enum(["title", "tags", "sources", "articlesCovered", "seeAlso"])).optional().describe("Opt-in extra frontmatter fields. Default projection: path, status, lastVerified, tags."),
   depth: z.number().int().min(0).max(3).default(0).describe("Follow inclusion links N levels into children (per CONVENTIONS.md). 0 returns only the requested file. 1 also returns the bodies of its structural children. Capped at 3."),
   parentContext: z.number().int().min(0).max(2).default(0).describe("Include N levels of structural parents (files that include this one via a bare-line inclusion link). 0 omits parents (default). Capped at 2."),
@@ -37,15 +35,11 @@ interface IncludedFile {
   path: string;
   level: number; // depth from origin (positive for children, positive for parents — context distinguishes)
   body: string;
-  truncated: boolean;
   totalLines: number;
 }
 
-function truncateBody(body: string, budget: number, full: boolean): { body: string; truncated: boolean; totalLines: number } {
-  const allLines = body.split(/\r?\n/);
-  const totalLines = allLines.length;
-  if (full || totalLines <= budget) return { body, truncated: false, totalLines };
-  return { body: allLines.slice(0, budget).join("\n"), truncated: true, totalLines };
+function countLines(body: string): number {
+  return body.split(/\r?\n/).length;
 }
 
 async function readBody(ctx: CorpusContext, path: string): Promise<string | null> {
@@ -78,8 +72,7 @@ async function walkChildren(
         visited.add(childPath);
         const body = await readBody(ctx, childPath);
         if (body === null) continue;
-        const { body: rendered, truncated, totalLines } = truncateBody(body, INCLUDED_LINE_BUDGET, false);
-        out.push({ path: childPath, level: cur.depth + 1, body: rendered, truncated, totalLines });
+        out.push({ path: childPath, level: cur.depth + 1, body, totalLines: countLines(body) });
         next.push({ path: childPath, depth: cur.depth + 1 });
       }
     }
@@ -107,8 +100,7 @@ async function walkParents(
         visited.add(parentPath);
         const body = await readBody(ctx, parentPath);
         if (body === null) continue;
-        const { body: rendered, truncated, totalLines } = truncateBody(body, INCLUDED_LINE_BUDGET, false);
-        out.push({ path: parentPath, level: cur.level + 1, body: rendered, truncated, totalLines });
+        out.push({ path: parentPath, level: cur.level + 1, body, totalLines: countLines(body) });
         next.push({ path: parentPath, level: cur.level + 1 });
       }
     }
@@ -161,7 +153,7 @@ export function makeGetFileTool(ctx: CorpusContext) {
         });
       }
 
-      const { body: renderedBody, truncated, totalLines } = truncateBody(body, DEFAULT_LINE_BUDGET, args.full);
+      const totalLines = countLines(body);
 
       const lastVerified = getLastVerified(rec);
       const ageDays = ageDaysBetween(lastVerified, new Date());
@@ -192,13 +184,9 @@ export function makeGetFileTool(ctx: CorpusContext) {
         lines.push(table("sources", ["title", "url", "kind"] as const, sources));
       }
 
-      lines.push(scalar("body_truncated", truncated));
       lines.push(scalar("total_lines", totalLines));
       lines.push(scalar("body", "")); // separator marker before raw body block
-      lines.push(raw(renderedBody));
-      if (truncated) {
-        lines.push(raw(`\n(truncated at ${DEFAULT_LINE_BUDGET} of ${totalLines} lines — call again with full=true to see the rest)`));
-      }
+      lines.push(raw(body));
 
       if (args.depth > 0) {
         const children = await walkChildren(ctx, args.path, args.depth);
@@ -206,15 +194,12 @@ export function makeGetFileTool(ctx: CorpusContext) {
         if (children.length > 0) {
           lines.push(table(
             "included_children",
-            ["path", "depth", "lines", "truncated"] as const,
-            children.map((c) => ({ path: c.path, depth: c.level, lines: c.totalLines, truncated: c.truncated })),
+            ["path", "depth", "lines"] as const,
+            children.map((c) => ({ path: c.path, depth: c.level, lines: c.totalLines })),
           ));
           for (const child of children) {
             lines.push(raw(`\n--- child path=${child.path} depth=${child.level} ---`));
             lines.push(raw(child.body));
-            if (child.truncated) {
-              lines.push(raw(`\n(truncated at ${INCLUDED_LINE_BUDGET} of ${child.totalLines} lines)`));
-            }
           }
         }
       }
@@ -225,15 +210,12 @@ export function makeGetFileTool(ctx: CorpusContext) {
         if (parents.length > 0) {
           lines.push(table(
             "included_parents",
-            ["path", "level", "lines", "truncated"] as const,
-            parents.map((p) => ({ path: p.path, level: p.level, lines: p.totalLines, truncated: p.truncated })),
+            ["path", "level", "lines"] as const,
+            parents.map((p) => ({ path: p.path, level: p.level, lines: p.totalLines })),
           ));
           for (const parent of parents) {
             lines.push(raw(`\n--- parent path=${parent.path} level=${parent.level} ---`));
             lines.push(raw(parent.body));
-            if (parent.truncated) {
-              lines.push(raw(`\n(truncated at ${INCLUDED_LINE_BUDGET} of ${parent.totalLines} lines)`));
-            }
           }
         }
       }

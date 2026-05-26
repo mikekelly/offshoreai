@@ -115,7 +115,7 @@ describe("getFile", () => {
   it("returns body + frontmatter projection", async () => {
     const ctx = await makeCtx();
     const t = makeGetFileTool(ctx);
-    const result = await t.handler({ path: "knowledge/jersey/trusts/firewall.md", full: false, fields: undefined }, {});
+    const result = await t.handler({ path: "knowledge/jersey/trusts/firewall.md", fields: undefined }, {});
     expect(result.isError).toBeFalsy();
     const text = result.content[0].text;
     expect(text).toContain("path: knowledge/jersey/trusts/firewall.md");
@@ -126,7 +126,7 @@ describe("getFile", () => {
   it("refuses on stub", async () => {
     const ctx = await makeCtx();
     const t = makeGetFileTool(ctx);
-    const result = await t.handler({ path: "knowledge/jersey/trusts/stub.md", full: false, fields: undefined }, {});
+    const result = await t.handler({ path: "knowledge/jersey/trusts/stub.md", fields: undefined }, {});
     expect(result.isError).toBe(true);
     expect(result.content[0].text).toContain("error_kind: stub_file");
   });
@@ -134,7 +134,7 @@ describe("getFile", () => {
   it("errors on missing path", async () => {
     const ctx = await makeCtx();
     const t = makeGetFileTool(ctx);
-    const result = await t.handler({ path: "knowledge/jersey/nope.md", full: false, fields: undefined }, {});
+    const result = await t.handler({ path: "knowledge/jersey/nope.md", fields: undefined }, {});
     expect(result.isError).toBe(true);
     expect(result.content[0].text).toContain("error_kind: missing_file");
   });
@@ -338,7 +338,7 @@ describe("getFile with inclusion-graph params", () => {
     const ctx = await makeInclusionCtx();
     const t = makeGetFileTool(ctx);
     const result = await t.handler(
-      { path: "knowledge/jersey/trusts/index.md", full: false, fields: undefined, depth: 0, parentContext: 0 },
+      { path: "knowledge/jersey/trusts/index.md", fields: undefined, depth: 0, parentContext: 0 },
       {},
     );
     expect(result.isError).toBeFalsy();
@@ -351,7 +351,7 @@ describe("getFile with inclusion-graph params", () => {
     const ctx = await makeInclusionCtx();
     const t = makeGetFileTool(ctx);
     const result = await t.handler(
-      { path: "knowledge/jersey/trusts/index.md", full: false, fields: undefined, depth: 1, parentContext: 0 },
+      { path: "knowledge/jersey/trusts/index.md", fields: undefined, depth: 1, parentContext: 0 },
       {},
     );
     expect(result.isError).toBeFalsy();
@@ -365,7 +365,7 @@ describe("getFile with inclusion-graph params", () => {
     const ctx = await makeInclusionCtx();
     const t = makeGetFileTool(ctx);
     const result = await t.handler(
-      { path: "knowledge/jersey/trusts/firewall.md", full: false, fields: undefined, depth: 0, parentContext: 1 },
+      { path: "knowledge/jersey/trusts/firewall.md", fields: undefined, depth: 0, parentContext: 1 },
       {},
     );
     expect(result.isError).toBeFalsy();
@@ -378,7 +378,7 @@ describe("getFile with inclusion-graph params", () => {
     const ctx = await makeInclusionCtx();
     const t = makeGetFileTool(ctx);
     const result = await t.handler(
-      { path: "knowledge/jersey/trusts/firewall.md", full: false, fields: undefined, depth: 0, parentContext: 2 },
+      { path: "knowledge/jersey/trusts/firewall.md", fields: undefined, depth: 0, parentContext: 2 },
       {},
     );
     expect(result.isError).toBeFalsy();

@@ -1,5 +1,5 @@
-// Build the runtime-time tag taxonomy block that gets appended to the
-// baseline system prompt.
+// Build the runtime tag taxonomy block that gets appended to
+// prompts/system.md when the agent is composed in runtime.ts.
 //
 // Why this exists: tags are a primary entry point to the corpus, but
 // the agent has no way to discover the closed taxonomy without help.
@@ -46,10 +46,9 @@ export async function buildTaxonomyBlock(repoRoot: string, tagIndexPath: string)
 
 These are every tag that appears in the corpus's frontmatter, sorted by
 file count. Use \`findByTag\` with these names exactly — they are the
-only tags the inverted index will match. The canonical taxonomy spec
-lives in TAGS.md (transcluded above via CLAUDE.md); the difference
-between this list and TAGS.md is editorial drift the editorial team is
-working down.
+only tags the inverted index will match. For one-line descriptions per
+tag, read \`TAGS.md\` directly via \`getFile\` — it is the canonical
+taxonomy spec.
 
 Use \`findByTag\` rather than Bash grep for tag-shaped queries. If your
 first guess returns invalid_tag, scan this list (Ctrl-F mentally) for

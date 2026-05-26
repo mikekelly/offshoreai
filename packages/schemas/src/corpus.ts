@@ -29,7 +29,6 @@ import {
 
 export const getFileInput = z.object({
   path: filePath.describe("Repo-relative markdown path, e.g. knowledge/jersey/trusts/article-47-set-aside.md."),
-  full: z.boolean().default(false).describe("If true, return the entire file; default returns the first ~120 lines with a truncation hint."),
   fields: z.array(z.enum(["title", "tags", "sources", "articlesCovered", "seeAlso"])).optional()
     .describe("Opt-in extra frontmatter fields. Defaults to a minimal projection: path, status, lastVerified, tags."),
   depth: z.number().int().min(0).max(3).default(0)
@@ -45,7 +44,6 @@ export const getFileResult = z.object({
   ageDays: z.number().int().nonnegative(),
   frontmatter: frontmatter.partial(),
   body: z.string(),
-  bodyTruncated: z.boolean(),
   totalLines: z.number().int().nonnegative(),
   totalTokensEstimate: z.number().int().nonnegative(),
   /** Files returned via the depth parameter (structural children). */
@@ -81,9 +79,10 @@ neighbours to discover related concepts via see_also and tag overlap.
 Pairs with primarySource.fetch — when freshnessCheck reports stale,
 fetch the primary source for the live text.
 
-Returns: the file body (truncated at ~120 lines by default with a
-size hint; pass full=true for the whole file) plus minimal
-frontmatter. Read the body to ground your claim; cite the path in
+Returns: the whole file body plus minimal frontmatter. Corpus files
+are kept short by editorial discipline (one concept per file), so the
+whole body is the intended retrieval unit — do not try to economise
+against this. Read the body to ground your claim; cite the path in
 your response; if the frontmatter status is "stub" or "draft", flag
 the lower authority to the user.
 
@@ -580,7 +579,7 @@ export const getBundleResult = z.object({
     lastVerified: isoDate,
     ageDays: z.number().int().nonnegative(),
     verdict: freshnessVerdict,
-    bodyExcerpt: z.string(),
+    body: z.string(),
   })),
   requiredArticles: z.array(z.object({
     statute: statuteSlug,
@@ -602,8 +601,8 @@ export type GetBundleResultType = z.infer<typeof getBundleResult>;
 
 export const getBundleDescription = `
 Load the pre-compiled retrieval contract for a (persona, task) pair —
-the bundle YAML plus the body excerpts of every required file plus
-the freshness verdict for each file plus the resolved tag-neighbours,
+the bundle YAML plus the bodies of every required file plus the
+freshness verdict for each file plus the resolved tag-neighbours,
 all in one envelope. This is the AXI pre-computed-aggregate pattern
 applied to our retrieval contract: one tool call replaces what
 would otherwise be ~12 separate getFile + freshnessCheck +
@@ -628,7 +627,7 @@ one call. Pairs with bundle-assembler at SessionStart. Pairs with
 the citation-verifier sub-agent — the verifier re-reads the
 bundle's required files when checking claims.
 
-Returns: required files (with body excerpts), required articles,
+Returns: required files (with full bodies), required articles,
 related tags + neighbours, the citation pattern the answer should
 follow, and the refusal rules (refuse if any required file is
 stub, warn on draft, etc.). Treat the bundle as your default
