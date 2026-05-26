@@ -1,0 +1,41 @@
+schemaVersion: eval_verdict_v2
+questionId: show-trusts-firewall
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/trusts/firewall.md
+    supportsClaim: true
+    notes: "Canonical Article 9 concept file; every claim about paragraphs (1), (2), (2A), (3), (3A), (4) traceable to the file. Draft status; candidate flagged it."
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 9(2A) savings: cannot turn theft into title, cannot override lex situs for foreign real estate, cannot cure invalid will"
+  - "Article 9(3A) anti-renvoi: Jersey conflict-of-laws rules (other than Article 9 itself) disapplied, so renvoi cannot bounce question back to foreign law"
+  - "Article 9(4) strong-form firewall: foreign judgments inconsistent with Article 9 unenforceable in Jersey"
+  - "Article 9 disapplies the Jersey customary rule donner et retenir ne vaut within the trust context, complementing Article 9A reserved powers"
+  - "Practitioner drafting: layer parallel substantive lifetime planning in the forced-heirship jurisdiction (e.g. notarial pacte de famille) rather than relying on firewall alone"
+summary: |
+  PASS. The candidate produced a paragraph-by-paragraph statutory walkthrough
+  of Article 9 (paragraphs (1), (2), (2A), (3), (3A), (4)), correctly named
+  the Trusts (Amendment No. 4) (Jersey) Law 2006 as the source of the modern
+  firewall language, and gave concrete forced-heirship examples (French
+  réserve, Italian legittima, German Pflichtteilsergänzung, Sharia). The one
+  missed expected fact is Royal Court anti-suit injunctions — the answer
+  covers Article 9(4) unenforceability of foreign judgments but does not
+  reach the anti-suit-injunction tool. Citation recall is thinner than the
+  prior baseline (single file vs. six in the 2026-05-19 run); promoting
+  Article 9A / articles-index / Crociani citations would lift recall to
+  pass. Freshness handling was exemplary — the draft status of the cited
+  file was explicitly surfaced.
+errors: []

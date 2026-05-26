@@ -1,0 +1,54 @@
+schemaVersion: eval_verdict_v2
+questionId: show-voisinage
+harness: offshoreai-agent
+ranAt: 2026-05-26T15:18:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/voisinage.md
+    supportsClaim: true
+    notes: |
+      Verified — file exists and directly supports every claim in the
+      answer: Norman customary origin (lines 29-34), Pothier / Le Geyt
+      foundation (line 46), distinction from English nuisance (lines
+      39-40, 70-84), objective test / fault not required (line 80),
+      Royal Court jurisdiction (lines 38, 109), planning-consent
+      non-displacement (line 150), defences catalogue (lines 99-105),
+      remedies (lines 109-114), practical procedure (lines 164-174,
+      185-192). File is marked status:draft, which the candidate
+      explicitly surfaces.
+stretchPromotions: []
+stretchSuggestions:
+  - "Planning permission does not by itself displace voisinage — a
+    distinction sometimes assumed away in cross-border analogy with
+    English nuisance."
+  - "Voisinage does not override valid servitudes, but excessive use
+    of a servitude may still breach voisinage."
+  - "Mediation is the conventional first step before Order of Justice
+    in the Royal Court."
+summary: |
+  PASS on every dimension. The answer covers all five substance
+  points (Norman customary doctrine, Pothier / Le Geyt foundation,
+  distinction from English nuisance, objective test of unreasonable
+  harm, Royal Court jurisdiction) and lands the Jersey-advocate
+  voice the rubric asks for. Most-load-bearing observation: the
+  candidate proactively surfaces the status:draft flag and
+  separately warns that the file does not enumerate specific Jersey
+  cases — a strong example of the freshness-handling discipline. The
+  one bar this run does not stretch is multi-file citation: a single
+  cited file is sufficient for this concept-driven question, but a
+  follow-up could verify whether ../legal-system/customary-law.md
+  or ../contract/delit-tort.md would have added depth without
+  noise. No stretch_facts field on this showcase entry, so no
+  promotions land.
+errors: []
