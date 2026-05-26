@@ -57,6 +57,22 @@ Jersey introduced the **Multinational Corporate Income Tax
   out-of-scope groups (smaller groups continue at 0%);
 - **Aligned** with OECD GloBE rules.
 
+### Which OECD Pillar Two mechanisms Jersey adopted
+
+Of the three OECD Pillar Two mechanisms, Jersey adopted **two**:
+
+| OECD mechanism | What it does | **Jersey adopted?** |
+|---|---|---|
+| **Qualified Domestic Minimum Top-up Tax (QDMTT)** — implemented in Jersey as the Domestic Top-up Tax (DTT) within MCIT | Low-tax jurisdiction collects its own top-up first, before any other jurisdiction can | **Yes** — this is the heart of MCIT |
+| **Qualified Income Inclusion Rule (IIR)** | Parent jurisdiction collects top-up on its low-taxed subsidiaries elsewhere | **Yes** — Jersey applies IIR where a Jersey parent has low-taxed foreign subsidiaries |
+| **Undertaxed Profits Rule (UTPR)** | Residual / backstop rule allocating top-up to other group jurisdictions when IIR doesn't reach | **No** — not implemented |
+
+So MCIT is **QDMTT (collected domestically as DTT) + IIR** — no
+UTPR. The same content appears in
+[`../tax/pillar-two.md`](../tax/pillar-two.md); included here
+because retrieval paths that land on this deeper file should not
+need a second hop to discover Jersey's adoption posture.
+
 ## How MCIT interacts with zero-ten
 
 | Group type | Tax treatment |

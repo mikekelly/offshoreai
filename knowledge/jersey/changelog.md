@@ -15,6 +15,30 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — `pillar-two-mcit.md` mirrors the adopted/not-adopted table
+
+Follow-up to the smoke partial signal observed twice in one day
+(morning SDK eval-runner smoke; afternoon /run-evals smoke): the
+candidate's retrieval path for Pillar Two questions consistently
+goes to `knowledge/jersey/international/pillar-two-mcit.md` (the
+deep file) rather than `knowledge/jersey/tax/pillar-two.md`
+(which carries the "what Jersey adopted / didn't adopt" table).
+The agent then misses the UTPR-not-adopted fact.
+
+Defence-in-depth fix: mirror the adopted/not-adopted table into
+the deep file under a new "Which OECD Pillar Two mechanisms
+Jersey adopted" sub-section, with a pointer back to
+`pillar-two.md` noting the duplication is deliberate (the fact
+should be reachable from either landing point without a second
+hop).
+
+The table makes Jersey's adoption posture explicit: QDMTT (as
+DTT) yes, IIR yes, UTPR no.
+
+Next /run-evals smoke should re-measure sm-tax-001 and confirm
+the partial → pass conversion. The corpus fix is now load-bearing
+for both retrieval paths.
+
 ## 2026-05-26 — `/run-evals` end-to-end smoke — 7/9 PASS, 4 stretch promotions
 
 First production-pattern invocation of `/run-evals` (no args =
