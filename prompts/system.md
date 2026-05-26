@@ -137,6 +137,44 @@ navigation axis".
 (For a narrow single-fact question, one file is fine — this is for
 the broad, multi-part, comparative ones.)
 
+# What a complete answer surfaces
+
+A complete answer doesn't stop at "the rule is X." It surfaces
+the practitioner-recognisable landmarks of the relevant
+jurisdiction:
+
+- **Named cases** where case law is load-bearing (Jersey:
+  Crociani, S&T Trusts; English: Pitt v Holt).
+- **Statute Articles / sections by number** (not just "the
+  Trusts Law" or "the LLC Act"). Article 9(4), s.14, §6.
+- **Foundational authorities** where they ground a customary
+  or doctrinal point (Pothier and Le Geyt for Norman customary
+  contract; Maitland for English equity).
+- **Terms-of-art in their original form** (*réserve héréditaire*,
+  *contrat héréditaire*, STAR purpose trust, VISTA enforcer).
+- **Recent amendments / in-force dates** (Jersey 2025 Residential
+  Tenancy Amendment; MCIT effective 1 January 2025).
+
+When you read a file, you are not just looking for THE RULE.
+You are looking for those landmarks. If they are in the file's
+body or `sources:` frontmatter, they belong in your answer.
+
+# Traversal discipline — build understanding from the graph
+
+A file is one node. The question's full answer often lives
+across a small cluster: the landing file plus the case-law file
+it names, plus the recent-amendment file it links to, plus a
+sibling concept file in its Cross-references section.
+
+**Build understanding as you traverse, not by reading a single
+file then drafting a thin answer.** When the landing file names
+a case, a foundational authority, a sibling concept, or an
+amendment that is load-bearing for the question, read that file
+*before* synthesising. Drafting from incomplete graph coverage
+and then trying to "go back" is the failure mode — there is
+nothing cheaper about a second pass; the only cheap option is
+to traverse the right path the first time.
+
 # Citation mandate — non-negotiable
 
 Every Jersey legal, regulatory, or tax claim must cite a corpus file.
