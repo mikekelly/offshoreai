@@ -7,7 +7,6 @@ import {
   createCorpusToolsServer,
 } from "@offshoreai/tools-corpus";
 import { composeSystemPrompt, SYSTEM_PROMPT_RELATIVE_PATH } from "./compose-system-prompt.js";
-import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
 
 export interface RunQueryOptions {
   /** The user's question. */
@@ -20,8 +19,6 @@ export interface RunQueryOptions {
   readonly maxTurns?: number;
   /** Toggle: append a one-line eval framing to the user prompt. Default false. */
   readonly evalMode?: boolean;
-  /** Toggle: run the citation-verifier on the final answer. Default false. */
-  readonly verify?: boolean;
 }
 
 export interface RunQueryResult {
@@ -40,8 +37,6 @@ export interface RunQueryResult {
     readonly inputDigest: string;
     readonly isError: boolean;
   }>;
-  /** Citation-verifier verdict if --verify was requested. */
-  readonly verifierVerdict?: VerifierVerdict;
   /** System prompt provenance — what the runtime composed and appended. */
   readonly systemPrompt: {
     readonly presetName: string;
@@ -145,15 +140,6 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     }
   }
 
-  let verifierVerdict: VerifierVerdict | undefined;
-  if (opts.verify && answer.trim().length > 0) {
-    verifierVerdict = await runCitationVerifier({
-      repoRoot: opts.repoRoot,
-      candidateAnswer: answer,
-      toolCallLog: toolCalls.map((c) => ({ name: c.name, inputDigest: c.inputDigest })),
-    });
-  }
-
   return {
     answer,
     turns,
@@ -168,6 +154,5 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
       appendSha256: composed.sha256,
     },
     ...(sessionId ? { sessionId } : {}),
-    ...(verifierVerdict ? { verifierVerdict } : {}),
   };
 }
