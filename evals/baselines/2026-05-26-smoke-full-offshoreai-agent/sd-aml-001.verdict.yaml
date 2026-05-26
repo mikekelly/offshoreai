@@ -1,0 +1,24 @@
+questionId: sd-aml-001
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: PASS. All four expected facts are present, correct, and
+  well-structured. The candidate accurately distinguished the subjective (Art
+  19) vs objective+subjective (Art 21) mental-element tests, correctly
+  identified the negligent-failure consequence of the objective limb, and
+  referenced Art 35 tipping off. The only blemish is that the inline hyperlink
+  for Art 35 points to terrorism-article-19.md instead of
+  terrorism-article-35.md, and terrorism-article-35.md is absent from the formal
+  'Files cited' list — a citation-recall imperfection that does not affect
+  substance. Draft-status caveat and primary-source verification advice were
+  proactively offered.

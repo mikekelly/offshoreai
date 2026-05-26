@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sd-aml-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T12:14:04.623Z",
+  "wallClockSeconds": 79.895,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"article-19\",\"article-21\"],\"mode\":\"or\",\"limit\":20}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"terrorism\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\" | head -30\",\"description\":\"Find Jersey corpus files mentio",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/aml-cft/ | grep -E \\\"terrorism-article-(19|21|20)\\\" \",\"description\":\"Check if Terrorism Law Article",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/aml-cft/terrorism-article-19.md\"}",
+      "inputBytes": 133,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/aml-cft/terrorism-article-21.md\"}",
+      "inputBytes": 133,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 1820,
+    "cacheReadTokens": 275657,
+    "cacheWriteTokens": 67112,
+    "totalCostUsd": 0.6028235
+  },
+  "answer": {
+    "text": "Both files were last verified 2026-05-25 (fresh) but carry `status: draft`. I'll cite them with that caveat.\n\n## Article 19 vs Article 21 — Terrorism (Jersey) Law 2002 SAR duties\n\nBoth articles create a failure-to-disclose offence in respect of terrorism-financing (specifically suspected offences under [Articles 15, 16, or 16A](knowledge/jersey/aml-cft/terrorism-article-19.md)), but they apply to **different populations** and use a **different mental-element test**.\n\n### Article 19 — general SAR duty\n\n- **Who it applies to:** anyone whose information came to their attention in the **course of a trade, profession, business or employment** — i.e. the whole working population, not just the regulated sector.\n- **Mental element:** the person **believes or suspects** that another person has committed an Article 15/16/16A offence — a **purely subjective** test.\n- **Duty:** disclose to the FIU as soon as reasonably practicable.\n- **Defence:** reasonable excuse.\n\nSource: `knowledge/jersey/aml-cft/terrorism-article-19.md`.\n\n### Article 21 — failure to disclose: financial institutions\n\n- **Who it applies to:** persons in a **regulated business** as defined in Schedule 2 to POCL 1999 — i.e. the financial-institution / DNFBP perimeter.\n- **Mental element:** the person knows, suspects, **or has reasonable grounds for knowing or suspecting** — adding an **objective limb** on top of Article 19's subjective test.\n- **Duty:** disclose to the FIU as soon as reasonably practicable.\n- **Defence:** reasonable excuse, including a legal-professional-privilege carve-out.\n\nSource: `knowledge/jersey/aml-cft/terrorism-article-21.md`.\n\n### The practical difference in one line\n\nArticle 19 catches **actual subjective suspicion** by anyone in any business; Article 21 additionally catches **negligent failure** by a regulated-sector person to spot the suspicious facts in front of them — that \"reasonable grounds\" limb is what drives JFSC AML/CFT Handbook CDD, monitoring, and SAR disciplines for CFT. Both shift to [Article 35](knowledge/jersey/aml-cft/terrorism-article-19.md) (tipping off) as the disclosure-side constraint once a SAR is filed; the POCL Article 34A ML counterpart sits in parallel.\n\n### Caveats\n\n- Both corpus files carry **`status: draft`** — the substance has been written but not yet promoted to `review`/`stable`. Verify against the [primary statute on jerseylaw.je](https://www.jerseylaw.je/laws/current/l_40_2002) before acting.\n- Freshness: both files last verified 2026-05-25 (fresh).\n\n### Files cited\n\n1. `knowledge/jersey/aml-cft/terrorism-article-19.md`\n2. `knowledge/jersey/aml-cft/terrorism-article-21.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 369
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    }
+  }
+}

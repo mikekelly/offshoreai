@@ -1,0 +1,23 @@
+questionId: sm-tax-001
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 6
+factsExpected: 7
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer correctly identifies the 0% default rate (Article
+  123C(2)), names all rate categories, and accurately explains MCIT as Jersey's
+  QDMTT + IIR bringing in-scope groups to 15%. The one substantive gap —
+  omitting that Jersey has NOT implemented UTPR — traces directly to not reading
+  knowledge/jersey/tax/pillar-two.md, which has the explicit adoption table.
+  Both cited files fully support their claims; freshness handling is exemplary
+  with draft-status flagging and primary-source verification advice. Six of
+  seven expected facts at 86% coverage keeps substance at pass despite the UTPR
+  omission.

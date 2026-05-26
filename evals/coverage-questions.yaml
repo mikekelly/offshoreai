@@ -963,6 +963,66 @@ questions:
 # Summary tracking
 # =====================================================
 summary:
+  2026-05-26-smoke-full-offshoreai-agent:
+    scope: smoke-full
+    harness: offshoreai-agent
+    total: 8  # 9th smoke ID (adv-nonexistent-llc-article) is in adversarial-citations.yaml with a different rubric schema and was not in this batch
+    pass: 8
+    partial: 0
+    fail: 0
+    cost_usd: 4.6169
+    median_tool_calls: 4
+    median_wall_clock_seconds: 124
+    output_dir: evals/baselines/2026-05-26-smoke-full-offshoreai-agent/
+    system_prompt_provenance:
+      presetName: claude_code
+      source: prompts/system.md
+      appendSha256: 8094dc1b6b556f6b  # identical across all 8 runs, as expected post-cleanup
+    notes: |
+      Full smoke batch through the production offshoreai-agent
+      harness. Refreshes the provenance trail for all 8 coverage
+      smoke IDs after the architecture cleanup (prompts/system.md
+      single source of truth, composeSystemPrompt shared between
+      harnesses, getFile whole-file reads, etc.).
+
+      All 8 PASS, zero verifier rejections across 114 total claims.
+      Cost $4.62. Median 4 tool calls / 124s wall clock per question
+      — consistent with the 2026-05-19 baseline magnitudes.
+
+      Per-question scoring (full grader summaries in
+      output_dir/summary.yaml):
+
+        sn-001  (Trusts Art 47):       4/4 facts, bonus on variation
+        sn-002  (MLO CDD):             5/5 facts
+        sn-003  (JPF vs Expert Fund):  4/4 facts, 2-call efficient
+        sd-co-001 (LLC Art 47):        5/5 facts, third citation
+        sd-aml-001 (Terrorism 19/21):  4/4 facts
+        sm-tax-001 (zero-ten + P2):    6/7 facts (UTPR omission)
+        sm-xjur-001 (Jersey vs Cayman):5/6 facts (Art 9 not extracted)
+        sm-co-001 (CJL Art 115):       4/5 facts (no-net-asset-limb implicit only)
+
+      Three blemishes worth noting (none breaking PASS):
+
+      1. sd-aml-001 — agent referenced Art 35 tipping-off (recent
+         cross-reference fix worked), but the inline hyperlink
+         pointed to terrorism-article-19.md instead of
+         -article-35.md, and -35.md was missing from the formal
+         Files cited list. Citation-recall imperfection.
+
+      2. sm-tax-001 — the recently-added "what Jersey adopted /
+         didn't" table in knowledge/jersey/tax/pillar-two.md was
+         NOT exercised because the agent went straight to
+         knowledge/jersey/international/pillar-two-mcit.md (the
+         deeper file). The grader notes the UTPR omission traces
+         directly to not reading pillar-two.md. Future iteration:
+         add the adopted/not-adopted note to pillar-two-mcit.md
+         too, so the fact is reachable from either landing point.
+
+      3. sm-co-001 — no-net-asset-limb covered implicitly (via
+         "cash-flow vs English contrast") but not stated
+         explicitly. Grader judged the implicit coverage
+         sufficient for PASS.
+
   2026-05-26-smoke-offshoreai-agent-partials-recheck:
     scope: smoke-partials-only
     harness: offshoreai-agent

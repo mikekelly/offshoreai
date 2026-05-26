@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 11,
+  "claimsWithCitation": 11,
+  "notes": "All substantive claims are supported by the cited corpus files. One soft ambiguity: the response characterises the MCIT as 'structured as a QDMTT plus an Income Inclusion Rule' — the cited pillar-two-mcit.md explicitly supports the QDMTT characterisation but describes the IIR as the general parent-jurisdiction mechanism rather than explicitly stating Jersey implemented an IIR. The trajectory.md file (loaded via CLAUDE.md ambient context, not cited) does say Jersey implemented both a QDMTT and an IIR. The characterisation is not contradicted by the cited file and the IIR section sits within Jersey's MCIT mechanics description, so this is not a rejection-level issue — but in a retry the agent could sharpen this by either citing trajectory.md or softening the IIR attribution. Both cited files are correctly flagged as status: draft with appropriate caveats directing the user to primary sources.",
+  "rejectCount": 0,
+  "costUsd": 0.48957275
+}

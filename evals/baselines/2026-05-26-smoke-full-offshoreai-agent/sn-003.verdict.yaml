@@ -1,0 +1,20 @@
+questionId: sn-003
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 6
+hallucinatedCitations: 0
+summary: Pass. The answer covers all four expected facts accurately, cites both
+  expected corpus files with every claim verified, and includes a
+  well-structured comparison table that faithfully mirrors the corpus's own. The
+  freshness caveat flagging both files' draft status is a notable quality
+  signal. Two tool calls with zero redundancy — textbook efficiency for a
+  two-file comparison question.

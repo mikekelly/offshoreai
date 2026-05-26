@@ -15,6 +15,58 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — Full 8-question smoke through offshoreai-agent — 8/8 PASS
+
+Full smoke batch run through the production harness after the
+architecture cleanup (prompts/system.md as single source of truth,
+shared composeSystemPrompt, whole-file reads, etc.). All eight
+coverage-smoke IDs PASS, zero verifier rejections across 114
+total claims. Cost $4.62. Median 4 tool calls / 124s wall clock
+per question.
+
+Per-question (full grader summaries in
+`evals/baselines/2026-05-26-smoke-full-offshoreai-agent/`):
+
+  sn-001  (Trusts Art 47):        4/4 facts, bonus on variation
+  sn-002  (MLO CDD):              5/5 facts
+  sn-003  (JPF vs Expert Fund):   4/4 facts, 2-call efficient
+  sd-co-001 (LLC Art 47):         5/5 facts, third citation
+  sd-aml-001 (Terrorism 19/21):   4/4 facts
+  sm-tax-001 (zero-ten + P2):     6/7 facts (UTPR omission)
+  sm-xjur-001 (Jersey vs Cayman): 5/6 facts (Art 9 firewall)
+  sm-co-001 (CJL Art 115):        4/5 facts (no-net-asset-limb)
+
+Three sub-rubric blemishes worth noting (none breaking PASS):
+
+1. **sd-aml-001** — agent referenced Art 35 tipping-off (the
+   recent cross-reference fix worked!), but the inline hyperlink
+   pointed to `terrorism-article-19.md` instead of `-article-35.md`,
+   and `terrorism-article-35.md` was missing from the formal Files
+   cited list. Citation-recall imperfection, not a substance issue.
+
+2. **sm-tax-001** — the at-a-glance "what Jersey adopted / didn't"
+   table just added to `knowledge/jersey/tax/pillar-two.md` was
+   **not exercised** because the agent went straight to the deeper
+   `knowledge/jersey/international/pillar-two-mcit.md` and didn't
+   read `pillar-two.md`. The grader notes the UTPR omission traces
+   directly to that. Future-iteration signal: also add the
+   adopted/not-adopted summary to `pillar-two-mcit.md` so the fact
+   is reachable from either landing point.
+
+3. **sm-co-001** — no-net-asset-limb covered implicitly via the
+   English-law contrast, not stated explicitly. Grader judged
+   implicit coverage sufficient for PASS.
+
+System-prompt provenance recorded in each trajectory's `meta`
+block. SHA256 `8094dc1b6b556f6b` for all 8 runs (identical system
+prompt, as expected post-cleanup). The 9th smoke ID
+(`adv-nonexistent-llc-article` in `adversarial-citations.yaml`)
+was not in this batch — the eval-runner's loader doesn't support
+the adversarial schema (`correct_response_shape` vs
+`expected_facts`/`expected_files`); the adversarial entry passed
+under explore-subagent earlier and the production stack has
+strictly more discipline.
+
 ## 2026-05-26 — Corpus-clarity fixes from smoke partials
 
 Two corpus edits landing the defence-in-depth fixes for the smoke

@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 15,
+  "claimsWithCitation": 15,
+  "notes": "All substantive claims are supported by the two cited corpus files (court-variation.md accessed via getArticle for Art 47; article-47-set-aside.md accessed via getFile). Both files carry status: draft, which the response correctly flags with a caveat directing the user to verify against the consolidated statute at jerseylaw.je. The naming-ambiguity warning is itself well-grounded in the naming-warning tables present in both files. Minor navigation references to Articles 37, 47A, and 51 in the Caveats section are supported by cross-reference sections within the cited files. No hallucinated citations, no unsupported claims, no authority-tier violations.",
+  "rejectCount": 0,
+  "costUsd": 0.46012474999999997
+}

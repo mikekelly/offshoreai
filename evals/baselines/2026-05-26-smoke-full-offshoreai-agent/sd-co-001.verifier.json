@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 10,
+  "claimsWithCitation": 10,
+  "notes": "All substantive claims are supported by the cited corpus files. The 'expand, restrict, or eliminate' language, the two-limb non-eliminable floor (good faith; fraud/wilful default/gross negligence), the comparison to CJL 1991 non-modifiable duties, and the use-case framing (fund GP, JV, family-office GP) all appear verbatim or near-verbatim in llc-article-47.md. The Article 3 and Article 37 citations are correctly characterised. The draft-status caveat is appropriate and honestly flagged. Minor note: the tag 'fiduciary-duties' in llc-article-47.md frontmatter does not match the canonical TAGS.md tag 'fiduciary-duty' — this is a corpus QA issue, not a citation failure.",
+  "rejectCount": 0,
+  "costUsd": 0.31974475
+}

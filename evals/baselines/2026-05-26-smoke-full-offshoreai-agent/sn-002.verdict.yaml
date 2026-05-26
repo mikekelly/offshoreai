@@ -1,0 +1,22 @@
+questionId: sn-002
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 7
+hallucinatedCitations: 0
+summary: Pass. All five expected facts covered with no factual errors; every
+  citation verified against corpus files and supports its attached claim. The
+  answer correctly distinguishes between statute-level MLO obligations (Articles
+  5, 6, 9, 10) and Handbook-level institutional calibration (SDD eligibility,
+  reliance regime), and the draft-status caveat with primary-source redirect is
+  strong freshness discipline. The interpretive note clarifying that
+  'institutional client' is not a defined MLO term adds practitioner-grade
+  nuance.

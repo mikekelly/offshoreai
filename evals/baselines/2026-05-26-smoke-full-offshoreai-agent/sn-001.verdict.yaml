@@ -1,0 +1,21 @@
+questionId: sn-001
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 12
+hallucinatedCitations: 0
+summary: Pass. The candidate correctly identifies the naming confusion between
+  Article 47 (variation) and Articles 47B-H (mistake set-aside), covers all four
+  expected facts including the three-limb S & T Trusts test and the Pitt v Holt
+  divergence, and adds substantial bonus coverage of Article 47 variation
+  procedure. Both citations verified against corpus — zero hallucinations. The
+  proactive draft-status caveat and the structuring of the answer around the
+  user's likely confusion are strong practitioner-oriented touches.

@@ -1,0 +1,22 @@
+questionId: sm-xjur-001
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 15
+hallucinatedCitations: 0
+summary: Pass. All citations verified against corpus — zero hallucinations,
+  every claim supported. Covers 5 of 6 expected facts accurately, missing only
+  the Article 9 trust-firewall infrastructure as a distinctive Jersey advantage
+  (the source was read but the point not extracted) and the explicit 'Cayman is
+  largest fund domicile globally' statement. The answer adds substantial correct
+  value beyond the rubric (>50-investor disqualifier, Expert Fund step-up,
+  practical decision framework, proactive draft-status caveat). Clean tool usage
+  with no redundant calls.

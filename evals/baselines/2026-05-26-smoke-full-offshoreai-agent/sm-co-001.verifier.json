@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 14,
+  "claimsWithCitation": 14,
+  "notes": "All substantive claims are supported by the cited corpus files. Citations 3 and 4 (unlawful-distribution-consequences.md, distribution-retrospective-order.md) were not fetched by the main agent's tool calls but are cross-referenced from distribution-restrictions.md which was fetched — and independently verified here. All four files are status: draft, which the response correctly flags. One minor precision point: the response says 'potentially the full amount of the distribution' for director liability; the solvency-statement.md file says 'the full amount of the reduction' (capital-reduction context) — a reasonable extrapolation given the stated parallel mechanism, but not verbatim from the distribution-specific file.",
+  "rejectCount": 0,
+  "costUsd": 0.45430375
+}

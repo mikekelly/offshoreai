@@ -1,0 +1,21 @@
+questionId: sm-co-001
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer correctly identifies and explains the Article 115
+  cash-flow solvency test, the solvency-statement mechanics, and director
+  personal liability — with bonus depth on Article 115A consequences and Article
+  115ZA retrospective cure. The only rubric gap is the explicit mention of the
+  dropped net-asset limb and the 2008 reforms, though the cash-flow vs English
+  contrast implicitly covers this. All four citations verified against corpus
+  files; no hallucinations. Efficient 3-call retrieval with no redundancy.

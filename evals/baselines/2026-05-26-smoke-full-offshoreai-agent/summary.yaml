@@ -1,0 +1,102 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/coverage-questions.yaml
+  ranAt: 2026-05-26T12:17:06.939Z
+  questions: 8
+totals:
+  pass: 8
+  partial: 0
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 1
+  substancePassRate: 1
+  medianToolCalls: 4
+  medianTokensInput: 8
+  medianTokensOutput: 1858
+  medianWallClockSeconds: 124.06
+  totalCostUsd: 4.6169
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: sn-001
+    verdict: pass
+    summary: Pass. The candidate correctly identifies the naming confusion between
+      Article 47 (variation) and Articles 47B-H (mistake set-aside), covers all
+      four expected facts including the three-limb S & T Trusts test and the
+      Pitt v Holt divergence, and adds substantial bonus coverage of Article 47
+      variation procedure. Both citations verified against corpus — zero
+      hallucinations. The proactive draft-status caveat and the structuring of
+      the answer around the user's likely confusion are strong
+      practitioner-oriented touches.
+  - id: sn-002
+    verdict: pass
+    summary: Pass. All five expected facts covered with no factual errors; every
+      citation verified against corpus files and supports its attached claim.
+      The answer correctly distinguishes between statute-level MLO obligations
+      (Articles 5, 6, 9, 10) and Handbook-level institutional calibration (SDD
+      eligibility, reliance regime), and the draft-status caveat with
+      primary-source redirect is strong freshness discipline. The interpretive
+      note clarifying that 'institutional client' is not a defined MLO term adds
+      practitioner-grade nuance.
+  - id: sn-003
+    verdict: pass
+    summary: Pass. The answer covers all four expected facts accurately, cites both
+      expected corpus files with every claim verified, and includes a
+      well-structured comparison table that faithfully mirrors the corpus's own.
+      The freshness caveat flagging both files' draft status is a notable
+      quality signal. Two tool calls with zero redundancy — textbook efficiency
+      for a two-file comparison question.
+  - id: sm-tax-001
+    verdict: pass
+    summary: Pass. The answer correctly identifies the 0% default rate (Article
+      123C(2)), names all rate categories, and accurately explains MCIT as
+      Jersey's QDMTT + IIR bringing in-scope groups to 15%. The one substantive
+      gap — omitting that Jersey has NOT implemented UTPR — traces directly to
+      not reading knowledge/jersey/tax/pillar-two.md, which has the explicit
+      adoption table. Both cited files fully support their claims; freshness
+      handling is exemplary with draft-status flagging and primary-source
+      verification advice. Six of seven expected facts at 86% coverage keeps
+      substance at pass despite the UTPR omission.
+  - id: sm-xjur-001
+    verdict: pass
+    summary: Pass. All citations verified against corpus — zero hallucinations,
+      every claim supported. Covers 5 of 6 expected facts accurately, missing
+      only the Article 9 trust-firewall infrastructure as a distinctive Jersey
+      advantage (the source was read but the point not extracted) and the
+      explicit 'Cayman is largest fund domicile globally' statement. The answer
+      adds substantial correct value beyond the rubric (>50-investor
+      disqualifier, Expert Fund step-up, practical decision framework, proactive
+      draft-status caveat). Clean tool usage with no redundant calls.
+  - id: sm-co-001
+    verdict: pass
+    summary: Pass. The answer correctly identifies and explains the Article 115
+      cash-flow solvency test, the solvency-statement mechanics, and director
+      personal liability — with bonus depth on Article 115A consequences and
+      Article 115ZA retrospective cure. The only rubric gap is the explicit
+      mention of the dropped net-asset limb and the 2008 reforms, though the
+      cash-flow vs English contrast implicitly covers this. All four citations
+      verified against corpus files; no hallucinations. Efficient 3-call
+      retrieval with no redundancy.
+  - id: sd-co-001
+    verdict: pass
+    summary: Pass. All five expected facts are present and correct, both expected
+      files are cited and verified, and the candidate adds a useful third
+      citation (Art 37 solvency floor). The answer is Jersey-specific
+      throughout, names the correct statutes, draws the CJL 1991 contrast, and
+      flags the draft status of the cited files with a
+      verify-against-primary-source caveat. One mildly redundant tool call (two
+      findByTag queries where the second broadened the first) but overall
+      efficient at 6 calls and 95s.
+  - id: sd-aml-001
+    verdict: pass
+    summary: PASS. All four expected facts are present, correct, and
+      well-structured. The candidate accurately distinguished the subjective
+      (Art 19) vs objective+subjective (Art 21) mental-element tests, correctly
+      identified the negligent-failure consequence of the objective limb, and
+      referenced Art 35 tipping off. The only blemish is that the inline
+      hyperlink for Art 35 points to terrorism-article-19.md instead of
+      terrorism-article-35.md, and terrorism-article-35.md is absent from the
+      formal 'Files cited' list — a citation-recall imperfection that does not
+      affect substance. Draft-status caveat and primary-source verification
+      advice were proactively offered.

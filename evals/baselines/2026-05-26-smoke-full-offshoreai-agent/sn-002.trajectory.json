@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sn-002",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T12:09:57.687Z",
+  "wallClockSeconds": 113.493,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"mlo-2008\",\"cdd\"],\"mode\":\"and\"}",
+      "inputBytes": 40,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"cdd\"],\"mode\":\"and\"}",
+      "inputBytes": 29,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/mlo-article-5.md\"}",
+      "inputBytes": 52,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/mlo-article-6.md\"}",
+      "inputBytes": 52,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/amlh-customer-regulated-institution.md\"}",
+      "inputBytes": 74,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/mlo-part-3-cdd.md\"}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 2764,
+    "cacheReadTokens": 189124,
+    "cacheWriteTokens": 70992,
+    "totalCostUsd": 0.607402
+  },
+  "answer": {
+    "text": "Under the MLO 2008, a \"new institutional client\" — read as a **regulated financial institution** counterparty — still attracts the full Article 5 CDD obligation; what differs is the **calibration** the JFSC AML/CFT Handbook permits when the institution is regulated in an equivalent jurisdiction.\n\n## Core MLO 2008 obligations (apply to every new customer)\n\nArticle 5 requires the supervised business to apply CDD measures comprising:\n\n- **Identification** of the customer and any agent;\n- **Verification** of identity using reliable independent sources;\n- **Identification** of the **beneficial owner** (where the customer is not an individual), with verification to a reasonable extent;\n- **Information** on the **purpose and intended nature** of the relationship (Article 9 — purpose, expected volume / frequency / geography, source of funds, source of wealth for higher-risk);\n- **Ongoing monitoring** (Article 10 — transaction monitoring, periodic refresh, trigger-based review).\n\n(`knowledge/jersey/aml-cft/mlo-article-5.md`; `knowledge/jersey/aml-cft/mlo-part-3-cdd.md`)\n\nArticle 6 confirms the trigger: full CDD is required **at establishment** of the relationship, regardless of any de minimis threshold, and must be **completed before** the relationship proceeds beyond preliminary steps (limited delayed-completion exceptions apply). (`knowledge/jersey/aml-cft/mlo-article-6.md`)\n\n## Calibration for an institutional / regulated-institution customer\n\nIf the new client is itself a **bank, MiFID-equivalent investment firm, AIFMD-equivalent fund manager, Solvency-II-equivalent insurer, or licensed TCB/CSP** in an **equivalent jurisdiction** (FATF member / clean MoneyVal record / on any JFSC-published equivalent list, and not FATF Black/Grey), the Handbook permits a more targeted approach:\n\n- **Identification**: legal name and structure via public registry; **regulatory licence(s)** verified on the home regulator's public register (FCA, BaFin, SFC, etc.); senior officers / beneficial owners identified to a depth appropriate to risk (often light for listed groups, fuller for private institutions); recent regulatory standing / enforcement history.\n- **Simplified Due Diligence (SDD)** may be available for **listed financial institutions** on recognised markets (beneficial-owner ID typically not required), **wholly-owned subsidiaries** of regulated entities, and **government-owned** financial institutions in equivalent jurisdictions. SDD reduces verification — it does **not remove** identification or monitoring.\n- **Reliance regime**: where the institutional customer introduces or holds underlying clients through the relationship, the Jersey firm may rely on the institution's own CDD on those underlying clients **only if** (i) the institution is regulated for AML/CFT in an equivalent jurisdiction, (ii) there is a **written reliance arrangement**, (iii) the Jersey firm is satisfied the institution applies equivalent standards, and (iv) the Jersey firm can **obtain CDD records on demand**. Accountability stays with the Jersey firm; ongoing monitoring and JFSC/LEA record-production obligations are not delegated.\n\nA customer regulated in a **non-equivalent** jurisdiction reverts to full CDD with likely EDD. (`knowledge/jersey/aml-cft/amlh-customer-regulated-institution.md`)\n\n## Operational implications\n\n- Capture the Article 9 information (purpose, expected activity, source of funds / wealth) even for a regulated counterparty — it anchors monitoring and risk rating.\n- Document the equivalent-jurisdiction assessment and SDD eligibility; do not assume.\n- If relying, paper the reliance arrangement and **test record-access** rather than waiting for a JFSC request.\n- For Codes-of-Practice overlay (TCB onboarding standards), see `knowledge/jersey/financial-regulation/cop-tcb-customer-onboarding.md`.\n\n## Caveats\n\n- All four cited files are **status: draft** (last_verified 2026-05-15 to 2026-05-25, so fresh by age but unverified content). Verify the specific MLO Article wording against the live consolidated MLO on jerseylaw.je and the current JFSC AML/CFT Handbook before relying.\n- \"Institutional client\" is not a defined MLO term; the answer above interprets it as a regulated-financial-institution customer. If you meant a different sense (e.g., a corporate or fund customer that is not itself a regulated institution), the relevant files are `amlh-customer-jersey-company.md`, `amlh-customer-jersey-trust.md`, and `amlh-customer-types.md` — tell me and I'll re-answer.\n\n## Cited files\n\n1. `knowledge/jersey/aml-cft/mlo-article-5.md` (draft, 2026-05-17)\n2. `knowledge/jersey/aml-cft/mlo-article-6.md` (draft, 2026-05-17)\n3. `knowledge/jersey/aml-cft/mlo-part-3-cdd.md` (draft, 2026-05-17) — Articles 9-10\n4. `knowledge/jersey/aml-cft/amlh-customer-regulated-institution.md` (draft, 2026-05-25)\n5. `knowledge/jersey/financial-regulation/cop-tcb-customer-onboarding.md` (draft, 2026-05-25) — referenced for TCB-Code overlay\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 638
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    }
+  }
+}

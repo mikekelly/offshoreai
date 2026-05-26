@@ -1,0 +1,21 @@
+questionId: sd-co-001
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+summary: Pass. All five expected facts are present and correct, both expected
+  files are cited and verified, and the candidate adds a useful third citation
+  (Art 37 solvency floor). The answer is Jersey-specific throughout, names the
+  correct statutes, draws the CJL 1991 contrast, and flags the draft status of
+  the cited files with a verify-against-primary-source caveat. One mildly
+  redundant tool call (two findByTag queries where the second broadened the
+  first) but overall efficient at 6 calls and 95s.

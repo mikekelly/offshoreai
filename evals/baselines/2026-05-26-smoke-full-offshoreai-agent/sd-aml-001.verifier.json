@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 12,
+  "claimsWithCitation": 12,
+  "notes": "All substantive claims are supported by the two cited corpus files (terrorism-article-19.md and terrorism-article-21.md). Both files are statute-wiki type sourced from the Terrorism (Jersey) Law 2002 on jerseylaw.je — correct authority tier. The draft responsibly discloses that both files carry status: draft and advises the user to verify against the primary statute before acting. No hallucinated citations, no unsupported claims, no authority-tier violations.",
+  "rejectCount": 0,
+  "costUsd": 0.3357785
+}

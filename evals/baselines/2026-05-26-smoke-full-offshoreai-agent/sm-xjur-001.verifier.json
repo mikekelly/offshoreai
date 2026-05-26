@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 22,
+  "claimsWithCitation": 22,
+  "notes": "All substantive Jersey legal/regulatory/tax claims are cited to corpus files and supported by those files. Four soft observations: (1) The EUR 750m Pillar Two revenue threshold (Section 4, Cayman) does not appear in any cited file — it may derive from parametric knowledge rather than corpus content; the claim 'not to typical PE fund LP economics' is similarly analytical and uncited. (2) 'Both jurisdictions are tax-neutral at the fund-vehicle level for LPs' — the Jersey side is a reasonable inference from the 0% standard rate confirmed in the map, but no cited file states this explicitly for a Jersey fund vehicle. (3) 'Both impose substance requirements on the GP / Investment Manager … paper-only presence is not viable' — for Jersey, the map confirms Substance Law 2019 exists, but the specific application to GP/Investment Manager and the 'paper-only' characterisation are analytical extensions supported in the ELP file for Cayman but not stated in any cited file for Jersey; a future iteration should cite the Jersey substance concept file. (4) The caveats section says 'all four cited corpus files' but five files are listed. None of these issues rise to a rejection — the core claims are well-cited and the analytical extensions are directionally correct — but tightening these points on a revision would strengthen the response.",
+  "rejectCount": 0,
+  "costUsd": 0.6436305
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 18,
+  "claimsWithCitation": 18,
+  "notes": "All 18 substantive claims are cited to one of the two corpus files and verified as supported by the cited file's content. The side-by-side table closely mirrors the comparison table in expert-fund.md. The draft appropriately flags both files' draft status and advises the user to confirm against primary JFSC sources before acting — good practice given the corpus's own status discipline. No bundle was active, so no citation-pattern conformance check was required.",
+  "rejectCount": 0,
+  "costUsd": 0.37592024999999996
+}

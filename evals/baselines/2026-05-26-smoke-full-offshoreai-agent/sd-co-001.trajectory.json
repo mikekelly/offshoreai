@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sd-co-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T12:14:02.513Z",
+  "wallClockSeconds": 95.338,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"llc-law-2018\",\"fiduciary-duty\"],\"mode\":\"and\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"llc-law-2018\"],\"mode\":\"and\",\"limit\":30}",
+      "inputBytes": 49,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -l -i \\\"fiduciary\\\\|duty\\\\|duties\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/companies/llc-*.md\",\"description\":\"Find LLC files mentioning ",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/companies/llc-article-37.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/companies/llc-article-3.md\"}",
+      "inputBytes": 54,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/companies/llc-article-47.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 10,
+    "outputTokens": 1625,
+    "cacheReadTokens": 362592,
+    "cacheWriteTokens": 67292,
+    "totalCostUsd": 0.642546
+  },
+  "answer": {
+    "text": "I have what I need. Article 47 directly answers the question.\n\n---\n\n**Yes — Jersey's LLC Law 2018 lets the LLC agreement expand, restrict, or eliminate duties (including fiduciary duties) that a member or manager would otherwise owe to the LLC and to the other members.** This is one of the most distinctive features of the Jersey LLC and a deliberate Delaware-LLC-style import, sitting alongside Article 3's broad freedom to design the LLC agreement.\n\n**The floor that cannot be contracted away (Article 47):**\n\n1. **The duty of good faith** — the statutory default duty owed to the LLC and other members where the LLC agreement is silent — **cannot be eliminated**.\n2. **Liability for fraud, wilful default, or gross negligence** — the LLC agreement cannot exonerate a member or manager from acts or omissions of this kind.\n\nWithin those two guard-rails, the LLC agreement can replace the default fiduciary framework with a contractually-specified one. That is the doctrinal foundation for using a Jersey LLC as a fund GP / LP vehicle, a JV vehicle, or a family-office GP, where each party's duty scope is defined by contract rather than by default common-law / statutory fiduciary rules. By contrast, directors' fiduciary duties in a Jersey company under the Companies (Jersey) Law 1991 are largely non-modifiable.\n\n**Caveat on freshness and status:** the LLC Article wiki pages are marked `draft` (last verified 2026-05-25). Before relying on the exact wording for drafting an LLC agreement, verify Article 47 against the primary source (Limited Liability Companies (Jersey) Law 2018 on jerseylaw.je).\n\n**Citations:**\n\n1. `knowledge/jersey/companies/llc-article-47.md` — fiduciary and other duties (default duty of good faith; modification regime; non-eliminable floor).\n2. `knowledge/jersey/companies/llc-article-3.md` — LLC agreement as the load-bearing operational document; flexibility to customise or eliminate certain default fiduciary duties.\n3. `knowledge/jersey/companies/llc-article-37.md` — adjacent statutory floor (solvency-based limitation on distributions / manager liability).\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 327
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sn-003",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T12:09:32.971Z",
+  "wallClockSeconds": 88.777,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/expert-fund.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 1609,
+    "cacheReadTokens": 103746,
+    "cacheWriteTokens": 62816,
+    "totalCostUsd": 0.484733
+  },
+  "answer": {
+    "text": "# Jersey Private Fund (JPF) vs Expert Fund\n\n## What the JPF regime is\n\nThe **Jersey Private Fund (JPF)** is Jersey's **light-touch private-fund regime** for closed-investor, sophisticated-investor structures. Its headline features are an investor cap of **up to 50 offers/investors** at any time, **professional/eligible investors only**, **fast-track JFSC authorisation (typically ~48 hours)**, and reduced ongoing supervision. A JPF must appoint a **JFSC-licensed administrator as its Designated Service Provider (DSP)**, which carries CDD/AML, books and records, and administration responsibility — effectively substituting for direct JFSC oversight of the fund itself. JPFs can be structured as a Jersey company, limited partnership (most common), unit trust, or cell company, and are the default vehicle for PE funds, closed-ended real estate, family-and-friends pools, single-LP/club deals, and carry vehicles ([`knowledge/jersey/funds/jersey-private-fund.md`](knowledge/jersey/funds/jersey-private-fund.md)).\n\n## How an Expert Fund differs\n\nThe **Expert Fund** is designed for **expert investors** — sophisticated parties meeting **net-worth** (typically minimum US$100,000 investment, or institutional/professional-client status) and investment-threshold criteria. Compared to a JPF, it has **no specific investor cap**, requires **more detailed disclosure**, takes **longer to authorise** (few days to weeks rather than 48 hours), and offers **wider expert-investor marketing scope** including AIFMD NPPR routes for EU marketing ([`knowledge/jersey/funds/expert-fund.md`](knowledge/jersey/funds/expert-fund.md)).\n\n## Side-by-side\n\n| Feature | JPF | Expert Fund |\n|---|---|---|\n| Investor cap | 50 | No specific cap (subject to expert criteria) |\n| Investor qualification | Professional / eligible | Expert (net-worth or institutional) |\n| Authorisation time | ~48 hours | Few days to weeks |\n| Disclosure | Light PPM | More detailed offering memorandum |\n| Marketing scope | Limited private placement | Wider expert-investor marketing / NPPR |\n\nSource: [`knowledge/jersey/funds/expert-fund.md`](knowledge/jersey/funds/expert-fund.md).\n\n## When to choose which\n\n- **JPF** — PE funds, co-investments, closed-ended real estate, family-and-friends pools, single-LP/club deals, carry vehicles where the investor count fits within 50 ([`knowledge/jersey/funds/jersey-private-fund.md`](knowledge/jersey/funds/jersey-private-fund.md)).\n- **Expert Fund** — single-strategy hedge funds with multiple expert investors, larger PE vehicles exceeding the JPF cap, liquid alternatives marketed to family offices/institutions, and funds needing AIFMD NPPR for EU marketing ([`knowledge/jersey/funds/expert-fund.md`](knowledge/jersey/funds/expert-fund.md)).\n\n## Caveats on the citations\n\nBoth cited files carry **status: draft** (last_verified 2026-05-15, 11 days ago). The substance is consistent with the JPF/Expert Fund regimes but, per the corpus's own status discipline, you should treat these as **drafted but not stable-verified** — confirm against the JFSC's JPF Guide and the Codes of Practice for Certified Funds before acting.\n\n## Cited files\n\n1. [`knowledge/jersey/funds/jersey-private-fund.md`](knowledge/jersey/funds/jersey-private-fund.md)\n2. [`knowledge/jersey/funds/expert-fund.md`](knowledge/jersey/funds/expert-fund.md)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 419
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    }
+  }
+}
