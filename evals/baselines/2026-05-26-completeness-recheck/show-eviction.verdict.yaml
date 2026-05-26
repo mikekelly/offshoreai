@@ -1,0 +1,40 @@
+schemaVersion: eval_verdict_v2
+questionId: show-eviction
+harness: offshoreai-agent
+ranAt: 2026-05-26T17:35:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/use-cases/tenant-landlord/evicting-non-paying-tenant.md
+    supportsClaim: true
+    notes: Persona-targeted file directly mirrors the four-stage procedure, defences, and timeline cited in the answer.
+  - path: knowledge/jersey/residential-tenancy/non-payment-of-rent.md
+    supportsClaim: true
+    notes: Concept-file with five-row step table; cites RTJL 2011 statute and supports the 7-day notice / Petty Debts Court / Viscount sequence.
+  - path: knowledge/jersey/residential-tenancy/eviction-procedure.md
+    supportsClaim: true
+    notes: Confirms court-order-only possession, criminal-offence framing for self-help, and three-stage procedure.
+stretchPromotions: []
+stretchSuggestions:
+  - "Notice form must be signed and properly served (recorded post / personal service); defective notice is fatal and forces restart."
+  - "Accepting rent after the termination date may waive the termination — common landlord trap."
+  - "Public Health and Safety (Rented Dwellings) (Jersey) Law 2018 grounds set-off where premises are unfit."
+summary: |
+  PASS. All six substance bar items covered (7-day notice, Petty Debts Court exclusive jurisdiction,
+  Viscount enforcement, 2-4 month timeline with stays, self-help criminal, full set of tenant defences),
+  Jersey-specific anchors (RTJL 2011, 2025 Amendment in force 15 April 2026, Petty Debts Court/Viscount)
+  all named, three citations all exist and fully support their claims, and the answer explicitly flagged
+  the draft status of all three sources while confirming freshness (8 days). Voice hits the smart-friend
+  landlord-facing brief with the "What to do tomorrow morning" closer. Strong completeness; no promotion
+  warranted because the rubric is already comprehensively met by the answer.
+errors: []

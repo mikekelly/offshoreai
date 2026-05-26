@@ -1,0 +1,42 @@
+schemaVersion: eval_verdict_v2
+questionId: show-continuation-funds
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/frontier/continuation-funds-and-gp-led-secondaries.md
+    supportsClaim: true
+    notes: Supports 46%/doubled stat, mechanics taxonomy, Guernsey not-a-CIS, 3-BD GFSC, Jersey JPF 48h, carry crystallisation
+  - path: knowledge/guernsey/continuation-funds.md
+    supportsClaim: true
+    notes: Supports POI Law 2020 statute citation, 3-BD GFSC, single-asset not-a-CIS reasoning, deal-profile detail, AIFMD II interaction
+stretchPromotions: []
+stretchSuggestions:
+  - "Typical deal profile (EUR 100m–1bn, 2018-2020 vintage, 30-60% LP roll rate, 8-12 weeks term-sheet-to-close) — not promoted: showcase rubric uses showcase_bar.substance, has no stretch_facts slot"
+  - "AIFMD II 16 April 2026 disclosure uplift materially raises bar for EU-marketing CFs; GFSC fast-track does not exempt — not promoted: same reason"
+  - "Pillar Two QDMTT (Guernsey 1 Jan 2025 / Jersey MCIT 2025) 15% top-up for in-scope MNE-group sponsors — not promoted: same reason"
+summary: |
+  PASS — all six showcase_bar.substance facts covered; 2/2 citations
+  verified and load-bearing; the answer correctly attributes the
+  not-a-CIS structural treatment to the Protection of Investors
+  (Bailiwick of Guernsey) Law 2020 and reports the GFSC
+  3-business-day approval; voice is fund-secondaries-specialist as
+  required, with named institutional buyers (HarbourVest / Coller /
+  Pantheon) and named secondary advisers. Freshness handled
+  explicitly (frontier file flagged as decay-managed; Guernsey
+  concept file flagged as 2026-05-19-fresh). Stretch promotions
+  skipped because the showcase.yaml schema does not carry a
+  stretch_facts field — promoting would require schema change
+  outside this run's scope.
+errors: []

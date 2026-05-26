@@ -1,0 +1,43 @@
+schemaVersion: eval_verdict_v2
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/funds/aifmd-nppr.md
+    supportsClaim: true
+    notes: Supports JFSC AIFMD-equivalent regime, NPPR country-by-country positioning, no third-country passport, depository mismatch claims
+  - path: knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md
+    supportsClaim: true
+    notes: Supports §330 KAGB / BaFin notification, local fact-sheet, local distributor, reverse-solicitation pitfall, Germany strict
+  - path: knowledge/frontier/aifmd-ii-april-2026.md
+    supportsClaim: true
+    notes: Supports AIFMD II overlay — expanded investor disclosures, enhanced Annex IV reporting, JFSC EU AIF Code split, Germany on stricter end of transposition
+stretchPromotions: []
+stretchSuggestions:
+  - "Germany sits at the stricter end of the AIFMD II transposition spectrum (Carey Olsen / Langham Hall commentary) — useful operator-grade colour beyond bare §330 KAGB compliance"
+  - "JFSC AIF Code of Practice is being split into EU AIF Code and UK AIF Code to handle dual marketing without a single regime serving two regulators"
+summary: |
+  PARTIAL — candidate captured NPPR mechanics, §330 KAGB / BaFin, depository
+  question, no-third-country-passport country-by-country point, and the AIFMD II
+  overlay with strong frontier handling. Two substance gaps drive the downgrade
+  from the prior PASS baseline: AIFMD Article 42 (and Article 21 reporting) is
+  not cited by Article number, and Alternative Investment Funds (Jersey)
+  Regulations 2012 is not named (referenced only as "Jersey's AIFMD-equivalent
+  regime"). Citations precise, freshness handling crisp (draft status on both
+  Jersey files flagged), voice on-target for fund counsel. The Article-42 gap
+  reflects a corpus omission as much as an answer omission — the cited files do
+  not contain Article 42 / Article 21 by number, so this is a content-side
+  fixable.
+errors: []

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T16:34:33.352Z",
+  "wallClockSeconds": 77.615,
+  "turns": 10,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"contract-passing\",\"royal-court\"],\"mode\":\"and\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rl \\\"Friday afternoon\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\"\",\"description\":\"Find files mentioning Friday afterno",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rl \\\"contract passing\\\\|passe devant\\\\|Samedi Division\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/ --include=\\\"*.md\\\"\",\"descript",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__tree",
+      "rawName": "mcp__corpus__tree",
+      "inputDigest": "{\"root\":\"knowledge/jersey/property/index.md\",\"depth\":2}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/contract-passing.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -B2 -A4 \\\"Friday afternoon\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/commercial-leases.md /Users/mike/code/offshoreai/.claude",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/real-property-overview.md\"}",
+      "inputBytes": 62,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn \\\"Samedi\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/legal-system/ --include=\\\"*.md\\\" | head -30\",\"description\":\"Find Samedi Division r",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 8,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/legal-system/royal-court.md\",\"offset\":75,\"limit\":40}",
+      "inputBytes": 152,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 12,
+    "outputTokens": 4108,
+    "cacheReadTokens": 543242,
+    "cacheWriteTokens": 71439,
+    "totalCostUsd": 0.82087475
+  },
+  "answer": {
+    "text": "The corpus file on contract passing describes the Samedi Division procedure (\"held most weekdays\") but doesn't pin down the Friday-afternoon convention specifically. Let me check the files where \"Friday afternoon\" actually appears.Let me check whether the corpus explains the Samedi Division naming, which may be the origin clue.(Ignoring the task-tracking reminder — this is a single-question answer, not multi-step work.)## Why your Jersey property transfer happens on a Friday afternoon in court\n\nThree things stack up to give you that Friday-afternoon slot.\n\n**1. In Jersey, transfer of real property is an act of Court — not a private completion.** Unlike English conveyancing (where \"completion\" happens between solicitors), a Jersey property contract has to be **passed before the Royal Court**: the parties (usually their Advocates as attorneys) appear, the contract is read or referenced, the Greffier signs and records it, and **the transfer takes legal effect at that moment** — there is no separate completion event (`knowledge/jersey/property/contract-passing.md`; `knowledge/jersey/property/real-property-overview.md`).\n\n**2. The forum is the Samedi Division, sitting with two Jurats.** Real-property passings are heard in the Royal Court's **Samedi Division** — its civil day-to-day forum, named after its historical **Saturday** sittings (*samedi* = Saturday in French). For a property passing, **the Bailiff or Deputy Bailiff sits with two Jurats** to witness the contract — the convention that has settled in modern practice is **Friday afternoon** as the dedicated property-passing slot (`knowledge/jersey/legal-system/royal-court.md`; `knowledge/jersey/property/commercial-leases.md`; `knowledge/jersey/property/flying-freeholds.md`). The same Friday-afternoon convention is treated as load-bearing enough that historic Royal Court closures on a passing day have triggered force-majeure arguments in Jersey contracts (`knowledge/jersey/contract/force-majeure.md`).\n\n**3. Why a Court act at all — the Norman-customary-law root.** Public transfer of real property before the Court is a **Norman customary law** inheritance: the Royal Court is the repository of property records, the transfer is visible (parties and the fact of passing are public, though price is typically private), and title certainty flows from the Court act rather than from a private exchange of deeds (`knowledge/jersey/property/contract-passing.md`; `knowledge/jersey/property/real-property-overview.md`).\n\n### Caveats\n\n- All four supporting files are **`draft` status** (`last_verified: 2026-05-17`, 9 days old) — fresh, but unverified against the primary sources. Verify against the Royal Court Rules and gov.je before relying.\n- The corpus **confirms** the Friday-afternoon convention but does **not** document the precise historical shift from the Samedi Division's original Saturday sittings to the modern Friday-afternoon practice, nor whether Friday is fixed by Royal Court Rules or by long-standing practice — that specific origin point is a corpus gap.\n\n### Cited files\n\n1. `knowledge/jersey/property/contract-passing.md`\n2. `knowledge/jersey/property/real-property-overview.md`\n3. `knowledge/jersey/property/commercial-leases.md`\n4. `knowledge/jersey/property/flying-freeholds.md`\n5. `knowledge/jersey/contract/force-majeure.md`\n6. `knowledge/jersey/legal-system/royal-court.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 445
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 36450,
+      "appendSha256": "d126b683877172c6"
+    },
+    "sessionId": "4dccc514-7290-4a7c-8112-8aefebc6be98"
+  }
+}

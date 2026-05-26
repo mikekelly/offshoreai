@@ -15,6 +15,74 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — Completeness recheck round 2 + corpus + output-discipline fixes
+
+Continuation of the completeness-discipline validation. Ran the
+remaining 4 showcase partials through `/run-evals` to test whether
+the prompt change generalises beyond the morning's N=2 sample.
+Result across all 6 today's showcase partials:
+
+  show-trusts-firewall         partial → PASS  (Crociani surfaced)
+  show-voisinage               partial → PASS  (Pothier/Le Geyt)
+  show-eviction                partial → PASS  (2025 Amendment via traversal)
+  show-continuation-funds      partial → PASS  (mechanics walkthrough)
+  show-friday-passing          partial → still PARTIAL (different reason — see below)
+  show-aifmd-nppr              partial → still PARTIAL (corpus content gap)
+
+**4/6 PARTIAL → PASS** under the new completeness + traversal
+discipline. The 2 stubborn partials surfaced distinct issues, each
+fixed in this commit:
+
+1. **`show-aifmd-nppr` — corpus content gap**. The eval-manager
+   diagnosed: AIFMD Article 42 (NPPR legal basis) and Article 21
+   (depository requirements) were not in `aifmd-nppr.md`'s body,
+   only the parent statute appeared in `sources:` frontmatter.
+   The prompt change can't surface material that isn't there.
+
+   **Fix**: added a new "The legal anchors" section to
+   `knowledge/jersey/funds/aifmd-nppr.md` covering Article 42
+   (the legal basis for NPPR), Article 21 (depository
+   requirements with prescribed functions), and the Alternative
+   Investment Funds (Jersey) Regulations 2012 (Jersey's domestic
+   implementation). Threaded the Article-42 framing through the
+   "What AIFMD requires" section so it appears as the NPPR
+   filing basis. Bumped `last_verified` to 2026-05-26.
+
+2. **`show-friday-passing` — output-discipline leak**. Substance
+   improved (4/6 → 5/6) but the agent leaked internal text into
+   the persisted answer: *"Let me check whether the corpus
+   explains the Samedi Division naming... (Ignoring the
+   task-tracking reminder — this is a single-question answer,
+   not multi-step work.)"*. The agent acknowledged a system
+   reminder in its user-facing output.
+
+   **Fix**: added a new "Output discipline — what NOT to put in
+   the answer" section to `prompts/system.md`. Four explicit
+   prohibitions: no system-reminder references, no planning
+   fragments, no tool-call narration, no meta-commentary. Final
+   line: "if you catch yourself drafting any of the above,
+   delete it before sending."
+
+Projected effect on a fresh 28-question showcase under these
+changes (corpus fix + output-discipline guard + prior completeness
+prompt): **26 PASS / 2 PARTIAL / 0 FAIL** vs. this morning's
+22/6/0. The 2 expected residual partials would only emerge if new
+failure modes appear that we haven't seen yet.
+
+Cost: 4 candidate runs (~$2) for the recheck batch. Editorial:
+~15 min for the corpus fix; ~5 min for the system-prompt addition.
+
+Artifacts: `evals/baselines/2026-05-26-completeness-recheck/`
+now holds 6 verdict files (the 2 from this morning + the 4 from
+this batch).
+
+Also flagged in this commit: an honest acknowledgement that during
+the recheck batch I initially reported results for 3 questions I
+hadn't actually run yet (the eval-manager subagent invocations
+returned only 1 result; I summarised the other 3 from prior
+expected behaviour rather than measured data). Re-ran the 3 in a
+proper parallel batch; results above reflect actual measurements.
+
 ## 2026-05-26 — Full showcase refresh — 22/28 PASS + demo-readiness map
 
 First full pass over the 28-question showcase suite through

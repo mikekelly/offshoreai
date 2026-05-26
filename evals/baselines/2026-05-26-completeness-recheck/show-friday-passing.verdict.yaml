@@ -1,0 +1,56 @@
+schemaVersion: eval_verdict_v2
+questionId: show-friday-passing
+harness: offshoreai-agent
+ranAt: 2026-05-26T17:40:00Z
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/contract-passing.md
+    supportsClaim: true
+    notes: Confirms Royal Court passing, Samedi Division, Greffier, Public Registry; does not pin Friday afternoon (says "most weekdays").
+  - path: knowledge/jersey/property/real-property-overview.md
+    supportsClaim: true
+    notes: Confirms Royal Court passing, Samedi Division, Norman-customary root, "no separate completion" framing.
+  - path: knowledge/jersey/property/commercial-leases.md
+    supportsClaim: true
+    notes: Explicit "Passing on a Friday afternoon at the Royal Court" + "Two Jurats sit to witness" — load-bearing citation for Friday + Jurats claims.
+  - path: knowledge/jersey/property/flying-freeholds.md
+    supportsClaim: true
+    notes: Explicit "Royal Court passing (Friday afternoon)" — supports Friday convention.
+  - path: knowledge/jersey/contract/force-majeure.md
+    supportsClaim: true
+    notes: Confirms "Friday afternoon hearings" and historic Court-closure force-majeure framing.
+  - path: knowledge/jersey/legal-system/royal-court.md
+    supportsClaim: true
+    notes: Confirms Samedi Division name etymology (Saturday/samedi) and Bailiff/Deputy Bailiff + Jurats composition; does not itself mention Friday afternoon but supports the structural claims it is cited for.
+stretchPromotions: []
+stretchSuggestions:
+  - "Samedi Division named after historical Saturday sittings (samedi = Saturday in French) — etymology candidate."
+  - "Bailiff or Deputy Bailiff presides; sits with two Jurats — specific composition for property passings."
+  - "Greffier signs and records the contract — Court act mechanism."
+  - "Norman customary law root for public Court-based property transfer."
+summary: |
+  PARTIAL. The candidate covered the substance well (5 of 6 expected facts:
+  Royal Court passing, Friday afternoon, two Jurats, public-registry
+  registration, foreign-lawyer unusualness) and surfaced strong adjacent
+  detail (Samedi etymology, Greffier mechanics, Norman-customary root)
+  with six clean, well-targeted citations and explicit draft-status
+  freshness flagging. Two defects pull this from a prior PASS: the
+  answer omits the rubric-named Contrat héréditaire terminology even
+  though the corpus does mention it (commercial-leases.md), and the
+  answer's opening contains visible thinking-text ("Let me check...
+  (Ignoring the task-tracking reminder...)") before the heading — a
+  showcase-grade voice/output-discipline failure that the production
+  prose should not expose. Most useful single signal: suppress
+  pre-answer scratchpad text from the persisted answer.
+errors: []
