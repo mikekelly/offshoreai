@@ -1,0 +1,49 @@
+schemaVersion: eval_verdict_v2
+questionId: show-friday-passing
+harness: offshoreai-agent
+ranAt: 2026-05-26T21:33:05Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: fail
+  voice: partial
+factsCovered: 4
+factsExpected: 6
+citationsTotal: 4
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/contract-passing.md
+    supportsClaim: partial
+    notes: "Supports Royal Court passing, Greffier records, Norman customary-law inheritance; does NOT mention Friday afternoon or two Jurats and in fact says property passings happen 'most weekdays' before the Samedi Division. status: draft."
+  - path: knowledge/jersey/property/commercial-leases.md
+    supportsClaim: true
+    notes: "Lines 50-57 explicitly: 'Passing on a Friday afternoon at the Royal Court', 'Two Jurats sit to witness', and uses *contrat héréditaire* terminology for 9+ year leases. status: draft."
+  - path: knowledge/jersey/property/flying-freeholds.md
+    supportsClaim: true
+    notes: "Line 161 lists 'Royal Court passing (Friday afternoon)' as a flying-freehold transfer step. status: draft."
+  - path: knowledge/jersey/contract/force-majeure.md
+    supportsClaim: true
+    notes: "Lines 124-125 confirm 'Royal Court passing required (Friday afternoon hearings)'. status: draft."
+stretchPromotions: []
+stretchSuggestions:
+  - "Samedi Division of the Royal Court is the typical forum for property passings (contract-passing.md)"
+  - "Lawyers act as attorneys for absent parties via powers of attorney, allowing transactions where parties cannot attend personally (contract-passing.md)"
+  - "Public visibility of the passing (parties' identities in Royal Court records / Public Registry; specific transaction terms typically private) — contrasts with English Land Registry approach (contract-passing.md)"
+summary: |
+  PARTIAL. The candidate covered Royal Court passing, two Jurats witnessing, contrat
+  héréditaire terminology, and Norman customary-law context, but omitted the
+  Public Registry post-passing step and never landed the "foreign lawyers find
+  this unusual" / non-Jersey-reader framing the showcase rubric called for —
+  the answer ends up shorter and less distinctive than the previous baseline
+  (which cited 8 files; this run cited 4). Most load-bearing miss: all four
+  cited files are status: draft and the candidate did not flag the freshness
+  issue (it did flag a corpus-internal cadence inconsistency, which is a
+  different kind of honesty signal but does not substitute for draft-flagging).
+  Best single next-iteration signal: the answer needs an explicit "this is
+  unusual to non-Jersey practitioners" comparison and should pick up the
+  Samedi Division / lawyers-as-attorneys / public-visibility content already
+  in contract-passing.md.
+errors: []

@@ -165,13 +165,14 @@ For each dimension that scored partial/fail (or each missed expected_fact):
 4. **Write one short diagnosis paragraph** (1-3 sentences) noting the specific files / line numbers / quoted text found.
 5. **Write one `suggestedFix` line** stating what the maintainer should do.
 
-Output as `missingFactDiagnostics:` in the verdict (see step 7).
+**These diagnostics MUST be written to the structured `failureDiagnostics:` field of the verdict.yaml (see step 7 for the exact schema).** Do not just describe them in your return message to the orchestrator or in the `summary:` field — they need to be in the structured `failureDiagnostics:` array so the orchestrator can aggregate them into the batch `fixBacklog`. Your return message will reference them; the YAML carries them.
 
 **Discipline notes:**
 
-- You are diagnosing, not fixing. Do NOT edit corpus content. Do NOT edit `expected_facts` or the question text. You may continue to append to `stretch_facts` per step 6's scope rules, but corpus / rubric fixes for missed facts are surfaced for human review, not applied by you.
-- Keep diagnoses short. The verdict YAML is a maintainer report, not an essay. One paragraph + one fix line per missed fact.
+- You are diagnosing, not fixing. Do NOT edit corpus content. Do NOT edit `expected_facts` or the question text. You may continue to append to `stretch_facts` per step 6's scope rules, but corpus / rubric fixes are surfaced for human review, not applied by you.
+- Keep diagnoses short. The verdict YAML is a maintainer report, not an essay. One paragraph + one fix line per failure.
 - If you can't classify confidently, label `unclassified` and describe what's ambiguous. Better than a wrong classification.
+- **If you find yourself listing failure observations in your `summary:` field or in your return message to the orchestrator, stop and ask: should each of these be its own `failureDiagnostics:` entry?** Almost always yes. The summary should be a one-paragraph narrative; the failureDiagnostics array is the structured carrier of the per-failure analysis.
 
 ### 6. Identify candidate stretch facts and (selectively) promote
 
