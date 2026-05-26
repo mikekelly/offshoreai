@@ -123,6 +123,44 @@ Read the candidate's answer alongside the question's rubric. Score per dimension
 
 Voice doesn't single-handedly lift a partial to pass; freshness_handling doesn't either. Citation_recall is informational unless a primary source was explicitly required by the rubric.
 
+### 5b. Diagnose missed expected_facts (ONLY if overall is partial or fail)
+
+**Skip this step if overall verdict is `pass`.** When every expected_fact is covered, there is nothing to diagnose — write the verdict and move to the next step.
+
+When `overall` is `partial` or `fail`, for each expected_fact (and any rubric `showcase_bar.substance` / `showcase_bar.jersey_specific` item) you marked as missed, classify the miss into one of five classes and write a short diagnosis with a suggested fix. This is the single most useful signal a failing run produces — it tells the maintainer what kind of fix would convert the verdict, and where to land it.
+
+**Classification:**
+
+| Class | Definition | Where the fix lives |
+|---|---|---|
+| `agent-discipline` | The fact is in the cited file's body, in its `sources:` frontmatter, or in a sibling file the agent should have traversed via the inclusion-link graph. The agent had reachable access to the material and failed to surface it. | Agent / prompt |
+| `corpus-exposure` | The fact IS in the corpus but in a file the agent's natural retrieval path for this question doesn't reach, OR in a narrow context that doesn't intersect the question's framing (e.g. term appears only in a sub-topic file but the question is about the parent topic). | **Corpus edit** — surface the fact in the natural-retrieval file |
+| `corpus-content-gap` | The fact is not in the corpus at all. `Grep` returns no occurrences anywhere under `knowledge/`. | **Corpus content add** |
+| `rubric-phrasing` | The fact is arguably present in the answer in different wording, or the rubric demands an exact term/spelling the corpus does not use (typo, archaic spelling, paraphrase mismatch). | **Rubric edit** |
+| `candidate-variance` | Prior measured runs of this question covered the fact; this run did not. Corpus exposes the fact adequately and prior agent runs reached it. | Accept as noise, OR structurally surface the fact more prominently in the corpus to reduce variance |
+
+**Procedure per missed fact:**
+
+1. `Grep` the corpus for distinctive terms from the fact. Record every file path where it appears.
+2. Look at the trajectory's tool-call log (read `<output_dir>/<question_id>.trajectory.json`) to see which files the candidate actually read.
+3. Compare:
+   - Fact appears in a file the candidate read → `agent-discipline` (fact was reachable, agent missed it)
+   - Fact appears in a file the candidate did NOT read, but that file is naturally adjacent (cross-referenced from a file the candidate did read, or in the same section folder) → still mostly `agent-discipline` (traversal failure)
+   - Fact appears only in files the candidate did not read AND those files are not naturally adjacent to its retrieval path → `corpus-exposure`
+   - Fact appears NOWHERE in `knowledge/` → `corpus-content-gap`
+   - Fact appears but with different wording / spelling than the rubric → `rubric-phrasing` (additionally note the actual corpus form)
+   - You have access to prior verdict files for this question (search `evals/baselines/*/<question_id>.verdict.yaml`) and prior runs covered the fact while this one didn't → `candidate-variance`
+
+4. Write one short diagnosis paragraph (1-3 sentences) noting the specific files / line numbers found, and one `suggestedFix` line stating what the maintainer should do.
+
+Output as `missingFactDiagnostics:` in the verdict (see step 7).
+
+**Discipline notes:**
+
+- You are diagnosing, not fixing. Do NOT edit corpus content. Do NOT edit `expected_facts` or the question text. You may continue to append to `stretch_facts` per step 6's scope rules, but corpus / rubric fixes for missed facts are surfaced for human review, not applied by you.
+- Keep diagnoses short. The verdict YAML is a maintainer report, not an essay. One paragraph + one fix line per missed fact.
+- If you can't classify confidently, label `unclassified` and describe what's ambiguous. Better than a wrong classification.
+
 ### 6. Identify candidate stretch facts and (selectively) promote
 
 Look at the answer for **accurate, valuable, generalisable** facts NOT in `expected_facts` or `stretch_facts`. These are candidates for promotion to `stretch_facts`.
@@ -189,6 +227,20 @@ stretchPromotions:                 # facts you ADDED to stretch_facts
   - "<exact text of new entry>"
 stretchSuggestions:                # candidates you considered but didn't promote
   - "<one-line>"
+missingFactDiagnostics:            # OMIT entirely on PASS verdicts.
+                                   # On PARTIAL/FAIL, one entry per missed expected_fact (per step 5b).
+  - fact: "<the rubric fact that was missed>"
+    classification: <agent-discipline | corpus-exposure | corpus-content-gap | rubric-phrasing | candidate-variance | unclassified>
+    diagnosis: |
+      <1-3 sentences. Reference specific file paths and line numbers
+      from your Grep results. Note which files the candidate read
+      (from trajectory) vs which files actually carry the fact.>
+    suggestedFix: |
+      <One line. e.g. "Surface 'contrat héréditaire' in
+      contract-passing.md as the term-of-art for Royal-Court-passed
+      real-property contracts."  OR  "Edit rubric: 'Contract
+      héréditaire' → 'Contrat héréditaire' to match corpus form."
+      OR  "No fix — accept as candidate variance.">
 summary: |
   <2-4 sentence narrative. Lead with the verdict, then the most
   load-bearing observation, then the most useful single signal for
