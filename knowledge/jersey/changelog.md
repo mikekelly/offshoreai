@@ -15,6 +15,65 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — First measured smoke run — 7 pass / 2 partial
+
+First measured run of the default smoke set (9 questions in a
+single parallel Agent batch). Results: **7 PASS, 2 PARTIAL,
+0 FAIL.**
+
+PASS:
+- `sn-001` (Trusts Art 47) — richer than rubric; disambiguated
+  Art 47 court variation, Art 37 deed variation, Arts 47B–H
+  mistake set-aside.
+- `sn-002` (MLO CDD) — full risk-based-approach framework via
+  MLO Arts 5-12.
+- `sn-003` (JPF vs Expert Fund) — DSP, 48-hour, 50-investor
+  cap, AIFMD NPPR positioning all surfaced.
+- `sd-co-001` (LLC Art 47) — modifiable duties + fraud/wilful-
+  default/gross-negligence floor + CJL 1991 contrast.
+- `sm-xjur-001` (Jersey vs Cayman PE fund) — rich comparison
+  citing 10 real files including CROSS-JURISDICTIONAL-MAP.
+- `sm-co-001` (CJL Art 115) — cash-flow test, 12-month
+  look-forward, no net-asset limb, Art 61A statement, Art
+  115A unlawful-distribution clawback.
+- `adv-nonexistent-llc-article` — honesty regression PASS;
+  surfaced the bound (LLC Law has 63 Articles), redirected
+  to closest in-corpus material, no confabulation.
+
+PARTIAL (two real signals):
+
+1. **`sd-aml-001`** — agent confused Article 23 ("Restrictions
+   on disclosure") with Article 35 (Tipping off and interference
+   with material) of the Terrorism Law 2002. Both relate to
+   disclosure, but Art 35 is the actual tipping-off offence.
+   Fix queued: strengthen cross-reference blocks in
+   `terrorism-article-19.md` and `terrorism-article-21.md` to
+   foreground a clear link to Art 35.
+
+2. **`sm-tax-001`** — agent stated Jersey has not adopted the
+   IIR. UTPR-not-adopted is correct; IIR-not-adopted is wrong
+   (corpus confirms Jersey adopted QDMTT + IIR). Fix queued:
+   add an at-a-glance "What Jersey adopted / didn't adopt"
+   table to `pillar-two.md`.
+
+One rubric error corrected in-place:
+
+- `sm-co-001` expected_files originally listed a non-existent
+  `article-115-solvency-test.md`. Replaced with the real files
+  (`distribution-restrictions.md`, `solvency-statement.md`,
+  `unlawful-distribution-consequences.md`).
+
+Sanity checks PASS — no regression in original
+offshore-finance coverage. New statute-wiki content
+retrievable and correctly navigated where expected. Full-suite
+re-run not triggered — the two partials are content-clarity
+fixes, not corpus-coverage gaps.
+
+Summary block updated in `coverage-questions.yaml` under
+`2026-05-26-smoke`. `last_run` bumped from `2026-05-18` to
+`2026-05-26` (smoke scope only — full suite last run still
+`2026-05-18`).
+
 ## 2026-05-26 — Eval suite — smoke set is the default run
 
 Restructured the eval suite so a small curated **smoke

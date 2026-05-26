@@ -13,7 +13,7 @@
 # Last full run: 2026-05-18 (initial baseline)
 
 version: 5-smoke-default
-last_run: 2026-05-18
+last_run: 2026-05-26  # smoke set; full suite still 2026-05-18
 notes: |
   v1 (2026-05-18): self-graded baseline after residential-tenancy build.
   v2 (2026-05-18): self-graded after family-law build.
@@ -671,6 +671,7 @@ questions:
     score:
       2026-05-18: pass  # original coverage intact
       2026-05-18-measured: pass  # v3 Agent-tool runner: better than expected — agent correctly identified Article 47G (not just 47B-J), 3-limb S&T Trusts test, divergence from Pitt v Holt. Sanity check confirms original content not regressed.
+      2026-05-26-measured: pass  # smoke run: agent disambiguated three regimes — Art 47B is interpretation article for the mistake-set-aside regime (Arts 47C–H), Art 47 is court variation, Art 37 is deed-based variation. Then walked through the Royal Court application procedure for court variation (representation, supporting documents, guardian ad litem). Richer than rubric. Cited article-47-set-aside.md, court-variation.md, article-37-variation.md.
 
   - id: sn-002
     smoke: true  # aml-cft surface in default smoke set
@@ -688,6 +689,7 @@ questions:
     score:
       2026-05-18: pass
       2026-05-18-measured: pass  # v3 Agent-tool runner: agent retrieved MLO Articles 5, 6, 7, 8, 11, 12 + compliance-mlro persona Q&A; full risk-based / simplified / enhanced CDD framework surfaced. Original AML content intact.
+      2026-05-26-measured: pass  # smoke run: full risk-based-approach framework via MLO Articles 5–12; covered identification/verification (Art 7), beneficial-ownership reasonable-extent (Art 8), purpose/nature (Art 9), monitoring (Art 10), simplified CDD (Art 11) and enhanced CDD (Art 12). 8 real MLO Article files cited. Sanity check still PASS.
 
   - id: sn-003
     smoke: true  # funds surface in default smoke set
@@ -705,6 +707,7 @@ questions:
     score:
       2026-05-18: pass  # original coverage intact
       2026-05-18-measured: pass  # v3 Agent-tool runner: agent surfaced richer detail than expected_facts captured — the DSP delegation model in JPF; 48-hour authorisation; Expert Fund minimum-investment thresholds. Expected_facts list should be ratcheted up. Original funds content intact.
+      2026-05-26-measured: pass  # smoke run: 50-investor JPF cap, 48-hour authorisation, DSP substitution for direct JFSC oversight, light PPM vs detailed Expert Fund OM, AIFMD NPPR positioning all surfaced. Cited jersey-private-fund.md, expert-fund.md, eligible-investor-fund.md. Sanity check still PASS.
 
   # =====================================================
   # SMOKE — cross-surface (added 2026-05-26)
@@ -730,7 +733,7 @@ questions:
       - "knowledge/jersey/tax/pillar-two.md"
       - "knowledge/jersey/international/pillar-two-mcit.md"
     score:
-      2026-05-26: pending  # awaiting first measured run
+      2026-05-26-measured: partial  # smoke run: got zero-ten 0%/10%/20%, MCIT, 750m threshold, 15% top-up, no UTPR — but FACTUAL ERROR: agent stated Jersey has NOT adopted the IIR. Corpus (jersey/tax/pillar-two.md L65-68 and jersey/international/pillar-two-mcit.md) is explicit that Jersey adopted QDMTT + IIR (only UTPR not adopted). Cited 4 real files including itl-article-123d.md and pillar-two.md. Signal: the "what Jersey adopted vs didn't" framing in pillar-two.md could be clearer; consider an at-a-glance table.
 
   - id: sm-xjur-001
     section: smoke
@@ -750,7 +753,7 @@ questions:
       - "knowledge/jersey/funds/jersey-private-fund.md"
       - "knowledge/cayman/exempted-limited-partnership.md"
     score:
-      2026-05-26: pending
+      2026-05-26-measured: pass  # smoke run: rich comparison — Cayman ELP/PFA 2020 as global default, JPF + AIFM Reg/NPPR for EU marketing, 50-investor JPF cap, DSP delegation, 48-hour authorisation, MCIT and Cayman MTT 2025 both noted. Cited 10 real files including CROSS-JURISDICTIONAL-MAP.md, jersey-private-fund.md, exempted-limited-partnership.md (all 3 expected_files), plus cima.md, private-funds-act.md and others. Agent also produced a decision verdict and parallel-funds option — richer than the rubric anticipated.
 
   - id: sm-co-001
     section: smoke
@@ -765,10 +768,13 @@ questions:
       - "No net-asset limb (dropped in 2008 reforms)"
       - "Personal liability for directors who authorise without grounds"
     expected_files:
-      - "knowledge/jersey/companies/article-115-solvency-test.md"
-      - "knowledge/jersey/companies/companies-law-1991.md"
+      # NB rubric corrected post-first-run: article-115-solvency-test.md
+      # does not exist in the corpus. Real files covering Art 115 are:
+      - "knowledge/jersey/companies/distribution-restrictions.md"
+      - "knowledge/jersey/companies/solvency-statement.md"
+      - "knowledge/jersey/companies/unlawful-distribution-consequences.md"
     score:
-      2026-05-26: pending
+      2026-05-26-measured: pass  # smoke run: all 5 facts surfaced — Art 115 cash-flow test, 12-month look-forward, no net-asset limb (Jersey contrasts with English law), Article 61A directors' solvency statement, Art 115A unlawful-distribution clawback. Cited 5 real files (distribution-restrictions.md, solvency-statement.md, unlawful-distribution-consequences.md, share-buyback.md, liability-share-purchase-redemption.md). Rubric updated post-run: my original expected_files entry article-115-solvency-test.md does not exist; replaced with the actual file names.
 
   # =====================================================
   # STATUTE-DEPTH — COMPANIES (added 2026-05-26)
@@ -791,7 +797,7 @@ questions:
       - "knowledge/jersey/companies/llc-article-47.md"
       - "knowledge/jersey/companies/llc-article-3.md"
     score:
-      2026-05-26: pending  # awaiting first measured run
+      2026-05-26-measured: pass  # smoke run: all 5 facts surfaced — Art 47 modifiable duties, good-faith floor, fraud/wilful-default/gross-negligence carve-out, contrast with CJL 1991 Art 74 non-modifiable directors' duties, Delaware-LLC-style design. Cited 3 real files: llc-article-47.md, llc-article-3.md (both expected_files), plus directors-duties.md for the comparator. The newly-built per-Article wiki is retrievable and the agent navigated the contrast cleanly.
 
   - id: sd-co-002
     section: statute-depth-companies
@@ -865,7 +871,7 @@ questions:
       - "knowledge/jersey/aml-cft/terrorism-article-21.md"
       - "knowledge/jersey/aml-cft/terrorism-article-35.md"
     score:
-      2026-05-26: pending
+      2026-05-26-measured: partial  # smoke run: main comparison correct (Art 19 subjective, Art 21 FI-specific with 'reasonable grounds' objective limb, Art 21 catches negligent failure, both flow to FIU). FACTUAL ERROR: agent named Art 23 ('Restrictions on disclosure') as the tipping-off article. Tipping-off is Article 35 (terrorism-article-35.md). Agent cited terrorism-article-19.md, -21.md, -22.md (protected disclosures), -23.md — but NOT -35.md. Signal: terrorism-article-19.md and -21.md should foreground a clearer link to Art 35 in their cross-reference blocks rather than relying on Article-number adjacency for the agent to find tipping-off.
 
   - id: sd-aml-002
     section: statute-depth-aml
@@ -955,6 +961,70 @@ questions:
 # Summary tracking
 # =====================================================
 summary:
+  2026-05-26-smoke:
+    scope: smoke
+    total: 9
+    pass: 7
+    partial: 2
+    fail: 0
+    smoke_ids:
+      pass:
+        - sn-001
+        - sn-002
+        - sn-003
+        - sd-co-001
+        - sm-xjur-001
+        - sm-co-001
+        - adv-nonexistent-llc-article
+      partial:
+        - sd-aml-001    # named Art 23 as tipping-off; actual is Art 35
+        - sm-tax-001    # said Jersey has not adopted IIR; corpus says it has
+    notes: |
+      First measured smoke run after v5-smoke-default introduced
+      the default smoke set. 7/9 PASS, 2/9 PARTIAL, 0 FAIL.
+
+      Two real signals (not just scoreboard noise):
+
+      1. sd-aml-001 PARTIAL — agent confused Article 23 (Restrictions
+         on disclosure) with Article 35 (Tipping off and interference
+         with material) of the Terrorism Law 2002. Both are about
+         disclosure constraints but Art 35 is the actual tipping-off
+         offence. Fix: strengthen the cross-reference blocks in
+         terrorism-article-19.md and -21.md to foreground a clear
+         link to Art 35 (tipping-off) rather than relying on Article-
+         number adjacency.
+
+      2. sm-tax-001 PARTIAL — agent stated "Jersey has not
+         implemented the IIR or UTPR". UTPR not adopted is correct;
+         IIR NOT adopted is WRONG. jersey/tax/pillar-two.md L65-68
+         and jersey/international/pillar-two-mcit.md make Jersey's
+         IIR adoption explicit but the framing apparently allowed a
+         careful reader to misread. Fix: add an at-a-glance "What
+         Jersey adopted / didn't adopt" table to pillar-two.md.
+
+      One rubric correction:
+
+      - sm-co-001 expected_files originally listed
+        article-115-solvency-test.md which does not exist in the
+        corpus. The real files covering Art 115 distributions are
+        distribution-restrictions.md, solvency-statement.md, and
+        unlawful-distribution-consequences.md. Rubric corrected
+        in-place.
+
+      Sanity checks (sn-001, sn-002, sn-003) all PASS — no
+      regression in original offshore-finance coverage. New
+      statute-wiki content (sd-co-001 LLC Art 47) retrievable and
+      navigated correctly.
+
+      Honesty regression guard PASS — adv-nonexistent-llc-article
+      surfaced the bound (LLC Law 2018 has 63 Articles), did not
+      confabulate, redirected to closest in-corpus material.
+
+      Full-suite re-run not required by this smoke result — the two
+      partials are content-clarity fixes, not corpus-coverage gaps.
+      Next smoke run after the corpus fixes land should re-measure
+      sd-aml-001 and sm-tax-001 to confirm PARTIAL → PASS.
+
   2026-05-18:
     total: 17
     pass: 12       # 5 residential tenancy + 4 family (fa-001 thru fa-004) + 3 sanity checks
