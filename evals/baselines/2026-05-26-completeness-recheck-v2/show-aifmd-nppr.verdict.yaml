@@ -1,0 +1,39 @@
+schemaVersion: eval_verdict_v2
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/funds/aifmd-nppr.md
+    supportsClaim: true
+    notes: Article 42 / Article 21 depository / AIF(J) Regs 2012 all anchored in the file
+  - path: knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md
+    supportsClaim: true
+    notes: §330 KAGB, BaFin, local fact-sheet, distributor, reporting all in the file
+  - path: knowledge/frontier/aifmd-ii-april-2026.md
+    supportsClaim: true
+    notes: Directive (EU) 2024/927, 16 April 2026 application, expanded disclosures, Annex IV reporting, EU/UK AIF Code split all anchored
+stretchPromotions: []
+stretchSuggestions: []
+summary: |
+  PASS — covers all five showcase substance bullets (NPPR, BaFin
+  notification, Article 42/21 conditions, AIF(J) Regs 2012, no
+  passport / country-by-country) and both Jersey-specific bullets
+  (Regs 2012 named; JFSC role including the EU/UK AIF Code split).
+  Three citations, all verified against the cited files. The
+  candidate also flagged the `draft` status of both Jersey files
+  and the `as_of` decay on the frontier file — exemplary freshness
+  discipline. Voice is practitioner-facing (Route → Sequence →
+  AIFMD II deltas → Caveats), consistent with fund-counsel rubric.
+errors: []

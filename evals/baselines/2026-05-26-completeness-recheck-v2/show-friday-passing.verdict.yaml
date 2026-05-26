@@ -1,0 +1,49 @@
+schemaVersion: eval_verdict_v2
+questionId: show-friday-passing
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 6
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/contract-passing.md
+    supportsClaim: partial
+    notes: "Status draft (correctly flagged). Supports passing in Royal Court / Samedi Division and Norman customary inheritance; does NOT mention Friday (says 'most weekdays')."
+  - path: knowledge/jersey/property/flying-freeholds.md
+    supportsClaim: true
+    notes: "Confirms 'Royal Court passing (Friday afternoon)' and Public Registry registration."
+  - path: knowledge/jersey/property/commercial-leases.md
+    supportsClaim: true
+    notes: "Confirms Friday-afternoon passing, AND contains 'contrat héréditaire' terminology and 'Two Jurats sit to witness' — both load-bearing rubric items the candidate failed to extract despite citing this file."
+  - path: knowledge/jersey/contract/force-majeure.md
+    supportsClaim: true
+    notes: "Confirms Royal Court passing on Friday afternoon for sale of Jersey real property."
+  - path: knowledge/jersey/legal-system/royal-court.md
+    supportsClaim: true
+    notes: "Confirms Samedi Division etymology — named after historical Saturday sittings."
+stretchPromotions: []
+stretchSuggestions:
+  - "Court act effects the title transfer at the moment of passing (not exchange/completion model)"
+  - "Greffier signs and records the contract"
+summary: |
+  Partial. The candidate gave a clean, well-voiced explanation of the
+  Royal Court / Samedi Division passing model and correctly flagged the
+  draft status of contract-passing.md, but missed two signature
+  rubric items — "Two Jurats witness" and "contrat héréditaire"
+  terminology — that were in commercial-leases.md, which the candidate
+  actually cited. The most useful single improvement for next iteration
+  is a closer read of each cited file for Jersey-distinctive
+  terminology before drafting; the missed terms were in the file the
+  agent had already pulled. This is a regression from the prior
+  recorded PASS (which cited 8 files vs 5 here and named the
+  chain-of-passations title system).
+errors: []
