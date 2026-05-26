@@ -80,7 +80,15 @@ the corpus in one batch. Membership: any question with
 `smoke: true` in its body in `coverage-questions.yaml`.
 
 ```
-/run-evals --suite evals/coverage-questions.yaml --ids sn-001,sn-002,sn-003,sd-co-001,sd-aml-001,sm-tax-001,sm-xjur-001,sm-co-001
+/run-evals
+```
+
+That's it — with no args, `/run-evals` resolves to
+`--suite evals/coverage-questions.yaml --smoke` and runs the
+entire smoke set. Equivalent verbose form:
+
+```
+/run-evals --suite evals/coverage-questions.yaml --smoke
 ```
 
 | Surface | Question ID | File |
@@ -115,7 +123,7 @@ Each section is declared in the top-level `sections:` map of
 `coverage-questions.yaml`. Filter by the section's ID prefix:
 
 ```
-/run-evals --suite evals/coverage-questions.yaml --ids sd-aml-001,sd-aml-002,sd-aml-003,sd-aml-004,sd-aml-005,sd-aml-006
+/run-evals --section statute-depth-aml
 ```
 
 The smoke set is always the regression guard for any

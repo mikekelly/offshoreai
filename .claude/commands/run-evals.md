@@ -1,6 +1,6 @@
 ---
-description: Run a batch of eval questions through the offshoreai SDK custom agent and aggregate verdicts. Each question runs in parallel via an `eval-manager` subagent that dispatches the candidate, verifies, grades, optionally evolves the rubric, and writes verdict.yaml.
-argument-hint: --suite <path> --ids <id1,id2,...> [--output <dir>]
+description: Run a batch of eval questions through the offshoreai SDK custom agent and aggregate verdicts. Each question runs in parallel via an `eval-manager` subagent that dispatches the candidate, verifies, grades, optionally evolves the rubric, and writes verdict.yaml. With no arguments, runs the default smoke set.
+argument-hint: [--suite <path>] [--ids <id1,id2,...> | --smoke | --section <name>] [--output <dir>]
 ---
 
 You are running `/run-evals`. The args (from `$ARGUMENTS`):
@@ -11,16 +11,27 @@ $ARGUMENTS
 
 ## What you do
 
-1. **Parse the args.**
-   - `--suite <path>` — repo-relative path to an eval suite YAML (e.g. `evals/coverage-questions.yaml`)
-   - `--ids <id1,id2,...>` — comma-separated question IDs to run (no spaces). Required for now; future iterations may add `--smoke`, `--section <name>` shortcuts.
-   - `--output <dir>` — output directory for artifacts (default: `evals/baselines/<YYYY-MM-DD>-<suite-basename>-<random-4>/`)
+1. **Parse the args.** All are optional — defaults below.
 
-   If args are missing, print the usage and stop.
+   - `--suite <path>` — repo-relative path to an eval suite YAML.
+     **Default:** `evals/coverage-questions.yaml`.
+   - `--ids <id1,id2,...>` — comma-separated question IDs to run (no spaces).
+   - `--smoke` — shorthand for "run every question with `smoke: true` in the suite" (the default smoke set). This is the **default behaviour when no `--ids` and no `--section` is given**.
+   - `--section <name>` — run every question whose `section:` field matches.
+   - `--output <dir>` — output directory for artifacts.
+     **Default:** `evals/baselines/<YYYY-MM-DD>-<scope-label>-<random-4>/` where `<scope-label>` is `smoke` / `section-<name>` / `ids-<n>` depending on which selector resolved.
 
-2. **Validate the suite and IDs.**
-   - `Read` the suite YAML. Confirm each requested ID exists in its `questions:` array.
-   - If any ID is missing, list which and stop without running anything (don't run a partial batch).
+   Selector precedence: `--ids` > `--section` > `--smoke` > default-smoke. Stop with an error message if more than one selector is given.
+
+   **No-args call** (`/run-evals` with nothing): defaults to `--suite evals/coverage-questions.yaml --smoke`. This is the recommended routine smoke run.
+
+2. **Resolve the question ID list.**
+   - `Read` the suite YAML.
+   - **`--ids` form**: validate each requested ID exists in `questions:`. If any missing, list them and stop.
+   - **`--smoke` form** (or default): collect every question with `smoke: true`. **Also** look at the suite's `default_smoke_set:` block (in `coverage-questions.yaml`) — it may list IDs in OTHER suite files (e.g. `adv-nonexistent-llc-article` in `adversarial-citations.yaml`); IDs from other files go to a separate parallel batch.
+   - **`--section` form**: collect every question whose top-level `section:` field equals the arg. Stop with an error if no matches.
+
+   The resolved list goes into `<output_dir>/summary.yaml` as `run.ids: [...]`.
 
 3. **Create the output directory.**
    - `mkdir -p` the resolved output path.
