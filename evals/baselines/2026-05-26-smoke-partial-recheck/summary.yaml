@@ -1,0 +1,43 @@
+schemaVersion: eval_batch_summary_v1
+run:
+  harness: offshoreai-agent
+  evalSuite: evals/coverage-questions.yaml
+  ranAt: 2026-05-26T11:47:47.480Z
+  questions: 2
+totals:
+  pass: 2
+  partial: 0
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 1
+  jerseySpecificPassRate: 1
+  substancePassRate: 1
+  medianToolCalls: 3
+  medianTokensInput: 7.5
+  medianTokensOutput: 1651.5
+  medianWallClockSeconds: 117.32
+  totalCostUsd: 1.0623
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: sm-tax-001
+    verdict: pass
+    summary: "Pass. All seven expected facts are present and correct, with precise
+      Jersey statute references (Article 123C, 123D, 123I, 123CAA, 123DA) and
+      accurate MCIT/Pillar Two mechanics. Two corpus files cited, both verified
+      — zero-ten.md and pillar-two-mcit.md — with zero hallucinated citations.
+      The only demotion is citation recall: the rubric expected
+      knowledge/jersey/tax/pillar-two.md (which names the MCIT Law 2024), which
+      the candidate did not cite, though the substance was adequately covered by
+      the international Pillar Two file. Very efficient at 2 tool calls with no
+      redundancy."
+  - id: sd-aml-001
+    verdict: pass
+    summary: Pass. The answer correctly identifies and contrasts the Article 19
+      subjective test (general population) versus the Article 21 objective
+      'reasonable grounds' limb (regulated businesses), with accurate
+      negligent-failure framing. Both cited corpus files verified as supporting
+      every claim. The single gap is the complete omission of Article 35
+      tipping-off, which the rubric expected as the post-SAR operational
+      constraint — this drops citation recall to partial but does not demote the
+      overall verdict because the question specifically asked about the 19/21
+      difference, which is fully and accurately answered.

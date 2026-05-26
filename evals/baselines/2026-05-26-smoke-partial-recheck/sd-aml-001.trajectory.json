@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sd-aml-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T11:46:25.958Z",
+  "wallClockSeconds": 72.423,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"sar\",\"aml-cft\"],\"mode\":\"and\"}",
+      "inputBytes": 39,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rl \\\"Terrorism\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\" | head -30\",\"description\":\"Find files mentioning Terrorism ",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/terrorism-article-19.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/terrorism-article-21.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1410,
+    "cacheReadTokens": 189288,
+    "cacheWriteTokens": 65697,
+    "totalCostUsd": 0.54054025
+  },
+  "answer": {
+    "text": "Found both files. Reading them in parallel.Both files are fresh (last verified 2026-05-25, today is 2026-05-26).\n\n## The difference between Terrorism Law Article 19 and Article 21 SAR duties\n\nBoth are SAR (failure-to-disclose) offences under the **Terrorism (Jersey) Law 2002**, triggered by suspicion of an offence under Articles 15, 16 or 16A (terrorism-financing offences) — but they target different populations and apply different tests.\n\n### Article 19 — general duty\n- Applies to **anyone** carrying on a trade, profession, business or employment.\n- The mental element is **subjective**: the person must actually \"believe or suspect\" terrorism-financing involvement, based on information that came to their attention through their work.\n- Defence: **reasonable excuse**.\n- It is the CFT analogue of the POCL Article 34A general SAR duty.\n\n### Article 21 — financial-institution duty\n- Applies only to persons carrying on a **regulated business** as defined in Schedule 2 to the Proceeds of Crime (Jersey) Law 1999.\n- The mental element adds an **objective limb**: the person commits the offence if they know, suspect, **or have reasonable grounds for knowing or suspecting**. This catches **negligent failure** to spot suspicion — facts that ought to have aroused suspicion in a regulated business but did not.\n- Defence: reasonable excuse, including a legal professional privilege carve-out.\n- This is the practical compliance trigger driving the JFSC AML/CFT Handbook's CDD, monitoring and SAR disciplines for CFT.\n\n### The key contrast\nArticle 19 catches **actual subjective suspicion** across the whole economy; Article 21 layers a stricter, objective \"reasonable grounds\" test onto **regulated-sector firms** alone — so a regulated trust company business or bank can commit the Article 21 offence even where it did not in fact suspect, if a reasonable regulated business would have. Both require disclosure to the FIU as soon as reasonably practicable.\n\n### Cited files\n1. `knowledge/jersey/aml-cft/terrorism-article-19.md` (status: draft; last_verified 2026-05-25)\n2. `knowledge/jersey/aml-cft/terrorism-article-21.md` (status: draft; last_verified 2026-05-25)\n\n**Caveat on status**: both files are currently `draft` rather than `stable`. The substantive points above reflect the corpus drafts; verify against the Terrorism (Jersey) Law 2002 on jerseylaw.je before relying on them in practice.\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 370
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    }
+  }
+}

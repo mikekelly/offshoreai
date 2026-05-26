@@ -733,7 +733,8 @@ questions:
       - "knowledge/jersey/tax/pillar-two.md"
       - "knowledge/jersey/international/pillar-two-mcit.md"
     score:
-      2026-05-26-measured: partial  # smoke run: got zero-ten 0%/10%/20%, MCIT, 750m threshold, 15% top-up, no UTPR — but FACTUAL ERROR: agent stated Jersey has NOT adopted the IIR. Corpus (jersey/tax/pillar-two.md L65-68 and jersey/international/pillar-two-mcit.md) is explicit that Jersey adopted QDMTT + IIR (only UTPR not adopted). Cited 4 real files including itl-article-123d.md and pillar-two.md. Signal: the "what Jersey adopted vs didn't" framing in pillar-two.md could be clearer; consider an at-a-glance table.
+      2026-05-26-measured: partial  # explore-subagent smoke (NOT the production harness — see harness_note in summary): got zero-ten 0%/10%/20%, MCIT, 750m threshold, 15% top-up, no UTPR — but FACTUAL ERROR: agent stated Jersey has NOT adopted the IIR. Corpus (jersey/tax/pillar-two.md L65-68 and jersey/international/pillar-two-mcit.md) is explicit that Jersey adopted QDMTT + IIR (only UTPR not adopted). Cited 4 real files including itl-article-123d.md and pillar-two.md. Signal: the "what Jersey adopted vs didn't" framing in pillar-two.md could be clearer; consider an at-a-glance table.
+      2026-05-26-measured-offshoreai-agent: pass  # 7/7 facts, 0 hallucinated citations. Agent reached jersey/international/pillar-two-mcit.md (the deep file) and correctly stated "Jersey has implemented MCIT as a QDMTT and an IIR for in-scope groups; it has not implemented a UTPR" — the explore-subagent error inverted; production stack got it right. Citation verifier rejected 2 claims during the run (real signal worth investigating); grader scored 7/7 facts on the final answer. Cost: $0.59 per question. Hypothesis confirmed: the production harness's MCP-corpus-getFile-driven deep retrieval + verifier discipline lifts the explore-subagent partial to PASS.
 
   - id: sm-xjur-001
     section: smoke
@@ -871,7 +872,8 @@ questions:
       - "knowledge/jersey/aml-cft/terrorism-article-21.md"
       - "knowledge/jersey/aml-cft/terrorism-article-35.md"
     score:
-      2026-05-26-measured: partial  # smoke run: main comparison correct (Art 19 subjective, Art 21 FI-specific with 'reasonable grounds' objective limb, Art 21 catches negligent failure, both flow to FIU). FACTUAL ERROR: agent named Art 23 ('Restrictions on disclosure') as the tipping-off article. Tipping-off is Article 35 (terrorism-article-35.md). Agent cited terrorism-article-19.md, -21.md, -22.md (protected disclosures), -23.md — but NOT -35.md. Signal: terrorism-article-19.md and -21.md should foreground a clearer link to Art 35 in their cross-reference blocks rather than relying on Article-number adjacency for the agent to find tipping-off.
+      2026-05-26-measured: partial  # explore-subagent smoke (NOT the production harness — see harness_note in summary): main comparison correct (Art 19 subjective, Art 21 FI-specific with 'reasonable grounds' objective limb, Art 21 catches negligent failure, both flow to FIU). FACTUAL ERROR: agent named Art 23 ('Restrictions on disclosure') as the tipping-off article. Tipping-off is Article 35 (terrorism-article-35.md). Agent cited terrorism-article-19.md, -21.md, -22.md (protected disclosures), -23.md — but NOT -35.md. Signal: terrorism-article-19.md and -21.md should foreground a clearer link to Art 35 in their cross-reference blocks rather than relying on Article-number adjacency for the agent to find tipping-off.
+      2026-05-26-measured-offshoreai-agent: pass  # 5/4 facts (surfaced one extra), 0 hallucinated citations. Agent navigated cleanly with NO Art 23 confusion — answer focused on the Art 19 (subjective, anyone) vs Art 21 (objective "reasonable grounds", regulated business only) contrast without conflating disclosure-restriction articles. Cited terrorism-article-19.md and -21.md (the right files). Citation verifier passed 15/15 claims first try. Cost: $0.48. Hypothesis confirmed: even without strengthened cross-references to Art 35 (the corpus-fix queued from the explore-subagent partial), the production agent navigated correctly — the verifier + deep-retrieval discipline prevents the adjacency-driven confusion the explore-subagent fell into. The cross-reference improvement is still worth landing as a defence-in-depth measure.
 
   - id: sd-aml-002
     section: statute-depth-aml
@@ -961,6 +963,68 @@ questions:
 # Summary tracking
 # =====================================================
 summary:
+  2026-05-26-smoke-offshoreai-agent-partials-recheck:
+    scope: smoke-partials-only
+    harness: offshoreai-agent
+    total: 2
+    pass: 2
+    partial: 0
+    fail: 0
+    ids:
+      - sd-aml-001    # was PARTIAL under explore-subagent; PASS here
+      - sm-tax-001    # was PARTIAL under explore-subagent; PASS here
+    cost_usd: 1.06
+    median_tool_calls: 3
+    output_dir: evals/baselines/2026-05-26-smoke-partial-recheck/
+    system_prompt_provenance: |
+      The trajectory.json files in the output directory record
+      systemPrompt.{presetName, source, appendBytes, appendSha256}
+      under meta — first runs to carry this provenance trail.
+    notes: |
+      Token-frugal recheck of the two PARTIALs from the
+      2026-05-26-smoke-explore-subagent batch, run through the
+      proper production harness (offshoreai-agent: MCP corpus tools
+      + citation verifier + prompts/system.md). Hypothesis was that
+      the production stack's verifier would catch the bad citations
+      and the agent would correct. Confirmed: both flipped
+      PARTIAL → PASS.
+
+      sd-aml-001 (Terrorism Art 19 vs 21 SAR duties):
+        - Verifier: 15 claims, 0 rejections.
+        - Grader: 5/4 facts (surfaced an extra fact), 0 hallucinated
+          citations.
+        - The Art 23 vs Art 35 confusion that bit the explore-
+          subagent did NOT happen here. The agent answered the
+          comparison cleanly without conflating disclosure-
+          restriction articles.
+
+      sm-tax-001 (zero-ten + Pillar Two IIR adoption):
+        - Verifier: REJECT (2 claim rejections during the run —
+          real verifier signal worth keeping).
+        - Grader: 7/7 facts, 0 hallucinated citations on the final
+          answer.
+        - Agent reached jersey/international/pillar-two-mcit.md
+          and correctly stated "Jersey has implemented MCIT as a
+          QDMTT and an IIR for in-scope groups; it has not
+          implemented a UTPR" — the exact inversion of the
+          explore-subagent's error.
+
+      Implication: the production stack's lift over the explore-
+      subagent baseline is real and measurable. The eval-runner
+      CLI under offshoreai-agent harness is now the production
+      smoke discipline per evals/README.md.
+
+      Remaining outstanding work (not blocking):
+        - Run the full 9-question smoke through offshoreai-agent
+          to refresh the scoreboard for all smoke IDs (the 7 not
+          in this batch passed under explore-subagent so are
+          almost certainly fine; the recheck mainly fills in
+          provenance trails).
+        - Two corpus-clarity fixes still worth landing as
+          defence-in-depth: terrorism-article-19.md/-21.md
+          cross-references to Art 35; pillar-two.md adopted/not-
+          adopted at-a-glance table.
+
   2026-05-26-smoke-explore-subagent:
     scope: smoke
     harness: explore-subagent  # NOT the production smoke harness

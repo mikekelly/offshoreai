@@ -1,0 +1,23 @@
+questionId: sd-aml-001
+harness: offshoreai-agent
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 4
+citationsTotal: 8
+hallucinatedCitations: 0
+summary: Pass. The answer correctly identifies and contrasts the Article 19
+  subjective test (general population) versus the Article 21 objective
+  'reasonable grounds' limb (regulated businesses), with accurate
+  negligent-failure framing. Both cited corpus files verified as supporting
+  every claim. The single gap is the complete omission of Article 35
+  tipping-off, which the rubric expected as the post-SAR operational constraint
+  — this drops citation recall to partial but does not demote the overall
+  verdict because the question specifically asked about the 19/21 difference,
+  which is fully and accurately answered.

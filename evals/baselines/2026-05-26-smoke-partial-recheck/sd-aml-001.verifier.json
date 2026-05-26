@@ -1,0 +1,8 @@
+{
+  "kind": "pass",
+  "claimsChecked": 15,
+  "claimsWithCitation": 15,
+  "notes": "All substantive claims are directly supported by the two cited corpus files. The characterisation of Article 19's subjective test, Article 21's objective 'reasonable grounds' limb, the scope distinction (whole economy vs regulated business), the defences, the FIU disclosure requirement, and the POCL Article 34A analogy all match the corpus text closely — in several cases near-verbatim. The response correctly flags both files as 'draft' status and advises verification against the primary statute on jerseylaw.je. No authority-hierarchy issue: with no bundle active the corpus concept files for the specific statute articles are the appropriate citation level.",
+  "rejectCount": 0,
+  "costUsd": 0.34565100000000004
+}
