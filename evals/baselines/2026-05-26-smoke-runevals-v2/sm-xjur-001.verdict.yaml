@@ -1,0 +1,51 @@
+schemaVersion: eval_verdict_v2
+questionId: sm-xjur-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:33:56Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 7
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: Confirms Cayman ELP+PFA 2020 as PE default; Jersey NPPR routes; MCIT 2025 for both
+  - path: knowledge/cayman/exempted-limited-partnership.md
+    supportsClaim: true
+    notes: Confirms ELP as dominant closed-ended PE/VC vehicle globally; parallel-fund pattern; PFA registration
+  - path: knowledge/cayman/private-funds-act.md
+    supportsClaim: true
+    notes: Confirms PFA 2020 scope, registration timeline (days), audit/valuation/custody/AML obligations
+  - path: knowledge/jersey/funds/jersey-private-fund.md
+    supportsClaim: true
+    notes: Confirms 50-investor cap, ~48-hour authorisation, DSP regime
+  - path: knowledge/jersey/funds/expert-fund.md
+    supportsClaim: true
+    notes: Confirms Expert Fund as the >50-investor / wider AIFMD-NPPR Jersey alternative
+  - path: knowledge/jersey/index.md
+    supportsClaim: true
+    notes: Confirms NPPR for Jersey AIFs
+  - path: knowledge/jersey/history/finance/trajectory.md
+    supportsClaim: true
+    notes: Confirms Jersey MCIT 2025 implementing QDMTT + IIR, no UTPR
+stretchPromotions: []
+stretchSuggestions:
+  - "Cayman ELP is contractual — LPA is the master document; ELP Act provides default rules modifiable by the LPA"
+  - "Cayman ELP / PFA carve-outs for single-investor, JV, securitisation SPVs, pension funds"
+  - "Parallel Delaware-LP-for-US / Cayman-ELP-for-non-US PE-fund pattern in mid- and large-cap"
+summary: |
+  PASS — strong, well-structured cross-jurisdictional answer that hits all six expected facts:
+  Cayman ELP+PFA 2020 as global default, JPF+NPPR for EU marketing, 50-investor JPF cap,
+  DSP delegation, 48-hour authorisation, Article 9 firewall as a Jersey-distinctive
+  factor, and Pillar Two affecting both. Cited 7 real files (including all 3 expected_files)
+  and surfaced freshness caveat that JPF / Expert Fund / ELP / PFA files are status draft.
+  Decision-table format adds practitioner value beyond the rubric.
+errors: []

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sn-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:32:50.836Z",
+  "wallClockSeconds": 41.634,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getArticle",
+      "rawName": "mcp__corpus__getArticle",
+      "inputDigest": "{\"statute\":\"trusts-law-1984\",\"article\":\"47\"}",
+      "inputBytes": 44,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getArticle",
+      "rawName": "mcp__corpus__getArticle",
+      "inputDigest": "{\"statute\":\"trusts-law-1984\",\"article\":\"47B\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 2080,
+    "cacheReadTokens": 104129,
+    "cacheWriteTokens": 63754,
+    "totalCostUsd": 0.502562
+  },
+  "answer": {
+    "text": "I'll check the corpus — there's a possible confusion to flag: Article 47B in the Trusts (Jersey) Law 1984 is the **statutory mistake / set-aside** regime, not variation. Variation of trusts is a different Article. Let me verify.Quick correction before I answer: **Article 47B is not the variation power** — it's part of the statutory mistake / set-aside regime (Articles 47B–47H, added by the Trusts (Amendment No. 6) (Jersey) Law 2013). The **variation** jurisdiction is **Article 47** simpliciter. I'll answer on the assumption you mean variation; if you actually need set-aside for mistake, say so and I'll pivot.\n\n## Article 47 — Court variation of a Jersey trust\n\nArticle 47 of the Trusts (Jersey) Law 1984 lets the Royal Court approve an arrangement **varying or revoking** trust terms on behalf of those who cannot consent for themselves — **minors**, **interdicts**, **unascertained persons**, and **unborn beneficiaries** — where the arrangement appears **beneficial** to that person. It also permits the Court to **confer powers on trustees** for expedient transactions the deed does not authorise.\n\n### When you use it (vs. Article 37)\n\n- **[Article 37](knowledge/jersey/trusts/court-variation.md)** is deed-based variation under the trust's own variation power, used where all affected parties consent.\n- **Article 47** is the court route — needed where the deed has no adequate variation power, or where there are non-consenting interests (minors, unborns, unascertained).\n\n### Procedure\n\nThe application is by **Representation in the Royal Court (Samedi Division)**, supported by:\n\n- the trust deed and any amendments;\n- the **proposed deed of variation**, drafted ready for execution;\n- **affidavit evidence** explaining the rationale and the benefit to non-consenting interests;\n- **professional cross-border tax / accounting analysis** of consequences;\n- **written consent** of all adult beneficiaries;\n- a **guardian ad litem** (typically a senior Jersey Advocate appointed by the Court) to represent minor and unborn beneficiaries;\n- evidence of service on all interested parties.\n\n### The \"beneficial\" test\n\nThe Court must be substantively satisfied the arrangement is beneficial to the person on whose behalf approval is sought — a variation that only benefits consenting adults at the expense of unborns will be refused. Actuarial or tax analysis is often required to evidence benefit to unborn interests. The Royal Court's analysis broadly mirrors the English approach under the Variation of Trusts Act 1958, with Jersey-specific adaptations.\n\n### Trustee pitfalls\n\n- Inadequate guardian-ad-litem representation for unborns can vitiate the order on procedural grounds.\n- A \"thin\" substantive-benefit case for unborns will be refused — model it carefully.\n- Variations frequently have **foreign-tax-trigger** consequences (UK IHT/CGT, US grantor-trust treatment); model before applying.\n- Don't conflate Article 47 with Articles 47B–H — cite precisely.\n\n### Caveat on the corpus file\n\nThe Article 47 file I'm citing has status **`draft`** (last verified 2026-05-15) — drafted but not yet through full editorial verification against the consolidated statute. Treat the substance as a reliable guide to the shape of the procedure, but verify the precise statutory wording against the consolidated text at [jerseylaw.je](https://www.jerseylaw.je/laws/current/l_11_1984) before filing.\n\n### Cited files\n\n1. `knowledge/jersey/trusts/court-variation.md` (Article 47 — court variation)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 528
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "44397b0f-66b0-446f-b1e0-ace416b383de"
+  }
+}

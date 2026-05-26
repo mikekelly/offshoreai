@@ -1,0 +1,33 @@
+schemaVersion: eval_verdict_v2
+questionId: sd-co-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/companies/llc-article-47.md
+    supportsClaim: true
+    notes: File contains the exact modification regime, good-faith floor, and fraud/wilful default/gross negligence carve-out cited.
+  - path: knowledge/jersey/companies/llc-article-3.md
+    supportsClaim: true
+    notes: Confirms the LLC agreement as the load-bearing operational document with Delaware-LLC-style flexibility.
+  - path: knowledge/jersey/companies/llc-2018-index.md
+    supportsClaim: true
+    notes: Provides the CJL 1991 comparator context (directors' duties under Article 74 non-modifiable; LLC agreement flexible).
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 47 leaves open whether floor extends to disclosure of conflicts; corpus notes case law thin (the agent flagged this as a corpus gap)."
+  - "Comparator extends not just to Delaware but to Cayman LLC parallel floor."
+summary: |
+  PASS. All 5 expected facts surfaced cleanly: Article 47 modification regime, good-faith floor, fraud/wilful default/gross negligence carve-out, CJL 1991 comparator, and Delaware-LLC lineage. Both expected_files cited (llc-article-47.md, llc-article-3.md), plus the LLC 2018 index as the comparator anchor. Zero hallucinated citations; all three files exist and substantively support the claims made. The agent appropriately flagged the draft status and last_verified date as a freshness caveat. Citation precision and recall both pass — agent went straight to the per-Article statute-wiki files rather than relying on a secondary index.
+errors: []

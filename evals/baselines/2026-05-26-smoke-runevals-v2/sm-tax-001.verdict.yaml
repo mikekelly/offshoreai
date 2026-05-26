@@ -1,0 +1,49 @@
+schemaVersion: eval_verdict_v2
+questionId: sm-tax-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:33:53Z
+overall: partial
+dimensions:
+  substance: partial
+  stretch:
+    covered: 2
+    expected: 2
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 7
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/tax/zero-ten.md
+    supportsClaim: true
+    notes: "Supports 0% standard via Article 123C(2), Article 123I large-retailer taper, £2m turnover gateway and £500k–£750k profits band."
+  - path: knowledge/jersey/international/pillar-two-mcit.md
+    supportsClaim: true
+    notes: "Supports €750m threshold, 1 Jan 2025 effective date, 15% QDMTT mechanism and substance-based income exclusion. The IIR adopted / UTPR not adopted distinction is more explicit in the uncited pillar-two.md."
+stretchPromotions:
+  - "Article 123I large corporate retailer regime has a £2m Jersey-turnover gateway and a £500k–£750k profits-band taper (0% below £500k, 20% on all profits at £750k+)"
+  - "Pillar Two substance-based income exclusion provides a formulaic carve-out for payroll plus tangible assets, tapering down in early years"
+stretchSuggestions:
+  - "Retail trade definition: sale of goods to consumers in Jersey (the gateway activity that brings a company into Article 123I)"
+  - "Jersey did not implement UTPR — only QDMTT (operating as the Domestic Top-up Tax / DTT) plus IIR for Jersey-parent groups with foreign low-taxed subsidiaries"
+summary: |
+  PARTIAL — the agent correctly nailed the user's specific situation
+  (0% trading company under Article 123C(2), in-scope for MCIT at €900m,
+  15% effective rate via QDMTT, IIR yes, UTPR no) and got both stretch
+  facts cleanly. But on the broader zero-ten taxonomy the rubric expects,
+  the 10% financial-services rate (Article 123D) and the full 20% category
+  list (utilities, hydrocarbon, property) were only named by exclusion
+  rather than explicitly stated. Citation recall is partial: the agent cited
+  the deep pillar-two-mcit.md but not pillar-two.md, which carries the
+  explicit "Jersey adopted IIR / not UTPR" table the agent's claim relies
+  on — the substance is right but the citation could be tighter. Strong
+  freshness handling (flagged both files as draft). The most useful single
+  next-iteration signal: agent's answer-shaping is sharp (focused on the
+  user's situation, not the full statute), which is correct behaviour for
+  a practitioner-tool but creates a gap when the rubric measures full
+  taxonomic coverage.
+errors: []

@@ -1,0 +1,50 @@
+schemaVersion: eval_verdict_v2
+questionId: sn-002
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:33:10Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/aml-cft/money-laundering-order-2008.md
+    supportsClaim: true
+    notes: Confirms risk-based approach, CDD, SDD/EDD framing, BO investigation, identification & verification.
+  - path: knowledge/jersey/use-cases/compliance-mlro/customer-due-diligence.md
+    supportsClaim: true
+    notes: Provides entity-CDD breakdown, 25% BO threshold, BWRA-driven risk classification, SDD/EDD lists.
+  - path: knowledge/jersey/aml-cft/mlo-article-5.md
+    supportsClaim: true
+    notes: Cited only as "go deeper" pointer; file exists and is the per-Article statute file.
+  - path: knowledge/jersey/aml-cft/mlo-article-6.md
+    supportsClaim: true
+    notes: Cited as deeper-pointer; file exists.
+  - path: knowledge/jersey/aml-cft/mlo-article-9.md
+    supportsClaim: true
+    notes: Cited as deeper-pointer; file exists.
+stretchPromotions: []
+stretchSuggestions:
+  - "MLO 2008 requires designation of an MLRO who is fit-and-proper, sufficiently senior, and Jersey-resident."
+  - "Five MLO-2008 obligation pillars: CDD, record-keeping, internal controls, reporting, training."
+  - "25% beneficial-ownership threshold as the standard natural-person CDD trigger for entity customers."
+summary: |
+  PASS — covers all 5 expected_facts cleanly with no factual errors and no
+  hallucinated citations. The candidate flagged the draft status of both
+  primary cited files and noted last_verified freshness (good freshness
+  discipline). Citation recall is partial only because the per-Article MLO
+  files (mlo-article-5/6/9.md) were mentioned as pointers rather than read
+  and quoted — the agent stopped at the concept and use-case layer rather
+  than reaching the Article-level statute-wiki files, which the 2026-05-26
+  prior-run history shows is achievable. Most useful next-iteration signal:
+  encourage the agent to descend to Article-level files (Articles 5–12) when
+  the question is "what CDD do I need" — that's where the durable answer
+  lives.
+errors: []

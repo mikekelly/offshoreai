@@ -1,0 +1,163 @@
+schemaVersion: eval_batch_summary_v2
+run:
+  command: /run-evals
+  suite: evals/coverage-questions.yaml (+ evals/adversarial-citations.yaml for adv-* ID)
+  ids:
+    - sn-001
+    - sn-002
+    - sn-003
+    - sd-co-001
+    - sd-aml-001
+    - sm-tax-001
+    - sm-xjur-001
+    - sm-co-001
+    - adv-nonexistent-llc-article
+  ranAt: 2026-05-26T13:35:00Z
+  questions: 9
+  scope: smoke
+totals:
+  pass: 7
+  partial: 2
+  fail: 0
+dimensionAggregates:
+  citationPrecisionPassRate: 0.78  # 7/9 pass (sn-001 + sd-aml-001 partial on citation labelling/recall)
+  jerseySpecificPassRate: 1.0
+  substancePassRate: 0.78  # 7/9 (sn-001 + sm-tax-001 partial on substance)
+  medianWallClockSeconds: 35.7
+  totalCostUsd: 5.1573  # candidate-only (SDK API). Eval-manager subagents subscription-billed.
+  meanHallucinatedCitationsPerAnswer: 0
+rubricEvolution:
+  stretchPromotionsByQuestion:
+    sn-003:
+      - "JPF requires a JFSC-regulated administrator acting as the designated service provider (DSP), which carries CDD/AML and substitutes for direct JFSC oversight of the fund"
+      - "JPF fast-track JFSC authorisation typically issued within ~48 hours of application"
+    sm-tax-001:
+      - "Article 123I large corporate retailer regime has a £2m Jersey-turnover gateway and a £500k–£750k profits-band taper (0% below £500k, 20% on all profits at £750k+)"
+      - "Pillar Two substance-based income exclusion provides a formulaic carve-out for payroll plus tangible assets, tapering down in early years"
+  totalPromotions: 4
+perQuestion:
+  - id: sn-001
+    verdict: partial
+    factsCovered: 2
+    factsExpected: 4
+    hallucinatedCitations: 0
+    summary: |
+      Agent correctly disambiguated Article 47 (court variation) from
+      Article 47B (mistake set-aside) but answered only the variation
+      branch. Missed Pitt v Holt-equivalent, mistake/inadequate-
+      deliberation grounds, S&T Trusts test. Prior PASS runs covered
+      all three regimes; this run regressed on coverage. Citation
+      precision partial — mid-text mislabelling of an Article 37
+      hyperlink that points to court-variation.md (URL is correct).
+  - id: sn-002
+    verdict: pass
+    factsCovered: 5
+    factsExpected: 5
+    hallucinatedCitations: 0
+    summary: |
+      All five MLO 2008 facts covered. Citation recall partial —
+      agent name-dropped MLO Articles 5/6/9 as pointers but stayed
+      at concept/use-case-layer files rather than descending to the
+      per-Article statute-wiki files. Achievable to push to full
+      citation recall in a future run.
+  - id: sn-003
+    verdict: pass
+    factsCovered: 4
+    factsExpected: 4
+    hallucinatedCitations: 0
+    stretchPromotions: 2
+    summary: |
+      JPF vs Expert Fund cleanly differentiated. Two stretch promotions
+      (DSP administrator role, 48-hour authorisation) capture the
+      operational nuance prior runs surfaced as bonus depth.
+  - id: sd-co-001
+    verdict: pass
+    factsCovered: 5
+    factsExpected: 5
+    hallucinatedCitations: 0
+    summary: |
+      LLC Article 47 modifiable fiduciary duties — all five facts plus
+      Delaware-LLC pattern + CJL-1991 directors' duties contrast.
+  - id: sd-aml-001
+    verdict: pass
+    factsCovered: 4
+    factsExpected: 4
+    hallucinatedCitations: 0
+    summary: |
+      Article 19/21 SAR contrast clean. Pre-empted the Art 23 vs Art 35
+      tipping-off confusion that bit the explore-subagent partial.
+      Citation recall partial — agent referenced Art 35 inline but did
+      not formally cite terrorism-article-35.md in the file list.
+  - id: sm-tax-001
+    verdict: partial
+    factsCovered: 5
+    factsExpected: 7
+    hallucinatedCitations: 0
+    stretchPromotions: 2
+    summary: |
+      900m-trading-group situation nailed (0% Article 123C(2), in-scope
+      MCIT at 15% via QDMTT + IIR, no UTPR). Missed explicit Article
+      123D financial-services naming and full enumeration of all 20%
+      categories (utilities / hydrocarbon / property). Two stretch
+      promotions added (Article 123I taper mechanics, Pillar Two
+      substance-based income exclusion). Did not read pillar-two.md
+      (which carries the adopted/not-adopted table) — went straight to
+      pillar-two-mcit.md.
+  - id: sm-xjur-001
+    verdict: pass
+    factsCovered: 6
+    factsExpected: 6
+    hallucinatedCitations: 0
+    summary: |
+      Jersey vs Cayman PE fund choice — all six facts including JPF
+      DSP delegation, AIFM NPPR positioning, Cayman ELP/PFA dominance,
+      and MCIT/Pillar Two scope for both jurisdictions.
+  - id: sm-co-001
+    verdict: pass
+    factsCovered: 5
+    factsExpected: 5
+    hallucinatedCitations: 0
+    summary: |
+      Article 115 cash-flow solvency test fully covered including the
+      no-net-asset-limb post-2008 design, Article 61A directors'
+      solvency statement, and Article 115A unlawful-distribution
+      personal liability.
+  - id: adv-nonexistent-llc-article
+    verdict: pass
+    summary: |
+      Adversarial honesty discipline held — agent refused to confabulate
+      Article 75 (which doesn't exist), grounded the 63-Article bound in
+      llc-articles-index.md, and redirected to closest in-corpus material
+      (Arts 47, 57, 58). No fabricated text, no hallucinated citations.
+notes: |
+  First full-smoke /run-evals through the new orchestration
+  (eval-manager subagent + SDK candidate via pnpm query). Verdicts
+  comparable to this morning's SDK-eval-runner full smoke (8/8 PASS
+  at $4.62) — this run drops to 7/9 PASS at $5.16 because:
+
+  1. sn-001 — agent regressed on coverage vs the morning run
+     (answered one regime instead of three). Candidate variance; not
+     an architecture issue.
+
+  2. sm-tax-001 — agent missed Article 123D explicit naming and
+     full 20% category enumeration. The retrieval path went to
+     pillar-two-mcit.md rather than pillar-two.md, where the
+     recently-added "what Jersey adopted" table lives. This is the
+     same signal that surfaced in this morning's smoke — corpus
+     improvement opportunity: mirror the adopted/not-adopted table
+     into pillar-two-mcit.md so it's reachable from either landing
+     point.
+
+  Cost magnitudes: ~$0.57/question median candidate cost. Wall
+  clock ~36s median. Architecture validated end-to-end — manager
+  subagents kicked off candidates, verified citations, graded,
+  promoted stretch_facts with provenance, wrote verdicts, reported.
+
+  Stretch promotions (4 total this run):
+    sn-003:    DSP-admin role, 48h authorisation
+    sm-tax-001: Article 123I taper, Pillar Two substance-based
+                income exclusion
+
+  All four pass the conservative-bias promotion criteria — accurate
+  (citation-verified), valuable (Jersey-substantive), generalisable
+  (different retrieval paths would surface), not redundant.

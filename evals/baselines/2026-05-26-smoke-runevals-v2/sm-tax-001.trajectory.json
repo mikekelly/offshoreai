@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sm-tax-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:32:48.503Z",
+  "wallClockSeconds": 34.298,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/tax/zero-ten.md\"}",
+      "inputBytes": 43,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/international/pillar-two-mcit.md\"}",
+      "inputBytes": 60,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 1820,
+    "cacheReadTokens": 104158,
+    "cacheWriteTokens": 67656,
+    "totalCostUsd": 0.5204639999999999
+  },
+  "answer": {
+    "text": "## Jersey corporate tax — the headline rate\n\nA Jersey-incorporated **trading** company (i.e. not a financial-services company, utility, large corporate retailer, hydrocarbon or cannabis trader, and not earning Jersey land/property income) is taxed at the **0%** standard rate under **Article 123C(2) of the Income Tax (Jersey) Law 1961** — the \"zero\" leg of the **zero-ten** regime ([`knowledge/jersey/tax/zero-ten.md`](knowledge/jersey/tax/zero-ten.md)).\n\nOne sanity-check worth flagging: if \"trading group\" means a **retail** trade selling goods to consumers in Jersey with annual Jersey turnover of £2m+, you fall under **Article 123I** (large corporate retailer) and would be taxed at **20%** above the £750k profits band, with a taper between £500k–£750k. The 0% answer assumes you're not in that category.\n\n## Pillar Two — yes, MCIT applies at €900m\n\nYes — at ~€900m consolidated revenue you are **in scope** of Jersey's **Multinational Corporate Income Tax (MCIT)**, in force for accounting periods beginning on or after **1 January 2025** ([`knowledge/jersey/international/pillar-two-mcit.md`](knowledge/jersey/international/pillar-two-mcit.md)):\n\n- The MCIT applies to groups with consolidated revenue of **€750m+** in at least 2 of the preceding 4 years — you're materially above that.\n- It functions as a **Qualified Domestic Minimum Top-up Tax (QDMTT)**: Jersey itself collects the top-up so that your in-scope Jersey profits bear a **15% effective rate** under GloBE methodology, rather than the 0% headline.\n- A **Qualified Income Inclusion Rule (IIR)** also applies for in-scope groups; Jersey has **not** implemented an Undertaxed Profits Rule (UTPR).\n- The **substance-based income exclusion** (formulaic carve-out for payroll + tangible assets, tapering down over the early years) can reduce the top-up base.\n- **Substance Law 2019** obligations are separate and continue to apply on top of MCIT for any relevant-activity income.\n\nSo in short: your headline Jersey rate on trading profits is **0%**, but because the group is over the €750m Pillar Two threshold, MCIT tops that up to a **15% effective rate** on the in-scope Jersey income.\n\n## Caveats\n\n- Both source files are status **`draft`** — drafted with citations but not yet through the full editorial verification cycle. The Article 123C(2) point and the €750m / 15% MCIT mechanics are well-attested in primary sources, but verify against the Income Tax (Jersey) Law 1961 on jerseylaw.je and Revenue Jersey's MCIT guidance before relying on this for filings.\n- This answer assumes the group's ultimate parent / GloBE filing position is consistent with Jersey being a constituent jurisdiction; the interaction with your parent's home-country Pillar Two regime needs a separate look.\n\n## Cited files\n\n1. [`knowledge/jersey/tax/zero-ten.md`](knowledge/jersey/tax/zero-ten.md)\n2. [`knowledge/jersey/international/pillar-two-mcit.md`](knowledge/jersey/international/pillar-two-mcit.md)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 434
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "39c37f63-4e87-4988-806a-1bdd59a1c521"
+  }
+}

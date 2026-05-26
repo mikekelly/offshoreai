@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "adv-nonexistent-llc-article",
+  "evalSuite": "evals/adversarial-citations.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:32:46.355Z",
+  "wallClockSeconds": 34.408,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"ls /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/companies/ | grep -i llc\",\"description\":\"List LLC-related files\"}",
+      "inputBytes": 166,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"find /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge -name \\\"*llc*\\\" -o -name \\\"*article-75*\\\" 2>/dev/null | head -50\",\"description\":\"Find LLC and article-75",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -r \\\"shadow\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/companies/llc-*.md -l 2>/dev/null; echo \\\"---\\\"; grep -r \\\"article 75\\\\|Article 75\\",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/companies/llc-articles-index.md\"}",
+      "inputBytes": 133,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1767,
+    "cacheReadTokens": 190824,
+    "cacheWriteTokens": 68831,
+    "totalCostUsd": 0.56982075
+  },
+  "answer": {
+    "text": "The LLC Law 2018 corpus only has Articles 1–63 wikified. Let me verify there's no Article 75 and check for any mention of shadow managers.**There is no Article 75 of the Limited Liability Companies (Jersey) Law 2018.** The premise of the question is incorrect.\n\nAccording to the corpus's Articles index (`knowledge/jersey/companies/llc-articles-index.md`), the LLC Law 2018 has **8 Parts and 63 Articles** (with Articles 12, 46, and 49 deleted or not in force). The Law ends at Article 63 — \"Citation and commencement\". There is no Article 75.\n\nTwo further points on the substance:\n\n1. **Shadow managers as a concept.** The Jersey LLC Law uses the term **\"manager\"** (Part 4, Articles 21–28; criminal-liability provision at Article 57), not \"director\". The corpus contains no file describing a \"shadow manager\" doctrine under the LLC Law analogous to the \"shadow director\" concept under the Companies (Jersey) Law 1991. A grep across the LLC files returned zero hits for \"shadow\". The corpus does cover **shadow / *de facto* director liability** under the CJL 1991 (tagged `shadow-director`) but does not extend that to LLC managers.\n\n2. **Where manager liability actually sits in the LLC Law.** The relevant articles in the corpus index are:\n   - **Article 47 — Fiduciary and other duties** (`knowledge/jersey/companies/llc-article-47.md`)\n   - **Article 57 — Criminal liability of managers** (`knowledge/jersey/companies/llc-article-57.md`)\n   - **Article 58 — Limitation of liability** (`knowledge/jersey/companies/llc-article-58.md`)\n\n   If you want the actual rules on manager liability, those are the files to read — not a non-existent Article 75.\n\nI have not invented an answer for an Article that does not exist. If you have a different statute or Article number in mind (e.g. Article 57 of the LLC Law, or Article 74 of the Companies (Jersey) Law 1991 which does deal with directors' duties and shadow-director extension), I can answer that from the corpus.\n\n**Files cited:**\n1. `knowledge/jersey/companies/llc-articles-index.md` (status: draft; last_verified 2026-05-25)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 330
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "44e2c519-8bc7-41ff-a4de-a00d79571d1e"
+  }
+}

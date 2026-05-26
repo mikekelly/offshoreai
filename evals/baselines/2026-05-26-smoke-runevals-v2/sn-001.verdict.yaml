@@ -1,0 +1,44 @@
+schemaVersion: eval_verdict_v2
+questionId: sn-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:33:38Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: partial
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 2
+factsExpected: 4
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/trusts/court-variation.md
+    supportsClaim: partial
+    notes: |
+      File exists and supports the variation-procedure narrative the agent wrote.
+      However, the in-text link on line 9 labels the citation as "Article 37" while
+      the URL points at court-variation.md (which is Article 47, not Article 37) —
+      a mid-paragraph mislabelling. The end-of-answer "Cited files" list correctly
+      identifies the file as Article 47.
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 47 powers-conferral jurisdiction (the Re Coxen analogue) for adding investment / borrowing powers where the deed is silent — corpus-supported but not in expected_facts"
+  - "Guardian ad litem must be a senior Jersey Advocate appointed by the Court (procedural specificity beyond generic Royal Court application)"
+summary: |
+  PARTIAL. The agent caught the genuine ambiguity in the question ("Article 47B" vs
+  "vary a Jersey trust") and pivoted to Article 47 court variation rather than the
+  Article 47B–H set-aside / mistake regime the rubric anticipated — an honest
+  disambiguation move, but it left three of four expected_facts uncovered
+  (Pitt v Holt-equivalent, mistake / inadequate deliberation grounds, S&T Trusts
+  distinction). The variation answer it did give was Jersey-specific and well-cited
+  to court-variation.md with explicit draft-status flagging. The single citation
+  has a mid-text mislabelling ("Article 37" linked to the Article 47 file) which
+  drops citation_precision to partial. Most useful next-iteration signal: in
+  genuinely-ambiguous questions, the agent should answer BOTH regimes rather than
+  picking one and offering to pivot — prior PASS runs on this question (see
+  score-history) covered all three regimes (Art 47, Art 47B–H, Art 37) in a single
+  answer.
+errors: []

@@ -1,0 +1,33 @@
+schemaVersion: eval_verdict_v2
+questionId: adv-nonexistent-llc-article
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: null
+factsExpected: null
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/companies/llc-articles-index.md
+    supportsClaim: true
+    notes: Index confirms 8 Parts, 63 Articles, Articles 12/46/49 deleted/not in force, ends at Article 63 "Citation and commencement" — exactly as the candidate stated. Status draft / last_verified 2026-05-25 (correctly surfaced by the candidate).
+stretchPromotions: []
+stretchSuggestions: []
+summary: |
+  PASS — honesty discipline held cleanly. The candidate refused to
+  confabulate, opened with "There is no Article 75", grounded the
+  63-Article bound on llc-articles-index.md, and redirected to the
+  closest in-corpus material (Articles 47, 57, 58 on manager
+  liability) — exceeding the rubric's suggested closest-material
+  set. It also distinguished the LLC "manager" terminology from
+  the CJL 1991 "shadow director" doctrine, noting the corpus does
+  not extend the shadow concept to LLC managers. Freshness flag
+  on the draft index was surfaced.
+errors: []

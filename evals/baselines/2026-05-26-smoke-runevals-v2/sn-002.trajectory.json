@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sn-002",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:32:47.758Z",
+  "wallClockSeconds": 46.665,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"mlo-2008\",\"cdd\"],\"mode\":\"and\"}",
+      "inputBytes": 40,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"sdd\"],\"mode\":\"or\"}",
+      "inputBytes": 28,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/money-laundering-order-2008.md\"}",
+      "inputBytes": 66,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/compliance-mlro/customer-due-diligence.md\"}",
+      "inputBytes": 79,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 10,
+    "outputTokens": 2212,
+    "cacheReadTokens": 355724,
+    "cacheWriteTokens": 65344,
+    "totalCostUsd": 0.641612
+  },
+  "answer": {
+    "text": "## CDD for a new institutional client under the MLO 2008\n\nThe Money Laundering (Jersey) Order 2008 imposes a **risk-based CDD obligation**, so the depth depends on what kind of institution this is and how you risk-rate the relationship.\n\n### The likely SDD route\n\nIf your new institutional client is a **regulated financial institution in an equivalent jurisdiction**, a **listed company on a recognised exchange**, a **government body**, or a **prescribed pension fund**, it falls into the **simplified due diligence (SDD)** category. SDD typically allows reduced identity-verification evidence, reliance on the counterparty's regulated/listed status, and streamlined ongoing monitoring (`knowledge/jersey/use-cases/compliance-mlro/customer-due-diligence.md`; `knowledge/jersey/aml-cft/money-laundering-order-2008.md`).\n\nYou still need to **document why the SDD category applies** (the BWRA-anchored risk classification) — SDD is not \"no CDD.\"\n\n### Standard CDD for an entity customer\n\nIf the institution doesn't fit a prescribed SDD bucket, you apply standard CDD on the entity (`knowledge/jersey/use-cases/compliance-mlro/customer-due-diligence.md`):\n\n- **Legal form** and jurisdiction of incorporation\n- **Constitutional documents**\n- **Directors / officers** (with CDD on senior management)\n- **Beneficial owners** — natural persons holding 25%+ ownership or control, each CDD'd as an individual\n- **Authorised representatives** dealing with you\n- **Source of funds** for transactions\n- **Purpose and intended nature** of the relationship\n\nPlus the cross-cutting MLO 2008 obligations: **ongoing monitoring**, **record-keeping**, periodic refresh, and documentation of the file (`knowledge/jersey/aml-cft/money-laundering-order-2008.md`).\n\n### When EDD bites instead\n\nEDD applies — and overrides any SDD assumption — if any of the following are present: **PEPs** in beneficial ownership/control, **high-risk jurisdiction** exposure (FATF grey/black list or Jersey-specified), **complex layered ownership**, or unusual patterns. EDD requires senior-management approval, **source-of-wealth verification** (not just source of funds), enhanced ongoing monitoring, and more frequent review (`knowledge/jersey/use-cases/compliance-mlro/customer-due-diligence.md`).\n\n### The procedural sequence\n\n1. Run the prospective relationship against your **business-wide risk assessment (BWRA)** to classify low / medium / high\n2. Gather CDD at the appropriate depth (SDD / standard / EDD)\n3. Verify ID from reliable independent sources\n4. Approve at the appropriate seniority (senior management if EDD)\n5. Set up risk-proportionate ongoing monitoring and a CDD refresh schedule\n\n### Caveats\n\n- Both cited files are currently **`status: draft`** — drafted but not editorially verified against the primary source. Read them as orientation; check the MLO 2008 articles and the **JFSC AML/CFT Handbook** directly before relying on them for an onboarding decision.\n- `last_verified` on both is 2026-05-15 (11 days old) — fresh.\n- The corpus has per-Article statute-wiki files for MLO Articles 5, 6, and 9 (`knowledge/jersey/aml-cft/mlo-article-5.md`, `mlo-article-6.md`, `mlo-article-9.md`, all `draft`) if you want to go to the article-level text.\n\n### Cited files\n\n1. `knowledge/jersey/aml-cft/money-laundering-order-2008.md`\n2. `knowledge/jersey/use-cases/compliance-mlro/customer-due-diligence.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 447
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "5598749a-94be-49df-ae61-e3e0e39525d7"
+  }
+}

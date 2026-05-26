@@ -1,0 +1,43 @@
+schemaVersion: eval_verdict_v2
+questionId: sd-aml-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/aml-cft/terrorism-article-19.md
+    supportsClaim: true
+    notes: Frontmatter and body confirm the subjective-belief general SAR duty across trade/profession/business/employment, reasonable-excuse defence, and route to FIU — exactly as the answer claims.
+  - path: knowledge/jersey/aml-cft/terrorism-article-21.md
+    supportsClaim: true
+    notes: Frontmatter and body confirm the regulated-business scope, the objective "reasonable grounds for knowing or suspecting" limb, the negligent-failure catch, and the LPP carve-out — exactly as the answer claims.
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 21 is the CFT analogue of POCL Article 34A (agent's framing of the two as parallel)."
+  - "Art 22 governs the discloser's civil-liability immunity (protected disclosures)."
+summary: |
+  PASS — 4/4 expected facts covered; agent cleanly distinguished Art 19
+  (subjective, anyone in trade/profession/business/employment) from Art 21
+  (objective "reasonable grounds" limb, regulated business only, catches
+  negligent failure). Pre-empted the Art 23 vs Art 35 tipping-off confusion
+  that bit the earlier explore-subagent run by explicitly stating Art 35
+  is the tipping-off article "not Article 23". Freshness handling was
+  exemplary — flagged both cited files as status:draft with the
+  last_verified date. Single weakness: citationRecall partial because
+  rubric lists terrorism-article-35.md among expected_files and the agent
+  referenced Art 35 inline without formally citing the file (the source
+  files now flag Art 35 prominently in their cross-references, so the
+  agent had the pointer but didn't follow it). Useful next-iteration
+  signal: encourage citation of every load-bearing Article mentioned,
+  not just the two contrasted in the question stem.
+errors: []

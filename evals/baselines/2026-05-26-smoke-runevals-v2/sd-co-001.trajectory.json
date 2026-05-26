@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sd-co-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:32:44.529Z",
+  "wallClockSeconds": 41.099,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"llc-law-2018\",\"fiduciary-duty\"],\"mode\":\"and\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"llc-law-2018\"],\"mode\":\"and\",\"limit\":30}",
+      "inputBytes": 49,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/companies/llc-2018-index.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -l -i \\\"fiduciary\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/companies/llc-*.md\",\"description\":\"Find LLC files mentioning fiduciary\"}",
+      "inputBytes": 195,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/companies/llc-article-47.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/companies/llc-article-3.md\"}",
+      "inputBytes": 54,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 9,
+    "outputTokens": 1915,
+    "cacheReadTokens": 278547,
+    "cacheWriteTokens": 68930,
+    "totalCostUsd": 0.618006
+  },
+  "answer": {
+    "text": "I'll search the corpus for Jersey LLC fiduciary duty rules.Let me check the LLC index and grep for fiduciary-duty content in LLC files.Yes — the Jersey LLC operating agreement (the \"LLC agreement\") can **expand, restrict, or eliminate** fiduciary duties that a member or manager would otherwise owe to the LLC and to other members. This is one of the most distinctive features of the LLC Law 2018, drawing on the Delaware model, and a deliberate departure from the Jersey company under CJL 1991 where directors' fiduciary duties are largely non-modifiable.\n\n## The irreducible floor — two limits remain\n\nEven with maximum drafting freedom, Article 47 keeps two guard-rails that cannot be contracted out of:\n\n1. **The duty of good faith** cannot be eliminated. Where the LLC agreement is silent, a member or manager exercising rights or powers in respect of the LLC owes the LLC and the other members a duty of good faith; that default cannot be drafted away.\n2. **Liability for fraud, wilful default, or gross negligence** cannot be eliminated. The LLC agreement may calibrate duties downward but cannot purport to shield a member or manager from acts or omissions that fall into those three categories.\n\nWithin those guard-rails, the LLC agreement can replace the default fiduciary framework with a contractually-specified one — which is what makes the vehicle attractive as a fund GP, JV vehicle, or family-office GP where the conflict-of-interest perimeter is defined by contract rather than left to default fiduciary doctrine.\n\n## Comparator point\n\nBy contrast, a Jersey company under the Companies (Jersey) Law 1991 has directors' fiduciary duties that are largely non-modifiable — so if you need contractual flexibility on duties, the LLC is the vehicle that gets you there. The Jersey position mirrors the Delaware and Cayman LLC floors.\n\n## Caveats\n\n- Both source files are status `draft` and `last_verified: 2026-05-25`. Treat the Article wording as drafted-but-unverified against the primary source; cross-check Article 47 against jerseylaw.je before relying on the exact \"good faith / fraud / wilful default / gross negligence\" formulation in drafting.\n- The corpus does not cover whether the floor extends to disclosure of conflicts or how the Royal Court has construed any of these terms in an LLC context (the Law is recent and case law is thin).\n\n## Cited files\n\n1. `knowledge/jersey/companies/llc-article-47.md` — LLC Law 2018 Article 47 (fiduciary and other duties; modification regime; floor)\n2. `knowledge/jersey/companies/llc-article-3.md` — LLC Law 2018 Article 3 (the LLC agreement as the load-bearing operational document)\n3. `knowledge/jersey/companies/llc-2018-index.md` — LLC Law 2018 index (comparator to CJL 1991 directors' duties)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 448
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "4bd3cb31-dd0e-432e-b7ac-fddfefd17e3f"
+  }
+}

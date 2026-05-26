@@ -1,0 +1,42 @@
+schemaVersion: eval_verdict_v2
+questionId: sm-co-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T14:35:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 4
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/companies/distribution-restrictions.md
+    supportsClaim: true
+    notes: Article 115 two-limb cash-flow test, 12-month horizon, distribution definition incl. buybacks — directly supports load-bearing claims.
+  - path: knowledge/jersey/companies/solvency-statement.md
+    supportsClaim: true
+    notes: Article 61A parallel mechanism — all directors sign with statutory declaration, cash-flow standard.
+  - path: knowledge/jersey/companies/unlawful-distribution-consequences.md
+    supportsClaim: true
+    notes: Article 115A — member repayment obligation, director personal liability.
+  - path: knowledge/jersey/companies/distribution-retrospective-order.md
+    supportsClaim: true
+    notes: Article 115ZA — court declaration curing procedural deficiencies where substantive solvency existed.
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 115ZA court-cure mechanism for procedural deficiencies where substantive solvency existed at the time"
+  - "Article 114 distribution definition — captures cash dividends, in-specie distributions, buybacks, capital reductions returning value"
+summary: |
+  PASS — all 5 expected facts surfaced. The "no net-asset limb" point is
+  conveyed via contrast with English CA 2006 s.830 ("accumulated realised
+  profits less realised losses") rather than as historical 2008-reform
+  narrative, but the substantive point lands. Agent correctly flagged the
+  cited file's `draft` status as a freshness caveat. Cited 4 real Article-
+  specific files covering 115, 61A, 115A, and the bonus 115ZA court-cure
+  mechanism. Tight, well-structured answer in 3 tool calls.
+errors: []

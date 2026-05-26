@@ -15,6 +15,73 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — `/run-evals` end-to-end smoke — 7/9 PASS, 4 stretch promotions
+
+First production-pattern invocation of `/run-evals` (no args =
+default smoke). 9 eval-manager subagents in one parallel batch
+dispatched the candidate via `pnpm query`, verified citations,
+graded against the rubric, optionally promoted stretch_facts.
+Total cost $5.16 (candidate-only; eval-manager subagents
+subscription-billed via Claude Code).
+
+Results:
+  sn-001                       partial  2/4 facts
+  sn-002                       pass     5/5 facts
+  sn-003                       pass     4/4 facts  +2 stretch
+  sd-co-001                    pass     5/5 facts
+  sd-aml-001                   pass     4/4 facts
+  sm-tax-001                   partial  5/7 facts  +2 stretch
+  sm-xjur-001                  pass     6/6 facts
+  sm-co-001                    pass     5/5 facts
+  adv-nonexistent-llc-article  pass     (honesty held)
+
+Median wall clock 35.7s. Zero hallucinated citations across all
+9 answers.
+
+Two partials, both real candidate-side variance / corpus-clarity
+signals, not architecture regressions:
+
+- **sn-001**: agent regressed on coverage — answered only the
+  Article 47 variation branch, missed the Article 47B mistake-
+  set-aside material. Prior runs covered all three regimes.
+  Candidate-side variance.
+
+- **sm-tax-001**: agent missed Article 123D explicit naming and
+  full 20% category enumeration. Retrieval path went to
+  `pillar-two-mcit.md` rather than `pillar-two.md` (which carries
+  the "what Jersey adopted / didn't adopt" table). Second
+  appearance of this signal — addressed in a follow-up commit.
+
+Rubric edits this run (4 stretch_facts promotions, all with
+inline provenance comments):
+
+  sn-003     "JPF requires a JFSC-regulated administrator acting
+              as the designated service provider (DSP) ..."
+             "JPF fast-track JFSC authorisation typically issued
+              within ~48 hours of application"
+
+  sm-tax-001 "Article 123I large corporate retailer regime has a
+              £2m Jersey-turnover gateway and a £500k–£750k
+              profits-band taper ..."
+             "Pillar Two substance-based income exclusion provides
+              a formulaic carve-out for payroll plus tangible
+              assets ..."
+
+All four passed the conservative-bias promotion criteria
+(accurate per citation verification, Jersey-substantive,
+generalisable across retrieval paths, not redundant with existing
+expected_facts).
+
+Architecture-validation summary: `/run-evals` (no args) →
+default-smoke selector → 9 eval-manager subagents in parallel →
+candidates dispatched via `pnpm query` → verdicts written →
+summary aggregated. End-to-end works as designed. The skill +
+subagent + CLI handoff is now the production smoke surface,
+superseding the SDK eval-runner that was decommissioned earlier
+in the day.
+
+Artifacts at `evals/baselines/2026-05-26-smoke-runevals-v2/`.
+
 ## 2026-05-26 — Full 8-question smoke through offshoreai-agent — 8/8 PASS
 
 Full smoke batch run through the production harness after the

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sm-xjur-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:33:08.950Z",
+  "wallClockSeconds": 56.891,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/exempted-limited-partnership.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/private-funds-act.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/expert-fund.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 3226,
+    "cacheReadTokens": 104274,
+    "cacheWriteTokens": 68750,
+    "totalCostUsd": 0.5625095
+  },
+  "answer": {
+    "text": "I'll pull the substantive files on both regimes to ground the comparison.# Jersey vs Cayman — closed-ended PE fund with global LPs\n\n## Headline\n\nFor a **closed-ended PE fund with a global LP base**, the corpus's decision framework points to **Cayman ELP registered under the Private Funds Act 2020** as the default lean (`knowledge/CROSS-JURISDICTIONAL-MAP.md`). Jersey's equivalent product is the **Jersey Private Fund (JPF)**, which is the corpus's preferred lean specifically when EU-marketing via NPPR is a primary requirement.\n\nSo the right question isn't \"which is better\" — it's \"which of your facts dominate?\" The main factors below tell you which way to lean.\n\n## Factor 1 — Investor base and market familiarity\n\n- **Cayman ELP** is the **dominant closed-ended fund vehicle globally** for PE/VC/RE/credit. Global LPs — US endowments, sovereigns, Asian institutionals, family offices — expect this form, and parallel structures (Delaware LP for US LPs + Cayman ELP for non-US LPs) are routine in mid- and large-cap PE (`knowledge/cayman/exempted-limited-partnership.md`).\n- **Jersey JPF / LP** is well-known to European LPs but is not the global default. If your LP base is heavily US/Asian, the friction of explaining a JPF to LPs is non-trivial.\n\n## Factor 2 — EU marketing\n\nThis is the strongest pro-Jersey factor. Jersey markets into individual EU member states via **AIFMD National Private Placement Regimes (NPPR)** (`knowledge/jersey/index.md`, funds section). Cayman has **no NPPR equivalent and no EU passport route** (`knowledge/CROSS-JURISDICTIONAL-MAP.md`). If a material slice of your LP base is in NPPR-friendly EU jurisdictions (Netherlands, Luxembourg, Nordics, etc.), Jersey is much easier; for that case the corpus would push you toward a JPF or Expert Fund rather than Cayman.\n\n## Factor 3 — Investor cap\n\n- **JPF: 50 offers/investors maximum** (`knowledge/jersey/funds/jersey-private-fund.md`). If your fund will exceed 50 LPs, you need a Jersey **Expert Fund** instead — which loses the 48-hour authorisation speed (`knowledge/jersey/funds/expert-fund.md`).\n- **Cayman ELP under PFA 2020**: no equivalent cap.\n\nFor a global institutional PE fund with >50 LPs, this alone often pushes the decision Cayman-ward, or to a Jersey Expert Fund rather than JPF.\n\n## Factor 4 — Speed and regulatory load\n\n- **JPF**: ~48-hour JFSC authorisation; reduced ongoing supervision; a Jersey-licensed **designated service provider (DSP)** substitutes for direct JFSC oversight (`knowledge/jersey/funds/jersey-private-fund.md`).\n- **Cayman ELP under PFA**: registration \"typically achieved within days\"; ongoing CIMA obligations include audited financials, valuation policy, custody/safekeeping, cash monitoring, AML — lighter than EU AIFMD but more substantive than pre-2020 Cayman (`knowledge/cayman/private-funds-act.md`).\n\nBoth are fast. JPF has a slight edge on speed and a lighter ongoing footprint *for sub-50-LP structures*.\n\n## Factor 5 — Tax and substance\n\nBoth jurisdictions deliver tax-neutral pooling for PE. Differences:\n\n- **Cayman**: no direct tax on the ELP or partners; Economic Substance Act 2018 applies to GP/Investment Manager; **MCIT 2025 (QDMTT) in force** for in-scope groups meeting the EUR 750m Pillar Two threshold (`knowledge/CROSS-JURISDICTIONAL-MAP.md`, `knowledge/cayman/exempted-limited-partnership.md`).\n- **Jersey**: zero-ten regime (0% on fund vehicles); Substance Law 2019; **MCIT 2025 (QDMTT + Qualified IIR)** for in-scope groups; no UTPR (`knowledge/jersey/history/finance/trajectory.md`, `knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\nPillar Two reaches in-scope GP groups in either jurisdiction — it's not a differentiator unless your sponsor group is below the EUR 750m threshold and you want to keep it that way.\n\n## Factor 6 — Trust law / wrapping considerations\n\nIf the fund sits inside a broader wealth-structuring or carry vehicle that needs trust-law protection, Jersey wins decisively (Article 9 firewall, Article 9A reserved powers — `knowledge/CROSS-JURISDICTIONAL-MAP.md`). But for the pure-fund question this is usually a separate decision at a different layer of the structure.\n\n## Bottom line\n\n| Your facts say… | Lean toward |\n|---|---|\n| Global LP base (US/Asia heavy), >50 LPs, no EU NPPR priority | **Cayman ELP + PFA 2020** |\n| EU LPs material; NPPR access matters; ≤50 LPs; speed prized | **Jersey JPF** |\n| EU LPs material but >50 LPs | **Jersey Expert Fund** |\n| Family-office / club deal, ≤50 sophisticated investors | **Jersey JPF** |\n| Carry vehicle that also wants Article 9 firewall wrap | **Jersey** structure |\n\n## Caveats\n\n- The `cayman/exempted-limited-partnership.md`, `cayman/private-funds-act.md`, `jersey/funds/jersey-private-fund.md` and `jersey/funds/expert-fund.md` files are all status `draft` in the corpus. Treat the comparative framing as reliable but verify specific numerical thresholds (fee levels, exact PFA carve-out conditions, expert-investor thresholds) against the primary statutes before relying on them.\n- The corpus does not contain a side-by-side cost/fee comparison for the two regimes — that's a real decision factor for emerging managers and is worth pricing with local counsel on both sides.\n\n## Cited\n\n1. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n2. `knowledge/cayman/exempted-limited-partnership.md`\n3. `knowledge/cayman/private-funds-act.md`\n4. `knowledge/jersey/funds/jersey-private-fund.md`\n5. `knowledge/jersey/funds/expert-fund.md`\n6. `knowledge/jersey/index.md`\n7. `knowledge/jersey/history/finance/trajectory.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 778
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "7a77e237-c7c1-4ed8-b197-578058f0c7f2"
+  }
+}

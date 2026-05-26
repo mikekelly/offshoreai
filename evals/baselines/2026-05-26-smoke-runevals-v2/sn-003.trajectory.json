@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sn-003",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:32:32.220Z",
+  "wallClockSeconds": 33.114,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/jersey-private-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/expert-fund.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 1423,
+    "cacheReadTokens": 104253,
+    "cacheWriteTokens": 63175,
+    "totalCostUsd": 0.48258025
+  },
+  "answer": {
+    "text": "I'll pull the two relevant corpus files in parallel.## The Jersey Private Fund (JPF)\n\nThe **Jersey Private Fund** is Jersey's light-touch private-fund regime for closed, sophisticated-investor structures. Headline features: **up to 50 offers/investors**, professional/eligible investors only, **fast-track JFSC authorisation in ~48 hours**, reduced ongoing supervision, and a **JFSC-regulated administrator** acting as the **designated service provider (DSP)** that carries CDD/AML, books and records, and substitutes for direct JFSC oversight of the fund itself. Structurally flexible — Jersey company (often no-par-value), limited partnership (most common), unit trust, or PCC/ICC cell company. Typical uses: PE funds, co-investment vehicles, closed-ended real estate, family-and-friends partnerships, single-LP/club deals, and carry vehicles (`knowledge/jersey/funds/jersey-private-fund.md`).\n\n## How an Expert Fund differs\n\nThe **Expert Fund** is aimed at **expert investors** — defined by net-worth/investment-threshold criteria (typically a US$100,000 minimum commitment, prescribed net-asset threshold, professional clients, or institutional investors). Compared with the JPF:\n\n| Feature | JPF | Expert Fund |\n|---|---|---|\n| Investor cap | 50 | No specific cap (subject to expert criteria) |\n| Investor qualification | Professional / eligible | Expert (net-worth/institutional) |\n| Authorisation time | ~48 hours | Few days to weeks |\n| Disclosure document | Light PPM | More detailed offering memorandum |\n| Marketing scope | Limited private placement | Wider expert-investor marketing |\n\nSo the practical differences are scale (no hard 50-investor cap), investor qualification (Expert > eligible), more disclosure, slower authorisation, and broader marketing — including AIFMD NPPR routes into the EU. Use an Expert Fund when you need more than 50 investors, are running a single-strategy hedge fund with multiple expert LPs, a larger PE vehicle, or need NPPR-compliant EU marketing; otherwise the JPF is the default Jersey private-fund vehicle (`knowledge/jersey/funds/expert-fund.md`).\n\n**Caveat on freshness/status:** both corpus files are currently marked `status: draft` (last_verified 2026-05-15). The substance is drafted but flagged as unverified — confirm against the JFSC's *Jersey Private Funds Guide* and the *Codes of Practice for Certified Funds* / Expert Fund Guide before relying on the numerical thresholds or timing.\n\n### Cited files\n\n1. `knowledge/jersey/funds/jersey-private-fund.md`\n2. `knowledge/jersey/funds/expert-fund.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 361
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "21db46d1-319a-4aed-928b-41e2dd1f9368"
+  }
+}

@@ -1,0 +1,43 @@
+schemaVersion: eval_verdict_v2
+questionId: sn-003
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  stretch:
+    covered: 2
+    expected: 2
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/funds/jersey-private-fund.md
+    supportsClaim: true
+    notes: Verbatim support for 50-investor cap, 48h authorisation, DSP substitution, PPM, eligible-investor model, structural flexibility (company/LP/unit trust/PCC-ICC).
+  - path: knowledge/jersey/funds/expert-fund.md
+    supportsClaim: true
+    notes: Candidate's JPF-vs-Expert comparison table is essentially verbatim from this file (L58-64); US$100k minimum, expert-investor criteria, AIFMD NPPR positioning all supported.
+stretchPromotions:
+  - "JPF requires a JFSC-regulated administrator acting as the designated service provider (DSP), which carries CDD/AML and substitutes for direct JFSC oversight of the fund"
+  - "JPF fast-track JFSC authorisation typically issued within ~48 hours of application"
+stretchSuggestions:
+  - "Expert Fund US$100,000 minimum-commitment threshold for expert investors"
+  - "Structural flexibility: JPF can be Jersey company, LP (most common), unit trust, or PCC/ICC cell"
+  - "Expert Fund as the AIFMD NPPR-compliant route for EU marketing"
+summary: |
+  PASS — all 4 expected facts present and correctly attributed; both expected
+  files cited with verbatim support and no hallucinated citations. Candidate
+  surfaced the JPF DSP delegation model and ~48h fast-track timeline (already
+  flagged in the 2026-05-18-measured score note as ratchet candidates) and
+  correctly noted that both source files are still status: draft. Promoted
+  DSP delegation and 48-hour authorisation to stretch_facts; the US$100k
+  Expert Fund threshold and structural-flexibility list are also worth
+  watching for a future ratchet.
+errors: []
