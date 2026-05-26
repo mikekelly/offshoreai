@@ -1,0 +1,51 @@
+schemaVersion: eval_verdict_v2
+questionId: show-friday-passing
+harness: offshoreai-agent
+ranAt: 2026-05-26T22:26:00Z
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: partial
+  citationRecall: pass
+  freshnessHandling: fail
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/contract-passing.md
+    supportsClaim: partial
+    notes: "Supports Royal Court passing, Samedi Division, Greffier, Norman customary inheritance, and the English-conveyancing contrast — but does NOT mention 'Friday afternoon' (file says 'most weekdays'). Status: draft."
+  - path: knowledge/jersey/property/commercial-leases.md
+    supportsClaim: true
+    notes: "Explicit support for 'Passing on a Friday afternoon at the Royal Court', 'Two Jurats sit to witness', and 'contrat héréditaire' for 9+ year leases. Status: draft."
+  - path: knowledge/jersey/property/flying-freeholds.md
+    supportsClaim: true
+    notes: "Explicit 'Royal Court passing (Friday afternoon)' in the flying-freehold transfer-mechanics section. Status: draft."
+  - path: knowledge/jersey/contract/force-majeure.md
+    supportsClaim: true
+    notes: "Explicit 'Royal Court passing required (Friday afternoon hearings)' in the sale-of-Jersey-real-property section. Status: draft."
+  - path: knowledge/jersey/legal-system/royal-court.md
+    supportsClaim: true
+    notes: "Supports the Samedi-Division-named-after-historical-Saturday-sittings claim that the agent uses to bridge Saturday → Friday-afternoon as an end-of-week scheduling convention. Status: draft."
+stretchPromotions: []
+stretchSuggestions:
+  - "The Loi (1880) sur la propriété foncière is the canonical statutory anchor — the concept-file route reaches it but a direct citation would strengthen primary-source recall."
+  - "Lawyers act as attorneys under powers of attorney for absent parties — operationally distinctive and well-supported in contract-passing.md."
+summary: |
+  PARTIAL. Substance bar fully covered (all 6 showcase facts present including
+  contrat héréditaire, two Jurats, Friday-afternoon convention, and the
+  foreign-lawyer-unusual framing) and the voice pitch to a non-Jersey reader is
+  well-judged, including a calibrated caveat that the corpus does not trace the
+  specific Friday-afternoon choice to a statute. The drop to partial is
+  citation-precision: contract-passing.md (the lead citation) supports most of
+  the doctrinal substance but does NOT actually say 'Friday afternoon' — it
+  says 'most weekdays' — so it is partial-support for the Friday-afternoon
+  claim that drives the question. The most useful next-iteration signal is the
+  freshness_handling fail: all 5 cited files are status:draft and the answer
+  did not flag this to the user. Compared to the 2026-05-18 baseline (recorded
+  8 files), this run cited 5 — substantive coverage is intact but citation
+  density dropped.
+errors: []

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T21:26:22.908Z",
+  "wallClockSeconds": 61.152,
+  "turns": 11,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\" | head -20\",\"description\":\"Find files mentioning Friday in Je",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"contract-passing\",\"real-property\"],\"mode\":\"or\"}",
+      "inputBytes": 57,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/property/contract-passing.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\"\",\"description\":\"Find Friday references in Jersey corpus wit",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"samedi\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\" -l | head -10\",\"description\":\"Find Samedi references\"}",
+      "inputBytes": 195,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/flying-freeholds.md\",\"offset\":150,\"limit\":30}",
+      "inputBytes": 154,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/contract/force-majeure.md\",\"offset\":115,\"limit\":20}",
+      "inputBytes": 151,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/commercial-leases.md\",\"offset\":40,\"limit\":30}",
+      "inputBytes": 154,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 8,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/legal-system/royal-court.md\"}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 9,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn -i \\\"samedi\\\\|saturday\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/ /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanu",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 12,
+    "outputTokens": 3354,
+    "cacheReadTokens": 524397,
+    "cacheWriteTokens": 94114,
+    "totalCostUsd": 0.9343210000000001
+  },
+  "answer": {
+    "text": "Jersey real-property transfers happen in court because **conveyance must be \"passed\" before the Royal Court** — a Norman customary-law inheritance under which transfer of title is itself a public act of the Court, not a private contract registered afterwards. The buyer and seller (or their lawyers acting as attorneys under powers of attorney) appear before the **Samedi Division**, the contract is read or referenced, the Greffier records it, and the property changes hands at that moment. Two Jurats sit to witness. This is the procedure for every freehold sale, every long lease of nine years or more (*contrat héréditaire*), every hypothec, and every flying-freehold transfer.\n\nThe reasons the procedure exists are doctrinal: **public transfer of real property, the Royal Court as repository of property records, certainty of title transitions, and visibility of transactions** (the fact of passing is public; the price typically is not). It is *different* from English conveyancing, which is private until registration.\n\nThe **Friday afternoon** convention is the modern scheduling reality — every reference in the corpus places property passings on Friday afternoons (commercial leases, flying freeholds, force-majeure analysis of Court-closure delays). The corpus does not trace the specific choice of Friday afternoon to a statute or rule; what it does say is that the **Samedi Division takes its name from historical Saturday sittings**, so the weekly civil-and-conveyancing slot has drifted by one day but kept its end-of-week character. Treat \"Friday afternoon\" as a deeply entrenched listing convention rather than a doctrinal requirement.\n\nCited corpus files:\n\n1. `knowledge/jersey/property/contract-passing.md`\n2. `knowledge/jersey/property/commercial-leases.md`\n3. `knowledge/jersey/property/flying-freeholds.md`\n4. `knowledge/jersey/contract/force-majeure.md`\n5. `knowledge/jersey/legal-system/royal-court.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 281
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 37793,
+      "appendSha256": "b180874a66fc6584"
+    },
+    "sessionId": "3c0ecd00-77b7-47f0-8ba4-1a98f25e9794"
+  }
+}

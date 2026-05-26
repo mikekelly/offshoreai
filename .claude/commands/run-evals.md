@@ -83,10 +83,11 @@ rubricEvolution:
   stretchPromotionsByQuestion:
     <question_id>: [<promoted fact 1>, <promoted fact 2>]
     # only includes questions that had promotions
-corpusFixBacklog:
-  # Aggregated from each verdict's missingFactDiagnostics. Grouped by
-  # classification so the maintainer can scan for highest-leverage fixes.
-  # OMIT this whole section if every question PASSed (no diagnostics produced).
+fixBacklog:
+  # Aggregated from each verdict's failureDiagnostics (per step 5b of
+  # the eval-manager spec). Grouped by classification so the maintainer
+  # can scan for highest-leverage fixes. OMIT this whole section if
+  # every question PASSed (no diagnostics produced).
   corpusExposure:
     - fact: "<the missed fact>"
       questions: [<question_id>, ...]   # may affect multiple questions

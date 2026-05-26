@@ -123,11 +123,22 @@ Read the candidate's answer alongside the question's rubric. Score per dimension
 
 Voice doesn't single-handedly lift a partial to pass; freshness_handling doesn't either. Citation_recall is informational unless a primary source was explicitly required by the rubric.
 
-### 5b. Diagnose missed expected_facts (ONLY if overall is partial or fail)
+### 5b. Diagnose failures (ONLY if overall is partial or fail)
 
-**Skip this step if overall verdict is `pass`.** When every expected_fact is covered, there is nothing to diagnose — write the verdict and move to the next step.
+**Skip this step if overall verdict is `pass`.** When every dimension passes, there is nothing to diagnose — write the verdict and move to the next step.
 
-When `overall` is `partial` or `fail`, for each expected_fact (and any rubric `showcase_bar.substance` / `showcase_bar.jersey_specific` item) you marked as missed, classify the miss into one of five classes and write a short diagnosis with a suggested fix. This is the single most useful signal a failing run produces — it tells the maintainer what kind of fix would convert the verdict, and where to land it.
+When `overall` is `partial` or `fail`, produce a diagnostic for **every dimension that wasn't `pass`** — not just missed expected_facts. This is the single most useful signal a failing run produces: it tells the maintainer what kind of fix would convert the verdict, and where to land it.
+
+**What triggers a diagnostic:**
+
+- Any missed `expected_fact` / `showcase_bar.substance` / `showcase_bar.jersey_specific` item (the original substance path)
+- `citationPrecision` partial or fail — a cited file doesn't support the claim attached to it
+- `citationRecall` partial or fail — load-bearing material was cited from a sub-optimal file or omitted entirely
+- `freshnessHandling` partial or fail — draft/stale files cited without surfacing the freshness verdict to the user
+- `voice` fail — specific voice issue (planning fragment leaked, system reminder referenced, meta-commentary, tool-call narration)
+- Any other dimension scored partial or fail
+
+Each gets one diagnostic entry. Reuse the same classification taxonomy for all.
 
 **Classification:**
 
@@ -139,19 +150,20 @@ When `overall` is `partial` or `fail`, for each expected_fact (and any rubric `s
 | `rubric-phrasing` | The fact is arguably present in the answer in different wording, or the rubric demands an exact term/spelling the corpus does not use (typo, archaic spelling, paraphrase mismatch). | **Rubric edit** |
 | `candidate-variance` | Prior measured runs of this question covered the fact; this run did not. Corpus exposes the fact adequately and prior agent runs reached it. | Accept as noise, OR structurally surface the fact more prominently in the corpus to reduce variance |
 
-**Procedure per missed fact:**
+**Procedure per dimension failure:**
 
-1. `Grep` the corpus for distinctive terms from the fact. Record every file path where it appears.
-2. Look at the trajectory's tool-call log (read `<output_dir>/<question_id>.trajectory.json`) to see which files the candidate actually read.
-3. Compare:
-   - Fact appears in a file the candidate read → `agent-discipline` (fact was reachable, agent missed it)
-   - Fact appears in a file the candidate did NOT read, but that file is naturally adjacent (cross-referenced from a file the candidate did read, or in the same section folder) → still mostly `agent-discipline` (traversal failure)
-   - Fact appears only in files the candidate did not read AND those files are not naturally adjacent to its retrieval path → `corpus-exposure`
-   - Fact appears NOWHERE in `knowledge/` → `corpus-content-gap`
-   - Fact appears but with different wording / spelling than the rubric → `rubric-phrasing` (additionally note the actual corpus form)
-   - You have access to prior verdict files for this question (search `evals/baselines/*/<question_id>.verdict.yaml`) and prior runs covered the fact while this one didn't → `candidate-variance`
+For each dimension that scored partial/fail (or each missed expected_fact):
 
-4. Write one short diagnosis paragraph (1-3 sentences) noting the specific files / line numbers found, and one `suggestedFix` line stating what the maintainer should do.
+1. **Locate the corpus material relevant to this failure.** For substance failures: `Grep` for distinctive terms from the missed fact. For citation-precision failures: identify the specific claim the cited file under-supports and `Grep` for that claim's distinctive terms to find which file would actually have supported it. For freshness failures: cross-reference the cited files' frontmatter against the answer text to confirm draft/stale status went unflagged. For voice failures: quote the specific offending text from the answer.
+2. **Compare to the trajectory's tool-call log** (`<output_dir>/<question_id>.trajectory.json`) — which files the candidate actually read.
+3. **Classify into one of five classes:**
+   - `agent-discipline` — the material was reachable (file the agent read, or naturally adjacent), agent failed to use it correctly. Includes citing the wrong supporting file when a better one was also in the read set, leaking planning text, skipping draft-status flag.
+   - `corpus-exposure` — material IS in the corpus but in a file the agent's natural retrieval path didn't reach, OR in a narrow context that doesn't intersect the question's framing.
+   - `corpus-content-gap` — material is not in the corpus anywhere. `Grep` returns no occurrences under `knowledge/`.
+   - `rubric-phrasing` — material is arguably present in different wording, or the rubric demands an exact term/spelling the corpus does not use (typo, archaic spelling, paraphrase mismatch).
+   - `candidate-variance` — prior measured runs of this question covered the dimension; this one didn't. Corpus exposes the material adequately.
+4. **Write one short diagnosis paragraph** (1-3 sentences) noting the specific files / line numbers / quoted text found.
+5. **Write one `suggestedFix` line** stating what the maintainer should do.
 
 Output as `missingFactDiagnostics:` in the verdict (see step 7).
 
@@ -227,18 +239,24 @@ stretchPromotions:                 # facts you ADDED to stretch_facts
   - "<exact text of new entry>"
 stretchSuggestions:                # candidates you considered but didn't promote
   - "<one-line>"
-missingFactDiagnostics:            # OMIT entirely on PASS verdicts.
-                                   # On PARTIAL/FAIL, one entry per missed expected_fact (per step 5b).
-  - fact: "<the rubric fact that was missed>"
+failureDiagnostics:                # OMIT entirely on PASS verdicts.
+                                   # On PARTIAL/FAIL, one entry per non-pass
+                                   # dimension OR per missed expected_fact
+                                   # (per step 5b).
+  - dimension: <substance | citationPrecision | citationRecall | freshnessHandling | voice | jerseySpecific>
+    fact: "<rubric fact that was missed, IF this is a substance/jerseySpecific entry; otherwise omit>"
+    issue: "<one-line description of what failed at the dimension level — e.g. 'contract-passing.md cited as lead support for Friday-afternoon claim but says most weekdays'>"
     classification: <agent-discipline | corpus-exposure | corpus-content-gap | rubric-phrasing | candidate-variance | unclassified>
     diagnosis: |
       <1-3 sentences. Reference specific file paths and line numbers
       from your Grep results. Note which files the candidate read
-      (from trajectory) vs which files actually carry the fact.>
+      (from trajectory) vs which files actually carry the material.>
     suggestedFix: |
       <One line. e.g. "Surface 'contrat héréditaire' in
       contract-passing.md as the term-of-art for Royal-Court-passed
-      real-property contracts."  OR  "Edit rubric: 'Contract
+      real-property contracts."  OR  "Cite commercial-leases.md
+      explicitly for the Friday-afternoon claim — that file states
+      it; contract-passing.md does not."  OR  "Edit rubric: 'Contract
       héréditaire' → 'Contrat héréditaire' to match corpus form."
       OR  "No fix — accept as candidate variance.">
 summary: |
