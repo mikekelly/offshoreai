@@ -228,7 +228,10 @@ function buildTrajectoryRecord(evalSuite: string, output: HarnessOutput) {
       wordCount: output.answer.trim().split(/\s+/).filter(Boolean).length,
     },
     errors: output.error ? [{ where: "dispatch", detail: output.error }] : [],
-    meta: { sdkVersion: "0.3.143" },
+    meta: {
+      sdkVersion: "0.3.143",
+      ...(output.systemPrompt ? { systemPrompt: output.systemPrompt } : {}),
+    },
   };
 }
 

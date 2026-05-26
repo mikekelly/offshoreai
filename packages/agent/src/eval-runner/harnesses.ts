@@ -1,6 +1,9 @@
 // Harness adapters. Same input (question + repoRoot) → uniform HarnessOutput.
 
 import { spawn } from "node:child_process";
+import { createHash } from "node:crypto";
+import { readFileSync, statSync } from "node:fs";
+import { resolve } from "node:path";
 import { runCitationVerifier } from "../citation-verifier.js";
 import { runQuery } from "../runtime.js";
 import { readSessionToolCalls } from "./session-log.js";
@@ -67,6 +70,7 @@ async function runOffshoreaiAgent(q: EvalQuestion, opts: HarnessOptions): Promis
           costUsd: r.verifierVerdict.costUsd,
         },
       } : {}),
+      systemPrompt: r.systemPrompt,
     };
   } catch (err) {
     return errorOutput(q.id, "offshoreai-agent", t0, err);
@@ -75,19 +79,19 @@ async function runOffshoreaiAgent(q: EvalQuestion, opts: HarnessOptions): Promis
 
 // ---------------------------------------------------------------------------
 // claude-p — vanilla Claude Code CLI, no typed tools
+//
+// Loads the same system prompt as the offshoreai-agent harness
+// (prompts/system.md) so the comparison is apples-to-apples — the
+// difference between the harnesses is then purely tool surface + the
+// citation verifier, not the discipline.
+//
+// --bare turns off CLAUDE.md auto-discovery, hooks, plugin sync,
+// auto-memory etc. so the control is genuinely isolated.
 // ---------------------------------------------------------------------------
 
-const CLAUDE_P_PROMPT_TEMPLATE = (question: string) => `You are answering an eval question against the offshoreai corpus (Jersey-anchored, with adjacent jurisdictions under knowledge/<jurisdiction>/).
+const SYSTEM_PROMPT_RELATIVE_PATH = "prompts/system.md";
 
-Your tools are Read, Glob, Grep, Bash — read-only filesystem access only. You may not invoke any other agent.
-
-Constraints:
-- Use ONLY corpus files under knowledge/. Do not draw on training-data knowledge of Jersey or other offshore law.
-- Cite every file you read inline using its repo-relative path.
-- If the corpus does not answer the question, say so explicitly: "the corpus does not answer this question" — do not confabulate.
-- Where last_verified > 180 days, surface that to the reader.
-
-Question:
+const CLAUDE_P_USER_MESSAGE = (question: string) => `Question:
 ${question}
 
 Produce an answer in your own words. End with a numbered list of cited files.`;
@@ -110,8 +114,16 @@ interface ClaudePResultEvent {
 
 async function runClaudeP(q: EvalQuestion, opts: HarnessOptions): Promise<HarnessOutput> {
   const t0 = Date.now();
-  const prompt = CLAUDE_P_PROMPT_TEMPLATE(q.question);
+  const userMessage = CLAUDE_P_USER_MESSAGE(q.question);
   const maxTurns = String(opts.maxTurns ?? 20);
+
+  const systemPromptPath = resolve(opts.repoRoot, SYSTEM_PROMPT_RELATIVE_PATH);
+  const systemPromptBody = readFileSync(systemPromptPath, "utf8");
+  const systemPromptProvenance = {
+    source: SYSTEM_PROMPT_RELATIVE_PATH,
+    appendBytes: statSync(systemPromptPath).size,
+    appendSha256: createHash("sha256").update(systemPromptBody).digest("hex").slice(0, 16),
+  };
 
   try {
     const stdout = await new Promise<string>((resolveP, rejectP) => {
@@ -119,15 +131,23 @@ async function runClaudeP(q: EvalQuestion, opts: HarnessOptions): Promise<Harnes
       // and will consume subsequent positionals until another flag. Pass
       // the whole tool list as one space-separated string to keep argv
       // boundaries clean. Same for --add-dir which is also variadic.
+      //
+      // --bare turns off CLAUDE.md auto-discovery, hooks, plugin sync,
+      // and auto-memory so the control is isolated to the explicitly-
+      // provided --system-prompt-file. Without --bare, claude -p would
+      // load the repo's CLAUDE.md (now dev-only) into the system prompt,
+      // contaminating the control.
       const child = spawn(
         "claude",
         [
           "-p",
+          "--bare",
+          "--system-prompt-file", systemPromptPath,
           "--allowed-tools", "Read Glob Grep Bash",
           "--output-format", "json",
           "--max-turns", maxTurns,
           "--add-dir", opts.repoRoot,
-          "--", prompt,
+          "--", userMessage,
         ],
         { cwd: opts.repoRoot, env: process.env, stdio: ["ignore", "pipe", "pipe"] },
       );
@@ -190,6 +210,7 @@ async function runClaudeP(q: EvalQuestion, opts: HarnessOptions): Promise<Harnes
       },
       costUsd: resultEvt.total_cost_usd ?? 0,
       ...(verifierVerdict ? { verifierVerdict } : {}),
+      systemPrompt: systemPromptProvenance,
     };
   } catch (err) {
     return errorOutput(q.id, "claude-p", t0, err);

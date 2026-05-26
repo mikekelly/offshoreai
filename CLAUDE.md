@@ -1,110 +1,37 @@
 # CLAUDE.md
 
-This file is read automatically by Claude Agent SDK hosts (Claude Code, the
-`claude-agent-ui` web UI, Cowork) when they open this project as the agent's
-working directory. It serves **two roles**, disambiguated up front:
+This file is **dev / meta-dev guidance** — read by Claude Code and human
+contributors working *on* this repository. It is **not** the production
+answering agent's system prompt.
 
-- **If you are answering offshore-jurisdiction questions for a user** — you
-  are the **offshoreai answering agent**. Follow the *Operating discipline*
-  below. This is your system prompt.
-- **If you are a developer (human or LLM) working *on* this repository** —
-  the cold-start reading order and contributor conventions are in the
-  *Contributor cold-start guide* further down this file.
+- **Production answering agent system prompt** → [`prompts/system.md`](./prompts/system.md)
+  - Loaded at runtime by the `offshoreai-agent` harness (see
+    [`packages/agent/src/runtime.ts`](./packages/agent/src/runtime.ts)) and by
+    the `claude-p` control harness via `claude -p --bare --system-prompt-file`.
+  - Edit *production agent behaviour* there, not here.
+- **Dev / meta-dev guidance** (this file) — contributor cold-start, repo
+  conventions, build pipeline, eval methodology pointers.
 
-The corpus tools are exposed as the **`corpus` MCP connector**, auto-loaded
-from [`.mcp.json`](./.mcp.json) — no bespoke runtime required. Any Claude
-client that opens this project gets the typed corpus tools plus the
-discipline below.
+Claude Code's `claude -p` auto-discovers this file when you run dev commands;
+the production agent does not load it (the `--bare` flag in the claude-p
+harness explicitly opts out of CLAUDE.md auto-discovery).
+
+The corpus MCP tools are configured in [`.mcp.json`](./.mcp.json) and are
+auto-loaded by Claude Code sessions for dev/diagnostic use. The production
+agent loads its tools via the SDK in `runtime.ts`, not via `.mcp.json`.
 
 ---
 
-# Operating discipline — answering from the offshoreai corpus
+# When Claude Code answers a corpus question during dev work
 
-You answer offshore-jurisdiction questions — **Jersey-anchored**, covering
-Cayman, BVI, Guernsey, Bermuda, and Isle of Man comparatively where the
-question demands it — strictly from the corpus under `knowledge/`.
-
-## Tool surface
-
-The `corpus` connector (auto-loaded; tools appear as `mcp__corpus__*`):
-
-- `mcp__corpus__getFile` — read one corpus markdown file by path
-- `mcp__corpus__getArticle` — dispatch (statute, article) → canonical file
-- `mcp__corpus__findByTag` — inverted-index lookup over the closed TAGS.md taxonomy
-- `mcp__corpus__freshnessCheck` — age verdict per path (fresh / warn / stale)
-
-You also have built-in Read, Glob, Grep. Treat the corpus as **read-only**.
-
-## Retrieval strategy
-
-**Issue tag lookups in parallel.** When a question has multiple facets — a
-comparison, a statute + regulation question, a multi-jurisdiction query —
-fire all `findByTag` calls in one turn rather than sequentially.
-
-**Comparative questions: read the synthesis surface first.** For "Jersey vs
-Cayman vs BVI" style questions, read `knowledge/CROSS-JURISDICTIONAL-MAP.md`
-before per-jurisdiction tag searches; do not assemble a comparison from
-tag-by-tag retrieval.
-
-**Grep before asserting silence.** `findByTag` indexes primary-subject files;
-it misses facts that appear *incidentally* in a file whose core topic is
-something else. Before writing "the corpus does not cover this", run
-`Grep "key term" knowledge/<jurisdiction>/ --include="*.md" -rl`. A tag miss
-is a vocabulary gap, not a corpus gap.
-
-**A grep hit is a pointer, not a citation.** A bare `grep -n` shows one line;
-the fact you need is often in the lines *around* it. Before citing a file you
-found by grep, read its surrounding context (`Grep -n -C 3`, or open it at
-that line). Citing from the one-line snippet is how you miss the adjacent
-fact and under-cite a file you correctly found.
-
-**Read the on-topic siblings on a multi-part question.** Corpus content is
-one-concept-per-file, so your landing file is usually one of a cluster. For a
-multi-part / worked-example / "what do I need to know about X" question, list
-the cluster (`Glob knowledge/<jurisdiction>/<section>/*.md`) and read the two
-or three on-topic siblings before answering. (A narrow single-fact question
-needs only the one file.)
-
-## Citation mandate — non-negotiable
-
-Every legal, regulatory, or tax claim must cite a corpus file — the
-repo-relative path (e.g. `knowledge/jersey/trusts/firewall.md`), optionally
-with an Article reference. A claim with no citation is a failure mode.
-
-When the corpus is silent, say so explicitly: "the corpus does not cover
-this; here is the nearest material we do have: …" — do **not** synthesise
-from training-data knowledge of offshore law.
-
-## Freshness handling
-
-`freshnessCheck` returns `fresh` / `warn` / `stale`:
-- **fresh** — proceed normally.
-- **warn** — caveat: "the file I'm citing was last verified on YYYY-MM-DD;
-  re-verify against the primary source."
-- **stale** — do not cite the corpus file alone as authority; flag the
-  staleness and recommend verifying upstream.
-
-## Source-hierarchy preference
-
-When multiple sources support a claim, prefer in order: statute / regulation
-(`kind: statute`) → regulator handbooks / codes (`guidance`) → government
-pages (`gov-page`) → court judgments (`judgment`) → secondary sources
-(`secondary`, never as sole basis; flag explicitly).
-
-## Status handling
-
-- `stub` files: refuse to cite; surface the gap.
-- `draft` files: warn that the content is drafted but unverified.
-- `review` / `stable` files: cite normally.
-
-## Response shape
-
-Default: one short paragraph stating the rule, a citation, and any caveats.
-For multi-part questions, structure with brief headings. End with a numbered
-list of all cited files, then this disclaimer:
-
-> This is information drawn from the offshoreai corpus, not legal, tax, or
-> investment advice. Verify the cited primary sources before acting.
+(Most of the time you should not — corpus questions belong to the production
+agent, run via the eval-runner or the web agent. But occasionally during
+dev work you'll want to verify a fix by asking a question through Claude
+Code.) In that case: the discipline you should follow is the one in
+[`prompts/system.md`](./prompts/system.md). Don't duplicate it here — read
+it there. The short version: cite every corpus file, refuse to confabulate
+when the corpus is silent, respect `last_verified` / status frontmatter,
+prefer statute over secondary.
 
 ---
 
@@ -137,7 +64,7 @@ Read in this order. The order is deliberate — each document assumes the ones a
 1. **[`README.md`](./README.md)** — what the repo is, the LLM Wiki approach (after Karpathy), the repository layout, the file conventions in summary, the status enum, the disclaimer. ~15 min.
 2. **[`KNOWLEDGE-BASE-PRINCIPLES.md`](./KNOWLEDGE-BASE-PRINCIPLES.md)** — the strategic commitments behind the corpus (one concept per file, agent-orientation, tags as the primary navigation layer for agents, `last_verified` as the freshness contract, source hierarchy, layer separation, tenant neutrality). ~15 min.
 3. **[`CONVENTIONS.md`](./CONVENTIONS.md)** — the operational rules for content files (frontmatter spec, prose style, cross-linking, sources, updating, stubs, tenant neutrality). This is *how* the principles in (2) get applied. ~10 min.
-4. **[`TAGS.md`](./TAGS.md)** — the canonical closed taxonomy of tags. Skim the categories; you don't need to memorise the list, just know it's authoritative and additions go via PR. The taxonomy is also transcluded at the bottom of this file (via `@TAGS.md`) so it is ambient in any Claude session that opens this project. ~5 min.
+4. **[`TAGS.md`](./TAGS.md)** — the canonical closed taxonomy of tags. Skim the categories; you don't need to memorise the list, just know it's authoritative and additions go via PR. The taxonomy is also transcluded at the bottom of this file (via `@TAGS.md`) so it is ambient in Claude Code dev sessions that open this project. (The production agent loads tag-list awareness via a runtime-built taxonomy block — see [`packages/agent/src/taxonomy-block.ts`](./packages/agent/src/taxonomy-block.ts).) ~5 min.
 5. **[`knowledge/jersey/index.md`](./knowledge/jersey/index.md)** — a concrete example of the agent-facing front door for one jurisdiction. Read it to see how all of (1)–(4) actually land in the corpus. ~10 min.
 6. **[`knowledge/jersey/economy/index.md`](./knowledge/jersey/economy/index.md)** — Jersey's economy in shape and proportion: GDP partition by sector (~40% finance / ~60% other), short summaries of real estate, public sector, retail, construction, digital, tourism, agriculture. Frames the doctrinal corpus's finance-bias as honest sector dominance, not corpus omission. ~5 min.
 7. **[`knowledge/jersey/history/finance/trajectory.md`](./knowledge/jersey/history/finance/trajectory.md)** — the strategic-narrative layer for the dominant sector: the "four acts" synthesis of how Jersey's finance industry reached its current state, with five structural through-lines. Read this so you understand the historical context behind the doctrinal substance. ~10 min.
@@ -201,7 +128,7 @@ These are real gaps and they'll be filled in dedicated docs as they become urgen
 - **Setup / first-run instructions** — there's no implementation code yet, so no setup to document. When week 1 of `PRD §14` begins, write `SETUP.md`.
 - **Per-tool implementation specs** — `PRD §7.1` names tools with one-line behaviours. Concrete Zod schemas, example TOON outputs, error cases need a `schemas/` directory or per-tool spec file once implementation starts.
 - **Sub-agent prompt templates** — `PRD §8` names three sub-agents (`citation-verifier`, `bundle-assembler`, `freshness-checker`) but their actual prompts aren't drafted. Create `prompts/sub-agents/` when week 5–6 of `PRD §14` begins.
-- **Skill body templates** — `PRD §5.2` describes the persona-skill pattern. One reference `SKILL.md` per category (baseline, task) will unblock the trust-officer skill batch in `PRD §14` week 7.
+- **Skill body templates** — `PRD §5.2` describes the persona-skill pattern but the skills mechanism is **not yet wired**. The production agent's system prompt is currently a single markdown file at [`prompts/system.md`](./prompts/system.md). If persona-conditional prompts become load-bearing later, build the skills loader then; previous template files at `skills/templates/baseline.SKILL.md` and `task.SKILL.md` were removed as dead weight (recoverable from git history at `02d79e9~`).
 - **Tenant onboarding runbook** — `PRD §9` is the static layout; the provisioning script and first-tenant flow live in a future `TENANT-ONBOARDING.md`.
 
 Each of these is flagged in the relevant PRD section. If you arrive needing one and it doesn't exist yet, that's the signal to write it before going further.
@@ -218,14 +145,17 @@ This file used to delegate the cold-start guide to a separate `AGENTS.md` (read 
 
 ---
 
-# Orientation context (transcluded)
+# Dev orientation context (transcluded)
 
-The corpus orientation surfaces and the canonical tag taxonomy are
-@-referenced below so Claude sessions arrive with jurisdiction,
+The orientation surfaces below are `@`-referenced so **Claude Code dev
+sessions** that open this project arrive with jurisdiction,
 cross-jurisdictional, strategic-narrative, and tag-taxonomy context already
-loaded. (`@`-transclusion support varies across SDK hosts — the
-load-bearing operating discipline and the contributor cold-start guide
-above are therefore stated inline, not delegated to a transclusion.)
+loaded. This is for the dev / meta-dev audience.
+
+The **production answering agent** does not consume these transclusions
+(it runs via the SDK; the production system prompt is `prompts/system.md`,
+which directs the agent to read these files via its corpus tools when
+relevant).
 
 @TAGS.md
 

@@ -21,9 +21,12 @@ import {
   createCorpusToolsServer,
   type CorpusContext,
 } from "@offshoreai/tools-corpus";
-import { baselineSystemPrompt } from "./baseline-system-prompt.js";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
 import { buildTaxonomyBlock } from "./taxonomy-block.js";
+
+const SYSTEM_PROMPT_RELATIVE_PATH = "prompts/system.md";
 
 export type AgentEvent =
   | { readonly type: "tool"; readonly name: string; readonly input: unknown }
@@ -169,7 +172,9 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
   const taxonomyBlock = opts.tagIndexPath
     ? await buildTaxonomyBlock(opts.repoRoot, opts.tagIndexPath)
     : "";
-  const fullSystemPrompt = baselineSystemPrompt + taxonomyBlock;
+  const systemPromptPath = resolve(opts.repoRoot, SYSTEM_PROMPT_RELATIVE_PATH);
+  const baseSystemPrompt = readFileSync(systemPromptPath, "utf8");
+  const fullSystemPrompt = baseSystemPrompt + taxonomyBlock;
   const allowedTools = [...corpusAllowedToolNames(), "Read", "Glob", "Grep"];
   const verify = opts.verify ?? true;
   const maxVerifyRetries = opts.maxVerifyRetries ?? 1;

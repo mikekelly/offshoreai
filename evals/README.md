@@ -90,20 +90,47 @@ one batch:
 | Companies Law (Art 115 solvency) | `sm-co-001` | coverage-questions.yaml |
 | Adversarial / honesty regression | `adv-nonexistent-llc-article` | adversarial-citations.yaml |
 
-Procedure:
+### Harness identity — important
 
-1. Spawn 9 fresh `Explore` agents in a **single parallel
-   message**, one per smoke ID, each with a self-contained
-   prompt constrained to filesystem reads on the
-   `knowledge/` corpus only.
-2. Grade each against its `expected_facts` /
-   `expected_files` (or `correct_response_shape` for the
-   adversarial).
-3. Update the dated `*-measured` line under each
-   question's `score:` block.
-4. If anything fails or partials, decide: regression or
-   known gap? Regressions block the commit; known gaps go
-   in the changelog.
+Smoke runs through the **`offshoreai-agent` harness** (the production
+agent: MCP corpus tools + citation verifier + the system prompt at
+[`prompts/system.md`](../prompts/system.md)).
+
+```
+pnpm -F @offshoreai/agent eval --harness offshoreai-agent \
+  --suite evals/coverage-questions.yaml \
+  --ids sn-001,sn-002,sn-003,sd-co-001,sd-aml-001,sm-tax-001,sm-xjur-001,sm-co-001 \
+  --verify
+```
+
+Plus the adversarial smoke ID (`adv-nonexistent-llc-article` in
+`adversarial-citations.yaml`) in the same batch.
+
+There are also two control harnesses you can run against the smoke set
+to measure the production agent's lift:
+- `claude-p` — `claude -p --bare --system-prompt-file prompts/system.md`,
+  same system prompt as offshoreai-agent but only Read/Glob/Grep/Bash
+  filesystem tools (no MCP corpus tools, no citation verifier).
+- `explore-subagent` — Claude Code's in-session `Agent` tool with
+  `subagent_type: "Explore"`. Used for quick in-session checks during
+  dev work. **Not a substitute for the smoke harness** — it lacks both
+  the MCP corpus tools AND `prompts/system.md` (it gets only the
+  prompt you write in your `Agent` tool call).
+
+Procedure for the default smoke run:
+
+1. Run the eval-runner CLI with the `--harness offshoreai-agent` form
+   above. The runner spawns each question through the production
+   agent, captures the trajectory (tool calls + token usage +
+   system-prompt provenance) per question, and writes results to
+   `evals/baselines/<date>-<label>/`.
+2. Grade each against its `expected_facts` / `expected_files` (or
+   `correct_response_shape` for the adversarial).
+3. Update the dated `*-measured` line under each question's `score:`
+   block — use `2026-MM-DD-measured` (no `-smoke` suffix; the harness
+   is the load-bearing axis, recorded in the trajectory).
+4. If anything fails or partials, decide: regression or known gap?
+   Regressions block the commit; known gaps go in the changelog.
 5. Commit.
 
 **Editorial policy:** add a question to the smoke set only

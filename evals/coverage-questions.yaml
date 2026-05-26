@@ -961,8 +961,9 @@ questions:
 # Summary tracking
 # =====================================================
 summary:
-  2026-05-26-smoke:
+  2026-05-26-smoke-explore-subagent:
     scope: smoke
+    harness: explore-subagent  # NOT the production smoke harness
     total: 9
     pass: 7
     partial: 2
@@ -979,6 +980,20 @@ summary:
       partial:
         - sd-aml-001    # named Art 23 as tipping-off; actual is Art 35
         - sm-tax-001    # said Jersey has not adopted IIR; corpus says it has
+    harness_note: |
+      MIS-LABELLED IN ORIGINAL COMMIT. This run used Claude Code's
+      generic Explore subagent — Read/Glob/Grep/Bash only, no MCP
+      corpus tools, no citation verifier, no prompts/system.md (the
+      Explore subagent received only the per-question prompt I wrote
+      in the Agent tool call). The eval-runner's explore-subagent
+      harness explicitly raises "can only be driven from inside a
+      parent Claude Code session via the Agent tool" — it is a
+      fallback for in-session quick-checks, NOT the production smoke
+      harness. The proper smoke runs the offshoreai-agent harness
+      with the system prompt at prompts/system.md, MCP corpus tools,
+      and the citation verifier. Re-run pending under the proper
+      harness. Both partials may convert to PASS under the
+      citation-verifier discipline.
     notes: |
       First measured smoke run after v5-smoke-default introduced
       the default smoke set. 7/9 PASS, 2/9 PARTIAL, 0 FAIL.

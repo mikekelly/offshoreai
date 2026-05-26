@@ -1,14 +1,18 @@
 // Agent runtime — composes the SDK query() with our typed corpus tools
-// and the baseline system prompt.
+// and the system prompt loaded from prompts/system.md.
 
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { query } from "@anthropic-ai/claude-agent-sdk";
 import {
   corpusAllowedToolNames,
   createCorpusToolsServer,
 } from "@offshoreai/tools-corpus";
-import { baselineSystemPrompt } from "./baseline-system-prompt.js";
 import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
 import { buildTaxonomyBlock } from "./taxonomy-block.js";
+
+const SYSTEM_PROMPT_RELATIVE_PATH = "prompts/system.md";
 
 export interface RunQueryOptions {
   /** The user's question. */
@@ -43,6 +47,13 @@ export interface RunQueryResult {
   }>;
   /** Citation-verifier verdict if --verify was requested. */
   readonly verifierVerdict?: VerifierVerdict;
+  /** System prompt provenance — what the runtime composed and appended. */
+  readonly systemPrompt: {
+    readonly presetName: string;
+    readonly source: string;
+    readonly appendBytes: number;
+    readonly appendSha256: string;
+  };
 }
 
 export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
@@ -54,10 +65,16 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
       : { repoRoot: opts.repoRoot },
   );
 
+  const systemPromptPath = resolve(opts.repoRoot, SYSTEM_PROMPT_RELATIVE_PATH);
+  const baseSystemPrompt = readFileSync(systemPromptPath, "utf8");
   const taxonomyBlock = opts.tagIndexPath
     ? await buildTaxonomyBlock(opts.repoRoot, opts.tagIndexPath)
     : "";
-  const fullSystemPrompt = baselineSystemPrompt + taxonomyBlock;
+  const fullSystemPrompt = baseSystemPrompt + taxonomyBlock;
+  const appendSha256 = createHash("sha256")
+    .update(fullSystemPrompt)
+    .digest("hex")
+    .slice(0, 16);
 
   const allowedTools = [
     ...corpusAllowedToolNames(),
@@ -147,6 +164,12 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     usage,
     costUsd,
     toolCalls,
+    systemPrompt: {
+      presetName: "claude_code",
+      source: SYSTEM_PROMPT_RELATIVE_PATH,
+      appendBytes: Buffer.byteLength(fullSystemPrompt, "utf8"),
+      appendSha256,
+    },
     ...(verifierVerdict ? { verifierVerdict } : {}),
   };
 }

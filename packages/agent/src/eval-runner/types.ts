@@ -38,6 +38,13 @@ export interface HarnessOutput {
     readonly rejectCount: number;
     readonly costUsd: number;
   };
+  /** System-prompt provenance — what the harness actually composed. */
+  readonly systemPrompt?: {
+    readonly presetName?: string;
+    readonly source: string;
+    readonly appendBytes: number;
+    readonly appendSha256: string;
+  };
 }
 
 export type Verdict = "pass" | "partial" | "fail";
