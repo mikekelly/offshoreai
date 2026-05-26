@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-planning",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:50:57.509Z",
+  "wallClockSeconds": 35.304,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"planning\",\"permitted-development\"],\"mode\":\"or\",\"limit\":15}",
+      "inputBytes": 68,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__tree",
+      "rawName": "mcp__corpus__tree",
+      "inputDigest": "{\"root\":\"knowledge/jersey/planning/index.md\",\"depth\":2}",
+      "inputBytes": 55,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/jersey-resident/extension-planning-permission.md\"}",
+      "inputBytes": 86,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/planning/extensions-and-conversions.md\"}",
+      "inputBytes": 66,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/planning/permitted-development.md\"}",
+      "inputBytes": 61,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1799,
+    "cacheReadTokens": 189131,
+    "cacheWriteTokens": 70589,
+    "totalCostUsd": 0.58076175
+  },
+  "answer": {
+    "text": "## Short answer\n\n**Almost certainly yes** — unless the rear extension is modest enough to fall fully within the **permitted-development** classes in the **Planning and Building (General Development) (Jersey) Order 2011** (the \"GD Order 2011\"), in which case planning permission is not required but **building approval under the Building Bye-Laws 2007 still is**.\n\n## The rule\n\nThe **Planning and Building (Jersey) Law 2002** (\"PBL 2002\") requires planning permission for \"development\" of land, which includes building operations such as extensions. The GD Order 2011 grants **automatic planning permission** for specified categories of minor works, including **single-storey rear extensions** within prescribed limits on floor area, depth, height, eaves height, and distance from boundaries — and subject to conditions like materials matching the existing dwelling and not projecting in front of the main building line.\n\nKey practical positions for a rear extension:\n\n- **Small single-storey rear extension** (commonly cited as ~3–4m projection on a typical Jersey property): **may be permitted development** if it meets every GD Order condition.\n- **Two-storey rear extension**: **always requires a full planning application** under current rules.\n- **Anything beyond the GD Order thresholds** (floor area, depth, height): full application.\n- **Listed building**: listed-building consent virtually always required, even for internal works.\n- **Conservation area, Green Zone, or Coastal National Park**: most permitted-development cover is lost or narrowed — assume an application is needed.\n- **Article 31 directions**: the Minister can remove permitted-development rights in specific locations.\n\nExceeding **any** condition (height, boundary distance, materials, position) takes the work outside permitted development entirely.\n\n## What to do\n\n1. Check whether your proposal fits a GD Order 2011 category and all its conditions — don't assume \"small = permitted\".\n2. If borderline, apply for a **Certificate of Lawful Development** — modest fee, gives certainty and protects on sale.\n3. Use the Department for the Environment's free **pre-application drop-in**.\n4. Check your title for **restrictive covenants** — a private-law restriction can prohibit works even where planning would permit them.\n5. Remember **building approval** under the Building Bye-Laws 2007 is required either way.\n\n## Caveat — file status\n\nThe Jersey planning files cited below are currently marked `draft` (`last_verified: 2026-05-18`), meaning the content has been drafted but not fully editorially verified against the primary sources. Before acting, verify the specific GD Order 2011 dimensional limits against the current Order text and check any conservation-area / listing designation on your property with the Department for the Environment.\n\n## Sources cited\n\n1. `knowledge/jersey/use-cases/jersey-resident/extension-planning-permission.md`\n2. `knowledge/jersey/planning/extensions-and-conversions.md`\n3. `knowledge/jersey/planning/permitted-development.md`\n4. `knowledge/jersey/planning/planning-building-law-2002.md`\n5. `knowledge/jersey/planning/index.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 438
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "b1af9a20-92fc-41c5-908a-c21d9d85d879"
+  }
+}

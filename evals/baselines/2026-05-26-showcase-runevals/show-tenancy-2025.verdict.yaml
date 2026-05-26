@@ -1,0 +1,31 @@
+schemaVersion: eval_verdict_v2
+questionId: show-tenancy-2025
+harness: offshoreai-agent
+ranAt: 2026-05-26T14:55:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/residential-tenancy/2025-amendment-law.md
+    supportsClaim: true
+    notes: File exists and directly supports every substantive claim — 15 April 2026 commencement, 3-year fixed-term cap with no successive terms, 1-month tenant exit, 12-month landlord no-fault notice (replacing prior 3 months), once-yearly RPI-capped rent increase with 2 months notice, new Rent Tribunal scope, and the transitional rules (periodic converts immediately, fixed-term continues until expiry).
+  - path: knowledge/jersey/residential-tenancy/index.md
+    supportsClaim: true
+    notes: Section index — supports the 15 April 2026 commencement framing, the Petty Debts Court / Viscount / Rent Tribunal forum split, and the "must apply post-amendment regime" instruction the candidate honours.
+stretchPromotions: []
+stretchSuggestions:
+  - "9-year ceiling above which a lease becomes a Royal-Court-passed contract of lease — useful boundary fact the candidate surfaced unprompted."
+  - "Strengthened written-form rules: hidden fees unenforceable and may constitute an offence — practitioner-grade pitfall worth surfacing."
+  - "Rent Tribunal does NOT handle social housing (Andium/housing trusts) or employment-linked accommodation — scope-limiter useful for tenants checking forum."
+summary: |
+  Pass. All seven showcase-bar substance facts land cleanly with correct numbers (3-year fixed-term cap, 1-month tenant exit, 12-month landlord no-fault, RPI cap with 2-month notice, Rent Tribunal, transitional split for periodic vs fixed-term). Jersey-specific is on the nose — the 2025 Amendment Law is named and the 15 April 2026 in-force date is called out twice. Voice is post-amendment-aware, no pre-amendment law smuggled in, and the candidate's explicit "What did not change" paragraph (Petty Debts Court / Viscount / 9-year ceiling) shows it has read the amendment as a delta against the 2011 base law rather than as a standalone fact-dump. Freshness handled correctly — flagged both cited files as draft / 8 days old and pointed the user to jerseylaw.je. Two citations, both verified, both supporting their claims. Clean run; nothing to fix.
+errors: []

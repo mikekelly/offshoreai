@@ -1,0 +1,28 @@
+schemaVersion: eval_verdict_v2
+questionId: show-parish-hall
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:51:17Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/road-traffic/parish-hall-enquiries.md
+    supportsClaim: true
+    notes: File exists and directly supports every load-bearing claim — Centenier as elected honorary police officer, £200 fine ceiling, caution / fine / referral powers, admit-and-accept precondition, opt-out-to-Magistrate's-Court right, the 15-mph / drink-driving / dangerous-driving / mandatory-disqualification exclusions, and the Law Officers' Department maintaining the schedule.
+stretchPromotions: []
+stretchSuggestions:
+  - "Centenier sits in an unusual mixed prosecutorial/adjudicative role — not a judge in the conventional sense — explicitly flagged by the source file as a structural feature that distinguishes Parish Hall from any common-law analogue."
+  - "Parish Hall outcomes can endorse a driving licence and are recorded, even though they are not formal criminal convictions — candidate mentions this in passing but the practical consequence (insurance, future records) is a useful drilling-down beyond the showcase bar."
+  - "Concrete fine-versus-penalty asymmetry — a Centenier's £200 may be higher than a court's likely £50 fine for the same minor offence — a counter-intuitive practitioner point the source file calls out under Pitfalls."
+summary: |
+  Pass. All six substance points land cleanly (pre-court Centenier forum, £200 ceiling, caution/fine/refer powers, opt-out right, schedule of treatable offences, the explicit exclusion list including 15-mph excess / drink-driving / dangerous driving). The single citation is to the canonical concept file and supports every claim. Jersey-specificity is strong — Centenier is named and contextualised as elected honorary police, the Law Officers' Department is correctly identified as schedule-keeper, the "no direct UK equivalent" framing is on-brief for the showcase voice. Freshness is handled explicitly (draft status and last_verified date both surfaced in a caveat). The Honorary Police institutional context is comparatively light — the candidate could have gone one level deeper into parish / Connétable / Vingtenier structure — but the showcase bar doesn't demand it. Single best signal for next iteration: the candidate's retrieval was elegantly efficient (tag-search then one getFile) but it could have additionally pulled honorary-police.md to lift the institutional-context line above "informed gloss" to "embedded explanation".
+errors: []

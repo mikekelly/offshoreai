@@ -1,0 +1,35 @@
+schemaVersion: eval_verdict_v2
+questionId: show-image-rights
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/guernsey/image-rights-register.md
+    supportsClaim: true
+    notes: Cited file fully supports every load-bearing claim (Ordinance 2012, sole jurisdiction, personnage scope, property-right attributes, registration mechanics, trust/company overlay, foreign-recognition caveat).
+stretchPromotions: []
+stretchSuggestions:
+  - "Personnage can be associated with fictional / non-real characters as well as natural persons — opens use for mascots and animated characters"
+  - "Registered remedies are statutory — injunction, damages, account of profits, delivery up of infringing material"
+  - "Renewable every 10 years; protection runs for life + 100 years for some categories"
+summary: |
+  Pass on all measured dimensions. Candidate covered all five showcase_bar
+  substance facts cleanly, with the right Guernsey-specific authority
+  (Image Rights (Bailiwick of Guernsey) Ordinance 2012), a single accurate
+  citation, and good operational framing of the trust/company overlay
+  pattern. Notably strong freshness discipline — explicitly flagged the
+  status: draft / last_verified 2026-05-18 of the source file and advised
+  primary-source verification. No promotions warranted; the showcase_bar
+  already captures the load-bearing substance.
+errors: []

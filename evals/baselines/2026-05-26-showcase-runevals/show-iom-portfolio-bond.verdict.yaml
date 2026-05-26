@@ -1,0 +1,46 @@
+schemaVersion: eval_verdict_v2
+questionId: show-iom-portfolio-bond
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/isle-of-man/life-assurance.md
+    supportsClaim: true
+    notes: |
+      Supports every substantive claim — single-premium life-assurance wrapper, UK
+      5% rule with Chapter 9 of Part 4 ITTOIA 2005 citation, top-slicing relief,
+      Solvency II equivalence, IOMFSA regulation under Insurance Act 2008, major
+      UK insurer subsidiaries (Quilter, Standard Life International, Royal London,
+      Canada Life International, Utmost), Dublin/Luxembourg comparison context,
+      adviser-suitability pitfall. File carries status:draft and the candidate
+      flagged this in the answer.
+stretchPromotions: []
+stretchSuggestions:
+  - "Tax-deferred growth inside the wrapper (no annual UK income-tax or CGT drag on the underlying portfolio) as the second-order driver alongside the 5% rule"
+  - "Discretionary investment manager directing strategy inside the wrapper as the operational pattern"
+  - "Use inside a trust as an additional succession-planning layer (bond-in-trust pattern)"
+summary: |
+  Pass. All four showcase_bar substance items covered — single-premium
+  life-assurance wrapper, UK 5% rule with the correct ITTOIA 2005
+  Chapter 9 Part 4 statutory anchor, top-slicing relief, Solvency II
+  equivalence and the major UK insurer subsidiaries by name. The single
+  citation is clean and the candidate responsibly flagged the cited
+  file's draft status and made clear the 5% rule is UK statute not IoM
+  rule. Limiting dimension is citation recall — this run cited 1 file
+  versus the 2026-05-18 baseline's 4 files for the same question; the
+  see_also targets (insurance.md, fsa.md, tax.md) would have strengthened
+  recall without adding length. Most useful single signal for next
+  iteration: prompt the agent to follow see_also frontmatter on a
+  single-citation answer when adjacent files exist.
+errors: []

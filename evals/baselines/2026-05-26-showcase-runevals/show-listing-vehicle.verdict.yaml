@@ -1,0 +1,49 @@
+schemaVersion: eval_verdict_v2
+questionId: show-listing-vehicle
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: n/a
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 4
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: "Decision-framework matrix and 'US-listed tech holdco → Cayman Exempted (the Alibaba pattern)' rule quoted verbatim; Pillar Two row supports MCIT 2025 / CIT 2023 / MTT 2025."
+  - path: knowledge/cayman/exempted-company.md
+    supportsClaim: true
+    notes: "Confirms 'Alibaba / TikTok holdco pattern', 1-2 day formation, capital flexibility (par/no-par, multi-class, redeemable, treasury, capital reduction), 20-year tax undertaking renewable to 30, and the comparison table stating BVI listing acceptance is 'more limited'."
+  - path: knowledge/bvi/business-company.md
+    supportsClaim: true
+    notes: "Confirms 'volume / standard structures' positioning and Hong Kong/Asia investor pattern; speed/cost. Note: this file does not itself characterise BVI listing acceptance as 'more limited' — that phrase comes from the Cayman file and CROSS-JURISDICTIONAL-MAP, both correctly cited."
+  - path: knowledge/bermuda/exempted-company.md
+    supportsClaim: true
+    notes: "Directly supports BMA pre-vetting as regulatory-confidence feature ('Bermuda is harder to incorporate into for the wrong sort of business, but the filter delivers regulatory confidence to counterparties'); CIT 2023 with 15% rate on in-scope EUR 750m groups effective 1 Jan 2025; insurance/reinsurance focus."
+stretchPromotions: []
+stretchSuggestions:
+  - "Bermuda's CIT 2023 operates as a QDMTT-equivalent, keeping top-up tax revenue in Bermuda rather than ceding it under the IIR."
+  - "Cayman exempted may apply for a 20-year tax undertaking (renewable to 30 years) — a specific structuring tool worth surfacing for IPO timing horizons."
+  - "Bermuda exempted requires one 'ordinarily resident' director or a resident secretary / RSP — a board-composition constraint Cayman and BVI do not impose."
+summary: |
+  PASS. The candidate gives the correct primary recommendation (Cayman Exempted as
+  the NASDAQ default per the Alibaba pattern), the correct Bermuda carve-out
+  (BMA pre-vetting + insurance/reinsurance specialism), and the correct BVI caveat
+  (more limited exchange acceptance, lower-cost smaller listings). All 4 rubric
+  substance items are covered. The Pillar Two summary is slightly MORE accurate
+  than the rubric: the candidate states 'BVI MTT 2025' (matching CROSS-JURISDICTIONAL-MAP
+  and bvi/tax.md), where the rubric still says 'BVI no equivalent yet' — a stale
+  rubric phrasing, not a candidate error. All 4 citations resolve and support their
+  claims; zero hallucinations. The answer flags draft status / last_verified dates
+  on all three jurisdiction files, which is the freshness discipline the rubric
+  rewards. Voice is operator-grade: leads with the recommendation, surfaces the
+  two carve-outs, then closes with practical caveats (substance, Pillar Two scope,
+  underwriter preference).
+errors: []

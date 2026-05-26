@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-arrest",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:50:54.567Z",
+  "wallClockSeconds": 37.376,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/crime-fraud/index.md\"}",
+      "inputBytes": 48,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"ppce-2003\"],\"mode\":\"and\"}",
+      "inputBytes": 35,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md\"}",
+      "inputBytes": 85,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/crime-fraud/rights-at-police-station.md\"}",
+      "inputBytes": 67,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/crime-fraud/arrest.md\"}",
+      "inputBytes": 49,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 13,
+    "outputTokens": 1990,
+    "cacheReadTokens": 189481,
+    "cacheWriteTokens": 72158,
+    "totalCostUsd": 0.595543
+  },
+  "answer": {
+    "text": "# Your rights if arrested in Jersey\n\nJersey criminal procedure is governed by the **Police Procedures and Criminal Evidence (Jersey) Law 2003** (PPCE 2003) and its Codes of Practice. Note: all cited files are status `draft` (verified 2026-05-18), so treat as orienting rather than authoritative — verify with a Jersey advocate if acting.\n\n## The headline rights\n\n| Right | Position |\n|---|---|\n| **Legal advice** | Free, 24/7 duty solicitor or your own choice; private and confidential; can be delayed only in very serious cases at superintendent-level authorisation |\n| **Inform someone of your arrest** | Yes — one person, at public expense, as soon as practicable |\n| **Consular notification** | If a foreign national, your consulate/High Commission can be notified |\n| **Silence** | The caution: *\"You are not obliged to say anything unless you wish to do so, but what you say may be put into writing and given in evidence.\"* Adverse inference from police-station silence is narrower in Jersey than in England |\n| **Written notice of rights** | Provided by the custody officer on arrival, in your language |\n| **Custody record** | Comprehensive log of detention; you can see it during detention and get a copy on release |\n| **Interpreter** | At public expense if you don't speak English well enough |\n| **Appropriate adult** | Required if juvenile (<18) or vulnerable |\n| **Medical attention** | If unwell, injured, or needing medication |\n| **Rest** | At least 8 continuous hours in any 24-hour period |\n\n## At the point of arrest\n\nThe arresting officer must tell you you are under arrest, state the offence, caution you, identify themselves, and use no more force than necessary. Failure to do these can render the arrest unlawful (`knowledge/jersey/crime-fraud/arrest.md`). Honorary Police (Centeniers and others) have the same arrest powers as States Police.\n\n## Detention time limits\n\n| Stage | Limit | Authorised by |\n|---|---|---|\n| Initial | **24 hours** | Custody officer |\n| Extension (serious offences) | up to **36 hours** | Police inspector |\n| Warrant of further detention | up to **96 hours total** | Royal Court (Magistrate) |\n| Beyond 96 hours | Must charge or release |\n\nDetention beyond these limits is unlawful and grounds for a habeas corpus / wrongful-imprisonment challenge (`knowledge/jersey/crime-fraud/rights-at-police-station.md`).\n\n## In interview\n\nInterviews are audio-recorded under Code E; you must be cautioned at each session; your solicitor can be present; oppression and prolonged questioning are prohibited; you must be fit to be interviewed; breaks must be given. You may answer nothing, answer selectively, or give a prepared statement through your solicitor (`knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md`).\n\n## The single most important practical step\n\n**Ask for a duty solicitor immediately and do not answer substantive questions until you have spoken to one.** This is the most important safeguard in the system — declining it to look cooperative is the most common avoidable mistake (`knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md`).\n\n## If a right is breached\n\nTell your solicitor at first opportunity, note times and details, complain through formal channels post-release, seek exclusion of any tainted evidence at trial, and consider civil claims for serious breaches.\n\n## Cited files\n\n1. `knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md`\n2. `knowledge/jersey/crime-fraud/rights-at-police-station.md`\n3. `knowledge/jersey/crime-fraud/arrest.md`\n4. `knowledge/jersey/crime-fraud/index.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting — and if you have actually been arrested, contact a Jersey advocate or the duty solicitor immediately rather than relying on this summary.",
+    "wordCount": 577
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "2e2fa747-216c-4060-91a0-3bc86887ba96"
+  }
+}

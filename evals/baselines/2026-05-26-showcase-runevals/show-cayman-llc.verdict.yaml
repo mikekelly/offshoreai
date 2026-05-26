@@ -1,0 +1,42 @@
+schemaVersion: eval_verdict_v2
+questionId: show-cayman-llc
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:58:07Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/cayman/cayman-llc.md
+    supportsClaim: true
+    notes: "Fully supports LLC Act 2016, Delaware mirror, members/managers/LLC Agreement, check-the-box default (partnership/disregarded), exempted-co contrast, migration-in/out, draft status."
+  - path: knowledge/cayman/companies.md
+    supportsClaim: partial
+    notes: "Supports general continuance-in/out for Cayman entities; does not deeply detail the LLC-specific migration mechanic — adequate as a supporting reference."
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: "Cross-jur matrix confirms Cayman MCIT 2025 (15% QDMTT) Pillar Two response. EUR 750m threshold is the standard OECD Pillar Two scope and not file-specific but is correct."
+stretchPromotions: []
+stretchSuggestions:
+  - "ELP comparison explicitly named (LLC vs ELP table: all-member limited liability vs GP unlimited liability; market practice of ELP for closed-ended PE) — present in cayman-llc.md but the candidate elided it in the answer."
+  - "50-year tax undertaking available to Cayman LLCs (a sweetener for migrating sponsors)."
+  - "No CIMA registration required for the LLC form alone — activity-triggered only."
+summary: |
+  PASS. Candidate gave a confident, well-structured answer that hit every showcase_bar
+  substance point: named the LLC Act 2016, framed it as a Delaware-LLC mirror, explained
+  members/managers/LLC Agreement, walked through the check-the-box default (partnership
+  if >1 member, disregarded if single member) and the corporate-election alternative,
+  and contrasted with the Cayman Exempted Company as a per-se corporation. The ELP
+  contrast was elided (the bar mentions "Cayman ELP") though the cayman-llc.md file
+  carries a full LLC-vs-ELP table — a missed opportunity rather than a substance fail.
+  Citations all verify; freshness was handled openly (draft status surfaced). Strong
+  showcase-quality answer.
+errors: []

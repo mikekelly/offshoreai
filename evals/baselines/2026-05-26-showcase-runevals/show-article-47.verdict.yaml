@@ -1,0 +1,44 @@
+schemaVersion: eval_verdict_v2
+questionId: show-article-47
+harness: offshoreai-agent
+ranAt: 2026-05-26T15:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/trusts/article-47-set-aside.md
+    supportsClaim: true
+    notes: |
+      File directly supports every load-bearing claim: the 47B–47H scope and 2013 Amendment No. 6 origin;
+      the wide Article 47B definition (effect / consequences / advantage / fact); the 47E and 47G doors;
+      the three-limb test attributed to S&T Trusts [2015] JRC259; the Pitt v Holt divergence with the
+      quoted "manner of the mistake is irrelevant" language; Representation procedure in Samedi Division;
+      affidavit evidence; ab initio effect with third-party protection; M Settlement decline; Walkers
+      future-tax-advantage caveat. Statute and case citations in the file's frontmatter sources block.
+stretchPromotions: []
+stretchSuggestions:
+  - "Relationship with Article 11 (mistake invalidating the trust as a whole) — distinct door, mutually exclusive with 47C–H"
+  - "Relationship with Article 51 directions jurisdiction — borderline cases often combine both in one Representation"
+  - "Effect on foreign tax: UK HMRC historically accepts Jersey set-aside as restoring status quo ante; US IRS more cautious"
+  - "Article 47 simpliciter is the Variation of Trusts jurisdiction; Article 47A is purpose-trust redirection — sub-Article precision matters"
+summary: |
+  PASS — clean coverage of all six substance points plus all three Jersey-specific markers
+  (S&T Trusts [2015] JRC259, Article 47G specifically named, Pitt v Holt / Futter v Futter
+  [2013] UKSC 26 contrast). Answer opens with a precision move — flagging that "Article 47"
+  is ambiguous and that the regime is 47B–47H — which is exactly the litigator voice the
+  rubric asks for. The three-limb test is correctly attributed, the "manner of the mistake
+  is irrelevant" quote is preserved, and the answer adds value with the limb-2 failure-mode
+  observation and the M Settlement / Walkers caveats. Freshness handled correctly (draft
+  status surfaced). Single citation but it is the canonical concept file and supports every
+  claim; no additional citations needed for this question. The minor rubric quirk ("47B-J"
+  vs the statutory 47B-H) is on the rubric side, not the answer side.
+errors: []

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-voisinage",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:50:57.343Z",
+  "wallClockSeconds": 32.383,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rl \\\"voisinage\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\"\",\"description\":\"Find files mentioning voisinage\"}",
+      "inputBytes": 190,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/voisinage.md\"}",
+      "inputBytes": 123,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1410,
+    "cacheReadTokens": 187257,
+    "cacheWriteTokens": 64108,
+    "totalCostUsd": 0.5295935
+  },
+  "answer": {
+    "text": "**Voisinage** is a Norman customary-law doctrine preserved in Jersey but abandoned in most modern legal systems. It requires each landowner to use their property in a way that doesn't cause **unreasonable harm** to neighbours — the \"good neighbourhood\" duty. The Royal Court still applies it today, distinct from (though overlapping with) English nuisance.\n\n## The test\n\nTo bring a voisinage claim, you broadly need:\n\n- **harm** that is objectively identifiable;\n- **caused by** the neighbour's use of their property;\n- **exceeding** the ordinary inconveniences of neighbourhood; and\n- **without** adequate justification.\n\nNotably, voisinage can apply **without fault** (it has an objective character), and it's **not** limited to the English nuisance categories of \"smell, smoke, noise\" — so the range of activities it can capture is broader.\n\n## Typical fact patterns it covers\n\nNoise, smells, smoke/fumes, vibrations, surface water/drainage, tree roots and overhanging branches, light obstruction, livestock issues, prolonged construction nuisance, kitchen/refuse issues from commercial neighbours, inter-unit noise in flying-freehold apartments. (`knowledge/jersey/property/voisinage.md`)\n\n## Does it apply to *your* problem?\n\nI can't tell you that without knowing what the neighbour is actually doing. The corpus flags a few specific pitfalls to watch:\n\n- **Planning permission does not exclude voisinage** — a neighbour saying \"I have permission\" isn't a complete defence;\n- **Regulatory compliance** may be evidence of reasonable use but isn't a shield;\n- **Valid servitudes** (easements) can permit specific activities — but excessive use of a servitude can still breach voisinage;\n- **Defences** include reasonable use, the claimant's consent/acquiescence, statutory authority, and (in limited cases) prescription.\n\nProcedurally the usual route is: log the interference (photos, recordings, dates), correspond with the neighbour, attempt mediation, then if needed an Order of Justice to the Royal Court — site visits and expert evidence (acoustic, environmental) are common.\n\n## Caveats\n\nThe corpus file I'm relying on is marked **`status: draft`** — drafted but not fully verified against primary sources. Before relying on this for anything beyond orientation you should have a Jersey advocate confirm the current case-law position on your specific facts. The file also flags \"specific Jersey case law\" on several sub-topics without citing the cases — another reason to get advice rather than self-diagnose.\n\n## Cited\n\n1. `knowledge/jersey/property/voisinage.md` (status: draft; last_verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 391
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "be688a4b-afff-4ace-8c1e-67898345bb33"
+  }
+}

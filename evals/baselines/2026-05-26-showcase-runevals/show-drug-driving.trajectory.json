@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-drug-driving",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:50:48.599Z",
+  "wallClockSeconds": 26.193,
+  "turns": 4,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"drug-driving\"]}",
+      "inputBytes": 25,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"road-traffic\",\"jersey\"],\"mode\":\"and\"}",
+      "inputBytes": 47,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/road-traffic/drug-driving.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1085,
+    "cacheReadTokens": 188209,
+    "cacheWriteTokens": 64112,
+    "totalCostUsd": 0.5219695
+  },
+  "answer": {
+    "text": "## The current rules (as of May 2026)\n\nDrug-driving in Jersey is prosecuted under the **Road Traffic (Jersey) Law 1956** on an **impairment basis only**. Police must prove the driver was actually unfit to drive properly because of drug use — on objective evidence such as poor vehicle control, failed field sobriety tests, and a blood/urine sample showing drugs. Jersey has **no statutory drug-concentration limits**, **no roadside drug-wipe powers**, and **no per se \"over the limit\" offence** — unlike the English specified-limit regime. The impairment offence is **substance-neutral**: it covers controlled drugs, prescription medication, and OTC drugs alike, and \"I had a prescription\" is not a defence to actual impairment.\n\nSentencing tracks drink-driving: mandatory disqualification (typically 12+ months for a first offence), fines up to £2,000, imprisonment up to 6 months, and licence endorsement. Refusing to give a sample is itself an offence.\n\n## What's coming\n\nIn **February 2026**, States representatives proposed legislation that would introduce **statutory drug limits**, give police **roadside swab-testing powers**, create **per se offences**, and impose **mandatory disqualification** on conviction. The proposal is **not yet enacted** as of May 2026; potential introduction is during 2026 or 2027. Until then, the impairment-based regime continues to apply.\n\n**Caveat on authority**: the cited file is `status: draft` — the substance has been drafted but not editorially verified against the primary statute and States proposition. For anything you intend to act on, verify against the Road Traffic (Jersey) Law 1956 on jerseylaw.je and the live States proposition record.\n\n## Cited\n\n1. `knowledge/jersey/road-traffic/drug-driving.md` (draft; last_verified 2026-05-18)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 277
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "075888a4-e36e-4928-9788-e23d3c8586fd"
+  }
+}

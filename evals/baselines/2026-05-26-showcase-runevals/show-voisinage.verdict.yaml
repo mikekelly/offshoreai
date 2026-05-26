@@ -1,0 +1,40 @@
+schemaVersion: eval_verdict_v2
+questionId: show-voisinage
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/voisinage.md
+    supportsClaim: true
+    notes: File exists; supports the doctrine description, test, comparison with English nuisance, defences, procedure, and pitfalls cited in the answer. Status draft / last_verified 2026-05-18 — correctly surfaced.
+stretchPromotions: []
+stretchSuggestions:
+  - "Royal Court remedies include injunction, damages, and specific performance of preventative measures"
+  - "Voisinage is also informed by persuasive modern French neighbour-relations jurisprudence"
+  - "Statutory authority is an established voisinage defence"
+summary: |
+  Partial verdict. Substance is solid (4 of 5 expected facts covered — the Norman
+  customary origin, distinctness from English nuisance, objective test of unreasonable
+  harm, and Royal Court jurisdiction are all present and well-framed) and the single
+  citation is verified and the draft status is honestly surfaced. The miss is the
+  Pothier / Le Geyt foundation — the rubric calls these out specifically under both
+  substance and jersey_specific, and naming them is the marker that the answer is
+  genuinely engaging Jersey customary-law roots rather than paraphrasing a modern
+  doctrinal summary. The file the candidate read literally lists "Le Geyt, Pothier"
+  under Sources, so the omission is a missed retrieval-to-output step rather than a
+  corpus gap. Voice is also slightly thin on the customary-law explanation the rubric
+  asked for. The most useful next-iteration signal is to push the candidate to surface
+  named-authority foundations (Pothier, Le Geyt, named cases) when the cited file
+  lists them in its Sources block.
+errors: []

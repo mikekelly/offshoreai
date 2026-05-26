@@ -1,0 +1,51 @@
+schemaVersion: eval_verdict_v2
+questionId: show-worked-family-wealth
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 6
+factsExpected: 7
+citationsTotal: 4
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/trusts/firewall.md
+    supportsClaim: true
+    notes: Supports Article 9(1)-(4) and 9(3A) framing, Italian legittima discussion, and the explicit "Limits" caveats.
+  - path: knowledge/jersey/trusts/reserved-powers.md
+    supportsClaim: true
+    notes: Supports Article 9A list (revocation, variation, advancement, direction, appointment/removal, change of proper law, consent), trustee protection under 9A(3), sham-trust limits, foreign-tax characterisation flag, and the drafting cautions (list exactly, mechanism, incapacity, letter of wishes).
+  - path: knowledge/jersey/trusts/proper-law.md
+    supportsClaim: true
+    notes: Supports Article 4 express/implied/closest-connection hierarchy and the dispositive nature of express choice for firewall engagement.
+  - path: knowledge/jersey/use-cases/family-office-adviser/worked-example-international-family-wealth.md
+    supportsClaim: true
+    notes: End-to-end worked example for an Italian-domiciled patriarch with EU/US/Swiss/Caribbean assets; supports per-asset-class SPV structuring, US $60k threshold and blocker pattern, PTC under Article 12 / STAR / VISTA option, and the CRS/FATCA/DAC6/TRS reporting catalogue.
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 51 directions from the Royal Court as a tool when Italian heirs make claims (worked example step 5)"
+  - "Letter of wishes coordination with reserved-powers drafting (reserved-powers.md drafting practice)"
+  - "Italian patto di famiglia as parallel notarial lifetime planning for operating-business interests (firewall.md practical drafting)"
+summary: |
+  PASS. The candidate produces a structurally complete, Jersey-substantive
+  worked-example response that maps 6/7 of the showcase substance facts —
+  discretionary trust under TJL 1984, Article 9 firewall vs Italian
+  legittima with the (1)/(2)/(3A)/(4) breakdown, Article 9A reserved
+  powers with calibrated-control drafting cautions, underlying SPV
+  structuring per asset class, US blocker corporation with the $60k
+  non-domiciliary threshold, and the CRS/FATCA/DAC6/TRS reporting
+  catalogue. UK-resident beneficiary tax handling is only lightly touched
+  (folded into the reporting paragraph; no explicit excluded-property /
+  10-year-anniversary / TRS-for-UK-bens treatment) — a 7/7 answer would
+  break that out. All four cited files exist and support the claims;
+  draft status is surfaced to the user explicitly. Best single signal:
+  candidate found and leaned on the on-point worked example as the spine,
+  rather than reasoning from first principles — exactly the corpus's
+  intended retrieval pattern.
+errors: []

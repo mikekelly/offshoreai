@@ -1,0 +1,57 @@
+schemaVersion: eval_verdict_v2
+questionId: show-planning
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/use-cases/jersey-resident/extension-planning-permission.md
+    supportsClaim: true
+    notes: Persona-driven use case file directly supports the "almost certainly yes" framing, GD Order 2011 reliance, two parallel consents, two-storey always requires application, conservation/listed/Green Zone narrowing, Certificate of Lawful Development, and restrictive-covenants caveat
+  - path: knowledge/jersey/planning/extensions-and-conversions.md
+    supportsClaim: true
+    notes: Supports 3-4m rear extension as permitted-development ballpark, two-storey always requires application, conservation-area / listed-building positions, and the practical sequence
+  - path: knowledge/jersey/planning/permitted-development.md
+    supportsClaim: true
+    notes: Supports GD Order 2011 as the source of permitted-development, the conditions framework (height/distance/coverage), restrictions in conservation/Green Zone/Coastal National Park, Article 31 directions point, Certificate of Lawful Development, and the "exceeding any condition" rule
+  - path: knowledge/jersey/planning/planning-building-law-2002.md
+    supportsClaim: true
+    notes: Supports PBL 2002 as principal statute, definition of development, two parallel regimes (planning + Building Bye-Laws 2007), Department for the Environment, and the criminal-offence framing
+  - path: knowledge/jersey/planning/index.md
+    supportsClaim: true
+    notes: Section index — supports the framework, Department for the Environment as principal decision-maker, and links to all the concept files actually cited
+stretchPromotions: []
+stretchSuggestions:
+  - "Certificate of Lawful Development as the recommended diligence path for borderline proposals — practitioner-grade and corpus-supported"
+  - "Article 31 directions allowing the Minister to remove permitted-development rights in specific locations — distinctive Jersey planning lever"
+  - "Restrictive covenants on title as a private-law overlay that can prohibit works even where planning would permit them"
+  - "Unauthorised development is a criminal offence under PBL 2002 with unlimited fines and possible imprisonment"
+summary: |
+  Pass on every dimension. The answer covers all five showcase_bar
+  substance facts (PBL 2002, GD Order 2011, two parallel consents,
+  most extensions need an application, conservation/listed narrowing),
+  names both Jersey-specific markers (PBL 2002 / GD Order 2011 by full
+  title and the Department for the Environment), reads as
+  operationally-useful homeowner guidance with a concrete "what to do"
+  list, and goes beyond the rubric with the Article 31 directions
+  lever, Certificate of Lawful Development as the borderline path,
+  and the restrictive-covenants caveat. All five citations are clean
+  and well-chosen — the persona file, the two concept files, the
+  statute file, and the section index. Freshness handling is exemplary:
+  the candidate explicitly flags the draft status and 2026-05-18
+  last_verified date of the planning files and tells the reader to
+  verify dimensional limits against the current Order before acting.
+  No promotions made — the showcase format does not use stretch_facts;
+  suggestions logged for the rubric maintainer's consideration if the
+  format ever extends.
+errors: []

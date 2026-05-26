@@ -1,0 +1,52 @@
+schemaVersion: eval_verdict_v2
+questionId: show-emerging-manager-stack
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 4
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/bvi/approved-manager.md
+    supportsClaim: true
+    notes: Confirms Approved Manager Regs 2012, light-touch vs full SIBA, eligibility, AUM ceiling, fit-and-proper, AML, substance, start-up stack pattern.
+  - path: knowledge/bvi/incubator-and-approved-fund.md
+    supportsClaim: true
+    notes: Confirms SIBA (Incubator and Approved Funds) Regulations 2015, all comparison-table values (20 investors, US$20k min, US$20m / US$100m AUM, 2-year life + 1-year extension, audit / administrator requirements), and the Incubator → Private/Professional/Public conversion path.
+  - path: knowledge/bvi/business-company.md
+    supportsClaim: true
+    notes: Confirms BCA 2004, hours-to-incorporate, low fees, no min capital, par / no-par shares, single shareholder/director, no residence requirement, corporate directors, registered agent/office, BOSS not public, ESA 2018 with reduced regime for equity holders.
+  - path: knowledge/bvi/index.md
+    supportsClaim: true
+    notes: Background-only citation; no specific claim hinges on it.
+stretchPromotions: []
+stretchSuggestions:
+  - "Canonical emerging-manager stack composition — GP entity (BVI BC) + Management entity (BVI BC) as Approved Manager + Fund (BVI BC or LP under BVI Partnership Act), with full Approved Manager status from inception."
+  - "BVI fund-regime tier ladder explicit ordering: Incubator → Approved → Private Fund → Professional Fund → Public Fund — sponsors pick the lowest tier consistent with investor base and size."
+  - "BOSS (Beneficial Ownership Secure Search System) holds BO information at registered-agent level, with authority access but no public register currently."
+summary: |
+  Pass. The candidate produced a tightly-structured three-layer answer
+  (manager / fund / vehicle) covering all five rubric points, with the
+  exact statutory anchors (Approved Manager Regs 2012, SIBA Incubator
+  and Approved Funds Regs 2015, BCA 2004, ESA 2018) and accurate
+  quantitative parameters (US$20k min, US$20m / US$100m AUM, 2-year
+  life). All four citations resolve to real files that support their
+  claims; freshness handling is exemplary — explicit draft-status flag
+  and a caveat about the AUM ceiling not being pinned in the corpus.
+  The strongest single signal is that the candidate surfaced the
+  canonical "GP + Manager + Fund" stack pattern from the approved-
+  manager file's Use Cases section, indicating it read whole files
+  rather than skimming. No stretch promotions: the rubric for this
+  question uses the showcase_bar shape with no stretch_facts list, and
+  conservative discipline says don't introduce a new field — the
+  candidate suggestions are recorded in stretchSuggestions for human
+  review.
+errors: []

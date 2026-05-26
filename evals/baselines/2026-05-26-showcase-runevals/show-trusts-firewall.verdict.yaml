@@ -1,0 +1,42 @@
+schemaVersion: eval_verdict_v2
+questionId: show-trusts-firewall
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 5
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/trusts/firewall.md
+    supportsClaim: true
+    notes: "Cited file fully supports every Article 9 sub-paragraph claim (9(1), 9(2), 9(2A), 9(3), 9(3A), 9(4)), the forced-heirship examples (réserve héréditaire / legittima / Pflichtteilsergänzung), the limits, and the drafting points."
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 9(3A) explicitly blocks renvoi to settlor's domicile law — answered well; could be promoted if rubric used stretch_facts"
+  - "donner et retenir ne vaut disapplication and its interaction with Article 9A reserved powers"
+  - "Article 2 sham analysis as a structural limit on firewall protection (firewall does not engage where the trust itself fails)"
+summary: |
+  Partial verdict. The candidate produced a substantively strong and
+  litigator-voiced answer covering 4 of 5 showcase substance facts — Article 9
+  paragraph-by-paragraph mechanics, the disregard of foreign forced-heirship,
+  the strong-form Article 9(4) bar on inconsistent foreign judgments, and the
+  practical effect against civil-law reserve claims — but missed the Royal
+  Court anti-suit-injunction mechanism entirely and cited no Jersey case law
+  (e.g., Crociani is referenced inside the cited file but not surfaced). The
+  most consequential weakness is citation_recall: the prior baseline at line
+  611 of showcase.yaml records this question as PASS with 6 files cited; the
+  current run cites only firewall.md. Freshness handling is exemplary — the
+  agent explicitly flagged the file's draft status and 12-day-old
+  last_verified date. To lift back to pass, the agent should pull in
+  proper-law.md, reserved-powers.md, and at least one case-law file
+  (Crociani / forced-heirship-related Royal Court decisions) and add a brief
+  paragraph on anti-suit injunctions.
+errors: []

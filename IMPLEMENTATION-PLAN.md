@@ -39,8 +39,8 @@ can start cold.
 | Zod schemas + 5-part descriptions for every tool | `schemas/` | ✅ (spec; promoted to `packages/schemas/` in week 3) |
 | Reference bundle YAML for `trust-officer/article-47-set-aside-for-mistake` | `bundles/trust-officer/article-47-set-aside-for-mistake.yaml` | ✅ |
 | Sub-agent prompts (citation-verifier, bundle-assembler, freshness-checker) | `prompts/sub-agents/*.md` | ✅ |
-| Reference SKILL.md per category (baseline, task) | `skills/templates/*.SKILL.md` | ✅ |
-| Eval grader sub-agent prompt | `prompts/eval/grader.md` | week 0 in progress |
+| Reference SKILL.md per category (baseline, task) | _Deferred._ Removed in 2026-05-26 cleanup; current production prompt is the single file at `prompts/system.md`. Skills mechanism not yet wired; re-introduce if persona-conditional prompts become load-bearing. Recoverable from git at `02d79e9~`. | superseded |
+| Eval grader sub-agent prompt | _Superseded._ Grader logic now lives in `.claude/agents/eval-manager.md` (Claude Code subagent invoked via `/run-evals`). The old `prompts/eval/grader.md` was deleted in 2026-05-26 alongside the SDK eval-runner. | superseded |
 | Trajectory schema + harness-adapter spec | `schemas/eval-trajectory.ts`, `evals/harnesses/README.md` | week 0 in progress |
 | Convention-validator conformance baseline | `evals/conformance-baseline.yaml` | week 1 — populated by first validator run |
 | `claude-p` + `explore-subagent` eval baselines | `evals/baselines/<date>-{claude-p,explore-subagent}/` | Phase 1 — once Phase 0 ships |
@@ -164,7 +164,7 @@ pass through to the user** on the standard showcase.
 | Citation-verifier sub-agent | `prompts/sub-agents/citation-verifier.md` (week 0 delivered); `packages/agent/src/sub-agents/citation-verifier.ts` is the wiring; runs on Opus 4.7 per PRD §12 |
 | `Stop` hook | `packages/agent/src/hooks/citation-verify-stop.ts` — invokes citation-verifier; on first reject, replays main agent with verdict for one retry; on second reject, substitutes the refusal template |
 | Refusal template | `packages/agent/src/templates/unverified-refusal.ts` — wording configurable per tenant (per PRD §9.2) |
-| Baseline skill (always-resident, ~8k tokens) | `.claude/skills/jersey-baseline/SKILL.md` — derived from `skills/templates/baseline.SKILL.md` |
+| Baseline skill (always-resident, ~8k tokens) | _Deferred._ Production agent currently loads `prompts/system.md` directly (not via the SDK skills mechanism). Skill-loader build deferred until persona-conditional prompts become load-bearing. |
 | 4 orientation bundles | `bundles/orientation/{crown-dependency,zero-ten,trusts-overview,jfsc-overview}.yaml` |
 
 Acceptance: a hand-crafted "agent makes a claim with no corpus tool call

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-aifmd-ii",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:57:35.414Z",
+  "wallClockSeconds": 37.361,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/aifmd-ii-april-2026.md\"}",
+      "inputBytes": 52,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/funds/aifmd-nppr.md\"}",
+      "inputBytes": 47,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1770,
+    "cacheReadTokens": 190042,
+    "cacheWriteTokens": 65289,
+    "totalCostUsd": 0.54736725
+  },
+  "answer": {
+    "text": "Both files are recent and on-point. Here's the answer.\n\n---\n\n## AIFMD II — what changes for a Jersey AIFM marketing into the EU under NPPR\n\n**Bottom line:** NPPR access is preserved — Jersey continues to meet the EU's tax-transparency and AML criteria — but the operational obligations on a Jersey AIFM marketing into the EU under NPPR widen materially from 16 April 2026.\n\n### Direct changes (apply to your Jersey AIFM)\n\n1. **Expanded investor disclosures.** Pre-marketing and ongoing disclosures widen to cover **liquidity-management arrangements**, **sustainability factors** (interlocking with SFDR), and, where applicable, **loan-originating-fund** specifics. PPMs and ongoing transparency reports need refreshing for AIFMD II language (`knowledge/frontier/aifmd-ii-april-2026.md`).\n2. **Enhanced Annex IV reporting to ESMA** via competent authorities — new data fields, more granular reporting on asset categories and risk exposures. First submissions under the new requirements are expected end-Q2 / early-Q3 2026 (`knowledge/frontier/aifmd-ii-april-2026.md`).\n3. **Loan-originating funds** — a substantive new framework if your AIF originates credit; the rules are restrictive enough that credit-fund sponsors are actively reviewing domicile (`knowledge/frontier/aifmd-ii-april-2026.md`).\n4. **Liquidity-management tools** — open-ended AIFs must build prescribed LMTs into constitutional documents (`knowledge/frontier/aifmd-ii-april-2026.md`).\n\n### Indirect (but potentially the bigger commercial point) — delegation\n\nAIFMD II tightens the rules on **EU AIFMs delegating portfolio management to third countries**. An EU AIFM that delegates to a Jersey entity faces enhanced substance and oversight obligations and cannot become a \"letter-box entity.\" The counterintuitive consequence — flagged in Carey Olsen and Langham Hall commentary — is that a **direct Jersey AIFM marketing under NPPR** becomes comparatively more attractive than an EU-AIFM-with-CI-delegate model. Sponsors are revisiting that structural choice (`knowledge/frontier/aifmd-ii-april-2026.md`).\n\n### Jersey-side regulatory response\n\nThe **JFSC AIF Code of Practice is being split** into an **EU AIF Code** (aligned with AIFMD II, for NPPR marketing into the EU) and a **UK AIF Code** (for marketing into the UK under the UK's post-Brexit NPPR). **The EU AIF Code is expected to be finalised through 2026** — watch for the final text (`knowledge/frontier/aifmd-ii-april-2026.md`). The underlying JFSC AIFMD-equivalent registration regime itself is unchanged (`knowledge/jersey/funds/aifmd-nppr.md`).\n\n### What is not changing\n\n- **NPPR access is preserved** — no Third Country Passport is being switched on; the country-by-country private-placement model continues, with the usual member-state variation (Germany / France stricter than some others) (`knowledge/jersey/funds/aifmd-nppr.md`, `knowledge/frontier/aifmd-ii-april-2026.md`).\n- The **depository regime** position for EU-marketed Jersey AIFs (AIFMD-equivalent depository arrangements) is unchanged at the doctrinal level (`knowledge/jersey/funds/aifmd-nppr.md`).\n\n### Caveats\n\n- `knowledge/jersey/funds/aifmd-nppr.md` is `status: draft` — flagged here as drafted but unverified against primary sources.\n- `knowledge/frontier/aifmd-ii-april-2026.md` has no `last_verified` date (it is decay-managed frontier content `as_of` 2026-05-18); EU member-state transposition is uneven and ESMA Q&A guidance is still landing through 2026, so verify against the cited primary sources before acting.\n\n### Cited\n\n1. `knowledge/frontier/aifmd-ii-april-2026.md`\n2. `knowledge/jersey/funds/aifmd-nppr.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 474
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "78373222-567f-4e2d-9a14-d287ee0b9ecc"
+  }
+}

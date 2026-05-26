@@ -1,0 +1,47 @@
+schemaVersion: eval_verdict_v2
+questionId: show-bermuda-captive
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:54:21Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass        # n/a for an offshore-jurisdiction question; treating as "jurisdiction-substantive" (Bermuda-specific, not generic) — PASS
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 4
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/bermuda/insurance-classes.md
+    supportsClaim: true
+    notes: "File exists; contains Insurance Act 1978, Class 1-4 table, US$100m Class 4 minimum, Solvency II equivalence, BMA, SAC reference — all cited claims supported."
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: "File exists; confirms Bermuda 'world's leading' captive domicile, Solvency II equivalence as only offshore, Cayman healthcare specialism, Guernsey PCC (1997)."
+  - path: knowledge/bermuda/segregated-accounts-company.md
+    supportsClaim: true
+    notes: "File exists; supports SAC for multi-line / multi-programme captive use case (explicit use-case section)."
+  - path: knowledge/bermuda/tax.md
+    supportsClaim: true
+    notes: "File exists; confirms Bermuda CIT 2023 at 15%, effective 1 Jan 2025, EUR 750m revenue threshold for in-scope groups — exactly as cited."
+stretchPromotions: []
+stretchSuggestions:
+  - "RenaissanceRe / Everest / Arch / Axis as named Class 4 cluster (in source file but not surfaced in answer; could deepen the 'scale and infrastructure' point)"
+  - "Class 3 SPI for cat bonds / sidecars / collateralised reinsurance (in source file; relevant if captive evolves toward ILS use)"
+summary: |
+  PASS — all five showcase_bar.substance facts covered (Insurance Act 1978 +
+  Class system; Class 1/2/3 captive variants; Class 4 US$100m commercial
+  reinsurance; SAC for multi-line; Solvency II equivalence + BMA oversight),
+  every citation verified against the cited file, and freshness handling
+  was exemplary (agent proactively flagged the draft status of
+  insurance-classes.md and recommended primary-source verification of
+  Class 3/3A/3B thresholds). Voice is operationally useful — practical
+  decision-table, trade-offs vs Cayman/Guernsey, named follow-up questions
+  to disambiguate Class 1/2/3. Most useful next-iteration signal: agent
+  could lift Class 4 capital number (US$100m) into the main body rather
+  than the caveats section — currently the headline number sits in the
+  freshness footnote.
+errors: []

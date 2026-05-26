@@ -1,0 +1,51 @@
+schemaVersion: eval_verdict_v2
+questionId: show-cell-companies
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:55:02Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/guernsey/protected-cell-company.md
+    supportsClaim: true
+    notes: Confirms 1997 origin, single legal entity, captive-insurance genesis use; ICC contrast table present.
+  - path: knowledge/guernsey/incorporated-cell-company.md
+    supportsClaim: true
+    notes: Confirms ICC = each cell separately incorporated; foreign-court recognition rationale; cell migration ease.
+  - path: knowledge/bermuda/segregated-accounts-company.md
+    supportsClaim: true
+    notes: Confirms SACA 2000, insurance/ILS/rent-a-captive focus, BMA pre-vetting, comparison table.
+  - path: knowledge/cayman/segregated-portfolio-company.md
+    supportsClaim: true
+    notes: Confirms 1998 vintage, Part XIV Companies Act basis, multi-strategy hedge-fund focus, "general-purpose" framing.
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: Confirms Guernsey "Europe's largest by vehicle count" captive claim and healthcare-captive Cayman specialism.
+stretchPromotions: []
+stretchSuggestions:
+  - "Bermuda SAC 'account participant' vs 'account owner' terminology contrasted with Cayman SPC 'portfolio shares'"
+  - "Inter-cellular dealings recorded as contracts between vehicle-as-cell-A and vehicle-as-cell-B (uniform across PCC/SPC/SAC)"
+  - "Cayman has no statutory ICC equivalent; ICC-style outcome in Cayman requires separate companies"
+summary: |
+  PASS. The candidate covered all five showcase substance points cleanly:
+  Guernsey PCC as the 1997 original, SAC 2000 insurance focus, SPC 1998
+  general/fund focus, ICC outlier on separate legal personality, and a
+  full decision matrix mapping all four vehicles to their canonical use
+  cases. Five citations, zero hallucinated, all support the claims; the
+  candidate also proactively flagged the four cell-vehicle files as
+  status:draft and directed the reader to the primary statutes (SACA
+  2000, Part XIV Cayman Companies Act, Companies (Guernsey) Law 2008)
+  for any live structuring decision — exemplary freshness handling.
+  Voice is appropriately cross-border-counsel; the "don't forget Jersey
+  PCC (Loi 2006)" aside is the right corpus-integrating touch. Landing-
+  page-ready.
+errors: []

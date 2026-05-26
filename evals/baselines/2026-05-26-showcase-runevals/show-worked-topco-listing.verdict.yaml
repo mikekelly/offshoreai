@@ -1,0 +1,57 @@
+schemaVersion: eval_verdict_v2
+questionId: show-worked-topco-listing
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 8
+factsExpected: 8
+citationsTotal: 7
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/use-cases/founder-entrepreneur/worked-example-jersey-topco-uk-listing.md
+    supportsClaim: true
+    notes: Primary worked example; status draft / last_verified 2026-05-18; candidate flagged the draft status to the user.
+  - path: knowledge/jersey/companies/companies-law-1991.md
+    supportsClaim: true
+    notes: Confirms no-par-value (Art 3E), solvency-based distributions (Art 61A), public company form.
+  - path: knowledge/jersey/tax/zero-ten.md
+    supportsClaim: true
+    notes: Confirms 0% standard, 10% financial services, 20% utilities / large retailer / hydrocarbon / cannabis / Jersey property. Candidate said "quarrying" — corpus says "hydrocarbon oil"; minor slip.
+  - path: knowledge/jersey/tax/economic-substance.md
+    supportsClaim: true
+    notes: Confirms reduced substance test for pure equity-holding companies.
+  - path: knowledge/jersey/international/pillar-two-mcit.md
+    supportsClaim: true
+    notes: Confirms MCIT effective 1 Jan 2025, QDMTT + IIR, no UTPR, EUR 750m threshold, 15% top-up.
+  - path: knowledge/jersey/external-rules/uk-takeover-code.md
+    supportsClaim: true
+    notes: Confirms Code applies to Jersey-incorporated cos with securities admitted to a UK regulated market.
+  - path: knowledge/jersey/external-rules/uk-corporate-governance-code.md
+    supportsClaim: true
+    notes: Confirms UKCGC scope for Jersey-incorporated premium-listed cos.
+stretchPromotions: []
+stretchSuggestions:
+  - "Jersey applies no withholding tax on dividends to non-resident shareholders (CJL 1991 / Jersey tax practice)"
+  - "UK Corporate Governance Code is in scope for Jersey-incorporated companies admitted to UK regulated markets (premium-segment); AIM-listed Jersey cos default to QCA Code"
+  - "Pre-listing reorg can bolt on founder-share settlements into family trusts and management-equity programmes"
+  - "Note - showcase suite uses showcase_bar schema (substance / jersey_specific / voice), not expected_facts + stretch_facts; no schema-compatible slot to promote into."
+summary: |
+  PASS — covers all 8 showcase_bar.substance facts with a clean step-by-step
+  walkthrough, names the right Jersey statutes (CJL 1991, ITL 1961, ES Law 2019,
+  MCIT 2025), and proactively flagged the worked-example file's draft status
+  to the user. Seven citations, all verified, all support their claims. One
+  minor factual slip ("quarrying" for what the corpus calls "hydrocarbon oil"
+  trade under Art 123CAA(1)) — not material enough to drop substance below
+  pass. Voice reads as operational founder-counsel briefing, which is what
+  the question wants. Strongest single signal: candidate volunteered freshness
+  status on the worked-example file without prompting, which is exactly the
+  discipline the system prompt asks for. No stretch promotions — showcase
+  suite schema does not carry a stretch_facts slot.
+errors: []

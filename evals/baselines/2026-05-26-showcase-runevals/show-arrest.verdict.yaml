@@ -1,0 +1,38 @@
+schemaVersion: eval_verdict_v2
+questionId: show-arrest
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 4
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/use-cases/jersey-resident/just-arrested-police-station.md
+    supportsClaim: true
+    notes: Persona-driven Q&A with full headline rights, detention limits, interview procedure, custody record, practical "ask for solicitor" advice — directly supports the prepared-statement / "single most important step" claims.
+  - path: knowledge/jersey/crime-fraud/rights-at-police-station.md
+    supportsClaim: true
+    notes: Comprehensive ten-headline-rights file with caution wording, 24/36/96h detention table, adverse-inference note, custody-record provisions — supports detention-limit and rights-breach claims.
+  - path: knowledge/jersey/crime-fraud/arrest.md
+    supportsClaim: true
+    notes: Covers the "at point of arrest" requirements (state offence, caution, identify, no excess force) and Honorary Police arrest powers identical to States Police — supports both arrest-procedure and Honorary Police claims.
+  - path: knowledge/jersey/crime-fraud/index.md
+    supportsClaim: true
+    notes: Section index identifying PPCE 2003 as principal statute with Codes of Practice — supports the framing sentence and section orientation.
+stretchPromotions: []
+stretchSuggestions:
+  - "Right to an interpreter at public expense (Code C requirement) — concrete, accurate, citable"
+  - "Code E open-audio recording for all interviews — concrete and citable in rights-at-police-station.md"
+  - "Adverse inference from police-station silence is narrower in Jersey than in England — Jersey-distinctive and accurate"
+  - "Custody-officer review at prescribed intervals (typically 6h) — operational detail"
+summary: |
+  Strong PASS. The candidate covered all six expected substance facts (PPCE 2003 + Codes, free 24/7 legal advice, 24h/36h/96h detention progression, caution wording with silence right, inform-someone right, custody record) and both Jersey-specific markers (Royal Court warrant forum; explicit Honorary Police vs States Police parity). The voice was operationally practical with a clear "single most important step" foregrounding and post-arrest numbered guidance. Freshness handling was exemplary — the candidate explicitly flagged that all cited files are status `draft` (verified 2026-05-18) and advised verification with a Jersey advocate. All four citations resolve to existing files that directly support their claims; zero hallucinations.
+errors: []

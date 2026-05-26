@@ -1,0 +1,34 @@
+schemaVersion: eval_verdict_v2
+questionId: show-drug-driving
+harness: offshoreai-agent
+ranAt: 2026-05-26T14:55:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 1
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/road-traffic/drug-driving.md
+    supportsClaim: true
+    notes: File supports every claim — current impairment regime under RTJL 1956, no statutory limits, no roadside testing, February 2026 reform proposal not yet enacted, sentencing tracks drink-driving.
+stretchPromotions: []
+stretchSuggestions:
+  - "Impairment offence is substance-neutral — covers controlled drugs, prescription medication, OTC drugs"
+  - "Refusing to give a sample is itself an offence"
+  - "Sentencing tracks drink-driving (12+ months disqualification first offence, £2,000 fine, 6 months imprisonment)"
+summary: |
+  PASS — clean coverage of all five substance facts with a single, well-targeted citation
+  to the canonical drug-driving file. The candidate cleanly distinguishes current
+  (impairment-only) and pending (statutory limits / roadside swabs / per se offence)
+  regimes, names RTJL 1956, and flags the cited file's draft status — strong
+  freshness-handling discipline. Best single signal: the agent's voluntary draft-status
+  caveat directs the user to verify against jerseylaw.je and the live States proposition
+  record, which is the right discipline given the reform pipeline.
+errors: []

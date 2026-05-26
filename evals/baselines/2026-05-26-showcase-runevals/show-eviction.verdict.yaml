@@ -1,0 +1,30 @@
+schemaVersion: eval_verdict_v2
+questionId: show-eviction
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:48:55Z
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 6
+factsExpected: 6
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/residential-tenancy/non-payment-of-rent.md
+    supportsClaim: true
+    notes: File exists and directly supports the 7-day notice, Petty Debts Court exclusive jurisdiction, Viscount enforcement, self-help unlawful, and tenant defences narrative.
+  - path: knowledge/jersey/residential-tenancy/eviction-procedure.md
+    supportsClaim: true
+    notes: File exists and supports the court / Viscount procedure, stays of execution, and timeline detail (the candidate's 2-6 / 6-10 week figures come directly from this file).
+stretchPromotions: []
+stretchSuggestions:
+  - "Viscount inventories and disposes of unclaimed possessions after 15 days; net proceeds account to tenant (consolidated fund if untraced) — operational detail from non-payment-of-rent.md."
+  - "Partial payment is not remedy unless landlord accepts it as such — important procedural pitfall."
+summary: |
+  Partial. Substance is fully covered — all six rubric facts (7-day notice, Petty Debts Court exclusive jurisdiction, Viscount enforcement, timeline + stays, self-help criminal, tenant defences) land cleanly, and the voice is on-brief (operationally useful, landlord-facing, smart-friend tone). Citations are clean: both files exist and directly support the prose, freshness handled explicitly with the draft-status flag. The drop to partial is on jersey-specific: the rubric calls for the 2025 Amendment Law (in force 15 April 2026) which the candidate omits entirely — relevant because we are now past commencement and the 12-month no-fault notice regime is the current law of the land. The prior 2026-05-23 baseline candidate did mention the amendment; this run regressed on that signal. Underlying cause is likely retrieval: the candidate found the two non-payment files and stopped, never pulling the residential-tenancy index or the amendment file. A pre-loaded bundle or one extra retrieval call would have caught it.
+errors: []

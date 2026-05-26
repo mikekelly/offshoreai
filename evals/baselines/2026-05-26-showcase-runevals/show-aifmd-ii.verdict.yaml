@@ -1,0 +1,45 @@
+schemaVersion: eval_verdict_v2
+questionId: show-aifmd-ii
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:58:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/frontier/aifmd-ii-april-2026.md
+    supportsClaim: true
+    notes: Supports 16 April 2026 effective date, expanded disclosures (LMT/sustainability/loan-origination), enhanced Annex IV, AIF Code bifurcation, delegation/letter-box rule, counterintuitive direct-CI-AIFM advantage, LMT in constitutional docs, loan-origination credit-fund framework, member-state transposition variation
+  - path: knowledge/jersey/funds/aifmd-nppr.md
+    supportsClaim: true
+    notes: Supports NPPR country-by-country mechanics, JFSC AIFMD-equivalent registration, depository regime baseline, Third Country Passport not implemented; status is draft (candidate flagged this responsibly)
+stretchPromotions: []
+stretchSuggestions:
+  - "Directive (EU) 2024/927 — naming the directive number explicitly in the answer would lift authority for fund-counsel audience"
+  - "Fees and costs disclosure as part of expanded disclosure scope (currently candidate covered LMT / sustainability / loan-origination but not fees/costs)"
+  - "Asset-stripping rules tightened — present in source file but not surfaced in the answer; not strictly load-bearing for NPPR question but adjacent"
+  - "First Annex IV submission timing (end-Q2 / early-Q3 2026) which candidate did mention — could become a stretch_fact in its own right"
+summary: |
+  Pass. The candidate covers five of six showcase_bar facts cleanly:
+  16 April 2026 effective date, expanded investor disclosures (LMT,
+  sustainability, loan-origination), enhanced Annex IV reporting, JFSC
+  AIF Code bifurcation into EU AIF Code and UK AIF Code, the loan-
+  originating-fund separate regime, and the counterintuitive direct-CI-
+  AIFM advantage from tightened EU delegation rules. The structure — bottom
+  line, direct vs indirect impact, Jersey-side regulatory response, what is
+  not changing, caveats — reads exactly like fund counsel briefing an
+  in-house GC. Citation discipline is clean (2/2 verified, 0 hallucinated)
+  and freshness is responsibly flagged (draft status on aifmd-nppr.md,
+  decay-managed frontier file's as_of date). The single soft miss is not
+  naming Directive (EU) 2024/927 by number, which is present in the cited
+  source frontmatter; a fund-counsel audience would notice. Not enough to
+  drop to partial — the date and substantive content are correct.
+errors: []

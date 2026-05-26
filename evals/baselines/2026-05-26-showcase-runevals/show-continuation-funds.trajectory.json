@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-continuation-funds",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:57:27.272Z",
+  "wallClockSeconds": 33.265,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/continuation-funds-and-gp-led-secondaries.md\"}",
+      "inputBytes": 74,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/guernsey/private-investment-fund.md\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1440,
+    "cacheReadTokens": 190794,
+    "cacheWriteTokens": 67386,
+    "totalCostUsd": 0.5525995
+  },
+  "answer": {
+    "text": "I have what I need to answer cleanly.\n\n## Why continuation funds and GP-led secondaries are growing so fast\n\nPer the **2026 Global Private Equity Outlook survey** (cited via Dechert, Nov 2025), **46% of respondents** are now using GP-led secondaries or continuation vehicles to expedite LP distributions — **roughly double last year's figure** — with 51% of North American, 55% of APAC, and 43% of EMEA respondents planning further increases over 24 months. The drivers are structural:\n\n- **Tough M&A and IPO exit markets** through 2022–2025 left assets stuck;\n- **LPs demanding DPI** (distributed-to-paid-in capital) to recycle into new commitments;\n- **GPs unwilling to sell trophy assets** at depressed valuations;\n- **Secondaries market capital** is ready to deploy into precisely this structure.\n\nA continuation fund lets the GP keep the trophy asset, hand existing LPs a roll-or-cash election, and bring in new secondary capital — solving all four pressures at once (`knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`).\n\n## Why Guernsey is winning the business\n\nGuernsey has positioned aggressively with a regulatory package tuned to the product:\n\n- **Single-asset continuation funds are not regulated as collective investment schemes in Guernsey** — a material simplification versus jurisdictions where the new vehicle has to clear full CIS authorisation;\n- **Fast-track sign-off — Private Investment Fund (PIF) Route 1 next-business-day, 3 business days maximum** — competitive with (and arguably ahead of) Jersey's 48-hour JPF;\n- **Three PIF routes** (licensed manager / family-or-private-relationship / qualifying private investors) give sponsors more structuring flexibility than the single-route JPF DSP model;\n- **PCC and ICC vehicle forms** are particularly strong in Guernsey for multi-strategy or multi-asset continuation structures;\n- **0% standard corporate tax** and a **substance-light profile** for the new continuation vehicle when the asset is the only thing changing hands;\n- A **familiar fund-counsel ecosystem** (Carey Olsen, Ogier, Mourant, Walkers) coordinating with Guernsey Finance and the GFSC on marketing the niche.\n\nJersey competes on the same product line — JPFs with 48-hour JFSC authorisation under the DSP model — and Cayman remains dominant where US-LP capital is involved via the ELP. But the **single-asset-CV-not-a-CIS** point plus the three-route PIF flexibility is what the corpus identifies as Guernsey's marketed edge (`knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`, `knowledge/guernsey/private-investment-fund.md`).\n\nA caveat: `knowledge/guernsey/private-investment-fund.md` is `status: draft` (last verified 2026-05-18), and the frontier file has no `last_verified` date — both should be re-verified against GFSC primary materials before relying on the day-count specifics in a client deliverable.\n\n### Citations\n\n1. `knowledge/frontier/continuation-funds-and-gp-led-secondaries.md`\n2. `knowledge/guernsey/private-investment-fund.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 423
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "daa739a1-07dc-453f-8c59-21db20fb958e"
+  }
+}

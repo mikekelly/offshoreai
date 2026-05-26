@@ -1,0 +1,51 @@
+schemaVersion: eval_verdict_v2
+questionId: show-pillar-two
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:48:43Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/tax/pillar-two.md
+    supportsClaim: true
+    notes: Directly supports MCIT framing, 15% rate, QDMTT/DTT/IIR mechanics, EUR 750m threshold, zero-ten interaction, "additional tax" language.
+  - path: knowledge/jersey/international/pillar-two-mcit.md
+    supportsClaim: true
+    notes: Supports adoption posture (QDMTT + IIR, no UTPR), QDMTT-collects-first design rationale, substance-based income exclusion sliding scale.
+  - path: knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md
+    supportsClaim: true
+    notes: Supports below-threshold no-filing position, "what stays" non-tax reasons for Jersey TopCo (CJL 1991 flexibility, no CGT at investor level, listing acceptance), and the compliance step-up.
+stretchPromotions: []
+stretchSuggestions:
+  - "MCIT adopts QDMTT (delivered as DTT) + IIR but pointedly does NOT adopt UTPR — the three-mechanism comparison surface."
+  - "Intra-group dividends from substantial shareholdings are excluded from GloBE income (so DTT often hits residual treasury income / gains rather than every pound through the TopCo)."
+  - "Because the Jersey DTT is a QDMTT, it is collected at source before any other jurisdiction can — that is the point of Jersey's design (to capture top-up domestically rather than ceding to parent's home country via IIR)."
+  - "Substance-based income exclusion: formulaic carve-out for payroll plus tangible assets on a sliding scale (transitional)."
+summary: |
+  PASS. The candidate covered all five rubric facts: 15% minimum via MCIT,
+  the MCIT Law (cited as 2024 per the corpus, with 1 January 2025 effective
+  date — the corpus uses "Law 2024" while the rubric uses "Law 2025"; not a
+  candidate error), the QDMTT delivered as the Domestic Top-up Tax, the UK
+  interaction (UK CT generally above the 15% floor so IIR at Jersey TopCo
+  does not bite on UK OpCo income), and the EUR 750m / two-of-four group
+  consolidation test. Voice is genuinely international-tax-advisor in tone:
+  the in-scope / out-of-scope gate, the jurisdiction-by-jurisdiction
+  walkthrough, the practical nuance about excluded dividend income, and the
+  candid flag that the corpus does not contain a worked numeric example
+  specifically for this structure. Citation discipline is clean — three
+  files, all exist, all support their claims; freshness handled correctly
+  (the three files' draft status and last_verified dates surfaced
+  explicitly in the answer's Caveats section). No stretch promotions
+  proposed: the rubric lacks a stretch_facts block, and the eval-manager
+  scope rule forbids modifying expected_facts. Useful candidates for a
+  future round are recorded under stretchSuggestions.
+errors: []

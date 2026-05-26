@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-trusts-comparison",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:48:18.425Z",
+  "wallClockSeconds": 49.164,
+  "turns": 5,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/cayman/star-trusts.md\"}",
+      "inputBytes": 42,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/bvi/vista-trusts.md\"}",
+      "inputBytes": 40,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/firewall.md\"}",
+      "inputBytes": 46,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/reserved-powers.md\"}",
+      "inputBytes": 53,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 2728,
+    "cacheReadTokens": 104182,
+    "cacheWriteTokens": 73331,
+    "totalCostUsd": 0.57864475
+  },
+  "answer": {
+    "text": "Three vehicles, three different problems. Pick by the structural job you need done.\n\n## Jersey trust (Trusts (Jersey) Law 1984)\n\nThe **default wealth-structuring vehicle**. Reach for it when:\n\n- **Forced-heirship / matrimonial-regime defence is the priority.** The **Article 9 firewall** instructs the Royal Court to apply Jersey law to validity, capacity, administration, and beneficial-rights questions, and refuses to enforce foreign judgments inconsistent with it — including civil-law *réserve héréditaire*, community-property regimes, and foreign divorce orders against trust assets (`knowledge/jersey/trusts/firewall.md`).\n- **The settlor wants to retain control without invalidity risk.** **Article 9A** lists permitted reserved powers (revocation, variation, advancement, direction over investment/distribution, appointment of beneficiaries, change of proper law) and confirms a trustee acting on a reserved-power direction does not breach trust (`knowledge/jersey/trusts/reserved-powers.md`). This is the workhorse for **US grantor-trust planning** and **family-office patriarchs** who want directive powers over a professional trustee.\n- **General discretionary or fixed-interest family trust** with a normal beneficiary class. The Article 47B–H statutory mistake regime is also available if a settlement decision needs unwinding (cross-jurisdictional decision matrix at `knowledge/CROSS-JURISDICTIONAL-MAP.md`).\n\n## Cayman STAR trust (Special Trusts (Alternative Regime) Act 1997)\n\nA **purpose trust** — STAR's signature feature is that it can exist **without beneficiaries**, enforced by a mandatory **enforcer** (`knowledge/cayman/star-trusts.md`). Reach for it when:\n\n- **Orphan SPV / structured-finance vehicle.** The classic STAR use case: a STAR trust holds the SPV's shares so it consolidates to no settlor and no beneficial owner — bankruptcy-remote, ownerless.\n- **PTC (private trust company) ownership.** STAR holds the PTC shares above the family trusts.\n- **Non-charitable purposes** that are not strictly charitable but need a trust wrapper — family-governance committees, multi-generational purpose vehicles, commercial-purpose holdings.\n- **No defined beneficiary class** — STAR removes the *requirement* for one.\n\nWhat STAR is **not for**: ordinary family wealth where you want identifiable beneficiaries with rights to information and distributions. Jersey (or a Cayman ordinary trust) is the right tool there.\n\n## BVI VISTA trust (Virgin Islands Special Trusts Act 2003)\n\nA **share-ownership trust** that **disengages the trustee from the underlying company's management** — explicitly disapplying the *Bartlett v Barclays Bank* duty to monitor and intervene in the company's affairs (`knowledge/bvi/vista-trusts.md`). Reach for it when:\n\n- **Family-business succession.** A founder wants operating-company shares in trust, but wants chosen directors (often family) to run the business without trustee second-guessing. VISTA's **Office of Director Rules (ODRs)** preserve that control structure while legal title sits with the trustee.\n- **Single-asset / illiquid holdings** (typically a designated BVI BC) where the classical trustee diversification / oversight duty is a mismatch for the commercial reality.\n- **Professional trustee reluctance.** Without VISTA, many trustees won't take on operating-business shares because of management-oversight liability. VISTA gives them a statutory basis to accept the role.\n\nVISTA's forced-heirship defence is **weaker than Jersey's** (`knowledge/bvi/vista-trusts.md`), and VISTA doesn't remove the beneficiary requirement (so it doesn't solve the orphan-SPV problem STAR solves).\n\n## Quick decision matrix\n\n| If the priority is… | Pick |\n|---|---|\n| Forced-heirship / cross-border defence + reserved powers | **Jersey** (Article 9 + 9A) |\n| Orphan SPV / no-beneficiary purpose trust | **Cayman STAR** |\n| Family business where the founder/chosen directors must run the company | **BVI VISTA** |\n| Standard discretionary family wealth, identifiable beneficiaries | **Jersey** (default) |\n| PTC ownership / family-governance committee | **Cayman STAR** |\n| US-grantor-trust planning | **Jersey** (reserved powers) |\n\nThe three are also **stackable** — e.g., a Cayman STAR holding shares in a PTC that trustees a Jersey family trust; or a BVI VISTA designated company sitting inside a wider Jersey settlement (`knowledge/CROSS-JURISDICTIONAL-MAP.md` \"Where should I form my trust?\").\n\n## Cited files\n\n1. `knowledge/jersey/trusts/firewall.md` (status: draft; last_verified 2026-05-14)\n2. `knowledge/jersey/trusts/reserved-powers.md` (status: draft; last_verified 2026-05-14)\n3. `knowledge/cayman/star-trusts.md` (status: draft; last_verified 2026-05-17)\n4. `knowledge/bvi/vista-trusts.md` (status: draft; last_verified 2026-05-18)\n5. `knowledge/CROSS-JURISDICTIONAL-MAP.md`\n\nAll four substantive files are **draft** status — the doctrine and use-cases described are accurate per the corpus, but you'd want a Jersey/Cayman/BVI advocate to confirm current statutory text and recent amendments before drafting.\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 684
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "755236ed-c5ed-49e6-ab29-30a3a423cdb1"
+  }
+}

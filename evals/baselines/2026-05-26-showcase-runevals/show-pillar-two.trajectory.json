@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-pillar-two",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:48:18.987Z",
+  "wallClockSeconds": 50.363,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"pillar-two\",\"jersey\"],\"mode\":\"and\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"pillar-two\"],\"mode\":\"and\"}",
+      "inputBytes": 36,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/tax/pillar-two.md\"}",
+      "inputBytes": 45,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/international/pillar-two-mcit.md\"}",
+      "inputBytes": 60,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md\"}",
+      "inputBytes": 79,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 3006,
+    "cacheReadTokens": 188650,
+    "cacheWriteTokens": 70062,
+    "totalCostUsd": 0.6074025
+  },
+  "answer": {
+    "text": "## Pillar Two and a Jersey TopCo over a UK operating business\n\n**First gate — is the group in scope?** Pillar Two applies only to MNE groups with **consolidated revenue of €750m or more in at least two of the four preceding fiscal years** (`knowledge/jersey/tax/pillar-two.md`). Below that threshold, nothing changes: the Jersey TopCo stays on zero-ten (0% as a holding company), the UK OpCo pays UK corporation tax as usual, no top-up arises.\n\nIf the group is **in scope**, the analysis runs jurisdiction by jurisdiction:\n\n### At the Jersey TopCo level\n\nJersey implements Pillar Two via the **Multinational Corporate Income Tax (Jersey) Law 2024**, effective for financial years commencing on or after **1 January 2025** (`knowledge/jersey/tax/pillar-two.md`). MCIT adopts **two** of the three OECD mechanisms — a **Qualified Domestic Minimum Top-up Tax (QDMTT)**, delivered as the **Domestic Top-up Tax (DTT)**, and a **Qualified Income Inclusion Rule (IIR)** for Jersey parents with low-taxed foreign subsidiaries — and pointedly **does not adopt the UTPR** (`knowledge/jersey/international/pillar-two-mcit.md`).\n\nFor a Jersey TopCo of an in-scope group, this means:\n\n- **DTT (QDMTT)** charges a top-up to bring the **Jersey-jurisdictional ETR to 15%** on GloBE income booked in Jersey. The TopCo's holding-company income (dividend flows from the UK OpCo, treasury yield, capital gains routed via Jersey) would otherwise sit at 0% under zero-ten; MCIT collects the difference. The result is that the **Jersey tax becomes \"an additional tax\" on top of zero-ten — a top-up to bring Jersey ETR to 15%** (`knowledge/jersey/tax/pillar-two.md`).\n- **IIR** could apply at the Jersey TopCo if the group has *low-taxed* foreign subsidiaries elsewhere. The UK OpCo is not such a subsidiary — UK corporation tax (currently 25% main rate) is above the 15% floor — so practically the IIR at the Jersey TopCo bites only on third-country low-taxed sub-subsidiaries, not on the UK OpCo.\n\nA practical nuance: much of a holding company's income is **excluded dividend income** under GloBE (intra-group dividends from substantial shareholdings are generally excluded from GloBE income), so the DTT often hits residual items (treasury income, gains on disposals, certain non-dividend flows) rather than every pound that passes through the TopCo. The corpus describes the substance-based income exclusion (formulaic carve-out for payroll plus tangible assets, on a sliding scale) but does not work the dividend exclusion in detail (`knowledge/jersey/international/pillar-two-mcit.md`).\n\n### At the UK OpCo level\n\nThe corpus does not analyse the UK-side Pillar Two mechanics directly. What it does say: because the Jersey DTT is a **QDMTT**, it is collected at source **before any other jurisdiction can** (`knowledge/jersey/international/pillar-two-mcit.md`). That is the point of Jersey's design — to capture the top-up domestically rather than ceding it to the parent's home country under IIR. In a Jersey-TopCo / UK-OpCo structure there is no UK parent above the Jersey TopCo, so the UK IIR question doesn't arise for Jersey income; UK OpCo income is taxed under ordinary UK corporation tax and is generally above the 15% floor in its own right.\n\n### Net effect on the structure\n\n- **Below €750m**: zero-ten continues; the Jersey TopCo is a 0% holding company; **no Pillar Two filing** (`knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`).\n- **In scope**: the headline \"0% Jersey\" result disappears at the TopCo — Jersey-booked GloBE income tops up to **15%** via DTT; group ETR rises; compliance becomes materially more complex (GloBE income calculation, ETR analysis, MCIT return, GloBE Information Return coordination with the rest of the group) (`knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`).\n- **What stays**: the non-tax reasons for a Jersey TopCo — corporate-law flexibility under CJL 1991, no CGT at investor level, UK-market listing acceptance, established substance infrastructure — are unaffected by MCIT (`knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`).\n\n### Caveats\n\nThe three Pillar Two files above are all **status: draft** with `last_verified` between 15–17 May 2026 — fresh, but draft rather than stable. They are also generic-MNE-shaped; the corpus does **not** contain a worked example specifically for a Jersey-TopCo-over-UK-OpCo group with numbers (e.g. ETR calculation on a particular dividend flow), and does not analyse UK-side Pillar Two mechanics from a UK source. For a real engagement, the GloBE income / ETR calculation needs specialist tax advice and modelling.\n\n### Cited files\n\n1. `knowledge/jersey/tax/pillar-two.md`\n2. `knowledge/jersey/international/pillar-two-mcit.md`\n3. `knowledge/jersey/use-cases/founder-entrepreneur/pillar-two-impact.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 704
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "f90cb034-679a-4e0f-9072-a540220c5c00"
+  }
+}

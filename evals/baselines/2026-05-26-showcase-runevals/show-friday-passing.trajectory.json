@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:51:34.038Z",
+  "wallClockSeconds": 57.532,
+  "turns": 9,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"contract-passing\",\"royal-court\"],\"mode\":\"and\"}",
+      "inputBytes": 56,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rl \\\"Friday\\\" knowledge/jersey/ --include=\\\"*.md\\\" | head -20\",\"description\":\"Find Jersey corpus files mentioning Friday\"}",
+      "inputBytes": 140,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rl \\\"contract.passing\\\\|Samedi\\\\|contract-passing\\\" knowledge/jersey/ --include=\\\"*.md\\\" | head -20\",\"description\":\"Find files about contract passing or Samedi court\"}",
+      "inputBytes": 185,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -l \\\"Friday\\\\|contract.passing\\\" knowledge/jersey/property/*.md knowledge/jersey/legal-system/*.md 2>/dev/null | head\",\"description\":\"Find property/legal-system files with Friday or c",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/contract-passing.md\"}",
+      "inputBytes": 130,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rn \\\"Friday\\\" knowledge/jersey/ --include=\\\"*.md\\\"\",\"description\":\"Grep for Friday across Jersey corpus\"}",
+      "inputBytes": 123,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 6,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/commercial-leases.md\",\"offset\":40,\"limit\":30}",
+      "inputBytes": 154,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 7,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/flying-freeholds.md\",\"offset\":150,\"limit\":20}",
+      "inputBytes": 154,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 14,
+    "outputTokens": 2569,
+    "cacheReadTokens": 699412,
+    "cacheWriteTokens": 66194,
+    "totalCostUsd": 0.8277135
+  },
+  "answer": {
+    "text": "The contract-passing file confirms property transfers happen before the Royal Court but says \"most weekdays,\" not specifically Fridays. Let me search for the Friday-specific convention.Your Jersey property transfer happens **before the Royal Court** because Jersey real property cannot change hands by private deed — it must be \"passed\" as a Court act. This is a **Norman customary-law inheritance**: the Royal Court is the public repository of property records, and a public passing gives certainty about title transitions and visibility of who owns what (though the price stays private). [`knowledge/jersey/property/contract-passing.md`]\n\nThe **Friday-afternoon** slot is the conveyancing convention for the sitting that handles 9+ year leases, flying-freehold transfers, and other real-property contracts: **two Jurats sit to witness**, the contract is read or referenced, the Greffier records it, and the transfer takes effect at that moment. Your lawyers usually appear as attorneys under power of attorney, so you don't have to be there yourself. [`knowledge/jersey/property/commercial-leases.md`, `knowledge/jersey/property/flying-freeholds.md`]\n\n**Caveat:** the corpus confirms the Friday-afternoon convention in multiple files but does not give a historical explanation of *why specifically Friday afternoon* (vs. another weekday) — the contract-passing file describes the Samedi Division as sitting \"most weekdays\" for property contracts, with Friday being the established conveyancing slot in practice. Also note `contract-passing.md` is `status: draft`, so the detailed procedure has been drafted but not fully verified against primary sources; verify with your Jersey advocate before relying on it operationally.\n\nCited:\n1. `knowledge/jersey/property/contract-passing.md`\n2. `knowledge/jersey/property/commercial-leases.md`\n3. `knowledge/jersey/property/flying-freeholds.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 261
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "65ce9e1d-4b0f-4458-ad26-606311a6e74e"
+  }
+}

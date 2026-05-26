@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-article-47",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:48:18.988Z",
+  "wallClockSeconds": 40.049,
+  "turns": 2,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/trusts/article-47-set-aside.md\"}",
+      "inputBytes": 58,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 2044,
+    "cacheReadTokens": 104196,
+    "cacheWriteTokens": 65110,
+    "totalCostUsd": 0.5101705
+  },
+  "answer": {
+    "text": "## Article 47B procedure — set-aside for mistake under the Trusts (Jersey) Law 1984\n\nA note on labelling first: \"Article 47\" is ambiguous. The mistake jurisdiction is the **Articles 47B–47H regime**, introduced by the **Trusts (Amendment No. 6) (Jersey) Law 2013** to put the Royal Court's case-law-developed mistake jurisdiction on a clear statutory footing. Cite the sub-Article in formal work.\n\n**The two operative doors:**\n- **Article 47E** — set-aside of a transfer or disposition of property *to* a trust (the typical settlor case, often discovering an unforeseen tax consequence).\n- **Article 47G** — set-aside of an exercise of a fiduciary power *by* a trustee, protector, settlor or other power-holder.\n\n**Article 47B — the wide statutory definition of \"mistake\"** covers a mistake as to: the **effect** of the transaction; its **consequences** (expressly including tax consequences); any **advantage** the person believed they would gain; and any **fact existing before or at the time of** the disposition or power-exercise. Testamentary dispositions are excluded.\n\n**The three-limb test** (per *In re S & T Trusts* [2015] JRC259) — applicant must show all three:\n\n1. There was a mistake within the wide Article 47B definition;\n2. But for the mistake, the transfer or power-exercise would not have been made in the form it was;\n3. The mistake was of so serious a character that it would be just for the Court to grant the declaration.\n\nLimb 2 is the most common failure point — applicants struggle to show they would not have entered the transaction *at all*, as opposed to a *different* transaction.\n\n**Procedure:** application is by **Representation** in the Royal Court, Samedi Division, supported by **affidavit evidence of the state of mind at the relevant time**. Contemporaneous documentary evidence (file notes, advice given, correspondence) is critical — a reconstruction affidavit years after the event is weak. Effect of a successful declaration is normally *void ab initio*, with third-party rights acquired in good faith and for value typically protected.\n\n## How Jersey is wider than *Pitt v Holt*\n\nThe English Supreme Court in *Pitt v Holt; Futter v Futter* [2013] UKSC 26 drew a distinction between a true **\"mistake\"** (an erroneous belief about a fact or law — rescindable) and **\"mere causative ignorance\" or \"inadequate deliberation\"** (generally not).\n\nUnder Article 47, the Royal Court has **rejected** that distinction. The Court treats the question as simply whether there *was any mistake* within the statutory definition — **\"the manner of the mistake is irrelevant\"** — so it is inappropriate to import the English *Pitt v Holt* taxonomy. The consequence: a future \"we didn't think about that\" position is more likely to be remediable in Jersey than in the English High Court, which is a load-bearing feature of the Jersey trust as a wealth-structuring vehicle.\n\nTwo caveats worth flagging:\n- Walkers' recent-cases survey notes the Royal Court's reluctance to treat a **disappointed expectation of a future tax advantage** (as distinct from an unforeseen tax *charge*) as qualifying.\n- *In the Matter of the M Settlement* — Royal Court declined a partial rescission on the basis that the proposed relief was a re-writing of history rather than an unwinding.\n\n**Note on source authority:** the cited file is currently `status: draft` in the corpus — content is drafted but unverified against primary sources at the editorial level. Verify against the statute and case law before relying on it operationally.\n\n---\n\n**Cited:**\n\n1. `knowledge/jersey/trusts/article-47-set-aside.md` (Articles 47B/47E/47G mechanics, the three-limb test, the *Pitt v Holt* divergence, procedural points, cases)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 598
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "eba2b4a8-f127-400e-b11c-ff6a589f1581"
+  }
+}

@@ -1,0 +1,41 @@
+schemaVersion: eval_verdict_v2
+questionId: show-uk-carry-reform
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/frontier/uk-carried-interest-reform-2026.md
+    supportsClaim: true
+    notes: Frontier file fully supports 28% / 32% / 72.5% multiplier / 34.1% / 47% / Q1 2026 acceleration / Crown Dependencies residency planning.
+  - path: knowledge/jersey/immigration-residency/high-value-residency.md
+    supportsClaim: true
+    notes: Confirms Jersey 2(1)(e) HVR bespoke route, bespoke tax regime, tax-revenue rationale.
+  - path: knowledge/jersey/tax/high-value-residency-tax.md
+    supportsClaim: true
+    notes: Referenced as doctrinal anchor for the HVR tax regime; sibling file to immigration-residency HVR file.
+stretchPromotions: []
+stretchSuggestions:
+  - "Multiplier was a concession from a less generous Autumn Budget 2024 design — industry representations through 2025 secured the current parameters"
+  - "UK look-through / situs rules continue to apply where UK-resident partners receive economic benefit from CD-domiciled GP"
+summary: |
+  PASS. The candidate covers all seven substance items in the showcase_bar
+  (28% → 32% → 34.1% progression, 72.5% multiplier, up to 47% non-qualifying,
+  Finance Bill 2025-26 mechanic via income tax + Class 4 NICs, Q1 2026
+  acceleration, and the three Crown Dependencies residency routes — Jersey HVR,
+  Guernsey Open Market, IoM tax cap). Voice reads as a PE-tax specialist
+  briefing (qualifying/non-qualifying tail-liability framing, carry-vs-co-invest
+  precision, sponsor-documentation pitfalls). Three citations all verified;
+  zero hallucinations. Freshness handled explicitly with as_of / decay
+  reasoning. Did one tool call (the frontier file) — efficient and on-point.
+errors: []

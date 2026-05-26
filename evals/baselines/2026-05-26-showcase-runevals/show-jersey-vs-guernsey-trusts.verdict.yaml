@@ -1,0 +1,48 @@
+schemaVersion: eval_verdict_v2
+questionId: show-jersey-vs-guernsey-trusts
+harness: offshoreai-agent
+ranAt: 2026-05-26T15:05:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: Supports PCC/ICC distinction, JPF vs PIF, Guernsey image rights / captive depth, NPPR equivalence.
+  - path: knowledge/guernsey/trust-law-differences-from-jersey.md
+    supportsClaim: true
+    notes: Core support — explicitly contrasts Article 9(4) vs s.14, Article 47B case-law depth, BO registers, beneficiary rights, decision matrix.
+  - path: knowledge/jersey/trusts/firewall.md
+    supportsClaim: true
+    notes: Article 9(4) renders inconsistent foreign judgments unenforceable; consolidated statute provenance present.
+  - path: knowledge/jersey/trusts/reserved-powers.md
+    supportsClaim: true
+    notes: Article 9A enumerated menu (revocation, advancement, etc.) and Article 9A(3A) settlor-not-trustee point both present verbatim.
+  - path: knowledge/jersey/trusts/article-47-set-aside.md
+    supportsClaim: partial
+    notes: Articles 47B–H mistake regime and three-limb test are fully covered; the file does not literally name "Re S&T Trusts" (that case-name appears in the Guernsey-differences file the candidate also cited, so the overall claim is still anchored).
+stretchPromotions: []
+stretchSuggestions:
+  - Article 9A(3A) confirming a settlor reserving powers does not thereby become a trustee — load-bearing distinction beyond mere reserved-powers enumeration.
+  - Both jurisdictions allow perpetual-duration trusts since 2006 amendments — a substantive equivalence point.
+summary: |
+  PASS — clean cross-jurisdictional comparison hitting all five showcase-bar facts.
+  All five citations resolve to extant files and the underlying claims are supported;
+  one minor wrinkle (the "Re S&T Trusts" case-name is sourced from the Guernsey-
+  differences file rather than the Article 47 file itself) doesn't dent precision.
+  The candidate's freshness handling is exemplary: it surfaces the draft status of
+  all four cited Jersey/Guernsey files and points the reader to the consolidated
+  jerseylaw.je text before any formal opinion. The "what the choice does NOT turn
+  on" section adds real practitioner value beyond the rubric. No stretch promotions
+  warranted — the showcase_bar structure doesn't carry a stretch_facts field, and
+  the bar is hit without overreach.
+errors: []

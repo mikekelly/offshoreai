@@ -152,7 +152,8 @@ iterate before re-running.
 reports `totalCostUsd: 5.4384` for 14 questions = ~$0.39/q.
 
 **Related shipped work.**
-[`packages/agent/src/baseline-system-prompt.ts`](./packages/agent/src/baseline-system-prompt.ts),
+[`prompts/system.md`](./prompts/system.md) (production agent system
+prompt — superseded `baseline-system-prompt.ts` in 2026-05-26 cleanup),
 [`packages/tools-corpus/src/handlers/getFile.ts`](./packages/tools-corpus/src/handlers/getFile.ts),
 [`packages/tools-corpus/src/handlers/tree.ts`](./packages/tools-corpus/src/handlers/tree.ts),
 [`packages/tools-corpus/src/inclusion-links.ts`](./packages/tools-corpus/src/inclusion-links.ts).

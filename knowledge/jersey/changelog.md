@@ -15,6 +15,63 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — Full showcase refresh — 22/28 PASS + demo-readiness map
+
+First full pass over the 28-question showcase suite through
+`/run-evals`. Suite has grown from 14 questions (2026-05-19
+baseline) to 28; this is the first measured run on all 28.
+
+Result: **22 PASS / 6 PARTIAL / 0 FAIL.** Cost $15.80 candidate-
+only (eval-manager subagents subscription-billed). Median wall
+clock 40s per question. Zero hallucinated citations across all
+28 answers.
+
+Direct diff vs 2026-05-19 on the 14 questions both runs cover:
+prior 11 PASS / 3 PARTIAL → today 12 PASS / 2 PARTIAL. Two
+regressions worth fixing pre-demo:
+
+1. **`show-trusts-firewall`** PASS → PARTIAL. Substance held (4/5
+   Article 9 mechanics) but citation-recall regressed — cited 1
+   file vs baseline 6. The "graph visibly traversed" demo bar
+   weakened. Likely cause: today's retrieval-path discipline
+   (whole-file reads after one good landing) is suppressing
+   follow-on reads even on flagship-trust questions where the
+   demo plan wants the case-law and reserved-powers files
+   surfaced alongside `firewall.md`.
+
+2. **`show-continuation-funds`** PASS → PARTIAL. Landed market
+   data + PIF treatment but missed the mechanics walkthrough
+   (multi-asset / strip-sale / tender-offer; carry
+   crystallisation; fairness opinions / CoI committees / LPAC).
+   This is the of-the-moment frontier the demo cheat sheet leads
+   with — worth fixing.
+
+Of the 14 newer showcase questions added since May 19 (frontier
++ cross-jurisdictional + worked examples), 10 PASS / 4 PARTIAL.
+
+Soft signals worth tracking:
+- **Citation-recall pattern**: trusts-firewall (1 file vs 6),
+  iom-portfolio-bond (1 vs 4). Substance held in both but the
+  retrieval depth is shallower than before.
+- **Voice slip**: show-friday-passing's answer leaked a "Let me
+  search..." planning fragment. First observed instance.
+- **Two rubric staleness flags** surfaced by graders:
+  show-listing-vehicle ("BVI no equivalent yet" outdated),
+  show-pillar-two (MCIT Law 2024 vs 2025).
+
+Demo-readiness assessment lives at
+`evals/baselines/2026-05-26-showcase-runevals/demo-readiness.md`
+— maps every cheat-sheet lead-with question to its current
+status, identifies the two demo-blocking-quality risks, and
+estimates ~2-4 hours of focused work to fully demo-ready.
+
+Also in this commit:
+- Stale references cleanup in `SETUP.md`, `BACKLOG.md`,
+  `IMPLEMENTATION-PLAN.md` (removed pointers to deleted
+  `skills/templates/` and `baseline-system-prompt.ts`; updated
+  the layout diagram in SETUP.md to reflect current state with
+  `prompts/system.md`, `.claude/agents/`, `.claude/commands/`).
+
 ## 2026-05-26 — `pillar-two-mcit.md` mirrors the adopted/not-adopted table
 
 Follow-up to the smoke partial signal observed twice in one day

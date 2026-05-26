@@ -1,0 +1,48 @@
+schemaVersion: eval_verdict_v2
+questionId: show-trusts-comparison
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 4
+factsExpected: 4
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/trusts/firewall.md
+    supportsClaim: true
+    notes: Article 9 firewall (validity, capacity, administration, beneficial-rights); Article 9(4) foreign-judgment unenforceability; forced-heirship/matrimonial/divorce attacks all explicit.
+  - path: knowledge/jersey/trusts/reserved-powers.md
+    supportsClaim: true
+    notes: Article 9A list (revocation, variation, advancement, direction, appointment, change of proper law) and Article 9A(3) trustee protection all match; US-grantor-trust use case explicit.
+  - path: knowledge/cayman/star-trusts.md
+    supportsClaim: true
+    notes: STAR Act 1997, non-charitable purpose trust, enforcer mandatory, orphan SPV and PTC use cases all confirmed.
+  - path: knowledge/bvi/vista-trusts.md
+    supportsClaim: true
+    notes: VISTA Act 2003, share-ownership trust, Bartlett-duty disengagement, ODRs, family-business succession, weaker forced-heirship defence — all confirmed verbatim.
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: "Where should I form my trust?" decision matrix exists and supports the stackable-structures point.
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 47B–H statutory mistake regime as a Jersey-side complement to Article 9/9A (mentioned in answer)."
+  - "VISTA Office of Director Rules (ODRs) as the heart of a VISTA arrangement and source of most VISTA disputes."
+  - "Stackability — STAR holding a PTC trusteeing a Jersey settlement, or VISTA designated company sitting inside a wider Jersey settlement."
+summary: |
+  PASS on all six dimensions. The candidate produced a tight, practitioner-voiced
+  three-way comparison that nailed each regime's signature feature (Jersey
+  firewall + reserved powers, Cayman STAR purpose-trust + enforcer, BVI VISTA
+  share-ownership + Bartlett disengagement) and added a clean decision matrix
+  plus a stackability note. All five citations exist and support their claims;
+  draft-status of the substantive files was flagged to the user. The most useful
+  single signal for next-iteration improvement is the stackability point —
+  worth considering for the showcase_bar's substance list because it elevates
+  this from a comparator to a structural-design answer.
+errors: []

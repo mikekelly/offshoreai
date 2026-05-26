@@ -1,0 +1,219 @@
+schemaVersion: eval_batch_summary_v2
+run:
+  command: /run-evals
+  suite: evals/showcase.yaml
+  ranAt: 2026-05-26T14:00:00Z
+  questions: 28
+  scope: full-showcase
+  comparison_baseline: evals/baselines/2026-05-19-offshoreai-agent-full/  # 14 questions then; 28 in suite now
+totals:
+  pass: 22
+  partial: 6
+  fail: 0
+  passRate: 0.786
+dimensionAggregates:
+  totalCostUsd: 15.8034  # candidate-only; eval-manager subagents subscription-billed
+  medianCostUsdPerQuestion: 0.5467
+  medianWallClockSeconds: 39.9
+  meanWallClockSeconds: 42.0
+  meanHallucinatedCitationsPerAnswer: 0
+perQuestion:
+  - id: show-aifmd-ii
+    verdict: pass
+    facts: 5/6
+  - id: show-aifmd-nppr
+    verdict: partial
+    facts: 3/5
+    regression_note: |
+      Same blemish as 2026-05-19 baseline: candidate doesn't surface
+      "Article 42" as the NPPR legal basis, doesn't name the AIF
+      (Jersey) Regulations 2012 by title. Both facts are in cited
+      file frontmatter / body but not promoted in the answer. Likely
+      retrieval-output rather than corpus-content issue.
+  - id: show-arrest
+    verdict: pass
+    facts: 6/6
+  - id: show-article-47
+    verdict: pass
+    facts: 6/6
+  - id: show-bermuda-captive
+    verdict: pass
+    facts: 5/5
+  - id: show-cayman-llc
+    verdict: pass
+    facts: 5/5
+  - id: show-cell-companies
+    verdict: pass
+    facts: 5/5
+  - id: show-continuation-funds
+    verdict: partial
+    facts: 3/6
+    regression_note: |
+      Regression from prior PASS. Missed: multi-asset/strip-sale/
+      tender-offer mechanics, carry-crystallisation discussion,
+      fairness-opinion / CoI-committee / LPAC substance. Material
+      is in the cited frontier file but candidate stopped at the
+      market-data + PIF-treatment surface.
+  - id: show-drug-driving
+    verdict: pass
+    facts: 5/5
+  - id: show-emerging-manager-stack
+    verdict: pass
+    facts: 5/5
+  - id: show-eviction
+    verdict: partial
+    facts: 6/6
+    regression_note: |
+      Substance 6/6 but jersey_specific partial — omitted the 2025
+      Amendment Law (in force 15 April 2026). Same retrieval-path
+      regression as elsewhere: candidate stopped at non-payment
+      files rather than pulling the residential-tenancy index or
+      the amendment file. The 2026-05-23 baseline did surface it.
+  - id: show-friday-passing
+    verdict: partial
+    facts: 4/6
+    regression_note: |
+      Missed the "contrat héréditaire" term-of-art (present in
+      cited commercial-leases.md). Also voice slip: a "Let me
+      search..." planning fragment leaked into the answer prose.
+  - id: show-fund-routes
+    verdict: pass
+    facts: 5/5
+  - id: show-image-rights
+    verdict: pass
+    facts: 5/5
+  - id: show-iom-portfolio-bond
+    verdict: pass
+    facts: 4/4
+    note: citation_recall soft — cited 1 file vs prior baseline's 4
+  - id: show-jersey-vs-guernsey-trusts
+    verdict: pass
+    facts: 5/5
+  - id: show-jpf-vs-expert
+    verdict: pass
+    facts: 4/4
+  - id: show-listing-vehicle
+    verdict: pass
+    facts: 4/4
+    note: |
+      Candidate surfaced BVI MTT 2025 — MORE current than the rubric
+      ("BVI no equivalent yet"). Rubric refresh opportunity outside
+      eval-manager scope.
+  - id: show-parish-hall
+    verdict: pass
+    facts: 6/6
+  - id: show-pillar-two
+    verdict: pass
+    facts: 5/5
+    note: |
+      Rubric says "MCIT (Jersey) Law 2025"; corpus says "2024" (with
+      1-Jan-2025 effective date). Candidate followed corpus —
+      correct. Worth one human glance at which is the enacted year.
+  - id: show-planning
+    verdict: pass
+    facts: 5/5
+  - id: show-tenancy-2025
+    verdict: pass
+    facts: 7/7
+  - id: show-trusts-comparison
+    verdict: pass
+    facts: 4/4
+  - id: show-trusts-firewall
+    verdict: partial
+    facts: 4/5
+    regression_note: |
+      Substance 4/5 (missed anti-suit injunctions) but bigger story
+      is citation-recall regression: cited 1 file vs prior baseline's
+      6. Single-file answer is well-supported by firewall.md but the
+      showcase bar wants the graph visibly traversed. Crociani case
+      is in firewall.md's body but not surfaced.
+  - id: show-uk-carry-reform
+    verdict: pass
+    facts: 7/7
+  - id: show-voisinage
+    verdict: partial
+    facts: 4/5
+    regression_note: |
+      Missed the Pothier / Le Geyt foundation — listed in the cited
+      file's Sources block but not in the answer. Jersey_specific
+      drops to partial as a result.
+  - id: show-worked-family-wealth
+    verdict: pass
+    facts: 6/7
+    note: UK-resident-beneficiary handling lightly touched only
+  - id: show-worked-topco-listing
+    verdict: pass
+    facts: 8/8
+    note: |
+      One minor substance slip: candidate listed "quarrying" as a
+      20% category; corpus names "hydrocarbon oil trade" under Art
+      123CAA(1). Not material enough to drop substance below pass.
+notes: |
+  First full-showcase refresh through /run-evals. Suite has grown
+  from 14 to 28 questions since the 2026-05-19 baseline; this is
+  the first measured pass over the full 28.
+
+  Cost: $15.80 candidate-only. Wall clock: mean 42s per question,
+  total ~20 min over 4 parallel batches of 7. Zero hallucinated
+  citations across all 28 answers.
+
+  ============================================================
+  Comparison vs 2026-05-19-offshoreai-agent-full (14 questions)
+  ============================================================
+
+  May 19 result on the original 14: 11 PASS / 3 PARTIAL / 0 FAIL.
+  Today's result on the same 14: 12 PASS / 2 PARTIAL / 0 FAIL.
+
+    show-trusts-firewall      pass    → partial  (citation-recall)
+    show-article-47           pass    → pass
+    show-jpf-vs-expert        pass    → pass
+    show-trusts-comparison    pass    → pass
+    show-aifmd-nppr           partial → partial   (same blemish)
+    show-pillar-two           pass    → pass
+    show-eviction             pass    → partial  (missed 2025 amendment)
+    show-arrest               pass    → pass
+    show-planning             pass    → pass
+    show-tenancy-2025         pass    → pass
+    show-drug-driving         pass    → pass
+    show-parish-hall          pass    → pass
+    show-voisinage            partial → partial   (different miss)
+    show-friday-passing       partial → partial   (different misses)
+
+  Net within the May 19 14: +2 PASS net (article-47 and trusts-
+  comparison silently held; eviction regressed; firewall regressed
+  on citation-recall but held substance).
+
+  Of the 14 newer questions added since May 19, 10 PASS and 4
+  PARTIAL (with continuation-funds being a regression on prior
+  PASS).
+
+  ============================================================
+  Notable patterns
+  ============================================================
+
+  1. **Citation-recall regression on flagship-trust topics.**
+     show-trusts-firewall: 1 cited file vs baseline 6. show-iom-
+     portfolio-bond: 1 vs 4. Substance held in both but the
+     "graph visibly traversed" demo bar weakened. Worth a
+     diagnostic — possibly the retrieval-path discipline (whole-
+     file reads after one good landing) is suppressing follow-on
+     reads even when the question would benefit.
+
+  2. **Retrieval-path misses on adjacent files.**
+     show-aifmd-nppr (Art 42 / AIF Regs 2012), show-voisinage
+     (Pothier / Le Geyt), show-continuation-funds (mechanics
+     beyond market data), show-eviction (2025 Amendment).
+     Pattern: agent finds A good file, doesn't expand. Defence-
+     in-depth corpus fix: cross-references on those landing files
+     should foreground the missed material more prominently (same
+     as the Pillar Two mirror fix landed earlier today).
+
+  3. **Voice slip.**
+     show-friday-passing: "Let me search..." planning fragment
+     leaked into the answer. Investigation worthwhile — first
+     observed instance of this leak pattern in production answers.
+
+  4. **Rubric staleness for two questions** flagged by graders:
+     show-listing-vehicle ("BVI no equivalent yet" — outdated;
+     BVI MTT 2025 now exists). show-pillar-two (MCIT Law year
+     2024 vs 2025).

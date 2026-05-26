@@ -1,0 +1,53 @@
+schemaVersion: eval_verdict_v2
+questionId: show-fund-routes
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:55:23Z
+overall: pass
+dimensions:
+  substance: pass
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 5
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/funds/jersey-private-fund.md
+    supportsClaim: true
+    notes: "Supports 50 investors, DSP model, 48h authorisation, PE/club-deal use case."
+  - path: knowledge/cayman/exempted-limited-partnership.md
+    supportsClaim: true
+    notes: "Supports closed-ended PE dominance, Private Funds Act 2020 + CIMA registration, audited financials, 1-2 BD registration, parallel Cayman/Delaware structures, tax transparency."
+  - path: knowledge/bvi/incubator-and-approved-fund.md
+    supportsClaim: true
+    notes: "Supports 20-investor cap, US$100m AUM ceiling, permanent (no time limit), no mandatory auditor, Approved-Manager stack; Incubator US$20m / 2yr+1 extension."
+  - path: knowledge/guernsey/private-investment-fund.md
+    supportsClaim: true
+    notes: "Supports 3 routes (licensed manager / family / qualifying), 50-investor cap, 1-business-day Route-1 approval, audited statements."
+  - path: knowledge/CROSS-JURISDICTIONAL-MAP.md
+    supportsClaim: true
+    notes: "Supports cited 'Where should I form my fund?' decision-framework framing and comparative matrix."
+stretchPromotions: []
+stretchSuggestions:
+  - "BVI Approved Fund is permanent whereas BVI Incubator is time-limited to 2 years + 1 year extension (the canonical confusion point for emerging managers)."
+  - "Neither Cayman ELP nor BVI Approved Fund offers AIFMD-equivalent NPPR for EU marketing; only Jersey JPF and Guernsey PIF do — frequently the decisive factor in vehicle choice."
+  - "Parallel Cayman ELP + Delaware LP structures are routine for funds with mixed US / non-US LPs."
+  - "All four light-touch regimes (JPF, PIF, BVI Approved) support upward conversion to higher-tier regulated funds (Expert / Authorised / BVI Private Fund) when AUM or investor count exceeds limits."
+summary: |
+  PASS at showcase quality. Covered all five showcase_bar substance items
+  cleanly with accurate parameters (investor caps, AUM ceilings, authorisation
+  timelines, manager models) anchored on the four jurisdiction-specific files
+  plus the cross-jurisdictional decision matrix. Citation discipline was
+  exemplary — all five cited paths exist and support their claims, and the
+  candidate volunteered an explicit draft-status warning twice (opening
+  paragraph and closing note with underlying statute names to verify
+  against). Operator voice held throughout: a clean three-way decision
+  framework ("LP base picks the vehicle") with a concrete recommended
+  sequence rather than recital. No stretch_facts field exists on showcase
+  entries, so candidate facts (BVI Incubator vs Approved distinction; no
+  Cayman/BVI EU passport; Cayman+Delaware parallel structures) recorded as
+  suggestions rather than promoted — preserving schema stability.
+errors: []

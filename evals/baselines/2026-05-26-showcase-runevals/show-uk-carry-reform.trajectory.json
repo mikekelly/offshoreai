@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-uk-carry-reform",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T13:57:30.620Z",
+  "wallClockSeconds": 39.797,
+  "turns": 2,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/frontier/uk-carried-interest-reform-2026.md\"}",
+      "inputBytes": 64,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 2495,
+    "cacheReadTokens": 104222,
+    "cacheWriteTokens": 64055,
+    "totalCostUsd": 0.51486475
+  },
+  "answer": {
+    "text": "## What changes on 6 April 2026\n\nUK carried interest moves from a **CGT-based regime** (28%, then 32% during the 2025–26 transition year) to an **income-tax-based regime with a partial exclusion** ([`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md)).\n\nFrom 6 April 2026:\n\n- Carry is treated as **income** for income-tax purposes, subject to **income tax + Class 4 NICs**.\n- **Qualifying** carry benefits from a **72.5% multiplier** — only 72.5% of the carry is brought into charge. Effective rate for an additional-rate (45%) taxpayer is approximately **34.1%**.\n- **Non-qualifying** carry attracts full income-tax + NICs at effective rates up to **47%**.\n\nThe qualifying / non-qualifying split turns on whether the partner is performing genuine investment-management activity and whether the fund meets specified characteristics. Final legislation **tightened** the qualifying definition vs prior drafts, though the government dropped some access conditions (e.g. minimum partner co-invest). Most established UK-resident partners at mature sponsors will default to **qualifying** status; new entrants, secondary-market participants, and non-traditional structures need closer analysis ([`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md)).\n\n## What PE partners in the Crown Dependencies should do about it\n\n### Residency planning for UK partners considering relocating\n\nThe three Crown Dependencies routes being actively marketed to PE partners:\n\n- **Jersey 2(1)(e) HVR** — bespoke high-value-residency route with a specific tax-rate regime\n- **Guernsey Open Market** — house-purchase-based residency; standard 20% tax\n- **Isle of Man tax cap** — annual cap on individual income tax\n\nThe caveats are load-bearing:\n\n- The **UK Statutory Residence Test** has stringent conditions for leaving.\n- **Tail liability** is real — carry that economically accrued while UK-resident remains chargeable in the UK even if realised after departure.\n- **Substance** in the destination must be genuine.\n- The new legislation includes **specific anti-avoidance provisions around residence changes**.\n\n(All from [`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md); doctrinal detail at [`knowledge/jersey/immigration-residency/high-value-residency.md`](knowledge/jersey/immigration-residency/high-value-residency.md) and [`knowledge/jersey/tax/high-value-residency-tax.md`](knowledge/jersey/tax/high-value-residency-tax.md).)\n\n### GP-entity and fund-vehicle implications\n\n- **Jersey JPF**, **Guernsey PIF**, and **Cayman ELP** vehicles are unchanged at the fund level — the new rules bite at the **GP entity** on carry allocation and vesting.\n- Crown-Dependencies-domiciled GPs may become more attractive for **non-UK partners**, but UK look-through / situs rules continue to apply where UK-resident partners receive the economic benefit.\n- **Documentation** of carry arrangements needs tightening to clearly establish qualifying status partner-by-partner.\n- The **carry vs co-invest distinction** is now more acutely material — co-invest economics remain CGT-treated, so misclassification is meaningfully expensive ([`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md)).\n\n### Pre-6 April crystallisation (mostly past tense now)\n\nThrough Q1 2026 many partners accelerated distributions, disposals, and restructurings to lock in the 32% CGT basis. If a partner has any remaining pre-6 April basis to crystallise it is now largely too late — but transitional questions about which side of the line specific receipts fall on remain live ([`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md)).\n\n### Pitfalls to flag to clients\n\n- Treating the 72.5% multiplier as a fixed cliff — the qualifying boundary is fact-sensitive\n- Assuming UK departure shields against UK charges — the tail liability is real\n- Misclassifying co-invest as carry or vice versa\n- Sponsor documentation that doesn't clearly establish qualifying status per partner\n- Cross-border interaction with French / German / Italian partners — peer-jurisdiction reforms diverge\n\n([`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md))\n\n## Freshness note\n\nThe cited file is a **frontier** document with `status: in-force-2026-04-06` and is anchored to developments through May 2026 — within decay tolerance for today's date (2026-05-26). HMRC guidance and edge-case rulings continue to issue through 2026; verify against HMRC manuals for any specific structuring decision.\n\n## Sources cited\n\n1. [`knowledge/frontier/uk-carried-interest-reform-2026.md`](knowledge/frontier/uk-carried-interest-reform-2026.md)\n2. [`knowledge/jersey/immigration-residency/high-value-residency.md`](knowledge/jersey/immigration-residency/high-value-residency.md)\n3. [`knowledge/jersey/tax/high-value-residency-tax.md`](knowledge/jersey/tax/high-value-residency-tax.md)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 594
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "e8515679-967a-449c-b1e4-eef8f6d0a257"
+  }
+}

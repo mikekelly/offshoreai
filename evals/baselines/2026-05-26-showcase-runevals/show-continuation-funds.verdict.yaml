@@ -1,0 +1,45 @@
+schemaVersion: eval_verdict_v2
+questionId: show-continuation-funds
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:57:49Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 6
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/frontier/continuation-funds-and-gp-led-secondaries.md
+    supportsClaim: true
+    notes: "Supports the 46%/doubled figure, the regional splits, the not-CIS treatment, 3-BD approval, drivers, Guernsey marketing posture, and structural walkthrough."
+  - path: knowledge/guernsey/private-investment-fund.md
+    supportsClaim: true
+    notes: "Supports three-route PIF model, 1-business-day Route 1 authorisation, PCC/ICC vehicle forms, tax position."
+stretchPromotions: []
+stretchSuggestions:
+  - "Three PIF routes (licensed manager / family-private-relationship / qualifying private investors) as a structuring-flexibility differentiator vs Jersey JPF's single DSP route"
+  - "Specific named fund-counsel ecosystem (Carey Olsen, Ogier, Mourant, Walkers) as a Guernsey marketing edge"
+summary: |
+  PARTIAL. Candidate nails the headline market data (46% / doubled),
+  the Guernsey not-CIS single-asset-CF treatment, and the 3-business-day
+  GFSC approval — three of the six showcase bar substance facts. But it
+  omits the structural walkthrough rubric expected: no enumeration of
+  single-asset / multi-asset / strip-sale / tender-offer mechanics; no
+  GP carry crystallisation discussion; no fairness opinions / CoI
+  committee / LPAC / independent valuation substance. The cited frontier
+  file contains all of this material — the candidate read it (only 2
+  tool calls total) but did not draw on the structure-mechanics or
+  conflicts sections. Citation precision and Jersey/CD-specific voice
+  are strong; freshness handling is exemplary (flagged the draft status
+  on the Guernsey PIF file and the missing last_verified on the frontier
+  file). Next-iteration signal: prompt the agent to enumerate the
+  variations and conflict mechanics that the frontier file explicitly
+  catalogues — the gap is selectivity from a single read, not corpus
+  coverage.
+errors: []

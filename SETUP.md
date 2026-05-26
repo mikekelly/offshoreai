@@ -82,19 +82,24 @@ under `packages/`:
 
 ```
 offshoreai/
-├── README.md, CLAUDE.md, CONVENTIONS.md, KNOWLEDGE-BASE-PRINCIPLES.md, TAGS.md, …  ← unchanged
-├── knowledge/jersey/                                                       ← corpus, unchanged
-├── bundles/                                                      ← compiled retrieval contracts
-├── prompts/sub-agents/                                           ← sub-agent system prompts
-├── skills/templates/                                             ← reference SKILL.md files
-├── IMPLEMENTATION-PLAN.md                                        ← week-by-week task backlog
-├── SETUP.md                                                      ← this file
+├── README.md, CLAUDE.md, CONVENTIONS.md, KNOWLEDGE-BASE-PRINCIPLES.md, TAGS.md, …
+├── knowledge/jersey/                                  ← corpus
+├── bundles/                                           ← compiled retrieval contracts
+├── prompts/
+│   ├── system.md                                      ← production agent's system prompt
+│   └── sub-agents/                                    ← production sub-agent prompts
+├── evals/                                             ← eval question YAML + baseline artifacts
+├── .claude/
+│   ├── agents/eval-manager.md                         ← per-question eval-manager subagent
+│   └── commands/run-evals.md                          ← /run-evals slash command
+├── IMPLEMENTATION-PLAN.md                             ← historical week-by-week task backlog
+├── SETUP.md                                           ← this file
 ├── package.json, pnpm-workspace.yaml, tsconfig.base.json
 └── packages/
     ├── build/              # @offshoreai/build — corpus compile pipeline
     ├── schemas/            # @offshoreai/schemas — tool/eval schemas
-    ├── tools-corpus/       # @offshoreai/tools-corpus
-    └── agent/              # @offshoreai/agent — SDK runtime
+    ├── tools-corpus/       # @offshoreai/tools-corpus — MCP corpus server
+    └── agent/              # @offshoreai/agent — SDK runtime, query CLI, web agent
 ```
 
 ---

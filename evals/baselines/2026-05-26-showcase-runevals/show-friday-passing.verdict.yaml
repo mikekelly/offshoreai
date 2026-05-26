@@ -1,0 +1,46 @@
+schemaVersion: eval_verdict_v2
+questionId: show-friday-passing
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: partial
+factsCovered: 4
+factsExpected: 6
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/contract-passing.md
+    supportsClaim: true
+    notes: Supports Royal-Court passing, Greffier records, Norman customary-law inheritance, public-registry repository, transfer effected by Court act, lawyers-as-attorneys mechanism
+  - path: knowledge/jersey/property/commercial-leases.md
+    supportsClaim: true
+    notes: Explicit confirmation of "Friday afternoon" passing slot for 9+ year leases ("contrat héréditaire"); two Jurats sit to witness; Public Registry registration follows
+  - path: knowledge/jersey/property/flying-freeholds.md
+    supportsClaim: true
+    notes: Confirms "Royal Court passing (Friday afternoon)" for flying-freehold unit transfers, with Public Registry registration following
+stretchPromotions: []
+stretchSuggestions:
+  - "Contrat héréditaire as the specific term-of-art for the 9+ year lease / freehold transfer passed before the Royal Court"
+  - "Samedi Division as the specific Royal Court division that handles property passings"
+  - "Comparator to English conveyancing — private completion, no court act — to ground distinctiveness for foreign-lawyer readers"
+summary: |
+  Partial. Citation-clean (3/3 verified, zero hallucinated) and responsibly
+  flags the draft-status of contract-passing.md plus the corpus's silence on
+  the historical reason for Friday specifically. Substance hits Royal-Court
+  passing, two Jurats, Friday-afternoon slot, and public-registry follow-on
+  — but misses the term-of-art "contrat héréditaire" (which is sitting in
+  the cited commercial-leases.md file the agent read) and does not foreground
+  the foreign-lawyer-finds-this-unusual angle the rubric calls for. The
+  answer also leaks a "Let me search for..." planning fragment at the start
+  of the first paragraph, which dents the voice score for a client-facing
+  question. Most useful single signal: foregrounding "contrat héréditaire"
+  and a one-line English-conveyancing comparator would lift this from
+  partial to pass without any new retrieval — both are already in the
+  cited source files.
+errors: []

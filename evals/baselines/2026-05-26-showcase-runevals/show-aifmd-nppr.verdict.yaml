@@ -1,0 +1,47 @@
+schemaVersion: eval_verdict_v2
+questionId: show-aifmd-nppr
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 3
+factsExpected: 5
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/funds/aifmd-nppr.md
+    supportsClaim: true
+    notes: Supports NPPR overview, third-country-passport-not-implemented, depository question, Germany/France stricter framing
+  - path: knowledge/jersey/use-cases/fund-counsel/aifmd-nppr-registration.md
+    supportsClaim: true
+    notes: Supports JFSC AIFM registration steps, Art 15 risk-mgmt equivalence, §330 KAGB, BaFin notification, fact-sheet/distributor, reverse-solicitation caveat
+  - path: knowledge/frontier/aifmd-ii-april-2026.md
+    supportsClaim: true
+    notes: Supports AIFMD II expanded disclosures, Annex IV uplift, Germany as stricter transposer, AIF Code bifurcation
+stretchPromotions: []
+stretchSuggestions:
+  - "AIFMD II Directive (EU) 2024/927 by full directive number is a useful primary-source-grade reference for fund counsel"
+  - "Reverse solicitation as an active doctrinal area — BaFin scrutiny of overclaims as enforcement risk"
+summary: |
+  Partial. The answer is well-structured, citation-clean (3/3 citations
+  verified, zero hallucinated), responsibly flags draft status and the
+  May-2026 last_verified dates, and sounds like fund counsel guiding marketing
+  strategy. It captures NPPR mechanics, BaFin host-state notification, §330
+  KAGB by section, Germany-specific fact-sheet/distributor/reporting, the
+  reverse-solicitation caveat, and the AIFMD II forward-look (including the
+  EU/UK AIF Code split). However, it misses two rubric-load-bearing
+  specifics: it never names AIFMD Article 42 as the legal basis for NPPR
+  (only Art 15 for risk management), and it does not name the
+  "Alternative Investment Funds (Jersey) Regulations 2012" in the answer
+  text despite that statute being in the source frontmatter of the cited
+  file. The substance gap on AIFMD article-level citation and Jersey-side
+  statutory naming is the limiting dimension — same shape as the
+  2026-05-19 baseline result on this question, suggesting the system prompt
+  or aifmd-nppr.md body could foreground these two specifics more strongly.
+errors: []
