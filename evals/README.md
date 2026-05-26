@@ -61,51 +61,87 @@ actually produces — which is what we care about.
 
 ## How to run
 
-Manually, until automated:
+There are **three eval scopes**, in increasing token cost.
+**Always pick the smallest scope that gives you the signal
+you need.** Default is smoke; full-suite is an explicit
+opt-in, not the safe choice.
 
-1. Pick a batch of questions from `coverage-questions.yaml`
-   (8-10 in parallel is a comfortable batch size).
-2. For each, spawn an `Explore` agent with a
-   self-contained prompt — see existing eval runs in git
-   history for the template.
-3. Collect responses; grade each against `expected_facts`
-   and `expected_files`.
-4. Update the YAML, adding a dated `*-measured` line under
-   each `score:` block — keep the old self-graded scores
-   too for history.
-5. Update the `summary:` block.
-6. Commit.
+### 1. Default — the smoke set (9 questions, ~1 batch)
 
-### Sectioned runs — run a portion, not the whole suite
+**This is the default run.** Use it as the minimum quality
+gate on every iteration. Token cost is one parallel Agent
+batch; wall-clock target ~3 minutes.
 
-The full suite is a token burn. Most content changes touch
-one section; the eval pass should match that scope.
+The smoke set is declared at the top-level
+`default_smoke_set:` block in `coverage-questions.yaml`.
+Membership: any question with `smoke: true` in its body.
+The set is curated to cover the load-bearing surfaces in
+one batch:
 
-`coverage-questions.yaml` carries a top-level `sections:`
-map that lists every section, the ID prefix that flags
-membership (e.g. `rt-` → residential-tenancy, `sd-co-` →
-statute-depth-companies, `sd-aml-` → statute-depth-aml),
-and whether the section is legacy (questions without an
-explicit `section:` field, grouped by prefix convention)
-or new-style (questions carry an explicit `section:`).
+| Surface | Question ID | File |
+|---|---|---|
+| Trusts (Art 47 set-aside) | `sn-001` | coverage-questions.yaml |
+| AML/CFT (MLO CDD) | `sn-002` | coverage-questions.yaml |
+| Funds (JPF vs Expert Fund) | `sn-003` | coverage-questions.yaml |
+| LLC (Art 47 modifiable duties) | `sd-co-001` | coverage-questions.yaml |
+| CFT statute (Terrorism Art 19/21) | `sd-aml-001` | coverage-questions.yaml |
+| Tax (zero-ten + Pillar Two) | `sm-tax-001` | coverage-questions.yaml |
+| Cross-jurisdictional (PE fund choice) | `sm-xjur-001` | coverage-questions.yaml |
+| Companies Law (Art 115 solvency) | `sm-co-001` | coverage-questions.yaml |
+| Adversarial / honesty regression | `adv-nonexistent-llc-article` | adversarial-citations.yaml |
 
-Typical workflow:
+Procedure:
 
-1. Identify which section(s) cover what you changed.
-   Doctrinal-corpus edits to LLC / partnership / TMP files
-   → `statute-depth-companies`. AML/CFT statute edits →
-   `statute-depth-aml`. Tenancy / family / planning gap-
-   fills → the relevant legacy section.
-2. Filter `coverage-questions.yaml` to that section's
-   ID-prefix(es) and run only those questions.
-3. Run the **`sanity`** section every time as a regression
-   guard — three sanity-check questions catch
-   doctrinal-corpus regressions introduced by the changes.
-4. Only run the full suite on the cadence in this README
-   (weekly initially, monthly once stable) or when a
-   cross-cutting change touches many sections.
+1. Spawn 9 fresh `Explore` agents in a **single parallel
+   message**, one per smoke ID, each with a self-contained
+   prompt constrained to filesystem reads on the
+   `knowledge/` corpus only.
+2. Grade each against its `expected_facts` /
+   `expected_files` (or `correct_response_shape` for the
+   adversarial).
+3. Update the dated `*-measured` line under each
+   question's `score:` block.
+4. If anything fails or partials, decide: regression or
+   known gap? Regressions block the commit; known gaps go
+   in the changelog.
+5. Commit.
 
-Goal: token spend proportional to scope of change.
+**Editorial policy:** add a question to the smoke set only
+when a new load-bearing surface emerges (a flagship
+statute, a new product class). Keep the smoke set at ~9 —
+if you're tempted to add a tenth, replace something.
+
+### 2. Section-specific runs (when content was touched)
+
+When a change touches one section deeply (e.g. you added
+substantial content to AML/CFT statutes), run that
+section's questions **in addition to** the smoke set —
+not instead.
+
+Each section is declared in the top-level `sections:` map
+of `coverage-questions.yaml`. Filter by the section's ID
+prefix (e.g. `sd-aml-*` for the AML statute-depth section).
+
+The smoke set is always the regression guard for any
+section-specific run.
+
+### 3. Full suite (rare — explicit opt-in)
+
+The full suite (everything in `coverage-questions.yaml` +
+everything in `adversarial-citations.yaml`) runs only on
+the documented cadence:
+
+- **Weekly** while content velocity is high (current state).
+- **Monthly** once content velocity drops.
+- **On-demand** for cross-cutting changes that touch many
+  sections (frontmatter-spec migration, tags taxonomy
+  revision, corpus-loader tooling change).
+
+**Don't run the full suite "to be safe".** It's expensive
+and the smoke set plus the relevant section already give
+the signal that matters. If you find yourself reaching for
+the full suite often, ask whether the smoke set is missing
+a surface — extending smoke is cheaper than running full.
 
 ### Scoring
 

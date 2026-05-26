@@ -12,7 +12,7 @@
 #
 # Last full run: 2026-05-18 (initial baseline)
 
-version: 4-sectioned
+version: 5-smoke-default
 last_run: 2026-05-18
 notes: |
   v1 (2026-05-18): self-graded baseline after residential-tenancy build.
@@ -25,6 +25,16 @@ notes: |
   rt-rd-001 and rt-rd-002 re-measured and converted FAIL → PASS.
   Running score: 14 pass / 3 fail. Remaining 3 gaps: planning,
   welfare, PPCE — the next gap-fill targets.
+  v5-smoke-default (2026-05-26): introduced the **default smoke
+  set** — a small curated cross-surface set (8 from this file +
+  1 adversarial = 9 total) that is the default run on every
+  iteration. Section-specific runs only when changing that
+  section's content; full-suite runs only on the documented
+  cadence (weekly initially → monthly once stable). Added 3
+  new smoke-only questions (sm-tax-001 zero-ten/Pillar Two,
+  sm-xjur-001 Jersey-vs-Cayman fund choice, sm-co-001 CJL Art
+  115 solvency) to give the smoke set tax, cross-jurisdictional,
+  and CJL-companies coverage without requiring full-suite runs.
   v4-sectioned (2026-05-26): introduced top-level `sections:` map
   so the eval suite can be run a portion at a time rather than as
   a whole-suite token burn. Added `statute-depth-companies` and
@@ -123,6 +133,54 @@ sections:
     prefix: "sd-aml-"
     description: "Per-Article depth on Terrorism 2002, Forfeiture 2018, IFL 1991, PoCSB 2008"
     legacy: false
+  # ---- v5: cross-surface smoke (single batch, one IDs at a time) ----
+  smoke:
+    prefix: "sm-"
+    description: |
+      Smoke-only questions that don't belong to a single topical
+      section — they fill cross-surface gaps in the default
+      smoke set (tax, cross-jurisdictional, CJL companies-law).
+      Run as part of the default smoke set; not part of any
+      section-specific run.
+    legacy: false
+
+# =====================================================
+# Default smoke set — the DEFAULT eval run
+# =====================================================
+#
+# The smoke set is what runs on every iteration. It is
+# deliberately small (9 questions) and covers the most
+# important surfaces in a single parallel Agent batch:
+#
+#   - trusts        (sn-001  — Article 47 set-aside)
+#   - aml-cft       (sn-002  — MLO CDD)
+#   - funds         (sn-003  — JPF vs Expert Fund)
+#   - llc           (sd-co-001 — Article 47 modifiable duties)
+#   - cft-statute   (sd-aml-001 — Terrorism Art 19 vs 21)
+#   - tax           (sm-tax-001 — zero-ten + Pillar Two)
+#   - cross-juris   (sm-xjur-001 — Jersey vs Cayman fund choice)
+#   - companies-law (sm-co-001 — CJL Article 115 solvency)
+#   - adversarial   (adv-nonexistent-llc-article — in
+#                    adversarial-citations.yaml; honesty regression)
+#
+# A passing smoke run is the minimum quality gate for any
+# corpus change. Section-specific runs are scoped to changed
+# content; full-suite runs only on the cadence in README.md.
+#
+# Editorial policy: add a smoke question only when a new
+# load-bearing surface emerges (e.g. a new flagship statute,
+# a new product class) — keep the smoke set small.
+default_smoke_set:
+  - sn-001
+  - sn-002
+  - sn-003
+  - sd-co-001
+  - sd-aml-001
+  - sm-tax-001
+  - sm-xjur-001
+  - sm-co-001
+  # — plus from adversarial-citations.yaml:
+  - adv-nonexistent-llc-article
 
 questions:
 
@@ -598,6 +656,7 @@ questions:
   # ordinary residents hasn't regressed offshore coverage.
   # =====================================================
   - id: sn-001
+    smoke: true  # trusts surface in default smoke set
     persona: trust-officer
     asked_by: trustee
     question: "I'm a trustee and want to vary a Jersey trust — what's the Article 47B procedure?"
@@ -614,6 +673,7 @@ questions:
       2026-05-18-measured: pass  # v3 Agent-tool runner: better than expected — agent correctly identified Article 47G (not just 47B-J), 3-limb S&T Trusts test, divergence from Pitt v Holt. Sanity check confirms original content not regressed.
 
   - id: sn-002
+    smoke: true  # aml-cft surface in default smoke set
     persona: compliance-mlro
     asked_by: mlro
     question: "Under the MLO 2008, what CDD do I need for a new institutional client?"
@@ -630,6 +690,7 @@ questions:
       2026-05-18-measured: pass  # v3 Agent-tool runner: agent retrieved MLO Articles 5, 6, 7, 8, 11, 12 + compliance-mlro persona Q&A; full risk-based / simplified / enhanced CDD framework surfaced. Original AML content intact.
 
   - id: sn-003
+    smoke: true  # funds surface in default smoke set
     persona: fund-counsel
     asked_by: gp-counsel
     question: "What's the JPF regime and how does it differ from an Expert Fund?"
@@ -646,12 +707,77 @@ questions:
       2026-05-18-measured: pass  # v3 Agent-tool runner: agent surfaced richer detail than expected_facts captured — the DSP delegation model in JPF; 48-hour authorisation; Expert Fund minimum-investment thresholds. Expected_facts list should be ratcheted up. Original funds content intact.
 
   # =====================================================
+  # SMOKE — cross-surface (added 2026-05-26)
+  # Three smoke-only questions filling tax, cross-juris,
+  # and CJL-companies-law gaps in the default smoke set.
+  # =====================================================
+  - id: sm-tax-001
+    section: smoke
+    smoke: true
+    persona: tax-adviser
+    asked_by: cfo-of-jersey-holdco
+    question: "We're a Jersey-incorporated trading group with revenue around EUR 900m. What's the Jersey corporate tax rate that applies to us, and does Pillar Two add anything on top?"
+    expected_facts:
+      - "Zero-ten: 0% standard corporate rate for most companies"
+      - "10% for financial-services companies under Article 123D"
+      - "20% for utilities / large retailers / hydrocarbon / property income"
+      - "MCIT 2025 (Multinational Corporate Income Tax) — Jersey's Pillar Two QDMTT"
+      - "EUR 750m revenue threshold brings in-scope groups within MCIT"
+      - "In-scope groups top-up to 15% effective rate via QDMTT and IIR"
+      - "No UTPR implemented"
+    expected_files:
+      - "knowledge/jersey/tax/zero-ten.md"
+      - "knowledge/jersey/tax/pillar-two.md"
+      - "knowledge/jersey/international/pillar-two-mcit.md"
+    score:
+      2026-05-26: pending  # awaiting first measured run
+
+  - id: sm-xjur-001
+    section: smoke
+    smoke: true
+    persona: fund-counsel
+    asked_by: gp-counsel
+    question: "We're forming a closed-ended PE fund with global LPs. Should we domicile in Jersey or Cayman? What are the main factors?"
+    expected_facts:
+      - "Cayman ELP + Private Funds Act 2020 — global default for closed-ended PE"
+      - "Jersey JPF + AIFM Regulations — strong for EU-marketing via NPPR"
+      - "JPF: <=50 investors, DSP delegation, ~48-hour authorisation"
+      - "Cayman is largest fund domicile globally"
+      - "Jersey distinctive in NPPR routes into EU and Article 9 trust-firewall infrastructure"
+      - "Pillar Two affects both jurisdictions"
+    expected_files:
+      - "knowledge/CROSS-JURISDICTIONAL-MAP.md"
+      - "knowledge/jersey/funds/jersey-private-fund.md"
+      - "knowledge/cayman/exempted-limited-partnership.md"
+    score:
+      2026-05-26: pending
+
+  - id: sm-co-001
+    section: smoke
+    smoke: true
+    persona: legal-counsel
+    asked_by: jersey-counsel
+    question: "Under Jersey company law, what test must a director apply before approving a dividend or share buy-back?"
+    expected_facts:
+      - "Article 115 of the Companies (Jersey) Law 1991"
+      - "Cash-flow solvency test: company will be able to pay debts as they fall due in the 12 months following the distribution"
+      - "Directors' statement / declaration required"
+      - "No net-asset limb (dropped in 2008 reforms)"
+      - "Personal liability for directors who authorise without grounds"
+    expected_files:
+      - "knowledge/jersey/companies/article-115-solvency-test.md"
+      - "knowledge/jersey/companies/companies-law-1991.md"
+    score:
+      2026-05-26: pending
+
+  # =====================================================
   # STATUTE-DEPTH — COMPANIES (added 2026-05-26)
   # Probes per-Article distinctions exposed by the LLC 2018,
   # partnership-family (LP/ILP/SLP/LLP), and TMP 2009 wikis.
   # =====================================================
   - id: sd-co-001
     section: statute-depth-companies
+    smoke: true  # llc surface in default smoke set
     persona: fund-counsel
     asked_by: gp-counsel
     question: "Can I contract out of fiduciary duties to other LLC members in a Jersey LLC operating agreement? What floor remains in place?"
@@ -725,6 +851,7 @@ questions:
   # =====================================================
   - id: sd-aml-001
     section: statute-depth-aml
+    smoke: true  # cft-statute surface in default smoke set
     persona: mlro
     asked_by: mlro
     question: "What's the difference between the Terrorism Law Article 19 and Article 21 SAR duties?"

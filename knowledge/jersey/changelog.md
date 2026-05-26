@@ -15,6 +15,53 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — Eval suite — smoke set is the default run
+
+Restructured the eval suite so a small curated **smoke
+set** is now the default eval scope. Goal: token spend
+proportional to scope of change. Full-suite runs are an
+explicit opt-in for cross-cutting changes only.
+
+**Smoke set (9 questions, single parallel batch, ~3 min):**
+
+- `sn-001` — Trusts Art 47 set-aside
+- `sn-002` — MLO CDD
+- `sn-003` — JPF vs Expert Fund
+- `sd-co-001` — LLC Art 47 modifiable fiduciary duties
+- `sd-aml-001` — Terrorism Art 19 vs Art 21 SAR duties
+- `sm-tax-001` — Jersey zero-ten + Pillar Two MCIT (new)
+- `sm-xjur-001` — Jersey vs Cayman PE fund choice (new)
+- `sm-co-001` — CJL 1991 Art 115 cash-flow solvency (new)
+- `adv-nonexistent-llc-article` — adversarial honesty
+  regression (from adversarial-citations.yaml)
+
+Three smoke-only questions added (`sm-tax-001`,
+`sm-xjur-001`, `sm-co-001`) to give the default run tax,
+cross-jurisdictional, and CJL-companies-law coverage —
+surfaces that the existing 26 coverage questions don't
+probe. These live in a new `smoke` section (prefix
+`sm-`); they aren't part of any topical section run.
+
+`coverage-questions.yaml` gains a top-level
+`default_smoke_set:` block enumerating the 9 IDs across
+both files. Each smoke question carries an inline
+`smoke: true` flag for discoverability.
+
+`evals/README.md` rewritten to introduce **three eval
+scopes** (smoke / section / full) and to state that the
+smoke set is the default. Full-suite runs are scheduled
+weekly while content velocity is high, monthly once it
+drops, and only on-demand for cross-cutting changes.
+"Don't run the full suite to be safe" is called out
+explicitly.
+
+Editorial policy: smoke set stays at ~9. Adding a tenth
+requires replacing an existing entry — keeps the default
+run cheap.
+
+All three new smoke questions are `pending` first measured
+run.
+
 ## 2026-05-26 — Eval suite restructure + statute-depth questions
 
 `evals/coverage-questions.yaml` restructured for **sectioned
