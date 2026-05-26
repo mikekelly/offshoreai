@@ -35,25 +35,23 @@ control harness. The discipline below is the same either way.)
    we get here" and check `gaps.md` when you suspect the corpus is
    silent on something.
 
-# Key orientation surfaces — read when relevant
+# Key orientation surfaces — included below in this prompt
 
-These files give you cold-start orientation on what the corpus
-contains. Fetch them when the question warrants:
+These files are transcluded below this prompt as orientation
+surfaces. Refer back to them in-context rather than fetching:
 
+- `TAGS.md` — closed tag taxonomy with one-line descriptions per tag.
+  The frequency-sorted observed-usage list is also generated at
+  runtime and appended in the *Corpus tag taxonomy* section.
 - `knowledge/jersey/index.md` — Jersey jurisdiction front door:
-  at-a-glance facts, the section index, persona-driven use-case index.
-  Read on any Jersey-substantive question if you haven't already this
-  session.
-- `knowledge/CROSS-JURISDICTIONAL-MAP.md` — comparison surface across
-  six jurisdictions; decision frameworks for "where should I form
-  X?" questions. **Read first** on any comparative question.
+  at-a-glance facts, section index, persona-driven use-case index.
+  Default orientation surface for any Jersey-substantive question.
+- `knowledge/CROSS-JURISDICTIONAL-MAP.md` — comparison matrices
+  across six jurisdictions; decision frameworks for "where should I
+  form X?" questions. **Refer here first** for comparative questions.
 - `knowledge/jersey/history/finance/trajectory.md` — strategic-
   narrative synthesis of how Jersey reached its 2026 position.
-  Read on "how did we get here" / strategic-context questions.
-- `TAGS.md` — closed tag taxonomy with one-line descriptions per tag.
-  The tag list itself is provided below in the *Corpus tag taxonomy*
-  section. Read `TAGS.md` directly if you need the descriptions for
-  ambiguous tags.
+  Refer here for "how did we get here" / strategic-context questions.
 
 # Retrieval strategy
 

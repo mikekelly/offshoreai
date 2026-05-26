@@ -21,12 +21,8 @@ import {
   createCorpusToolsServer,
   type CorpusContext,
 } from "@offshoreai/tools-corpus";
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { composeSystemPrompt } from "./compose-system-prompt.js";
 import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
-import { buildTaxonomyBlock } from "./taxonomy-block.js";
-
-const SYSTEM_PROMPT_RELATIVE_PATH = "prompts/system.md";
 
 export type AgentEvent =
   | { readonly type: "tool"; readonly name: string; readonly input: unknown }
@@ -169,12 +165,11 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
 
   const corpusServer = await createCorpusToolsServer(ctxOpts);
   const corpus: CorpusContext = await buildCorpusContext(ctxOpts);
-  const taxonomyBlock = opts.tagIndexPath
-    ? await buildTaxonomyBlock(opts.repoRoot, opts.tagIndexPath)
-    : "";
-  const systemPromptPath = resolve(opts.repoRoot, SYSTEM_PROMPT_RELATIVE_PATH);
-  const baseSystemPrompt = readFileSync(systemPromptPath, "utf8");
-  const fullSystemPrompt = baseSystemPrompt + taxonomyBlock;
+  const composed = await composeSystemPrompt({
+    repoRoot: opts.repoRoot,
+    ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
+  });
+  const fullSystemPrompt = composed.text;
   const allowedTools = [...corpusAllowedToolNames(), "Read", "Glob", "Grep"];
   const verify = opts.verify ?? true;
   const maxVerifyRetries = opts.maxVerifyRetries ?? 1;

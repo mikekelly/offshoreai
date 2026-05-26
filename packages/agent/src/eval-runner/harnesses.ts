@@ -1,9 +1,10 @@
 // Harness adapters. Same input (question + repoRoot) → uniform HarnessOutput.
 
 import { spawn } from "node:child_process";
-import { createHash } from "node:crypto";
-import { readFileSync, statSync } from "node:fs";
-import { resolve } from "node:path";
+import { mkdtempSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { composeSystemPrompt } from "../compose-system-prompt.js";
 import { runCitationVerifier } from "../citation-verifier.js";
 import { runQuery } from "../runtime.js";
 import { readSessionToolCalls } from "./session-log.js";
@@ -89,8 +90,6 @@ async function runOffshoreaiAgent(q: EvalQuestion, opts: HarnessOptions): Promis
 // auto-memory etc. so the control is genuinely isolated.
 // ---------------------------------------------------------------------------
 
-const SYSTEM_PROMPT_RELATIVE_PATH = "prompts/system.md";
-
 const CLAUDE_P_USER_MESSAGE = (question: string) => `Question:
 ${question}
 
@@ -117,12 +116,22 @@ async function runClaudeP(q: EvalQuestion, opts: HarnessOptions): Promise<Harnes
   const userMessage = CLAUDE_P_USER_MESSAGE(q.question);
   const maxTurns = String(opts.maxTurns ?? 20);
 
-  const systemPromptPath = resolve(opts.repoRoot, SYSTEM_PROMPT_RELATIVE_PATH);
-  const systemPromptBody = readFileSync(systemPromptPath, "utf8");
+  // Compose the same system prompt the offshoreai-agent harness uses
+  // (prompts/system.md + taxonomy block + orientation surfaces), so
+  // the control and the production agent receive byte-identical
+  // system-prompt context. Write to a temp file because the CLI
+  // takes a file path, not a string.
+  const composed = await composeSystemPrompt({
+    repoRoot: opts.repoRoot,
+    ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
+  });
+  const tmpDir = mkdtempSync(join(tmpdir(), "claude-p-prompt-"));
+  const systemPromptPath = join(tmpDir, "system.md");
+  writeFileSync(systemPromptPath, composed.text, "utf8");
   const systemPromptProvenance = {
-    source: SYSTEM_PROMPT_RELATIVE_PATH,
-    appendBytes: statSync(systemPromptPath).size,
-    appendSha256: createHash("sha256").update(systemPromptBody).digest("hex").slice(0, 16),
+    source: "prompts/system.md",
+    appendBytes: composed.bytes,
+    appendSha256: composed.sha256,
   };
 
   try {

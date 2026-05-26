@@ -1,18 +1,13 @@
 // Agent runtime — composes the SDK query() with our typed corpus tools
-// and the system prompt loaded from prompts/system.md.
+// and the system prompt composed via composeSystemPrompt.
 
-import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
 import { query } from "@anthropic-ai/claude-agent-sdk";
 import {
   corpusAllowedToolNames,
   createCorpusToolsServer,
 } from "@offshoreai/tools-corpus";
+import { composeSystemPrompt, SYSTEM_PROMPT_RELATIVE_PATH } from "./compose-system-prompt.js";
 import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
-import { buildTaxonomyBlock } from "./taxonomy-block.js";
-
-const SYSTEM_PROMPT_RELATIVE_PATH = "prompts/system.md";
 
 export interface RunQueryOptions {
   /** The user's question. */
@@ -65,16 +60,11 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
       : { repoRoot: opts.repoRoot },
   );
 
-  const systemPromptPath = resolve(opts.repoRoot, SYSTEM_PROMPT_RELATIVE_PATH);
-  const baseSystemPrompt = readFileSync(systemPromptPath, "utf8");
-  const taxonomyBlock = opts.tagIndexPath
-    ? await buildTaxonomyBlock(opts.repoRoot, opts.tagIndexPath)
-    : "";
-  const fullSystemPrompt = baseSystemPrompt + taxonomyBlock;
-  const appendSha256 = createHash("sha256")
-    .update(fullSystemPrompt)
-    .digest("hex")
-    .slice(0, 16);
+  const composed = await composeSystemPrompt({
+    repoRoot: opts.repoRoot,
+    ...(opts.tagIndexPath ? { tagIndexPath: opts.tagIndexPath } : {}),
+  });
+  const fullSystemPrompt = composed.text;
 
   const allowedTools = [
     ...corpusAllowedToolNames(),
@@ -167,8 +157,8 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
     systemPrompt: {
       presetName: "claude_code",
       source: SYSTEM_PROMPT_RELATIVE_PATH,
-      appendBytes: Buffer.byteLength(fullSystemPrompt, "utf8"),
-      appendSha256,
+      appendBytes: composed.bytes,
+      appendSha256: composed.sha256,
     },
     ...(verifierVerdict ? { verifierVerdict } : {}),
   };
