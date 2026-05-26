@@ -1,0 +1,38 @@
+schemaVersion: eval_verdict_v2
+questionId: sd-aml-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: partial
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: partial
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 3
+factsExpected: 4
+citationsTotal: 2
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/aml-cft/terrorism-article-19.md
+    supportsClaim: true
+    notes: "File directly supports Art 19 as general SAR duty with subjective belief/suspicion limb and reasonable-excuse defence."
+  - path: knowledge/jersey/aml-cft/terrorism-article-21.md
+    supportsClaim: true
+    notes: "File directly supports Art 21 as FI-specific failure-to-disclose with objective 'reasonable grounds' limb catching negligent failure."
+stretchPromotions: []
+stretchSuggestions:
+  - "Article 19 is the CFT analogue of the POCL Article 34A general SAR duty"
+  - "'Regulated business' for Art 21 is defined by Schedule 2 to POCL 1999"
+summary: |
+  PARTIAL — agent correctly contrasted Art 19 (subjective, anyone in trade/profession/
+  business/employment) with Art 21 (regulated business, objective "reasonable grounds"
+  limb catching negligent failure), and explicitly flagged the draft status of both
+  cited files with a re-verify caveat. Missed the fourth expected fact: did not name
+  Article 35 as the tipping-off article that applies after disclosure, and did not
+  cite terrorism-article-35.md (which was in expected_files). The cross-reference
+  blocks in -19.md and -21.md flag Art 35 explicitly — the next-iteration signal is
+  that retrieval stopped at the two adjacency files rather than following the bolded
+  Art 35 pointer through.
+errors: []

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sd-aml-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T12:39:41.803Z",
+  "wallClockSeconds": 30.772,
+  "turns": 6,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__findByTag",
+      "rawName": "mcp__corpus__findByTag",
+      "inputDigest": "{\"tags\":[\"sar\",\"aml-cft\"],\"mode\":\"and\"}",
+      "inputBytes": 39,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"article 19\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\" | head -20\",\"description\":\"Find files mentioning Article ",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"terrorism\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ --include=\\\"*.md\\\" | head -20\",\"description\":\"Find files mentioning terrorism",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/terrorism-article-19.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/aml-cft/terrorism-article-21.md\"}",
+      "inputBytes": 59,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 8,
+    "outputTokens": 1511,
+    "cacheReadTokens": 168828,
+    "cacheWriteTokens": 88696,
+    "totalCostUsd": 0.676579
+  },
+  "answer": {
+    "text": "Both files are `draft` status and 1 day old — I'll flag the draft status per the system prompt, but they're sufficient to ground the answer.\n\n## Article 19 vs Article 21 — Terrorism (Jersey) Law 2002 SAR duties\n\nThe two offences cover the same conduct — failing to disclose suspected terrorism-financing offences under Articles 15, 16, or 16A to the FIU as soon as reasonably practicable — but apply different fault tests to different populations.\n\n**Article 19 — general duty.** Applies to anyone who acquires the information \"in the course of a trade, profession, business or employment\". The fault standard is **subjective**: the person must actually **believe or suspect** that another has committed an Article 15/16/16A offence. A reasonable-excuse defence is available.\n- Citation: `knowledge/jersey/aml-cft/terrorism-article-19.md`\n\n**Article 21 — financial-institution failure-to-disclose.** Applies to persons carrying on **regulated business** as defined in Schedule 2 to POCL 1999. The fault standard adds an **objective limb**: the person commits the offence if they knew, suspected, **or had reasonable grounds for knowing or suspecting**. This catches **negligent** failure to spot suspicion that Article 19 (subjective only) would not reach. Reasonable excuse, including legal-professional-privilege carve-out, is available.\n- Citation: `knowledge/jersey/aml-cft/terrorism-article-21.md`\n\n**The practical difference.** Article 19 is the CFT analogue of the POCL Article 34A general SAR duty; Article 21 is the CFT analogue of the regulated-sector \"should have known\" enhancement that drives the JFSC AML/CFT Handbook's CDD, transaction-monitoring, and SAR disciplines. For a regulated MLRO, Article 21 is the operative trigger because it converts process failures into offences without requiring proof of subjective suspicion.\n\n**Caveat.** Both corpus files are `status: draft` (last verified 2026-05-25), which means the content is drafted but not yet fully editorially verified against the primary statute. Re-check the wording of the offences against the Terrorism (Jersey) Law 2002 on jerseylaw.je before relying on the specific drafting in any compliance work.\n\n### Cited files\n\n1. `knowledge/jersey/aml-cft/terrorism-article-19.md`\n2. `knowledge/jersey/aml-cft/terrorism-article-21.md`\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 338
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "a35f9aef-1fc6-47d8-afc2-b5145cbe77ff"
+  }
+}

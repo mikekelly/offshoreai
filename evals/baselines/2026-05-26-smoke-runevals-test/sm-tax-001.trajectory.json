@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "sm-tax-001",
+  "evalSuite": "evals/coverage-questions.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T12:39:46.040Z",
+  "wallClockSeconds": 32.258,
+  "turns": 3,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/tax/zero-ten.md\"}",
+      "inputBytes": 43,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "mcp__corpus__getFile",
+      "rawName": "mcp__corpus__getFile",
+      "inputDigest": "{\"path\":\"knowledge/jersey/international/pillar-two-mcit.md\"}",
+      "inputBytes": 60,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 7,
+    "outputTokens": 1815,
+    "cacheReadTokens": 104160,
+    "cacheWriteTokens": 67704,
+    "totalCostUsd": 0.52064
+  },
+  "answer": {
+    "text": "**Headline Jersey rate.** A Jersey-incorporated trading company that isn't a \"financial services company\" (Article 123D), utility (Article 123C(3)), large corporate retailer (Article 123I), hydrocarbon trader (Article 123CAA(1)), cannabis trader (Article 123DA), or earning Jersey-land/property income is taxed at the **0% standard rate** under **Article 123C(2)** of the Income Tax (Jersey) Law 1961. Assuming your group is a straightforward trading business in one of those neutral categories, your Jersey corporate tax rate at company level is **0%**. ([`knowledge/jersey/tax/zero-ten.md`](knowledge/jersey/tax/zero-ten.md))\n\n**Pillar Two does add on top.** Your group is above the **EUR 750m consolidated-revenue threshold**, so for accounting periods beginning on or after **1 January 2025** the Jersey **Multinational Corporate Income Tax (MCIT)** brings the effective rate on Jersey profits up to the GloBE **15% minimum**. Jersey's MCIT is structured as a **Qualified Domestic Minimum Top-up Tax (QDMTT)** — meaning Jersey collects the top-up itself rather than ceding it to the parent jurisdiction's Income Inclusion Rule (IIR). Jersey has implemented a Qualified IIR alongside the QDMTT but has **not** implemented a UTPR. ([`knowledge/jersey/international/pillar-two-mcit.md`](knowledge/jersey/international/pillar-two-mcit.md); [`knowledge/jersey/history/finance/trajectory.md`](knowledge/jersey/history/finance/trajectory.md))\n\n**Net answer for you.** Statutory rate 0% under zero-ten, but because consolidated group revenue exceeds EUR 750m the effective rate on in-scope Jersey profits is **topped up to 15%** by MCIT 2025. Compliance: MCIT return, GloBE ETR calculation, GIR coordination with the parent jurisdiction. Substance Law 2019 obligations sit alongside MCIT and are unaffected by it.\n\n**Caveats.**\n- Both cited files are **`status: draft`** (not yet `stable` / `review`) — the substance reflects the 2025 regime as understood, but verify against Revenue Jersey and the GloBE primary sources before acting.\n- This assumes the trading business doesn't fall into one of the 10% or 20% categories — if it's regulated under FSJL 1998 / BBL 1991 / IBL 1996 / CIFL 1988, or trades hydrocarbons, cannabis, or Jersey property, the pre-Pillar-Two rate is different (though MCIT still tops the effective rate to 15% for in-scope groups).\n- Group structure matters for the EUR 750m test: it's measured at consolidated level over 2 of the preceding 4 years, with carve-outs for excluded entities and the substance-based income exclusion.\n\n### Cited files\n1. [`knowledge/jersey/tax/zero-ten.md`](knowledge/jersey/tax/zero-ten.md)\n2. [`knowledge/jersey/international/pillar-two-mcit.md`](knowledge/jersey/international/pillar-two-mcit.md)\n3. [`knowledge/jersey/history/finance/trajectory.md`](knowledge/jersey/history/finance/trajectory.md)\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 379
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 34672,
+      "appendSha256": "8094dc1b6b556f6b"
+    },
+    "sessionId": "ba2d2fce-4169-46f5-930d-5937eccb6f73"
+  }
+}

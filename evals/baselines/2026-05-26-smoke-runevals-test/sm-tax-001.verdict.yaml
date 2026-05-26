@@ -1,0 +1,46 @@
+schemaVersion: eval_verdict_v2
+questionId: sm-tax-001
+harness: offshoreai-agent
+ranAt: 2026-05-26T13:39:00Z
+overall: pass
+dimensions:
+  substance: pass
+  stretch:
+    covered: 2
+    expected: 2
+  jerseySpecific: pass
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: n/a
+factsCovered: 7
+factsExpected: 7
+citationsTotal: 3
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/tax/zero-ten.md
+    supportsClaim: true
+    notes: Canonical zero-ten file; supports 0% Article 123C(2), 10% Article 123D, all 20% categories (utilities/large retailers/hydrocarbon/cannabis/property).
+  - path: knowledge/jersey/international/pillar-two-mcit.md
+    supportsClaim: true
+    notes: Supports MCIT 2025 effective date, EUR 750m threshold, 15% top-up, QDMTT framing, IIR/UTPR mechanics; the deep MCIT file (a strong equivalent for expected pillar-two.md).
+  - path: knowledge/jersey/history/finance/trajectory.md
+    supportsClaim: true
+    notes: Explicitly states Jersey has implemented QDMTT + Qualified IIR and has NOT implemented a UTPR (L207-210) — backs the "IIR adopted, no UTPR" claim.
+stretchPromotions:
+  - "0% standard rate is imposed under Article 123C(2) of the Income Tax (Jersey) Law 1961"
+  - "EUR 750m threshold measured at consolidated level over 2 of the preceding 4 years"
+stretchSuggestions:
+  - "Substance Law 2019 obligations sit alongside MCIT and are unaffected by it"
+  - "MCIT compliance: MCIT return, GloBE ETR calculation, GIR coordination with parent jurisdiction"
+  - "Substance-based income exclusion (payroll + tangible assets) within GloBE methodology"
+summary: |
+  PASS — 7/7 expected facts covered with zero hallucinated citations. Agent
+  correctly stated Jersey has implemented MCIT as QDMTT + Qualified IIR with
+  no UTPR — the inverted-IIR error from the earlier explore-subagent run is
+  resolved on the production harness. Most useful signal: candidate cited
+  the deeper international/pillar-two-mcit.md instead of the
+  expected tax/pillar-two.md (the more canonical home for the
+  "what Jersey adopted" table) — both files support the claim, but
+  citation_recall could be tightened by routing through pillar-two.md first.
+errors: []

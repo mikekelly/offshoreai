@@ -732,6 +732,11 @@ questions:
       - "knowledge/jersey/tax/zero-ten.md"
       - "knowledge/jersey/tax/pillar-two.md"
       - "knowledge/jersey/international/pillar-two-mcit.md"
+    stretch_facts:
+      # added by eval-manager 2026-05-26T13:39:00Z (run-id: 2026-05-26-smoke-runevals-test)
+      - "0% standard rate is imposed under Article 123C(2) of the Income Tax (Jersey) Law 1961"
+      # added by eval-manager 2026-05-26T13:39:00Z (run-id: 2026-05-26-smoke-runevals-test)
+      - "EUR 750m threshold measured at consolidated level over 2 of the preceding 4 years"
     score:
       2026-05-26-measured: partial  # explore-subagent smoke (NOT the production harness — see harness_note in summary): got zero-ten 0%/10%/20%, MCIT, 750m threshold, 15% top-up, no UTPR — but FACTUAL ERROR: agent stated Jersey has NOT adopted the IIR. Corpus (jersey/tax/pillar-two.md L65-68 and jersey/international/pillar-two-mcit.md) is explicit that Jersey adopted QDMTT + IIR (only UTPR not adopted). Cited 4 real files including itl-article-123d.md and pillar-two.md. Signal: the "what Jersey adopted vs didn't" framing in pillar-two.md could be clearer; consider an at-a-glance table.
       2026-05-26-measured-offshoreai-agent: pass  # 7/7 facts, 0 hallucinated citations. Agent reached jersey/international/pillar-two-mcit.md (the deep file) and correctly stated "Jersey has implemented MCIT as a QDMTT and an IIR for in-scope groups; it has not implemented a UTPR" — the explore-subagent error inverted; production stack got it right. Citation verifier rejected 2 claims during the run (real signal worth investigating); grader scored 7/7 facts on the final answer. Cost: $0.59 per question. Hypothesis confirmed: the production harness's MCP-corpus-getFile-driven deep retrieval + verifier discipline lifts the explore-subagent partial to PASS.
