@@ -1107,7 +1107,7 @@ summary:
       edu-001 found DL 2013 discrimination overlay) —
       indicating the cross-reference graph is functioning
       well beyond the expected_facts narrowly defined.
-    notes: |
+    iteration_log: |
       Six gap-fill iterations completed in single session
       (residential tenancy → family law → road traffic → planning
        → welfare → criminal procedure). Each iteration:
@@ -1144,7 +1144,7 @@ summary:
       - Continue gap-filling against the wider COVERAGE-AUDIT.md
         top-20 (mental capacity, education, freedom of
         information, consumer safety, etc.)
-    notes: |
+    v3_baseline_notes: |
       v3 FULL EXTERNALLY MEASURED RUN — all 17 questions
       executed via fresh Explore subagents constrained to
       filesystem reads on the jersey/ corpus only.
