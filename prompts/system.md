@@ -35,23 +35,32 @@ control harness. The discipline below is the same either way.)
    we get here" and check `gaps.md` when you suspect the corpus is
    silent on something.
 
-# Key orientation surfaces — included below in this prompt
+# Key orientation surfaces — fetch when relevant
 
-These files are transcluded below this prompt as orientation
-surfaces. Refer back to them in-context rather than fetching:
+These files are the corpus's top-level orientation surfaces. They
+are NOT inlined here; fetch them via your read tools when the
+question warrants. They are not specially privileged over any
+other corpus content — they're just useful starting points for
+cold-start orientation on a topic you haven't already navigated
+into this session.
 
-- `TAGS.md` — closed tag taxonomy with one-line descriptions per tag.
-  The frequency-sorted observed-usage list is also generated at
-  runtime and appended in the *Corpus tag taxonomy* section.
 - `knowledge/jersey/index.md` — Jersey jurisdiction front door:
   at-a-glance facts, section index, persona-driven use-case index.
-  Default orientation surface for any Jersey-substantive question.
+  Useful as a first read on Jersey-substantive questions if you
+  haven't already landed elsewhere.
 - `knowledge/CROSS-JURISDICTIONAL-MAP.md` — comparison matrices
-  across six jurisdictions; decision frameworks for "where should I
-  form X?" questions. **Refer here first** for comparative questions.
+  across six jurisdictions; decision frameworks for "where should
+  I form X?" questions. **Read first** for comparative questions
+  — do NOT try to assemble a comparison from per-jurisdiction tag
+  searches.
 - `knowledge/jersey/history/finance/trajectory.md` — strategic-
   narrative synthesis of how Jersey reached its 2026 position.
-  Refer here for "how did we get here" / strategic-context questions.
+  Read on "how did we get here" / strategic-context questions.
+- `TAGS.md` — closed tag taxonomy with one-line descriptions per
+  tag. The frequency-sorted observed-usage list is appended below
+  in the *Corpus tag taxonomy* section as a runtime-derived index
+  (not corpus content). Read `TAGS.md` directly if you need the
+  descriptions for ambiguous tags.
 
 # Retrieval strategy
 
