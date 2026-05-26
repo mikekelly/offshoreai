@@ -63,10 +63,20 @@ Jersey companies pay 0% under zero-ten. Without action, Pillar
 Two would have allowed **foreign parent jurisdictions** to
 collect the 15% top-up tax on Jersey-booked income.
 
-Jersey chose to **collect the top-up itself** through the MCIT,
-which is structured as a Jersey **QDMTT-equivalent** — the
-**Income Inclusion Rule (IIR)** and a **Domestic Top-up Tax
-(DTT)** for in-scope MNE-group entities.
+Jersey chose to **collect the top-up itself** through the MCIT.
+Of the three OECD Pillar Two mechanisms, Jersey adopted two:
+
+| OECD mechanism | What it does | **Jersey adopted?** |
+|---|---|---|
+| **Qualified Domestic Minimum Top-up Tax (QDMTT)** — implemented in Jersey as the **Domestic Top-up Tax (DTT)** | Low-tax jurisdiction collects its own top-up first, before any other jurisdiction can | **Yes** — this is the heart of MCIT |
+| **Qualified Income Inclusion Rule (IIR)** | Parent jurisdiction collects top-up on its low-taxed subsidiaries elsewhere | **Yes** — Jersey applies IIR where a Jersey parent has low-taxed foreign subsidiaries |
+| **Undertaxed Profits Rule (UTPR)** | Residual / backstop rule allocating top-up to other group jurisdictions when IIR doesn't reach | **No** — not implemented |
+
+So MCIT is structured around **QDMTT (collected domestically as
+DTT) + IIR (for Jersey-parent groups with foreign low-taxed
+subsidiaries)**, with no UTPR. The DTT is the practical mechanism
+that captures top-up tax on the Jersey-source income of in-scope
+groups.
 
 ## Who is in scope
 

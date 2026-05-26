@@ -62,7 +62,18 @@ privilege carve-out.
 ## Cross-references
 
 - [`./terrorism-article-19.md`](./terrorism-article-19.md)
-  — general SAR duty.
+  — general SAR duty (subjective limb, applies to anyone in
+  trade / profession / business / employment).
+- **[`./terrorism-article-35.md`](./terrorism-article-35.md) —
+  tipping off**. After a SAR is filed under this Article, the
+  disclosure-side constraint shifts to Art 35 — the tipping-off
+  offence. NB: Art 23 ("Restrictions on disclosure") is about
+  onward use of information already disclosed to authorities; it
+  is **not** the tipping-off article. The tipping-off offence is
+  **Article 35**.
+- [`./terrorism-article-22.md`](./terrorism-article-22.md)
+  — protected disclosures (civil-liability immunity for the
+  discloser).
 - [`./pocl-article-34a.md`](./pocl-article-34a.md) — POCL
   ML counterpart.
 - [`./amlh-sars.md`](./amlh-sars.md) — JFSC Handbook SAR

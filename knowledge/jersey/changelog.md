@@ -15,6 +15,45 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — Corpus-clarity fixes from smoke partials
+
+Two corpus edits landing the defence-in-depth fixes for the smoke
+partials surfaced in the 2026-05-26-smoke-explore-subagent batch.
+Both partials had already flipped to PASS under the production
+offshoreai-agent harness (commit `feac943`), but the underlying
+content weaknesses are still worth addressing so any harness
+landing on these files navigates correctly.
+
+**Terrorism Law cross-reference graph — Art 19 / 21 / 23 → Art 35.**
+The explore-subagent run mistook Article 23 ("Restrictions on
+disclosure") for the tipping-off offence, because Articles 19 and
+21 had no cross-reference to Article 35 (the actual tipping-off
+offence). Added explicit cross-references and a disambiguator
+block to `terrorism-article-23.md` calling out that Art 23 is not
+the tipping-off offence and pointing to Art 35. Files modified:
+`terrorism-article-19.md`, `terrorism-article-21.md`,
+`terrorism-article-23.md`.
+
+**Pillar Two adoption table — `pillar-two.md`.** Original prose
+read as "MCIT is a QDMTT-equivalent — the IIR and a DTT", which a
+careful reader could (and did) parse as "Jersey did not adopt IIR".
+Added an at-a-glance table showing the three OECD mechanisms
+(QDMTT/DTT, IIR, UTPR) and whether Jersey adopted each, with
+explicit Yes/Yes/No. The body text now unambiguously says Jersey
+adopted QDMTT (as DTT) and IIR; UTPR not adopted. File modified:
+`knowledge/jersey/tax/pillar-two.md`.
+
+## 2026-05-26 — Eval policy: drop the control by default
+
+`evals/README.md` updated to reflect the policy decision: routine
+eval runs go through the `offshoreai-agent` harness only — no
+claude-p control runs as part of the standard workflow. Rationale:
+the eval system's primary purpose during dev is regression
+detection, which doesn't need a control. Cost discipline matters
+more than methodological purity for routine work. The claude-p
+harness code path is retained for one-off use (e.g. external-pitch
+comparisons) but is no longer documented as the default.
+
 ## 2026-05-26 — First measured smoke run — 7 pass / 2 partial
 
 First measured run of the default smoke set (9 questions in a

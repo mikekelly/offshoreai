@@ -106,16 +106,23 @@ pnpm -F @offshoreai/agent eval --harness offshoreai-agent \
 Plus the adversarial smoke ID (`adv-nonexistent-llc-article` in
 `adversarial-citations.yaml`) in the same batch.
 
-There are also two control harnesses you can run against the smoke set
-to measure the production agent's lift:
-- `claude-p` — `claude -p --bare --system-prompt-file prompts/system.md`,
-  same system prompt as offshoreai-agent but only Read/Glob/Grep/Bash
-  filesystem tools (no MCP corpus tools, no citation verifier).
-- `explore-subagent` — Claude Code's in-session `Agent` tool with
-  `subagent_type: "Explore"`. Used for quick in-session checks during
-  dev work. **Not a substitute for the smoke harness** — it lacks both
-  the MCP corpus tools AND `prompts/system.md` (it gets only the
-  prompt you write in your `Agent` tool call).
+### No control by default
+
+The eval-runner also supports `--harness claude-p` (CLI-based,
+same system prompt, no MCP corpus tools, no verifier) and
+`--harness explore-subagent` (in-session quick-check via the
+Agent tool). Both remain available for one-off use, but **routine
+eval runs use `offshoreai-agent` only** — we don't run a control
+harness as part of the standard workflow. Rationale: the eval
+system's primary purpose during dev is regression detection,
+which doesn't need a control. Cost discipline matters more than
+methodological purity for routine work. If we ever need a proper
+apples-to-apples control comparison (e.g. for an external pitch),
+the harness is there and can be invoked on demand.
+
+The trajectory metadata records `harness: offshoreai-agent` so
+identifying which runs went through which harness remains
+transparent in committed artifacts.
 
 Procedure for the default smoke run:
 

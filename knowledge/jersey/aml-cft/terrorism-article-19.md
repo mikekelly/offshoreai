@@ -57,9 +57,18 @@ Article 19 would not reach.
 ## Cross-references
 
 - [`./terrorism-article-21.md`](./terrorism-article-21.md)
-  — financial-institution failure-to-disclose offence.
+  — financial-institution failure-to-disclose offence (objective
+  "reasonable grounds" limb).
 - [`./terrorism-article-22.md`](./terrorism-article-22.md)
-  — protected disclosures.
+  — protected disclosures (the discloser's civil-liability
+  immunity).
+- **[`./terrorism-article-35.md`](./terrorism-article-35.md) —
+  tipping off**. After a disclosure under this Article, the
+  disclosure-side constraint shifts to Art 35 — the tipping-off
+  offence. NB: Art 23 ("Restrictions on disclosure") is about
+  onward use of information already disclosed to authorities; it
+  is **not** the tipping-off article. The tipping-off offence is
+  **Article 35**.
 - [`./pocl-article-34a.md`](./pocl-article-34a.md) — POCL
   ML general SAR duty.
 - [`./amlh-sars.md`](./amlh-sars.md) — JFSC Handbook SAR
