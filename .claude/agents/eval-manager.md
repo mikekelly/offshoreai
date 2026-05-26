@@ -165,14 +165,48 @@ For each dimension that scored partial/fail (or each missed expected_fact):
 4. **Write one short diagnosis paragraph** (1-3 sentences) noting the specific files / line numbers / quoted text found.
 5. **Write one `suggestedFix` line** stating what the maintainer should do.
 
-**These diagnostics MUST be written to the structured `failureDiagnostics:` field of the verdict.yaml (see step 7 for the exact schema).** Do not just describe them in your return message to the orchestrator or in the `summary:` field — they need to be in the structured `failureDiagnostics:` array so the orchestrator can aggregate them into the batch `fixBacklog`. Your return message will reference them; the YAML carries them.
+### REQUIRED OUTPUT FOR THIS STEP
+
+When `overall != pass`, your verdict.yaml **MUST** contain a top-level `failureDiagnostics:` array with one entry per non-pass dimension and one entry per missed `expected_fact` / `showcase_bar` item. **This is not optional and the verdict is incomplete without it.** If you describe failures only in `summary:` or only in your return message, you have skipped the step.
+
+**Self-check before calling Write on the verdict file**: is `overall` partial or fail? Then `failureDiagnostics:` MUST be present and non-empty. Count entries against the non-pass dimensions plus missed facts. If the counts don't match, add the missing entries before writing.
+
+Inline schema (same as step 7, repeated here so you don't have to scroll):
+
+```yaml
+failureDiagnostics:
+  - dimension: substance              # substance | citationPrecision | citationRecall | freshnessHandling | voice | jerseySpecific
+    fact: "Contract héréditaire form" # omit field unless dimension is substance or jerseySpecific
+    issue: "Rubric-required term 'contrat héréditaire' not used in answer despite being in cited commercial-leases.md."
+    classification: corpus-exposure   # agent-discipline | corpus-exposure | corpus-content-gap | rubric-phrasing | candidate-variance | unclassified
+    diagnosis: |
+      Grep finds "contrat héréditaire" only at commercial-leases.md:42 in
+      a bullet about 9+ year leases. Candidate read that file but the
+      term sat in a narrow lease context that doesn't match the
+      property-transfer framing of this question, so the agent didn't
+      promote it.
+    suggestedFix: |
+      Surface "contrat héréditaire" in knowledge/jersey/property/contract-passing.md
+      as the term-of-art for any Royal-Court-passed real-property contract,
+      not just 9+ year leases.
+
+  - dimension: freshnessHandling
+    issue: "All 6 cited files are status:draft; answer did not flag this."
+    classification: agent-discipline
+    diagnosis: |
+      All 6 files the agent cited carry status:draft in frontmatter.
+      prompts/system.md §Freshness handling requires flagging draft files
+      to the user; agent skipped this on every citation.
+    suggestedFix: |
+      Prompt-side reminder. Strengthen freshness section to mandate
+      flagging when ALL cited files are draft.
+```
 
 **Discipline notes:**
 
 - You are diagnosing, not fixing. Do NOT edit corpus content. Do NOT edit `expected_facts` or the question text. You may continue to append to `stretch_facts` per step 6's scope rules, but corpus / rubric fixes are surfaced for human review, not applied by you.
-- Keep diagnoses short. The verdict YAML is a maintainer report, not an essay. One paragraph + one fix line per failure.
+- Keep diagnoses short. One paragraph + one fix line per failure entry.
 - If you can't classify confidently, label `unclassified` and describe what's ambiguous. Better than a wrong classification.
-- **If you find yourself listing failure observations in your `summary:` field or in your return message to the orchestrator, stop and ask: should each of these be its own `failureDiagnostics:` entry?** Almost always yes. The summary should be a one-paragraph narrative; the failureDiagnostics array is the structured carrier of the per-failure analysis.
 
 ### 6. Identify candidate stretch facts and (selectively) promote
 

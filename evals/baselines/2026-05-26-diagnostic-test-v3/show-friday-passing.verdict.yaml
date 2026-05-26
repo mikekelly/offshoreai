@@ -1,0 +1,43 @@
+schemaVersion: eval_verdict_v2
+questionId: show-friday-passing
+harness: offshoreai-agent
+ranAt: 2026-05-26T00:00:00Z
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: fail
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 6
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/contract-passing.md
+    supportsClaim: partial
+    notes: Supports general Royal Court passing, Samedi Division, Norman customary-law inheritance, lawyers as attorneys; does not itself mention Friday or Jurats.
+  - path: knowledge/jersey/property/real-property-overview.md
+    supportsClaim: true
+    notes: Supports Norman customary-law foundation, Royal Court passing, Greffier recording, English-conveyancing comparison.
+  - path: knowledge/jersey/property/commercial-leases.md
+    supportsClaim: true
+    notes: Direct support — "Passing on a Friday afternoon at the Royal Court", "Two Jurats sit to witness". Also the one file using "contrat héréditaire" (which the agent did not carry across).
+  - path: knowledge/jersey/property/flying-freeholds.md
+    supportsClaim: true
+    notes: Confirms "Royal Court passing (Friday afternoon)".
+  - path: knowledge/jersey/contract/force-majeure.md
+    supportsClaim: true
+    notes: Confirms "Royal Court passing required (Friday afternoon)" and force-majeure scenario.
+  - path: knowledge/jersey/legal-system/royal-court.md
+    supportsClaim: true
+    notes: Supports Samedi Division etymology (historical Saturday sittings), Jurats role, division formations.
+stretchPromotions: []
+stretchSuggestions:
+  - "Contrat héréditaire applies specifically to leases of 9+ years (per commercial-leases.md) — distinction worth surfacing"
+  - "Samedi Division etymology — named after historical Saturday sittings, now sits most weekdays"
+  - "Hypothec registration on the same passing day for buyer's lender"
+summary: |
+  PARTIAL — the agent covered 5 of 6 substance facts (Royal Court passing, Friday-afternoon timing, two Jurats witnessing, Norman-customary-law / non-Jersey-reader framing, public-record visibility) but omitted the *contrat héréditaire* terminology that the rubric explicitly expected and that commercial-leases.md actually carries. Citations were precise and well-distributed — every cited file supported the claims it was attached to, with no hallucinations. The most load-bearing miss is the freshness signal: all six cited files are `status: draft` and the agent did not flag this once, which violates the system-prompt freshness discipline. Next-iteration improvement: surface the *contrat héréditaire* term explicitly (it is the Jersey-specific name for the instrument and a known showcase-bar item) and append the standard draft-citation freshness note when every supporting file is draft.
+errors: []
