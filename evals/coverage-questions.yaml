@@ -12,7 +12,7 @@
 #
 # Last full run: 2026-05-18 (initial baseline)
 
-version: 3-postfill
+version: 4-sectioned
 last_run: 2026-05-18
 notes: |
   v1 (2026-05-18): self-graded baseline after residential-tenancy build.
@@ -25,6 +25,104 @@ notes: |
   rt-rd-001 and rt-rd-002 re-measured and converted FAIL → PASS.
   Running score: 14 pass / 3 fail. Remaining 3 gaps: planning,
   welfare, PPCE — the next gap-fill targets.
+  v4-sectioned (2026-05-26): introduced top-level `sections:` map
+  so the eval suite can be run a portion at a time rather than as
+  a whole-suite token burn. Added `statute-depth-companies` and
+  `statute-depth-aml` sections probing per-Article distinctions
+  exposed by the May 2026 statute-wiki build-out (LLC 2018,
+  partnership family, Terrorism 2002, Forfeiture 2018,
+  Investigation of Fraud 1991, PoCSB 2008). Legacy questions
+  retain their ID-prefix grouping; the new sections-map maps each
+  prefix to a section name. New statute-depth questions are
+  pending first measured run.
+
+# =====================================================
+# Sections — for selective eval runs
+# =====================================================
+#
+# The runner can filter by section so only a subset of questions
+# runs. This keeps token cost proportional to what changed: when
+# a doctrinal section is touched, run only that section's eval —
+# not the whole suite.
+#
+# Each section maps an ID prefix to a description and a sample
+# command. The legacy ID-prefix groups are documented for the
+# existing 26 questions; new questions added in v4+ should carry
+# an explicit `section:` field on the question itself.
+sections:
+  residential-tenancy:
+    prefix: "rt-"
+    description: "Residential Tenancy Law 2011 + 2025 Amendment"
+    legacy: true
+  road-traffic:
+    prefix: "rt-rd-"
+    description: "Road Traffic Law 1956 + Parish Hall Enquiry"
+    legacy: true
+  planning:
+    prefix: "pl-"
+    description: "Planning and Building Law 2002"
+    legacy: true
+  family:
+    prefix: "fa-"
+    description: "Matrimonial Causes / Children / Civil Partnership"
+    legacy: true
+  capacity:
+    prefix: "cap-"
+    description: "Capacity and Self-Determination Law 2016"
+    legacy: true
+  mental-health:
+    prefix: "mh-"
+    description: "Mental Health Law 2016"
+    legacy: true
+  civil-liberties:
+    prefix: "civ-"
+    description: "Civil Liberties — discrimination / FOI / RIPL"
+    legacy: true
+  freedom-of-information:
+    prefix: "foi-"
+    description: "Freedom of Information Law 2011"
+    legacy: true
+  investigatory-powers:
+    prefix: "ripl-"
+    description: "Regulation of Investigatory Powers Law 2005"
+    legacy: true
+  education:
+    prefix: "edu-"
+    description: "Education Law 1999"
+    legacy: true
+  consumer-safety:
+    prefix: "cs-"
+    description: "Consumer Safety regime"
+    legacy: true
+  health-safety-work:
+    prefix: "hsw-"
+    description: "Health & Safety at Work Law 1989"
+    legacy: true
+  rented-dwellings:
+    prefix: "rd-"
+    description: "Rented Dwellings (standards) Law"
+    legacy: true
+  welfare:
+    prefix: "we-"
+    description: "Social Security + Income Support"
+    legacy: true
+  criminal-procedure:
+    prefix: "cr-"
+    description: "PPCE 2003"
+    legacy: true
+  sanity:
+    prefix: "sn-"
+    description: "Sanity checks on original professional personas — should pass; flag regressions"
+    legacy: true
+  # ---- v4 sections ----
+  statute-depth-companies:
+    prefix: "sd-co-"
+    description: "Per-Article depth on LLC 2018 + partnership family + Takeovers Panel 2009"
+    legacy: false
+  statute-depth-aml:
+    prefix: "sd-aml-"
+    description: "Per-Article depth on Terrorism 2002, Forfeiture 2018, IFL 1991, PoCSB 2008"
+    legacy: false
 
 questions:
 
@@ -546,6 +644,185 @@ questions:
     score:
       2026-05-18: pass  # original coverage intact
       2026-05-18-measured: pass  # v3 Agent-tool runner: agent surfaced richer detail than expected_facts captured — the DSP delegation model in JPF; 48-hour authorisation; Expert Fund minimum-investment thresholds. Expected_facts list should be ratcheted up. Original funds content intact.
+
+  # =====================================================
+  # STATUTE-DEPTH — COMPANIES (added 2026-05-26)
+  # Probes per-Article distinctions exposed by the LLC 2018,
+  # partnership-family (LP/ILP/SLP/LLP), and TMP 2009 wikis.
+  # =====================================================
+  - id: sd-co-001
+    section: statute-depth-companies
+    persona: fund-counsel
+    asked_by: gp-counsel
+    question: "Can I contract out of fiduciary duties to other LLC members in a Jersey LLC operating agreement? What floor remains in place?"
+    expected_facts:
+      - "Article 47 permits expanding, restricting, or eliminating duties"
+      - "Duty of good faith cannot be eliminated"
+      - "Fraud / wilful default / gross negligence floor — liability cannot be excluded"
+      - "Contrast: Jersey company directors' fiduciary duties under CJL 1991 are largely non-modifiable"
+      - "Delaware-LLC-style flexibility"
+    expected_files:
+      - "knowledge/jersey/companies/llc-article-47.md"
+      - "knowledge/jersey/companies/llc-article-3.md"
+    score:
+      2026-05-26: pending  # awaiting first measured run
+
+  - id: sd-co-002
+    section: statute-depth-companies
+    persona: fund-counsel
+    asked_by: gp-counsel
+    question: "How does the Jersey LLC solvency test on distributions compare to the Article 115 cash-flow test for Jersey companies?"
+    expected_facts:
+      - "LLC Article 37 has both cash-flow and net-asset limbs"
+      - "Companies Law Article 115 has cash-flow only"
+      - "LLC test is bilaterally stricter — net-asset limb added"
+      - "Manager liability for unlawful distribution"
+    expected_files:
+      - "knowledge/jersey/companies/llc-article-37.md"
+      - "knowledge/jersey/companies/article-115-solvency-test.md"
+    score:
+      2026-05-26: pending
+
+  - id: sd-co-003
+    section: statute-depth-companies
+    persona: fund-counsel
+    asked_by: fund-counsel
+    question: "What's the difference between a Jersey LP, ILP, and SLP? When would I choose each?"
+    expected_facts:
+      - "LP 1994 — no separate legal personality"
+      - "ILP 2011 — separate legal personality + body corporate"
+      - "SLP 2011 — separate legal personality, not body corporate"
+      - "ILP can hold property and contract in its own name; LP cannot"
+      - "SLP is the more common modern choice for funds; ILP for specific corporate-counterparty contexts"
+    expected_files:
+      - "knowledge/jersey/companies/lp-1994-index.md"
+      - "knowledge/jersey/companies/ilp-2011-index.md"
+      - "knowledge/jersey/companies/slp-2011-index.md"
+    score:
+      2026-05-26: pending
+
+  - id: sd-co-004
+    section: statute-depth-companies
+    persona: m-and-a-counsel
+    asked_by: takeovers-counsel
+    question: "For a Jersey-incorporated AIM-listed company subject to a takeover offer, when does the Jersey Takeovers Panel apply versus the UK City Code?"
+    expected_facts:
+      - "TMP 2009 establishes the Jersey Panel for Jersey-incorporated companies"
+      - "UK City Code applies to UK-listed Jersey companies via the City Panel's jurisdiction"
+      - "Dual notification in practice"
+      - "Substantive UK Code rules typically determinative; Jersey Panel oversees Jersey-law issues"
+    expected_files:
+      - "knowledge/jersey/companies/takeovers-panel-2009-index.md"
+      - "knowledge/jersey/external-rules/uk-takeover-code.md"
+    score:
+      2026-05-26: pending
+
+  # =====================================================
+  # STATUTE-DEPTH — AML/CFT (added 2026-05-26)
+  # Probes per-Article distinctions across the Terrorism Law 2002,
+  # Forfeiture Law 2018, Investigation of Fraud Law 1991, and
+  # PoCSB Law 2008 wikis.
+  # =====================================================
+  - id: sd-aml-001
+    section: statute-depth-aml
+    persona: mlro
+    asked_by: mlro
+    question: "What's the difference between the Terrorism Law Article 19 and Article 21 SAR duties?"
+    expected_facts:
+      - "Article 19 — general SAR duty, subjective belief/suspicion"
+      - "Article 21 — FI-specific, includes objective 'reasonable grounds' limb"
+      - "Article 21 catches negligent failure to spot suspicion"
+      - "Both routed to FIU; Art 35 tipping-off restriction applies after"
+    expected_files:
+      - "knowledge/jersey/aml-cft/terrorism-article-19.md"
+      - "knowledge/jersey/aml-cft/terrorism-article-21.md"
+      - "knowledge/jersey/aml-cft/terrorism-article-35.md"
+    score:
+      2026-05-26: pending
+
+  - id: sd-aml-002
+    section: statute-depth-aml
+    persona: legal-counsel
+    asked_by: jersey-counsel
+    question: "How does Jersey forfeit assets without a criminal conviction? What standard of proof applies and what is 'tainted property'?"
+    expected_facts:
+      - "Forfeiture of Assets (Civil Proceedings) Law 2018"
+      - "Balance of probabilities — civil standard"
+      - "Tainted property = obtained through, intended for, or representing unlawful conduct"
+      - "Dual-criminality test — overseas conduct included"
+      - "Summary procedure (cash, uncontested) vs general procedure (contested)"
+    expected_files:
+      - "knowledge/jersey/aml-cft/foa-article-2.md"
+      - "knowledge/jersey/aml-cft/foa-article-15.md"
+    score:
+      2026-05-26: pending
+
+  - id: sd-aml-003
+    section: statute-depth-aml
+    persona: cco
+    asked_by: cco
+    question: "What is the statutory basis for the JFSC AML/CFT Handbook? What's the legal consequence of non-compliance with a code of practice?"
+    expected_facts:
+      - "PoCSB Law 2008 Article 22 — codes of practice"
+      - "Code not strictly binding law in itself"
+      - "Relevant to enforcement decisions and prosecutions"
+      - "Failure may attract directions, intervention, public statements"
+    expected_files:
+      - "knowledge/jersey/aml-cft/pocsb-article-22.md"
+      - "knowledge/jersey/aml-cft/aml-cft-handbook.md"
+    score:
+      2026-05-26: pending
+
+  - id: sd-aml-004
+    section: statute-depth-aml
+    persona: legal-counsel
+    asked_by: jersey-counsel
+    question: "Does Jersey have an equivalent to the UK Serious Fraud Office's section-2 powers? What protections apply for the recipient of a notice?"
+    expected_facts:
+      - "Investigation of Fraud (Jersey) Law 1991"
+      - "Article 2 — Attorney General's investigation powers"
+      - "Notices to answer questions, furnish information, produce documents"
+      - "Banker / professional secrecy overridden; LPP preserved"
+      - "Self-incrimination — statements generally not admissible against the maker"
+    expected_files:
+      - "knowledge/jersey/aml-cft/iof-article-2.md"
+      - "knowledge/jersey/aml-cft/investigation-of-fraud-law-1991.md"
+    score:
+      2026-05-26: pending
+
+  - id: sd-aml-005
+    section: statute-depth-aml
+    persona: mlro
+    asked_by: mlro
+    question: "Our regulated TCB receives a customer-information order under the Forfeiture Law 2018 about a client. What are our compliance obligations and what can / can't we say to the client?"
+    expected_facts:
+      - "Forfeiture Law Article 22 — customer information orders"
+      - "Forfeiture Law Article 32 — specific tipping-off offence"
+      - "POCL Article 35A — broader tipping-off applies in parallel"
+      - "Cannot disclose to client; internal compliance/MLRO routing required"
+      - "LPP preserved; record-keeping discipline"
+    expected_files:
+      - "knowledge/jersey/aml-cft/foa-article-22.md"
+      - "knowledge/jersey/aml-cft/foa-article-32.md"
+      - "knowledge/jersey/aml-cft/pocl-article-35a.md"
+    score:
+      2026-05-26: pending
+
+  - id: sd-aml-006
+    section: statute-depth-aml
+    persona: cco
+    asked_by: cco
+    question: "Under what statute is the JFSC required to use a risk-based approach to AML supervision, and what FATF Recommendation does this implement?"
+    expected_facts:
+      - "PoCSB Law 2008 Article 8A"
+      - "Post-MoneyVal insertion"
+      - "FATF Recommendation 1 / 26 / 28"
+      - "JFSC supervisory resources concentrated on highest-risk businesses / sectors"
+    expected_files:
+      - "knowledge/jersey/aml-cft/pocsb-article-8a.md"
+      - "knowledge/jersey/aml-cft/moneyval.md"
+    score:
+      2026-05-26: pending
 
 # =====================================================
 # Summary tracking

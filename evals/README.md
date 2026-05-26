@@ -76,6 +76,37 @@ Manually, until automated:
 5. Update the `summary:` block.
 6. Commit.
 
+### Sectioned runs — run a portion, not the whole suite
+
+The full suite is a token burn. Most content changes touch
+one section; the eval pass should match that scope.
+
+`coverage-questions.yaml` carries a top-level `sections:`
+map that lists every section, the ID prefix that flags
+membership (e.g. `rt-` → residential-tenancy, `sd-co-` →
+statute-depth-companies, `sd-aml-` → statute-depth-aml),
+and whether the section is legacy (questions without an
+explicit `section:` field, grouped by prefix convention)
+or new-style (questions carry an explicit `section:`).
+
+Typical workflow:
+
+1. Identify which section(s) cover what you changed.
+   Doctrinal-corpus edits to LLC / partnership / TMP files
+   → `statute-depth-companies`. AML/CFT statute edits →
+   `statute-depth-aml`. Tenancy / family / planning gap-
+   fills → the relevant legacy section.
+2. Filter `coverage-questions.yaml` to that section's
+   ID-prefix(es) and run only those questions.
+3. Run the **`sanity`** section every time as a regression
+   guard — three sanity-check questions catch
+   doctrinal-corpus regressions introduced by the changes.
+4. Only run the full suite on the cadence in this README
+   (weekly initially, monthly once stable) or when a
+   cross-cutting change touches many sections.
+
+Goal: token spend proportional to scope of change.
+
 ### Scoring
 
 | Score | Meaning |

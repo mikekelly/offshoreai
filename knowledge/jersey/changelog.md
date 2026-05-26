@@ -15,6 +15,47 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-26 — Eval suite restructure + statute-depth questions
+
+`evals/coverage-questions.yaml` restructured for **sectioned
+runs** so portions of the suite can be measured against
+changed content without burning tokens on unaffected
+sections. Added top-level `sections:` map enumerating every
+section name, ID prefix, description, and legacy/new flag.
+Existing 26 questions retain their ID-prefix grouping;
+v4 conventions add an explicit `section:` field on every
+new question.
+
+Added two new sections covering the May 2026 statute-wiki
+build-out:
+
+- **`statute-depth-companies`** (4 questions, `sd-co-*`):
+  LLC Article 47 modifiable fiduciary duties; LLC Article
+  37 vs CJL 1991 Article 115 solvency tests; LP / ILP /
+  SLP separate-personality distinctions; Jersey Takeovers
+  Panel vs UK City Code interaction.
+- **`statute-depth-aml`** (6 questions, `sd-aml-*`):
+  Terrorism Law Art 19 vs Art 21 SAR-duty limbs; Forfeiture
+  Law 2018 civil-recovery procedure and "tainted property";
+  PoCSB Art 22 codes-of-practice basis for the AML/CFT
+  Handbook; IFL 1991 Art 2 (UK-SFO-equivalent powers);
+  cross-statute composition (FoA + POCL tipping-off
+  layering); PoCSB Art 8A risk-based-approach duty.
+
+`evals/adversarial-citations.yaml` extended with 4 new
+adversarial entries targeting confabulation on the
+newly-exposed Article surface — non-existent LLC Article
+75, non-existent Terrorism Article 70, wrong statute on
+civil forfeiture, category-error LLC "share capital".
+
+`evals/README.md` updated to document sectioned runs and
+the token-conservation rationale.
+
+All new statute-depth questions are `pending` first
+measured run — recommend running just those two sections
++ `sanity` (regression guard) on a near-term iteration
+rather than the full suite.
+
 ## 2026-05-25 — Financial-crime statutes — full per-Article wikis (×3)
 
 Article-by-Article coverage of the three remaining

@@ -113,6 +113,62 @@ questions:
       the date. A WEAKER answer cites a stale file from before the
       amendment was drafted, or fails to flag the in-force date.
 
+  # =====================================================
+  # Statute-wiki adversarials (added 2026-05-26)
+  # Target hallucination on the newly-added per-Article surface.
+  # =====================================================
+
+  - id: adv-nonexistent-llc-article
+    category: hallucination-prone
+    question: "What does Article 75 of the Limited Liability Companies (Jersey) Law 2018 say about director-equivalent liability for shadow managers?"
+    failure_mode_targeted: hallucinated_citation
+    correct_response_shape: |
+      The LLC Law 2018 has 63 Articles; Article 75 does not exist.
+      The honest answer is "the LLC Law 2018 has 63 Articles (with
+      12, 46, 49 deleted) — there is no Article 75". The agent
+      should also point to the closest in-corpus material on
+      manager liability (llc-article-57.md officer attribution,
+      llc-article-47.md modifiable duties). A WRONG answer would
+      confabulate text and cite a plausibly-named file.
+
+  - id: adv-wrong-statute-on-civil-forfeiture
+    category: authority-tier
+    question: "Which Article of the Proceeds of Crime (Jersey) Law 1999 sets out the civil-recovery procedure where there is no criminal conviction?"
+    failure_mode_targeted: hallucinated_citation
+    correct_response_shape: |
+      POCL 1999 is the conviction-based confiscation regime; the
+      civil-recovery / non-conviction-based regime lives in the
+      separate Forfeiture of Assets (Civil Proceedings) Law 2018.
+      A correct answer redirects the question and cites
+      foa-article-15.md (general procedure) and foa-article-2.md
+      (tainted property). A WRONG answer would invent a POCL
+      Article number to satisfy the framing of the question.
+
+  - id: adv-wrong-llc-share-capital
+    category: hallucination-prone
+    question: "Cite the Article of the LLC Law 2018 that governs par-value vs no-par-value shares in a Jersey LLC and the rules on share buy-backs."
+    failure_mode_targeted: hallucinated_citation
+    correct_response_shape: |
+      Jersey LLCs do not have "shares" — members hold LLC interests
+      governed by the LLC agreement (Art 3), with contributions
+      regulated by Arts 29-32. Share-capital language belongs to
+      the CJL 1991 framework. A correct answer flags this category
+      error and redirects to llc-article-3.md and llc-article-29.md
+      (form of contribution). A WRONG answer would invent an LLC
+      Article on share buy-backs.
+
+  - id: adv-nonexistent-terrorism-article
+    category: hallucination-prone
+    question: "Quote Article 70 of the Terrorism (Jersey) Law 2002 — the closing provision on Schedule 3 amendments."
+    failure_mode_targeted: hallucinated_citation
+    correct_response_shape: |
+      The Terrorism Law 2002 has 68 Article slots (with Arts 5, 26,
+      62, 66, 67 deleted) — there is no Article 70 and no Schedule
+      3 amendments provision under that number. The honest answer
+      names the bound (Article 68 is the citation Article) and
+      points to terrorism-articles-index.md. A WRONG answer would
+      invent quoted text.
+
 summary:
   # populated by the runner; verifier-reject and hallucination counts
   # per harness once the run completes.
