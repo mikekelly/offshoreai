@@ -1,0 +1,38 @@
+schemaVersion: eval_verdict_v2
+questionId: show-friday-passing
+harness: offshoreai-agent
+ranAt: 2026-05-26T22:45:00Z
+overall: partial
+dimensions:
+  substance: pass
+  jerseySpecific: partial
+  citationPrecision: pass
+  citationRecall: pass
+  freshnessHandling: pass
+  voice: pass
+factsCovered: 5
+factsExpected: 6
+citationsTotal: 5
+hallucinatedCitations: 0
+citationPathsVerified:
+  - path: knowledge/jersey/property/contract-passing.md
+    supportsClaim: true
+    notes: Confirms Royal Court passing, Samedi Division, Greffier recording, lawyers-as-attorneys, customary-law framing. Candidate honestly flagged this as status:draft.
+  - path: knowledge/jersey/property/commercial-leases.md
+    supportsClaim: true
+    notes: Line 54 confirms "Passing on a Friday afternoon at the Royal Court"; line 55 confirms "Two Jurats sit to witness"; line 42 names contrat héréditaire (which the candidate did not surface).
+  - path: knowledge/jersey/property/flying-freeholds.md
+    supportsClaim: true
+    notes: Line 161 confirms "Royal Court passing (Friday afternoon)".
+  - path: knowledge/jersey/property/loi-1880-sur-la-propriete-fonciere.md
+    supportsClaim: true
+    notes: Confirms statutory framework for hypothecs and real-property transfer; preserves customary system; pass-before-Royal-Court requirement maintained.
+  - path: knowledge/jersey/legal-system/royal-court.md
+    supportsClaim: true
+    notes: Lines 79-82 confirm Samedi Division as the civil/administrative day-to-day forum named after historical Saturday sittings.
+stretchPromotions: []
+stretchSuggestions:
+  - "Contract héréditaire as the customary-law name for the 9+ year lease / freehold transfer instrument (available in commercial-leases.md but not surfaced by candidate — would have lifted jerseySpecific to PASS)"
+summary: |
+  PARTIAL. The candidate produced a well-structured, well-cited answer covering 5 of 6 showcase-bar substance facts and exhibited model freshness discipline by flagging the cited contract-passing.md as status:draft and explaining where the Friday-afternoon detail came from. The single gap is the missed Jersey-specific term "contrat héréditaire" — explicitly required by the showcase_bar jersey_specific rubric and sitting in the candidate's own cited commercial-leases.md (line 42). Closing that gap is a one-paragraph fix in the answer composition, not a corpus or retrieval defect — the term was in the bundle, the candidate just didn't surface it. Voice, English-law contrast, customary-law framing, and Samedi-Division naming all landed cleanly.
+errors: []

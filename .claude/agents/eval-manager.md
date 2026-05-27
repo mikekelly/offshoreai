@@ -123,91 +123,6 @@ Read the candidate's answer alongside the question's rubric. Score per dimension
 
 Voice doesn't single-handedly lift a partial to pass; freshness_handling doesn't either. Citation_recall is informational unless a primary source was explicitly required by the rubric.
 
-### 5b. Diagnose failures (ONLY if overall is partial or fail)
-
-**Skip this step if overall verdict is `pass`.** When every dimension passes, there is nothing to diagnose — write the verdict and move to the next step.
-
-When `overall` is `partial` or `fail`, produce a diagnostic for **every dimension that wasn't `pass`** — not just missed expected_facts. This is the single most useful signal a failing run produces: it tells the maintainer what kind of fix would convert the verdict, and where to land it.
-
-**What triggers a diagnostic:**
-
-- Any missed `expected_fact` / `showcase_bar.substance` / `showcase_bar.jersey_specific` item (the original substance path)
-- `citationPrecision` partial or fail — a cited file doesn't support the claim attached to it
-- `citationRecall` partial or fail — load-bearing material was cited from a sub-optimal file or omitted entirely
-- `freshnessHandling` partial or fail — draft/stale files cited without surfacing the freshness verdict to the user
-- `voice` fail — specific voice issue (planning fragment leaked, system reminder referenced, meta-commentary, tool-call narration)
-- Any other dimension scored partial or fail
-
-Each gets one diagnostic entry. Reuse the same classification taxonomy for all.
-
-**Classification:**
-
-| Class | Definition | Where the fix lives |
-|---|---|---|
-| `agent-discipline` | The fact is in the cited file's body, in its `sources:` frontmatter, or in a sibling file the agent should have traversed via the inclusion-link graph. The agent had reachable access to the material and failed to surface it. | Agent / prompt |
-| `corpus-exposure` | The fact IS in the corpus but in a file the agent's natural retrieval path for this question doesn't reach, OR in a narrow context that doesn't intersect the question's framing (e.g. term appears only in a sub-topic file but the question is about the parent topic). | **Corpus edit** — surface the fact in the natural-retrieval file |
-| `corpus-content-gap` | The fact is not in the corpus at all. `Grep` returns no occurrences anywhere under `knowledge/`. | **Corpus content add** |
-| `rubric-phrasing` | The fact is arguably present in the answer in different wording, or the rubric demands an exact term/spelling the corpus does not use (typo, archaic spelling, paraphrase mismatch). | **Rubric edit** |
-| `candidate-variance` | Prior measured runs of this question covered the fact; this run did not. Corpus exposes the fact adequately and prior agent runs reached it. | Accept as noise, OR structurally surface the fact more prominently in the corpus to reduce variance |
-
-**Procedure per dimension failure:**
-
-For each dimension that scored partial/fail (or each missed expected_fact):
-
-1. **Locate the corpus material relevant to this failure.** For substance failures: `Grep` for distinctive terms from the missed fact. For citation-precision failures: identify the specific claim the cited file under-supports and `Grep` for that claim's distinctive terms to find which file would actually have supported it. For freshness failures: cross-reference the cited files' frontmatter against the answer text to confirm draft/stale status went unflagged. For voice failures: quote the specific offending text from the answer.
-2. **Compare to the trajectory's tool-call log** (`<output_dir>/<question_id>.trajectory.json`) — which files the candidate actually read.
-3. **Classify into one of five classes:**
-   - `agent-discipline` — the material was reachable (file the agent read, or naturally adjacent), agent failed to use it correctly. Includes citing the wrong supporting file when a better one was also in the read set, leaking planning text, skipping draft-status flag.
-   - `corpus-exposure` — material IS in the corpus but in a file the agent's natural retrieval path didn't reach, OR in a narrow context that doesn't intersect the question's framing.
-   - `corpus-content-gap` — material is not in the corpus anywhere. `Grep` returns no occurrences under `knowledge/`.
-   - `rubric-phrasing` — material is arguably present in different wording, or the rubric demands an exact term/spelling the corpus does not use (typo, archaic spelling, paraphrase mismatch).
-   - `candidate-variance` — prior measured runs of this question covered the dimension; this one didn't. Corpus exposes the material adequately.
-4. **Write one short diagnosis paragraph** (1-3 sentences) noting the specific files / line numbers / quoted text found.
-5. **Write one `suggestedFix` line** stating what the maintainer should do.
-
-### REQUIRED OUTPUT FOR THIS STEP
-
-When `overall != pass`, your verdict.yaml **MUST** contain a top-level `failureDiagnostics:` array with one entry per non-pass dimension and one entry per missed `expected_fact` / `showcase_bar` item. **This is not optional and the verdict is incomplete without it.** If you describe failures only in `summary:` or only in your return message, you have skipped the step.
-
-**Self-check before calling Write on the verdict file**: is `overall` partial or fail? Then `failureDiagnostics:` MUST be present and non-empty. Count entries against the non-pass dimensions plus missed facts. If the counts don't match, add the missing entries before writing.
-
-Inline schema (same as step 7, repeated here so you don't have to scroll):
-
-```yaml
-failureDiagnostics:
-  - dimension: substance              # substance | citationPrecision | citationRecall | freshnessHandling | voice | jerseySpecific
-    fact: "Contract héréditaire form" # omit field unless dimension is substance or jerseySpecific
-    issue: "Rubric-required term 'contrat héréditaire' not used in answer despite being in cited commercial-leases.md."
-    classification: corpus-exposure   # agent-discipline | corpus-exposure | corpus-content-gap | rubric-phrasing | candidate-variance | unclassified
-    diagnosis: |
-      Grep finds "contrat héréditaire" only at commercial-leases.md:42 in
-      a bullet about 9+ year leases. Candidate read that file but the
-      term sat in a narrow lease context that doesn't match the
-      property-transfer framing of this question, so the agent didn't
-      promote it.
-    suggestedFix: |
-      Surface "contrat héréditaire" in knowledge/jersey/property/contract-passing.md
-      as the term-of-art for any Royal-Court-passed real-property contract,
-      not just 9+ year leases.
-
-  - dimension: freshnessHandling
-    issue: "All 6 cited files are status:draft; answer did not flag this."
-    classification: agent-discipline
-    diagnosis: |
-      All 6 files the agent cited carry status:draft in frontmatter.
-      prompts/system.md §Freshness handling requires flagging draft files
-      to the user; agent skipped this on every citation.
-    suggestedFix: |
-      Prompt-side reminder. Strengthen freshness section to mandate
-      flagging when ALL cited files are draft.
-```
-
-**Discipline notes:**
-
-- You are diagnosing, not fixing. Do NOT edit corpus content. Do NOT edit `expected_facts` or the question text. You may continue to append to `stretch_facts` per step 6's scope rules, but corpus / rubric fixes are surfaced for human review, not applied by you.
-- Keep diagnoses short. One paragraph + one fix line per failure entry.
-- If you can't classify confidently, label `unclassified` and describe what's ambiguous. Better than a wrong classification.
-
 ### 6. Identify candidate stretch facts and (selectively) promote
 
 Look at the answer for **accurate, valuable, generalisable** facts NOT in `expected_facts` or `stretch_facts`. These are candidates for promotion to `stretch_facts`.
@@ -274,26 +189,6 @@ stretchPromotions:                 # facts you ADDED to stretch_facts
   - "<exact text of new entry>"
 stretchSuggestions:                # candidates you considered but didn't promote
   - "<one-line>"
-failureDiagnostics:                # OMIT entirely on PASS verdicts.
-                                   # On PARTIAL/FAIL, one entry per non-pass
-                                   # dimension OR per missed expected_fact
-                                   # (per step 5b).
-  - dimension: <substance | citationPrecision | citationRecall | freshnessHandling | voice | jerseySpecific>
-    fact: "<rubric fact that was missed, IF this is a substance/jerseySpecific entry; otherwise omit>"
-    issue: "<one-line description of what failed at the dimension level — e.g. 'contract-passing.md cited as lead support for Friday-afternoon claim but says most weekdays'>"
-    classification: <agent-discipline | corpus-exposure | corpus-content-gap | rubric-phrasing | candidate-variance | unclassified>
-    diagnosis: |
-      <1-3 sentences. Reference specific file paths and line numbers
-      from your Grep results. Note which files the candidate read
-      (from trajectory) vs which files actually carry the material.>
-    suggestedFix: |
-      <One line. e.g. "Surface 'contrat héréditaire' in
-      contract-passing.md as the term-of-art for Royal-Court-passed
-      real-property contracts."  OR  "Cite commercial-leases.md
-      explicitly for the Friday-afternoon claim — that file states
-      it; contract-passing.md does not."  OR  "Edit rubric: 'Contract
-      héréditaire' → 'Contrat héréditaire' to match corpus form."
-      OR  "No fix — accept as candidate variance.">
 summary: |
   <2-4 sentence narrative. Lead with the verdict, then the most
   load-bearing observation, then the most useful single signal for

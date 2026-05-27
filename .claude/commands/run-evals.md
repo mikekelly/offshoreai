@@ -83,33 +83,6 @@ rubricEvolution:
   stretchPromotionsByQuestion:
     <question_id>: [<promoted fact 1>, <promoted fact 2>]
     # only includes questions that had promotions
-fixBacklog:
-  # Aggregated from each verdict's failureDiagnostics (per step 5b of
-  # the eval-manager spec). Grouped by classification so the maintainer
-  # can scan for highest-leverage fixes. OMIT this whole section if
-  # every question PASSed (no diagnostics produced).
-  corpusExposure:
-    - fact: "<the missed fact>"
-      questions: [<question_id>, ...]   # may affect multiple questions
-      diagnosis: <one line from the verdict>
-      suggestedFix: <one line from the verdict>
-  corpusContentGap:
-    - fact: "<the missed fact>"
-      questions: [<question_id>, ...]
-      diagnosis: <one line>
-      suggestedFix: <one line>
-  rubricPhrasing:
-    - fact: "<the missed fact>"
-      questions: [<question_id>, ...]
-      diagnosis: <one line>
-      suggestedFix: <one line>
-  agentDiscipline:
-    # Surface agent-discipline misses too, but these are signals for prompt
-    # improvement rather than corpus edits.
-    - fact: "<the missed fact>"
-      questions: [<question_id>, ...]
-      diagnosis: <one line>
-      suggestedFix: <one line>
 perQuestion:
   - id: <question_id>
     verdict: <pass | partial | fail>
@@ -118,10 +91,6 @@ perQuestion:
     hallucinatedCitations: <n>
     summary: <pull-quote from the verdict>
 ```
-
-When reporting back to the user (step 8), highlight the
-`corpusFixBacklog` if it's non-empty — these are the highest-leverage
-fixes surfaced by the batch.
 
 8. **Report to the user.**
    - Single message with:

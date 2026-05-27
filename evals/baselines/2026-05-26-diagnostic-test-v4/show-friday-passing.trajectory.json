@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "eval_trajectory_v1",
+  "questionId": "show-friday-passing",
+  "evalSuite": "evals/showcase.yaml",
+  "harness": "offshoreai-agent",
+  "ranAt": "2026-05-26T21:41:19.789Z",
+  "wallClockSeconds": 51.433,
+  "turns": 7,
+  "toolCalls": [
+    {
+      "index": 0,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/ /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/kn",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 1,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"contract passing\\\\|passing of contract\\\\|Royal Court\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/ 2>/dev/null | head -20\",\"",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 2,
+      "kind": "Read",
+      "rawName": "Read",
+      "inputDigest": "{\"file_path\":\"/Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/contract-passing.md\"}",
+      "inputBytes": 130,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 3,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -rli \\\"friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/ 2>/dev/null\",\"description\":\"Find all Jersey files mentioning Friday\"}",
+      "inputBytes": 189,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 4,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -B2 -A4 -i \\\"friday\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/property/flying-freeholds.md /Users/mike/code/offshoreai/.claude/worktre",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    },
+    {
+      "index": 5,
+      "kind": "Bash",
+      "rawName": "Bash",
+      "inputDigest": "{\"command\":\"grep -n -B1 -A6 -i \\\"samedi\\\\|saturday\\\" /Users/mike/code/offshoreai/.claude/worktrees/brave-ramanujan-05e295/knowledge/jersey/legal-system/royal-court.md /Users/mike/code/offshoreai/.clau",
+      "inputBytes": 200,
+      "resultBytes": 0,
+      "resultSummary": "",
+      "isError": false,
+      "latencyMs": 0
+    }
+  ],
+  "citedPaths": [],
+  "usage": {
+    "inputTokens": 11,
+    "outputTokens": 2449,
+    "cacheReadTokens": 455653,
+    "cacheWriteTokens": 69499,
+    "totalCostUsd": 0.7234752499999999
+  },
+  "answer": {
+    "text": "The \"Friday afternoon\" property passing in Jersey is a Norman-customary-law procedural inheritance, not a statutory rule. Jersey real-property contracts — sales, gifts, hypothecs, and long leases — do not transfer privately by signed deed as in English conveyancing; instead they **pass before the Royal Court**, where the parties (or, more usually, their advocates acting under powers of attorney) appear, the contract is read or referenced, the Greffier records it, and the transfer takes legal effect at that moment in open court. By long-standing convention this passing happens on a Friday afternoon, with two Jurats sitting to witness, after which the contract is recorded in the Public Registry.\n\nThe procedure sits in the **Samedi Division** of the Royal Court — itself named after the historical Saturday sittings — which is the civil/administrative day-to-day forum of the Royal Court.\n\nThe reasons the system takes this shape are customary rather than functional:\n\n- **Norman customary law inheritance** — real-property transfer in Jersey has always been a public Court act, not a private deed. The Royal Court is the repository of property records.\n- **Publicity of transfer** — that a contract has passed is public (Acts of Court + Public Registry), giving certainty about title transitions, though the specific terms (e.g. price) remain private. This is materially different from English conveyancing, where the transaction is private until completion and only the buyer's identity and limited terms appear on the Land Registry afterwards.\n- **Statutory anchor** — the modern framework around hypothecs and real-property transfer sits in the **Loi (1880) sur la propriété foncière**, which codifies aspects of the customary system but did not displace the Court-passing requirement.\n\nIn practice, **Jersey advocates act as attorneys** for absent buyers and sellers under powers of attorney drafted for the purpose, which is what makes the system workable for non-resident parties. Possession typically passes the same day, with post-completion steps (Public Registry recording, hypothec registration if a lender is involved) following.\n\n**Cited files**:\n1. `knowledge/jersey/property/contract-passing.md`\n2. `knowledge/jersey/property/commercial-leases.md`\n3. `knowledge/jersey/property/flying-freeholds.md`\n4. `knowledge/jersey/property/loi-1880-sur-la-propriete-fonciere.md`\n5. `knowledge/jersey/legal-system/royal-court.md`\n\nA caveat: the dedicated `contract-passing.md` file is marked `status: draft` and says \"most weekdays\" rather than naming Friday afternoon specifically — the Friday-afternoon convention is sourced from the `commercial-leases.md` and `flying-freeholds.md` files (which also note the two-Jurat witnessing detail). The corpus does not give a documentary origin for *why* Friday afternoon specifically became the customary slot, beyond the broader Norman-customary-law framing — that narrower point sits in practitioner convention rather than statute.\n\n> This is information drawn from the offshoreai corpus, not legal, tax, or investment advice. Verify the cited primary sources before acting.",
+    "wordCount": 429
+  },
+  "errors": [],
+  "meta": {
+    "sdkVersion": "0.3.143",
+    "trajectoryQuality": "approximate-cited-paths-not-extracted",
+    "systemPrompt": {
+      "presetName": "claude_code",
+      "source": "prompts/system.md",
+      "appendBytes": 37793,
+      "appendSha256": "b180874a66fc6584"
+    },
+    "sessionId": "dd7324a1-b662-4a1b-ba72-6f4b3fbf1bfd"
+  }
+}
