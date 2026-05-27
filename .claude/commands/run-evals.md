@@ -98,6 +98,12 @@ perQuestion:
      - A markdown table: question ID | verdict | facts | summary
      - Path to `<output_dir>/` for full artifacts
    - If any question failed or partial, surface the per-question `summary` so the user has the signal immediately rather than having to read the YAML.
+   - **Synthesise a "fix backlog" when there are 2+ non-pass verdicts.** Read each non-pass verdict's `summary:` field. Identify shared patterns across questions (same retrieval-path failure on multiple questions; same term-of-art missed; same kind of corpus-content gap; same agent-discipline slip). Write 1-3 short paragraphs at the end of your report grouping the failures by what would fix them:
+     - **Corpus edits** — facts that are in the corpus but in narrow contexts the agent's retrieval doesn't reach, or facts not in the corpus at all. Name the file to edit and what to add.
+     - **Agent-discipline patterns** — failures where the material was reachable and the agent missed it. Useful signal for the next prompt iteration.
+     - **Rubric phrasing / staleness** — facts the rubric demands in a form the corpus doesn't use, or rubric items that have aged out.
+     - **Candidate variance** — questions where prior runs passed but this run didn't, with no structural cause.
+     Don't fabricate patterns. If the failures are all idiosyncratic with no shared cause, say so. The point is to surface ACTIONABLE highest-leverage fixes — usually each "fix backlog" item should be something the maintainer could land in <30 min.
 
 ## Discipline
 
