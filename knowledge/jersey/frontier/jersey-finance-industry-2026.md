@@ -1,8 +1,8 @@
 ---
 title: Jersey Finance Industry — State of Play 2026
 status: in-progress-narrative
-as_of: 2026-05-18
-expected_decay: 2026-11-18
+as_of: 2026-05-31
+expected_decay: 2026-11-30
 tags:
   - frontier
   - jersey-finance
@@ -10,6 +10,10 @@ tags:
   - jersey-funds-industry
   - industry-data
 sources:
+  - title: "Government of Jersey — Time to Win (FSCP final consolidated report)"
+    url: https://www.gov.je/SiteCollectionDocuments/Government%20and%20administration/Time%20to%20Win%20report.pdf
+    accessed: 2026-05-31
+    kind: government
   - title: Channel Eye — Year of change for Jersey funds industry
     url: https://channeleye.media/year-of-change-for-jerseys-funds-industry-outlined-at-chairmans-update/
     accessed: 2026-05-18
@@ -55,6 +59,14 @@ narratives shaping the next 12-24 months.
 ## Headline industry data
 
 ### Jersey
+
+The Government's **["Time to Win" FSCP report](../government/time-to-win-report.md)**
+(2026) gives the official pillar figures: **banking deposits
+£182.7bn** (19 institutions), **funds £465.9bn** in regulated
+assets (88% alternatives), and **private wealth ~£1.4 trillion**
+across 66,000 client relationships. It also frames FRPS as
+**>half of economic output**, **2 in 5 jobs**, and **£6 in
+every £10 of tax**.
 
 - **Assets Under Administration** in Jersey grew **5%
   in 2025**;
@@ -266,6 +278,7 @@ for the full comparison.
 
 ### Doctrinal corpus
 
+- [`../government/time-to-win-report.md`](../government/time-to-win-report.md);
 - [`../jersey/funds/index.md`](../funds/index.md);
 - [`../jersey/funds/jersey-private-fund.md`](../funds/jersey-private-fund.md);
 - [`../jersey/financial-regulation/index.md`](../financial-regulation/index.md);

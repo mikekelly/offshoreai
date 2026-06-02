@@ -3,7 +3,7 @@ title: Financial Services Competitiveness Programme (FSCP)
 jurisdiction: jersey
 category: government
 status: stable
-last_verified: 2026-05-19
+last_verified: 2026-05-31
 tags:
   - jersey
   - government
@@ -13,6 +13,10 @@ tags:
   - 10-year-plan
   - concept-file
 sources:
+  - title: "Government of Jersey — Time to Win (FSCP final consolidated report)"
+    url: https://www.gov.je/SiteCollectionDocuments/Government%20and%20administration/Time%20to%20Win%20report.pdf
+    accessed: 2026-05-31
+    kind: government
   - title: Government of Jersey — Financial Services Competitiveness Programme
     url: https://www.gov.je/Industry/Finance/Pages/FinancialServicesCompetitivenessProgramme.aspx
     accessed: 2026-05-19
@@ -22,6 +26,7 @@ sources:
     accessed: 2026-05-19
     kind: industry-news
 see_also:
+  - ./time-to-win-report.md
   - ../financial-regulation/jfsc-strategy-2026-2030.md
   - ../financial-regulation/jfsc.md
   - ../../frontier/jersey-finance-industry-2026.md
@@ -46,6 +51,17 @@ industry over the coming decade. It is **complementary to**
 the [JFSC 2026-2030 Strategy](../financial-regulation/jfsc-strategy-2026-2030.md) —
 the JFSC strategy is the regulator's plan; the FSCP is the
 government's economic-policy plan.
+
+The FSCP's **final consolidated report — "Time to Win"** — is
+the primary source for the Programme's diagnosis and action
+plan, and is documented in full at
+[`./time-to-win-report.md`](./time-to-win-report.md). That
+file carries the verified industry figures (the four FRPS
+pillars), the one-foundation-plus-five-imperatives reset, the
+Annex 1 delivery roadmap, the Independent Expert Panel report
+(Annex 2, chaired by Sir Howard Davies), and the Workstream 3
+external-growth strategy (Annex 3). The four workstreams below
+are the Programme's organising structure.
 
 ## Why it matters
 
