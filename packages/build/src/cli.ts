@@ -11,12 +11,15 @@
 //   validate --baseline   — write the conformance snapshot to evals/conformance-baseline.yaml
 //   tree                  — (week 2) compile hier-tree.json
 //   tags                  — (week 2) compile tag-index.json
+//   tags --audit          — list tags used but not declared in TAGS.md
+//   audit-tags            — alias for `tags --audit` (+ optional --fail gate)
 //   all                   — (week 2) full pipeline
 
 import { writeFile, mkdir } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { stringify as yamlStringify } from "yaml";
+import { auditTags } from "./audit/tags-audit.js";
 import { compileHierTree } from "./compile/hier-tree.js";
 import { compileTagIndex } from "./compile/tag-index.js";
 import { enrichPinpoints } from "./enrich/cli.js";
@@ -26,6 +29,7 @@ import type { ValidationResult } from "./validate/types.js";
 const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const HIER_TREE_OUT = "packages/build/dist/hier-tree.json";
 const TAG_INDEX_OUT = "packages/build/dist/tag-index.json";
+const UNKNOWN_TAGS_OUT = "packages/build/dist/unknown-tags.tsv";
 
 const args = process.argv.slice(2);
 const verb = args[0];
@@ -42,7 +46,10 @@ switch (verb) {
     await runTree();
     break;
   case "tags":
-    await runTags();
+    await runTags(args.slice(1));
+    break;
+  case "audit-tags":
+    await runTagsAudit(args.slice(1));
     break;
   case "all":
     await runAll();
@@ -168,7 +175,11 @@ async function runTree(): Promise<void> {
   console.log(`  → ${HIER_TREE_OUT} (${elapsed}s)`);
 }
 
-async function runTags(): Promise<void> {
+async function runTags(rest: string[] = []): Promise<void> {
+  if (rest.includes("--audit")) {
+    await runTagsAudit(rest);
+    return;
+  }
   console.log(`Compiling tag-index...`);
   const start = Date.now();
   const index = await compileTagIndex({ repoRoot: REPO_ROOT, outPath: TAG_INDEX_OUT });
@@ -186,6 +197,43 @@ async function runTags(): Promise<void> {
     console.log(`    ${String(count).padStart(5)}  ${tag}`);
   }
   console.log(`  → ${TAG_INDEX_OUT} (${elapsed}s)`);
+}
+
+async function runTagsAudit(rest: string[]): Promise<void> {
+  const result = await auditTags({ repoRoot: REPO_ROOT });
+
+  console.log(`Tag taxonomy audit (whole corpus)`);
+  console.log(`  canonical tags in TAGS.md:    ${result.canonicalCount}`);
+  console.log(`  distinct tags used in corpus: ${result.uniqueUsedCount}`);
+  console.log(`  total tag applications:       ${result.totalApplications}`);
+  console.log(`  UNKNOWN (used, not declared): ${result.unknown.length}\n`);
+
+  const SHOW = 30;
+  const top = result.unknown.slice(0, SHOW);
+  if (top.length > 0) {
+    console.log(`Top ${top.length} unknown tags by file count:`);
+    for (const u of top) {
+      console.log(`  ${String(u.count).padStart(5)}  ${u.tag.padEnd(34)} ${u.examplePath}`);
+    }
+  }
+
+  const tsv =
+    ["count\ttag\texample_file", ...result.unknown.map((u) => `${u.count}\t${u.tag}\t${u.examplePath}`)].join(
+      "\n",
+    ) + "\n";
+  const outAbs = resolve(REPO_ROOT, UNKNOWN_TAGS_OUT);
+  await mkdir(dirname(outAbs), { recursive: true });
+  await writeFile(outAbs, tsv, "utf8");
+  console.log(`\n  → full list (${result.unknown.length} rows) written to ${UNKNOWN_TAGS_OUT}`);
+  console.log(
+    `\nNote: the strict validator enforces TAGS.md only against knowledge/jersey/**;`,
+  );
+  console.log(`this audit is corpus-wide, since amending TAGS.md is a corpus-wide task.`);
+
+  // --fail makes this usable as a CI gate once the taxonomy is reconciled.
+  if (rest.includes("--fail") && result.unknown.length > 0) {
+    process.exit(1);
+  }
 }
 
 async function runAll(): Promise<void> {
@@ -209,6 +257,10 @@ Verbs:
   validate --no-fail    Run validator but exit 0 even on violations (CI-friendly snapshot mode)
   tree                  Compile packages/build/dist/hier-tree.json
   tags                  Compile packages/build/dist/tag-index.json (+ co-occurrence matrix)
+  tags --audit          List tags used in the corpus but absent from TAGS.md
+  audit-tags            Alias for 'tags --audit'. Add --fail to exit non-zero
+                        when any unknown tag exists (CI gate once reconciled).
+                        Writes the full list to packages/build/dist/unknown-tags.tsv
   all                   Run validate (no-fail) + tree + tags in sequence
   enrich-pinpoints      Add per-article deep-link 'pinpoints' to corpus
                         frontmatter from packages/build/data/citation-pinpoints.json.

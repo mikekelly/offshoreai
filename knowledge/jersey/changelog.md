@@ -15,6 +15,37 @@ can prioritise re-checking older files.
 
 For full diff history, see the git log.
 
+## 2026-05-31 — "Time to Win" FSCP final report ingested
+
+Added the Government of Jersey's **"Time to Win"** report —
+the final consolidated output of the
+[Financial Services Competitiveness Programme](government/financial-services-competitiveness-programme.md)
+— to the corpus.
+
+- **Added** [`government/time-to-win-report.md`](government/time-to-win-report.md):
+  the report's diagnosis ("the privilege has shifted"; strong
+  but losing relative ground), four workstreams, four FRPS
+  pillars with official figures (**Banking £182.7bn**, **Funds
+  £465.9bn**, **Private Wealth ~£1.4tn**), the one-foundation-
+  plus-five-imperatives reset, the five test sectors, momentum
+  since mid-2025 (JPF reform, Sound Business Policy, COBO
+  partial repeal, Digital Assets Innovation Council), **Annex 1**
+  delivery roadmap (incl. Jersey–Bahrain DTA), **Annex 2** the
+  Independent Expert Panel report (chaired by Sir Howard
+  Davies; GFCI 31st; banking licences 42→<20; 15% MCIT upside;
+  nerve centre / concierge; "grey panthers"), and **Annex 3**
+  the Workstream 3 external-growth strategy ("North Star";
+  five strategic plays; India 12% / GCC 7% PFA growth; Jersey
+  fund NAV ~£0.5tn vs Luxembourg €5.3tn). Verified against the
+  PDF text layer (all 26 pages, including the annexes).
+- **Revised** [`government/financial-services-competitiveness-programme.md`](government/financial-services-competitiveness-programme.md):
+  added the Time to Win report as primary source + see_also and
+  a pointer paragraph; bumped `last_verified` to 2026-05-31.
+- **Revised** [`frontier/jersey-finance-industry-2026.md`](frontier/jersey-finance-industry-2026.md):
+  added the report's official pillar figures and the Time to
+  Win source; refreshed `as_of` / `expected_decay`.
+- **Source**: [Government of Jersey — Time to Win report (PDF)](https://www.gov.je/SiteCollectionDocuments/Government%20and%20administration/Time%20to%20Win%20report.pdf).
+
 ## 2026-05-26 — Completeness recheck round 2 + corpus + output-discipline fixes
 
 Continuation of the completeness-discipline validation. Ran the

@@ -34,6 +34,58 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `registries` — statutory registers
 - `meta` — corpus-level documents (TAGS, CONVENTIONS, glossary,
   changelog, sources)
+- `insolvency` — corporate insolvency and the Bankruptcy (Désastre)
+  (Jersey) Law 1990
+- `contract` — Jersey contract / obligations law (Pothier, cause,
+  délit / voisinage)
+- `property` — Jersey real-property law (Loi (1880) sur la propriété
+  foncière, hypothec, servitudes, Security Interests Law 2012)
+- `employment` — Employment (Jersey) Law 2003
+- `discrimination` — Discrimination (Jersey) Law 2013
+- `data-protection` — Data Protection (Jersey) Law 2018 (GDPR-equivalent)
+- `charities` — Charities (Jersey) Law 2014
+- `residential-tenancy` — Residential Tenancy (Jersey) Law 2011
+- `planning` — Planning and Building (Jersey) Law 2002
+- `road-traffic` — Road Traffic (Jersey) Law 1956
+- `family-law` — Jersey family law (matrimonial causes, children, civil
+  partnership, adoption)
+- `welfare` — social security and income support
+- `crime` — criminal law and offences (distinct from `aml-cft`
+  financial crime)
+- `criminal-procedure` — police powers and criminal procedure (PPCE 2003)
+
+## Jurisdiction — which offshore centre the file is about
+
+The corpus now covers six jurisdictions. Files carry the jurisdiction
+tag(s) they describe; cross-jurisdictional files carry several.
+
+- `jersey` — Jersey (the deepest-covered jurisdiction)
+- `guernsey` — Guernsey
+- `cayman` — Cayman Islands
+- `bermuda` — Bermuda
+- `bvi` — British Virgin Islands
+- `isle-of-man` — Isle of Man
+- `channel-islands` — Channel Islands (Jersey + Guernsey) collectively
+
+## Economy, industry & frontier
+
+Tags for the economic-context, industry-state, and decay-managed
+frontier layers (see `KNOWLEDGE-BASE-PRINCIPLES.md` on layer
+separation).
+
+- `economy` — a jurisdiction's economy in shape and proportion (GVA by
+  sector)
+- `frontier` — bleeding-edge / decay-managed developments tracked with
+  `as_of` / `expected_decay`
+- `financial-services-competitiveness-programme` — the Government of
+  Jersey's FSCP and its "Time to Win" final report
+- `digital-assets` — digital-asset / crypto activity and its regulation
+- `tokenisation` — tokenised assets, digital registers, and digital
+  corporate actions
+- `sustainable-finance` — ESG / SFDR-adjacent sustainable-finance work
+- `private-wealth` — private-wealth / family-office structuring
+- `private-equity` — private-equity / carry / fund-sponsor context
+- `vasp` — virtual-asset service provider registration regime
 
 ## Legal concept — cross-cutting doctrines and tests
 
@@ -135,6 +187,13 @@ The taxonomy is grouped into **categories** below. A typical file carries
 - `dispute-resolution` — litigation and adjudication
 - `redomiciliation` — change of jurisdiction (in or out)
 - `setting-aside` — set-aside / rescission application
+- `creditors-winding-up` — creditors' winding-up under Companies Law
+  Part 21
+- `summary-winding-up` — solvent summary winding-up
+- `forfeiture` — forfeiture of criminal property
+- `confiscation` — confiscation orders (proceeds of crime)
+- `restraint-orders` — pre-conviction restraint of assets
+- `investigations` — criminal / regulatory investigation powers
 
 ## Cross-border concerns
 

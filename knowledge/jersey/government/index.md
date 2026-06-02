@@ -17,6 +17,8 @@ see_also:
   - ./bailiff.md
   - ./lieutenant-governor.md
   - ./parishes.md
+  - ./financial-services-competitiveness-programme.md
+  - ./time-to-win-report.md
   - ../legal-system/index.md
   - ../international/uk-relationship.md
   - ../international/eu-relationship.md
