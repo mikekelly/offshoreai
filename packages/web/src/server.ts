@@ -281,21 +281,6 @@ const server = createServer((req, res) => {
     void handleIndex(res);
     return;
   }
-  // Per-conversation deep link `/c/<uuid>` — serves the same SPA shell.
-  // The client reads location.pathname on load and opens the matching
-  // conversation. Anything else under /c/ is a 404 so we don't let
-  // arbitrary paths reach the index handler.
-  const cMatch = url.match(/^\/c\/([^/]+)$/);
-  if (method === "GET" && cMatch) {
-    const id = decodeURIComponent(cMatch[1] ?? "");
-    if (!UUID_RE.test(id)) {
-      res.writeHead(404, { "content-type": "text/plain" });
-      res.end("not found");
-      return;
-    }
-    void handleIndex(res);
-    return;
-  }
   if (method === "GET" && url === "/render.js") {
     void handleRenderJs(res);
     return;
