@@ -12,8 +12,7 @@
     "build:corpus": "pnpm --filter @offshoreai/build run cli",
     "health": "pnpm --filter @offshoreai/build run health",
     "test": "pnpm -r --no-bail test",
-    "typecheck": "pnpm -r --no-bail typecheck",
-    "lint": "pnpm -r --if-present --no-bail lint"
+    "typecheck": "pnpm -r --no-bail typecheck"
   },
   "devDependencies": {
     "typescript": "^5.6.3",
