@@ -973,6 +973,7 @@
             refs.answerEl.innerHTML = mdToHtml(refs.rawMd);
             refs.answerEl.classList.remove("cursor");
             refs.disclaimerEl.hidden = hasInlineDisclaimer(refs.rawMd);
+            console.info("[offshoreai] ask done", { requestId: refs.requestId });
             scrollDown();
             break;
           case "error": {
@@ -981,6 +982,7 @@
             e.className = "err";
             e.textContent = "Error · " + ev.message;
             refs.answerEl.appendChild(e);
+            console.info("[offshoreai] ask error", { requestId: refs.requestId, message: ev.message });
             break;
           }
         }
@@ -1119,10 +1121,18 @@
         addUserMsg(question);
         let curRefs = addAssistantMsg();
         scrollDown();
+        // Mint the per-request correlation id client-side and send it as
+        // x-request-id so the browser-console trace and the server log lines
+        // share one filterable id from the very first hop. The server adopts a
+        // supplied id (else mints its own) and echoes it back.
+        const requestId = (crypto.randomUUID && crypto.randomUUID()) ||
+          (Date.now() + "-" + Math.random().toString(16).slice(2));
+        curRefs.requestId = requestId;
+        console.info("[offshoreai] ask sending", { requestId });
         try {
           const resp = await fetch("/api/ask", {
             method: "POST",
-            headers: { "content-type": "application/json" },
+            headers: { "content-type": "application/json", "x-request-id": requestId },
             body: JSON.stringify({ question, conversationId: currentConversationId }),
           });
           if (!resp.ok || !resp.body) {
@@ -1138,6 +1148,10 @@
             let ev; try { ev = JSON.parse(line); } catch { return; }
             if (ev.type === "conversation") {
               currentConversationId = ev.id;
+              // The server is authoritative for the request id (it adopts our
+              // x-request-id if sent, else mints one) — keep the console trace
+              // aligned with the server log lines.
+              if (ev.requestId) curRefs.requestId = ev.requestId;
               // First message of a freshly-created thread → push the new
               // URL so the user can bookmark / share / refresh.
               if (ev.isNew) setUrl(ev.id);
@@ -1149,7 +1163,9 @@
               curRefs.answerEl.innerHTML = mdToHtml(curRefs.rawMd);
               curRefs.answerEl.classList.remove("cursor");
               renderRejectedSuperseded(curRefs, ev);
+              const priorReqId = curRefs.requestId;
               curRefs = addAssistantMsg();
+              curRefs.requestId = priorReqId;
               scrollDown();
               return;
             }

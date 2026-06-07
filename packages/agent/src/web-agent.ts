@@ -102,6 +102,14 @@ export type AgentEvent =
 export interface StreamOptions {
   /** SDK session id to resume — continues an existing conversation. */
   readonly resume?: string;
+  /**
+   * Per-request correlation id minted at HTTP ingress (server.ts) and threaded
+   * down so agent-side logging can carry it. Distinct from the SDK `session_id`
+   * (which identifies a CONVERSATION across turns and is assigned mid-stream) —
+   * `requestId` isolates one /api/ask request end to end. Available to the
+   * agent layer now; the full SDK audit hooks that consume it land separately.
+   */
+  readonly requestId?: string;
 }
 
 interface VerifierReason {

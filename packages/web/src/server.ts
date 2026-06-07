@@ -22,6 +22,7 @@
 // The agent is built ONCE at startup and reused; only the per-question
 // stream() (and the resume handle) varies per request.
 
+import { randomUUID } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
 import { dirname, resolve } from "node:path";
@@ -72,6 +73,25 @@ function sendJson(res: ServerResponse, status: number, body: unknown): void {
   res.end(JSON.stringify(body));
 }
 
+/**
+ * One structured, single-line JSON log per request lifecycle event (start /
+ * end / error), keyed by `requestId` so an agent can isolate a request's whole
+ * trace with one filter. Written to stderr to match the existing logging
+ * mechanism (no logging dependency by design — KISS). `sessionId` may be
+ * unknown at request start and is included once the agent surfaces it.
+ */
+function logRequest(fields: {
+  requestId: string;
+  conversationId: string | undefined;
+  sessionId: string | null;
+  route: string;
+  status: "start" | "ok" | "error";
+  durationMs: number;
+  message?: string;
+}): void {
+  process.stderr.write(`${JSON.stringify({ ts: new Date().toISOString(), ...fields })}\n`);
+}
+
 // Per-conversation in-flight lock. Two near-simultaneous asks on the same
 // conversation would otherwise race on `sessionId`: each resumes the value
 // it loaded, advances the SDK session independently, and the store ends up
@@ -85,6 +105,16 @@ async function handleAsk(
   req: IncomingMessage,
   res: ServerResponse,
 ): Promise<void> {
+  // Mint (or adopt) the per-request correlation id at the very start, before
+  // any work — a client-supplied `x-request-id` wins so a trace can be
+  // initiated browser-side; otherwise we mint one. Echo it back so the client
+  // learns the id even on the early-return error paths below.
+  const inboundReqId = (req.headers["x-request-id"] ?? "").toString().trim();
+  const requestId = inboundReqId.length > 0 ? inboundReqId : randomUUID();
+  res.setHeader("x-request-id", requestId);
+  const startedAt = Date.now();
+  const route = "POST /api/ask";
+
   let question = "";
   let conversationId: string | undefined;
   try {
@@ -109,6 +139,17 @@ async function handleAsk(
   const convo = existing ?? (await store.create(question));
   const resume = convo.sessionId ?? undefined;
 
+  // Start of the request lifecycle. sessionId is not yet known (the SDK
+  // assigns it mid-stream); conversationId is now resolved.
+  logRequest({
+    requestId,
+    conversationId: convo.id,
+    sessionId: convo.sessionId,
+    route,
+    status: "start",
+    durationMs: 0,
+  });
+
   // Serialise streams on the same conversation. Different conversations are
   // independent and can run in parallel.
   const prior = inflight.get(convo.id);
@@ -124,8 +165,10 @@ async function handleAsk(
   });
   const write = (obj: unknown) => res.write(`${JSON.stringify(obj)}\n`);
 
-  // Tell the client which conversation this is (esp. for a freshly created one).
-  write({ type: "conversation", id: convo.id, title: convo.title, isNew: !existing });
+  // Tell the client which conversation this is (esp. for a freshly created one)
+  // and the per-request id, so the browser console trace is filterable by the
+  // same id even though it also rides in the x-request-id response header.
+  write({ type: "conversation", id: convo.id, title: convo.title, isNew: !existing, requestId });
 
   // Accumulate each draft of the turn as events stream by. A `revise` event
   // finalizes the current draft as rejected and starts a new one; `verdict`
@@ -143,9 +186,10 @@ async function handleAsk(
   const drafts: Draft[] = [];
   let cur: DraftAccum = newDraft();
   let sessionId: string | null = convo.sessionId;
+  let streamError: string | null = null;
 
   try {
-    for await (const ev of agent.stream(question, resume ? { resume } : undefined)) {
+    for await (const ev of agent.stream(question, { requestId, ...(resume ? { resume } : {}) })) {
       write(ev);
       if (ev.type === "citation") {
         cur.citations.push({
@@ -196,7 +240,8 @@ async function handleAsk(
       }
     }
   } catch (err) {
-    write({ type: "error", message: (err as Error)?.message ?? String(err) });
+    streamError = (err as Error)?.message ?? String(err);
+    write({ type: "error", message: streamError });
   } finally {
     // Push the live (final) draft if it has content.
     if (cur.answer.trim().length > 0) drafts.push(cur);
@@ -208,6 +253,18 @@ async function handleAsk(
     // (another request may have taken it after us; rare but possible).
     if (inflight.get(convo.id) === lockHeld) inflight.delete(convo.id);
     releaseLock();
+
+    // End of the request lifecycle — sessionId is now known (the SDK assigned
+    // it mid-stream). The error case is tied to the same requestId as start.
+    logRequest({
+      requestId,
+      conversationId: convo.id,
+      sessionId,
+      route,
+      status: streamError ? "error" : "ok",
+      durationMs: Date.now() - startedAt,
+      ...(streamError ? { message: streamError } : {}),
+    });
   }
 }
 
