@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "tsx ./src/server.ts",
     "start": "tsx ./src/server.ts",
+    "lookbook": "node ../../docs/product/lookbook/preview.js",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },

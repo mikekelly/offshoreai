@@ -206,6 +206,14 @@ This system was de-facto established in code before it was written down.
 If you change a token, change it in
 [`packages/web/public/index.html`](../../packages/web/public/index.html)
 *and* here in the same commit — the CSS is where it runs, this doc is
-where it is decided and explained. (No lookbook renders this yet; building
-one — and a live-refresh preview loop — is a separate, deferred task via
-the `design-system-lookbook` skill.)
+where it is decided and explained.
+
+This system is rendered in the **lookbook** at
+[`lookbook/index.html`](./lookbook/index.html) — every discrete UI state
+(verdict pass/warn/reject, the four freshness badges, disclosures, the
+reject-and-revise flow, message variants, landing cards, composer) mounted
+against the *live* app CSS so it can't drift, with no API call required. A
+dependency-light live-refresh server gives that lookbook (and any static
+design/marketing artifact) an instant edit→see loop — see
+[`lookbook/README.md`](./lookbook/README.md); run
+`pnpm --filter @offshoreai/web lookbook`.

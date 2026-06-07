@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offshore AI — Design Lookbook</title>
+    <!-- app.css is the LIVE app CSS, extracted from packages/web/public/index.html
+         by the preview server (/app.css). The lookbook renders against the exact
+         CSS the app ships, so it cannot drift. lookbook.css is scaffolding only —
+         the frame around the specimens, never a design decision.
+         If you opened this file directly (file://) without the preview server,
+         /app.css 404s and specimens render unstyled — run the preview server
+         (see README.md) so the real CSS is mounted. -->
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/lookbook.css" />
+  </head>
+  <body>
+    <div class="lb-wrap">
+
+      <header class="lb-masthead">
+        <h1>Offshore AI — Design Lookbook</h1>
+        <p>
+          A reference lookbook: every discrete UI state of the answering-agent web
+          surface (the "editorial Briefings Desk"), hand-mounted against the
+          <strong>real app CSS</strong> and frozen here so you can see it without a
+          live, API-billed agent round-trip.
+        </p>
+        <p>
+          The CSS is the live <code>&lt;style&gt;</code> block from
+          <code>packages/web/public/index.html</code>, served at <code>/app.css</code>
+          by the preview server. This page never copies the CSS and never calls the
+          agent or any API — it is static markup exercising the styles.
+        </p>
+        <p class="lb-traceup">
+          Traces up to → <a href="../DESIGN_SYSTEM.md">DESIGN_SYSTEM.md</a>
+          (tokens + rationale, the source-of-truth) →
+          <a href="../PERSONAS.md">PERSONAS.md</a> (who the restraint serves).
+        </p>
+      </header>
+
+      <nav class="lb-toc">
+        <a href="#colors">Colour tokens</a>
+        <a href="#type">Typography</a>
+        <a href="#landing">Landing &amp; briefings</a>
+        <a href="#messages">Message variants</a>
+        <a href="#answer">Answer body</a>
+        <a href="#disclosures">Disclosures</a>
+        <a href="#sources">Sources</a>
+        <a href="#badges">Freshness badges</a>
+        <a href="#verdict">Verdict states</a>
+        <a href="#revise">Reject &amp; revise flow</a>
+        <a href="#status">Transient / error states</a>
+        <a href="#composer">Composer</a>
+      </nav>
+
+      <!-- ============================================================
+           COLOUR TOKENS
+           ============================================================ -->
+      <section class="lb-section" id="colors">
+        <h2>Colour tokens</h2>
+        <p class="lb-note">
+          The closed palette from <code>:root</code>. An 8-step warm ink ramp plus
+          exactly four semantic accents reserved for verifier state — never a fifth,
+          never a gradient. See <code>## Colors</code> in DESIGN_SYSTEM.md.
+        </p>
+
+        <div class="lb-specimen">
+          <div class="lb-label">Ink ramp <span class="lb-classes">--ink … --ink-faint</span></div>
+          <div class="lb-stage">
+            <div class="lb-row">
+              <div class="lb-swatch"><div class="chip" style="background:var(--ink)"></div><span class="name">--ink</span><span class="hex">#141414</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--ink-2)"></div><span class="name">--ink-2</span><span class="hex">#2c2c2a</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--ink-3)"></div><span class="name">--ink-3</span><span class="hex">#5a5955</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--ink-mute)"></div><span class="name">--ink-mute</span><span class="hex">#82817b</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--ink-faint)"></div><span class="name">--ink-faint</span><span class="hex">#b0aea8</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-specimen">
+          <div class="lb-label">Background &amp; border ramp <span class="lb-classes">--bg … --border-soft</span></div>
+          <div class="lb-stage">
+            <div class="lb-row">
+              <div class="lb-swatch"><div class="chip" style="background:var(--bg)"></div><span class="name">--bg</span><span class="hex">#fafaf8</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--bg-soft)"></div><span class="name">--bg-soft</span><span class="hex">#f6f5f1</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--bg-inset)"></div><span class="name">--bg-inset</span><span class="hex">#f3f2ee</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--border)"></div><span class="name">--border</span><span class="hex">#e6e4df</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--border-soft)"></div><span class="name">--border-soft</span><span class="hex">#efedea</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-specimen">
+          <div class="lb-label">Semantic accents — verifier state ONLY <span class="lb-classes">--c-pass / --c-warn / --c-reject / --c-missing</span></div>
+          <div class="lb-stage">
+            <div class="lb-row">
+              <div class="lb-swatch"><div class="chip" style="background:var(--c-pass)"></div><span class="name">--c-pass</span><span class="hex">#1f7a4d</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--c-warn)"></div><span class="name">--c-warn</span><span class="hex">#a8650f</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--c-reject)"></div><span class="name">--c-reject</span><span class="hex">#b13a3a</span></div>
+              <div class="lb-swatch"><div class="chip" style="background:var(--c-missing)"></div><span class="name">--c-missing</span><span class="hex">#8a4a78</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           TYPOGRAPHY
+           ============================================================ -->
+      <section class="lb-section" id="type">
+        <h2>Typography</h2>
+        <p class="lb-note">
+          One typographic voice (<code>--sans</code>). Monospace (<code>--mono</code>)
+          is reserved for machine strings — paths, pinpoints, provenance, code.
+          Hierarchy comes from the ink ramp and weight, not from a second typeface or
+          a coloured heading. See <code>## Typography</code>.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Prose scale (sans)</div>
+          <div class="lb-stage">
+            <div class="lb-type-row"><div class="lb-type-meta">.landing-title · 26px / 500 / --ink</div><div class="landing-title">Ask anything about offshore-jurisdiction structuring.</div></div>
+            <div class="lb-type-row"><div class="lb-type-meta">.answer h2 · 18px / 600 / --ink</div><div class="answer"><h2 style="margin:0">Forced-heirship defence</h2></div></div>
+            <div class="lb-type-row"><div class="lb-type-meta">.answer h3 · 15.5px / 600 / --ink</div><div class="answer"><h3 style="margin:0">The Article 9 firewall</h3></div></div>
+            <div class="lb-type-row"><div class="lb-type-meta">.answer p · 15.5px / 1.65 / --ink-2 (the answer body — does the work)</div><div class="answer"><p style="margin:0">A Jersey trust governed by Jersey proper law engages the Article 9 firewall, which directs the Royal Court to apply Jersey law to the listed questions and to disregard foreign forced-heirship claims.</p></div></div>
+            <div class="lb-type-row"><div class="lb-type-meta">body · 15px / 1.55 / --ink-2</div><div>Standard body copy sits one step lighter than the answer body.</div></div>
+            <div class="lb-type-row"><div class="lb-type-meta">meta · 11–13.5px / --ink-mute (provenance, pinpoints, verdict, badges)</div><div style="font-size:12px;color:var(--ink-mute)">Secondary meta — quiet, never shouting.</div></div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Monospace — reserved <span class="lb-classes">--mono</span></div>
+          <div class="lb-stage">
+            <div class="answer"><p style="margin:0 0 8px">Inline code such as <code>Article 9A</code> reads as a literal machine string.</p></div>
+            <div class="source"><div class="prov"><span class="provpath">knowledge/jersey/trusts/firewall.md</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           LANDING & BRIEFINGS
+           ============================================================ -->
+      <section class="lb-section" id="landing">
+        <h2>Landing &amp; briefings</h2>
+        <p class="lb-note">
+          The empty/landing state (<code>.landing</code>) and the suggested-question
+          cards (<code>.brief-card</code>) — a hairline list, no pills or boxes.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Landing + briefing cards <span class="lb-classes">.landing / .briefings / .brief-card</span></div>
+          <div class="lb-stage">
+            <div class="landing" style="padding-top:0">
+              <h1 class="landing-title">Ask anything about offshore-jurisdiction structuring.</h1>
+              <p class="landing-deck">
+                Trust, fund, tax, regulatory, AML, substance and cross-border matters across Jersey,
+                Guernsey, Isle of Man, Cayman, BVI and Bermuda. Every answer is cited to the underlying
+                corpus and passed through an independent citation-verifier.
+              </p>
+              <p class="suggested-label">Suggested questions</p>
+              <div class="briefings">
+                <button class="brief-card" type="button">
+                  <span class="brief-q">What changed for UK carried interest from 6 April 2026, and what are Crown Dependencies clients actually doing about it?</span>
+                  <span class="brief-arrow" aria-hidden="true">›</span>
+                </button>
+                <button class="brief-card" type="button">
+                  <span class="brief-q">Bermuda SAC vs Cayman SPC vs Guernsey PCC vs Guernsey ICC — when do I use each?</span>
+                  <span class="brief-arrow" aria-hidden="true">›</span>
+                </button>
+                <button class="brief-card" type="button">
+                  <span class="brief-q">How did Jersey get to the position it's in now? Walk me through the trajectory.</span>
+                  <span class="brief-arrow" aria-hidden="true">›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           MESSAGE VARIANTS
+           ============================================================ -->
+      <section class="lb-section" id="messages">
+        <h2>Message variants</h2>
+        <p class="lb-note">
+          The user message is a right-aligned inset bubble; the assistant message
+          strips its own chrome (transparent card, no border, no padding) so the
+          answer sits directly on the paper. See <code>## Layout</code>.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">User message <span class="lb-classes">.msg.user .bubble</span></div>
+          <div class="lb-stage">
+            <div class="msg user"><div class="bubble">I'm advising an Italian-domiciled HNW family. They want a Jersey trust that holds against forced heirship. How would you set this up?</div></div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Assistant message — chrome-stripped card <span class="lb-classes">.msg.assistant .card</span></div>
+          <div class="lb-stage">
+            <div class="msg assistant">
+              <div class="card">
+                <div class="statusbar"><span class="statuslabel">Drafting…</span></div>
+                <div class="answer">
+                  <p style="margin-top:0">A Jersey proper-law discretionary trust engages the <strong>Article 9 firewall</strong>, which directs the Royal Court to apply Jersey law to the listed questions and to disregard foreign forced-heirship claims.</p>
+                </div>
+              </div>
+            </div>
+            <p class="lb-note" style="margin:6px 0 0">Note the suppressed <code>.statusbar</code> (folded into the verdict line) and the borderless transparent card.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           ANSWER BODY (markdown elements)
+           ============================================================ -->
+      <section class="lb-section" id="answer">
+        <h2>Answer body — rendered markdown</h2>
+        <p class="lb-note">
+          What <code>mdToHtml</code> in <code>render.js</code> emits: headings,
+          paragraphs, lists, inline code, blockquote, links, the streaming cursor.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Markdown elements <span class="lb-classes">.answer</span></div>
+          <div class="lb-stage">
+            <div class="answer">
+              <h2>Setting up the structure</h2>
+              <p>A Jersey trust governed by Jersey proper law gives you the <strong>Article 9 firewall</strong> and <em>Article 9A reserved powers</em>. The classic mix is:</p>
+              <ol>
+                <li>A Jersey discretionary trust as the central wrapper;</li>
+                <li>Underlying <code>holdco</code> companies per asset class;</li>
+                <li>A US blocker for US-situs equities.</li>
+              </ol>
+              <h3>Key cautions</h3>
+              <ul>
+                <li>Forced-heirship recognition is decided by the trust's proper law.</li>
+                <li>Substance obligations attach to the underlying companies.</li>
+              </ul>
+              <blockquote>Article 9(4) directs the Court to disregard foreign heirship rights for a Jersey-proper-law trust.</blockquote>
+              <p>See the firewall concept file at <a href="#">trusts/firewall.md</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Streaming cursor <span class="lb-classes">.answer.cursor</span></div>
+          <div class="lb-stage">
+            <div class="answer cursor"><p style="margin:0">The agent is still drafting this answer</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           DISCLOSURES (reasoning + tool calls)
+           ============================================================ -->
+      <section class="lb-section" id="disclosures">
+        <h2>Reasoning &amp; tool-call disclosures</h2>
+        <p class="lb-note">
+          Collapsible <code>&lt;details class="disc"&gt;</code> rows. Reasoning body
+          and tool rows are monospace (machine artefacts). Shown open here so both
+          states are visible.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Agent reasoning (open) <span class="lb-classes">details.disc / .reasoning-body</span></div>
+          <div class="lb-stage">
+            <details class="disc" open>
+              <summary>Agent reasoning</summary>
+              <div class="reasoning-body">Considering forced-heirship defence. The decisive fact is the trust's proper law: Article 9(4) of the Trusts (Jersey) Law 1984 directs the Royal Court to apply Jersey law and disregard foreign heirship rights. Need to check whether the Italian family's assets include immovable property, since the firewall does not override the lex situs of land.</div>
+            </details>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Tool calls (open) <span class="lb-classes">details.disc.toolsBox / .toolrow</span></div>
+          <div class="lb-stage">
+            <details class="disc" open>
+              <summary><span class="toolCount">3</span> tool calls</summary>
+              <div class="tools">
+                <div class="toolrow"><b>corpus.findByTag</b> {"tags":["firewall","forced-heirship"]}</div>
+                <div class="toolrow"><b>corpus.getFile</b> {"path":"knowledge/jersey/trusts/firewall.md"}</div>
+                <div class="toolrow"><b>corpus.freshnessCheck</b> {"path":"knowledge/jersey/trusts/firewall.md"}</div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Disclosures (collapsed — default) <span class="lb-classes">details.disc</span></div>
+          <div class="lb-stage">
+            <details class="disc"><summary>Agent reasoning</summary><div class="reasoning-body">…</div></details>
+            <details class="disc"><summary><span class="toolCount">3</span> tool calls</summary><div class="tools"></div></details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SOURCES
+           ============================================================ -->
+      <section class="lb-section" id="sources">
+        <h2>Sources</h2>
+        <p class="lb-note">
+          The cited-source list (<code>.source</code>) as built by
+          <code>renderCitation</code>: primary link(s) + kind, article pinpoints,
+          and a provenance line carrying the freshness badge, status, and corpus path.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Source with link, pinpoints, fresh badge <span class="lb-classes">.source</span></div>
+          <div class="lb-stage">
+            <div class="section-label">Sources</div>
+            <div class="source">
+              <div class="primary"><a href="#">Trusts (Jersey) Law 1984</a> <span class="badge status">statute</span></div>
+              <div class="pinpoints">
+                <a class="pinpoint" href="#">Art 9 →</a>
+                <a class="pinpoint" href="#">Art 9A →</a>
+                <a class="pinpoint" href="#">Art 47B →</a>
+              </div>
+              <div class="prov"><span class="badge fresh">Verified 2026-05-12 · 27d</span><span class="badge status">stable</span><span class="provpath">knowledge/jersey/trusts/firewall.md</span></div>
+            </div>
+            <div class="source">
+              <div class="primary"><span class="ptitle">Re Representation of X (Royal Court)</span> <span class="badge status">judgment</span></div>
+              <div class="arts">Articles 47, 51</div>
+              <div class="prov"><span class="badge warn">Ageing 2025-09-02 · 279d</span><span class="provpath">knowledge/jersey/trusts/article-47-set-aside.md</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           FRESHNESS BADGES — all four states
+           ============================================================ -->
+      <section class="lb-section" id="badges">
+        <h2>Freshness badges — the four states</h2>
+        <p class="lb-note">
+          Inline text colour only — no pill chrome. Each maps one-to-one to a
+          semantic accent. The <code>status</code> variant (and the faint
+          middle-dot separator between adjacent badges) is shown too. See
+          <code>## States — the verifier signal</code>.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">All four freshness states + status <span class="lb-classes">.badge.fresh / .warn / .stale / .missing / .status</span></div>
+          <div class="lb-stage">
+            <div class="lb-row">
+              <span class="badge fresh">Verified 2026-05-12 · 27d</span>
+              <span class="badge warn">Ageing 2025-09-02 · 279d</span>
+              <span class="badge stale">Stale 2024-01-10 · 880d</span>
+              <span class="badge missing">Missing</span>
+              <span class="badge status">stable</span>
+            </div>
+            <div style="margin-top:14px">
+              <p class="lb-note" style="margin:0 0 6px">Adjacent badges separate with a faint middle-dot (<code>·</code>), not a border:</p>
+              <div class="prov"><span class="badge fresh">Verified 2026-05-12 · 27d</span><span class="badge status">stable</span><span class="provpath">knowledge/jersey/trusts/firewall.md</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           VERDICT — all states
+           ============================================================ -->
+      <section class="lb-section" id="verdict">
+        <h2>Verifier verdict — the states</h2>
+        <p class="lb-note">
+          A single line: a 7px coloured dot + a short headline, never a panel or
+          banner. The neutral default dot is <code>--ink-faint</code>; it colours up
+          only when a verdict applies. Built by <code>renderVerdict</code>.
+        </p>
+
+        <div class="lb-specimen">
+          <div class="lb-label">Pass — all claims cited <span class="lb-classes">.verdict.pass</span></div>
+          <div class="lb-stage">
+            <div class="verdict pass">
+              <div class="headline">Verified · 8 of 8 claims cited</div>
+              <div class="stat"><strong>8/8</strong> claims traced to a cited, dated source.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-specimen">
+          <div class="lb-label">Warn — some claims uncited <span class="lb-classes">.verdict.warn</span></div>
+          <div class="lb-stage">
+            <div class="verdict warn">
+              <div class="headline">Verified · 6 of 8 claims cited</div>
+              <div class="stat">2 claims could not be tied to a corpus source; treat them with caution.</div>
+              <div class="reason"><div>The Cayman Private Funds Act registration window is 21 days.</div><div class="detail">[uncited] — · no corpus source located for this figure</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-specimen">
+          <div class="lb-label">Reject — unresolved issues <span class="lb-classes">.verdict.reject</span></div>
+          <div class="lb-stage">
+            <div class="verdict reject">
+              <div class="headline">Rejected · 2 issues flagged</div>
+              <div class="stat">2 claims contradict or outrun their cited source.</div>
+              <div class="reason"><div>Jersey has a capital gains tax of 10%.</div><div class="detail">[contradiction] knowledge/jersey/tax/zero-ten.md · source states Jersey has no CGT</div></div>
+              <div class="reason"><div>The JPF route completes in 24 hours.</div><div class="detail">[overstated] knowledge/jersey/funds/jersey-private-fund.md · source states a 48-hour authorisation window</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-specimen">
+          <div class="lb-label">Neutral / default (no verdict class — faint dot) <span class="lb-classes">.verdict</span></div>
+          <div class="lb-stage">
+            <div class="verdict">
+              <div class="headline">Verification summary</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           REJECT & REVISE FLOW
+           ============================================================ -->
+      <section class="lb-section" id="revise">
+        <h2>Rejected-and-revised draft flow</h2>
+        <p class="lb-note">
+          When a draft is rejected, it is finalised as <em>superseded</em> and a fresh
+          draft follows. Built by <code>renderRejectedSuperseded</code>. Below: the
+          superseded first draft, then the accepted revision.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Draft 1 — rejected, superseded <span class="lb-classes">.verdict.reject (superseded)</span></div>
+          <div class="lb-stage">
+            <div class="msg assistant">
+              <div class="card">
+                <div class="answer"><p style="margin:0">Jersey levies a 10% capital gains tax on trust disposals…</p></div>
+                <div class="verdictWrap">
+                  <div class="verdict reject">
+                    <div class="headline">Rejected · superseded by next draft</div>
+                    <div class="reason"><div>Jersey levies a 10% capital gains tax.</div><div class="detail">[contradiction] source states Jersey has no CGT</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Draft 2 — accepted revision <span class="lb-classes">.verdict.pass</span></div>
+          <div class="lb-stage">
+            <div class="msg assistant">
+              <div class="card">
+                <div class="answer"><p style="margin:0">Jersey has <strong>no capital gains tax</strong>. Trust disposals are outside the charge entirely.</p></div>
+                <div class="verdictWrap">
+                  <div class="verdict pass">
+                    <div class="headline">Verified · 4 of 4 claims cited</div>
+                    <div class="stat"><strong>4/4</strong> claims traced to a cited, dated source.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           TRANSIENT / ERROR STATES
+           ============================================================ -->
+      <section class="lb-section" id="status">
+        <h2>Transient &amp; error states</h2>
+        <p class="lb-note">
+          The pulsing "checking" indicator, the verifier-unavailable fallback, the
+          inline answer error, and the standing disclaimer.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Verify running <span class="lb-classes">.verdict / .pulse</span></div>
+          <div class="lb-stage">
+            <div class="verdict"><div class="headline"><span class="pulse"></span>Checking citations…</div></div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Verifier unavailable <span class="lb-classes">.verdict.warn (verify_error)</span></div>
+          <div class="lb-stage">
+            <div class="verdict warn">
+              <div class="headline">Verifier unavailable</div>
+              <div class="stat">Treat the citations with extra caution and verify the primary sources before relying on them.</div>
+            </div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Inline answer error <span class="lb-classes">.err</span></div>
+          <div class="lb-stage">
+            <div class="answer"><div class="err">Error · HTTP 503 upstream unavailable</div></div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Standing disclaimer <span class="lb-classes">.disclaimer</span></div>
+          <div class="lb-stage">
+            <div class="disclaimer">Information drawn from the Offshore AI corpus, not legal, tax or investment advice. Verify the cited primary sources before acting.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           COMPOSER
+           ============================================================ -->
+      <section class="lb-section" id="composer">
+        <h2>Composer</h2>
+        <p class="lb-note">
+          The question input and send button (<code>.composer</code>). Shown with an
+          enabled and a disabled send button, plus the keyboard hint.
+        </p>
+        <div class="lb-specimen">
+          <div class="lb-label">Composer — enabled <span class="lb-classes">.composer / #go</span></div>
+          <div class="lb-stage" style="padding:0">
+            <div class="composer" style="background:transparent">
+              <form class="composer-inner" onsubmit="return false">
+                <textarea rows="1" placeholder="Ask anything…" aria-label="Your question"></textarea>
+                <button id="go" type="submit"><span class="go-label">Send</span></button>
+              </form>
+              <div class="hint"><span><kbd>Enter</kbd> to send · <kbd>Shift</kbd>+<kbd>Enter</kbd> for a new line</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="lb-specimen">
+          <div class="lb-label">Composer — send disabled (in flight) <span class="lb-classes">#go:disabled</span></div>
+          <div class="lb-stage" style="padding:0">
+            <div class="composer" style="background:transparent">
+              <form class="composer-inner" onsubmit="return false">
+                <textarea rows="1" placeholder="Ask anything…" aria-label="Your question">Comparing Jersey JPF and Cayman ELP for a sub-US$100m fund…</textarea>
+                <button id="go" type="submit" disabled><span class="go-label">Send</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer style="margin-top:56px;padding-top:18px;border-top:1px solid var(--border);font-size:12.5px;color:var(--ink-mute)">
+        Rendered against the live app CSS (<code style="font-family:var(--mono)">/app.css</code> ←
+        <code style="font-family:var(--mono)">packages/web/public/index.html</code>). Source-of-truth:
+        <a href="../DESIGN_SYSTEM.md" style="color:var(--ink)">DESIGN_SYSTEM.md</a>. No API calls. See
+        <a href="README.md" style="color:var(--ink)">README.md</a> for the live-refresh loop.
+      </footer>
+
+    </div>
+  </body>
+</html>

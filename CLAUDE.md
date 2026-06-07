@@ -114,7 +114,11 @@ These are the one-hop entry points to every major engineering surface.
 - **[`PRD-corpus-stewardship-v1.md`](./PRD-corpus-stewardship-v1.md)** — the
   corpus-stewardship PRD (editorial pipeline, freshness, audit tooling).
 - **[`docs/product/DESIGN_SYSTEM.md`](./docs/product/DESIGN_SYSTEM.md)** —
-  the web UI design system (tokens + rationale).
+  the web UI design system (tokens + rationale). Rendered companion +
+  live-refresh loop at
+  **[`docs/product/lookbook/`](./docs/product/lookbook/README.md)** — a
+  static lookbook of every UI state against the real app CSS (zero API
+  calls); run `pnpm --filter @offshoreai/web lookbook`.
 - **[`docs/product/PERSONAS.md`](./docs/product/PERSONAS.md)** — product
   personas for the answering agent / web product.
 - **[`docs/audits/2026-06-07-promode-audit.md`](./docs/audits/2026-06-07-promode-audit.md)**
