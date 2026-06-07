@@ -22,7 +22,19 @@ import {
   type CorpusContext,
 } from "@offshoreai/tools-corpus";
 import { composeSystemPrompt } from "./compose-system-prompt.js";
-import { runCitationVerifier, type VerifierVerdict } from "./citation-verifier.js";
+import { runCitationVerifier, type VerifierVerdict, type VerifyOptions } from "./citation-verifier.js";
+
+/**
+ * The two below-UI collaborators that reach the live model: the SDK `query`
+ * and the citation-verifier. They are injected (defaulting to the real
+ * imports) so the event state machine in `stream()` can be driven by a fast,
+ * deterministic test that scripts SDK messages and verifier verdicts — no
+ * network, no model, no API billing. This is the operator seam: the thinnest
+ * interface a deterministic test needs to exercise the draft → revise →
+ * verify_error → done/error wiring without standing up the real agent.
+ */
+export type QueryFn = typeof query;
+export type RunCitationVerifierFn = (opts: VerifyOptions) => Promise<VerifierVerdict>;
 
 export type AgentEvent =
   | { readonly type: "tool"; readonly name: string; readonly input: unknown }
@@ -138,6 +150,20 @@ export interface CreateAgentOptions {
    * surfacing the answer with the unresolved flags. Default 1.
    */
   readonly maxVerifyRetries?: number;
+  /**
+   * Override the SDK `query` (the operator seam). Defaults to the real
+   * imported `query`. A test supplies a function returning a scripted
+   * async-iterable of fake SDK messages to drive the event state machine
+   * deterministically.
+   */
+  readonly queryFn?: QueryFn;
+  /**
+   * Override the citation-verifier. Defaults to the real
+   * `runCitationVerifier`. A test supplies a stub returning a scripted
+   * verdict (or throwing) to drive the revise / verify_error / verdict
+   * branches deterministically.
+   */
+  readonly runVerifier?: RunCitationVerifierFn;
 }
 
 export interface OffshoreaiAgent {
@@ -262,6 +288,8 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
   const allowedTools = [...corpusAllowedToolNames(), "Read", "Glob", "Grep"];
   const verify = opts.verify ?? true;
   const maxVerifyRetries = opts.maxVerifyRetries ?? 1;
+  const queryFn: QueryFn = opts.queryFn ?? query;
+  const runVerifier: RunCitationVerifierFn = opts.runVerifier ?? runCitationVerifier;
 
   function citationEvent(path: string): Extract<AgentEvent, { type: "citation" }> {
     return buildCitationEvent(path, corpus.byPath.get(path));
@@ -298,7 +326,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
           let segment = "";
           let resultText = "";
 
-          for await (const msg of query({
+          for await (const msg of queryFn({
             prompt: currentPrompt,
             options: {
               mcpServers: { corpus: corpusServer },
@@ -394,7 +422,7 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
           yield { type: "verify_start" };
           let v: VerifierVerdict;
           try {
-            v = await runCitationVerifier({
+            v = await runVerifier({
               repoRoot: opts.repoRoot,
               candidateAnswer: answer,
               toolCallLog: toolCalls,
