@@ -98,6 +98,34 @@ Once Parts 1 and 2 are absorbed, read the remaining PRD sections as reference:
 - **§15** risks & mitigations
 - **§16** open questions (six items still unresolved — at least the hosting topology and editorial throughput are implementation blockers; raise these before week 1)
 
+## Engineering quick-links
+
+The implementation exists: a TypeScript pnpm workspace under `packages/`
+(agent runtime, build/validation pipeline, schemas, corpus tools, web UI).
+These are the one-hop entry points to every major engineering surface.
+
+- **[`SETUP.md`](./SETUP.md)** — the build/run/eval runbook: install, build,
+  typecheck, test, and how to ask the agent a corpus query locally. Start
+  here for anything hands-on.
+- **[`IMPLEMENTATION-PLAN.md`](./IMPLEMENTATION-PLAN.md)** — the staged
+  build plan and current implementation state.
+- **[`EVAL-DRIVEN-PLAN.md`](./EVAL-DRIVEN-PLAN.md)** — the eval-driven
+  development methodology (coverage / showcase / adversarial tiers).
+- **[`PRD-corpus-stewardship-v1.md`](./PRD-corpus-stewardship-v1.md)** — the
+  corpus-stewardship PRD (editorial pipeline, freshness, audit tooling).
+- **[`docs/product/DESIGN_SYSTEM.md`](./docs/product/DESIGN_SYSTEM.md)** —
+  the web UI design system (tokens + rationale).
+- **[`docs/product/PERSONAS.md`](./docs/product/PERSONAS.md)** — product
+  personas for the answering agent / web product.
+- **[`docs/audits/2026-06-07-promode-audit.md`](./docs/audits/2026-06-07-promode-audit.md)**
+  — the most recent promode methodology audit and improvement plan.
+- **[`packages/web/README.md`](./packages/web/README.md)** — the streaming
+  web UI architecture and security model.
+- **[`packages/schemas/README.md`](./packages/schemas/README.md)** — the
+  shared Zod schemas.
+- Package READMEs for `packages/agent/`, `packages/build/`, and
+  `packages/tools-corpus/` are forthcoming; read the source under each for now.
+
 ## Different contributor types — what to prioritise
 
 If you're not an implementation engineer, you can stop earlier in the reading order.
@@ -106,7 +134,7 @@ If you're not an implementation engineer, you can stop earlier in the reading or
 |---|---|---|
 | **Implementation engineer (TS, agent build-out)** | Part 3 in full | Plus a per-tool spec pass through `PRD §7.1–7.5`, and [`packages/web/README.md`](./packages/web/README.md) for the streaming web UI's architecture and security model |
 | **Content writer (editorial, jurisdiction expansion)** | Part 1 items 1-5 in full + skim `KNOWLEDGE-BASE-PRINCIPLES.md` whenever a structural question arises | Plus the relevant `knowledge/<jurisdiction>/changelog.md` for context on recent work; for Jersey, also read [`knowledge/jersey/COVERAGE-AUDIT.md`](./knowledge/jersey/COVERAGE-AUDIT.md) and [`knowledge/jersey/history/finance/gaps.md`](./knowledge/jersey/history/finance/gaps.md) before adding new content |
-| **Tenant onboarding / white-label deployment** | Part 1 (skim) + `PRD §9` (tenant model) + `AGENT-PRINCIPLES.md` (the restraint principles) | Plus the future `SETUP.md` when written |
+| **Tenant onboarding / white-label deployment** | Part 1 (skim) + `PRD §9` (tenant model) + `AGENT-PRINCIPLES.md` (the restraint principles) | Plus [`SETUP.md`](./SETUP.md) for build/run/eval, and the future `TENANT-ONBOARDING.md` when written |
 | **Code reviewer / second opinion** | `AGENT-PRINCIPLES.md` + `PRD Appendix C` + the PR's diff | The principles tell you what's load-bearing and what's negotiable |
 | **Strategic / external reader / demo audience** | `README.md` + Part 1 items 6-10 (economy / strategic-narrative / cross-jurisdictional / frontier / gaps) + `PRD §0` | For demo prep: [`DEMO-CHEAT-SHEET-KPMG-PE-PARTNER.md`](./DEMO-CHEAT-SHEET-KPMG-PE-PARTNER.md) is a calibrated walk-through |
 | **Frontier maintainer (refreshing decay-managed content)** | Part 1 items 7-10 + read each frontier file's `as_of` and `expected_decay` frontmatter | Plus [`knowledge/jersey/history/finance/sources.md`](./knowledge/jersey/history/finance/sources.md) bibliography to know which sources to refresh against |
@@ -125,8 +153,10 @@ If you're not an implementation engineer, you can stop earlier in the reading or
 
 These are real gaps and they'll be filled in dedicated docs as they become urgent:
 
-- **Setup / first-run instructions** — there's no implementation code yet, so no setup to document. When week 1 of `PRD §14` begins, write `SETUP.md`.
-- **Per-tool implementation specs** — `PRD §7.1` names tools with one-line behaviours. Concrete Zod schemas, example TOON outputs, error cases need a `schemas/` directory or per-tool spec file once implementation starts.
+(Build/run/eval *do* now have a home: [`SETUP.md`](./SETUP.md) is the runbook for the implemented TypeScript workspace — see the *Engineering quick-links* section above. The gaps below are the things still genuinely unbuilt.)
+
+- **Per-tenant memory layer** — `PRD §9` is the static layout; the per-tenant memory layer and its provisioning are not yet built (see *Tenant onboarding runbook* below for the first-tenant flow).
+- **Per-tool spec docs** — `PRD §7.1` names tools with one-line behaviours and the tools are implemented in `packages/tools-corpus/`, but there is no per-tool spec document (concrete schemas, example TOON outputs, error cases) collecting them in one place.
 - **Sub-agent prompt templates** — `PRD §8` names three sub-agents (`citation-verifier`, `bundle-assembler`, `freshness-checker`) but their actual prompts aren't drafted. Create `prompts/sub-agents/` when week 5–6 of `PRD §14` begins.
 - **Skill body templates** — `PRD §5.2` describes the persona-skill pattern but the skills mechanism is **not yet wired**. The production agent's system prompt is currently a single markdown file at [`prompts/system.md`](./prompts/system.md). If persona-conditional prompts become load-bearing later, build the skills loader then; previous template files at `skills/templates/baseline.SKILL.md` and `task.SKILL.md` were removed as dead weight (recoverable from git history at `02d79e9~`).
 - **Tenant onboarding runbook** — `PRD §9` is the static layout; the provisioning script and first-tenant flow live in a future `TENANT-ONBOARDING.md`.
@@ -147,18 +177,21 @@ This file used to delegate the cold-start guide to a separate `AGENTS.md` (read 
 
 # Dev orientation context (transcluded)
 
-The orientation surfaces below are `@`-referenced so **Claude Code dev
-sessions** that open this project arrive with jurisdiction,
-cross-jurisdictional, strategic-narrative, and tag-taxonomy context already
-loaded. This is for the dev / meta-dev audience.
+Only the **closed tag taxonomy** is transcluded — it is consulted on
+essentially every content edit, so it earns its ambient cost. The other
+high-value corpus front-doors are **not** pre-loaded; per the
+query-time-retrieval principle (`PRD §6.4`), an agent should pull them on
+demand via its `corpus.*` tools (`corpus.getFile`, `corpus.tree`) only when a
+task actually needs them. The three to know about:
+[`knowledge/jersey/index.md`](./knowledge/jersey/index.md) (the deepest
+jurisdiction's front door),
+[`knowledge/CROSS-JURISDICTIONAL-MAP.md`](./knowledge/CROSS-JURISDICTIONAL-MAP.md)
+(the six-jurisdiction comparison surface), and
+[`knowledge/jersey/history/finance/trajectory.md`](./knowledge/jersey/history/finance/trajectory.md)
+(the strategic-narrative "four acts" synthesis).
 
-The **production answering agent** does not consume these transclusions
+The **production answering agent** does not consume this transclusion
 (it runs via the SDK; the production system prompt is `prompts/system.md`,
-which directs the agent to read these files via its corpus tools when
-relevant).
+which directs the agent to read corpus files via its tools when relevant).
 
 @TAGS.md
-
-@knowledge/jersey/index.md
-@knowledge/CROSS-JURISDICTIONAL-MAP.md
-@knowledge/jersey/history/finance/trajectory.md

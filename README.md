@@ -153,6 +153,26 @@ the frontmatter.
 
 ---
 
+## Engineering
+
+The corpus is wrapped by a TypeScript pnpm workspace under `packages/`
+(agent runtime, build/validation pipeline, schemas, corpus tools, streaming
+web UI). To build, run, typecheck, test, or ask the agent a corpus query
+locally, start with these:
+
+- [SETUP.md](./SETUP.md) — build / run / typecheck / test / query runbook.
+- [IMPLEMENTATION-PLAN.md](./IMPLEMENTATION-PLAN.md) — staged build plan and
+  current implementation state.
+- [packages/web/README.md](./packages/web/README.md) — streaming web UI
+  architecture and security model.
+- [packages/schemas/README.md](./packages/schemas/README.md) — shared Zod
+  schemas.
+
+Contributor cold-start and repo conventions live in
+[CLAUDE.md](./CLAUDE.md).
+
+---
+
 ## Status
 
 This is an actively built knowledge base, not a finished product. File
