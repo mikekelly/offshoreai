@@ -7,6 +7,7 @@ import {
   createCorpusToolsServer,
 } from "@offshoreai/tools-corpus";
 import { composeSystemPrompt, SYSTEM_PROMPT_RELATIVE_PATH } from "./compose-system-prompt.js";
+import { auditHooks } from "./audit.js";
 
 export interface RunQueryOptions {
   /** The user's question. */
@@ -97,6 +98,12 @@ export async function runQuery(opts: RunQueryOptions): Promise<RunQueryResult> {
       maxTurns: opts.maxTurns ?? 20,
       permissionMode: "bypassPermissions",
       cwd: opts.repoRoot,
+      // Audit logging (AGENT-BEHAVIOURS #6): single-line `kind:"audit"` JSON to
+      // stderr per tool call + session bracket. The engineer-facing eval CLI has
+      // no per-request correlation id, so the records carry session_id alone
+      // (request_id null). This path has no citation-verifier, hence no Stop
+      // verdict audit.
+      hooks: auditHooks({}),
     },
   })) {
     if (msg.type === "assistant") {

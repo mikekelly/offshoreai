@@ -23,6 +23,7 @@ import {
 } from "@offshoreai/tools-corpus";
 import { composeSystemPrompt } from "./compose-system-prompt.js";
 import { runCitationVerifier, type VerifierVerdict, type VerifyOptions } from "./citation-verifier.js";
+import { auditHooks, buildAuditRecord, emitAudit } from "./audit.js";
 
 /**
  * The two below-UI collaborators that reach the live model: the SDK `query`
@@ -338,6 +339,14 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
               // Resume an existing SDK session to continue with full prior
               // context (messages + tool results) replayed by the SDK.
               ...(currentResume ? { resume: currentResume } : {}),
+              // Audit logging (AGENT-BEHAVIOURS #6): PostToolUse → tool-call
+              // audit, SessionStart/End → session bracket, each emitted as a
+              // single-line `kind:"audit"` JSON record to stderr correlatable by
+              // requestId + session_id. Fires under the real SDK only; the
+              // stubbed queryFn seam bypasses these (so the deterministic stream
+              // tests never trip them). The Stop / verifier-verdict audit is
+              // emitted from this loop (below), where the verdict actually lives.
+              hooks: auditHooks(streamOpts?.requestId !== undefined ? { requestId: streamOpts.requestId } : {}),
               includePartialMessages: true,
               // Let the model plan/retrieve in thinking blocks rather than
               // narrating ("let me read X…") in the user-facing answer text.
@@ -472,6 +481,20 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
         }
 
         if (finalVerdict) {
+          // Audit (#6): the citation-verifier verdict, logged at the turn-stop
+          // boundary. (Not an SDK Stop hook — the verdict is produced here, not
+          // inside the SDK's Stop hook, so the loop emits it directly.)
+          emitAudit(
+            buildAuditRecord({
+              event: "Stop",
+              ...(streamOpts?.requestId !== undefined ? { requestId: streamOpts.requestId } : {}),
+              sessionId,
+              verdictKind: finalVerdict.kind,
+              claimsChecked: finalVerdict.claimsChecked,
+              claimsWithCitation: finalVerdict.claimsWithCitation,
+              rejectCount: finalVerdict.reasons.length,
+            }),
+          );
           yield {
             type: "verdict",
             kind: finalVerdict.kind,
