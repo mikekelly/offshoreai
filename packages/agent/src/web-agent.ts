@@ -144,22 +144,103 @@ export interface OffshoreaiAgent {
   stream(question: string, opts?: StreamOptions): AsyncGenerator<AgentEvent, void, unknown>;
 }
 
-const CORPUS_PATH_RE = /knowledge\/[A-Za-z0-9._/-]+\.md/g;
+// Exported for unit testing (pure helpers). Treated as module-private by
+// callers — only the agent factory below and the test suite import them.
+export const CORPUS_PATH_RE = /knowledge\/[A-Za-z0-9._/-]+\.md/g;
 const WARN_DAYS = 180;
 const STALE_DAYS = 365;
 
-function freshnessFor(ageDays: number | null): "fresh" | "warn" | "stale" {
+export function freshnessFor(ageDays: number | null): "fresh" | "warn" | "stale" {
   if (ageDays === null) return "warn";
   if (ageDays >= STALE_DAYS) return "stale";
   if (ageDays >= WARN_DAYS) return "warn";
   return "fresh";
 }
 
-function ageDaysFrom(lastVerified: string | null): number | null {
+export function ageDaysFrom(lastVerified: string | null): number | null {
   if (!lastVerified) return null;
   const then = Date.parse(lastVerified);
   if (Number.isNaN(then)) return null;
   return Math.floor((Date.now() - then) / 86_400_000);
+}
+
+// Frontmatter extraction — hoisted to module scope (no closure dependency) so
+// they're unit-testable directly. `sourcesOf` pulls the file's PRIMARY sources
+// (statute / regulator / judgment / secondary) from `sources` frontmatter;
+// `pinpointsOf` pulls per-article deep-links from `pinpoints` frontmatter.
+export function sourcesOf(rec: CorpusRecord): Array<{ title: string; url: string; kind: string }> {
+  const s = (rec.frontmatter as { sources?: unknown }).sources;
+  if (!Array.isArray(s)) return [];
+  return s.flatMap((x) => {
+    if (x && typeof x === "object") {
+      const o = x as Record<string, unknown>;
+      const title = typeof o["title"] === "string" ? o["title"] : "";
+      const url = typeof o["url"] === "string" ? o["url"] : "";
+      const kind = typeof o["kind"] === "string" ? o["kind"] : "";
+      if (title || url) return [{ title, url, kind }];
+    }
+    return [];
+  });
+}
+
+export function pinpointsOf(rec: CorpusRecord): Array<{ article: string; url: string; source: string }> {
+  const p = (rec.frontmatter as { pinpoints?: unknown }).pinpoints;
+  if (!Array.isArray(p)) return [];
+  return p.flatMap((x) => {
+    if (x && typeof x === "object") {
+      const o = x as Record<string, unknown>;
+      const article = typeof o["article"] === "string" ? o["article"] : "";
+      const url = typeof o["url"] === "string" ? o["url"] : "";
+      const source = typeof o["source"] === "string" ? o["source"] : "";
+      if (article && url) return [{ article, url, source }];
+    }
+    return [];
+  });
+}
+
+/**
+ * Build the citation event for one corpus path given the result of looking it
+ * up in the corpus index (`rec` is `undefined` when the path doesn't resolve).
+ * Hoisted out of the agent closure so the hallucination-surfacing path (a cited
+ * path that doesn't exist → `exists:false`, `freshness:"missing"`) is unit-
+ * testable without standing up the SDK agent. The closure below just supplies
+ * the lookup.
+ */
+export function buildCitationEvent(
+  path: string,
+  rec: CorpusRecord | undefined,
+): Extract<AgentEvent, { type: "citation" }> {
+  if (!rec) {
+    return {
+      type: "citation",
+      path,
+      exists: false,
+      title: null,
+      status: null,
+      lastVerified: null,
+      ageDays: null,
+      freshness: "missing",
+      sources: [],
+      articles: [],
+      pinpoints: [],
+    };
+  }
+  const lastVerified = getLastVerified(rec);
+  const ageDays = ageDaysFrom(lastVerified);
+  const status = getStatus(rec);
+  return {
+    type: "citation",
+    path,
+    exists: true,
+    title: getTitle(rec),
+    status,
+    lastVerified,
+    ageDays,
+    freshness: status === "stale" ? "stale" : freshnessFor(ageDays),
+    sources: sourcesOf(rec),
+    articles: [...getArticlesCovered(rec)],
+    pinpoints: pinpointsOf(rec),
+  };
 }
 
 /**
@@ -182,69 +263,8 @@ export async function createOffshoreaiAgent(opts: CreateAgentOptions): Promise<O
   const verify = opts.verify ?? true;
   const maxVerifyRetries = opts.maxVerifyRetries ?? 1;
 
-  function sourcesOf(rec: CorpusRecord): Array<{ title: string; url: string; kind: string }> {
-    const s = (rec.frontmatter as { sources?: unknown }).sources;
-    if (!Array.isArray(s)) return [];
-    return s.flatMap((x) => {
-      if (x && typeof x === "object") {
-        const o = x as Record<string, unknown>;
-        const title = typeof o["title"] === "string" ? o["title"] : "";
-        const url = typeof o["url"] === "string" ? o["url"] : "";
-        const kind = typeof o["kind"] === "string" ? o["kind"] : "";
-        if (title || url) return [{ title, url, kind }];
-      }
-      return [];
-    });
-  }
-
-  function pinpointsOf(rec: CorpusRecord): Array<{ article: string; url: string; source: string }> {
-    const p = (rec.frontmatter as { pinpoints?: unknown }).pinpoints;
-    if (!Array.isArray(p)) return [];
-    return p.flatMap((x) => {
-      if (x && typeof x === "object") {
-        const o = x as Record<string, unknown>;
-        const article = typeof o["article"] === "string" ? o["article"] : "";
-        const url = typeof o["url"] === "string" ? o["url"] : "";
-        const source = typeof o["source"] === "string" ? o["source"] : "";
-        if (article && url) return [{ article, url, source }];
-      }
-      return [];
-    });
-  }
-
   function citationEvent(path: string): Extract<AgentEvent, { type: "citation" }> {
-    const rec = corpus.byPath.get(path);
-    if (!rec) {
-      return {
-        type: "citation",
-        path,
-        exists: false,
-        title: null,
-        status: null,
-        lastVerified: null,
-        ageDays: null,
-        freshness: "missing",
-        sources: [],
-        articles: [],
-        pinpoints: [],
-      };
-    }
-    const lastVerified = getLastVerified(rec);
-    const ageDays = ageDaysFrom(lastVerified);
-    const status = getStatus(rec);
-    return {
-      type: "citation",
-      path,
-      exists: true,
-      title: getTitle(rec),
-      status,
-      lastVerified,
-      ageDays,
-      freshness: status === "stale" ? "stale" : freshnessFor(ageDays),
-      sources: sourcesOf(rec),
-      articles: [...getArticlesCovered(rec)],
-      pinpoints: pinpointsOf(rec),
-    };
+    return buildCitationEvent(path, corpus.byPath.get(path));
   }
 
   return {

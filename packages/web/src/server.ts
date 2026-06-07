@@ -29,6 +29,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createOffshoreaiAgent, type OffshoreaiAgent } from "@offshoreai/agent/web-agent";
 import { ConversationStore, type Draft, type DraftStatus, type StoredCitation, type StoredVerdict } from "./store.js";
+import { hostAllowed as hostHeaderAllowed, UUID_RE } from "./validation.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(HERE, "..", "..", "..");
@@ -43,20 +44,12 @@ const PORT = Number(process.env["PORT"] ?? 3104);
 const BIND = process.env["OFFSHOREAI_BIND"] ?? "127.0.0.1";
 const IS_LOCAL_BIND = BIND === "127.0.0.1" || BIND === "localhost" || BIND.startsWith("127.");
 
-const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-const LOCAL_HOSTS = new Set(["127.0.0.1", "localhost"]);
-
-/**
- * When bound to loopback, reject requests whose Host header isn't a localhost
- * name — closes the DNS-rebinding vector where a malicious page on another
- * domain (resolved to 127.0.0.1) tries to talk to this server from a victim
- * browser. With an explicit non-local bind, the operator is opting in.
- */
+// DNS-rebinding defence + conversationId shape check are pure predicates in
+// ./validation.ts (so they're unit-testable without server.ts's module-load
+// side effects). `hostAllowed` here just adapts the request + this process's
+// bind-locality to the pure predicate.
 function hostAllowed(req: IncomingMessage): boolean {
-  if (!IS_LOCAL_BIND) return true;
-  const raw = (req.headers["host"] ?? "").toString().toLowerCase();
-  const host = raw.split(":")[0] ?? "";
-  return LOCAL_HOSTS.has(host);
+  return hostHeaderAllowed((req.headers["host"] ?? "").toString(), IS_LOCAL_BIND);
 }
 
 function readBody(req: IncomingMessage): Promise<string> {
