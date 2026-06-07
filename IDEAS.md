@@ -36,6 +36,14 @@ spec'd. Spec'd-and-ranked work currently lives in
   assertion (e.g. "index.html still contains the Briefings Desk landmark") to
   catch the "committed a stale working tree" class of mistake (cf. `2549ff4` →
   `5af954a`) before it reaches `main`.
+- **Backfill `query-cli.ts` trajectory `latencyMs`** — the eval-trajectory writer
+  hardcodes `latencyMs: 0` (~lines 138-140); now that the audit hooks capture real
+  `duration_ms`, the trajectory field could be populated from the same source.
+  (Flagged by the audit-hooks task; out of its scope.)
+- **Second verifier seam** — `citation-verifier.ts` imports `query` at module
+  scope; only `web-agent.ts`'s call is injectable today (via `runVerifier`). If a
+  future test needs to drive the verifier's *internal* SDK loop deterministically,
+  a second injection seam would be needed. (Flagged by the seam-test task.)
 - **`PERSONAS.md` as a first-class node** (beyond the design persona) —
   consolidate the well-grounded-but-scattered persona evidence (TAGS.md persona
   category + PRD §3 table + the 16 use-case indexes) into one landing point.

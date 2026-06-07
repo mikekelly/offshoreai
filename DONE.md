@@ -36,3 +36,32 @@ Audit ratings at time of work: Framing **Strong** · Tests **Partial** · Knowle
 **Partial** · Architecture **Strong** · Observability **Weak** · Design **Weak** ·
 Hygiene **Strong**. The Now tier targeted the three weakest (Knowledge,
 Observability, Design) plus the highest-leverage Tests gap.
+
+## 2026-06-08 — promode audit "Next" tier (all 5)
+
+- **Next-1 · Deterministic seam test** — `packages/agent/test/stream.test.ts`
+  drives `agent.stream()` with a stubbed SDK (`queryFn`/`runVerifier` injection
+  seam added to `web-agent.ts`); 9 cases assert the event state machine
+  (draft→done, revise→rejected-draft→fresh-draft, retries-exhausted,
+  verify_error→unavailable, session emission + resume, error path). Perturbation
+  check confirms the seam is load-bearing. Commit `472c6eb`.
+- **Next-2 · Audit-logging hooks (AGENT-BEHAVIOURS #6)** — `packages/agent/src/audit.ts`:
+  SDK PostToolUse / SessionStart / SessionEnd hooks + a stream-loop verdict audit,
+  emitting single-line `kind:"audit"` JSON to stderr keyed on `requestId` +
+  `session_id`, with real `latency_ms` and a SHA-256 `input_hash` (raw input never
+  logged). Pure `buildAuditRecord` unit-tested (7 cases). Commit `5f66921`.
+- **Next-3 · Lookbook + live-refresh loop** — `docs/product/lookbook/` renders
+  every UI state against the app's real CSS (extracted live from `index.html`, so
+  it can't drift), with a Node-only SSE live-reload server
+  (`pnpm --filter @offshoreai/web lookbook`). Zero API calls to use. Commit `4657560`.
+- **Next-4 · Package READMEs** — orientation docs for `packages/agent`,
+  `packages/build`, `packages/tools-corpus`, matching the web/schemas bar, each a
+  graph node with up-links. Commit `5c4fd7e`.
+- **Next-5 · ADR store** — `docs/decisions/` hub + 4 dated ADRs (no MCP-wrapping,
+  no output Zod, no custom-CLI agent surfaces, TS-over-Python), each sourced from
+  PRD Appendix C / revision history. Commit `eac84ba`.
+
+Post-tier integration: `pnpm typecheck` clean across 5 packages; full vitest
+suite **149 passing** (build 19, tools-corpus 54, agent 39, web 37).
+Dimensions moved: Observability Weak→addressed, Design Weak→addressed, Tests
+Partial→strengthened, Knowledge Partial→strengthened.
