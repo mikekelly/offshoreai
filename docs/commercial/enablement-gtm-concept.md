@@ -209,5 +209,7 @@ incumbents copying it once it's proven.
    CDD file) from a friendly TCSP contact.
 2. Spec the **CDD onboarding loop** as a concrete product — inputs, agent roster,
    corpus touchpoints, the human sign-off gate, and what's saved back as learning.
-3. Turn this concept + the loop spec into the **customer/partner deck** (the existing
-   open thread).
+3. Turn this concept + the loop spec into the **customer/partner deck** — a
+   slide-by-slide sketch already exists at
+   [`partner-deck-sketch.md`](./partner-deck-sketch.md) (AIDA arc, copy levers, visual
+   placeholders); it needs the real proof/pricing numbers before it's shown.

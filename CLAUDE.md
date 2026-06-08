@@ -126,6 +126,10 @@ These are the one-hop entry points to every major engineering surface.
   services** firm for incumbent TCSPs (corpus + agent/loop framework plus embedded
   engineers), the CDD-onboarding wedge, and the deployment + platform + usage pricing
   model. Seed for the customer/partner deck.
+- **[`docs/commercial/partner-deck-sketch.md`](./docs/commercial/partner-deck-sketch.md)**
+  — the customer/partner deck as a slide-by-slide sketch: the concept distilled
+  through an AIDA arc with copywriting levers and visual placeholders. Numbers are
+  flagged placeholders pending real data.
 - **[`docs/audits/2026-06-07-promode-audit.md`](./docs/audits/2026-06-07-promode-audit.md)**
   — the most recent promode methodology audit and improvement plan.
 - **[`packages/web/README.md`](./packages/web/README.md)** — the streaming
