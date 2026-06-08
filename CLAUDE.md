@@ -122,9 +122,10 @@ These are the one-hop entry points to every major engineering surface.
 - **[`docs/product/PERSONAS.md`](./docs/product/PERSONAS.md)** — product
   personas for the answering agent / web product.
 - **[`docs/commercial/enablement-gtm-concept.md`](./docs/commercial/enablement-gtm-concept.md)**
-  — the go-to-market concept: OffshoreAI as enablement infrastructure licensed to
-  incumbent TCSPs, the CDD-onboarding wedge, and the pricing model. Seed for the
-  customer/partner deck.
+  — the go-to-market concept: OffshoreAI as an AI-native **product + forward-deployed
+  services** firm for incumbent TCSPs (corpus + agent/loop framework plus embedded
+  engineers), the CDD-onboarding wedge, and the deployment + platform + usage pricing
+  model. Seed for the customer/partner deck.
 - **[`docs/audits/2026-06-07-promode-audit.md`](./docs/audits/2026-06-07-promode-audit.md)**
   — the most recent promode methodology audit and improvement plan.
 - **[`packages/web/README.md`](./packages/web/README.md)** — the streaming

@@ -1,4 +1,4 @@
-# Commercial concept — OffshoreAI as enablement infrastructure for TCSPs
+# Commercial concept — OffshoreAI as product + forward-deployed services for TCSPs
 
 > Status: **early concept**, per Mike 2026-06-08. The seed for the
 > customer/partner deck. Positioning and the pricing *shape* are decided in
@@ -9,10 +9,14 @@
 
 ## One line
 
-**Sell the *capability*, not the corpus.** OffshoreAI is the AI infrastructure that
-lets an incumbent, JFSC-licensed trust company business (TCSP) offer AI-run,
-human-signed-off compliance and administration loops — without becoming a software
-company itself. Picks-and-shovels, not a competing trust company.
+**Sell the product *and* the services — capture both halves of the $7.** OffshoreAI
+is an AI-native **product** (the offshore-law corpus + agent/loop framework) delivered
+*with* **forward-deployed engineers** who stand the loops up inside each
+JFSC-licensed trust company business (TCSP), codify that firm's tribal knowledge into
+skills, and own the outcome alongside the firm's MLRO. Not a pure software licence
+(which leaves the lucrative services spend on the table), not a competing trust
+company (which takes on the regulatory burden) — the AI-native *services-as-software*
+firm in between.
 
 ## The thesis
 
@@ -40,31 +44,57 @@ owns layer-2's hardest dependency: a research-grade, cited, dated corpus of the 
 (see [`../../README.md`](../../README.md)) — the thing a generic agent zoo can't
 fake.
 
-## Why enablement, not competing
+## The model: product + forward-deployed services
 
-Two ways to capture the services spend: **(A)** license the capability to incumbent
-TCSPs, or **(B)** become a next-gen TCSP yourself and capture the whole fee. We lead
-with **A**:
+Three ways to capture the offshore services spend:
 
-- **They keep the regulatory burden.** The TCSP stays the licensed, accountable
-  entity — MLRO, source-of-wealth, fiduciary liability all sit with them. OffshoreAI
-  stays infrastructure. Enormous de-risk; no JFSC licensing on our critical path.
-- **We ride their books and trust.** They already hold the client structures, the
-  data-handling permissions, and the relationships. We rebuild none of it.
-- **Jersey's small, dense market works *for* us.** Land 2–3 flagship trust-company
-  logos and the whole island knows. Referenceability is the currency here.
-- **The fear is on our side.** Incumbents are scared of AI disruption *and* of falling
-  behind. Enablement lets them adopt without becoming software companies.
+- **(A) Pure software licence** — rent the corpus + framework and let the TCSP
+  configure it. Fast and scalable, but captures only the $1 software slice and leaves
+  the $6 of services — the actual prize — on the table. Worse, a tool dropped into a
+  firm that can't configure it stalls, and an unembedded vendor is the easiest thing
+  to rip out or rebuild.
+- **(B) Become a next-gen TCSP yourself** — capture the whole fee, but take on JFSC
+  licensing, fiduciary liability, and a standing-start client book. Slow, capital- and
+  regulation-heavy.
+- **(C) Product + forward-deployed services** ← **lead with this.** Ship the product
+  *and* embed engineers who make it deliver outcomes inside each client. Capture
+  software **and** services revenue — the *services-as-software* model the VCs are
+  actually funding (the Palantir-origin "forward-deployed engineer" shape).
 
-A (enablement) does not foreclose B (own TCSP) later — but the moment a TCSP suspects
-we might become their competitor, the enablement sale gets harder. **Stance to take
-consciously**, not drift into (see Open questions).
+Why **C** fits offshore / Jersey:
+
+- **The loops need real per-client configuration.** Each TCSP has its own systems,
+  file formats, risk appetite, and client structures; off-the-shelf software won't
+  drop in. The FDE *is* the bridge — and that bridging work is precisely the
+  high-margin services revenue, not a cost to minimise.
+- **Tribal knowledge has to be codified.** Each firm's "how we actually run CDD"
+  becomes the skills/loops the FDE writes during deployment — billable services *and*
+  the thing that makes the product stick.
+- **The regulatory de-risk survives.** Even with an FDE embedded, the TCSP remains the
+  licensed, accountable entity; its MLRO signs off. OffshoreAI supplies product +
+  engineering, never fiduciary/regulatory sign-off — so no JFSC licence sits on our
+  critical path (the one real advantage the pure-licence framing had, kept).
+- **Stickier, harder to copy.** An embedded partner delivering outcomes is far harder
+  to rip out — or rebuild in-house — than a login. This is the direct answer to the
+  "they'll just build it themselves" risk.
+- **Services → product flywheel.** Each deployment teaches us patterns that harden the
+  shared corpus + skill library, so the bespoke share of the *next* deployment
+  shrinks. Services aren't only margin; they're R&D that compounds into the product.
+  That is what makes this services-*as-software* rather than a consultancy — and what
+  keeps gross margin climbing over time.
+- **Jersey's small, dense, relationship-driven market rewards embedded delivery.**
+  Trust a SaaS login can't earn; land 2–3 flagship logos and the island knows.
+
+C does not foreclose B later — but the moment a TCSP suspects we might become their
+competitor, the services relationship sours. **Stance to take consciously**, not
+drift into (see Open questions).
 
 ## Who buys, who uses
 
 - **Economic buyer:** TCSP leadership — COO / head of compliance / managing director.
-  Buys reduced cost-per-file, faster onboarding, audit-defensibility, and capacity to
-  grow the book without linear headcount.
+  Buys a **stood-up, working capability** (product + deployment), not a tool to staff
+  and configure themselves: reduced cost-per-file, faster onboarding,
+  audit-defensibility, and capacity to grow the book without linear headcount.
 - **End users:** the personas the corpus already serves deepest — the
   **[trust officer](../product/PERSONAS.md)** and **compliance/MLRO**, plus fund
   administrators. The product's job is to give them *an answer they can stand behind
@@ -100,12 +130,22 @@ budget.** Per-seat pricing is the trap — it benchmarks us against generic AI t
 and underprices a loop that quietly removes headcount. Price as a meaningful fraction
 of the fully-loaded administrator/analyst hours each loop removes.
 
-Recommended shape — **base platform licence + metered usage**:
+Recommended shape — **deployment + platform licence + metered usage**. Land with
+services, expand into recurring platform:
 
 | Component | Meters on | Captures |
 |---|---|---|
-| **Base platform licence** (annual) | access to the maintained corpus + skill/loop library + reg-change updates | the *compounding* asset — the thing they can't build or maintain themselves |
+| **Deployment / forward-deployed engineering** (packaged fixed-scope engagement, or retainer) | scoped FDE work to stand up a loop in the firm + codify its skills | the **services** half of the $7; the land motion and the stickiness |
+| **Base platform licence** (annual, recurring) | access to the maintained corpus + skill/loop library + reg-change updates | the *compounding* asset — the thing they can't build or maintain themselves |
 | **Usage** (pick per deployment) | **per active entity/relationship under administration** *and/or* **per loop-run** (per CDD onboarding / periodic review / reg-change assessment) | value as they scale; aligns with how TCSPs already measure their book |
+
+**Productise the services**: package the FDE engagement as a fixed-scope "loop
+deployment" (e.g. *stand up the CDD onboarding loop in your firm in N weeks*) rather
+than open-ended consulting — so services revenue is predictable, and the repeatable
+parts of each deployment migrate into the platform over time (the FDE's deployment
+work *is* the codification of reusable playbooks/skills). This is the mechanism that
+shifts the revenue mix from services-heavy toward platform-heavy as the company
+matures, and lifts gross margin with it.
 
 Per-entity metering is attractive because it's exactly how trust companies already
 count revenue; per-loop-run is cleanest for the onboarding wedge where usage = value
@@ -139,19 +179,29 @@ incumbents copying it once it's proven.
 
 ## Risks / open questions
 
+- **Services-margin / scaling tension (the core FDE risk).** Forward-deployed
+  engineering is people-heavy and doesn't scale like SaaS — the classic critique of
+  the Palantir model, and the reason investors discount services revenue. The whole
+  bet is that AI makes each FDE many times more productive *and* that the services →
+  product flywheel (above) steadily productises the bespoke work, so revenue mix and
+  gross margin shift platform-ward over time. **Watch the metric:** services as a % of
+  revenue, and bespoke-vs-reused work per deployment, should both fall. If they don't,
+  it's a consultancy wearing a software badge.
 - **Channel dependency.** Selling only through slow, conservative, relationship-driven
-  buyers means long cycles. Mitigation: a sharp, measurable wedge (cost-per-CDD-file)
-  and flagship references.
-- **Copy risk.** A large TCSP may try to build in-house once it works — countered by
-  the central corpus + reg-update cadence they'd have to reproduce and maintain.
+  buyers means long cycles. Mitigation: a sharp, measurable wedge (cost-per-CDD-file),
+  flagship references, and the FDE land motion that gets us inside fast.
+- **Copy risk — now largely mitigated.** A large TCSP might try to build in-house, but
+  an embedded FDE delivering outcomes plus the central corpus + reg-update cadence
+  they'd have to reproduce and maintain make that far less attractive than ripping out
+  a mere login. (This is the main reason **C** beats **A**.)
 - **Data / confidentiality.** Handling client KYC and source-of-wealth raises
   data-residency and JFSC confidentiality questions — design for siloing and
   auditability from day one. (Siu's "ship 100 variants, kill 90" velocity framing does
   **not** transfer; the currency here is precision + auditability + sign-off.)
-- **Identity question (decide early-ish):** pure infrastructure (the "Stripe of
-  offshore compliance" — higher trust, higher multiple, capped at a slice) vs.
-  optionality to become a TCSP later (higher capture, jeopardises the enablement
-  sale). Pick a stance consciously.
+- **Identity question (decide early-ish):** stay an AI-native product + services firm
+  serving TCSPs, vs. keep optionality to *become* a TCSP later (higher capture, but it
+  turns today's clients into tomorrow's competitors and sours the services
+  relationship). Pick a stance consciously.
 
 ## Next steps
 
