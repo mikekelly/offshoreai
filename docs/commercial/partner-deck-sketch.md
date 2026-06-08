@@ -28,55 +28,69 @@ The deck runs as one story: **Attention** (slides 1–2) → **Interest** (3–5
 **Desire** (6–11) → **Action** (12–15). Each slide should leave a small open loop the
 next one closes.
 
+**Spine (decided, Mike 2026-06-08): compounding.** The through-line is the one truth a
+trust/finance room trusts most — *a small edge that compounds is impossible to
+catch* — transplanted onto AI. It's deliberately the *credible*, understated register,
+not the louder "jet engine, are you ready for take-off" version (too hot for this
+audience). A **recurring visual motif carries it**: two curves leaving the same point,
+opening on slide 1, widening on 2 and 10, a chasm on 15. Same image, four beats —
+that's the bookend.
+
 ---
 
 ## Slide 1 — Cover
 
-**Headline:** Six of every seven pounds in your business is human time.
+**Headline:** A small edge, compounding, is impossible to catch.
 
-**Body:** OffshoreAI — managed compliance loops for Jersey trust companies.
-*(logo · presenter · date)*
+**Body:** No one knows that better than you. — It's about to be true of AI, in your
+business.
+*(OffshoreAI · presenter · date — kept small; the line does the work)*
 
-🖼 **Visual:** A quiet, high-end Jersey trust office after hours — one desk lamp
-still on, a single analyst dwarfed by banker's boxes and paper CDD files. Restrained,
-expensive, a little lonely. (Not a glossy "AI" render — credibility starts here.)
+🖼 **Visual:** Two faint curves leaving the same point — one flat, one bending up and
+away. No labels yet. The gap between them is the whole deck. Austere, almost
+unbranded; credibility starts here, not a glossy "AI" render. *(This image recurs on
+slides 2, 10, and 15 — the bookend motif.)*
 
-✍️ **Lever:** Tribe-call + open loop. It names *their* economics without selling
-anything yet (Trojan horse — product stays hidden). The unanswered question —
-*so what?* — pulls them to slide 2.
-
----
-
-## Slide 2 — The punch
-
-**Headline:** The most expensive work on the island is still done by hand.
-
-**Body:** £1 of software, £6 of people. Everyone's racing to capture the £7 with AI.
-Almost no one has said *how*.
-
-🖼 **Visual:** The "$1 : $6" made physical — a single coin beside a thick stack of
-six payslips (or six suited figures). Make the ratio *felt*, not stated.
-
-✍️ **Lever:** Make-numbers-physical + curiosity gap. "No one has said how" is the
-open loop the whole deck pays off. (Punchier B2C alt: *"Your blender makes great
-slop." — too cute for this room; hold it.*)
+✍️ **Lever:** Rule of consistency / nod-yes — open on something a finance room
+*already* believes, cold, with zero setup. "It's about to be true of AI…" is the
+master open loop the close on slide 15 detonates. Product stays hidden (Trojan
+horse).
 
 ---
 
-## Slide 3 — The maze (get them nodding)
+## Slide 2 — What compounds
 
-**Headline:** You already know where the hours go.
+**Headline:** Your most powerful force isn't a tool. It's a loop.
+
+**Body:** Money compounds. So does this. Every file an AI loop runs teaches it — so the
+next is faster, the one after sharper, the gap wider. A few points of edge a month
+don't add up. They multiply. And compounding gaps don't close.
+
+🖼 **Visual:** The two curves from slide 1, now visibly diverging — with a small inset
+of a *loop* (inputs → work → outcome → learning → back to inputs) labelled "the thing
+that compounds."
+
+✍️ **Lever:** Spin-the-known — borrow the one mechanism this audience trusts
+absolutely (compound interest) and transplant it onto AI. Rhythm: short, short, long.
+"Compounding gaps don't close" seeds the urgency the close detonates.
+
+---
+
+## Slide 3 — Where your edge is hiding (get them nodding)
+
+**Headline:** £1 of software. £6 of people. You already know where the hours go.
 
 **Body:** One person pulls the documents. Another unpicks the ownership. Another
 screens. Another drafts the file. Another reviews it. Another chases the client for
-the one missing page. By the time it ships, the risk picture has already moved.
+the one missing page. By the time it ships, the risk picture has already moved. That
+£6 of hands is where the compounding edge is waiting — for whoever frees it first.
 
-🖼 **Visual:** A single CDD onboarding rendered as a tangled relay — batons dropped
-between six pairs of hands, a clock ticking in the corner.
+🖼 **Visual:** The "£1 : £6" made physical — a single coin beside six pairs of hands
+passing one CDD file down a tangled relay, a clock ticking in the corner.
 
-✍️ **Lever:** Rule of consistency — open with something they'll nod *yes* to before
-any pitch. Rhythm: short, repeated "Another…" beats, then one long sentence to land
-it.
+✍️ **Lever:** Make-numbers-physical + nod-yes. Rhythm: short repeated "Another…"
+beats, then one long sentence to land it. Bridges the abstract compounding idea onto
+*their* P&L — the £6 of manual services is the prize.
 
 ---
 
@@ -102,7 +116,8 @@ had the wrong mechanism"), which opens them to a new frame on slide 5.
 
 **Body:** A **loop** is the whole job, end to end — inputs in, a finished, defensible
 outcome out — that gets smarter every time it runs. Not a tool your team operates. A
-process that operates, with your team in command of it.
+process that operates, with your team in command of it. *That* "smarter every time" is
+the compounding from slide 2 — made operational.
 
 🖼 **Visual:** The tangled relay of slide 3 redrawn as one clean closed circle:
 inputs → work → outcome → learning → back to inputs. Order replacing chaos.
@@ -181,30 +196,35 @@ This is the slide that converts a sceptic.
 **Body:** A forward-deployed engineer works inside your firm for `[[N weeks]]`, wires
 the loop to your systems, and turns *how you actually do it* into the loop's playbook.
 You finish the deployment owning a working process — not a tool you have to staff and
-figure out.
+figure out. **You don't build the engine. We bring it — and the expertise to start
+your loop compounding now, not next year.**
 
-🖼 **Visual:** An engineer at a desk *inside* the trust office (same room as the
-cover), screen showing the loop, a compliance officer beside them — partnership, not
-handover.
+🖼 **Visual:** An engineer at a desk *inside* the trust office, screen showing the
+loop, a compliance officer beside them — partnership, not handover.
 
 ✍️ **Lever:** Differentiator + objection pre-empt ("will this just sit unused like the
-last tool?" → no, we deploy it). Customer-as-hero, OffshoreAI-as-guide.
+last tool?" → no, we deploy it). The bolded line is the provider reveal — *we are the
+engine + the expertise* — placed right after the proof slide so it lands on earned
+credibility. Customer-as-hero, OffshoreAI-as-guide.
 
 ---
 
-## Slide 10 — It gets better while you sleep
+## Slide 10 — The compounding, now yours
 
-**Headline:** Every file you run makes the next one faster.
+**Headline:** The edge that can't be caught — pointed your way.
 
-**Body:** Each deployment teaches the system patterns it keeps. Your firm's knowledge
+**Body:** Every file teaches the system patterns it keeps. Your firm's knowledge
 compounds instead of walking out the door at 5:30. The regulatory corpus updates
-centrally — so when the rules move, your loops already know.
+centrally — so when the rules move, your loops already know. The curve from the first
+slide? This is you, on the upper line.
 
-🖼 **Visual:** A rising curve — *cost per file* falling as *files run* climbs — with a
-small "JFSC update pushed" marker showing the corpus refreshing itself.
+🖼 **Visual:** The two diverging curves from slide 1 **return** — now "you" labelled on
+the upper one, *files run* climbing as *cost per file* falls, with a small "JFSC update
+pushed" marker showing the corpus refreshing itself.
 
-✍️ **Lever:** Future-pacing + the moat, in plain words. Open loop → "so what does it
-cost / what does it save?" (slides 11–12).
+✍️ **Lever:** Future-pacing + the payoff of the slide-1 open loop — the visual callback
+seals it (this is the beat Mike flagged as the strongest hook). The moat, in plain
+words. Opens the "so what does it cost / save?" loop → slides 11–12.
 
 ---
 
@@ -280,19 +300,21 @@ Lowers the risk of the first commitment with a slow, conservative buyer.
 
 ---
 
-## Slide 15 — Close / the bigger picture
+## Slide 15 — Close / the bookend
 
-**Headline:** Prove it in Jersey. Then it travels.
+**Headline:** Compounding gaps don't close.
 
 **Body:** A loop that works here works in Guernsey, the Isle of Man, the BVI, Cayman.
 The firms that own their loops first won't be caught. The question isn't whether this
 arrives. It's who's running it when it does.
 
-🖼 **Visual:** Jersey lit on a map, with Guernsey / IoM / BVI / Cayman glowing next in
-sequence — the roadmap as a horizon.
+🖼 **Visual:** The two curves one last time — fully separated now, a chasm — over Jersey
+lit on a map, Guernsey / IoM / BVI / Cayman glowing next in sequence. The gap opened on
+the cover, closed.
 
-✍️ **Lever:** Vision close + gentle urgency (earned, not manufactured). Leaves them
-with the open loop that matters: *be first, or be caught.*
+✍️ **Lever:** Bookend — the headline is slide 1's promise turned to a warning; the body
+is the line you wanted to end on (kept verbatim). Earned urgency, not manufactured. The
+recurring-curves visual shuts the loop opened on the cover: *be first, or be caught.*
 
 ---
 
@@ -309,10 +331,17 @@ with the open loop that matters: *be first, or be caught.*
 
 ---
 
-## Open question for the real build
+## Before the real build
 
-Before this becomes slides: decide the **emotional register**. This sketch sits
-deliberately on the *credible* end (the personas demand it). There's room for one or
-two sharper, frame-breaking lines (slides 2 and 4) if a specific audience can take it —
-but test that against a real TCSP reader before dialling up the heat. With this room,
-under-selling beats over-selling.
+- **Register: decided.** Compounding spine, credible end of the dial (Mike,
+  2026-06-08). The louder "jet engine / ready for take-off?" treatment was considered
+  and held back as too hot for this audience — though the engine survives as one
+  understated accent in the slide-9 provider line. If a *specific* warmer audience
+  turns up, that's where to dial heat — test on a real TCSP reader first.
+- **Numbers: still owed.** Slide 11 (proof) and slide 12 (pricing) carry
+  `[[placeholders]]` until the two anchor figures exist (administrator fully-loaded
+  cost; hours per CDD file) — see the pricing action in
+  [`enablement-gtm-concept.md`](./enablement-gtm-concept.md). Don't present invented
+  figures to this room; an honest blank beats a fabricated stat.
+- **The CDD loop spec** (concept-doc next step #2) feeds slides 7 and 11 — speccing it
+  is what turns the proof slide from placeholder to real.
